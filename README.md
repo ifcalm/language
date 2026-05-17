@@ -15,6 +15,7 @@ into a daily study loop with:
 - lightweight progress tracking, reflection, and vocabulary capture
 
 See [`docs/product-plan.md`](docs/product-plan.md) for the current MVP direction.
+Deployment notes live in [`docs/cloudflare-workers.md`](docs/cloudflare-workers.md).
 
 ```bash
 npm install
