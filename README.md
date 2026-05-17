@@ -3,6 +3,24 @@
 A curated collection of high-quality resources for learning English,
 focused on practicing the core skills — listening, speaking, reading, and writing.
 Includes resources for grammar, vocabulary, and media to enhance your English studies.
+
+## English Orbit app
+
+This repository now also includes the first MVP of **English Orbit**, a local-first
+English learning workspace built with React + Vite. It turns the resource list below
+into a daily study loop with:
+
+- a personalized daily plan for listening, speaking, reading, and writing
+- a searchable resource library
+- lightweight progress tracking, reflection, and vocabulary capture
+
+See [`docs/product-plan.md`](docs/product-plan.md) for the current MVP direction.
+
+```bash
+npm install
+npm run dev
+```
+
 This list is for:
 
 - ESL Learners at all levels
@@ -349,4 +367,3 @@ This awesome list is maintained with ❤️ for the English learning community.
 [hard-fork-url]: https://open.spotify.com/show/44fllCS2FTFr2x2kjP9xeT
 [npr-url]: https://www.npr.org/
 [murphy-grammar-url]: https://www.cambridge.org/us/cambridgeenglish/catalog/grammar-vocabulary-and-pronunciation/english-grammar-use-5th-edition
-
