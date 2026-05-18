@@ -9,6 +9,10 @@ export default {
       })
     }
 
+    if (url.pathname.startsWith('/api/')) {
+      return Response.json({ error: 'Not Found' }, { status: 404 })
+    }
+
     return env.ASSETS.fetch(request)
   },
 } satisfies ExportedHandler<Env>

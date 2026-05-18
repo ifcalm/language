@@ -10,16 +10,17 @@ import {
   type Skill,
 } from './data/resources'
 import { speakingPrompts, writingPrompts } from './data/prompts'
+import {
+  defaultState,
+  normalizeAppState,
+  type AppState,
+  type DailyLog,
+  type GoalId,
+  type StudyProfile,
+  type VocabularyItem,
+} from './shared/study'
 
-type GoalId = 'balanced' | 'conversation' | 'career' | 'exam'
 type ViewId = 'today' | 'library' | 'review'
-
-interface StudyProfile {
-  name: string
-  goal: GoalId
-  level: Difficulty
-  minutesPerDay: number
-}
 
 interface DailyTask {
   id: string
@@ -28,26 +29,6 @@ interface DailyTask {
   description: string
   duration: number
   resource?: LearningResource
-}
-
-interface DailyLog {
-  completedTaskIds: string[]
-  reflection: string
-  minutesLogged: number
-}
-
-interface VocabularyItem {
-  id: string
-  word: string
-  meaning: string
-  example: string
-  createdAt: string
-}
-
-interface AppState {
-  profile: StudyProfile
-  logs: Record<string, DailyLog>
-  vocabulary: VocabularyItem[]
 }
 
 const STORAGE_KEY = 'english-orbit-state-v1'
@@ -80,17 +61,6 @@ const goals: Record<
     description: '强调阅读与写作，同时维持输入能力。',
     weights: { listening: 0.2, speaking: 0.15, reading: 0.35, writing: 0.3 },
   },
-}
-
-const defaultState: AppState = {
-  profile: {
-    name: 'Learner',
-    goal: 'balanced',
-    level: 'intermediate',
-    minutesPerDay: 40,
-  },
-  logs: {},
-  vocabulary: [],
 }
 
 const coreSkills: Array<'listening' | 'speaking' | 'reading' | 'writing'> = [
@@ -126,7 +96,7 @@ function loadState(): AppState {
   }
 
   try {
-    return JSON.parse(saved) as AppState
+    return normalizeAppState(JSON.parse(saved)) ?? defaultState
   } catch {
     return defaultState
   }
@@ -242,7 +212,7 @@ function formatSkillSummary(tasks: DailyTask[]) {
 }
 
 function App() {
-  const [state, setState] = useState<AppState>(() => loadState())
+  const [state, setState] = useState<AppState>(loadState)
   const [view, setView] = useState<ViewId>('today')
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')

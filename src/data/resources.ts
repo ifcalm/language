@@ -1,3 +1,5 @@
+import type { Difficulty } from '../shared/study'
+
 export type Skill =
   | 'listening'
   | 'speaking'
@@ -5,8 +7,7 @@ export type Skill =
   | 'writing'
   | 'grammar'
   | 'vocabulary'
-
-export type Difficulty = 'beginner' | 'intermediate' | 'advanced'
+export type { Difficulty } from '../shared/study'
 
 export type ResourceFormat =
   | 'podcast'
