@@ -10,6 +10,14 @@
     "not_found_handling": "single-page-application",
     "run_worker_first": ["/api/*"]
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "english-orbit-db",
+      "database_id": "1c205b89-6aa8-48b7-a1c0-e039234b05dc",
+      "migrations_dir": "./migrations"
+    }
+  ],
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
