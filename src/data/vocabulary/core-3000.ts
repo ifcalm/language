@@ -1,6 +1,7 @@
 import type {
   CoreVocabularyEntry,
   CefrStatus,
+  VocabularyFrequencyBand,
   ExampleStatus,
   GrammarStatus,
   PartOfSpeech,
@@ -15,6 +16,13 @@ export const vocabularyLevelLabels: Record<VocabularyLevel, string> = {
   A2: 'A2 基础',
   B1: 'B1 进阶',
   B2: 'B2 熟练',
+}
+
+export const vocabularyFrequencyBandLabels: Record<VocabularyFrequencyBand, string> = {
+  'top-100': '高频 100',
+  'top-500': '日常 500',
+  'top-1000': '核心 1000',
+  'top-3000': '完整 3000',
 }
 
 export const partOfSpeechLabels: Record<PartOfSpeech, string> = {
@@ -850,7 +858,7 @@ ngsl|4|of|/ɑv/|preposition|...的
 ngsl|5|to|/tu/|preposition|向；朝
 ngsl|6|a|/ə/|determiner|一
 ngsl|7|in|/ɪn/|preposition|在...里面
-ngsl|8|have|/hæv/|modal|拥有
+ngsl|8|have|/hæv/|verb|拥有
 ngsl|9|it|/ɪt/|pronoun|它
 ngsl|10|you|/ju/|pronoun|你
 ngsl|11|he|/hi/|pronoun|他
@@ -3920,14 +3928,77 @@ const getVocabularyScenarios = (
   return ['study', 'communication']
 }
 
+const ngslVocabularyCount = sourceVocabularyRows.filter(
+  (row) => row.source === 'ngsl',
+).length
+
+const sourceVocabularyById = new Map(
+  sourceVocabularyRows.map((row) => [slugifyVocabularyId(row.word), row]),
+)
+
+const getFrequencyRank = (row: VocabularySeedRow): number => {
+  if (row.source === 'ngsl') {
+    return row.rank
+  }
+
+  return ngslVocabularyCount + row.rank
+}
+
+const getFrequencyBand = (rank: number): VocabularyFrequencyBand => {
+  if (rank <= 100) {
+    return 'top-100'
+  }
+
+  if (rank <= 500) {
+    return 'top-500'
+  }
+
+  if (rank <= 1000) {
+    return 'top-1000'
+  }
+
+  return 'top-3000'
+}
+
+const getSourceNote = (source: VocabularySourceId) => {
+  const sourceLabel = source === 'ngsl' ? 'NGSL 1.2' : 'NAWL'
+
+  return `${sourceLabel} 词表底稿：先用于基础识别、理解和检索；例句、搭配和中文精修会在后续批次逐步补全。`
+}
+
 const reviewedVocabularyIds = new Set(
   reviewedCoreVocabulary.map((item) => slugifyVocabularyId(item.word)),
 )
 
+const enrichReviewedVocabulary = (item: CoreVocabularyEntry): CoreVocabularyEntry => {
+  const sourceRow = sourceVocabularyById.get(slugifyVocabularyId(item.word))
+
+  if (!sourceRow) {
+    return {
+      ...item,
+      frequencyRank: item.priority,
+      frequencyBand: getFrequencyBand(item.priority),
+      learningPriority: item.priority,
+    }
+  }
+
+  const frequencyRank = getFrequencyRank(sourceRow)
+
+  return {
+    ...item,
+    frequencyRank,
+    frequencyBand: getFrequencyBand(frequencyRank),
+    learningPriority: frequencyRank,
+    pronunciation: item.pronunciation ?? sourceRow.pronunciation,
+    source: item.source ?? sourceRow.source,
+    sourceRank: item.sourceRank ?? sourceRow.rank,
+  }
+}
+
 const sourceCoreVocabulary = sourceVocabularyRows
   .filter((row) => !reviewedVocabularyIds.has(slugifyVocabularyId(row.word)))
-  .map((row, index): CoreVocabularyEntry => {
-    const sourceLabel = row.source === 'ngsl' ? 'NGSL 1.2' : 'NAWL'
+  .map((row): CoreVocabularyEntry => {
+    const frequencyRank = getFrequencyRank(row)
 
     return {
       id: slugifyVocabularyId(row.word),
@@ -3935,17 +4006,29 @@ const sourceCoreVocabulary = sourceVocabularyRows
       meaning: row.meaning,
       partOfSpeech: row.partOfSpeech,
       level: getVocabularyLevel(row.source, row.rank),
-      priority: reviewedCoreVocabulary.length + index + 1,
+      priority: frequencyRank,
+      frequencyRank,
+      frequencyBand: getFrequencyBand(frequencyRank),
+      learningPriority: frequencyRank,
       pronunciation: row.pronunciation,
       source: row.source,
       sourceRank: row.rank,
       scenarios: getVocabularyScenarios(row.source, row.partOfSpeech),
       skills: [...coreVocabularySeedSkills],
-      note: `${sourceLabel} 词表底稿：先用于基础识别、理解和检索；例句、搭配和中文精修会在后续批次逐步补全。`,
+      note: getSourceNote(row.source),
     }
   })
 
-export const coreVocabulary = [
-  ...reviewedCoreVocabulary,
+const frequencySortedVocabulary = [
+  ...reviewedCoreVocabulary.map(enrichReviewedVocabulary),
   ...sourceCoreVocabulary,
-] satisfies CoreVocabularyEntry[]
+].sort(
+  (left, right) =>
+    (left.frequencyRank ?? left.priority) - (right.frequencyRank ?? right.priority),
+)
+
+export const coreVocabulary = frequencySortedVocabulary.map((item, index) => ({
+  ...item,
+  priority: index + 1,
+  learningPriority: index + 1,
+})) satisfies CoreVocabularyEntry[]
