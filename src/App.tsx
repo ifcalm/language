@@ -11,9 +11,14 @@ import {
 } from './data/resources'
 import { speakingPrompts, writingPrompts } from './data/prompts'
 import {
+  cefrStatusLabels,
   coreVocabulary,
+  exampleStatusLabels,
+  grammarStatusLabels,
   partOfSpeechLabels,
+  reviewStatusLabels,
   scenarioLabels,
+  vocabularySourceLabels,
   vocabularyLevelLabels,
   type PartOfSpeech,
   type VocabularyLevel,
@@ -41,6 +46,15 @@ interface DailyTask {
 }
 
 const STORAGE_KEY = 'english-orbit-state-v1'
+
+const defaultVocabularyQuality = {
+  sources: ['manual-curation'],
+  cefrStatus: 'estimated',
+  exampleStatus: 'original',
+  grammarStatus: 'needs-review',
+  reviewStatus: 'draft',
+  note: '当前词条来自第一版手工整理样稿，尚未逐项完成权威词表和人工复核。',
+} as const
 
 const goals: Record<
   GoalId,
@@ -298,6 +312,9 @@ function App() {
 
     return matchesQuery && matchesLevel && matchesPart && matchesScenario
   })
+  const reviewedVocabularyCount = coreVocabulary.filter(
+    (item) => item.quality?.reviewStatus === 'sample-reviewed' || item.quality?.reviewStatus === 'reviewed',
+  ).length
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
@@ -616,12 +633,19 @@ function App() {
                 <h2>先从最常用、最能复用的词开始</h2>
                 <p>
                   这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
-                  每个词都带有中文释义、例句、搭配、场景和可训练技能。
+                  每个词都带有中文释义、例句、搭配、场景和可训练技能。现在额外标出来源与校验状态，
+                  方便区分“可预览样稿”和“已复核内容”。
                 </p>
               </div>
-              <div className="vocabulary-stats">
-                <strong>{coreVocabulary.length}</strong>
-                <span>个样例词条</span>
+              <div className="vocabulary-stats-grid">
+                <div className="vocabulary-stats">
+                  <strong>{coreVocabulary.length}</strong>
+                  <span>个样例词条</span>
+                </div>
+                <div className="vocabulary-stats muted">
+                  <strong>{reviewedVocabularyCount}</strong>
+                  <span>个样例复核</span>
+                </div>
               </div>
             </section>
 
@@ -681,44 +705,85 @@ function App() {
             </section>
 
             <section className="vocabulary-grid">
-              {filteredCoreVocabulary.map((item) => (
-                <article key={item.id} className="panel vocabulary-card">
-                  <header>
-                    <div>
-                      <span>#{String(item.priority).padStart(2, '0')}</span>
-                      <h3>{item.word}</h3>
+              {filteredCoreVocabulary.map((item) => {
+                const quality = item.quality ?? defaultVocabularyQuality
+
+                return (
+                  <article key={item.id} className="panel vocabulary-card">
+                    <header>
+                      <div>
+                        <span>#{String(item.priority).padStart(2, '0')}</span>
+                        <h3>{item.word}</h3>
+                      </div>
+                      <div className="vocabulary-card-badges">
+                        <strong>{vocabularyLevelLabels[item.level]}</strong>
+                        <span className={`review-badge ${quality.reviewStatus}`}>
+                          {reviewStatusLabels[quality.reviewStatus]}
+                        </span>
+                      </div>
+                    </header>
+                    <p className="vocabulary-meaning">{item.meaning}</p>
+                    <p className="vocabulary-example">{item.example}</p>
+                    <div className="resource-meta">
+                      <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
+                      {item.scenarios.map((scenario) => (
+                        <span key={scenario}>{scenarioLabels[scenario]}</span>
+                      ))}
                     </div>
-                    <strong>{vocabularyLevelLabels[item.level]}</strong>
-                  </header>
-                  <p className="vocabulary-meaning">{item.meaning}</p>
-                  <p className="vocabulary-example">{item.example}</p>
-                  <div className="resource-meta">
-                    <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
-                    {item.scenarios.map((scenario) => (
-                      <span key={scenario}>{scenarioLabels[scenario]}</span>
-                    ))}
-                  </div>
-                  <div className="collocation-list">
-                    {item.collocations.map((collocation) => (
-                      <span key={collocation}>{collocation}</span>
-                    ))}
-                  </div>
-                  <footer>
-                    <small>{item.note}</small>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setWord(item.word)
-                        setMeaning(item.meaning)
-                        setExample(item.example)
-                        setView('today')
-                      }}
-                    >
-                      加到今日记词
-                    </button>
-                  </footer>
-                </article>
-              ))}
+                    {item.senses && (
+                      <div className="sense-list">
+                        <strong>义项拆分</strong>
+                        {item.senses.map((sense) => (
+                          <div key={`${sense.partOfSpeech}-${sense.meaning}`}>
+                            <span>{partOfSpeechLabels[sense.partOfSpeech]}</span>
+                            <p>{sense.meaning}</p>
+                            <small>{sense.example}</small>
+                            {sense.usageNote && <em>{sense.usageNote}</em>}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    <div className="collocation-list">
+                      {item.collocations.map((collocation) => (
+                        <span key={collocation}>{collocation}</span>
+                      ))}
+                    </div>
+                    <div className="quality-panel">
+                      <div>
+                        <span>来源</span>
+                        <p>
+                          {quality.sources
+                            .map((source) => vocabularySourceLabels[source])
+                            .join(' · ')}
+                        </p>
+                      </div>
+                      <div>
+                        <span>校验</span>
+                        <p>
+                          {cefrStatusLabels[quality.cefrStatus]} ·{' '}
+                          {exampleStatusLabels[quality.exampleStatus]} ·{' '}
+                          {grammarStatusLabels[quality.grammarStatus]}
+                        </p>
+                      </div>
+                      <small>{quality.note}</small>
+                    </div>
+                    <footer>
+                      <small>{item.note}</small>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setWord(item.word)
+                          setMeaning(item.meaning)
+                          setExample(item.example)
+                          setView('today')
+                        }}
+                      >
+                        加到今日记词
+                      </button>
+                    </footer>
+                  </article>
+                )
+              })}
             </section>
           </>
         )}

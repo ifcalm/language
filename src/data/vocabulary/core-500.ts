@@ -1,7 +1,12 @@
 import type {
   CoreVocabularyEntry,
+  CefrStatus,
+  ExampleStatus,
+  GrammarStatus,
   PartOfSpeech,
+  ReviewStatus,
   VocabularyLevel,
+  VocabularySourceId,
   VocabularyScenario,
 } from './types'
 
@@ -31,6 +36,34 @@ export const scenarioLabels: Record<VocabularyScenario, string> = {
   'problem-solving': '问题解决',
 }
 
+export const vocabularySourceLabels: Record<VocabularySourceId, string> = {
+  'manual-curation': '手工整理',
+  'oxford-3000': 'Oxford 3000 参考',
+  'english-vocabulary-profile': 'EVP / CEFR 待校准',
+  ngsl: 'NGSL 高频参考',
+}
+
+export const cefrStatusLabels: Record<CefrStatus, string> = {
+  estimated: 'CEFR 经验标注',
+  'reference-checked': 'CEFR 已参考校准',
+}
+
+export const exampleStatusLabels: Record<ExampleStatus, string> = {
+  original: '原创例句',
+  'source-derived': '来源改写例句',
+}
+
+export const grammarStatusLabels: Record<GrammarStatus, string> = {
+  'self-reviewed': '语法自检通过',
+  'needs-review': '语法待复核',
+}
+
+export const reviewStatusLabels: Record<ReviewStatus, string> = {
+  draft: '草稿',
+  'sample-reviewed': '样例复核',
+  reviewed: '已复核',
+}
+
 export const coreVocabulary = [
   {
     id: 'ability',
@@ -44,6 +77,23 @@ export const coreVocabulary = [
     scenarios: ['study', 'work'],
     skills: ['reading', 'writing', 'speaking'],
     note: '常用于描述技能、学习成果和工作能力。',
+    senses: [
+      {
+        meaning: '能力；做某事的本领',
+        partOfSpeech: 'noun',
+        example: 'Practice improves your ability to understand natural English.',
+        usageNote: '常接 ability to do something。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation', 'ngsl'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '已做样例级人工自检；CEFR 等级仍需后续按正式词表逐词校准。',
+    },
   },
   {
     id: 'accept',
@@ -57,6 +107,23 @@ export const coreVocabulary = [
     scenarios: ['communication', 'thinking'],
     skills: ['listening', 'speaking', 'writing'],
     note: '比 agree 更强调“接纳现实或决定”。',
+    senses: [
+      {
+        meaning: '接受事实、建议或责任',
+        partOfSpeech: 'verb',
+        example: 'I accept that mistakes are part of learning.',
+        usageNote: '常接名词或 that 从句。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '义项和例句已人工自检；频率和级别还未做权威源交叉校验。',
+    },
   },
   {
     id: 'active',
@@ -70,6 +137,23 @@ export const coreVocabulary = [
     scenarios: ['study', 'daily'],
     skills: ['reading', 'speaking', 'writing'],
     note: '适合描述学习方式、生活状态和参与程度。',
+    senses: [
+      {
+        meaning: '积极参与的；活跃的',
+        partOfSpeech: 'adjective',
+        example: 'Active recall helps you remember words for longer.',
+        usageNote: '学习语境里常见 active recall、active learner。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '例句语法已自检；后续可补充生活场景义项。',
+    },
   },
   {
     id: 'address',
@@ -83,6 +167,29 @@ export const coreVocabulary = [
     scenarios: ['work', 'problem-solving'],
     skills: ['reading', 'writing', 'speaking'],
     note: '作动词时常表示“正式处理问题”。',
+    senses: [
+      {
+        meaning: '处理；着手解决',
+        partOfSpeech: 'verb',
+        example: 'We need to address the problem before it becomes bigger.',
+        usageNote: 'address a problem / issue 是职场和正式表达高频搭配。',
+      },
+      {
+        meaning: '地址',
+        partOfSpeech: 'noun',
+        example: 'Please write your address at the top of the form.',
+        usageNote: '这个名词义项和动词义项应分开训练。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '已拆分 verb/noun 两个高频义项，避免单一词性误导。',
+    },
   },
   {
     id: 'agree',
@@ -96,6 +203,23 @@ export const coreVocabulary = [
     scenarios: ['communication', 'work'],
     skills: ['listening', 'speaking', 'writing'],
     note: '表达观点时的基础高频词。',
+    senses: [
+      {
+        meaning: '同意某人或某个观点',
+        partOfSpeech: 'verb',
+        example: 'I agree with your point, but I have one question.',
+        usageNote: 'agree with someone / something；agree on a plan。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation', 'ngsl'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '基础表达已自检，适合做口语观点表达训练。',
+    },
   },
   {
     id: 'allow',
@@ -109,6 +233,23 @@ export const coreVocabulary = [
     scenarios: ['work', 'study', 'daily'],
     skills: ['reading', 'writing'],
     note: '写作中常用来连接工具、条件和结果。',
+    senses: [
+      {
+        meaning: '允许某人做某事',
+        partOfSpeech: 'verb',
+        example: 'This tool allows me to review vocabulary every day.',
+        usageNote: 'allow someone to do something 是核心句型。',
+      },
+    ],
+    quality: {
+      sources: ['manual-curation'],
+      cefrStatus: 'estimated',
+      exampleStatus: 'original',
+      grammarStatus: 'self-reviewed',
+      reviewStatus: 'sample-reviewed',
+      lastReviewed: '2026-05-19',
+      note: '例句结构已自检；后续可补充 not allowed 等生活场景。',
+    },
   },
   {
     id: 'answer',
