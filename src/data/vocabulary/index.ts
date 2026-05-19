@@ -8,7 +8,7 @@ export {
   scenarioLabels,
   vocabularySourceLabels,
   vocabularyLevelLabels,
-} from './core-500'
+} from './core-3000'
 export type {
   CoreVocabularyEntry,
   PartOfSpeech,
