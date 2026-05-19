@@ -285,11 +285,12 @@ function App() {
       normalizedQuery.length === 0 ||
       item.word.toLowerCase().includes(normalizedQuery) ||
       item.meaning.includes(normalizedQuery) ||
-      item.example.toLowerCase().includes(normalizedQuery) ||
+      (item.example?.toLowerCase().includes(normalizedQuery) ?? false) ||
       item.note.includes(normalizedQuery) ||
-      item.collocations.some((collocation) =>
+      (item.collocations?.some((collocation) =>
         collocation.toLowerCase().includes(normalizedQuery),
-      )
+      ) ??
+        false)
     const matchesLevel = vocabularyLevel === 'all' || item.level === vocabularyLevel
     const matchesPart = vocabularyPart === 'all' || item.partOfSpeech === vocabularyPart
     const matchesScenario =
@@ -616,12 +617,12 @@ function App() {
                 <h2>先从最常用、最能复用的词开始</h2>
                 <p>
                   这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
-                  每个词都带有中文释义、例句、搭配、场景和可训练技能。
+                  先完成常用词底稿，再逐步补齐例句、搭配、读音和训练任务。
                 </p>
               </div>
               <div className="vocabulary-stats">
                 <strong>{coreVocabulary.length}</strong>
-                <span>个样例词条</span>
+                <span>个核心词</span>
               </div>
             </section>
 
@@ -691,7 +692,9 @@ function App() {
                     <strong>{vocabularyLevelLabels[item.level]}</strong>
                   </header>
                   <p className="vocabulary-meaning">{item.meaning}</p>
-                  <p className="vocabulary-example">{item.example}</p>
+                  {item.example && (
+                    <p className="vocabulary-example">{item.example}</p>
+                  )}
                   <div className="resource-meta">
                     <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
                     {item.scenarios.map((scenario) => (
@@ -711,11 +714,13 @@ function App() {
                       ))}
                     </div>
                   )}
-                  <div className="collocation-list">
-                    {item.collocations.map((collocation) => (
-                      <span key={collocation}>{collocation}</span>
-                    ))}
-                  </div>
+                  {item.collocations && item.collocations.length > 0 && (
+                    <div className="collocation-list">
+                      {item.collocations.map((collocation) => (
+                        <span key={collocation}>{collocation}</span>
+                      ))}
+                    </div>
+                  )}
                   <footer>
                     <small>{item.note}</small>
                     <button
@@ -723,7 +728,7 @@ function App() {
                       onClick={() => {
                         setWord(item.word)
                         setMeaning(item.meaning)
-                        setExample(item.example)
+                        setExample(item.example ?? '')
                         setView('today')
                       }}
                     >
