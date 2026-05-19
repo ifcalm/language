@@ -8,6 +8,11 @@ export type PartOfSpeech =
   | 'adjective'
   | 'adverb'
   | 'phrase'
+  | 'pronoun'
+  | 'preposition'
+  | 'conjunction'
+  | 'determiner'
+  | 'modal'
 
 export type VocabularyScenario =
   | 'daily'
@@ -54,8 +59,8 @@ export interface CoreVocabularyEntry {
   partOfSpeech: PartOfSpeech
   level: VocabularyLevel
   priority: number
-  example: string
-  collocations: string[]
+  example?: string
+  collocations?: string[]
   scenarios: VocabularyScenario[]
   skills: Array<Extract<Skill, 'listening' | 'speaking' | 'reading' | 'writing'>>
   note: string
