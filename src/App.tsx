@@ -11,6 +11,15 @@ import {
 } from './data/resources'
 import { speakingPrompts, writingPrompts } from './data/prompts'
 import {
+  coreVocabulary,
+  partOfSpeechLabels,
+  scenarioLabels,
+  vocabularyLevelLabels,
+  type PartOfSpeech,
+  type VocabularyLevel,
+  type VocabularyScenario,
+} from './data/vocabulary'
+import {
   defaultState,
   normalizeAppState,
   type AppState,
@@ -20,7 +29,7 @@ import {
   type VocabularyItem,
 } from './shared/study'
 
-type ViewId = 'today' | 'library' | 'review'
+type ViewId = 'today' | 'vocabulary' | 'library' | 'review'
 
 interface DailyTask {
   id: string
@@ -216,7 +225,17 @@ function App() {
   const [view, setView] = useState<ViewId>('today')
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
+  const [vocabularyLevel, setVocabularyLevel] = useState<VocabularyLevel | 'all'>(
+    'all',
+  )
+  const [vocabularyPart, setVocabularyPart] = useState<PartOfSpeech | 'all'>(
+    'all',
+  )
+  const [vocabularyScenario, setVocabularyScenario] = useState<
+    VocabularyScenario | 'all'
+  >('all')
   const [query, setQuery] = useState('')
+  const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [word, setWord] = useState('')
   const [meaning, setMeaning] = useState('')
   const [example, setExample] = useState('')
@@ -259,6 +278,25 @@ function App() {
       resource.tags.some((tag) => tag.includes(normalizedQuery))
 
     return matchesSkill && matchesLevel && matchesQuery
+  })
+  const filteredCoreVocabulary = coreVocabulary.filter((item) => {
+    const normalizedQuery = vocabularyQuery.trim().toLowerCase()
+    const matchesQuery =
+      normalizedQuery.length === 0 ||
+      item.word.toLowerCase().includes(normalizedQuery) ||
+      item.meaning.includes(normalizedQuery) ||
+      item.example.toLowerCase().includes(normalizedQuery) ||
+      item.note.includes(normalizedQuery) ||
+      item.collocations.some((collocation) =>
+        collocation.toLowerCase().includes(normalizedQuery),
+      )
+    const matchesLevel = vocabularyLevel === 'all' || item.level === vocabularyLevel
+    const matchesPart = vocabularyPart === 'all' || item.partOfSpeech === vocabularyPart
+    const matchesScenario =
+      vocabularyScenario === 'all' ||
+      (item.scenarios as readonly VocabularyScenario[]).includes(vocabularyScenario)
+
+    return matchesQuery && matchesLevel && matchesPart && matchesScenario
   })
 
   useEffect(() => {
@@ -378,6 +416,13 @@ function App() {
             onClick={() => setView('library')}
           >
             资源库
+          </button>
+          <button
+            type="button"
+            className={view === 'vocabulary' ? 'active' : ''}
+            onClick={() => setView('vocabulary')}
+          >
+            核心词库
           </button>
           <button
             type="button"
@@ -559,6 +604,121 @@ function App() {
                   </button>
                 </div>
               </article>
+            </section>
+          </>
+        )}
+
+        {view === 'vocabulary' && (
+          <>
+            <section className="panel vocabulary-hero">
+              <div>
+                <span>Core 500 · 第一版底稿</span>
+                <h2>先从最常用、最能复用的词开始</h2>
+                <p>
+                  这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
+                  每个词都带有中文释义、例句、搭配、场景和可训练技能。
+                </p>
+              </div>
+              <div className="vocabulary-stats">
+                <strong>{coreVocabulary.length}</strong>
+                <span>个样例词条</span>
+              </div>
+            </section>
+
+            <section className="panel vocabulary-toolbar">
+              <div className="section-heading">
+                <h2>核心词库</h2>
+                <span>{filteredCoreVocabulary.length} 个匹配结果</span>
+              </div>
+              <div className="filters vocabulary-filters">
+                <input
+                  placeholder="搜索单词、释义、例句或搭配"
+                  value={vocabularyQuery}
+                  onChange={(event) => setVocabularyQuery(event.target.value)}
+                />
+                <select
+                  value={vocabularyLevel}
+                  onChange={(event) =>
+                    setVocabularyLevel(event.target.value as VocabularyLevel | 'all')
+                  }
+                >
+                  <option value="all">全部级别</option>
+                  {Object.entries(vocabularyLevelLabels).map(([level, label]) => (
+                    <option key={level} value={level}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  value={vocabularyPart}
+                  onChange={(event) =>
+                    setVocabularyPart(event.target.value as PartOfSpeech | 'all')
+                  }
+                >
+                  <option value="all">全部词性</option>
+                  {Object.entries(partOfSpeechLabels).map(([part, label]) => (
+                    <option key={part} value={part}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  value={vocabularyScenario}
+                  onChange={(event) =>
+                    setVocabularyScenario(
+                      event.target.value as VocabularyScenario | 'all',
+                    )
+                  }
+                >
+                  <option value="all">全部场景</option>
+                  {Object.entries(scenarioLabels).map(([scenario, label]) => (
+                    <option key={scenario} value={scenario}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </section>
+
+            <section className="vocabulary-grid">
+              {filteredCoreVocabulary.map((item) => (
+                <article key={item.id} className="panel vocabulary-card">
+                  <header>
+                    <div>
+                      <span>#{String(item.priority).padStart(2, '0')}</span>
+                      <h3>{item.word}</h3>
+                    </div>
+                    <strong>{vocabularyLevelLabels[item.level]}</strong>
+                  </header>
+                  <p className="vocabulary-meaning">{item.meaning}</p>
+                  <p className="vocabulary-example">{item.example}</p>
+                  <div className="resource-meta">
+                    <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
+                    {item.scenarios.map((scenario) => (
+                      <span key={scenario}>{scenarioLabels[scenario]}</span>
+                    ))}
+                  </div>
+                  <div className="collocation-list">
+                    {item.collocations.map((collocation) => (
+                      <span key={collocation}>{collocation}</span>
+                    ))}
+                  </div>
+                  <footer>
+                    <small>{item.note}</small>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setWord(item.word)
+                        setMeaning(item.meaning)
+                        setExample(item.example)
+                        setView('today')
+                      }}
+                    >
+                      加到今日记词
+                    </button>
+                  </footer>
+                </article>
+              ))}
             </section>
           </>
         )}
