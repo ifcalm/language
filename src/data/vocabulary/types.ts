@@ -19,6 +19,34 @@ export type VocabularyScenario =
   | 'time'
   | 'problem-solving'
 
+export type VocabularySourceId =
+  | 'manual-curation'
+  | 'oxford-3000'
+  | 'english-vocabulary-profile'
+  | 'ngsl'
+
+export type CefrStatus = 'estimated' | 'reference-checked'
+export type ExampleStatus = 'original' | 'source-derived'
+export type GrammarStatus = 'self-reviewed' | 'needs-review'
+export type ReviewStatus = 'draft' | 'sample-reviewed' | 'reviewed'
+
+export interface VocabularySense {
+  meaning: string
+  partOfSpeech: PartOfSpeech
+  example: string
+  usageNote?: string
+}
+
+export interface VocabularyQuality {
+  sources: VocabularySourceId[]
+  cefrStatus: CefrStatus
+  exampleStatus: ExampleStatus
+  grammarStatus: GrammarStatus
+  reviewStatus: ReviewStatus
+  lastReviewed?: string
+  note: string
+}
+
 export interface CoreVocabularyEntry {
   id: string
   word: string
@@ -31,4 +59,6 @@ export interface CoreVocabularyEntry {
   scenarios: VocabularyScenario[]
   skills: Array<Extract<Skill, 'listening' | 'speaking' | 'reading' | 'writing'>>
   note: string
+  senses?: VocabularySense[]
+  quality?: VocabularyQuality
 }
