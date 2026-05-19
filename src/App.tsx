@@ -41,6 +41,7 @@ interface DailyTask {
 }
 
 const STORAGE_KEY = 'english-orbit-state-v1'
+const VOCABULARY_VISIBLE_LIMIT = 240
 
 const goals: Record<
   GoalId,
@@ -299,6 +300,12 @@ function App() {
 
     return matchesQuery && matchesLevel && matchesPart && matchesScenario
   })
+  const visibleCoreVocabulary = filteredCoreVocabulary.slice(
+    0,
+    VOCABULARY_VISIBLE_LIMIT,
+  )
+  const hiddenVocabularyCount =
+    filteredCoreVocabulary.length - visibleCoreVocabulary.length
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
@@ -613,7 +620,7 @@ function App() {
           <>
             <section className="panel vocabulary-hero">
               <div>
-                <span>Core 500 · 第一版底稿</span>
+                <span>Core 3000 · 第一版底稿</span>
                 <h2>先从最常用、最能复用的词开始</h2>
                 <p>
                   这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
@@ -682,7 +689,7 @@ function App() {
             </section>
 
             <section className="vocabulary-grid">
-              {filteredCoreVocabulary.map((item) => (
+              {visibleCoreVocabulary.map((item) => (
                 <article key={item.id} className="panel vocabulary-card">
                   <header>
                     <div>
@@ -738,6 +745,13 @@ function App() {
                 </article>
               ))}
             </section>
+
+            {hiddenVocabularyCount > 0 && (
+              <section className="panel vocabulary-more-note">
+                还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义、
+                词性或场景来缩小范围。
+              </section>
+            )}
           </>
         )}
 

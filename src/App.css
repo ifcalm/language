@@ -543,6 +543,13 @@ textarea {
   cursor: pointer;
 }
 
+.vocabulary-more-note {
+  margin-top: 18px;
+  color: #52604f;
+  line-height: 1.65;
+  text-align: center;
+}
+
 .resource-card {
   display: grid;
   gap: 14px;

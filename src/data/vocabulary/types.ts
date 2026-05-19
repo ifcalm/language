@@ -13,6 +13,8 @@ export type PartOfSpeech =
   | 'conjunction'
   | 'determiner'
   | 'modal'
+  | 'interjection'
+  | 'number'
 
 export type VocabularyScenario =
   | 'daily'
@@ -29,6 +31,7 @@ export type VocabularySourceId =
   | 'oxford-3000'
   | 'english-vocabulary-profile'
   | 'ngsl'
+  | 'nawl'
 
 export type CefrStatus = 'estimated' | 'reference-checked'
 export type ExampleStatus = 'original' | 'source-derived'
@@ -59,6 +62,9 @@ export interface CoreVocabularyEntry {
   partOfSpeech: PartOfSpeech
   level: VocabularyLevel
   priority: number
+  pronunciation?: string
+  source?: VocabularySourceId
+  sourceRank?: number
   example?: string
   collocations?: string[]
   scenarios: VocabularyScenario[]
