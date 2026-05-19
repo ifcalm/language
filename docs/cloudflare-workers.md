@@ -32,21 +32,43 @@ For the first release, English Orbit stays intentionally simple:
 - study progress is stored only in the browser's `localStorage`
 - there is no login wall and no cross-device sync yet
 
-The D1 database is already provisioned and the initial schema is kept in
-[`migrations/0001_initial.sql`](../migrations/0001_initial.sql) so the project
-has a clean upgrade path later. It is **not** used by the current UI.
+The D1 database is already provisioned. The schema is kept in:
+
+- [`migrations/0001_initial.sql`](../migrations/0001_initial.sql) — initial
+  profile/log/user vocabulary tables
+- [`migrations/0002_core_vocabulary.sql`](../migrations/0002_core_vocabulary.sql)
+  — `core_vocabulary`, the public Core 3000 vocabulary master table
+
+The current UI still reads the bundled vocabulary data. The new D1 table and
+`/api/vocabulary` endpoint prepare the next step: switching the frontend to
+database-backed vocabulary and then removing the large bundled word list.
 
 ## Local commands
 
 ```bash
 npm run cf:types
 npm run cf:validate
+npm run db:seed:vocabulary
 npm run deploy
 ```
+
+`npm run db:seed:vocabulary` generates a temporary SQL file at
+`.wrangler/generated/core-vocabulary-seed.sql`. Execute it with Wrangler when
+the D1 vocabulary table needs to be populated or refreshed.
 
 ## Current API surface
 
 - `GET /api/health` — lightweight deployment health check
+- `GET /api/vocabulary` — D1-backed Core Vocabulary list endpoint
+
+`/api/vocabulary` supports:
+
+- `band=top-100|top-500|top-1000|top-3000`
+- `q=<search text>`
+- `level=A1|A2|B1|B2`
+- `partOfSpeech=noun|verb|...`
+- `limit=<1-500>`
+- `offset=<number>`
 
 ## Future cloud sync path
 

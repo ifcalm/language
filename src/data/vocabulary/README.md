@@ -21,3 +21,18 @@
 - NGSL 词条以 NGSL rank 作为通用英语频率基础。
 - NAWL 补充词排在 NGSL 之后，用于补齐 3000 词底稿，因此更适合作为进阶词处理。
 - `frequencyBand` 用于分层学习入口：高频 100、日常 500、核心 1000、完整 3000。
+
+## D1 主表：core_vocabulary
+
+`core_vocabulary` 是核心词库的数据库主表，只保存稳定、公共、适合列表查询的信息。
+读音、例句、义项、搭配、用户造句和复习记录不放在这张表里，后续通过独立表使用 `vocabulary_id` 关联。
+
+字段说明已经写在 `/Users/lishuaishuai/Projects/githubProjects/language/migrations/0002_core_vocabulary.sql` 的建表 SQL 注释中。
+
+初次导入或重新同步当前 3000 词底稿时，可以生成临时 SQL：
+
+```bash
+npm run db:seed:vocabulary
+```
+
+默认输出到 `.wrangler/generated/core-vocabulary-seed.sql`。该文件不提交到仓库，只用于执行 D1 导入。
