@@ -14,8 +14,10 @@ import {
   coreVocabulary,
   partOfSpeechLabels,
   scenarioLabels,
+  vocabularyFrequencyBandLabels,
   vocabularyLevelLabels,
   type PartOfSpeech,
+  type VocabularyFrequencyBand,
   type VocabularyLevel,
   type VocabularyScenario,
 } from './data/vocabulary'
@@ -30,6 +32,7 @@ import {
 } from './shared/study'
 
 type ViewId = 'today' | 'vocabulary' | 'library' | 'review'
+type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 interface DailyTask {
   id: string
@@ -42,6 +45,24 @@ interface DailyTask {
 
 const STORAGE_KEY = 'english-orbit-state-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
+
+const vocabularyFrequencyLimits: Record<VocabularyFrequencyFilter, number> = {
+  'top-100': 100,
+  'top-500': 500,
+  'top-1000': 1000,
+  'top-3000': 3000,
+  all: Number.POSITIVE_INFINITY,
+}
+
+const vocabularyFrequencyOptions: Array<{
+  value: VocabularyFrequencyFilter
+  label: string
+}> = [
+  { value: 'top-100', label: vocabularyFrequencyBandLabels['top-100'] },
+  { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
+  { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
+  { value: 'all', label: '全部 3000' },
+]
 
 const goals: Record<
   GoalId,
@@ -226,6 +247,8 @@ function App() {
   const [view, setView] = useState<ViewId>('today')
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
+  const [vocabularyFrequency, setVocabularyFrequency] =
+    useState<VocabularyFrequencyFilter>('top-500')
   const [vocabularyLevel, setVocabularyLevel] = useState<VocabularyLevel | 'all'>(
     'all',
   )
@@ -297,8 +320,16 @@ function App() {
     const matchesScenario =
       vocabularyScenario === 'all' ||
       (item.scenarios as readonly VocabularyScenario[]).includes(vocabularyScenario)
+    const matchesFrequency =
+      item.priority <= vocabularyFrequencyLimits[vocabularyFrequency]
 
-    return matchesQuery && matchesLevel && matchesPart && matchesScenario
+    return (
+      matchesQuery &&
+      matchesLevel &&
+      matchesPart &&
+      matchesScenario &&
+      matchesFrequency
+    )
   })
   const visibleCoreVocabulary = filteredCoreVocabulary.slice(
     0,
@@ -624,7 +655,8 @@ function App() {
                 <h2>先从最常用、最能复用的词开始</h2>
                 <p>
                   这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
-                  先完成常用词底稿，再逐步补齐例句、搭配、读音和训练任务。
+                  默认按通用英语出现频率排序，可从高频 100、日常 500、核心 1000
+                  逐层推进。
                 </p>
               </div>
               <div className="vocabulary-stats">
@@ -644,6 +676,20 @@ function App() {
                   value={vocabularyQuery}
                   onChange={(event) => setVocabularyQuery(event.target.value)}
                 />
+                <select
+                  value={vocabularyFrequency}
+                  onChange={(event) =>
+                    setVocabularyFrequency(
+                      event.target.value as VocabularyFrequencyFilter,
+                    )
+                  }
+                >
+                  {vocabularyFrequencyOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
                 <select
                   value={vocabularyLevel}
                   onChange={(event) =>

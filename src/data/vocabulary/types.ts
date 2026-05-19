@@ -2,6 +2,12 @@ import type { Skill } from '../resources'
 
 export type VocabularyLevel = 'A1' | 'A2' | 'B1' | 'B2'
 
+export type VocabularyFrequencyBand =
+  | 'top-100'
+  | 'top-500'
+  | 'top-1000'
+  | 'top-3000'
+
 export type PartOfSpeech =
   | 'noun'
   | 'verb'
@@ -62,6 +68,9 @@ export interface CoreVocabularyEntry {
   partOfSpeech: PartOfSpeech
   level: VocabularyLevel
   priority: number
+  frequencyRank?: number
+  frequencyBand?: VocabularyFrequencyBand
+  learningPriority?: number
   pronunciation?: string
   source?: VocabularySourceId
   sourceRank?: number
