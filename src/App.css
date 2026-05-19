@@ -385,17 +385,6 @@ textarea {
   text-align: center;
 }
 
-.vocabulary-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: 12px;
-}
-
-.vocabulary-stats.muted {
-  background: #efe7da;
-  color: #6a4d37;
-}
-
 .vocabulary-stats strong {
   display: block;
   font-size: 2.4rem;
@@ -404,10 +393,6 @@ textarea {
 
 .vocabulary-stats span {
   color: rgba(255, 250, 240, 0.72);
-}
-
-.vocabulary-stats.muted span {
-  color: rgba(106, 77, 55, 0.72);
 }
 
 .vocabulary-toolbar {
@@ -466,29 +451,6 @@ textarea {
   font-size: 0.85rem;
 }
 
-.vocabulary-card-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.vocabulary-card-badges .review-badge {
-  flex: 0 0 auto;
-  padding: 7px 11px;
-  border-radius: 999px;
-  background: #efe7da;
-  color: #6a4d37;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-.vocabulary-card-badges .reviewed,
-.vocabulary-card-badges .sample-reviewed {
-  background: #e3edd8;
-  color: #45612f;
-}
-
 .vocabulary-meaning,
 .vocabulary-example {
   margin: 0;
@@ -504,8 +466,7 @@ textarea {
   line-height: 1.65;
 }
 
-.sense-list,
-.quality-panel {
+.sense-list {
   display: grid;
   gap: 10px;
   padding: 14px;
@@ -526,7 +487,7 @@ textarea {
 }
 
 .sense-list span,
-.quality-panel span {
+.sense-list span {
   color: #76806f;
   font-size: 0.82rem;
   font-weight: 700;
@@ -534,15 +495,12 @@ textarea {
 
 .sense-list p,
 .sense-list small,
-.sense-list em,
-.quality-panel p,
-.quality-panel small {
+.sense-list em {
   margin: 0;
   color: #52604f;
 }
 
-.sense-list p,
-.quality-panel p {
+.sense-list p {
   font-weight: 650;
 }
 
