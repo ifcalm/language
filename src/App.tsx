@@ -16,6 +16,7 @@ import {
   scenarioLabels,
   vocabularyFrequencyBandLabels,
   vocabularyLevelLabels,
+  type CoreVocabularyEntry,
   type PartOfSpeech,
   type VocabularyFrequencyBand,
   type VocabularyLevel,
@@ -63,6 +64,44 @@ const vocabularyFrequencyOptions: Array<{
   { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
   { value: 'all', label: '全部 3000' },
 ]
+
+interface VocabularyApiItem {
+  id: string
+  word: string
+  meaning: string
+  meaningZh: string
+  definitionEn: string
+  partOfSpeech: PartOfSpeech
+  level: VocabularyLevel
+  priority: number
+  frequencyRank: number | null
+  frequencyBand: VocabularyFrequencyBand | null
+  note: string
+}
+
+interface VocabularyApiResponse {
+  items: VocabularyApiItem[]
+  pagination: {
+    total: number
+    limit: number
+    offset: number
+  }
+}
+
+const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => ({
+  id: item.id,
+  word: item.word,
+  meaning: item.meaning,
+  partOfSpeech: item.partOfSpeech,
+  level: item.level,
+  priority: item.priority,
+  frequencyRank: item.frequencyRank ?? undefined,
+  frequencyBand: item.frequencyBand ?? undefined,
+  learningPriority: item.priority,
+  scenarios: ['daily', 'study', 'communication'],
+  skills: ['listening', 'speaking', 'reading', 'writing'],
+  note: item.note,
+})
 
 const goals: Record<
   GoalId,
@@ -260,6 +299,10 @@ function App() {
   >('all')
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
+  const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
+  const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
+  const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
+  const [vocabularyApiError, setVocabularyApiError] = useState('')
   const [word, setWord] = useState('')
   const [meaning, setMeaning] = useState('')
   const [example, setExample] = useState('')
@@ -303,7 +346,7 @@ function App() {
 
     return matchesSkill && matchesLevel && matchesQuery
   })
-  const filteredCoreVocabulary = coreVocabulary.filter((item) => {
+  const fallbackCoreVocabulary = coreVocabulary.filter((item) => {
     const normalizedQuery = vocabularyQuery.trim().toLowerCase()
     const matchesQuery =
       normalizedQuery.length === 0 ||
@@ -331,16 +374,87 @@ function App() {
       matchesFrequency
     )
   })
-  const visibleCoreVocabulary = filteredCoreVocabulary.slice(
+  const isUsingApiVocabulary =
+    apiVocabulary.length > 0 || (isVocabularyLoading && !vocabularyApiError)
+  const visibleCoreVocabulary = isUsingApiVocabulary
+    ? apiVocabulary
+    : fallbackCoreVocabulary.slice(0, VOCABULARY_VISIBLE_LIMIT)
+  const vocabularyResultCount = isUsingApiVocabulary
+    ? apiVocabularyTotal
+    : fallbackCoreVocabulary.length
+  const hiddenVocabularyCount = Math.max(
     0,
-    VOCABULARY_VISIBLE_LIMIT,
+    vocabularyResultCount - visibleCoreVocabulary.length,
   )
-  const hiddenVocabularyCount =
-    filteredCoreVocabulary.length - visibleCoreVocabulary.length
+  const vocabularyTotalCount = isUsingApiVocabulary
+    ? Math.max(coreVocabulary.length, apiVocabularyTotal)
+    : coreVocabulary.length
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   }, [state])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function fetchVocabulary() {
+      setIsVocabularyLoading(true)
+      setVocabularyApiError('')
+
+      const params = new URLSearchParams({
+        band: vocabularyFrequency === 'all' ? 'top-3000' : vocabularyFrequency,
+        limit: String(VOCABULARY_VISIBLE_LIMIT),
+        offset: '0',
+      })
+
+      const normalizedQuery = vocabularyQuery.trim()
+
+      if (normalizedQuery) {
+        params.set('q', normalizedQuery)
+      }
+
+      if (vocabularyLevel !== 'all') {
+        params.set('level', vocabularyLevel)
+      }
+
+      if (vocabularyPart !== 'all') {
+        params.set('partOfSpeech', vocabularyPart)
+      }
+
+      try {
+        const response = await fetch(`/api/vocabulary?${params.toString()}`, {
+          signal: controller.signal,
+        })
+
+        if (!response.ok) {
+          throw new Error(`Vocabulary API responded with ${response.status}`)
+        }
+
+        const payload = (await response.json()) as VocabularyApiResponse
+
+        setApiVocabulary(payload.items.map(mapApiVocabularyItem))
+        setApiVocabularyTotal(payload.pagination.total)
+      } catch (error) {
+        if (controller.signal.aborted) {
+          return
+        }
+
+        setApiVocabulary([])
+        setApiVocabularyTotal(0)
+        setVocabularyApiError(
+          error instanceof Error ? error.message : 'Vocabulary API unavailable',
+        )
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsVocabularyLoading(false)
+        }
+      }
+    }
+
+    fetchVocabulary()
+
+    return () => controller.abort()
+  }, [vocabularyFrequency, vocabularyLevel, vocabularyPart, vocabularyQuery])
 
   function updateProfile<Key extends keyof StudyProfile>(
     key: Key,
@@ -660,7 +774,7 @@ function App() {
                 </p>
               </div>
               <div className="vocabulary-stats">
-                <strong>{coreVocabulary.length}</strong>
+                <strong>{vocabularyTotalCount}</strong>
                 <span>个核心词</span>
               </div>
             </section>
@@ -668,7 +782,7 @@ function App() {
             <section className="panel vocabulary-toolbar">
               <div className="section-heading">
                 <h2>核心词库</h2>
-                <span>{filteredCoreVocabulary.length} 个匹配结果</span>
+                <span>{vocabularyResultCount} 个匹配结果</span>
               </div>
               <div className="filters vocabulary-filters">
                 <input
@@ -733,6 +847,15 @@ function App() {
                 </select>
               </div>
             </section>
+
+            {(isVocabularyLoading || vocabularyApiError) && (
+              <section className="panel vocabulary-source-note">
+                {isVocabularyLoading && '正在从数据库读取词库…'}
+                {!isVocabularyLoading &&
+                  vocabularyApiError &&
+                  '数据库词库暂不可用，已使用本地词库兜底。'}
+              </section>
+            )}
 
             <section className="vocabulary-grid">
               {visibleCoreVocabulary.map((item) => (

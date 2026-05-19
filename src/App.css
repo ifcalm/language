@@ -543,11 +543,16 @@ textarea {
   cursor: pointer;
 }
 
+.vocabulary-source-note,
 .vocabulary-more-note {
   margin-top: 18px;
   color: #52604f;
   line-height: 1.65;
   text-align: center;
+}
+
+.vocabulary-source-note {
+  margin-bottom: 18px;
 }
 
 .resource-card {
