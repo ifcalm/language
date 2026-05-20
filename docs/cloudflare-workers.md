@@ -46,6 +46,21 @@ The Core 3000 vocabulary is now read from D1 through `/api/vocabulary`.
 The large bundled frontend word list has been removed so D1 is the single
 source of truth for core vocabulary data.
 
+## Public pronunciation assets
+
+Pronunciation audio is stored in Cloudflare R2 rather than Git:
+
+- R2 bucket: `english-orbit`
+- public domain: `https://assets.english.ifcalm.org`
+- path convention: `pronunciations/us/{word-slug}.mp3` and
+  `pronunciations/uk/{word-slug}.mp3`
+
+The Worker does not need an R2 binding for playback. Public audio URLs are stored
+in D1 and served directly from the R2 custom domain.
+
+See [`docs/pronunciation-assets.md`](./pronunciation-assets.md) for the detailed
+storage and database mapping.
+
 ## Local commands
 
 ```bash
