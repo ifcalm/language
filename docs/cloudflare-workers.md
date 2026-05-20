@@ -38,6 +38,9 @@ The D1 database is already provisioned. The schema is kept in:
   profile/log/user vocabulary tables
 - [`migrations/0002_core_vocabulary.sql`](../migrations/0002_core_vocabulary.sql)
   — `core_vocabulary`, the public Core 3000 vocabulary master table
+- [`migrations/0003_vocabulary_content_tables.sql`](../migrations/0003_vocabulary_content_tables.sql)
+  — public vocabulary content tables for pronunciations, senses, examples,
+  collocations, and scenarios
 
 The Core 3000 vocabulary is now read from D1 through `/api/vocabulary`.
 The large bundled frontend word list has been removed so D1 is the single
