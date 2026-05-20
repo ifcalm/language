@@ -66,7 +66,9 @@ export interface VocabularyPronunciation {
   locale: string
   phonetic: string
   audioUrl: string
+  audioProvider: string
   audioObjectKey: string
+  voiceId: string
   qualityStatus: string
 }
 

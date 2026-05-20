@@ -14,6 +14,7 @@ const DRY_RUN = process.argv.includes('--dry-run')
 const SKIP_UPLOAD = process.argv.includes('--skip-upload') || DRY_RUN
 const SKIP_DB = process.argv.includes('--skip-db') || DRY_RUN
 const KEEP_FILES = process.argv.includes('--keep-files')
+const D1_LOCATION_FLAG = process.argv.includes('--local') ? '--local' : '--remote'
 
 const accentConfigs = {
   us: {
@@ -107,7 +108,7 @@ LIMIT ${TOP_N};`
     'd1',
     'execute',
     DATABASE,
-    '--remote',
+    D1_LOCATION_FLAG,
     '--command',
     sql,
   ])
@@ -247,7 +248,7 @@ async function runPool(items, worker, concurrency = 8) {
 }
 
 function executeSqlFile(filePath) {
-  runWrangler(['d1', 'execute', DATABASE, '--remote', '--file', filePath], {
+  runWrangler(['d1', 'execute', DATABASE, D1_LOCATION_FLAG, '--file', filePath], {
     stdio: 'inherit',
   })
 }

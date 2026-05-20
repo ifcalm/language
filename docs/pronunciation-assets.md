@@ -58,8 +58,8 @@ Important fields:
 - `audio_source`: broad source type, usually `tts`
 - `audio_provider`: concrete provider, such as `amazon-polly`, `google-tts`, or `openai-tts`
 - `voice_id`: provider voice name/id
-- `audio_object_key`: R2 object key, such as `pronunciations/us/the.mp3`
-- `audio_url`: public URL, such as `https://assets.english.ifcalm.org/pronunciations/us/the.mp3`
+- `audio_object_key`: R2 object key, such as `pronunciations/us/the.m4a`
+- `audio_url`: public URL, such as `https://assets.english.ifcalm.org/pronunciations/us/the.m4a`
 - `license`: license or usage note for the pronunciation/audio source
 - `attribution`: required attribution text when applicable
 - `quality_status`: `draft`, `generated`, `reviewed`, `needs-review`, or `rejected`
@@ -87,6 +87,43 @@ The current Top 100 bootstrap batch is generated locally with macOS `say`:
 This is intentionally marked as generated bootstrap audio. If we later switch to
 Amazon Polly, Google TTS, or another dedicated provider, the D1 rows can be
 updated and the R2 objects can be replaced.
+
+## Quality review workflow
+
+Pronunciation rows should move through a simple quality path:
+
+```text
+generated -> reviewed
+generated -> needs-review -> reviewed
+generated -> rejected
+```
+
+Guidelines:
+
+- Use `generated` for automatically created bootstrap audio that has not been
+  manually checked.
+- Use `reviewed` only after someone has listened to the word and confirmed the
+  accent is acceptable for learning.
+- Use `needs-review` when the audio plays but sounds questionable.
+- Use `rejected` when the audio should not be shown to learners.
+
+Before expanding from Top 100 to a larger batch, run the coverage check:
+
+```bash
+npm run pronunciations:coverage:top100
+```
+
+Expected output for the current batch:
+
+```text
+Pronunciation coverage: 100/100 words, 200/200 required rows present.
+Quality status breakdown:
+- uk generated: 100
+- us generated: 100
+```
+
+The script exits with a non-zero status if any Top 100 word is missing either US
+or UK pronunciation rows.
 
 ## Read pattern
 
@@ -118,3 +155,6 @@ Current API support:
   for a word without joining `core_vocabulary`.
 - `GET /api/vocabulary/pronunciations?vocabularyId=the` returns active
   pronunciations by vocabulary id.
+
+Each pronunciation response includes playback fields plus provenance fields such
+as `audioProvider`, `voiceId`, and `qualityStatus`.

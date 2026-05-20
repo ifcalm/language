@@ -19,7 +19,9 @@ interface VocabularyPronunciationRow {
   locale: string
   phonetic: string
   audio_url: string
+  audio_provider: string
   audio_object_key: string
+  voice_id: string
   quality_status: string
 }
 
@@ -29,6 +31,8 @@ const vocabularyBandLimits: Record<VocabularyBand, number> = {
   'top-1000': 1000,
   'top-3000': 3000,
 }
+
+const pronunciationLookupBatchSize = 90
 
 const clampNumber = (value: string | null, fallback: number, min: number, max: number) => {
   const parsed = Number(value)
@@ -58,42 +62,59 @@ const mapPronunciationRow = (row: VocabularyPronunciationRow) => ({
   locale: row.locale,
   phonetic: row.phonetic,
   audioUrl: row.audio_url,
+  audioProvider: row.audio_provider,
   audioObjectKey: row.audio_object_key,
+  voiceId: row.voice_id,
   qualityStatus: row.quality_status,
 })
 
-async function getPronunciationsByVocabularyIds(env: Env, vocabularyIds: string[]) {
+async function getPronunciationsByVocabularyIds(
+  env: Env,
+  vocabularyIds: string[],
+) {
   if (vocabularyIds.length === 0) {
     return new Map<string, ReturnType<typeof mapPronunciationRow>[]>()
   }
-
-  const placeholders = vocabularyIds.map(() => '?').join(', ')
-  const { results } = await env.DB.prepare(
-    `SELECT
-      vocabulary_id,
-      accent,
-      locale,
-      phonetic,
-      audio_url,
-      audio_object_key,
-      quality_status
-    FROM vocabulary_pronunciations
-    WHERE publish_status = 'active'
-      AND vocabulary_id IN (${placeholders})
-    ORDER BY vocabulary_id ASC, sort_order ASC`,
-  )
-    .bind(...vocabularyIds)
-    .all<VocabularyPronunciationRow>()
 
   const pronunciationsById = new Map<
     string,
     ReturnType<typeof mapPronunciationRow>[]
   >()
 
-  for (const row of results) {
-    const current = pronunciationsById.get(row.vocabulary_id) ?? []
-    current.push(mapPronunciationRow(row))
-    pronunciationsById.set(row.vocabulary_id, current)
+  for (
+    let index = 0;
+    index < vocabularyIds.length;
+    index += pronunciationLookupBatchSize
+  ) {
+    const batchIds = vocabularyIds.slice(
+      index,
+      index + pronunciationLookupBatchSize,
+    )
+    const placeholders = batchIds.map(() => '?').join(', ')
+    const { results } = await env.DB.prepare(
+      `SELECT
+        vocabulary_id,
+        accent,
+        locale,
+        phonetic,
+        audio_url,
+        audio_provider,
+        audio_object_key,
+        voice_id,
+        quality_status
+      FROM vocabulary_pronunciations
+      WHERE publish_status = 'active'
+        AND vocabulary_id IN (${placeholders})
+      ORDER BY vocabulary_id ASC, sort_order ASC`,
+    )
+      .bind(...batchIds)
+      .all<VocabularyPronunciationRow>()
+
+    for (const row of results) {
+      const current = pronunciationsById.get(row.vocabulary_id) ?? []
+      current.push(mapPronunciationRow(row))
+      pronunciationsById.set(row.vocabulary_id, current)
+    }
   }
 
   return pronunciationsById
@@ -215,7 +236,9 @@ async function handleVocabularyPronunciations(request: Request, env: Env) {
       locale,
       phonetic,
       audio_url,
+      audio_provider,
       audio_object_key,
+      voice_id,
       quality_status
     FROM vocabulary_pronunciations
     WHERE publish_status = 'active'
