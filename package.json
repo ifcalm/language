@@ -8,7 +8,6 @@
     "build": "tsc -b && vite build",
     "cf:types": "wrangler types",
     "cf:validate": "wrangler deploy --dry-run",
-    "db:seed:vocabulary": "node scripts/generate-core-vocabulary-seed.mjs",
     "deploy": "npm run build && wrangler deploy",
     "lint": "eslint .",
     "preview": "vite preview"

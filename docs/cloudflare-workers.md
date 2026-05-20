@@ -39,22 +39,17 @@ The D1 database is already provisioned. The schema is kept in:
 - [`migrations/0002_core_vocabulary.sql`](../migrations/0002_core_vocabulary.sql)
   — `core_vocabulary`, the public Core 3000 vocabulary master table
 
-The current UI still reads the bundled vocabulary data. The new D1 table and
-`/api/vocabulary` endpoint prepare the next step: switching the frontend to
-database-backed vocabulary and then removing the large bundled word list.
+The Core 3000 vocabulary is now read from D1 through `/api/vocabulary`.
+The large bundled frontend word list has been removed so D1 is the single
+source of truth for core vocabulary data.
 
 ## Local commands
 
 ```bash
 npm run cf:types
 npm run cf:validate
-npm run db:seed:vocabulary
 npm run deploy
 ```
-
-`npm run db:seed:vocabulary` generates a temporary SQL file at
-`.wrangler/generated/core-vocabulary-seed.sql`. Execute it with Wrangler when
-the D1 vocabulary table needs to be populated or refreshed.
 
 ## Current API surface
 
