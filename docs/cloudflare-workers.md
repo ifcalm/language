@@ -73,6 +73,8 @@ npm run deploy
 
 - `GET /api/health` — lightweight deployment health check
 - `GET /api/vocabulary` — D1-backed Core Vocabulary list endpoint
+- `GET /api/vocabulary/pronunciations` — pronunciation lookup by `word` or
+  `vocabularyId`
 
 `/api/vocabulary` supports:
 

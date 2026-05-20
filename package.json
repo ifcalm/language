@@ -10,7 +10,9 @@
     "cf:validate": "wrangler deploy --dry-run",
     "deploy": "npm run build && wrangler deploy",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pronunciations:generate:top100": "node scripts/generate-top-pronunciations-macos-say.mjs",
+    "pronunciations:check:top100": "node scripts/generate-top-pronunciations-macos-say.mjs --dry-run"
   },
   "dependencies": {
     "react": "^19.2.6",

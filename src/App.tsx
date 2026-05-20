@@ -18,6 +18,7 @@ import {
   type PartOfSpeech,
   type VocabularyFrequencyBand,
   type VocabularyLevel,
+  type VocabularyPronunciation,
 } from './data/vocabulary'
 import {
   defaultState,
@@ -67,6 +68,7 @@ interface VocabularyApiItem {
   frequencyRank: number | null
   frequencyBand: VocabularyFrequencyBand | null
   note: string
+  pronunciations?: VocabularyPronunciation[]
 }
 
 interface VocabularyApiResponse {
@@ -91,7 +93,20 @@ const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => (
   scenarios: [],
   skills: ['listening', 'speaking', 'reading', 'writing'],
   note: item.note,
+  pronunciations: item.pronunciations ?? [],
 })
+
+function getPronunciationLabel(pronunciation: VocabularyPronunciation) {
+  if (pronunciation.accent === 'us') {
+    return 'US'
+  }
+
+  if (pronunciation.accent === 'uk') {
+    return 'UK'
+  }
+
+  return pronunciation.accent.toUpperCase()
+}
 
 const goals: Record<
   GoalId,
@@ -804,6 +819,26 @@ function App() {
                     <strong>{vocabularyLevelLabels[item.level]}</strong>
                   </header>
                   <p className="vocabulary-meaning">{item.meaning}</p>
+                  {item.pronunciations && item.pronunciations.length > 0 && (
+                    <div
+                      className="pronunciation-list"
+                      aria-label={`${item.word} 读音`}
+                    >
+                      {item.pronunciations.map((pronunciation) => (
+                        <button
+                          key={`${item.id}-${pronunciation.accent}`}
+                          type="button"
+                          title={`${item.word} ${pronunciation.locale} 读音`}
+                          onClick={() => {
+                            const audio = new Audio(pronunciation.audioUrl)
+                            void audio.play()
+                          }}
+                        >
+                          {getPronunciationLabel(pronunciation)}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                   {item.example && (
                     <p className="vocabulary-example">{item.example}</p>
                   )}

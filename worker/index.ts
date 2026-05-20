@@ -13,6 +13,16 @@ interface CoreVocabularyRow {
   note: string
 }
 
+interface VocabularyPronunciationRow {
+  vocabulary_id: string
+  accent: string
+  locale: string
+  phonetic: string
+  audio_url: string
+  audio_object_key: string
+  quality_status: string
+}
+
 const vocabularyBandLimits: Record<VocabularyBand, number> = {
   'top-100': 100,
   'top-500': 500,
@@ -41,6 +51,52 @@ const getVocabularyBand = (value: string | null): VocabularyBand => {
   }
 
   return 'top-500'
+}
+
+const mapPronunciationRow = (row: VocabularyPronunciationRow) => ({
+  accent: row.accent,
+  locale: row.locale,
+  phonetic: row.phonetic,
+  audioUrl: row.audio_url,
+  audioObjectKey: row.audio_object_key,
+  qualityStatus: row.quality_status,
+})
+
+async function getPronunciationsByVocabularyIds(env: Env, vocabularyIds: string[]) {
+  if (vocabularyIds.length === 0) {
+    return new Map<string, ReturnType<typeof mapPronunciationRow>[]>()
+  }
+
+  const placeholders = vocabularyIds.map(() => '?').join(', ')
+  const { results } = await env.DB.prepare(
+    `SELECT
+      vocabulary_id,
+      accent,
+      locale,
+      phonetic,
+      audio_url,
+      audio_object_key,
+      quality_status
+    FROM vocabulary_pronunciations
+    WHERE publish_status = 'active'
+      AND vocabulary_id IN (${placeholders})
+    ORDER BY vocabulary_id ASC, sort_order ASC`,
+  )
+    .bind(...vocabularyIds)
+    .all<VocabularyPronunciationRow>()
+
+  const pronunciationsById = new Map<
+    string,
+    ReturnType<typeof mapPronunciationRow>[]
+  >()
+
+  for (const row of results) {
+    const current = pronunciationsById.get(row.vocabulary_id) ?? []
+    current.push(mapPronunciationRow(row))
+    pronunciationsById.set(row.vocabulary_id, current)
+  }
+
+  return pronunciationsById
 }
 
 async function handleVocabularyList(request: Request, env: Env) {
@@ -104,6 +160,11 @@ async function handleVocabularyList(request: Request, env: Env) {
     .bind(...params, limit, offset)
     .all<CoreVocabularyRow>()
 
+  const pronunciationsById = await getPronunciationsByVocabularyIds(
+    env,
+    results.map((item) => item.id),
+  )
+
   return Response.json({
     items: results.map((item) => ({
       id: item.id,
@@ -117,6 +178,7 @@ async function handleVocabularyList(request: Request, env: Env) {
       frequencyRank: item.frequency_rank,
       frequencyBand: item.frequency_band,
       note: item.note,
+      pronunciations: pronunciationsById.get(item.id) ?? [],
     })),
     pagination: {
       total: totalRow?.total ?? 0,
@@ -128,6 +190,46 @@ async function handleVocabularyList(request: Request, env: Env) {
       query,
       level: level || null,
       partOfSpeech: partOfSpeech || null,
+    },
+  })
+}
+
+async function handleVocabularyPronunciations(request: Request, env: Env) {
+  const url = new URL(request.url)
+  const vocabularyId = url.searchParams.get('vocabularyId')?.trim() ?? ''
+  const word = url.searchParams.get('word')?.trim().toLowerCase() ?? ''
+
+  if (!vocabularyId && !word) {
+    return Response.json(
+      { error: 'Missing vocabularyId or word query parameter' },
+      { status: 400 },
+    )
+  }
+
+  const where = vocabularyId ? 'vocabulary_id = ?' : 'normalized_word = ?'
+  const value = vocabularyId || word
+  const { results } = await env.DB.prepare(
+    `SELECT
+      vocabulary_id,
+      accent,
+      locale,
+      phonetic,
+      audio_url,
+      audio_object_key,
+      quality_status
+    FROM vocabulary_pronunciations
+    WHERE publish_status = 'active'
+      AND ${where}
+    ORDER BY sort_order ASC`,
+  )
+    .bind(value)
+    .all<VocabularyPronunciationRow>()
+
+  return Response.json({
+    items: results.map(mapPronunciationRow),
+    filters: {
+      vocabularyId: vocabularyId || null,
+      word: word || null,
     },
   })
 }
@@ -145,6 +247,13 @@ export default {
 
     if (url.pathname === '/api/vocabulary' && request.method === 'GET') {
       return handleVocabularyList(request, env)
+    }
+
+    if (
+      url.pathname === '/api/vocabulary/pronunciations' &&
+      request.method === 'GET'
+    ) {
+      return handleVocabularyPronunciations(request, env)
     }
 
     if (url.pathname.startsWith('/api/')) {

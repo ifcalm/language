@@ -18,17 +18,17 @@ example audio or other public English Orbit assets.
 Use one audio file per vocabulary entry and accent.
 
 ```text
-pronunciations/us/{word-slug}.mp3
-pronunciations/uk/{word-slug}.mp3
+pronunciations/us/{word-slug}.{extension}
+pronunciations/uk/{word-slug}.{extension}
 ```
 
 Examples:
 
 ```text
-pronunciations/us/the.mp3
-pronunciations/uk/the.mp3
-pronunciations/us/take-care-of.mp3
-pronunciations/uk/take-care-of.mp3
+pronunciations/us/the.m4a
+pronunciations/uk/the.m4a
+pronunciations/us/take-care-of.m4a
+pronunciations/uk/take-care-of.m4a
 ```
 
 `word-slug` should be derived from `core_vocabulary.normalized_word`:
@@ -69,12 +69,24 @@ Important fields:
 For generated audio, upload to the remote R2 bucket:
 
 ```bash
-wrangler r2 object put english-orbit/pronunciations/us/the.mp3 \
+wrangler r2 object put english-orbit/pronunciations/us/the.m4a \
   --remote \
-  --file ./tmp/pronunciations/us/the.mp3 \
-  --content-type audio/mpeg \
+  --file ./tmp/pronunciations/us/the.m4a \
+  --content-type audio/mp4 \
   --cache-control 'public, max-age=31536000, immutable'
 ```
+
+The current Top 100 bootstrap batch is generated locally with macOS `say`:
+
+- US voice: `Samantha`
+- UK voice: `Daniel`
+- object format: `.m4a` container with AAC audio
+- `audio_provider`: `macos-say`
+- `quality_status`: `generated`
+
+This is intentionally marked as generated bootstrap audio. If we later switch to
+Amazon Polly, Google TTS, or another dedicated provider, the D1 rows can be
+updated and the R2 objects can be replaced.
 
 ## Read pattern
 
@@ -97,3 +109,12 @@ ORDER BY sort_order;
 
 The vocabulary detail API can still join through `vocabulary_id` when it needs to
 assemble full word details with senses, examples, collocations, and scenarios.
+
+Current API support:
+
+- `GET /api/vocabulary` includes a `pronunciations` array for entries that have
+  active pronunciation rows.
+- `GET /api/vocabulary/pronunciations?word=the` returns active pronunciations
+  for a word without joining `core_vocabulary`.
+- `GET /api/vocabulary/pronunciations?vocabularyId=the` returns active
+  pronunciations by vocabulary id.
