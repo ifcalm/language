@@ -61,6 +61,15 @@ export interface VocabularyQuality {
   note: string
 }
 
+export interface VocabularyPronunciation {
+  accent: string
+  locale: string
+  phonetic: string
+  audioUrl: string
+  audioObjectKey: string
+  qualityStatus: string
+}
+
 export interface CoreVocabularyEntry {
   id: string
   word: string
@@ -75,6 +84,7 @@ export interface CoreVocabularyEntry {
   source?: VocabularySourceId
   sourceRank?: number
   example?: string
+  pronunciations?: VocabularyPronunciation[]
   collocations?: string[]
   scenarios: VocabularyScenario[]
   skills: Array<Extract<Skill, 'listening' | 'speaking' | 'reading' | 'writing'>>

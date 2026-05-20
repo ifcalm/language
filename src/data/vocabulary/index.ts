@@ -9,5 +9,6 @@ export type {
   VocabularyFrequencyBand,
   PartOfSpeech,
   VocabularyLevel,
+  VocabularyPronunciation,
   VocabularyScenario,
 } from './types'
