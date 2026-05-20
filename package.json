@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "pronunciations:generate:top100": "node scripts/generate-top-pronunciations-macos-say.mjs",
-    "pronunciations:check:top100": "node scripts/generate-top-pronunciations-macos-say.mjs --dry-run"
+    "pronunciations:check:top100": "node scripts/generate-top-pronunciations-macos-say.mjs --dry-run",
+    "pronunciations:coverage:top100": "node scripts/check-pronunciation-completeness.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",

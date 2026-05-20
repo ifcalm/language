@@ -483,6 +483,11 @@ textarea {
   cursor: pointer;
 }
 
+.pronunciation-list button.playing {
+  background: #223022;
+  color: #fffaf0;
+}
+
 .sense-list {
   display: grid;
   gap: 10px;

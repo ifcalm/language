@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 import {
   difficultyLabels,
@@ -106,6 +106,13 @@ function getPronunciationLabel(pronunciation: VocabularyPronunciation) {
   }
 
   return pronunciation.accent.toUpperCase()
+}
+
+function getPronunciationKey(
+  item: Pick<CoreVocabularyEntry, 'id'>,
+  pronunciation: Pick<VocabularyPronunciation, 'accent'>,
+) {
+  return `${item.id}-${pronunciation.accent}`
 }
 
 const goals: Record<
@@ -305,6 +312,9 @@ function App() {
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
   const [vocabularyApiError, setVocabularyApiError] = useState('')
+  const [activePronunciationKey, setActivePronunciationKey] = useState('')
+  const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
+  const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
   const [word, setWord] = useState('')
   const [meaning, setMeaning] = useState('')
   const [example, setExample] = useState('')
@@ -359,6 +369,12 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   }, [state])
+
+  useEffect(() => {
+    return () => {
+      pronunciationAudioRef.current?.pause()
+    }
+  }, [])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -508,6 +524,57 @@ function App() {
       ...current,
       vocabulary: current.vocabulary.filter((item) => item.id !== id),
     }))
+  }
+
+  function playPronunciation(
+    item: CoreVocabularyEntry,
+    pronunciation: VocabularyPronunciation,
+  ) {
+    const pronunciationKey = getPronunciationKey(item, pronunciation)
+    const label = getPronunciationLabel(pronunciation)
+
+    pronunciationAudioRef.current?.pause()
+    pronunciationAudioRef.current = null
+    setPronunciationPlaybackError('')
+    setActivePronunciationKey(pronunciationKey)
+
+    const audio = new Audio(pronunciation.audioUrl)
+    pronunciationAudioRef.current = audio
+
+    audio.addEventListener(
+      'ended',
+      () => {
+        if (pronunciationAudioRef.current === audio) {
+          setActivePronunciationKey('')
+          pronunciationAudioRef.current = null
+        }
+      },
+      { once: true },
+    )
+
+    audio.addEventListener(
+      'error',
+      () => {
+        if (pronunciationAudioRef.current === audio) {
+          setActivePronunciationKey('')
+          pronunciationAudioRef.current = null
+          setPronunciationPlaybackError(
+            `${item.word} 的 ${label} 读音暂时无法播放，请稍后再试。`,
+          )
+        }
+      },
+      { once: true },
+    )
+
+    void audio.play().catch(() => {
+      if (pronunciationAudioRef.current === audio) {
+        setActivePronunciationKey('')
+        pronunciationAudioRef.current = null
+        setPronunciationPlaybackError(
+          `${item.word} 的 ${label} 读音暂时无法播放，请检查浏览器播放权限。`,
+        )
+      }
+    })
   }
 
   return (
@@ -808,6 +875,12 @@ function App() {
               </section>
             )}
 
+            {pronunciationPlaybackError && (
+              <section className="panel vocabulary-source-note" role="status">
+                {pronunciationPlaybackError}
+              </section>
+            )}
+
             <section className="vocabulary-grid">
               {visibleCoreVocabulary.map((item) => (
                 <article key={item.id} className="panel vocabulary-card">
@@ -828,13 +901,22 @@ function App() {
                         <button
                           key={`${item.id}-${pronunciation.accent}`}
                           type="button"
+                          className={
+                            activePronunciationKey ===
+                            getPronunciationKey(item, pronunciation)
+                              ? 'playing'
+                              : ''
+                          }
+                          aria-label={`播放 ${item.word} ${getPronunciationLabel(
+                            pronunciation,
+                          )} 读音`}
                           title={`${item.word} ${pronunciation.locale} 读音`}
-                          onClick={() => {
-                            const audio = new Audio(pronunciation.audioUrl)
-                            void audio.play()
-                          }}
+                          onClick={() => playPronunciation(item, pronunciation)}
                         >
-                          {getPronunciationLabel(pronunciation)}
+                          {activePronunciationKey ===
+                          getPronunciationKey(item, pronunciation)
+                            ? `${getPronunciationLabel(pronunciation)} 播放中`
+                            : getPronunciationLabel(pronunciation)}
                         </button>
                       ))}
                     </div>

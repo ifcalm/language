@@ -67,6 +67,7 @@ storage and database mapping.
 npm run cf:types
 npm run cf:validate
 npm run deploy
+npm run pronunciations:coverage:top100
 ```
 
 ## Current API surface
