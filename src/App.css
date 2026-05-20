@@ -403,7 +403,7 @@ textarea {
 }
 
 .vocabulary-filters {
-  grid-template-columns: minmax(0, 1fr) 140px 150px 150px 170px;
+  grid-template-columns: minmax(0, 1fr) 140px 150px 150px;
 }
 
 .vocabulary-grid {

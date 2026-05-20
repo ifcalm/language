@@ -11,16 +11,13 @@ import {
 } from './data/resources'
 import { speakingPrompts, writingPrompts } from './data/prompts'
 import {
-  coreVocabulary,
   partOfSpeechLabels,
-  scenarioLabels,
   vocabularyFrequencyBandLabels,
   vocabularyLevelLabels,
   type CoreVocabularyEntry,
   type PartOfSpeech,
   type VocabularyFrequencyBand,
   type VocabularyLevel,
-  type VocabularyScenario,
 } from './data/vocabulary'
 import {
   defaultState,
@@ -46,14 +43,7 @@ interface DailyTask {
 
 const STORAGE_KEY = 'english-orbit-state-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
-
-const vocabularyFrequencyLimits: Record<VocabularyFrequencyFilter, number> = {
-  'top-100': 100,
-  'top-500': 500,
-  'top-1000': 1000,
-  'top-3000': 3000,
-  all: Number.POSITIVE_INFINITY,
-}
+const CORE_VOCABULARY_TOTAL = 3000
 
 const vocabularyFrequencyOptions: Array<{
   value: VocabularyFrequencyFilter
@@ -98,7 +88,7 @@ const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => (
   frequencyRank: item.frequencyRank ?? undefined,
   frequencyBand: item.frequencyBand ?? undefined,
   learningPriority: item.priority,
-  scenarios: ['daily', 'study', 'communication'],
+  scenarios: [],
   skills: ['listening', 'speaking', 'reading', 'writing'],
   note: item.note,
 })
@@ -294,9 +284,6 @@ function App() {
   const [vocabularyPart, setVocabularyPart] = useState<PartOfSpeech | 'all'>(
     'all',
   )
-  const [vocabularyScenario, setVocabularyScenario] = useState<
-    VocabularyScenario | 'all'
-  >('all')
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
@@ -346,49 +333,13 @@ function App() {
 
     return matchesSkill && matchesLevel && matchesQuery
   })
-  const fallbackCoreVocabulary = coreVocabulary.filter((item) => {
-    const normalizedQuery = vocabularyQuery.trim().toLowerCase()
-    const matchesQuery =
-      normalizedQuery.length === 0 ||
-      item.word.toLowerCase().includes(normalizedQuery) ||
-      item.meaning.includes(normalizedQuery) ||
-      (item.example?.toLowerCase().includes(normalizedQuery) ?? false) ||
-      item.note.includes(normalizedQuery) ||
-      (item.collocations?.some((collocation) =>
-        collocation.toLowerCase().includes(normalizedQuery),
-      ) ??
-        false)
-    const matchesLevel = vocabularyLevel === 'all' || item.level === vocabularyLevel
-    const matchesPart = vocabularyPart === 'all' || item.partOfSpeech === vocabularyPart
-    const matchesScenario =
-      vocabularyScenario === 'all' ||
-      (item.scenarios as readonly VocabularyScenario[]).includes(vocabularyScenario)
-    const matchesFrequency =
-      item.priority <= vocabularyFrequencyLimits[vocabularyFrequency]
-
-    return (
-      matchesQuery &&
-      matchesLevel &&
-      matchesPart &&
-      matchesScenario &&
-      matchesFrequency
-    )
-  })
-  const isUsingApiVocabulary =
-    apiVocabulary.length > 0 || (isVocabularyLoading && !vocabularyApiError)
-  const visibleCoreVocabulary = isUsingApiVocabulary
-    ? apiVocabulary
-    : fallbackCoreVocabulary.slice(0, VOCABULARY_VISIBLE_LIMIT)
-  const vocabularyResultCount = isUsingApiVocabulary
-    ? apiVocabularyTotal
-    : fallbackCoreVocabulary.length
+  const visibleCoreVocabulary = apiVocabulary
+  const vocabularyResultCount = apiVocabularyTotal
   const hiddenVocabularyCount = Math.max(
     0,
     vocabularyResultCount - visibleCoreVocabulary.length,
   )
-  const vocabularyTotalCount = isUsingApiVocabulary
-    ? Math.max(coreVocabulary.length, apiVocabularyTotal)
-    : coreVocabulary.length
+  const vocabularyTotalCount = Math.max(CORE_VOCABULARY_TOTAL, apiVocabularyTotal)
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
@@ -786,7 +737,7 @@ function App() {
               </div>
               <div className="filters vocabulary-filters">
                 <input
-                  placeholder="搜索单词、释义、例句或搭配"
+                  placeholder="搜索单词、中文释义或英文释义"
                   value={vocabularyQuery}
                   onChange={(event) => setVocabularyQuery(event.target.value)}
                 />
@@ -830,21 +781,6 @@ function App() {
                     </option>
                   ))}
                 </select>
-                <select
-                  value={vocabularyScenario}
-                  onChange={(event) =>
-                    setVocabularyScenario(
-                      event.target.value as VocabularyScenario | 'all',
-                    )
-                  }
-                >
-                  <option value="all">全部场景</option>
-                  {Object.entries(scenarioLabels).map(([scenario, label]) => (
-                    <option key={scenario} value={scenario}>
-                      {label}
-                    </option>
-                  ))}
-                </select>
               </div>
             </section>
 
@@ -853,7 +789,7 @@ function App() {
                 {isVocabularyLoading && '正在从数据库读取词库…'}
                 {!isVocabularyLoading &&
                   vocabularyApiError &&
-                  '数据库词库暂不可用，已使用本地词库兜底。'}
+                  '数据库词库暂不可用，请稍后再试。'}
               </section>
             )}
 
@@ -873,9 +809,6 @@ function App() {
                   )}
                   <div className="resource-meta">
                     <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
-                    {item.scenarios.map((scenario) => (
-                      <span key={scenario}>{scenarioLabels[scenario]}</span>
-                    ))}
                   </div>
                   {item.senses && (
                     <div className="sense-list">
@@ -918,7 +851,7 @@ function App() {
             {hiddenVocabularyCount > 0 && (
               <section className="panel vocabulary-more-note">
                 还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义、
-                词性或场景来缩小范围。
+                英文释义、级别或词性来缩小范围。
               </section>
             )}
           </>
