@@ -67,6 +67,7 @@ storage and database mapping.
 npm run cf:types
 npm run cf:validate
 npm run deploy
+npm run vocabulary:coverage:top100
 npm run pronunciations:coverage:top100
 ```
 

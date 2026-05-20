@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "pronunciations:generate:top100": "node scripts/generate-top-pronunciations-macos-say.mjs",
     "pronunciations:check:top100": "node scripts/generate-top-pronunciations-macos-say.mjs --dry-run",
-    "pronunciations:coverage:top100": "node scripts/check-pronunciation-completeness.mjs"
+    "pronunciations:coverage:top100": "node scripts/check-pronunciation-completeness.mjs",
+    "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",
