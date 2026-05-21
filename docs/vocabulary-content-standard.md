@@ -240,26 +240,29 @@ This batch keeps the same copyright-safe data policy:
   clear learner value; collocation enrichment can be handled as a separate
   quality pass.
 
-Run the Top 1000 checks with:
+Run the Top 1000 checks against local D1 with:
 
 ```bash
 PRONUNCIATION_TOP_N=1000 npm run pronunciations:coverage:top100
 VOCABULARY_CONTENT_TOP_N=1000 npm run vocabulary:coverage:top100
 ```
 
+Run the same checks against remote D1 only for final verification:
+
+```bash
+PRONUNCIATION_TOP_N=1000 node scripts/check-pronunciation-completeness.mjs --remote
+VOCABULARY_CONTENT_TOP_N=1000 node scripts/check-vocabulary-content-completeness.mjs --remote
+```
+
 ## Completeness check
 
-Run the Top 100 content coverage check with:
+Run the Top 100 content coverage check against local D1 with:
 
 ```bash
 npm run vocabulary:coverage:top100
 ```
 
-Use local D1 during development:
-
-```bash
-node scripts/check-vocabulary-content-completeness.mjs --local
-```
+The coverage scripts default to local D1. Add `--remote` only for final, intentional remote verification so routine checks do not consume D1 production read quota.
 
 The check fails when any Top N word is missing a required core field, US/UK audio,
 at least one active sense, or at least one active example. Collocations and
