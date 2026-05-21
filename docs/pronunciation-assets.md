@@ -124,7 +124,7 @@ Guidelines:
 - Use `needs-review` when the audio plays but sounds questionable.
 - Use `rejected` when the audio should not be shown to learners.
 
-Before expanding from Top 100 to a larger batch, run the coverage check:
+Before expanding from Top 100 to a larger batch, run the local D1 coverage check:
 
 ```bash
 npm run pronunciations:coverage:top100
@@ -139,8 +139,7 @@ Quality status breakdown:
 - us generated: 100
 ```
 
-The script exits with a non-zero status if any Top 100 word is missing either US
-or UK pronunciation rows.
+The script defaults to local D1 and exits with a non-zero status if any Top 100 word is missing either US or UK pronunciation rows. Add `--remote` only for final verification against production D1.
 
 ## Read pattern
 

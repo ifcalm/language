@@ -69,6 +69,9 @@ npm run cf:validate
 npm run deploy
 npm run vocabulary:coverage:top100
 npm run pronunciations:coverage:top100
+# Remote checks are intentionally explicit:
+# node scripts/check-vocabulary-content-completeness.mjs --remote
+# node scripts/check-pronunciation-completeness.mjs --remote
 ```
 
 ## Current API surface

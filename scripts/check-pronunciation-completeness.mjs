@@ -10,7 +10,14 @@ const REQUIRED_ACCENTS = (process.env.PRONUNCIATION_REQUIRED_ACCENTS ?? 'us,uk')
   .filter(Boolean)
 const JSON_OUTPUT = process.argv.includes('--json')
 const WRANGLER_ATTEMPTS = Number(process.env.PRONUNCIATION_CHECK_ATTEMPTS ?? '4')
-const D1_LOCATION_FLAG = process.argv.includes('--local') ? '--local' : '--remote'
+const USE_LOCAL = process.argv.includes('--local')
+const USE_REMOTE = process.argv.includes('--remote')
+const D1_LOCATION_FLAG = USE_REMOTE ? '--remote' : '--local'
+const D1_LOCATION_LABEL = USE_REMOTE ? 'remote' : 'local'
+
+if (USE_LOCAL && USE_REMOTE) {
+  throw new Error('Use either --local or --remote, not both.')
+}
 
 if (!Number.isInteger(TOP_N) || TOP_N < 1 || TOP_N > 3000) {
   throw new Error('PRONUNCIATION_TOP_N must be an integer from 1 to 3000.')
@@ -36,10 +43,13 @@ function sqlString(value) {
 
 function accentCountExpression(accent) {
   return [
-    'SUM(CASE WHEN vocabulary_pronunciations.accent = ',
-    sqlString(accent),
+    `SUM(CASE WHEN accent = ${sqlString(accent)}`,
     ` THEN 1 ELSE 0 END) AS ${accent}_count`,
   ].join('')
+}
+
+function accentSelectExpression(accent) {
+  return `COALESCE(pronunciation_counts.${accent}_count, 0) AS ${accent}_count`
 }
 
 function wait(milliseconds) {
@@ -106,17 +116,24 @@ const coverageRows = await query(`WITH top_words AS (
   WHERE publish_status = 'active'
   ORDER BY learning_priority ASC
   LIMIT ${TOP_N}
+),
+pronunciation_counts AS (
+  SELECT
+    vocabulary_id,
+    ${REQUIRED_ACCENTS.map(accentCountExpression).join(',\n    ')}
+  FROM vocabulary_pronunciations
+  WHERE publish_status = 'active'
+    AND vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
 )
 SELECT
   top_words.id,
   top_words.word,
   top_words.learning_priority,
-  ${REQUIRED_ACCENTS.map(accentCountExpression).join(',\n  ')}
+  ${REQUIRED_ACCENTS.map(accentSelectExpression).join(',\n  ')}
 FROM top_words
-LEFT JOIN vocabulary_pronunciations
-  ON vocabulary_pronunciations.vocabulary_id = top_words.id
-  AND vocabulary_pronunciations.publish_status = 'active'
-GROUP BY top_words.id, top_words.word, top_words.learning_priority
+LEFT JOIN pronunciation_counts
+  ON pronunciation_counts.vocabulary_id = top_words.id
 ORDER BY top_words.learning_priority ASC;`)
 
 const qualityRows = await query(`WITH top_words AS (
@@ -127,15 +144,14 @@ const qualityRows = await query(`WITH top_words AS (
   LIMIT ${TOP_N}
 )
 SELECT
-  vocabulary_pronunciations.accent,
-  vocabulary_pronunciations.quality_status,
+  accent,
+  quality_status,
   COUNT(*) AS total
 FROM vocabulary_pronunciations
-INNER JOIN top_words
-  ON top_words.id = vocabulary_pronunciations.vocabulary_id
-WHERE vocabulary_pronunciations.publish_status = 'active'
-GROUP BY vocabulary_pronunciations.accent, vocabulary_pronunciations.quality_status
-ORDER BY vocabulary_pronunciations.accent, vocabulary_pronunciations.quality_status;`)
+WHERE publish_status = 'active'
+  AND vocabulary_id IN (SELECT id FROM top_words)
+GROUP BY accent, quality_status
+ORDER BY accent, quality_status;`)
 
 const missing = []
 
@@ -153,6 +169,7 @@ for (const row of coverageRows) {
 }
 
 const summary = {
+  location: D1_LOCATION_LABEL,
   topN: TOP_N,
   requiredAccents: REQUIRED_ACCENTS,
   checkedWords: coverageRows.length,
@@ -167,7 +184,7 @@ if (JSON_OUTPUT) {
   console.log(JSON.stringify(summary, null, 2))
 } else {
   console.log(
-    `Pronunciation coverage: ${summary.checkedWords}/${TOP_N} words, ${summary.expectedRows - summary.missingRows}/${summary.expectedRows} required rows present.`,
+    `Pronunciation coverage (${D1_LOCATION_LABEL} D1): ${summary.checkedWords}/${TOP_N} words, ${summary.expectedRows - summary.missingRows}/${summary.expectedRows} required rows present.`,
   )
 
   if (qualityRows.length > 0) {
@@ -179,8 +196,12 @@ if (JSON_OUTPUT) {
 
   if (missing.length > 0) {
     console.log('Missing pronunciation rows:')
-    for (const item of missing) {
+    for (const item of missing.slice(0, 50)) {
       console.log(`- #${item.learningPriority} ${item.word} [${item.accent}]`)
+    }
+
+    if (missing.length > 50) {
+      console.log(`... ${missing.length - 50} more missing rows omitted.`)
     }
   }
 }

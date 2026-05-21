@@ -12,7 +12,14 @@ const JSON_OUTPUT = process.argv.includes('--json')
 const WRANGLER_ATTEMPTS = Number(
   process.env.VOCABULARY_CONTENT_CHECK_ATTEMPTS ?? '4',
 )
-const D1_LOCATION_FLAG = process.argv.includes('--local') ? '--local' : '--remote'
+const USE_LOCAL = process.argv.includes('--local')
+const USE_REMOTE = process.argv.includes('--remote')
+const D1_LOCATION_FLAG = USE_REMOTE ? '--remote' : '--local'
+const D1_LOCATION_LABEL = USE_REMOTE ? 'remote' : 'local'
+
+if (USE_LOCAL && USE_REMOTE) {
+  throw new Error('Use either --local or --remote, not both.')
+}
 
 if (!Number.isInteger(TOP_N) || TOP_N < 1 || TOP_N > 3000) {
   throw new Error('VOCABULARY_CONTENT_TOP_N must be an integer from 1 to 3000.')
@@ -147,13 +154,17 @@ WHERE type = 'table'
   }
 }
 
-function pronunciationCountExpression(accent) {
+function pronunciationAggregateExpression(accent) {
   return [
-    `(SELECT COUNT(*) FROM vocabulary_pronunciations`,
-    ` WHERE vocabulary_pronunciations.vocabulary_id = top_words.id`,
-    ` AND vocabulary_pronunciations.publish_status = 'active'`,
-    ` AND vocabulary_pronunciations.accent = ${sqlString(accent)}`,
-    ` AND ${hasTextSql('vocabulary_pronunciations.audio_url')})`,
+    `SUM(CASE WHEN accent = ${sqlString(accent)}`,
+    ` AND ${hasTextSql('audio_url')}`,
+    ` THEN 1 ELSE 0 END) AS pronunciation_${accent}_count`,
+  ].join('')
+}
+
+function pronunciationSelectExpression(accent) {
+  return [
+    `COALESCE(pronunciation_counts.pronunciation_${accent}_count, 0)`,
     ` AS pronunciation_${accent}_count`,
   ].join('')
 }
@@ -177,26 +188,65 @@ const rows = await query(`WITH top_words AS (
   WHERE publish_status = 'active'
   ORDER BY learning_priority ASC
   LIMIT ${TOP_N}
+),
+pronunciation_counts AS (
+  SELECT
+    vocabulary_id,
+    ${REQUIRED_ACCENTS.map(pronunciationAggregateExpression).join(',\n    ')}
+  FROM vocabulary_pronunciations
+  WHERE publish_status = 'active'
+    AND vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
+),
+sense_counts AS (
+  SELECT vocabulary_id, COUNT(*) AS sense_count
+  FROM vocabulary_senses
+  WHERE publish_status = 'active'
+    AND ${hasTextSql('meaning_zh')}
+    AND ${hasTextSql('definition_en')}
+    AND vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
+),
+example_counts AS (
+  SELECT vocabulary_id, COUNT(*) AS example_count
+  FROM vocabulary_examples
+  WHERE publish_status = 'active'
+    AND ${hasTextSql('sentence_en')}
+    AND vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
+),
+collocation_counts AS (
+  SELECT vocabulary_id, COUNT(*) AS collocation_count
+  FROM vocabulary_collocations
+  WHERE publish_status = 'active'
+    AND ${hasTextSql('phrase')}
+    AND vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
+),
+scenario_counts AS (
+  SELECT vocabulary_id, COUNT(*) AS scenario_count
+  FROM vocabulary_scenario_links
+  WHERE vocabulary_id IN (SELECT id FROM top_words)
+  GROUP BY vocabulary_id
 )
 SELECT
   top_words.*,
-  ${REQUIRED_ACCENTS.map(pronunciationCountExpression).join(',\n  ')},
-  (SELECT COUNT(*) FROM vocabulary_senses
-   WHERE vocabulary_senses.vocabulary_id = top_words.id
-     AND vocabulary_senses.publish_status = 'active'
-     AND ${hasTextSql('vocabulary_senses.meaning_zh')}
-     AND ${hasTextSql('vocabulary_senses.definition_en')}) AS sense_count,
-  (SELECT COUNT(*) FROM vocabulary_examples
-   WHERE vocabulary_examples.vocabulary_id = top_words.id
-     AND vocabulary_examples.publish_status = 'active'
-     AND ${hasTextSql('vocabulary_examples.sentence_en')}) AS example_count,
-  (SELECT COUNT(*) FROM vocabulary_collocations
-   WHERE vocabulary_collocations.vocabulary_id = top_words.id
-     AND vocabulary_collocations.publish_status = 'active'
-     AND ${hasTextSql('vocabulary_collocations.phrase')}) AS collocation_count,
-  (SELECT COUNT(*) FROM vocabulary_scenario_links
-   WHERE vocabulary_scenario_links.vocabulary_id = top_words.id) AS scenario_count
+  ${REQUIRED_ACCENTS.map(pronunciationSelectExpression).join(',\n  ')},
+  COALESCE(sense_counts.sense_count, 0) AS sense_count,
+  COALESCE(example_counts.example_count, 0) AS example_count,
+  COALESCE(collocation_counts.collocation_count, 0) AS collocation_count,
+  COALESCE(scenario_counts.scenario_count, 0) AS scenario_count
 FROM top_words
+LEFT JOIN pronunciation_counts
+  ON pronunciation_counts.vocabulary_id = top_words.id
+LEFT JOIN sense_counts
+  ON sense_counts.vocabulary_id = top_words.id
+LEFT JOIN example_counts
+  ON example_counts.vocabulary_id = top_words.id
+LEFT JOIN collocation_counts
+  ON collocation_counts.vocabulary_id = top_words.id
+LEFT JOIN scenario_counts
+  ON scenario_counts.vocabulary_id = top_words.id
 ORDER BY top_words.learning_priority ASC;`)
 
 const requiredCoreChecks = [
@@ -273,6 +323,7 @@ for (const row of rows) {
 }
 
 const summary = {
+  location: D1_LOCATION_LABEL,
   topN: TOP_N,
   requiredAccents: REQUIRED_ACCENTS,
   complete: rows.length === TOP_N && missing.length === 0,
@@ -284,7 +335,7 @@ const summary = {
 if (JSON_OUTPUT) {
   console.log(JSON.stringify(summary, null, 2))
 } else {
-  console.log(`Vocabulary content coverage: ${rows.length}/${TOP_N} words checked.`)
+  console.log(`Vocabulary content coverage (${D1_LOCATION_LABEL} D1): ${rows.length}/${TOP_N} words checked.`)
   console.log('Required core field coverage:')
   for (const [field, count] of Object.entries(metrics.core)) {
     console.log(`- ${field}: ${count}/${TOP_N}`)
