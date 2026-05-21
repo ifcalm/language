@@ -82,6 +82,7 @@ The current Top 100 bootstrap batch is generated locally with macOS `say`:
 - UK voice: `Daniel`
 - object format: `.m4a` container with AAC audio
 - `audio_provider`: `macos-say`
+- `phonetic_source`: `manual-curation-pending-review`
 - `quality_status`: `generated`
 
 This is intentionally marked as generated bootstrap audio. If we later switch to

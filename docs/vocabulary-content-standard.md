@@ -157,6 +157,43 @@ PRONUNCIATION_TOP_N=200 npm run pronunciations:coverage:top100
 VOCABULARY_CONTENT_TOP_N=200 npm run vocabulary:coverage:top100
 ```
 
+## Top 500 public content v1 status
+
+The Top 500 extension fills words 201-500 in one batch-oriented PR instead of
+submitting each 100-word slice separately. It is stored as D1 data migrations:
+
+- `0016_top_500_public_content_001.sql`
+- `0017_top_500_public_content_002.sql`
+- `0018_top_500_public_content_003.sql`
+- `0019_top_500_public_content_004.sql`
+- `0020_top_500_public_content_005.sql`
+- `0021_top_500_public_content_006.sql`
+- `0022_top_500_public_content_007.sql`
+- `0023_top_500_public_content_008.sql`
+- `0024_top_500_public_content_009.sql`
+- `0025_top_500_public_content_010.sql`
+- `0026_top_500_public_content_011.sql`
+- `0027_top_500_public_content_012.sql`
+- `0028_top_500_public_content_013.sql`
+- `0029_top_500_public_content_014.sql`
+- `0030_top_500_public_content_015.sql`
+
+This batch keeps the copyright-safe approach:
+
+- English definitions and example sentences are self-authored.
+- Each word gets one learner sense and one simple example.
+- Common collocations are included where they are learner-useful.
+- Scenario links are filled for filtering and future learning flows.
+- US/UK IPA values are populated as bootstrap learner-facing data, with manual
+  phonetic review tracked separately.
+
+Run the Top 500 checks with:
+
+```bash
+PRONUNCIATION_TOP_N=500 npm run pronunciations:coverage:top100
+VOCABULARY_CONTENT_TOP_N=500 npm run vocabulary:coverage:top100
+```
+
 ## Completeness check
 
 Run the Top 100 content coverage check with:

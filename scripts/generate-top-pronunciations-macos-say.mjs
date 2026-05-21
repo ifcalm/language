@@ -308,7 +308,7 @@ for (const item of vocabulary) {
       sort_order: String(config.sortOrder),
       publish_status: 'active',
       locale: config.locale,
-      phonetic_source: '',
+      phonetic_source: 'manual-curation-pending-review',
       phonetic_source_url: '',
       audio_provider: 'macos-say',
       voice_id: config.voiceId,
