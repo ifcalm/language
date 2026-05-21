@@ -88,6 +88,22 @@ This is intentionally marked as generated bootstrap audio. If we later switch to
 Amazon Polly, Google TTS, or another dedicated provider, the D1 rows can be
 updated and the R2 objects can be replaced.
 
+
+### Generating a priority range
+
+The pronunciation generator can target a learning-priority range, which lets us
+extend audio in reviewable batches instead of regenerating the whole list:
+
+```bash
+PRONUNCIATION_START_PRIORITY=101 \
+PRONUNCIATION_END_PRIORITY=200 \
+PRONUNCIATION_TOP_N=200 \
+npm run pronunciations:generate:top100
+```
+
+The command name is kept for compatibility, but the range environment variables
+control which vocabulary rows are generated.
+
 ## Quality review workflow
 
 Pronunciation rows should move through a simple quality path:
