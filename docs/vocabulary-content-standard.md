@@ -108,6 +108,27 @@ time, communication, or problem solving.
 | Top 500 | Usable learning set. Complete all required fields; review in batches. |
 | Top 3000 | Broad coverage. Core fields first, then fill pronunciations, senses, and examples progressively. |
 
+
+## Top 100 public content v1 status
+
+The first Top 100 public-content batch is stored as D1 data migrations:
+
+- `0006_top_100_public_content_001.sql`
+- `0007_top_100_public_content_002.sql`
+- `0008_top_100_public_content_003.sql`
+- `0009_top_100_public_content_004.sql`
+- `0010_top_100_public_content_005.sql`
+
+This batch fills the required hard-standard fields for the first 100 words:
+
+- core Chinese meaning and English short definition
+- US and UK IPA in `core_vocabulary`
+- accent-specific IPA copied to `vocabulary_pronunciations`
+- one active learner sense per word
+- one original easy example per word
+- useful collocations when they add learning value
+- scenario links for filtering and future learning flows
+
 ## Completeness check
 
 Run the Top 100 content coverage check with:
