@@ -106,6 +106,7 @@ time, communication, or problem solving.
 | --- | --- |
 | Top 100 | Golden sample. Complete all required fields and manually review quality. |
 | Top 500 | Usable learning set. Complete all required fields; review in batches. |
+| Top 1000 | Expanded usable set. Complete hard required fields; defer low-value conditional collocations. |
 | Top 3000 | Broad coverage. Core fields first, then fill pronunciations, senses, and examples progressively. |
 
 
@@ -192,6 +193,58 @@ Run the Top 500 checks with:
 ```bash
 PRONUNCIATION_TOP_N=500 npm run pronunciations:coverage:top100
 VOCABULARY_CONTENT_TOP_N=500 npm run vocabulary:coverage:top100
+```
+
+## Top 1000 public content v1 status
+
+The Top 1000 extension fills words 501-1000. It is stored as D1 data
+migrations:
+
+- `0031_top_1000_public_content_001.sql`
+- `0032_top_1000_public_content_002.sql`
+- `0033_top_1000_public_content_003.sql`
+- `0034_top_1000_public_content_004.sql`
+- `0035_top_1000_public_content_005.sql`
+- `0036_top_1000_public_content_006.sql`
+- `0037_top_1000_public_content_007.sql`
+- `0038_top_1000_public_content_008.sql`
+- `0039_top_1000_public_content_009.sql`
+- `0040_top_1000_public_content_010.sql`
+- `0041_top_1000_public_content_011.sql`
+- `0042_top_1000_public_content_012.sql`
+- `0043_top_1000_public_content_013.sql`
+- `0044_top_1000_public_content_014.sql`
+- `0045_top_1000_public_content_015.sql`
+- `0046_top_1000_public_content_016.sql`
+- `0047_top_1000_public_content_017.sql`
+- `0048_top_1000_public_content_018.sql`
+- `0049_top_1000_public_content_019.sql`
+- `0050_top_1000_public_content_020.sql`
+- `0051_top_1000_public_content_021.sql`
+- `0052_top_1000_public_content_022.sql`
+- `0053_top_1000_public_content_023.sql`
+- `0054_top_1000_public_content_024.sql`
+- `0055_top_1000_public_content_025.sql`
+
+This batch keeps the same copyright-safe data policy:
+
+- English definitions and example sentences are self-authored, not copied from
+  dictionary entries.
+- Each word gets one active learner sense and one original example sentence.
+- Scenario links are filled to keep future filtering and learning flows usable.
+- US/UK IPA values are populated as bootstrap learner-facing data and remain
+  pending manual phonetic review.
+- Pronunciation audio is generated through the project TTS/R2 pipeline and marked
+  as generated.
+- New collocations are intentionally not expanded in this pass unless they add
+  clear learner value; collocation enrichment can be handled as a separate
+  quality pass.
+
+Run the Top 1000 checks with:
+
+```bash
+PRONUNCIATION_TOP_N=1000 npm run pronunciations:coverage:top100
+VOCABULARY_CONTENT_TOP_N=1000 npm run vocabulary:coverage:top100
 ```
 
 ## Completeness check
