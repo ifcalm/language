@@ -10,6 +10,8 @@ const BUCKET = process.env.R2_BUCKET ?? 'english-orbit'
 const PUBLIC_BASE_URL =
   process.env.PRONUNCIATION_ASSET_BASE_URL ?? 'https://assets.english.ifcalm.org'
 const TOP_N = Number(process.env.PRONUNCIATION_TOP_N ?? '100')
+const START_PRIORITY = Number(process.env.PRONUNCIATION_START_PRIORITY ?? '1')
+const END_PRIORITY = Number(process.env.PRONUNCIATION_END_PRIORITY ?? String(TOP_N))
 const DRY_RUN = process.argv.includes('--dry-run')
 const SKIP_UPLOAD = process.argv.includes('--skip-upload') || DRY_RUN
 const SKIP_DB = process.argv.includes('--skip-db') || DRY_RUN
@@ -99,11 +101,29 @@ function parseWranglerJson(output) {
 }
 
 function fetchTopVocabulary() {
-  const sql = `SELECT id, word, normalized_word, learning_priority
+  if (
+    !Number.isInteger(START_PRIORITY) ||
+    !Number.isInteger(END_PRIORITY) ||
+    START_PRIORITY < 1 ||
+    END_PRIORITY < START_PRIORITY
+  ) {
+    throw new Error(
+      'Pronunciation priority range must be positive integers, with end >= start.',
+    )
+  }
+
+  const sql = `SELECT
+  id,
+  word,
+  normalized_word,
+  learning_priority,
+  phonetic_us,
+  phonetic_uk
 FROM core_vocabulary
 WHERE publish_status = 'active'
+  AND learning_priority BETWEEN ${START_PRIORITY} AND ${END_PRIORITY}
 ORDER BY learning_priority ASC
-LIMIT ${TOP_N};`
+LIMIT ${END_PRIORITY - START_PRIORITY + 1};`
   const output = runWrangler([
     'd1',
     'execute',
@@ -254,7 +274,7 @@ function executeSqlFile(filePath) {
 }
 
 const vocabulary = fetchTopVocabulary()
-const tempDir = mkdtempSync(join(tmpdir(), 'english-orbit-top100-pronunciations-'))
+const tempDir = mkdtempSync(join(tmpdir(), 'english-orbit-pronunciations-'))
 const importedRows = []
 const uploadTasks = []
 
@@ -282,7 +302,7 @@ for (const item of vocabulary) {
       word: item.word,
       normalized_word: item.normalized_word,
       accent,
-      phonetic: '',
+      phonetic: accent === 'us' ? item.phonetic_us : item.phonetic_uk,
       audio_url: audioUrl,
       audio_source: 'tts',
       sort_order: String(config.sortOrder),
@@ -313,6 +333,8 @@ for (const item of vocabulary) {
 
 const manifest = {
   topN: TOP_N,
+  startPriority: START_PRIORITY,
+  endPriority: END_PRIORITY,
   provider: 'macos-say',
   publicBaseUrl: PUBLIC_BASE_URL,
   importedCount: importedRows.length,
@@ -349,6 +371,8 @@ console.log(
   JSON.stringify(
     {
       topN: TOP_N,
+      startPriority: START_PRIORITY,
+      endPriority: END_PRIORITY,
       importedRows: importedRows.length,
       tempDir,
       dryRun: DRY_RUN,

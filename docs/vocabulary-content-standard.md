@@ -129,6 +129,34 @@ This batch fills the required hard-standard fields for the first 100 words:
 - useful collocations when they add learning value
 - scenario links for filtering and future learning flows
 
+
+## Top 200 public content v1 status
+
+The second public-content batch extends the hard-standard coverage from Top 100
+to Top 200. It is stored as D1 data migrations:
+
+- `0011_top_200_public_content_001.sql`
+- `0012_top_200_public_content_002.sql`
+- `0013_top_200_public_content_003.sql`
+- `0014_top_200_public_content_004.sql`
+- `0015_top_200_public_content_005.sql`
+
+This batch follows the copyright-safe content approach:
+
+- English short definitions are self-authored for learning use.
+- Example sentences are self-authored and intentionally simple.
+- Collocations are included only when they add learner value.
+- US/UK IPA is filled in the core table and copied to pronunciation rows.
+- Pronunciation audio is generated through the project TTS/R2 pipeline and marked
+  as generated.
+
+Run the Top 200 checks with:
+
+```bash
+PRONUNCIATION_TOP_N=200 npm run pronunciations:coverage:top100
+VOCABULARY_CONTENT_TOP_N=200 npm run vocabulary:coverage:top100
+```
+
 ## Completeness check
 
 Run the Top 100 content coverage check with:
