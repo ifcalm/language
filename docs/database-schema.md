@@ -17,6 +17,7 @@
 | `vocabulary_collocations` | 公共内容子表 | 保存常见搭配、短语、固定表达 | 可关联到具体义项 |
 | `vocabulary_scenarios` | 公共内容字典表 | 保存使用场景分类 | 如日常、学习、工作等 |
 | `vocabulary_scenario_links` | 公共内容关联表 | 建立单词与使用场景的多对多关系 | `vocabulary_id + scenario_id` 联合主键 |
+| `content_edit_logs` | 公共内容审计表 | 记录数据后台对公共词库的修改快照 | 当前后台不做账号鉴权，`editor` 由页面填写 |
 | `d1_migrations` | 系统表 | 保存 D1 迁移执行记录 | Wrangler 自动维护，不属于业务模型 |
 
 ## 关系概览
@@ -31,6 +32,7 @@ erDiagram
   core_vocabulary ||--o{ vocabulary_examples : "vocabulary_id"
   core_vocabulary ||--o{ vocabulary_collocations : "vocabulary_id"
   core_vocabulary ||--o{ vocabulary_scenario_links : "vocabulary_id"
+  core_vocabulary ||--o{ content_edit_logs : "vocabulary_id"
 
   vocabulary_senses ||--o{ vocabulary_examples : "sense_id"
   vocabulary_senses ||--o{ vocabulary_collocations : "sense_id"
@@ -237,6 +239,23 @@ erDiagram
 | `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
 
 主键：`PRIMARY KEY (vocabulary_id, scenario_id)`。
+
+
+## `content_edit_logs`
+
+记录数据管理后台对公共内容的一次保存。它不是学习内容本身，而是审计和回溯用的轻量日志。
+
+| 字段 | 类型/约束 | 默认值 | 字段含义 |
+| --- | --- | --- | --- |
+| `id` | `TEXT PRIMARY KEY` | 无 | 修改日志唯一标识。 |
+| `vocabulary_id` | `TEXT` | `NULL` | 关联的核心词条 ID。多数后台词库编辑会填写它。 |
+| `entity_type` | `TEXT NOT NULL` | 无 | 被编辑对象类型，例如 `vocabulary_bundle`。 |
+| `entity_id` | `TEXT NOT NULL` | 无 | 被编辑对象 ID。词条整包保存时通常等于 `vocabulary_id`。 |
+| `action` | `TEXT NOT NULL` | 无 | 修改动作，例如 `update`。 |
+| `editor` | `TEXT NOT NULL` | `'unknown'` | 页面上填写的编辑人标记。当前没有账号鉴权时用于基本追踪。 |
+| `before_json` | `TEXT NOT NULL` | `'{}'` | 保存前的词条内容快照，JSON 字符串。 |
+| `after_json` | `TEXT NOT NULL` | `'{}'` | 保存后的词条内容快照，JSON 字符串。 |
+| `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 修改记录创建时间。 |
 
 ## `d1_migrations`
 

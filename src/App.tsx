@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
+import VocabularyAdmin from './admin/VocabularyAdmin'
 import {
   difficultyLabels,
   formatLabels,
@@ -30,7 +31,7 @@ import {
   type VocabularyItem,
 } from './shared/study'
 
-type ViewId = 'today' | 'vocabulary' | 'library' | 'review'
+type ViewId = 'today' | 'vocabulary' | 'library' | 'review' | 'admin'
 type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 interface DailyTask {
@@ -45,6 +46,14 @@ interface DailyTask {
 const STORAGE_KEY = 'english-orbit-state-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
 const CORE_VOCABULARY_TOTAL = 3000
+
+function getInitialView(): ViewId {
+  if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
+    return 'admin'
+  }
+
+  return 'today'
+}
 
 const vocabularyFrequencyOptions: Array<{
   value: VocabularyFrequencyFilter
@@ -295,7 +304,7 @@ function formatSkillSummary(tasks: DailyTask[]) {
 
 function App() {
   const [state, setState] = useState<AppState>(loadState)
-  const [view, setView] = useState<ViewId>('today')
+  const [view, setView] = useState<ViewId>(getInitialView)
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
   const [vocabularyFrequency, setVocabularyFrequency] =
@@ -377,6 +386,10 @@ function App() {
   }, [])
 
   useEffect(() => {
+    if (view !== 'vocabulary') {
+      return
+    }
+
     const controller = new AbortController()
 
     async function fetchVocabulary() {
@@ -436,7 +449,24 @@ function App() {
     fetchVocabulary()
 
     return () => controller.abort()
-  }, [vocabularyFrequency, vocabularyLevel, vocabularyPart, vocabularyQuery])
+  }, [view, vocabularyFrequency, vocabularyLevel, vocabularyPart, vocabularyQuery])
+
+  function changeView(nextView: ViewId) {
+    setView(nextView)
+
+    if (typeof window === 'undefined') {
+      return
+    }
+
+    if (nextView === 'admin') {
+      window.history.pushState(null, '', '/admin')
+      return
+    }
+
+    if (window.location.pathname.startsWith('/admin')) {
+      window.history.pushState(null, '', '/')
+    }
+  }
 
   function updateProfile<Key extends keyof StudyProfile>(
     key: Key,
@@ -592,30 +622,37 @@ function App() {
           <button
             type="button"
             className={view === 'today' ? 'active' : ''}
-            onClick={() => setView('today')}
+            onClick={() => changeView('today')}
           >
             今天
           </button>
           <button
             type="button"
             className={view === 'library' ? 'active' : ''}
-            onClick={() => setView('library')}
+            onClick={() => changeView('library')}
           >
             资源库
           </button>
           <button
             type="button"
             className={view === 'vocabulary' ? 'active' : ''}
-            onClick={() => setView('vocabulary')}
+            onClick={() => changeView('vocabulary')}
           >
             核心词库
           </button>
           <button
             type="button"
             className={view === 'review' ? 'active' : ''}
-            onClick={() => setView('review')}
+            onClick={() => changeView('review')}
           >
             复盘
+          </button>
+          <button
+            type="button"
+            className={view === 'admin' ? 'active' : ''}
+            onClick={() => changeView('admin')}
+          >
+            数据后台
           </button>
         </nav>
 
@@ -955,7 +992,7 @@ function App() {
                         setWord(item.word)
                         setMeaning(item.meaning)
                         setExample(item.example ?? '')
-                        setView('today')
+                        changeView('today')
                       }}
                     >
                       加到今日记词
@@ -1037,6 +1074,8 @@ function App() {
             </section>
           </>
         )}
+
+        {view === 'admin' && <VocabularyAdmin />}
 
         {view === 'review' && (
           <>
