@@ -1,7 +1,7 @@
 # Pronunciation asset plan
 
 English Orbit stores public pronunciation audio outside Git in Cloudflare R2.
-The database keeps the lookup metadata, while the MP3 files live in R2 and are
+The database keeps the lookup metadata, while the audio files live in R2 and are
 served through a custom domain.
 
 ## R2 bucket
@@ -76,7 +76,7 @@ wrangler r2 object put english-orbit/pronunciations/us/the.m4a \
   --cache-control 'public, max-age=31536000, immutable'
 ```
 
-The current Top 100 bootstrap batch is generated locally with macOS `say`:
+The current bootstrap pronunciation batches are generated locally with macOS `say`:
 
 - US voice: `Samantha`
 - UK voice: `Daniel`
@@ -100,10 +100,21 @@ PRONUNCIATION_START_PRIORITY=101 \
 PRONUNCIATION_END_PRIORITY=200 \
 PRONUNCIATION_TOP_N=200 \
 npm run pronunciations:generate:top100
+
+# Current Top 3000 extension, words 1001-3000:
+PRONUNCIATION_START_PRIORITY=1001 \
+PRONUNCIATION_END_PRIORITY=3000 \
+PRONUNCIATION_TOP_N=3000 \
+PRONUNCIATION_UPLOAD_CONCURRENCY=2 \
+PRONUNCIATION_UPLOAD_TIMEOUT_MS=120000 \
+PRONUNCIATION_UPLOAD_ATTEMPTS=8 \
+npm run pronunciations:generate:top100
 ```
 
 The command name is kept for compatibility, but the range environment variables
-control which vocabulary rows are generated.
+control which vocabulary rows are generated. For large R2 batches, keep upload
+concurrency low; Cloudflare can return `429 Too Many Requests` if thousands of
+objects are pushed too aggressively.
 
 ## Quality review workflow
 
@@ -124,22 +135,22 @@ Guidelines:
 - Use `needs-review` when the audio plays but sounds questionable.
 - Use `rejected` when the audio should not be shown to learners.
 
-Before expanding from Top 100 to a larger batch, run the local D1 coverage check:
+Before expanding to a larger batch, run the local D1 coverage check:
 
 ```bash
 npm run pronunciations:coverage:top100
 ```
 
-Expected output for the current batch:
+Expected output after the Top 3000 pronunciation batch:
 
 ```text
-Pronunciation coverage: 100/100 words, 200/200 required rows present.
+Pronunciation coverage (remote D1): 3000/3000 words, 6000/6000 required rows present.
 Quality status breakdown:
-- uk generated: 100
-- us generated: 100
+- uk generated: 3000
+- us generated: 3000
 ```
 
-The script defaults to local D1 and exits with a non-zero status if any Top 100 word is missing either US or UK pronunciation rows. Add `--remote` only for final verification against production D1.
+The script defaults to local D1 and exits with a non-zero status if any checked Top N word is missing either US or UK pronunciation rows. Add `--remote` only for final verification against production D1.
 
 ## Read pattern
 

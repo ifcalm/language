@@ -60,6 +60,14 @@ function runAsync(command, args, options = {}) {
 
     let stdout = ''
     let stderr = ''
+    const timeoutMs = Number(options.timeoutMs ?? '0')
+    const timeout =
+      timeoutMs > 0
+        ? setTimeout(() => {
+            child.kill('SIGTERM')
+            setTimeout(() => child.kill('SIGKILL'), 5000).unref()
+          }, timeoutMs)
+        : null
 
     if (child.stdout) {
       child.stdout.on('data', (chunk) => {
@@ -73,8 +81,17 @@ function runAsync(command, args, options = {}) {
       })
     }
 
-    child.on('error', reject)
+    child.on('error', (error) => {
+      if (timeout) {
+        clearTimeout(timeout)
+      }
+      reject(error)
+    })
     child.on('close', (code) => {
+      if (timeout) {
+        clearTimeout(timeout)
+      }
+
       if (code === 0) {
         resolve(`${stdout}${stderr}`)
         return
@@ -227,17 +244,24 @@ async function uploadObjectAsync(objectPath, filePath) {
     '--force',
   ]
   const maxAttempts = Number(process.env.PRONUNCIATION_UPLOAD_ATTEMPTS ?? '4')
+  const timeoutMs = Number(process.env.PRONUNCIATION_UPLOAD_TIMEOUT_MS ?? '120000')
+  const rateLimitDelayMs = Number(
+    process.env.PRONUNCIATION_UPLOAD_RATE_LIMIT_DELAY_MS ?? '180000',
+  )
 
   for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     try {
-      await runWranglerAsync(args)
+      await runWranglerAsync(args, { timeoutMs })
       return
     } catch (error) {
       if (attempt === maxAttempts) {
         throw error
       }
 
-      const delayMs = 1000 * attempt
+      const message = error.message ?? ''
+      const delayMs = /429|rate limited|too many requests/i.test(message)
+        ? rateLimitDelayMs
+        : 1000 * attempt
       console.warn(
         `upload retry ${attempt}/${maxAttempts - 1} for ${objectPath}: ${error.message.split('\n')[0]}`,
       )

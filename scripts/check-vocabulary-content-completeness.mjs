@@ -58,6 +58,7 @@ async function runWrangler(args) {
     const result = spawnSync(NODE, [WRANGLER, ...args], {
       cwd: process.cwd(),
       encoding: 'utf8',
+      maxBuffer: 20 * 1024 * 1024,
       stdio: 'pipe',
     })
 

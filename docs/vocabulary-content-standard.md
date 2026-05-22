@@ -254,6 +254,62 @@ PRONUNCIATION_TOP_N=1000 node scripts/check-pronunciation-completeness.mjs --rem
 VOCABULARY_CONTENT_TOP_N=1000 node scripts/check-vocabulary-content-completeness.mjs --remote
 ```
 
+
+## Top 3000 public content v1 status
+
+The Top 3000 extension fills words 1001-3000. It is intentionally split into
+small D1 migrations so Cloudflare D1 accepts each file safely:
+
+- `0057_top_3000_public_content_001.sql` through
+  `0156_top_3000_public_content_100.sql`
+
+This batch uses a broader-coverage, reviewable bootstrap standard:
+
+- Core learner fields are filled for all Top 3000 words: Chinese meaning,
+  English short definition, part of speech, level, frequency rank/band, learning
+  priority, and US/UK IPA.
+- Each word gets one active learner sense, one active example sentence, and at
+  least one usage-scenario link.
+- Definitions and imported example candidates are WordNet-assisted under the
+  WordNet license; examples are used only when the target word is visible and the
+  sentence is short enough for learning.
+- When WordNet is unsuitable or too noisy, the batch uses generated learner
+  examples and manual overrides for high-risk items such as heteronyms,
+  technical terms, and noisy Chinese glosses.
+- Pronunciation audio is generated through the existing macOS `say` -> R2
+  pipeline and marked as `generated` for later listening review.
+- New collocations are not expanded in this pass. They remain conditional
+  learning content and should be handled as a separate quality pass.
+
+Important quality boundary: this is a broad bootstrap dataset, not a final
+human-reviewed dictionary. The rows are usable for product coverage and review,
+but IPA, nuanced senses, example translations, and collocations should continue
+to move through dedicated quality passes.
+
+Run the Top 3000 checks against local D1 with:
+
+```bash
+PRONUNCIATION_TOP_N=3000 node scripts/check-pronunciation-completeness.mjs
+VOCABULARY_CONTENT_TOP_N=3000 node scripts/check-vocabulary-content-completeness.mjs
+```
+
+Run the same checks against remote D1 only for final verification:
+
+```bash
+PRONUNCIATION_TOP_N=3000 node scripts/check-pronunciation-completeness.mjs --remote
+VOCABULARY_CONTENT_TOP_N=3000 node scripts/check-vocabulary-content-completeness.mjs --remote
+```
+
+Final remote verification for the 2026-05-22 batch:
+
+- required core fields: `3000/3000`
+- pronunciation rows with audio URLs: `us 3000/3000`, `uk 3000/3000`
+- active senses: `3000/3000`
+- active examples: `3000/3000`
+- scenario links: `3000/3000`
+- generated pronunciation quality rows: `us 3000`, `uk 3000`
+- conditional collocations currently present for `474/3000` words
+
 ## Completeness check
 
 Run the Top 100 content coverage check against local D1 with:
