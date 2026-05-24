@@ -130,6 +130,16 @@ This batch fills the required hard-standard fields for the first 100 words:
 - useful collocations when they add learning value
 - scenario links for filtering and future learning flows
 
+Top 100 proofreading v1 is stored in:
+
+- `0158_top_100_proofread_v1.sql`
+
+This proofreading pass marks Top 100 core fields, first-pass senses, and examples
+as reviewed; corrects selected part-of-speech mismatches for common function
+words; and normalizes selected US/UK IPA strings. It intentionally keeps
+generated pronunciation audio rows in `generated` quality status because
+listening review is handled separately.
+
 
 ## Top 200 public content v1 status
 
