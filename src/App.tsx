@@ -10,45 +10,61 @@ import {
   type LearningResource,
   type Skill,
 } from './data/resources'
-import { speakingPrompts, writingPrompts } from './data/prompts'
 import {
   vocabularyFrequencyBandLabels,
   type CoreVocabularyEntry,
   type VocabularyFrequencyBand,
   type VocabularyPronunciation,
 } from './data/vocabulary'
-import {
-  defaultState,
-  normalizeAppState,
-  type AppState,
-  type DailyLog,
-  type GoalId,
-  type StudyProfile,
-  type VocabularyItem,
-} from './shared/study'
 
-type ViewId = 'today' | 'vocabulary' | 'library' | 'review' | 'admin'
+type ViewId = 'roadmap' | 'vocabulary' | 'library' | 'admin'
 type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
-interface DailyTask {
-  id: string
-  skill: Skill
-  title: string
-  description: string
-  duration: number
-  resource?: LearningResource
-}
-
-const STORAGE_KEY = 'english-orbit-state-v1'
+const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
 const CORE_VOCABULARY_TOTAL = 3000
+
+const roadmapSegments = [
+  {
+    id: 'top-100',
+    label: 'Top 100',
+    start: 1,
+    end: 100,
+    title: 'Runtime basics',
+    description: '先稳住最高频词，像语言系统的标准库。',
+  },
+  {
+    id: 'top-500',
+    label: 'Top 500',
+    start: 101,
+    end: 500,
+    title: 'Common interface',
+    description: '进入日常表达、阅读和听力里最常遇到的词。',
+  },
+  {
+    id: 'top-1000',
+    label: 'Top 1000',
+    start: 501,
+    end: 1000,
+    title: 'Working set',
+    description: '形成稳定工作集，能支撑大部分通用材料。',
+  },
+  {
+    id: 'top-3000',
+    label: 'Top 3000',
+    start: 1001,
+    end: 3000,
+    title: 'Long range',
+    description: '慢慢补齐长期词库，不需要按天追赶。',
+  },
+]
 
 function getInitialView(): ViewId {
   if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
     return 'admin'
   }
 
-  return 'today'
+  return 'roadmap'
 }
 
 const vocabularyFrequencyOptions: Array<{
@@ -97,6 +113,64 @@ const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => (
   pronunciations: item.pronunciations ?? [],
 })
 
+function clampRoadmapProgress(value: number) {
+  if (!Number.isFinite(value)) {
+    return 0
+  }
+
+  return Math.max(0, Math.min(CORE_VOCABULARY_TOTAL, Math.round(value)))
+}
+
+function loadRoadmapProgress() {
+  if (typeof window === 'undefined') {
+    return 0
+  }
+
+  return clampRoadmapProgress(Number(window.localStorage.getItem(ROADMAP_PROGRESS_KEY)))
+}
+
+function getRoadmapPercent(progress: number) {
+  return Math.round((progress / CORE_VOCABULARY_TOTAL) * 100)
+}
+
+function getSegmentPercent(progress: number, segment: (typeof roadmapSegments)[number]) {
+  const segmentSize = segment.end - segment.start + 1
+  const completed = clampRoadmapProgress(progress) - segment.start + 1
+  return Math.max(0, Math.min(100, Math.round((completed / segmentSize) * 100)))
+}
+
+function getSegmentStatus(progress: number, segment: (typeof roadmapSegments)[number]) {
+  if (progress >= segment.end) {
+    return 'Done'
+  }
+
+  if (progress >= segment.start) {
+    return 'In progress'
+  }
+
+  return 'Queued'
+}
+
+function getVocabularyFilterForProgress(progress: number): VocabularyFrequencyFilter {
+  if (progress < 100) {
+    return 'top-100'
+  }
+
+  if (progress < 500) {
+    return 'top-500'
+  }
+
+  if (progress < 1000) {
+    return 'top-1000'
+  }
+
+  return 'all'
+}
+
+function getVocabularyRank(item: Pick<CoreVocabularyEntry, 'frequencyRank' | 'priority'>) {
+  return item.frequencyRank ?? item.priority
+}
+
 function getPronunciationLabel(
   pronunciation: VocabularyPronunciation,
   index: number,
@@ -121,193 +195,19 @@ function getPronunciationKey(
   return `${item.id}-${pronunciation.id}`
 }
 
-const goals: Record<
-  GoalId,
-  {
-    label: string
-    description: string
-    weights: Record<'listening' | 'speaking' | 'reading' | 'writing', number>
-  }
-> = {
-  balanced: {
-    label: '均衡提升',
-    description: '听说读写都推进，适合作为长期主线。',
-    weights: { listening: 0.25, speaking: 0.25, reading: 0.25, writing: 0.25 },
-  },
-  conversation: {
-    label: '流利表达',
-    description: '把更多时间给听力与口语，优先解决“能说出来”。',
-    weights: { listening: 0.3, speaking: 0.4, reading: 0.15, writing: 0.15 },
-  },
-  career: {
-    label: '工作英语',
-    description: '偏向阅读、写作与清晰表达，适合职场场景。',
-    weights: { listening: 0.2, speaking: 0.2, reading: 0.25, writing: 0.35 },
-  },
-  exam: {
-    label: '考试备考',
-    description: '强调阅读与写作，同时维持输入能力。',
-    weights: { listening: 0.2, speaking: 0.15, reading: 0.35, writing: 0.3 },
-  },
-}
-
-const coreSkills: Array<'listening' | 'speaking' | 'reading' | 'writing'> = [
-  'listening',
-  'speaking',
-  'reading',
-  'writing',
-]
-
-function getDateKey(date = new Date()) {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  return `${year}-${month}-${day}`
-}
-
-function getReadableDate(date = new Date()) {
-  return new Intl.DateTimeFormat('zh-CN', {
-    month: 'long',
-    day: 'numeric',
-    weekday: 'long',
-  }).format(date)
-}
-
-function loadState(): AppState {
-  if (typeof window === 'undefined') {
-    return defaultState
-  }
-
-  const saved = window.localStorage.getItem(STORAGE_KEY)
-  if (!saved) {
-    return defaultState
-  }
-
-  try {
-    return normalizeAppState(JSON.parse(saved)) ?? defaultState
-  } catch {
-    return defaultState
-  }
-}
-
-function getDaySeed(dateKey: string) {
-  return dateKey
-    .split('-')
-    .join('')
-    .split('')
-    .reduce((total, digit) => total + Number(digit), 0)
-}
-
-function pickResource(skill: Skill, level: Difficulty, seed: number) {
-  const matchingLevel = resources.filter(
-    (resource) => resource.skill === skill && resource.difficulty === level,
-  )
-  const fallback = resources.filter((resource) => resource.skill === skill)
-  const pool = matchingLevel.length > 0 ? matchingLevel : fallback
-
-  return pool[seed % pool.length]
-}
-
-function allocateMinutes(totalMinutes: number, goal: GoalId) {
-  const weights = goals[goal].weights
-  const allocation = coreSkills.map((skill) => ({
-    skill,
-    duration: Math.max(5, Math.round(totalMinutes * weights[skill])),
-  }))
-
-  const currentTotal = allocation.reduce((total, item) => total + item.duration, 0)
-  const delta = totalMinutes - currentTotal
-  allocation[allocation.length - 1].duration += delta
-
-  return allocation
-}
-
-function buildDailyPlan(profile: StudyProfile, dateKey: string): DailyTask[] {
-  const seed = getDaySeed(dateKey)
-  const allocation = allocateMinutes(profile.minutesPerDay, profile.goal)
-  const speakingPrompt = speakingPrompts[seed % speakingPrompts.length]
-  const writingPrompt = writingPrompts[seed % writingPrompts.length]
-
-  return allocation.map(({ skill, duration }) => {
-    if (skill === 'speaking') {
-      const resource = pickResource(skill, profile.level, seed + 1)
-      return {
-        id: `${dateKey}-speaking`,
-        skill,
-        title: '开口输出',
-        description: speakingPrompt,
-        duration,
-        resource,
-      }
-    }
-
-    if (skill === 'writing') {
-      const resource = pickResource(skill, profile.level, seed + 2)
-      return {
-        id: `${dateKey}-writing`,
-        skill,
-        title: '短写作',
-        description: writingPrompt,
-        duration,
-        resource,
-      }
-    }
-
-    const resource = pickResource(skill, profile.level, seed + duration)
-    return {
-      id: `${dateKey}-${skill}`,
-      skill,
-      title: skill === 'listening' ? '输入训练' : '阅读训练',
-      description:
-        skill === 'listening'
-          ? `用 ${resource.title} 做一轮精听或泛听，至少记下 2 个表达。`
-          : `阅读 ${resource.title}，写出 3 句摘要或摘录。`,
-      duration,
-      resource,
-    }
-  })
-}
-
-function getLastSevenDays(date = new Date()) {
-  return Array.from({ length: 7 }, (_, index) => {
-    const next = new Date(date)
-    next.setDate(date.getDate() - index)
-    return getDateKey(next)
-  })
-}
-
-function calculateStreak(logs: Record<string, DailyLog>, date = new Date()) {
-  let streak = 0
-  const cursor = new Date(date)
-
-  while (true) {
-    const log = logs[getDateKey(cursor)]
-    if (!log || log.completedTaskIds.length === 0) {
-      break
-    }
-
-    streak += 1
-    cursor.setDate(cursor.getDate() - 1)
-  }
-
-  return streak
-}
-
-function formatSkillSummary(tasks: DailyTask[]) {
-  return tasks
-    .map((task) => `${skillLabels[task.skill]} ${task.duration}m`)
-    .join(' · ')
-}
-
 function App() {
-  const [state, setState] = useState<AppState>(loadState)
   const [view, setView] = useState<ViewId>(getInitialView)
+  const [roadmapProgress, setRoadmapProgress] = useState(loadRoadmapProgress)
+  const [checkpointInput, setCheckpointInput] = useState(() =>
+    String(loadRoadmapProgress()),
+  )
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
   const [vocabularyFrequency, setVocabularyFrequency] =
     useState<VocabularyFrequencyFilter>('top-500')
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
+  const [vocabularyOffset, setVocabularyOffset] = useState(0)
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
@@ -315,60 +215,48 @@ function App() {
   const [activePronunciationKey, setActivePronunciationKey] = useState('')
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
-  const [word, setWord] = useState('')
-  const [meaning, setMeaning] = useState('')
-  const [example, setExample] = useState('')
 
-  const todayKey = getDateKey()
-  const dailyPlan = useMemo(
-    () => buildDailyPlan(state.profile, todayKey),
-    [state.profile, todayKey],
+  const featuredResources = useMemo(
+    () => resources.filter((resource) => resource.featured),
+    [],
   )
-  const todayLog = state.logs[todayKey] ?? {
-    completedTaskIds: [],
-    reflection: '',
-    minutesLogged: 0,
-  }
-  const completedCount = todayLog.completedTaskIds.length
-  const completionRate = Math.round((completedCount / dailyPlan.length) * 100)
-  const featuredResources = resources.filter((resource) => resource.featured)
-  const recentDays = getLastSevenDays()
-  const weeklyLogs = recentDays
-    .map((dateKey) => state.logs[dateKey])
-    .filter(Boolean)
-  const weeklyTaskCount = weeklyLogs.reduce(
-    (total, log) => total + log.completedTaskIds.length,
-    0,
-  )
-  const weeklyMinutes = weeklyLogs.reduce(
-    (total, log) => total + log.minutesLogged,
-    0,
-  )
-  const streak = calculateStreak(state.logs)
-  const filteredResources = resources.filter((resource) => {
-    const matchesSkill = resourceSkill === 'all' || resource.skill === resourceSkill
-    const matchesLevel =
-      resourceLevel === 'all' || resource.difficulty === resourceLevel
-    const normalizedQuery = query.trim().toLowerCase()
-    const matchesQuery =
-      normalizedQuery.length === 0 ||
-      resource.title.toLowerCase().includes(normalizedQuery) ||
-      resource.summary.toLowerCase().includes(normalizedQuery) ||
-      resource.tags.some((tag) => tag.includes(normalizedQuery))
+  const filteredResources = useMemo(
+    () =>
+      resources.filter((resource) => {
+        const matchesSkill = resourceSkill === 'all' || resource.skill === resourceSkill
+        const matchesLevel =
+          resourceLevel === 'all' || resource.difficulty === resourceLevel
+        const normalizedQuery = query.trim().toLowerCase()
+        const matchesQuery =
+          normalizedQuery.length === 0 ||
+          resource.title.toLowerCase().includes(normalizedQuery) ||
+          resource.summary.toLowerCase().includes(normalizedQuery) ||
+          resource.tags.some((tag) => tag.includes(normalizedQuery))
 
-    return matchesSkill && matchesLevel && matchesQuery
-  })
+        return matchesSkill && matchesLevel && matchesQuery
+      }),
+    [query, resourceLevel, resourceSkill],
+  )
+
   const visibleCoreVocabulary = apiVocabulary
   const vocabularyResultCount = apiVocabularyTotal
   const hiddenVocabularyCount = Math.max(
     0,
-    vocabularyResultCount - visibleCoreVocabulary.length,
+    vocabularyResultCount - vocabularyOffset - visibleCoreVocabulary.length,
   )
   const vocabularyTotalCount = Math.max(CORE_VOCABULARY_TOTAL, apiVocabularyTotal)
+  const roadmapPercent = getRoadmapPercent(roadmapProgress)
+  const nextWordNumber = Math.min(roadmapProgress + 1, CORE_VOCABULARY_TOTAL)
+  const currentSegment =
+    roadmapSegments.find((segment) => roadmapProgress < segment.end) ??
+    roadmapSegments[roadmapSegments.length - 1]
+  const shownVocabularyStart =
+    visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
+  const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
 
   useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
-  }, [state])
+    window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
+  }, [roadmapProgress])
 
   useEffect(() => {
     return () => {
@@ -390,7 +278,7 @@ function App() {
       const params = new URLSearchParams({
         band: vocabularyFrequency === 'all' ? 'top-3000' : vocabularyFrequency,
         limit: String(VOCABULARY_VISIBLE_LIMIT),
-        offset: '0',
+        offset: String(vocabularyOffset),
       })
 
       const normalizedQuery = vocabularyQuery.trim()
@@ -398,7 +286,6 @@ function App() {
       if (normalizedQuery) {
         params.set('q', normalizedQuery)
       }
-
 
       try {
         const response = await fetch(`/api/vocabulary?${params.toString()}`, {
@@ -433,7 +320,7 @@ function App() {
     fetchVocabulary()
 
     return () => controller.abort()
-  }, [view, vocabularyFrequency, vocabularyQuery])
+  }, [view, vocabularyFrequency, vocabularyOffset, vocabularyQuery])
 
   function changeView(nextView: ViewId) {
     setView(nextView)
@@ -452,92 +339,23 @@ function App() {
     }
   }
 
-  function updateProfile<Key extends keyof StudyProfile>(
-    key: Key,
-    value: StudyProfile[Key],
-  ) {
-    setState((current) => ({
-      ...current,
-      profile: {
-        ...current.profile,
-        [key]: value,
-      },
-    }))
+  function updateRoadmapProgress(nextProgress: number) {
+    const normalizedProgress = clampRoadmapProgress(nextProgress)
+    setRoadmapProgress(normalizedProgress)
+    setCheckpointInput(String(normalizedProgress))
   }
 
-  function toggleTask(task: DailyTask) {
-    setState((current) => {
-      const existingLog = current.logs[todayKey] ?? {
-        completedTaskIds: [],
-        reflection: '',
-        minutesLogged: 0,
-      }
-      const isCompleted = existingLog.completedTaskIds.includes(task.id)
-      const completedTaskIds = isCompleted
-        ? existingLog.completedTaskIds.filter((taskId) => taskId !== task.id)
-        : [...existingLog.completedTaskIds, task.id]
-      const minutesLogged = dailyPlan
-        .filter((item) => completedTaskIds.includes(item.id))
-        .reduce((total, item) => total + item.duration, 0)
-
-      return {
-        ...current,
-        logs: {
-          ...current.logs,
-          [todayKey]: {
-            ...existingLog,
-            completedTaskIds,
-            minutesLogged,
-          },
-        },
-      }
-    })
+  function commitCheckpointInput() {
+    updateRoadmapProgress(Number(checkpointInput))
   }
 
-  function updateReflection(value: string) {
-    setState((current) => ({
-      ...current,
-      logs: {
-        ...current.logs,
-        [todayKey]: {
-          ...(current.logs[todayKey] ?? {
-            completedTaskIds: [],
-            reflection: '',
-            minutesLogged: 0,
-          }),
-          reflection: value,
-        },
-      },
-    }))
-  }
+  function continueLearning() {
+    const nextOffset = Math.max(0, Math.min(nextWordNumber - 1, CORE_VOCABULARY_TOTAL - 1))
 
-  function addVocabularyItem() {
-    if (!word.trim() || !meaning.trim()) {
-      return
-    }
-
-    const nextItem: VocabularyItem = {
-      id: crypto.randomUUID(),
-      word: word.trim(),
-      meaning: meaning.trim(),
-      example: example.trim(),
-      createdAt: todayKey,
-    }
-
-    setState((current) => ({
-      ...current,
-      vocabulary: [nextItem, ...current.vocabulary],
-    }))
-    setWord('')
-    setMeaning('')
-    setExample('')
-  }
-
-  function removeVocabularyItem(id: string) {
-    setState((current) => ({
-      ...current,
-      vocabulary: current.vocabulary.filter((item) => item.id !== id),
-    }))
+    setVocabularyFrequency(getVocabularyFilterForProgress(roadmapProgress))
+    setVocabularyQuery('')
+    setVocabularyOffset(Math.max(0, nextOffset - 8))
+    changeView('vocabulary')
   }
 
   function playPronunciation(
@@ -601,17 +419,17 @@ function App() {
           <span className="brand-mark">EO</span>
           <div>
             <p>English Orbit</p>
-            <strong>英语成长台</strong>
+            <strong>Developer English</strong>
           </div>
         </div>
 
         <nav aria-label="主导航">
           <button
             type="button"
-            className={view === 'today' ? 'active' : ''}
-            onClick={() => changeView('today')}
+            className={view === 'roadmap' ? 'active' : ''}
+            onClick={() => changeView('roadmap')}
           >
-            今天
+            进度
           </button>
           <button
             type="button"
@@ -629,13 +447,6 @@ function App() {
           </button>
           <button
             type="button"
-            className={view === 'review' ? 'active' : ''}
-            onClick={() => changeView('review')}
-          >
-            复盘
-          </button>
-          <button
-            type="button"
             className={view === 'admin' ? 'active' : ''}
             onClick={() => changeView('admin')}
           >
@@ -644,174 +455,146 @@ function App() {
         </nav>
 
         <section className="sidebar-card">
-          <span>本周状态</span>
-          <strong>{weeklyMinutes} 分钟</strong>
-          <p>{weeklyTaskCount} 个任务已完成</p>
+          <span>Progress</span>
+          <strong>{roadmapProgress} / 3000</strong>
+          <p>按频率顺序，自由推进</p>
         </section>
       </aside>
 
       <main className="content">
         <header className="page-header">
           <div>
-            <p>{getReadableDate()}</p>
-            <h1>你好，{state.profile.name}</h1>
+            <p>English Orbit</p>
+            <h1>Core Vocabulary Roadmap</h1>
           </div>
           <div className="header-meta">
-            <span>{goals[state.profile.goal].label}</span>
-            <strong>{difficultyLabels[state.profile.level]}</strong>
+            <span>No streaks</span>
+            <strong>No pressure</strong>
           </div>
         </header>
 
-        {view === 'today' && (
+        {view === 'roadmap' && (
           <>
             <section className="hero-grid">
-              <article className="panel overview-card">
-                <span>今日计划</span>
-                <h2>{formatSkillSummary(dailyPlan)}</h2>
-                <p>{goals[state.profile.goal].description}</p>
-                <div className="progress-track" aria-label="今日完成度">
-                  <span style={{ width: `${completionRate}%` }} />
+              <article className="panel overview-card roadmap-overview">
+                <span>3000 Core Words</span>
+                <h2>A quiet vocabulary system for developers.</h2>
+                <p>
+                  这不是每日任务，也不是打卡表。它更像一个长期维护的词汇仓库：
+                  按出现频率推进，任何时候打开，都可以从上一次的位置继续。
+                </p>
+                <div className="progress-track" aria-label="3000 词总进度">
+                  <span style={{ width: `${roadmapPercent}%` }} />
                 </div>
                 <footer>
-                  <strong>{completionRate}%</strong>
+                  <strong>{roadmapPercent}%</strong>
                   <small>
-                    {completedCount}/{dailyPlan.length} 已完成
+                    {roadmapProgress}/{CORE_VOCABULARY_TOTAL} reviewed
                   </small>
                 </footer>
+                <div className="roadmap-actions">
+                  <button type="button" onClick={continueLearning}>
+                    Continue from #{nextWordNumber}
+                  </button>
+                  <button
+                    type="button"
+                    className="secondary-button"
+                    disabled={roadmapProgress === 0}
+                    onClick={() => updateRoadmapProgress(0)}
+                  >
+                    Reset checkpoint
+                  </button>
+                </div>
               </article>
 
-              <article className="panel profile-card">
+              <article className="panel checkpoint-card">
                 <div className="section-heading">
-                  <h2>学习配置</h2>
-                  <span>可随时调整</span>
+                  <h2>Checkpoint</h2>
+                  <span>local only</span>
                 </div>
                 <label>
-                  称呼
-                  <input
-                    value={state.profile.name}
-                    onChange={(event) => updateProfile('name', event.target.value)}
-                  />
-                </label>
-                <label>
-                  目标
-                  <select
-                    value={state.profile.goal}
-                    onChange={(event) =>
-                      updateProfile('goal', event.target.value as GoalId)
-                    }
-                  >
-                    {Object.entries(goals).map(([goalId, goal]) => (
-                      <option key={goalId} value={goalId}>
-                        {goal.label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label>
-                  当前水平
-                  <select
-                    value={state.profile.level}
-                    onChange={(event) =>
-                      updateProfile('level', event.target.value as Difficulty)
-                    }
-                  >
-                    {Object.entries(difficultyLabels).map(([level, label]) => (
-                      <option key={level} value={level}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label>
-                  每日时长
+                  当前已推进到
                   <input
                     type="number"
-                    min={20}
-                    max={120}
-                    step={10}
-                    value={state.profile.minutesPerDay}
-                    onChange={(event) =>
-                      updateProfile(
-                        'minutesPerDay',
-                        Math.max(20, Math.min(120, Number(event.target.value))),
-                      )
-                    }
+                    min={0}
+                    max={CORE_VOCABULARY_TOTAL}
+                    value={checkpointInput}
+                    onBlur={commitCheckpointInput}
+                    onChange={(event) => setCheckpointInput(event.target.value)}
+                    onKeyDown={(event) => {
+                      if (event.key === 'Enter') {
+                        event.currentTarget.blur()
+                      }
+                    }}
                   />
                 </label>
+                <p>
+                  进度先保存在当前浏览器。没有账号、没有提醒、没有连续学习天数，
+                  先把公共词库这条主线走稳。
+                </p>
+                <div className="checkpoint-meta">
+                  <span>Next word</span>
+                  <strong>#{nextWordNumber}</strong>
+                </div>
               </article>
             </section>
 
-            <section className="task-section">
+            <section className="roadmap-section">
               <div className="section-heading">
-                <h2>今天先把这四件事做完</h2>
-                <span>主链路：输入 → 输出 → 记录</span>
+                <h2>Roadmap</h2>
+                <span>当前区间：{currentSegment.label}</span>
               </div>
-              <div className="task-grid">
-                {dailyPlan.map((task) => {
-                  const isCompleted = todayLog.completedTaskIds.includes(task.id)
-
-                  return (
-                    <article
-                      key={task.id}
-                      className={`panel task-card ${isCompleted ? 'completed' : ''}`}
-                    >
-                      <div className="task-topline">
-                        <span>{skillLabels[task.skill]}</span>
-                        <strong>{task.duration} 分钟</strong>
-                      </div>
-                      <h3>{task.title}</h3>
-                      <p>{task.description}</p>
-                      {task.resource && (
-                        <a href={task.resource.url} target="_blank" rel="noreferrer">
-                          打开 {task.resource.title}
-                        </a>
-                      )}
-                      <button type="button" onClick={() => toggleTask(task)}>
-                        {isCompleted ? '已完成，点此撤销' : '标记完成'}
-                      </button>
-                    </article>
-                  )
-                })}
+              <div className="roadmap-grid">
+                {roadmapSegments.map((segment) => (
+                  <article key={segment.id} className="panel roadmap-card">
+                    <div className="roadmap-card-head">
+                      <span>{segment.label}</span>
+                      <strong>{getSegmentStatus(roadmapProgress, segment)}</strong>
+                    </div>
+                    <h3>{segment.title}</h3>
+                    <p>{segment.description}</p>
+                    <div className="progress-track thin" aria-hidden="true">
+                      <span
+                        style={{ width: `${getSegmentPercent(roadmapProgress, segment)}%` }}
+                      />
+                    </div>
+                    <small>
+                      #{segment.start}–#{segment.end}
+                    </small>
+                  </article>
+                ))}
               </div>
             </section>
 
-            <section className="split-grid">
-              <article className="panel">
+            <section className="split-grid reference-grid">
+              <article className="panel reference-card">
                 <div className="section-heading">
-                  <h2>今日复盘</h2>
-                  <span>留下一句话就够</span>
+                  <h2>Current focus</h2>
+                  <span>{currentSegment.label}</span>
                 </div>
-                <textarea
-                  placeholder="今天哪个表达最值得记住？哪里还卡住？"
-                  value={todayLog.reflection}
-                  onChange={(event) => updateReflection(event.target.value)}
-                />
+                <p>
+                  先把词汇当作底层数据来维护：词义、音标、读音、例句都稳定后，
+                  再往动词、句子结构和程序员真实语境里扩展。
+                </p>
               </article>
 
-              <article className="panel">
+              <article className="panel reference-card">
                 <div className="section-heading">
-                  <h2>快速记词</h2>
-                  <span>{state.vocabulary.length} 个已收藏</span>
+                  <h2>Reference shelf</h2>
+                  <span>{featuredResources.length} 个精选资源</span>
                 </div>
-                <div className="vocab-form">
-                  <input
-                    placeholder="word / phrase"
-                    value={word}
-                    onChange={(event) => setWord(event.target.value)}
-                  />
-                  <input
-                    placeholder="中文释义"
-                    value={meaning}
-                    onChange={(event) => setMeaning(event.target.value)}
-                  />
-                  <input
-                    placeholder="例句（可选）"
-                    value={example}
-                    onChange={(event) => setExample(event.target.value)}
-                  />
-                  <button type="button" onClick={addVocabularyItem}>
-                    收藏
-                  </button>
+                <div className="compact-list">
+                  {featuredResources.slice(0, 4).map((resource) => (
+                    <a
+                      key={resource.id}
+                      href={resource.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <strong>{resource.title}</strong>
+                      <span>{skillLabels[resource.skill]}</span>
+                    </a>
+                  ))}
                 </div>
               </article>
             </section>
@@ -822,38 +605,45 @@ function App() {
           <>
             <section className="panel vocabulary-hero">
               <div>
-                <span>Core 3000 · 第一版底稿</span>
-                <h2>先从最常用、最能复用的词开始</h2>
+                <span>Core 3000</span>
+                <h2>按频率顺序维护一套自己的英语底层数据</h2>
                 <p>
-                  这批词不是为了“背完列表”，而是作为后续听、说、读、写训练的基础材料：
-                  默认按通用英语出现频率排序，可从高频 100、日常 500、核心 1000
-                  逐层推进。
+                  这里不要求“今天必须完成”。你可以搜索、听读音、看例句，
+                  也可以把当前位置标记为 Roadmap 进度。
                 </p>
               </div>
               <div className="vocabulary-stats">
                 <strong>{vocabularyTotalCount}</strong>
-                <span>个核心词</span>
+                <span>core words</span>
               </div>
             </section>
 
             <section className="panel vocabulary-toolbar">
               <div className="section-heading">
                 <h2>核心词库</h2>
-                <span>{vocabularyResultCount} 个匹配结果</span>
+                <span>
+                  {shownVocabularyStart > 0
+                    ? `${shownVocabularyStart}-${shownVocabularyEnd} / ${vocabularyResultCount}`
+                    : `${vocabularyResultCount} 个匹配结果`}
+                </span>
               </div>
               <div className="filters vocabulary-filters">
                 <input
                   placeholder="搜索单词、中文释义或英文释义"
                   value={vocabularyQuery}
-                  onChange={(event) => setVocabularyQuery(event.target.value)}
+                  onChange={(event) => {
+                    setVocabularyQuery(event.target.value)
+                    setVocabularyOffset(0)
+                  }}
                 />
                 <select
                   value={vocabularyFrequency}
-                  onChange={(event) =>
+                  onChange={(event) => {
                     setVocabularyFrequency(
                       event.target.value as VocabularyFrequencyFilter,
                     )
-                  }
+                    setVocabularyOffset(0)
+                  }}
                 >
                   {vocabularyFrequencyOptions.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -862,6 +652,14 @@ function App() {
                   ))}
                 </select>
               </div>
+              {vocabularyOffset > 0 && (
+                <div className="toolbar-note">
+                  <span>已从 #{vocabularyOffset + 1} 附近继续。</span>
+                  <button type="button" onClick={() => setVocabularyOffset(0)}>
+                    回到开头
+                  </button>
+                </div>
+              )}
             </section>
 
             {(isVocabularyLoading || vocabularyApiError) && (
@@ -880,70 +678,76 @@ function App() {
             )}
 
             <section className="vocabulary-grid">
-              {visibleCoreVocabulary.map((item) => (
-                <article key={item.id} className="panel vocabulary-card">
-                  <header>
-                    <div>
-                      <span>#{String(item.priority).padStart(2, '0')}</span>
-                      <h3>{item.word}</h3>
-                    </div>
-                  </header>
-                  {(item.phoneticUs || item.phoneticUk) && (
-                    <p className="vocabulary-phonetics">
-                      {item.phoneticUs && <span>US {item.phoneticUs}</span>}
-                      {item.phoneticUk && <span>UK {item.phoneticUk}</span>}
-                    </p>
-                  )}
-                  <p className="vocabulary-meaning">{item.meaning}</p>
-                  {item.pronunciations && item.pronunciations.length > 0 && (
-                    <div
-                      className="pronunciation-list"
-                      aria-label={`${item.word} 读音`}
-                    >
-                      {item.pronunciations.map((pronunciation, index) => {
-                        const label = getPronunciationLabel(pronunciation, index)
+              {visibleCoreVocabulary.map((item) => {
+                const rank = getVocabularyRank(item)
+                const isInRoadmapProgress = rank <= roadmapProgress
 
-                        return (
-                          <button
-                            key={`${item.id}-${pronunciation.id}`}
-                            type="button"
-                            className={
-                              activePronunciationKey ===
+                return (
+                  <article key={item.id} className="panel vocabulary-card">
+                    <header>
+                      <div>
+                        <span>#{String(rank).padStart(4, '0')}</span>
+                        <h3>{item.word}</h3>
+                      </div>
+                    </header>
+                    {(item.phoneticUs || item.phoneticUk) && (
+                      <p className="vocabulary-phonetics">
+                        {item.phoneticUs && <span>US {item.phoneticUs}</span>}
+                        {item.phoneticUk && <span>UK {item.phoneticUk}</span>}
+                      </p>
+                    )}
+                    <p className="vocabulary-meaning">{item.meaning}</p>
+                    {item.pronunciations && item.pronunciations.length > 0 && (
+                      <div
+                        className="pronunciation-list"
+                        aria-label={`${item.word} 读音`}
+                      >
+                        {item.pronunciations.map((pronunciation, index) => {
+                          const label = getPronunciationLabel(pronunciation, index)
+
+                          return (
+                            <button
+                              key={`${item.id}-${pronunciation.id}`}
+                              type="button"
+                              className={
+                                activePronunciationKey ===
+                                getPronunciationKey(item, pronunciation)
+                                  ? 'playing'
+                                  : ''
+                              }
+                              aria-label={`播放 ${item.word} ${label} 读音`}
+                              title={`${item.word} ${label} 读音`}
+                              onClick={() => playPronunciation(item, pronunciation)}
+                            >
+                              {activePronunciationKey ===
                               getPronunciationKey(item, pronunciation)
-                                ? 'playing'
-                                : ''
-                            }
-                            aria-label={`播放 ${item.word} ${label} 读音`}
-                            title={`${item.word} ${label} 读音`}
-                            onClick={() => playPronunciation(item, pronunciation)}
-                          >
-                            {activePronunciationKey ===
-                            getPronunciationKey(item, pronunciation)
-                              ? `${label} 播放中`
-                              : label}
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
-                  {item.example && (
-                    <p className="vocabulary-example">{item.example}</p>
-                  )}
-                  <footer>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setWord(item.word)
-                        setMeaning(item.meaning)
-                        setExample(item.example ?? '')
-                        changeView('today')
-                      }}
-                    >
-                      加到今日记词
-                    </button>
-                  </footer>
-                </article>
-              ))}
+                                ? `${label} 播放中`
+                                : label}
+                            </button>
+                          )
+                        })}
+                      </div>
+                    )}
+                    {item.example && (
+                      <p className="vocabulary-example">{item.example}</p>
+                    )}
+                    <footer>
+                      <small>
+                        {isInRoadmapProgress
+                          ? 'Already inside your roadmap progress'
+                          : `Mark progress through #${rank}`}
+                      </small>
+                      <button
+                        type="button"
+                        disabled={isInRoadmapProgress}
+                        onClick={() => updateRoadmapProgress(rank)}
+                      >
+                        {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
+                      </button>
+                    </footer>
+                  </article>
+                )
+              })}
             </section>
 
             {hiddenVocabularyCount > 0 && (
@@ -960,7 +764,7 @@ function App() {
             <section className="panel library-toolbar">
               <div className="section-heading">
                 <h2>资源库</h2>
-                <span>先收录核心资源，再逐步扩展</span>
+                <span>作为参考资料，不作为任务清单</span>
               </div>
               <div className="filters">
                 <input
@@ -998,7 +802,7 @@ function App() {
             </section>
 
             <section className="resource-grid">
-              {filteredResources.map((resource) => (
+              {filteredResources.map((resource: LearningResource) => (
                 <article key={resource.id} className="panel resource-card">
                   <div className="resource-meta">
                     <span>{skillLabels[resource.skill]}</span>
@@ -1020,79 +824,6 @@ function App() {
         )}
 
         {view === 'admin' && <VocabularyAdmin />}
-
-        {view === 'review' && (
-          <>
-            <section className="stats-grid">
-              <article className="panel stat-card">
-                <span>连续学习</span>
-                <strong>{streak} 天</strong>
-              </article>
-              <article className="panel stat-card">
-                <span>本周任务</span>
-                <strong>{weeklyTaskCount}</strong>
-              </article>
-              <article className="panel stat-card">
-                <span>本周时长</span>
-                <strong>{weeklyMinutes} 分钟</strong>
-              </article>
-              <article className="panel stat-card">
-                <span>词汇沉淀</span>
-                <strong>{state.vocabulary.length}</strong>
-              </article>
-            </section>
-
-            <section className="split-grid review-grid">
-              <article className="panel">
-                <div className="section-heading">
-                  <h2>核心资源</h2>
-                  <span>适合长期放在主线里</span>
-                </div>
-                <div className="compact-list">
-                  {featuredResources.map((resource) => (
-                    <a
-                      key={resource.id}
-                      href={resource.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>{resource.title}</strong>
-                      <span>{skillLabels[resource.skill]}</span>
-                    </a>
-                  ))}
-                </div>
-              </article>
-
-              <article className="panel">
-                <div className="section-heading">
-                  <h2>词汇清单</h2>
-                  <span>最近添加优先</span>
-                </div>
-                <div className="vocab-list">
-                  {state.vocabulary.length === 0 && (
-                    <p className="empty-state">今天先收藏第一个真正想记住的词。</p>
-                  )}
-                  {state.vocabulary.map((item) => (
-                    <div key={item.id} className="vocab-item">
-                      <div>
-                        <strong>{item.word}</strong>
-                        <span>{item.meaning}</span>
-                        {item.example && <small>{item.example}</small>}
-                      </div>
-                      <button
-                        type="button"
-                        aria-label={`删除 ${item.word}`}
-                        onClick={() => removeVocabularyItem(item.id)}
-                      >
-                        删除
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              </article>
-            </section>
-          </>
-        )}
       </main>
     </div>
   )
