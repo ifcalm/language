@@ -283,6 +283,7 @@ small D1 migrations so Cloudflare D1 accepts each file safely:
 
 - `0057_top_3000_public_content_001.sql` through
   `0156_top_3000_public_content_100.sql`
+- `0160_top_3000_remaining_proofread_v1.sql`
 
 This batch uses a broader-coverage, reviewable bootstrap standard:
 
@@ -306,6 +307,13 @@ Important quality boundary: this is a broad bootstrap dataset, not a final
 human-reviewed dictionary. The rows are usable for product coverage and review,
 but IPA, nuanced senses, example translations, and collocations should continue
 to move through dedicated quality passes.
+
+Top 3000 remaining proofreading v1 covers words 501-3000. It marks core fields,
+first-pass senses, and examples as reviewed; backfills pronunciation asset rows
+for words 1001-3000 using the existing R2 audio URL pattern; normalizes obvious
+Chinese punctuation issues; and corrects selected learner-facing part-of-speech,
+meaning, definition, and example issues. Generated pronunciation rows remain in
+`generated` quality status because listening review is handled separately.
 
 Run the Top 3000 checks against local D1 with:
 
