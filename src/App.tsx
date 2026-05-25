@@ -12,13 +12,9 @@ import {
 } from './data/resources'
 import { speakingPrompts, writingPrompts } from './data/prompts'
 import {
-  partOfSpeechLabels,
   vocabularyFrequencyBandLabels,
-  vocabularyLevelLabels,
   type CoreVocabularyEntry,
-  type PartOfSpeech,
   type VocabularyFrequencyBand,
-  type VocabularyLevel,
   type VocabularyPronunciation,
 } from './data/vocabulary'
 import {
@@ -71,12 +67,11 @@ interface VocabularyApiItem {
   meaning: string
   meaningZh: string
   definitionEn: string
-  partOfSpeech: PartOfSpeech
-  level: VocabularyLevel
   priority: number
   frequencyRank: number | null
-  frequencyBand: VocabularyFrequencyBand | null
-  note: string
+  phoneticUs: string
+  phoneticUk: string
+  example?: string
   pronunciations?: VocabularyPronunciation[]
 }
 
@@ -93,35 +88,37 @@ const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => (
   id: item.id,
   word: item.word,
   meaning: item.meaning,
-  partOfSpeech: item.partOfSpeech,
-  level: item.level,
   priority: item.priority,
   frequencyRank: item.frequencyRank ?? undefined,
-  frequencyBand: item.frequencyBand ?? undefined,
-  learningPriority: item.priority,
-  scenarios: [],
+  phoneticUs: item.phoneticUs,
+  phoneticUk: item.phoneticUk,
+  example: item.example,
   skills: ['listening', 'speaking', 'reading', 'writing'],
-  note: item.note,
   pronunciations: item.pronunciations ?? [],
 })
 
-function getPronunciationLabel(pronunciation: VocabularyPronunciation) {
-  if (pronunciation.accent === 'us') {
+function getPronunciationLabel(
+  pronunciation: VocabularyPronunciation,
+  index: number,
+) {
+  const normalizedId = pronunciation.id.toLowerCase()
+
+  if (normalizedId.endsWith('-us') || normalizedId.includes('-us-')) {
     return 'US'
   }
 
-  if (pronunciation.accent === 'uk') {
+  if (normalizedId.endsWith('-uk') || normalizedId.includes('-uk-')) {
     return 'UK'
   }
 
-  return pronunciation.accent.toUpperCase()
+  return `读音 ${index + 1}`
 }
 
 function getPronunciationKey(
   item: Pick<CoreVocabularyEntry, 'id'>,
-  pronunciation: Pick<VocabularyPronunciation, 'accent'>,
+  pronunciation: Pick<VocabularyPronunciation, 'id'>,
 ) {
-  return `${item.id}-${pronunciation.accent}`
+  return `${item.id}-${pronunciation.id}`
 }
 
 const goals: Record<
@@ -309,12 +306,6 @@ function App() {
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
   const [vocabularyFrequency, setVocabularyFrequency] =
     useState<VocabularyFrequencyFilter>('top-500')
-  const [vocabularyLevel, setVocabularyLevel] = useState<VocabularyLevel | 'all'>(
-    'all',
-  )
-  const [vocabularyPart, setVocabularyPart] = useState<PartOfSpeech | 'all'>(
-    'all',
-  )
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
@@ -408,13 +399,6 @@ function App() {
         params.set('q', normalizedQuery)
       }
 
-      if (vocabularyLevel !== 'all') {
-        params.set('level', vocabularyLevel)
-      }
-
-      if (vocabularyPart !== 'all') {
-        params.set('partOfSpeech', vocabularyPart)
-      }
 
       try {
         const response = await fetch(`/api/vocabulary?${params.toString()}`, {
@@ -449,7 +433,7 @@ function App() {
     fetchVocabulary()
 
     return () => controller.abort()
-  }, [view, vocabularyFrequency, vocabularyLevel, vocabularyPart, vocabularyQuery])
+  }, [view, vocabularyFrequency, vocabularyQuery])
 
   function changeView(nextView: ViewId) {
     setView(nextView)
@@ -561,7 +545,10 @@ function App() {
     pronunciation: VocabularyPronunciation,
   ) {
     const pronunciationKey = getPronunciationKey(item, pronunciation)
-    const label = getPronunciationLabel(pronunciation)
+    const label = getPronunciationLabel(
+      pronunciation,
+      item.pronunciations?.findIndex((entry) => entry.id === pronunciation.id) ?? 0,
+    )
 
     pronunciationAudioRef.current?.pause()
     pronunciationAudioRef.current = null
@@ -874,32 +861,6 @@ function App() {
                     </option>
                   ))}
                 </select>
-                <select
-                  value={vocabularyLevel}
-                  onChange={(event) =>
-                    setVocabularyLevel(event.target.value as VocabularyLevel | 'all')
-                  }
-                >
-                  <option value="all">全部级别</option>
-                  {Object.entries(vocabularyLevelLabels).map(([level, label]) => (
-                    <option key={level} value={level}>
-                      {label}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  value={vocabularyPart}
-                  onChange={(event) =>
-                    setVocabularyPart(event.target.value as PartOfSpeech | 'all')
-                  }
-                >
-                  <option value="all">全部词性</option>
-                  {Object.entries(partOfSpeechLabels).map(([part, label]) => (
-                    <option key={part} value={part}>
-                      {label}
-                    </option>
-                  ))}
-                </select>
               </div>
             </section>
 
@@ -926,66 +887,49 @@ function App() {
                       <span>#{String(item.priority).padStart(2, '0')}</span>
                       <h3>{item.word}</h3>
                     </div>
-                    <strong>{vocabularyLevelLabels[item.level]}</strong>
                   </header>
+                  {(item.phoneticUs || item.phoneticUk) && (
+                    <p className="vocabulary-phonetics">
+                      {item.phoneticUs && <span>US {item.phoneticUs}</span>}
+                      {item.phoneticUk && <span>UK {item.phoneticUk}</span>}
+                    </p>
+                  )}
                   <p className="vocabulary-meaning">{item.meaning}</p>
                   {item.pronunciations && item.pronunciations.length > 0 && (
                     <div
                       className="pronunciation-list"
                       aria-label={`${item.word} 读音`}
                     >
-                      {item.pronunciations.map((pronunciation) => (
-                        <button
-                          key={`${item.id}-${pronunciation.accent}`}
-                          type="button"
-                          className={
-                            activePronunciationKey ===
+                      {item.pronunciations.map((pronunciation, index) => {
+                        const label = getPronunciationLabel(pronunciation, index)
+
+                        return (
+                          <button
+                            key={`${item.id}-${pronunciation.id}`}
+                            type="button"
+                            className={
+                              activePronunciationKey ===
+                              getPronunciationKey(item, pronunciation)
+                                ? 'playing'
+                                : ''
+                            }
+                            aria-label={`播放 ${item.word} ${label} 读音`}
+                            title={`${item.word} ${label} 读音`}
+                            onClick={() => playPronunciation(item, pronunciation)}
+                          >
+                            {activePronunciationKey ===
                             getPronunciationKey(item, pronunciation)
-                              ? 'playing'
-                              : ''
-                          }
-                          aria-label={`播放 ${item.word} ${getPronunciationLabel(
-                            pronunciation,
-                          )} 读音`}
-                          title={`${item.word} ${pronunciation.locale} 读音`}
-                          onClick={() => playPronunciation(item, pronunciation)}
-                        >
-                          {activePronunciationKey ===
-                          getPronunciationKey(item, pronunciation)
-                            ? `${getPronunciationLabel(pronunciation)} 播放中`
-                            : getPronunciationLabel(pronunciation)}
-                        </button>
-                      ))}
+                              ? `${label} 播放中`
+                              : label}
+                          </button>
+                        )
+                      })}
                     </div>
                   )}
                   {item.example && (
                     <p className="vocabulary-example">{item.example}</p>
                   )}
-                  <div className="resource-meta">
-                    <span>{partOfSpeechLabels[item.partOfSpeech]}</span>
-                  </div>
-                  {item.senses && (
-                    <div className="sense-list">
-                      <strong>义项拆分</strong>
-                      {item.senses.map((sense) => (
-                        <div key={`${sense.partOfSpeech}-${sense.meaning}`}>
-                          <span>{partOfSpeechLabels[sense.partOfSpeech]}</span>
-                          <p>{sense.meaning}</p>
-                          <small>{sense.example}</small>
-                          {sense.usageNote && <em>{sense.usageNote}</em>}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {item.collocations && item.collocations.length > 0 && (
-                    <div className="collocation-list">
-                      {item.collocations.map((collocation) => (
-                        <span key={collocation}>{collocation}</span>
-                      ))}
-                    </div>
-                  )}
                   <footer>
-                    <small>{item.note}</small>
                     <button
                       type="button"
                       onClick={() => {
@@ -1004,8 +948,8 @@ function App() {
 
             {hiddenVocabularyCount > 0 && (
               <section className="panel vocabulary-more-note">
-                还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义、
-                英文释义、级别或词性来缩小范围。
+                还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义或
+                英文释义来缩小范围。
               </section>
             )}
           </>

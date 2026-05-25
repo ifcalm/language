@@ -4,10 +4,9 @@ const NODE = process.execPath
 const WRANGLER = 'node_modules/wrangler/bin/wrangler.js'
 const DATABASE = process.env.D1_DATABASE ?? 'english-orbit-db'
 const TOP_N = Number(process.env.PRONUNCIATION_TOP_N ?? '100')
-const REQUIRED_ACCENTS = (process.env.PRONUNCIATION_REQUIRED_ACCENTS ?? 'us,uk')
-  .split(',')
-  .map((accent) => accent.trim())
-  .filter(Boolean)
+const REQUIRED_ROWS_PER_WORD = Number(
+  process.env.PRONUNCIATION_REQUIRED_ROWS_PER_WORD ?? '2',
+)
 const JSON_OUTPUT = process.argv.includes('--json')
 const WRANGLER_ATTEMPTS = Number(process.env.PRONUNCIATION_CHECK_ATTEMPTS ?? '4')
 const USE_LOCAL = process.argv.includes('--local')
@@ -23,33 +22,12 @@ if (!Number.isInteger(TOP_N) || TOP_N < 1 || TOP_N > 3000) {
   throw new Error('PRONUNCIATION_TOP_N must be an integer from 1 to 3000.')
 }
 
-if (REQUIRED_ACCENTS.length === 0) {
-  throw new Error(
-    'PRONUNCIATION_REQUIRED_ACCENTS must include at least one accent.',
-  )
-}
-
-for (const accent of REQUIRED_ACCENTS) {
-  if (!/^[a-z][a-z0-9_]*$/i.test(accent)) {
-    throw new Error(
-      `Invalid accent "${accent}". Use letters, numbers, or underscores only.`,
-    )
-  }
-}
-
-function sqlString(value) {
-  return `'${value.replaceAll("'", "''")}'`
-}
-
-function accentCountExpression(accent) {
-  return [
-    `SUM(CASE WHEN accent = ${sqlString(accent)}`,
-    ` THEN 1 ELSE 0 END) AS ${accent}_count`,
-  ].join('')
-}
-
-function accentSelectExpression(accent) {
-  return `COALESCE(pronunciation_counts.${accent}_count, 0) AS ${accent}_count`
+if (
+  !Number.isInteger(REQUIRED_ROWS_PER_WORD) ||
+  REQUIRED_ROWS_PER_WORD < 1 ||
+  REQUIRED_ROWS_PER_WORD > 10
+) {
+  throw new Error('PRONUNCIATION_REQUIRED_ROWS_PER_WORD must be from 1 to 10.')
 }
 
 function wait(milliseconds) {
@@ -111,73 +89,74 @@ async function query(sql) {
   return payload[0]?.results ?? []
 }
 
-const coverageRows = await query(`WITH top_words AS (
-  SELECT id, word, learning_priority
-  FROM core_vocabulary
-  WHERE publish_status = 'active'
-  ORDER BY learning_priority ASC
-  LIMIT ${TOP_N}
+const rows = await query(`WITH top_words AS (
+  SELECT id, word, frequency_rank
+  FROM vocab
+  WHERE frequency_rank <= ${TOP_N}
+  ORDER BY frequency_rank ASC
 ),
 pronunciation_counts AS (
   SELECT
     vocabulary_id,
-    ${REQUIRED_ACCENTS.map(accentCountExpression).join(',\n    ')}
-  FROM vocabulary_pronunciations
-  WHERE publish_status = 'active'
-    AND vocabulary_id IN (SELECT id FROM top_words)
+    COUNT(*) AS pronunciation_count,
+    SUM(CASE WHEN COALESCE(TRIM(phonetic), '') <> '' THEN 1 ELSE 0 END) AS phonetic_count,
+    SUM(CASE WHEN COALESCE(TRIM(audio_url), '') <> '' THEN 1 ELSE 0 END) AS audio_count
+  FROM vocab_pronunciations
+  WHERE vocabulary_id IN (SELECT id FROM top_words)
   GROUP BY vocabulary_id
 )
 SELECT
   top_words.id,
   top_words.word,
-  top_words.learning_priority,
-  ${REQUIRED_ACCENTS.map(accentSelectExpression).join(',\n  ')}
+  top_words.frequency_rank,
+  COALESCE(pronunciation_counts.pronunciation_count, 0) AS pronunciation_count,
+  COALESCE(pronunciation_counts.phonetic_count, 0) AS phonetic_count,
+  COALESCE(pronunciation_counts.audio_count, 0) AS audio_count
 FROM top_words
 LEFT JOIN pronunciation_counts
   ON pronunciation_counts.vocabulary_id = top_words.id
-ORDER BY top_words.learning_priority ASC;`)
-
-const qualityRows = await query(`WITH top_words AS (
-  SELECT id
-  FROM core_vocabulary
-  WHERE publish_status = 'active'
-  ORDER BY learning_priority ASC
-  LIMIT ${TOP_N}
-)
-SELECT
-  accent,
-  quality_status,
-  COUNT(*) AS total
-FROM vocabulary_pronunciations
-WHERE publish_status = 'active'
-  AND vocabulary_id IN (SELECT id FROM top_words)
-GROUP BY accent, quality_status
-ORDER BY accent, quality_status;`)
+ORDER BY top_words.frequency_rank ASC;`)
 
 const missing = []
 
-for (const row of coverageRows) {
-  for (const accent of REQUIRED_ACCENTS) {
-    if (Number(row[`${accent}_count`] ?? 0) < 1) {
-      missing.push({
-        id: row.id,
-        word: row.word,
-        learningPriority: row.learning_priority,
-        accent,
-      })
-    }
+for (const row of rows) {
+  const missingFields = []
+  const pronunciationCount = Number(row.pronunciation_count ?? 0)
+  const phoneticCount = Number(row.phonetic_count ?? 0)
+  const audioCount = Number(row.audio_count ?? 0)
+
+  if (pronunciationCount < REQUIRED_ROWS_PER_WORD) {
+    missingFields.push('pronunciation_rows')
+  }
+
+  if (phoneticCount < REQUIRED_ROWS_PER_WORD) {
+    missingFields.push('phonetic')
+  }
+
+  if (audioCount < REQUIRED_ROWS_PER_WORD) {
+    missingFields.push('audio_url')
+  }
+
+  if (missingFields.length > 0) {
+    missing.push({
+      id: row.id,
+      word: row.word,
+      frequencyRank: row.frequency_rank,
+      pronunciationCount,
+      phoneticCount,
+      audioCount,
+      missingFields,
+    })
   }
 }
 
 const summary = {
   location: D1_LOCATION_LABEL,
   topN: TOP_N,
-  requiredAccents: REQUIRED_ACCENTS,
-  checkedWords: coverageRows.length,
-  expectedRows: TOP_N * REQUIRED_ACCENTS.length,
+  requiredRowsPerWord: REQUIRED_ROWS_PER_WORD,
+  checkedWords: rows.length,
+  complete: missing.length === 0 && rows.length === TOP_N,
   missingRows: missing.length,
-  complete: missing.length === 0 && coverageRows.length === TOP_N,
-  quality: qualityRows,
   missing,
 }
 
@@ -185,20 +164,15 @@ if (JSON_OUTPUT) {
   console.log(JSON.stringify(summary, null, 2))
 } else {
   console.log(
-    `Pronunciation coverage (${D1_LOCATION_LABEL} D1): ${summary.checkedWords}/${TOP_N} words, ${summary.expectedRows - summary.missingRows}/${summary.expectedRows} required rows present.`,
+    `Pronunciation coverage (${D1_LOCATION_LABEL} D1): ${summary.checkedWords}/${TOP_N} words checked, required rows per word: ${REQUIRED_ROWS_PER_WORD}.`,
   )
 
-  if (qualityRows.length > 0) {
-    console.log('Quality status breakdown:')
-    for (const row of qualityRows) {
-      console.log(`- ${row.accent} ${row.quality_status}: ${row.total}`)
-    }
-  }
-
   if (missing.length > 0) {
-    console.log('Missing pronunciation rows:')
+    console.log('Missing pronunciation content:')
     for (const item of missing.slice(0, 50)) {
-      console.log(`- #${item.learningPriority} ${item.word} [${item.accent}]`)
+      console.log(
+        `- #${item.frequencyRank} ${item.word}: ${item.missingFields.join(', ')}`,
+      )
     }
 
     if (missing.length > 50) {

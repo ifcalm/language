@@ -1,14 +1,7 @@
-export {
-  partOfSpeechLabels,
-  scenarioLabels,
-  vocabularyFrequencyBandLabels,
-  vocabularyLevelLabels,
-} from './labels'
+export { vocabularyFrequencyBandLabels } from './labels'
 export type {
   CoreVocabularyEntry,
+  VocabularyExample,
   VocabularyFrequencyBand,
-  PartOfSpeech,
-  VocabularyLevel,
   VocabularyPronunciation,
-  VocabularyScenario,
 } from './types'

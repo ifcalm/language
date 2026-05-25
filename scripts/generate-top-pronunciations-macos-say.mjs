@@ -22,12 +22,10 @@ const accentConfigs = {
   us: {
     locale: 'en-US',
     voiceId: 'Samantha',
-    sortOrder: 10,
   },
   uk: {
     locale: 'en-GB',
     voiceId: 'Daniel',
-    sortOrder: 20,
   },
 }
 
@@ -125,7 +123,7 @@ function fetchTopVocabulary() {
     END_PRIORITY < START_PRIORITY
   ) {
     throw new Error(
-      'Pronunciation priority range must be positive integers, with end >= start.',
+      'Pronunciation frequency-rank range must be positive integers, with end >= start.',
     )
   }
 
@@ -133,13 +131,12 @@ function fetchTopVocabulary() {
   id,
   word,
   normalized_word,
-  learning_priority,
+  frequency_rank,
   phonetic_us,
   phonetic_uk
-FROM core_vocabulary
-WHERE publish_status = 'active'
-  AND learning_priority BETWEEN ${START_PRIORITY} AND ${END_PRIORITY}
-ORDER BY learning_priority ASC
+FROM vocab
+WHERE frequency_rank BETWEEN ${START_PRIORITY} AND ${END_PRIORITY}
+ORDER BY frequency_rank ASC
 LIMIT ${END_PRIORITY - START_PRIORITY + 1};`
   const output = runWrangler([
     'd1',
@@ -171,24 +168,8 @@ function buildUpsertSql(rows) {
     'id',
     'vocabulary_id',
     'word',
-    'normalized_word',
-    'accent',
     'phonetic',
     'audio_url',
-    'audio_source',
-    'sort_order',
-    'publish_status',
-    'locale',
-    'phonetic_source',
-    'phonetic_source_url',
-    'audio_provider',
-    'voice_id',
-    'audio_object_key',
-    'audio_format',
-    'license',
-    'attribution',
-    'quality_status',
-    'metadata_json',
     'updated_at',
   ]
 
@@ -201,17 +182,18 @@ function buildUpsertSql(rows) {
 
       return sqlString(row[column])
     })
+    const updates = updateColumns
+      .map((column) =>
+        column === 'updated_at'
+          ? `  ${column} = CURRENT_TIMESTAMP`
+          : `  ${column} = excluded.${column}`,
+      )
+      .join(',\n')
 
-    return `INSERT INTO vocabulary_pronunciations (${columns.join(', ')})
+    return `INSERT INTO vocab_pronunciations (${columns.join(', ')})
 VALUES (${values.join(', ')})
 ON CONFLICT(id) DO UPDATE SET
-${updateColumns
-  .map((column) =>
-    column === 'updated_at'
-      ? `  ${column} = CURRENT_TIMESTAMP`
-      : `  ${column} = excluded.${column}`,
-  )
-  .join(',\n')};`
+${updates};`
   })
 
   return statements.join('\n\n')
@@ -324,33 +306,9 @@ for (const item of vocabulary) {
       id: `${item.id}-${accent}`,
       vocabulary_id: item.id,
       word: item.word,
-      normalized_word: item.normalized_word,
       accent,
       phonetic: accent === 'us' ? item.phonetic_us : item.phonetic_uk,
       audio_url: audioUrl,
-      audio_source: 'tts',
-      sort_order: String(config.sortOrder),
-      publish_status: 'active',
-      locale: config.locale,
-      phonetic_source: 'manual-curation-pending-review',
-      phonetic_source_url: '',
-      audio_provider: 'macos-say',
-      voice_id: config.voiceId,
-      audio_object_key: objectKey,
-      audio_format: 'aac',
-      license:
-        'Generated with macOS say as bootstrap pronunciation audio; review provider rights before broad public redistribution.',
-      attribution: `Generated locally with macOS say voice ${config.voiceId}.`,
-      quality_status: 'generated',
-      metadata_json: JSON.stringify({
-        generatedAt: new Date().toISOString(),
-        generator: 'macos-say',
-        voiceId: config.voiceId,
-        sourceText: item.word,
-        outputContainer: 'm4a',
-        codec: 'aac',
-        note: 'Bootstrap audio for initial learning flow; replaceable by a dedicated TTS provider later.',
-      }),
     })
   }
 }
@@ -367,9 +325,8 @@ const manifest = {
     vocabularyId: row.vocabulary_id,
     word: row.word,
     accent: row.accent,
-    locale: row.locale,
-    voiceId: row.voice_id,
-    audioObjectKey: row.audio_object_key,
+    voiceId: accentConfigs[row.accent]?.voiceId ?? '',
+    audioObjectKey: row.audio_url.replace(`${PUBLIC_BASE_URL}/`, ''),
     audioUrl: row.audio_url,
   })),
 }

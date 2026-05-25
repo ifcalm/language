@@ -451,6 +451,23 @@ textarea {
   font-size: 0.85rem;
 }
 
+
+.vocabulary-phonetics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  color: #76806f;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.vocabulary-phonetics span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(223, 232, 207, 0.64);
+}
+
 .vocabulary-meaning,
 .vocabulary-example {
   margin: 0;
