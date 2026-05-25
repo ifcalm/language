@@ -198,6 +198,17 @@ This batch keeps the copyright-safe approach:
 - US/UK IPA values are populated as bootstrap learner-facing data, with manual
   phonetic review tracked separately.
 
+Top 500 proofreading v1 is stored in:
+
+- `0159_top_500_proofread_v1.sql`
+
+Top 500 proofreading v1 covers words 101-500. It marks core fields,
+first-pass senses, and examples as reviewed; corrects selected learner-facing
+part-of-speech, meaning, definition, and example issues; and normalizes selected
+obvious US/UK IPA strings. It intentionally keeps generated pronunciation audio
+rows in `generated` quality status because listening review is handled
+separately.
+
 Run the Top 500 checks with:
 
 ```bash
