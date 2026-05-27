@@ -207,9 +207,11 @@
 }
 
 .beaver-mascot {
-  width: min(150px, 40vw);
+  display: block;
+  width: min(220px, 52vw);
   height: auto;
-  color: var(--text);
+  max-height: 220px;
+  object-fit: contain;
   margin-bottom: 16px;
 }
 
