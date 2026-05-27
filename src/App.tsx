@@ -145,87 +145,6 @@ function getPronunciationKey(
 }
 
 
-function BeaverMascot() {
-  return (
-    <svg
-      className="beaver-mascot"
-      viewBox="0 0 220 160"
-      role="img"
-      aria-label="English Orbit beaver mascot"
-    >
-      <path
-        d="M69 61c-7-20 4-38 23-42 16-4 33 4 41 18 15-3 30 6 34 21 5 19-5 40-23 49-12 7-27 8-40 4-18-5-30-22-35-50Z"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M79 40c-9-10-20-8-24 1-4 10 4 20 16 18M146 38c9-11 22-8 25 2 4 11-6 21-18 17"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M94 67h.2M133 67h.2"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth="8"
-      />
-      <path
-        d="M109 78c4 4 10 4 14 0M116 78v15M107 93h18"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="4"
-      />
-      <path
-        d="M64 104c-17 4-30 17-31 31 14 5 34 0 47-12M153 104c18 5 32 18 33 32-14 5-36 0-49-13"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M70 111h93c7 0 12 5 12 12v18c0 7-5 12-12 12H70c-7 0-12-5-12-12v-18c0-7 5-12 12-12Z"
-        fill="white"
-        stroke="currentColor"
-        strokeLinejoin="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M76 126h9M95 126h48M76 139h70"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth="4"
-      />
-      <path
-        d="M180 85c19 1 31 16 28 34-3 17-20 27-42 24 18-12 24-32 14-58Z"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M180 100c8 7 14 15 19 25M190 93c-1 16-5 30-13 43"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth="3"
-        opacity="0.45"
-      />
-    </svg>
-  )
-}
-
 function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
   const [roadmapProgress, setRoadmapProgress] = useState(loadRoadmapProgress)
@@ -514,7 +433,11 @@ function App() {
         {view === 'roadmap' && (
           <>
             <section className="landing-hero" aria-labelledby="landing-title">
-              <BeaverMascot />
+              <img
+                className="beaver-mascot"
+                src="/mascot/beaver-mascot.svg"
+                alt="English Orbit Beaver mascot"
+              />
               <p className="landing-kicker">English Orbit</p>
               <h1 id="landing-title">给程序员的英语底层系统</h1>
               <p className="landing-subtitle">
