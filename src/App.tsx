@@ -437,6 +437,9 @@ function App() {
                 className="beaver-mascot"
                 src="/mascot/beaver-mascot.svg"
                 alt="English Orbit Beaver mascot"
+                width="1254"
+                height="1254"
+                decoding="async"
               />
               <p className="landing-kicker">English Orbit</p>
               <h1 id="landing-title">给程序员的英语底层系统</h1>
