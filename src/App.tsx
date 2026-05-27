@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { type FormEvent, useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 import VocabularyAdmin from './admin/VocabularyAdmin'
 import {
@@ -24,40 +24,6 @@ const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
 const CORE_VOCABULARY_TOTAL = 3000
 
-const roadmapSegments = [
-  {
-    id: 'top-100',
-    label: 'Top 100',
-    start: 1,
-    end: 100,
-    title: 'Runtime basics',
-    description: '先稳住最高频词，像语言系统的标准库。',
-  },
-  {
-    id: 'top-500',
-    label: 'Top 500',
-    start: 101,
-    end: 500,
-    title: 'Common interface',
-    description: '进入日常表达、阅读和听力里最常遇到的词。',
-  },
-  {
-    id: 'top-1000',
-    label: 'Top 1000',
-    start: 501,
-    end: 1000,
-    title: 'Working set',
-    description: '形成稳定工作集，能支撑大部分通用材料。',
-  },
-  {
-    id: 'top-3000',
-    label: 'Top 3000',
-    start: 1001,
-    end: 3000,
-    title: 'Long range',
-    description: '慢慢补齐长期词库，不需要按天追赶。',
-  },
-]
 
 function getInitialView(): ViewId {
   if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
@@ -133,23 +99,6 @@ function getRoadmapPercent(progress: number) {
   return Math.round((progress / CORE_VOCABULARY_TOTAL) * 100)
 }
 
-function getSegmentPercent(progress: number, segment: (typeof roadmapSegments)[number]) {
-  const segmentSize = segment.end - segment.start + 1
-  const completed = clampRoadmapProgress(progress) - segment.start + 1
-  return Math.max(0, Math.min(100, Math.round((completed / segmentSize) * 100)))
-}
-
-function getSegmentStatus(progress: number, segment: (typeof roadmapSegments)[number]) {
-  if (progress >= segment.end) {
-    return 'Done'
-  }
-
-  if (progress >= segment.start) {
-    return 'In progress'
-  }
-
-  return 'Queued'
-}
 
 function getVocabularyFilterForProgress(progress: number): VocabularyFrequencyFilter {
   if (progress < 100) {
@@ -195,12 +144,91 @@ function getPronunciationKey(
   return `${item.id}-${pronunciation.id}`
 }
 
+
+function BeaverMascot() {
+  return (
+    <svg
+      className="beaver-mascot"
+      viewBox="0 0 220 160"
+      role="img"
+      aria-label="English Orbit beaver mascot"
+    >
+      <path
+        d="M69 61c-7-20 4-38 23-42 16-4 33 4 41 18 15-3 30 6 34 21 5 19-5 40-23 49-12 7-27 8-40 4-18-5-30-22-35-50Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="5"
+      />
+      <path
+        d="M79 40c-9-10-20-8-24 1-4 10 4 20 16 18M146 38c9-11 22-8 25 2 4 11-6 21-18 17"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="5"
+      />
+      <path
+        d="M94 67h.2M133 67h.2"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="8"
+      />
+      <path
+        d="M109 78c4 4 10 4 14 0M116 78v15M107 93h18"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+      />
+      <path
+        d="M64 104c-17 4-30 17-31 31 14 5 34 0 47-12M153 104c18 5 32 18 33 32-14 5-36 0-49-13"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="5"
+      />
+      <path
+        d="M70 111h93c7 0 12 5 12 12v18c0 7-5 12-12 12H70c-7 0-12-5-12-12v-18c0-7 5-12 12-12Z"
+        fill="white"
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth="5"
+      />
+      <path
+        d="M76 126h9M95 126h48M76 139h70"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="4"
+      />
+      <path
+        d="M180 85c19 1 31 16 28 34-3 17-20 27-42 24 18-12 24-32 14-58Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="5"
+      />
+      <path
+        d="M180 100c8 7 14 15 19 25M190 93c-1 16-5 30-13 43"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="3"
+        opacity="0.45"
+      />
+    </svg>
+  )
+}
+
 function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
   const [roadmapProgress, setRoadmapProgress] = useState(loadRoadmapProgress)
-  const [checkpointInput, setCheckpointInput] = useState(() =>
-    String(loadRoadmapProgress()),
-  )
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
   const [vocabularyFrequency, setVocabularyFrequency] =
@@ -216,10 +244,6 @@ function App() {
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
 
-  const featuredResources = useMemo(
-    () => resources.filter((resource) => resource.featured),
-    [],
-  )
   const filteredResources = useMemo(
     () =>
       resources.filter((resource) => {
@@ -247,12 +271,14 @@ function App() {
   const vocabularyTotalCount = Math.max(CORE_VOCABULARY_TOTAL, apiVocabularyTotal)
   const roadmapPercent = getRoadmapPercent(roadmapProgress)
   const nextWordNumber = Math.min(roadmapProgress + 1, CORE_VOCABULARY_TOTAL)
-  const currentSegment =
-    roadmapSegments.find((segment) => roadmapProgress < segment.end) ??
-    roadmapSegments[roadmapSegments.length - 1]
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
+  const pageHeading = {
+    vocabulary: { eyebrow: 'Core 3000', title: '核心词库' },
+    library: { eyebrow: 'Reference Shelf', title: '资源库' },
+    admin: { eyebrow: 'Content Admin', title: '数据后台' },
+  }[view as Exclude<ViewId, 'roadmap'>]
 
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
@@ -342,11 +368,13 @@ function App() {
   function updateRoadmapProgress(nextProgress: number) {
     const normalizedProgress = clampRoadmapProgress(nextProgress)
     setRoadmapProgress(normalizedProgress)
-    setCheckpointInput(String(normalizedProgress))
   }
 
-  function commitCheckpointInput() {
-    updateRoadmapProgress(Number(checkpointInput))
+
+  function submitVocabularySearch(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setVocabularyOffset(0)
+    changeView('vocabulary')
   }
 
   function continueLearning() {
@@ -414,29 +442,27 @@ function App() {
 
   return (
     <div className="app-shell">
-      <aside className="sidebar">
-        <div className="brand">
+      <header className="site-header">
+        <button
+          type="button"
+          className="brand site-brand"
+          onClick={() => changeView('roadmap')}
+          aria-label="返回 English Orbit 首页"
+        >
           <span className="brand-mark">EO</span>
-          <div>
-            <p>English Orbit</p>
-            <strong>Developer English</strong>
-          </div>
-        </div>
+          <span>
+            <span>English Orbit</span>
+            <strong>程序员英语</strong>
+          </span>
+        </button>
 
-        <nav aria-label="主导航">
+        <nav className="site-nav" aria-label="主导航">
           <button
             type="button"
             className={view === 'roadmap' ? 'active' : ''}
             onClick={() => changeView('roadmap')}
           >
-            进度
-          </button>
-          <button
-            type="button"
-            className={view === 'library' ? 'active' : ''}
-            onClick={() => changeView('library')}
-          >
-            资源库
+            首页
           </button>
           <button
             type="button"
@@ -447,6 +473,13 @@ function App() {
           </button>
           <button
             type="button"
+            className={view === 'library' ? 'active' : ''}
+            onClick={() => changeView('library')}
+          >
+            资源库
+          </button>
+          <button
+            type="button"
             className={view === 'admin' ? 'active' : ''}
             onClick={() => changeView('admin')}
           >
@@ -454,148 +487,90 @@ function App() {
           </button>
         </nav>
 
-        <section className="sidebar-card">
-          <span>Progress</span>
-          <strong>{roadmapProgress} / 3000</strong>
-          <p>按频率顺序，自由推进</p>
-        </section>
-      </aside>
+        <form className="site-search" onSubmit={submitVocabularySearch}>
+          <span aria-hidden="true">⌕</span>
+          <input
+            placeholder="搜索单词"
+            value={vocabularyQuery}
+            onChange={(event) => setVocabularyQuery(event.target.value)}
+          />
+        </form>
+      </header>
 
-      <main className="content">
-        <header className="page-header">
-          <div>
-            <p>English Orbit</p>
-            <h1>Core Vocabulary Roadmap</h1>
-          </div>
-          <div className="header-meta">
-            <span>No streaks</span>
-            <strong>No pressure</strong>
-          </div>
-        </header>
+      <main className={`content ${view === 'roadmap' ? 'landing-content' : ''}`}>
+        {view !== 'roadmap' && pageHeading && (
+          <header className="page-header">
+            <div>
+              <p>{pageHeading.eyebrow}</p>
+              <h1>{pageHeading.title}</h1>
+            </div>
+            <div className="header-meta">
+              <span>{roadmapProgress} / 3000</span>
+              <strong>自由进度</strong>
+            </div>
+          </header>
+        )}
 
         {view === 'roadmap' && (
           <>
-            <section className="hero-grid">
-              <article className="panel overview-card roadmap-overview">
-                <span>3000 Core Words</span>
-                <h2>A quiet vocabulary system for developers.</h2>
-                <p>
-                  这不是每日任务，也不是打卡表。它更像一个长期维护的词汇仓库：
-                  按出现频率推进，任何时候打开，都可以从上一次的位置继续。
-                </p>
-                <div className="progress-track" aria-label="3000 词总进度">
+            <section className="landing-hero" aria-labelledby="landing-title">
+              <BeaverMascot />
+              <p className="landing-kicker">English Orbit</p>
+              <h1 id="landing-title">给程序员的英语底层系统</h1>
+              <p className="landing-subtitle">
+                第一版面向中文语境的程序员：从 3000 个核心词开始，逐步补齐读音、例句和句子结构。
+                不打卡，不催促，像维护一个长期项目一样学英语。
+              </p>
+
+              <form className="landing-command" onSubmit={submitVocabularySearch}>
+                <span aria-hidden="true">$</span>
+                <input
+                  placeholder="搜索核心词汇，例如 process / system / cache"
+                  value={vocabularyQuery}
+                  onChange={(event) => setVocabularyQuery(event.target.value)}
+                />
+                <button type="submit">搜索</button>
+              </form>
+
+              <div className="landing-actions">
+                <button type="button" onClick={continueLearning}>
+                  继续学习 #{nextWordNumber}
+                </button>
+                <button
+                  type="button"
+                  className="secondary-button"
+                  onClick={() => changeView('vocabulary')}
+                >
+                  浏览 3000 词
+                </button>
+              </div>
+
+              <div className="landing-progress" aria-label="3000 词总进度">
+                <div>
+                  <strong>{roadmapProgress}</strong>
+                  <span>/ {CORE_VOCABULARY_TOTAL} 已推进</span>
+                </div>
+                <div className="progress-track thin">
                   <span style={{ width: `${roadmapPercent}%` }} />
                 </div>
-                <footer>
-                  <strong>{roadmapPercent}%</strong>
-                  <small>
-                    {roadmapProgress}/{CORE_VOCABULARY_TOTAL} reviewed
-                  </small>
-                </footer>
-                <div className="roadmap-actions">
-                  <button type="button" onClick={continueLearning}>
-                    Continue from #{nextWordNumber}
-                  </button>
-                  <button
-                    type="button"
-                    className="secondary-button"
-                    disabled={roadmapProgress === 0}
-                    onClick={() => updateRoadmapProgress(0)}
-                  >
-                    Reset checkpoint
-                  </button>
-                </div>
-              </article>
-
-              <article className="panel checkpoint-card">
-                <div className="section-heading">
-                  <h2>Checkpoint</h2>
-                  <span>local only</span>
-                </div>
-                <label>
-                  当前已推进到
-                  <input
-                    type="number"
-                    min={0}
-                    max={CORE_VOCABULARY_TOTAL}
-                    value={checkpointInput}
-                    onBlur={commitCheckpointInput}
-                    onChange={(event) => setCheckpointInput(event.target.value)}
-                    onKeyDown={(event) => {
-                      if (event.key === 'Enter') {
-                        event.currentTarget.blur()
-                      }
-                    }}
-                  />
-                </label>
-                <p>
-                  进度先保存在当前浏览器。没有账号、没有提醒、没有连续学习天数，
-                  先把公共词库这条主线走稳。
-                </p>
-                <div className="checkpoint-meta">
-                  <span>Next word</span>
-                  <strong>#{nextWordNumber}</strong>
-                </div>
-              </article>
-            </section>
-
-            <section className="roadmap-section">
-              <div className="section-heading">
-                <h2>Roadmap</h2>
-                <span>当前区间：{currentSegment.label}</span>
-              </div>
-              <div className="roadmap-grid">
-                {roadmapSegments.map((segment) => (
-                  <article key={segment.id} className="panel roadmap-card">
-                    <div className="roadmap-card-head">
-                      <span>{segment.label}</span>
-                      <strong>{getSegmentStatus(roadmapProgress, segment)}</strong>
-                    </div>
-                    <h3>{segment.title}</h3>
-                    <p>{segment.description}</p>
-                    <div className="progress-track thin" aria-hidden="true">
-                      <span
-                        style={{ width: `${getSegmentPercent(roadmapProgress, segment)}%` }}
-                      />
-                    </div>
-                    <small>
-                      #{segment.start}–#{segment.end}
-                    </small>
-                  </article>
-                ))}
               </div>
             </section>
 
-            <section className="split-grid reference-grid">
-              <article className="panel reference-card">
-                <div className="section-heading">
-                  <h2>Current focus</h2>
-                  <span>{currentSegment.label}</span>
-                </div>
-                <p>
-                  先把词汇当作底层数据来维护：词义、音标、读音、例句都稳定后，
-                  再往动词、句子结构和程序员真实语境里扩展。
-                </p>
+            <section className="landing-modules" aria-label="能力模块">
+              <article>
+                <span>01</span>
+                <h2>核心词汇</h2>
+                <p>先把通用英语底座打稳，读文档、看资料都更顺。</p>
               </article>
-
-              <article className="panel reference-card">
-                <div className="section-heading">
-                  <h2>Reference shelf</h2>
-                  <span>{featuredResources.length} 个精选资源</span>
-                </div>
-                <div className="compact-list">
-                  {featuredResources.slice(0, 4).map((resource) => (
-                    <a
-                      key={resource.id}
-                      href={resource.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>{resource.title}</strong>
-                      <span>{skillLabels[resource.skill]}</span>
-                    </a>
-                  ))}
-                </div>
+              <article>
+                <span>02</span>
+                <h2>程序员英语</h2>
+                <p>后续补齐 async、cache、latency、runtime 等技术高频词。</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h2>句子结构</h2>
+                <p>把英文句子拆成可复用 pattern，减少阅读和表达阻力。</p>
               </article>
             </section>
           </>
