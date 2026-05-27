@@ -364,15 +364,18 @@ function App() {
       <header className="site-header">
         <button
           type="button"
-          className="brand site-brand"
+          className="site-brand"
           onClick={() => changeView('roadmap')}
           aria-label="返回 English Orbit 首页"
         >
-          <span className="brand-mark">EO</span>
-          <span>
-            <span>English Orbit</span>
-            <strong>程序员英语</strong>
-          </span>
+          <img
+            className="brand-icon"
+            src="/brand/beaver-head-128.png"
+            alt=""
+            width="34"
+            height="34"
+            decoding="async"
+          />
         </button>
 
         <nav className="site-nav" aria-label="主导航">
