@@ -208,9 +208,8 @@
 
 .beaver-mascot {
   display: block;
-  width: min(220px, 52vw);
+  width: min(288px, 72vw);
   height: auto;
-  max-height: 220px;
   object-fit: contain;
   margin-bottom: 16px;
 }

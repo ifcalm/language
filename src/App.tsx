@@ -437,8 +437,8 @@ function App() {
                 className="beaver-mascot"
                 src="/mascot/beaver-mascot.svg"
                 alt="English Orbit Beaver mascot"
-                width="1254"
-                height="1254"
+                width="960"
+                height="720"
                 decoding="async"
               />
               <p className="landing-kicker">English Orbit</p>
