@@ -372,8 +372,8 @@ function App() {
             className="brand-icon"
             src="/brand/beaver-head-128.png"
             alt=""
-            width="34"
-            height="34"
+            width="40"
+            height="40"
             decoding="async"
           />
         </button>
