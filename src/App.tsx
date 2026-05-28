@@ -410,14 +410,12 @@ function App() {
           ))}
         </nav>
 
-        <form className="site-search" onSubmit={submitVocabularySearch}>
-          <span aria-hidden="true">⌕</span>
-          <input
-            placeholder="搜索单词"
-            value={vocabularyQuery}
-            onChange={(event) => setVocabularyQuery(event.target.value)}
-          />
-        </form>
+        <div className="site-auth-actions" aria-label="账户入口">
+          <button type="button">登录</button>
+          <button type="button" className="auth-register">
+            注册
+          </button>
+        </div>
       </header>
 
       <main className={`content ${view === 'roadmap' ? 'landing-content' : ''}`}>
