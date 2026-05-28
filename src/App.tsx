@@ -17,7 +17,15 @@ import {
   type VocabularyPronunciation,
 } from './data/vocabulary'
 
-type ViewId = 'roadmap' | 'vocabulary' | 'library' | 'admin'
+type ViewId =
+  | 'roadmap'
+  | 'strategy'
+  | 'verbs'
+  | 'examples'
+  | 'vocabulary'
+  | 'library'
+  | 'admin'
+type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
 type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
@@ -41,6 +49,16 @@ const vocabularyFrequencyOptions: Array<{
   { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
   { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
   { value: 'all', label: '全部 3000' },
+]
+
+const primaryNavigationItems: Array<{
+  id: NavigationViewId
+  label: string
+}> = [
+  { id: 'strategy', label: '学习策略' },
+  { id: 'verbs', label: '动词' },
+  { id: 'examples', label: '例句' },
+  { id: 'vocabulary', label: '词汇' },
 ]
 
 interface VocabularyApiItem {
@@ -194,10 +212,43 @@ function App() {
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
   const pageHeading = {
+    strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
+    verbs: { eyebrow: 'Verb Patterns', title: '动词' },
+    examples: { eyebrow: 'Sentence Examples', title: '例句' },
     vocabulary: { eyebrow: 'Core 3000', title: '核心词库' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
   }[view as Exclude<ViewId, 'roadmap'>]
+  const placeholderPages: Partial<
+    Record<
+      ViewId,
+      {
+        title: string
+        description: string
+        note: string
+      }
+    >
+  > = {
+    strategy: {
+      title: '先把学习路径放在这里',
+      description:
+        '后面会沉淀一套适合中文语境程序员的英语学习策略：先解决读文档、理解句子结构，再慢慢扩展表达能力。',
+      note: '当前为占位入口，避免导航先空着。',
+    },
+    verbs: {
+      title: '动词会成为第二个重点模块',
+      description:
+        '程序员读英文时，真正影响理解速度的往往不是名词，而是动词和动词短语。这里后续会整理 run、resolve、apply、handle 这类高频动作词。',
+      note: '当前为占位入口，后续接动词模式数据。',
+    },
+    examples: {
+      title: '例句会围绕真实阅读场景整理',
+      description:
+        '这里会优先展示短、准、可复用的英文句子，帮助把单词放回语境里，而不是孤立背词。',
+      note: '第一版先保留入口，后续从公共例句数据中接入。',
+    },
+  }
+  const placeholderPage = placeholderPages[view]
 
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
@@ -379,34 +430,16 @@ function App() {
         </button>
 
         <nav className="site-nav" aria-label="主导航">
-          <button
-            type="button"
-            className={view === 'roadmap' ? 'active' : ''}
-            onClick={() => changeView('roadmap')}
-          >
-            首页
-          </button>
-          <button
-            type="button"
-            className={view === 'vocabulary' ? 'active' : ''}
-            onClick={() => changeView('vocabulary')}
-          >
-            核心词库
-          </button>
-          <button
-            type="button"
-            className={view === 'library' ? 'active' : ''}
-            onClick={() => changeView('library')}
-          >
-            资源库
-          </button>
-          <button
-            type="button"
-            className={view === 'admin' ? 'active' : ''}
-            onClick={() => changeView('admin')}
-          >
-            数据后台
-          </button>
+          {primaryNavigationItems.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              className={view === item.id ? 'active' : ''}
+              onClick={() => changeView(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
         </nav>
 
         <form className="site-search" onSubmit={submitVocabularySearch}>
@@ -503,6 +536,15 @@ function App() {
               </article>
             </section>
           </>
+        )}
+
+        {placeholderPage && (
+          <section className="panel placeholder-panel">
+            <span>{pageHeading?.eyebrow}</span>
+            <h2>{placeholderPage.title}</h2>
+            <p>{placeholderPage.description}</p>
+            <small>{placeholderPage.note}</small>
+          </section>
         )}
 
         {view === 'vocabulary' && (

@@ -20,8 +20,8 @@
   top: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: minmax(40px, 1fr) auto minmax(220px, 1fr);
-  gap: 24px;
+  grid-template-columns: auto minmax(0, 1fr) minmax(220px, 420px);
+  gap: 20px;
   align-items: center;
   padding: 18px 28px;
   background: rgb(255 255 255 / 0.9);
@@ -53,14 +53,14 @@
 }
 
 .site-nav {
-  justify-self: center;
+  justify-self: start;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 4px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface);
+  gap: 26px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .site-search {
@@ -99,30 +99,26 @@
   gap: 30px;
 }
 
-.site-nav {
-  display: flex;
-  gap: 6px;
-}
-
 .site-nav button {
-  border: 1px solid transparent;
+  border: 0;
   background: transparent;
   color: var(--text-soft);
   text-align: center;
-  padding: 8px 12px;
-  border-radius: 999px;
+  padding: 8px 0;
+  border-radius: 0;
   cursor: pointer;
+  font: inherit;
 }
 
 .site-nav button:hover {
-  border-color: var(--border);
-  background: var(--surface-subtle);
+  background: transparent;
   color: var(--text);
 }
 
 .site-nav button.active {
-  background: var(--text);
-  color: var(--surface);
+  background: transparent;
+  color: var(--text);
+  font-weight: 750;
 }
 
 .sidebar-card {
@@ -355,6 +351,37 @@
   border: 1px solid var(--border);
   border-radius: 28px;
   box-shadow: var(--shadow);
+}
+
+.placeholder-panel {
+  max-width: 760px;
+  padding: 28px;
+}
+
+.placeholder-panel span {
+  color: var(--text-muted);
+  font-weight: 800;
+}
+
+.placeholder-panel h2 {
+  max-width: 640px;
+  margin: 14px 0 12px;
+  color: var(--text);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.07em;
+}
+
+.placeholder-panel p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.placeholder-panel small {
+  display: block;
+  margin-top: 18px;
+  color: var(--text-muted);
 }
 
 .hero-grid,
