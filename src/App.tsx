@@ -113,27 +113,6 @@ function loadRoadmapProgress() {
   return clampRoadmapProgress(Number(window.localStorage.getItem(ROADMAP_PROGRESS_KEY)))
 }
 
-function getRoadmapPercent(progress: number) {
-  return Math.round((progress / CORE_VOCABULARY_TOTAL) * 100)
-}
-
-
-function getVocabularyFilterForProgress(progress: number): VocabularyFrequencyFilter {
-  if (progress < 100) {
-    return 'top-100'
-  }
-
-  if (progress < 500) {
-    return 'top-500'
-  }
-
-  if (progress < 1000) {
-    return 'top-1000'
-  }
-
-  return 'all'
-}
-
 function getVocabularyRank(item: Pick<CoreVocabularyEntry, 'frequencyRank' | 'priority'>) {
   return item.frequencyRank ?? item.priority
 }
@@ -206,8 +185,6 @@ function App() {
     vocabularyResultCount - vocabularyOffset - visibleCoreVocabulary.length,
   )
   const vocabularyTotalCount = Math.max(CORE_VOCABULARY_TOTAL, apiVocabularyTotal)
-  const roadmapPercent = getRoadmapPercent(roadmapProgress)
-  const nextWordNumber = Math.min(roadmapProgress + 1, CORE_VOCABULARY_TOTAL)
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
@@ -347,15 +324,6 @@ function App() {
     changeView('vocabulary')
   }
 
-  function continueLearning() {
-    const nextOffset = Math.max(0, Math.min(nextWordNumber - 1, CORE_VOCABULARY_TOTAL - 1))
-
-    setVocabularyFrequency(getVocabularyFilterForProgress(roadmapProgress))
-    setVocabularyQuery('')
-    setVocabularyOffset(Math.max(0, nextOffset - 8))
-    changeView('vocabulary')
-  }
-
   function playPronunciation(
     item: CoreVocabularyEntry,
     pronunciation: VocabularyPronunciation,
@@ -468,7 +436,7 @@ function App() {
 
         {view === 'roadmap' && (
           <>
-            <section className="landing-hero" aria-labelledby="landing-title">
+            <section className="landing-hero" aria-label="English Orbit 首页搜索">
               <img
                 className="beaver-mascot"
                 src="/mascot/beaver-mascot.svg"
@@ -477,12 +445,6 @@ function App() {
                 height="720"
                 decoding="async"
               />
-              <p className="landing-kicker">English Orbit</p>
-              <h1 id="landing-title">给程序员的英语底层系统</h1>
-              <p className="landing-subtitle">
-                第一版面向中文语境的程序员：从 3000 个核心词开始，逐步补齐读音、例句和句子结构。
-                不打卡，不催促，像维护一个长期项目一样学英语。
-              </p>
 
               <form className="landing-command" onSubmit={submitVocabularySearch}>
                 <span aria-hidden="true">$</span>
@@ -493,29 +455,6 @@ function App() {
                 />
                 <button type="submit">搜索</button>
               </form>
-
-              <div className="landing-actions">
-                <button type="button" onClick={continueLearning}>
-                  继续学习 #{nextWordNumber}
-                </button>
-                <button
-                  type="button"
-                  className="secondary-button"
-                  onClick={() => changeView('vocabulary')}
-                >
-                  浏览 3000 词
-                </button>
-              </div>
-
-              <div className="landing-progress" aria-label="3000 词总进度">
-                <div>
-                  <strong>{roadmapProgress}</strong>
-                  <span>/ {CORE_VOCABULARY_TOTAL} 已推进</span>
-                </div>
-                <div className="progress-track thin">
-                  <span style={{ width: `${roadmapPercent}%` }} />
-                </div>
-              </div>
             </section>
 
             <section className="landing-modules" aria-label="能力模块">
