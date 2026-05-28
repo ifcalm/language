@@ -67,28 +67,30 @@
   justify-self: end;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
 }
 
 .site-auth-actions button {
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 0;
+  border-radius: 0;
   background: var(--surface);
   color: var(--text);
-  padding: 8px 14px;
+  padding: 8px 0;
   cursor: pointer;
   font: inherit;
   font-weight: 650;
+  text-decoration: none;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
 }
 
-.site-auth-actions button:hover {
-  border-color: var(--border-strong);
+.site-auth-actions button:hover,
+.site-auth-actions button:focus-visible {
+  text-decoration-line: underline;
 }
 
-.site-auth-actions .auth-register {
-  border-color: var(--text);
-  background: var(--text);
-  color: var(--surface);
+.site-auth-actions span {
+  color: var(--text-muted);
 }
 
 .sidebar {

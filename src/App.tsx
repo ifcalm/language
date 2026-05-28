@@ -412,9 +412,8 @@ function App() {
 
         <div className="site-auth-actions" aria-label="账户入口">
           <button type="button">登录</button>
-          <button type="button" className="auth-register">
-            注册
-          </button>
+          <span aria-hidden="true">/</span>
+          <button type="button">注册</button>
         </div>
       </header>
 
