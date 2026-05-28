@@ -181,6 +181,16 @@
   margin-bottom: 24px;
 }
 
+.landing-tagline {
+  max-width: 640px;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+  font-weight: 750;
+  line-height: 1.45;
+  letter-spacing: -0.04em;
+}
+
 .landing-kicker {
   margin: 0 0 14px;
   color: var(--text-muted);

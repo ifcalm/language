@@ -445,6 +445,9 @@ function App() {
                 height="720"
                 decoding="async"
               />
+              <p className="landing-tagline">
+                让写代码的人，不再被英文挡在门外。
+              </p>
 
               <form className="landing-command" onSubmit={submitVocabularySearch}>
                 <span aria-hidden="true">$</span>
