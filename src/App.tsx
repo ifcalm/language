@@ -381,39 +381,41 @@ function App() {
   return (
     <div className="app-shell">
       <header className="site-header">
-        <button
-          type="button"
-          className="site-brand"
-          onClick={() => changeView('roadmap')}
-          aria-label="返回 English Orbit 首页"
-        >
-          <img
-            className="brand-icon"
-            src="/brand/beaver-head-128.png"
-            alt=""
-            width="40"
-            height="40"
-            decoding="async"
-          />
-        </button>
+        <div className="site-header-inner">
+          <button
+            type="button"
+            className="site-brand"
+            onClick={() => changeView('roadmap')}
+            aria-label="返回 English Orbit 首页"
+          >
+            <img
+              className="brand-icon"
+              src="/brand/beaver-head-128.png"
+              alt=""
+              width="40"
+              height="40"
+              decoding="async"
+            />
+          </button>
 
-        <nav className="site-nav" aria-label="主导航">
-          {primaryNavigationItems.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              className={view === item.id ? 'active' : ''}
-              onClick={() => changeView(item.id)}
-            >
-              {item.label}
-            </button>
-          ))}
-        </nav>
+          <nav className="site-nav" aria-label="主导航">
+            {primaryNavigationItems.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                className={view === item.id ? 'active' : ''}
+                onClick={() => changeView(item.id)}
+              >
+                {item.label}
+              </button>
+            ))}
+          </nav>
 
-        <div className="site-auth-actions" aria-label="账户入口">
-          <button type="button">登录</button>
-          <span aria-hidden="true">/</span>
-          <button type="button">注册</button>
+          <div className="site-auth-actions" aria-label="账户入口">
+            <button type="button">登录</button>
+            <span aria-hidden="true">/</span>
+            <button type="button">注册</button>
+          </div>
         </div>
       </header>
 
