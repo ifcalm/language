@@ -300,6 +300,15 @@
   text-align: center;
 }
 
+.method-poem {
+  margin: 0 0 14px;
+  color: var(--text-soft);
+  font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.6;
+}
+
 .method-example strong {
   display: block;
   margin-top: 0;
@@ -310,7 +319,7 @@
   line-height: 1.2;
 }
 
-.method-example p {
+.method-example > p:not(.method-poem) {
   margin: 12px 0 0;
   color: var(--text-soft);
   line-height: 1.7;
