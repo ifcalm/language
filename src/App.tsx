@@ -238,11 +238,11 @@ function App() {
     useState<VocabularyDetail | null>(null)
   const [isVocabularyDetailLoading, setIsVocabularyDetailLoading] = useState(false)
   const [vocabularyDetailError, setVocabularyDetailError] = useState('')
-  const [lookupModalQuery, setLookupModalQuery] = useState('')
-  const [lookupModalDetail, setLookupModalDetail] =
+  const [lookupQuery, setLookupQuery] = useState('')
+  const [lookupDetail, setLookupDetail] =
     useState<VocabularyDetail | null>(null)
-  const [isLookupModalLoading, setIsLookupModalLoading] = useState(false)
-  const [lookupModalError, setLookupModalError] = useState('')
+  const [isLookupLoading, setIsLookupLoading] = useState(false)
+  const [lookupError, setLookupError] = useState('')
   const [activePronunciationKey, setActivePronunciationKey] = useState('')
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
@@ -319,12 +319,7 @@ function App() {
   const selectedVocabularyPrimaryExample = selectedVocabularyDetail?.examples[0]
   const selectedVocabularyIsInRoadmapProgress =
     selectedVocabularyRank > 0 && selectedVocabularyRank <= roadmapProgress
-  const lookupModalRank = lookupModalDetail
-    ? getVocabularyRank(lookupModalDetail.core)
-    : 0
-  const lookupModalPrimaryExample = lookupModalDetail?.examples[0]
-  const lookupModalIsInRoadmapProgress =
-    lookupModalRank > 0 && lookupModalRank <= roadmapProgress
+  const lookupPrimaryExample = lookupDetail?.examples[0]
 
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
@@ -437,55 +432,55 @@ function App() {
   }, [selectedVocabularyLookup, view])
 
   useEffect(() => {
-    if (!lookupModalQuery) {
+    if (!lookupQuery) {
       return
     }
 
     const controller = new AbortController()
 
-    async function fetchLookupModalDetail() {
-      setIsLookupModalLoading(true)
-      setLookupModalError('')
-      setLookupModalDetail(null)
+    async function fetchLookupDetail() {
+      setIsLookupLoading(true)
+      setLookupError('')
+      setLookupDetail(null)
 
       try {
-        setLookupModalDetail(
-          await requestVocabularyDetail(lookupModalQuery, controller.signal),
+        setLookupDetail(
+          await requestVocabularyDetail(lookupQuery, controller.signal),
         )
       } catch (error) {
         if (controller.signal.aborted) {
           return
         }
 
-        setLookupModalError(
+        setLookupError(
           error instanceof Error ? error.message : 'Vocabulary lookup unavailable',
         )
       } finally {
         if (!controller.signal.aborted) {
-          setIsLookupModalLoading(false)
+          setIsLookupLoading(false)
         }
       }
     }
 
-    fetchLookupModalDetail()
+    fetchLookupDetail()
 
     return () => controller.abort()
-  }, [lookupModalQuery])
+  }, [lookupQuery])
 
   useEffect(() => {
-    if (!lookupModalQuery) {
+    if (!lookupQuery) {
       return
     }
 
     function handleEscape(event: KeyboardEvent) {
       if (event.key === 'Escape') {
-        closeLookupModal()
+        closeLookupResult()
       }
     }
 
     window.addEventListener('keydown', handleEscape)
     return () => window.removeEventListener('keydown', handleEscape)
-  }, [lookupModalQuery])
+  }, [lookupQuery])
 
   function changeView(nextView: ViewId) {
     setView(nextView)
@@ -532,7 +527,7 @@ function App() {
     setVocabularyDetailError('')
   }
 
-  function openLookupModal(lookup: string) {
+  function openLookupResult(lookup: string) {
     const normalizedLookup = lookup.trim()
 
     if (!normalizedLookup) {
@@ -543,20 +538,20 @@ function App() {
     pronunciationAudioRef.current = null
     setActivePronunciationKey('')
     setPronunciationPlaybackError('')
-    setLookupModalQuery(normalizedLookup)
-    setLookupModalDetail(null)
-    setIsLookupModalLoading(false)
-    setLookupModalError('')
+    setLookupQuery(normalizedLookup)
+    setLookupDetail(null)
+    setIsLookupLoading(false)
+    setLookupError('')
   }
 
-  function closeLookupModal() {
+  function closeLookupResult() {
     pronunciationAudioRef.current?.pause()
     pronunciationAudioRef.current = null
     setActivePronunciationKey('')
-    setLookupModalQuery('')
-    setLookupModalDetail(null)
-    setIsLookupModalLoading(false)
-    setLookupModalError('')
+    setLookupQuery('')
+    setLookupDetail(null)
+    setIsLookupLoading(false)
+    setLookupError('')
   }
 
   function runVocabularySearch() {
@@ -565,7 +560,7 @@ function App() {
     const normalizedQuery = vocabularyQuery.trim()
 
     if (normalizedQuery) {
-      openLookupModal(normalizedQuery)
+      openLookupResult(normalizedQuery)
       return
     }
 
@@ -719,16 +714,148 @@ function App() {
                 让写代码的人，不再被英文挡在门外。
               </p>
 
-              <form className="landing-command" onSubmit={submitVocabularySearch}>
-                <span aria-hidden="true">$</span>
-                <input
-                  placeholder="搜索核心词汇，例如 process / system / data"
-                  value={vocabularyQuery}
-                  onChange={(event) => setVocabularyQuery(event.target.value)}
-                  onKeyDown={handleLandingSearchKeyDown}
-                />
-                <button type="submit">搜索</button>
-              </form>
+              <div className="landing-lookup">
+                <form className="landing-command" onSubmit={submitVocabularySearch}>
+                  <span aria-hidden="true">$</span>
+                  <input
+                    placeholder="搜索核心词汇，例如 process / system / data"
+                    value={vocabularyQuery}
+                    onChange={(event) => {
+                      setVocabularyQuery(event.target.value)
+
+                      if (!event.target.value.trim()) {
+                        closeLookupResult()
+                      }
+                    }}
+                    onKeyDown={handleLandingSearchKeyDown}
+                  />
+                  <button type="submit">搜索</button>
+                </form>
+
+                {lookupQuery && (
+                  <section
+                    className="lookup-result"
+                    aria-label="查词结果"
+                    aria-live="polite"
+                  >
+                    <button
+                      type="button"
+                      className="lookup-result-close"
+                      aria-label="关闭查词结果"
+                      onClick={closeLookupResult}
+                    >
+                      ×
+                    </button>
+
+                    {isLookupLoading && (
+                      <p className="lookup-result-status">
+                        正在查询 {lookupQuery}…
+                      </p>
+                    )}
+
+                    {!isLookupLoading && lookupError && (
+                      <div className="lookup-result-empty">
+                        <span>暂未收录</span>
+                        <strong>{lookupQuery}</strong>
+                        <p>
+                          可以换一个核心词试试，例如 process / system / data。
+                        </p>
+                      </div>
+                    )}
+
+                    {!isLookupLoading && lookupDetail && (
+                      <>
+                        <header className="lookup-result-header">
+                          <span>Lookup</span>
+                          <div>
+                            <h2>{lookupDetail.core.word}</h2>
+                            <p>
+                              {lookupDetail.core.meaningZh ||
+                                lookupDetail.core.meaning}
+                            </p>
+                          </div>
+                        </header>
+
+                        {(lookupDetail.core.phoneticUs ||
+                          lookupDetail.core.phoneticUk) && (
+                          <p className="vocabulary-phonetics">
+                            {lookupDetail.core.phoneticUs && (
+                              <span>US {lookupDetail.core.phoneticUs}</span>
+                            )}
+                            {lookupDetail.core.phoneticUk && (
+                              <span>UK {lookupDetail.core.phoneticUk}</span>
+                            )}
+                          </p>
+                        )}
+
+                        {lookupDetail.pronunciations.length > 0 && (
+                          <div
+                            className="pronunciation-list"
+                            aria-label={`${lookupDetail.core.word} 读音`}
+                          >
+                            {lookupDetail.pronunciations.map(
+                              (pronunciation, index) => {
+                                const label = getPronunciationLabel(
+                                  pronunciation,
+                                  index,
+                                )
+
+                                return (
+                                  <button
+                                    key={`${lookupDetail.core.id}-${pronunciation.id}`}
+                                    type="button"
+                                    className={
+                                      activePronunciationKey ===
+                                      getPronunciationKey(
+                                        lookupDetail.core,
+                                        pronunciation,
+                                      )
+                                        ? 'playing'
+                                        : ''
+                                    }
+                                    aria-label={`播放 ${lookupDetail.core.word} ${label} 读音`}
+                                    title={`${lookupDetail.core.word} ${label} 读音`}
+                                    onClick={() =>
+                                      playPronunciation(
+                                        lookupDetail.core,
+                                        pronunciation,
+                                      )
+                                    }
+                                  >
+                                    {activePronunciationKey ===
+                                    getPronunciationKey(
+                                      lookupDetail.core,
+                                      pronunciation,
+                                    )
+                                      ? `${label} 播放中`
+                                      : label}
+                                  </button>
+                                )
+                              },
+                            )}
+                          </div>
+                        )}
+
+                        {lookupDetail.core.definitionEn && (
+                          <p className="lookup-result-definition">
+                            {lookupDetail.core.definitionEn}
+                          </p>
+                        )}
+
+                        {lookupPrimaryExample && (
+                          <div className="lookup-result-example">
+                            <span>Example</span>
+                            <p>{lookupPrimaryExample.sentenceEn}</p>
+                            {lookupPrimaryExample.sentenceZh && (
+                              <small>{lookupPrimaryExample.sentenceZh}</small>
+                            )}
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </section>
+                )}
+              </div>
             </section>
 
             <section className="landing-method" aria-label="学习路径">
@@ -1254,134 +1381,6 @@ function App() {
         {view === 'admin' && <VocabularyAdmin />}
       </main>
 
-      {lookupModalQuery && (
-        <div
-          className="lookup-modal-backdrop"
-          role="presentation"
-          onMouseDown={(event) => {
-            if (event.target === event.currentTarget) {
-              closeLookupModal()
-            }
-          }}
-        >
-          <section
-            className="panel lookup-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="lookup-modal-title"
-          >
-            <button
-              type="button"
-              className="lookup-modal-close"
-              aria-label="关闭查词卡片"
-              onClick={closeLookupModal}
-            >
-              ×
-            </button>
-
-            {isLookupModalLoading && (
-              <p className="lookup-modal-status">正在查询 {lookupModalQuery}…</p>
-            )}
-
-            {!isLookupModalLoading && lookupModalError && (
-              <div className="lookup-modal-empty">
-                <span>暂未收录</span>
-                <h2 id="lookup-modal-title">{lookupModalQuery}</h2>
-                <p>可以换一个核心词试试，例如 process / system / data。</p>
-              </div>
-            )}
-
-            {!isLookupModalLoading && lookupModalDetail && (
-              <>
-                <header className="lookup-modal-header">
-                  <span>#{String(lookupModalRank).padStart(4, '0')}</span>
-                  <h2 id="lookup-modal-title">{lookupModalDetail.core.word}</h2>
-                  <p>
-                    {lookupModalDetail.core.meaningZh || lookupModalDetail.core.meaning}
-                  </p>
-                </header>
-
-                {lookupModalDetail.core.definitionEn && (
-                  <p className="lookup-modal-definition">
-                    {lookupModalDetail.core.definitionEn}
-                  </p>
-                )}
-
-                {(lookupModalDetail.core.phoneticUs ||
-                  lookupModalDetail.core.phoneticUk) && (
-                  <p className="vocabulary-phonetics">
-                    {lookupModalDetail.core.phoneticUs && (
-                      <span>US {lookupModalDetail.core.phoneticUs}</span>
-                    )}
-                    {lookupModalDetail.core.phoneticUk && (
-                      <span>UK {lookupModalDetail.core.phoneticUk}</span>
-                    )}
-                  </p>
-                )}
-
-                {lookupModalDetail.pronunciations.length > 0 && (
-                  <div
-                    className="pronunciation-list"
-                    aria-label={`${lookupModalDetail.core.word} 读音`}
-                  >
-                    {lookupModalDetail.pronunciations.map((pronunciation, index) => {
-                      const label = getPronunciationLabel(pronunciation, index)
-
-                      return (
-                        <button
-                          key={`${lookupModalDetail.core.id}-${pronunciation.id}`}
-                          type="button"
-                          className={
-                            activePronunciationKey ===
-                            getPronunciationKey(lookupModalDetail.core, pronunciation)
-                              ? 'playing'
-                              : ''
-                          }
-                          aria-label={`播放 ${lookupModalDetail.core.word} ${label} 读音`}
-                          title={`${lookupModalDetail.core.word} ${label} 读音`}
-                          onClick={() =>
-                            playPronunciation(lookupModalDetail.core, pronunciation)
-                          }
-                        >
-                          {activePronunciationKey ===
-                          getPronunciationKey(lookupModalDetail.core, pronunciation)
-                            ? `${label} 播放中`
-                            : label}
-                        </button>
-                      )
-                    })}
-                  </div>
-                )}
-
-                {lookupModalPrimaryExample && (
-                  <div className="lookup-modal-example">
-                    <span>Example</span>
-                    <p>{lookupModalPrimaryExample.sentenceEn}</p>
-                    {lookupModalPrimaryExample.sentenceZh && (
-                      <small>{lookupModalPrimaryExample.sentenceZh}</small>
-                    )}
-                  </div>
-                )}
-
-                <footer className="lookup-modal-actions">
-                  <button
-                    type="button"
-                    disabled={lookupModalIsInRoadmapProgress}
-                    onClick={() => updateRoadmapProgress(lookupModalRank)}
-                  >
-                    {lookupModalIsInRoadmapProgress
-                      ? '已在进度内'
-                      : `标记到 #${lookupModalRank}`}
-                  </button>
-                  <button type="button" className="secondary-button" onClick={closeLookupModal}>
-                    关闭
-                  </button>
-                </footer>
-              </>
-            )}
-          </section>
-        </div>
-      )}
     </div>
   )
 }
