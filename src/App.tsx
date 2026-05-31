@@ -523,10 +523,10 @@ function App() {
               <figure className="principles-visual" aria-hidden="true">
                 <img
                   className="principles-diagram"
-                  src="/mascot/beaver-teacher.svg"
+                  src="/mascot/beaver-teacher-board.webp"
                   alt=""
-                  width="640"
-                  height="480"
+                  width="824"
+                  height="782"
                   decoding="async"
                 />
               </figure>

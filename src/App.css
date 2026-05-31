@@ -330,8 +330,8 @@
   min-height: calc(100vh - 80px);
   padding: 72px 0 112px;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
-  gap: 76px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.88fr);
+  gap: 64px;
   align-items: center;
 }
 
@@ -378,7 +378,7 @@
 
 .principles-visual {
   justify-self: end;
-  width: min(480px, 100%);
+  width: min(540px, 100%);
   margin: 0;
 }
 
