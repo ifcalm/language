@@ -178,7 +178,7 @@
   justify-items: center;
   align-content: start;
   text-align: center;
-  padding: clamp(112px, 17vh, 168px) 0 72px;
+  padding: clamp(92px, calc(17vh - 20px), 148px) 0 72px;
 }
 
 .beaver-mascot {
@@ -302,8 +302,8 @@
 
 .method-poem {
   margin: 0 0 14px;
-  color: var(--text-soft);
-  font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+  color: var(--text);
+  font-size: clamp(1.08rem, 1.8vw, 1.28rem);
   font-weight: 500;
   letter-spacing: 0.16em;
   line-height: 1.6;
