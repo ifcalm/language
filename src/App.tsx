@@ -460,26 +460,36 @@ function App() {
             </section>
 
             <section className="landing-method" aria-label="学习路径">
+              <div className="method-example" aria-label="学习路径示例句">
+                <span>Example</span>
+                <strong>The cache improves response time.</strong>
+                <p>从一句开发者常见英文，拆成词、动词、例句和结构。</p>
+              </div>
+
               <div className="landing-modules" aria-label="学习路径模块">
                 <article>
                   <span>01</span>
                   <h3>词汇</h3>
-                  <p>先建立常用词的稳定底稿。</p>
+                  <code>cache / improves / response / time</code>
+                  <p>认识句子里的稳定词块。</p>
                 </article>
                 <article>
                   <span>02</span>
                   <h3>动词</h3>
-                  <p>把动词当作函数，理解它需要哪些参数。</p>
+                  <code>improves = 提高、改善</code>
+                  <p>把动词当作函数，理解它带来的动作。</p>
                 </article>
                 <article>
                   <span>03</span>
                   <h3>例句</h3>
-                  <p>从短句开始，练习识别主干和修饰。</p>
+                  <code>The cache improves response time.</code>
+                  <p>在完整句子里反复遇见核心表达。</p>
                 </article>
                 <article>
                   <span>04</span>
                   <h3>句子结构</h3>
-                  <p>把长句拆回核心短句，再逐步还原细节。</p>
+                  <code>The cache / improves / response time</code>
+                  <p>找到主干，再理解修饰和细节。</p>
                 </article>
               </div>
             </section>

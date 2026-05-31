@@ -291,7 +291,38 @@
 }
 
 .landing-method {
-  padding: 72px 0 88px;
+  padding: 72px 0 96px;
+}
+
+.method-example {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.method-example span {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.method-example strong {
+  display: block;
+  margin-top: 12px;
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: clamp(1.42rem, 3vw, 2.25rem);
+  letter-spacing: -0.055em;
+  line-height: 1.2;
+}
+
+.method-example p {
+  margin: 12px 0 0;
+  color: var(--text-soft);
+  line-height: 1.7;
 }
 
 .landing-modules {
@@ -302,7 +333,7 @@
 }
 
 .landing-modules article {
-  min-height: 230px;
+  min-height: 218px;
   padding: 26px;
   border: 1px solid var(--border);
   border-radius: 28px;
@@ -315,9 +346,24 @@
 }
 
 .landing-modules h3 {
-  margin: 58px 0 10px;
-  font-size: 1.55rem;
-  letter-spacing: -0.05em;
+  margin: 36px 0 12px;
+  font-size: 1.42rem;
+  letter-spacing: -0.045em;
+}
+
+.landing-modules code {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 14px;
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+  border-radius: 12px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .landing-modules p {
