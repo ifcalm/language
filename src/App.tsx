@@ -459,16 +459,7 @@ function App() {
               </form>
             </section>
 
-            <section className="landing-method" aria-labelledby="landing-method-title">
-              <div className="landing-method-copy">
-                <span>Learning Path</span>
-                <h2 id="landing-method-title">像读代码一样读懂英文。</h2>
-                <p>
-                  先找到动词，再看参数，最后理解修饰。英语不是一堆语法术语，
-                  而是一套可以拆解的结构。
-                </p>
-              </div>
-
+            <section className="landing-method" aria-label="学习路径">
               <div className="landing-modules" aria-label="学习路径模块">
                 <article>
                   <span>01</span>
@@ -491,6 +482,105 @@ function App() {
                   <p>把长句拆回核心短句，再逐步还原细节。</p>
                 </article>
               </div>
+            </section>
+
+            <section className="landing-principles" aria-label="学习原则">
+              <div className="principles-list">
+                <article className="principle-item">
+                  <span>01</span>
+                  <div>
+                    <h2>重复，不断重复。</h2>
+                    <p>语言不是一次记住的，而是在不同语境里反复遇见。</p>
+                  </div>
+                </article>
+                <article className="principle-item">
+                  <span>02</span>
+                  <div>
+                    <h2>阅读优先。</h2>
+                    <p>
+                      先解决开发者最常遇到的英文阅读场景：文档、文章、错误信息。
+                    </p>
+                  </div>
+                </article>
+                <article className="principle-item">
+                  <span>03</span>
+                  <div>
+                    <h2>动词中心。</h2>
+                    <p>先找到动作，再看参数和修饰，句子的结构会变清楚。</p>
+                  </div>
+                </article>
+                <article className="principle-item">
+                  <span>04</span>
+                  <div>
+                    <h2>开发者视角。</h2>
+                    <p>
+                      从开发者真实使用场景出发，围绕代码、文档和技术表达来设计学习内容。
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <figure className="principles-visual" aria-hidden="true">
+                <svg
+                  className="principles-diagram"
+                  viewBox="0 0 420 360"
+                >
+                  <rect
+                    x="70"
+                    y="44"
+                    width="280"
+                    height="58"
+                    rx="18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                  />
+                  <text x="100" y="80" fill="currentColor" fontSize="19" fontWeight="750">
+                    read(error.message)
+                  </text>
+                  <path
+                    d="M210 102 V142 M210 142 H124 M210 142 H296 M124 142 V184 M296 142 V184 M210 142 V214"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeWidth="3"
+                  />
+                  <g>
+                    <circle cx="124" cy="204" r="38" fill="none" stroke="currentColor" strokeWidth="3" />
+                    <text x="124" y="210" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
+                      action
+                    </text>
+                  </g>
+                  <g>
+                    <circle cx="296" cy="204" r="38" fill="none" stroke="currentColor" strokeWidth="3" />
+                    <text x="296" y="210" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
+                      args
+                    </text>
+                  </g>
+                  <g>
+                    <rect
+                      x="139"
+                      y="244"
+                      width="142"
+                      height="50"
+                      rx="16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                    />
+                    <text x="210" y="276" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
+                      modifiers
+                    </text>
+                  </g>
+                  <path
+                    d="M88 302 C126 324 166 334 210 334 C254 334 294 324 332 302"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeWidth="3"
+                  />
+                </svg>
+              </figure>
             </section>
           </>
         )}
