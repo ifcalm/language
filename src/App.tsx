@@ -489,14 +489,14 @@ function App() {
                 <article className="principle-item">
                   <span>01</span>
                   <div>
-                    <h2>重复，不断重复。</h2>
+                    <h2>重复，不断重复</h2>
                     <p>语言不是一次记住的，而是在不同语境里反复遇见。</p>
                   </div>
                 </article>
                 <article className="principle-item">
                   <span>02</span>
                   <div>
-                    <h2>阅读能力。</h2>
+                    <h2>阅读能力</h2>
                     <p>
                       解决开发者最常遇到的英文阅读场景：文档、文章、错误信息。
                     </p>
@@ -505,14 +505,14 @@ function App() {
                 <article className="principle-item">
                   <span>03</span>
                   <div>
-                    <h2>动词中心。</h2>
+                    <h2>动词</h2>
                     <p>先找到动作，再看参数和修饰，句子的结构会变清楚。</p>
                   </div>
                 </article>
                 <article className="principle-item">
                   <span>04</span>
                   <div>
-                    <h2>开发者视角。</h2>
+                    <h2>开发者视角</h2>
                     <p>
                       从开发者真实使用场景出发，围绕代码、文档和技术表达来设计学习内容。
                     </p>
