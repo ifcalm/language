@@ -13,6 +13,7 @@ import {
 import {
   vocabularyFrequencyBandLabels,
   type CoreVocabularyEntry,
+  type VocabularyExample,
   type VocabularyFrequencyBand,
   type VocabularyPronunciation,
 } from './data/vocabulary'
@@ -72,6 +73,7 @@ interface VocabularyApiItem {
   phoneticUs: string
   phoneticUk: string
   example?: string
+  examples?: VocabularyExample[]
   pronunciations?: VocabularyPronunciation[]
 }
 
@@ -84,6 +86,28 @@ interface VocabularyApiResponse {
   }
 }
 
+interface VocabularyDetailCore extends VocabularyApiItem {
+  normalizedWord: string
+  lemma: string | null
+}
+
+interface VocabularyDetailResponse {
+  core: VocabularyDetailCore
+  pronunciations: VocabularyPronunciation[]
+  examples: VocabularyExample[]
+}
+
+interface VocabularyDetail {
+  core: CoreVocabularyEntry & {
+    normalizedWord: string
+    lemma: string | null
+    meaningZh: string
+    definitionEn: string
+  }
+  pronunciations: VocabularyPronunciation[]
+  examples: VocabularyExample[]
+}
+
 const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => ({
   id: item.id,
   word: item.word,
@@ -93,9 +117,39 @@ const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => (
   phoneticUs: item.phoneticUs,
   phoneticUk: item.phoneticUk,
   example: item.example,
+  examples: item.examples ?? [],
   skills: ['listening', 'speaking', 'reading', 'writing'],
   pronunciations: item.pronunciations ?? [],
 })
+
+const mapVocabularyDetail = (
+  payload: VocabularyDetailResponse,
+): VocabularyDetail => {
+  const examples = payload.examples ?? []
+  const pronunciations = payload.pronunciations ?? []
+
+  return {
+    core: {
+      id: payload.core.id,
+      word: payload.core.word,
+      normalizedWord: payload.core.normalizedWord,
+      lemma: payload.core.lemma,
+      meaning: payload.core.meaning,
+      meaningZh: payload.core.meaningZh,
+      definitionEn: payload.core.definitionEn,
+      priority: payload.core.priority,
+      frequencyRank: payload.core.frequencyRank ?? undefined,
+      phoneticUs: payload.core.phoneticUs,
+      phoneticUk: payload.core.phoneticUk,
+      example: examples[0]?.sentenceEn,
+      examples,
+      pronunciations,
+      skills: ['listening', 'speaking', 'reading', 'writing'],
+    },
+    pronunciations,
+    examples,
+  }
+}
 
 function clampRoadmapProgress(value: number) {
   if (!Number.isFinite(value)) {
@@ -156,6 +210,11 @@ function App() {
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
   const [vocabularyApiError, setVocabularyApiError] = useState('')
+  const [selectedVocabularyLookup, setSelectedVocabularyLookup] = useState('')
+  const [selectedVocabularyDetail, setSelectedVocabularyDetail] =
+    useState<VocabularyDetail | null>(null)
+  const [isVocabularyDetailLoading, setIsVocabularyDetailLoading] = useState(false)
+  const [vocabularyDetailError, setVocabularyDetailError] = useState('')
   const [activePronunciationKey, setActivePronunciationKey] = useState('')
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
@@ -226,6 +285,12 @@ function App() {
     },
   }
   const placeholderPage = placeholderPages[view]
+  const selectedVocabularyRank = selectedVocabularyDetail
+    ? getVocabularyRank(selectedVocabularyDetail.core)
+    : 0
+  const selectedVocabularyPrimaryExample = selectedVocabularyDetail?.examples[0]
+  const selectedVocabularyIsInRoadmapProgress =
+    selectedVocabularyRank > 0 && selectedVocabularyRank <= roadmapProgress
 
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
@@ -238,7 +303,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (view !== 'vocabulary') {
+    if (view !== 'vocabulary' || selectedVocabularyLookup) {
       return
     }
 
@@ -293,7 +358,57 @@ function App() {
     fetchVocabulary()
 
     return () => controller.abort()
-  }, [view, vocabularyFrequency, vocabularyOffset, vocabularyQuery])
+  }, [
+    selectedVocabularyLookup,
+    view,
+    vocabularyFrequency,
+    vocabularyOffset,
+    vocabularyQuery,
+  ])
+
+  useEffect(() => {
+    if (view !== 'vocabulary' || !selectedVocabularyLookup) {
+      return
+    }
+
+    const controller = new AbortController()
+
+    async function fetchVocabularyDetail() {
+      setIsVocabularyDetailLoading(true)
+      setVocabularyDetailError('')
+      setSelectedVocabularyDetail(null)
+
+      try {
+        const response = await fetch(
+          `/api/vocabulary/${encodeURIComponent(selectedVocabularyLookup)}`,
+          { signal: controller.signal },
+        )
+
+        if (!response.ok) {
+          throw new Error(`Vocabulary detail API responded with ${response.status}`)
+        }
+
+        const payload = (await response.json()) as VocabularyDetailResponse
+        setSelectedVocabularyDetail(mapVocabularyDetail(payload))
+      } catch (error) {
+        if (controller.signal.aborted) {
+          return
+        }
+
+        setVocabularyDetailError(
+          error instanceof Error ? error.message : 'Vocabulary detail unavailable',
+        )
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsVocabularyDetailLoading(false)
+        }
+      }
+    }
+
+    fetchVocabularyDetail()
+
+    return () => controller.abort()
+  }, [selectedVocabularyLookup, view])
 
   function changeView(nextView: ViewId) {
     setView(nextView)
@@ -318,14 +433,45 @@ function App() {
   }
 
 
+  function openVocabularyDetail(lookup: string) {
+    const normalizedLookup = lookup.trim()
+
+    if (!normalizedLookup) {
+      return
+    }
+
+    setVocabularyOffset(0)
+    setSelectedVocabularyLookup(normalizedLookup)
+    changeView('vocabulary')
+
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  function closeVocabularyDetail() {
+    setSelectedVocabularyLookup('')
+    setSelectedVocabularyDetail(null)
+    setVocabularyDetailError('')
+  }
+
   function submitVocabularySearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     setVocabularyOffset(0)
+
+    const normalizedQuery = vocabularyQuery.trim()
+
+    if (normalizedQuery) {
+      openVocabularyDetail(normalizedQuery)
+      return
+    }
+
+    setSelectedVocabularyLookup('')
     changeView('vocabulary')
   }
 
   function playPronunciation(
-    item: CoreVocabularyEntry,
+    item: Pick<CoreVocabularyEntry, 'id' | 'word' | 'pronunciations'>,
     pronunciation: VocabularyPronunciation,
   ) {
     const pronunciationKey = getPronunciationKey(item, pronunciation)
@@ -404,7 +550,13 @@ function App() {
                 key={item.id}
                 type="button"
                 className={view === item.id ? 'active' : ''}
-                onClick={() => changeView(item.id)}
+                onClick={() => {
+                  if (item.id === 'vocabulary') {
+                    closeVocabularyDetail()
+                  }
+
+                  changeView(item.id)
+                }}
               >
                 {item.label}
               </button>
@@ -451,7 +603,7 @@ function App() {
               <form className="landing-command" onSubmit={submitVocabularySearch}>
                 <span aria-hidden="true">$</span>
                 <input
-                  placeholder="搜索核心词汇，例如 process / system / cache"
+                  placeholder="搜索核心词汇，例如 process / system / data"
                   value={vocabularyQuery}
                   onChange={(event) => setVocabularyQuery(event.target.value)}
                 />
@@ -555,6 +707,199 @@ function App() {
 
         {view === 'vocabulary' && (
           <>
+            {selectedVocabularyLookup && (
+              <>
+                {(isVocabularyDetailLoading || vocabularyDetailError) && (
+                  <section className="panel vocabulary-source-note">
+                    {isVocabularyDetailLoading && '正在读取单词详情…'}
+                    {!isVocabularyDetailLoading &&
+                      vocabularyDetailError &&
+                      '没有找到这个单词，或者详情暂时无法读取。'}
+                    {!isVocabularyDetailLoading && vocabularyDetailError && (
+                      <button
+                        type="button"
+                        className="vocabulary-detail-back"
+                        onClick={closeVocabularyDetail}
+                      >
+                        返回词库
+                      </button>
+                    )}
+                  </section>
+                )}
+
+                {pronunciationPlaybackError && (
+                  <section className="panel vocabulary-source-note" role="status">
+                    {pronunciationPlaybackError}
+                  </section>
+                )}
+
+                {selectedVocabularyDetail && (
+                  <>
+                    <section className="panel vocabulary-detail-hero">
+                      <button
+                        type="button"
+                        className="vocabulary-detail-back"
+                        onClick={closeVocabularyDetail}
+                      >
+                        ← 返回词库
+                      </button>
+
+                      <div className="vocabulary-detail-heading">
+                        <span>
+                          #{String(selectedVocabularyRank).padStart(4, '0')}
+                        </span>
+                        <h2>{selectedVocabularyDetail.core.word}</h2>
+                        <p>
+                          {selectedVocabularyDetail.core.meaningZh ||
+                            selectedVocabularyDetail.core.meaning}
+                        </p>
+                      </div>
+
+                      {selectedVocabularyDetail.core.definitionEn && (
+                        <p className="vocabulary-detail-definition">
+                          {selectedVocabularyDetail.core.definitionEn}
+                        </p>
+                      )}
+
+                      {(selectedVocabularyDetail.core.phoneticUs ||
+                        selectedVocabularyDetail.core.phoneticUk) && (
+                        <p className="vocabulary-phonetics">
+                          {selectedVocabularyDetail.core.phoneticUs && (
+                            <span>US {selectedVocabularyDetail.core.phoneticUs}</span>
+                          )}
+                          {selectedVocabularyDetail.core.phoneticUk && (
+                            <span>UK {selectedVocabularyDetail.core.phoneticUk}</span>
+                          )}
+                        </p>
+                      )}
+
+                      {selectedVocabularyDetail.pronunciations.length > 0 && (
+                        <div
+                          className="pronunciation-list"
+                          aria-label={`${selectedVocabularyDetail.core.word} 读音`}
+                        >
+                          {selectedVocabularyDetail.pronunciations.map(
+                            (pronunciation, index) => {
+                              const label = getPronunciationLabel(
+                                pronunciation,
+                                index,
+                              )
+
+                              return (
+                                <button
+                                  key={`${selectedVocabularyDetail.core.id}-${pronunciation.id}`}
+                                  type="button"
+                                  className={
+                                    activePronunciationKey ===
+                                    getPronunciationKey(
+                                      selectedVocabularyDetail.core,
+                                      pronunciation,
+                                    )
+                                      ? 'playing'
+                                      : ''
+                                  }
+                                  aria-label={`播放 ${selectedVocabularyDetail.core.word} ${label} 读音`}
+                                  title={`${selectedVocabularyDetail.core.word} ${label} 读音`}
+                                  onClick={() =>
+                                    playPronunciation(
+                                      selectedVocabularyDetail.core,
+                                      pronunciation,
+                                    )
+                                  }
+                                >
+                                  {activePronunciationKey ===
+                                  getPronunciationKey(
+                                    selectedVocabularyDetail.core,
+                                    pronunciation,
+                                  )
+                                    ? `${label} 播放中`
+                                    : label}
+                                </button>
+                              )
+                            },
+                          )}
+                        </div>
+                      )}
+                    </section>
+
+                    <section className="vocabulary-detail-layout">
+                      <article className="panel vocabulary-detail-main">
+                        <span>How to read it</span>
+                        <h2>阅读提示</h2>
+                        <p>
+                          看到 <strong>{selectedVocabularyDetail.core.word}</strong>{' '}
+                          时，不要只背中文义。看它附近的动词和对象，再把它放回完整句子里理解。
+                        </p>
+
+                        {selectedVocabularyPrimaryExample && (
+                          <div className="vocabulary-detail-example">
+                            <h3>精选例句</h3>
+                            <p>{selectedVocabularyPrimaryExample.sentenceEn}</p>
+                            {selectedVocabularyPrimaryExample.sentenceZh && (
+                              <small>
+                                {selectedVocabularyPrimaryExample.sentenceZh}
+                              </small>
+                            )}
+                          </div>
+                        )}
+                      </article>
+
+                      <aside className="panel vocabulary-detail-side">
+                        <h2>快速信息</h2>
+                        <dl>
+                          <div>
+                            <dt>频率排序</dt>
+                            <dd>#{selectedVocabularyRank}</dd>
+                          </div>
+                          {selectedVocabularyDetail.core.lemma && (
+                            <div>
+                              <dt>词元</dt>
+                              <dd>{selectedVocabularyDetail.core.lemma}</dd>
+                            </div>
+                          )}
+                          <div>
+                            <dt>例句数量</dt>
+                            <dd>{selectedVocabularyDetail.examples.length}</dd>
+                          </div>
+                        </dl>
+
+                        <div className="vocabulary-detail-actions">
+                          <button
+                            type="button"
+                            disabled={selectedVocabularyIsInRoadmapProgress}
+                            onClick={() =>
+                              updateRoadmapProgress(selectedVocabularyRank)
+                            }
+                          >
+                            {selectedVocabularyIsInRoadmapProgress
+                              ? '已在进度内'
+                              : `标记到 #${selectedVocabularyRank}`}
+                          </button>
+                        </div>
+                      </aside>
+                    </section>
+
+                    {selectedVocabularyDetail.examples.length > 1 && (
+                      <section className="panel vocabulary-detail-examples">
+                        <div className="section-heading">
+                          <h2>更多例句</h2>
+                          <span>{selectedVocabularyDetail.examples.length} 条</span>
+                        </div>
+                        {selectedVocabularyDetail.examples.slice(1).map((example) => (
+                          <article key={example.id}>
+                            <p>{example.sentenceEn}</p>
+                            {example.sentenceZh && <small>{example.sentenceZh}</small>}
+                          </article>
+                        ))}
+                      </section>
+                    )}
+                  </>
+                )}
+              </>
+            )}
+
+            {!selectedVocabularyLookup && (
+              <>
             <section className="panel vocabulary-hero">
               <div>
                 <span>Core 3000</span>
@@ -689,13 +1034,22 @@ function App() {
                           ? 'Already inside your roadmap progress'
                           : `Mark progress through #${rank}`}
                       </small>
-                      <button
-                        type="button"
-                        disabled={isInRoadmapProgress}
-                        onClick={() => updateRoadmapProgress(rank)}
-                      >
-                        {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
-                      </button>
+                      <div className="vocabulary-card-actions">
+                        <button
+                          type="button"
+                          className="secondary-button"
+                          onClick={() => openVocabularyDetail(item.id)}
+                        >
+                          查看详情
+                        </button>
+                        <button
+                          type="button"
+                          disabled={isInRoadmapProgress}
+                          onClick={() => updateRoadmapProgress(rank)}
+                        >
+                          {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
+                        </button>
+                      </div>
                     </footer>
                   </article>
                 )
@@ -707,6 +1061,8 @@ function App() {
                 还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义或
                 英文释义来缩小范围。
               </section>
+            )}
+              </>
             )}
           </>
         )}

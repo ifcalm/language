@@ -1037,6 +1037,205 @@ button:disabled,
   margin-bottom: 18px;
 }
 
+
+.vocabulary-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vocabulary-detail-hero {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+}
+
+.vocabulary-detail-back {
+  justify-self: start;
+  border: 0;
+  background: transparent;
+  color: var(--text-soft);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 750;
+  padding: 0;
+  text-decoration: none;
+  text-underline-offset: 6px;
+}
+
+.vocabulary-detail-back:hover,
+.vocabulary-detail-back:focus-visible {
+  color: var(--text);
+  text-decoration-line: underline;
+}
+
+.vocabulary-detail-heading {
+  display: grid;
+  gap: 8px;
+}
+
+.vocabulary-detail-heading span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.vocabulary-detail-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(3rem, 8vw, 6.2rem);
+  line-height: 0.9;
+  letter-spacing: -0.09em;
+}
+
+.vocabulary-detail-heading p,
+.vocabulary-detail-definition {
+  margin: 0;
+}
+
+.vocabulary-detail-heading p {
+  color: var(--text);
+  font-size: clamp(1.18rem, 2vw, 1.45rem);
+  font-weight: 760;
+}
+
+.vocabulary-detail-definition {
+  max-width: 760px;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.vocabulary-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.38fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.vocabulary-detail-main,
+.vocabulary-detail-side,
+.vocabulary-detail-examples {
+  padding: 24px;
+}
+
+.vocabulary-detail-main > span {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vocabulary-detail-main h2,
+.vocabulary-detail-side h2 {
+  margin: 10px 0 12px;
+  color: var(--text);
+  font-size: 1.45rem;
+  letter-spacing: -0.04em;
+}
+
+.vocabulary-detail-main p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+.vocabulary-detail-main strong {
+  color: var(--text);
+}
+
+.vocabulary-detail-example {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.vocabulary-detail-example h3 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.vocabulary-detail-example p,
+.vocabulary-detail-examples p {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.7;
+}
+
+.vocabulary-detail-example small,
+.vocabulary-detail-examples small {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.vocabulary-detail-side dl {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.vocabulary-detail-side dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vocabulary-detail-side dl div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.vocabulary-detail-side dt {
+  color: var(--text-muted);
+  font-weight: 760;
+}
+
+.vocabulary-detail-side dd {
+  margin: 0;
+  color: var(--text);
+  font-weight: 850;
+}
+
+.vocabulary-detail-actions {
+  margin-top: 22px;
+}
+
+.vocabulary-detail-actions button {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 11px 15px;
+  background: var(--text);
+  color: var(--surface);
+  cursor: pointer;
+}
+
+.vocabulary-detail-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+}
+
+.vocabulary-detail-examples {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.vocabulary-detail-examples article {
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.vocabulary-detail-examples article:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
 .stats-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1353,6 +1552,14 @@ button:disabled,
   .principles-visual {
     justify-self: center;
     width: min(360px, 100%);
+  }
+
+  .vocabulary-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vocabulary-detail-heading h2 {
+    font-size: clamp(2.8rem, 18vw, 4.4rem);
   }
 }
 

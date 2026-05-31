@@ -361,6 +361,66 @@ async function getVocabularyBundle(env: Env, vocabularyId: string) {
   }
 }
 
+async function getVocabByLookup(env: Env, lookup: string) {
+  const normalizedLookup = lookup.trim().toLowerCase()
+
+  if (!normalizedLookup) {
+    return null
+  }
+
+  return env.DB.prepare(
+    `SELECT
+      id,
+      word,
+      normalized_word,
+      lemma,
+      meaning_zh,
+      definition_en,
+      frequency_rank,
+      phonetic_us,
+      phonetic_uk,
+      created_at,
+      updated_at
+    FROM vocab
+    WHERE id = ? OR normalized_word = ? OR lower(word) = ?
+    ORDER BY
+      CASE
+        WHEN id = ? THEN 0
+        WHEN normalized_word = ? THEN 1
+        ELSE 2
+      END,
+      COALESCE(frequency_rank, 999999) ASC
+    LIMIT 1`,
+  )
+    .bind(
+      lookup,
+      normalizedLookup,
+      normalizedLookup,
+      lookup,
+      normalizedLookup,
+    )
+    .first<VocabRow>()
+}
+
+async function handleVocabularyDetail(request: Request, env: Env) {
+  const lookup = decodeURIComponent(
+    new URL(request.url).pathname.replace('/api/vocabulary/', ''),
+  )
+  const core = await getVocabByLookup(env, lookup)
+
+  if (!core) {
+    return makeErrorResponse('Vocabulary item not found', 404)
+  }
+
+  const detail = await getVocabularyBundle(env, core.id)
+
+  if (!detail) {
+    return makeErrorResponse('Vocabulary item not found', 404)
+  }
+
+  return makeJsonResponse(detail)
+}
+
 async function handleAdminVocabularyDetail(request: Request, env: Env) {
   const vocabularyId = decodeURIComponent(
     new URL(request.url).pathname.replace('/api/admin/vocabulary/', ''),
@@ -614,6 +674,10 @@ export default {
       request.method === 'GET'
     ) {
       return handleVocabularyPronunciations(request, env)
+    }
+
+    if (url.pathname.startsWith('/api/vocabulary/') && request.method === 'GET') {
+      return handleVocabularyDetail(request, env)
     }
 
     if (url.pathname === '/api/admin/vocabulary' && request.method === 'GET') {
