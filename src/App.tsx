@@ -459,22 +459,38 @@ function App() {
               </form>
             </section>
 
-            <section className="landing-modules" aria-label="能力模块">
-              <article>
-                <span>01</span>
-                <h2>核心词汇</h2>
-                <p>先把通用英语底座打稳，读文档、看资料都更顺。</p>
-              </article>
-              <article>
-                <span>02</span>
-                <h2>程序员英语</h2>
-                <p>后续补齐 async、cache、latency、runtime 等技术高频词。</p>
-              </article>
-              <article>
-                <span>03</span>
-                <h2>句子结构</h2>
-                <p>把英文句子拆成可复用 pattern，减少阅读和表达阻力。</p>
-              </article>
+            <section className="landing-method" aria-labelledby="landing-method-title">
+              <div className="landing-method-copy">
+                <span>Learning Path</span>
+                <h2 id="landing-method-title">像读代码一样读懂英文。</h2>
+                <p>
+                  先找到动词，再看参数，最后理解修饰。英语不是一堆语法术语，
+                  而是一套可以拆解的结构。
+                </p>
+              </div>
+
+              <div className="landing-modules" aria-label="学习路径模块">
+                <article>
+                  <span>01</span>
+                  <h3>词汇</h3>
+                  <p>先建立常用词的稳定底稿。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3>动词</h3>
+                  <p>把动词当作函数，理解它需要哪些参数。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3>例句</h3>
+                  <p>从短句开始，练习识别主干和修饰。</p>
+                </article>
+                <article>
+                  <span>04</span>
+                  <h3>句子结构</h3>
+                  <p>把长句拆回核心短句，再逐步还原细节。</p>
+                </article>
+              </div>
             </section>
           </>
         )}
