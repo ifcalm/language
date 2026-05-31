@@ -32,6 +32,8 @@ type ViewId =
   | 'examples'
   | 'vocabulary'
   | 'library'
+  | 'login'
+  | 'register'
   | 'admin'
 type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
 type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
@@ -41,12 +43,28 @@ const VOCABULARY_VISIBLE_LIMIT = 240
 const CORE_VOCABULARY_TOTAL = 3000
 
 
-function getInitialView(): ViewId {
-  if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
+function getViewFromPath(pathname: string): ViewId {
+  if (pathname.startsWith('/admin')) {
     return 'admin'
   }
 
+  if (pathname.startsWith('/login')) {
+    return 'login'
+  }
+
+  if (pathname.startsWith('/register') || pathname.startsWith('/signup')) {
+    return 'register'
+  }
+
   return 'roadmap'
+}
+
+function getInitialView(): ViewId {
+  if (typeof window === 'undefined') {
+    return 'roadmap'
+  }
+
+  return getViewFromPath(window.location.pathname)
 }
 
 const vocabularyFrequencyOptions: Array<{
@@ -275,14 +293,23 @@ function App() {
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
-  const pageHeading = {
+  const pageHeadings: Partial<
+    Record<
+      ViewId,
+      {
+        eyebrow: string
+        title: string
+      }
+    >
+  > = {
     strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
     verbs: { eyebrow: 'Verb Patterns', title: '动词' },
     examples: { eyebrow: 'Sentence Examples', title: '例句' },
     vocabulary: { eyebrow: 'Core 3000', title: '核心词库' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
-  }[view as Exclude<ViewId, 'roadmap'>]
+  }
+  const pageHeading = pageHeadings[view]
   const placeholderPages: Partial<
     Record<
       ViewId,
@@ -313,6 +340,28 @@ function App() {
     },
   }
   const placeholderPage = placeholderPages[view]
+  const authPages = {
+    login: {
+      title: '登录',
+      emailAction: '继续',
+      googleAction: '使用 Google 继续',
+      githubAction: '使用 GitHub 继续',
+      switchText: '还没有账号？',
+      switchAction: '注册',
+      switchView: 'register' as ViewId,
+    },
+    register: {
+      title: '注册',
+      emailAction: '创建账户',
+      googleAction: '使用 Google 注册',
+      githubAction: '使用 GitHub 注册',
+      switchText: '已经有账号？',
+      switchAction: '去登录',
+      switchView: 'login' as ViewId,
+    },
+  }
+  const authPage =
+    view === 'login' || view === 'register' ? authPages[view] : undefined
   const selectedVocabularyRank = selectedVocabularyDetail
     ? getVocabularyRank(selectedVocabularyDetail.core)
     : 0
@@ -329,6 +378,19 @@ function App() {
     return () => {
       pronunciationAudioRef.current?.pause()
     }
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+
+    function handlePopState() {
+      setView(getViewFromPath(window.location.pathname))
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
   }, [])
 
   useEffect(() => {
@@ -489,13 +551,15 @@ function App() {
       return
     }
 
-    if (nextView === 'admin') {
-      window.history.pushState(null, '', '/admin')
-      return
+    const pathByView: Partial<Record<ViewId, string>> = {
+      admin: '/admin',
+      login: '/login',
+      register: '/register',
     }
+    const nextPath = pathByView[nextView] ?? '/'
 
-    if (window.location.pathname.startsWith('/admin')) {
-      window.history.pushState(null, '', '/')
+    if (window.location.pathname !== nextPath) {
+      window.history.pushState(null, '', nextPath)
     }
   }
 
@@ -640,52 +704,62 @@ function App() {
 
   return (
     <div className="app-shell">
-      <header className="site-header">
-        <div className="site-header-inner">
-          <button
-            type="button"
-            className="site-brand"
-            onClick={() => changeView('roadmap')}
-            aria-label="返回 English Orbit 首页"
-          >
-            <img
-              className="brand-icon"
-              src="/brand/beaver-head-128.png"
-              alt=""
-              width="40"
-              height="40"
-              decoding="async"
-            />
-          </button>
+      {!authPage && (
+        <header className="site-header">
+          <div className="site-header-inner">
+            <button
+              type="button"
+              className="site-brand"
+              onClick={() => changeView('roadmap')}
+              aria-label="返回 English Orbit 首页"
+            >
+              <img
+                className="brand-icon"
+                src="/brand/beaver-head-128.png"
+                alt=""
+                width="40"
+                height="40"
+                decoding="async"
+              />
+            </button>
 
-          <nav className="site-nav" aria-label="主导航">
-            {primaryNavigationItems.map((item) => (
-              <button
-                key={item.id}
-                type="button"
-                className={view === item.id ? 'active' : ''}
-                onClick={() => {
-                  if (item.id === 'vocabulary') {
-                    closeVocabularyDetail()
-                  }
+            <nav className="site-nav" aria-label="主导航">
+              {primaryNavigationItems.map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  className={view === item.id ? 'active' : ''}
+                  onClick={() => {
+                    if (item.id === 'vocabulary') {
+                      closeVocabularyDetail()
+                    }
 
-                  changeView(item.id)
-                }}
-              >
-                {item.label}
+                    changeView(item.id)
+                  }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+
+            <div className="site-auth-actions" aria-label="账户入口">
+              <button type="button" onClick={() => changeView('login')}>
+                登录
               </button>
-            ))}
-          </nav>
-
-          <div className="site-auth-actions" aria-label="账户入口">
-            <button type="button">登录</button>
-            <span aria-hidden="true">/</span>
-            <button type="button">注册</button>
+              <span aria-hidden="true">/</span>
+              <button type="button" onClick={() => changeView('register')}>
+                注册
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      )}
 
-      <main className={`content ${view === 'roadmap' ? 'landing-content' : ''}`}>
+      <main
+        className={`content ${view === 'roadmap' ? 'landing-content' : ''} ${
+          authPage ? 'auth-content' : ''
+        }`}
+      >
         {view !== 'roadmap' && pageHeading && (
           <header className="page-header">
             <div>
@@ -941,6 +1015,76 @@ function App() {
               </figure>
             </section>
           </>
+        )}
+
+        {authPage && (
+          <section className="auth-page" aria-label={authPage.title}>
+            <button
+              type="button"
+              className="auth-logo"
+              onClick={() => changeView('roadmap')}
+              aria-label="返回 English Orbit 首页"
+            >
+              <img
+                src="/brand/beaver-head-128.png"
+                alt=""
+                width="48"
+                height="48"
+                decoding="async"
+              />
+            </button>
+
+            <div className="auth-title">
+              <h1>{authPage.title}</h1>
+            </div>
+
+            <form
+              className="auth-card"
+              onSubmit={(event) => event.preventDefault()}
+            >
+              <label htmlFor="auth-email">邮箱</label>
+              <input
+                id="auth-email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="你的邮箱地址"
+              />
+
+              <button type="submit" className="auth-primary-button" disabled>
+                {authPage.emailAction}
+              </button>
+
+              <div className="auth-divider">
+                <span>或</span>
+              </div>
+
+              <button type="button" className="auth-provider-button" disabled>
+                <span aria-hidden="true">G</span>
+                {authPage.googleAction}
+              </button>
+              <button type="button" className="auth-provider-button" disabled>
+                <span aria-hidden="true">⌘</span>
+                {authPage.githubAction}
+              </button>
+
+              <footer className="auth-switch">
+                <span>{authPage.switchText}</span>
+                <button
+                  type="button"
+                  onClick={() => changeView(authPage.switchView)}
+                >
+                  {authPage.switchAction}
+                </button>
+              </footer>
+            </form>
+
+            <footer className="auth-legal">
+              <button type="button">服务条款</button>
+              <span>和</span>
+              <button type="button">隐私政策</button>
+            </footer>
+          </section>
         )}
 
         {placeholderPage && (
