@@ -461,7 +461,6 @@ function App() {
 
             <section className="landing-method" aria-label="学习路径">
               <div className="method-example" aria-label="学习路径示例句">
-                <span>Example</span>
                 <strong>The cache improves response time.</strong>
                 <p>从一句开发者常见英文，拆成词、动词、例句和结构。</p>
               </div>

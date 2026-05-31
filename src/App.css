@@ -176,9 +176,9 @@
   min-height: calc(100vh - 130px);
   display: grid;
   justify-items: center;
-  align-content: center;
+  align-content: start;
   text-align: center;
-  padding: 0 0 88px;
+  padding: clamp(112px, 17vh, 168px) 0 72px;
 }
 
 .beaver-mascot {
@@ -300,18 +300,9 @@
   text-align: center;
 }
 
-.method-example span {
-  color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .method-example strong {
   display: block;
-  margin-top: 12px;
+  margin-top: 0;
   color: var(--text);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: clamp(1.42rem, 3vw, 2.25rem);
