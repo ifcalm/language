@@ -496,9 +496,9 @@ function App() {
                 <article className="principle-item">
                   <span>02</span>
                   <div>
-                    <h2>阅读优先。</h2>
+                    <h2>阅读能力。</h2>
                     <p>
-                      先解决开发者最常遇到的英文阅读场景：文档、文章、错误信息。
+                      解决开发者最常遇到的英文阅读场景：文档、文章、错误信息。
                     </p>
                   </div>
                 </article>
