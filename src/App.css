@@ -378,9 +378,8 @@
 
 .principles-visual {
   justify-self: end;
-  width: min(420px, 100%);
+  width: min(480px, 100%);
   margin: 0;
-  color: #ddddda;
 }
 
 .principles-diagram {

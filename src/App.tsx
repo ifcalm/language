@@ -521,65 +521,14 @@ function App() {
               </div>
 
               <figure className="principles-visual" aria-hidden="true">
-                <svg
+                <img
                   className="principles-diagram"
-                  viewBox="0 0 420 360"
-                >
-                  <rect
-                    x="70"
-                    y="44"
-                    width="280"
-                    height="58"
-                    rx="18"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  />
-                  <text x="100" y="80" fill="currentColor" fontSize="19" fontWeight="750">
-                    read(error.message)
-                  </text>
-                  <path
-                    d="M210 102 V142 M210 142 H124 M210 142 H296 M124 142 V184 M296 142 V184 M210 142 V214"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeWidth="3"
-                  />
-                  <g>
-                    <circle cx="124" cy="204" r="38" fill="none" stroke="currentColor" strokeWidth="3" />
-                    <text x="124" y="210" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
-                      action
-                    </text>
-                  </g>
-                  <g>
-                    <circle cx="296" cy="204" r="38" fill="none" stroke="currentColor" strokeWidth="3" />
-                    <text x="296" y="210" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
-                      args
-                    </text>
-                  </g>
-                  <g>
-                    <rect
-                      x="139"
-                      y="244"
-                      width="142"
-                      height="50"
-                      rx="16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                    />
-                    <text x="210" y="276" fill="currentColor" fontSize="17" fontWeight="750" textAnchor="middle">
-                      modifiers
-                    </text>
-                  </g>
-                  <path
-                    d="M88 302 C126 324 166 334 210 334 C254 334 294 324 332 302"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeWidth="3"
-                  />
-                </svg>
+                  src="/mascot/beaver-teacher.svg"
+                  alt=""
+                  width="640"
+                  height="480"
+                  decoding="async"
+                />
               </figure>
             </section>
           </>
