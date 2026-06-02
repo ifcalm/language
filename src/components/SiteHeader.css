@@ -112,56 +112,63 @@
 }
 
 .site-account-avatar {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  border: 3px solid #0969da;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
   background: var(--surface);
+  transition: border-color 0.18s ease;
+}
+
+.site-account-trigger:hover .site-account-avatar,
+.site-account-trigger:focus-visible .site-account-avatar,
+.site-account-trigger[aria-expanded='true'] .site-account-avatar {
+  border-color: var(--text);
 }
 
 .site-account-avatar img {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .site-account-caret {
-  width: 9px;
-  height: 9px;
-  border-right: 1.8px solid var(--text);
-  border-bottom: 1.8px solid var(--text);
+  width: 8px;
+  height: 8px;
+  border-right: 1.6px solid var(--text);
+  border-bottom: 1.6px solid var(--text);
   transform: translateY(-2px) rotate(45deg);
 }
 
 .site-account-menu {
   position: absolute;
-  top: calc(100% + 14px);
+  top: calc(100% + 10px);
   right: 0;
-  width: min(320px, calc(100vw - 40px));
+  width: min(230px, calc(100vw - 40px));
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 26px;
+  border-radius: 18px;
   background: var(--surface);
-  box-shadow: 0 20px 44px rgb(0 0 0 / 0.1);
+  box-shadow: 0 14px 30px rgb(0 0 0 / 0.08);
 }
 
 .site-account-summary {
   display: grid;
-  gap: 10px;
-  padding: 26px 30px 22px;
+  gap: 5px;
+  padding: 16px 20px 14px;
 }
 
 .site-account-summary strong {
   overflow: hidden;
   color: var(--text);
-  font-size: clamp(1.7rem, 4vw, 2.25rem);
+  font-size: 1rem;
   font-weight: 760;
-  letter-spacing: -0.05em;
-  line-height: 1.05;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -169,15 +176,15 @@
 .site-account-summary span {
   overflow: hidden;
   color: var(--text-muted);
-  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-  line-height: 1.25;
+  font-size: 0.9rem;
+  line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .site-account-menu-items {
   display: grid;
-  padding: 18px 0 20px;
+  padding: 8px 0 10px;
   border-top: 1px solid var(--border);
 }
 
@@ -188,10 +195,10 @@
   color: var(--text);
   cursor: pointer;
   font: inherit;
-  font-size: clamp(1.3rem, 3vw, 1.75rem);
-  font-weight: 520;
-  line-height: 1.2;
-  padding: 11px 30px;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+  padding: 8px 20px;
   text-align: left;
   text-decoration: none;
 }
