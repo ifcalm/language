@@ -11,13 +11,37 @@ const primaryNavigationItems: Array<{
   { id: 'vocabulary', label: '词汇' },
 ]
 
-interface SiteHeaderProps {
-  view: ViewId
-  onChangeView: (view: ViewId) => void
-  onOpenVocabulary: () => void
+export interface SiteHeaderUser {
+  email: string | null
+  displayName: string | null
+  avatarUrl: string | null
 }
 
-function SiteHeader({ view, onChangeView, onOpenVocabulary }: SiteHeaderProps) {
+interface SiteHeaderProps {
+  view: ViewId
+  user: SiteHeaderUser | null
+  isAuthLoading: boolean
+  onChangeView: (view: ViewId) => void
+  onOpenVocabulary: () => void
+  onLogout: () => void
+}
+
+function getUserLabel(user: SiteHeaderUser) {
+  return user.displayName || user.email || '已登录'
+}
+
+function getUserInitial(user: SiteHeaderUser) {
+  return getUserLabel(user).trim().slice(0, 1).toUpperCase() || 'E'
+}
+
+function SiteHeader({
+  view,
+  user,
+  isAuthLoading,
+  onChangeView,
+  onOpenVocabulary,
+  onLogout,
+}: SiteHeaderProps) {
   return (
     <header className="site-header">
       <div className="site-header-inner">
@@ -57,13 +81,45 @@ function SiteHeader({ view, onChangeView, onOpenVocabulary }: SiteHeaderProps) {
         </nav>
 
         <div className="site-auth-actions" aria-label="账户入口">
-          <button type="button" onClick={() => onChangeView('login')}>
-            登录
-          </button>
-          <span aria-hidden="true">/</span>
-          <button type="button" onClick={() => onChangeView('register')}>
-            注册
-          </button>
+          {isAuthLoading && <span className="site-auth-placeholder" aria-hidden="true" />}
+
+          {!isAuthLoading && user && (
+            <>
+              <span className="site-user">
+                {user.avatarUrl ? (
+                  <img
+                    src={user.avatarUrl}
+                    alt=""
+                    width="28"
+                    height="28"
+                    decoding="async"
+                    referrerPolicy="no-referrer"
+                  />
+                ) : (
+                  <span className="site-user-fallback" aria-hidden="true">
+                    {getUserInitial(user)}
+                  </span>
+                )}
+                <span className="site-user-name">{getUserLabel(user)}</span>
+              </span>
+              <span aria-hidden="true">/</span>
+              <button type="button" onClick={onLogout}>
+                退出
+              </button>
+            </>
+          )}
+
+          {!isAuthLoading && !user && (
+            <>
+              <button type="button" onClick={() => onChangeView('login')}>
+                登录
+              </button>
+              <span aria-hidden="true">/</span>
+              <button type="button" onClick={() => onChangeView('register')}>
+                注册
+              </button>
+            </>
+          )}
         </div>
       </div>
     </header>

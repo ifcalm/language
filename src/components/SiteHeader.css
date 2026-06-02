@@ -86,6 +86,50 @@
   color: var(--text-muted);
 }
 
+.site-auth-placeholder {
+  min-width: 70px;
+  text-align: right;
+  font-weight: 650;
+}
+
+.site-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.site-user img,
+.site-user-fallback {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.site-user img {
+  display: block;
+  object-fit: cover;
+}
+
+.site-user-fallback {
+  display: grid;
+  place-items: center;
+  background: #f1f1f1;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.site-user-name {
+  max-width: 160px;
+  overflow: hidden;
+  color: var(--text);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .sidebar {
   padding: 30px 22px;
   border-right: 1px solid var(--border);
