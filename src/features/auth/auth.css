@@ -72,7 +72,8 @@
 }
 
 .auth-primary-button,
-.auth-provider-button {
+.auth-provider-button,
+.auth-text-button {
   width: 100%;
   min-height: 42px;
   border-radius: 10px;
@@ -97,9 +98,42 @@
 }
 
 .auth-primary-button:disabled,
-.auth-provider-button:disabled {
+.auth-provider-button:disabled,
+.auth-text-button:disabled {
   cursor: not-allowed;
-  opacity: 1;
+  opacity: 0.72;
+}
+
+.auth-text-button {
+  min-height: auto;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.auth-text-button:hover,
+.auth-text-button:focus-visible {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.auth-message,
+.auth-error {
+  margin: -4px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.auth-message {
+  color: var(--text-muted);
+}
+
+.auth-error {
+  color: #9f1d1d;
 }
 
 .auth-provider-button span {
