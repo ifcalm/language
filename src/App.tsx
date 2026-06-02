@@ -9,7 +9,7 @@ import {
 import './App.css'
 import { getPathFromView, getViewFromPath, isAuthView, type ViewId } from './app/routing'
 import VocabularyAdmin from './admin/VocabularyAdmin'
-import SiteHeader from './components/SiteHeader'
+import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
 import AuthPage from './features/auth/AuthPage'
 import {
   difficultyLabels,
@@ -86,6 +86,15 @@ interface VocabularyDetailResponse {
   core: VocabularyDetailCore
   pronunciations: VocabularyPronunciation[]
   examples: VocabularyExample[]
+}
+
+interface AuthUser extends SiteHeaderUser {
+  id: string
+  role: string
+}
+
+interface AuthMeResponse {
+  user: AuthUser | null
 }
 
 interface VocabularyDetail {
@@ -229,6 +238,8 @@ function App() {
   const [lookupError, setLookupError] = useState('')
   const [activePronunciationKey, setActivePronunciationKey] = useState('')
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
+  const [authUser, setAuthUser] = useState<AuthUser | null>(null)
+  const [isAuthLoading, setIsAuthLoading] = useState(true)
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
 
   const filteredResources = useMemo(
@@ -318,6 +329,39 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
   }, [roadmapProgress])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function fetchAuthUser() {
+      setIsAuthLoading(true)
+
+      try {
+        const response = await fetch('/api/auth/me', {
+          signal: controller.signal,
+        })
+
+        if (!response.ok) {
+          throw new Error(`Auth API responded with ${response.status}`)
+        }
+
+        const payload = (await response.json()) as AuthMeResponse
+        setAuthUser(payload.user)
+      } catch {
+        if (!controller.signal.aborted) {
+          setAuthUser(null)
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsAuthLoading(false)
+        }
+      }
+    }
+
+    fetchAuthUser()
+
+    return () => controller.abort()
+  }, [])
 
   useEffect(() => {
     return () => {
@@ -577,6 +621,15 @@ function App() {
     runVocabularySearch()
   }
 
+  async function logout() {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST' })
+    } finally {
+      setAuthUser(null)
+      changeView('roadmap')
+    }
+  }
+
   function handleLandingSearchKeyDown(
     event: ReactKeyboardEvent<HTMLInputElement>,
   ) {
@@ -647,8 +700,11 @@ function App() {
       {!isAuthPage && (
         <SiteHeader
           view={view}
+          user={authUser}
+          isAuthLoading={isAuthLoading}
           onChangeView={changeView}
           onOpenVocabulary={closeVocabularyDetail}
+          onLogout={logout}
         />
       )}
 
