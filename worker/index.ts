@@ -1,3 +1,5 @@
+import { handleAuthRequest } from './auth'
+
 type VocabularyBand = 'top-100' | 'top-500' | 'top-1000' | 'top-3000'
 
 interface VocabRow {
@@ -663,6 +665,10 @@ export default {
         ok: true,
         service: 'english-orbit',
       })
+    }
+
+    if (url.pathname.startsWith('/api/auth/')) {
+      return handleAuthRequest(request, env)
     }
 
     if (url.pathname === '/api/vocabulary' && request.method === 'GET') {
