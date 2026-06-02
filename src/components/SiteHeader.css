@@ -87,46 +87,127 @@
 }
 
 .site-auth-placeholder {
-  min-width: 70px;
-  text-align: right;
-  font-weight: 650;
+  min-width: 56px;
+  height: 44px;
 }
 
-.site-user {
+.site-account {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-auth-actions .site-account-trigger {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  min-width: 0;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
-.site-user img,
-.site-user-fallback {
-  width: 28px;
-  height: 28px;
+.site-auth-actions .site-account-trigger:hover,
+.site-auth-actions .site-account-trigger:focus-visible {
+  text-decoration-line: none;
+}
+
+.site-account-avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 3px solid #0969da;
   border-radius: 50%;
-  flex: 0 0 auto;
+  background: var(--surface);
 }
 
-.site-user img {
+.site-account-avatar img {
   display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.site-user-fallback {
-  display: grid;
-  place-items: center;
-  background: #f1f1f1;
-  color: var(--text);
-  font-size: 0.78rem;
-  font-weight: 800;
+.site-account-caret {
+  width: 9px;
+  height: 9px;
+  border-right: 1.8px solid var(--text);
+  border-bottom: 1.8px solid var(--text);
+  transform: translateY(-2px) rotate(45deg);
 }
 
-.site-user-name {
-  max-width: 160px;
+.site-account-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  width: min(320px, calc(100vw - 40px));
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--surface);
+  box-shadow: 0 20px 44px rgb(0 0 0 / 0.1);
+}
+
+.site-account-summary {
+  display: grid;
+  gap: 10px;
+  padding: 26px 30px 22px;
+}
+
+.site-account-summary strong {
   overflow: hidden;
   color: var(--text);
-  font-weight: 700;
+  font-size: clamp(1.7rem, 4vw, 2.25rem);
+  font-weight: 760;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-account-summary span {
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-account-menu-items {
+  display: grid;
+  padding: 18px 0 20px;
+  border-top: 1px solid var(--border);
+}
+
+.site-auth-actions .site-account-menu-items button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  font-weight: 520;
+  line-height: 1.2;
+  padding: 11px 30px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.site-auth-actions .site-account-menu-items button:hover,
+.site-auth-actions .site-account-menu-items button:focus-visible {
+  background: #f7f7f7;
+  text-decoration-line: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
 
