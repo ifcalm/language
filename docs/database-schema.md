@@ -1,6 +1,6 @@
 # D1 数据表与字段说明
 
-> 当前公共词库 schema 已简化。公共学习数据只保留词库主表、读音表、例句表和编辑日志。
+> 当前公共学习数据 schema 已简化。公共学习数据先保留词库主表、动词主表、读音表、例句表和编辑日志。
 > 来源、授权、生成方式、审核状态等信息不再放在学习业务表中，应记录在数据整理文档、批次说明、迁移文件或 `content_edit_logs` 中。
 
 ## 表清单
@@ -8,6 +8,7 @@
 | 表名 | 类型 | 作用 |
 |---|---|---|
 | `vocab` | 公共词库主表 | 保存单词、核心释义、频率排序和核心音标。 |
+| `verbs` | 公共动词主表 | 保存核心动词与动词短语的基础条目。 |
 | `vocab_pronunciations` | 公共读音表 | 保存单词读音音标和音频 URL。 |
 | `vocab_examples` | 公共例句表 | 保存单词例句及中文解释。 |
 | `content_edit_logs` | 管理审计表 | 记录后台编辑前后的 JSON 快照。 |
@@ -30,6 +31,11 @@
 
 ```mermaid
 erDiagram
+  verbs {
+    TEXT id PK
+    TEXT verb
+    TEXT normalized_verb
+  }
   vocab ||--o{ vocab_pronunciations : "vocabulary_id"
   vocab ||--o{ vocab_examples : "vocabulary_id"
   vocab ||--o{ content_edit_logs : "vocabulary_id"
@@ -59,6 +65,27 @@ erDiagram
 |---|---|---|
 | `idx_vocab_normalized_word` | `normalized_word` | 单词精确查询与去重。 |
 | `idx_vocab_frequency_rank` | `frequency_rank` | 高频词排序与 Top N 查询。 |
+
+## `verbs`
+
+公共动词主表。它只保存动词学习底稿真正需要的基础字段；句子生长路径、主干与修饰步骤后续由独立表承载。
+
+| 字段 | 类型 | 默认值 | 含义 |
+|---|---|---|---|
+| `id` | `TEXT PRIMARY KEY` | 无 | 稳定动词 ID，使用规范化动词生成的 slug。 |
+| `verb` | `TEXT NOT NULL` | 无 | 动词展示文本，比如 `deploy`、`depend on`。 |
+| `normalized_verb` | `TEXT NOT NULL`，唯一索引 | 无 | 小写/规范化后的查询键。 |
+| `meaning_zh` | `TEXT NOT NULL` | 无 | 中文核心义。 |
+| `is_phrase` | `INTEGER NOT NULL` | `0` | 是否为动词短语：`0` 单动词，`1` 短语动词。 |
+| `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
+| `updated_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 更新时间。 |
+
+索引：
+
+| 索引名 | 字段 | 用途 |
+|---|---|---|
+| `idx_verbs_normalized_verb` | `normalized_verb` | 动词精确查询与去重。 |
+| `idx_verbs_is_phrase` | `is_phrase` | 区分单动词与短语动词。 |
 
 ## `vocab_pronunciations`
 
