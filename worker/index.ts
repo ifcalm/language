@@ -36,6 +36,36 @@ interface VocabExampleRow {
   updated_at: string
 }
 
+interface VerbRow {
+  id: string
+  verb: string
+  normalized_verb: string
+  meaning_zh: string
+  is_phrase: number
+  created_at: string
+  updated_at: string
+}
+
+interface VerbListRow extends VerbRow {
+  path_count: number
+}
+
+interface VerbPathRow {
+  id: string
+  verb_id: string
+  verb: string
+  title: string
+  meaning_zh: string
+  core_sentence_en: string
+  core_sentence_zh: string
+  full_sentence_en: string
+  full_sentence_zh: string
+  scene: string
+  steps_json: string
+  created_at: string
+  updated_at: string
+}
+
 interface AdminVocabularySavePayload {
   editor?: string
   core?: Partial<{
@@ -70,6 +100,10 @@ const vocabularyBandLimits: Record<VocabularyBand, number> = {
 const lookupBatchSize = 90
 
 const clampNumber = (value: string | null, fallback: number, min: number, max: number) => {
+  if (value === null || value.trim() === '') {
+    return fallback
+  }
+
   const parsed = Number(value)
 
   if (!Number.isFinite(parsed)) {
@@ -140,6 +174,43 @@ const mapVocabRow = (row: VocabRow) => ({
   phoneticUk: row.phonetic_uk,
 })
 
+const mapVerbRow = (row: VerbRow) => ({
+  id: row.id,
+  verb: row.verb,
+  normalizedVerb: row.normalized_verb,
+  meaningZh: row.meaning_zh,
+  isPhrase: row.is_phrase === 1,
+})
+
+const mapVerbListRow = (row: VerbListRow) => ({
+  ...mapVerbRow(row),
+  pathCount: row.path_count,
+})
+
+const mapVerbPathRow = (row: VerbPathRow) => {
+  let steps: unknown
+
+  try {
+    steps = JSON.parse(row.steps_json)
+  } catch {
+    steps = []
+  }
+
+  return {
+    id: row.id,
+    verbId: row.verb_id,
+    verb: row.verb,
+    title: row.title,
+    meaningZh: row.meaning_zh,
+    coreSentenceEn: row.core_sentence_en,
+    coreSentenceZh: row.core_sentence_zh,
+    fullSentenceEn: row.full_sentence_en,
+    fullSentenceZh: row.full_sentence_zh,
+    scene: row.scene,
+    steps,
+  }
+}
+
 async function getPronunciationsByVocabularyIds(
   env: Env,
   vocabularyIds: string[],
@@ -202,6 +273,134 @@ async function getExamplesByVocabularyIds(env: Env, vocabularyIds: string[]) {
   }
 
   return examplesById
+}
+
+
+async function handleVerbList(request: Request, env: Env) {
+  const url = new URL(request.url)
+  const limit = clampNumber(url.searchParams.get('limit'), 80, 1, 200)
+  const offset = clampNumber(url.searchParams.get('offset'), 0, 0, 10_000)
+  const query = url.searchParams.get('q')?.trim().toLowerCase() ?? ''
+
+  const where: string[] = []
+  const params: Array<string | number> = []
+
+  if (query) {
+    where.push('(v.normalized_verb LIKE ? OR v.verb LIKE ? OR v.meaning_zh LIKE ?)')
+    const likeQuery = `%${query}%`
+    params.push(likeQuery, likeQuery, likeQuery)
+  }
+
+  const whereSql = where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''
+  const totalRow = await env.DB.prepare(
+    `SELECT COUNT(*) AS total FROM verbs v ${whereSql}`,
+  )
+    .bind(...params)
+    .first<{ total: number }>()
+
+  const { results } = await env.DB.prepare(
+    `SELECT
+      v.id,
+      v.verb,
+      v.normalized_verb,
+      v.meaning_zh,
+      v.is_phrase,
+      v.created_at,
+      v.updated_at,
+      COUNT(vp.id) AS path_count
+    FROM verbs v
+    LEFT JOIN verb_paths vp ON vp.verb_id = v.id
+    ${whereSql}
+    GROUP BY v.id
+    ORDER BY
+      CASE WHEN COUNT(vp.id) > 0 THEN 0 ELSE 1 END,
+      v.is_phrase ASC,
+      v.normalized_verb ASC
+    LIMIT ?
+    OFFSET ?`,
+  )
+    .bind(...params, limit, offset)
+    .all<VerbListRow>()
+
+  return makeJsonResponse({
+    items: results.map(mapVerbListRow),
+    pagination: {
+      total: totalRow?.total ?? 0,
+      limit,
+      offset,
+    },
+    filters: {
+      query,
+    },
+  })
+}
+
+async function getVerbByLookup(env: Env, lookup: string) {
+  const normalizedLookup = lookup.trim().toLowerCase()
+
+  if (!normalizedLookup) {
+    return null
+  }
+
+  return env.DB.prepare(
+    `SELECT
+      id,
+      verb,
+      normalized_verb,
+      meaning_zh,
+      is_phrase,
+      created_at,
+      updated_at
+    FROM verbs
+    WHERE id = ? OR normalized_verb = ? OR lower(verb) = ?
+    ORDER BY
+      CASE
+        WHEN id = ? THEN 0
+        WHEN normalized_verb = ? THEN 1
+        ELSE 2
+      END
+    LIMIT 1`,
+  )
+    .bind(lookup, normalizedLookup, normalizedLookup, lookup, normalizedLookup)
+    .first<VerbRow>()
+}
+
+async function handleVerbDetail(request: Request, env: Env) {
+  const lookup = decodeURIComponent(
+    new URL(request.url).pathname.replace('/api/verbs/', ''),
+  )
+  const verb = await getVerbByLookup(env, lookup)
+
+  if (!verb) {
+    return makeErrorResponse('Verb not found', 404)
+  }
+
+  const { results } = await env.DB.prepare(
+    `SELECT
+      id,
+      verb_id,
+      verb,
+      title,
+      meaning_zh,
+      core_sentence_en,
+      core_sentence_zh,
+      full_sentence_en,
+      full_sentence_zh,
+      scene,
+      steps_json,
+      created_at,
+      updated_at
+    FROM verb_paths
+    WHERE verb_id = ?
+    ORDER BY created_at ASC, id ASC`,
+  )
+    .bind(verb.id)
+    .all<VerbPathRow>()
+
+  return makeJsonResponse({
+    verb: mapVerbRow(verb),
+    paths: results.map(mapVerbPathRow),
+  })
 }
 
 async function handleVocabularyList(request: Request, env: Env) {
@@ -669,6 +868,14 @@ export default {
 
     if (url.pathname.startsWith('/api/auth/')) {
       return handleAuthRequest(request, env)
+    }
+
+    if (url.pathname === '/api/verbs' && request.method === 'GET') {
+      return handleVerbList(request, env)
+    }
+
+    if (url.pathname.startsWith('/api/verbs/') && request.method === 'GET') {
+      return handleVerbDetail(request, env)
     }
 
     if (url.pathname === '/api/vocabulary' && request.method === 'GET') {

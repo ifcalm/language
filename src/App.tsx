@@ -7,10 +7,17 @@ import {
   useState,
 } from 'react'
 import './App.css'
-import { getPathFromView, getViewFromPath, isAuthView, type ViewId } from './app/routing'
+import {
+  getPathFromView,
+  getVerbLookupFromPath,
+  getViewFromPath,
+  isAuthView,
+  type ViewId,
+} from './app/routing'
 import VocabularyAdmin from './admin/VocabularyAdmin'
 import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
 import AuthPage from './features/auth/AuthPage'
+import VerbPage from './features/verbs/VerbPage'
 import {
   difficultyLabels,
   formatLabels,
@@ -34,6 +41,13 @@ const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
 const CORE_VOCABULARY_TOTAL = 3000
 
+function getInitialVerbLookup() {
+  if (typeof window === 'undefined') {
+    return ''
+  }
+
+  return getVerbLookupFromPath(window.location.pathname)
+}
 
 function getInitialView(): ViewId {
   if (typeof window === 'undefined') {
@@ -236,6 +250,7 @@ function App() {
     useState<VocabularyDetail | null>(null)
   const [isLookupLoading, setIsLookupLoading] = useState(false)
   const [lookupError, setLookupError] = useState('')
+  const [selectedVerbLookup, setSelectedVerbLookup] = useState(getInitialVerbLookup)
   const [activePronunciationKey, setActivePronunciationKey] = useState('')
   const [pronunciationPlaybackError, setPronunciationPlaybackError] = useState('')
   const [authUser, setAuthUser] = useState<AuthUser | null>(null)
@@ -280,7 +295,6 @@ function App() {
     >
   > = {
     strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
-    verbs: { eyebrow: 'Verb Patterns', title: '动词' },
     examples: { eyebrow: 'Sentence Examples', title: '例句' },
     vocabulary: { eyebrow: 'Core 3000', title: '核心词库' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
@@ -302,12 +316,6 @@ function App() {
       description:
         '后面会沉淀一套适合中文语境程序员的英语学习策略：先解决读文档、理解句子结构，再慢慢扩展表达能力。',
       note: '当前为占位入口，避免导航先空着。',
-    },
-    verbs: {
-      title: '动词会成为第二个重点模块',
-      description:
-        '程序员读英文时，真正影响理解速度的往往不是名词，而是动词和动词短语。这里后续会整理 run、resolve、apply、handle 这类高频动作词。',
-      note: '当前为占位入口，后续接动词模式数据。',
     },
     examples: {
       title: '例句会围绕真实阅读场景整理',
@@ -376,6 +384,7 @@ function App() {
 
     function handlePopState() {
       setView(getViewFromPath(window.location.pathname))
+      setSelectedVerbLookup(getVerbLookupFromPath(window.location.pathname))
     }
 
     window.addEventListener('popstate', handlePopState)
@@ -535,6 +544,7 @@ function App() {
 
   function changeView(nextView: ViewId) {
     setView(nextView)
+    setSelectedVerbLookup('')
 
     if (typeof window === 'undefined') {
       return
@@ -551,7 +561,6 @@ function App() {
     const normalizedProgress = clampRoadmapProgress(nextProgress)
     setRoadmapProgress(normalizedProgress)
   }
-
 
   function openVocabularyDetail(lookup: string) {
     const normalizedLookup = lookup.trim()
@@ -573,6 +582,36 @@ function App() {
     setSelectedVocabularyLookup('')
     setSelectedVocabularyDetail(null)
     setVocabularyDetailError('')
+  }
+
+  function openVerbDetail(lookup: string) {
+    const normalizedLookup = lookup.trim()
+
+    if (!normalizedLookup) {
+      return
+    }
+
+    setSelectedVerbLookup(normalizedLookup)
+    setView('verbs')
+
+    if (typeof window !== 'undefined') {
+      const nextPath = `/verbs/${encodeURIComponent(normalizedLookup)}`
+
+      if (window.location.pathname !== nextPath) {
+        window.history.pushState(null, '', nextPath)
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  function closeVerbDetail() {
+    setSelectedVerbLookup('')
+    setView('verbs')
+
+    if (typeof window !== 'undefined' && window.location.pathname !== '/verbs') {
+      window.history.pushState(null, '', '/verbs')
+    }
   }
 
   function openLookupResult(lookup: string) {
@@ -979,6 +1018,14 @@ function App() {
             <p>{placeholderPage.description}</p>
             <small>{placeholderPage.note}</small>
           </section>
+        )}
+
+        {view === 'verbs' && (
+          <VerbPage
+            selectedVerbId={selectedVerbLookup}
+            onOpenVerb={openVerbDetail}
+            onBackToList={closeVerbDetail}
+          />
         )}
 
         {view === 'vocabulary' && (
