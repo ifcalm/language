@@ -1,6 +1,6 @@
 # D1 数据表与字段说明
 
-> 当前公共学习数据 schema 已简化。公共学习数据先保留词库主表、动词主表、读音表、例句表和编辑日志。
+> 当前公共学习数据 schema 已简化。公共学习数据先保留词库主表、动词主表、动词句子生长路径表、读音表、例句表和编辑日志。
 > 来源、授权、生成方式、审核状态等信息不再放在学习业务表中，应记录在数据整理文档、批次说明、迁移文件或 `content_edit_logs` 中。
 
 ## 表清单
@@ -9,6 +9,7 @@
 |---|---|---|
 | `vocab` | 公共词库主表 | 保存单词、核心释义、频率排序和核心音标。 |
 | `verbs` | 公共动词主表 | 保存核心动词与动词短语的基础条目。 |
+| `verb_paths` | 公共动词句子生长路径表 | 保存动词从主干句到完整句的学习路径和动画步骤。 |
 | `vocab_pronunciations` | 公共读音表 | 保存单词读音音标和音频 URL。 |
 | `vocab_examples` | 公共例句表 | 保存单词例句及中文解释。 |
 | `content_edit_logs` | 管理审计表 | 记录后台编辑前后的 JSON 快照。 |
@@ -36,6 +37,7 @@ erDiagram
     TEXT verb
     TEXT normalized_verb
   }
+  verbs ||--o{ verb_paths : "verb_id"
   vocab ||--o{ vocab_pronunciations : "vocabulary_id"
   vocab ||--o{ vocab_examples : "vocabulary_id"
   vocab ||--o{ content_edit_logs : "vocabulary_id"
@@ -86,6 +88,47 @@ erDiagram
 |---|---|---|
 | `idx_verbs_normalized_verb` | `normalized_verb` | 动词精确查询与去重。 |
 | `idx_verbs_is_phrase` | `is_phrase` | 区分单动词与短语动词。 |
+
+
+## `verb_paths`
+
+公共动词句子生长路径表。它负责保存一个动词在某个开发者场景下，如何从“主干句”逐步生长为“完整句”。页面展示时只使用“主干”和“修饰”这类直观概念，不展示复杂语法术语。
+
+| 字段 | 类型 | 默认值 | 含义 |
+|---|---|---|---|
+| `id` | `TEXT PRIMARY KEY` | 无 | 稳定路径 ID。 |
+| `verb_id` | `TEXT NOT NULL`，外键到 `verbs(id)` | 无 | 关联动词主表。 |
+| `verb` | `TEXT NOT NULL` | 无 | 冗余动词文本，方便查询、后台展示和减少简单场景关联查询。 |
+| `title` | `TEXT NOT NULL` | 无 | 路径标题，用于区分同一动词的不同学习路径。 |
+| `meaning_zh` | `TEXT NOT NULL` | 无 | 这条路径里的中文核心含义。 |
+| `core_sentence_en` | `TEXT NOT NULL` | 无 | 主干句英文。 |
+| `core_sentence_zh` | `TEXT NOT NULL` | 无 | 主干句中文。 |
+| `full_sentence_en` | `TEXT NOT NULL` | 无 | 最终成品句英文，通常等于 `steps_json` 最后一步的 `sentence_en`。 |
+| `full_sentence_zh` | `TEXT NOT NULL` | 无 | 最终成品句中文。 |
+| `scene` | `TEXT NOT NULL` | `''` | 开发者学习场景，如 `code`、`debug`、`deploy`、`system`。 |
+| `steps_json` | `TEXT NOT NULL`，`json_valid` | 无 | 句子生长步骤 JSON，用于页面动画逐步展示句子如何被补充。 |
+| `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
+| `updated_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 更新时间。 |
+
+索引：
+
+| 索引名 | 字段 | 用途 |
+|---|---|---|
+| `idx_verb_paths_verb_id` | `verb_id` | 按动词读取学习路径。 |
+| `idx_verb_paths_verb` | `verb` | 直接按动词文本查询路径。 |
+| `idx_verb_paths_scene` | `scene` | 按开发者场景筛选路径。 |
+
+`steps_json` 约定：
+
+| 字段 | 含义 |
+|---|---|
+| `step_no` | 步骤序号，从 1 开始。 |
+| `label` | 页面展示标签，如“主干”“加一点时间”“加一点目的”，可按词条场景变化。 |
+| `sentence_en` | 当前步骤展示的英文句子。 |
+| `sentence_zh` | 当前步骤中文解释。 |
+| `focus_text` | 当前步骤重点观察的片段。 |
+| `note_zh` | 给学习者看的简短说明。 |
+| `segments` | 当前句子的可视化切片，`kind` 仅使用 `core`、`modifier`、`punctuation`。 |
 
 ## `vocab_pronunciations`
 
