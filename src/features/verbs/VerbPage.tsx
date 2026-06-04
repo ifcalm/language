@@ -192,7 +192,7 @@ function VerbDetailView({
 
   return (
     <>
-      <section className="panel verb-detail-hero">
+      <section className="verb-detail-hero">
         <button type="button" className="verb-back-button" onClick={onBackToList}>
           ← 返回动词列表
         </button>
@@ -205,26 +205,6 @@ function VerbDetailView({
 
       {detail.paths.length > 0 && (
         <section className="verb-detail-layout">
-          <aside className="panel verb-paths-panel">
-            <div className="section-heading">
-              <h2>学习路径</h2>
-              <span>{detail.paths.length} 条</span>
-            </div>
-            <div className="verb-path-tabs">
-              {detail.paths.map((path) => (
-                <button
-                  key={path.id}
-                  type="button"
-                  className={path.id === activePath?.id ? 'active' : ''}
-                  onClick={() => setActivePathId(path.id)}
-                >
-                  <strong>{path.title}</strong>
-                  <span>{getSceneLabel(path.scene)} · {path.meaningZh}</span>
-                </button>
-              ))}
-            </div>
-          </aside>
-
           {activePath && (
             <article className="panel verb-animation-panel">
               <header className="verb-animation-header">
@@ -232,8 +212,28 @@ function VerbDetailView({
                   <span>{getSceneLabel(activePath.scene)}</span>
                   <h2>{activePath.title}</h2>
                 </div>
-                <p>{activePath.fullSentenceZh}</p>
+                <div className="verb-animation-summary">
+                  <strong>{activePath.meaningZh}</strong>
+                  <p>{activePath.fullSentenceZh}</p>
+                </div>
               </header>
+
+              {detail.paths.length > 1 && (
+                <div className="verb-path-switcher" aria-label="学习路径">
+                  {detail.paths.map((path) => (
+                    <button
+                      key={path.id}
+                      type="button"
+                      className={path.id === activePath.id ? 'active' : ''}
+                      onClick={() => setActivePathId(path.id)}
+                    >
+                      <strong>{path.title}</strong>
+                      <span>{getSceneLabel(path.scene)} · {path.meaningZh}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+
               <SentenceGrowthPlayer key={activePath.id} path={activePath} />
             </article>
           )}
