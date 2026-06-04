@@ -14,7 +14,7 @@ interface SentenceGrowthPlayerProps {
 
 type DisplayStep = Pick<
   SentenceGrowthStep,
-  'stepNo' | 'label' | 'sentenceEn' | 'sentenceZh' | 'noteZh'
+  'stepNo' | 'label' | 'sentenceEn' | 'sentenceZh' | 'focusNode' | 'noteZh'
 > & {
   focusText?: string
   segments?: VerbPathStep['segments']
@@ -55,6 +55,37 @@ function NodePill({
       {node.text}
     </span>
   )
+}
+
+function getNodeKindLabel(kind: SentenceGrowthNode['kind']) {
+  const labels: Record<SentenceGrowthNode['kind'], string> = {
+    action: '动作核心',
+    core: '主干',
+    modifier: '补充',
+  }
+
+  return labels[kind]
+}
+
+function getNodeKindHint(kind: SentenceGrowthNode['kind']) {
+  const hints: Record<SentenceGrowthNode['kind'], string> = {
+    action: '先看句子正在发生什么。',
+    core: '这是动作旁边最稳定的词块。',
+    modifier: '它让句子更具体、更完整。',
+  }
+
+  return hints[kind]
+}
+
+function getLinkText(link: SentenceGrowthLink, nodeById: Map<string, SentenceGrowthNode>) {
+  const from = nodeById.get(link.from)?.text
+  const to = nodeById.get(link.to)?.text
+
+  if (!from || !to) {
+    return ''
+  }
+
+  return `${from} → ${to}`
 }
 
 function SentenceTree({
@@ -123,7 +154,7 @@ function SentenceTree({
   return (
     <div className="sentence-tree" aria-label="句子结构树">
       <div className="sentence-tree-title">
-        <span>结构树</span>
+        <span>句子树</span>
         {activeLink && (
           <strong>
             {nodeById.get(activeLink.from)?.text} → {nodeById.get(activeLink.to)?.text}
@@ -186,6 +217,76 @@ function SentenceTree({
   )
 }
 
+function SentenceNodeInspector({
+  growth,
+  activeStep,
+}: {
+  growth: SentenceGrowth | null
+  activeStep: DisplayStep
+}) {
+  if (!growth) {
+    return (
+      <aside className="sentence-node-inspector" aria-label="当前步骤说明">
+        <h3>当前步骤</h3>
+        <p className="sentence-inspector-muted">正在使用线性句子步骤。</p>
+        <div className="sentence-inspector-card">
+          <span>当前句子</span>
+          <strong>{activeStep.sentenceEn}</strong>
+        </div>
+      </aside>
+    )
+  }
+
+  const nodeById = new Map(growth.nodes.map((node) => [node.id, node]))
+  const focusNode = activeStep.focusNode
+    ? nodeById.get(activeStep.focusNode)
+    : undefined
+  const relation = focusNode?.kind === 'modifier'
+    ? growth.links.find((link) => link.from === focusNode.id)
+    : undefined
+  const relationText = relation ? getLinkText(relation, nodeById) : ''
+
+  return (
+    <aside className="sentence-node-inspector" aria-label="当前节点信息">
+      <h3>当前节点</h3>
+      <p className="sentence-inspector-muted">当前选中</p>
+
+      {focusNode ? (
+        <>
+          <div className={`sentence-inspector-selected ${focusNode.kind}`}>
+            <span aria-hidden="true" />
+            <strong>{focusNode.text}</strong>
+            <em>{getNodeKindLabel(focusNode.kind)}</em>
+          </div>
+
+          <div className="sentence-inspector-block">
+            <span>它在说明</span>
+            {relationText ? (
+              <strong className="sentence-inspector-relation">
+                {relationText}
+              </strong>
+            ) : (
+              <strong>{getNodeKindHint(focusNode.kind)}</strong>
+            )}
+          </div>
+
+          <div className="sentence-inspector-block">
+            <span>说明</span>
+            <p>{relation?.label || activeStep.noteZh || getNodeKindHint(focusNode.kind)}</p>
+          </div>
+        </>
+      ) : (
+        <p className="sentence-inspector-muted">当前步骤没有选中节点。</p>
+      )}
+
+      <div className="sentence-inspector-card">
+        <span>当前句子</span>
+        <strong>{activeStep.sentenceEn}</strong>
+      </div>
+    </aside>
+  )
+}
+
 function renderLegacySentence(step: DisplayStep, pathId: string) {
   if (!step.segments || step.segments.length === 0) {
     return step.sentenceEn
@@ -207,7 +308,10 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
   const [activeStepIndex, setActiveStepIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
   const growth = path.growth
-  const steps: DisplayStep[] = growth?.steps ?? path.steps
+  const steps: DisplayStep[] = growth?.steps ?? path.steps.map((step) => ({
+    ...step,
+    focusNode: '',
+  }))
   const activeStep = steps[activeStepIndex]
   const canGoPrevious = activeStepIndex > 0
   const canGoNext = activeStepIndex < steps.length - 1
@@ -242,83 +346,106 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
 
   return (
     <section className="sentence-player" aria-label="句子生长动画">
-      <div className="sentence-player-stage">
-        <div className="sentence-player-progress" aria-hidden="true">
-          <span style={{ width: `${progress}%` }} />
+      <div className="sentence-player-board">
+        <div className="sentence-player-stage">
+          <p className="sentence-player-label">{activeStep.label}</p>
+
+          {growth && (
+            <SentenceTree growth={growth} activeStepIndex={activeStepIndex} />
+          )}
+
+          <div className="sentence-player-code">
+            <span>// 当前句子</span>
+            <p
+              key={`${path.id}-${activeStep.stepNo}`}
+              className="sentence-player-sentence"
+            >
+              {growth ? activeStep.sentenceEn : renderLegacySentence(activeStep, path.id)}
+            </p>
+
+            {path.coreSentenceEn && (
+              <>
+                <span>// 核心短句</span>
+                <p className="sentence-player-core-sentence">
+                  {path.coreSentenceEn}
+                </p>
+              </>
+            )}
+          </div>
+
+          {activeStep.sentenceZh && (
+            <p className="sentence-player-translation">{activeStep.sentenceZh}</p>
+          )}
+
+          {activeStep.noteZh && (
+            <p className="sentence-player-note">{activeStep.noteZh}</p>
+          )}
         </div>
 
-        <p className="sentence-player-label">{activeStep.label}</p>
-
-        {growth && (
-          <SentenceTree growth={growth} activeStepIndex={activeStepIndex} />
-        )}
-
-        <p
-          key={`${path.id}-${activeStep.stepNo}`}
-          className="sentence-player-sentence"
-        >
-          {growth ? activeStep.sentenceEn : renderLegacySentence(activeStep, path.id)}
-        </p>
-
-        {activeStep.sentenceZh && (
-          <p className="sentence-player-translation">{activeStep.sentenceZh}</p>
-        )}
-
-        {activeStep.noteZh && (
-          <p className="sentence-player-note">{activeStep.noteZh}</p>
-        )}
+        <SentenceNodeInspector growth={growth} activeStep={activeStep} />
       </div>
 
-      <div className="sentence-player-controls">
-        <button
-          type="button"
-          disabled={!canGoPrevious}
-          onClick={() => setActiveStepIndex((current) => Math.max(0, current - 1))}
-        >
-          上一步
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            if (!canGoNext) {
-              setActiveStepIndex(0)
-              setIsPlaying(true)
-              return
+      <div className="sentence-player-timeline">
+        <ol className="sentence-player-steps" aria-label="句子生长步骤">
+          {steps.map((step, index) => (
+            <li key={`${path.id}-${step.stepNo}`}>
+              <button
+                type="button"
+                className={index === activeStepIndex ? 'active' : ''}
+                onClick={() => {
+                  setActiveStepIndex(index)
+                  setIsPlaying(false)
+                }}
+              >
+                <span>{String(step.stepNo)}</span>
+                <strong>{step.label}</strong>
+              </button>
+            </li>
+          ))}
+        </ol>
+
+        <div className="sentence-player-control-bar">
+          <button
+            type="button"
+            className="sentence-player-play"
+            onClick={() => {
+              if (!canGoNext) {
+                setActiveStepIndex(0)
+                setIsPlaying(true)
+                return
+              }
+
+              setIsPlaying((current) => !current)
+            }}
+            aria-label={canGoNext ? (isPlaying ? '暂停' : '播放') : '重播'}
+          >
+            {canGoNext ? (isPlaying ? 'Ⅱ' : '▶') : '↻'}
+          </button>
+
+          <strong>{activeStepIndex + 1} / {steps.length}</strong>
+
+          <div className="sentence-player-progress" aria-hidden="true">
+            <span style={{ width: `${progress}%` }} />
+          </div>
+
+          <button
+            type="button"
+            disabled={!canGoPrevious}
+            onClick={() => setActiveStepIndex((current) => Math.max(0, current - 1))}
+          >
+            上一步
+          </button>
+          <button
+            type="button"
+            disabled={!canGoNext}
+            onClick={() =>
+              setActiveStepIndex((current) => Math.min(steps.length - 1, current + 1))
             }
-
-            setIsPlaying((current) => !current)
-          }}
-        >
-          {canGoNext ? (isPlaying ? '暂停' : '播放') : '重播'}
-        </button>
-        <button
-          type="button"
-          disabled={!canGoNext}
-          onClick={() =>
-            setActiveStepIndex((current) => Math.min(steps.length - 1, current + 1))
-          }
-        >
-          下一步
-        </button>
+          >
+            下一步
+          </button>
+        </div>
       </div>
-
-      <ol className="sentence-player-steps" aria-label="句子生长步骤">
-        {steps.map((step, index) => (
-          <li key={`${path.id}-${step.stepNo}`}>
-            <button
-              type="button"
-              className={index === activeStepIndex ? 'active' : ''}
-              onClick={() => {
-                setActiveStepIndex(index)
-                setIsPlaying(false)
-              }}
-            >
-              <span>{String(step.stepNo).padStart(2, '0')}</span>
-              <strong>{step.label}</strong>
-            </button>
-          </li>
-        ))}
-      </ol>
     </section>
   )
 }

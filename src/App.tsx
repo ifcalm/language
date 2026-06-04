@@ -749,6 +749,8 @@ function App() {
 
       <main
         className={`content ${view === 'roadmap' ? 'landing-content' : ''} ${
+          view === 'verbs' ? 'verb-content' : ''
+        } ${
           isAuthPage ? 'auth-content' : ''
         }`}
       >
