@@ -103,10 +103,11 @@ erDiagram
 | `meaning_zh` | `TEXT NOT NULL` | 无 | 这条路径里的中文核心含义。 |
 | `core_sentence_en` | `TEXT NOT NULL` | 无 | 主干句英文。 |
 | `core_sentence_zh` | `TEXT NOT NULL` | 无 | 主干句中文。 |
-| `full_sentence_en` | `TEXT NOT NULL` | 无 | 最终成品句英文，通常等于 `steps_json` 最后一步的 `sentence_en`。 |
+| `full_sentence_en` | `TEXT NOT NULL` | 无 | 最终成品句英文，通常等于 `growth_json.steps` 最后一步的 `sentence_en`。 |
 | `full_sentence_zh` | `TEXT NOT NULL` | 无 | 最终成品句中文。 |
 | `scene` | `TEXT NOT NULL` | `''` | 开发者学习场景，如 `code`、`debug`、`deploy`、`system`。 |
-| `steps_json` | `TEXT NOT NULL`，`json_valid` | 无 | 句子生长步骤 JSON，用于页面动画逐步展示句子如何被补充。 |
+| `steps_json` | `TEXT NOT NULL`，`json_valid` | 无 | 旧版句子生长步骤 JSON，当前保留用于兼容。 |
+| `growth_json` | `TEXT NOT NULL` | 空结构 JSON | 统一句子生长 JSON，包含节点、连线和动画步骤，用于树状结构展示。 |
 | `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
 | `updated_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 更新时间。 |
 
@@ -118,7 +119,33 @@ erDiagram
 | `idx_verb_paths_verb` | `verb` | 直接按动词文本查询路径。 |
 | `idx_verb_paths_scene` | `scene` | 按开发者场景筛选路径。 |
 
-`steps_json` 约定：
+`growth_json` 约定：
+
+| 顶层字段 | 含义 |
+|---|---|
+| `nodes` | 句子里的词块节点，比如动作、主干词块、修饰词块。 |
+| `links` | 节点之间的关系，说明谁连接谁、谁补充谁。 |
+| `steps` | 动画播放步骤，说明每一步新增哪些节点和连线。 |
+
+`growth_json.nodes`：
+
+| 字段 | 含义 |
+|---|---|
+| `id` | 节点唯一 ID。 |
+| `text` | 页面展示文本。 |
+| `kind` | 节点类型：`action` 核心动作，`core` 主干词块，`modifier` 修饰词块。 |
+
+`growth_json.links`：
+
+| 字段 | 含义 |
+|---|---|
+| `id` | 连线唯一 ID，通常为 `from->to`。 |
+| `from` | 起点节点 ID。 |
+| `to` | 终点节点 ID。 |
+| `kind` | 连线类型：`core` 主干连接，`modifier` 修饰连接。 |
+| `label` | 中文关系说明，如“说明部署到哪里”。 |
+
+`growth_json.steps`：
 
 | 字段 | 含义 |
 |---|---|
@@ -126,9 +153,12 @@ erDiagram
 | `label` | 页面展示标签，如“主干”“加一点时间”“加一点目的”，可按词条场景变化。 |
 | `sentence_en` | 当前步骤展示的英文句子。 |
 | `sentence_zh` | 当前步骤中文解释。 |
-| `focus_text` | 当前步骤重点观察的片段。 |
+| `show_nodes` | 这一步新增展示的节点 ID。 |
+| `show_links` | 这一步新增展示的连线 ID。 |
+| `focus_node` | 这一步重点观察的节点 ID。 |
 | `note_zh` | 给学习者看的简短说明。 |
-| `segments` | 当前句子的可视化切片，`kind` 仅使用 `core`、`modifier`、`punctuation`。 |
+
+`steps_json` 为旧版线性句子步骤结构，当前只作为兼容字段保留；后续稳定后可以迁移删除。
 
 ## `vocab_pronunciations`
 
