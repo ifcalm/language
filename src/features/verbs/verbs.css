@@ -692,7 +692,7 @@
 
 /* Verb module redesign: concept-driven sentence tree workspace. */
 .verb-content {
-  width: min(1460px, calc(100% - 64px));
+  width: min(1040px, calc(100% - 48px));
 }
 
 .verb-content .page-header {
@@ -1233,10 +1233,6 @@
 }
 
 @media (max-width: 1160px) {
-  .verb-content {
-    width: min(1000px, calc(100% - 40px));
-  }
-
   .sentence-player-board {
     grid-template-columns: 1fr;
   }
@@ -1264,10 +1260,6 @@
 }
 
 @media (max-width: 680px) {
-  .verb-content {
-    width: min(100% - 28px, 640px);
-  }
-
   .verb-detail-heading {
     display: grid;
     gap: 6px;
