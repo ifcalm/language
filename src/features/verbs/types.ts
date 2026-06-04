@@ -12,6 +12,38 @@ export interface VerbSegment {
   kind: 'core' | 'modifier' | 'punctuation'
 }
 
+export interface SentenceGrowthNode {
+  id: string
+  text: string
+  kind: 'action' | 'core' | 'modifier'
+  group?: 'action' | 'core' | 'modifier'
+}
+
+export interface SentenceGrowthLink {
+  id: string
+  from: string
+  to: string
+  kind: 'core' | 'modifier'
+  label: string
+}
+
+export interface SentenceGrowthStep {
+  stepNo: number
+  label: string
+  sentenceEn: string
+  sentenceZh: string
+  showNodes: string[]
+  showLinks: string[]
+  focusNode: string
+  noteZh: string
+}
+
+export interface SentenceGrowth {
+  nodes: SentenceGrowthNode[]
+  links: SentenceGrowthLink[]
+  steps: SentenceGrowthStep[]
+}
+
 export interface VerbPathStep {
   stepNo: number
   label: string
@@ -34,6 +66,7 @@ export interface VerbPath {
   fullSentenceZh: string
   scene: string
   steps: VerbPathStep[]
+  growth: SentenceGrowth | null
 }
 
 export interface VerbDetail {
