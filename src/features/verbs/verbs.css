@@ -1811,7 +1811,7 @@
 .verb-animation-panel .sentence-player-stage {
   min-height: 0;
   align-content: start;
-  gap: 16px;
+  gap: 36px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -1829,7 +1829,11 @@
   border: 1px solid #d9dee7;
   border-radius: 12px;
   background: #ffffff;
-  padding: 0 clamp(74px, 7vw, 104px) 0 0;
+  padding: 36px clamp(74px, 7vw, 104px) 0 0;
+}
+
+.sentence-animation-card .sentence-player-step-rail {
+  top: 36px;
 }
 
 .sentence-animation-card .sentence-tree {

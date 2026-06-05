@@ -489,7 +489,7 @@ function SentenceTree({
 
 function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
   const [activeStepIndex, setActiveStepIndex] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(true)
   const [previewStepIndex, setPreviewStepIndex] = useState<number | null>(null)
   const displayGrowth = useMemo(() => createDisplayGrowth(path), [path])
   const steps: DisplayStep[] = displayGrowth?.steps ?? path.steps
@@ -503,6 +503,7 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
   )
   const activeStep = steps[safeActiveStepIndex]
   const canGoNext = safeActiveStepIndex < steps.length - 1
+  const isPlayButtonPaused = isPlaying && canGoNext
 
   useEffect(() => {
     if (!isPlaying || !canGoNext) {
@@ -510,11 +511,17 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
     }
 
     const timer = window.setTimeout(() => {
-      setActiveStepIndex((current) => Math.min(current + 1, steps.length - 1))
+      const nextStepIndex = Math.min(safeActiveStepIndex + 1, steps.length - 1)
+
+      setActiveStepIndex(nextStepIndex)
+
+      if (nextStepIndex >= steps.length - 1) {
+        setIsPlaying(false)
+      }
     }, 1800)
 
     return () => window.clearTimeout(timer)
-  }, [canGoNext, isPlaying, steps.length, activeStepIndex])
+  }, [canGoNext, isPlaying, safeActiveStepIndex, steps.length])
 
   if (!activeStep) {
     return (
@@ -555,9 +562,9 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
 
                     setIsPlaying((current) => !current)
                   }}
-                  aria-label={canGoNext ? (isPlaying ? '暂停' : '播放') : '重播'}
+                  aria-label={canGoNext ? (isPlayButtonPaused ? '暂停' : '播放') : '重播'}
                 >
-                  {isPlaying ? 'Ⅱ' : '▶'}
+                  {isPlayButtonPaused ? 'Ⅱ' : '▶'}
                 </button>
 
                 <ol className="sentence-player-steps">
