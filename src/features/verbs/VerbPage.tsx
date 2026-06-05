@@ -181,8 +181,13 @@ function VerbDetailView({
   if (isLoading || error || !detail) {
     return (
       <section className="panel verbs-status">
-        <button type="button" className="verb-back-button" onClick={onBackToList}>
-          ← 返回动词列表
+        <button
+          type="button"
+          className="verb-back-button"
+          onClick={onBackToList}
+          aria-label="返回动词列表"
+        >
+          ←
         </button>
         {isLoading && <p>正在读取动词详情…</p>}
         {!isLoading && error && <p>没有找到这个动词，或者详情暂时无法读取。</p>}
@@ -193,31 +198,20 @@ function VerbDetailView({
   return (
     <>
       <section className="verb-detail-hero">
-        <button type="button" className="verb-back-button" onClick={onBackToList}>
-          ← 返回动词列表
+        <button
+          type="button"
+          className="verb-back-button"
+          onClick={onBackToList}
+          aria-label="返回动词列表"
+        >
+          ←
         </button>
-        <div className="verb-detail-heading">
-          <span>{detail.verb.isPhrase ? 'Phrasal Verb' : 'Verb'}</span>
-          <h2>{detail.verb.verb}</h2>
-          <p>{detail.verb.meaningZh}</p>
-        </div>
       </section>
 
       {detail.paths.length > 0 && (
         <section className="verb-detail-layout">
           {activePath && (
             <article className="panel verb-animation-panel">
-              <header className="verb-animation-header">
-                <div>
-                  <span>{getSceneLabel(activePath.scene)}</span>
-                  <h2>{activePath.title}</h2>
-                </div>
-                <div className="verb-animation-summary">
-                  <strong>{activePath.meaningZh}</strong>
-                  <p>{activePath.fullSentenceZh}</p>
-                </div>
-              </header>
-
               {detail.paths.length > 1 && (
                 <div className="verb-path-switcher" aria-label="学习路径">
                   {detail.paths.map((path) => (
