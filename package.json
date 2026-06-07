@@ -14,7 +14,10 @@
     "pronunciations:generate:top100": "node scripts/generate-top-pronunciations-macos-say.mjs",
     "pronunciations:check:top100": "node scripts/generate-top-pronunciations-macos-say.mjs --dry-run",
     "pronunciations:coverage:top100": "node scripts/check-pronunciation-completeness.mjs",
-    "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs"
+    "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs",
+    "verbs:generate": "node scripts/generate-verb-paths.mjs",
+    "verbs:validate": "node scripts/check-verb-paths.mjs --local",
+    "verbs:validate:remote": "node scripts/check-verb-paths.mjs --remote --strict"
   },
   "dependencies": {
     "react": "^19.2.6",
