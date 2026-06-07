@@ -11,6 +11,7 @@ node_modules
 dist
 .runtime
 .wrangler
+.verb-path-generation
 .dev.vars*
 dist-ssr
 *.local
