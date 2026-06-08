@@ -4510,4 +4510,955 @@
 | 4500 | configuration | 配置 | 技术 |
 | 4501 | http | HTTP 超文本传输协议 | 技术 |
 | 4502 | json | JSON 数据格式 | 技术 |
+| 4503 | abolish | 废除；取消 | Oxford |
+| 4504 | absurd | 荒谬的；可笑的 | Oxford |
+| 4505 | academy | 学院；学会；专科学校 | Oxford |
+| 4506 | accidentally | 意外地；偶然地 | Oxford |
+| 4507 | accommodation | 住宿；住处；适应 | Oxford |
+| 4508 | accordingly | 相应地；因此 | Oxford |
+| 4509 | accountant | 会计师；会计 | Oxford |
+| 4510 | accumulate | 积累；积聚 | Oxford |
+| 4511 | accumulation | 积累；堆积 | Oxford |
+| 4512 | accused | 被告；被指控的 | Oxford |
+| 4513 | acre | 英亩 | Oxford |
+| 4514 | activate | 激活；启动 | Oxford |
+| 4515 | activation | 激活；启用 | Oxford |
+| 4516 | acute | 急性的；敏锐的；严重的 | Oxford |
+| 4517 | adaptation | 适应；改编；改编本 | Oxford |
+| 4518 | addiction | 上瘾；沉迷 | Oxford |
+| 4519 | additionally | 此外；另外 | Oxford |
+| 4520 | adequately | 充分地；适当地 | Oxford |
+| 4521 | adhere | 遵守；黏附；坚持 | Oxford |
+| 4522 | adjacent | 邻近的；毗邻的 | Oxford |
+| 4523 | adverse | 不利的；相反的；有害的 | Oxford |
+| 4524 | advertise | 做广告；宣传 | Oxford |
+| 4525 | advertisement | 广告；宣传 | Oxford |
+| 4526 | affection | 喜爱；感情；影响 | Oxford |
+| 4527 | affordable | 负担得起的；价格合理的 | Oxford |
+| 4528 | aftermath | 后果；余波 | Oxford |
+| 4529 | aged | 年老的；...岁的 | Oxford |
+| 4530 | alcoholic | 酒精的；酗酒者 | Oxford |
+| 4531 | align | 对齐；使一致；结盟 | Oxford |
+| 4532 | alignment | 对齐；一致；结盟 | Oxford |
+| 4533 | allege | 宣称；指控 | Oxford |
+| 4534 | allocation | 分配；拨款 | Oxford |
+| 4535 | allowance | 津贴；零用钱；限额 | Oxford |
+| 4536 | amateur | 业余的；业余爱好者 | Oxford |
+| 4537 | amazed | 惊讶的；吃惊的 | Oxford |
+| 4538 | ambulance | 救护车 | Oxford |
+| 4539 | amusing | 有趣的；好笑的 | Oxford |
+| 4540 | analogy | 类比；相似；模拟 | Oxford |
+| 4541 | anchor | 锚；主持人；固定 | Oxford |
+| 4542 | animation | 动画；活泼；生气 | Oxford |
+| 4543 | annoy | 惹恼；使烦恼 | Oxford |
+| 4544 | annoyed | 恼怒的；烦恼的 | Oxford |
+| 4545 | annoying | 讨厌的；烦人的 | Oxford |
+| 4546 | app | 应用程序；App | Oxford |
+| 4547 | apparatus | 仪器；设备；装置 | Oxford |
+| 4548 | apparel | 服装；衣着 | Oxford |
+| 4549 | appealing | 有吸引力的；恳求的 | Oxford |
+| 4550 | appetite | 食欲；胃口；欲望 | Oxford |
+| 4551 | applaud | 鼓掌；称赞 | Oxford |
+| 4552 | applicable | 适用的；合适的 | Oxford |
+| 4553 | appropriately | 适当地；恰当地 | Oxford |
+| 4554 | april | 四月 | Oxford |
+| 4555 | arbitrary | 任意的；武断的 | Oxford |
+| 4556 | architectural | 建筑的；建筑学的 | Oxford |
+| 4557 | archive | 档案；存档 | Oxford |
+| 4558 | arms | 武器；手臂 | Oxford |
+| 4559 | artwork | 艺术品；插图 | Oxford |
+| 4560 | ashamed | 羞愧的；惭愧的 | Oxford |
+| 4561 | aspiration | 抱负；渴望；志向 | Oxford |
+| 4562 | aspire | 渴望；立志 | Oxford |
+| 4563 | assassination | 暗杀；刺杀 | Oxford |
+| 4564 | assertion | 断言；主张；声明 | Oxford |
+| 4565 | assurance | 保证； assurance；保险 | Oxford |
+| 4566 | astonishing | 惊人的；令人惊讶的 | Oxford |
+| 4567 | asylum | 庇护；避难所；精神病院 | Oxford |
+| 4568 | atrocity | 暴行；残忍 | Oxford |
+| 4569 | attachment | 附件；依恋；附属物 | Oxford |
+| 4570 | attain | 达到；获得 | Oxford |
+| 4571 | audio | 音频；声音的 | Oxford |
+| 4572 | august | 八月；威严的 | Oxford |
+| 4573 | authentic | 真实的；可靠的；正宗的 | Oxford |
+| 4574 | autumn | 秋天；秋季 | Oxford |
+| 4575 | awesome | 极好的； awesome；令人敬畏的 | Oxford |
+| 4576 | awkward | 尴尬的；笨拙的 | Oxford |
+| 4577 | backdrop | 背景；背景幕 | Oxford |
+| 4578 | backing | 支持；后盾；伴奏 | Oxford |
+| 4579 | backward | 向后的；落后的 | Oxford |
+| 4580 | badge | 徽章； badge；标志 | Oxford |
+| 4581 | ballet | 芭蕾舞 | Oxford |
+| 4582 | banner | 横幅；旗帜 | Oxford |
+| 4583 | bargain | 讨价还价；便宜货；交易 | Oxford |
+| 4584 | based | 以...为基础的； based | Oxford |
+| 4585 | bass | 低音；贝斯； bass | Oxford |
+| 4586 | battlefield | 战场 | Oxford |
+| 4587 | beloved | 心爱的； beloved | Oxford |
+| 4588 | benchmark | 基准； benchmark | Oxford |
+| 4589 | beneficial | 有益的；有利的 | Oxford |
+| 4590 | beneficiary | 受益人；受惠者 | Oxford |
+| 4591 | bent | 弯曲的； bent；倾向 | Oxford |
+| 4592 | betray | 背叛； betray | Oxford |
+| 4593 | beverage | 饮料 | Oxford |
+| 4594 | bizarre | 奇怪的；古怪的 | Oxford |
+| 4595 | bleed | 流血；出血 | Oxford |
+| 4596 | blog | 博客； blog | Oxford |
+| 4597 | booking | 预订； booking | Oxford |
+| 4598 | bored | 无聊的； bored | Oxford |
+| 4599 | bound |  bound； bound； bound（跳跃） | Oxford |
+| 4600 | breakdown | 故障； breakdown；分析 | Oxford |
+| 4601 | breakthrough | 突破 | Oxford |
+| 4602 | breed | 品种； breed；繁殖；培养 | Oxford |
+| 4603 | broadband | 宽带 | Oxford |
+| 4604 | broadcaster | 广播员；电视台 | Oxford |
+| 4605 | broadly | 广泛地；大体上 | Oxford |
+| 4606 | browser | 浏览器 | Oxford |
+| 4607 | bureaucracy | 官僚机构；官僚作风 | Oxford |
+| 4608 | burial | 埋葬；葬礼 | Oxford |
+| 4609 | bye | 再见 | Oxford |
+| 4610 | cafe | 咖啡馆； cafe | Oxford |
+| 4611 | camping | 露营； camping | Oxford |
+| 4612 | canal | 运河； canal | Oxford |
+| 4613 | cannot | 不能； cannot | Oxford |
+| 4614 | capitalism | 资本主义 | Oxford |
+| 4615 | capitalist | 资本家；资本主义的 | Oxford |
+| 4616 | careless | 粗心的； careless | Oxford |
+| 4617 | carriage |  carriage； carriage（马车）； carriage（运费） | Oxford |
+| 4618 | castle | 城堡 | Oxford |
+| 4619 | cater |  catering； cater；满足需求 | Oxford |
+| 4620 | caution | 谨慎；小心；警告 | Oxford |
+| 4621 | cautious | 谨慎的；小心的 | Oxford |
+| 4622 | cd |  CD；光盘 | Oxford |
+| 4623 | cent | 分（货币单位） | Oxford |
+| 4624 | certainty | 确定性； certainty | Oxford |
+| 4625 | challenging | 有挑战性的 | Oxford |
+| 4626 | charming | 迷人的； charming | Oxford |
+| 4627 | chat | 聊天； chat | Oxford |
+| 4628 | cheerful | 高兴的；快乐的 | Oxford |
+| 4629 | choir | 合唱团； choir | Oxford |
+| 4630 | circulate | 循环；流通；传播 | Oxford |
+| 4631 | circulation | 循环；流通；发行量 | Oxford |
+| 4632 | clarify | 澄清； clarify | Oxford |
+| 4633 | clarity | 清晰；明确 | Oxford |
+| 4634 | clash | 冲突；碰撞；不协调 | Oxford |
+| 4635 | classification | 分类； classification | Oxford |
+| 4636 | clever | 聪明的； clever | Oxford |
+| 4637 | closure | 关闭；结束 | Oxford |
+| 4638 | cocktail | 鸡尾酒； cocktail | Oxford |
+| 4639 | coincide | 同时发生；巧合；一致 | Oxford |
+| 4640 | coincidence | 巧合 | Oxford |
+| 4641 | collision | 碰撞； collision | Oxford |
+| 4642 | colored | 有色的； colored | Oxford |
+| 4643 | comic | 漫画；喜剧的 | Oxford |
+| 4644 | commence | 开始；着手 | Oxford |
+| 4645 | commentary | 评论； commentary | Oxford |
+| 4646 | commentator | 评论员； commentator | Oxford |
+| 4647 | communist | 共产主义者； communist | Oxford |
+| 4648 | comparative | 比较的； comparative | Oxford |
+| 4649 | compassion | 同情； compassion | Oxford |
+| 4650 | compensate | 补偿；赔偿 | Oxford |
+| 4651 | competence | 能力； competence | Oxford |
+| 4652 | competent | 有能力的； competent | Oxford |
+| 4653 | complement | 补充； complement | Oxford |
+| 4654 | completion | 完成； completion | Oxford |
+| 4655 | complication | 并发症； complication | Oxford |
+| 4656 | composer | 作曲家 | Oxford |
+| 4657 | compulsory | 义务的； compulsory | Oxford |
+| 4658 | compute | 计算； compute | Oxford |
+| 4659 | conceal | 隐藏； conceal | Oxford |
+| 4660 | concession | 让步； concession | Oxford |
+| 4661 | confer | 授予； confer | Oxford |
+| 4662 | confine | 限制；局限；监禁 | Oxford |
+| 4663 | confirmation | 确认； confirmation | Oxford |
+| 4664 | confused | 困惑的； confused | Oxford |
+| 4665 | confusing | 令人困惑的； confusing | Oxford |
+| 4666 | congratulate | 祝贺； congratulate | Oxford |
+| 4667 | congregation | 会众；集会 | Oxford |
+| 4668 | connected | 连接的； connected | Oxford |
+| 4669 | conquer | 征服；战胜 | Oxford |
+| 4670 | conserve | 保护；节约 | Oxford |
+| 4671 | consistency | 一致性； consistency | Oxford |
+| 4672 | consolidate | 巩固；合并 | Oxford |
+| 4673 | consultation | 咨询； consultation | Oxford |
+| 4674 | contempt | 蔑视；轻视 | Oxford |
+| 4675 | contender | 竞争者； contender | Oxford |
+| 4676 | contention | 争论； contention | Oxford |
+| 4677 | continually | 不断地； continually | Oxford |
+| 4678 | contradiction | 矛盾； contradiction | Oxford |
+| 4679 | contrary | 相反的； contrary | Oxford |
+| 4680 | convenient | 方便的； convenient | Oxford |
+| 4681 | convincing | 有说服力的； convincing | Oxford |
+| 4682 | coordination | 协调； coordination | Oxford |
+| 4683 | copper | 铜；铜币 | Oxford |
+| 4684 | correction | 纠正； correction | Oxford |
+| 4685 | correlate | 关联； correlate | Oxford |
+| 4686 | correspond | 对应； correspond | Oxford |
+| 4687 | correspondence | 通信； correspondence | Oxford |
+| 4688 | corresponding | 相应的； corresponding | Oxford |
+| 4689 | corrupt | 腐败的；贪污的；破坏 | Oxford |
+| 4690 | councilor | 议员； councilor | Oxford |
+| 4691 | countless | 无数的； countless | Oxford |
+| 4692 | countryside | 乡村； countryside | Oxford |
+| 4693 | courtesy | 礼貌；谦恭 | Oxford |
+| 4694 | covered |  covered；覆盖的 | Oxford |
+| 4695 | cowboy | 牛仔 | Oxford |
+| 4696 | creator | 创造者； creator | Oxford |
+| 4697 | credible | 可信的； credible | Oxford |
+| 4698 | creep | 爬行；悄悄移动 | Oxford |
+| 4699 | criterion | 标准； criterion | Oxford |
+| 4700 | critically |  critical；批评地；严重地 | Oxford |
+| 4701 | critique | 评论；批评 | Oxford |
+| 4702 | crown | 王冠； crown | Oxford |
+| 4703 | crude | 粗糙的；原始的；粗鲁的 | Oxford |
+| 4704 | cult | 邪教；狂热崇拜 | Oxford |
+| 4705 | cultivate | 培养； cultivate | Oxford |
+| 4706 | cupboard | 橱柜； cupboard | Oxford |
+| 4707 | curly | 卷曲的； curly | Oxford |
+| 4708 | curved | 弯曲的； curved | Oxford |
+| 4709 | cutting | 切割； cutting | Oxford |
+| 4710 | cynical |  cynical；愤世嫉俗的 | Oxford |
+| 4711 | dairy | 乳制品；乳品店 | Oxford |
+| 4712 | damaging |  damaging；有损害的 | Oxford |
+| 4713 | december | 十二月 | Oxford |
+| 4714 | decision-making | 决策 | Oxford |
+| 4715 | decisive |  decisive；决定性的 | Oxford |
+| 4716 | declaration | 声明； declaration | Oxford |
+| 4717 | decoration | 装饰； decoration | Oxford |
+| 4718 | dedicated |  dedicated；专注的 | Oxford |
+| 4719 | dedication |  dedication；奉献 | Oxford |
+| 4720 | deed | 行为； deed | Oxford |
+| 4721 | default | 默认； default | Oxford |
+| 4722 | defect | 缺陷；缺点 | Oxford |
+| 4723 | deficiency |  deficiency；缺乏 | Oxford |
+| 4724 | definite |  definite；明确的 | Oxford |
+| 4725 | defy |  defy；违抗 | Oxford |
+| 4726 | delegate | 代表； delegate | Oxford |
+| 4727 | delegation | 代表团；委派 | Oxford |
+| 4728 | delete | 删除 | Oxford |
+| 4729 | deliberate | 故意的； deliberate | Oxford |
+| 4730 | delicious | 美味的； delicious | Oxford |
+| 4731 | delighted | 高兴的； delighted | Oxford |
+| 4732 | demon | 恶魔； demon | Oxford |
+| 4733 | denounce | 谴责； denounce | Oxford |
+| 4734 | dentist | 牙医 | Oxford |
+| 4735 | dependence | 依赖； dependence | Oxford |
+| 4736 | depressing | 令人沮丧的； depressing | Oxford |
+| 4737 | deprive | 剥夺；使丧失 | Oxford |
+| 4738 | descent | 下降； descent | Oxford |
+| 4739 | designate | 指定； designate | Oxford |
+| 4740 | desirable | 可取的；理想的；有吸引力的 | Oxford |
+| 4741 | desktop | 桌面；台式电脑 | Oxford |
+| 4742 | destructive | 破坏性的； destructive | Oxford |
+| 4743 | detection | 检测； detection | Oxford |
+| 4744 | deteriorate | 恶化； deteriorate | Oxford |
+| 4745 | determined | 坚决的； determined | Oxford |
+| 4746 | devastate | 摧毁；使震惊 | Oxford |
+| 4747 | devise | 设计； devise | Oxford |
+| 4748 | diagram | 图表； diagram | Oxford |
+| 4749 | dictator |  dictator；独裁者 | Oxford |
+| 4750 | dictionary | 字典；词典 | Oxford |
+| 4751 | differentiate | 区分； differentiate | Oxford |
+| 4752 | dime | 十分硬币 | Oxford |
+| 4753 | disadvantage |  disadvantage；不利 | Oxford |
+| 4754 | disagreement |  disagreement；分歧 | Oxford |
+| 4755 | disappoint | 失望； disappoint | Oxford |
+| 4756 | disappointing | 令人失望的 | Oxford |
+| 4757 | disastrous | 灾难性的；极坏的 | Oxford |
+| 4758 | discard | 丢弃；抛弃 | Oxford |
+| 4759 | discharge | 排出；释放；解雇 | Oxford |
+| 4760 | disclosure | 披露； disclosure | Oxford |
+| 4761 | discretion | 谨慎；自由裁量权 | Oxford |
+| 4762 | dishonest | 不诚实的 | Oxford |
+| 4763 | dislike | 不喜欢； dislike | Oxford |
+| 4764 | dismissal | 解雇；驳回；不予考虑 | Oxford |
+| 4765 | displace |  displace；取代 | Oxford |
+| 4766 | disposal | 处理；处置；安排 | Oxford |
+| 4767 | dispose | 处理；处置；安排 | Oxford |
+| 4768 | disrupt |  disrupt；扰乱 | Oxford |
+| 4769 | disruption |  disruption；中断 | Oxford |
+| 4770 | distort | 扭曲；歪曲 | Oxford |
+| 4771 | distress | 痛苦；苦恼；贫困 | Oxford |
+| 4772 | dive | 潜水； dive | Oxford |
+| 4773 | divert |  divert；转移 | Oxford |
+| 4774 | divorced | 离婚的 | Oxford |
+| 4775 | dollar | 美元 | Oxford |
+| 4776 | dominance |  dominance；统治 | Oxford |
+| 4777 | download | 下载 | Oxford |
+| 4778 | downstairs | 楼下 | Oxford |
+| 4779 | downward | 向下的 | Oxford |
+| 4780 | dressed | 穿着...的 | Oxford |
+| 4781 | drought | 干旱；旱灾 | Oxford |
+| 4782 | dual | 双重的 | Oxford |
+| 4783 | dub | 配音；称为；授予称号 | Oxford |
+| 4784 | dull |  dull； dull（无趣的） | Oxford |
+| 4785 | duo | 二人组；一对 | Oxford |
+| 4786 | duration | 持续时间 | Oxford |
+| 4787 | dvd |  DVD | Oxford |
+| 4788 | editorial | 社论； editorial | Oxford |
+| 4789 | educated | 受过教育的 | Oxford |
+| 4790 | efficiently | 高效地 | Oxford |
+| 4791 | eighteen | 十八 | Oxford |
+| 4792 | eighty | 八十 | Oxford |
+| 4793 | electoral | 选举的 | Oxford |
+| 4794 | elevate |  elevate；提升 | Oxford |
+| 4795 | email | 电子邮件 | Oxford |
+| 4796 | embark | 着手； embark | Oxford |
+| 4797 | embarrassing | 令人尴尬的 | Oxford |
+| 4798 | embarrassment | 尴尬 | Oxford |
+| 4799 | embassy | 大使馆 | Oxford |
+| 4800 | embed | 嵌入 | Oxford |
+| 4801 | embody | 体现 | Oxford |
+| 4802 | emergence | 出现； emergence | Oxford |
+| 4803 | empirical | 经验的；实证的 | Oxford |
+| 4804 | empower |  empower；授权 | Oxford |
+| 4805 | encompass | 包含； encompass | Oxford |
+| 4806 | encouragement | 鼓励 | Oxford |
+| 4807 | endeavor | 努力； endeavor | Oxford |
+| 4808 | ending | 结局； ending | Oxford |
+| 4809 | endorsement |  endorsement；支持 | Oxford |
+| 4810 | engaged |  engaged；已订婚的；忙碌的 | Oxford |
+| 4811 | engaging |  engaging；迷人的 | Oxford |
+| 4812 | enjoyable | 令人愉快的 | Oxford |
+| 4813 | enrich | 丰富； enrich | Oxford |
+| 4814 | ensue |  ensue；接着发生 | Oxford |
+| 4815 | entertain | 娱乐； entertain | Oxford |
+| 4816 | entertaining |  entertaining；有趣的 | Oxford |
+| 4817 | enthusiast | 爱好者； enthusiast | Oxford |
+| 4818 | enthusiastic | 热情的 | Oxford |
+| 4819 | erect | 竖立；建立；直立的 | Oxford |
+| 4820 | erupt | 爆发； erupt | Oxford |
+| 4821 | eternal | 永恒的；永久的 | Oxford |
+| 4822 | ethic | 伦理； ethic | Oxford |
+| 4823 | euro | 欧元 | Oxford |
+| 4824 | evacuate |  evacuate；疏散 | Oxford |
+| 4825 | evoke | 唤起；引起 | Oxford |
+| 4826 | evolutionary | 进化的 | Oxford |
+| 4827 | exaggerate |  exaggerate；夸大 | Oxford |
+| 4828 | excellence | 卓越； excellence | Oxford |
+| 4829 | exceptional |  exceptional；例外的 | Oxford |
+| 4830 | excess | 过量；过度 | Oxford |
+| 4831 | exclusion | 排除 | Oxford |
+| 4832 | exert |  exert；施加 | Oxford |
+| 4833 | exile | 流放；放逐 | Oxford |
+| 4834 | expire | 到期；失效；死亡 | Oxford |
+| 4835 | explicitly | 明确地； explicitly | Oxford |
+| 4836 | exploitation |  exploitation；剥削 | Oxford |
+| 4837 | explosive | 爆炸物；爆炸性的 | Oxford |
+| 4838 | extensively | 广泛地 | Oxford |
+| 4839 | extract | 提取； extract | Oxford |
+| 4840 | extremist | 极端分子 | Oxford |
+| 4841 | fabulous | 极好的；惊人的 | Oxford |
+| 4842 | faction |  faction；派系 | Oxford |
+| 4843 | failed | 失败的 | Oxford |
+| 4844 | fairness | 公平 | Oxford |
+| 4845 | fake | 假的；伪造品 | Oxford |
+| 4846 | fancy |  fancy；喜欢； fancy（精致的） | Oxford |
+| 4847 | farming | 农业； farming | Oxford |
+| 4848 | fashionable | 时尚的 | Oxford |
+| 4849 | fasten | 系紧； fasten | Oxford |
+| 4850 | feat |  feat；壮举 | Oxford |
+| 4851 | february | 二月 | Oxford |
+| 4852 | felony | 重罪 | Oxford |
+| 4853 | filmmaker | 电影制作人 | Oxford |
+| 4854 | firearm | 枪支 | Oxford |
+| 4855 | firefighter | 消防员 | Oxford |
+| 4856 | firework | 烟花 | Oxford |
+| 4857 | flaw | 缺陷； flaw | Oxford |
+| 4858 | flawed | 有缺陷的 | Oxford |
+| 4859 | flourish | 繁荣；兴旺 | Oxford |
+| 4860 | flu | 流感 | Oxford |
+| 4861 | folding | 折叠的 | Oxford |
+| 4862 | fond | 喜欢的；深情的 | Oxford |
+| 4863 | footage |  footage；镜头 | Oxford |
+| 4864 | forecast | 预测；预报 | Oxford |
+| 4865 | forge | 锻造；伪造；稳步前进 | Oxford |
+| 4866 | formulate |  formulate；制定 | Oxford |
+| 4867 | forthcoming |  forthcoming；即将到来的 | Oxford |
+| 4868 | fortunate | 幸运的 | Oxford |
+| 4869 | fossil | 化石；守旧的 | Oxford |
+| 4870 | fourteen | 十四 | Oxford |
+| 4871 | friday | 星期五 | Oxford |
+| 4872 | frighten | 恐吓； frighten | Oxford |
+| 4873 | frightened | 害怕的 | Oxford |
+| 4874 | frightening | 令人害怕的 | Oxford |
+| 4875 | frog | 青蛙 | Oxford |
+| 4876 | frustrated | 沮丧的；受挫的 | Oxford |
+| 4877 | frustrating | 令人沮丧的 | Oxford |
+| 4878 | fry | 油炸 | Oxford |
+| 4879 | fulfill | 完成；实现；满足 | Oxford |
+| 4880 | fundamentally | 根本上； fundamentally | Oxford |
+| 4881 | fundraising | 筹款； fundraising | Oxford |
+| 4882 | furious | 暴怒的；激烈的 | Oxford |
+| 4883 | further |  further；进一步 | Oxford |
+| 4884 | gallon | 加仑 | Oxford |
+| 4885 | gambling | 赌博 | Oxford |
+| 4886 | gaming | 游戏； gaming | Oxford |
+| 4887 | generic | 通用的；一般的；泛型的 | Oxford |
+| 4888 | genocide |  genocide；种族灭绝 | Oxford |
+| 4889 | genuinely | 真正地 | Oxford |
+| 4890 | geography | 地理 | Oxford |
+| 4891 | gig |  gig；演出 | Oxford |
+| 4892 | globalization | 全球化 | Oxford |
+| 4893 | glorious | 光荣的；辉煌的 | Oxford |
+| 4894 | goodbye | 再见 | Oxford |
+| 4895 | goodness |  goodness；善良 | Oxford |
+| 4896 | goods | 货物； goods | Oxford |
+| 4897 | gorgeous |  gorgeous；华丽的 | Oxford |
+| 4898 | governance | 治理；管理 | Oxford |
+| 4899 | graphic | 图形的；生动的 | Oxford |
+| 4900 | graphics | 图形； graphics | Oxford |
+| 4901 | greenhouse | 温室；暖房 | Oxford |
+| 4902 | grid | 网格；电网 | Oxford |
+| 4903 | grind | 磨碎；研磨；苦干 | Oxford |
+| 4904 | guerrilla | 游击队 | Oxford |
+| 4905 | hail | 冰雹；欢呼；来自 | Oxford |
+| 4906 | halt | 停止；暂停 | Oxford |
+| 4907 | handling |  handling；处理 | Oxford |
+| 4908 | handy | 方便的；手边的 | Oxford |
+| 4909 | harbor | 港口； harbor | Oxford |
+| 4910 | harmful | 有害的 | Oxford |
+| 4911 | hatred | 仇恨 | Oxford |
+| 4912 | haunt |  haunt；萦绕 | Oxford |
+| 4913 | healthcare | 医疗保健 | Oxford |
+| 4914 | heating | 加热； heating | Oxford |
+| 4915 | heighten | 提高；增强 | Oxford |
+| 4916 | hierarchy | 等级制度 | Oxford |
+| 4917 | high-profile | 高调的；引人注目的 | Oxford |
+| 4918 | hilarious |  hilarious；滑稽的 | Oxford |
+| 4919 | hobby | 爱好； hobby | Oxford |
+| 4920 | hollow | 空心的；空洞的 | Oxford |
+| 4921 | honesty | 诚实 | Oxford |
+| 4922 | hopeful | 有希望的 | Oxford |
+| 4923 | hostility | 敌意；敌对 | Oxford |
+| 4924 | humanitarian | 人道主义的 | Oxford |
+| 4925 | humble | 谦逊的 | Oxford |
+| 4926 | humorous | 幽默的 | Oxford |
+| 4927 | hydrogen | 氢 | Oxford |
+| 4928 | id |  ID；身份 | Oxford |
+| 4929 | idiot | 白痴；傻瓜 | Oxford |
+| 4930 | ignorance | 无知 | Oxford |
+| 4931 | illustration | 插图；说明 | Oxford |
+| 4932 | imagery | 意象； imagery | Oxford |
+| 4933 | imaginary | 想象的；虚构的 | Oxford |
+| 4934 | immense | 巨大的； immense | Oxford |
+| 4935 | imminent |  imminent；迫在眉睫的 | Oxford |
+| 4936 | impatient | 不耐烦的 | Oxford |
+| 4937 | impressed |  impressed；印象深刻的 | Oxford |
+| 4938 | imprison | 监禁；关押 | Oxford |
+| 4939 | inability |  inability；无能 | Oxford |
+| 4940 | inadequate | 不充分的；不适当的 | Oxford |
+| 4941 | inappropriate | 不合适的 | Oxford |
+| 4942 | incarcerate | 监禁 | Oxford |
+| 4943 | incarceration | 监禁 | Oxford |
+| 4944 | inch | 英寸 | Oxford |
+| 4945 | incidence | 发生率；影响范围 | Oxford |
+| 4946 | inclined | 倾向于...的；有...意向的 | Oxford |
+| 4947 | included |  included；包括在内的 | Oxford |
+| 4948 | inclusion |  inclusion；包含 | Oxford |
+| 4949 | incorrect | 不正确的 | Oxford |
+| 4950 | incur | 招致；引起 | Oxford |
+| 4951 | indictment | 起诉书；控告 | Oxford |
+| 4952 | indirect | 间接的 | Oxford |
+| 4953 | indoor | 室内的 | Oxford |
+| 4954 | indoors | 在室内 | Oxford |
+| 4955 | induce | 导致；引诱；催生 | Oxford |
+| 4956 | indulge |  indulge；沉溺 | Oxford |
+| 4957 | inequality | 不平等 | Oxford |
+| 4958 | infamous |  infamous；臭名昭著的 | Oxford |
+| 4959 | infect | 感染；传染 | Oxford |
+| 4960 | infer | 推断 | Oxford |
+| 4961 | inflict |  inflict；施加 | Oxford |
+| 4962 | info | 信息 | Oxford |
+| 4963 | inhabitant | 居民 | Oxford |
+| 4964 | inhibit | 抑制；禁止 | Oxford |
+| 4965 | inject | 注射；注入 | Oxford |
+| 4966 | injection | 注射；注入 | Oxford |
+| 4967 | injured | 受伤的 | Oxford |
+| 4968 | injustice |  injustice；不公正 | Oxford |
+| 4969 | ink | 墨水 | Oxford |
+| 4970 | inquire | 询问； inquire | Oxford |
+| 4971 | insertion | 插入； insertion | Oxford |
+| 4972 | insider | 内部人士 | Oxford |
+| 4973 | inspect | 检查 | Oxford |
+| 4974 | institute | 机构； institute | Oxford |
+| 4975 | instrumental |  instrumental；工具的 | Oxford |
+| 4976 | insufficient |  insufficient；不足的 | Oxford |
+| 4977 | insult | 侮辱 | Oxford |
+| 4978 | intake |  intake；摄入 | Oxford |
+| 4979 | integral | 完整的；不可或缺的 | Oxford |
+| 4980 | intended |  intended；预期的 | Oxford |
+| 4981 | intensify | 加强；加剧 | Oxford |
+| 4982 | intensive | 密集的； intensive | Oxford |
+| 4983 | interactive | 互动的 | Oxford |
+| 4984 | interference | 干扰 | Oxford |
+| 4985 | interim | 临时的；过渡期的 | Oxford |
+| 4986 | intermediate | 中级的；中间的 | Oxford |
+| 4987 | intersection | 交叉口； intersection | Oxford |
+| 4988 | intervene | 干预； intervene | Oxford |
+| 4989 | intriguing | 有趣的；引人入胜的 | Oxford |
+| 4990 | invoke | 调用；援引；唤起 | Oxford |
+| 4991 | ironic |  ironic；讽刺的 | Oxford |
+| 4992 | irrelevant | 无关的 | Oxford |
+| 4993 | jam |  jam；果酱；堵塞 | Oxford |
+| 4994 | january | 一月 | Oxford |
+| 4995 | july | 七月 | Oxford |
+| 4996 | june | 六月 | Oxford |
+| 4997 | justification | 理由； justification | Oxford |
+| 4998 | keen | 热衷的；敏锐的；渴望的 | Oxford |
+| 4999 | keyboard | 键盘 | Oxford |
+| 5000 | kidnap | 绑架 | Oxford |
+| 5001 | kidney | 肾脏 | Oxford |
+| 5002 | kilometer | 公里 | Oxford |
+| 5003 | kindergarten | 幼儿园 | Oxford |
+| 5004 | landlord | 房东 | Oxford |
+| 5005 | laptop | 笔记本电脑 | Oxford |
+| 5006 | large-scale | 大规模的 | Oxford |
+| 5007 | latest | 最新的 | Oxford |
+| 5008 | layout | 布局；设计 | Oxford |
+| 5009 | lazy | 懒惰的 | Oxford |
+| 5010 | leak | 泄漏；泄露 | Oxford |
+| 5011 | legendary | 传奇的 | Oxford |
+| 5012 | leisure |  leisure；休闲 | Oxford |
+| 5013 | lengthy | 冗长的 | Oxford |
+| 5014 | lesbian |  lesbian；女同性恋者 | Oxford |
+| 5015 | lesser | 较小的；次要的 | Oxford |
+| 5016 | lethal | 致命的 | Oxford |
+| 5017 | liberation |  liberation；解放 | Oxford |
+| 5018 | lifelong | 终身的 | Oxford |
+| 5019 | linear | 线性的；直线的 | Oxford |
+| 5020 | lineup |  lineup；阵容 | Oxford |
+| 5021 | linger | 逗留；徘徊 | Oxford |
+| 5022 | listing | 列表；清单 | Oxford |
+| 5023 | liter | 升 | Oxford |
+| 5024 | literacy |  literacy；读写能力 | Oxford |
+| 5025 | litter | 垃圾； litter | Oxford |
+| 5026 | lively |  lively；活泼的 | Oxford |
+| 5027 | located | 位于...的 | Oxford |
+| 5028 | logo | 标志；商标 | Oxford |
+| 5029 | long-standing | 长期存在的 | Oxford |
+| 5030 | loom | 织布机；隐约出现 | Oxford |
+| 5031 | lord |  lord；主 | Oxford |
+| 5032 | lottery | 彩票 | Oxford |
+| 5033 | loudly | 大声地 | Oxford |
+| 5034 | luxury | 奢侈；奢侈品 | Oxford |
+| 5035 | lyric | 歌词；抒情的 | Oxford |
+| 5036 | machinery |  machinery；机械 | Oxford |
+| 5037 | magical | 神奇的 | Oxford |
+| 5038 | magnificent | 壮丽的；宏伟的 | Oxford |
+| 5039 | mainland | 大陆；本土 | Oxford |
+| 5040 | making | 制作； making | Oxford |
+| 5041 | mandatory | 强制性的 | Oxford |
+| 5042 | manifest |  manifest；表明 | Oxford |
+| 5043 | manipulation |  manipulation；操纵 | Oxford |
+| 5044 | manufacture | 制造 | Oxford |
+| 5045 | manuscript | 手稿；原稿 | Oxford |
+| 5046 | marathon | 马拉松 | Oxford |
+| 5047 | marginal |  marginal；边缘的 | Oxford |
+| 5048 | martial | 军事的； martial | Oxford |
+| 5049 | massacre | 大屠杀 | Oxford |
+| 5050 | matching | 匹配的 | Oxford |
+| 5051 | mathematical | 数学的 | Oxford |
+| 5052 | mature | 成熟的 | Oxford |
+| 5053 | maximize | 最大化 | Oxford |
+| 5054 | means | 手段；方式 | Oxford |
+| 5055 | medieval | 中世纪的 | Oxford |
+| 5056 | meditation | 冥想；沉思 | Oxford |
+| 5057 | melody | 旋律；曲调 | Oxford |
+| 5058 | memoir |  memoir；回忆录 | Oxford |
+| 5059 | memorable |  memorable；难忘的 | Oxford |
+| 5060 | memorial | 纪念碑；纪念馆 | Oxford |
+| 5061 | mercy | 仁慈；怜悯 | Oxford |
+| 5062 | merge | 合并；融合 | Oxford |
+| 5063 | merger |  merger；合并 | Oxford |
+| 5064 | methodology | 方法论；方法 | Oxford |
+| 5065 | mile | 英里 | Oxford |
+| 5066 | militant | 激进的；好斗的 | Oxford |
+| 5067 | militia | 民兵组织 | Oxford |
+| 5068 | miner | 矿工 | Oxford |
+| 5069 | mining |  mining；采矿 | Oxford |
+| 5070 | miserable |  miserable；痛苦的 | Oxford |
+| 5071 | misery | 痛苦；悲惨 | Oxford |
+| 5072 | misleading | 误导的 | Oxford |
+| 5073 | mob | 暴民；群众 | Oxford |
+| 5074 | mobility | 流动性；机动性 | Oxford |
+| 5075 | mobilize |  mobilize；动员 | Oxford |
+| 5076 | modification | 修改 | Oxford |
+| 5077 | monday | 星期一 | Oxford |
+| 5078 | monk | 僧侣；和尚 | Oxford |
+| 5079 | monopoly | 垄断 | Oxford |
+| 5080 | morality |  morality；道德 | Oxford |
+| 5081 | mosque | 清真寺 | Oxford |
+| 5082 | mosquito | 蚊子 | Oxford |
+| 5083 | motorcycle | 摩托车 | Oxford |
+| 5084 | moving |  moving；感人的；移动的 | Oxford |
+| 5085 | multiply |  multiply；乘 | Oxford |
+| 5086 | namely | 即；也就是 | Oxford |
+| 5087 | navigation | 导航 | Oxford |
+| 5088 | neglect | 忽视；疏忽 | Oxford |
+| 5089 | newsletter |  newsletter；新闻简报 | Oxford |
+| 5090 | niche | 利基；壁龛；细分市场 | Oxford |
+| 5091 | nickel |  nickel；镍；五分硬币 | Oxford |
+| 5092 | nineteen | 十九 | Oxford |
+| 5093 | ninety | 九十 | Oxford |
+| 5094 | noble | 高贵的；贵族 | Oxford |
+| 5095 | noisy | 嘈杂的； noisy | Oxford |
+| 5096 | nominate | 提名 | Oxford |
+| 5097 | nonsense |  nonsense；胡说 | Oxford |
+| 5098 | notable | 显著的；著名的 | Oxford |
+| 5099 | notably |  notably；显著地 | Oxford |
+| 5100 | notorious | 臭名昭著的 | Oxford |
+| 5101 | novelist | 小说家 | Oxford |
+| 5102 | november | 十一月 | Oxford |
+| 5103 | nowadays |  nowadays；如今 | Oxford |
+| 5104 | nursery |  nursery；托儿所 | Oxford |
+| 5105 | nursing | 护理 | Oxford |
+| 5106 | nutrition |  nutrition；营养 | Oxford |
+| 5107 | o | 哦 | Oxford |
+| 5108 | obesity | 肥胖 | Oxford |
+| 5109 | obey |  obey；服从 | Oxford |
+| 5110 | obsess |  obsess；着迷 | Oxford |
+| 5111 | obsession |  obsession；痴迷 | Oxford |
+| 5112 | occurrence | 发生； occurrence | Oxford |
+| 5113 | october | 十月 | Oxford |
+| 5114 | offend | 冒犯 | Oxford |
+| 5115 | offspring | 后代；子孙 | Oxford |
+| 5116 | operational | 操作的；运营的 | Oxford |
+| 5117 | optical | 光学的；视觉的 | Oxford |
+| 5118 | optimism |  optimism；乐观 | Oxford |
+| 5119 | orchestra | 管弦乐队 | Oxford |
+| 5120 | organizer |  organizer；组织者 | Oxford |
+| 5121 | originate |  originate；起源 | Oxford |
+| 5122 | outbreak | 爆发；突然发生 | Oxford |
+| 5123 | outdoors | 户外 | Oxford |
+| 5124 | outing | 外出；郊游 | Oxford |
+| 5125 | outlook | 前景；观点 | Oxford |
+| 5126 | outrage | 愤怒；暴行 | Oxford |
+| 5127 | overly | 过度地；太 | Oxford |
+| 5128 | overseas | 海外 | Oxford |
+| 5129 | overturn | 推翻；颠覆 | Oxford |
+| 5130 | packet | 小包；数据包 | Oxford |
+| 5131 | pants | 裤子 | Oxford |
+| 5132 | paragraph | 段落 | Oxford |
+| 5133 | parallel | 平行的； parallel | Oxford |
+| 5134 | parliament | 议会 | Oxford |
+| 5135 | part-time | 兼职的 | Oxford |
+| 5136 | passionate | 热情的；热爱的 | Oxford |
+| 5137 | passive | 被动的；消极的 | Oxford |
+| 5138 | passport | 护照 | Oxford |
+| 5139 | password | 密码 | Oxford |
+| 5140 | pathway |  pathway；途径 | Oxford |
+| 5141 | peculiar | 奇怪的；独特的 | Oxford |
+| 5142 | penny | 便士 | Oxford |
+| 5143 | percent | 百分比 | Oxford |
+| 5144 | permanently | 永久地 | Oxford |
+| 5145 | persistent |  persistent；坚持不懈的 | Oxford |
+| 5146 | petition | 请愿书；请愿 | Oxford |
+| 5147 | pharmacy |  pharmacy；药房 | Oxford |
+| 5148 | philosopher | 哲学家 | Oxford |
+| 5149 | pirate |  pirate；海盗；盗版 | Oxford |
+| 5150 | pity |  pity；同情 | Oxford |
+| 5151 | pledge | 誓言；保证；抵押 | Oxford |
+| 5152 | plug | 插头；塞子；插入 | Oxford |
+| 5153 | pointed |  pointed；尖的；指向的 | Oxford |
+| 5154 | poison |  poison；毒药 | Oxford |
+| 5155 | poisonous | 有毒的 | Oxford |
+| 5156 | polite |  polite；有礼貌的 | Oxford |
+| 5157 | postwar | 战后的 | Oxford |
+| 5158 | precede | 在...之前；先于 | Oxford |
+| 5159 | precedent | 先例；前例 | Oxford |
+| 5160 | precision |  precision；精确 | Oxford |
+| 5161 | predecessor |  predecessor；前任 | Oxford |
+| 5162 | predictable |  predictable；可预测的 | Oxford |
+| 5163 | predominantly | 主要地；占主导地位地 | Oxford |
+| 5164 | prejudice | 偏见；歧视 | Oxford |
+| 5165 | premier |  premier；总理；首要的 | Oxford |
+| 5166 | prepared |  prepared；准备好的 | Oxford |
+| 5167 | prescribe | 开药方；规定 | Oxford |
+| 5168 | presently | 目前；不久 | Oxford |
+| 5169 | preservation | 保存；保护 | Oxford |
+| 5170 | preside | 主持；负责 | Oxford |
+| 5171 | prestigious |  prestigious；有声望的 | Oxford |
+| 5172 | presume | 假定；推测 | Oxford |
+| 5173 | prevalence | 流行；普遍 | Oxford |
+| 5174 | prey | 猎物；捕食 | Oxford |
+| 5175 | prince |  prince；王子 | Oxford |
+| 5176 | princess |  princess；公主 | Oxford |
+| 5177 | printer | 打印机 | Oxford |
+| 5178 | printing | 打印； printing | Oxford |
+| 5179 | privatization | 私有化 | Oxford |
+| 5180 | probability |  probability；概率 | Oxford |
+| 5181 | probable |  probable；可能的 | Oxford |
+| 5182 | probe | 探测；调查；探针 | Oxford |
+| 5183 | problematic | 有问题的；疑难的 | Oxford |
+| 5184 | proceeding |  proceeding；程序 | Oxford |
+| 5185 | proceeds |  proceeds；收益 | Oxford |
+| 5186 | profitable |  profitable；有利可图的 | Oxford |
+| 5187 | pronounce |  pronounce；发音 | Oxford |
+| 5188 | pronounced |  pronounced；明显的 | Oxford |
+| 5189 | propaganda | 宣传；鼓吹 | Oxford |
+| 5190 | proposition |  proposition；提议 | Oxford |
+| 5191 | prospective |  prospective；预期的 | Oxford |
+| 5192 | prosperity |  prosperity；繁荣 | Oxford |
+| 5193 | protester | 抗议者 | Oxford |
+| 5194 | provincial | 省的；地方性的 | Oxford |
+| 5195 | psychiatric | 精神病的 | Oxford |
+| 5196 | publishing | 出版； publishing | Oxford |
+| 5197 | punk |  punk；朋克 | Oxford |
+| 5198 | purely |  purely；纯粹地 | Oxford |
+| 5199 | qualification | 资格 | Oxford |
+| 5200 | qualified | 合格的 | Oxford |
+| 5201 | quota | 配额；限额 | Oxford |
+| 5202 | quotation |  quotation；引文 | Oxford |
+| 5203 | r |  R | Oxford |
+| 5204 | racing |  racing；赛跑 | Oxford |
+| 5205 | racist | 种族主义者 | Oxford |
+| 5206 | raid | 突袭；突击搜查 | Oxford |
+| 5207 | ranking |  ranking；排名 | Oxford |
+| 5208 | ray | 光线；射线 | Oxford |
+| 5209 | realization | 实现；认识；领悟 | Oxford |
+| 5210 | reasonably | 合理地； reasonably | Oxford |
+| 5211 | reasoning | 推理 | Oxford |
+| 5212 | reassure |  reassure；使放心 | Oxford |
+| 5213 | rebellion | 叛乱；反抗 | Oxford |
+| 5214 | reckon |  reckon；认为 | Oxford |
+| 5215 | reconstruction | 重建；改造 | Oxford |
+| 5216 | recount | 重新计数；叙述 | Oxford |
+| 5217 | recruitment |  recruitment；招聘 | Oxford |
+| 5218 | recycle | 回收 | Oxford |
+| 5219 | referee |  referee；裁判 | Oxford |
+| 5220 | referendum |  referendum；公投 | Oxford |
+| 5221 | refusal |  refusal；拒绝 | Oxford |
+| 5222 | registration |  registration；注册 | Oxford |
+| 5223 | reign | 统治；在位 | Oxford |
+| 5224 | rejection | 拒绝；排斥 | Oxford |
+| 5225 | relaxed |  relaxed；放松的 | Oxford |
+| 5226 | relaxing |  relaxing；令人放松的 | Oxford |
+| 5227 | relevance | 相关性；关联 | Oxford |
+| 5228 | relieved |  relieved；放心的 | Oxford |
+| 5229 | remainder | 剩余部分；余数 | Oxford |
+| 5230 | remains |  remains；遗迹 | Oxford |
+| 5231 | remarkably |  remarkably；显著地 | Oxford |
+| 5232 | remedy | 补救办法；治疗 | Oxford |
+| 5233 | renew |  renew；更新 | Oxford |
+| 5234 | renowned | 著名的；有声望的 | Oxford |
+| 5235 | repeated |  repeated；重复的 | Oxford |
+| 5236 | reproduce | 复制；繁殖 | Oxford |
+| 5237 | reproduction |  reproduction；复制 | Oxford |
+| 5238 | reside | 居住；存在于 | Oxford |
+| 5239 | residue |  residue；残留物 | Oxford |
+| 5240 | resignation |  resignation；辞职 | Oxford |
+| 5241 | respective |  respective；各自的 | Oxford |
+| 5242 | restoration | 恢复；修复 | Oxford |
+| 5243 | restraint |  restraint；约束 | Oxford |
+| 5244 | retrieve | 取回；检索 | Oxford |
+| 5245 | revenge | 报复；复仇 | Oxford |
+| 5246 | revise | 修订；修改 | Oxford |
+| 5247 | revision |  revision；修订 | Oxford |
+| 5248 | revival | 复兴；复活 | Oxford |
+| 5249 | revive | 复苏；复兴 | Oxford |
+| 5250 | rob |  rob；抢劫 | Oxford |
+| 5251 | robbery |  robbery；抢劫 | Oxford |
+| 5252 | robust | 健壮的；强劲的 | Oxford |
+| 5253 | rookie |  rookie；新手 | Oxford |
+| 5254 | roster | 名册；花名册 | Oxford |
+| 5255 | rotate | 旋转；轮换 | Oxford |
+| 5256 | rotation |  rotation；旋转 | Oxford |
+| 5257 | rude |  rude；粗鲁的 | Oxford |
+| 5258 | sadly |  sadly；悲哀地 | Oxford |
+| 5259 | sailing |  sailing；航行 | Oxford |
+| 5260 | sailor |  sailor；水手 | Oxford |
+| 5261 | saint |  saint；圣人 | Oxford |
+| 5262 | satisfied |  satisfied；满意的 | Oxford |
+| 5263 | saturday | 星期六 | Oxford |
+| 5264 | scattered |  scattered；分散的 | Oxford |
+| 5265 | scrutiny | 审查；仔细检查 | Oxford |
+| 5266 | secondly | 其次； secondly | Oxford |
+| 5267 | seeker |  seeker；寻求者 | Oxford |
+| 5268 | selective |  selective；选择性的 | Oxford |
+| 5269 | sensible |  sensible；明智的 | Oxford |
+| 5270 | september | 九月 | Oxford |
+| 5271 | serial | 连续的；连载的；序列的 | Oxford |
+| 5272 | settler |  settler；定居者 | Oxford |
+| 5273 | setup |  setup；设置 | Oxford |
+| 5274 | seventeen | 十七 | Oxford |
+| 5275 | seventy | 七十 | Oxford |
+| 5276 | shaped |  shaped；成形的 | Oxford |
+| 5277 | shatter | 打碎；粉碎 | Oxford |
+| 5278 | shiny |  shiny；闪亮的 | Oxford |
+| 5279 | shipping |  shipping；运输 | Oxford |
+| 5280 | shocked |  shocked；震惊的 | Oxford |
+| 5281 | shocking |  shocking；令人震惊的 | Oxford |
+| 5282 | simulate | 模拟；模仿 | Oxford |
+| 5283 | simulation |  simulation；模拟 | Oxford |
+| 5284 | sincere |  sincere；真诚的 | Oxford |
+| 5285 | singing | 唱歌 | Oxford |
+| 5286 | situated | 位于...的；处于...的 | Oxford |
+| 5287 | sixteen | 十六 | Oxford |
+| 5288 | sixty | 六十 | Oxford |
+| 5289 | skeptical |  skeptical；怀疑的 | Oxford |
+| 5290 | sketch | 草图；素描；简述 | Oxford |
+| 5291 | skiing |  skiing；滑雪 | Oxford |
+| 5292 | slash | 削减；斜线；砍 | Oxford |
+| 5293 | slogan | 标语；口号 | Oxford |
+| 5294 | smartphone | 智能手机 | Oxford |
+| 5295 | smash | 打碎；粉碎； smash | Oxford |
+| 5296 | smoking | 吸烟 | Oxford |
+| 5297 | sneaker |  sneaker；运动鞋 | Oxford |
+| 5298 | socialist |  socialist；社会主义者 | Oxford |
+| 5299 | solidarity | 团结；一致 | Oxford |
+| 5300 | solo | 独奏；独唱；单独的 | Oxford |
+| 5301 | sophomore |  sophomore；大二学生 | Oxford |
+| 5302 | spam |  spam；垃圾邮件 | Oxford |
+| 5303 | span |  span；跨度 | Oxford |
+| 5304 | specialized |  specialized；专业的 | Oxford |
+| 5305 | specimen |  specimen；标本 | Oxford |
+| 5306 | spectacle |  spectacle；景象 | Oxford |
+| 5307 | spectator |  spectator；观众 | Oxford |
+| 5308 | spelling | 拼写 | Oxford |
+| 5309 | spice |  spice；香料 | Oxford |
+| 5310 | spicy |  spicy；辛辣的 | Oxford |
+| 5311 | spider | 蜘蛛 | Oxford |
+| 5312 | spoil |  spoil；破坏； spoil（宠坏） | Oxford |
+| 5313 | spoken |  spoken；口语的 | Oxford |
+| 5314 | spokesperson | 发言人 | Oxford |
+| 5315 | spokeswoman | 女发言人 | Oxford |
+| 5316 | sponsorship |  sponsorship；赞助 | Oxford |
+| 5317 | spotlight | 聚光灯；焦点 | Oxford |
+| 5318 | stab |  stab；刺伤 | Oxford |
+| 5319 | stabilize |  stabilize；稳定 | Oxford |
+| 5320 | stall | 摊位； stall；熄火；拖延 | Oxford |
+| 5321 | stamp |  stamp；邮票；盖章 | Oxford |
+| 5322 | stark |  stark； stark（明显的） | Oxford |
+| 5323 | starve | 挨饿；饿死 | Oxford |
+| 5324 | statistic | 统计量； statistic | Oxford |
+| 5325 | sticky |  sticky；黏的 | Oxford |
+| 5326 | straightforward |  straightforward；简单的 | Oxford |
+| 5327 | strand | 股；缕； strand；搁浅 | Oxford |
+| 5328 | strive | 努力；奋斗 | Oxford |
+| 5329 | stun | 使震惊；使昏迷 | Oxford |
+| 5330 | stunning |  stunning；惊艳的 | Oxford |
+| 5331 | submission | 提交；屈服；意见书 | Oxford |
+| 5332 | subscriber |  subscriber；订阅者 | Oxford |
+| 5333 | subscription | 订阅；订购 | Oxford |
+| 5334 | subsequently |  subsequently；后来 | Oxford |
+| 5335 | substitute | 替代品；替代 | Oxford |
+| 5336 | substitution |  substitution；替换 | Oxford |
+| 5337 | subway | 地铁 | Oxford |
+| 5338 | succession | 连续；继承 | Oxford |
+| 5339 | successive |  successive；连续的 | Oxford |
+| 5340 | successor |  successor；继任者 | Oxford |
+| 5341 | sufficiently |  sufficiently；足够地 | Oxford |
+| 5342 | summarize |  summarize；总结 | Oxford |
+| 5343 | sunday | 星期日 | Oxford |
+| 5344 | superb | 极好的；卓越的 | Oxford |
+| 5345 | superintendent | 主管；警长 | Oxford |
+| 5346 | supervise | 监督；管理 | Oxford |
+| 5347 | supervision |  supervision；监督 | Oxford |
+| 5348 | supplement | 补充；增补 | Oxford |
+| 5349 | suppress | 镇压；抑制 | Oxford |
+| 5350 | surge | 激增；汹涌 | Oxford |
+| 5351 | surgical |  surgical；外科的 | Oxford |
+| 5352 | surplus | 盈余；过剩 | Oxford |
+| 5353 | surrender | 投降；放弃 | Oxford |
+| 5354 | suspension |  suspension；暂停 | Oxford |
+| 5355 | sympathetic |  sympathetic；同情的 | Oxford |
+| 5356 | synthesis |  synthesis；合成 | Oxford |
+| 5357 | systematic |  systematic；系统的 | Oxford |
+| 5358 | tablet |  tablet；平板；药片 | Oxford |
+| 5359 | tactical |  tactical；战术的 | Oxford |
+| 5360 | taxi | 出租车 | Oxford |
+| 5361 | temporarily |  temporarily；临时地 | Oxford |
+| 5362 | tempt |  tempt；诱惑 | Oxford |
+| 5363 | tenant |  tenant；租户 | Oxford |
+| 5364 | tenure | 任期；终身职位 | Oxford |
+| 5365 | terminate | 终止；结束 | Oxford |
+| 5366 | terrify |  terrify；使恐惧 | Oxford |
+| 5367 | thankfully |  thankfully；谢天谢地 | Oxford |
+| 5368 | theatrical | 戏剧的；夸张的 | Oxford |
+| 5369 | thereafter | 此后；之后 | Oxford |
+| 5370 | thesis |  thesis；论文 | Oxford |
+| 5371 | thief |  thief；小偷 | Oxford |
+| 5372 | thirsty |  thirsty；口渴的 | Oxford |
+| 5373 | thirteen | 十三 | Oxford |
+| 5374 | thorough |  thorough；彻底的 | Oxford |
+| 5375 | thought-provoking | 发人深省的 | Oxford |
+| 5376 | thoughtful |  thoughtful；体贴的 | Oxford |
+| 5377 | thrilled |  thrilled；非常兴奋的 | Oxford |
+| 5378 | thursday | 星期四 | Oxford |
+| 5379 | timely | 及时的；适时的 | Oxford |
+| 5380 | ton | 吨 | Oxford |
+| 5381 | torture | 折磨； torture | Oxford |
+| 5382 | trademark |  trademark；商标 | Oxford |
+| 5383 | transcript | 成绩单；抄本； transcript | Oxford |
+| 5384 | transparency | 透明度；透明 | Oxford |
+| 5385 | transparent |  transparent；透明的 | Oxford |
+| 5386 | tribute | 贡品； tribute；致敬 | Oxford |
+| 5387 | trillion | 万亿 | Oxford |
+| 5388 | trio |  trio；三人组 | Oxford |
+| 5389 | trophy | 奖杯； trophy | Oxford |
+| 5390 | trustee | 受托人； trustee | Oxford |
+| 5391 | tsunami | 海啸 | Oxford |
+| 5392 | tuesday | 星期二 | Oxford |
+| 5393 | tuition | 学费 | Oxford |
+| 5394 | turnout |  turnout；出席人数 | Oxford |
+| 5395 | turnover | 营业额； turnover；人员流动 | Oxford |
+| 5396 | umbrella |  umbrella；雨伞 | Oxford |
+| 5397 | unacceptable | 不可接受的 | Oxford |
+| 5398 | unconscious |  unconscious；无意识的 | Oxford |
+| 5399 | unconstitutional | 违宪的 | Oxford |
+| 5400 | underground |  underground；地下的 | Oxford |
+| 5401 | underwear |  underwear；内衣 | Oxford |
+| 5402 | undoubtedly |  undoubtedly；毫无疑问 | Oxford |
+| 5403 | unemployed | 失业的 | Oxford |
+| 5404 | unfortunate |  unfortunate；不幸的 | Oxford |
+| 5405 | unify | 统一；联合 | Oxford |
+| 5406 | unnecessary | 不必要的 | Oxford |
+| 5407 | unpleasant |  unpleasant；不愉快的 | Oxford |
+| 5408 | unveil |  unveil；揭开 | Oxford |
+| 5409 | upcoming | 即将到来的 | Oxford |
+| 5410 | upgrade | 升级； upgrade | Oxford |
+| 5411 | uphold |  uphold；维护 | Oxford |
+| 5412 | upward |  upward；向上的 | Oxford |
+| 5413 | urgent |  urgent；紧急的 | Oxford |
+| 5414 | usage | 用法； usage | Oxford |
+| 5415 | useless |  useless；无用的 | Oxford |
+| 5416 | utterly |  utterly；完全地 | Oxford |
+| 5417 | vague | 模糊的； vague | Oxford |
+| 5418 | varied |  varied；多样的 | Oxford |
+| 5419 | vein | 静脉； vein | Oxford |
+| 5420 | venue | 场地； venue | Oxford |
+| 5421 | verify | 验证； verify | Oxford |
+| 5422 | verse | 诗句； verse | Oxford |
+| 5423 | viable | 可行的 | Oxford |
+| 5424 | vibrant | 充满活力的； vibrant | Oxford |
+| 5425 | vice |  vice；恶习；副的 | Oxford |
+| 5426 | vicious |  vicious；恶毒的 | Oxford |
+| 5427 | viewpoint |  viewpoint；观点 | Oxford |
+| 5428 | visa | 签证 | Oxford |
+| 5429 | vow |  vow；誓言 | Oxford |
+| 5430 | vulnerability |  vulnerability；脆弱性 | Oxford |
+| 5431 | waiter | 服务员 | Oxford |
+| 5432 | ward |  ward；病房 | Oxford |
+| 5433 | warfare |  warfare；战争 | Oxford |
+| 5434 | warming |  warming；变暖 | Oxford |
+| 5435 | washing |  washing；洗涤 | Oxford |
+| 5436 | website | 网站 | Oxford |
+| 5437 | wednesday | 星期三 | Oxford |
+| 5438 | whatsoever |  whatsoever；任何 | Oxford |
+| 5439 | whereby |  whereby；凭此 | Oxford |
+| 5440 | wholly |  wholly；完全地 | Oxford |
+| 5441 | widen |  widen；加宽 | Oxford |
+| 5442 | width |  width；宽度 | Oxford |
+| 5443 | wildlife |  wildlife；野生动植物 | Oxford |
+| 5444 | wit |  wit；机智 | Oxford |
+| 5445 | wool |  wool；羊毛 | Oxford |
+| 5446 | workforce |  workforce；劳动力 | Oxford |
+| 5447 | worm |  worm；蠕虫 | Oxford |
+| 5448 | worse | 更坏的 | Oxford |
+| 5449 | worship |  worship；崇拜 | Oxford |
+| 5450 | worst | 最坏的 | Oxford |
+| 5451 | worthwhile |  worthwhile；值得的 | Oxford |
+| 5452 | worthy |  worthy；配得上的 | Oxford |
+| 5453 | zero | 零 | Oxford |
 
