@@ -4488,3 +4488,26 @@
 | 4479 | Dr | 博士；医生（Doctor缩写） | 基础 |
 | 4480 | theirs | 他们的；她们的；它们的（名词性） | 基础 |
 | 4481 | yourselves | 你们自己（复数反身代词） | 基础 |
+| 4481 | api | API；应用程序接口 | 技术 |
+| 4482 | payload | 请求/响应载荷；有效载荷 | 技术 |
+| 4483 | authentication | 认证；身份验证 | 技术 |
+| 4484 | authorization | 授权 | 技术 |
+| 4485 | deployment | 部署 | 技术 |
+| 4486 | docker | Docker 容器平台 | 技术 |
+| 4487 | kubernetes | Kubernetes 容器编排 | 技术 |
+| 4488 | scalability | 可扩展性 | 技术 |
+| 4489 | maintainability | 可维护性 | 技术 |
+| 4490 | compatibility | 兼容性 | 技术 |
+| 4491 | concurrency | 并发；并发性 | 技术 |
+| 4492 | parallelism | 并行；并行性 | 技术 |
+| 4493 | synchronous | 同步的 | 技术 |
+| 4494 | asynchronous | 异步的 | 技术 |
+| 4495 | mutex | 互斥锁 | 技术 |
+| 4496 | goroutine | Go 语言协程 | 技术 |
+| 4497 | metric | 指标；度量 | 技术 |
+| 4498 | certificate | 证书；凭证 | 技术 |
+| 4499 | encryption | 加密 | 技术 |
+| 4500 | configuration | 配置 | 技术 |
+| 4501 | http | HTTP 超文本传输协议 | 技术 |
+| 4502 | json | JSON 数据格式 | 技术 |
+
