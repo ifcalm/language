@@ -38,7 +38,7 @@ import {
 type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
-const VOCABULARY_VISIBLE_LIMIT = 240
+const VOCABULARY_PAGE_SIZE = 120
 // Fallback until the real corpus size arrives from /api/vocabulary?band=all.
 const CORE_VOCABULARY_TOTAL = 5536
 
@@ -56,6 +56,22 @@ function getInitialView(): ViewId {
   }
 
   return getViewFromPath(window.location.pathname)
+}
+
+function getInitialVocabularyOffset() {
+  if (typeof window === 'undefined') {
+    return 0
+  }
+
+  const fromParam = Number(
+    new URLSearchParams(window.location.search).get('from'),
+  )
+
+  if (!Number.isFinite(fromParam) || fromParam <= 0) {
+    return 0
+  }
+
+  return Math.floor(fromParam / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE
 }
 
 const vocabularyFrequencyOptions: Array<{
@@ -93,6 +109,7 @@ interface VocabularyApiResponse {
   filters?: {
     band: string
     query: string
+    maxRank?: number
   }
 }
 
@@ -230,6 +247,21 @@ function getPronunciationKey(
   return `${item.id}-${pronunciation.id}`
 }
 
+function getPrimaryPronunciation(item: {
+  pronunciations?: VocabularyPronunciation[]
+}) {
+  const pronunciations = item.pronunciations ?? []
+
+  return (
+    pronunciations.find((pronunciation) => {
+      const normalizedId = pronunciation.id.toLowerCase()
+      return normalizedId.endsWith('-us') || normalizedId.includes('-us-')
+    }) ??
+    pronunciations[0] ??
+    null
+  )
+}
+
 
 function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
@@ -240,7 +272,10 @@ function App() {
     useState<VocabularyFrequencyFilter>('top-500')
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
-  const [vocabularyOffset, setVocabularyOffset] = useState(0)
+  const [vocabularyOffset, setVocabularyOffset] = useState(
+    getInitialVocabularyOffset,
+  )
+  const [focusedVocabularyIndex, setFocusedVocabularyIndex] = useState(0)
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
   const [coreVocabularyTotal, setCoreVocabularyTotal] = useState(
@@ -264,6 +299,8 @@ function App() {
   const [authUser, setAuthUser] = useState<AuthUser | null>(null)
   const [isAuthLoading, setIsAuthLoading] = useState(true)
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
+  const vocabularySearchInputRef = useRef<HTMLInputElement | null>(null)
+  const vocabularyToolbarRef = useRef<HTMLElement | null>(null)
 
   const filteredResources = useMemo(
     () =>
@@ -285,10 +322,6 @@ function App() {
 
   const visibleCoreVocabulary = apiVocabulary
   const vocabularyResultCount = apiVocabularyTotal
-  const hiddenVocabularyCount = Math.max(
-    0,
-    vocabularyResultCount - vocabularyOffset - visibleCoreVocabulary.length,
-  )
   const vocabularyTotalCount = Math.max(coreVocabularyTotal, apiVocabularyTotal)
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
@@ -333,6 +366,40 @@ function App() {
     },
   }
   const placeholderPage = placeholderPages[view]
+  const vocabularyPagination = (
+    <div className="vocabulary-pagination">
+      <button
+        type="button"
+        className="pagination-step"
+        disabled={vocabularyOffset === 0}
+        onClick={() => goToVocabularyOffset(vocabularyOffset - VOCABULARY_PAGE_SIZE)}
+      >
+        ← 上一批
+      </button>
+      <span className="pagination-range">
+        {shownVocabularyStart > 0
+          ? `${shownVocabularyStart}–${shownVocabularyEnd} / ${vocabularyResultCount}`
+          : `0 / ${vocabularyResultCount}`}
+      </span>
+      <button
+        type="button"
+        className="pagination-step"
+        disabled={shownVocabularyEnd >= vocabularyResultCount}
+        onClick={() => goToVocabularyOffset(vocabularyOffset + VOCABULARY_PAGE_SIZE)}
+      >
+        下一批 →
+      </button>
+      {roadmapProgress > 0 && (
+        <button
+          type="button"
+          className="pagination-progress"
+          onClick={jumpToRoadmapProgress}
+        >
+          回到我的进度 #{roadmapProgress}
+        </button>
+      )}
+    </div>
+  )
   const isAuthPage = isAuthView(view)
   const selectedVocabularyRank = selectedVocabularyDetail
     ? getVocabularyRank(selectedVocabularyDetail.core)
@@ -345,6 +412,105 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
   }, [roadmapProgress])
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || view !== 'vocabulary') {
+      return
+    }
+
+    const url = new URL(window.location.href)
+
+    if (vocabularyOffset > 0) {
+      url.searchParams.set('from', String(vocabularyOffset))
+    } else {
+      url.searchParams.delete('from')
+    }
+
+    window.history.replaceState(null, '', url)
+  }, [view, vocabularyOffset])
+
+  useEffect(() => {
+    if (view !== 'vocabulary') {
+      return
+    }
+
+    document
+      .querySelector('.vocabulary-row.is-focused')
+      ?.scrollIntoView({ block: 'nearest' })
+  }, [view, focusedVocabularyIndex])
+
+  useEffect(() => {
+    if (view !== 'vocabulary' || selectedVocabularyLookup) {
+      return
+    }
+
+    function handleVocabularyKeyDown(event: KeyboardEvent) {
+      const target = event.target as HTMLElement | null
+      const isEditableTarget =
+        !!target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'SELECT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.isContentEditable)
+
+      if (event.key === '/' && !isEditableTarget) {
+        event.preventDefault()
+        vocabularySearchInputRef.current?.focus()
+        return
+      }
+
+      if (isEditableTarget || event.metaKey || event.ctrlKey || event.altKey) {
+        return
+      }
+
+      if (visibleCoreVocabulary.length === 0) {
+        return
+      }
+
+      const maxIndex = visibleCoreVocabulary.length - 1
+      const currentIndex = Math.min(focusedVocabularyIndex, maxIndex)
+      const currentItem = visibleCoreVocabulary[currentIndex]
+
+      switch (event.key) {
+        case 'j':
+        case 'ArrowDown':
+          event.preventDefault()
+          setFocusedVocabularyIndex(Math.min(currentIndex + 1, maxIndex))
+          break
+        case 'k':
+        case 'ArrowUp':
+          event.preventDefault()
+          setFocusedVocabularyIndex(Math.max(currentIndex - 1, 0))
+          break
+        case 'Enter':
+          event.preventDefault()
+          openVocabularyDetail(currentItem.id)
+          break
+        case 'p': {
+          const pronunciation = getPrimaryPronunciation(currentItem)
+
+          if (pronunciation) {
+            playPronunciation(currentItem, pronunciation)
+          }
+
+          break
+        }
+        case 'm':
+          updateRoadmapProgress(getVocabularyRank(currentItem))
+          break
+        default:
+          break
+      }
+    }
+
+    window.addEventListener('keydown', handleVocabularyKeyDown)
+    return () => window.removeEventListener('keydown', handleVocabularyKeyDown)
+  }, [
+    view,
+    selectedVocabularyLookup,
+    visibleCoreVocabulary,
+    focusedVocabularyIndex,
+  ])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -443,7 +609,7 @@ function App() {
 
       const params = new URLSearchParams({
         band: vocabularyFrequency,
-        limit: String(VOCABULARY_VISIBLE_LIMIT),
+        limit: String(VOCABULARY_PAGE_SIZE),
         offset: String(vocabularyOffset),
       })
 
@@ -601,6 +767,60 @@ function App() {
     setRoadmapProgress(normalizedProgress)
   }
 
+  function scrollToVocabularyToolbar() {
+    vocabularyToolbarRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
+  function goToVocabularyOffset(nextOffset: number) {
+    const lastPageOffset =
+      Math.floor(Math.max(vocabularyResultCount - 1, 0) / VOCABULARY_PAGE_SIZE) *
+      VOCABULARY_PAGE_SIZE
+    setVocabularyOffset(Math.max(0, Math.min(nextOffset, lastPageOffset)))
+    setFocusedVocabularyIndex(0)
+    scrollToVocabularyToolbar()
+  }
+
+  async function jumpToRoadmapProgress() {
+    if (roadmapProgress <= 0) {
+      return
+    }
+
+    // Ranks have gaps, so rank N is usually not the Nth row. Ask the API how
+    // many words sit at or below the progress rank; fall back to treating the
+    // rank as a position when the deployed worker does not know maxRank yet.
+    let position = roadmapProgress
+
+    try {
+      const response = await fetch(
+        `/api/vocabulary?band=all&limit=1&maxRank=${roadmapProgress}`,
+      )
+
+      if (response.ok) {
+        const payload = (await response.json()) as VocabularyApiResponse
+
+        if (
+          typeof payload.filters?.maxRank === 'number' &&
+          payload.pagination.total > 0
+        ) {
+          position = payload.pagination.total
+        }
+      }
+    } catch {
+      // Keep the rank-as-position fallback.
+    }
+
+    setVocabularyQuery('')
+    setVocabularyFrequency('all')
+    setVocabularyOffset(
+      Math.floor((position - 1) / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE,
+    )
+    setFocusedVocabularyIndex((position - 1) % VOCABULARY_PAGE_SIZE)
+    scrollToVocabularyToolbar()
+  }
+
   function openVocabularyDetail(lookup: string) {
     const normalizedLookup = lookup.trim()
 
@@ -608,7 +828,6 @@ function App() {
       return
     }
 
-    setVocabularyOffset(0)
     setSelectedVocabularyLookup(normalizedLookup)
     changeView('vocabulary')
 
@@ -1279,22 +1498,22 @@ function App() {
               </div>
             </section>
 
-            <section className="panel vocabulary-toolbar">
+            <section
+              className="panel vocabulary-toolbar"
+              ref={vocabularyToolbarRef}
+            >
               <div className="section-heading">
                 <h2>核心词库</h2>
-                <span>
-                  {shownVocabularyStart > 0
-                    ? `${shownVocabularyStart}-${shownVocabularyEnd} / ${vocabularyResultCount}`
-                    : `${vocabularyResultCount} 个匹配结果`}
-                </span>
               </div>
               <div className="filters vocabulary-filters">
                 <input
-                  placeholder="搜索单词、中文释义或英文释义"
+                  ref={vocabularySearchInputRef}
+                  placeholder="搜索单词、中文释义或英文释义（按 / 聚焦）"
                   value={vocabularyQuery}
                   onChange={(event) => {
                     setVocabularyQuery(event.target.value)
                     setVocabularyOffset(0)
+                    setFocusedVocabularyIndex(0)
                   }}
                 />
                 <select
@@ -1304,6 +1523,7 @@ function App() {
                       event.target.value as VocabularyFrequencyFilter,
                     )
                     setVocabularyOffset(0)
+                    setFocusedVocabularyIndex(0)
                   }}
                 >
                   {vocabularyFrequencyOptions.map((option) => (
@@ -1313,14 +1533,7 @@ function App() {
                   ))}
                 </select>
               </div>
-              {vocabularyOffset > 0 && (
-                <div className="toolbar-note">
-                  <span>已从 #{vocabularyOffset + 1} 附近继续。</span>
-                  <button type="button" onClick={() => setVocabularyOffset(0)}>
-                    回到开头
-                  </button>
-                </div>
-              )}
+              {vocabularyPagination}
             </section>
 
             {(isVocabularyLoading || vocabularyApiError) && (
@@ -1338,94 +1551,103 @@ function App() {
               </section>
             )}
 
-            <section className="vocabulary-grid">
-              {visibleCoreVocabulary.map((item) => {
+            <section className="panel vocabulary-list" aria-label="词汇列表">
+              {visibleCoreVocabulary.map((item, index) => {
                 const rank = getVocabularyRank(item)
-                const isInRoadmapProgress = rank <= roadmapProgress
+                const isInRoadmapProgress = rank > 0 && rank <= roadmapProgress
+                const isProgressRow = rank > 0 && rank === roadmapProgress
+                const isFocused = index === focusedVocabularyIndex
+                const primaryPronunciation = getPrimaryPronunciation(item)
+                const isPlaying =
+                  primaryPronunciation !== null &&
+                  activePronunciationKey ===
+                    getPronunciationKey(item, primaryPronunciation)
 
                 return (
-                  <article key={item.id} className="panel vocabulary-card">
-                    <header>
-                      <div>
-                        <span>#{String(rank).padStart(4, '0')}</span>
-                        <h3>{item.word}</h3>
-                      </div>
-                    </header>
-                    {(item.phoneticUs || item.phoneticUk) && (
-                      <p className="vocabulary-phonetics">
-                        {item.phoneticUs && <span>US {item.phoneticUs}</span>}
-                        {item.phoneticUk && <span>UK {item.phoneticUk}</span>}
-                      </p>
-                    )}
-                    <p className="vocabulary-meaning">{item.meaning}</p>
-                    {item.pronunciations && item.pronunciations.length > 0 && (
-                      <div
-                        className="pronunciation-list"
-                        aria-label={`${item.word} 读音`}
-                      >
-                        {item.pronunciations.map((pronunciation, index) => {
-                          const label = getPronunciationLabel(pronunciation, index)
+                  <article
+                    key={item.id}
+                    className={`vocabulary-row${isFocused ? ' is-focused' : ''}${
+                      isProgressRow ? ' is-progress' : ''
+                    }`}
+                    onClick={() => openVocabularyDetail(item.id)}
+                    onMouseEnter={() => setFocusedVocabularyIndex(index)}
+                  >
+                    <span className="row-rank">
+                      #{String(rank).padStart(4, '0')}
+                    </span>
+                    <span className="row-word">{item.word}</span>
+                    <span className="row-phonetic">
+                      {item.phoneticUs || item.phoneticUk}
+                    </span>
+                    <button
+                      type="button"
+                      className={`row-play${isPlaying ? ' playing' : ''}`}
+                      disabled={!primaryPronunciation}
+                      aria-label={`播放 ${item.word} 读音`}
+                      onClick={(event) => {
+                        event.stopPropagation()
 
-                          return (
-                            <button
-                              key={`${item.id}-${pronunciation.id}`}
-                              type="button"
-                              className={
-                                activePronunciationKey ===
-                                getPronunciationKey(item, pronunciation)
-                                  ? 'playing'
-                                  : ''
-                              }
-                              aria-label={`播放 ${item.word} ${label} 读音`}
-                              title={`${item.word} ${label} 读音`}
-                              onClick={() => playPronunciation(item, pronunciation)}
-                            >
-                              {activePronunciationKey ===
-                              getPronunciationKey(item, pronunciation)
-                                ? `${label} 播放中`
-                                : label}
-                            </button>
-                          )
-                        })}
-                      </div>
+                        if (primaryPronunciation) {
+                          playPronunciation(item, primaryPronunciation)
+                        }
+                      }}
+                    >
+                      ▶
+                    </button>
+                    <span className="row-meaning">{item.meaning}</span>
+                    {isProgressRow && (
+                      <span className="row-progress-flag">我的进度</span>
                     )}
-                    {item.example && (
-                      <p className="vocabulary-example">{item.example}</p>
-                    )}
-                    <footer>
-                      <small>
-                        {isInRoadmapProgress
-                          ? 'Already inside your roadmap progress'
-                          : `Mark progress through #${rank}`}
-                      </small>
-                      <div className="vocabulary-card-actions">
-                        <button
-                          type="button"
-                          className="secondary-button"
-                          onClick={() => openVocabularyDetail(item.id)}
-                        >
-                          查看详情
-                        </button>
-                        <button
-                          type="button"
-                          disabled={isInRoadmapProgress}
-                          onClick={() => updateRoadmapProgress(rank)}
-                        >
-                          {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
-                        </button>
-                      </div>
-                    </footer>
+                    <span className="row-actions">
+                      <button
+                        type="button"
+                        onClick={(event) => {
+                          event.stopPropagation()
+                          openVocabularyDetail(item.id)
+                        }}
+                      >
+                        详情
+                      </button>
+                      <button
+                        type="button"
+                        disabled={isInRoadmapProgress}
+                        onClick={(event) => {
+                          event.stopPropagation()
+                          updateRoadmapProgress(rank)
+                        }}
+                      >
+                        {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
+                      </button>
+                    </span>
                   </article>
                 )
               })}
             </section>
 
-            {hiddenVocabularyCount > 0 && (
-              <section className="panel vocabulary-more-note">
-                还有 {hiddenVocabularyCount} 个匹配词没有直接展开。可以继续搜索单词、中文释义或
-                英文释义来缩小范围。
+            {visibleCoreVocabulary.length > 0 && (
+              <section className="panel vocabulary-pagination-panel">
+                {vocabularyPagination}
               </section>
             )}
+
+            <section className="vocabulary-kbd-hints" aria-hidden="true">
+              <span>
+                <kbd>j</kbd>
+                <kbd>k</kbd> 移动
+              </span>
+              <span>
+                <kbd>enter</kbd> 详情
+              </span>
+              <span>
+                <kbd>p</kbd> 读音
+              </span>
+              <span>
+                <kbd>m</kbd> 标记
+              </span>
+              <span>
+                <kbd>/</kbd> 搜索
+              </span>
+            </section>
               </>
             )}
           </>
