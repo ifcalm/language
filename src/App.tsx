@@ -301,6 +301,9 @@ function App() {
   const pronunciationAudioRef = useRef<HTMLAudioElement | null>(null)
   const vocabularySearchInputRef = useRef<HTMLInputElement | null>(null)
   const vocabularyToolbarRef = useRef<HTMLElement | null>(null)
+  // Mouse-driven focus must not trigger scrollIntoView, or hovering rows at
+  // the viewport edge makes the page jump.
+  const vocabularyFocusSourceRef = useRef<'keyboard' | 'mouse'>('keyboard')
 
   const filteredResources = useMemo(
     () =>
@@ -430,7 +433,7 @@ function App() {
   }, [view, vocabularyOffset])
 
   useEffect(() => {
-    if (view !== 'vocabulary') {
+    if (view !== 'vocabulary' || vocabularyFocusSourceRef.current !== 'keyboard') {
       return
     }
 
@@ -475,11 +478,13 @@ function App() {
         case 'j':
         case 'ArrowDown':
           event.preventDefault()
+          vocabularyFocusSourceRef.current = 'keyboard'
           setFocusedVocabularyIndex(Math.min(currentIndex + 1, maxIndex))
           break
         case 'k':
         case 'ArrowUp':
           event.preventDefault()
+          vocabularyFocusSourceRef.current = 'keyboard'
           setFocusedVocabularyIndex(Math.max(currentIndex - 1, 0))
           break
         case 'Enter':
@@ -817,6 +822,7 @@ function App() {
     setVocabularyOffset(
       Math.floor((position - 1) / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE,
     )
+    vocabularyFocusSourceRef.current = 'keyboard'
     setFocusedVocabularyIndex((position - 1) % VOCABULARY_PAGE_SIZE)
     scrollToVocabularyToolbar()
   }
@@ -1570,7 +1576,10 @@ function App() {
                       isProgressRow ? ' is-progress' : ''
                     }`}
                     onClick={() => openVocabularyDetail(item.id)}
-                    onMouseEnter={() => setFocusedVocabularyIndex(index)}
+                    onMouseEnter={() => {
+                      vocabularyFocusSourceRef.current = 'mouse'
+                      setFocusedVocabularyIndex(index)
+                    }}
                   >
                     <span className="row-rank">
                       #{String(rank).padStart(4, '0')}
