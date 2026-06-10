@@ -851,6 +851,7 @@ button:disabled,
 }
 
 .vocabulary-row {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -952,13 +953,22 @@ button:disabled,
 }
 
 .row-actions {
-  display: none;
-  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  display: inline-flex;
   gap: 8px;
+  padding-left: 14px;
+  background: var(--surface-subtle);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.12s ease;
 }
 
 .vocabulary-row.is-focused .row-actions {
-  display: inline-flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .row-actions button {
@@ -1750,10 +1760,6 @@ button:disabled,
   }
 
   .row-actions {
-    display: none;
-  }
-
-  .vocabulary-row.is-focused .row-actions {
     display: none;
   }
 
