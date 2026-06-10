@@ -421,9 +421,17 @@ async function handleVocabularyList(request: Request, env: Env) {
   const limit = clampNumber(url.searchParams.get('limit'), 240, 1, 500)
   const offset = clampNumber(url.searchParams.get('offset'), 0, 0, 10_000)
   const query = url.searchParams.get('q')?.trim().toLowerCase() ?? ''
+  // maxRank lets clients translate a frequency rank into a list position
+  // (ranks have gaps, so rank N is not the Nth row).
+  const maxRank = clampNumber(url.searchParams.get('maxRank'), 0, 0, 1_000_000)
 
   const where = ['frequency_rank <= ?']
   const params: Array<string | number> = [vocabularyBandLimits[band]]
+
+  if (maxRank > 0) {
+    where.push('frequency_rank <= ?')
+    params.push(maxRank)
+  }
 
   if (query) {
     where.push(
@@ -487,6 +495,7 @@ async function handleVocabularyList(request: Request, env: Env) {
     filters: {
       band,
       query,
+      maxRank,
     },
   })
 }
