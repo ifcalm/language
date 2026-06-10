@@ -1,6 +1,6 @@
 import { handleAuthRequest } from './auth'
 
-type VocabularyBand = 'top-100' | 'top-500' | 'top-1000' | 'top-3000'
+type VocabularyBand = 'top-100' | 'top-500' | 'top-1000' | 'top-3000' | 'all'
 
 interface VocabRow {
   id: string
@@ -96,6 +96,7 @@ const vocabularyBandLimits: Record<VocabularyBand, number> = {
   'top-500': 500,
   'top-1000': 1000,
   'top-3000': 3000,
+  all: 1_000_000,
 }
 
 const lookupBatchSize = 90
@@ -119,7 +120,8 @@ const getVocabularyBand = (value: string | null): VocabularyBand => {
     value === 'top-100' ||
     value === 'top-500' ||
     value === 'top-1000' ||
-    value === 'top-3000'
+    value === 'top-3000' ||
+    value === 'all'
   ) {
     return value
   }

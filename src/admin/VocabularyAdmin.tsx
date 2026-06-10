@@ -66,7 +66,7 @@ const frequencyOptions: Array<{
   { value: 'top-100', label: vocabularyFrequencyBandLabels['top-100'] },
   { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
   { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
-  { value: 'all', label: '全部 3000' },
+  { value: 'all', label: '全部' },
 ]
 
 function getSavedEditor() {
@@ -143,7 +143,7 @@ function VocabularyAdmin() {
       setError('')
 
       const params = new URLSearchParams({
-        band: frequency === 'all' ? 'top-3000' : frequency,
+        band: frequency,
         limit: String(ADMIN_LIST_LIMIT),
         offset: '0',
       })

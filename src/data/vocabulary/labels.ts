@@ -4,5 +4,5 @@ export const vocabularyFrequencyBandLabels: Record<VocabularyFrequencyBand, stri
   'top-100': '高频 100',
   'top-500': '日常 500',
   'top-1000': '核心 1000',
-  'top-3000': '完整 3000',
+  'top-3000': '核心 3000',
 }

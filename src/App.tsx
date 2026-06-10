@@ -39,7 +39,8 @@ type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_VISIBLE_LIMIT = 240
-const CORE_VOCABULARY_TOTAL = 3000
+// Fallback until the real corpus size arrives from /api/vocabulary?band=all.
+const CORE_VOCABULARY_TOTAL = 5536
 
 function getInitialVerbLookup() {
   if (typeof window === 'undefined') {
@@ -64,7 +65,7 @@ const vocabularyFrequencyOptions: Array<{
   { value: 'top-100', label: vocabularyFrequencyBandLabels['top-100'] },
   { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
   { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
-  { value: 'all', label: '全部 3000' },
+  { value: 'all', label: '全部' },
 ]
 
 interface VocabularyApiItem {
@@ -88,6 +89,10 @@ interface VocabularyApiResponse {
     total: number
     limit: number
     offset: number
+  }
+  filters?: {
+    band: string
+    query: string
   }
 }
 
@@ -238,6 +243,9 @@ function App() {
   const [vocabularyOffset, setVocabularyOffset] = useState(0)
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
+  const [coreVocabularyTotal, setCoreVocabularyTotal] = useState(
+    CORE_VOCABULARY_TOTAL,
+  )
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
   const [vocabularyApiError, setVocabularyApiError] = useState('')
   const [selectedVocabularyLookup, setSelectedVocabularyLookup] = useState('')
@@ -281,7 +289,7 @@ function App() {
     0,
     vocabularyResultCount - vocabularyOffset - visibleCoreVocabulary.length,
   )
-  const vocabularyTotalCount = Math.max(CORE_VOCABULARY_TOTAL, apiVocabularyTotal)
+  const vocabularyTotalCount = Math.max(coreVocabularyTotal, apiVocabularyTotal)
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
@@ -296,7 +304,7 @@ function App() {
   > = {
     strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
     examples: { eyebrow: 'Sentence Examples', title: '例句' },
-    vocabulary: { eyebrow: 'Core 3000', title: '核心词库' },
+    vocabulary: { eyebrow: 'Core Vocabulary', title: '核心词库' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
   }
@@ -337,6 +345,37 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
   }, [roadmapProgress])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function fetchCoreVocabularyTotal() {
+      try {
+        const response = await fetch('/api/vocabulary?band=all&limit=1', {
+          signal: controller.signal,
+        })
+
+        if (!response.ok) {
+          return
+        }
+
+        const payload = (await response.json()) as VocabularyApiResponse
+        const total = payload.pagination?.total ?? 0
+
+        // Older workers fall back to top-500 for unknown bands; only trust
+        // the count when the API confirms it answered for the full corpus.
+        if (total > 0 && payload.filters?.band === 'all') {
+          setCoreVocabularyTotal(total)
+        }
+      } catch {
+        // Keep the fallback total when the request fails.
+      }
+    }
+
+    fetchCoreVocabularyTotal()
+
+    return () => controller.abort()
+  }, [])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -403,7 +442,7 @@ function App() {
       setVocabularyApiError('')
 
       const params = new URLSearchParams({
-        band: vocabularyFrequency === 'all' ? 'top-3000' : vocabularyFrequency,
+        band: vocabularyFrequency,
         limit: String(VOCABULARY_VISIBLE_LIMIT),
         offset: String(vocabularyOffset),
       })
@@ -761,7 +800,7 @@ function App() {
               <h1>{pageHeading.title}</h1>
             </div>
             <div className="header-meta">
-              <span>{roadmapProgress} / 3000</span>
+              <span>{roadmapProgress} / {coreVocabularyTotal}</span>
               <strong>自由进度</strong>
             </div>
           </header>
@@ -1227,7 +1266,7 @@ function App() {
               <>
             <section className="panel vocabulary-hero">
               <div>
-                <span>Core 3000</span>
+                <span>Core Vocabulary</span>
                 <h2>按频率顺序维护一套自己的英语底层数据</h2>
                 <p>
                   这里不要求“今天必须完成”。你可以搜索、听读音、看例句，
