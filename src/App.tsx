@@ -28,14 +28,10 @@ import {
   type Skill,
 } from './data/resources'
 import {
-  vocabularyFrequencyBandLabels,
   type CoreVocabularyEntry,
   type VocabularyExample,
-  type VocabularyFrequencyBand,
   type VocabularyPronunciation,
 } from './data/vocabulary'
-
-type VocabularyFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_PAGE_SIZE = 120
@@ -73,16 +69,6 @@ function getInitialVocabularyOffset() {
 
   return Math.floor(fromParam / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE
 }
-
-const vocabularyFrequencyOptions: Array<{
-  value: VocabularyFrequencyFilter
-  label: string
-}> = [
-  { value: 'top-100', label: vocabularyFrequencyBandLabels['top-100'] },
-  { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
-  { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
-  { value: 'all', label: '全部' },
-]
 
 interface VocabularyApiItem {
   id: string
@@ -268,8 +254,6 @@ function App() {
   const [roadmapProgress, setRoadmapProgress] = useState(loadRoadmapProgress)
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
-  const [vocabularyFrequency, setVocabularyFrequency] =
-    useState<VocabularyFrequencyFilter>('top-500')
   const [query, setQuery] = useState('')
   const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [vocabularyOffset, setVocabularyOffset] = useState(
@@ -325,7 +309,6 @@ function App() {
 
   const visibleCoreVocabulary = apiVocabulary
   const vocabularyResultCount = apiVocabularyTotal
-  const vocabularyTotalCount = Math.max(coreVocabularyTotal, apiVocabularyTotal)
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
@@ -340,7 +323,6 @@ function App() {
   > = {
     strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
     examples: { eyebrow: 'Sentence Examples', title: '例句' },
-    vocabulary: { eyebrow: 'Core Vocabulary', title: '核心词库' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
   }
@@ -613,7 +595,7 @@ function App() {
       setVocabularyApiError('')
 
       const params = new URLSearchParams({
-        band: vocabularyFrequency,
+        band: 'all',
         limit: String(VOCABULARY_PAGE_SIZE),
         offset: String(vocabularyOffset),
       })
@@ -660,7 +642,6 @@ function App() {
   }, [
     selectedVocabularyLookup,
     view,
-    vocabularyFrequency,
     vocabularyOffset,
     vocabularyQuery,
   ])
@@ -818,7 +799,6 @@ function App() {
     }
 
     setVocabularyQuery('')
-    setVocabularyFrequency('all')
     setVocabularyOffset(
       Math.floor((position - 1) / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE,
     )
@@ -1489,28 +1469,10 @@ function App() {
 
             {!selectedVocabularyLookup && (
               <>
-            <section className="panel vocabulary-hero">
-              <div>
-                <span>Core Vocabulary</span>
-                <h2>按频率顺序维护一套自己的英语底层数据</h2>
-                <p>
-                  这里不要求“今天必须完成”。你可以搜索、听读音、看例句，
-                  也可以把当前位置标记为 Roadmap 进度。
-                </p>
-              </div>
-              <div className="vocabulary-stats">
-                <strong>{vocabularyTotalCount}</strong>
-                <span>core words</span>
-              </div>
-            </section>
-
             <section
               className="panel vocabulary-toolbar"
               ref={vocabularyToolbarRef}
             >
-              <div className="section-heading">
-                <h2>核心词库</h2>
-              </div>
               <div className="filters vocabulary-filters">
                 <input
                   ref={vocabularySearchInputRef}
@@ -1522,22 +1484,6 @@ function App() {
                     setFocusedVocabularyIndex(0)
                   }}
                 />
-                <select
-                  value={vocabularyFrequency}
-                  onChange={(event) => {
-                    setVocabularyFrequency(
-                      event.target.value as VocabularyFrequencyFilter,
-                    )
-                    setVocabularyOffset(0)
-                    setFocusedVocabularyIndex(0)
-                  }}
-                >
-                  {vocabularyFrequencyOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
               </div>
               {vocabularyPagination}
             </section>

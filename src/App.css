@@ -550,7 +550,6 @@ button:disabled,
 .filters input,
 .filters select,
 .vocabulary-filters input,
-.vocabulary-filters select,
 .admin-hero input,
 .admin-filters input,
 .admin-filters select,
@@ -730,63 +729,16 @@ button:disabled,
   color: var(--text-muted);
 }
 
-.vocabulary-hero {
-  padding: 26px;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.vocabulary-hero span {
-  color: var(--text-muted);
-  font-weight: 700;
-}
-
-.vocabulary-hero h2 {
-  margin: 8px 0;
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
-  letter-spacing: -0.06em;
-}
-
-.vocabulary-hero p {
-  max-width: 760px;
-  margin: 0;
-  color: var(--text-soft);
-  line-height: 1.7;
-}
-
-.vocabulary-stats {
-  min-width: 150px;
-  padding: 18px;
-  border: 1px solid var(--border-strong);
-  border-radius: 24px;
-  background: var(--text);
-  color: var(--surface);
-  text-align: center;
-}
-
-.vocabulary-stats strong {
-  display: block;
-  font-size: 2.4rem;
-  line-height: 1;
-  letter-spacing: -0.08em;
-}
-
-.vocabulary-stats span {
-  color: rgb(255 255 255 / 0.66);
-}
-
 .vocabulary-toolbar {
   display: grid;
   gap: 16px;
   margin-bottom: 18px;
   padding: 22px;
+  scroll-margin-top: 86px;
 }
 
 .vocabulary-filters {
-  grid-template-columns: minmax(0, 1fr) 170px;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .vocabulary-pagination {
@@ -1725,7 +1677,6 @@ button:disabled,
     grid-template-columns: 1fr;
   }
 
-  .vocabulary-hero,
   .admin-hero,
   .admin-editor-header {
     flex-direction: column;
