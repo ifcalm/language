@@ -43,6 +43,12 @@ function run(command, args, options = {}) {
     )
   }
 
+  // stdoutOnly keeps machine-readable output (e.g. JSON) free of stderr
+  // noise such as wrangler proxy warnings.
+  if (options.stdoutOnly) {
+    return result.stdout ?? ''
+  }
+
   return `${result.stdout ?? ''}${result.stderr ?? ''}`
 }
 
@@ -139,14 +145,10 @@ FROM vocab
 WHERE frequency_rank BETWEEN ${START_PRIORITY} AND ${END_PRIORITY}
 ORDER BY frequency_rank ASC
 LIMIT ${END_PRIORITY - START_PRIORITY + 1};`
-  const output = runWrangler([
-    'd1',
-    'execute',
-    DATABASE,
-    D1_LOCATION_FLAG,
-    '--command',
-    sql,
-  ])
+  const output = runWrangler(
+    ['d1', 'execute', DATABASE, D1_LOCATION_FLAG, '--json', '--command', sql],
+    { stdoutOnly: true },
+  )
   const payload = parseWranglerJson(output)
   return payload[0]?.results ?? []
 }
