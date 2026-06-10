@@ -10,6 +10,7 @@ const BUCKET = process.env.R2_BUCKET ?? 'english-orbit'
 const PUBLIC_BASE_URL =
   process.env.PRONUNCIATION_ASSET_BASE_URL ?? 'https://assets.english.ifcalm.org'
 const TOP_N = Number(process.env.PRONUNCIATION_TOP_N ?? '100')
+const SAY_RATE = Number(process.env.PRONUNCIATION_SAY_RATE ?? '90')
 const START_PRIORITY = Number(process.env.PRONUNCIATION_START_PRIORITY ?? '1')
 const END_PRIORITY = Number(process.env.PRONUNCIATION_END_PRIORITY ?? String(TOP_N))
 const DRY_RUN = process.argv.includes('--dry-run')
@@ -202,7 +203,7 @@ ${updates};`
 function generateAudio({ text, voiceId, aiffPath, m4aPath }) {
   mkdirSync(dirname(aiffPath), { recursive: true })
   mkdirSync(dirname(m4aPath), { recursive: true })
-  run('say', ['-v', voiceId, '-o', aiffPath, text])
+  run('say', ['-v', voiceId, '-r', String(SAY_RATE), '-o', aiffPath, text])
   run('afconvert', ['-f', 'm4af', '-d', 'aac', aiffPath, m4aPath])
 
   if (!existsSync(m4aPath)) {

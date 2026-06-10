@@ -67,6 +67,7 @@ The current bootstrap pronunciation batches are generated locally with macOS `sa
 
 - US voice: `Samantha`
 - UK voice: `Daniel`
+- speech rate: `-r 90` (words per minute; learner-friendly slow reading, override with `PRONUNCIATION_SAY_RATE`)
 - object format: `.m4a` container with AAC audio
 
 This is bootstrap audio. If we later switch to a dedicated provider, the R2 objects and `vocab_pronunciations.audio_url` rows can be replaced without changing the learning API shape.
