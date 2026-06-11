@@ -121,6 +121,9 @@ erDiagram
 
 `growth_json` 约定：
 
+节点关系如何转换为 SVG、箭头方向如何确定，以及嵌套动作如何绘制，必须遵循
+[`sentence-svg-diagram-standard.md`](./sentence-svg-diagram-standard.md)。该文件是相关生成与展示规则的唯一权威规范。
+
 | 顶层字段 | 含义 |
 |---|---|
 | `nodes` | 句子里的词块节点，比如动作、主干词块、修饰词块。 |
