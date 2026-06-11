@@ -609,3 +609,34 @@ node scripts/check-verb-paths.mjs --remote --strict
 - `warning`：需要人工确认的潜在文本问题。
 
 自动校验通过不代表语言质量已经通过。英文搭配、场景自然度、翻译准确度和语义关系仍必须按照第 11 节进行人工复核。
+
+## 16. 批量生成脚本
+
+项目提供：
+
+```text
+scripts/generate-verb-paths.mjs
+```
+
+推荐使用两个并发生成任务，每批处理 20 个动词：
+
+```bash
+npm run verbs:generate -- \
+  --batch-size=20 \
+  --concurrency=2 \
+  --attempts=4 \
+  --provider=codex \
+  --model=gpt-5.5 \
+  --reasoning=high
+```
+
+模型生成会并发执行，本地严格校验和远端 D1 写入会自动串行执行，避免 SQLite 写锁和远端导入冲突。每个成功批次会立即写入远端，任务中断后重新运行同一命令即可从缺失动词处继续。
+
+常用参数：
+
+- `--batch-size`：每批动词数量，默认 `20`。
+- `--concurrency`：并发生成批次数量，默认 `2`。
+- `--attempts`：单批生成和修复的最大尝试次数，默认 `4`。
+- `--limit`：仅处理前 N 个缺失动词，适合试跑。
+- `--dry-run`：生成并完成本地严格校验，但不写入远端 D1。
+- `--local-only`：跳过远端 D1 写入。
