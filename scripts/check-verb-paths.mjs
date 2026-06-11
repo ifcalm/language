@@ -11,6 +11,7 @@ const WRANGLER = 'node_modules/wrangler/bin/wrangler.js'
 const DATABASE = process.env.D1_DATABASE ?? 'english-orbit-db'
 const JSON_OUTPUT = process.argv.includes('--json')
 const STRICT = process.argv.includes('--strict')
+const REQUIRE_V2 = process.argv.includes('--require-v2')
 const USE_LOCAL = process.argv.includes('--local')
 const USE_REMOTE = process.argv.includes('--remote')
 const D1_LOCATION_FLAG = USE_REMOTE ? '--remote' : '--local'
@@ -184,7 +185,6 @@ WHERE type = 'table'
       'full_sentence_en',
       'full_sentence_zh',
       'scene',
-      'steps_json',
       'growth_json',
     ],
   }
@@ -234,7 +234,6 @@ ${filterSql};`)
   p.full_sentence_en,
   p.full_sentence_zh,
   p.scene,
-  p.steps_json,
   p.growth_json
 FROM verb_paths p
 ${filterSql}
@@ -394,54 +393,6 @@ function validateLearnerText(value, field, collector, context = {}) {
   }
 }
 
-function validateLegacySteps(path, legacySteps, growthSteps, collector) {
-  if (!Array.isArray(legacySteps)) {
-    collector.error('INVALID_STEPS_JSON', 'steps_json must be an array.', {
-      field: 'steps_json',
-    })
-    return
-  }
-
-  if (!Array.isArray(growthSteps)) {
-    return
-  }
-
-  if (legacySteps.length !== growthSteps.length) {
-    collector.error(
-      'LEGACY_STEP_COUNT_MISMATCH',
-      `steps_json has ${legacySteps.length} steps but growth_json has ${growthSteps.length}.`,
-      { field: 'steps_json' },
-    )
-  }
-
-  const comparisonLength = Math.min(legacySteps.length, growthSteps.length)
-
-  for (let index = 0; index < comparisonLength; index += 1) {
-    const legacyStep = legacySteps[index]
-    const growthStep = growthSteps[index]
-    const stepNo = index + 1
-
-    if (!isPlainObject(legacyStep) || !isPlainObject(growthStep)) {
-      continue
-    }
-
-    const comparableFields = ['label', 'sentence_en', 'sentence_zh', 'note_zh']
-
-    for (const field of comparableFields) {
-      if (
-        normalizeWhitespace(legacyStep[field]) !==
-        normalizeWhitespace(growthStep[field])
-      ) {
-        collector.error(
-          'LEGACY_STEP_MISMATCH',
-          `steps_json and growth_json differ at step ${stepNo}, field ${field}.`,
-          { field, stepNo },
-        )
-      }
-    }
-  }
-}
-
 function validateGrowth(path, growth, collector) {
   if (!isPlainObject(growth)) {
     collector.error('INVALID_GROWTH_JSON', 'growth_json must be an object.', {
@@ -451,6 +402,15 @@ function validateGrowth(path, growth, collector) {
   }
 
   const { nodes, links, steps } = growth
+  const schemaVersion = growth.schema_version === 2 ? 2 : 1
+
+  if (REQUIRE_V2 && schemaVersion !== 2) {
+    collector.error(
+      'LEGACY_GROWTH_SCHEMA',
+      'growth_json must use schema_version 2.',
+      { field: 'growth_json.schema_version' },
+    )
+  }
 
   if (!Array.isArray(nodes)) {
     collector.error('INVALID_NODES', 'growth_json.nodes must be an array.')
@@ -518,14 +478,45 @@ function validateGrowth(path, growth, collector) {
         { nodeId: node.id ?? null },
       )
     }
+
+    if (schemaVersion === 2) {
+      validateLearnerText(node.label_zh, 'node.label_zh', collector, {
+        nodeId: node.id ?? null,
+      })
+    }
   })
 
   const actionNodes = nodes.filter((node) => node?.kind === 'action')
 
-  if (actionNodes.length !== 1) {
+  if (actionNodes.length < 1) {
     collector.error(
       'ACTION_NODE_COUNT',
-      `growth_json must contain exactly one action node; found ${actionNodes.length}.`,
+      'growth_json must contain at least one action node.',
+    )
+  }
+
+  const rootActionId =
+    schemaVersion === 2
+      ? growth.root_action_id
+      : actionNodes[0]?.id
+  const rootActionNode = nodeById.get(rootActionId)
+
+  if (
+    !isNonEmptyString(rootActionId) ||
+    !rootActionNode ||
+    rootActionNode.kind !== 'action'
+  ) {
+    collector.error(
+      'INVALID_ROOT_ACTION',
+      'root_action_id must reference the main action node.',
+      { field: 'growth_json.root_action_id' },
+    )
+  }
+
+  if (schemaVersion === 1 && actionNodes.length !== 1) {
+    collector.error(
+      'LEGACY_ACTION_NODE_COUNT',
+      `Legacy growth_json must contain exactly one action node; found ${actionNodes.length}.`,
     )
   }
 
@@ -543,6 +534,19 @@ function validateGrowth(path, growth, collector) {
       })
     } else {
       linkById.set(link.id, link)
+    }
+
+    if (
+      schemaVersion === 2 &&
+      isNonEmptyString(link.from) &&
+      isNonEmptyString(link.to) &&
+      link.id !== `${link.from}->${link.to}`
+    ) {
+      collector.error(
+        'INVALID_LINK_ID',
+        `Link ID must be exactly "${link.from}->${link.to}".`,
+        { linkId: link.id ?? null },
+      )
     }
 
     if (!LINK_KINDS.has(link.kind)) {
@@ -594,23 +598,76 @@ function validateGrowth(path, growth, collector) {
 
     if (
       link.kind === 'core' &&
-      (fromNode?.kind !== 'action' || toNode?.kind !== 'core')
+      (fromNode?.kind !== 'action' ||
+        (toNode?.kind !== 'core' &&
+          !(schemaVersion === 2 && toNode?.kind === 'action')))
     ) {
       collector.error(
         'INVALID_CORE_LINK_DIRECTION',
-        `Core link "${link.id}" must point from the action node to a core node.`,
+        `Core link "${link.id}" must point from an action node to a core or nested action node.`,
         { linkId: link.id },
       )
     }
 
-    if (link.kind === 'modifier' && fromNode?.kind !== 'modifier') {
+    if (
+      link.kind === 'modifier' &&
+      fromNode?.kind !== 'modifier' &&
+      !(schemaVersion === 2 && fromNode?.kind === 'action')
+    ) {
       collector.error(
         'INVALID_MODIFIER_LINK_DIRECTION',
-        `Modifier link "${link.id}" must start from a modifier node.`,
+        `Modifier link "${link.id}" must start from a modifier or nested action event.`,
         { linkId: link.id },
       )
     }
   })
+
+  if (schemaVersion === 2 && rootActionNode) {
+    const visualChildren = new Map()
+
+    for (const link of links) {
+      if (!isPlainObject(link)) {
+        continue
+      }
+
+      const parentId = link.kind === 'core' ? link.from : link.to
+      const childId = link.kind === 'core' ? link.to : link.from
+      const children = visualChildren.get(parentId) ?? []
+
+      children.push(childId)
+      visualChildren.set(parentId, children)
+    }
+
+    const reachableNodeIds = new Set([rootActionId])
+    const queue = [rootActionId]
+
+    while (queue.length > 0) {
+      const parentId = queue.shift()
+
+      for (const childId of visualChildren.get(parentId) ?? []) {
+        if (reachableNodeIds.has(childId)) {
+          continue
+        }
+
+        reachableNodeIds.add(childId)
+        queue.push(childId)
+      }
+    }
+
+    const unreachableNodeIds = nodes
+      .map((node) => node?.id)
+      .filter(
+        (nodeId) =>
+          isNonEmptyString(nodeId) && !reachableNodeIds.has(nodeId),
+      )
+
+    if (unreachableNodeIds.length > 0) {
+      collector.error(
+        'UNREACHABLE_NODES',
+        `Nodes are not connected to root_action_id "${rootActionId}": ${unreachableNodeIds.join(', ')}.`,
+      )
+    }
+  }
 
   const visibleNodeIds = new Set()
   const visibleLinkIds = new Set()
@@ -764,9 +821,12 @@ function validateGrowth(path, growth, collector) {
         })
       }
 
-      const requiredCoreNodeIds = nodes
-        .filter((node) => node?.kind === 'action' || node?.kind === 'core')
-        .map((node) => node.id)
+      const requiredCoreNodeIds =
+        schemaVersion === 2
+          ? [rootActionId].filter(isNonEmptyString)
+          : nodes
+              .filter((node) => node?.kind === 'action' || node?.kind === 'core')
+              .map((node) => node.id)
       const missingCoreNodeIds = requiredCoreNodeIds.filter(
         (nodeId) => !showNodes.includes(nodeId),
       )
@@ -779,9 +839,12 @@ function validateGrowth(path, growth, collector) {
         )
       }
 
-      const requiredCoreLinkIds = links
-        .filter((link) => link?.kind === 'core')
-        .map((link) => link.id)
+      const requiredCoreLinkIds =
+        schemaVersion === 2
+          ? []
+          : links
+              .filter((link) => link?.kind === 'core')
+              .map((link) => link.id)
       const missingCoreLinkIds = requiredCoreLinkIds.filter(
         (linkId) => !showLinks.includes(linkId),
       )
@@ -873,7 +936,13 @@ function validateGrowth(path, growth, collector) {
     }
   }
 
-  return { nodes, links, steps }
+  return {
+    schema_version: schemaVersion,
+    root_action_id: rootActionId,
+    nodes,
+    links,
+    steps,
+  }
 }
 
 await assertSchema()
@@ -891,12 +960,9 @@ for (const path of paths) {
 
   validatePathFields(path, verb, collector)
 
-  const legacySteps = parseJsonField(path, 'steps_json', collector)
   const growth = parseJsonField(path, 'growth_json', collector)
-  const validatedGrowth = growth ? validateGrowth(path, growth, collector) : null
-
-  if (legacySteps && validatedGrowth) {
-    validateLegacySteps(path, legacySteps, validatedGrowth.steps, collector)
+  if (growth) {
+    validateGrowth(path, growth, collector)
   }
 
   errors.push(...collector.errors)
@@ -929,6 +995,7 @@ const summary = {
   location: D1_LOCATION_LABEL,
   database: DATABASE,
   strict: STRICT,
+  requireV2: REQUIRE_V2,
   verbFilter: VERB_FILTER || null,
   verbFilters: VERB_FILTERS,
   totalVerbs: verbs.length,

@@ -49,16 +49,7 @@
 - 每一步的英文、中文和学习提示
 
 页面的句子生长卡片与树状动画均以 `growth_json` 为主要数据来源。
-
-### 2.4 `steps_json`
-
-`steps_json` 是旧版兼容字段。
-
-在该字段正式删除前：
-
-- 必须保持合法 JSON。
-- 句子内容必须与 `growth_json.steps` 语义一致。
-- 新数据应优先从 `growth_json` 派生 `steps_json`，避免分别编写后产生偏差。
+`growth_json.steps` 是唯一的句子生长步骤来源，不再维护并行兼容字段。
 
 ## 3. 核心学习原则
 
@@ -280,7 +271,6 @@
 | `full_sentence_en` | 必须等于 `growth_json.steps` 最后一步的 `sentence_en`。 |
 | `full_sentence_zh` | 必须等于 `growth_json.steps` 最后一步的 `sentence_zh`。 |
 | `scene` | 使用稳定、可理解的场景标识。 |
-| `steps_json` | 合法 JSON，并与 `growth_json.steps` 保持语义一致。 |
 | `growth_json` | 合法 JSON，并通过本规范的结构、关系和语言校验。 |
 
 ## 8. `growth_json` 结构规范
@@ -289,13 +279,19 @@
 
 ```json
 {
+  "schema_version": 2,
+  "root_action_id": "caches",
   "nodes": [],
   "links": [],
   "steps": []
 }
 ```
 
-三个字段均为必填数组，不得为 `null`。
+五个字段均为必填，不得为 `null`。
+
+- `schema_version` 固定为 `2`。
+- `root_action_id` 必须引用当前句子的主要 `action` 节点。
+- 一个句子可以包含多个 `action` 节点，嵌套动作必须独立保存。
 
 ### 8.2 `nodes`
 
@@ -305,7 +301,8 @@
 {
   "id": "the-service",
   "text": "the service",
-  "kind": "core"
+  "kind": "core",
+  "label_zh": "谁在缓存"
 }
 ```
 
@@ -314,6 +311,7 @@
 - `id` 在当前路径内唯一。
 - `text` 非空，并且能在至少一个步骤句子中找到对应表达。
 - `kind` 只能是 `action`、`core` 或 `modifier`。
+- `label_zh` 必须结合当前句子的实际语境说明节点作用，禁止机械复用空泛标签。
 - 每条路径必须至少有一个 `action` 节点。
 - 每条路径必须能够识别一个主要动作；存在嵌套事件时，应增加对应的 `action` 节点，不得把独立动作降级为普通修饰文本。
 - 所有 `action.text` 都必须是当前句子中实际使用的动词或动词短语形式。
@@ -546,7 +544,7 @@ with a clear message
 6. 划分 `action`、`core` 和 `modifier` 节点。
 7. 明确每个修饰词块真正说明的节点。
 8. 生成 `growth_json`。
-9. 从 `growth_json` 派生 `verb_paths` 摘要字段和兼容 `steps_json`。
+9. 从 `growth_json.steps` 派生 `verb_paths` 主干句和完整句摘要字段。
 10. 运行结构自动校验。
 11. 完成人工语言与树状关系校验。
 12. 在页面实际播放一次，确认动画顺序和视觉关系。
@@ -607,12 +605,11 @@ node scripts/check-verb-paths.mjs --remote --strict
 
 - 表和字段是否存在。
 - `verb_paths` 与 `verbs` 是否正确关联。
-- `steps_json`、`growth_json` 是否为合法 JSON。
+- `growth_json` 是否为合法 JSON。
 - 节点、连线和步骤是否完整且引用有效。
 - 动作节点数量、主干连线和修饰连线方向是否正确。
 - 每一步展示顺序、重点节点和新增内容是否有效。
 - 主干句、完整句是否与第一步和最后一步一致。
-- 兼容 `steps_json` 是否与 `growth_json.steps` 保持一致。
 - 基础空白、标点、重复句子和禁用语法术语问题。
 
 脚本输出分为：

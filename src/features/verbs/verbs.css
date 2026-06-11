@@ -1454,22 +1454,34 @@
 }
 
 .sentence-tree-link.core {
-  stroke: #64748b;
-  stroke-dasharray: 15 4 5 4;
+  stroke: #111827;
 }
 
 .sentence-tree-link.modifier {
   stroke: #15803d;
-  stroke-dasharray: 10 4 3 5;
 }
 
 .sentence-tree-node-anchor {
   position: absolute;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
   transform: translate(-50%, -50%);
   transition:
     left 0.34s ease,
     top 0.34s ease;
+}
+
+.sentence-tree-node-label {
+  max-width: 180px;
+  color: #6b7280;
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.025em;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .sentence-tree-node {

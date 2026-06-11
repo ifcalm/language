@@ -14,6 +14,8 @@
           "title",
           "meaning_zh",
           "scene",
+          "schema_version",
+          "root_action_id",
           "nodes",
           "links",
           "steps"
@@ -35,13 +37,21 @@
             "type": "string",
             "minLength": 1
           },
+          "schema_version": {
+            "type": "integer",
+            "const": 2
+          },
+          "root_action_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
           "nodes": {
             "type": "array",
             "minItems": 2,
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["id", "text", "kind"],
+              "required": ["id", "text", "kind", "label_zh"],
               "properties": {
                 "id": {
                   "type": "string",
@@ -54,6 +64,10 @@
                 "kind": {
                   "type": "string",
                   "enum": ["action", "core", "modifier"]
+                },
+                "label_zh": {
+                  "type": "string",
+                  "minLength": 1
                 }
               }
             }
@@ -92,7 +106,7 @@
           "steps": {
             "type": "array",
             "minItems": 2,
-            "maxItems": 5,
+            "maxItems": 10,
             "items": {
               "type": "object",
               "additionalProperties": false,
@@ -110,7 +124,7 @@
                 "step_no": {
                   "type": "integer",
                   "minimum": 1,
-                  "maximum": 5
+                  "maximum": 10
                 },
                 "label": {
                   "type": "string",
