@@ -1,4 +1,4 @@
-import { spawnSync } from 'node:child_process'
+import { spawn, spawnSync } from 'node:child_process'
 import {
   existsSync,
   mkdirSync,
@@ -26,6 +26,7 @@ const OUTPUT_DIR = join(WORK_DIR, 'outputs')
 const LOG_DIR = join(WORK_DIR, 'logs')
 const MIGRATIONS_DIR = join(ROOT, 'migrations')
 const BATCH_SIZE = readPositiveInteger('--batch-size', 20)
+const CONCURRENCY = readPositiveInteger('--concurrency', 2)
 const LIMIT = readPositiveInteger('--limit', Number.POSITIVE_INFINITY)
 const MAX_GENERATION_ATTEMPTS = readPositiveInteger('--attempts', 4)
 const PROVIDER = readArgument('--provider') || 'codex'
@@ -38,6 +39,7 @@ const DRY_RUN = process.argv.includes('--dry-run')
 const CODEX_TIMEOUT_MS = Number(
   process.env.VERB_PATH_CODEX_TIMEOUT_MS ?? 30 * 60 * 1000,
 )
+let databaseQueue = Promise.resolve()
 
 const BANNED_TERMS = [
   '及物动词',
@@ -83,6 +85,81 @@ function readPositiveInteger(name, fallback) {
 
 function wait(milliseconds) {
   return new Promise((resolvePromise) => setTimeout(resolvePromise, milliseconds))
+}
+
+function formatDuration(milliseconds) {
+  const seconds = Math.round(milliseconds / 1000)
+  const minutes = Math.floor(seconds / 60)
+  const remainingSeconds = seconds % 60
+
+  return minutes > 0 ? `${minutes}m ${remainingSeconds}s` : `${seconds}s`
+}
+
+function runProcess(command, args, options = {}) {
+  return new Promise((resolvePromise) => {
+    const startedAt = Date.now()
+    const child = spawn(command, args, {
+      cwd: ROOT,
+      env: {
+        ...process.env,
+        NO_COLOR: '1',
+        FORCE_COLOR: '0',
+      },
+      stdio: ['pipe', 'pipe', 'pipe'],
+    })
+    const stdout = []
+    const stderr = []
+    let settled = false
+    let timeoutId
+
+    const finish = (result) => {
+      if (settled) {
+        return
+      }
+
+      settled = true
+      clearTimeout(timeoutId)
+      resolvePromise({
+        ...result,
+        stdout: Buffer.concat(stdout).toString('utf8'),
+        stderr: Buffer.concat(stderr).toString('utf8'),
+        durationMs: Date.now() - startedAt,
+      })
+    }
+
+    child.stdout.on('data', (chunk) => stdout.push(Buffer.from(chunk)))
+    child.stderr.on('data', (chunk) => stderr.push(Buffer.from(chunk)))
+    child.stdin.on('error', () => {
+      // A process that exits early may close stdin before the prompt is written.
+    })
+    child.on('error', (error) => finish({ status: null, error }))
+    child.on('close', (status, signal) => finish({ status, signal }))
+
+    timeoutId = setTimeout(() => {
+      child.kill('SIGTERM')
+      setTimeout(() => child.kill('SIGKILL'), 5_000).unref()
+    }, options.timeout ?? CODEX_TIMEOUT_MS)
+    timeoutId.unref()
+
+    child.stdin.end(options.input ?? '')
+  })
+}
+
+async function withDatabaseLock(task) {
+  const previous = databaseQueue
+  let release
+
+  databaseQueue = new Promise((resolvePromise) => {
+    release = resolvePromise
+  })
+
+  await previous
+
+  try {
+    return await task()
+  } finally {
+    release()
+  }
 }
 
 function sqlString(value) {
@@ -266,7 +343,7 @@ async function runCodexBatch(verbs, batchName, previousOutput, feedback, attempt
   rmSync(outputFile, { force: true })
 
   const prompt = buildPrompt(verbs, previousOutput, feedback)
-  const result = spawnSync(
+  const result = await runProcess(
     CODEX,
     [
       'exec',
@@ -288,24 +365,12 @@ async function runCodexBatch(verbs, batchName, previousOutput, feedback, attempt
       outputFile,
       '-',
     ],
-    {
-      cwd: ROOT,
-      encoding: 'utf8',
-      maxBuffer: 100 * 1024 * 1024,
-      timeout: CODEX_TIMEOUT_MS,
-      input: prompt,
-      env: {
-        ...process.env,
-        NO_COLOR: '1',
-        FORCE_COLOR: '0',
-      },
-      stdio: 'pipe',
-    },
+    { timeout: CODEX_TIMEOUT_MS, input: prompt },
   )
 
   writeFileSync(
     logFile,
-    `status=${result.status}\n\nSTDOUT\n${result.stdout ?? ''}\n\nSTDERR\n${result.stderr ?? ''}`,
+    `status=${result.status}\nerror=${result.error?.stack ?? ''}\n\nSTDOUT\n${result.stdout ?? ''}\n\nSTDERR\n${result.stderr ?? ''}`,
   )
 
   if (result.status !== 0 || !existsSync(outputFile)) {
@@ -314,6 +379,9 @@ async function runCodexBatch(verbs, batchName, previousOutput, feedback, attempt
     )
   }
 
+  console.log(
+    `[${batchName}] Codex generation finished in ${formatDuration(result.durationMs)}.`,
+  )
   return JSON.parse(readFileSync(outputFile, 'utf8'))
 }
 
@@ -324,7 +392,7 @@ async function runClaudeBatch(verbs, batchName, previousOutput, feedback, attemp
 
   const prompt = buildPrompt(verbs, previousOutput, feedback)
   const schema = readFileSync(SCHEMA, 'utf8')
-  const result = spawnSync(
+  const result = await runProcess(
     CLAUDE,
     [
       '-p',
@@ -342,24 +410,12 @@ async function runClaudeBatch(verbs, batchName, previousOutput, feedback, attemp
       '--max-budget-usd',
       process.env.VERB_PATH_CLAUDE_MAX_BUDGET_USD ?? '3',
     ],
-    {
-      cwd: ROOT,
-      encoding: 'utf8',
-      maxBuffer: 100 * 1024 * 1024,
-      timeout: CODEX_TIMEOUT_MS,
-      input: prompt,
-      env: {
-        ...process.env,
-        NO_COLOR: '1',
-        FORCE_COLOR: '0',
-      },
-      stdio: 'pipe',
-    },
+    { timeout: CODEX_TIMEOUT_MS, input: prompt },
   )
 
   writeFileSync(
     logFile,
-    `status=${result.status}\n\nSTDOUT\n${result.stdout ?? ''}\n\nSTDERR\n${result.stderr ?? ''}`,
+    `status=${result.status}\nerror=${result.error?.stack ?? ''}\n\nSTDOUT\n${result.stdout ?? ''}\n\nSTDERR\n${result.stderr ?? ''}`,
   )
 
   if (result.status !== 0) {
@@ -387,6 +443,9 @@ async function runClaudeBatch(verbs, batchName, previousOutput, feedback, attemp
     )
   }
 
+  console.log(
+    `[${batchName}] Claude generation finished in ${formatDuration(result.durationMs)}.`,
+  )
   writeFileSync(outputFile, JSON.stringify(structuredOutput, null, 2))
   return structuredOutput
 }
@@ -839,10 +898,18 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
       const paths = verbs.map((verb) => normalizeItem(itemByVerbId.get(verb.id), verb))
       writeFileSync(migrationFile, buildMigration(paths, batchName))
 
-      await applySql(migrationFile, false)
-
       try {
-        const summary = await validateLocal(verbs)
+        const summary = await withDatabaseLock(async () => {
+          await applySql(migrationFile, false)
+
+          try {
+            return await validateLocal(verbs)
+          } catch (error) {
+            await deleteLocalPaths(paths.map((path) => path.id))
+            throw error
+          }
+        })
+
         console.log(
           `[${batchName}] local strict validation: ${summary.errorCount} errors, ${summary.warningCount} warnings.`,
         )
@@ -859,7 +926,6 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
           // Preserve the original command output when it is not clean JSON.
         }
 
-        await deleteLocalPaths(paths.map((path) => path.id))
         rmSync(migrationFile, { force: true })
         previousOutput = output
         feedback = validationFeedback
@@ -905,12 +971,13 @@ async function main() {
   console.log(
     `Starting ${missingVerbs.length} missing verbs in batches of ${BATCH_SIZE}. ` +
       `provider=${PROVIDER}, model=${MODEL}, reasoning=${REASONING_EFFORT}, ` +
-      `remote=${APPLY_REMOTE && !DRY_RUN}.`,
+      `concurrency=${CONCURRENCY}, remote=${APPLY_REMOTE && !DRY_RUN}.`,
   )
 
   let migrationNumber = getNextMigrationNumber()
   let completed = 0
   const failures = []
+  const batches = []
 
   for (let offset = 0; offset < missingVerbs.length; offset += BATCH_SIZE) {
     const verbs = missingVerbs.slice(offset, offset + BATCH_SIZE)
@@ -923,48 +990,69 @@ async function main() {
       `${String(batchIndex).padStart(3, '0')}.sql`
     const migrationFile = join(MIGRATIONS_DIR, migrationName)
 
-    console.log(
-      `\n[${batchName}] ${verbs[0].id} ... ${verbs.at(-1).id} (${verbs.length} verbs)`,
-    )
+    batches.push({ verbs, batchName, migrationFile })
+  }
 
-    try {
-      const paths = await generateValidatedBatch(verbs, batchName, migrationFile)
+  let nextBatchIndex = 0
 
-      if (DRY_RUN) {
-        console.log(`[${batchName}] dry run complete; remote write skipped.`)
-      } else if (APPLY_REMOTE) {
-        await applySql(migrationFile, true)
-        const remoteRows = await queryRemote(`SELECT COUNT(*) AS total
+  const processNextBatch = async () => {
+    while (nextBatchIndex < batches.length) {
+      const currentIndex = nextBatchIndex
+      nextBatchIndex += 1
+      const { verbs, batchName, migrationFile } = batches[currentIndex]
+
+      console.log(
+        `\n[${batchName}] ${verbs[0].id} ... ${verbs.at(-1).id} (${verbs.length} verbs)`,
+      )
+
+      try {
+        const paths = await generateValidatedBatch(verbs, batchName, migrationFile)
+
+        if (DRY_RUN) {
+          console.log(`[${batchName}] dry run complete; remote write skipped.`)
+        } else if (APPLY_REMOTE) {
+          await withDatabaseLock(async () => {
+            await applySql(migrationFile, true)
+            const remoteRows = await queryRemote(`SELECT COUNT(*) AS total
 FROM verb_paths
 WHERE verb_id IN (${verbs.map((verb) => sqlString(verb.id)).join(', ')});`)
-        const remoteCount = Number(remoteRows[0]?.total ?? 0)
+            const remoteCount = Number(remoteRows[0]?.total ?? 0)
 
-        if (remoteCount !== paths.length) {
-          throw new Error(
-            `[${batchName}] remote count mismatch: expected ${paths.length}, got ${remoteCount}.`,
-          )
+            if (remoteCount !== paths.length) {
+              throw new Error(
+                `[${batchName}] remote count mismatch: expected ${paths.length}, got ${remoteCount}.`,
+              )
+            }
+
+            console.log(`[${batchName}] applied to remote D1 (${remoteCount} paths).`)
+          })
         }
 
-        console.log(`[${batchName}] applied to remote D1 (${remoteCount} paths).`)
-      }
+        completed += verbs.length
+        console.log(
+          `[${batchName}] complete. Progress: ${completed}/${missingVerbs.length}.`,
+        )
+      } catch (error) {
+        failures.push({
+          batchName,
+          verbIds: verbs.map((verb) => verb.id),
+          error: String(error.message),
+        })
+        console.error(`[${batchName}] FAILED: ${error.message}`)
 
-      completed += verbs.length
-      console.log(
-        `[${batchName}] complete. Progress: ${completed}/${missingVerbs.length}.`,
-      )
-    } catch (error) {
-      failures.push({
-        batchName,
-        verbIds: verbs.map((verb) => verb.id),
-        error: String(error.message),
-      })
-      console.error(`[${batchName}] FAILED: ${error.message}`)
-
-      if (!KEEP_GOING) {
-        throw error
+        if (!KEEP_GOING) {
+          throw error
+        }
       }
     }
   }
+
+  await Promise.all(
+    Array.from(
+      { length: Math.min(CONCURRENCY, batches.length) },
+      () => processNextBatch(),
+    ),
+  )
 
   if (failures.length > 0) {
     writeFileSync(
