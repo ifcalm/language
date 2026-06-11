@@ -17,6 +17,7 @@ import {
 import VocabularyAdmin from './admin/VocabularyAdmin'
 import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
 import AuthPage from './features/auth/AuthPage'
+import StrategyPage from './features/strategy/StrategyPage'
 import VerbPage from './features/verbs/VerbPage'
 import {
   difficultyLabels,
@@ -318,7 +319,6 @@ function App() {
       }
     >
   > = {
-    strategy: { eyebrow: 'Learning Strategy', title: '学习策略' },
     examples: { eyebrow: 'Sentence Examples', title: '例句' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
@@ -334,12 +334,6 @@ function App() {
       }
     >
   > = {
-    strategy: {
-      title: '先把学习路径放在这里',
-      description:
-        '后面会沉淀一套适合中文语境程序员的英语学习策略：先解决读文档、理解句子结构，再慢慢扩展表达能力。',
-      note: '当前为占位入口，避免导航先空着。',
-    },
     examples: {
       title: '例句会围绕真实阅读场景整理',
       description:
@@ -1253,6 +1247,8 @@ function App() {
         )}
 
         {isAuthPage && <AuthPage mode={view} onChangeView={changeView} />}
+
+        {view === 'strategy' && <StrategyPage onChangeView={changeView} />}
 
         {placeholderPage && (
           <section className="panel placeholder-panel">
