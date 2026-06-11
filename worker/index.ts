@@ -6,7 +6,6 @@ interface VocabRow {
   id: string
   word: string
   normalized_word: string
-  lemma: string | null
   meaning_zh: string
   definition_en: string
   frequency_rank: number | null
@@ -167,7 +166,6 @@ const mapVocabRow = (row: VocabRow) => ({
   id: row.id,
   word: row.word,
   normalizedWord: row.normalized_word,
-  lemma: row.lemma,
   meaning: row.meaning_zh || row.definition_en,
   meaningZh: row.meaning_zh,
   definitionEn: row.definition_en,
@@ -453,7 +451,6 @@ async function handleVocabularyList(request: Request, env: Env) {
       id,
       word,
       normalized_word,
-      lemma,
       meaning_zh,
       definition_en,
       frequency_rank,
@@ -535,7 +532,6 @@ async function getVocab(env: Env, vocabularyId: string) {
       id,
       word,
       normalized_word,
-      lemma,
       meaning_zh,
       definition_en,
       frequency_rank,
@@ -595,7 +591,6 @@ async function getVocabByLookup(env: Env, lookup: string) {
       id,
       word,
       normalized_word,
-      lemma,
       meaning_zh,
       definition_en,
       frequency_rank,
