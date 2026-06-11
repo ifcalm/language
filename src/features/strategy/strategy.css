@@ -1,0 +1,261 @@
+.strategy-page {
+  display: grid;
+  gap: 18px;
+}
+
+.strategy-hero {
+  padding: 30px;
+}
+
+.strategy-eyebrow {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.strategy-hero h1 {
+  margin: 10px 0 14px;
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  letter-spacing: -0.05em;
+}
+
+.strategy-hero p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.strategy-source {
+  margin-top: 14px !important;
+  color: var(--text-muted) !important;
+  font-size: 0.88rem;
+}
+
+.strategy-source a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.strategy-methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.strategy-method {
+  padding: 22px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.strategy-method-no {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.strategy-method h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+}
+
+.strategy-method code,
+.strategy-case-signature {
+  justify-self: start;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-subtle);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.strategy-method p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.strategy-cases-intro {
+  padding: 22px;
+}
+
+.strategy-cases-intro h2,
+.strategy-practice h2 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+}
+
+.strategy-cases-intro p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.strategy-case {
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.strategy-case header {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.strategy-case-scene {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgb(22 163 74 / 0.1);
+  color: #15803d;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.strategy-case h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+}
+
+.strategy-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.strategy-steps li {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.strategy-steps li:last-child {
+  border-bottom: 0;
+}
+
+.strategy-step-no {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.9;
+}
+
+.strategy-step-label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.strategy-step-sentence {
+  margin: 2px 0 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.strategy-step-sentence .is-added {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.strategy-case-result {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.strategy-case-result span {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.strategy-case-result p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.strategy-tree {
+  margin: 0;
+  padding: 16px 18px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-subtle);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.strategy-case-note {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 3px solid #16a34a;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.strategy-practice {
+  padding: 24px;
+}
+
+.strategy-practice ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.strategy-practice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.strategy-practice-actions button {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 11px 18px;
+  background: var(--text);
+  color: var(--surface);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.strategy-practice-actions button.secondary-button {
+  background: var(--surface);
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .strategy-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-hero {
+    padding: 22px;
+  }
+
+  .strategy-case {
+    padding: 18px;
+  }
+}
