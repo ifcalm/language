@@ -30,7 +30,16 @@ interface SentenceGrowthLine {
 }
 
 const TREE_WIDTH = 1000
-const TREE_HEIGHT = 900
+const TREE_MIN_HEIGHT = 560
+const TREE_LEVEL_GAP = 170
+const TREE_TOP_PADDING = 92
+
+function getRootActionNode(growth: SentenceGrowth) {
+  return (
+    growth.nodes.find((node) => node.id === growth.rootActionId) ??
+    growth.nodes.find((node) => node.kind === 'action')
+  )
+}
 
 function getVisibleIds(growth: SentenceGrowth, activeStepIndex: number) {
   const visibleNodeIds = new Set<string>()
@@ -46,7 +55,7 @@ function getVisibleIds(growth: SentenceGrowth, activeStepIndex: number) {
 
 function createDisplayGrowth(path: VerbPath) {
   const growth = path.growth
-  const actionNode = growth?.nodes.find((node) => node.kind === 'action')
+  const actionNode = growth ? getRootActionNode(growth) : undefined
 
   if (!growth || !actionNode) {
     return growth
@@ -87,24 +96,6 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(Math.max(value, min), max)
 }
 
-function spreadPoints(count: number, left: number, right: number) {
-  if (count <= 0) {
-    return []
-  }
-
-  if (count === 1) {
-    return [(left + right) / 2]
-  }
-
-  const step = (right - left) / (count - 1)
-
-  return Array.from({ length: count }, (_, index) => left + step * index)
-}
-
-function uniqueIds(ids: string[]) {
-  return ids.filter((id, index) => id && ids.indexOf(id) === index)
-}
-
 function hashText(text: string) {
   return Array.from(text).reduce(
     (hash, char) => (hash * 31 + char.charCodeAt(0)) % 997,
@@ -113,7 +104,7 @@ function hashText(text: string) {
 }
 
 function isActionOnlyStep(growth: SentenceGrowth, step: SentenceGrowthStep) {
-  const actionNode = growth.nodes.find((node) => node.kind === 'action')
+  const actionNode = getRootActionNode(growth)
 
   return Boolean(
     actionNode &&
@@ -128,13 +119,7 @@ function buildSentenceGrowthLines(
   growth: SentenceGrowth | null | undefined,
 ): SentenceGrowthLine[] {
   if (!growth) {
-    return path.steps.map((step) => ({
-      key: `${path.id}-${step.stepNo}`,
-      stepNo: step.stepNo,
-      label: step.label,
-      sentenceEn: step.sentenceEn,
-      highlightTexts: step.focusText ? [step.focusText] : [],
-    }))
+    return []
   }
 
   const nodeById = new Map(growth.nodes.map((node) => [node.id, node]))
@@ -251,92 +236,391 @@ function SentenceGrowthLines({
   )
 }
 
-function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
-  const actionNode = growth.nodes.find((node) => node.kind === 'action')
+function getVisualEndpoints(link: SentenceGrowthLink) {
+  return link.kind === 'core'
+    ? { parentId: link.from, childId: link.to }
+    : { parentId: link.to, childId: link.from }
+}
 
-  if (!actionNode) {
+function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
+  const rootActionNode = getRootActionNode(growth)
+
+  if (!rootActionNode) {
     return {
       activeStep: growth.steps[activeStepIndex],
       layoutNodes: [],
       layoutLinks: [],
       positions: new Map<string, TreePoint>(),
+      treeHeight: TREE_MIN_HEIGHT,
+      coreFrame: null,
     }
   }
 
   const activeStep = growth.steps[activeStepIndex]
   const { visibleNodeIds, visibleLinkIds } = getVisibleIds(growth, activeStepIndex)
-  const visibleLinks = growth.links.filter((link) => visibleLinkIds.has(link.id))
-  const visibleNodeCount = growth.nodes.filter((node) => visibleNodeIds.has(node.id)).length
-  const rootCoreLinks = visibleLinks.filter(
-    (link) => link.kind === 'core' && link.from === actionNode.id,
+  const visibleNodes = growth.nodes.filter((node) => visibleNodeIds.has(node.id))
+  const visibleNodeById = new Map(visibleNodes.map((node) => [node.id, node]))
+  const visibleLinks = growth.links.filter(
+    (link) =>
+      visibleLinkIds.has(link.id) &&
+      visibleNodeIds.has(link.from) &&
+      visibleNodeIds.has(link.to),
   )
-  const rootModifierLinks = visibleLinks.filter(
-    (link) => link.kind === 'modifier' && link.to === actionNode.id,
-  )
-  const rootY = visibleNodeCount > 1 ? (rootModifierLinks.length > 0 ? 375 : 220) : 175
-  const positions = new Map<string, TreePoint>([
-    [actionNode.id, { x: TREE_WIDTH / 2, y: rootY }],
-  ])
+  const rootId = visibleNodeIds.has(rootActionNode.id)
+    ? rootActionNode.id
+    : visibleNodes.find((node) => node.kind === 'action')?.id
 
-  const coreChildren = uniqueIds(rootCoreLinks.map((link) => link.to))
-  const coreChildXs = spreadPoints(coreChildren.length, 340, 660)
+  if (!rootId) {
+    return {
+      activeStep,
+      layoutNodes: [],
+      layoutLinks: [],
+      positions: new Map<string, TreePoint>(),
+      treeHeight: TREE_MIN_HEIGHT,
+      coreFrame: null,
+    }
+  }
 
-  coreChildren.forEach((nodeId, index) => {
-    positions.set(nodeId, {
-      x: coreChildXs[index],
-      y: rootModifierLinks.length > 0 ? 635 : 500,
+  const adjacency = new Map<
+    string,
+    Array<{ childId: string; link: SentenceGrowthLink }>
+  >()
+
+  visibleLinks.forEach((link) => {
+    const { parentId, childId } = getVisualEndpoints(link)
+    const children = adjacency.get(parentId) ?? []
+
+    children.push({ childId, link })
+    adjacency.set(parentId, children)
+  })
+
+  adjacency.forEach((children) => {
+    children.sort((left, right) => {
+      const leftNode = visibleNodeById.get(left.childId)
+      const rightNode = visibleNodeById.get(right.childId)
+      const kindOrder = { action: 0, core: 1, modifier: 2 }
+      const kindDifference =
+        kindOrder[leftNode?.kind ?? 'modifier'] -
+        kindOrder[rightNode?.kind ?? 'modifier']
+
+      return kindDifference || left.childId.localeCompare(right.childId)
     })
   })
 
-  const actionModifiers = uniqueIds(rootModifierLinks.map((link) => link.from))
-  const actionModifierXs = spreadPoints(actionModifiers.length, 180, 820)
+  const parentById = new Map<string, string>()
+  const depthById = new Map<string, number>([[rootId, 0]])
+  const queue = [rootId]
 
-  actionModifiers.forEach((nodeId, index) => {
-    const staggeredY = actionModifiers.length > 1 && index % 2 === 1 ? 175 : 45
+  while (queue.length > 0) {
+    const parentId = queue.shift()
 
-    positions.set(nodeId, { x: actionModifierXs[index], y: staggeredY })
-  })
+    if (!parentId) {
+      continue
+    }
 
-  coreChildren.forEach((targetId) => {
-    const target = positions.get(targetId)
+    const parentDepth = depthById.get(parentId) ?? 0
 
-    if (!target) {
+    for (const { childId } of adjacency.get(parentId) ?? []) {
+      if (childId === rootId || depthById.has(childId)) {
+        continue
+      }
+
+      parentById.set(childId, parentId)
+      depthById.set(childId, parentDepth + 1)
+      queue.push(childId)
+    }
+  }
+
+  visibleNodes.forEach((node) => {
+    if (depthById.has(node.id)) {
       return
     }
 
-    const childIds = visibleLinks
-      .filter((link) => link.kind === 'modifier' && link.to === targetId)
-      .map((link) => link.from)
-    const childXs = spreadPoints(
-      childIds.length,
-      clamp(target.x - 170, 90, 790),
-      clamp(target.x + 170, 210, 910),
-    )
+    parentById.set(node.id, rootId)
+    depthById.set(node.id, 1)
+  })
 
-    childIds.forEach((childId, childIndex) => {
-      positions.set(childId, {
-        x: childXs[childIndex],
-        y: rootModifierLinks.length > 0 ? 765 : 705,
-      })
+  const coreNodes = visibleNodes.filter((node) => node.kind !== 'modifier')
+  const coreChildrenByParent = new Map<string, string[]>()
+
+  parentById.forEach((parentId, childId) => {
+    const childNode = visibleNodeById.get(childId)
+
+    if (!childNode || childNode.kind === 'modifier') {
+      return
+    }
+
+    const children = coreChildrenByParent.get(parentId) ?? []
+
+    children.push(childId)
+    coreChildrenByParent.set(parentId, children)
+  })
+
+  coreChildrenByParent.forEach((children) => {
+    children.sort((leftId, rightId) => {
+      const leftNode = visibleNodeById.get(leftId)
+      const rightNode = visibleNodeById.get(rightId)
+      const kindOrder = { action: 0, core: 1, modifier: 2 }
+
+      return (
+        kindOrder[leftNode?.kind ?? 'core'] -
+          kindOrder[rightNode?.kind ?? 'core'] ||
+        leftId.localeCompare(rightId)
+      )
     })
   })
 
-  const layoutNodes = growth.nodes
-    .filter((node) => visibleNodeIds.has(node.id))
-    .map((node) => {
-      const point = positions.get(node.id) ?? { x: TREE_WIDTH / 2, y: 258 }
+  const rawCoreXById = new Map<string, number>()
+  let leafCursor = 0
 
-      return {
-        node,
-        ...point,
-      }
+  function assignCoreRawX(
+    nodeId: string,
+    visiting = new Set<string>(),
+  ): number {
+    if (rawCoreXById.has(nodeId)) {
+      return rawCoreXById.get(nodeId) ?? 0
+    }
+
+    if (visiting.has(nodeId)) {
+      const fallback = leafCursor
+      leafCursor += 1
+      rawCoreXById.set(nodeId, fallback)
+      return fallback
+    }
+
+    const nextVisiting = new Set(visiting)
+    nextVisiting.add(nodeId)
+    const children = coreChildrenByParent.get(nodeId) ?? []
+
+    if (children.length === 0) {
+      const leafX = leafCursor
+      leafCursor += 1
+      rawCoreXById.set(nodeId, leafX)
+      return leafX
+    }
+
+    const childPositions = children.map((childId) =>
+      assignCoreRawX(childId, nextVisiting),
+    )
+    const nodeX =
+      childPositions.reduce((total, childX) => total + childX, 0) /
+      childPositions.length
+
+    rawCoreXById.set(nodeId, nodeX)
+    return nodeX
+  }
+
+  assignCoreRawX(rootId)
+
+  coreNodes.forEach((node) => {
+    if (!rawCoreXById.has(node.id)) {
+      assignCoreRawX(node.id)
+    }
+  })
+
+  const rawCoreXValues = [...rawCoreXById.values()]
+  const minRawCoreX = Math.min(...rawCoreXValues)
+  const maxRawCoreX = Math.max(...rawCoreXValues)
+  const rawCoreSpan = Math.max(maxRawCoreX - minRawCoreX, 1)
+  const distinctCoreLeafCount = new Set(rawCoreXValues).size
+  const coreLeft = distinctCoreLeafCount > 2 ? 140 : 220
+  const coreRight = distinctCoreLeafCount > 2 ? 860 : 780
+  const positions = new Map<string, TreePoint>()
+
+  coreNodes.forEach((node) => {
+    const rawX = rawCoreXById.get(node.id) ?? 0
+    const depth = depthById.get(node.id) ?? 0
+    const x =
+      minRawCoreX === maxRawCoreX
+        ? TREE_WIDTH / 2
+        : coreLeft +
+          ((rawX - minRawCoreX) / rawCoreSpan) * (coreRight - coreLeft)
+
+    positions.set(node.id, {
+      x,
+      y: TREE_TOP_PADDING + depth * TREE_LEVEL_GAP,
+    })
+  })
+
+  const maxCoreDepth = Math.max(
+    ...coreNodes.map((node) => depthById.get(node.id) ?? 0),
+    0,
+  )
+  const resolvedModifierDepths = new Map<string, number>()
+
+  function resolveModifierDepth(
+    nodeId: string,
+    visiting = new Set<string>(),
+  ): number {
+    const cachedDepth = resolvedModifierDepths.get(nodeId)
+
+    if (cachedDepth !== undefined) {
+      return cachedDepth
+    }
+
+    if (visiting.has(nodeId)) {
+      return maxCoreDepth + 1
+    }
+
+    const nextVisiting = new Set(visiting)
+    nextVisiting.add(nodeId)
+    const parentId = parentById.get(nodeId)
+    const parentNode = parentId ? visibleNodeById.get(parentId) : undefined
+    const parentDepth =
+      parentId && parentNode?.kind === 'modifier'
+        ? resolveModifierDepth(parentId, nextVisiting)
+        : parentId
+          ? depthById.get(parentId) ?? maxCoreDepth
+          : maxCoreDepth
+    const depth = Math.max(maxCoreDepth + 1, parentDepth + 1)
+
+    resolvedModifierDepths.set(nodeId, depth)
+    depthById.set(nodeId, depth)
+    return depth
+  }
+
+  const modifierNodes = visibleNodes.filter(
+    (node) => node.kind === 'modifier',
+  )
+
+  modifierNodes.forEach((node) => resolveModifierDepth(node.id))
+
+  const modifiersByDepth = new Map<number, SentenceGrowthNode[]>()
+
+  modifierNodes.forEach((node) => {
+    const depth = depthById.get(node.id) ?? maxCoreDepth + 1
+    const nodesAtDepth = modifiersByDepth.get(depth) ?? []
+
+    nodesAtDepth.push(node)
+    modifiersByDepth.set(depth, nodesAtDepth)
+  })
+
+  ;[...modifiersByDepth.entries()]
+    .sort(([leftDepth], [rightDepth]) => leftDepth - rightDepth)
+    .forEach(([depth, nodesAtDepth]) => {
+      const siblingsByParent = new Map<string, SentenceGrowthNode[]>()
+
+      nodesAtDepth.forEach((node) => {
+        const parentId = parentById.get(node.id) ?? rootId
+        const siblings = siblingsByParent.get(parentId) ?? []
+
+        siblings.push(node)
+        siblingsByParent.set(parentId, siblings)
+      })
+
+      siblingsByParent.forEach((siblings) => {
+        siblings.sort((left, right) => left.id.localeCompare(right.id))
+      })
+
+      const desiredPositions = nodesAtDepth
+        .map((node) => {
+          const parentId = parentById.get(node.id) ?? rootId
+          const parentX = positions.get(parentId)?.x ?? TREE_WIDTH / 2
+          const siblings = siblingsByParent.get(parentId) ?? [node]
+          const siblingIndex = siblings.findIndex(
+            (sibling) => sibling.id === node.id,
+          )
+          const siblingOffset =
+            (siblingIndex - (siblings.length - 1) / 2) * 220
+
+          return {
+            node,
+            desiredX: clamp(parentX + siblingOffset, 100, 900),
+          }
+        })
+        .sort(
+          (left, right) =>
+            left.desiredX - right.desiredX ||
+            left.node.id.localeCompare(right.node.id),
+        )
+      const resolvedPositions: Array<{
+        node: SentenceGrowthNode
+        desiredX: number
+        x: number
+      }> = []
+
+      desiredPositions.forEach((entry) => {
+        const previousX = resolvedPositions.at(-1)?.x
+
+        resolvedPositions.push({
+          ...entry,
+          x:
+            previousX === undefined
+              ? entry.desiredX
+              : Math.max(entry.desiredX, previousX + 180),
+        })
+      })
+      const overflow =
+        (resolvedPositions.at(-1)?.x ?? TREE_WIDTH / 2) - 900
+
+      resolvedPositions.forEach((entry) => {
+        positions.set(entry.node.id, {
+          x: clamp(entry.x - Math.max(overflow, 0), 100, 900),
+          y: TREE_TOP_PADDING + depth * TREE_LEVEL_GAP,
+        })
+      })
     })
 
+  const maxDepth = Math.max(...depthById.values(), 0)
+  const treeHeight = Math.max(
+    TREE_MIN_HEIGHT,
+    TREE_TOP_PADDING + maxDepth * TREE_LEVEL_GAP + 150,
+  )
+
+  const layoutNodes = visibleNodes.map((node) => {
+    const point = positions.get(node.id) ?? {
+      x: TREE_WIDTH / 2,
+      y: TREE_TOP_PADDING,
+    }
+
+    return { node, ...point }
+  })
   const layoutLinks = visibleLinks.filter(
     (link) => positions.has(link.from) && positions.has(link.to),
   )
+  const corePoints = layoutNodes.filter(
+    ({ node }) => node.kind === 'action' || node.kind === 'core',
+  )
+  const coreFrame =
+    corePoints.length > 1
+      ? {
+          x: clamp(
+            Math.min(...corePoints.map((point) => point.x)) - 110,
+            36,
+            TREE_WIDTH - 260,
+          ),
+          y: Math.max(
+            28,
+            Math.min(...corePoints.map((point) => point.y)) - 70,
+          ),
+          width: 0,
+          height: 0,
+        }
+      : null
 
-  return { activeStep, layoutNodes, layoutLinks, positions }
+  if (coreFrame) {
+    const right = clamp(
+      Math.max(...corePoints.map((point) => point.x)) + 110,
+      260,
+      TREE_WIDTH - 36,
+    )
+    const bottom = Math.min(
+      treeHeight - 24,
+      Math.max(...corePoints.map((point) => point.y)) + 80,
+    )
+
+    coreFrame.width = right - coreFrame.x
+    coreFrame.height = bottom - coreFrame.y
+  }
+
+  return {
+    activeStep,
+    layoutNodes,
+    layoutLinks,
+    positions,
+    treeHeight,
+    coreFrame,
+  }
 }
 
 function getNodeAnchor(from: TreePoint, to: TreePoint) {
@@ -351,11 +635,41 @@ function getNodeAnchor(from: TreePoint, to: TreePoint) {
 }
 
 function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint) {
+  if (link.kind === 'modifier') {
+    const approachesFromLeft = from.x <= to.x
+    const sideDirection = approachesFromLeft ? -1 : 1
+    const start = {
+      x: from.x,
+      y: from.y - 42,
+    }
+    const end = {
+      x: to.x + sideDirection * 66,
+      y: to.y + 2,
+    }
+    const hash = hashText(link.id)
+    const wobble = (hash % 17) - 8
+    const controlA = {
+      x: start.x + sideDirection * (22 + Math.abs(wobble)),
+      y: start.y + (end.y - start.y) * 0.34,
+    }
+    const controlB = {
+      x: end.x + sideDirection * (72 + wobble),
+      y: start.y + (end.y - start.y) * 0.78,
+    }
+
+    return [
+      `M ${start.x.toFixed(1)} ${start.y.toFixed(1)}`,
+      `C ${controlA.x.toFixed(1)} ${controlA.y.toFixed(1)}`,
+      `${controlB.x.toFixed(1)} ${controlB.y.toFixed(1)}`,
+      `${end.x.toFixed(1)} ${end.y.toFixed(1)}`,
+    ].join(' ')
+  }
+
   const start = getNodeAnchor(from, to)
   const end = getNodeAnchor(to, from)
   const hash = hashText(link.id)
   const wobble = (hash % 19) - 9
-  const lift = link.kind === 'modifier' ? -18 : 14
+  const lift = 14
   const controlA = {
     x: start.x + (end.x - start.x) * 0.34 + wobble,
     y: start.y + (end.y - start.y) * 0.28 + lift,
@@ -376,14 +690,32 @@ function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint
 function NodePill({
   node,
   isFocused,
+  isRootAction,
 }: {
   node: SentenceGrowthNode
   isFocused: boolean
+  isRootAction: boolean
 }) {
+  const fallbackLabel =
+    node.kind === 'action'
+      ? isRootAction
+        ? '动作核心'
+        : '嵌套动作'
+      : node.kind === 'core'
+        ? '核心部分'
+        : '补充信息'
+
   return (
-    <span className={`sentence-tree-node ${node.kind} ${isFocused ? 'focused' : ''}`}>
-      {node.text}
-    </span>
+    <>
+      <small className="sentence-tree-node-label">
+        {node.labelZh || fallbackLabel}
+      </small>
+      <span
+        className={`sentence-tree-node ${node.kind} ${isFocused ? 'focused' : ''}`}
+      >
+        {node.text}
+      </span>
+    </>
   )
 }
 
@@ -395,8 +727,16 @@ function SentenceTree({
   activeStepIndex: number
 }) {
   const markerId = useId().replace(/:/g, '')
-  const { activeStep, layoutNodes, layoutLinks, positions } =
+  const {
+    activeStep,
+    layoutNodes,
+    layoutLinks,
+    positions,
+    treeHeight,
+    coreFrame,
+  } =
     buildTreeLayout(growth, activeStepIndex)
+  const rootActionNode = getRootActionNode(growth)
 
   if (layoutNodes.length === 0) {
     return null
@@ -404,11 +744,14 @@ function SentenceTree({
 
   return (
     <div className="sentence-tree" aria-label="句子结构树">
-      <div className="sentence-tree-canvas">
+      <div
+        className="sentence-tree-canvas"
+        style={{ minHeight: `${treeHeight}px` }}
+      >
         <svg
           aria-hidden="true"
           className="sentence-tree-links"
-          viewBox={`0 0 ${TREE_WIDTH} ${TREE_HEIGHT}`}
+          viewBox={`0 0 ${TREE_WIDTH} ${treeHeight}`}
         >
           <defs>
             <marker
@@ -420,7 +763,7 @@ function SentenceTree({
               refY="5"
               viewBox="0 0 10 10"
             >
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827" />
             </marker>
             <marker
               id={`sentence-arrow-modifier-${markerId}`}
@@ -435,10 +778,16 @@ function SentenceTree({
             </marker>
           </defs>
 
-          {layoutLinks.some((link) => link.kind === 'core') && (
+          {coreFrame && (
             <g className="sentence-tree-core-frame" aria-hidden="true">
-              <rect x="145" y="245" width="710" height="510" rx="34" />
-              <text x="176" y="285">主干</text>
+              <rect
+                x={coreFrame.x}
+                y={coreFrame.y}
+                width={coreFrame.width}
+                height={coreFrame.height}
+                rx="34"
+              />
+              <text x={coreFrame.x + 28} y={coreFrame.y + 40}>主干</text>
             </g>
           )}
 
@@ -459,9 +808,7 @@ function SentenceTree({
                   className={`sentence-tree-link ${link.kind}`}
                   d={pathD}
                   markerEnd={
-                    link.kind === 'modifier'
-                      ? `url(#sentence-arrow-${link.kind}-${markerId})`
-                      : undefined
+                    `url(#sentence-arrow-${link.kind}-${markerId})`
                   }
                 />
               </g>
@@ -475,10 +822,14 @@ function SentenceTree({
             className="sentence-tree-node-anchor"
             style={{
               left: `${(x / TREE_WIDTH) * 100}%`,
-              top: `${(y / TREE_HEIGHT) * 100}%`,
+              top: `${(y / treeHeight) * 100}%`,
             }}
           >
-            <NodePill node={node} isFocused={node.id === activeStep?.focusNode} />
+            <NodePill
+              node={node}
+              isFocused={node.id === activeStep?.focusNode}
+              isRootAction={node.id === rootActionNode?.id}
+            />
           </div>
         ))}
       </div>
@@ -492,7 +843,7 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(true)
   const [previewStepIndex, setPreviewStepIndex] = useState<number | null>(null)
   const displayGrowth = useMemo(() => createDisplayGrowth(path), [path])
-  const steps: DisplayStep[] = displayGrowth?.steps ?? path.steps
+  const steps: DisplayStep[] = displayGrowth?.steps ?? []
   const sentenceLines = useMemo(
     () => buildSentenceGrowthLines(path, displayGrowth),
     [displayGrowth, path],

@@ -36,6 +36,7 @@ const REASONING_EFFORT = readArgument('--reasoning') || 'high'
 const APPLY_REMOTE = !process.argv.includes('--local-only')
 const KEEP_GOING = !process.argv.includes('--stop-on-error')
 const DRY_RUN = process.argv.includes('--dry-run')
+const REFRESH_V2 = process.argv.includes('--refresh-v2')
 const CODEX_TIMEOUT_MS = Number(
   process.env.VERB_PATH_CODEX_TIMEOUT_MS ?? 30 * 60 * 1000,
 )
@@ -266,6 +267,67 @@ ORDER BY v.id ASC;`)
   return rows.slice(0, LIMIT)
 }
 
+async function loadLegacyVerbPaths() {
+  const rows = await queryRemote(`SELECT
+  v.id,
+  v.verb,
+  v.normalized_verb,
+  v.meaning_zh,
+  v.is_phrase,
+  p.id AS path_id,
+  p.title AS path_title,
+  p.meaning_zh AS path_meaning_zh,
+  p.scene,
+  p.growth_json
+FROM verbs v
+INNER JOIN verb_paths p ON p.verb_id = v.id
+ORDER BY v.id ASC, p.id ASC;`)
+
+  return rows
+    .filter((row) => {
+      try {
+        return JSON.parse(row.growth_json)?.schema_version !== 2
+      } catch {
+        return true
+      }
+    })
+    .slice(0, LIMIT)
+    .map((row) => {
+      let existingSteps = []
+
+      try {
+        existingSteps = JSON.parse(row.growth_json)?.steps ?? []
+      } catch {
+        existingSteps = []
+      }
+
+      return {
+        id: row.id,
+        verb: row.verb,
+        normalized_verb: row.normalized_verb,
+        meaning_zh: row.meaning_zh,
+        is_phrase: row.is_phrase,
+        path_id: row.path_id,
+        existing_path: {
+          title: row.path_title,
+          meaning_zh: row.path_meaning_zh,
+          scene: row.scene,
+          steps: existingSteps.map((step) => ({
+            step_no: step.step_no,
+            label: step.label,
+            sentence_en: step.sentence_en,
+            sentence_zh: step.sentence_zh,
+            note_zh: step.note_zh,
+          })),
+        },
+      }
+    })
+}
+
+async function loadGenerationTargets() {
+  return REFRESH_V2 ? loadLegacyVerbPaths() : loadMissingVerbs()
+}
+
 function getNextMigrationNumber() {
   const migrationNumbers = readdirSync(MIGRATIONS_DIR)
     .map((file) => Number(file.match(/^(\d+)_/)?.[1]))
@@ -303,7 +365,7 @@ Hard requirements:
 4. Prefer a realistic developer/technical situation when natural. Use workplace or
    daily life when that produces a more authentic sentence.
 5. Write original sentences. Do not quote dictionaries, books, or websites.
-6. Each path has 2-5 steps. Step 1 is labeled 主干. Each later step adds exactly one
+6. Each path has 2-10 steps. Step 1 is labeled 主干. Each later step adds one
    meaningful unit and keeps all earlier meaning.
 7. Do not force every path into the same labels or number of steps.
 8. Learner-facing Chinese may use 动词、主干、修饰、时间、条件、场景、方式、程度、
@@ -311,26 +373,40 @@ Hard requirements:
    宾语、补语、定语、状语、SVO, or SVOC.
 9. English must be grammatical, idiomatic, modern, concise, and logically credible.
    Chinese must be natural and match each step's exact information.
-10. Use exactly one action node. It contains the inflected verb or complete phrasal
-    verb as it appears in the core sentence.
-11. Core nodes are the essential participants or content needed by the core sentence.
-    Core links go from the action node to each core node.
-12. Modifier nodes contain the exact contiguous English text appearing in the step
+10. Set schema_version to 2. Identify every independent action or state-changing event
+    as an action node. Set root_action_id to the main action that organizes the sentence.
+    Never compress an embedded action, reported event, purpose action, condition action,
+    or time event into a generic modifier merely to keep the tree small.
+11. Give every node a short, sentence-specific label_zh such as 动作核心、嵌套动作、
+    谁执行、做什么、发给谁、频率、所属、位置 / 环境、时间事件. Do not reuse one
+    mechanical label set when the sentence requires a more precise description.
+12. Core nodes are the essential participants or content directly brought out by an
+    action. Core links go from an action node to its direct core node. A nested action
+    may be the target of a core link when it is the content brought out by another action.
+13. Modifier nodes contain the exact contiguous English text appearing in the step
     where they are introduced. Modifier links go from the modifier to the exact node
-    it explains. Attach noun details to their noun node, not automatically to action.
-13. Link IDs must be exactly "from->to". Node IDs are unique lowercase kebab-case.
-14. Step 1 introduces every action/core node and every core link. Later steps introduce
-    each modifier node and link exactly once. show_nodes/show_links only contain newly
-    introduced IDs. focus_node is visible and normally the newly introduced node.
-15. Sentences end with punctuation. Keep previously introduced modifier text verbatim
+    it explains. A complete nested action event may also be the source of a modifier
+    link when that event explains the time, reason, condition, or result of another action.
+    Attach noun details to their noun node, not automatically to the root action.
+14. Link IDs must be exactly "from->to". Node IDs are unique lowercase kebab-case.
+15. Step 1 introduces the root action and the nodes/links required by the first core
+    sentence. Later steps may introduce additional core nodes, nested action nodes,
+    modifiers, and their links. show_nodes/show_links contain only newly introduced IDs.
+    focus_node is visible and normally one of the newly introduced nodes.
+16. Sentences end with punctuation. Keep previously introduced text verbatim
     in later English sentences so the animation remains stable.
-16. title is a short English usage phrase. meaning_zh is the specific meaning used by
+17. title is a short English usage phrase. meaning_zh is the specific meaning used by
     this path, not every possible dictionary meaning. scene is a short lowercase slug.
-17. Be especially careful with modal verbs, linking verbs, verbs normally used with a
+18. Be especially careful with modal verbs, linking verbs, verbs normally used with a
     fixed preposition, and phrasal verbs. Never create a structure merely to satisfy a
     template.
-18. Silently proofread the whole batch for grammar, collocation, tree attachment,
-    translation accuracy, and step continuity before returning it.
+19. If an input includes existing_path, preserve its English and Chinese step sentences
+    unless they are inaccurate or ungrammatical. Re-analyze the sentence deeply and
+    rebuild the node/link structure under v2 instead of casually rewriting good content.
+20. Before returning, silently list every action, every direct core relationship, every
+    modifier target, every shared participant, and every event-to-event relationship.
+    Then proofread grammar, collocation, translation, step continuity, and every arrow
+    direction. Accuracy is more important than speed or visual simplicity.
 
 INPUT VERBS:
 ${JSON.stringify(verbs, null, 2)}
@@ -568,15 +644,27 @@ function validateGeneratedBatch(batch, verbs) {
     const links = Array.isArray(item.links) ? item.links : []
     const steps = Array.isArray(item.steps) ? item.steps : []
     const nodeIds = new Set(nodes.map((node) => node.id))
+    const nodeById = new Map(nodes.map((node) => [node.id, node]))
     const linkIds = new Set(links.map((link) => link.id))
     const actionNodes = nodes.filter((node) => node.kind === 'action')
 
-    if (actionNodes.length !== 1) {
-      errors.push(`${verb.id}: expected exactly one action node.`)
+    if (item.schema_version !== 2) {
+      errors.push(`${verb.id}: schema_version must be 2.`)
     }
 
-    if (steps.length < 2 || steps.length > 5) {
-      errors.push(`${verb.id}: expected 2-5 steps.`)
+    if (actionNodes.length < 1) {
+      errors.push(`${verb.id}: expected at least one action node.`)
+    }
+
+    if (
+      !nodeIds.has(item.root_action_id) ||
+      nodeById.get(item.root_action_id)?.kind !== 'action'
+    ) {
+      errors.push(`${verb.id}: root_action_id must reference an action node.`)
+    }
+
+    if (steps.length < 2 || steps.length > 10) {
+      errors.push(`${verb.id}: expected 2-10 steps.`)
     }
 
     if (steps[0]?.label !== '主干') {
@@ -587,6 +675,9 @@ function validateGeneratedBatch(batch, verbs) {
       if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(node.id)) {
         errors.push(`${verb.id}: invalid node id "${node.id}".`)
       }
+      if (!normalizeWhitespace(node.label_zh)) {
+        errors.push(`${verb.id}: node "${node.id}" needs label_zh.`)
+      }
     })
 
     links.forEach((link) => {
@@ -596,7 +687,66 @@ function validateGeneratedBatch(batch, verbs) {
       if (!nodeIds.has(link.from) || !nodeIds.has(link.to)) {
         errors.push(`${verb.id}: link "${link.id}" has a missing endpoint.`)
       }
+      const fromNode = nodeById.get(link.from)
+      const toNode = nodeById.get(link.to)
+
+      if (
+        link.kind === 'core' &&
+        (fromNode?.kind !== 'action' ||
+          (toNode?.kind !== 'core' && toNode?.kind !== 'action'))
+      ) {
+        errors.push(
+          `${verb.id}: core link "${link.id}" must go from an action to a core/action node.`,
+        )
+      }
+
+      if (
+        link.kind === 'modifier' &&
+        fromNode?.kind !== 'modifier' &&
+        fromNode?.kind !== 'action'
+      ) {
+        errors.push(
+          `${verb.id}: modifier link "${link.id}" must start from a modifier or action event.`,
+        )
+      }
     })
+
+    if (nodeById.get(item.root_action_id)?.kind === 'action') {
+      const visualChildren = new Map()
+
+      links.forEach((link) => {
+        const parentId = link.kind === 'core' ? link.from : link.to
+        const childId = link.kind === 'core' ? link.to : link.from
+        const children = visualChildren.get(parentId) ?? []
+
+        children.push(childId)
+        visualChildren.set(parentId, children)
+      })
+
+      const reachableNodeIds = new Set([item.root_action_id])
+      const queue = [item.root_action_id]
+
+      while (queue.length > 0) {
+        const parentId = queue.shift()
+
+        for (const childId of visualChildren.get(parentId) ?? []) {
+          if (!reachableNodeIds.has(childId)) {
+            reachableNodeIds.add(childId)
+            queue.push(childId)
+          }
+        }
+      }
+
+      const unreachableNodeIds = nodes
+        .map((node) => node.id)
+        .filter((nodeId) => !reachableNodeIds.has(nodeId))
+
+      if (unreachableNodeIds.length > 0) {
+        errors.push(
+          `${verb.id}: nodes not connected to root_action_id: ${unreachableNodeIds.join(', ')}.`,
+        )
+      }
+    }
 
     steps.forEach((step, index) => {
       if (step.step_no !== index + 1) {
@@ -625,45 +775,13 @@ function validateGeneratedBatch(batch, verbs) {
         }
       }
     })
+
+    if (!(steps[0]?.show_nodes ?? []).includes(item.root_action_id)) {
+      errors.push(`${verb.id}: first step must introduce root_action_id.`)
+    }
   }
 
   return errors
-}
-
-function splitSentenceForLegacy(sentence, focusText, firstStep) {
-  const trimmed = normalizeWhitespace(sentence)
-  const punctuationMatch = trimmed.match(/([.!?])$/)
-  const punctuation = punctuationMatch?.[1] ?? ''
-  const body = punctuation ? trimmed.slice(0, -1) : trimmed
-
-  if (firstStep || !focusText) {
-    return [
-      { text: body, kind: 'core' },
-      ...(punctuation ? [{ text: punctuation, kind: 'punctuation' }] : []),
-    ]
-  }
-
-  const index = body.toLocaleLowerCase('en-US').indexOf(
-    focusText.toLocaleLowerCase('en-US'),
-  )
-
-  if (index < 0) {
-    return [
-      { text: body, kind: 'core' },
-      ...(punctuation ? [{ text: punctuation, kind: 'punctuation' }] : []),
-    ]
-  }
-
-  const before = body.slice(0, index)
-  const focus = body.slice(index, index + focusText.length)
-  const after = body.slice(index + focusText.length)
-
-  return [
-    ...(before ? [{ text: before, kind: 'core' }] : []),
-    { text: focus, kind: 'modifier' },
-    ...(after ? [{ text: after, kind: 'core' }] : []),
-    ...(punctuation ? [{ text: punctuation, kind: 'punctuation' }] : []),
-  ]
 }
 
 function normalizeItem(item, verb) {
@@ -671,29 +789,15 @@ function normalizeItem(item, verb) {
     ...node,
     group: node.kind,
   }))
-  const nodeById = new Map(nodes.map((node) => [node.id, node]))
   const steps = item.steps.map((step) => ({
     ...step,
     sentence_en: normalizeWhitespace(step.sentence_en),
     sentence_zh: normalizeWhitespace(step.sentence_zh),
     note_zh: normalizeWhitespace(step.note_zh),
   }))
-  const legacySteps = steps.map((step, index) => {
-    const focusText = nodeById.get(step.focus_node)?.text ?? ''
-
-    return {
-      step_no: step.step_no,
-      label: step.label,
-      sentence_en: step.sentence_en,
-      sentence_zh: step.sentence_zh,
-      focus_text: focusText,
-      note_zh: step.note_zh,
-      segments: splitSentenceForLegacy(step.sentence_en, focusText, index === 0),
-    }
-  })
 
   return {
-    id: `${verb.id}-primary`,
+    id: verb.path_id || `${verb.id}-primary`,
     verb_id: verb.id,
     verb: verb.verb,
     title: normalizeWhitespace(item.title),
@@ -703,8 +807,9 @@ function normalizeItem(item, verb) {
     full_sentence_en: steps.at(-1).sentence_en,
     full_sentence_zh: steps.at(-1).sentence_zh,
     scene: slug(item.scene) || 'general',
-    steps_json: legacySteps,
     growth_json: {
+      schema_version: 2,
+      root_action_id: item.root_action_id,
       nodes,
       links: item.links,
       steps,
@@ -726,7 +831,6 @@ function buildInsertStatement(paths) {
     ${sqlString(path.full_sentence_en)},
     ${sqlString(path.full_sentence_zh)},
     ${sqlString(path.scene)},
-    ${sqlString(JSON.stringify(path.steps_json))},
     ${sqlString(JSON.stringify(path.growth_json))}
   )`,
     )
@@ -743,7 +847,6 @@ function buildInsertStatement(paths) {
   full_sentence_en,
   full_sentence_zh,
   scene,
-  steps_json,
   growth_json
 ) VALUES
 ${values}
@@ -757,7 +860,6 @@ ON CONFLICT(id) DO UPDATE SET
   full_sentence_en = excluded.full_sentence_en,
   full_sentence_zh = excluded.full_sentence_zh,
   scene = excluded.scene,
-  steps_json = excluded.steps_json,
   growth_json = excluded.growth_json,
   updated_at = CURRENT_TIMESTAMP;`
 }
@@ -959,17 +1061,23 @@ async function main() {
     throw new Error('CLOUDFLARE_API_TOKEN is not configured.')
   }
 
-  const missingVerbs = await loadMissingVerbs()
+  const missingVerbs = await loadGenerationTargets()
 
   if (missingVerbs.length === 0) {
-    console.log('All verbs already have a path. Running final remote validation.')
+    console.log(
+      REFRESH_V2
+        ? 'All verb paths already use growth_json v2. Running final remote validation.'
+        : 'All verbs already have a path. Running final remote validation.',
+    )
     const summary = await validateRemote()
     console.log(JSON.stringify(summary, null, 2))
     return
   }
 
   console.log(
-    `Starting ${missingVerbs.length} missing verbs in batches of ${BATCH_SIZE}. ` +
+    `Starting ${missingVerbs.length} ${
+      REFRESH_V2 ? 'legacy paths for v2 refresh' : 'missing verbs'
+    } in batches of ${BATCH_SIZE}. ` +
       `provider=${PROVIDER}, model=${MODEL}, reasoning=${REASONING_EFFORT}, ` +
       `concurrency=${CONCURRENCY}, remote=${APPLY_REMOTE && !DRY_RUN}.`,
   )
@@ -1015,7 +1123,7 @@ async function main() {
             await applySql(migrationFile, true)
             const remoteRows = await queryRemote(`SELECT COUNT(*) AS total
 FROM verb_paths
-WHERE verb_id IN (${verbs.map((verb) => sqlString(verb.id)).join(', ')});`)
+WHERE id IN (${paths.map((path) => sqlString(path.id)).join(', ')});`)
             const remoteCount = Number(remoteRows[0]?.total ?? 0)
 
             if (remoteCount !== paths.length) {
@@ -1065,14 +1173,24 @@ WHERE verb_id IN (${verbs.map((verb) => sqlString(verb.id)).join(', ')});`)
   }
 
   if (!DRY_RUN && APPLY_REMOTE) {
-    const remainingRows = await queryRemote(`SELECT COUNT(*) AS total
+    const remainingRows = await queryRemote(
+      REFRESH_V2
+        ? `SELECT COUNT(*) AS total
+FROM verb_paths
+WHERE COALESCE(json_extract(growth_json, '$.schema_version'), 0) <> 2;`
+        : `SELECT COUNT(*) AS total
 FROM verbs v
 LEFT JOIN verb_paths p ON p.verb_id = v.id
-WHERE p.verb_id IS NULL;`)
+WHERE p.verb_id IS NULL;`,
+    )
     const remaining = Number(remainingRows[0]?.total ?? 0)
 
     if (remaining !== 0) {
-      throw new Error(`${remaining} verbs still have no path after generation.`)
+      throw new Error(
+        REFRESH_V2
+          ? `${remaining} verb paths still do not use growth_json v2.`
+          : `${remaining} verbs still have no path after generation.`,
+      )
     }
 
     const summary = await validateRemote()

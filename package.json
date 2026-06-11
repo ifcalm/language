@@ -16,8 +16,10 @@
     "pronunciations:coverage:top100": "node scripts/check-pronunciation-completeness.mjs",
     "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs",
     "verbs:generate": "node scripts/generate-verb-paths.mjs",
+    "verbs:refresh:v2": "node scripts/generate-verb-paths.mjs --refresh-v2",
     "verbs:validate": "node scripts/check-verb-paths.mjs --local",
-    "verbs:validate:remote": "node scripts/check-verb-paths.mjs --remote --strict"
+    "verbs:validate:remote": "node scripts/check-verb-paths.mjs --remote --strict",
+    "verbs:validate:v2:remote": "node scripts/check-verb-paths.mjs --remote --strict --require-v2"
   },
   "dependencies": {
     "react": "^19.2.6",

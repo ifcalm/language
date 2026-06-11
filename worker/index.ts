@@ -60,7 +60,6 @@ interface VerbPathRow {
   full_sentence_en: string
   full_sentence_zh: string
   scene: string
-  steps_json: string
   growth_json: string
   created_at: string
   updated_at: string
@@ -189,14 +188,7 @@ const mapVerbListRow = (row: VerbListRow) => ({
 })
 
 const mapVerbPathRow = (row: VerbPathRow) => {
-  let steps: unknown
   let growth: unknown
-
-  try {
-    steps = JSON.parse(row.steps_json)
-  } catch {
-    steps = []
-  }
 
   try {
     growth = JSON.parse(row.growth_json)
@@ -215,7 +207,6 @@ const mapVerbPathRow = (row: VerbPathRow) => {
     fullSentenceEn: row.full_sentence_en,
     fullSentenceZh: row.full_sentence_zh,
     scene: row.scene,
-    steps,
     growth,
   }
 }
@@ -396,7 +387,6 @@ async function handleVerbDetail(request: Request, env: Env) {
       full_sentence_en,
       full_sentence_zh,
       scene,
-      steps_json,
       growth_json,
       created_at,
       updated_at

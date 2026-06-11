@@ -106,7 +106,6 @@ erDiagram
 | `full_sentence_en` | `TEXT NOT NULL` | 无 | 最终成品句英文，通常等于 `growth_json.steps` 最后一步的 `sentence_en`。 |
 | `full_sentence_zh` | `TEXT NOT NULL` | 无 | 最终成品句中文。 |
 | `scene` | `TEXT NOT NULL` | `''` | 开发者学习场景，如 `code`、`debug`、`deploy`、`system`。 |
-| `steps_json` | `TEXT NOT NULL`，`json_valid` | 无 | 旧版句子生长步骤 JSON，当前保留用于兼容。 |
 | `growth_json` | `TEXT NOT NULL` | 空结构 JSON | 统一句子生长 JSON，包含节点、连线和动画步骤，用于树状结构展示。 |
 | `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
 | `updated_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 更新时间。 |
@@ -126,6 +125,8 @@ erDiagram
 
 | 顶层字段 | 含义 |
 |---|---|
+| `schema_version` | 当前结构版本。新版严谨关系树固定为 `2`。 |
+| `root_action_id` | 主要动作节点 ID；复杂句允许存在多个 `action`，但必须明确一个视觉与语义根节点。 |
 | `nodes` | 句子里的词块节点，比如动作、主干词块、修饰词块。 |
 | `links` | 节点之间的关系，说明谁连接谁、谁补充谁。 |
 | `steps` | 动画播放步骤，说明每一步新增哪些节点和连线。 |
@@ -137,6 +138,7 @@ erDiagram
 | `id` | 节点唯一 ID。 |
 | `text` | 页面展示文本。 |
 | `kind` | 节点类型：`action` 核心动作，`core` 主干词块，`modifier` 修饰词块。 |
+| `label_zh` | 当前句子语境下的简短角色说明，如“动作核心”“嵌套动作”“谁执行”“位置 / 环境”。 |
 
 `growth_json.links`：
 
@@ -160,8 +162,6 @@ erDiagram
 | `show_links` | 这一步新增展示的连线 ID。 |
 | `focus_node` | 这一步重点观察的节点 ID。 |
 | `note_zh` | 给学习者看的简短说明。 |
-
-`steps_json` 为旧版线性句子步骤结构，当前只作为兼容字段保留；后续稳定后可以迁移删除。
 
 ## `vocab_pronunciations`
 

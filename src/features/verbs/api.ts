@@ -5,23 +5,7 @@ import type {
   SentenceGrowthStep,
   VerbDetail,
   VerbListResponse,
-  VerbPathStep,
 } from './types'
-
-interface RawVerbPathStep {
-  step_no?: unknown
-  stepNo?: unknown
-  label?: unknown
-  sentence_en?: unknown
-  sentenceEn?: unknown
-  sentence_zh?: unknown
-  sentenceZh?: unknown
-  focus_text?: unknown
-  focusText?: unknown
-  note_zh?: unknown
-  noteZh?: unknown
-  segments?: unknown
-}
 
 interface RawSentenceGrowthStep {
   step_no?: unknown
@@ -49,45 +33,6 @@ function readStringArray(value: unknown) {
   return Array.isArray(value)
     ? value.filter((item): item is string => typeof item === 'string')
     : []
-}
-
-function normalizeStep(step: RawVerbPathStep, index: number): VerbPathStep {
-  const rawSegments = Array.isArray(step.segments) ? step.segments : []
-
-  return {
-    stepNo:
-      typeof step.step_no === 'number'
-        ? step.step_no
-        : typeof step.stepNo === 'number'
-          ? step.stepNo
-          : index + 1,
-    label: readString(step.label) || `第 ${index + 1} 步`,
-    sentenceEn: readString(step.sentence_en) || readString(step.sentenceEn),
-    sentenceZh: readString(step.sentence_zh) || readString(step.sentenceZh),
-    focusText: readString(step.focus_text) || readString(step.focusText),
-    noteZh: readString(step.note_zh) || readString(step.noteZh),
-    segments: rawSegments
-      .map((segment) => {
-        if (!segment || typeof segment !== 'object') {
-          return null
-        }
-
-        const record = segment as Record<string, unknown>
-        const kind = record.kind
-
-        if (kind !== 'core' && kind !== 'modifier' && kind !== 'punctuation') {
-          return null
-        }
-
-        return {
-          text: readString(record.text),
-          kind,
-        }
-      })
-      .filter((segment): segment is VerbPathStep['segments'][number] =>
-        Boolean(segment?.text),
-      ),
-  }
 }
 
 function normalizeGrowth(value: unknown): SentenceGrowth | null {
@@ -118,6 +63,8 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
         id: readString(nodeRecord.id),
         text: readString(nodeRecord.text),
         kind,
+        labelZh:
+          readString(nodeRecord.label_zh) || readString(nodeRecord.labelZh),
         group:
           group === 'action' || group === 'core' || group === 'modifier'
             ? group
@@ -196,7 +143,21 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
     return null
   }
 
+  const fallbackRootActionId =
+    nodes.find((node) => node.kind === 'action')?.id ?? ''
+  const rootActionId =
+    readString(record.root_action_id) ||
+    readString(record.rootActionId) ||
+    fallbackRootActionId
+
   return {
+    schemaVersion:
+      typeof record.schema_version === 'number'
+        ? record.schema_version
+        : typeof record.schemaVersion === 'number'
+          ? record.schemaVersion
+          : 1,
+    rootActionId,
     nodes,
     links,
     steps,
@@ -208,9 +169,6 @@ function normalizeVerbDetail(payload: VerbDetail): VerbDetail {
     ...payload,
     paths: payload.paths.map((path) => ({
       ...path,
-      steps: Array.isArray(path.steps)
-        ? path.steps.map((step, index) => normalizeStep(step as RawVerbPathStep, index))
-        : [],
       growth: normalizeGrowth(path.growth),
     })),
   }
