@@ -101,7 +101,6 @@ interface VocabularyApiResponse {
 
 interface VocabularyDetailCore extends VocabularyApiItem {
   normalizedWord: string
-  lemma: string | null
 }
 
 interface VocabularyDetailResponse {
@@ -122,7 +121,6 @@ interface AuthMeResponse {
 interface VocabularyDetail {
   core: CoreVocabularyEntry & {
     normalizedWord: string
-    lemma: string | null
     meaningZh: string
     definitionEn: string
   }
@@ -155,7 +153,6 @@ const mapVocabularyDetail = (
       id: payload.core.id,
       word: payload.core.word,
       normalizedWord: payload.core.normalizedWord,
-      lemma: payload.core.lemma,
       meaning: payload.core.meaning,
       meaningZh: payload.core.meaningZh,
       definitionEn: payload.core.definitionEn,
@@ -1420,12 +1417,6 @@ function App() {
                             <dt>频率排序</dt>
                             <dd>#{selectedVocabularyRank}</dd>
                           </div>
-                          {selectedVocabularyDetail.core.lemma && (
-                            <div>
-                              <dt>词元</dt>
-                              <dd>{selectedVocabularyDetail.core.lemma}</dd>
-                            </div>
-                          )}
                           <div>
                             <dt>例句数量</dt>
                             <dd>{selectedVocabularyDetail.examples.length}</dd>

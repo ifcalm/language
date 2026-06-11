@@ -20,7 +20,6 @@ interface AdminVocabularyListItem {
 
 interface AdminVocabularyCore extends AdminVocabularyListItem {
   normalizedWord: string
-  lemma: string | null
 }
 
 interface AdminPronunciation {
