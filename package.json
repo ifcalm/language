@@ -17,6 +17,7 @@
     "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs",
     "verbs:generate": "node scripts/generate-verb-paths.mjs",
     "verbs:refresh:v2": "node scripts/generate-verb-paths.mjs --refresh-v2",
+    "verbs:fixture:v2:local": "node scripts/generate-verb-paths.mjs --fixture scripts/fixtures/verb-paths-v2-golden.json",
     "verbs:validate": "node scripts/check-verb-paths.mjs --local",
     "verbs:validate:remote": "node scripts/check-verb-paths.mjs --remote --strict",
     "verbs:validate:v2:remote": "node scripts/check-verb-paths.mjs --remote --strict --require-v2"

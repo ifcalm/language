@@ -26,6 +26,28 @@ const VERB_FILTERS = getArgumentValue('--verbs')
 
 const NODE_KINDS = new Set(['action', 'core', 'modifier'])
 const LINK_KINDS = new Set(['core', 'modifier'])
+const RELATION_TYPES = new Set([
+  'actor',
+  'target',
+  'recipient',
+  'content',
+  'nested_action',
+  'shared_actor',
+  'ownership',
+  'category',
+  'quality',
+  'frequency',
+  'time',
+  'place',
+  'condition',
+  'purpose',
+  'reason',
+  'manner',
+  'degree',
+  'scope',
+  'result',
+  'sequence',
+])
 const BANNED_LEARNER_TERMS = [
   '及物动词',
   '不及物动词',
@@ -581,16 +603,44 @@ function validateGrowth(path, growth, collector) {
       )
     }
 
-    if (!isNonEmptyString(link.label)) {
+    const linkLabel = schemaVersion === 2 ? link.label_zh : link.label
+
+    if (!isNonEmptyString(linkLabel)) {
       collector.error(
         'EMPTY_LINK_LABEL',
-        `Link "${link.id ?? index + 1}" must have a meaningful label.`,
+        `Link "${link.id ?? index + 1}" must have a meaningful sentence-specific label.`,
         { linkId: link.id ?? null },
       )
     } else {
-      validateLearnerText(link.label, 'link.label', collector, {
-        linkId: link.id ?? null,
-      })
+      validateLearnerText(
+        linkLabel,
+        schemaVersion === 2 ? 'link.label_zh' : 'link.label',
+        collector,
+        {
+          linkId: link.id ?? null,
+        },
+      )
+    }
+
+    if (schemaVersion === 2 && !RELATION_TYPES.has(link.relation_type)) {
+      collector.error(
+        'INVALID_RELATION_TYPE',
+        `Link "${link.id ?? index + 1}" has invalid relation_type "${link.relation_type}".`,
+        { linkId: link.id ?? null },
+      )
+    }
+
+    if (
+      schemaVersion === 2 &&
+      link.relation_type === 'nested_action' &&
+      (nodeById.get(link.from)?.kind !== 'action' ||
+        nodeById.get(link.to)?.kind !== 'action')
+    ) {
+      collector.error(
+        'INVALID_NESTED_ACTION_RELATION',
+        `nested_action link "${link.id}" must connect one action to another action.`,
+        { linkId: link.id ?? null },
+      )
     }
 
     const fromNode = nodeById.get(link.from)
@@ -706,34 +756,51 @@ function validateGrowth(path, growth, collector) {
       stepNo: expectedStepNo,
     })
 
-    if (!Array.isArray(step.show_nodes)) {
-      collector.error('INVALID_SHOW_NODES', 'show_nodes must be an array.', {
+    const stepNodeIds =
+      schemaVersion === 2 ? step.add_node_ids : step.show_nodes
+    const stepLinkIds =
+      schemaVersion === 2 ? step.add_link_ids : step.show_links
+    const focusNodeId =
+      schemaVersion === 2 ? step.focus_node_id : step.focus_node
+    const stepNodeField =
+      schemaVersion === 2 ? 'add_node_ids' : 'show_nodes'
+    const stepLinkField =
+      schemaVersion === 2 ? 'add_link_ids' : 'show_links'
+    const focusNodeField =
+      schemaVersion === 2 ? 'focus_node_id' : 'focus_node'
+
+    if (!Array.isArray(stepNodeIds)) {
+      collector.error('INVALID_STEP_NODES', `${stepNodeField} must be an array.`, {
         stepNo: expectedStepNo,
       })
     }
 
-    if (!Array.isArray(step.show_links)) {
-      collector.error('INVALID_SHOW_LINKS', 'show_links must be an array.', {
+    if (!Array.isArray(stepLinkIds)) {
+      collector.error('INVALID_STEP_LINKS', `${stepLinkField} must be an array.`, {
         stepNo: expectedStepNo,
       })
     }
 
-    const showNodes = Array.isArray(step.show_nodes) ? step.show_nodes : []
-    const showLinks = Array.isArray(step.show_links) ? step.show_links : []
+    const addedNodeIds = Array.isArray(stepNodeIds) ? stepNodeIds : []
+    const addedLinkIds = Array.isArray(stepLinkIds) ? stepLinkIds : []
 
-    if (!unique(showNodes)) {
-      collector.error('DUPLICATE_STEP_NODE', 'show_nodes contains duplicate IDs.', {
-        stepNo: expectedStepNo,
-      })
+    if (!unique(addedNodeIds)) {
+      collector.error(
+        'DUPLICATE_STEP_NODE',
+        `${stepNodeField} contains duplicate IDs.`,
+        { stepNo: expectedStepNo },
+      )
     }
 
-    if (!unique(showLinks)) {
-      collector.error('DUPLICATE_STEP_LINK', 'show_links contains duplicate IDs.', {
-        stepNo: expectedStepNo,
-      })
+    if (!unique(addedLinkIds)) {
+      collector.error(
+        'DUPLICATE_STEP_LINK',
+        `${stepLinkField} contains duplicate IDs.`,
+        { stepNo: expectedStepNo },
+      )
     }
 
-    for (const nodeId of showNodes) {
+    for (const nodeId of addedNodeIds) {
       if (!nodeById.has(nodeId)) {
         collector.error(
           'STEP_NODE_MISSING',
@@ -756,19 +823,16 @@ function validateGrowth(path, growth, collector) {
 
       const node = nodeById.get(nodeId)
 
-      if (
-        node?.kind === 'modifier' &&
-        !containsText(step.sentence_en, node.text)
-      ) {
+      if (!containsText(step.sentence_en, node?.text)) {
         collector.warning(
           'NEW_NODE_TEXT_NOT_FOUND',
-          `New modifier node "${node.text}" was not found verbatim in step ${expectedStepNo}.`,
+          `New node "${node?.text}" was not found verbatim in step ${expectedStepNo}.`,
           { stepNo: expectedStepNo, nodeId },
         )
       }
     }
 
-    for (const linkId of showLinks) {
+    for (const linkId of addedLinkIds) {
       const link = linkById.get(linkId)
 
       if (!link) {
@@ -800,17 +864,17 @@ function validateGrowth(path, growth, collector) {
       }
     }
 
-    if (!isNonEmptyString(step.focus_node) || !nodeById.has(step.focus_node)) {
+    if (!isNonEmptyString(focusNodeId) || !nodeById.has(focusNodeId)) {
       collector.error(
         'INVALID_FOCUS_NODE',
-        `Step ${expectedStepNo} focus_node must reference an existing node.`,
-        { stepNo: expectedStepNo, nodeId: step.focus_node ?? null },
+        `Step ${expectedStepNo} ${focusNodeField} must reference an existing node.`,
+        { stepNo: expectedStepNo, nodeId: focusNodeId ?? null },
       )
-    } else if (!visibleNodeIds.has(step.focus_node)) {
+    } else if (!visibleNodeIds.has(focusNodeId)) {
       collector.error(
         'FOCUS_NODE_NOT_VISIBLE',
-        `Step ${expectedStepNo} focus_node "${step.focus_node}" is not visible yet.`,
-        { stepNo: expectedStepNo, nodeId: step.focus_node },
+        `Step ${expectedStepNo} ${focusNodeField} "${focusNodeId}" is not visible yet.`,
+        { stepNo: expectedStepNo, nodeId: focusNodeId },
       )
     }
 
@@ -823,12 +887,18 @@ function validateGrowth(path, growth, collector) {
 
       const requiredCoreNodeIds =
         schemaVersion === 2
-          ? [rootActionId].filter(isNonEmptyString)
+          ? nodes
+              .filter(
+                (node) =>
+                  (node?.kind === 'action' || node?.kind === 'core') &&
+                  containsText(step.sentence_en, node.text),
+              )
+              .map((node) => node.id)
           : nodes
               .filter((node) => node?.kind === 'action' || node?.kind === 'core')
               .map((node) => node.id)
       const missingCoreNodeIds = requiredCoreNodeIds.filter(
-        (nodeId) => !showNodes.includes(nodeId),
+        (nodeId) => !addedNodeIds.includes(nodeId),
       )
 
       if (missingCoreNodeIds.length > 0) {
@@ -841,12 +911,19 @@ function validateGrowth(path, growth, collector) {
 
       const requiredCoreLinkIds =
         schemaVersion === 2
-          ? []
+          ? links
+              .filter(
+                (link) =>
+                  link?.kind === 'core' &&
+                  requiredCoreNodeIds.includes(link.from) &&
+                  requiredCoreNodeIds.includes(link.to),
+              )
+              .map((link) => link.id)
           : links
               .filter((link) => link?.kind === 'core')
               .map((link) => link.id)
       const missingCoreLinkIds = requiredCoreLinkIds.filter(
-        (linkId) => !showLinks.includes(linkId),
+        (linkId) => !addedLinkIds.includes(linkId),
       )
 
       if (missingCoreLinkIds.length > 0) {
@@ -857,7 +934,7 @@ function validateGrowth(path, growth, collector) {
         )
       }
     } else {
-      if (showNodes.length === 0 && showLinks.length === 0) {
+      if (addedNodeIds.length === 0 && addedLinkIds.length === 0) {
         collector.error(
           'STEP_ADDS_NOTHING',
           `Step ${expectedStepNo} does not add a node or link.`,

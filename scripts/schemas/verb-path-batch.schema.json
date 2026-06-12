@@ -78,7 +78,14 @@
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["id", "from", "to", "kind", "label"],
+              "required": [
+                "id",
+                "from",
+                "to",
+                "kind",
+                "relation_type",
+                "label_zh"
+              ],
               "properties": {
                 "id": {
                   "type": "string",
@@ -96,7 +103,32 @@
                   "type": "string",
                   "enum": ["core", "modifier"]
                 },
-                "label": {
+                "relation_type": {
+                  "type": "string",
+                  "enum": [
+                    "actor",
+                    "target",
+                    "recipient",
+                    "content",
+                    "nested_action",
+                    "shared_actor",
+                    "ownership",
+                    "category",
+                    "quality",
+                    "frequency",
+                    "time",
+                    "place",
+                    "condition",
+                    "purpose",
+                    "reason",
+                    "manner",
+                    "degree",
+                    "scope",
+                    "result",
+                    "sequence"
+                  ]
+                },
+                "label_zh": {
                   "type": "string",
                   "minLength": 1
                 }
@@ -115,9 +147,9 @@
                 "label",
                 "sentence_en",
                 "sentence_zh",
-                "show_nodes",
-                "show_links",
-                "focus_node",
+                "add_node_ids",
+                "add_link_ids",
+                "focus_node_id",
                 "note_zh"
               ],
               "properties": {
@@ -138,21 +170,21 @@
                   "type": "string",
                   "minLength": 1
                 },
-                "show_nodes": {
+                "add_node_ids": {
                   "type": "array",
                   "items": {
                     "type": "string",
                     "minLength": 1
                   }
                 },
-                "show_links": {
+                "add_link_ids": {
                   "type": "array",
                   "items": {
                     "type": "string",
                     "minLength": 1
                   }
                 },
-                "focus_node": {
+                "focus_node_id": {
                   "type": "string",
                   "minLength": 1
                 },
