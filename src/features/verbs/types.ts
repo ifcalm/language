@@ -11,16 +11,38 @@ export interface SentenceGrowthNode {
   id: string
   text: string
   kind: 'action' | 'core' | 'modifier'
-  group?: 'action' | 'core' | 'modifier'
   labelZh?: string
 }
+
+export type SentenceGrowthRelationType =
+  | 'actor'
+  | 'target'
+  | 'recipient'
+  | 'content'
+  | 'nested_action'
+  | 'shared_actor'
+  | 'ownership'
+  | 'category'
+  | 'quality'
+  | 'frequency'
+  | 'time'
+  | 'place'
+  | 'condition'
+  | 'purpose'
+  | 'reason'
+  | 'manner'
+  | 'degree'
+  | 'scope'
+  | 'result'
+  | 'sequence'
 
 export interface SentenceGrowthLink {
   id: string
   from: string
   to: string
   kind: 'core' | 'modifier'
-  label: string
+  relationType?: SentenceGrowthRelationType
+  labelZh?: string
 }
 
 export interface SentenceGrowthStep {
@@ -28,9 +50,9 @@ export interface SentenceGrowthStep {
   label: string
   sentenceEn: string
   sentenceZh: string
-  showNodes: string[]
-  showLinks: string[]
-  focusNode: string
+  addNodeIds: string[]
+  addLinkIds: string[]
+  focusNodeId: string
   noteZh: string
 }
 

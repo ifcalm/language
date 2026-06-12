@@ -46,8 +46,8 @@ function getVisibleIds(growth: SentenceGrowth, activeStepIndex: number) {
   const visibleLinkIds = new Set<string>()
 
   for (const step of growth.steps.slice(0, activeStepIndex + 1)) {
-    step.showNodes.forEach((nodeId) => visibleNodeIds.add(nodeId))
-    step.showLinks.forEach((linkId) => visibleLinkIds.add(linkId))
+    step.addNodeIds.forEach((nodeId) => visibleNodeIds.add(nodeId))
+    step.addLinkIds.forEach((linkId) => visibleLinkIds.add(linkId))
   }
 
   return { visibleNodeIds, visibleLinkIds }
@@ -63,9 +63,9 @@ function createDisplayGrowth(path: VerbPath) {
 
   const firstStep = growth.steps[0]
   const alreadyStartsWithAction =
-    firstStep?.showNodes.length === 1 &&
-    firstStep.showNodes[0] === actionNode.id &&
-    firstStep.showLinks.length === 0
+    firstStep?.addNodeIds.length === 1 &&
+    firstStep.addNodeIds[0] === actionNode.id &&
+    firstStep.addLinkIds.length === 0
 
   if (alreadyStartsWithAction) {
     return growth
@@ -79,9 +79,9 @@ function createDisplayGrowth(path: VerbPath) {
         label: '动词',
         sentenceEn: actionNode.text,
         sentenceZh: path.meaningZh,
-        showNodes: [actionNode.id],
-        showLinks: [],
-        focusNode: actionNode.id,
+        addNodeIds: [actionNode.id],
+        addLinkIds: [],
+        focusNodeId: actionNode.id,
         noteZh: '先只看动作。后面的词会围绕这个动词慢慢长出来。',
       },
       ...growth.steps.map((step, index) => ({
@@ -108,9 +108,9 @@ function isActionOnlyStep(growth: SentenceGrowth, step: SentenceGrowthStep) {
 
   return Boolean(
     actionNode &&
-      step.showNodes.length === 1 &&
-      step.showNodes[0] === actionNode.id &&
-      step.showLinks.length === 0,
+      step.addNodeIds.length === 1 &&
+      step.addNodeIds[0] === actionNode.id &&
+      step.addLinkIds.length === 0,
   )
 }
 
@@ -131,7 +131,7 @@ function buildSentenceGrowthLines(
       stepNo: step.stepNo,
       label: step.label,
       sentenceEn: step.sentenceEn,
-      highlightTexts: step.showNodes
+      highlightTexts: step.addNodeIds
         .map((nodeId) => nodeById.get(nodeId)?.text)
         .filter((text): text is string => Boolean(text?.trim())),
     }))
@@ -827,7 +827,7 @@ function SentenceTree({
           >
             <NodePill
               node={node}
-              isFocused={node.id === activeStep?.focusNode}
+              isFocused={node.id === activeStep?.focusNodeId}
               isRootAction={node.id === rootActionNode?.id}
             />
           </div>

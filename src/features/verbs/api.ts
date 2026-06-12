@@ -15,6 +15,12 @@ interface RawSentenceGrowthStep {
   sentenceEn?: unknown
   sentence_zh?: unknown
   sentenceZh?: unknown
+  add_node_ids?: unknown
+  addNodeIds?: unknown
+  add_link_ids?: unknown
+  addLinkIds?: unknown
+  focus_node_id?: unknown
+  focusNodeId?: unknown
   show_nodes?: unknown
   showNodes?: unknown
   show_links?: unknown
@@ -53,7 +59,6 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
 
       const nodeRecord = node as Record<string, unknown>
       const kind = nodeRecord.kind
-      const group = nodeRecord.group
 
       if (kind !== 'action' && kind !== 'core' && kind !== 'modifier') {
         return null
@@ -65,10 +70,6 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
         kind,
         labelZh:
           readString(nodeRecord.label_zh) || readString(nodeRecord.labelZh),
-        group:
-          group === 'action' || group === 'core' || group === 'modifier'
-            ? group
-            : undefined,
       }
     })
     .filter((node): node is SentenceGrowthNode => Boolean(node?.id && node.text))
@@ -85,6 +86,31 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
       const kind = linkRecord.kind
       const from = readString(linkRecord.from)
       const to = readString(linkRecord.to)
+      const relationType = readString(
+        linkRecord.relation_type ?? linkRecord.relationType,
+      )
+      const allowedRelationTypes = new Set([
+        'actor',
+        'target',
+        'recipient',
+        'content',
+        'nested_action',
+        'shared_actor',
+        'ownership',
+        'category',
+        'quality',
+        'frequency',
+        'time',
+        'place',
+        'condition',
+        'purpose',
+        'reason',
+        'manner',
+        'degree',
+        'scope',
+        'result',
+        'sequence',
+      ])
 
       if (
         (kind !== 'core' && kind !== 'modifier') ||
@@ -99,7 +125,13 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
         from,
         to,
         kind,
-        label: readString(linkRecord.label),
+        relationType: allowedRelationTypes.has(relationType)
+          ? (relationType as SentenceGrowthLink['relationType'])
+          : undefined,
+        labelZh:
+          readString(linkRecord.label_zh) ||
+          readString(linkRecord.labelZh) ||
+          readString(linkRecord.label),
       }
     })
     .filter((link): link is SentenceGrowthLink => Boolean(link))
@@ -113,11 +145,25 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
       }
 
       const stepRecord = step as RawSentenceGrowthStep
-      const showNodes = readStringArray(stepRecord.show_nodes ?? stepRecord.showNodes)
+      const addNodeIds = readStringArray(
+        stepRecord.add_node_ids ??
+          stepRecord.addNodeIds ??
+          stepRecord.show_nodes ??
+          stepRecord.showNodes,
+      )
         .filter((nodeId) => nodeIds.has(nodeId))
-      const showLinks = readStringArray(stepRecord.show_links ?? stepRecord.showLinks)
+      const addLinkIds = readStringArray(
+        stepRecord.add_link_ids ??
+          stepRecord.addLinkIds ??
+          stepRecord.show_links ??
+          stepRecord.showLinks,
+      )
         .filter((linkId) => linkIds.has(linkId))
-      const focusNode = readString(stepRecord.focus_node) || readString(stepRecord.focusNode)
+      const focusNodeId =
+        readString(stepRecord.focus_node_id) ||
+        readString(stepRecord.focusNodeId) ||
+        readString(stepRecord.focus_node) ||
+        readString(stepRecord.focusNode)
 
       return {
         stepNo:
@@ -131,9 +177,9 @@ function normalizeGrowth(value: unknown): SentenceGrowth | null {
           readString(stepRecord.sentence_en) || readString(stepRecord.sentenceEn),
         sentenceZh:
           readString(stepRecord.sentence_zh) || readString(stepRecord.sentenceZh),
-        showNodes,
-        showLinks,
-        focusNode: nodeIds.has(focusNode) ? focusNode : '',
+        addNodeIds,
+        addLinkIds,
+        focusNodeId: nodeIds.has(focusNodeId) ? focusNodeId : '',
         noteZh: readString(stepRecord.note_zh) || readString(stepRecord.noteZh),
       }
     })

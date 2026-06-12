@@ -33,7 +33,10 @@ const PROVIDER = readArgument('--provider') || 'codex'
 const MODEL =
   readArgument('--model') || (PROVIDER === 'claude' ? 'opus' : 'gpt-5.5')
 const REASONING_EFFORT = readArgument('--reasoning') || 'high'
-const APPLY_REMOTE = !process.argv.includes('--local-only')
+const FIXTURE_FILE = readArgument('--fixture')
+const APPLY_REMOTE = FIXTURE_FILE
+  ? process.argv.includes('--remote')
+  : !process.argv.includes('--local-only')
 const KEEP_GOING = !process.argv.includes('--stop-on-error')
 const DRY_RUN = process.argv.includes('--dry-run')
 const REFRESH_V2 = process.argv.includes('--refresh-v2')
@@ -53,6 +56,28 @@ const BANNED_TERMS = [
   'SVO',
   'SVOC',
 ]
+const RELATION_TYPES = new Set([
+  'actor',
+  'target',
+  'recipient',
+  'content',
+  'nested_action',
+  'shared_actor',
+  'ownership',
+  'category',
+  'quality',
+  'frequency',
+  'time',
+  'place',
+  'condition',
+  'purpose',
+  'reason',
+  'manner',
+  'degree',
+  'scope',
+  'result',
+  'sequence',
+])
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 mkdirSync(LOG_DIR, { recursive: true })
@@ -233,7 +258,7 @@ async function runCommand(command, args, options = {}) {
   throw lastError
 }
 
-async function queryRemote(sql) {
+async function queryDatabase(sql, remote) {
   const result = await runCommand(
     NODE,
     [
@@ -241,15 +266,19 @@ async function queryRemote(sql) {
       'd1',
       'execute',
       DATABASE,
-      '--remote',
+      remote ? '--remote' : '--local',
       '--json',
       '--command',
       sql,
     ],
-    { attempts: 5, timeout: 5 * 60 * 1000 },
+    { attempts: remote ? 5 : 2, timeout: 5 * 60 * 1000 },
   )
 
   return parseWranglerJson(result.stdout)[0]?.results ?? []
+}
+
+async function queryRemote(sql) {
+  return queryDatabase(sql, true)
 }
 
 async function loadMissingVerbs() {
@@ -267,7 +296,7 @@ ORDER BY v.id ASC;`)
   return rows.slice(0, LIMIT)
 }
 
-async function loadLegacyVerbPaths() {
+async function loadRefreshTargets() {
   const rows = await queryRemote(`SELECT
   v.id,
   v.verb,
@@ -275,9 +304,6 @@ async function loadLegacyVerbPaths() {
   v.meaning_zh,
   v.is_phrase,
   p.id AS path_id,
-  p.title AS path_title,
-  p.meaning_zh AS path_meaning_zh,
-  p.scene,
   p.growth_json
 FROM verbs v
 INNER JOIN verb_paths p ON p.verb_id = v.id
@@ -292,40 +318,11 @@ ORDER BY v.id ASC, p.id ASC;`)
       }
     })
     .slice(0, LIMIT)
-    .map((row) => {
-      let existingSteps = []
-
-      try {
-        existingSteps = JSON.parse(row.growth_json)?.steps ?? []
-      } catch {
-        existingSteps = []
-      }
-
-      return {
-        id: row.id,
-        verb: row.verb,
-        normalized_verb: row.normalized_verb,
-        meaning_zh: row.meaning_zh,
-        is_phrase: row.is_phrase,
-        path_id: row.path_id,
-        existing_path: {
-          title: row.path_title,
-          meaning_zh: row.path_meaning_zh,
-          scene: row.scene,
-          steps: existingSteps.map((step) => ({
-            step_no: step.step_no,
-            label: step.label,
-            sentence_en: step.sentence_en,
-            sentence_zh: step.sentence_zh,
-            note_zh: step.note_zh,
-          })),
-        },
-      }
-    })
+    .map(({ growth_json: _growthJson, ...row }) => row)
 }
 
 async function loadGenerationTargets() {
-  return REFRESH_V2 ? loadLegacyVerbPaths() : loadMissingVerbs()
+  return REFRESH_V2 ? loadRefreshTargets() : loadMissingVerbs()
 }
 
 function getNextMigrationNumber() {
@@ -366,8 +363,12 @@ Hard requirements:
    daily life when that produces a more authentic sentence.
 5. Write original sentences. Do not quote dictionaries, books, or websites.
 6. Each path has 2-10 steps. Step 1 is labeled 主干. Each later step adds one
-   meaningful unit and keeps all earlier meaning.
-7. Do not force every path into the same labels or number of steps.
+   meaningful unit and keeps all earlier meaning. Decide the number and order of
+   steps from this sentence; never begin from a standard growth sequence.
+7. Do not reuse sentence frames, scenes, node boundaries, tree shapes, labels,
+   step sequences, translations, or teaching notes across items merely by replacing
+   verbs and nouns. Every content field must be freshly reasoned from this verb and
+   this sentence. Only the JSON protocol itself is fixed.
 8. Learner-facing Chinese may use 动词、主干、修饰、时间、条件、场景、方式、程度、
    原因、目的、结果、范围、对象细节. Never use 及物动词、不及物动词、主语、
    宾语、补语、定语、状语、SVO, or SVOC.
@@ -377,9 +378,10 @@ Hard requirements:
     as an action node. Set root_action_id to the main action that organizes the sentence.
     Never compress an embedded action, reported event, purpose action, condition action,
     or time event into a generic modifier merely to keep the tree small.
-11. Give every node a short, sentence-specific label_zh such as 动作核心、嵌套动作、
-    谁执行、做什么、发给谁、频率、所属、位置 / 环境、时间事件. Do not reuse one
-    mechanical label set when the sentence requires a more precise description.
+11. Give every node a short label_zh that explains its precise role in this exact
+    sentence. Do not map kind or relation_type to generic Chinese labels. A label must
+    answer a sentence-specific question such as who requested access, which result is
+    cached, or when the configuration changed. Generate every label independently.
 12. Core nodes are the essential participants or content directly brought out by an
     action. Core links go from an action node to its direct core node. A nested action
     may be the target of a core link when it is the content brought out by another action.
@@ -389,10 +391,13 @@ Hard requirements:
     link when that event explains the time, reason, condition, or result of another action.
     Attach noun details to their noun node, not automatically to the root action.
 14. Link IDs must be exactly "from->to". Node IDs are unique lowercase kebab-case.
+    Every link has relation_type and label_zh. relation_type is the internal structural
+    category; label_zh independently explains the exact relationship in natural Chinese.
+    Never translate relation_type mechanically to obtain label_zh.
 15. Step 1 introduces the root action and the nodes/links required by the first core
     sentence. Later steps may introduce additional core nodes, nested action nodes,
-    modifiers, and their links. show_nodes/show_links contain only newly introduced IDs.
-    focus_node is visible and normally one of the newly introduced nodes.
+    modifiers, and their links. add_node_ids/add_link_ids contain only newly introduced
+    IDs. focus_node_id is visible and normally one of the newly introduced nodes.
 16. Sentences end with punctuation. Keep previously introduced text verbatim
     in later English sentences so the animation remains stable.
 17. title is a short English usage phrase. meaning_zh is the specific meaning used by
@@ -400,13 +405,15 @@ Hard requirements:
 18. Be especially careful with modal verbs, linking verbs, verbs normally used with a
     fixed preposition, and phrasal verbs. Never create a structure merely to satisfy a
     template.
-19. If an input includes existing_path, preserve its English and Chinese step sentences
-    unless they are inaccurate or ungrammatical. Re-analyze the sentence deeply and
-    rebuild the node/link structure under v2 instead of casually rewriting good content.
+19. Ignore every previous verb_paths sentence and growth tree. INPUT VERBS is the only
+    content source. Build the title, meaning, scene, sentences, translation, nodes,
+    links, labels, relation types, steps, ordering, focus, and notes from scratch.
 20. Before returning, silently list every action, every direct core relationship, every
     modifier target, every shared participant, and every event-to-event relationship.
     Then proofread grammar, collocation, translation, step continuity, and every arrow
-    direction. Accuracy is more important than speed or visual simplicity.
+    direction. Compare all items in this batch and rewrite any suspiciously repeated
+    sentence frame, tree structure, label set, or note pattern. Accuracy and independent
+    reasoning are more important than speed or visual simplicity.
 
 INPUT VERBS:
 ${JSON.stringify(verbs, null, 2)}
@@ -687,6 +694,14 @@ function validateGeneratedBatch(batch, verbs) {
       if (!nodeIds.has(link.from) || !nodeIds.has(link.to)) {
         errors.push(`${verb.id}: link "${link.id}" has a missing endpoint.`)
       }
+      if (!RELATION_TYPES.has(link.relation_type)) {
+        errors.push(
+          `${verb.id}: link "${link.id}" has invalid relation_type "${link.relation_type}".`,
+        )
+      }
+      if (!normalizeWhitespace(link.label_zh)) {
+        errors.push(`${verb.id}: link "${link.id}" needs label_zh.`)
+      }
       const fromNode = nodeById.get(link.from)
       const toNode = nodeById.get(link.to)
 
@@ -699,7 +714,6 @@ function validateGeneratedBatch(batch, verbs) {
           `${verb.id}: core link "${link.id}" must go from an action to a core/action node.`,
         )
       }
-
       if (
         link.kind === 'modifier' &&
         fromNode?.kind !== 'modifier' &&
@@ -707,6 +721,14 @@ function validateGeneratedBatch(batch, verbs) {
       ) {
         errors.push(
           `${verb.id}: modifier link "${link.id}" must start from a modifier or action event.`,
+        )
+      }
+      if (
+        link.relation_type === 'nested_action' &&
+        (fromNode?.kind !== 'action' || toNode?.kind !== 'action')
+      ) {
+        errors.push(
+          `${verb.id}: nested_action link "${link.id}" must connect two action nodes.`,
         )
       }
     })
@@ -758,15 +780,20 @@ function validateGeneratedBatch(batch, verbs) {
       if (!/[。！？]$/.test(normalizeWhitespace(step.sentence_zh))) {
         errors.push(`${verb.id}: Chinese step ${index + 1} lacks punctuation.`)
       }
-      for (const nodeId of step.show_nodes ?? []) {
+      for (const nodeId of step.add_node_ids ?? []) {
         if (!nodeIds.has(nodeId)) {
           errors.push(`${verb.id}: step ${index + 1} references node "${nodeId}".`)
         }
       }
-      for (const linkId of step.show_links ?? []) {
+      for (const linkId of step.add_link_ids ?? []) {
         if (!linkIds.has(linkId)) {
           errors.push(`${verb.id}: step ${index + 1} references link "${linkId}".`)
         }
+      }
+      if (!nodeIds.has(step.focus_node_id)) {
+        errors.push(
+          `${verb.id}: step ${index + 1} has invalid focus_node_id "${step.focus_node_id}".`,
+        )
       }
       const learnerText = `${step.label} ${step.note_zh}`
       for (const term of BANNED_TERMS) {
@@ -776,7 +803,7 @@ function validateGeneratedBatch(batch, verbs) {
       }
     })
 
-    if (!(steps[0]?.show_nodes ?? []).includes(item.root_action_id)) {
+    if (!(steps[0]?.add_node_ids ?? []).includes(item.root_action_id)) {
       errors.push(`${verb.id}: first step must introduce root_action_id.`)
     }
   }
@@ -787,7 +814,12 @@ function validateGeneratedBatch(batch, verbs) {
 function normalizeItem(item, verb) {
   const nodes = item.nodes.map((node) => ({
     ...node,
-    group: node.kind,
+    text: normalizeWhitespace(node.text),
+    label_zh: normalizeWhitespace(node.label_zh),
+  }))
+  const links = item.links.map((link) => ({
+    ...link,
+    label_zh: normalizeWhitespace(link.label_zh),
   }))
   const steps = item.steps.map((step) => ({
     ...step,
@@ -811,7 +843,7 @@ function normalizeItem(item, verb) {
       schema_version: 2,
       root_action_id: item.root_action_id,
       nodes,
-      links: item.links,
+      links,
       steps,
     },
   }
@@ -949,6 +981,110 @@ async function validateRemote() {
   return JSON.parse(result.stdout)
 }
 
+async function validatePaths(verbs, remote) {
+  const result = await runCommand(
+    NODE,
+    [
+      join(ROOT, 'scripts/check-verb-paths.mjs'),
+      remote ? '--remote' : '--local',
+      '--strict',
+      '--require-v2',
+      '--json',
+      '--verbs',
+      verbs.map((verb) => verb.id).join(','),
+    ],
+    {
+      attempts: remote ? 3 : 1,
+      timeout: remote ? 20 * 60 * 1000 : 10 * 60 * 1000,
+    },
+  )
+
+  return JSON.parse(result.stdout)
+}
+
+async function applyFixture() {
+  const fixturePath = resolve(ROOT, FIXTURE_FILE)
+
+  if (!existsSync(fixturePath)) {
+    throw new Error(`Fixture file not found: ${fixturePath}`)
+  }
+
+  let output
+
+  try {
+    output = JSON.parse(readFileSync(fixturePath, 'utf8'))
+  } catch (error) {
+    throw new Error(`Fixture is not valid JSON: ${error.message}`)
+  }
+
+  const fixtureItems = Array.isArray(output?.items) ? output.items : []
+  const fixtureVerbIds = fixtureItems
+    .map((item) => normalizeWhitespace(item?.verb_id))
+    .filter(Boolean)
+
+  if (fixtureVerbIds.length === 0) {
+    throw new Error('Fixture must contain at least one item.')
+  }
+
+  if (new Set(fixtureVerbIds).size !== fixtureVerbIds.length) {
+    throw new Error('Fixture contains duplicate verb_id values.')
+  }
+
+  const verbs = await queryDatabase(
+    `SELECT
+  v.id,
+  v.verb,
+  v.normalized_verb,
+  v.meaning_zh,
+  v.is_phrase,
+  p.id AS path_id
+FROM verbs v
+LEFT JOIN verb_paths p ON p.verb_id = v.id
+WHERE v.id IN (${fixtureVerbIds.map(sqlString).join(', ')})
+ORDER BY v.id ASC;`,
+    APPLY_REMOTE,
+  )
+  const loadedVerbIds = new Set(verbs.map((verb) => verb.id))
+  const missingVerbIds = fixtureVerbIds.filter(
+    (verbId) => !loadedVerbIds.has(verbId),
+  )
+
+  if (missingVerbIds.length > 0) {
+    throw new Error(
+      `Fixture verb IDs do not exist in ${APPLY_REMOTE ? 'remote' : 'local'} D1: ` +
+        `${missingVerbIds.join(', ')}`,
+    )
+  }
+
+  const basicErrors = validateGeneratedBatch(output, verbs)
+
+  if (basicErrors.length > 0) {
+    throw new Error(
+      `Fixture structural validation failed:\n- ${basicErrors.join('\n- ')}`,
+    )
+  }
+
+  const itemByVerbId = new Map(
+    fixtureItems.map((item) => [item.verb_id, item]),
+  )
+  const paths = verbs.map((verb) =>
+    normalizeItem(itemByVerbId.get(verb.id), verb),
+  )
+  const fixtureName = slug(basename(fixturePath).replace(/\.json$/i, ''))
+  const sqlFile = join(WORK_DIR, `${fixtureName || 'verb-path-fixture'}.sql`)
+
+  writeFileSync(sqlFile, buildMigration(paths, `fixture-${fixtureName}`))
+  await applySql(sqlFile, APPLY_REMOTE)
+
+  const summary = await validatePaths(verbs, APPLY_REMOTE)
+
+  console.log(
+    `Fixture applied to ${APPLY_REMOTE ? 'remote' : 'local'} D1: ` +
+      `${summary.checkedPaths} paths, ${summary.errorCount} errors, ` +
+      `${summary.warningCount} warnings.`,
+  )
+}
+
 async function generateValidatedBatch(verbs, batchName, migrationFile) {
   let previousOutput = null
   let feedback = null
@@ -1045,6 +1181,11 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
 }
 
 async function main() {
+  if (FIXTURE_FILE) {
+    await applyFixture()
+    return
+  }
+
   if (PROVIDER !== 'codex' && PROVIDER !== 'claude') {
     throw new Error('--provider must be codex or claude.')
   }
