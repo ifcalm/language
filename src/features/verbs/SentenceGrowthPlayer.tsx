@@ -31,7 +31,7 @@ interface SentenceGrowthLine {
 
 const TREE_WIDTH = 1000
 const TREE_MIN_HEIGHT = 560
-const TREE_LEVEL_GAP = 170
+const TREE_LEVEL_GAP = 190
 const TREE_TOP_PADDING = 92
 
 function getRootActionNode(growth: SentenceGrowth) {
@@ -90,10 +90,6 @@ function createDisplayGrowth(path: VerbPath) {
       })),
     ],
   }
-}
-
-function clamp(value: number, min: number, max: number) {
-  return Math.min(Math.max(value, min), max)
 }
 
 function hashText(text: string) {
@@ -252,7 +248,6 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
       layoutLinks: [],
       positions: new Map<string, TreePoint>(),
       treeHeight: TREE_MIN_HEIGHT,
-      coreFrame: null,
     }
   }
 
@@ -277,7 +272,6 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
       layoutLinks: [],
       positions: new Map<string, TreePoint>(),
       treeHeight: TREE_MIN_HEIGHT,
-      coreFrame: null,
     }
   }
 
@@ -340,231 +334,170 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
     depthById.set(node.id, 1)
   })
 
-  const coreNodes = visibleNodes.filter((node) => node.kind !== 'modifier')
-  const coreChildrenByParent = new Map<string, string[]>()
+  const childrenByParent = new Map<string, string[]>()
+  const primaryLinkByChildId = new Map<string, SentenceGrowthLink>()
+
+  visibleLinks.forEach((link) => {
+    const { parentId, childId } = getVisualEndpoints(link)
+
+    if (
+      parentById.get(childId) === parentId &&
+      !primaryLinkByChildId.has(childId)
+    ) {
+      primaryLinkByChildId.set(childId, link)
+    }
+  })
 
   parentById.forEach((parentId, childId) => {
-    const childNode = visibleNodeById.get(childId)
+    const children = childrenByParent.get(parentId) ?? []
 
-    if (!childNode || childNode.kind === 'modifier') {
+    children.push(childId)
+    childrenByParent.set(parentId, children)
+  })
+
+  function arrangeChildren(childIds: string[]) {
+    const modifierBranches: string[] = []
+    const actions: string[] = []
+    const cores: string[] = []
+
+    childIds.forEach((childId) => {
+      const kind = visibleNodeById.get(childId)?.kind
+      const primaryLink = primaryLinkByChildId.get(childId)
+
+      if (primaryLink?.kind === 'modifier') {
+        modifierBranches.push(childId)
+      } else if (kind === 'action') {
+        actions.push(childId)
+      } else {
+        cores.push(childId)
+      }
+    })
+
+    const modifierSplit = Math.floor(modifierBranches.length / 2)
+    const coreSplit = Math.ceil(cores.length / 2)
+
+    return [
+      ...modifierBranches.slice(0, modifierSplit),
+      ...cores.slice(0, coreSplit),
+      ...actions,
+      ...cores.slice(coreSplit),
+      ...modifierBranches.slice(modifierSplit),
+    ]
+  }
+
+  childrenByParent.forEach((children, parentId) => {
+    childrenByParent.set(parentId, arrangeChildren(children))
+  })
+
+  const subtreeWeightById = new Map<string, number>()
+
+  function getNodeWidthWeight(nodeId: string) {
+    const node = visibleNodeById.get(nodeId)
+    const textLength = node?.text.trim().length ?? 0
+    const labelLength = (node?.labelZh?.trim().length ?? 0) * 1.15
+    const contentLength = Math.max(textLength, labelLength)
+
+    return Math.min(1.8, Math.max(1, contentLength / 16))
+  }
+
+  function getSubtreeWeight(
+    nodeId: string,
+    visiting = new Set<string>(),
+  ): number {
+    const cachedWeight = subtreeWeightById.get(nodeId)
+
+    if (cachedWeight !== undefined) {
+      return cachedWeight
+    }
+
+    if (visiting.has(nodeId)) {
+      return 1
+    }
+
+    const nextVisiting = new Set(visiting)
+    nextVisiting.add(nodeId)
+    const children = childrenByParent.get(nodeId) ?? []
+    const weight =
+      children.length === 0
+        ? getNodeWidthWeight(nodeId)
+        : Math.max(
+            getNodeWidthWeight(nodeId),
+            children.reduce(
+            (total, childId) =>
+              total + getSubtreeWeight(childId, nextVisiting),
+            0,
+            ),
+          )
+
+    subtreeWeightById.set(nodeId, Math.max(weight, 1))
+    return Math.max(weight, 1)
+  }
+
+  getSubtreeWeight(rootId)
+
+  const positions = new Map<string, TreePoint>()
+  let deepestY = TREE_TOP_PADDING
+
+  function layoutSubtree(
+    nodeId: string,
+    left: number,
+    right: number,
+    depth: number,
+    inheritedYOffset = 0,
+  ) {
+    const x = (left + right) / 2
+    const y = TREE_TOP_PADDING + depth * TREE_LEVEL_GAP + inheritedYOffset
+
+    positions.set(nodeId, { x, y })
+    deepestY = Math.max(deepestY, y)
+
+    const children = childrenByParent.get(nodeId) ?? []
+
+    if (children.length === 0) {
       return
     }
 
-    const children = coreChildrenByParent.get(parentId) ?? []
-
-    children.push(childId)
-    coreChildrenByParent.set(parentId, children)
-  })
-
-  coreChildrenByParent.forEach((children) => {
-    children.sort((leftId, rightId) => {
-      const leftNode = visibleNodeById.get(leftId)
-      const rightNode = visibleNodeById.get(rightId)
-      const kindOrder = { action: 0, core: 1, modifier: 2 }
-
-      return (
-        kindOrder[leftNode?.kind ?? 'core'] -
-          kindOrder[rightNode?.kind ?? 'core'] ||
-        leftId.localeCompare(rightId)
-      )
-    })
-  })
-
-  const rawCoreXById = new Map<string, number>()
-  let leafCursor = 0
-
-  function assignCoreRawX(
-    nodeId: string,
-    visiting = new Set<string>(),
-  ): number {
-    if (rawCoreXById.has(nodeId)) {
-      return rawCoreXById.get(nodeId) ?? 0
-    }
-
-    if (visiting.has(nodeId)) {
-      const fallback = leafCursor
-      leafCursor += 1
-      rawCoreXById.set(nodeId, fallback)
-      return fallback
-    }
-
-    const nextVisiting = new Set(visiting)
-    nextVisiting.add(nodeId)
-    const children = coreChildrenByParent.get(nodeId) ?? []
-
-    if (children.length === 0) {
-      const leafX = leafCursor
-      leafCursor += 1
-      rawCoreXById.set(nodeId, leafX)
-      return leafX
-    }
-
-    const childPositions = children.map((childId) =>
-      assignCoreRawX(childId, nextVisiting),
+    const totalWeight = children.reduce(
+      (total, childId) => total + getSubtreeWeight(childId),
+      0,
     )
-    const nodeX =
-      childPositions.reduce((total, childX) => total + childX, 0) /
-      childPositions.length
+    let cursor = left
+    const modifierChildren = children.filter(
+      (childId) => primaryLinkByChildId.get(childId)?.kind === 'modifier',
+    )
+    const leftModifierCount = Math.floor(modifierChildren.length / 2)
 
-    rawCoreXById.set(nodeId, nodeX)
-    return nodeX
+    children.forEach((childId) => {
+      const childWeight = getSubtreeWeight(childId)
+      const width = ((right - left) * childWeight) / totalWeight
+      const modifierIndex = modifierChildren.indexOf(childId)
+      let branchYOffset = 0
+
+      if (children.length > 3 && modifierIndex >= 0) {
+        const laneIndex =
+          modifierIndex < leftModifierCount
+            ? leftModifierCount - modifierIndex - 1
+            : modifierIndex - leftModifierCount
+
+        branchYOffset = laneIndex * 74
+      }
+
+      layoutSubtree(
+        childId,
+        cursor,
+        cursor + width,
+        depth + 1,
+        inheritedYOffset + branchYOffset,
+      )
+      cursor += width
+    })
   }
 
-  assignCoreRawX(rootId)
+  layoutSubtree(rootId, 70, TREE_WIDTH - 70, 0)
 
-  coreNodes.forEach((node) => {
-    if (!rawCoreXById.has(node.id)) {
-      assignCoreRawX(node.id)
-    }
-  })
-
-  const rawCoreXValues = [...rawCoreXById.values()]
-  const minRawCoreX = Math.min(...rawCoreXValues)
-  const maxRawCoreX = Math.max(...rawCoreXValues)
-  const rawCoreSpan = Math.max(maxRawCoreX - minRawCoreX, 1)
-  const distinctCoreLeafCount = new Set(rawCoreXValues).size
-  const coreLeft = distinctCoreLeafCount > 2 ? 140 : 220
-  const coreRight = distinctCoreLeafCount > 2 ? 860 : 780
-  const positions = new Map<string, TreePoint>()
-
-  coreNodes.forEach((node) => {
-    const rawX = rawCoreXById.get(node.id) ?? 0
-    const depth = depthById.get(node.id) ?? 0
-    const x =
-      minRawCoreX === maxRawCoreX
-        ? TREE_WIDTH / 2
-        : coreLeft +
-          ((rawX - minRawCoreX) / rawCoreSpan) * (coreRight - coreLeft)
-
-    positions.set(node.id, {
-      x,
-      y: TREE_TOP_PADDING + depth * TREE_LEVEL_GAP,
-    })
-  })
-
-  const maxCoreDepth = Math.max(
-    ...coreNodes.map((node) => depthById.get(node.id) ?? 0),
-    0,
-  )
-  const resolvedModifierDepths = new Map<string, number>()
-
-  function resolveModifierDepth(
-    nodeId: string,
-    visiting = new Set<string>(),
-  ): number {
-    const cachedDepth = resolvedModifierDepths.get(nodeId)
-
-    if (cachedDepth !== undefined) {
-      return cachedDepth
-    }
-
-    if (visiting.has(nodeId)) {
-      return maxCoreDepth + 1
-    }
-
-    const nextVisiting = new Set(visiting)
-    nextVisiting.add(nodeId)
-    const parentId = parentById.get(nodeId)
-    const parentNode = parentId ? visibleNodeById.get(parentId) : undefined
-    const parentDepth =
-      parentId && parentNode?.kind === 'modifier'
-        ? resolveModifierDepth(parentId, nextVisiting)
-        : parentId
-          ? depthById.get(parentId) ?? maxCoreDepth
-          : maxCoreDepth
-    const depth = Math.max(maxCoreDepth + 1, parentDepth + 1)
-
-    resolvedModifierDepths.set(nodeId, depth)
-    depthById.set(nodeId, depth)
-    return depth
-  }
-
-  const modifierNodes = visibleNodes.filter(
-    (node) => node.kind === 'modifier',
-  )
-
-  modifierNodes.forEach((node) => resolveModifierDepth(node.id))
-
-  const modifiersByDepth = new Map<number, SentenceGrowthNode[]>()
-
-  modifierNodes.forEach((node) => {
-    const depth = depthById.get(node.id) ?? maxCoreDepth + 1
-    const nodesAtDepth = modifiersByDepth.get(depth) ?? []
-
-    nodesAtDepth.push(node)
-    modifiersByDepth.set(depth, nodesAtDepth)
-  })
-
-  ;[...modifiersByDepth.entries()]
-    .sort(([leftDepth], [rightDepth]) => leftDepth - rightDepth)
-    .forEach(([depth, nodesAtDepth]) => {
-      const siblingsByParent = new Map<string, SentenceGrowthNode[]>()
-
-      nodesAtDepth.forEach((node) => {
-        const parentId = parentById.get(node.id) ?? rootId
-        const siblings = siblingsByParent.get(parentId) ?? []
-
-        siblings.push(node)
-        siblingsByParent.set(parentId, siblings)
-      })
-
-      siblingsByParent.forEach((siblings) => {
-        siblings.sort((left, right) => left.id.localeCompare(right.id))
-      })
-
-      const desiredPositions = nodesAtDepth
-        .map((node) => {
-          const parentId = parentById.get(node.id) ?? rootId
-          const parentX = positions.get(parentId)?.x ?? TREE_WIDTH / 2
-          const siblings = siblingsByParent.get(parentId) ?? [node]
-          const siblingIndex = siblings.findIndex(
-            (sibling) => sibling.id === node.id,
-          )
-          const siblingOffset =
-            (siblingIndex - (siblings.length - 1) / 2) * 220
-
-          return {
-            node,
-            desiredX: clamp(parentX + siblingOffset, 100, 900),
-          }
-        })
-        .sort(
-          (left, right) =>
-            left.desiredX - right.desiredX ||
-            left.node.id.localeCompare(right.node.id),
-        )
-      const resolvedPositions: Array<{
-        node: SentenceGrowthNode
-        desiredX: number
-        x: number
-      }> = []
-
-      desiredPositions.forEach((entry) => {
-        const previousX = resolvedPositions.at(-1)?.x
-
-        resolvedPositions.push({
-          ...entry,
-          x:
-            previousX === undefined
-              ? entry.desiredX
-              : Math.max(entry.desiredX, previousX + 180),
-        })
-      })
-      const overflow =
-        (resolvedPositions.at(-1)?.x ?? TREE_WIDTH / 2) - 900
-
-      resolvedPositions.forEach((entry) => {
-        positions.set(entry.node.id, {
-          x: clamp(entry.x - Math.max(overflow, 0), 100, 900),
-          y: TREE_TOP_PADDING + depth * TREE_LEVEL_GAP,
-        })
-      })
-    })
-
-  const maxDepth = Math.max(...depthById.values(), 0)
   const treeHeight = Math.max(
     TREE_MIN_HEIGHT,
-    TREE_TOP_PADDING + maxDepth * TREE_LEVEL_GAP + 150,
+    deepestY + 150,
   )
 
   const layoutNodes = visibleNodes.map((node) => {
@@ -578,40 +511,6 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
   const layoutLinks = visibleLinks.filter(
     (link) => positions.has(link.from) && positions.has(link.to),
   )
-  const corePoints = layoutNodes.filter(
-    ({ node }) => node.kind === 'action' || node.kind === 'core',
-  )
-  const coreFrame =
-    corePoints.length > 1
-      ? {
-          x: clamp(
-            Math.min(...corePoints.map((point) => point.x)) - 110,
-            36,
-            TREE_WIDTH - 260,
-          ),
-          y: Math.max(
-            28,
-            Math.min(...corePoints.map((point) => point.y)) - 70,
-          ),
-          width: 0,
-          height: 0,
-        }
-      : null
-
-  if (coreFrame) {
-    const right = clamp(
-      Math.max(...corePoints.map((point) => point.x)) + 110,
-      260,
-      TREE_WIDTH - 36,
-    )
-    const bottom = Math.min(
-      treeHeight - 24,
-      Math.max(...corePoints.map((point) => point.y)) + 80,
-    )
-
-    coreFrame.width = right - coreFrame.x
-    coreFrame.height = bottom - coreFrame.y
-  }
 
   return {
     activeStep,
@@ -619,7 +518,6 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
     layoutLinks,
     positions,
     treeHeight,
-    coreFrame,
   }
 }
 
@@ -733,7 +631,6 @@ function SentenceTree({
     layoutLinks,
     positions,
     treeHeight,
-    coreFrame,
   } =
     buildTreeLayout(growth, activeStepIndex)
   const rootActionNode = getRootActionNode(growth)
@@ -777,19 +674,6 @@ function SentenceTree({
               <path d="M 0 0 L 10 5 L 0 10 z" fill="#15803d" />
             </marker>
           </defs>
-
-          {coreFrame && (
-            <g className="sentence-tree-core-frame" aria-hidden="true">
-              <rect
-                x={coreFrame.x}
-                y={coreFrame.y}
-                width={coreFrame.width}
-                height={coreFrame.height}
-                rx="34"
-              />
-              <text x={coreFrame.x + 28} y={coreFrame.y + 40}>主干</text>
-            </g>
-          )}
 
           {layoutLinks.map((link) => {
             const from = positions.get(link.from)

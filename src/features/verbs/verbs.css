@@ -1418,22 +1418,6 @@
 }
 
 
-.sentence-tree-core-frame rect {
-  fill: transparent;
-  stroke: #d7d7d7;
-  stroke-width: 2.2px;
-  stroke-dasharray: 16 12;
-  vector-effect: non-scaling-stroke;
-}
-
-.sentence-tree-core-frame text {
-  fill: #8a8a8a;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 24px;
-  font-weight: 760;
-  letter-spacing: 0.08em;
-}
-
 .sentence-tree-link-shadow,
 .sentence-tree-link {
   fill: none;
@@ -1475,12 +1459,12 @@
 }
 
 .sentence-tree-node-label {
-  max-width: 180px;
+  max-width: 150px;
   color: #6b7280;
   font-size: 0.72rem;
   font-weight: 760;
   letter-spacing: 0.025em;
-  line-height: 1.25;
+  line-height: 1.35;
   text-align: center;
 }
 
