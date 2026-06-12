@@ -138,7 +138,7 @@ erDiagram
 | `id` | 节点唯一 ID。 |
 | `text` | 页面展示文本。 |
 | `kind` | 节点类型：`action` 核心动作，`core` 主干词块，`modifier` 修饰词块。 |
-| `label_zh` | 当前句子语境下的简短角色说明，如“动作核心”“嵌套动作”“谁执行”“位置 / 环境”。 |
+| `label_zh` | 根据当前句子的真实语境独立生成的角色说明，回答这个词块在本句中具体做什么；禁止由 `kind` 套用通用标签。 |
 
 `growth_json.links`：
 
@@ -148,7 +148,8 @@ erDiagram
 | `from` | 起点节点 ID。 |
 | `to` | 终点节点 ID。 |
 | `kind` | 连线类型：`core` 主干连接，`modifier` 修饰连接。 |
-| `label` | 中文关系说明，如“说明部署到哪里”。 |
+| `relation_type` | 程序内部关系分类，如 `actor`、`target`、`nested_action`、`time`、`purpose`，用于校验和布局，不直接展示给学习者。 |
+| `label_zh` | 根据当前句子的实际关系独立生成的中文说明；禁止直接翻译 `relation_type` 或套用通用文案。 |
 
 `growth_json.steps`：
 
@@ -158,10 +159,15 @@ erDiagram
 | `label` | 页面展示标签，如“主干”“加一点时间”“加一点目的”，可按词条场景变化。 |
 | `sentence_en` | 当前步骤展示的英文句子。 |
 | `sentence_zh` | 当前步骤中文解释。 |
-| `show_nodes` | 这一步新增展示的节点 ID。 |
-| `show_links` | 这一步新增展示的连线 ID。 |
-| `focus_node` | 这一步重点观察的节点 ID。 |
+| `add_node_ids` | 这一步新加入的节点 ID。 |
+| `add_link_ids` | 这一步新加入的连线 ID。 |
+| `focus_node_id` | 这一步重点观察的节点 ID。 |
 | `note_zh` | 给学习者看的简短说明。 |
+
+`growth_json V2` 只固定结构协议，不固定内容模板。除字段名称、枚举范围、ID 格式、
+连线方向和步骤编号外，路径标题、场景、句子、翻译、节点拆分、节点类型、节点标签、
+关系类型、关系标签、步骤数量、步骤顺序和学习提示，都必须根据当前句子的实际语境重新
+分析并生成。不得复用历史 V1 节点关系，也不得通过替换少量动词或名词批量套用模板。
 
 ## `vocab_pronunciations`
 
