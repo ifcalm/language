@@ -40,10 +40,20 @@ const APPLY_REMOTE = FIXTURE_FILE
 const KEEP_GOING = !process.argv.includes('--stop-on-error')
 const DRY_RUN = process.argv.includes('--dry-run')
 const REFRESH_V2 = process.argv.includes('--refresh-v2')
+const FRESH_GENERATION = process.argv.includes('--fresh')
+const SKIP_FINAL_VALIDATION = process.argv.includes('--skip-final-validation')
+const IS_LIMITED_RUN = Number.isFinite(LIMIT)
 const CODEX_TIMEOUT_MS = Number(
   process.env.VERB_PATH_CODEX_TIMEOUT_MS ?? 30 * 60 * 1000,
 )
 let databaseQueue = Promise.resolve()
+
+class UsageLimitError extends Error {
+  constructor(message) {
+    super(message)
+    this.name = 'UsageLimitError'
+  }
+}
 
 const BANNED_TERMS = [
   '及物动词',
@@ -303,22 +313,17 @@ async function loadRefreshTargets() {
   v.normalized_verb,
   v.meaning_zh,
   v.is_phrase,
-  p.id AS path_id,
-  p.growth_json
+  p.id AS path_id
 FROM verbs v
 INNER JOIN verb_paths p ON p.verb_id = v.id
+WHERE CASE
+  WHEN json_valid(p.growth_json) = 1
+    THEN COALESCE(json_extract(p.growth_json, '$.schema_version'), 0)
+  ELSE 0
+END <> 2
 ORDER BY v.id ASC, p.id ASC;`)
 
-  return rows
-    .filter((row) => {
-      try {
-        return JSON.parse(row.growth_json)?.schema_version !== 2
-      } catch {
-        return true
-      }
-    })
-    .slice(0, LIMIT)
-    .map(({ growth_json: _growthJson, ...row }) => row)
+  return rows.slice(0, LIMIT)
 }
 
 async function loadGenerationTargets() {
@@ -457,6 +462,16 @@ async function runCodexBatch(verbs, batchName, previousOutput, feedback, attempt
   )
 
   if (result.status !== 0 || !existsSync(outputFile)) {
+    if (/usage limit|session limit|try again at/i.test(result.stderr ?? '')) {
+      const resetMessage =
+        result.stderr
+          ?.split('\n')
+          .find((line) => /usage limit|session limit|try again at/i.test(line))
+          ?.trim() ?? 'Generation provider usage limit reached.'
+
+      throw new UsageLimitError(resetMessage)
+    }
+
     throw new Error(
       `Codex generation failed for ${batchName}, attempt ${attempt}. See ${logFile}.`,
     )
@@ -502,6 +517,10 @@ async function runClaudeBatch(verbs, batchName, previousOutput, feedback, attemp
   )
 
   if (result.status !== 0) {
+    if (/usage limit|session limit|resets/i.test(result.stdout ?? '')) {
+      throw new UsageLimitError('Claude generation session limit reached.')
+    }
+
     throw new Error(
       `Claude generation failed for ${batchName}, attempt ${attempt}. See ${logFile}.`,
     )
@@ -514,6 +533,17 @@ async function runClaudeBatch(verbs, batchName, previousOutput, feedback, attemp
   } catch {
     throw new Error(
       `Claude returned invalid response JSON for ${batchName}, attempt ${attempt}. See ${logFile}.`,
+    )
+  }
+
+  if (
+    response?.is_error &&
+    (response?.api_error_status === 429 ||
+      /usage limit|session limit|resets/i.test(response?.result ?? ''))
+  ) {
+    throw new UsageLimitError(
+      normalizeWhitespace(response.result) ||
+        'Claude generation session limit reached.',
     )
   }
 
@@ -590,6 +620,10 @@ function readClaudeLogOutput(batchName, attempt) {
 }
 
 function readReusableOutput(verbs, batchName, attempt, previousOutput, feedback) {
+  if (FRESH_GENERATION) {
+    return null
+  }
+
   if (attempt !== 1 || previousOutput || feedback) {
     return null
   }
@@ -929,6 +963,39 @@ async function applySql(file, remote) {
   )
 }
 
+async function syncLocalVerbMetadata(verbs) {
+  if (verbs.length === 0) {
+    return
+  }
+
+  const sqlFile = join(WORK_DIR, 'sync-local-verb-metadata.sql')
+  const statements = verbs.map(
+    (verb) => `UPDATE verbs SET
+  verb = ${sqlString(verb.verb)},
+  normalized_verb = ${sqlString(verb.normalized_verb)},
+  meaning_zh = ${sqlString(verb.meaning_zh)},
+  is_phrase = ${Number(verb.is_phrase) || 0}
+WHERE id = ${sqlString(verb.id)};`,
+  )
+
+  writeFileSync(
+    sqlFile,
+    `-- Keep local validation metadata aligned with remote D1.\n\n${statements.join('\n\n')}\n`,
+  )
+
+  try {
+    await withDatabaseLock(async () => {
+      await applySql(sqlFile, false)
+    })
+  } finally {
+    rmSync(sqlFile, { force: true })
+  }
+
+  console.log(
+    `Synced ${verbs.length} local verb records with remote metadata for validation.`,
+  )
+}
+
 async function deleteLocalPaths(pathIds) {
   if (pathIds.length === 0) {
     return
@@ -1170,6 +1237,10 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
         console.log(`[${batchName}] local strict validation failed; regenerating.`)
       }
     } catch (error) {
+      if (error instanceof UsageLimitError) {
+        throw error
+      }
+
       feedback = [String(error.message)]
       console.error(`[${batchName}] ${error.message}`)
     }
@@ -1205,6 +1276,15 @@ async function main() {
   const missingVerbs = await loadGenerationTargets()
 
   if (missingVerbs.length === 0) {
+    if (SKIP_FINAL_VALIDATION) {
+      console.log(
+        REFRESH_V2
+          ? 'All verb paths already use growth_json v2.'
+          : 'All verbs already have a path.',
+      )
+      return
+    }
+
     console.log(
       REFRESH_V2
         ? 'All verb paths already use growth_json v2. Running final remote validation.'
@@ -1214,6 +1294,8 @@ async function main() {
     console.log(JSON.stringify(summary, null, 2))
     return
   }
+
+  await syncLocalVerbMetadata(missingVerbs)
 
   console.log(
     `Starting ${missingVerbs.length} ${
@@ -1282,6 +1364,10 @@ WHERE id IN (${paths.map((path) => sqlString(path.id)).join(', ')});`)
           `[${batchName}] complete. Progress: ${completed}/${missingVerbs.length}.`,
         )
       } catch (error) {
+        if (error instanceof UsageLimitError) {
+          throw error
+        }
+
         failures.push({
           batchName,
           verbIds: verbs.map((verb) => verb.id),
@@ -1314,6 +1400,14 @@ WHERE id IN (${paths.map((path) => sqlString(path.id)).join(', ')});`)
   }
 
   if (!DRY_RUN && APPLY_REMOTE) {
+    if (IS_LIMITED_RUN) {
+      console.log(
+        `\nLimited run complete: ${completed} newly generated paths were validated ` +
+          'locally and written to remote D1. Historical paths were not revalidated.',
+      )
+      return
+    }
+
     const remainingRows = await queryRemote(
       REFRESH_V2
         ? `SELECT COUNT(*) AS total
@@ -1332,6 +1426,13 @@ WHERE p.verb_id IS NULL;`,
           ? `${remaining} verb paths still do not use growth_json v2.`
           : `${remaining} verbs still have no path after generation.`,
       )
+    }
+
+    if (SKIP_FINAL_VALIDATION) {
+      console.log(
+        '\nAll requested paths were generated. Historical paths were not revalidated.',
+      )
+      return
     }
 
     const summary = await validateRemote()
