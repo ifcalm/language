@@ -118,7 +118,18 @@ function unique(values) {
 }
 
 function containsText(sentence, text) {
-  return normalizedLowercase(sentence).includes(normalizedLowercase(text))
+  const normalizedSentence = normalizedLowercase(sentence)
+  const normalizedText = normalizedLowercase(text)
+
+  if (!normalizedText) {
+    return false
+  }
+
+  const escapedText = normalizedText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+  return new RegExp(`(^|[^a-z0-9])${escapedText}($|[^a-z0-9])`).test(
+    normalizedSentence,
+  )
 }
 
 async function runWrangler(args) {
