@@ -70,12 +70,45 @@
 
 .verbs-status {
   margin-top: 18px;
+  padding: 22px;
   color: var(--text-soft);
+  text-align: center;
+}
+
+.verbs-toolbar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.verbs-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 650;
+  user-select: none;
+}
+
+.verbs-filter-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: #111111;
+  cursor: pointer;
+}
+
+.verbs-pagination-panel {
+  margin-top: 14px;
+  padding: 14px 18px;
 }
 
 .verbs-list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   margin-top: 18px;
 }
 
@@ -86,16 +119,69 @@
   align-items: center;
   gap: 20px;
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: 16px;
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
-  padding: 18px 20px;
+  padding: 14px 18px;
   text-align: left;
   transition:
     border-color 0.18s ease,
     transform 0.18s ease,
     box-shadow 0.18s ease;
+}
+
+.verb-row.is-pending {
+  background: var(--surface-subtle);
+}
+
+.verb-row.is-pending .verb-row-main strong {
+  color: var(--text-soft);
+}
+
+.verb-row-skeleton {
+  cursor: default;
+  pointer-events: none;
+}
+
+.verb-row-skeleton .verb-row-main strong,
+.verb-row-skeleton .verb-row-main small,
+.verb-row-skeleton .verb-row-meta em {
+  display: block;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #efefef 25%, #f7f7f7 37%, #efefef 63%);
+  background-size: 400% 100%;
+  animation: verb-skeleton-shimmer 1.4s ease infinite;
+}
+
+.verb-row-skeleton .verb-row-main {
+  gap: 8px;
+}
+
+.verb-row-skeleton .verb-row-main strong {
+  width: 96px;
+  height: 16px;
+}
+
+.verb-row-skeleton .verb-row-main small {
+  width: 150px;
+  height: 12px;
+}
+
+.verb-row-skeleton .verb-row-meta em {
+  width: 72px;
+  height: 26px;
+  border: 0;
+}
+
+@keyframes verb-skeleton-shimmer {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
 }
 
 .verb-row:hover,

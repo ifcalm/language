@@ -281,6 +281,7 @@ async function handleVerbList(request: Request, env: Env) {
   const limit = clampNumber(url.searchParams.get('limit'), 80, 1, 200)
   const offset = clampNumber(url.searchParams.get('offset'), 0, 0, 10_000)
   const query = url.searchParams.get('q')?.trim().toLowerCase() ?? ''
+  const hasPaths = url.searchParams.get('hasPaths') === '1'
 
   const where: string[] = []
   const params: Array<string | number> = []
@@ -292,8 +293,18 @@ async function handleVerbList(request: Request, env: Env) {
   }
 
   const whereSql = where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''
+  const havingSql = hasPaths ? 'HAVING COUNT(vp.id) > 0' : ''
   const totalRow = await env.DB.prepare(
-    `SELECT COUNT(*) AS total FROM verbs v ${whereSql}`,
+    hasPaths
+      ? `SELECT COUNT(*) AS total FROM (
+          SELECT v.id
+          FROM verbs v
+          LEFT JOIN verb_paths vp ON vp.verb_id = v.id
+          ${whereSql}
+          GROUP BY v.id
+          HAVING COUNT(vp.id) > 0
+        )`
+      : `SELECT COUNT(*) AS total FROM verbs v ${whereSql}`,
   )
     .bind(...params)
     .first<{ total: number }>()
@@ -312,6 +323,7 @@ async function handleVerbList(request: Request, env: Env) {
     LEFT JOIN verb_paths vp ON vp.verb_id = v.id
     ${whereSql}
     GROUP BY v.id
+    ${havingSql}
     ORDER BY
       CASE WHEN COUNT(vp.id) > 0 THEN 0 ELSE 1 END,
       v.is_phrase ASC,
@@ -331,6 +343,7 @@ async function handleVerbList(request: Request, env: Env) {
     },
     filters: {
       query,
+      hasPaths,
     },
   })
 }
