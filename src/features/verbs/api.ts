@@ -220,19 +220,30 @@ function normalizeVerbDetail(payload: VerbDetail): VerbDetail {
   }
 }
 
+export interface VerbListParams {
+  query: string
+  offset: number
+  limit: number
+  hasPaths?: boolean
+}
+
 export async function requestVerbList(
-  query: string,
+  { query, offset, limit, hasPaths }: VerbListParams,
   signal: AbortSignal,
 ): Promise<VerbListResponse> {
   const params = new URLSearchParams({
-    limit: '120',
-    offset: '0',
+    limit: String(limit),
+    offset: String(offset),
   })
 
   const normalizedQuery = query.trim()
 
   if (normalizedQuery) {
     params.set('q', normalizedQuery)
+  }
+
+  if (hasPaths) {
+    params.set('hasPaths', '1')
   }
 
   const response = await fetch(`/api/verbs?${params.toString()}`, { signal })

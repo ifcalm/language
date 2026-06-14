@@ -30,12 +30,21 @@ function getSceneLabel(scene: string) {
   return sceneLabels[scene] ?? (scene || '通用')
 }
 
+const VERB_PAGE_SIZE = 120
+
 function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [query, setQuery] = useState('')
+  const [onlyWithPaths, setOnlyWithPaths] = useState(false)
+  const [offset, setOffset] = useState(0)
   const [items, setItems] = useState<VerbListItem[]>([])
   const [total, setTotal] = useState(0)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
+
+  // Reset to the first page whenever the result set changes.
+  useEffect(() => {
+    setOffset(0)
+  }, [query, onlyWithPaths])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -45,7 +54,10 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
       setError('')
 
       try {
-        const payload = await requestVerbList(query, controller.signal)
+        const payload = await requestVerbList(
+          { query, offset, limit: VERB_PAGE_SIZE, hasPaths: onlyWithPaths },
+          controller.signal,
+        )
         setItems(payload.items)
         setTotal(payload.pagination.total)
       } catch (fetchError) {
@@ -66,7 +78,47 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
     fetchVerbs()
 
     return () => controller.abort()
-  }, [query])
+  }, [query, offset, onlyWithPaths])
+
+  const shownStart = items.length > 0 ? offset + 1 : 0
+  const shownEnd = offset + items.length
+  const lastPageOffset =
+    Math.floor(Math.max(total - 1, 0) / VERB_PAGE_SIZE) * VERB_PAGE_SIZE
+
+  function goToOffset(nextOffset: number) {
+    const clamped = Math.max(0, Math.min(nextOffset, lastPageOffset))
+    setOffset(clamped)
+
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  const pagination = (
+    <div className="vocabulary-pagination">
+      <button
+        type="button"
+        className="pagination-step"
+        disabled={offset === 0 || isLoading}
+        onClick={() => goToOffset(offset - VERB_PAGE_SIZE)}
+      >
+        ← 上一批
+      </button>
+      <span className="pagination-range">
+        {shownStart > 0 ? `${shownStart}–${shownEnd} / ${total}` : `0 / ${total}`}
+      </span>
+      <button
+        type="button"
+        className="pagination-step"
+        disabled={shownEnd >= total || isLoading}
+        onClick={() => goToOffset(offset + VERB_PAGE_SIZE)}
+      >
+        下一批 →
+      </button>
+    </div>
+  )
+
+  const showEmptyState = !isLoading && !error && items.length === 0
 
   return (
     <>
@@ -81,7 +133,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
         </div>
         <div className="verbs-hero-count">
           <strong>{total || 1383}</strong>
-          <span>verbs</span>
+          <span>{onlyWithPaths ? '有路径' : 'verbs'}</span>
         </div>
       </section>
 
@@ -95,36 +147,78 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
+        <div className="verbs-toolbar-controls">
+          <label className="verbs-filter-toggle">
+            <input
+              type="checkbox"
+              checked={onlyWithPaths}
+              onChange={(event) => setOnlyWithPaths(event.target.checked)}
+            />
+            只看有句子路径的动词
+          </label>
+          {pagination}
+        </div>
       </section>
 
-      {(isLoading || error) && (
+      {error && (
         <section className="panel verbs-status">
-          {isLoading && '正在读取动词列表…'}
-          {!isLoading && error && '动词列表暂时无法读取，请稍后再试。'}
+          动词列表暂时无法读取，请稍后再试。
         </section>
       )}
 
-      <section className="verbs-list" aria-label="动词列表">
-        {items.map((item) => (
-          <button
-            key={item.id}
-            type="button"
-            className="verb-row"
-            onClick={() => onOpenVerb(item.id)}
-          >
-            <span className="verb-row-main">
-              <strong>{item.verb}</strong>
-              <small>{item.meaningZh}</small>
-            </span>
-            <span className="verb-row-meta">
-              {item.isPhrase && <em>短语</em>}
-              <em className={item.pathCount > 0 ? 'ready' : ''}>
-                {item.pathCount > 0 ? `${item.pathCount} 条路径` : '待补充'}
-              </em>
-            </span>
-          </button>
-        ))}
-      </section>
+      {isLoading && (
+        <section className="verbs-list" aria-label="正在加载动词列表" aria-busy="true">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <div key={index} className="verb-row verb-row-skeleton" aria-hidden="true">
+              <span className="verb-row-main">
+                <strong />
+                <small />
+              </span>
+              <span className="verb-row-meta">
+                <em />
+              </span>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {showEmptyState && (
+        <section className="panel verbs-status">
+          {query
+            ? `没有匹配「${query}」的动词，换个词试试。`
+            : onlyWithPaths
+              ? '还没有带句子路径的动词。'
+              : '暂时没有可显示的动词。'}
+        </section>
+      )}
+
+      {!isLoading && items.length > 0 && (
+        <section className="verbs-list" aria-label="动词列表">
+          {items.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              className={`verb-row${item.pathCount === 0 ? ' is-pending' : ''}`}
+              onClick={() => onOpenVerb(item.id)}
+            >
+              <span className="verb-row-main">
+                <strong>{item.verb}</strong>
+                <small>{item.meaningZh}</small>
+              </span>
+              <span className="verb-row-meta">
+                {item.isPhrase && <em>短语</em>}
+                <em className={item.pathCount > 0 ? 'ready' : ''}>
+                  {item.pathCount > 0 ? `${item.pathCount} 条路径` : '待补充'}
+                </em>
+              </span>
+            </button>
+          ))}
+        </section>
+      )}
+
+      {!isLoading && items.length > 0 && (
+        <section className="panel verbs-pagination-panel">{pagination}</section>
+      )}
     </>
   )
 }
