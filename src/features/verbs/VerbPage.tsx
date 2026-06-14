@@ -167,16 +167,15 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
       )}
 
       {isLoading && (
-        <section className="verbs-list" aria-label="正在加载动词列表" aria-busy="true">
-          {Array.from({ length: 8 }).map((_, index) => (
+        <section
+          className="panel verbs-list"
+          aria-label="正在加载动词列表"
+          aria-busy="true"
+        >
+          {Array.from({ length: 10 }).map((_, index) => (
             <div key={index} className="verb-row verb-row-skeleton" aria-hidden="true">
-              <span className="verb-row-main">
-                <strong />
-                <small />
-              </span>
-              <span className="verb-row-meta">
-                <em />
-              </span>
+              <span className="verb-row-word" />
+              <span className="verb-row-meaning" />
             </div>
           ))}
         </section>
@@ -193,7 +192,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
       )}
 
       {!isLoading && items.length > 0 && (
-        <section className="verbs-list" aria-label="动词列表">
+        <section className="panel verbs-list" aria-label="动词列表">
           {items.map((item) => (
             <button
               key={item.id}
@@ -201,16 +200,9 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
               className={`verb-row${item.pathCount === 0 ? ' is-pending' : ''}`}
               onClick={() => onOpenVerb(item.id)}
             >
-              <span className="verb-row-main">
-                <strong>{item.verb}</strong>
-                <small>{item.meaningZh}</small>
-              </span>
-              <span className="verb-row-meta">
-                {item.isPhrase && <em>短语</em>}
-                <em className={item.pathCount > 0 ? 'ready' : ''}>
-                  {item.pathCount > 0 ? `${item.pathCount} 条路径` : '待补充'}
-                </em>
-              </span>
+              <span className="verb-row-word">{item.verb}</span>
+              <span className="verb-row-meaning">{item.meaningZh}</span>
+              {item.isPhrase && <span className="verb-row-tag">短语</span>}
             </button>
           ))}
         </section>

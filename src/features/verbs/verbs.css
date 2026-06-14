@@ -106,37 +106,73 @@
   padding: 14px 18px;
 }
 
+/* Verb list mirrors the vocabulary list: a single panel of dense rows. */
 .verbs-list {
-  display: grid;
-  gap: 8px;
   margin-top: 18px;
+  padding: 0;
+  overflow: hidden;
 }
 
 .verb-row {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
+  gap: 14px;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
-  padding: 14px 18px;
+  padding: 11px 18px;
   text-align: left;
-  transition:
-    border-color 0.18s ease,
-    transform 0.18s ease,
-    box-shadow 0.18s ease;
+  transition: background-color 0.14s ease;
 }
 
-.verb-row.is-pending {
+.verb-row:last-child {
+  border-bottom: 0;
+}
+
+.verb-row:hover,
+.verb-row:focus-visible {
   background: var(--surface-subtle);
 }
 
-.verb-row.is-pending .verb-row-main strong {
+.verb-row-word {
+  flex-shrink: 0;
+  width: 170px;
+  overflow: hidden;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.verb-row-meaning {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
   color: var(--text-soft);
+  font-size: 0.92rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.verb-row-tag {
+  flex-shrink: 0;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  font-weight: 720;
+  white-space: nowrap;
+}
+
+.verb-row.is-pending .verb-row-word {
+  color: var(--text-soft);
+  font-weight: 720;
 }
 
 .verb-row-skeleton {
@@ -144,34 +180,21 @@
   pointer-events: none;
 }
 
-.verb-row-skeleton .verb-row-main strong,
-.verb-row-skeleton .verb-row-main small,
-.verb-row-skeleton .verb-row-meta em {
-  display: block;
+.verb-row-skeleton .verb-row-word,
+.verb-row-skeleton .verb-row-meaning {
+  height: 13px;
   border-radius: 999px;
   background: linear-gradient(90deg, #efefef 25%, #f7f7f7 37%, #efefef 63%);
   background-size: 400% 100%;
   animation: verb-skeleton-shimmer 1.4s ease infinite;
 }
 
-.verb-row-skeleton .verb-row-main {
-  gap: 8px;
+.verb-row-skeleton .verb-row-word {
+  width: 120px;
 }
 
-.verb-row-skeleton .verb-row-main strong {
-  width: 96px;
-  height: 16px;
-}
-
-.verb-row-skeleton .verb-row-main small {
-  width: 150px;
-  height: 12px;
-}
-
-.verb-row-skeleton .verb-row-meta em {
-  width: 72px;
-  height: 26px;
-  border: 0;
+.verb-row-skeleton .verb-row-meaning {
+  max-width: 320px;
 }
 
 @keyframes verb-skeleton-shimmer {
@@ -182,50 +205,6 @@
   to {
     background-position: 0 0;
   }
-}
-
-.verb-row:hover,
-.verb-row:focus-visible {
-  border-color: var(--text);
-  box-shadow: 0 12px 30px rgb(0 0 0 / 0.05);
-  transform: translateY(-1px);
-}
-
-.verb-row-main {
-  display: grid;
-  gap: 4px;
-}
-
-.verb-row-main strong {
-  font-size: 1.25rem;
-  letter-spacing: -0.04em;
-}
-
-.verb-row-main small {
-  color: var(--text-soft);
-  font-size: 0.95rem;
-}
-
-.verb-row-meta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.verb-row-meta em {
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  font-style: normal;
-  font-weight: 720;
-  padding: 6px 10px;
-}
-
-.verb-row-meta em.ready {
-  border-color: var(--text);
-  color: var(--text);
 }
 
 .verb-back-button {
@@ -531,13 +510,8 @@
 }
 
 @media (max-width: 640px) {
-  .verb-row {
-    align-items: start;
-    display: grid;
-  }
-
-  .verb-row-meta {
-    justify-content: start;
+  .verb-row-word {
+    width: 120px;
   }
 
   .sentence-player-stage {
