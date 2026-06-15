@@ -123,13 +123,28 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
 
   return (
     <>
-      <section className="panel verbs-toolbar">
-        <input
-          className="verbs-search"
-          placeholder="搜索动词或中文义，例如 deploy / depend on"
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-        />
+      <section className="verbs-toolbar">
+        <div className="verbs-search-box">
+          <input
+            className="verbs-search"
+            aria-label="搜索动词"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+          <svg
+            className="verbs-search-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </div>
         {pagination}
       </section>
 
