@@ -34,17 +34,16 @@ const VERB_PAGE_SIZE = 120
 
 function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [query, setQuery] = useState('')
-  const [onlyWithPaths, setOnlyWithPaths] = useState(false)
   const [offset, setOffset] = useState(0)
   const [items, setItems] = useState<VerbListItem[]>([])
   const [total, setTotal] = useState(0)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
-  // Reset to the first page whenever the result set changes.
+  // Reset to the first page whenever the query changes.
   useEffect(() => {
     setOffset(0)
-  }, [query, onlyWithPaths])
+  }, [query])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -55,7 +54,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
 
       try {
         const payload = await requestVerbList(
-          { query, offset, limit: VERB_PAGE_SIZE, hasPaths: onlyWithPaths },
+          { query, offset, limit: VERB_PAGE_SIZE },
           controller.signal,
         )
         setItems(payload.items)
@@ -78,7 +77,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
     fetchVerbs()
 
     return () => controller.abort()
-  }, [query, offset, onlyWithPaths])
+  }, [query, offset])
 
   const shownStart = items.length > 0 ? offset + 1 : 0
   const shownEnd = offset + items.length
@@ -95,25 +94,27 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   }
 
   const pagination = (
-    <div className="vocabulary-pagination">
+    <div className="verbs-pager">
       <button
         type="button"
-        className="pagination-step"
+        className="verbs-pager-btn"
+        aria-label="上一批"
         disabled={offset === 0 || isLoading}
         onClick={() => goToOffset(offset - VERB_PAGE_SIZE)}
       >
-        ← 上一批
+        ←
       </button>
-      <span className="pagination-range">
+      <span className="verbs-pager-range">
         {shownStart > 0 ? `${shownStart}–${shownEnd} / ${total}` : `0 / ${total}`}
       </span>
       <button
         type="button"
-        className="pagination-step"
+        className="verbs-pager-btn"
+        aria-label="下一批"
         disabled={shownEnd >= total || isLoading}
         onClick={() => goToOffset(offset + VERB_PAGE_SIZE)}
       >
-        下一批 →
+        →
       </button>
     </div>
   )
@@ -122,47 +123,19 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
 
   return (
     <>
-      <section className="panel verbs-hero">
-        <div>
-          <span>Verb Lab</span>
-          <h2>从动词进入句子</h2>
-          <p>
-            先看一个动作，再看它如何带出场景、目的、时间和细节。技术场景优先，
-            但不为了技术而硬套。
-          </p>
-        </div>
-        <div className="verbs-hero-count">
-          <strong>{total || 1383}</strong>
-          <span>{onlyWithPaths ? '有路径' : 'verbs'}</span>
-        </div>
-      </section>
-
       <section className="panel verbs-toolbar">
-        <div className="section-heading">
-          <h2>动词列表</h2>
-          <span>已有句子路径的动词会排在前面</span>
-        </div>
         <input
-          placeholder="搜索动词或中文义，例如 deploy / depend on / 返回"
+          className="verbs-search"
+          placeholder="搜索动词或中文义，例如 deploy / depend on"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
-        <div className="verbs-toolbar-controls">
-          <label className="verbs-filter-toggle">
-            <input
-              type="checkbox"
-              checked={onlyWithPaths}
-              onChange={(event) => setOnlyWithPaths(event.target.checked)}
-            />
-            只看有句子路径的动词
-          </label>
-          {pagination}
-        </div>
+        {pagination}
       </section>
 
       {error && (
         <section className="panel verbs-status">
-          动词列表暂时无法读取，请稍后再试。
+          动词暂时无法读取，请稍后再试。
         </section>
       )}
 
@@ -174,6 +147,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
         >
           {Array.from({ length: 10 }).map((_, index) => (
             <div key={index} className="verb-row verb-row-skeleton" aria-hidden="true">
+              <span className="verb-row-rank" />
               <span className="verb-row-word" />
               <span className="verb-row-meaning" />
             </div>
@@ -185,21 +159,22 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
         <section className="panel verbs-status">
           {query
             ? `没有匹配「${query}」的动词，换个词试试。`
-            : onlyWithPaths
-              ? '还没有带句子路径的动词。'
-              : '暂时没有可显示的动词。'}
+            : '暂时没有可显示的动词。'}
         </section>
       )}
 
       {!isLoading && items.length > 0 && (
         <section className="panel verbs-list" aria-label="动词列表">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <button
               key={item.id}
               type="button"
               className={`verb-row${item.pathCount === 0 ? ' is-pending' : ''}`}
               onClick={() => onOpenVerb(item.id)}
             >
+              <span className="verb-row-rank">
+                #{String(offset + index + 1).padStart(4, '0')}
+              </span>
               <span className="verb-row-word">{item.verb}</span>
               <span className="verb-row-meaning">{item.meaningZh}</span>
               {item.isPhrase && <span className="verb-row-tag">短语</span>}
@@ -209,7 +184,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
       )}
 
       {!isLoading && items.length > 0 && (
-        <section className="panel verbs-pagination-panel">{pagination}</section>
+        <div className="verbs-pagination-footer">{pagination}</div>
       )}
     </>
   )
@@ -322,7 +297,7 @@ function VerbDetailView({
 
       {detail.paths.length === 0 && (
         <section className="panel verbs-status">
-          这个动词还没有句子路径。后面补数据时会逐步补齐。
+          这个动词还没有整理内容，后面会逐步补齐。
         </section>
       )}
     </>
