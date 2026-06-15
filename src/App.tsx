@@ -344,27 +344,6 @@ function App() {
   const placeholderPage = placeholderPages[view]
   const vocabularyPagination = (
     <div className="vocabulary-pagination">
-      <button
-        type="button"
-        className="pagination-step"
-        disabled={vocabularyOffset === 0}
-        onClick={() => goToVocabularyOffset(vocabularyOffset - VOCABULARY_PAGE_SIZE)}
-      >
-        ← 上一批
-      </button>
-      <span className="pagination-range">
-        {shownVocabularyStart > 0
-          ? `${shownVocabularyStart}–${shownVocabularyEnd} / ${vocabularyResultCount}`
-          : `0 / ${vocabularyResultCount}`}
-      </span>
-      <button
-        type="button"
-        className="pagination-step"
-        disabled={shownVocabularyEnd >= vocabularyResultCount}
-        onClick={() => goToVocabularyOffset(vocabularyOffset + VOCABULARY_PAGE_SIZE)}
-      >
-        下一批 →
-      </button>
       {roadmapProgress > 0 && (
         <button
           type="button"
@@ -374,6 +353,29 @@ function App() {
           回到我的进度 #{roadmapProgress}
         </button>
       )}
+      <button
+        type="button"
+        className="pagination-step"
+        aria-label="上一批"
+        disabled={vocabularyOffset === 0}
+        onClick={() => goToVocabularyOffset(vocabularyOffset - VOCABULARY_PAGE_SIZE)}
+      >
+        ←
+      </button>
+      <span className="pagination-range">
+        {shownVocabularyStart > 0
+          ? `${shownVocabularyStart}–${shownVocabularyEnd} / ${vocabularyResultCount}`
+          : `0 / ${vocabularyResultCount}`}
+      </span>
+      <button
+        type="button"
+        className="pagination-step"
+        aria-label="下一批"
+        disabled={shownVocabularyEnd >= vocabularyResultCount}
+        onClick={() => goToVocabularyOffset(vocabularyOffset + VOCABULARY_PAGE_SIZE)}
+      >
+        →
+      </button>
     </div>
   )
   const isAuthPage = isAuthView(view)
@@ -1457,13 +1459,14 @@ function App() {
             {!selectedVocabularyLookup && (
               <>
             <section
-              className="panel vocabulary-toolbar"
+              className="vocabulary-toolbar"
               ref={vocabularyToolbarRef}
             >
-              <div className="filters vocabulary-filters">
+              <div className="vocabulary-search-box">
                 <input
                   ref={vocabularySearchInputRef}
-                  placeholder="搜索单词、中文释义或英文释义（按 / 聚焦）"
+                  className="vocabulary-search"
+                  aria-label="搜索单词"
                   value={vocabularyQuery}
                   onChange={(event) => {
                     setVocabularyQuery(event.target.value)
@@ -1471,6 +1474,19 @@ function App() {
                     setFocusedVocabularyIndex(0)
                   }}
                 />
+                <svg
+                  className="vocabulary-search-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
               </div>
               {vocabularyPagination}
             </section>
@@ -1567,9 +1583,9 @@ function App() {
             </section>
 
             {visibleCoreVocabulary.length > 0 && (
-              <section className="panel vocabulary-pagination-panel">
+              <div className="vocabulary-pagination-footer">
                 {vocabularyPagination}
-              </section>
+              </div>
             )}
 
             <section className="vocabulary-kbd-hints" aria-hidden="true">
