@@ -52,20 +52,35 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 18px;
-  padding: 12px 16px;
+  margin-top: 8px;
 }
 
-.verbs-search {
+.verbs-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
   flex: 1 1 240px;
   min-width: 0;
   max-width: 380px;
+}
+
+.verbs-search-icon {
+  position: absolute;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.verbs-search {
+  width: 100%;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--surface-subtle);
   color: var(--text);
   outline: 0;
-  padding: 9px 14px;
+  padding: 9px 14px 9px 38px;
   font-size: 0.92rem;
 }
 
@@ -74,9 +89,15 @@
   background: var(--surface);
 }
 
+.verbs-search:focus + .verbs-search-icon,
+.verbs-search-box:focus-within .verbs-search-icon {
+  color: var(--text);
+}
+
 .verbs-status {
   margin-top: 18px;
   padding: 22px;
+  border-radius: 12px;
   color: var(--text-soft);
   text-align: center;
 }
@@ -133,6 +154,7 @@
 .verbs-list {
   margin-top: 18px;
   padding: 0;
+  border-radius: 12px;
   overflow: hidden;
 }
 
