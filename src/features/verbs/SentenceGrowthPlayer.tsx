@@ -545,7 +545,12 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
   }
 }
 
-function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint) {
+function makeSketchPath(
+  link: SentenceGrowthLink,
+  from: TreePoint,
+  to: TreePoint,
+  exitX?: number,
+) {
   if (link.kind === 'modifier') {
     const approachesFromLeft = from.x <= to.x
     const sideDirection = approachesFromLeft ? -1 : 1
@@ -583,14 +588,15 @@ function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint
   // Core link: parent (from) sits above the child (to). Route it as a vertical
   // channel — leave the parent straight down, shift sideways in the empty band
   // between the two rows, then drop straight into the child — so the line stays
-  // in the gaps between cards instead of slicing diagonally across them.
-  const hash = hashText(link.id)
-  const wobble = (hash % 9) - 4
-  const start = { x: from.x, y: from.y + 44 }
-  const end = { x: to.x, y: to.y - 46 }
+  // in the gaps between cards instead of slicing across them. The exit point is
+  // fanned toward the child's side so several links from the same parent leave
+  // at different x and never stack or cross right below the parent.
+  const startX = exitX ?? from.x
+  const start = { x: startX, y: from.y + 44 }
+  const end = { x: to.x, y: to.y - 50 }
   const midY = (start.y + end.y) / 2
-  const controlA = { x: from.x + wobble, y: midY }
-  const controlB = { x: to.x - wobble, y: midY }
+  const controlA = { x: startX, y: midY }
+  const controlB = { x: to.x, y: midY }
 
   return [
     `M ${start.x.toFixed(1)} ${start.y.toFixed(1)}`,
@@ -655,6 +661,31 @@ function SentenceTree({
   ).treeHeight
   const rootActionNode = getRootActionNode(growth)
 
+  // Spread the exit points of core links that share a parent evenly across the
+  // parent's bottom edge (ordered by child x), so sibling links leave at
+  // different x and never stack or cross right below the parent.
+  const coreExitX = new Map<string, number>()
+  const coreLinksByParent = new Map<string, SentenceGrowthLink[]>()
+  layoutLinks.forEach((link) => {
+    if (link.kind !== 'core') {
+      return
+    }
+    const siblings = coreLinksByParent.get(link.from) ?? []
+    siblings.push(link)
+    coreLinksByParent.set(link.from, siblings)
+  })
+  coreLinksByParent.forEach((links, parentId) => {
+    const parentX = positions.get(parentId)?.x ?? 0
+    const sorted = [...links].sort(
+      (a, b) => (positions.get(a.to)?.x ?? 0) - (positions.get(b.to)?.x ?? 0),
+    )
+    const count = sorted.length
+    const spacing = count > 1 ? Math.min(36, 80 / (count - 1)) : 0
+    sorted.forEach((link, index) => {
+      coreExitX.set(link.id, parentX + (index - (count - 1) / 2) * spacing)
+    })
+  })
+
   if (layoutNodes.length === 0) {
     return null
   }
@@ -703,7 +734,7 @@ function SentenceTree({
               return null
             }
 
-            const pathD = makeSketchPath(link, from, to)
+            const pathD = makeSketchPath(link, from, to, coreExitX.get(link.id))
 
             return (
               <g key={link.id} className={`sentence-tree-link-group ${link.kind}`}>
