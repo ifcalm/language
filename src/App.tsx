@@ -988,6 +988,8 @@ function App() {
         className={`content ${view === 'roadmap' ? 'landing-content' : ''} ${
           view === 'verbs' ? 'verb-content' : ''
         } ${
+          view === 'vocabulary' ? 'vocab-content' : ''
+        } ${
           isAuthPage ? 'auth-content' : ''
         }`}
       >
