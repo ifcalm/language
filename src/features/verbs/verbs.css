@@ -203,11 +203,22 @@
 }
 
 .verb-row-meaning {
-  flex: 1;
+  flex: 0 1 200px;
   min-width: 0;
   overflow: hidden;
   color: var(--text-soft);
   font-size: 0.92rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.verb-row-example {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -570,6 +581,10 @@
 @media (max-width: 640px) {
   .verb-row-word {
     width: 120px;
+  }
+
+  .verb-row-example {
+    display: none;
   }
 
   .sentence-player-stage {

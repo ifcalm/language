@@ -192,6 +192,11 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
               </span>
               <span className="verb-row-word">{item.verb}</span>
               <span className="verb-row-meaning">{item.meaningZh}</span>
+              {item.coreSentenceEn && (
+                <span className="verb-row-example" title={item.coreSentenceZh}>
+                  {item.coreSentenceEn}
+                </span>
+              )}
               {item.isPhrase && <span className="verb-row-tag">短语</span>}
             </button>
           ))}
