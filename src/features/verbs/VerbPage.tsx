@@ -212,8 +212,9 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
 
 function VerbDetailView({
   selectedVerbId,
+  onOpenVerb,
   onBackToList,
-}: Pick<VerbPageProps, 'selectedVerbId' | 'onBackToList'>) {
+}: Pick<VerbPageProps, 'selectedVerbId' | 'onOpenVerb' | 'onBackToList'>) {
   const [detail, setDetail] = useState<VerbDetail | null>(null)
   const [activePathId, setActivePathId] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -259,6 +260,38 @@ function VerbDetailView({
     [activePathId, detail?.paths],
   )
 
+  // Walk to the previous/next verb with the keyboard, mirroring the on-page arrows.
+  useEffect(() => {
+    if (!detail) {
+      return
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      const target = event.target as HTMLElement | null
+      const isEditable =
+        !!target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'SELECT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.isContentEditable)
+
+      if (isEditable || event.metaKey || event.ctrlKey || event.altKey) {
+        return
+      }
+
+      if (event.key === 'ArrowLeft' && detail?.prevId) {
+        event.preventDefault()
+        onOpenVerb(detail.prevId)
+      } else if (event.key === 'ArrowRight' && detail?.nextId) {
+        event.preventDefault()
+        onOpenVerb(detail.nextId)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [detail, onOpenVerb])
+
   if (isLoading || error || !detail) {
     return (
       <section className="panel verbs-status">
@@ -287,6 +320,32 @@ function VerbDetailView({
         >
           ←
         </button>
+
+        <div className="verb-detail-nav">
+          {detail.position && detail.total && (
+            <span className="verb-detail-position">
+              {detail.verb.verb} · {detail.position}/{detail.total}
+            </span>
+          )}
+          <button
+            type="button"
+            className="verbs-pager-btn"
+            aria-label="上一词"
+            disabled={!detail.prevId}
+            onClick={() => detail.prevId && onOpenVerb(detail.prevId)}
+          >
+            ←
+          </button>
+          <button
+            type="button"
+            className="verbs-pager-btn"
+            aria-label="下一词"
+            disabled={!detail.nextId}
+            onClick={() => detail.nextId && onOpenVerb(detail.nextId)}
+          >
+            →
+          </button>
+        </div>
       </section>
 
       {detail.paths.length > 0 && (
@@ -329,6 +388,7 @@ function VerbPage({ selectedVerbId, onOpenVerb, onBackToList }: VerbPageProps) {
     return (
       <VerbDetailView
         selectedVerbId={selectedVerbId}
+        onOpenVerb={onOpenVerb}
         onBackToList={onBackToList}
       />
     )

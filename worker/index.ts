@@ -428,9 +428,45 @@ async function handleVerbDetail(request: Request, env: Env) {
     .bind(verb.id)
     .all<VerbPathRow>()
 
+  // Neighbours in the same order the list uses, so prev/next on the detail
+  // page walks the corpus exactly like scrolling the list would.
+  const neighbour = await env.DB.prepare(
+    `WITH counts AS (
+      SELECT v.id, v.is_phrase, v.normalized_verb, COUNT(vp.id) AS pc
+      FROM verbs v
+      LEFT JOIN verb_paths vp ON vp.verb_id = v.id
+      GROUP BY v.id
+    ),
+    ordered AS (
+      SELECT
+        id,
+        ROW_NUMBER() OVER w AS rn,
+        LAG(id) OVER w AS prev_id,
+        LEAD(id) OVER w AS next_id
+      FROM counts
+      WINDOW w AS (
+        ORDER BY
+          CASE WHEN pc > 0 THEN 0 ELSE 1 END,
+          is_phrase ASC,
+          normalized_verb ASC
+      )
+    )
+    SELECT prev_id, next_id, rn FROM ordered WHERE id = ?`,
+  )
+    .bind(verb.id)
+    .first<{ prev_id: string | null; next_id: string | null; rn: number }>()
+
+  const totalRow = await env.DB.prepare(
+    `SELECT COUNT(*) AS total FROM verbs`,
+  ).first<{ total: number }>()
+
   return makeJsonResponse({
     verb: mapVerbRow(verb),
     paths: results.map(mapVerbPathRow),
+    prevId: neighbour?.prev_id ?? null,
+    nextId: neighbour?.next_id ?? null,
+    position: neighbour?.rn ?? null,
+    total: totalRow?.total ?? null,
   })
 }
 
