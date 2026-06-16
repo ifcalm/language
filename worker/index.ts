@@ -47,6 +47,8 @@ interface VerbRow {
 
 interface VerbListRow extends VerbRow {
   path_count: number
+  core_sentence_en: string | null
+  core_sentence_zh: string | null
 }
 
 interface VerbPathRow {
@@ -185,6 +187,8 @@ const mapVerbRow = (row: VerbRow) => ({
 const mapVerbListRow = (row: VerbListRow) => ({
   ...mapVerbRow(row),
   pathCount: row.path_count,
+  coreSentenceEn: row.core_sentence_en ?? '',
+  coreSentenceZh: row.core_sentence_zh ?? '',
 })
 
 const mapVerbPathRow = (row: VerbPathRow) => {
@@ -318,7 +322,21 @@ async function handleVerbList(request: Request, env: Env) {
       v.is_phrase,
       v.created_at,
       v.updated_at,
-      COUNT(vp.id) AS path_count
+      COUNT(vp.id) AS path_count,
+      (
+        SELECT vp2.core_sentence_en
+        FROM verb_paths vp2
+        WHERE vp2.verb_id = v.id
+        ORDER BY vp2.created_at ASC, vp2.id ASC
+        LIMIT 1
+      ) AS core_sentence_en,
+      (
+        SELECT vp2.core_sentence_zh
+        FROM verb_paths vp2
+        WHERE vp2.verb_id = v.id
+        ORDER BY vp2.created_at ASC, vp2.id ASC
+        LIMIT 1
+      ) AS core_sentence_zh
     FROM verbs v
     LEFT JOIN verb_paths vp ON vp.verb_id = v.id
     ${whereSql}

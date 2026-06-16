@@ -5,6 +5,8 @@ export interface VerbListItem {
   meaningZh: string
   isPhrase: boolean
   pathCount: number
+  coreSentenceEn?: string
+  coreSentenceZh?: string
 }
 
 export interface SentenceGrowthNode {
