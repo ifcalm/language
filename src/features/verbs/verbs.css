@@ -849,6 +849,20 @@
   margin-bottom: 16px;
 }
 
+.verb-detail-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.verb-detail-position {
+  margin-right: 4px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
 .verb-detail-heading {
   display: flex;
   align-items: baseline;

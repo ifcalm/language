@@ -83,6 +83,10 @@ export interface VerbPath {
 export interface VerbDetail {
   verb: Omit<VerbListItem, 'pathCount'>
   paths: VerbPath[]
+  prevId?: string | null
+  nextId?: string | null
+  position?: number | null
+  total?: number | null
 }
 
 export interface VerbListResponse {
