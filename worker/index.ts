@@ -344,6 +344,8 @@ async function handleVerbList(request: Request, env: Env) {
     ${havingSql}
     ORDER BY
       CASE WHEN COUNT(vp.id) > 0 THEN 0 ELSE 1 END,
+      CASE WHEN v.frequency_rank IS NULL THEN 1 ELSE 0 END,
+      v.frequency_rank ASC,
       v.is_phrase ASC,
       v.normalized_verb ASC
     LIMIT ?
@@ -432,7 +434,12 @@ async function handleVerbDetail(request: Request, env: Env) {
   // page walks the corpus exactly like scrolling the list would.
   const neighbour = await env.DB.prepare(
     `WITH counts AS (
-      SELECT v.id, v.is_phrase, v.normalized_verb, COUNT(vp.id) AS pc
+      SELECT
+        v.id,
+        v.is_phrase,
+        v.normalized_verb,
+        v.frequency_rank AS freq,
+        COUNT(vp.id) AS pc
       FROM verbs v
       LEFT JOIN verb_paths vp ON vp.verb_id = v.id
       GROUP BY v.id
@@ -447,6 +454,8 @@ async function handleVerbDetail(request: Request, env: Env) {
       WINDOW w AS (
         ORDER BY
           CASE WHEN pc > 0 THEN 0 ELSE 1 END,
+          CASE WHEN freq IS NULL THEN 1 ELSE 0 END,
+          freq ASC,
           is_phrase ASC,
           normalized_verb ASC
       )
