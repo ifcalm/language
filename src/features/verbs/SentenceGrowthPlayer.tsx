@@ -33,6 +33,10 @@ const TREE_WIDTH = 1000
 const TREE_MIN_HEIGHT = 560
 const TREE_LEVEL_GAP = 190
 const TREE_TOP_PADDING = 92
+// Bottom padding = top padding (92) + the card's 36px top inset, so the tree
+// keeps equal breathing room from the card edges at every node count instead
+// of floating against a fixed-height floor.
+const TREE_BOTTOM_PADDING = TREE_TOP_PADDING + 36
 
 function getRootActionNode(growth: SentenceGrowth) {
   return (
@@ -495,10 +499,7 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
 
   layoutSubtree(rootId, 70, TREE_WIDTH - 70, 0)
 
-  const treeHeight = Math.max(
-    TREE_MIN_HEIGHT,
-    deepestY + 150,
-  )
+  const treeHeight = deepestY + TREE_BOTTOM_PADDING
 
   const layoutNodes = visibleNodes.map((node) => {
     const point = positions.get(node.id) ?? {
@@ -630,9 +631,14 @@ function SentenceTree({
     layoutNodes,
     layoutLinks,
     positions,
-    treeHeight,
   } =
     buildTreeLayout(growth, activeStepIndex)
+  // Size the canvas to the fully grown tree so its height stays stable while
+  // the animation reveals nodes step by step.
+  const treeHeight = buildTreeLayout(
+    growth,
+    Math.max(growth.steps.length - 1, 0),
+  ).treeHeight
   const rootActionNode = getRootActionNode(growth)
 
   if (layoutNodes.length === 0) {
