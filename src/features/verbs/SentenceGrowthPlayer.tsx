@@ -401,7 +401,19 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
     const labelLength = (node?.labelZh?.trim().length ?? 0) * 1.15
     const contentLength = Math.max(textLength, labelLength)
 
-    return Math.min(1.8, Math.max(1, contentLength / 16))
+    return Math.min(2.6, Math.max(1, contentLength / 13))
+  }
+
+  // Rough pixel half-width of a rendered pill (viewBox units ≈ px). Floored to
+  // the node label width so short words with long Chinese labels still get
+  // enough separation.
+  function getNodeHalfWidth(nodeId: string) {
+    const node = visibleNodeById.get(nodeId)
+    const text = node?.text.trim() ?? ''
+    const charWidth = node?.kind === 'action' ? 13.5 : 10.5
+    const pillHalf = (text.length * charWidth + 32) / 2
+
+    return Math.min(175, Math.max(78, pillHalf))
   }
 
   function getSubtreeWeight(
@@ -466,32 +478,43 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
       0,
     )
     let cursor = left
-    const modifierChildren = children.filter(
-      (childId) => primaryLinkByChildId.get(childId)?.kind === 'modifier',
-    )
-    const leftModifierCount = Math.floor(modifierChildren.length / 2)
+    // Greedy multi-row packing: a child that would overlap its left neighbour
+    // drops to the next vertical lane instead of crowding the same line. Keeps
+    // wide phrases from merging without needing more horizontal room.
+    const LANE_STEP = 82
+    const NODE_GAP = 18
+    const MAX_ROWS = 3
+    const rowRightEdge: number[] = []
 
     children.forEach((childId) => {
       const childWeight = getSubtreeWeight(childId)
       const width = ((right - left) * childWeight) / totalWeight
-      const modifierIndex = modifierChildren.indexOf(childId)
-      let branchYOffset = 0
+      const centerX = cursor + width / 2
+      const halfWidth = getNodeHalfWidth(childId)
+      const leftEdge = centerX - halfWidth
 
-      if (children.length > 3 && modifierIndex >= 0) {
-        const laneIndex =
-          modifierIndex < leftModifierCount
-            ? leftModifierCount - modifierIndex - 1
-            : modifierIndex - leftModifierCount
+      let row = rowRightEdge.findIndex((edge) => leftEdge >= edge + NODE_GAP)
 
-        branchYOffset = laneIndex * 74
+      if (row === -1) {
+        if (rowRightEdge.length < MAX_ROWS) {
+          row = rowRightEdge.length
+          rowRightEdge.push(-Infinity)
+        } else {
+          row = rowRightEdge.reduce(
+            (best, edge, index, all) => (edge < all[best] ? index : best),
+            0,
+          )
+        }
       }
+
+      rowRightEdge[row] = centerX + halfWidth
 
       layoutSubtree(
         childId,
         cursor,
         cursor + width,
         depth + 1,
-        inheritedYOffset + branchYOffset,
+        inheritedYOffset + row * LANE_STEP,
       )
       cursor += width
     })
