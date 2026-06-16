@@ -51,6 +51,11 @@
   padding-top: 24px;
 }
 
+/* Match the verb page width so the two list pages line up. */
+.vocab-content {
+  width: min(1040px, calc(100% - 48px));
+}
+
 
 .landing-hero {
   min-height: calc(100vh - 130px);
