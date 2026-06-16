@@ -541,9 +541,13 @@ function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint
       x: from.x,
       y: from.y - 42,
     }
+    // End in the clear gap just *below* the target pill rather than at its
+    // center. The node pills sit above the SVG (z-index), so an arrowhead aimed
+    // at the center gets hidden behind wide pills; coming up into the bottom
+    // keeps it visible regardless of pill width.
     const end = {
-      x: to.x + sideDirection * 66,
-      y: to.y + 2,
+      x: to.x + sideDirection * 44,
+      y: to.y + 60,
     }
     const hash = hashText(link.id)
     const wobble = (hash % 17) - 8
