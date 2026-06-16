@@ -545,17 +545,6 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
   }
 }
 
-function getNodeAnchor(from: TreePoint, to: TreePoint) {
-  const isGoingDown = to.y >= from.y
-  const verticalOffset = 42
-  const horizontalOffset = Math.abs(to.x - from.x) > 190 ? 26 : 0
-
-  return {
-    x: from.x + (to.x > from.x ? horizontalOffset : -horizontalOffset),
-    y: from.y + (isGoingDown ? verticalOffset : -verticalOffset),
-  }
-}
-
 function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint) {
   if (link.kind === 'modifier') {
     const approachesFromLeft = from.x <= to.x
@@ -591,19 +580,17 @@ function makeSketchPath(link: SentenceGrowthLink, from: TreePoint, to: TreePoint
     ].join(' ')
   }
 
-  const start = getNodeAnchor(from, to)
-  const end = getNodeAnchor(to, from)
+  // Core link: parent (from) sits above the child (to). Route it as a vertical
+  // channel — leave the parent straight down, shift sideways in the empty band
+  // between the two rows, then drop straight into the child — so the line stays
+  // in the gaps between cards instead of slicing diagonally across them.
   const hash = hashText(link.id)
-  const wobble = (hash % 19) - 9
-  const lift = 14
-  const controlA = {
-    x: start.x + (end.x - start.x) * 0.34 + wobble,
-    y: start.y + (end.y - start.y) * 0.28 + lift,
-  }
-  const controlB = {
-    x: start.x + (end.x - start.x) * 0.72 - wobble / 2,
-    y: start.y + (end.y - start.y) * 0.74 - lift,
-  }
+  const wobble = (hash % 9) - 4
+  const start = { x: from.x, y: from.y + 44 }
+  const end = { x: to.x, y: to.y - 46 }
+  const midY = (start.y + end.y) / 2
+  const controlA = { x: from.x + wobble, y: midY }
+  const controlB = { x: to.x - wobble, y: midY }
 
   return [
     `M ${start.x.toFixed(1)} ${start.y.toFixed(1)}`,
