@@ -550,6 +550,7 @@ function makeSketchPath(
   from: TreePoint,
   to: TreePoint,
   exitX?: number,
+  entryX?: number,
 ) {
   if (link.kind === 'modifier') {
     const approachesFromLeft = from.x <= to.x
@@ -592,11 +593,31 @@ function makeSketchPath(
   // fanned toward the child's side so several links from the same parent leave
   // at different x and never stack or cross right below the parent.
   const startX = exitX ?? from.x
-  const start = { x: startX, y: from.y + 44 }
-  const end = { x: to.x, y: to.y - 50 }
-  const midY = (start.y + end.y) / 2
-  const controlA = { x: startX, y: midY }
-  const controlB = { x: to.x, y: midY }
+  const endX = entryX ?? to.x
+  let start: TreePoint
+  let end: TreePoint
+  let controlA: TreePoint
+  let controlB: TreePoint
+
+  if (Math.abs(to.y - from.y) < 70) {
+    // Horizontal link between same-row nodes (e.g. a shared actor): arc up into
+    // the empty band above the row so it clears the cards sitting on the row
+    // instead of passing behind them.
+    start = { x: startX, y: from.y - 46 }
+    end = { x: endX, y: to.y - 50 }
+    const arcY = Math.min(start.y, end.y) - 78
+    controlA = { x: startX, y: arcY }
+    controlB = { x: endX, y: arcY }
+  } else {
+    // Vertical exit/entry with a slanted middle third (not a flat horizontal
+    // segment), so the link still travels in the gap between rows but reads
+    // clearly as one connector instead of a faint floating line.
+    start = { x: startX, y: from.y + 44 }
+    end = { x: endX, y: to.y - 50 }
+    const span = end.y - start.y
+    controlA = { x: startX, y: start.y + span * 0.38 }
+    controlB = { x: endX, y: start.y + span * 0.62 }
+  }
 
   return [
     `M ${start.x.toFixed(1)} ${start.y.toFixed(1)}`,
@@ -686,6 +707,34 @@ function SentenceTree({
     })
   })
 
+  // Same idea for the arrowhead side: when one node receives several core
+  // links, spread the entry points across its top edge (ordered by source x) so
+  // the arrowheads don't stack into one indistinguishable blob.
+  const coreEntryX = new Map<string, number>()
+  const coreLinksByChild = new Map<string, SentenceGrowthLink[]>()
+  layoutLinks.forEach((link) => {
+    if (link.kind !== 'core') {
+      return
+    }
+    const siblings = coreLinksByChild.get(link.to) ?? []
+    siblings.push(link)
+    coreLinksByChild.set(link.to, siblings)
+  })
+  coreLinksByChild.forEach((links, childId) => {
+    if (links.length < 2) {
+      return
+    }
+    const childX = positions.get(childId)?.x ?? 0
+    const sorted = [...links].sort(
+      (a, b) => (positions.get(a.from)?.x ?? 0) - (positions.get(b.from)?.x ?? 0),
+    )
+    const count = sorted.length
+    const spacing = Math.min(34, 76 / (count - 1))
+    sorted.forEach((link, index) => {
+      coreEntryX.set(link.id, childX + (index - (count - 1) / 2) * spacing)
+    })
+  })
+
   if (layoutNodes.length === 0) {
     return null
   }
@@ -700,6 +749,7 @@ function SentenceTree({
           aria-hidden="true"
           className="sentence-tree-links"
           viewBox={`0 0 ${TREE_WIDTH} ${treeHeight}`}
+          preserveAspectRatio="none"
         >
           <defs>
             <marker
@@ -734,7 +784,13 @@ function SentenceTree({
               return null
             }
 
-            const pathD = makeSketchPath(link, from, to, coreExitX.get(link.id))
+            const pathD = makeSketchPath(
+              link,
+              from,
+              to,
+              coreExitX.get(link.id),
+              coreEntryX.get(link.id),
+            )
 
             return (
               <g key={link.id} className={`sentence-tree-link-group ${link.kind}`}>
