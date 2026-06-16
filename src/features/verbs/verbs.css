@@ -1410,10 +1410,6 @@
 }
 
 @media (max-width: 680px) {
-  .sentence-tree {
-    min-height: 300px;
-  }
-
   .sentence-tree-core-row {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -1512,7 +1508,6 @@
 /* Verb growth tree: action appears first, then the sentence grows as a real tree. */
 .sentence-tree {
   grid-template-rows: 1fr auto;
-  min-height: clamp(560px, 60vw, 720px);
   overflow: hidden;
   padding: 4px 0 0;
 }
@@ -1524,7 +1519,6 @@
 
 .sentence-tree-canvas {
   position: relative;
-  min-height: clamp(520px, 56vw, 680px);
 }
 
 .sentence-tree-links {
@@ -1694,14 +1688,6 @@
 }
 
 @media (max-width: 680px) {
-  .sentence-tree {
-    min-height: 560px;
-  }
-
-  .sentence-tree-canvas {
-    min-height: 520px;
-  }
-
   .sentence-tree-node {
     max-width: 86px;
     min-width: 78px;
@@ -1951,7 +1937,6 @@
 }
 
 .sentence-animation-card .sentence-tree {
-  min-height: clamp(560px, 60vw, 720px);
   border: 0;
   border-radius: 0;
   background: transparent;
