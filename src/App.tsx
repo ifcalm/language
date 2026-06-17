@@ -1245,17 +1245,16 @@ function App() {
 
                 {selectedVocabularyDetail && (
                   <>
-                    <section className="panel vocabulary-detail-hero">
-                      <div className="vocabulary-detail-topbar">
-                        <button
-                          type="button"
-                          className="vocabulary-detail-back"
-                          onClick={closeVocabularyDetail}
-                        >
-                          ← 返回词库
-                        </button>
+                    <div className="vocabulary-detail-topbar">
+                      <button
+                        type="button"
+                        className="vocabulary-detail-back"
+                        onClick={closeVocabularyDetail}
+                      >
+                        ← 返回词库
+                      </button>
 
-                        <div className="vocabulary-detail-nav">
+                      <div className="vocabulary-detail-nav">
                           {selectedVocabularyDetail.position &&
                             selectedVocabularyDetail.total && (
                               <span className="vocabulary-detail-position">
@@ -1289,8 +1288,9 @@ function App() {
                             →
                           </button>
                         </div>
-                      </div>
+                    </div>
 
+                    <section className="panel vocabulary-detail-hero">
                       <div className="vocabulary-detail-heading">
                         <span>
                           #{String(selectedVocabularyRank).padStart(4, '0')}
@@ -1396,16 +1396,6 @@ function App() {
                         这个词暂时还没有例句，后面会逐步补齐。
                       </section>
                     )}
-
-                    <div className="vocabulary-detail-footer">
-                      <span className="vocabulary-detail-footer-rank">
-                        频率位次 #{selectedVocabularyRank}
-                        {selectedVocabularyDetail.position &&
-                        selectedVocabularyDetail.total
-                          ? ` · 第 ${selectedVocabularyDetail.position} / ${selectedVocabularyDetail.total} 常用`
-                          : ''}
-                      </span>
-                    </div>
                   </>
                 )}
               </>
