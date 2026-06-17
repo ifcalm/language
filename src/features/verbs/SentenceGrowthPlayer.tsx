@@ -942,10 +942,81 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
                 </ol>
               </aside>
             </div>
+
+            <TreeLegend />
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function TreeLegend() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <div className={`sentence-tree-legend ${open ? 'is-open' : ''}`}>
+      <button
+        type="button"
+        className="legend-toggle"
+        aria-expanded={open}
+        aria-label={open ? '收起图例' : '展开图例说明'}
+        onClick={() => setOpen((current) => !current)}
+      >
+        <span className="legend-toggle-icon" aria-hidden="true">
+          i
+        </span>
+        图例
+      </button>
+
+      <div className="legend-content" aria-hidden={!open}>
+        <div className="legend-line">
+          <div className="legend-group">
+            <span className="legend-group-title">卡片</span>
+            <span className="legend-chip">
+              <i className="legend-swatch action" />
+              动作（动词）
+            </span>
+            <span className="legend-chip">
+              <i className="legend-swatch core" />
+              主干成分（施动者、对象等）
+            </span>
+            <span className="legend-chip">
+              <i className="legend-swatch modifier" />
+              修饰成分（时间、地点、方式等）
+            </span>
+          </div>
+        </div>
+
+        <div className="legend-line">
+          <div className="legend-group">
+            <span className="legend-group-title">箭头</span>
+            <span className="legend-chip">
+              <svg className="legend-arrow" viewBox="0 0 30 10" aria-hidden="true">
+                <line x1="1" y1="5" x2="21" y2="5" stroke="#111827" strokeWidth="2" />
+                <path d="M20 1 L28 5 L20 9 Z" fill="#111827" />
+              </svg>
+              主干连接（动作 → 主干）
+            </span>
+            <span className="legend-chip">
+              <svg className="legend-arrow" viewBox="0 0 30 10" aria-hidden="true">
+                <line x1="1" y1="5" x2="21" y2="5" stroke="#15803d" strokeWidth="2" />
+                <path d="M20 1 L28 5 L20 9 Z" fill="#15803d" />
+              </svg>
+              修饰连接（修饰 → 被修饰对象）
+            </span>
+          </div>
+
+          <div className="legend-group">
+            <span className="legend-group-title">文字</span>
+            <span className="legend-chip">
+              <i className="legend-graytext">说明</i>
+              卡片上方灰字＝该词在句中的作用
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

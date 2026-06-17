@@ -1578,6 +1578,135 @@
   animation: sentence-tree-draw 0.42s ease both;
 }
 
+/* Legend under the tree card: collapsed to a quiet icon, expands left→right. */
+.sentence-tree-legend {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 0 2px;
+  min-width: 0;
+}
+
+.legend-toggle {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 2px 2px;
+}
+
+.legend-toggle:hover,
+.legend-toggle:focus-visible {
+  color: var(--text-soft);
+}
+
+.legend-toggle-icon {
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.62rem;
+  font-style: italic;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.legend-content {
+  display: grid;
+  gap: 4px 0;
+  min-width: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.sentence-tree-legend.is-open .legend-content {
+  max-height: 220px;
+  opacity: 0.72;
+}
+
+.legend-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+}
+
+.sentence-tree-legend .legend-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+}
+
+.sentence-tree-legend .legend-group-title {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.sentence-tree-legend .legend-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.3;
+}
+
+.sentence-tree-legend .legend-swatch {
+  flex-shrink: 0;
+  width: 13px;
+  height: 10px;
+  border: 1.4px solid;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.sentence-tree-legend .legend-swatch.action {
+  border-color: #ef4444;
+  background: #fff5f5;
+}
+
+.sentence-tree-legend .legend-swatch.core {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.sentence-tree-legend .legend-swatch.modifier {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.sentence-tree-legend .legend-arrow {
+  flex-shrink: 0;
+  width: 24px;
+  height: 8px;
+}
+
+.sentence-tree-legend .legend-graytext {
+  flex-shrink: 0;
+  padding: 0 5px;
+  border: 1px dashed #d1d5db;
+  border-radius: 4px;
+  color: #9ca3af;
+  font-size: 0.64rem;
+  font-style: normal;
+}
+
 .sentence-tree-link.core {
   stroke: #111827;
 }
