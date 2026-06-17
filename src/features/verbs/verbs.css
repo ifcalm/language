@@ -1583,7 +1583,9 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  margin-top: 12px;
+  /* The stage lays children out with a 36px gap; pull the legend back so it
+     sits ~20px under the tree card it explains rather than floating away. */
+  margin-top: -16px;
   padding: 0 2px;
   min-width: 0;
 }
