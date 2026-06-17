@@ -1010,7 +1010,6 @@ function TreeLegend() {
           <div className="legend-group">
             <span className="legend-group-title">文字</span>
             <span className="legend-chip">
-              <i className="legend-graytext">说明</i>
               卡片上方灰字＝该词在句中的作用
             </span>
           </div>

@@ -1654,10 +1654,15 @@
 }
 
 .sentence-tree-legend .legend-group-title {
-  color: var(--text-muted);
-  font-size: 0.68rem;
-  font-weight: 700;
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 800;
   letter-spacing: 0.02em;
+}
+
+.sentence-tree-legend .legend-group-title::after {
+  content: '：';
+  font-weight: 800;
 }
 
 .sentence-tree-legend .legend-chip {
@@ -1699,15 +1704,6 @@
   height: 8px;
 }
 
-.sentence-tree-legend .legend-graytext {
-  flex-shrink: 0;
-  padding: 0 5px;
-  border: 1px dashed #d1d5db;
-  border-radius: 4px;
-  color: #9ca3af;
-  font-size: 0.64rem;
-  font-style: normal;
-}
 
 .sentence-tree-link.core {
   stroke: #111827;
