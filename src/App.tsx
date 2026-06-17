@@ -34,10 +34,7 @@ import {
   type VocabularyPronunciation,
 } from './data/vocabulary'
 
-const ROADMAP_PROGRESS_KEY = 'english-orbit-roadmap-progress-v1'
 const VOCABULARY_PAGE_SIZE = 120
-// Fallback until the real corpus size arrives from /api/vocabulary?band=all.
-const CORE_VOCABULARY_TOTAL = 5536
 
 function getInitialVerbLookup() {
   if (typeof window === 'undefined') {
@@ -199,22 +196,6 @@ async function requestVocabularyDetail(
   return mapVocabularyDetail(payload)
 }
 
-function clampRoadmapProgress(value: number) {
-  if (!Number.isFinite(value)) {
-    return 0
-  }
-
-  return Math.max(0, Math.min(CORE_VOCABULARY_TOTAL, Math.round(value)))
-}
-
-function loadRoadmapProgress() {
-  if (typeof window === 'undefined') {
-    return 0
-  }
-
-  return clampRoadmapProgress(Number(window.localStorage.getItem(ROADMAP_PROGRESS_KEY)))
-}
-
 function getVocabularyRank(item: Pick<CoreVocabularyEntry, 'frequencyRank' | 'priority'>) {
   return item.frequencyRank ?? item.priority
 }
@@ -281,7 +262,6 @@ function highlightTargetWord(sentence: string, word: string) {
 
 function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
-  const [roadmapProgress, setRoadmapProgress] = useState(loadRoadmapProgress)
   const [resourceSkill, setResourceSkill] = useState<Skill | 'all'>('all')
   const [resourceLevel, setResourceLevel] = useState<Difficulty | 'all'>('all')
   const [query, setQuery] = useState('')
@@ -292,9 +272,6 @@ function App() {
   const [focusedVocabularyIndex, setFocusedVocabularyIndex] = useState(0)
   const [apiVocabulary, setApiVocabulary] = useState<CoreVocabularyEntry[]>([])
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
-  const [coreVocabularyTotal, setCoreVocabularyTotal] = useState(
-    CORE_VOCABULARY_TOTAL,
-  )
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
   const [vocabularyApiError, setVocabularyApiError] = useState('')
   const [selectedVocabularyLookup, setSelectedVocabularyLookup] = useState('')
@@ -376,15 +353,6 @@ function App() {
   const placeholderPage = placeholderPages[view]
   const vocabularyPagination = (
     <div className="vocabulary-pagination">
-      {roadmapProgress > 0 && (
-        <button
-          type="button"
-          className="pagination-progress"
-          onClick={jumpToRoadmapProgress}
-        >
-          回到我的进度 #{roadmapProgress}
-        </button>
-      )}
       <button
         type="button"
         className="pagination-step"
@@ -414,13 +382,7 @@ function App() {
   const selectedVocabularyRank = selectedVocabularyDetail
     ? getVocabularyRank(selectedVocabularyDetail.core)
     : 0
-  const selectedVocabularyIsInRoadmapProgress =
-    selectedVocabularyRank > 0 && selectedVocabularyRank <= roadmapProgress
   const lookupPrimaryExample = lookupDetail?.examples[0]
-
-  useEffect(() => {
-    window.localStorage.setItem(ROADMAP_PROGRESS_KEY, String(roadmapProgress))
-  }, [roadmapProgress])
 
   useEffect(() => {
     if (typeof window === 'undefined' || view !== 'vocabulary') {
@@ -506,9 +468,6 @@ function App() {
 
           break
         }
-        case 'm':
-          updateRoadmapProgress(getVocabularyRank(currentItem))
-          break
         default:
           break
       }
@@ -522,37 +481,6 @@ function App() {
     visibleCoreVocabulary,
     focusedVocabularyIndex,
   ])
-
-  useEffect(() => {
-    const controller = new AbortController()
-
-    async function fetchCoreVocabularyTotal() {
-      try {
-        const response = await fetch('/api/vocabulary?band=all&limit=1', {
-          signal: controller.signal,
-        })
-
-        if (!response.ok) {
-          return
-        }
-
-        const payload = (await response.json()) as VocabularyApiResponse
-        const total = payload.pagination?.total ?? 0
-
-        // Older workers fall back to top-500 for unknown bands; only trust
-        // the count when the API confirms it answered for the full corpus.
-        if (total > 0 && payload.filters?.band === 'all') {
-          setCoreVocabularyTotal(total)
-        }
-      } catch {
-        // Keep the fallback total when the request fails.
-      }
-    }
-
-    fetchCoreVocabularyTotal()
-
-    return () => controller.abort()
-  }, [])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -804,11 +732,6 @@ function App() {
     }
   }
 
-  function updateRoadmapProgress(nextProgress: number) {
-    const normalizedProgress = clampRoadmapProgress(nextProgress)
-    setRoadmapProgress(normalizedProgress)
-  }
-
   function scrollToVocabularyToolbar() {
     vocabularyToolbarRef.current?.scrollIntoView({
       behavior: 'smooth',
@@ -822,44 +745,6 @@ function App() {
       VOCABULARY_PAGE_SIZE
     setVocabularyOffset(Math.max(0, Math.min(nextOffset, lastPageOffset)))
     setFocusedVocabularyIndex(0)
-    scrollToVocabularyToolbar()
-  }
-
-  async function jumpToRoadmapProgress() {
-    if (roadmapProgress <= 0) {
-      return
-    }
-
-    // Ranks have gaps, so rank N is usually not the Nth row. Ask the API how
-    // many words sit at or below the progress rank; fall back to treating the
-    // rank as a position when the deployed worker does not know maxRank yet.
-    let position = roadmapProgress
-
-    try {
-      const response = await fetch(
-        `/api/vocabulary?band=all&limit=1&maxRank=${roadmapProgress}`,
-      )
-
-      if (response.ok) {
-        const payload = (await response.json()) as VocabularyApiResponse
-
-        if (
-          typeof payload.filters?.maxRank === 'number' &&
-          payload.pagination.total > 0
-        ) {
-          position = payload.pagination.total
-        }
-      }
-    } catch {
-      // Keep the rank-as-position fallback.
-    }
-
-    setVocabularyQuery('')
-    setVocabularyOffset(
-      Math.floor((position - 1) / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE,
-    )
-    vocabularyFocusSourceRef.current = 'keyboard'
-    setFocusedVocabularyIndex((position - 1) % VOCABULARY_PAGE_SIZE)
     scrollToVocabularyToolbar()
   }
 
@@ -1061,10 +946,6 @@ function App() {
             <div>
               <p>{pageHeading.eyebrow}</p>
               <h1>{pageHeading.title}</h1>
-            </div>
-            <div className="header-meta">
-              <span>{roadmapProgress} / {coreVocabularyTotal}</span>
-              <strong>自由进度</strong>
             </div>
           </header>
         )}
@@ -1524,18 +1405,6 @@ function App() {
                           ? ` · 第 ${selectedVocabularyDetail.position} / ${selectedVocabularyDetail.total} 常用`
                           : ''}
                       </span>
-                      <button
-                        type="button"
-                        className="vocabulary-detail-mark"
-                        disabled={selectedVocabularyIsInRoadmapProgress}
-                        onClick={() =>
-                          updateRoadmapProgress(selectedVocabularyRank)
-                        }
-                      >
-                        {selectedVocabularyIsInRoadmapProgress
-                          ? '已在进度内'
-                          : `标记到 #${selectedVocabularyRank}`}
-                      </button>
                     </div>
                   </>
                 )}
@@ -1595,8 +1464,6 @@ function App() {
             <section className="panel vocabulary-list" aria-label="词汇列表">
               {visibleCoreVocabulary.map((item, index) => {
                 const rank = getVocabularyRank(item)
-                const isInRoadmapProgress = rank > 0 && rank <= roadmapProgress
-                const isProgressRow = rank > 0 && rank === roadmapProgress
                 const isFocused = index === focusedVocabularyIndex
                 const primaryPronunciation = getPrimaryPronunciation(item)
                 const isPlaying =
@@ -1607,9 +1474,7 @@ function App() {
                 return (
                   <article
                     key={item.id}
-                    className={`vocabulary-row${isFocused ? ' is-focused' : ''}${
-                      isProgressRow ? ' is-progress' : ''
-                    }`}
+                    className={`vocabulary-row${isFocused ? ' is-focused' : ''}`}
                     onClick={() => openVocabularyDetail(item.id)}
                     onMouseEnter={() => {
                       vocabularyFocusSourceRef.current = 'mouse'
@@ -1639,9 +1504,6 @@ function App() {
                       ▶
                     </button>
                     <span className="row-meaning">{item.meaning}</span>
-                    {isProgressRow && (
-                      <span className="row-progress-flag">我的进度</span>
-                    )}
                     <span className="row-actions">
                       <button
                         type="button"
@@ -1651,16 +1513,6 @@ function App() {
                         }}
                       >
                         详情
-                      </button>
-                      <button
-                        type="button"
-                        disabled={isInRoadmapProgress}
-                        onClick={(event) => {
-                          event.stopPropagation()
-                          updateRoadmapProgress(rank)
-                        }}
-                      >
-                        {isInRoadmapProgress ? '已在进度内' : '标记到这里'}
                       </button>
                     </span>
                   </article>
@@ -1684,9 +1536,6 @@ function App() {
               </span>
               <span>
                 <kbd>p</kbd> 读音
-              </span>
-              <span>
-                <kbd>m</kbd> 标记
               </span>
               <span>
                 <kbd>/</kbd> 搜索

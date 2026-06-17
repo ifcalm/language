@@ -349,30 +349,6 @@
   letter-spacing: -0.08em;
 }
 
-.header-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.header-meta span,
-.header-meta strong {
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 0.88rem;
-}
-
-.header-meta span {
-  background: var(--text);
-  color: var(--surface);
-}
-
-.header-meta strong {
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
 
 .panel {
   background: rgb(255 255 255 / 0.9);
@@ -824,23 +800,6 @@ button:disabled,
   white-space: nowrap;
 }
 
-.pagination-progress {
-  margin-right: 4px;
-  border: 1px solid rgb(22 163 74 / 0.4);
-  border-radius: 999px;
-  padding: 8px 14px;
-  background: rgb(22 163 74 / 0.08);
-  color: #15803d;
-  font: inherit;
-  font-weight: 750;
-  cursor: pointer;
-}
-
-.pagination-progress:hover,
-.pagination-progress:focus-visible {
-  border-color: #16a34a;
-}
-
 .vocabulary-pagination-footer {
   display: flex;
   justify-content: flex-end;
@@ -869,10 +828,6 @@ button:disabled,
 
 .vocabulary-row.is-focused {
   background: var(--surface-subtle);
-}
-
-.vocabulary-row.is-progress {
-  box-shadow: inset 3px 0 0 #16a34a;
 }
 
 .row-rank {
@@ -941,17 +896,6 @@ button:disabled,
   color: var(--text-soft);
   font-size: 0.92rem;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.row-progress-flag {
-  flex-shrink: 0;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgb(22 163 74 / 0.1);
-  color: #15803d;
-  font-size: 0.74rem;
-  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -1155,19 +1099,6 @@ button:disabled,
   font-size: 0.9rem;
 }
 
-.vocabulary-detail-mark {
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  padding: 10px 16px;
-  background: var(--text);
-  color: var(--surface);
-  cursor: pointer;
-}
-
-.vocabulary-detail-mark:disabled {
-  cursor: not-allowed;
-  opacity: 0.46;
-}
 
 .vocabulary-detail-examples mark {
   padding: 0 3px;
@@ -1852,10 +1783,6 @@ button:disabled,
   .row-actions {
     display: none;
   }
-
-  .pagination-progress {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 640px) {
@@ -1882,10 +1809,6 @@ button:disabled,
   .page-header {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .header-meta {
-    justify-content: flex-start;
   }
 
   .roadmap-grid,
