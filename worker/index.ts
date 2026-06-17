@@ -701,7 +701,36 @@ async function handleVocabularyDetail(request: Request, env: Env) {
     return makeErrorResponse('Vocabulary item not found', 404)
   }
 
-  return makeJsonResponse(detail)
+  // Neighbours in the same order the list uses, so prev/next on the detail
+  // page walks the corpus exactly like scrolling the list would.
+  const neighbour = await env.DB.prepare(
+    `WITH ordered AS (
+      SELECT
+        id,
+        ROW_NUMBER() OVER w AS rn,
+        LAG(id) OVER w AS prev_id,
+        LEAD(id) OVER w AS next_id
+      FROM vocab
+      WINDOW w AS (
+        ORDER BY COALESCE(frequency_rank, 999999) ASC, word ASC
+      )
+    )
+    SELECT prev_id, next_id, rn FROM ordered WHERE id = ?`,
+  )
+    .bind(core.id)
+    .first<{ prev_id: string | null; next_id: string | null; rn: number }>()
+
+  const totalRow = await env.DB.prepare(
+    `SELECT COUNT(*) AS total FROM vocab`,
+  ).first<{ total: number }>()
+
+  return makeJsonResponse({
+    ...detail,
+    prevId: neighbour?.prev_id ?? null,
+    nextId: neighbour?.next_id ?? null,
+    position: neighbour?.rn ?? null,
+    total: totalRow?.total ?? null,
+  })
 }
 
 async function handleAdminVocabularyDetail(request: Request, env: Env) {
