@@ -1041,6 +1041,7 @@ button:disabled,
   align-items: center;
   justify-content: space-between;
   gap: 14px;
+  margin-bottom: 16px;
 }
 
 .vocabulary-detail-nav {
@@ -1083,20 +1084,6 @@ button:disabled,
 .vocab-pager-btn:disabled {
   cursor: not-allowed;
   opacity: 0.4;
-}
-
-.vocabulary-detail-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.vocabulary-detail-footer-rank {
-  color: var(--text-muted);
-  font-size: 0.9rem;
 }
 
 
