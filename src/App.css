@@ -1092,6 +1092,91 @@ button:disabled,
   text-decoration-line: underline;
 }
 
+.vocabulary-detail-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.vocabulary-detail-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vocabulary-detail-position {
+  margin-right: 4px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.vocab-pager-btn {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.02rem;
+  line-height: 1;
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+.vocab-pager-btn:hover:not(:disabled),
+.vocab-pager-btn:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--surface-subtle);
+}
+
+.vocab-pager-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.vocabulary-detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.vocabulary-detail-footer-rank {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.vocabulary-detail-mark {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--text);
+  color: var(--surface);
+  cursor: pointer;
+}
+
+.vocabulary-detail-mark:disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+}
+
+.vocabulary-detail-examples mark {
+  padding: 0 3px;
+  border-radius: 4px;
+  background: #f1f1f1;
+  color: var(--text);
+  font-weight: 800;
+}
+
 .vocabulary-detail-heading {
   display: grid;
   gap: 8px;

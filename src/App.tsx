@@ -108,6 +108,10 @@ interface VocabularyDetailResponse {
   core: VocabularyDetailCore
   pronunciations: VocabularyPronunciation[]
   examples: VocabularyExample[]
+  prevId?: string | null
+  nextId?: string | null
+  position?: number | null
+  total?: number | null
 }
 
 interface AuthUser extends SiteHeaderUser {
@@ -127,6 +131,10 @@ interface VocabularyDetail {
   }
   pronunciations: VocabularyPronunciation[]
   examples: VocabularyExample[]
+  prevId: string | null
+  nextId: string | null
+  position: number | null
+  total: number | null
 }
 
 const mapApiVocabularyItem = (item: VocabularyApiItem): CoreVocabularyEntry => ({
@@ -168,6 +176,10 @@ const mapVocabularyDetail = (
     },
     pronunciations,
     examples,
+    prevId: payload.prevId ?? null,
+    nextId: payload.nextId ?? null,
+    position: payload.position ?? null,
+    total: payload.total ?? null,
   }
 }
 
@@ -244,6 +256,26 @@ function getPrimaryPronunciation(item: {
     pronunciations[0] ??
     null
   )
+}
+
+// Highlight the target word (and its common inflections) inside an example so
+// the word is easy to spot in context.
+function highlightTargetWord(sentence: string, word: string) {
+  const base = word.trim()
+
+  if (!base) {
+    return sentence
+  }
+
+  const escaped = base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const splitter = new RegExp(`(\\b${escaped}(?:s|es|ed|ing|d)?\\b)`, 'gi')
+  const tester = new RegExp(`^${escaped}(?:s|es|ed|ing|d)?$`, 'i')
+
+  return sentence
+    .split(splitter)
+    .map((part, index) =>
+      tester.test(part) ? <mark key={index}>{part}</mark> : part,
+    )
 }
 
 
@@ -382,7 +414,6 @@ function App() {
   const selectedVocabularyRank = selectedVocabularyDetail
     ? getVocabularyRank(selectedVocabularyDetail.core)
     : 0
-  const selectedVocabularyPrimaryExample = selectedVocabularyDetail?.examples[0]
   const selectedVocabularyIsInRoadmapProgress =
     selectedVocabularyRank > 0 && selectedVocabularyRank <= roadmapProgress
   const lookupPrimaryExample = lookupDetail?.examples[0]
@@ -674,6 +705,38 @@ function App() {
 
     return () => controller.abort()
   }, [selectedVocabularyLookup, view])
+
+  // Walk to the previous/next word with the keyboard on the detail page.
+  useEffect(() => {
+    if (view !== 'vocabulary' || !selectedVocabularyDetail) {
+      return
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      const target = event.target as HTMLElement | null
+      const isEditable =
+        !!target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'SELECT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.isContentEditable)
+
+      if (isEditable || event.metaKey || event.ctrlKey || event.altKey) {
+        return
+      }
+
+      if (event.key === 'ArrowLeft' && selectedVocabularyDetail?.prevId) {
+        event.preventDefault()
+        openVocabularyDetail(selectedVocabularyDetail.prevId)
+      } else if (event.key === 'ArrowRight' && selectedVocabularyDetail?.nextId) {
+        event.preventDefault()
+        openVocabularyDetail(selectedVocabularyDetail.nextId)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [view, selectedVocabularyDetail])
 
   useEffect(() => {
     if (!lookupQuery) {
@@ -1302,13 +1365,50 @@ function App() {
                 {selectedVocabularyDetail && (
                   <>
                     <section className="panel vocabulary-detail-hero">
-                      <button
-                        type="button"
-                        className="vocabulary-detail-back"
-                        onClick={closeVocabularyDetail}
-                      >
-                        ← 返回词库
-                      </button>
+                      <div className="vocabulary-detail-topbar">
+                        <button
+                          type="button"
+                          className="vocabulary-detail-back"
+                          onClick={closeVocabularyDetail}
+                        >
+                          ← 返回词库
+                        </button>
+
+                        <div className="vocabulary-detail-nav">
+                          {selectedVocabularyDetail.position &&
+                            selectedVocabularyDetail.total && (
+                              <span className="vocabulary-detail-position">
+                                {selectedVocabularyDetail.core.word} ·{' '}
+                                {selectedVocabularyDetail.position}/
+                                {selectedVocabularyDetail.total}
+                              </span>
+                            )}
+                          <button
+                            type="button"
+                            className="vocab-pager-btn"
+                            aria-label="上一词"
+                            disabled={!selectedVocabularyDetail.prevId}
+                            onClick={() =>
+                              selectedVocabularyDetail.prevId &&
+                              openVocabularyDetail(selectedVocabularyDetail.prevId)
+                            }
+                          >
+                            ←
+                          </button>
+                          <button
+                            type="button"
+                            className="vocab-pager-btn"
+                            aria-label="下一词"
+                            disabled={!selectedVocabularyDetail.nextId}
+                            onClick={() =>
+                              selectedVocabularyDetail.nextId &&
+                              openVocabularyDetail(selectedVocabularyDetail.nextId)
+                            }
+                          >
+                            →
+                          </button>
+                        </div>
+                      </div>
 
                       <div className="vocabulary-detail-heading">
                         <span>
@@ -1388,71 +1488,55 @@ function App() {
                       )}
                     </section>
 
-                    <section className="vocabulary-detail-layout">
-                      <article className="panel vocabulary-detail-main">
-                        <span>How to read it</span>
-                        <h2>阅读提示</h2>
-                        <p>
-                          看到 <strong>{selectedVocabularyDetail.core.word}</strong>{' '}
-                          时，不要只背中文义。看它附近的动词和对象，再把它放回完整句子里理解。
-                        </p>
-
-                        {selectedVocabularyPrimaryExample && (
-                          <div className="vocabulary-detail-example">
-                            <h3>精选例句</h3>
-                            <p>{selectedVocabularyPrimaryExample.sentenceEn}</p>
-                            {selectedVocabularyPrimaryExample.sentenceZh && (
-                              <small>
-                                {selectedVocabularyPrimaryExample.sentenceZh}
-                              </small>
-                            )}
-                          </div>
-                        )}
-                      </article>
-
-                      <aside className="panel vocabulary-detail-side">
-                        <h2>快速信息</h2>
-                        <dl>
-                          <div>
-                            <dt>频率排序</dt>
-                            <dd>#{selectedVocabularyRank}</dd>
-                          </div>
-                          <div>
-                            <dt>例句数量</dt>
-                            <dd>{selectedVocabularyDetail.examples.length}</dd>
-                          </div>
-                        </dl>
-
-                        <div className="vocabulary-detail-actions">
-                          <button
-                            type="button"
-                            disabled={selectedVocabularyIsInRoadmapProgress}
-                            onClick={() =>
-                              updateRoadmapProgress(selectedVocabularyRank)
-                            }
-                          >
-                            {selectedVocabularyIsInRoadmapProgress
-                              ? '已在进度内'
-                              : `标记到 #${selectedVocabularyRank}`}
-                          </button>
-                        </div>
-                      </aside>
-                    </section>
-
-                    {selectedVocabularyDetail.examples.length > 1 && (
+                    {selectedVocabularyDetail.examples.length > 0 ? (
                       <section className="panel vocabulary-detail-examples">
                         <div className="section-heading">
-                          <h2>更多例句</h2>
-                          <span>{selectedVocabularyDetail.examples.length} 条</span>
+                          <h2>在句子里</h2>
+                          <span>
+                            {selectedVocabularyDetail.examples.length} 条例句
+                          </span>
                         </div>
-                        {selectedVocabularyDetail.examples.slice(1).map((example) => (
+                        {selectedVocabularyDetail.examples.map((example) => (
                           <article key={example.id}>
-                            <p>{example.sentenceEn}</p>
-                            {example.sentenceZh && <small>{example.sentenceZh}</small>}
+                            <p>
+                              {highlightTargetWord(
+                                example.sentenceEn,
+                                selectedVocabularyDetail.core.word,
+                              )}
+                            </p>
+                            {example.sentenceZh && (
+                              <small>{example.sentenceZh}</small>
+                            )}
                           </article>
                         ))}
                       </section>
+                    ) : (
+                      <section className="panel vocabulary-source-note">
+                        这个词暂时还没有例句，后面会逐步补齐。
+                      </section>
                     )}
+
+                    <div className="vocabulary-detail-footer">
+                      <span className="vocabulary-detail-footer-rank">
+                        频率位次 #{selectedVocabularyRank}
+                        {selectedVocabularyDetail.position &&
+                        selectedVocabularyDetail.total
+                          ? ` · 第 ${selectedVocabularyDetail.position} / ${selectedVocabularyDetail.total} 常用`
+                          : ''}
+                      </span>
+                      <button
+                        type="button"
+                        className="vocabulary-detail-mark"
+                        disabled={selectedVocabularyIsInRoadmapProgress}
+                        onClick={() =>
+                          updateRoadmapProgress(selectedVocabularyRank)
+                        }
+                      >
+                        {selectedVocabularyIsInRoadmapProgress
+                          ? '已在进度内'
+                          : `标记到 #${selectedVocabularyRank}`}
+                      </button>
+                    </div>
                   </>
                 )}
               </>
