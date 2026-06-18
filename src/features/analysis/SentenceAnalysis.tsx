@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import './sentence-analysis.css'
 
@@ -85,12 +85,19 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
   }
 
   // Anchor the popover to the trigger; flip above when there's no room below.
-  useLayoutEffect(() => {
-    if (!open || !triggerRef.current) {
+  const updatePosition = useCallback(() => {
+    if (!triggerRef.current) {
       return
     }
 
     const rect = triggerRef.current.getBoundingClientRect()
+
+    // Close once the trigger has scrolled out of view entirely.
+    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+      setOpen(false)
+      return
+    }
+
     const width = Math.min(POPOVER_WIDTH, window.innerWidth - EDGE_GAP * 2)
     const left = Math.max(
       EDGE_GAP,
@@ -119,9 +126,16 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
     }
 
     setPosition({ top, left, width, maxHeight: Math.max(140, maxHeight) })
-  }, [open, status])
+  }, [])
 
-  // Dismiss on outside interaction, Escape, scroll, or resize.
+  useLayoutEffect(() => {
+    if (open) {
+      updatePosition()
+    }
+  }, [open, status, updatePosition])
+
+  // Keep the popover glued to the trigger on scroll/resize; dismiss only on
+  // outside interaction or Escape.
   useEffect(() => {
     if (!open) {
       return
@@ -144,22 +158,18 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
       setOpen(false)
     }
 
-    function onReflow() {
-      setOpen(false)
-    }
-
     window.addEventListener('keydown', onKeyDown)
     window.addEventListener('pointerdown', onPointerDown, true)
-    window.addEventListener('scroll', onReflow, true)
-    window.addEventListener('resize', onReflow)
+    window.addEventListener('scroll', updatePosition, true)
+    window.addEventListener('resize', updatePosition)
 
     return () => {
       window.removeEventListener('keydown', onKeyDown)
       window.removeEventListener('pointerdown', onPointerDown, true)
-      window.removeEventListener('scroll', onReflow, true)
-      window.removeEventListener('resize', onReflow)
+      window.removeEventListener('scroll', updatePosition, true)
+      window.removeEventListener('resize', updatePosition)
     }
-  }, [open])
+  }, [open, updatePosition])
 
   function handleRetry() {
     runAnalysis()
@@ -205,7 +215,24 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
                 : { visibility: 'hidden' }
             }
           >
-            <p className="sentence-analysis-source">{sentence}</p>
+            <div className="sentence-analysis-header">
+              <p className="sentence-analysis-source">{sentence}</p>
+              <button
+                type="button"
+                className="sentence-analysis-close"
+                aria-label="关闭"
+                onClick={() => setOpen(false)}
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 6l12 12M18 6L6 18"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
 
             {status === 'loading' && (
               <div className="sentence-analysis-loading" aria-busy="true">
