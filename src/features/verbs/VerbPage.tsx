@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { requestVerbDetail, requestVerbList } from './api'
+import SentenceAnalysis from '../analysis/SentenceAnalysis'
 import SentenceGrowthPlayer from './SentenceGrowthPlayer'
 import type { VerbDetail, VerbListItem } from './types'
 import './verbs.css'
@@ -181,24 +182,32 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
       {!isLoading && items.length > 0 && (
         <section className="panel verbs-list" aria-label="动词列表">
           {items.map((item, index) => (
-            <button
-              key={item.id}
-              type="button"
-              className={`verb-row${item.pathCount === 0 ? ' is-pending' : ''}`}
-              onClick={() => onOpenVerb(item.id)}
-            >
-              <span className="verb-row-rank">
-                #{String(offset + index + 1).padStart(4, '0')}
-              </span>
-              <span className="verb-row-word">{item.verb}</span>
-              <span className="verb-row-meaning">{item.meaningZh}</span>
-              {item.coreSentenceEn && (
-                <span className="verb-row-example" title={item.coreSentenceZh}>
-                  {item.coreSentenceEn}
+            <div key={item.id} className="verb-row-item">
+              <button
+                type="button"
+                className={`verb-row${item.pathCount === 0 ? ' is-pending' : ''}`}
+                onClick={() => onOpenVerb(item.id)}
+              >
+                <span className="verb-row-rank">
+                  #{String(offset + index + 1).padStart(4, '0')}
                 </span>
-              )}
+                <span className="verb-row-word">{item.verb}</span>
+                <span className="verb-row-meaning">{item.meaningZh}</span>
+                {item.coreSentenceEn && (
+                  <span className="verb-row-example" title={item.coreSentenceZh}>
+                    {item.coreSentenceEn}
+                  </span>
+                )}
+              </button>
               {item.isPhrase && <span className="verb-row-tag">短语</span>}
-            </button>
+              {item.coreSentenceEn && (
+                <SentenceAnalysis
+                  sentence={item.coreSentenceEn}
+                  word={item.verb}
+                  translation={item.coreSentenceZh}
+                />
+              )}
+            </div>
           ))}
         </section>
       )}

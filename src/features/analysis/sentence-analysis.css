@@ -1,16 +1,11 @@
-.sentence-analysis {
-  display: inline-flex;
-  vertical-align: middle;
-}
-
 .sentence-analysis-trigger {
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   padding: 0;
-  margin-left: 6px;
   border: none;
   border-radius: 50%;
   background: transparent;
@@ -24,18 +19,20 @@
   background: var(--surface-subtle);
 }
 
-.sentence-analysis.is-open .sentence-analysis-trigger {
+.sentence-analysis-trigger.is-open {
   color: var(--text);
   background: var(--surface-subtle);
 }
 
 .sentence-analysis-trigger svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
 
 .sentence-analysis-panel {
-  margin-top: 10px;
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 2px;
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 12px;
