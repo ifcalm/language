@@ -16,6 +16,7 @@ import {
 } from './app/routing'
 import VocabularyAdmin from './admin/VocabularyAdmin'
 import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
+import SentenceAnalysis from './features/analysis/SentenceAnalysis'
 import AuthPage from './features/auth/AuthPage'
 import StrategyPage from './features/strategy/StrategyPage'
 import VerbPage from './features/verbs/VerbPage'
@@ -1384,6 +1385,11 @@ function App() {
                                 example.sentenceEn,
                                 selectedVocabularyDetail.core.word,
                               )}
+                              <SentenceAnalysis
+                                sentence={example.sentenceEn}
+                                word={selectedVocabularyDetail.core.word}
+                                translation={example.sentenceZh}
+                              />
                             </p>
                             {example.sentenceZh && (
                               <small>{example.sentenceZh}</small>
