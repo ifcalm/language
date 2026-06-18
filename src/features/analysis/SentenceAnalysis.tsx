@@ -1,4 +1,5 @@
-import { Fragment, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import './sentence-analysis.css'
 
 interface AnalysisKeyword {
@@ -19,14 +20,29 @@ interface SentenceAnalysisProps {
   translation?: string
 }
 
+interface PopoverPosition {
+  top: number
+  left: number
+  width: number
+  maxHeight: number
+}
+
 type Status = 'idle' | 'loading' | 'done' | 'error'
+
+const POPOVER_WIDTH = 380
+const EDGE_GAP = 12
+const ANCHOR_GAP = 8
 
 function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps) {
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState<Status>('idle')
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [error, setError] = useState('')
-  // Keep the latest in-flight request so reopening doesn't double-fetch.
+  const [position, setPosition] = useState<PopoverPosition | null>(null)
+
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const popoverRef = useRef<HTMLDivElement>(null)
+  // Only fetch once per mount; reopening reuses the cached result.
   const requestedRef = useRef(false)
 
   async function runAnalysis() {
@@ -68,14 +84,92 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
     }
   }
 
+  // Anchor the popover to the trigger; flip above when there's no room below.
+  useLayoutEffect(() => {
+    if (!open || !triggerRef.current) {
+      return
+    }
+
+    const rect = triggerRef.current.getBoundingClientRect()
+    const width = Math.min(POPOVER_WIDTH, window.innerWidth - EDGE_GAP * 2)
+    const left = Math.max(
+      EDGE_GAP,
+      Math.min(rect.right - width, window.innerWidth - EDGE_GAP - width),
+    )
+
+    const popHeight = popoverRef.current?.offsetHeight ?? 0
+    const spaceBelow = window.innerHeight - rect.bottom - ANCHOR_GAP - EDGE_GAP
+    const spaceAbove = rect.top - ANCHOR_GAP - EDGE_GAP
+
+    let top: number
+    let maxHeight: number
+
+    if (popHeight && popHeight <= spaceBelow) {
+      top = rect.bottom + ANCHOR_GAP
+      maxHeight = spaceBelow
+    } else if (popHeight && popHeight <= spaceAbove) {
+      top = rect.top - ANCHOR_GAP - popHeight
+      maxHeight = spaceAbove
+    } else if (spaceBelow >= spaceAbove) {
+      top = rect.bottom + ANCHOR_GAP
+      maxHeight = spaceBelow
+    } else {
+      top = EDGE_GAP
+      maxHeight = spaceAbove
+    }
+
+    setPosition({ top, left, width, maxHeight: Math.max(140, maxHeight) })
+  }, [open, status])
+
+  // Dismiss on outside interaction, Escape, scroll, or resize.
+  useEffect(() => {
+    if (!open) {
+      return
+    }
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setOpen(false)
+      }
+    }
+
+    function onPointerDown(event: PointerEvent) {
+      const target = event.target as Node
+      if (
+        popoverRef.current?.contains(target) ||
+        triggerRef.current?.contains(target)
+      ) {
+        return
+      }
+      setOpen(false)
+    }
+
+    function onReflow() {
+      setOpen(false)
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    window.addEventListener('pointerdown', onPointerDown, true)
+    window.addEventListener('scroll', onReflow, true)
+    window.addEventListener('resize', onReflow)
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('pointerdown', onPointerDown, true)
+      window.removeEventListener('scroll', onReflow, true)
+      window.removeEventListener('resize', onReflow)
+    }
+  }, [open])
+
   function handleRetry() {
     runAnalysis()
   }
 
   return (
-    <Fragment>
+    <>
       <button
         type="button"
+        ref={triggerRef}
         className={`sentence-analysis-trigger${open ? ' is-open' : ''}`}
         aria-label={open ? '收起 AI 解析' : 'AI 解析这句'}
         aria-expanded={open}
@@ -93,71 +187,94 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
         </svg>
       </button>
 
-      {open && (
-        <div className="sentence-analysis-panel" role="region" aria-label="AI 句子解析">
-          {status === 'loading' && (
-            <div className="sentence-analysis-loading" aria-busy="true">
-              <span />
-              <span />
-              <span />
-            </div>
-          )}
+      {open &&
+        createPortal(
+          <div
+            ref={popoverRef}
+            className="sentence-analysis-popover"
+            role="dialog"
+            aria-label="AI 句子解析"
+            style={
+              position
+                ? {
+                    top: position.top,
+                    left: position.left,
+                    width: position.width,
+                    maxHeight: position.maxHeight,
+                  }
+                : { visibility: 'hidden' }
+            }
+          >
+            <p className="sentence-analysis-source">{sentence}</p>
 
-          {status === 'error' && (
-            <div className="sentence-analysis-error">
-              <p>{error}</p>
-              <button type="button" onClick={handleRetry}>
-                重试
-              </button>
-            </div>
-          )}
+            {status === 'loading' && (
+              <div className="sentence-analysis-loading" aria-busy="true">
+                <span />
+                <span />
+                <span />
+              </div>
+            )}
 
-          {status === 'done' && result && (
-            <div className="sentence-analysis-body">
-              {result.backbone?.en && (
-                <div className="sentence-analysis-block sentence-analysis-backbone">
-                  <span className="sentence-analysis-label">主干</span>
-                  <p className="sentence-analysis-backbone-en">{result.backbone.en}</p>
-                  {result.backbone.zh && (
-                    <p className="sentence-analysis-backbone-zh">{result.backbone.zh}</p>
-                  )}
-                </div>
-              )}
+            {status === 'error' && (
+              <div className="sentence-analysis-error">
+                <p>{error}</p>
+                <button type="button" onClick={handleRetry}>
+                  重试
+                </button>
+              </div>
+            )}
 
-              {result.structure && (
-                <div className="sentence-analysis-block">
-                  <span className="sentence-analysis-label">结构</span>
-                  <p>{result.structure}</p>
-                </div>
-              )}
+            {status === 'done' && result && (
+              <div className="sentence-analysis-body">
+                {result.backbone?.en && (
+                  <div className="sentence-analysis-block sentence-analysis-backbone">
+                    <span className="sentence-analysis-label">主干</span>
+                    <p className="sentence-analysis-backbone-en">
+                      {result.backbone.en}
+                    </p>
+                    {result.backbone.zh && (
+                      <p className="sentence-analysis-backbone-zh">
+                        {result.backbone.zh}
+                      </p>
+                    )}
+                  </div>
+                )}
 
-              {result.usage && (
-                <div className="sentence-analysis-block">
-                  <span className="sentence-analysis-label">用法</span>
-                  <p>{result.usage}</p>
-                </div>
-              )}
+                {result.structure && (
+                  <div className="sentence-analysis-block">
+                    <span className="sentence-analysis-label">结构</span>
+                    <p>{result.structure}</p>
+                  </div>
+                )}
 
-              {result.keywords && result.keywords.length > 0 && (
-                <div className="sentence-analysis-block">
-                  <span className="sentence-analysis-label">重点词</span>
-                  <ul className="sentence-analysis-keywords">
-                    {result.keywords.map((keyword, index) => (
-                      <li key={`${keyword.text}-${index}`}>
-                        <code>{keyword.text}</code>
-                        <span>{keyword.note}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+                {result.usage && (
+                  <div className="sentence-analysis-block">
+                    <span className="sentence-analysis-label">用法</span>
+                    <p>{result.usage}</p>
+                  </div>
+                )}
 
-              <p className="sentence-analysis-disclaimer">由 AI 生成，仅供参考</p>
-            </div>
-          )}
-        </div>
-      )}
-    </Fragment>
+                {result.keywords && result.keywords.length > 0 && (
+                  <div className="sentence-analysis-block">
+                    <span className="sentence-analysis-label">重点词</span>
+                    <ul className="sentence-analysis-keywords">
+                      {result.keywords.map((keyword, index) => (
+                        <li key={`${keyword.text}-${index}`}>
+                          <code>{keyword.text}</code>
+                          <span>{keyword.note}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                <p className="sentence-analysis-disclaimer">由 AI 生成，仅供参考</p>
+              </div>
+            )}
+          </div>,
+          document.body,
+        )}
+    </>
   )
 }
 

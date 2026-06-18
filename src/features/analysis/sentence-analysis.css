@@ -29,14 +29,38 @@
   height: 17px;
 }
 
-.sentence-analysis-panel {
-  flex-basis: 100%;
-  width: 100%;
-  margin-top: 2px;
+.sentence-analysis-popover {
+  position: fixed;
+  z-index: 1000;
+  box-sizing: border-box;
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: var(--surface-subtle);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+  animation: sentence-analysis-pop 0.12s ease;
+}
+
+@keyframes sentence-analysis-pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sentence-analysis-source {
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-soft);
 }
 
 .sentence-analysis-loading {
