@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { Fragment, useRef, useState } from 'react'
 import './sentence-analysis.css'
 
 interface AnalysisKeyword {
@@ -73,10 +73,10 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
   }
 
   return (
-    <div className={`sentence-analysis${open ? ' is-open' : ''}`}>
+    <Fragment>
       <button
         type="button"
-        className="sentence-analysis-trigger"
+        className={`sentence-analysis-trigger${open ? ' is-open' : ''}`}
         aria-label={open ? '收起 AI 解析' : 'AI 解析这句'}
         aria-expanded={open}
         onClick={handleToggle}
@@ -157,7 +157,7 @@ function SentenceAnalysis({ sentence, word, translation }: SentenceAnalysisProps
           )}
         </div>
       )}
-    </div>
+    </Fragment>
   )
 }
 
