@@ -53,14 +53,49 @@
   }
 }
 
-.sentence-analysis-source {
-  margin: 0 0 12px;
+.sentence-analysis-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
+}
+
+.sentence-analysis-source {
+  flex: 1 1 auto;
+  margin: 0;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 13px;
   line-height: 1.6;
   color: var(--text-soft);
+}
+
+.sentence-analysis-close {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: -2px -4px 0 0;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.sentence-analysis-close:hover {
+  color: var(--text);
+  background: var(--surface-subtle);
+}
+
+.sentence-analysis-close svg {
+  width: 15px;
+  height: 15px;
 }
 
 .sentence-analysis-loading {
