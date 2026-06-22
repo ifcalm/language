@@ -1,10 +1,3 @@
-export type VocabularyBand =
-  | 'top-100'
-  | 'top-500'
-  | 'top-1000'
-  | 'top-3000'
-  | 'all'
-
 export interface VocabRow {
   id: string
   word: string

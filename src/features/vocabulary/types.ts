@@ -27,9 +27,7 @@ export interface VocabularyApiResponse {
     offset: number
   }
   filters?: {
-    band: string
     query: string
-    maxRank?: number
   }
 }
 
@@ -60,4 +58,3 @@ export interface VocabularyDetail {
   position: number | null
   total: number | null
 }
-

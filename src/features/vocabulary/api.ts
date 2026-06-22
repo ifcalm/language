@@ -63,7 +63,6 @@ export async function requestVocabularyList(
   signal: AbortSignal,
 ): Promise<VocabularyApiResponse> {
   const searchParams = new URLSearchParams({
-    band: 'all',
     limit: String(params.limit),
     offset: String(params.offset),
   })
@@ -99,4 +98,3 @@ export async function requestVocabularyDetail(
 
   return mapVocabularyDetail((await response.json()) as VocabularyDetailResponse)
 }
-

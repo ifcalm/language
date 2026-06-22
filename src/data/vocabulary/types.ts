@@ -1,11 +1,5 @@
 import type { Skill } from '../resources'
 
-export type VocabularyFrequencyBand =
-  | 'top-100'
-  | 'top-500'
-  | 'top-1000'
-  | 'top-3000'
-
 export interface VocabularyPronunciation {
   id: string
   phonetic: string

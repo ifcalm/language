@@ -10,51 +10,16 @@ import {
   getVocabByLookup,
   getVocabularyBundle,
 } from './repository'
-import type {
-  VocabPronunciationRow,
-  VocabRow,
-  VocabularyBand,
-} from './types'
-
-const vocabularyBandLimits: Record<VocabularyBand, number> = {
-  'top-100': 100,
-  'top-500': 500,
-  'top-1000': 1000,
-  'top-3000': 3000,
-  all: 1_000_000,
-}
-
-const getVocabularyBand = (value: string | null): VocabularyBand => {
-  if (
-    value === 'top-100' ||
-    value === 'top-500' ||
-    value === 'top-1000' ||
-    value === 'top-3000' ||
-    value === 'all'
-  ) {
-    return value
-  }
-
-  return 'top-500'
-}
+import type { VocabPronunciationRow, VocabRow } from './types'
 
 export async function handleVocabularyList(request: Request, env: Env) {
   const url = new URL(request.url)
-  const band = getVocabularyBand(url.searchParams.get('band'))
   const limit = clampNumber(url.searchParams.get('limit'), 240, 1, 500)
   const offset = clampNumber(url.searchParams.get('offset'), 0, 0, 10_000)
   const query = url.searchParams.get('q')?.trim().toLowerCase() ?? ''
-  // maxRank lets clients translate a frequency rank into a list position
-  // (ranks have gaps, so rank N is not the Nth row).
-  const maxRank = clampNumber(url.searchParams.get('maxRank'), 0, 0, 1_000_000)
 
-  const where = ['frequency_rank <= ?']
-  const params: Array<string | number> = [vocabularyBandLimits[band]]
-
-  if (maxRank > 0) {
-    where.push('frequency_rank <= ?')
-    params.push(maxRank)
-  }
+  const where: string[] = []
+  const params: Array<string | number> = []
 
   if (query) {
     where.push(
@@ -64,9 +29,9 @@ export async function handleVocabularyList(request: Request, env: Env) {
     params.push(likeQuery, likeQuery, likeQuery, likeQuery)
   }
 
-  const whereSql = where.join(' AND ')
+  const whereSql = where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''
   const totalRow = await env.DB.prepare(
-    `SELECT COUNT(*) AS total FROM vocab WHERE ${whereSql}`,
+    `SELECT COUNT(*) AS total FROM vocab ${whereSql}`,
   )
     .bind(...params)
     .first<{ total: number }>()
@@ -84,7 +49,7 @@ export async function handleVocabularyList(request: Request, env: Env) {
       created_at,
       updated_at
     FROM vocab
-    WHERE ${whereSql}
+    ${whereSql}
     ORDER BY COALESCE(frequency_rank, 999999) ASC, word ASC
     LIMIT ?
     OFFSET ?`,
@@ -115,9 +80,7 @@ export async function handleVocabularyList(request: Request, env: Env) {
       offset,
     },
     filters: {
-      band,
       query,
-      maxRank,
     },
   })
 }
