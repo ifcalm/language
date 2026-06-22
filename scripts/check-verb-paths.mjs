@@ -201,7 +201,7 @@ WHERE type = 'table'
 
   if (missingTables.length > 0) {
     throw new Error(
-      `Missing required tables: ${missingTables.join(', ')}. Apply D1 migrations first.`,
+      `Missing required tables: ${missingTables.join(', ')}. Ensure the target D1 database has been initialized from the current production baseline.`,
     )
   }
 
@@ -229,7 +229,7 @@ WHERE type = 'table'
 
     if (missingColumns.length > 0) {
       throw new Error(
-        `Missing ${table} columns: ${missingColumns.join(', ')}. Apply D1 migrations first.`,
+        `Missing ${table} columns: ${missingColumns.join(', ')}. Ensure the target D1 database matches the current production baseline.`,
       )
     }
   }

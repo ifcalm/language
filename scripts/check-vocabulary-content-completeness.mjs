@@ -123,7 +123,7 @@ WHERE type = 'table'
 
   if (missingVocabColumns.length > 0) {
     throw new Error(
-      `Missing vocab columns: ${missingVocabColumns.join(', ')}. Run D1 migrations first.`,
+      `Missing vocab columns: ${missingVocabColumns.join(', ')}. Ensure the target D1 database matches the current production baseline.`,
     )
   }
 }

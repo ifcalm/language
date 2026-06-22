@@ -3,7 +3,6 @@ import {
   existsSync,
   mkdirSync,
   readFileSync,
-  readdirSync,
   rmSync,
   writeFileSync,
 } from 'node:fs'
@@ -24,7 +23,7 @@ const SCHEMA = join(ROOT, 'scripts/schemas/verb-path-batch.schema.json')
 const WORK_DIR = join(ROOT, '.verb-path-generation')
 const OUTPUT_DIR = join(WORK_DIR, 'outputs')
 const LOG_DIR = join(WORK_DIR, 'logs')
-const MIGRATIONS_DIR = join(ROOT, 'migrations')
+const SQL_OUTPUT_DIR = join(WORK_DIR, 'sql')
 const BATCH_SIZE = readPositiveInteger('--batch-size', 20)
 const CONCURRENCY = readPositiveInteger('--concurrency', 2)
 const LIMIT = readPositiveInteger('--limit', Number.POSITIVE_INFINITY)
@@ -91,6 +90,7 @@ const RELATION_TYPES = new Set([
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 mkdirSync(LOG_DIR, { recursive: true })
+mkdirSync(SQL_OUTPUT_DIR, { recursive: true })
 
 function readArgument(name) {
   const inline = process.argv.find((argument) => argument.startsWith(`${name}=`))
@@ -328,18 +328,6 @@ ORDER BY v.id ASC, p.id ASC;`)
 
 async function loadGenerationTargets() {
   return REFRESH_V2 ? loadRefreshTargets() : loadMissingVerbs()
-}
-
-function getNextMigrationNumber() {
-  const migrationNumbers = readdirSync(MIGRATIONS_DIR)
-    .map((file) => Number(file.match(/^(\d+)_/)?.[1]))
-    .filter(Number.isInteger)
-
-  return Math.max(...migrationNumbers, 0) + 1
-}
-
-function formatMigrationNumber(number) {
-  return String(number).padStart(4, '0')
 }
 
 function buildPrompt(verbs, previousOutput = null, feedback = null) {
@@ -930,7 +918,7 @@ ON CONFLICT(id) DO UPDATE SET
   updated_at = CURRENT_TIMESTAMP;`
 }
 
-function buildMigration(paths, batchName) {
+function buildPathUpsertSql(paths, batchName) {
   const statements = []
 
   for (let offset = 0; offset < paths.length; offset += 10) {
@@ -939,6 +927,7 @@ function buildMigration(paths, batchName) {
 
   return `-- Generated verb paths batch ${batchName}.
 -- Generated under docs/verb-sentence-growth-standard.md.
+-- Temporary execution file; the repository no longer stores SQL migrations.
 
 PRAGMA foreign_keys = ON;
 
@@ -1138,9 +1127,9 @@ ORDER BY v.id ASC;`,
     normalizeItem(itemByVerbId.get(verb.id), verb),
   )
   const fixtureName = slug(basename(fixturePath).replace(/\.json$/i, ''))
-  const sqlFile = join(WORK_DIR, `${fixtureName || 'verb-path-fixture'}.sql`)
+  const sqlFile = join(SQL_OUTPUT_DIR, `${fixtureName || 'verb-path-fixture'}.sql`)
 
-  writeFileSync(sqlFile, buildMigration(paths, `fixture-${fixtureName}`))
+  writeFileSync(sqlFile, buildPathUpsertSql(paths, `fixture-${fixtureName}`))
   await applySql(sqlFile, APPLY_REMOTE)
 
   const summary = await validatePaths(verbs, APPLY_REMOTE)
@@ -1152,7 +1141,7 @@ ORDER BY v.id ASC;`,
   )
 }
 
-async function generateValidatedBatch(verbs, batchName, migrationFile) {
+async function generateValidatedBatch(verbs, batchName, sqlFile) {
   let previousOutput = null
   let feedback = null
 
@@ -1201,11 +1190,11 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
 
       const itemByVerbId = new Map(output.items.map((item) => [item.verb_id, item]))
       const paths = verbs.map((verb) => normalizeItem(itemByVerbId.get(verb.id), verb))
-      writeFileSync(migrationFile, buildMigration(paths, batchName))
+      writeFileSync(sqlFile, buildPathUpsertSql(paths, batchName))
 
       try {
         const summary = await withDatabaseLock(async () => {
-          await applySql(migrationFile, false)
+          await applySql(sqlFile, false)
 
           try {
             return await validateLocal(verbs)
@@ -1231,7 +1220,7 @@ async function generateValidatedBatch(verbs, batchName, migrationFile) {
           // Preserve the original command output when it is not clean JSON.
         }
 
-        rmSync(migrationFile, { force: true })
+        rmSync(sqlFile, { force: true })
         previousOutput = output
         feedback = validationFeedback
         console.log(`[${batchName}] local strict validation failed; regenerating.`)
@@ -1305,23 +1294,21 @@ async function main() {
       `concurrency=${CONCURRENCY}, remote=${APPLY_REMOTE && !DRY_RUN}.`,
   )
 
-  let migrationNumber = getNextMigrationNumber()
   let completed = 0
   const failures = []
   const batches = []
+  const runId = new Date()
+    .toISOString()
+    .replace(/[-:]/g, '')
+    .replace(/\.\d{3}Z$/, 'Z')
 
   for (let offset = 0; offset < missingVerbs.length; offset += BATCH_SIZE) {
     const verbs = missingVerbs.slice(offset, offset + BATCH_SIZE)
     const batchIndex = Math.floor(offset / BATCH_SIZE) + 1
     const batchName = `batch-${String(batchIndex).padStart(3, '0')}`
-    const currentMigrationNumber = migrationNumber
-    migrationNumber += 1
-    const migrationName =
-      `${formatMigrationNumber(currentMigrationNumber)}_verb_paths_` +
-      `${String(batchIndex).padStart(3, '0')}.sql`
-    const migrationFile = join(MIGRATIONS_DIR, migrationName)
+    const sqlFile = join(SQL_OUTPUT_DIR, `${runId}-${batchName}-verb-paths.sql`)
 
-    batches.push({ verbs, batchName, migrationFile })
+    batches.push({ verbs, batchName, sqlFile })
   }
 
   let nextBatchIndex = 0
@@ -1330,20 +1317,20 @@ async function main() {
     while (nextBatchIndex < batches.length) {
       const currentIndex = nextBatchIndex
       nextBatchIndex += 1
-      const { verbs, batchName, migrationFile } = batches[currentIndex]
+      const { verbs, batchName, sqlFile } = batches[currentIndex]
 
       console.log(
         `\n[${batchName}] ${verbs[0].id} ... ${verbs.at(-1).id} (${verbs.length} verbs)`,
       )
 
       try {
-        const paths = await generateValidatedBatch(verbs, batchName, migrationFile)
+        const paths = await generateValidatedBatch(verbs, batchName, sqlFile)
 
         if (DRY_RUN) {
           console.log(`[${batchName}] dry run complete; remote write skipped.`)
         } else if (APPLY_REMOTE) {
           await withDatabaseLock(async () => {
-            await applySql(migrationFile, true)
+            await applySql(sqlFile, true)
             const remoteRows = await queryRemote(`SELECT COUNT(*) AS total
 FROM verb_paths
 WHERE id IN (${paths.map((path) => sqlString(path.id)).join(', ')});`)

@@ -47,8 +47,7 @@ worker/
   verbs/                  # 动词 API
   vocabulary/             # 词汇公开 API、后台 API、D1 repository
 
-migrations/               # Cloudflare D1 迁移
-scripts/                  # 数据生成、校验和覆盖率检查脚本
+scripts/                  # 数据生成和校验脚本
 docs/                     # 数据模型、部署、内容标准和句子图规范
 ```
 
@@ -117,6 +116,7 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 ## 数据模型
 
 当前公共学习数据以 D1 为准。前端不再携带大型词库数据。
+仓库不再保留 D1 SQL 迁移文件；当前词库、动词、例句和认证数据以线上稳定 D1 数据库为基准，新环境通过线上数据库迁移/复制获得数据。
 
 主要业务表：
 
@@ -178,6 +178,8 @@ npm run verbs:validate
 npm run verbs:validate:remote
 npm run verbs:validate:v2:remote
 ```
+
+动词路径生成脚本会把临时 SQL 写到已忽略的 `.verb-path-generation/sql/`，用于本地校验和远程写入；仓库不保存生成后的 SQL 文件。
 
 词汇和读音覆盖率：
 

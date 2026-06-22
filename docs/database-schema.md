@@ -1,7 +1,7 @@
 # D1 数据表与字段说明
 
 > 当前公共学习数据 schema 已简化。公共学习数据先保留词库主表、动词主表、动词句子生长路径表、读音表、例句表和编辑日志。
-> 来源、授权、生成方式、审核状态等信息不再放在学习业务表中，应记录在数据整理文档、批次说明、迁移文件或 `content_edit_logs` 中。
+> 来源、授权、生成方式、审核状态等信息不再放在学习业务表中，应记录在数据整理文档、生成批次说明或 `content_edit_logs` 中。
 
 ## 表清单
 
@@ -66,7 +66,7 @@ erDiagram
 | 索引名 | 字段 | 用途 |
 |---|---|---|
 | `idx_vocab_normalized_word` | `normalized_word` | 单词精确查询与去重。 |
-| `idx_vocab_frequency_rank` | `frequency_rank` | 高频词排序与 Top N 查询。 |
+| `idx_vocab_frequency_rank` | `frequency_rank` | 默认列表排序、覆盖率检查和运维查询。 |
 
 ## `verbs`
 
