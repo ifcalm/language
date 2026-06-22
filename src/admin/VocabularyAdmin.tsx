@@ -1,10 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import {
-  vocabularyFrequencyBandLabels,
-  type VocabularyFrequencyBand,
-} from '../data/vocabulary'
-
-type AdminFrequencyFilter = VocabularyFrequencyBand | 'all'
 
 interface AdminVocabularyListItem {
   id: string
@@ -58,16 +52,6 @@ interface AdminVocabularyListResponse {
 const ADMIN_EDITOR_KEY = 'english-orbit-admin-editor'
 const ADMIN_LIST_LIMIT = 80
 
-const frequencyOptions: Array<{
-  value: AdminFrequencyFilter
-  label: string
-}> = [
-  { value: 'top-100', label: vocabularyFrequencyBandLabels['top-100'] },
-  { value: 'top-500', label: vocabularyFrequencyBandLabels['top-500'] },
-  { value: 'top-1000', label: vocabularyFrequencyBandLabels['top-1000'] },
-  { value: 'all', label: '全部' },
-]
-
 function getSavedEditor() {
   if (typeof window === 'undefined') {
     return 'ifcalm'
@@ -109,7 +93,6 @@ function getPronunciationLabel(pronunciation: AdminPronunciation, index: number)
 function VocabularyAdmin() {
   const [editor, setEditor] = useState(getSavedEditor)
   const [query, setQuery] = useState('')
-  const [frequency, setFrequency] = useState<AdminFrequencyFilter>('top-500')
   const [items, setItems] = useState<AdminVocabularyListItem[]>([])
   const [total, setTotal] = useState(0)
   const [selectedId, setSelectedId] = useState('')
@@ -142,7 +125,6 @@ function VocabularyAdmin() {
       setError('')
 
       const params = new URLSearchParams({
-        band: frequency,
         limit: String(ADMIN_LIST_LIMIT),
         offset: '0',
       })
@@ -196,7 +178,7 @@ function VocabularyAdmin() {
     fetchItems()
 
     return () => controller.abort()
-  }, [frequency, query])
+  }, [query])
 
   useEffect(() => {
     if (!selectedId) {
@@ -394,18 +376,6 @@ function VocabularyAdmin() {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <select
-              value={frequency}
-              onChange={(event) =>
-                setFrequency(event.target.value as AdminFrequencyFilter)
-              }
-            >
-              {frequencyOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
           </div>
 
           <div className="admin-word-list">
