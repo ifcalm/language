@@ -49,7 +49,7 @@ Current fields:
 - `phonetic`: IPA or learner-facing phonetic text
 - `audio_url`: public URL, such as `https://assets.english.ifcalm.org/pronunciations/us/the.m4a`
 
-Fields such as accent, locale, provider, voice id, object key, license, attribution, quality status, and metadata JSON are intentionally not part of the business table. Keep that context in data manifests, migration notes, or generation scripts.
+Fields such as accent, locale, provider, voice id, object key, license, attribution, quality status, and metadata JSON are intentionally not part of the business table. Keep that context in data manifests, generation notes, or generation scripts.
 
 ## Upload command
 

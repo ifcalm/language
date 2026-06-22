@@ -69,6 +69,5 @@
 
 ## 5. 相关文件
 
-- 迁移:`migrations/0232_vocab_meaning_proofread_v2.sql`(释义修复)
-- 迁移:`migrations/0233_vocab_scenario_supplement.sql`(场景补充词)
+- 历史线上批次：释义修复、场景补充词
 - 上一轮审计:`docs/coca5000_audit_report.md`、`docs/software_dev_vocab_supplement.md`

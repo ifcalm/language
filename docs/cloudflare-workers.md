@@ -34,9 +34,9 @@ tables and uses auth only where account/session features are needed:
 - vocabulary and verb pages read from public API endpoints
 - the admin console writes directly to D1 through Worker routes
 
-The simplified public learning schema is introduced by:
-
-- [`migrations/0161_simplify_vocab_schema.sql`](../migrations/0161_simplify_vocab_schema.sql)
+The repository does not keep executable D1 SQL migrations. The current schema is
+documented in [`docs/database-schema.md`](./database-schema.md), and new
+environments should be created from the stable remote D1 database.
 
 Current public tables:
 
@@ -50,6 +50,8 @@ Current public tables:
 Vocabulary and verb data are read from D1 through `/api/vocabulary` and
 `/api/verbs`. The large bundled frontend word list has been removed so D1 is the
 single source of truth for public vocabulary data.
+
+Stable vocabulary and verb data is treated as remote D1 data, not repository SQL.
 
 ## Public pronunciation assets
 
@@ -69,6 +71,8 @@ See [`docs/pronunciation-assets.md`](./pronunciation-assets.md) for the detailed
 npm run cf:types
 npm run cf:validate
 npm run deploy
+npm run verbs:validate:remote
+npm run verbs:validate:v2:remote
 npm run vocabulary:coverage:top100
 npm run pronunciations:coverage:top100
 # Remote checks are intentionally explicit:

@@ -33,7 +33,7 @@ The pronunciation table stores only:
 - the phonetic text
 - the public audio URL
 
-Provider, voice, object key, license, attribution, quality status, and generated metadata belong in batch manifests, migration notes, or scripts.
+Provider, voice, object key, license, attribution, quality status, and generated metadata belong in batch manifests, generation notes, or scripts.
 
 ### `vocab_examples`
 
@@ -55,7 +55,7 @@ If we later build true multi-sense learning, verb patterns, or sentence structur
 Quality still matters, but it should happen before data enters the public business tables or be tracked outside the learner-facing schema:
 
 - data manifests
-- migration notes
+- generation notes
 - Git history
 - `content_edit_logs`
 - explicit proofreading issues/PRs
