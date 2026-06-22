@@ -1,6 +1,6 @@
 # Vocabulary frontend data notes
 
-Core Vocabulary 已迁移到 D1。这个目录现在只保留前端展示所需的类型定义与中文标签，不再保存本地词库数据。
+Core Vocabulary 已迁移到 D1。这个目录现在只保留前端展示所需的类型定义，不再保存本地词库数据。
 
 ## D1 公共词库表
 

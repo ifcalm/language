@@ -21,7 +21,9 @@ A vocabulary entry is considered usable when it has the learner-facing content b
 
 ### `vocab`
 
-`vocab` owns the stable, frequently-read summary of a word. Top 100 / 500 / 1000 / 3000 learning entry points are derived from `frequency_rank`, not from a separate `frequency_band` or `learning_priority` field.
+`vocab` owns the stable, frequently-read summary of a word. `frequency_rank`
+drives default ordering and coverage checks, but the public vocabulary API no
+longer exposes Top 100 / 500 / 1000 / 3000 learning-band filters.
 
 ### `vocab_pronunciations`
 
