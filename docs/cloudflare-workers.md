@@ -25,25 +25,31 @@ The Worker configuration lives in [`wrangler.jsonc`](../wrangler.jsonc).
 
 ## Current persistence strategy
 
-For the current release, English Orbit stays intentionally simple:
+For the current release, English Orbit keeps learning content in shared D1
+tables and uses auth only where account/session features are needed:
 
-- the site is publicly accessible
-- personal study progress is stored only in the browser's `localStorage`
-- there is no login wall and no cross-device sync yet
-- D1 stores only public vocabulary content
+- the learning site remains publicly accessible
+- D1 stores public vocabulary, verb paths, examples, pronunciations, auth data,
+  and edit logs
+- vocabulary and verb pages read from public API endpoints
+- the admin console writes directly to D1 through Worker routes
 
-The simplified public schema is introduced by:
+The simplified public learning schema is introduced by:
 
 - [`migrations/0161_simplify_vocab_schema.sql`](../migrations/0161_simplify_vocab_schema.sql)
 
 Current public tables:
 
 - `vocab`
+- `verbs`
+- `verb_paths`
 - `vocab_pronunciations`
 - `vocab_examples`
 - `content_edit_logs`
 
-The Core 3000 vocabulary is read from D1 through `/api/vocabulary`. The large bundled frontend word list has been removed so D1 is the single source of truth for public vocabulary data.
+Vocabulary and verb data are read from D1 through `/api/vocabulary` and
+`/api/verbs`. The large bundled frontend word list has been removed so D1 is the
+single source of truth for public vocabulary data.
 
 ## Public pronunciation assets
 
@@ -74,17 +80,29 @@ npm run pronunciations:coverage:top100
 
 - `GET /api/health` — lightweight deployment health check
 - `GET /api/vocabulary` — D1-backed vocabulary list endpoint
+- `GET /api/vocabulary/:lookup` — vocabulary detail by id or word
 - `GET /api/vocabulary/pronunciations` — pronunciation lookup by `word` or `vocabularyId`
+- `GET /api/verbs` — D1-backed verb list endpoint
+- `GET /api/verbs/:lookup` — verb detail and sentence-growth paths
+- `POST /api/analyze` — sentence analysis through the configured AI provider
 - `GET /api/admin/vocabulary` — admin vocabulary list
 - `GET /api/admin/vocabulary/:id` — admin vocabulary detail
 - `PUT /api/admin/vocabulary/:id` — admin vocabulary update
+- `GET /api/auth/me` — current session
+- `POST /api/auth/logout` — clear current session
+- `POST /api/auth/email/start` — request email login code
+- `POST /api/auth/email/verify` — verify email login code
+- `GET /api/auth/github/start` / `GET /api/auth/github/callback`
+- `GET /api/auth/google/start` / `GET /api/auth/google/callback`
 
 `/api/vocabulary` supports:
 
-- `band=top-100|top-500|top-1000|top-3000`，internally mapped to `frequency_rank <= N`
 - `q=<search text>`
 - `limit=<1-500>`
 - `offset=<number>`
+
+The old Top 100 / 500 / 1000 / 3000 `band` parameter has been removed. The list
+now returns the full searchable vocabulary, ordered by `frequency_rank` and word.
 
 ## Future cloud sync path
 
