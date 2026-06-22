@@ -41,11 +41,6 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
-  // Reset to the first page whenever the query changes.
-  useEffect(() => {
-    setOffset(0)
-  }, [query])
-
   useEffect(() => {
     const controller = new AbortController()
 
@@ -130,7 +125,10 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
             className="verbs-search"
             aria-label="搜索动词"
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => {
+              setQuery(event.target.value)
+              setOffset(0)
+            }}
           />
           <svg
             className="verbs-search-icon"
