@@ -1,6 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { getVocabularyLookupFromPath } from '../../app/routing'
-import type { CoreVocabularyEntry } from '../../data/vocabulary'
+import type {
+  CoreVocabularyEntry,
+  VocabularyPronunciation,
+} from '../../data/vocabulary'
 import {
   mapApiVocabularyItem,
   requestVocabularyDetail,
@@ -34,10 +37,12 @@ function ArrowRightIcon() {
   )
 }
 
-function PlayIcon() {
+function SpeakerIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M8 5v14l11-7Z" />
+    <svg className="vocab-accent-speaker" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 9.5v5h3.5L12 18V6L7.5 9.5H4Z" />
+      <path className="vocab-accent-wave" d="M15.5 9.6a3.6 3.6 0 0 1 0 4.8" />
+      <path className="vocab-accent-wave" d="M18 7.2a7.2 7.2 0 0 1 0 9.6" />
     </svg>
   )
 }
@@ -64,6 +69,66 @@ function getInitialVocabularyLookup() {
   }
 
   return getVocabularyLookupFromPath(window.location.pathname)
+}
+
+function PronunciationAccents({
+  core,
+  pronunciations,
+  activePronunciationKey,
+  onPlay,
+}: {
+  core: CoreVocabularyEntry
+  pronunciations: VocabularyPronunciation[]
+  activePronunciationKey: string
+  onPlay: (
+    core: CoreVocabularyEntry,
+    pronunciation: VocabularyPronunciation,
+  ) => void
+}) {
+  const findAccent = (accent: 'US' | 'UK') =>
+    pronunciations.find((item, index) => getPronunciationLabel(item, index) === accent) ??
+    null
+
+  const accents = [
+    { label: 'US' as const, phonetic: core.phoneticUs, pronunciation: findAccent('US') },
+    { label: 'UK' as const, phonetic: core.phoneticUk, pronunciation: findAccent('UK') },
+  ].filter((accent) => accent.phonetic || accent.pronunciation)
+
+  if (accents.length === 0) {
+    return null
+  }
+
+  return (
+    <div className="vocab-accent-list" aria-label={`${core.word} 读音`}>
+      {accents.map((accent) => {
+        const pronunciation = accent.pronunciation
+        const phonetic = accent.phonetic || pronunciation?.phonetic || ''
+        const isPlaying =
+          pronunciation !== null &&
+          activePronunciationKey === getPronunciationKey(core, pronunciation)
+
+        return (
+          <div className="vocab-accent" key={accent.label}>
+            <span className="vocab-accent-tag">{accent.label}</span>
+            {phonetic ? (
+              <span className="vocab-accent-ipa">{phonetic}</span>
+            ) : null}
+            {pronunciation ? (
+              <button
+                type="button"
+                className={`vocab-accent-play${isPlaying ? ' playing' : ''}`}
+                aria-label={`播放 ${core.word} ${accent.label} 读音`}
+                title={`${core.word} ${accent.label} 读音`}
+                onClick={() => onPlay(core, pronunciation)}
+              >
+                <SpeakerIcon />
+              </button>
+            ) : null}
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 function VocabularyPage() {
@@ -493,55 +558,12 @@ function VocabularyPage() {
                   className="vocabulary-detail-study"
                   aria-label={`${selectedVocabularyDetail.core.word} 学习信息`}
                 >
-                  {(selectedVocabularyDetail.core.phoneticUs ||
-                    selectedVocabularyDetail.core.phoneticUk) ? (
-                    <p className="vocabulary-phonetics">
-                      {selectedVocabularyDetail.core.phoneticUs ? (
-                        <span>US {selectedVocabularyDetail.core.phoneticUs}</span>
-                      ) : null}
-                      {selectedVocabularyDetail.core.phoneticUk ? (
-                        <span>UK {selectedVocabularyDetail.core.phoneticUk}</span>
-                      ) : null}
-                    </p>
-                  ) : null}
-
-                  {selectedVocabularyDetail.pronunciations.length > 0 ? (
-                    <div
-                      className="pronunciation-list"
-                      aria-label={`${selectedVocabularyDetail.core.word} 读音`}
-                    >
-                      {selectedVocabularyDetail.pronunciations.map(
-                        (pronunciation, index) => {
-                          const label = getPronunciationLabel(pronunciation, index)
-                          const isPlaying =
-                            activePronunciationKey ===
-                            getPronunciationKey(
-                              selectedVocabularyDetail.core,
-                              pronunciation,
-                            )
-
-                          return (
-                            <button
-                              key={`${selectedVocabularyDetail.core.id}-${pronunciation.id}`}
-                              type="button"
-                              className={isPlaying ? 'playing' : ''}
-                              aria-label={`播放 ${selectedVocabularyDetail.core.word} ${label} 读音`}
-                              title={`${selectedVocabularyDetail.core.word} ${label} 读音`}
-                              onClick={() =>
-                                playPronunciation(
-                                  selectedVocabularyDetail.core,
-                                  pronunciation,
-                                )
-                              }
-                            >
-                              <PlayIcon />
-                              <span>{isPlaying ? `${label} 播放中` : label}</span>
-                            </button>
-                          )
-                        },
-                      )}
-                    </div>
-                  ) : null}
+                  <PronunciationAccents
+                    core={selectedVocabularyDetail.core}
+                    pronunciations={selectedVocabularyDetail.pronunciations}
+                    activePronunciationKey={activePronunciationKey}
+                    onPlay={playPronunciation}
+                  />
                 </aside>
               </section>
 
