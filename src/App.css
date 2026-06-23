@@ -1244,9 +1244,13 @@ button:disabled,
 .vocabulary-detail-heading h2 {
   margin: 0;
   color: var(--text);
+  font-family:
+    'Adobe Caslon Pro', 'ACaslonPro', 'Libre Caslon Display', Georgia,
+    'Times New Roman', serif;
   font-size: clamp(2.8rem, 7vw, 5.1rem);
-  line-height: 0.92;
-  letter-spacing: -0.075em;
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0;
   overflow-wrap: anywhere;
 }
 
