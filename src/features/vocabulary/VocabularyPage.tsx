@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { getVocabularyLookupFromPath } from '../../app/routing'
 import type { CoreVocabularyEntry } from '../../data/vocabulary'
 import {
   mapApiVocabularyItem,
@@ -57,6 +58,14 @@ function getInitialVocabularyOffset() {
   return Math.floor(fromParam / VOCABULARY_PAGE_SIZE) * VOCABULARY_PAGE_SIZE
 }
 
+function getInitialVocabularyLookup() {
+  if (typeof window === 'undefined') {
+    return ''
+  }
+
+  return getVocabularyLookupFromPath(window.location.pathname)
+}
+
 function VocabularyPage() {
   const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [vocabularyOffset, setVocabularyOffset] = useState(
@@ -67,7 +76,9 @@ function VocabularyPage() {
   const [apiVocabularyTotal, setApiVocabularyTotal] = useState(0)
   const [isVocabularyLoading, setIsVocabularyLoading] = useState(false)
   const [vocabularyApiError, setVocabularyApiError] = useState('')
-  const [selectedVocabularyLookup, setSelectedVocabularyLookup] = useState('')
+  const [selectedVocabularyLookup, setSelectedVocabularyLookup] = useState(
+    getInitialVocabularyLookup,
+  )
   const [selectedVocabularyDetail, setSelectedVocabularyDetail] =
     useState<VocabularyDetail | null>(null)
   const [isVocabularyDetailLoading, setIsVocabularyDetailLoading] = useState(false)
@@ -96,6 +107,9 @@ function VocabularyPage() {
     setSelectedVocabularyLookup(normalizedLookup)
 
     if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href)
+      url.pathname = `/vocabulary/${encodeURIComponent(normalizedLookup)}`
+      window.history.pushState(null, '', url)
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }, [])
@@ -104,6 +118,12 @@ function VocabularyPage() {
     setSelectedVocabularyLookup('')
     setSelectedVocabularyDetail(null)
     setVocabularyDetailError('')
+
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href)
+      url.pathname = '/vocabulary'
+      window.history.pushState(null, '', url)
+    }
   }
 
   function scrollToVocabularyToolbar() {
@@ -165,6 +185,17 @@ function VocabularyPage() {
 
     window.history.replaceState(null, '', url)
   }, [vocabularyOffset])
+
+  useEffect(() => {
+    function handlePopState() {
+      setSelectedVocabularyLookup(
+        getVocabularyLookupFromPath(window.location.pathname),
+      )
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
 
   useEffect(() => {
     if (vocabularyFocusSourceRef.current !== 'keyboard') {

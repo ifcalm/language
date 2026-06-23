@@ -19,6 +19,16 @@ export function getVerbLookupFromPath(pathname: string) {
   return decodeURIComponent(pathname.replace('/verbs/', '').split('/')[0] ?? '')
 }
 
+export function getVocabularyLookupFromPath(pathname: string) {
+  if (!pathname.startsWith('/vocabulary/')) {
+    return ''
+  }
+
+  return decodeURIComponent(
+    pathname.replace('/vocabulary/', '').split('/')[0] ?? '',
+  )
+}
+
 export function getViewFromPath(pathname: string): ViewId {
   if (pathname.startsWith('/admin')) {
     return 'admin'
