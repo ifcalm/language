@@ -449,13 +449,6 @@ function VocabularyPage() {
                 <div className="vocabulary-detail-primary">
                   <div className="vocabulary-detail-rankline">
                     <span>#{String(selectedVocabularyRank).padStart(4, '0')}</span>
-                    {selectedVocabularyDetail.position &&
-                    selectedVocabularyDetail.total ? (
-                      <span>
-                        {selectedVocabularyDetail.position}/
-                        {selectedVocabularyDetail.total}
-                      </span>
-                    ) : null}
                   </div>
 
                   <div className="vocabulary-detail-heading">
@@ -477,21 +470,6 @@ function VocabularyPage() {
                   className="vocabulary-detail-study"
                   aria-label={`${selectedVocabularyDetail.core.word} 学习信息`}
                 >
-                  <dl className="vocabulary-detail-metrics">
-                    <div>
-                      <dt>排序</dt>
-                      <dd>#{String(selectedVocabularyRank).padStart(4, '0')}</dd>
-                    </div>
-                    <div>
-                      <dt>读音</dt>
-                      <dd>{selectedVocabularyDetail.pronunciations.length}</dd>
-                    </div>
-                    <div>
-                      <dt>例句</dt>
-                      <dd>{selectedVocabularyDetail.examples.length}</dd>
-                    </div>
-                  </dl>
-
                   {(selectedVocabularyDetail.core.phoneticUs ||
                     selectedVocabularyDetail.core.phoneticUk) ? (
                     <p className="vocabulary-phonetics">

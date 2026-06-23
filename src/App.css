@@ -1192,38 +1192,6 @@ button:disabled,
   padding-top: 4px;
 }
 
-.vocabulary-detail-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  margin: 0;
-  border-block: 1px solid var(--border);
-}
-
-.vocabulary-detail-metrics div {
-  display: grid;
-  gap: 6px;
-  padding: 14px 12px;
-  border-right: 1px solid var(--border);
-}
-
-.vocabulary-detail-metrics div:last-child {
-  border-right: 0;
-}
-
-.vocabulary-detail-metrics dt {
-  color: var(--text-muted);
-  font-size: 0.76rem;
-  font-weight: 760;
-}
-
-.vocabulary-detail-metrics dd {
-  margin: 0;
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: 850;
-}
-
 .vocabulary-detail-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.38fr);
