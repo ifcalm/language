@@ -131,6 +131,65 @@ function PronunciationAccents({
   )
 }
 
+function getExampleTier(index: number, total: number) {
+  if (total <= 1 || index === 0) {
+    return '基础'
+  }
+
+  if (index === total - 1) {
+    return '进阶'
+  }
+
+  return '常用'
+}
+
+// 学习动作占位：当前仅做组件内交互反馈，不持久化。
+// TODO: 接入个人特性模块后改为持久化（认识状态 / 复习清单）。
+function VocabularyStudyActions() {
+  const [mastery, setMastery] = useState<'known' | 'unknown' | null>(null)
+  const [inReview, setInReview] = useState(false)
+
+  return (
+    <div className="vocab-study-actions">
+      <button
+        type="button"
+        className={`vocab-study-btn${mastery === 'known' ? ' is-active' : ''}`}
+        aria-pressed={mastery === 'known'}
+        onClick={() => setMastery((value) => (value === 'known' ? null : 'known'))}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m5 13 4 4 10-10" />
+        </svg>
+        认识
+      </button>
+      <button
+        type="button"
+        className={`vocab-study-btn${mastery === 'unknown' ? ' is-active' : ''}`}
+        aria-pressed={mastery === 'unknown'}
+        onClick={() =>
+          setMastery((value) => (value === 'unknown' ? null : 'unknown'))
+        }
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6 18 18M18 6 6 18" />
+        </svg>
+        不认识
+      </button>
+      <button
+        type="button"
+        className={`vocab-study-btn${inReview ? ' is-active' : ''}`}
+        aria-pressed={inReview}
+        onClick={() => setInReview((value) => !value)}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 3h12v18l-6-4-6 4Z" />
+        </svg>
+        {inReview ? '已加入复习' : '加入复习'}
+      </button>
+    </div>
+  )
+}
+
 function VocabularyPage() {
   const [vocabularyQuery, setVocabularyQuery] = useState('')
   const [vocabularyOffset, setVocabularyOffset] = useState(
@@ -552,6 +611,8 @@ function VocabularyPage() {
                       {selectedVocabularyDetail.core.definitionEn}
                     </p>
                   ) : null}
+
+                  <VocabularyStudyActions key={selectedVocabularyDetail.core.id} />
                 </div>
 
                 <aside
@@ -570,10 +631,16 @@ function VocabularyPage() {
               {selectedVocabularyDetail.examples.length > 0 ? (
                 <section className="panel vocabulary-detail-examples">
                   <div className="vocabulary-example-list">
-                    {selectedVocabularyDetail.examples.map((example, index) => (
+                    {selectedVocabularyDetail.examples.map((example, index) => {
+                      const tier = getExampleTier(
+                        index,
+                        selectedVocabularyDetail.examples.length,
+                      )
+
+                      return (
                       <article key={example.id}>
-                        <span className="vocabulary-example-index">
-                          {String(index + 1).padStart(2, '0')}
+                        <span className="vocabulary-example-tier" data-tier={tier}>
+                          {tier}
                         </span>
                         <p>
                           {highlightTargetWord(
@@ -585,7 +652,8 @@ function VocabularyPage() {
                           <small>{example.sentenceZh}</small>
                         ) : null}
                       </article>
-                    ))}
+                      )
+                    })}
                   </div>
                 </section>
               ) : (

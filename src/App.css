@@ -1044,10 +1044,11 @@ button:disabled,
   min-width: 40px;
   padding: 5px 11px;
   border-radius: 999px;
-  background: var(--text);
-  color: var(--surface);
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--text-muted);
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 750;
   letter-spacing: 0.09em;
   text-align: center;
 }
@@ -1243,7 +1244,7 @@ button:disabled,
 .vocabulary-detail-heading h2 {
   margin: 0;
   color: var(--text);
-  font-size: clamp(3.2rem, 8vw, 5.8rem);
+  font-size: clamp(2.8rem, 7vw, 5.1rem);
   line-height: 0.92;
   letter-spacing: -0.075em;
   overflow-wrap: anywhere;
@@ -1266,6 +1267,53 @@ button:disabled,
   color: var(--text-soft);
   font-size: 1.02rem;
   line-height: 1.75;
+}
+
+.vocab-study-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.vocab-study-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.vocab-study-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.vocab-study-btn:hover,
+.vocab-study-btn:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--surface-subtle);
+}
+
+.vocab-study-btn.is-active {
+  border-color: var(--text);
+  background: var(--text);
+  color: var(--surface);
 }
 
 .vocabulary-detail-study {
@@ -1404,9 +1452,10 @@ button:disabled,
 }
 
 .vocabulary-example-list article {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
   padding: 20px 0;
   border-top: 1px solid var(--border);
 }
@@ -1420,13 +1469,21 @@ button:disabled,
   padding-bottom: 0;
 }
 
-.vocabulary-example-index {
-  grid-row: span 2;
+.vocabulary-example-tier {
+  align-self: flex-start;
+  padding: 3px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-subtle);
   color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.78rem;
-  font-weight: 850;
-  line-height: 1.7;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.vocabulary-example-tier[data-tier='进阶'] {
+  border-color: var(--border-strong);
+  color: var(--text);
 }
 
 .vocabulary-example-list p,
@@ -1865,7 +1922,7 @@ button:disabled,
   }
 
   .vocabulary-detail-heading h2 {
-    font-size: clamp(2.8rem, 18vw, 4.4rem);
+    font-size: clamp(2.45rem, 16vw, 3.85rem);
   }
 
 }
@@ -1997,15 +2054,6 @@ button:disabled,
   .vocabulary-detail-hero,
   .vocabulary-detail-examples {
     padding: 18px;
-  }
-
-  .vocabulary-example-list article {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .vocabulary-example-index {
-    grid-row: auto;
   }
 
   .roadmap-grid,
