@@ -17,6 +17,30 @@ import {
 
 const VOCABULARY_PAGE_SIZE = 120
 
+function ArrowLeftIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M15 6 9 12l6 6" />
+    </svg>
+  )
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m9 6 6 6-6 6" />
+    </svg>
+  )
+}
+
+function PlayIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8 5v14l11-7Z" />
+    </svg>
+  )
+}
+
 function getInitialVocabularyOffset() {
   if (typeof window === 'undefined') {
     return 0
@@ -404,7 +428,7 @@ function VocabularyPage() {
                       openVocabularyDetail(selectedVocabularyDetail.prevId)
                     }
                   >
-                    ←
+                    <ArrowLeftIcon />
                   </button>
                   <button
                     type="button"
@@ -416,108 +440,139 @@ function VocabularyPage() {
                       openVocabularyDetail(selectedVocabularyDetail.nextId)
                     }
                   >
-                    →
+                    <ArrowRightIcon />
                   </button>
                 </div>
               </div>
 
               <section className="panel vocabulary-detail-hero">
-                <div className="vocabulary-detail-heading">
-                  <span>
-                    #{String(selectedVocabularyRank).padStart(4, '0')}
-                  </span>
-                  <h2>{selectedVocabularyDetail.core.word}</h2>
-                  <p>
-                    {selectedVocabularyDetail.core.meaningZh ||
-                      selectedVocabularyDetail.core.meaning}
-                  </p>
+                <div className="vocabulary-detail-primary">
+                  <div className="vocabulary-detail-rankline">
+                    <span>#{String(selectedVocabularyRank).padStart(4, '0')}</span>
+                    {selectedVocabularyDetail.position &&
+                    selectedVocabularyDetail.total ? (
+                      <span>
+                        {selectedVocabularyDetail.position}/
+                        {selectedVocabularyDetail.total}
+                      </span>
+                    ) : null}
+                  </div>
+
+                  <div className="vocabulary-detail-heading">
+                    <h2>{selectedVocabularyDetail.core.word}</h2>
+                    <p>
+                      {selectedVocabularyDetail.core.meaningZh ||
+                        selectedVocabularyDetail.core.meaning}
+                    </p>
+                  </div>
+
+                  {selectedVocabularyDetail.core.definitionEn ? (
+                    <p className="vocabulary-detail-definition">
+                      {selectedVocabularyDetail.core.definitionEn}
+                    </p>
+                  ) : null}
                 </div>
 
-                {selectedVocabularyDetail.core.definitionEn && (
-                  <p className="vocabulary-detail-definition">
-                    {selectedVocabularyDetail.core.definitionEn}
-                  </p>
-                )}
+                <aside
+                  className="vocabulary-detail-study"
+                  aria-label={`${selectedVocabularyDetail.core.word} 学习信息`}
+                >
+                  <dl className="vocabulary-detail-metrics">
+                    <div>
+                      <dt>排序</dt>
+                      <dd>#{String(selectedVocabularyRank).padStart(4, '0')}</dd>
+                    </div>
+                    <div>
+                      <dt>读音</dt>
+                      <dd>{selectedVocabularyDetail.pronunciations.length}</dd>
+                    </div>
+                    <div>
+                      <dt>例句</dt>
+                      <dd>{selectedVocabularyDetail.examples.length}</dd>
+                    </div>
+                  </dl>
 
-                {(selectedVocabularyDetail.core.phoneticUs ||
-                  selectedVocabularyDetail.core.phoneticUk) && (
-                  <p className="vocabulary-phonetics">
-                    {selectedVocabularyDetail.core.phoneticUs && (
-                      <span>US {selectedVocabularyDetail.core.phoneticUs}</span>
-                    )}
-                    {selectedVocabularyDetail.core.phoneticUk && (
-                      <span>UK {selectedVocabularyDetail.core.phoneticUk}</span>
-                    )}
-                  </p>
-                )}
+                  {(selectedVocabularyDetail.core.phoneticUs ||
+                    selectedVocabularyDetail.core.phoneticUk) ? (
+                    <p className="vocabulary-phonetics">
+                      {selectedVocabularyDetail.core.phoneticUs ? (
+                        <span>US {selectedVocabularyDetail.core.phoneticUs}</span>
+                      ) : null}
+                      {selectedVocabularyDetail.core.phoneticUk ? (
+                        <span>UK {selectedVocabularyDetail.core.phoneticUk}</span>
+                      ) : null}
+                    </p>
+                  ) : null}
 
-                {selectedVocabularyDetail.pronunciations.length > 0 && (
-                  <div
-                    className="pronunciation-list"
-                    aria-label={`${selectedVocabularyDetail.core.word} 读音`}
-                  >
-                    {selectedVocabularyDetail.pronunciations.map(
-                      (pronunciation, index) => {
-                        const label = getPronunciationLabel(pronunciation, index)
-
-                        return (
-                          <button
-                            key={`${selectedVocabularyDetail.core.id}-${pronunciation.id}`}
-                            type="button"
-                            className={
-                              activePronunciationKey ===
-                              getPronunciationKey(
-                                selectedVocabularyDetail.core,
-                                pronunciation,
-                              )
-                                ? 'playing'
-                                : ''
-                            }
-                            aria-label={`播放 ${selectedVocabularyDetail.core.word} ${label} 读音`}
-                            title={`${selectedVocabularyDetail.core.word} ${label} 读音`}
-                            onClick={() =>
-                              playPronunciation(
-                                selectedVocabularyDetail.core,
-                                pronunciation,
-                              )
-                            }
-                          >
-                            {activePronunciationKey ===
+                  {selectedVocabularyDetail.pronunciations.length > 0 ? (
+                    <div
+                      className="pronunciation-list"
+                      aria-label={`${selectedVocabularyDetail.core.word} 读音`}
+                    >
+                      {selectedVocabularyDetail.pronunciations.map(
+                        (pronunciation, index) => {
+                          const label = getPronunciationLabel(pronunciation, index)
+                          const isPlaying =
+                            activePronunciationKey ===
                             getPronunciationKey(
                               selectedVocabularyDetail.core,
                               pronunciation,
                             )
-                              ? `${label} 播放中`
-                              : label}
-                          </button>
-                        )
-                      },
-                    )}
-                  </div>
-                )}
+
+                          return (
+                            <button
+                              key={`${selectedVocabularyDetail.core.id}-${pronunciation.id}`}
+                              type="button"
+                              className={isPlaying ? 'playing' : ''}
+                              aria-label={`播放 ${selectedVocabularyDetail.core.word} ${label} 读音`}
+                              title={`${selectedVocabularyDetail.core.word} ${label} 读音`}
+                              onClick={() =>
+                                playPronunciation(
+                                  selectedVocabularyDetail.core,
+                                  pronunciation,
+                                )
+                              }
+                            >
+                              <PlayIcon />
+                              <span>{isPlaying ? `${label} 播放中` : label}</span>
+                            </button>
+                          )
+                        },
+                      )}
+                    </div>
+                  ) : null}
+                </aside>
               </section>
 
               {selectedVocabularyDetail.examples.length > 0 ? (
                 <section className="panel vocabulary-detail-examples">
                   <div className="section-heading">
-                    <h2>在句子里</h2>
+                    <div>
+                      <h2>在句子里</h2>
+                      <p>开发者语境</p>
+                    </div>
                     <span>
                       {selectedVocabularyDetail.examples.length} 条例句
                     </span>
                   </div>
-                  {selectedVocabularyDetail.examples.map((example) => (
-                    <article key={example.id}>
-                      <p>
-                        {highlightTargetWord(
-                          example.sentenceEn,
-                          selectedVocabularyDetail.core.word,
-                        )}
-                      </p>
-                      {example.sentenceZh && (
-                        <small>{example.sentenceZh}</small>
-                      )}
-                    </article>
-                  ))}
+                  <div className="vocabulary-example-list">
+                    {selectedVocabularyDetail.examples.map((example, index) => (
+                      <article key={example.id}>
+                        <span className="vocabulary-example-index">
+                          {String(index + 1).padStart(2, '0')}
+                        </span>
+                        <p>
+                          {highlightTargetWord(
+                            example.sentenceEn,
+                            selectedVocabularyDetail.core.word,
+                          )}
+                        </p>
+                        {example.sentenceZh ? (
+                          <small>{example.sentenceZh}</small>
+                        ) : null}
+                      </article>
+                    ))}
+                  </div>
                 </section>
               ) : (
                 <section className="panel vocabulary-source-note">
