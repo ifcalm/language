@@ -1021,6 +1021,107 @@ button:disabled,
   color: var(--surface);
 }
 
+.vocab-accent-list {
+  display: grid;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.vocab-accent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.vocab-accent + .vocab-accent {
+  border-top: 1px solid var(--border);
+}
+
+.vocab-accent-tag {
+  flex: 0 0 auto;
+  min-width: 36px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--surface);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.vocab-accent-ipa {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--text-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.vocab-accent-play {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.vocab-accent-play:hover,
+.vocab-accent-play:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--surface-subtle);
+}
+
+.vocab-accent-play.playing {
+  border-color: var(--text);
+  background: var(--text);
+  color: var(--surface);
+}
+
+.vocab-accent-speaker {
+  width: 18px;
+  height: 18px;
+}
+
+.vocab-accent-speaker path {
+  fill: currentColor;
+}
+
+.vocab-accent-speaker .vocab-accent-wave {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.vocab-accent-play.playing .vocab-accent-wave {
+  animation: vocab-accent-pulse 1s ease-in-out infinite;
+}
+
+@keyframes vocab-accent-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 .vocabulary-source-note {
   margin-top: 18px;
   margin-bottom: 18px;
