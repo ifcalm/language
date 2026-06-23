@@ -23,6 +23,8 @@
     "verbs:validate:v2:remote": "node scripts/check-verb-paths.mjs --remote --strict --require-v2"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/manrope": "^5.2.8",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
