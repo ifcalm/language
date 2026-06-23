@@ -86,10 +86,6 @@ function VocabularyPage() {
   const shownVocabularyStart =
     visibleCoreVocabulary.length > 0 ? vocabularyOffset + 1 : 0
   const shownVocabularyEnd = vocabularyOffset + visibleCoreVocabulary.length
-  const selectedVocabularyRank = selectedVocabularyDetail
-    ? getVocabularyRank(selectedVocabularyDetail.core)
-    : 0
-
   const openVocabularyDetail = useCallback((lookup: string) => {
     const normalizedLookup = lookup.trim()
 
@@ -447,10 +443,6 @@ function VocabularyPage() {
 
               <section className="panel vocabulary-detail-hero">
                 <div className="vocabulary-detail-primary">
-                  <div className="vocabulary-detail-rankline">
-                    <span>#{String(selectedVocabularyRank).padStart(4, '0')}</span>
-                  </div>
-
                   <div className="vocabulary-detail-heading">
                     <h2>{selectedVocabularyDetail.core.word}</h2>
                     <p>
@@ -524,15 +516,6 @@ function VocabularyPage() {
 
               {selectedVocabularyDetail.examples.length > 0 ? (
                 <section className="panel vocabulary-detail-examples">
-                  <div className="section-heading">
-                    <div>
-                      <h2>在句子里</h2>
-                      <p>开发者语境</p>
-                    </div>
-                    <span>
-                      {selectedVocabularyDetail.examples.length} 条例句
-                    </span>
-                  </div>
                   <div className="vocabulary-example-list">
                     {selectedVocabularyDetail.examples.map((example, index) => (
                       <article key={example.id}>
