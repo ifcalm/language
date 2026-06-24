@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { requestVerbDetail, requestVerbList } from './api'
 import SentenceAnalysis from '../analysis/SentenceAnalysis'
-import SentenceGrowthPlayer from './SentenceGrowthPlayer'
+import PathStudyTabs from './practice/PathStudyTabs'
 import type { VerbDetail, VerbListItem } from './types'
 import './verbs.css'
 
@@ -375,7 +375,7 @@ function VerbDetailView({
                 </div>
               )}
 
-              <SentenceGrowthPlayer key={activePath.id} path={activePath} />
+              <PathStudyTabs key={activePath.id} path={activePath} />
             </article>
           )}
         </section>
