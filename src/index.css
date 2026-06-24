@@ -1,11 +1,11 @@
 :root {
   /* 英文正文 Inter，英文标题 Manrope；中文走 PingFang SC / MiSans 回退 */
   --font-sans:
-    'Inter Variable', Inter, 'Ma Shan Zheng', 'PingFang SC', 'MiSans',
+    'Inter Variable', Inter, 'Noto Sans SC', 'PingFang SC', 'MiSans',
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
   --font-display:
-    'Manrope Variable', Manrope, 'Ma Shan Zheng', 'PingFang SC', 'MiSans',
+    'Manrope Variable', Manrope, 'Noto Sans SC', 'PingFang SC', 'MiSans',
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
 
