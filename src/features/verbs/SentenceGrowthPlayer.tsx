@@ -214,17 +214,15 @@ function SentenceGrowthLines({ lines }: { lines: SentenceGrowthLine[] }) {
     <ol className="sentence-growth-lines" aria-label="句子生长过程">
       {lines.map((line, index) => (
         <li key={line.key}>
-          <span>{String(index + 1).padStart(2, '0')}</span>
-          <div>
-            <strong>{line.label}</strong>
-            <p>
-              {renderHighlightedSentence(
-                line.sentenceEn,
-                line.highlightTexts,
-                line.key,
-              )}
-            </p>
-          </div>
+          <span className="growth-line-no">{index + 1}</span>
+          <span className="growth-line-label">{line.label}</span>
+          <p className="growth-line-text">
+            {renderHighlightedSentence(
+              line.sentenceEn,
+              line.highlightTexts,
+              line.key,
+            )}
+          </p>
         </li>
       ))}
     </ol>
