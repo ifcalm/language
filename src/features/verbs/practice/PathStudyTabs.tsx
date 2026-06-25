@@ -29,39 +29,47 @@ function PathStudyTabs({ path }: PathStudyTabsProps) {
     rootRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [mode])
 
+  // The switch belongs to the main card it controls, so it sits right above
+  // that card: in learn mode it's slotted between the static sentence list and
+  // the animation card; in practice mode it's directly above the board.
+  const tabs = (
+    <div className="path-study-tabs-row">
+      <div className="path-study-tabs" role="tablist" aria-label="学习与练习">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={mode === 'learn'}
+          aria-label="学 · 看动画"
+          className={mode === 'learn' ? 'active' : ''}
+          onClick={() => setMode('learn')}
+        >
+          学
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={mode === 'practice'}
+          aria-label="练 · 拼句子"
+          className={mode === 'practice' ? 'active' : ''}
+          onClick={() => setMode('practice')}
+        >
+          练
+        </button>
+      </div>
+    </div>
+  )
+
   return (
     <div className="path-study" ref={rootRef}>
-      <div className="path-study-head">
-        <div className="path-study-tabs" role="tablist" aria-label="学习与练习">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={mode === 'learn'}
-            aria-label="学 · 看动画"
-            className={mode === 'learn' ? 'active' : ''}
-            onClick={() => setMode('learn')}
-          >
-            学
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={mode === 'practice'}
-            aria-label="练 · 拼句子"
-            className={mode === 'practice' ? 'active' : ''}
-            onClick={() => setMode('practice')}
-          >
-            练
-          </button>
-        </div>
-      </div>
-
       <div className="path-study-content">
         <div className="path-study-pane" key={mode}>
           {mode === 'learn' ? (
-            <SentenceGrowthPlayer path={path} />
+            <SentenceGrowthPlayer path={path} headerSlot={tabs} />
           ) : (
-            <SentenceComposePractice path={path} />
+            <>
+              {tabs}
+              <SentenceComposePractice path={path} />
+            </>
           )}
         </div>
       </div>
