@@ -2368,3 +2368,30 @@
   color: #6b7280;
   text-align: center;
 }
+
+/* 学/练 切换：min-height 防塌缩 + 淡入，减少切换时的高度跳变 */
+.path-study-content {
+  min-height: 340px;
+}
+
+.path-study-pane {
+  animation: path-study-fade 0.22s ease both;
+}
+
+@keyframes path-study-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .path-study-pane {
+    animation: none;
+  }
+}
