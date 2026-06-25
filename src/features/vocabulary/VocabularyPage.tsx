@@ -759,17 +759,6 @@ function VocabularyPage() {
                     ▶
                   </button>
                   <span className="row-meaning">{item.meaning}</span>
-                  <span className="row-actions">
-                    <button
-                      type="button"
-                      onClick={(event) => {
-                        event.stopPropagation()
-                        openVocabularyDetail(item.id)
-                      }}
-                    >
-                      详情
-                    </button>
-                  </span>
                 </article>
               )
             })}
