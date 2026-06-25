@@ -2110,12 +2110,17 @@
   gap: 14px;
 }
 
-/* Sits right above the main card (animation / practice), aligned to its right
-   edge. In learn mode it's the slot between the sentence list and the card. */
+/* Sits right above the main card, aligned to its right edge, 9px above it. */
 .path-study-tabs-row {
   display: flex;
   justify-content: flex-end;
-  margin: 2px 0 10px;
+  margin: 0 0 9px;
+}
+
+/* In learn mode the row lives inside the stage grid (gap: 36px); pull it down
+   with a negative margin so the gap to the animation card nets out to 9px. */
+.sentence-player-stage > .path-study-tabs-row {
+  margin-bottom: -27px;
 }
 
 .path-study-tabs {

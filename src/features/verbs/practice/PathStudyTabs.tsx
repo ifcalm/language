@@ -29,9 +29,9 @@ function PathStudyTabs({ path }: PathStudyTabsProps) {
     rootRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [mode])
 
-  // The switch belongs to the main card it controls, so it sits right above
-  // that card: in learn mode it's slotted between the static sentence list and
-  // the animation card; in practice mode it's directly above the board.
+  // The switch sits right above the main card it controls: in learn mode it's
+  // slotted between the static sentence list and the animation card; in practice
+  // mode it's directly above the board.
   const tabs = (
     <div className="path-study-tabs-row">
       <div className="path-study-tabs" role="tablist" aria-label="学习与练习">
