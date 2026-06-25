@@ -2110,9 +2110,12 @@
   gap: 14px;
 }
 
-.path-study-head {
+/* Sits right above the main card (animation / practice), aligned to its right
+   edge. In learn mode it's the slot between the sentence list and the card. */
+.path-study-tabs-row {
   display: flex;
   justify-content: flex-end;
+  margin: 2px 0 10px;
 }
 
 .path-study-tabs {

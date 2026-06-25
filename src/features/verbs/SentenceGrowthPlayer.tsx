@@ -9,6 +9,10 @@ import type {
 
 interface SentenceGrowthPlayerProps {
   path: VerbPath
+  // Optional content rendered between the static sentence list and the
+  // animation card (e.g. the learn/practice switch). Purely a layout slot —
+  // the player ignores what's inside it and never depends on it.
+  headerSlot?: ReactNode
 }
 
 type DisplayStep = Pick<
@@ -822,7 +826,7 @@ function SentenceTree({
   )
 }
 
-function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
+function SentenceGrowthPlayer({ path, headerSlot }: SentenceGrowthPlayerProps) {
   const [activeStepIndex, setActiveStepIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
   const [previewStepIndex, setPreviewStepIndex] = useState<number | null>(null)
@@ -872,6 +876,8 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
         <div className="sentence-player-board">
           <div className="sentence-player-stage">
             <SentenceGrowthLines lines={sentenceLines} />
+
+            {headerSlot}
 
             <div className="sentence-animation-card">
               {displayGrowth && (
