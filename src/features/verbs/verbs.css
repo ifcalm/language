@@ -1801,11 +1801,6 @@
   border-bottom: 0;
 }
 
-.sentence-growth-lines li.active {
-  background: #fbfdfb;
-  box-shadow: inset 3px 0 0 #16a34a;
-}
-
 .sentence-growth-lines li > span {
   color: #9ca3af;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
