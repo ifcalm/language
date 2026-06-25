@@ -1821,11 +1821,24 @@
   line-height: 1.5;
 }
 
+/* Highlighted (newly-added) words echo the tree node colors, but softened —
+   same hue family as the animation so the two read as one, just quieter. */
 .sentence-growth-lines mark {
   background: transparent;
-  color: #5b616b;
-  font-weight: 680;
+  font-weight: 650;
   padding: 0;
+}
+
+.sentence-growth-lines mark.kind-action {
+  color: #cf6a62;
+}
+
+.sentence-growth-lines mark.kind-core {
+  color: #5f86d6;
+}
+
+.sentence-growth-lines mark.kind-modifier {
+  color: #4f9d6b;
 }
 
 @keyframes sentence-tree-draw {
