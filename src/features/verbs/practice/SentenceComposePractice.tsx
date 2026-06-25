@@ -1,73 +1,115 @@
 import { useMemo, useState } from 'react'
 import {
   DndContext,
-  KeyboardSensor,
+  DragOverlay,
   PointerSensor,
-  closestCenter,
+  pointerWithin,
+  useDraggable,
+  useDroppable,
   useSensor,
   useSensors,
   type DragEndEvent,
+  type DragStartEvent,
 } from '@dnd-kit/core'
-import {
-  SortableContext,
-  arrayMove,
-  rectSortingStrategy,
-  sortableKeyboardCoordinates,
-  useSortable,
-} from '@dnd-kit/sortable'
-import { CSS } from '@dnd-kit/utilities'
 import type { VerbPath } from '../types'
 import {
   buildComposeChallenge,
-  gradeOrder,
-  shuffleChallengeOrder,
+  shuffleIds,
   type ComposeChunk,
-  type GradeResult,
 } from './composePractice'
 
 interface SentenceComposePracticeProps {
   path: VerbPath
 }
 
-type ChunkState = 'idle' | 'correct' | 'wrong'
+const POOL_ID = 'pool'
 
-function ComposeChip({
+function ChunkPill({
   chunk,
-  showHint,
-  state,
+  locked,
+  wrong,
+  dragging,
 }: {
   chunk: ComposeChunk
-  showHint: boolean
-  state: ChunkState
+  locked?: boolean
+  wrong?: boolean
+  dragging?: boolean
 }) {
-  const {
-    attributes,
-    listeners,
-    setNodeRef,
-    transform,
-    transition,
-    isDragging,
-  } = useSortable({ id: chunk.id })
+  return (
+    <span
+      className={`compose-chip kind-${chunk.kind}${locked ? ' is-locked' : ''}${
+        wrong ? ' is-wrong' : ''
+      }${dragging ? ' is-dragging' : ''}`}
+    >
+      {chunk.text}
+    </span>
+  )
+}
 
-  const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
-  }
+function DraggableChunk({
+  chunk,
+  locked,
+  wrong,
+}: {
+  chunk: ComposeChunk
+  locked?: boolean
+  wrong?: boolean
+}) {
+  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
+    id: chunk.id,
+    disabled: locked,
+  })
+
+  return (
+    <span
+      ref={setNodeRef}
+      className="compose-draggable"
+      style={{ opacity: isDragging ? 0 : 1 }}
+      {...(locked ? {} : attributes)}
+      {...(locked ? {} : listeners)}
+    >
+      <ChunkPill chunk={chunk} locked={locked} wrong={wrong} />
+    </span>
+  )
+}
+
+function Slot({
+  slotIndex,
+  chunk,
+  locked,
+  wrong,
+}: {
+  slotIndex: number
+  chunk: ComposeChunk | null
+  locked: boolean
+  wrong: boolean
+}) {
+  const { setNodeRef, isOver } = useDroppable({ id: `slot-${slotIndex}` })
+
+  return (
+    <span
+      ref={setNodeRef}
+      className={`compose-slot${chunk ? ' is-filled' : ''}${
+        isOver ? ' is-over' : ''
+      }${locked ? ' state-correct' : ''}${wrong ? ' state-wrong' : ''}`}
+    >
+      {chunk ? (
+        <DraggableChunk chunk={chunk} locked={locked} wrong={wrong} />
+      ) : null}
+    </span>
+  )
+}
+
+function Pool({ children }: { children: React.ReactNode }) {
+  const { setNodeRef, isOver } = useDroppable({ id: POOL_ID })
 
   return (
     <div
       ref={setNodeRef}
-      style={style}
-      className={`compose-chip kind-${chunk.kind} state-${state}${
-        isDragging ? ' is-dragging' : ''
-      }`}
-      {...attributes}
-      {...listeners}
+      className={`compose-pool${isOver ? ' is-over' : ''}`}
+      aria-label="词库"
     >
-      {showHint && chunk.labelZh ? (
-        <small className="compose-chip-hint">{chunk.labelZh}</small>
-      ) : null}
-      <span className="compose-chip-text">{chunk.text}</span>
+      {children}
     </div>
   )
 }
@@ -75,161 +117,178 @@ function ComposeChip({
 function SentenceComposePractice({ path }: SentenceComposePracticeProps) {
   const challenge = useMemo(() => buildComposeChallenge(path), [path])
 
-  const [order, setOrder] = useState<string[]>(() =>
-    challenge ? shuffleChallengeOrder(challenge.answerOrder) : [],
+  // placement[slotIndex] = chunk id currently in that slot, or '' if empty.
+  const [placement, setPlacement] = useState<string[]>(() =>
+    challenge ? new Array(challenge.slotCount).fill('') : [],
   )
-  const [showHint, setShowHint] = useState(true)
-  const [result, setResult] = useState<GradeResult | null>(null)
+  const [poolOrder, setPoolOrder] = useState<string[]>(() =>
+    challenge ? shuffleIds(challenge.chunks.map((chunk) => chunk.id)) : [],
+  )
+  const [activeId, setActiveId] = useState<string | null>(null)
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
-    useSensor(KeyboardSensor, {
-      coordinateGetter: sortableKeyboardCoordinates,
-    }),
   )
 
   if (!challenge) {
-    return (
-      <div className="compose-empty">这个路径还不能用来练习造句。</div>
-    )
+    return <div className="compose-empty">这个路径还不能用来练习造句。</div>
   }
 
   const chunkById = new Map(challenge.chunks.map((chunk) => [chunk.id, chunk]))
-  const isSolved = result?.isAllCorrect ?? false
+  const isLocked = (slotIndex: number) =>
+    placement[slotIndex] !== '' &&
+    placement[slotIndex] === challenge.answerBySlot[slotIndex]
+  const isWrong = (slotIndex: number) =>
+    placement[slotIndex] !== '' && !isLocked(slotIndex)
+  const isSolved =
+    placement.length === challenge.slotCount &&
+    placement.every((id, index) => id === challenge.answerBySlot[index])
+
+  const placedIds = new Set(placement.filter(Boolean))
+  const poolIds = poolOrder.filter((id) => !placedIds.has(id))
+
+  function handleDragStart(event: DragStartEvent) {
+    setActiveId(String(event.active.id))
+  }
 
   function handleDragEnd(event: DragEndEvent) {
+    setActiveId(null)
+
     const { active, over } = event
 
-    if (!over || active.id === over.id) {
+    if (!over) {
       return
     }
 
-    setOrder((current) => {
-      const from = current.indexOf(String(active.id))
-      const to = current.indexOf(String(over.id))
+    const chunkId = String(active.id)
+    const overId = String(over.id)
+    const fromSlot = placement.indexOf(chunkId)
 
-      if (from < 0 || to < 0) {
-        return current
+    if (overId === POOL_ID) {
+      if (fromSlot >= 0) {
+        setPlacement((current) => {
+          const next = [...current]
+          next[fromSlot] = ''
+          return next
+        })
+      }
+      return
+    }
+
+    const toSlot = Number(overId.replace('slot-', ''))
+
+    if (Number.isNaN(toSlot) || isLocked(toSlot)) {
+      return
+    }
+
+    setPlacement((current) => {
+      const next = [...current]
+
+      if (fromSlot >= 0) {
+        next[fromSlot] = ''
       }
 
-      return arrayMove(current, from, to)
+      // Any non-locked chunk already in the target slot is bumped back to the
+      // bank (it simply stops being in `placement`).
+      next[toSlot] = chunkId
+      return next
     })
-    // Any move invalidates the previous check.
-    setResult(null)
   }
 
-  function handleCheck() {
-    setResult(gradeOrder(order, challenge!.answerOrder))
+  const handleReset = () => {
+    setPlacement(new Array(challenge.slotCount).fill(''))
+    setPoolOrder(shuffleIds(challenge.chunks.map((chunk) => chunk.id)))
   }
 
-  function handleReshuffle() {
-    setOrder(shuffleChallengeOrder(challenge!.answerOrder))
-    setResult(null)
-  }
-
-  function chunkStateAt(index: number, id: string): ChunkState {
-    if (isSolved) {
-      return 'correct'
-    }
-
-    if (!result) {
-      return 'idle'
-    }
-
-    return result.correctByIndex[index] && order[index] === id
-      ? 'correct'
-      : 'wrong'
-  }
+  const activeChunk = activeId ? chunkById.get(activeId) : null
 
   return (
-    <div
-      className="compose-practice"
-      aria-label="造句练习"
-      // Arrow keys drive the dnd-kit keyboard sort; keep them from bubbling to
-      // the verb pager's window-level Arrow handler (which would change verbs).
-      // dnd-kit's listener sits on the chip (fires first), so stopping here is safe.
-      onKeyDown={(event) => {
-        if (event.key.startsWith('Arrow')) {
-          event.stopPropagation()
-        }
-      }}
-    >
-      <p className="compose-prompt-label">照这个意思，把词块拖成正确语序</p>
+    <div className="compose-practice" aria-label="造句练习">
+      <p className="compose-prompt-label">
+        把下面的词块拖进空格，拼出这句话
+      </p>
       <p className="compose-prompt-zh">{challenge.fullSentenceZh}</p>
 
       <DndContext
         sensors={sensors}
-        collisionDetection={closestCenter}
+        collisionDetection={pointerWithin}
+        onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
       >
-        <SortableContext items={order} strategy={rectSortingStrategy}>
-          <div className="compose-board">
-            {order.map((id, index) => {
-              const chunk = chunkById.get(id)
-
-              if (!chunk) {
-                return null
-              }
-
+        <div className="compose-sentence">
+          {challenge.segments.map((segment, index) => {
+            if (segment.type === 'fixed') {
               return (
-                <ComposeChip
-                  key={id}
-                  chunk={chunk}
-                  showHint={showHint && !isSolved}
-                  state={chunkStateAt(index, id)}
-                />
+                <span className="compose-fixed" key={`fixed-${index}`}>
+                  {segment.text}
+                </span>
               )
-            })}
+            }
+
+            const chunkId = placement[segment.slotIndex]
+            const chunk = chunkId ? chunkById.get(chunkId) ?? null : null
+
+            return (
+              <Slot
+                key={`slot-${segment.slotIndex}`}
+                slotIndex={segment.slotIndex}
+                chunk={chunk}
+                locked={isLocked(segment.slotIndex)}
+                wrong={isWrong(segment.slotIndex)}
+              />
+            )
+          })}
+        </div>
+
+        {isSolved ? (
+          <div className="compose-solved" role="status">
+            <p className="compose-solved-title">
+              <svg
+                className="compose-solved-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="m5 13 4 4 10-10" />
+              </svg>
+              拼好了
+            </p>
+            <p className="compose-solved-sentence">{challenge.fullSentenceEn}</p>
           </div>
-        </SortableContext>
+        ) : (
+          <>
+            <Pool>
+              {poolIds.map((id) => {
+                const chunk = chunkById.get(id)
+
+                if (!chunk) {
+                  return null
+                }
+
+                return <DraggableChunk key={id} chunk={chunk} />
+              })}
+            </Pool>
+
+            <div className="compose-toolbar">
+              <span className="compose-progress">
+                {placement.filter(Boolean).length}/{challenge.slotCount}
+              </span>
+              <button
+                type="button"
+                className="compose-reshuffle"
+                onClick={handleReset}
+              >
+                重来
+              </button>
+            </div>
+          </>
+        )}
+
+        <DragOverlay>
+          {activeChunk ? (
+            <ChunkPill chunk={activeChunk} dragging />
+          ) : null}
+        </DragOverlay>
       </DndContext>
-
-      {isSolved ? (
-        <div className="compose-solved" role="status">
-          <p className="compose-solved-title">
-            <svg className="compose-solved-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m5 13 4 4 10-10" />
-            </svg>
-            语序正确
-          </p>
-          <p className="compose-solved-sentence">{challenge.fullSentenceEn}</p>
-          <p className="compose-solved-zh">{challenge.fullSentenceZh}</p>
-        </div>
-      ) : (
-        <div className="compose-toolbar">
-          <button
-            type="button"
-            className="compose-hint-toggle"
-            aria-pressed={showHint}
-            onClick={() => setShowHint((value) => !value)}
-          >
-            {showHint ? '隐藏提示' : '显示提示'}
-          </button>
-
-          <div className="compose-actions">
-            <button
-              type="button"
-              className="compose-reshuffle"
-              onClick={handleReshuffle}
-            >
-              重新打乱
-            </button>
-            <button
-              type="button"
-              className="compose-check"
-              onClick={handleCheck}
-            >
-              检查
-            </button>
-          </div>
-        </div>
-      )}
-
-      {result && !isSolved ? (
-        <p className="compose-feedback" role="status">
-          对了 {result.correctCount}/{challenge.answerOrder.length} 个位置，红色的块还在错的位置上，继续调整。
-        </p>
-      ) : null}
     </div>
   )
 }
