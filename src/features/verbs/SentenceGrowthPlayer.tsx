@@ -235,7 +235,6 @@ function SentenceGrowthLines({ lines }: { lines: SentenceGrowthLine[] }) {
       {lines.map((line, index) => (
         <li key={line.key}>
           <span className="growth-line-no">{index + 1}</span>
-          <span className="growth-line-label">{line.label}</span>
           <p className="growth-line-text">
             {renderHighlightedSentence(
               line.sentenceEn,
