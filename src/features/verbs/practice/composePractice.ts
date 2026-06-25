@@ -7,61 +7,75 @@ export interface ComposeChunk {
   labelZh: string
 }
 
+export type ComposeSegment =
+  | { type: 'fixed'; text: string }
+  | { type: 'slot'; slotIndex: number; answerId: string }
+
 export interface ComposeChallenge {
+  // The full sentence split into fixed text (connectors/punctuation) and the
+  // slots that the chunks must fill, in reading order.
+  segments: ComposeSegment[]
+  slotCount: number
+  // Correct chunk id for each slot, indexed by slotIndex.
+  answerBySlot: string[]
+  // Chunks that have a slot — the draggable word bank.
   chunks: ComposeChunk[]
-  // Correct chunk id order, derived from the full sentence.
-  answerOrder: string[]
   fullSentenceEn: string
   fullSentenceZh: string
 }
 
-// Standard order = each chunk's first appearance in the full sentence. Glue
-// words (to / before / articles) aren't chunks, so this reads the canonical
-// word order straight off the target sentence instead of trusting node order.
-// Chunks whose text can't be located (rare generation drift) fall back to the
-// order in which the growth steps introduce them, appended after the matched
-// ones so the exercise never breaks.
-function getAnswerOrder(path: VerbPath, chunks: ComposeChunk[]): string[] {
-  const sentence = path.fullSentenceEn.toLowerCase()
+interface ChunkRange {
+  start: number
+  end: number
+  chunkId: string
+}
 
-  const stepOrder = new Map<string, number>()
-  let stepCursor = 0
-  for (const step of path.growth?.steps ?? []) {
-    for (const nodeId of step.addNodeIds) {
-      if (!stepOrder.has(nodeId)) {
-        stepOrder.set(nodeId, stepCursor)
-        stepCursor += 1
+// Locate each chunk's first non-overlapping occurrence in the full sentence.
+// Longer chunks match first so a short word ("the") can't claim a position
+// inside a longer chunk ("the patch").
+function locateChunkRanges(
+  sentence: string,
+  chunks: ComposeChunk[],
+): ChunkRange[] {
+  const normalized = sentence.toLowerCase()
+  const ranges: ChunkRange[] = []
+
+  const ordered = [...chunks].sort(
+    (left, right) => right.text.trim().length - left.text.trim().length,
+  )
+
+  for (const chunk of ordered) {
+    const needle = chunk.text.trim().toLowerCase()
+
+    if (!needle) {
+      continue
+    }
+
+    let from = normalized.indexOf(needle)
+
+    while (from >= 0) {
+      const end = from + needle.length
+      const overlaps = ranges.some(
+        (range) => from < range.end && end > range.start,
+      )
+
+      if (!overlaps) {
+        ranges.push({ start: from, end, chunkId: chunk.id })
+        break
       }
+
+      from = normalized.indexOf(needle, end)
     }
   }
 
-  return [...chunks]
-    .map((chunk) => {
-      const position = sentence.indexOf(chunk.text.trim().toLowerCase())
-      return {
-        id: chunk.id,
-        matched: position >= 0,
-        position,
-        stepIndex: stepOrder.get(chunk.id) ?? Number.MAX_SAFE_INTEGER,
-      }
-    })
-    .sort((left, right) => {
-      if (left.matched && right.matched) {
-        return left.position - right.position
-      }
-      // Unmatched chunks sort after matched ones, ordered by step introduction.
-      if (left.matched !== right.matched) {
-        return left.matched ? -1 : 1
-      }
-      return left.stepIndex - right.stepIndex
-    })
-    .map((entry) => entry.id)
+  return ranges.sort((left, right) => left.start - right.start)
 }
 
 export function buildComposeChallenge(path: VerbPath): ComposeChallenge | null {
   const growth = path.growth
+  const sentence = path.fullSentenceEn.trim()
 
-  if (!growth || growth.nodes.length === 0 || !path.fullSentenceEn.trim()) {
+  if (!growth || growth.nodes.length === 0 || !sentence) {
     return null
   }
 
@@ -72,17 +86,40 @@ export function buildComposeChallenge(path: VerbPath): ComposeChallenge | null {
     labelZh: node.labelZh?.trim() ?? '',
   }))
 
-  const answerOrder = getAnswerOrder(path, chunks)
+  const ranges = locateChunkRanges(sentence, chunks)
 
-  // A challenge with a single chunk has nothing to order.
-  if (answerOrder.length < 2) {
+  if (ranges.length < 2) {
     return null
   }
 
+  const segments: ComposeSegment[] = []
+  const answerBySlot: string[] = []
+  let cursor = 0
+
+  ranges.forEach((range, slotIndex) => {
+    if (range.start > cursor) {
+      segments.push({ type: 'fixed', text: sentence.slice(cursor, range.start) })
+    }
+
+    segments.push({ type: 'slot', slotIndex, answerId: range.chunkId })
+    answerBySlot[slotIndex] = range.chunkId
+    cursor = range.end
+  })
+
+  if (cursor < sentence.length) {
+    segments.push({ type: 'fixed', text: sentence.slice(cursor) })
+  }
+
+  // Only chunks that earned a slot are playable; keep the bank in sync.
+  const slottedIds = new Set(answerBySlot)
+  const playableChunks = chunks.filter((chunk) => slottedIds.has(chunk.id))
+
   return {
-    chunks,
-    answerOrder,
-    fullSentenceEn: path.fullSentenceEn.trim(),
+    segments,
+    slotCount: answerBySlot.length,
+    answerBySlot,
+    chunks: playableChunks,
+    fullSentenceEn: sentence,
     fullSentenceZh: path.fullSentenceZh.trim(),
   }
 }
@@ -96,48 +133,4 @@ export function shuffleIds(ids: string[]): string[] {
   }
 
   return result
-}
-
-// Avoid handing the learner an already-solved (or trivially short) board.
-export function shuffleChallengeOrder(answerOrder: string[]): string[] {
-  if (answerOrder.length < 2) {
-    return [...answerOrder]
-  }
-
-  for (let attempt = 0; attempt < 12; attempt += 1) {
-    const shuffled = shuffleIds(answerOrder)
-    const sameAsAnswer = shuffled.every((id, index) => id === answerOrder[index])
-
-    if (!sameAsAnswer) {
-      return shuffled
-    }
-  }
-
-  // Fallback: rotate by one so it's never identical to the solution.
-  return [...answerOrder.slice(1), answerOrder[0]]
-}
-
-export interface GradeResult {
-  // Per-position correctness, aligned with the current order.
-  correctByIndex: boolean[]
-  isAllCorrect: boolean
-  correctCount: number
-}
-
-export function gradeOrder(
-  currentOrder: string[],
-  answerOrder: string[],
-): GradeResult {
-  const correctByIndex = currentOrder.map(
-    (id, index) => id === answerOrder[index],
-  )
-  const correctCount = correctByIndex.filter(Boolean).length
-
-  return {
-    correctByIndex,
-    isAllCorrect:
-      currentOrder.length === answerOrder.length &&
-      correctCount === answerOrder.length,
-    correctCount,
-  }
 }
