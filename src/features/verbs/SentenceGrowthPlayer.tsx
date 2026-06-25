@@ -25,12 +25,17 @@ interface TreePoint {
   y: number
 }
 
+interface SentenceGrowthHighlight {
+  text: string
+  kind: SentenceGrowthNode['kind']
+}
+
 interface SentenceGrowthLine {
   key: string
   stepNo: number
   label: string
   sentenceEn: string
-  highlightTexts: string[]
+  highlights: SentenceGrowthHighlight[]
 }
 
 const TREE_WIDTH = 1000
@@ -135,22 +140,30 @@ function buildSentenceGrowthLines(
       stepNo: step.stepNo,
       label: step.label,
       sentenceEn: step.sentenceEn,
-      highlightTexts: step.addNodeIds
-        .map((nodeId) => nodeById.get(nodeId)?.text)
-        .filter((text): text is string => Boolean(text?.trim())),
+      highlights: step.addNodeIds
+        .map((nodeId) => nodeById.get(nodeId))
+        .filter((node): node is SentenceGrowthNode => Boolean(node?.text?.trim()))
+        .map((node) => ({ text: node.text, kind: node.kind })),
     }))
 }
 
-function getHighlightRanges(sentence: string, highlightTexts: string[]) {
+function getHighlightRanges(
+  sentence: string,
+  highlights: SentenceGrowthHighlight[],
+) {
   const normalizedSentence = sentence.toLowerCase()
-  const ranges: Array<{ start: number; end: number }> = []
+  const ranges: Array<{
+    start: number
+    end: number
+    kind: SentenceGrowthHighlight['kind']
+  }> = []
 
-  const sortedTexts = [...highlightTexts]
-    .map((text) => text.trim())
-    .filter(Boolean)
-    .sort((left, right) => right.length - left.length)
+  const sorted = [...highlights]
+    .map((highlight) => ({ text: highlight.text.trim(), kind: highlight.kind }))
+    .filter((highlight) => highlight.text)
+    .sort((left, right) => right.text.length - left.text.length)
 
-  for (const text of sortedTexts) {
+  for (const { text, kind } of sorted) {
     const normalizedText = text.toLowerCase()
     let start = normalizedSentence.indexOf(normalizedText)
 
@@ -161,7 +174,7 @@ function getHighlightRanges(sentence: string, highlightTexts: string[]) {
       )
 
       if (!overlaps) {
-        ranges.push({ start, end })
+        ranges.push({ start, end, kind })
       }
 
       start = normalizedSentence.indexOf(normalizedText, end)
@@ -173,10 +186,10 @@ function getHighlightRanges(sentence: string, highlightTexts: string[]) {
 
 function renderHighlightedSentence(
   sentence: string,
-  highlightTexts: string[],
+  highlights: SentenceGrowthHighlight[],
   keyPrefix: string,
 ) {
-  const ranges = getHighlightRanges(sentence, highlightTexts)
+  const ranges = getHighlightRanges(sentence, highlights)
 
   if (ranges.length === 0) {
     return sentence
@@ -191,7 +204,10 @@ function renderHighlightedSentence(
     }
 
     parts.push(
-      <mark key={`${keyPrefix}-highlight-${index}`}>
+      <mark
+        key={`${keyPrefix}-highlight-${index}`}
+        className={`growth-mark kind-${range.kind}`}
+      >
         {sentence.slice(range.start, range.end)}
       </mark>,
     )
@@ -223,7 +239,7 @@ function SentenceGrowthLines({ lines }: { lines: SentenceGrowthLine[] }) {
           <p className="growth-line-text">
             {renderHighlightedSentence(
               line.sentenceEn,
-              line.highlightTexts,
+              line.highlights,
               line.key,
             )}
           </p>
