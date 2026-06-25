@@ -32,6 +32,7 @@ function getSceneLabel(scene: string) {
 }
 
 const VERB_PAGE_SIZE = 120
+const SHOW_VERB_LIST_AI_ANALYSIS = false
 
 function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [query, setQuery] = useState('')
@@ -198,7 +199,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
                 )}
               </button>
               {item.isPhrase && <span className="verb-row-tag">短语</span>}
-              {item.coreSentenceEn && (
+              {SHOW_VERB_LIST_AI_ANALYSIS && item.coreSentenceEn && (
                 <SentenceAnalysis
                   sentence={item.coreSentenceEn}
                   word={item.verb}
