@@ -2406,7 +2406,9 @@
   text-align: center;
 }
 
-/* 学/练 切换：min-height 防塌缩 + 淡入，减少切换时的高度跳变 */
+/* 学/练 切换：min-height 防塌缩 + 淡入，减少切换时的高度跳变。
+   注意：淡入只用 opacity，绝不能用 transform——transform 会在 pane 上留下
+   containing block，破坏练习里 DragOverlay 的 position: fixed（拖拽不跟手）。 */
 .path-study-content {
   min-height: 340px;
 }
@@ -2418,12 +2420,10 @@
 @keyframes path-study-fade {
   from {
     opacity: 0;
-    transform: translateY(6px);
   }
 
   to {
     opacity: 1;
-    transform: none;
   }
 }
 
