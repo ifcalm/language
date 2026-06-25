@@ -1773,64 +1773,58 @@
   padding-right: clamp(88px, 8vw, 116px);
 }
 
+/* Static reference: frameless, single-line, grayed down so the eye stays on
+   the animation. No card, no dividers, no accent color. */
 .sentence-growth-lines {
   display: grid;
-  gap: 0;
+  gap: 1px;
   margin: 0 0 8px;
-  overflow: hidden;
-  border: 1px solid #d9dee7;
-  border-radius: 12px;
-  background: #ffffff;
-  list-style: none;
   padding: 0;
+  border: 0;
+  background: transparent;
+  list-style: none;
 }
 
 .sentence-growth-lines li {
-  display: grid;
-  grid-template-columns: 38px minmax(0, 1fr);
-  gap: 12px;
-  align-items: start;
-  border-bottom: 1px solid #eef2f7;
-  padding: 12px 14px;
-  transition:
-    background-color 0.18s ease,
-    box-shadow 0.18s ease;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 2px;
 }
 
-.sentence-growth-lines li:last-child {
-  border-bottom: 0;
-}
-
-.sentence-growth-lines li > span {
-  color: #9ca3af;
+.growth-line-no {
+  flex: 0 0 auto;
+  min-width: 13px;
+  color: #c4c8d0;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.78rem;
-  font-weight: 820;
-  line-height: 1.9;
+  font-size: 0.74rem;
+  font-weight: 600;
 }
 
-.sentence-growth-lines strong {
-  display: block;
-  margin-bottom: 3px;
-  color: #6b7280;
-  font-size: 0.78rem;
-  font-weight: 780;
+.growth-line-label {
+  flex: 0 0 auto;
+  min-width: 48px;
+  color: #a2a7b0;
+  font-size: 0.74rem;
+  font-weight: 600;
 }
 
-.sentence-growth-lines p {
+.growth-line-text {
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0;
-  color: #111827;
+  color: #8b9099;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: clamp(0.95rem, 1.55vw, 1.12rem);
-  font-weight: 760;
-  letter-spacing: -0.045em;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
   line-height: 1.5;
 }
 
 .sentence-growth-lines mark {
   background: transparent;
-  color: #16a34a;
-  font-weight: 860;
+  color: #5b616b;
+  font-weight: 680;
   padding: 0;
 }
 
