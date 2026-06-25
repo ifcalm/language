@@ -17,25 +17,29 @@ function PathStudyTabs({ path }: PathStudyTabsProps) {
 
   return (
     <div className="path-study">
-      <div className="path-study-tabs" role="tablist" aria-label="学习与练习">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={mode === 'learn'}
-          className={mode === 'learn' ? 'active' : ''}
-          onClick={() => setMode('learn')}
-        >
-          学 · 看动画
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={mode === 'practice'}
-          className={mode === 'practice' ? 'active' : ''}
-          onClick={() => setMode('practice')}
-        >
-          练 · 拼句子
-        </button>
+      <div className="path-study-head">
+        <div className="path-study-tabs" role="tablist" aria-label="学习与练习">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={mode === 'learn'}
+            aria-label="学 · 看动画"
+            className={mode === 'learn' ? 'active' : ''}
+            onClick={() => setMode('learn')}
+          >
+            学
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={mode === 'practice'}
+            aria-label="练 · 拼句子"
+            className={mode === 'practice' ? 'active' : ''}
+            onClick={() => setMode('practice')}
+          >
+            练
+          </button>
+        </div>
       </div>
 
       {mode === 'learn' ? (
