@@ -1773,12 +1773,11 @@
   padding-right: clamp(88px, 8vw, 116px);
 }
 
-/* Static reference: frameless, single-line, grayed down so the eye stays on
-   the animation. No card, no dividers, no accent color. */
+/* Static reference: sequence stays secondary while the English sentence leads. */
 .sentence-growth-lines {
   display: grid;
-  gap: 1px;
-  margin: 0 0 8px;
+  gap: 8px;
+  margin: 0 0 12px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -1786,59 +1785,66 @@
 }
 
 .sentence-growth-lines li {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 5px 2px;
+  display: grid;
+  grid-template-columns: 24px 52px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
+  padding: 2px 0;
 }
 
 .growth-line-no {
-  flex: 0 0 auto;
-  min-width: 13px;
-  color: #c4c8d0;
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  color: #9ca3af;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.74rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .growth-line-label {
-  flex: 0 0 auto;
-  min-width: 48px;
-  color: #a2a7b0;
-  font-size: 0.74rem;
-  font-weight: 600;
+  color: #9ca3af;
+  font-size: 0.76rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
 }
 
 .growth-line-text {
-  flex: 1 1 auto;
   min-width: 0;
   margin: 0;
-  color: #8b9099;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.88rem;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.5;
+  color: #374151;
+  font-family:
+    'Space Grotesk Variable', 'Space Grotesk', var(--font-sans);
+  font-size: 1.04rem;
+  font-weight: 560;
+  letter-spacing: 0;
+  line-height: 1.48;
 }
 
 /* Highlighted (newly-added) words echo the tree node colors, but softened —
    same hue family as the animation so the two read as one, just quieter. */
 .sentence-growth-lines mark {
   background: transparent;
-  font-weight: 650;
+  font-weight: 720;
   padding: 0;
 }
 
 .sentence-growth-lines mark.kind-action {
-  color: #cf6a62;
+  color: #dc2626;
 }
 
 .sentence-growth-lines mark.kind-core {
-  color: #5f86d6;
+  color: #2563eb;
 }
 
 .sentence-growth-lines mark.kind-modifier {
-  color: #4f9d6b;
+  color: #15803d;
 }
 
 @keyframes sentence-tree-draw {
