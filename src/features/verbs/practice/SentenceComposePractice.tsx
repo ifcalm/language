@@ -64,10 +64,10 @@ function ComposeChip({
       {...attributes}
       {...listeners}
     >
-      <span className="compose-chip-text">{chunk.text}</span>
       {showHint && chunk.labelZh ? (
         <small className="compose-chip-hint">{chunk.labelZh}</small>
       ) : null}
+      <span className="compose-chip-text">{chunk.text}</span>
     </div>
   )
 }
@@ -142,7 +142,18 @@ function SentenceComposePractice({ path }: SentenceComposePracticeProps) {
   }
 
   return (
-    <div className="compose-practice" aria-label="造句练习">
+    <div
+      className="compose-practice"
+      aria-label="造句练习"
+      // Arrow keys drive the dnd-kit keyboard sort; keep them from bubbling to
+      // the verb pager's window-level Arrow handler (which would change verbs).
+      // dnd-kit's listener sits on the chip (fires first), so stopping here is safe.
+      onKeyDown={(event) => {
+        if (event.key.startsWith('Arrow')) {
+          event.stopPropagation()
+        }
+      }}
+    >
       <p className="compose-prompt-label">照这个意思，把词块拖成正确语序</p>
       <p className="compose-prompt-zh">{challenge.fullSentenceZh}</p>
 
