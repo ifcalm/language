@@ -201,13 +201,11 @@ function renderHighlightedSentence(
   return parts
 }
 
-function SentenceGrowthLines({
-  activeStepNo,
-  lines,
-}: {
-  activeStepNo: number
-  lines: SentenceGrowthLine[]
-}) {
+// Static overview: the line list shows the full step-by-step sentence as a
+// readable reference and is intentionally NOT tied to the player's active step.
+// The tree animation is the single moving focus; this stays still so the two
+// don't pull the eye in two directions at once.
+function SentenceGrowthLines({ lines }: { lines: SentenceGrowthLine[] }) {
   if (lines.length === 0) {
     return null
   }
@@ -215,10 +213,7 @@ function SentenceGrowthLines({
   return (
     <ol className="sentence-growth-lines" aria-label="句子生长过程">
       {lines.map((line, index) => (
-        <li
-          key={line.key}
-          className={line.stepNo === activeStepNo ? 'active' : ''}
-        >
+        <li key={line.key}>
           <span>{String(index + 1).padStart(2, '0')}</span>
           <div>
             <strong>{line.label}</strong>
@@ -878,10 +873,7 @@ function SentenceGrowthPlayer({ path }: SentenceGrowthPlayerProps) {
       <div className="sentence-player-main">
         <div className="sentence-player-board">
           <div className="sentence-player-stage">
-            <SentenceGrowthLines
-              activeStepNo={activeStep.stepNo}
-              lines={sentenceLines}
-            />
+            <SentenceGrowthLines lines={sentenceLines} />
 
             <div className="sentence-animation-card">
               {displayGrowth && (
