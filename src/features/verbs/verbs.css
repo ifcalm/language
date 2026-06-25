@@ -2074,7 +2074,7 @@
 .verb-animation-panel .sentence-player-stage {
   min-height: 0;
   align-content: start;
-  gap: 36px;
+  gap: 18px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -2092,11 +2092,11 @@
   border: 1px solid #d9dee7;
   border-radius: 12px;
   background: #ffffff;
-  padding: 36px clamp(74px, 7vw, 104px) 0 0;
+  padding: 24px clamp(74px, 7vw, 104px) 0 0;
 }
 
 .sentence-animation-card .sentence-player-step-rail {
-  top: 36px;
+  top: 42px;
 }
 
 .sentence-animation-card .sentence-tree {
@@ -2120,17 +2120,18 @@
   gap: 14px;
 }
 
-/* Sits right above the main card, aligned to its right edge, 9px above it. */
 .path-study-tabs-row {
   display: flex;
   justify-content: flex-end;
   margin: 0 0 9px;
 }
 
-/* In learn mode the row lives inside the stage grid (gap: 36px); pull it down
-   with a negative margin so the gap to the animation card nets out to 9px. */
-.sentence-player-stage > .path-study-tabs-row {
-  margin-bottom: -27px;
+.sentence-animation-card > .path-study-tabs-row {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  right: 58px;
+  margin: 0;
 }
 
 .path-study-tabs {
