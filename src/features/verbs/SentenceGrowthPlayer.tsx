@@ -892,9 +892,9 @@ function SentenceGrowthPlayer({ path, headerSlot }: SentenceGrowthPlayerProps) {
           <div className="sentence-player-stage">
             <SentenceGrowthLines lines={sentenceLines} />
 
-            {headerSlot}
-
             <div className="sentence-animation-card">
+              {headerSlot}
+
               {displayGrowth && (
                 <SentenceTree
                   growth={displayGrowth}
