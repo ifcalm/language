@@ -55,10 +55,7 @@ function SentenceClozePractice({ path }: SentenceClozePracticeProps) {
 
   return (
     <div className="cloze-practice" aria-label="默写练习">
-      <p className="compose-prompt-label">
-        <span className="practice-badge">进阶</span>
-        默写句子里标出的重要单词
-      </p>
+      <p className="compose-prompt-label">默写句子里标出的重要单词</p>
       <p className="compose-prompt-zh">{challenge.fullSentenceZh}</p>
 
       <div className="compose-sentence cloze-sentence">
