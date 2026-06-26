@@ -139,12 +139,12 @@ export function normalizeAnswer(value: string): string {
   return value.trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
-// —— Cloze (typing) challenge: the same sentence, but only a few important
-// chunks are blanked out for the learner to type; the rest stays as fixed text.
+// —— Cloze (typing) challenge: the same sentence with a few important *words*
+// blanked out for the learner to type; everything else stays as fixed text.
 
 export type ClozeSegment =
   | { type: 'fixed'; text: string }
-  | { type: 'blank'; blankIndex: number; answer: string; kind: ComposeChunk['kind'] }
+  | { type: 'blank'; blankIndex: number; answer: string }
 
 export interface ClozeChallenge {
   segments: ClozeSegment[]
@@ -154,69 +154,90 @@ export interface ClozeChallenge {
   fullSentenceZh: string
 }
 
-// Pick the most teach-worthy chunks (action first, then core, then modifier),
-// capped at 2–5 — the rest stay visible as context.
-function pickBlankChunks(chunks: ComposeChunk[]): ComposeChunk[] {
-  const priority: Record<ComposeChunk['kind'], number> = {
-    action: 0,
-    core: 1,
-    modifier: 2,
+// High-frequency function words that aren't worth blanking out.
+const CLOZE_STOPWORDS = new Set([
+  'a', 'an', 'the', 'this', 'that', 'these', 'those',
+  'to', 'of', 'in', 'on', 'at', 'for', 'with', 'by', 'from', 'as', 'into',
+  'about', 'over', 'under', 'than',
+  'and', 'or', 'but', 'nor', 'so', 'yet',
+  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'am',
+  'do', 'does', 'did', 'done',
+  'have', 'has', 'had',
+  'will', 'would', 'can', 'could', 'shall', 'should', 'may', 'might', 'must',
+  'not', 'no',
+  'it', 'its', 'he', 'she', 'they', 'them', 'we', 'us', 'you', 'your', 'i',
+  'my', 'me', 'his', 'her', 'their', 'our',
+  'when', 'while', 'because', 'if', 'whether', 'though', 'although', 'since',
+  'until', 'before', 'after', 'during',
+  'there', 'here', 'then', 'out', 'up', 'down',
+])
+
+interface WordToken {
+  text: string
+  index: number
+}
+
+function tokenizeWords(sentence: string): WordToken[] {
+  const tokens: WordToken[] = []
+  const regex = /[A-Za-z][A-Za-z'-]*/g
+  let match: RegExpExecArray | null
+
+  while ((match = regex.exec(sentence)) !== null) {
+    tokens.push({ text: match[0], index: match.index })
   }
 
-  const ordered = [...chunks].sort(
-    (left, right) => priority[left.kind] - priority[right.kind],
-  )
+  return tokens
+}
 
-  return ordered.slice(0, Math.min(5, chunks.length))
+// Blank count scales with sentence length (<= 40%, clamped to 1–3). Verbs get
+// no special treatment — the longest content words win, so any important word
+// (noun, adjective, verb…) can be chosen; pure function words are skipped.
+function pickBlankWords(tokens: WordToken[]): WordToken[] {
+  if (tokens.length === 0) {
+    return []
+  }
+
+  const candidates = tokens.filter(
+    (token) =>
+      token.text.length >= 2 && !CLOZE_STOPWORDS.has(token.text.toLowerCase()),
+  )
+  const pool = candidates.length > 0 ? candidates : tokens
+
+  const target = Math.max(1, Math.min(3, Math.floor(tokens.length * 0.4)))
+  const count = Math.min(target, pool.length)
+
+  return [...pool]
+    .sort((left, right) => right.text.length - left.text.length)
+    .slice(0, count)
+    .sort((left, right) => left.index - right.index)
 }
 
 export function buildClozeChallenge(path: VerbPath): ClozeChallenge | null {
-  const growth = path.growth
   const sentence = path.fullSentenceEn.trim()
 
-  if (!growth || growth.nodes.length === 0 || !sentence) {
+  if (!sentence) {
     return null
   }
 
-  const chunks: ComposeChunk[] = growth.nodes.map((node) => ({
-    id: node.id,
-    text: node.text.trim(),
-    kind: node.kind,
-    labelZh: node.labelZh?.trim() ?? '',
-  }))
+  const tokens = tokenizeWords(sentence)
+  const blanks = pickBlankWords(tokens)
 
-  if (chunks.length < 2) {
+  if (blanks.length === 0) {
     return null
   }
 
-  const blankChunks = pickBlankChunks(chunks)
-  const ranges = locateChunkRanges(sentence, blankChunks)
-
-  if (ranges.length < 2) {
-    return null
-  }
-
-  const chunkById = new Map(chunks.map((chunk) => [chunk.id, chunk]))
   const segments: ClozeSegment[] = []
   const answers: string[] = []
   let cursor = 0
 
-  ranges.forEach((range, blankIndex) => {
-    if (range.start > cursor) {
-      segments.push({ type: 'fixed', text: sentence.slice(cursor, range.start) })
+  blanks.forEach((token, blankIndex) => {
+    if (token.index > cursor) {
+      segments.push({ type: 'fixed', text: sentence.slice(cursor, token.index) })
     }
 
-    const chunk = chunkById.get(range.chunkId)
-    const answer = chunk?.text ?? sentence.slice(range.start, range.end)
-
-    segments.push({
-      type: 'blank',
-      blankIndex,
-      answer,
-      kind: chunk?.kind ?? 'core',
-    })
-    answers[blankIndex] = answer
-    cursor = range.end
+    segments.push({ type: 'blank', blankIndex, answer: token.text })
+    answers[blankIndex] = token.text
+    cursor = token.index + token.text.length
   })
 
   if (cursor < sentence.length) {
@@ -225,7 +246,7 @@ export function buildClozeChallenge(path: VerbPath): ClozeChallenge | null {
 
   return {
     segments,
-    blankCount: ranges.length,
+    blankCount: blanks.length,
     answers,
     fullSentenceEn: sentence,
     fullSentenceZh: path.fullSentenceZh.trim(),

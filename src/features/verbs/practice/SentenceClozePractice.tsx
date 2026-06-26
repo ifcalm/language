@@ -82,9 +82,9 @@ function SentenceClozePractice({ path }: SentenceClozePracticeProps) {
               ref={(element) => {
                 inputRefs.current[blankIndex] = element
               }}
-              className={`cloze-input kind-${segment.kind}${
-                locked ? ' is-locked' : ''
-              }${wrong ? ' is-wrong' : ''}`}
+              className={`cloze-input${locked ? ' is-locked' : ''}${
+                wrong ? ' is-wrong' : ''
+              }`}
               value={values[blankIndex] ?? ''}
               readOnly={locked}
               spellCheck={false}
