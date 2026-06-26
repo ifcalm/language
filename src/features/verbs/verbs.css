@@ -2419,29 +2419,85 @@
 }
 
 /* Two practices stacked: drag on top, cloze (typing) below. */
-.practice-stack {
+.practice-panel {
   display: grid;
-  gap: 24px;
+  gap: 16px;
+}
+
+/* Sub-switch: drag vs cloze, plus the "show both" toggle. */
+.practice-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.practice-subtabs {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.practice-subtabs button {
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 16px;
+  background: transparent;
+  color: #6b7280;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 760;
+  cursor: pointer;
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.practice-subtabs button.active {
+  background: #111111;
+  color: #ffffff;
+}
+
+.practice-subtabs button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.practice-both-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.practice-both-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: #111111;
+  cursor: pointer;
+}
+
+.practice-group.is-hidden {
+  display: none;
 }
 
 .cloze-practice {
   display: grid;
   gap: 12px;
-  padding-top: 24px;
-  border-top: 1px solid #eef2f7;
 }
 
-.practice-badge {
-  display: inline-block;
-  margin-right: 8px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: #eef2ff;
-  color: #4f46e5;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  vertical-align: middle;
+/* Only when both are shown at once do we need a divider above the cloze. */
+.practice-panel.show-both .cloze-group {
+  padding-top: 24px;
+  border-top: 1px solid #eef2f7;
 }
 
 /* Typed blank: inline input that matches the chip's mono look. */
