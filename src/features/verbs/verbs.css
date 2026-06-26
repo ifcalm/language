@@ -2225,9 +2225,21 @@
   background: transparent;
 }
 
-.compose-slot.is-over {
+/* While dragging, every droppable (not yet locked) slot lights up so it's
+   obvious where chunks can go. */
+.compose-sentence.is-dragging .compose-slot:not(.state-correct) {
+  border-style: solid;
+  border-color: #9ec0f5;
+  background: #f1f6fe;
+}
+
+/* The slot the chunk is currently closest to — the drop target — pops. */
+.compose-slot.is-over,
+.compose-sentence.is-dragging .compose-slot.is-over {
+  border-style: solid;
   border-color: #2563eb;
-  background: #eff6ff;
+  background: #dbeafe;
+  box-shadow: 0 0 0 4px rgb(37 99 235 / 0.18);
 }
 
 .compose-slot.state-wrong {
