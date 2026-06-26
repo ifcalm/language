@@ -2420,7 +2420,7 @@
 
 .practice-accordion-bar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .practice-both-toggle {
@@ -2517,19 +2517,30 @@
 }
 
 /* Typed blank: inline input that matches the chip's mono look. */
+/* The cloze sentence reads like normal prose (proportional font), not the
+   mono "code" look the drag board uses — closer to a mainstream fill-in-blank.
+   Generous line-height keeps the boxes from crowding when the line wraps. */
+.cloze-sentence {
+  font-family: var(--font-sans);
+  font-size: 1.04rem;
+  font-weight: 500;
+  line-height: 2.9;
+  color: #374151;
+}
+
 .cloze-input {
   box-sizing: content-box;
   min-width: 0;
-  margin: 0 2px;
-  padding: 4px 8px;
+  margin: 4px 3px;
+  padding: 5px 10px;
   border: 1.6px solid #c4c8d0;
-  border-radius: 8px;
+  border-radius: 9px;
   background: #ffffff;
   color: #111827;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.96rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: normal;
   text-align: center;
   vertical-align: middle;
   outline: none;
