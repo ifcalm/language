@@ -7,64 +7,88 @@ interface PracticePanelProps {
   path: VerbPath
 }
 
-type SubMode = 'drag' | 'cloze'
+type CardId = 'drag' | 'cloze'
 
-// Drag and cloze are mutually exclusive by default so the cloze answers aren't
-// visible in the drag word bank. Both stay mounted (hidden via CSS) to keep
-// progress; the "同时显示" switch reveals both for side-by-side reference.
+function Chevron() {
+  return (
+    <svg
+      className="practice-card-chevron"
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      aria-hidden="true"
+    >
+      <path d="m9 6 6 6-6 6" />
+    </svg>
+  )
+}
+
+// Two stacked, collapsible cards (accordion). Both practices stay mounted —
+// a collapsed card hides its own body via CSS, so progress is kept and the
+// drag word bank isn't visible while doing cloze (no peeking at answers).
+// "同时显示" expands both for side-by-side reference.
 function PracticePanel({ path }: PracticePanelProps) {
-  const [subMode, setSubMode] = useState<SubMode>('drag')
+  const [expanded, setExpanded] = useState<CardId>('drag')
   const [showBoth, setShowBoth] = useState(false)
 
-  const dragVisible = showBoth || subMode === 'drag'
-  const clozeVisible = showBoth || subMode === 'cloze'
+  const dragOpen = showBoth || expanded === 'drag'
+  const clozeOpen = showBoth || expanded === 'cloze'
+
+  // Clicking a header focuses that card (collapses the other), leaving the
+  // "both" mode if it was on.
+  const focusCard = (card: CardId) => {
+    setShowBoth(false)
+    setExpanded(card)
+  }
 
   return (
-    <div className={`practice-panel${showBoth ? ' show-both' : ''}`}>
-      <div className="practice-switch">
-        <div className="practice-subtabs" role="tablist" aria-label="练习方式">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={!showBoth && subMode === 'drag'}
-            className={!showBoth && subMode === 'drag' ? 'active' : ''}
-            disabled={showBoth}
-            onClick={() => setSubMode('drag')}
-          >
-            基础拖拽
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={!showBoth && subMode === 'cloze'}
-            className={!showBoth && subMode === 'cloze' ? 'active' : ''}
-            disabled={showBoth}
-            onClick={() => setSubMode('cloze')}
-          >
-            进阶填词
-          </button>
-        </div>
-
+    <div className="practice-accordion">
+      <div className="practice-accordion-bar">
         <label className="practice-both-toggle">
           <input
             type="checkbox"
             checked={showBoth}
             onChange={(event) => setShowBoth(event.target.checked)}
           />
-          <span>同时显示</span>
+          <span>同时显示两种练习</span>
         </label>
       </div>
 
-      <div className={`practice-group${dragVisible ? '' : ' is-hidden'}`}>
-        <SentenceComposePractice path={path} />
-      </div>
-      <div
-        className={`practice-group cloze-group${
-          clozeVisible ? '' : ' is-hidden'
-        }`}
-      >
-        <SentenceClozePractice path={path} />
-      </div>
+      <section className={`practice-card${dragOpen ? ' is-open' : ''}`}>
+        <button
+          type="button"
+          className="practice-card-head"
+          aria-expanded={dragOpen}
+          onClick={() => focusCard('drag')}
+        >
+          <span className="practice-card-title">
+            <span className="practice-step">基础</span>
+            拖一拖 · 把词块拖进空格
+          </span>
+          <Chevron />
+        </button>
+        <div className="practice-card-body">
+          <SentenceComposePractice path={path} />
+        </div>
+      </section>
+
+      <section className={`practice-card${clozeOpen ? ' is-open' : ''}`}>
+        <button
+          type="button"
+          className="practice-card-head"
+          aria-expanded={clozeOpen}
+          onClick={() => focusCard('cloze')}
+        >
+          <span className="practice-card-title">
+            <span className="practice-step">进阶</span>
+            写一写 · 默写重要单词
+          </span>
+          <Chevron />
+        </button>
+        <div className="practice-card-body">
+          <SentenceClozePractice path={path} />
+        </div>
+      </section>
     </div>
   )
 }

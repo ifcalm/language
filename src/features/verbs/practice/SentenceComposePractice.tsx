@@ -204,9 +204,6 @@ function SentenceComposePractice({ path }: SentenceComposePracticeProps) {
 
   return (
     <div className="compose-practice" aria-label="造句练习">
-      <p className="compose-prompt-label">
-        把下面的词块拖进空格，拼出这句话
-      </p>
       <p className="compose-prompt-zh">{challenge.fullSentenceZh}</p>
 
       <DndContext
