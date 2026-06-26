@@ -3,7 +3,7 @@ import {
   DndContext,
   DragOverlay,
   PointerSensor,
-  pointerWithin,
+  closestCenter,
   useDraggable,
   useDroppable,
   useSensor,
@@ -211,11 +211,13 @@ function SentenceComposePractice({ path }: SentenceComposePracticeProps) {
 
       <DndContext
         sensors={sensors}
-        collisionDetection={pointerWithin}
+        collisionDetection={closestCenter}
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
       >
-        <div className="compose-sentence">
+        <div
+          className={`compose-sentence${activeId ? ' is-dragging' : ''}`}
+        >
           {challenge.segments.map((segment, index) => {
             if (segment.type === 'fixed') {
               return (
