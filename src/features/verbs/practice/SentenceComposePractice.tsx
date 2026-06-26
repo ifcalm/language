@@ -4,10 +4,12 @@ import {
   DragOverlay,
   PointerSensor,
   closestCenter,
+  pointerWithin,
   useDraggable,
   useDroppable,
   useSensor,
   useSensors,
+  type CollisionDetection,
   type DragEndEvent,
   type DragStartEvent,
 } from '@dnd-kit/core'
@@ -23,6 +25,20 @@ interface SentenceComposePracticeProps {
 }
 
 const POOL_ID = 'pool'
+
+// Pointer-first: a drop lands on whatever droppable the pointer is inside (so
+// dropping onto the word bank counts even when it's over an existing chunk).
+// When the pointer is in a gap (no droppable), fall back to the nearest slot so
+// short targets are still easy to hit.
+const collisionDetectionStrategy: CollisionDetection = (args) => {
+  const pointerCollisions = pointerWithin(args)
+
+  if (pointerCollisions.length > 0) {
+    return pointerCollisions
+  }
+
+  return closestCenter(args)
+}
 
 function ChunkPill({
   chunk,
@@ -208,7 +224,7 @@ function SentenceComposePractice({ path }: SentenceComposePracticeProps) {
 
       <DndContext
         sensors={sensors}
-        collisionDetection={closestCenter}
+        collisionDetection={collisionDetectionStrategy}
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
       >
