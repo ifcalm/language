@@ -2418,6 +2418,78 @@
   text-align: center;
 }
 
+/* Two practices stacked: drag on top, cloze (typing) below. */
+.practice-stack {
+  display: grid;
+  gap: 24px;
+}
+
+.cloze-practice {
+  display: grid;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid #eef2f7;
+}
+
+.practice-badge {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+/* Typed blank: inline input that matches the chip's mono look. */
+.cloze-input {
+  box-sizing: content-box;
+  min-width: 0;
+  margin: 0 2px;
+  padding: 4px 8px;
+  border: 1.6px solid #c4c8d0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.96rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    background-color 0.16s ease;
+}
+
+.cloze-input::placeholder {
+  color: #c4c8d0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.cloze-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.16);
+}
+
+.cloze-input.is-wrong {
+  border-color: #ef4444;
+  color: #dc2626;
+}
+
+.cloze-input.is-locked {
+  border-color: #16a34a;
+  background: #f0fdf4;
+  color: #15803d;
+  cursor: default;
+}
+
 /* 学/练 切换：min-height 防塌缩 + 淡入，减少切换时的高度跳变。
    注意：淡入只用 opacity，绝不能用 transform——transform 会在 pane 上留下
    containing block，破坏练习里 DragOverlay 的 position: fixed（拖拽不跟手）。 */

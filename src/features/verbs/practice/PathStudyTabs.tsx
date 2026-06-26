@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import SentenceGrowthPlayer from '../SentenceGrowthPlayer'
 import type { VerbPath } from '../types'
+import SentenceClozePractice from './SentenceClozePractice'
 import SentenceComposePractice from './SentenceComposePractice'
 
 interface PathStudyTabsProps {
@@ -68,7 +69,10 @@ function PathStudyTabs({ path }: PathStudyTabsProps) {
           ) : (
             <>
               {tabs}
-              <SentenceComposePractice path={path} />
+              <div className="practice-stack">
+                <SentenceComposePractice path={path} />
+                <SentenceClozePractice path={path} />
+              </div>
             </>
           )}
         </div>
