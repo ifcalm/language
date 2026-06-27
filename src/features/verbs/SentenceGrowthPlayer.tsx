@@ -39,6 +39,8 @@ interface SentenceGrowthLine {
   highlights: SentenceGrowthHighlight[]
 }
 
+type RelationQuestionLabels = Partial<Record<SentenceGrowthRelationType, string>>
+
 const TREE_WIDTH = 1000
 const TREE_MIN_HEIGHT = 560
 const TREE_LEVEL_GAP = 190
@@ -48,7 +50,7 @@ const TREE_TOP_PADDING = 92
 // of floating against a fixed-height floor.
 const TREE_BOTTOM_PADDING = TREE_TOP_PADDING + 36
 
-const RELATION_QUESTION_LABELS: Partial<Record<SentenceGrowthRelationType, string>> = {
+const RELATION_QUESTION_LABELS: RelationQuestionLabels = {
   actor: '谁？',
   target: '什么？',
   recipient: '给谁？',
@@ -69,6 +71,218 @@ const RELATION_QUESTION_LABELS: Partial<Record<SentenceGrowthRelationType, strin
   scope: '什么范围？',
   result: '结果是什么？',
   sequence: '先后顺序？',
+}
+
+const ACTION_KEY_ALIASES: Record<string, string> = {
+  add: 'add',
+  added: 'add',
+  adding: 'add',
+  adds: 'add',
+  ask: 'ask',
+  asked: 'ask',
+  asking: 'ask',
+  asks: 'ask',
+  build: 'build',
+  building: 'build',
+  builds: 'build',
+  built: 'build',
+  call: 'call',
+  called: 'call',
+  calling: 'call',
+  calls: 'call',
+  check: 'check',
+  checked: 'check',
+  checking: 'check',
+  checks: 'check',
+  create: 'create',
+  created: 'create',
+  creates: 'create',
+  creating: 'create',
+  delete: 'delete',
+  deleted: 'delete',
+  deletes: 'delete',
+  deleting: 'delete',
+  deploy: 'deploy',
+  deployed: 'deploy',
+  deploying: 'deploy',
+  deploys: 'deploy',
+  did: 'do',
+  do: 'do',
+  does: 'do',
+  doing: 'do',
+  done: 'do',
+  get: 'get',
+  gets: 'get',
+  getting: 'get',
+  go: 'go',
+  goes: 'go',
+  going: 'go',
+  gone: 'go',
+  got: 'get',
+  gotten: 'get',
+  had: 'have',
+  has: 'have',
+  have: 'have',
+  having: 'have',
+  load: 'load',
+  loaded: 'load',
+  loading: 'load',
+  loads: 'load',
+  love: 'love',
+  loved: 'love',
+  loves: 'love',
+  loving: 'love',
+  made: 'make',
+  make: 'make',
+  makes: 'make',
+  making: 'make',
+  remove: 'remove',
+  removed: 'remove',
+  removes: 'remove',
+  removing: 'remove',
+  replace: 'replace',
+  replaced: 'replace',
+  replaces: 'replace',
+  replacing: 'replace',
+  release: 'release',
+  released: 'release',
+  releases: 'release',
+  releasing: 'release',
+  return: 'return',
+  returned: 'return',
+  returning: 'return',
+  returns: 'return',
+  run: 'run',
+  running: 'run',
+  runs: 'run',
+  ran: 'run',
+  save: 'save',
+  saved: 'save',
+  saves: 'save',
+  saving: 'save',
+  send: 'send',
+  sending: 'send',
+  sends: 'send',
+  sent: 'send',
+  set: 'set',
+  setting: 'set',
+  show: 'show',
+  showed: 'show',
+  showing: 'show',
+  shown: 'show',
+  shows: 'show',
+  start: 'start',
+  started: 'start',
+  starting: 'start',
+  starts: 'start',
+  stop: 'stop',
+  stopped: 'stop',
+  stopping: 'stop',
+  stops: 'stop',
+  take: 'take',
+  taken: 'take',
+  takes: 'take',
+  taking: 'take',
+  took: 'take',
+  update: 'update',
+  updated: 'update',
+  updates: 'update',
+  updating: 'update',
+  use: 'use',
+  used: 'use',
+  uses: 'use',
+  using: 'use',
+  validate: 'validate',
+  validated: 'validate',
+  validates: 'validate',
+  validating: 'validate',
+  went: 'go',
+}
+
+const ACTION_QUESTION_LABELS: Record<string, RelationQuestionLabels> = {
+  add: createActionQuestionLabels('添加'),
+  ask: createActionQuestionLabels('要求', {
+    content: '要求做什么？',
+    recipient: '要求谁？',
+    target: '要求什么？',
+  }),
+  build: createActionQuestionLabels('构建'),
+  call: createActionQuestionLabels('调用', {
+    content: '调用什么？',
+    manner: '用什么调用？',
+    target: '调用什么？',
+  }),
+  check: createActionQuestionLabels('检查'),
+  create: createActionQuestionLabels('创建'),
+  delete: createActionQuestionLabels('删除'),
+  deploy: createActionQuestionLabels('部署'),
+  do: createActionQuestionLabels('做'),
+  get: createActionQuestionLabels('得到', {
+    target: '得到什么？',
+  }),
+  go: createActionQuestionLabels('去', {
+    place: '去哪里？',
+    purpose: '去做什么？',
+    target: '去做什么？',
+  }),
+  have: createActionQuestionLabels('拥有', {
+    target: '有什么？',
+  }),
+  load: createActionQuestionLabels('加载'),
+  love: createActionQuestionLabels('喜欢', {
+    reason: '为什么喜欢？',
+    target: '喜欢什么？',
+  }),
+  make: createActionQuestionLabels('完成', {
+    target: '完成什么？',
+  }),
+  remove: createActionQuestionLabels('省去', {
+    scope: '从哪里省去？',
+    target: '省去什么？',
+  }),
+  replace: createActionQuestionLabels('更换'),
+  release: createActionQuestionLabels('释放'),
+  return: createActionQuestionLabels('返回'),
+  run: createActionQuestionLabels('运行'),
+  save: createActionQuestionLabels('保存'),
+  send: createActionQuestionLabels('发送', {
+    recipient: '发送给谁？',
+  }),
+  set: createActionQuestionLabels('设置'),
+  show: createActionQuestionLabels('显示'),
+  start: createActionQuestionLabels('开始'),
+  stop: createActionQuestionLabels('停止'),
+  take: createActionQuestionLabels('拿到', {
+    target: '拿到什么？',
+  }),
+  update: createActionQuestionLabels('更新'),
+  use: createActionQuestionLabels('使用', {
+    manner: '怎么使用？',
+    target: '使用什么？',
+  }),
+  validate: createActionQuestionLabels('验证'),
+}
+
+function createActionQuestionLabels(
+  actionZh: string,
+  overrides: RelationQuestionLabels = {},
+): RelationQuestionLabels {
+  // degree / result / scope / sequence intentionally omitted — the verb-templated
+  // versions ("应用范围？" / "要求前后顺序？") read awkwardly, so those relations
+  // fall back to the cleaner generic labels. A verb may still override them.
+  return {
+    actor: `谁${actionZh}？`,
+    condition: `什么条件下${actionZh}？`,
+    content: `${actionZh}什么？`,
+    manner: `怎么${actionZh}？`,
+    place: `在哪里${actionZh}？`,
+    purpose: `为了什么${actionZh}？`,
+    reason: `为什么${actionZh}？`,
+    recipient: `给谁${actionZh}？`,
+    target: `${actionZh}什么？`,
+    time: `什么时候${actionZh}？`,
+    ...overrides,
+  }
 }
 
 function getRootActionNode(growth: SentenceGrowth) {
@@ -278,13 +492,76 @@ function getVisualEndpoints(link: SentenceGrowthLink) {
     : { parentId: link.to, childId: link.from }
 }
 
+function getActionKey(actionText: string | undefined) {
+  const normalized = actionText
+    ?.toLowerCase()
+    .replace(/[^a-z\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  if (!normalized) {
+    return undefined
+  }
+
+  return (
+    ACTION_KEY_ALIASES[normalized] ??
+    ACTION_KEY_ALIASES[normalized.split(' ')[0] ?? '']
+  )
+}
+
+function getActionQuestionLabel(
+  parentActionNode: SentenceGrowthNode | undefined,
+  relationType: SentenceGrowthRelationType | undefined,
+) {
+  if (!relationType) {
+    return undefined
+  }
+
+  const actionKey = getActionKey(parentActionNode?.text)
+
+  return actionKey ? ACTION_QUESTION_LABELS[actionKey]?.[relationType] : undefined
+}
+
+function findNearestActionNode(
+  nodeId: string,
+  parentIdByChildId: Map<string, string>,
+  nodeById: Map<string, SentenceGrowthNode>,
+) {
+  const visitedIds = new Set<string>()
+  let currentId = parentIdByChildId.get(nodeId)
+
+  while (currentId && !visitedIds.has(currentId)) {
+    visitedIds.add(currentId)
+
+    const node = nodeById.get(currentId)
+
+    if (node?.kind === 'action') {
+      return node
+    }
+
+    currentId = parentIdByChildId.get(currentId)
+  }
+
+  return undefined
+}
+
 function getNodeQuestionLabel(
   node: SentenceGrowthNode,
   primaryLink: SentenceGrowthLink | undefined,
   isRootAction: boolean,
+  parentActionNode?: SentenceGrowthNode,
 ) {
   if (isRootAction) {
     return '核心动作'
+  }
+
+  const actionQuestionLabel = getActionQuestionLabel(
+    parentActionNode,
+    primaryLink?.relationType,
+  )
+
+  if (actionQuestionLabel) {
+    return actionQuestionLabel
   }
 
   const relationLabel = primaryLink?.relationType
@@ -463,6 +740,7 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
           node,
           primaryLinkByChildId.get(nodeId),
           nodeId === rootId,
+          findNearestActionNode(nodeId, parentById, visibleNodeById),
         ).length * 1.15
       : 0
     const contentLength = Math.max(textLength, labelLength)
@@ -698,13 +976,20 @@ function NodePill({
   isFocused,
   isRootAction,
   primaryLink,
+  parentActionNode,
 }: {
   node: SentenceGrowthNode
   isFocused: boolean
   isRootAction: boolean
   primaryLink?: SentenceGrowthLink
+  parentActionNode?: SentenceGrowthNode
 }) {
-  const questionLabel = getNodeQuestionLabel(node, primaryLink, isRootAction)
+  const questionLabel = getNodeQuestionLabel(
+    node,
+    primaryLink,
+    isRootAction,
+    parentActionNode,
+  )
   const originalLabel = node.labelZh || primaryLink?.labelZh
 
   return (
@@ -747,14 +1032,17 @@ function SentenceTree({
     Math.max(growth.steps.length - 1, 0),
   ).treeHeight
   const rootActionNode = getRootActionNode(growth)
+  const layoutNodeById = new Map(layoutNodes.map(({ node }) => [node.id, node]))
   const primaryLinkByChildId = new Map<string, SentenceGrowthLink>()
+  const primaryParentIdByChildId = new Map<string, string>()
 
   layoutLinks.forEach((link) => {
-    const { childId } = getVisualEndpoints(link)
+    const { parentId, childId } = getVisualEndpoints(link)
     const currentLink = primaryLinkByChildId.get(childId)
 
     if (!currentLink || (currentLink.kind === 'modifier' && link.kind === 'core')) {
       primaryLinkByChildId.set(childId, link)
+      primaryParentIdByChildId.set(childId, parentId)
     }
   })
 
@@ -897,6 +1185,11 @@ function SentenceTree({
               isFocused={node.id === activeStep?.focusNodeId}
               isRootAction={node.id === rootActionNode?.id}
               primaryLink={primaryLinkByChildId.get(node.id)}
+              parentActionNode={findNearestActionNode(
+                node.id,
+                primaryParentIdByChildId,
+                layoutNodeById,
+              )}
             />
           </div>
         ))}
