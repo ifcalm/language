@@ -3,6 +3,7 @@ import type {
   SentenceGrowth,
   SentenceGrowthLink,
   SentenceGrowthNode,
+  SentenceGrowthRelationType,
   SentenceGrowthStep,
   VerbPath,
 } from './types'
@@ -46,6 +47,29 @@ const TREE_TOP_PADDING = 92
 // keeps equal breathing room from the card edges at every node count instead
 // of floating against a fixed-height floor.
 const TREE_BOTTOM_PADDING = TREE_TOP_PADDING + 36
+
+const RELATION_QUESTION_LABELS: Partial<Record<SentenceGrowthRelationType, string>> = {
+  actor: '谁？',
+  target: '什么？',
+  recipient: '给谁？',
+  content: '什么内容？',
+  nested_action: '做什么？',
+  shared_actor: '谁来做？',
+  ownership: '属于谁？',
+  category: '哪一类？',
+  quality: '什么特点？',
+  frequency: '多频繁？',
+  time: '什么时候？',
+  place: '在哪里？',
+  condition: '什么条件？',
+  purpose: '为了什么？',
+  reason: '为什么？',
+  manner: '怎么做？',
+  degree: '什么程度？',
+  scope: '什么范围？',
+  result: '结果是什么？',
+  sequence: '先后顺序？',
+}
 
 function getRootActionNode(growth: SentenceGrowth) {
   return (
@@ -254,6 +278,30 @@ function getVisualEndpoints(link: SentenceGrowthLink) {
     : { parentId: link.to, childId: link.from }
 }
 
+function getNodeQuestionLabel(
+  node: SentenceGrowthNode,
+  primaryLink: SentenceGrowthLink | undefined,
+  isRootAction: boolean,
+) {
+  if (isRootAction) {
+    return '核心动作'
+  }
+
+  const relationLabel = primaryLink?.relationType
+    ? RELATION_QUESTION_LABELS[primaryLink.relationType]
+    : undefined
+
+  if (relationLabel) {
+    return relationLabel
+  }
+
+  if (node.kind === 'action') {
+    return '相关动作'
+  }
+
+  return node.kind === 'core' ? '什么？' : '补充什么？'
+}
+
 function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
   const rootActionNode = getRootActionNode(growth)
 
@@ -410,7 +458,13 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
   function getNodeWidthWeight(nodeId: string) {
     const node = visibleNodeById.get(nodeId)
     const textLength = node?.text.trim().length ?? 0
-    const labelLength = (node?.labelZh?.trim().length ?? 0) * 1.15
+    const labelLength = node
+      ? getNodeQuestionLabel(
+          node,
+          primaryLinkByChildId.get(nodeId),
+          nodeId === rootId,
+        ).length * 1.15
+      : 0
     const contentLength = Math.max(textLength, labelLength)
 
     return Math.min(2.6, Math.max(1, contentLength / 13))
@@ -643,24 +697,24 @@ function NodePill({
   node,
   isFocused,
   isRootAction,
+  primaryLink,
 }: {
   node: SentenceGrowthNode
   isFocused: boolean
   isRootAction: boolean
+  primaryLink?: SentenceGrowthLink
 }) {
-  const fallbackLabel =
-    node.kind === 'action'
-      ? isRootAction
-        ? '动作核心'
-        : '嵌套动作'
-      : node.kind === 'core'
-        ? '核心部分'
-        : '补充信息'
+  const questionLabel = getNodeQuestionLabel(node, primaryLink, isRootAction)
+  const originalLabel = node.labelZh || primaryLink?.labelZh
 
   return (
     <>
-      <small className="sentence-tree-node-label">
-        {node.labelZh || fallbackLabel}
+      <small
+        className="sentence-tree-node-label"
+        title={originalLabel || questionLabel}
+        aria-label={originalLabel ? `${questionLabel}：${originalLabel}` : questionLabel}
+      >
+        {questionLabel}
       </small>
       <span
         className={`sentence-tree-node ${node.kind} ${isFocused ? 'focused' : ''}`}
@@ -693,6 +747,16 @@ function SentenceTree({
     Math.max(growth.steps.length - 1, 0),
   ).treeHeight
   const rootActionNode = getRootActionNode(growth)
+  const primaryLinkByChildId = new Map<string, SentenceGrowthLink>()
+
+  layoutLinks.forEach((link) => {
+    const { childId } = getVisualEndpoints(link)
+    const currentLink = primaryLinkByChildId.get(childId)
+
+    if (!currentLink || (currentLink.kind === 'modifier' && link.kind === 'core')) {
+      primaryLinkByChildId.set(childId, link)
+    }
+  })
 
   // Spread the exit points of core links that share a parent evenly across the
   // parent's bottom edge (ordered by child x), so sibling links leave at
@@ -832,6 +896,7 @@ function SentenceTree({
               node={node}
               isFocused={node.id === activeStep?.focusNodeId}
               isRootAction={node.id === rootActionNode?.id}
+              primaryLink={primaryLinkByChildId.get(node.id)}
             />
           </div>
         ))}
