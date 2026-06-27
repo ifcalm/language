@@ -720,6 +720,36 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
     const modifierBranches: string[] = []
     const actions: string[] = []
     const cores: string[] = []
+    const isSubjectCore = (childId: string) => {
+      const relationType = primaryLinkByChildId.get(childId)?.relationType
+
+      return relationType === 'actor' || relationType === 'shared_actor'
+    }
+    const isObjectCore = (childId: string) =>
+      primaryLinkByChildId.get(childId)?.relationType === 'target'
+    const orderSubjectBeforeObject = (coreIds: string[]) => {
+      const orderedCoreIds = [...coreIds]
+
+      for (let index = 0; index < orderedCoreIds.length; index += 1) {
+        if (!isObjectCore(orderedCoreIds[index])) {
+          continue
+        }
+
+        const subjectIndex = orderedCoreIds.findIndex(
+          (childId, candidateIndex) =>
+            candidateIndex > index && isSubjectCore(childId),
+        )
+
+        if (subjectIndex === -1) {
+          continue
+        }
+
+        const [subjectId] = orderedCoreIds.splice(subjectIndex, 1)
+        orderedCoreIds.splice(index, 0, subjectId)
+      }
+
+      return orderedCoreIds
+    }
 
     childIds.forEach((childId) => {
       const kind = visibleNodeById.get(childId)?.kind
@@ -734,14 +764,15 @@ function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
       }
     })
 
+    const orderedCores = orderSubjectBeforeObject(cores)
     const modifierSplit = Math.floor(modifierBranches.length / 2)
-    const coreSplit = Math.ceil(cores.length / 2)
+    const coreSplit = Math.ceil(orderedCores.length / 2)
 
     return [
       ...modifierBranches.slice(0, modifierSplit),
-      ...cores.slice(0, coreSplit),
+      ...orderedCores.slice(0, coreSplit),
       ...actions,
-      ...cores.slice(coreSplit),
+      ...orderedCores.slice(coreSplit),
       ...modifierBranches.slice(modifierSplit),
     ]
   }
