@@ -50,27 +50,27 @@ const TREE_TOP_PADDING = 92
 // of floating against a fixed-height floor.
 const TREE_BOTTOM_PADDING = TREE_TOP_PADDING + 36
 
-const RELATION_QUESTION_LABELS: RelationQuestionLabels = {
-  actor: '谁？',
-  target: '什么？',
-  recipient: '给谁？',
-  content: '什么内容？',
-  nested_action: '做什么？',
-  shared_actor: '谁来做？',
-  ownership: '属于谁？',
-  category: '哪一类？',
-  quality: '什么特点？',
-  frequency: '多频繁？',
-  time: '什么时候？',
-  place: '在哪里？',
-  condition: '什么条件？',
-  purpose: '为了什么？',
-  reason: '为什么？',
-  manner: '怎么做？',
-  degree: '什么程度？',
-  scope: '什么范围？',
-  result: '结果是什么？',
-  sequence: '先后顺序？',
+const RELATION_ROLE_LABELS: RelationQuestionLabels = {
+  actor: '主语',
+  target: '对象',
+  recipient: '接收方',
+  content: '内容',
+  nested_action: '相关动作',
+  shared_actor: '共用主语',
+  ownership: '所属关系',
+  category: '类别',
+  quality: '特征',
+  frequency: '频率',
+  time: '发生时间',
+  place: '发生地点',
+  condition: '条件',
+  purpose: '目的',
+  reason: '原因',
+  manner: '方式',
+  degree: '程度',
+  scope: '范围',
+  result: '结果',
+  sequence: '先发生的动作',
 }
 
 const ACTION_KEY_ALIASES: Record<string, string> = {
@@ -106,6 +106,10 @@ const ACTION_KEY_ALIASES: Record<string, string> = {
   deployed: 'deploy',
   deploying: 'deploy',
   deploys: 'deploy',
+  disturb: 'disturb',
+  disturbed: 'disturb',
+  disturbing: 'disturb',
+  disturbs: 'disturb',
   did: 'do',
   do: 'do',
   does: 'do',
@@ -144,6 +148,10 @@ const ACTION_KEY_ALIASES: Record<string, string> = {
   replaced: 'replace',
   replaces: 'replace',
   replacing: 'replace',
+  reach: 'reach',
+  reached: 'reach',
+  reaches: 'reach',
+  reaching: 'reach',
   release: 'release',
   released: 'release',
   releases: 'release',
@@ -216,6 +224,12 @@ const ACTION_QUESTION_LABELS: Record<string, RelationQuestionLabels> = {
   create: createActionQuestionLabels('创建'),
   delete: createActionQuestionLabels('删除'),
   deploy: createActionQuestionLabels('部署'),
+  disturb: createActionQuestionLabels('打扰', {
+    actor: '谁打扰？',
+    sequence: '什么先发生？',
+    target: '打扰什么？',
+    time: '什么时候打扰？',
+  }),
   do: createActionQuestionLabels('做'),
   get: createActionQuestionLabels('得到', {
     target: '得到什么？',
@@ -239,6 +253,12 @@ const ACTION_QUESTION_LABELS: Record<string, RelationQuestionLabels> = {
   remove: createActionQuestionLabels('省去', {
     scope: '从哪里省去？',
     target: '省去什么？',
+  }),
+  reach: createActionQuestionLabels('到达', {
+    actor: '谁到达？',
+    place: '到达哪里？',
+    target: '到达哪里？',
+    time: '什么时候到达？',
   }),
   replace: createActionQuestionLabels('更换'),
   release: createActionQuestionLabels('释放'),
@@ -565,7 +585,7 @@ function getNodeQuestionLabel(
   }
 
   const relationLabel = primaryLink?.relationType
-    ? RELATION_QUESTION_LABELS[primaryLink.relationType]
+    ? RELATION_ROLE_LABELS[primaryLink.relationType]
     : undefined
 
   if (relationLabel) {
@@ -576,7 +596,7 @@ function getNodeQuestionLabel(
     return '相关动作'
   }
 
-  return node.kind === 'core' ? '什么？' : '补充什么？'
+  return node.kind === 'core' ? '核心成分' : '补充信息'
 }
 
 function buildTreeLayout(growth: SentenceGrowth, activeStepIndex: number) {
