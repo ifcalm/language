@@ -5,6 +5,10 @@ import SentenceComposePractice from './SentenceComposePractice'
 
 interface PracticePanelProps {
   path: VerbPath
+  // "Show both" is controlled by the parent so its toggle can share the
+  // learn/practice switch row.
+  showBoth: boolean
+  onShowBothChange: (value: boolean) => void
 }
 
 type CardId = 'drag' | 'cloze'
@@ -27,9 +31,8 @@ function Chevron() {
 // a collapsed card hides its own body via CSS, so progress is kept and the
 // drag word bank isn't visible while doing cloze (no peeking at answers).
 // "同时显示" expands both for side-by-side reference.
-function PracticePanel({ path }: PracticePanelProps) {
+function PracticePanel({ path, showBoth, onShowBothChange }: PracticePanelProps) {
   const [expanded, setExpanded] = useState<CardId>('drag')
-  const [showBoth, setShowBoth] = useState(false)
 
   const dragOpen = showBoth || expanded === 'drag'
   const clozeOpen = showBoth || expanded === 'cloze'
@@ -37,23 +40,12 @@ function PracticePanel({ path }: PracticePanelProps) {
   // Clicking a header focuses that card (collapses the other), leaving the
   // "both" mode if it was on.
   const focusCard = (card: CardId) => {
-    setShowBoth(false)
+    onShowBothChange(false)
     setExpanded(card)
   }
 
   return (
     <div className="practice-accordion">
-      <div className="practice-accordion-bar">
-        <label className="practice-both-toggle">
-          <input
-            type="checkbox"
-            checked={showBoth}
-            onChange={(event) => setShowBoth(event.target.checked)}
-          />
-          <span>同时显示两种练习</span>
-        </label>
-      </div>
-
       <section className={`practice-card${dragOpen ? ' is-open' : ''}`}>
         <button
           type="button"

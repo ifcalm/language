@@ -2418,9 +2418,15 @@
   gap: 14px;
 }
 
-.practice-accordion-bar {
+/* Practice header: "show both" toggle (left) shares one row with the
+   learn/practice switch (right), sitting 9px above the first card. */
+.practice-head-row {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
 }
 
 .practice-both-toggle {
