@@ -2422,6 +2422,9 @@
    learn/practice switch (right), sitting 9px above the first card. */
 .practice-head-row {
   display: flex;
+  /* Center-align for left/right visual balance (the toggle and pill differ in
+     height). The pill sits 9px above the card; the shorter toggle ends up a bit
+     farther — an accepted trade-off for the balanced look. */
   align-items: center;
   justify-content: space-between;
   gap: 12px;
