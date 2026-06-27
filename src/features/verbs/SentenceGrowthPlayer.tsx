@@ -1011,15 +1011,23 @@ function NodePill({
     parentActionNode,
   )
   const originalLabel = node.labelZh || primaryLink?.labelZh
+  const rootActionMeaning = isRootAction ? node.labelZh?.trim() : undefined
 
   return (
     <>
       <small
-        className="sentence-tree-node-label"
+        className={`sentence-tree-node-label ${
+          rootActionMeaning ? 'has-root-meaning' : ''
+        }`}
         title={originalLabel || questionLabel}
         aria-label={originalLabel ? `${questionLabel}：${originalLabel}` : questionLabel}
       >
-        {questionLabel}
+        <span>{questionLabel}</span>
+        {rootActionMeaning ? (
+          <span className="sentence-tree-root-meaning">
+            {rootActionMeaning}
+          </span>
+        ) : null}
       </small>
       <span
         className={`sentence-tree-node ${node.kind} ${isFocused ? 'focused' : ''}`}
