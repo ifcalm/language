@@ -100,12 +100,12 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `assets.run_worker_first`: `/api/*`
 - D1 binding: `DB`
 - Assets binding: `ASSETS`
+- Email Sending binding: `EMAIL`
 - compatibility flag: `nodejs_compat`
 
 部署前需要保证 D1 数据库和必要 secrets 已配置。认证和 AI 分析会读取以下运行时环境变量或 secrets：
 
 - `AUTH_SECRET`
-- `RESEND_API_KEY`
 - `AUTH_EMAIL_FROM`
 - `GITHUB_CLIENT_ID`
 - `GITHUB_CLIENT_SECRET`

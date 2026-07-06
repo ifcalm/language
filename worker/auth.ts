@@ -7,9 +7,6 @@ interface AuthEnv extends Env {
   GITHUB_CLIENT_SECRET?: string
   GOOGLE_CLIENT_ID?: string
   GOOGLE_CLIENT_SECRET?: string
-  RESEND_API_KEY?: string
-  AUTH_EMAIL_FROM?: string
-  AUTH_SECRET?: string
 }
 
 interface UserRow {
@@ -50,6 +47,12 @@ interface EmailLoginCodeRow {
   consumed_at: string | null
   attempts: number
   created_at: string
+}
+
+interface EmailCodeRequestStatsRow {
+  request_count: number
+  first_created_at: string | null
+  latest_created_at: string | null
 }
 
 interface OAuthStateRow {
@@ -110,6 +113,9 @@ interface GoogleTokenInfoResponse {
 const sessionCookieName = 'eo_session'
 const sessionMaxAgeSeconds = 60 * 60 * 24 * 30
 const emailCodeMaxAgeSeconds = 60 * 10
+const emailCodeRequestCooldownSeconds = 60
+const emailCodeRequestWindowSeconds = 60 * 60
+const maxEmailCodeRequestsPerWindow = 5
 const oauthStateMaxAgeSeconds = 60 * 10
 const maxEmailCodeAttempts = 5
 
@@ -133,6 +139,9 @@ const nowIso = () => new Date().toISOString()
 
 const addSeconds = (seconds: number) =>
   new Date(Date.now() + seconds * 1000).toISOString()
+
+const subtractSeconds = (seconds: number) =>
+  new Date(Date.now() - seconds * 1000).toISOString()
 
 const textEncoder = new TextEncoder()
 
@@ -199,6 +208,35 @@ async function hashEmailCode(env: AuthEnv, email: string, code: string) {
   }
 
   return sha256(`${email}:${code}:${secret}`)
+}
+
+function getRetryAfterSeconds(createdAt: string, windowSeconds: number) {
+  const retryAt = Date.parse(createdAt) + windowSeconds * 1000
+  const retryAfterSeconds = Math.ceil((retryAt - Date.now()) / 1000)
+  return Math.max(0, retryAfterSeconds)
+}
+
+function formatRetryAfter(seconds: number) {
+  if (seconds >= 60) {
+    return `${Math.ceil(seconds / 60)} 分钟`
+  }
+
+  return `${seconds} 秒`
+}
+
+function makeEmailRateLimitResponse(message: string, retryAfterSeconds: number) {
+  return makeAuthJsonResponse(
+    {
+      error: message,
+      retryAfterSeconds,
+    },
+    {
+      status: 429,
+      headers: {
+        'Retry-After': String(retryAfterSeconds),
+      },
+    },
+  )
 }
 
 function readCookie(request: Request, name: string) {
@@ -782,28 +820,17 @@ async function handleOAuthCallback(
 }
 
 async function sendLoginCode(env: AuthEnv, email: string, code: string) {
-  if (!env.RESEND_API_KEY || !env.AUTH_EMAIL_FROM) {
+  if (!env.AUTH_EMAIL_FROM) {
     throw new Error('Email service is not configured')
   }
 
-  const response = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${env.RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      from: env.AUTH_EMAIL_FROM,
-      to: email,
-      subject: 'English Orbit 登录验证码',
-      text: `你的 English Orbit 登录验证码是：${code}。验证码 10 分钟内有效。`,
-      html: `<p>你的 English Orbit 登录验证码是：</p><p style="font-size:24px;font-weight:700;letter-spacing:4px;">${code}</p><p>验证码 10 分钟内有效。</p>`,
-    }),
+  await env.EMAIL.send({
+    from: env.AUTH_EMAIL_FROM,
+    to: email,
+    subject: '开发者英语登录验证码',
+    text: `你的开发者英语登录验证码是：${code}。验证码 10 分钟内有效。`,
+    html: `<p>你的开发者英语登录验证码是：</p><p style="font-size:24px;font-weight:700;letter-spacing:4px;">${code}</p><p>验证码 10 分钟内有效。</p>`,
   })
-
-  if (!response.ok) {
-    throw new Error(`Email provider failed with ${response.status}`)
-  }
 }
 
 async function readJsonObject(request: Request) {
@@ -832,12 +859,56 @@ async function handleEmailStart(request: Request, env: AuthEnv) {
     return makeAuthErrorResponse('邮箱登录暂未配置 AUTH_SECRET', 503)
   }
 
-  if (!env.RESEND_API_KEY || !env.AUTH_EMAIL_FROM) {
+  if (!env.AUTH_EMAIL_FROM) {
     return makeAuthErrorResponse('邮箱登录暂未配置邮件服务', 503)
+  }
+
+  const requestStats = await env.DB.prepare(
+    `SELECT
+      COUNT(*) AS request_count,
+      MIN(created_at) AS first_created_at,
+      MAX(created_at) AS latest_created_at
+    FROM email_login_codes
+    WHERE email = ?
+      AND created_at > ?`,
+  )
+    .bind(email, subtractSeconds(emailCodeRequestWindowSeconds))
+    .first<EmailCodeRequestStatsRow>()
+
+  if (
+    requestStats?.first_created_at
+    && requestStats.request_count >= maxEmailCodeRequestsPerWindow
+  ) {
+    const retryAfterSeconds = getRetryAfterSeconds(
+      requestStats.first_created_at,
+      emailCodeRequestWindowSeconds,
+    )
+
+    if (retryAfterSeconds > 0) {
+      return makeEmailRateLimitResponse(
+        `验证码请求过于频繁，请 ${formatRetryAfter(retryAfterSeconds)}后再试`,
+        retryAfterSeconds,
+      )
+    }
+  }
+
+  if (requestStats?.latest_created_at) {
+    const retryAfterSeconds = getRetryAfterSeconds(
+      requestStats.latest_created_at,
+      emailCodeRequestCooldownSeconds,
+    )
+
+    if (retryAfterSeconds > 0) {
+      return makeEmailRateLimitResponse(
+        `验证码刚刚发送，请 ${formatRetryAfter(retryAfterSeconds)}后再试`,
+        retryAfterSeconds,
+      )
+    }
   }
 
   const code = randomNumericCode(6)
   const codeHash = await hashEmailCode(env, email, code)
+  const codeId = crypto.randomUUID()
   const createdAt = nowIso()
 
   await env.DB.prepare(
@@ -851,7 +922,7 @@ async function handleEmailStart(request: Request, env: AuthEnv) {
     ) VALUES (?, ?, ?, ?, 0, ?)`,
   )
     .bind(
-      crypto.randomUUID(),
+      codeId,
       email,
       codeHash,
       addSeconds(emailCodeMaxAgeSeconds),
@@ -862,11 +933,22 @@ async function handleEmailStart(request: Request, env: AuthEnv) {
   try {
     await sendLoginCode(env, email, code)
   } catch (error) {
+    await env.DB.prepare(
+      `DELETE FROM email_login_codes
+      WHERE id = ?`,
+    )
+      .bind(codeId)
+      .run()
+
     console.error(error)
     return makeAuthErrorResponse('验证码发送失败，请稍后重试', 502)
   }
 
-  return makeAuthJsonResponse({ ok: true, message: '验证码已发送' })
+  return makeAuthJsonResponse({
+    ok: true,
+    message: '验证码已发送，请查看邮箱',
+    retryAfterSeconds: emailCodeRequestCooldownSeconds,
+  })
 }
 
 async function handleEmailVerify(request: Request, env: AuthEnv) {
