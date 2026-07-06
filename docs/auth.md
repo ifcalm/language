@@ -30,7 +30,6 @@ wrangler secret put GITHUB_CLIENT_SECRET
 wrangler secret put GOOGLE_CLIENT_ID
 wrangler secret put GOOGLE_CLIENT_SECRET
 wrangler secret put AUTH_SECRET
-wrangler secret put RESEND_API_KEY
 wrangler secret put AUTH_EMAIL_FROM
 ```
 
@@ -38,8 +37,15 @@ wrangler secret put AUTH_EMAIL_FROM
 
 - GitHub 登录需要 `GITHUB_CLIENT_ID` 和 `GITHUB_CLIENT_SECRET`。
 - Google 登录需要 `GOOGLE_CLIENT_ID` 和 `GOOGLE_CLIENT_SECRET`。
-- 邮箱验证码登录需要 `AUTH_SECRET`、`RESEND_API_KEY`、`AUTH_EMAIL_FROM`。
-- `AUTH_EMAIL_FROM` 示例：`English Orbit <login@english.ifcalm.org>`，需要在邮件服务商侧完成域名或发件人验证。
+- 邮箱验证码登录需要 Cloudflare Email Sending binding `EMAIL`、`AUTH_SECRET`、`AUTH_EMAIL_FROM`。
+- `AUTH_EMAIL_FROM` 示例：`开发者英语 <login@ifcalm.org>`，需要先在 Cloudflare Email Sending 完成域名验证。
+
+## 邮箱验证码策略
+
+- 验证码为 6 位数字，10 分钟内有效。
+- 同一个验证码最多允许尝试 5 次。
+- 同一个邮箱 60 秒内只能请求 1 次验证码。
+- 同一个邮箱 1 小时内最多请求 5 次验证码。
 
 ## 回调地址
 

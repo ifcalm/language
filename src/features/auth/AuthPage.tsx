@@ -1,5 +1,6 @@
 import {
   type FormEvent,
+  useEffect,
   useState,
 } from 'react'
 import type { ViewId } from '../../app/routing'
@@ -12,6 +13,16 @@ interface AuthApiResponse {
   ok?: boolean
   error?: string
   message?: string
+  retryAfterSeconds?: number
+}
+
+class AuthRequestError extends Error {
+  retryAfterSeconds?: number
+
+  constructor(message: string, retryAfterSeconds?: number) {
+    super(message)
+    this.retryAfterSeconds = retryAfterSeconds
+  }
 }
 
 const authPages = {
@@ -51,7 +62,7 @@ async function requestAuthApi(path: string, payload: Record<string, string>) {
   const data = (await response.json()) as AuthApiResponse
 
   if (!response.ok) {
-    throw new Error(data.error || '请求失败，请稍后重试')
+    throw new AuthRequestError(data.error || '请求失败，请稍后重试', data.retryAfterSeconds)
   }
 
   return data
@@ -73,6 +84,19 @@ function AuthPage({ mode, onChangeView }: AuthPageProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState('')
   const [error, setError] = useState(getAuthErrorFromUrl)
+  const [resendSeconds, setResendSeconds] = useState(0)
+
+  useEffect(() => {
+    if (resendSeconds <= 0) {
+      return undefined
+    }
+
+    const timer = window.setTimeout(() => {
+      setResendSeconds((seconds) => Math.max(0, seconds - 1))
+    }, 1000)
+
+    return () => window.clearTimeout(timer)
+  }, [resendSeconds])
 
   const providerRedirect = (provider: 'github' | 'google') => {
     const params = new URLSearchParams({
@@ -80,6 +104,27 @@ function AuthPage({ mode, onChangeView }: AuthPageProps) {
       redirectTo: '/',
     })
     window.location.assign(`/api/auth/${provider}/start?${params.toString()}`)
+  }
+
+  const requestEmailCode = async () => {
+    const data = await requestAuthApi('/api/auth/email/start', { email })
+    setStep('code')
+    setCode('')
+    setMessage(data.message || '验证码已发送，请查看邮箱')
+    setResendSeconds(data.retryAfterSeconds ?? 60)
+  }
+
+  const handleAuthError = (submitError: unknown) => {
+    if (submitError instanceof AuthRequestError) {
+      if (submitError.retryAfterSeconds) {
+        setResendSeconds(submitError.retryAfterSeconds)
+      }
+
+      setError(submitError.message)
+      return
+    }
+
+    setError(submitError instanceof Error ? submitError.message : '请求失败，请稍后重试')
   }
 
   const submitEmail = async (event: FormEvent<HTMLFormElement>) => {
@@ -90,16 +135,28 @@ function AuthPage({ mode, onChangeView }: AuthPageProps) {
 
     try {
       if (step === 'email') {
-        const data = await requestAuthApi('/api/auth/email/start', { email })
-        setStep('code')
-        setMessage(data.message || '验证码已发送，请查看邮箱')
+        await requestEmailCode()
         return
       }
 
       await requestAuthApi('/api/auth/email/verify', { email, code })
       window.location.assign('/')
     } catch (submitError) {
-      setError(submitError instanceof Error ? submitError.message : '请求失败，请稍后重试')
+      handleAuthError(submitError)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const resendEmailCode = async () => {
+    setError('')
+    setMessage('')
+    setIsSubmitting(true)
+
+    try {
+      await requestEmailCode()
+    } catch (submitError) {
+      handleAuthError(submitError)
     } finally {
       setIsSubmitting(false)
     }
@@ -111,6 +168,7 @@ function AuthPage({ mode, onChangeView }: AuthPageProps) {
     setStep('email')
     setMessage('')
     setError('')
+    setResendSeconds(0)
     onChangeView(authPage.switchView)
   }
 
@@ -178,19 +236,30 @@ function AuthPage({ mode, onChangeView }: AuthPageProps) {
         </button>
 
         {step === 'code' && (
-          <button
-            type="button"
-            className="auth-text-button"
-            disabled={isSubmitting}
-            onClick={() => {
-              setStep('email')
-              setCode('')
-              setMessage('')
-              setError('')
-            }}
-          >
-            换一个邮箱
-          </button>
+          <div className="auth-code-actions">
+            <button
+              type="button"
+              className="auth-text-button"
+              disabled={isSubmitting}
+              onClick={() => {
+                setStep('email')
+                setCode('')
+                setMessage('')
+                setError('')
+                setResendSeconds(0)
+              }}
+            >
+              换一个邮箱
+            </button>
+            <button
+              type="button"
+              className="auth-text-button"
+              disabled={isSubmitting || resendSeconds > 0}
+              onClick={resendEmailCode}
+            >
+              {resendSeconds > 0 ? `${resendSeconds} 秒后重发` : '重新发送验证码'}
+            </button>
+          </div>
         )}
 
         <div className="auth-divider">

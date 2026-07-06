@@ -114,6 +114,16 @@
   font-size: 0.9rem;
 }
 
+.auth-code-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.auth-code-actions .auth-text-button {
+  width: auto;
+}
+
 .auth-text-button:hover,
 .auth-text-button:focus-visible {
   color: var(--text);
