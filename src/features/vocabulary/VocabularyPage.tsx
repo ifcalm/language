@@ -131,18 +131,6 @@ function PronunciationAccents({
   )
 }
 
-function getExampleTier(index: number, total: number) {
-  if (total <= 1 || index === 0) {
-    return '基础'
-  }
-
-  if (index === total - 1) {
-    return '进阶'
-  }
-
-  return '常用'
-}
-
 // 学习动作占位：当前仅做组件内交互反馈，不持久化。
 // TODO: 接入个人特性模块后改为持久化（认识状态 / 复习清单）。
 function VocabularyStudyActions() {
@@ -630,18 +618,10 @@ function VocabularyPage() {
 
               {selectedVocabularyDetail.examples.length > 0 ? (
                 <section className="panel vocabulary-detail-examples">
+                  <h2>语境例句</h2>
                   <div className="vocabulary-example-list">
-                    {selectedVocabularyDetail.examples.map((example, index) => {
-                      const tier = getExampleTier(
-                        index,
-                        selectedVocabularyDetail.examples.length,
-                      )
-
-                      return (
+                    {selectedVocabularyDetail.examples.map((example) => (
                       <article key={example.id}>
-                        <span className="vocabulary-example-tier" data-tier={tier}>
-                          {tier}
-                        </span>
                         <p>
                           {highlightTargetWord(
                             example.sentenceEn,
@@ -652,8 +632,7 @@ function VocabularyPage() {
                           <small>{example.sentenceZh}</small>
                         ) : null}
                       </article>
-                      )
-                    })}
+                    ))}
                   </div>
                 </section>
               ) : (
