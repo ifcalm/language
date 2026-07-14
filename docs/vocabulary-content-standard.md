@@ -98,6 +98,43 @@ A scene may be entirely human-free when another subject communicates the meaning
 
 When people are appropriate, vary age, skin tone, facial structure, body type, hairstyle, clothing, ability or mobility, occupation, family structure, and cultural or geographic setting. Diversity should follow naturally from the story, avoid stereotypes, and never reduce a person to a visual token. Do not repeatedly reuse the same face, hairstyle, body silhouette, green-shirt outfit, or small cast of character templates.
 
+## Visual style
+
+Vocabulary scenes must look deliberately illustrated and must not create a live-action or realistic-human impression. Preferred style families include:
+
+- stylized 3D animation
+- editorial 3D illustration
+- gouache or painterly storybook illustration
+- paper-cut or mixed-media collage
+- hand-drawn animation
+- graphic novel or comic illustration
+- watercolor with expressive linework
+- linocut or woodcut-inspired illustration
+- screen-print or Risograph-inspired illustration
+- textile, felt, or embroidery-inspired illustration
+- stop-motion-inspired handcrafted illustration
+
+Choose one coherent style family within each image, but deliberately vary style families across the vocabulary collection. Style selection must follow the word's meaning, scene structure, and emotional tone rather than random rotation or a single default style.
+
+### Style routing
+
+| Scene or learning need | Preferred style families |
+|---|---|
+| Everyday life, relationships, and warm narrative | Gouache, painterly storybook, watercolor linework |
+| Articles, prepositions, spatial relationships, and simple abstract structure | Paper-cut, mixed-media collage, editorial 3D |
+| Actions, emotions, transformation, and movement | Hand-drawn animation, stylized 3D animation |
+| Pronouns, reference, sequence, cause, and contrast | Graphic novel, comic sequence, paper collage |
+| Nature, seasons, quiet observation, and subtle feeling | Watercolor, gouache, textile or felt illustration |
+| Technology, systems, data, and modern abstract concepts | Risograph, screen print, editorial 3D, graphic illustration |
+| Courage, responsibility, labor, and visually forceful themes | Linocut, woodcut-inspired illustration, graphic novel |
+| Craft, care, tradition, and tactile domestic scenes | Embroidery, textile, felt, stop-motion-inspired illustration |
+
+For a batch of 20 or more images, aim to use at least four style families and avoid letting one family become the automatic answer for most words. Adjacent words should not repeat an almost identical composition, palette, material treatment, or character design merely because they share a style family.
+
+Shared product constraints remain stable across styles: landscape 3:2 framing, mature learner-facing art direction, a clear focal action or relationship, no in-image teaching text, no logos or watermarks, and no live-action or realistic-human impression. People should use clearly designed shapes, simplified expressive faces, stylized proportions, and illustrated materials. Avoid realistic skin pores, photographic facial rendering, camera-real depth of field, live-action staging, stock-photo composition, and lighting that makes the scene easy to mistake for a photograph.
+
+The style may feel mature and emotionally grounded without becoming photorealistic. Avoid both extremes: realistic human rendering on one side, and childish chibi or glossy toy characters on the other.
+
 ## Removed public-content tables
 
 The following tables were removed to keep the first public data model focused:

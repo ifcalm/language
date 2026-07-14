@@ -10,15 +10,41 @@ import {
 import { basename, extname, join, resolve } from 'node:path'
 import sharp from 'sharp'
 
-const args = new Set(process.argv.slice(2))
+const rawArgs = process.argv.slice(2)
+const args = new Set(rawArgs)
 const publish = args.has('--publish')
 const root = process.cwd()
+
+function getArgValue(name, fallback) {
+  const index = rawArgs.indexOf(name)
+
+  if (index === -1) {
+    return fallback
+  }
+
+  const value = rawArgs[index + 1]
+  if (!value || value.startsWith('--')) {
+    throw new Error(`${name} requires a value`)
+  }
+
+  return value
+}
+
 const manifestPath = resolve(
   root,
-  'scripts/fixtures/vocabulary-visuals-pilot-30.json',
+  getArgValue(
+    '--manifest',
+    'scripts/fixtures/vocabulary-visuals-pilot-30.json',
+  ),
 )
-const sourceDir = resolve(root, 'output/vocabulary-visuals/pilot-30')
-const preparedDir = resolve(root, 'tmp/vocabulary-visuals/pilot-30')
+const sourceDir = resolve(
+  root,
+  getArgValue('--source-dir', 'output/vocabulary-visuals/pilot-30'),
+)
+const preparedDir = resolve(
+  root,
+  getArgValue('--prepared-dir', 'tmp/vocabulary-visuals/pilot-30'),
+)
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
 const supportedExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp'])
 
