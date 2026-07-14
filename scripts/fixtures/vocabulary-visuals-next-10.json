@@ -1,0 +1,119 @@
+{
+  "batchId": "vocabulary-stories-next-10-2026-07-14",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Choose the declared styleFamily for each item and let the word's scene determine the medium. Keep one coherent visual language inside each image while deliberately varying styles across the batch. Shared constraints: mature learner-facing illustration, landscape 3:2 composition, clear focal action or relationship, restrained sage green, sky blue, warm gold, terracotta and charcoal accents where the medium allows, and no in-image teaching text. Every scene must look unmistakably illustrated rather than photographed. No realistic people, photographic faces, realistic skin, pores, live-action staging, camera-real depth of field, stock-photo composition, logos, watermarks, readable interfaces, chibi proportions, or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "8c1ed485-33b9-4f0f-9fe0-d1479ff0b6c3",
+      "word": "that",
+      "meaningZh": "那；那个；引导从句",
+      "exampleId": "8c1ed485-33b9-4f0f-9fe0-d1479ff0b6c3-visual-ex",
+      "styleFamily": "paper-cut mixed-media collage",
+      "sentenceEn": "This shell is smooth, but that shell beside the tide pool is rough.",
+      "sentenceZh": "这枚贝壳很光滑，但潮池旁的那枚贝壳很粗糙。",
+      "scene": "A close smooth cream shell rests in the lower foreground while a clearly different rough ridged shell sits farther away beside a blue tide pool. Layered paper distance and scale make the far shell the unmistakable target of 'that'; a tiny paper crab looks toward it.",
+      "altText": "近处是一枚光滑贝壳，潮池旁较远处是那枚粗糙贝壳。"
+    },
+    {
+      "vocabularyId": "171ee44e-ac87-4b3b-aeff-cfb6b4b90d30",
+      "word": "for",
+      "meaningZh": "为了；给；因为；对于",
+      "exampleId": "171ee44e-ac87-4b3b-aeff-cfb6b4b90d30-visual-ex",
+      "styleFamily": "watercolor with expressive ink linework",
+      "sentenceEn": "The squirrel saved one walnut for the hungry crow.",
+      "sentenceZh": "松鼠给饥饿的乌鸦留了一颗核桃。",
+      "scene": "On a quiet autumn branch, a small red squirrel gently places its last walnut in front of a tired crow. Their gaze and the walnut's position clearly show that the nut is intended for the crow. Loose watercolor washes and lively ink contours keep the moment warm and light.",
+      "altText": "松鼠把留好的一颗核桃递给饥饿的乌鸦。"
+    },
+    {
+      "vocabularyId": "34958e28-a010-40b1-aec4-2b3e1db87426",
+      "word": "you",
+      "meaningZh": "你；你们",
+      "exampleId": "34958e28-a010-40b1-aec4-2b3e1db87426-visual-ex",
+      "styleFamily": "hand-drawn cel animation",
+      "sentenceEn": "You can stand under my leaf until the rain stops.",
+      "sentenceZh": "你可以站到我的叶子下面，等雨停下来。",
+      "scene": "A friendly red panda in a clearly hand-drawn animated forest looks directly toward the viewer and extends one side of an oversized leaf umbrella into the foreground. The viewer's small rounded paws appear at the bottom edge, making the second-person invitation immediate.",
+      "altText": "小熊猫把大叶子伸向画面前方，邀请你一起躲雨。"
+    },
+    {
+      "vocabularyId": "627c8731-c2c3-43fb-ba9f-6619f5c5cb53",
+      "word": "he",
+      "meaningZh": "他",
+      "exampleId": "627c8731-c2c3-43fb-ba9f-6619f5c5cb53-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "A young beaver found a broken bridge, and he repaired it before sunset.",
+      "sentenceZh": "一只小河狸发现木桥坏了，并在日落前把它修好了。",
+      "scene": "A young beaver is the only main character in a richly painted riverside scene. Fresh branches and careful knots now repair a small broken footbridge as the beaver presses the final piece into place before sunset, making 'he' refer clearly to the introduced beaver.",
+      "altText": "小河狸在日落前用树枝修好了断裂的小桥。"
+    },
+    {
+      "vocabularyId": "ac7657da-76e7-4ae5-a035-10afd4802c7f",
+      "word": "with",
+      "meaningZh": "和；用；带有；随着",
+      "exampleId": "ac7657da-76e7-4ae5-a035-10afd4802c7f-visual-ex",
+      "styleFamily": "linocut-inspired limited-color print",
+      "sentenceEn": "The little sailboat crossed the lake with the help of the wind.",
+      "sentenceZh": "小帆船借助风力穿过了湖面。",
+      "scene": "A small sailboat leans forward across a broad lake while carved curling wind lines fill its sail and drive it toward the opposite shore. Strong linocut marks and a limited navy, sage, ochre and rust palette make the partnership between boat and wind visually forceful.",
+      "altText": "风鼓起船帆，帮助小帆船穿过湖面。"
+    },
+    {
+      "vocabularyId": "0abca149-b99a-4c70-a650-8fe801c171ac",
+      "word": "on",
+      "meaningZh": "在...上；关于；开着",
+      "exampleId": "0abca149-b99a-4c70-a650-8fe801c171ac-visual-ex",
+      "styleFamily": "textile and embroidery illustration",
+      "sentenceEn": "A sleepy cat curled up on the sun-warmed stone wall.",
+      "sentenceZh": "一只困倦的猫蜷缩在被阳光晒暖的石墙上。",
+      "scene": "An embroidered cat made of layered fabric curls visibly on top of a raised stone wall stitched from textured gray and terracotta cloth. Its body overlaps the wall's upper edge while embroidered sun rays warm the surface, making the spatial relation unmistakable.",
+      "altText": "布艺小猫蜷缩在阳光晒暖的石墙上面。"
+    },
+    {
+      "vocabularyId": "c2f9dc5e-e568-488b-970c-67de4a1de9bb",
+      "word": "do",
+      "meaningZh": "做；进行；完成；助动词",
+      "exampleId": "c2f9dc5e-e568-488b-970c-67de4a1de9bb-visual-ex",
+      "styleFamily": "wordless graphic-novel sequence",
+      "sentenceEn": "The ants do their work together before the rain arrives.",
+      "sentenceZh": "蚂蚁们在雨来之前一起完成工作。",
+      "scene": "A mature wordless graphic-novel composition uses three connected moments: ants notice dark clouds, cooperate to carry seeds underground, and close the nest entrance just as the first drop falls. Bold shapes and repeated ants make purposeful action and completion central.",
+      "altText": "蚂蚁们分工合作，在下雨前搬好种子并封住巢穴。"
+    },
+    {
+      "vocabularyId": "ead161b2-2911-483c-90b6-c3ca6fdcfe2a",
+      "word": "say",
+      "meaningZh": "说；讲；据说；表明",
+      "exampleId": "ead161b2-2911-483c-90b6-c3ca6fdcfe2a-visual-ex",
+      "styleFamily": "stylized clay stop-motion animation",
+      "sentenceEn": "The crow learned to say hello at the garden gate.",
+      "sentenceZh": "乌鸦学会了在花园门口说你好。",
+      "scene": "At a handcrafted garden gate, a friendly clay crow opens its beak in greeting as a rabbit and hedgehog pause, turn toward it and respond with delighted expressions. Gentle curved sound ripples may leave the beak, but there are no speech bubbles, letters or written words.",
+      "altText": "乌鸦在花园门口开口问候，兔子和刺猬高兴地回应。"
+    },
+    {
+      "vocabularyId": "742bb0c8-b065-4640-82e8-796284c10e56",
+      "word": "this",
+      "meaningZh": "这个；这；这么",
+      "exampleId": "742bb0c8-b065-4640-82e8-796284c10e56-visual-ex",
+      "styleFamily": "editorial mixed-media collage",
+      "sentenceEn": "This seedling in my hand is ready for the garden.",
+      "sentenceZh": "我手里的这株幼苗已经可以种进花园了。",
+      "scene": "From a stylized first-person viewpoint, two cut-paper gardening gloves hold one healthy seedling very close in the foreground. A prepared garden bed sits farther beyond, but scale, overlap and crisp collage layers keep the nearby seedling as the clear object of 'this'.",
+      "altText": "画面前方的双手托着这株准备种进花园的幼苗。"
+    },
+    {
+      "vocabularyId": "8236e3cc-a83e-41de-bffb-e772179df2a3",
+      "word": "they",
+      "meaningZh": "他们；她们；它们",
+      "exampleId": "8236e3cc-a83e-41de-bffb-e772179df2a3-visual-ex",
+      "styleFamily": "Risograph-inspired screen print",
+      "sentenceEn": "Three young otters found loose reeds, and they built a safe floating bed.",
+      "sentenceZh": "三只小水獭找到散落的芦苇，并搭起了一个安全的漂浮小窝。",
+      "scene": "Exactly three young otters work together in one flowing river scene, carrying loose reeds from the bank and weaving them into a floating circular bed. A limited two-to-four-ink Risograph look, visible grain and offset layers keep the plural group memorable.",
+      "altText": "三只小水獭一起收集芦苇，搭建安全的漂浮小窝。"
+    }
+  ]
+}

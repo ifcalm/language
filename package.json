@@ -17,6 +17,7 @@
     "vocabulary:coverage:top100": "node scripts/check-vocabulary-content-completeness.mjs",
     "vocabulary:visuals:publish": "node scripts/publish-vocabulary-visuals.mjs",
     "vocabulary:visuals:top10": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-top-10.json --source-dir output/vocabulary-visuals/top-10 --prepared-dir tmp/vocabulary-visuals/top-10",
+    "vocabulary:visuals:next10": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-next-10.json --source-dir output/vocabulary-visuals/next-10 --prepared-dir tmp/vocabulary-visuals/next-10",
     "verbs:generate": "node scripts/generate-verb-paths.mjs",
     "verbs:refresh:v2": "node scripts/generate-verb-paths.mjs --refresh-v2",
     "verbs:fixture:v2:local": "node scripts/generate-verb-paths.mjs --fixture scripts/fixtures/verb-paths-v2-golden.json",
