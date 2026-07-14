@@ -2,6 +2,7 @@ import type {
   VocabExampleRow,
   VocabPronunciationRow,
   VocabRow,
+  VocabVisualRow,
 } from './types'
 
 export const mapPronunciationRow = (row: VocabPronunciationRow) => ({
@@ -14,6 +15,13 @@ export const mapExampleRow = (row: VocabExampleRow) => ({
   id: row.id,
   sentenceEn: row.sentence_en,
   sentenceZh: row.sentence_zh,
+})
+
+export const mapVisualRow = (row: VocabVisualRow) => ({
+  id: row.id,
+  exampleId: row.example_id,
+  imageUrl: row.image_url,
+  altText: row.alt_text,
 })
 
 export const mapVocabRow = (row: VocabRow) => ({

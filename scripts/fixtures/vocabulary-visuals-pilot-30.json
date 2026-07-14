@@ -1,0 +1,309 @@
+{
+  "batchId": "vocabulary-stories-pilot-30-2026-07-14",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Warm narrative editorial 3D illustration for adults, with natural proportions, tactile matte materials, subtle handcrafted texture, soft cinematic light, restrained sage green, sky blue, warm gold, terracotta and charcoal accents, and one emotionally clear action. Choose the most meaningful subject for each story instead of defaulting to people: humans, animals, plants, fungi, ecosystems, weather, water, landscapes, celestial bodies, everyday objects, architecture, vehicles, machines, or abstract systems may lead the scene. When people appear, vary age, skin tone, facial structure, body type, hairstyle, clothing, ability, occupation, and social context naturally across the collection; do not reuse a fixed face, outfit, or character template, and avoid stereotypes. Keep the visual language consistent without making the cast uniform. Landscape 3:2 composition. No text, letters, numbers, labels, logos, watermarks, readable interfaces, photorealism, chibi proportions, glossy toy surfaces, purple gradients, or decorative clutter.",
+  "items": [
+    {
+      "vocabularyId": "fd2ba156-420c-40dd-87c2-9e1d578d28ab",
+      "word": "process",
+      "meaningZh": "过程；程序；处理；加工",
+      "exampleId": "fd2ba156-420c-40dd-87c2-9e1d578d28ab-visual-ex",
+      "sentenceEn": "The volunteers followed a careful process to deliver food safely.",
+      "sentenceZh": "志愿者按照严谨的流程安全配送食物。",
+      "scene": "At a community food bank, volunteers follow three connected stages: sort donated food, check each package, and load safe meals for delivery to local families. The careful sequence and teamwork are visually clear.",
+      "altText": "志愿者按照分拣、检查和装车的流程安全配送捐赠食物。"
+    },
+    {
+      "vocabularyId": "7c0f256d-7141-46ed-a64d-e6ac41649bbd",
+      "word": "system",
+      "meaningZh": "系统；体系；制度",
+      "exampleId": "7c0f256d-7141-46ed-a64d-e6ac41649bbd-visual-ex",
+      "sentenceEn": "The neighbors built a simple system for sharing clean water.",
+      "sentenceZh": "邻居们建立了一套分享清洁饮用水的简单体系。",
+      "scene": "Neighbors run a coordinated clean-water sharing station: one person filters water, another fills reusable containers, and another delivers water to an older neighbor. The connected roles form one helpful system.",
+      "altText": "邻居们通过过滤、分装和配送组成清洁饮用水共享体系。"
+    },
+    {
+      "vocabularyId": "9762fb60-68e6-4845-990c-9b2b24c2d694",
+      "word": "data",
+      "meaningZh": "资料；数据",
+      "exampleId": "9762fb60-68e6-4845-990c-9b2b24c2d694-visual-ex",
+      "sentenceEn": "The rescue team used weather data to guide the hikers home.",
+      "sentenceZh": "救援队利用天气数据引导徒步者安全回家。",
+      "scene": "A mountain rescue team studies live weather patterns and a route map on a tablet, then radios guidance to hikers following a safe path home before clouds close in.",
+      "altText": "救援队根据天气数据和路线信息引导徒步者安全返回。"
+    },
+    {
+      "vocabularyId": "ea19c60c-0b8e-46bc-afac-4dca1cdc4906",
+      "word": "code",
+      "meaningZh": "代码；密码；法典",
+      "exampleId": "ea19c60c-0b8e-46bc-afac-4dca1cdc4906-visual-ex",
+      "sentenceEn": "Maya wrote code that helps blind users navigate the website.",
+      "sentenceZh": "Maya 编写代码，帮助视障用户浏览网站。",
+      "scene": "Maya works beside a blind user testing an accessible website with headphones and a tactile keyboard. Her code changes turn a confusing interface into a clear guided path, without readable code or UI text.",
+      "altText": "Maya 编写并测试无障碍代码，帮助视障用户顺利浏览网站。"
+    },
+    {
+      "vocabularyId": "548898d7-3fed-4138-8d34-953fd3cdd299",
+      "word": "server",
+      "meaningZh": "服务器",
+      "exampleId": "548898d7-3fed-4138-8d34-953fd3cdd299-visual-ex",
+      "sentenceEn": "The backup server kept the hospital connected during the storm.",
+      "sentenceZh": "备用服务器让医院在暴风雨中保持连通。",
+      "scene": "During a storm and power disruption, one dependable backup server keeps a small hospital's communications, patient records, and care team connected while rain flashes outside.",
+      "altText": "暴风雨停电期间，备用服务器让医院通信和医疗服务保持连通。"
+    },
+    {
+      "vocabularyId": "1d026656-fdde-4315-8eb7-e6375bc66d3d",
+      "word": "deploy",
+      "meaningZh": "部署；展开",
+      "exampleId": "1d026656-fdde-4315-8eb7-e6375bc66d3d-visual-ex",
+      "sentenceEn": "The rescue team deployed emergency shelters before the storm arrived.",
+      "sentenceZh": "救援队在暴风雨到来前部署了应急帐篷。",
+      "scene": "A calm rescue team quickly unfolds and positions emergency shelters on safe ground before distant storm clouds arrive, preparing warm dry spaces for local families.",
+      "altText": "救援队在暴风雨到来前有序部署应急帐篷。"
+    },
+    {
+      "vocabularyId": "e37cb445-ff53-48f8-8ab5-712d4a897681",
+      "word": "debug",
+      "meaningZh": "调试；排错",
+      "exampleId": "e37cb445-ff53-48f8-8ab5-712d4a897681-visual-ex",
+      "sentenceEn": "Leo worked with volunteers to debug their scheduling app.",
+      "sentenceZh": "Leo 与志愿者一起调试他们的排班应用。",
+      "scene": "Leo and two community volunteers patiently trace a broken shift in their scheduling app, identify one faulty step, and restore a clear volunteer timetable without readable code or text.",
+      "altText": "Leo 与志愿者一起查找并修复排班应用中的故障。"
+    },
+    {
+      "vocabularyId": "d656b139-c5ae-4854-9211-60c0fbfd2394",
+      "word": "queue",
+      "meaningZh": "队列",
+      "exampleId": "d656b139-c5ae-4854-9211-60c0fbfd2394-visual-ex",
+      "sentenceEn": "Everyone waited in a queue so the food could be shared fairly.",
+      "sentenceZh": "大家有序排队，让食物能够公平分发。",
+      "scene": "People of different ages wait patiently in one orderly queue at a community food table while volunteers serve each person fairly in turn.",
+      "altText": "大家在社区食物分发点有序排队并依次领取食物。"
+    },
+    {
+      "vocabularyId": "8caf6095-2b40-4ee0-90fa-4be749b4b5cc",
+      "word": "cache",
+      "meaningZh": "缓存；高速缓存",
+      "exampleId": "8caf6095-2b40-4ee0-90fa-4be749b4b5cc-visual-ex",
+      "sentenceEn": "The map cache helped Maya find the trail without a signal.",
+      "sentenceZh": "在没有信号时，地图缓存帮助 Maya 找到了山路。",
+      "scene": "On a mountain trail without network coverage, Maya opens a map already stored on her phone and follows the saved route toward a safe cabin. The locally stored map remains available despite the distant inactive signal tower.",
+      "altText": "没有网络信号时，Maya 使用手机里缓存的地图找到安全山路。"
+    },
+    {
+      "vocabularyId": "3c2f055a-1e3b-45f6-b171-47ae5762a537",
+      "word": "branch",
+      "meaningZh": "分支；树枝；分行",
+      "exampleId": "3c2f055a-1e3b-45f6-b171-47ae5762a537-visual-ex",
+      "sentenceEn": "A child placed the rescued bird safely on a low branch.",
+      "sentenceZh": "孩子把获救的小鸟轻轻放到低矮的树枝上。",
+      "scene": "With an adult caregiver nearby, a child gently places a recovered young bird on a low sturdy tree branch where it can rest safely among fresh leaves.",
+      "altText": "孩子在照护者陪伴下把获救的小鸟轻轻放到树枝上。"
+    },
+    {
+      "vocabularyId": "b058b260-bbe7-4346-8b72-92dcc6b8dedb",
+      "word": "commit",
+      "meaningZh": "提交；犯罪；承诺",
+      "exampleId": "b058b260-bbe7-4346-8b72-92dcc6b8dedb-visual-ex",
+      "sentenceEn": "They commit one afternoon each week to reading with children.",
+      "sentenceZh": "他们每周投入一个下午陪孩子们阅读。",
+      "scene": "The same small group of volunteers gathers in a welcoming library reading corner with children, while a simple weekly calendar motif shows their steady recurring commitment without numbers or text.",
+      "altText": "志愿者坚持每周抽出时间陪伴孩子们阅读。"
+    },
+    {
+      "vocabularyId": "2297b51e-f6a1-4dc9-97a6-ccc57b2243f3",
+      "word": "request",
+      "meaningZh": "请求",
+      "exampleId": "2297b51e-f6a1-4dc9-97a6-ccc57b2243f3-visual-ex",
+      "sentenceEn": "Maya sent a request for blankets after the storm.",
+      "sentenceZh": "暴风雨过后，Maya 发出了募集毛毯的请求。",
+      "scene": "Inside a storm shelter with nearly empty blanket shelves, Maya sends one clear request from her phone to the surrounding community while families wait safely nearby.",
+      "altText": "暴风雨后，Maya 从避难所向社区发出募集毛毯的请求。"
+    },
+    {
+      "vocabularyId": "2e93265a-8d6f-41ba-bceb-ac96295a1828",
+      "word": "response",
+      "meaningZh": "回答；回应；反应；响应",
+      "exampleId": "2e93265a-8d6f-41ba-bceb-ac96295a1828-visual-ex",
+      "sentenceEn": "The community's response filled the shelter with warm blankets.",
+      "sentenceZh": "社区积极响应，为避难所送来了许多温暖的毛毯。",
+      "scene": "Community members arrive at the same storm shelter carrying clean folded blankets, filling the once-empty shelves while Maya and the families receive them with quiet gratitude.",
+      "altText": "社区成员积极响应请求，为避难所送来许多温暖的毛毯。"
+    },
+    {
+      "vocabularyId": "904d6e10-0b39-4d50-b2f8-40f3f489cc4f",
+      "word": "error",
+      "meaningZh": "错误",
+      "exampleId": "904d6e10-0b39-4d50-b2f8-40f3f489cc4f-visual-ex",
+      "sentenceEn": "Nina admitted the error and corrected every affected record.",
+      "sentenceZh": "Nina 承认了错误，并更正了所有受影响的记录。",
+      "scene": "Nina openly shows a colleague one incorrect record in an organized archive, then carefully corrects the related records. A clear before-and-after state emphasizes honesty and repair without readable text.",
+      "altText": "Nina 主动承认记录错误，并认真更正所有受影响的资料。"
+    },
+    {
+      "vocabularyId": "c8169c4d-b4a2-4416-8c34-d3690a6d87b6",
+      "word": "test",
+      "meaningZh": "测试；检验；考验",
+      "exampleId": "c8169c4d-b4a2-4416-8c34-d3690a6d87b6-visual-ex",
+      "sentenceEn": "The safety test made sure every donated bicycle was ready.",
+      "sentenceZh": "安全测试确保每辆捐赠的自行车都能正常使用。",
+      "scene": "A careful mechanic performs a safety test on donated children's bicycles, checking brakes, wheels, and lights before smiling children receive them.",
+      "altText": "维修人员认真测试捐赠自行车的刹车、车轮和车灯。"
+    },
+    {
+      "vocabularyId": "30e13d8c-6bc5-421c-9b3d-bf6215686ea5",
+      "word": "release",
+      "meaningZh": "释放；发布；发行；放开",
+      "exampleId": "30e13d8c-6bc5-421c-9b3d-bf6215686ea5-visual-ex",
+      "sentenceEn": "Maya released the healed bird back into the sky.",
+      "sentenceZh": "Maya 将康复的小鸟放归天空。",
+      "scene": "In a quiet wildlife rescue garden at sunrise, Maya kneels beside an open wooden carrier and gently releases a healthy bird into the bright open sky while another caregiver watches nearby.",
+      "altText": "Maya 在救助站将康复的小鸟放归天空。"
+    },
+    {
+      "vocabularyId": "a1ba2eb3-d5f1-4b1e-8383-eb5db9be33b1",
+      "word": "build",
+      "meaningZh": "建造；建立；构建；体型",
+      "exampleId": "a1ba2eb3-d5f1-4b1e-8383-eb5db9be33b1-visual-ex",
+      "sentenceEn": "The students worked together to build nesting boxes for birds.",
+      "sentenceZh": "学生们一起为鸟儿建造巢箱。",
+      "scene": "Students cooperate at an outdoor workshop to measure, assemble, and finish sturdy wooden nesting boxes, then place one safely in a community garden tree.",
+      "altText": "学生们分工合作，为社区花园里的鸟儿建造巢箱。"
+    },
+    {
+      "vocabularyId": "a4d35422-9b6b-4f8f-8444-c4f246b030df",
+      "word": "database",
+      "meaningZh": "数据库",
+      "exampleId": "a4d35422-9b6b-4f8f-8444-c4f246b030df-visual-ex",
+      "sentenceEn": "The shelter's database helped reunite a lost dog with its family.",
+      "sentenceZh": "收容所的数据库帮助走失的小狗回到了家人身边。",
+      "scene": "At an animal shelter, a worker searches an organized database of pet records, finds a clear match for a lost dog, and helps the joyful family reunite with it.",
+      "altText": "收容所工作人员通过数据库记录帮助走失的小狗与家人团聚。"
+    },
+    {
+      "vocabularyId": "4818145a-8ab2-45df-a20e-ace1ebe18ed6",
+      "word": "network",
+      "meaningZh": "网络",
+      "exampleId": "4818145a-8ab2-45df-a20e-ace1ebe18ed6-visual-ex",
+      "sentenceEn": "A network of volunteers delivered medicine to isolated villages.",
+      "sentenceZh": "志愿者网络把药品送到了偏远村庄。",
+      "scene": "Across a mountain valley, a connected network of volunteers relays one medicine package by bicycle, foot, and small boat until it reaches an isolated village clinic.",
+      "altText": "志愿者通过接力协作把药品送到偏远村庄。"
+    },
+    {
+      "vocabularyId": "0214dc8f-6a56-4119-a2e0-d1f07287229e",
+      "word": "user",
+      "meaningZh": "用户",
+      "exampleId": "0214dc8f-6a56-4119-a2e0-d1f07287229e-visual-ex",
+      "sentenceEn": "The previous user returned the shared bicycle ready for the next rider.",
+      "sentenceZh": "上一位使用者把共享单车整理好，留给下一位骑行者。",
+      "scene": "One considerate user parks a shared bicycle neatly, adjusts the seat, and places the helmet securely before the next rider approaches the station.",
+      "altText": "上一位使用者把共享单车整理好，方便下一位骑行者使用。"
+    },
+    {
+      "vocabularyId": "bfa6924c-f382-4267-95ec-f133cd97e47a",
+      "word": "file",
+      "meaningZh": "文件；档案；锉刀",
+      "exampleId": "bfa6924c-f382-4267-95ec-f133cd97e47a-visual-ex",
+      "sentenceEn": "Maya saved every adoption record in a secure file.",
+      "sentenceZh": "Maya 把每份领养记录都保存在安全的文件中。",
+      "scene": "At an animal shelter, Maya carefully organizes adoption records into one secure labeled-by-color file cabinet while a newly adopted pet leaves with its family. No readable labels appear.",
+      "altText": "Maya 将动物领养记录整理并保存在安全的文件中。"
+    },
+    {
+      "vocabularyId": "a13d960f-aa7b-44ab-9ae4-69c69530d3d9",
+      "word": "function",
+      "meaningZh": "函数；功能",
+      "exampleId": "a13d960f-aa7b-44ab-9ae4-69c69530d3d9-visual-ex",
+      "sentenceEn": "The emergency call function helped Leo reach support quickly.",
+      "sentenceZh": "紧急呼叫功能帮助 Leo 很快联系到了救援人员。",
+      "scene": "After a bicycle breaks down on a quiet trail, Leo uses one clear emergency call function on his phone and soon connects with a nearby support worker arriving to help.",
+      "altText": "自行车发生故障后，Leo 使用紧急呼叫功能及时联系到救援人员。"
+    },
+    {
+      "vocabularyId": "3e0aff35-ec66-4920-9086-ec5fe00595b9",
+      "word": "service",
+      "meaningZh": "服务；服役",
+      "exampleId": "3e0aff35-ec66-4920-9086-ec5fe00595b9-visual-ex",
+      "sentenceEn": "The meal delivery service brings warm food to older neighbors.",
+      "sentenceZh": "送餐服务为年长的邻居送去热饭。",
+      "scene": "A friendly community meal delivery worker arrives at an older neighbor's doorway with a warm reusable food container, and the neighbor welcomes the thoughtful service.",
+      "altText": "社区送餐人员把温暖的饭菜送到年长邻居家中。"
+    },
+    {
+      "vocabularyId": "cd94fcb8-1ffa-44bb-a26b-2a3bdafd14b2",
+      "word": "security",
+      "meaningZh": "安全",
+      "exampleId": "cd94fcb8-1ffa-44bb-a26b-2a3bdafd14b2-visual-ex",
+      "sentenceEn": "Good security kept the families' private records safe.",
+      "sentenceZh": "完善的安全措施保护了家庭的私人记录。",
+      "scene": "At a community clinic, private family records remain protected inside a secure digital archive while an authorized caregiver accesses only the record needed to help one family.",
+      "altText": "社区诊所通过完善的安全措施保护家庭的私人记录。"
+    },
+    {
+      "vocabularyId": "0638dcd4-4395-4547-bfbb-21d438bc3c8e",
+      "word": "access",
+      "meaningZh": "访问；进入；通道；使用权",
+      "exampleId": "0638dcd4-4395-4547-bfbb-21d438bc3c8e-visual-ex",
+      "sentenceEn": "The new ramp gives every child access to the community center.",
+      "sentenceZh": "新坡道让每个孩子都能进入社区中心。",
+      "scene": "A child using a wheelchair travels up a newly built gentle ramp beside friends and enters a welcoming community center through the same open doorway.",
+      "altText": "新建坡道让使用轮椅的孩子和朋友们都能进入社区中心。"
+    },
+    {
+      "vocabularyId": "d54178a8-6d4d-4602-89ea-62e01b2d5bf5",
+      "word": "issue",
+      "meaningZh": "问题；议题；发布；发行",
+      "exampleId": "d54178a8-6d4d-4602-89ea-62e01b2d5bf5-visual-ex",
+      "sentenceEn": "Nina reported the streetlight issue before anyone was hurt.",
+      "sentenceZh": "Nina 在有人受伤前报告了路灯问题。",
+      "scene": "At dusk, Nina notices one broken streetlight above a dark crossing, reports the issue on her phone, and a repair worker arrives while pedestrians wait on the safely lit side.",
+      "altText": "Nina 及时报告损坏的路灯，维修人员随后赶来处理。"
+    },
+    {
+      "vocabularyId": "f50908c1-3ea6-4fdc-849d-dbd40d7b6b55",
+      "word": "change",
+      "meaningZh": "改变；变化；零钱；兑换",
+      "exampleId": "f50908c1-3ea6-4fdc-849d-dbd40d7b6b55-visual-ex",
+      "sentenceEn": "One small change turned the empty lot into a community garden.",
+      "sentenceZh": "一个小小的改变让空地变成了社区花园。",
+      "scene": "A clear before-and-after story shows neighbors transforming one neglected empty lot into a thriving shared garden with vegetables, flowers, a path, and people caring for it together.",
+      "altText": "邻居们共同努力，把荒置空地改造成充满生机的社区花园。"
+    },
+    {
+      "vocabularyId": "5fce1aad-14d0-4a1a-a6bd-8760845a750f",
+      "word": "update",
+      "meaningZh": "更新",
+      "exampleId": "5fce1aad-14d0-4a1a-a6bd-8760845a750f-visual-ex",
+      "sentenceEn": "The map update gave every family a safer evacuation route.",
+      "sentenceZh": "地图更新为每个家庭提供了更安全的疏散路线。",
+      "scene": "Community volunteers replace an outdated evacuation route on a large visual map with a safer path around a blocked bridge, then guide families toward the safe meeting area before a storm.",
+      "altText": "志愿者更新疏散地图，为社区家庭标出更安全的路线。"
+    },
+    {
+      "vocabularyId": "4d334ec6-8b99-48da-a84e-d20304e3704c",
+      "word": "create",
+      "meaningZh": "创造；创建；引起；产生",
+      "exampleId": "4d334ec6-8b99-48da-a84e-d20304e3704c-visual-ex",
+      "sentenceEn": "The students used recycled wood to create a little free library.",
+      "sentenceZh": "学生们用回收木材建造了一个共享小书屋。",
+      "scene": "Students transform reclaimed wooden boards into a small neighborhood book-sharing cabinet, then place donated books inside as nearby families gather to use it.",
+      "altText": "学生们利用回收木材建造共享小书屋，并放入捐赠的图书。"
+    },
+    {
+      "vocabularyId": "8a307bcc-764a-4640-9a31-e55fbab4cca1",
+      "word": "remove",
+      "meaningZh": "移除；删除；消除",
+      "exampleId": "8a307bcc-764a-4640-9a31-e55fbab4cca1-visual-ex",
+      "sentenceEn": "The neighbors worked together to remove plastic from the river.",
+      "sentenceZh": "邻居们一起清理河里的塑料垃圾。",
+      "scene": "Neighbors of different ages work together along a shallow riverbank to remove plastic bottles and bags, sort the collected waste, and leave clean water flowing past healthy plants.",
+      "altText": "邻居们共同清理河流中的塑料垃圾，让河水恢复整洁。"
+    }
+  ]
+}

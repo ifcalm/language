@@ -116,13 +116,14 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 ## 数据模型
 
 当前公共学习数据以 D1 为准。前端不再携带大型词库数据。
-仓库不再保留 D1 SQL 迁移文件；当前词库、动词、例句和认证数据以线上稳定 D1 数据库为基准，新环境通过线上数据库迁移/复制获得数据。
+既有基础 schema 以线上稳定 D1 数据库为基准；从 `0238` 开始的增量 schema 变更保存在 `migrations/`，并通过 Wrangler migrations 应用。
 
 主要业务表：
 
 - `vocab`：词汇主表，保存单词、规范化查询键、中文核心义、英文释义、频率排序和核心音标。
 - `vocab_pronunciations`：读音音标与音频 URL。
 - `vocab_examples`：例句与中文解释。
+- `vocab_visuals`：每个词汇可选的一张场景记忆图及其绑定例句。
 - `verbs`：动词与动词短语主表。
 - `verb_paths`：动词句子生长路径，包含主干句、完整句、场景和 `growth_json`。
 - `content_edit_logs`：后台编辑日志。

@@ -12,6 +12,7 @@
 | `verb_paths` | 公共动词句子生长路径表 | 保存动词从主干句到完整句的学习路径和动画步骤。 |
 | `vocab_pronunciations` | 公共读音表 | 保存单词读音音标和音频 URL。 |
 | `vocab_examples` | 公共例句表 | 保存单词例句及中文解释。 |
+| `vocab_visuals` | 公共场景记忆图表 | 保存每个单词可选的一张场景图、替代文本和绑定例句。 |
 | `content_edit_logs` | 管理审计表 | 记录后台编辑前后的 JSON 快照。 |
 | `d1_migrations` | 系统表 | D1/Wrangler 迁移记录，不属于业务模型。 |
 
@@ -40,6 +41,8 @@ erDiagram
   verbs ||--o{ verb_paths : "verb_id"
   vocab ||--o{ vocab_pronunciations : "vocabulary_id"
   vocab ||--o{ vocab_examples : "vocabulary_id"
+  vocab ||--o| vocab_visuals : "vocabulary_id"
+  vocab_examples ||--o{ vocab_visuals : "example_id"
   vocab ||--o{ content_edit_logs : "vocabulary_id"
 ```
 
@@ -210,6 +213,27 @@ erDiagram
 |---|---|---|
 | `idx_vocab_examples_vocabulary` | `vocabulary_id` | 按单词读取例句。 |
 | `idx_vocab_examples_word` | `word` | 直接按单词文本查询例句。 |
+
+## `vocab_visuals`
+
+公共场景记忆图表。每个词汇最多保存一张已发布图片，并可绑定一条例句作为页面中的场景说明。
+
+| 字段 | 类型 | 默认值 | 含义 |
+|---|---|---|---|
+| `id` | `TEXT PRIMARY KEY` | 无 | 稳定场景图 ID。 |
+| `vocabulary_id` | `TEXT NOT NULL`，唯一外键到 `vocab(id)` | 无 | 关联单词，并保证一词最多一图。 |
+| `word` | `TEXT NOT NULL` | 无 | 冗余单词文本，方便后台直接读取。 |
+| `example_id` | `TEXT`，外键到 `vocab_examples(id)` | `NULL` | 页面场景模块绑定的例句。 |
+| `image_url` | `TEXT NOT NULL` | 无 | R2 自定义域名下的公开 WebP 地址。 |
+| `alt_text` | `TEXT NOT NULL` | `''` | 图片的中文替代文本。 |
+| `created_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 创建时间。 |
+| `updated_at` | `TEXT NOT NULL` | `CURRENT_TIMESTAMP` | 更新时间。 |
+
+索引：
+
+| 索引名 | 字段 | 用途 |
+|---|---|---|
+| `idx_vocab_visuals_vocabulary` | `vocabulary_id` | 按单词读取场景图。 |
 
 ## `content_edit_logs`
 

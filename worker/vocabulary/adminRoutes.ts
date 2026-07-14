@@ -114,6 +114,66 @@ async function saveExamples(
   }
 }
 
+async function saveVisual(
+  env: Env,
+  core: VocabRow,
+  visual: AdminVocabularySavePayload['visual'],
+  updatedAt: string,
+) {
+  if (visual === undefined) {
+    return
+  }
+
+  if (visual === null || !normalizeText(visual.imageUrl)) {
+    await env.DB.prepare('DELETE FROM vocab_visuals WHERE vocabulary_id = ?')
+      .bind(core.id)
+      .run()
+    return
+  }
+
+  const exampleId = normalizeText(visual.exampleId) || null
+
+  if (exampleId) {
+    const matchingExample = await env.DB.prepare(
+      `SELECT id FROM vocab_examples WHERE id = ? AND vocabulary_id = ?`,
+    )
+      .bind(exampleId, core.id)
+      .first<{ id: string }>()
+
+    if (!matchingExample) {
+      throw new Error('Visual example does not belong to this vocabulary item')
+    }
+  }
+
+  await env.DB.prepare(
+    `INSERT INTO vocab_visuals (
+      id,
+      vocabulary_id,
+      word,
+      example_id,
+      image_url,
+      alt_text,
+      updated_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(vocabulary_id) DO UPDATE SET
+      word = excluded.word,
+      example_id = excluded.example_id,
+      image_url = excluded.image_url,
+      alt_text = excluded.alt_text,
+      updated_at = excluded.updated_at`,
+  )
+    .bind(
+      normalizeText(visual.id) || `${core.id}-visual`,
+      core.id,
+      core.word,
+      exampleId,
+      normalizeText(visual.imageUrl),
+      normalizeText(visual.altText),
+      updatedAt,
+    )
+    .run()
+}
+
 async function saveEditLog(
   env: Env,
   vocabularyId: string,
@@ -209,6 +269,7 @@ export async function handleAdminVocabularySave(request: Request, env: Env) {
 
   await savePronunciations(env, updatedCore, payload.pronunciations, updatedAt)
   await saveExamples(env, updatedCore, payload.examples, updatedAt)
+  await saveVisual(env, updatedCore, payload.visual, updatedAt)
 
   const afterBundle = await getVocabularyBundle(env, vocabularyId)
   let editLogSaved = true
