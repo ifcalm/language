@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { getVocabularyLookupFromPath } from '../../app/routing'
 import type {
   CoreVocabularyEntry,
+  VocabularyExample,
   VocabularyPronunciation,
 } from '../../data/vocabulary'
 import {
@@ -175,6 +176,52 @@ function VocabularyStudyActions() {
         {inReview ? '已加入复习' : '加入复习'}
       </button>
     </div>
+  )
+}
+
+function VocabularyVisualScene({
+  word,
+  meaning,
+  imageUrl,
+  altText,
+  example,
+}: {
+  word: string
+  meaning: string
+  imageUrl: string
+  altText: string
+  example: VocabularyExample | null
+}) {
+  const [hasImageError, setHasImageError] = useState(false)
+
+  if (hasImageError) {
+    return null
+  }
+
+  return (
+    <section className="panel vocabulary-visual-scene">
+      <div className="vocabulary-visual-media">
+        <img
+          src={imageUrl}
+          alt={altText || `${word}：${meaning}`}
+          width="1200"
+          height="800"
+          loading="lazy"
+          onError={() => setHasImageError(true)}
+        />
+      </div>
+      <div className="vocabulary-visual-copy">
+        <h2>场景记忆</h2>
+        {example ? (
+          <>
+            <p>{highlightTargetWord(example.sentenceEn, word)}</p>
+            {example.sentenceZh ? <small>{example.sentenceZh}</small> : null}
+          </>
+        ) : (
+          <p>{meaning}</p>
+        )}
+      </div>
+    </section>
   )
 }
 
@@ -509,6 +556,18 @@ function VocabularyPage() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [selectedVocabularyDetail, openVocabularyDetail])
 
+  const vocabularyVisual = selectedVocabularyDetail?.visual ?? null
+  const vocabularyVisualExample = vocabularyVisual
+    ? selectedVocabularyDetail?.examples.find(
+        (example) => example.id === vocabularyVisual.exampleId,
+      ) ?? selectedVocabularyDetail?.examples[0] ?? null
+    : null
+  const remainingVocabularyExamples = selectedVocabularyDetail
+    ? selectedVocabularyDetail.examples.filter(
+        (example) => example.id !== vocabularyVisualExample?.id,
+      )
+    : []
+
   return (
     <>
       {selectedVocabularyLookup && (
@@ -616,11 +675,25 @@ function VocabularyPage() {
                 </aside>
               </section>
 
-              {selectedVocabularyDetail.examples.length > 0 ? (
+              {vocabularyVisual ? (
+                <VocabularyVisualScene
+                  key={vocabularyVisual.imageUrl}
+                  word={selectedVocabularyDetail.core.word}
+                  meaning={
+                    selectedVocabularyDetail.core.meaningZh ||
+                    selectedVocabularyDetail.core.meaning
+                  }
+                  imageUrl={vocabularyVisual.imageUrl}
+                  altText={vocabularyVisual.altText}
+                  example={vocabularyVisualExample}
+                />
+              ) : null}
+
+              {remainingVocabularyExamples.length > 0 ? (
                 <section className="panel vocabulary-detail-examples">
                   <h2>语境例句</h2>
                   <div className="vocabulary-example-list">
-                    {selectedVocabularyDetail.examples.map((example) => (
+                    {remainingVocabularyExamples.map((example) => (
                       <article key={example.id}>
                         <p>
                           {highlightTargetWord(
@@ -635,11 +708,11 @@ function VocabularyPage() {
                     ))}
                   </div>
                 </section>
-              ) : (
+              ) : !vocabularyVisualExample ? (
                 <section className="panel vocabulary-source-note">
                   这个词暂时还没有例句，后面会逐步补齐。
                 </section>
-              )}
+              ) : null}
             </>
           )}
         </>

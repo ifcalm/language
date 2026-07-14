@@ -47,6 +47,7 @@ const mapVocabularyDetail = (
     },
     pronunciations,
     examples,
+    visual: payload.visual ?? null,
     prevId: payload.prevId ?? null,
     nextId: payload.nextId ?? null,
     position: payload.position ?? null,

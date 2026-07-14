@@ -2,11 +2,13 @@ import {
   mapExampleRow,
   mapPronunciationRow,
   mapVocabRow,
+  mapVisualRow,
 } from './mappers'
 import type {
   VocabExampleRow,
   VocabPronunciationRow,
   VocabRow,
+  VocabVisualRow,
 } from './types'
 
 const lookupBatchSize = 90
@@ -105,7 +107,7 @@ export async function getVocabularyBundle(env: Env, vocabularyId: string) {
     return null
   }
 
-  const [pronunciations, examples] = await Promise.all([
+  const [pronunciations, examples, visual] = await Promise.all([
     env.DB.prepare(
       `SELECT id, vocabulary_id, word, phonetic, audio_url, created_at, updated_at
       FROM vocab_pronunciations
@@ -122,12 +124,29 @@ export async function getVocabularyBundle(env: Env, vocabularyId: string) {
     )
       .bind(vocabularyId)
       .all<VocabExampleRow>(),
+    env.DB.prepare(
+      `SELECT
+        id,
+        vocabulary_id,
+        word,
+        example_id,
+        image_url,
+        alt_text,
+        created_at,
+        updated_at
+      FROM vocab_visuals
+      WHERE vocabulary_id = ?
+      LIMIT 1`,
+    )
+      .bind(vocabularyId)
+      .first<VocabVisualRow>(),
   ])
 
   return {
     core: mapVocabRow(core),
     pronunciations: pronunciations.results.map(mapPronunciationRow),
     examples: examples.results.map(mapExampleRow),
+    visual: visual ? mapVisualRow(visual) : null,
   }
 }
 

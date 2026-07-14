@@ -35,10 +35,18 @@ export interface VocabularyDetailCore extends VocabularyApiItem {
   normalizedWord: string
 }
 
+export interface VocabularyVisual {
+  id: string
+  exampleId: string | null
+  imageUrl: string
+  altText: string
+}
+
 export interface VocabularyDetailResponse {
   core: VocabularyDetailCore
   pronunciations: VocabularyPronunciation[]
   examples: VocabularyExample[]
+  visual: VocabularyVisual | null
   prevId?: string | null
   nextId?: string | null
   position?: number | null
@@ -53,6 +61,7 @@ export interface VocabularyDetail {
   }
   pronunciations: VocabularyPronunciation[]
   examples: VocabularyExample[]
+  visual: VocabularyVisual | null
   prevId: string | null
   nextId: string | null
   position: number | null

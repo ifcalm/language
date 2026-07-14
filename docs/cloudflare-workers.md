@@ -34,9 +34,9 @@ tables and uses auth only where account/session features are needed:
 - vocabulary and verb pages read from public API endpoints
 - the admin console writes directly to D1 through Worker routes
 
-The repository does not keep executable D1 SQL migrations. The current schema is
-documented in [`docs/database-schema.md`](./database-schema.md), and new
-environments should be created from the stable remote D1 database.
+The stable remote D1 database remains the baseline for the existing schema. New
+incremental schema changes from migration `0238` onward are kept in
+[`migrations/`](../migrations/) and applied with Wrangler migrations.
 
 Current public tables:
 
@@ -45,6 +45,7 @@ Current public tables:
 - `verb_paths`
 - `vocab_pronunciations`
 - `vocab_examples`
+- `vocab_visuals`
 - `content_edit_logs`
 
 Vocabulary and verb data are read from D1 through `/api/vocabulary` and
@@ -64,6 +65,12 @@ Pronunciation audio is stored in Cloudflare R2 rather than Git:
 The Worker does not need an R2 binding for playback. Public audio URLs are stored in `vocab_pronunciations.audio_url` and served directly from the R2 custom domain.
 
 See [`docs/pronunciation-assets.md`](./pronunciation-assets.md) for the detailed storage notes.
+
+Vocabulary scene images use the same bucket and custom domain:
+
+- object convention: `vocabulary/visuals/{word}/{content-hash}.webp`
+- batch manifests: `manifests/vocabulary-visuals/{batch-id}-{content-hash}.json`
+- public URLs are stored in `vocab_visuals.image_url`
 
 ## Local commands
 

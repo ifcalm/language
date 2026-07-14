@@ -28,10 +28,18 @@ interface AdminExample {
   sentenceZh: string
 }
 
+interface AdminVisual {
+  id: string
+  exampleId: string | null
+  imageUrl: string
+  altText: string
+}
+
 interface AdminVocabularyDetail {
   core: AdminVocabularyCore
   pronunciations: AdminPronunciation[]
   examples: AdminExample[]
+  visual: AdminVisual | null
 }
 
 interface AdminVocabularySaveResponse extends AdminVocabularyDetail {
@@ -298,6 +306,43 @@ function VocabularyAdmin() {
     )
   }
 
+  function updateVisual<Key extends keyof AdminVisual>(
+    key: Key,
+    value: AdminVisual[Key],
+  ) {
+    setDraft((current) =>
+      current?.visual
+        ? {
+            ...current,
+            visual: {
+              ...current.visual,
+              [key]: value,
+            },
+          }
+        : current,
+    )
+  }
+
+  function addVisual() {
+    setDraft((current) =>
+      current
+        ? {
+            ...current,
+            visual: {
+              id: `${current.core.id}-visual`,
+              exampleId: current.examples[0]?.id ?? null,
+              imageUrl: '',
+              altText: '',
+            },
+          }
+        : current,
+    )
+  }
+
+  function removeVisual() {
+    setDraft((current) => (current ? { ...current, visual: null } : current))
+  }
+
   async function saveDraft() {
     if (!draft) {
       return
@@ -325,6 +370,7 @@ function VocabularyAdmin() {
             },
             pronunciations: draft.pronunciations,
             examples: draft.examples,
+            visual: draft.visual,
           }),
         },
       )
@@ -540,6 +586,72 @@ function VocabularyAdmin() {
                     <p className="empty-state">这个词目前还没有例句。</p>
                   )}
                 </div>
+              </article>
+
+              <article className="panel admin-editor-card">
+                <div className="section-heading">
+                  <h2>场景记忆图</h2>
+                  {draft.visual ? (
+                    <button type="button" onClick={removeVisual}>
+                      移除场景图
+                    </button>
+                  ) : (
+                    <button type="button" onClick={addVisual}>
+                      添加场景图
+                    </button>
+                  )}
+                </div>
+
+                {draft.visual ? (
+                  <div className="admin-visual-editor">
+                    {draft.visual.imageUrl ? (
+                      <img
+                        src={draft.visual.imageUrl}
+                        alt={draft.visual.altText || `${draft.core.word} 场景图预览`}
+                      />
+                    ) : null}
+                    <div className="admin-form-grid">
+                      <label className="admin-wide">
+                        图片 URL
+                        <input
+                          value={draft.visual.imageUrl}
+                          onChange={(event) =>
+                            updateVisual('imageUrl', event.target.value)
+                          }
+                        />
+                      </label>
+                      <label className="admin-wide">
+                        替代文本
+                        <input
+                          value={draft.visual.altText}
+                          onChange={(event) =>
+                            updateVisual('altText', event.target.value)
+                          }
+                        />
+                      </label>
+                      <label className="admin-wide">
+                        绑定例句
+                        <select
+                          value={draft.visual.exampleId ?? ''}
+                          onChange={(event) =>
+                            updateVisual('exampleId', event.target.value || null)
+                          }
+                        >
+                          <option value="">不绑定例句</option>
+                          {draft.examples
+                            .filter((example) => example.id)
+                            .map((example) => (
+                              <option value={example.id} key={example.id}>
+                                {example.sentenceEn}
+                              </option>
+                            ))}
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="empty-state">这个词目前还没有场景记忆图。</p>
+                )}
               </article>
             </>
           )}

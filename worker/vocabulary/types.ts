@@ -31,6 +31,17 @@ export interface VocabExampleRow {
   updated_at: string
 }
 
+export interface VocabVisualRow {
+  id: string
+  vocabulary_id: string
+  word: string
+  example_id: string | null
+  image_url: string
+  alt_text: string
+  created_at: string
+  updated_at: string
+}
+
 export interface AdminVocabularySavePayload {
   editor?: string
   core?: Partial<{
@@ -53,4 +64,12 @@ export interface AdminVocabularySavePayload {
       sentenceZh: string
     }>
   >
+  visual?:
+    | Partial<{
+        id: string
+        exampleId: string
+        imageUrl: string
+        altText: string
+      }>
+    | null
 }
