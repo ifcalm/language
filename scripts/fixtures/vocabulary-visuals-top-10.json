@@ -1,0 +1,109 @@
+{
+  "batchId": "vocabulary-stories-top-10-2026-07-14",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Unmistakably stylized stop-motion-inspired 3D animation illustration for adult learners. Use simplified geometric forms, expressive animation design, gently stylized proportions, tactile clay, paper, felt and painted-wood materials, matte surfaces, subtle handcrafted imperfections, and deliberately designed soft lighting. Keep one coherent visual language across the batch. The scene must never resemble a photograph or live-action frame: no realistic people, photographic faces, realistic skin, pores, camera-real depth of field, stock-photo staging, or photorealistic rendering. Prefer animals, plants, weather, landscapes and everyday objects when they communicate the word clearly. Landscape 3:2 composition. No text, letters, numbers, captions, labels, logos, watermarks, readable interfaces, chibi proportions, glossy toy surfaces, purple gradients, or decorative clutter.",
+  "items": [
+    {
+      "vocabularyId": "5c57e15f-5ba4-4e03-afb5-0ff868462da6",
+      "word": "the",
+      "meaningZh": "定冠词（这/那）",
+      "exampleId": "5c57e15f-5ba4-4e03-afb5-0ff868462da6-visual-ex",
+      "sentenceEn": "A bird found a blue thread, and the thread completed its nest.",
+      "sentenceZh": "一只鸟发现了一根蓝线，这根线让鸟巢变得完整。",
+      "scene": "A small tailorbird carries one distinctive blue thread from the ground to its nearly finished nest, where the same blue thread is visibly woven into the final open gap. The repeated thread makes first mention and definite reference memorable in one flowing scene.",
+      "altText": "小鸟把刚发现的蓝线织进鸟巢，补好了最后一处空隙。"
+    },
+    {
+      "vocabularyId": "e6064587-ff09-4772-8501-6c58c67ba22a",
+      "word": "be",
+      "meaningZh": "是；在；存在",
+      "exampleId": "e6064587-ff09-4772-8501-6c58c67ba22a-visual-ex",
+      "sentenceEn": "The tiny seed will be a sunflower by summer.",
+      "sentenceZh": "到了夏天，这颗小种子将会长成向日葵。",
+      "scene": "A single garden bed flows gently from spring to summer: a tiny striped seed beneath the soil becomes a green sprout and then one tall sunflower facing warm sunlight. The transformation expresses becoming rather than showing a diagram.",
+      "altText": "一颗小种子经过春夏生长，最终变成高高的向日葵。"
+    },
+    {
+      "vocabularyId": "0717ac87-428e-40c4-8acd-e9d3e72c3b9b",
+      "word": "and",
+      "meaningZh": "和；与；而且；然后",
+      "exampleId": "0717ac87-428e-40c4-8acd-e9d3e72c3b9b-visual-ex",
+      "sentenceEn": "The rain stopped, and a rainbow appeared over the valley.",
+      "sentenceZh": "雨停了，一道彩虹出现在山谷上空。",
+      "scene": "Rainclouds drift away from a green valley while the final drops leave the leaves and a broad rainbow appears in the clearing light. The two connected events share one continuous landscape.",
+      "altText": "山谷中的雨刚停，云层散开后出现了一道彩虹。"
+    },
+    {
+      "vocabularyId": "f3a9480b-e6be-4a38-b416-e5e9fcf51e75",
+      "word": "of",
+      "meaningZh": "的；属于",
+      "exampleId": "f3a9480b-e6be-4a38-b416-e5e9fcf51e75-visual-ex",
+      "sentenceEn": "The roots of the old tree protected the riverbank from the storm.",
+      "sentenceZh": "老树的根保护河岸抵御了暴风雨。",
+      "scene": "An ancient willow is the main subject beside a swollen river. Its broad interlocking roots visibly belong to the tree and hold the soil together while rainwater rushes past, protecting reeds, a rabbit burrow and the bank.",
+      "altText": "老柳树交错的根系牢牢抓住土壤，保护河岸免受暴雨冲刷。"
+    },
+    {
+      "vocabularyId": "da4a8ea2-c411-4ea4-86a7-e99c1d922d68",
+      "word": "a",
+      "meaningZh": "一个；一种",
+      "exampleId": "da4a8ea2-c411-4ea4-86a7-e99c1d922d68-visual-ex",
+      "sentenceEn": "A single seed grew into a garden that fed the whole neighborhood.",
+      "sentenceZh": "一颗种子长成了一座能为整个社区提供食物的花园。",
+      "scene": "One clearly visible seed sprouts at the front of a continuous time-lapse garden, leading toward abundant beans, tomatoes, squash, herbs and fruit shared in baskets at a neighborhood gate. Plants remain the visual focus; people are only tiny distant silhouettes.",
+      "altText": "一颗种子逐渐长成蔬果丰富的社区花园。"
+    },
+    {
+      "vocabularyId": "45fa5e95-bdee-4f12-ae08-784880742345",
+      "word": "in",
+      "meaningZh": "在...里；在...期间；在...方面",
+      "exampleId": "45fa5e95-bdee-4f12-ae08-784880742345-visual-ex",
+      "sentenceEn": "A tiny frog found shelter in the cup of a water lily.",
+      "sentenceZh": "一只小青蛙在睡莲的花盏里找到了栖身之处。",
+      "scene": "After gentle rain, a tiny green frog rests clearly inside the bowl-shaped cup of a large water lily. The flower surrounds and shelters the frog while pond ripples, reeds and dragonflies establish the wider habitat.",
+      "altText": "小青蛙安稳地躲在睡莲花盏里面。"
+    },
+    {
+      "vocabularyId": "0f30d33c-dd6c-4bdb-a51d-cf10512f5a16",
+      "word": "to",
+      "meaningZh": "到；向；去",
+      "exampleId": "0f30d33c-dd6c-4bdb-a51d-cf10512f5a16-visual-ex",
+      "sentenceEn": "At sunrise, the rescued turtle returned to the sea.",
+      "sentenceZh": "日出时，获救的海龟回到了大海。",
+      "scene": "A rescued sea turtle moves from an open woven recovery basket across clean sand toward the bright ocean at sunrise. Its tracks form one unmistakable direction from the foreground to the water; seabirds and dune plants remain secondary.",
+      "altText": "获救的海龟沿着沙滩朝大海爬去。"
+    },
+    {
+      "vocabularyId": "a36d9552-4da8-4a2b-a50a-ee471ae52f7c",
+      "word": "have",
+      "meaningZh": "有；拥有；已经（助动词）",
+      "exampleId": "a36d9552-4da8-4a2b-a50a-ee471ae52f7c-visual-ex",
+      "sentenceEn": "The garden birds have clean water during the hottest days.",
+      "sentenceZh": "在最炎热的日子里，花园里的鸟儿有干净的饮水。",
+      "scene": "During a hot summer afternoon, several different garden birds drink and bathe at a clean shaded stone birdbath filled with fresh water. Dry grass outside the shade contrasts with the cool water they now have.",
+      "altText": "炎热天气里，多种花园鸟儿在阴凉处享用干净的饮水。"
+    },
+    {
+      "vocabularyId": "16a6a532-ed32-4bf3-9aae-dc46cfdc7926",
+      "word": "it",
+      "meaningZh": "它",
+      "exampleId": "16a6a532-ed32-4bf3-9aae-dc46cfdc7926-visual-ex",
+      "sentenceEn": "A paper boat reached the stream, and it carried a fallen beetle to safety.",
+      "sentenceZh": "一只纸船漂进小溪，它把落水的甲虫带到了安全处。",
+      "scene": "A distinctive folded orange paper boat floats along a shallow stream with a small beetle safely standing inside. The same boat approaches a dry mossy stone where the beetle can climb out, making the pronoun's reference visually unambiguous.",
+      "altText": "橙色纸船载着落水的甲虫驶向安全的石岸。"
+    },
+    {
+      "vocabularyId": "b2e18132-1366-45ab-a3f9-3648f77efce4",
+      "word": "I",
+      "meaningZh": "我",
+      "exampleId": "b2e18132-1366-45ab-a3f9-3648f77efce4-visual-ex",
+      "sentenceEn": "I found a thirsty seedling, so I shared my water.",
+      "sentenceZh": "我发现一株缺水的幼苗，于是把自己的水分给了它。",
+      "scene": "A first-person viewpoint through the rounded mechanical hands of a friendly stylized gardening robot. One hand holds its own small canteen while the other pours half the water onto a drooping seedling that begins to lift its leaves. The viewpoint makes the robot the clear speaker without showing text.",
+      "altText": "从小机器人自己的视角看，它把随身的水分给一株缺水的幼苗。"
+    }
+  ]
+}

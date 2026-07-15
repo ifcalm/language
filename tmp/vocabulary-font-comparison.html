@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>词头字体对比</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=DM+Sans:opsz,wght@9..40,400..700&family=Inter:wght@400;600;700&family=Lexend:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-family: Inter, "PingFang SC", sans-serif;
+        color: #151515;
+        background: #f5f5f3;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 1440px;
+        min-height: 960px;
+        margin: 0;
+        padding: 52px 64px 58px;
+        background: #f5f5f3;
+      }
+
+      header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      header p {
+        color: #6b6b68;
+        font-size: 15px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        min-height: 356px;
+        padding: 24px 26px;
+        border: 1px solid #deded9;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 12px 28px rgb(20 20 20 / 5%);
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 28px;
+        margin-bottom: 28px;
+      }
+
+      .font-name {
+        color: #555551;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .tag {
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: #f0f0ed;
+        color: #62625e;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .tag.recommended {
+        background: #e7f3ec;
+        color: #17613c;
+      }
+
+      .word {
+        margin: 0;
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .meaning {
+        margin-top: 18px;
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      .phonetic {
+        margin-top: 10px;
+        color: #71716c;
+        font-size: 15px;
+      }
+
+      .samples {
+        display: grid;
+        gap: 8px;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #ecece8;
+      }
+
+      .sample-short {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 0;
+      }
+
+      .sample-long {
+        color: #656560;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 0;
+      }
+
+      .space { font-family: "Space Grotesk", sans-serif; }
+      .manrope { font-family: Manrope, sans-serif; }
+      .jakarta { font-family: "Plus Jakarta Sans", sans-serif; }
+      .dm { font-family: "DM Sans", sans-serif; }
+      .lexend { font-family: Lexend, sans-serif; }
+      .atkinson { font-family: "Atkinson Hyperlegible Next", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>词头大字字体对比</h1>
+        <p>相同字号 72px · 相同字重 600 · 相同布局</p>
+      </div>
+      <p>主词：who　辅助样本：make / people / environment</p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <div class="meta"><span class="font-name">Space Grotesk</span><span class="tag">当前</span></div>
+        <div class="space"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+      <section class="card">
+        <div class="meta"><span class="font-name">Manrope</span><span class="tag recommended">推荐</span></div>
+        <div class="manrope"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+      <section class="card">
+        <div class="meta"><span class="font-name">Plus Jakarta Sans</span><span class="tag">精致柔和</span></div>
+        <div class="jakarta"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+      <section class="card">
+        <div class="meta"><span class="font-name">DM Sans</span><span class="tag">自然中性</span></div>
+        <div class="dm"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+      <section class="card">
+        <div class="meta"><span class="font-name">Lexend</span><span class="tag">阅读友好</span></div>
+        <div class="lexend"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+      <section class="card">
+        <div class="meta"><span class="font-name">Atkinson Hyperlegible Next</span><span class="tag">辨识度高</span></div>
+        <div class="atkinson"><p class="word">who</p><p class="meaning">谁</p><p class="phonetic">US /ˈhuː/　UK /huː/</p><div class="samples"><p class="sample-short">make · people</p><p class="sample-long">environment · knowledge</p></div></div>
+      </section>
+    </main>
+  </body>
+</html>

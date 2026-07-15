@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-21-40-2026-07-15",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from the full living and material world: people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects. People may appear when the meaning benefits from human action, but they must have clearly designed illustrated shapes, simplified expressive faces and non-photographic materials. Vary age, skin tone, body type, hairstyle, clothing, ability and occupation naturally across the collection. Keep one coherent style inside each image while deliberately varying styles across the batch. Shared constraints: mature learner-facing illustration, landscape 3:2 composition, clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. No realistic skin pores, photographic faces, stock-photo composition, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "fa6a1723-742c-41b5-acb5-4f64888d0f91",
+      "word": "at",
+      "meaningZh": "在；向；对",
+      "exampleId": "fa6a1723-742c-41b5-acb5-4f64888d0f91-visual-ex",
+      "styleFamily": "isometric editorial 3D illustration",
+      "sentenceEn": "The cyclists met at the old clock tower before sunrise.",
+      "sentenceZh": "天亮前，骑行者们在老钟楼下会合。",
+      "scene": "Three stylized cyclists approach from different streets and stop together at the exact base of one old clock tower in a small town square before sunrise. Their converging routes and shared stopping point make the location relationship clear.",
+      "altText": "三名骑行者从不同方向来到老钟楼下会合。"
+    },
+    {
+      "vocabularyId": "259ea144-ae48-421c-8f6a-a56c22f50844",
+      "word": "but",
+      "meaningZh": "但是；除了",
+      "exampleId": "259ea144-ae48-421c-8f6a-a56c22f50844-visual-ex",
+      "styleFamily": "graphic-novel contrast composition",
+      "sentenceEn": "The path was steep, but the hikers kept climbing together.",
+      "sentenceZh": "山路很陡，但徒步者们仍然一起向上攀登。",
+      "scene": "A single flowing graphic-novel composition contrasts a dramatically steep mountain path with four determined hikers supporting one another as they continue upward. The obstacle dominates one side while their constructive response dominates the other.",
+      "altText": "山路虽然陡峭，四名徒步者仍互相帮助继续攀登。"
+    },
+    {
+      "vocabularyId": "f9f03c1a-7770-4977-bf4c-88cf3dadc1eb",
+      "word": "we",
+      "meaningZh": "我们",
+      "exampleId": "f9f03c1a-7770-4977-bf4c-88cf3dadc1eb-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "We planted the last row of trees before the rain arrived.",
+      "sentenceZh": "我们在雨来之前种下了最后一排树。",
+      "scene": "From an inclusive first-person viewpoint, the viewer's illustrated gloved hands lower a sapling into the soil while three varied community volunteers work beside the viewer along the same final row. Soft storm clouds approach in the distance.",
+      "altText": "画面前方的双手和三名志愿者一起种下最后一排树苗。"
+    },
+    {
+      "vocabularyId": "7d8df026-73e0-47a7-910a-c2fa6926866d",
+      "word": "his",
+      "meaningZh": "他的",
+      "exampleId": "7d8df026-73e0-47a7-910a-c2fa6926866d-visual-ex",
+      "styleFamily": "felt and textile illustration",
+      "sentenceEn": "The gardener hung his straw hat on a branch while he watered the seedlings.",
+      "sentenceZh": "园丁给幼苗浇水时，把他的草帽挂在了树枝上。",
+      "scene": "One older male gardener made from layered felt waters a bed of seedlings. His distinctive straw hat hangs on a branch directly beside him, and his bare head plus familiar hatband make the ownership relationship easy to infer.",
+      "altText": "园丁在给幼苗浇水，他的草帽挂在身旁的树枝上。"
+    },
+    {
+      "vocabularyId": "cd7a1a78-594e-417e-a74a-6a1c74d7bd5c",
+      "word": "from",
+      "meaningZh": "从；来自；由",
+      "exampleId": "cd7a1a78-594e-417e-a74a-6a1c74d7bd5c-visual-ex",
+      "styleFamily": "watercolor with expressive ink linework",
+      "sentenceEn": "Clear water flowed from the mountain spring into the village trough.",
+      "sentenceZh": "清水从山泉流进了村里的水槽。",
+      "scene": "A continuous ribbon of clear water visibly begins at a mountain spring between mossy rocks, follows a narrow channel downhill and pours into a stone village trough. The source and direction are both prominent.",
+      "altText": "清水从山间泉眼出发，沿水渠流进村里的石槽。"
+    },
+    {
+      "vocabularyId": "09f1031d-971e-45d2-986d-5a02ea3a3de1",
+      "word": "not",
+      "meaningZh": "不；没有",
+      "exampleId": "09f1031d-971e-45d2-986d-5a02ea3a3de1-visual-ex",
+      "styleFamily": "paper-cut mixed-media collage",
+      "sentenceEn": "The rabbit carried the carrot home, not the red mushroom.",
+      "sentenceZh": "兔子带回家的是胡萝卜，不是那朵红蘑菇。",
+      "scene": "A paper-cut rabbit walks toward its burrow carrying one orange carrot in a small basket. Behind it, a bright red mushroom remains untouched in its original patch, creating a clear selected-versus-rejected contrast without symbols or text.",
+      "altText": "兔子带走了胡萝卜，红蘑菇仍原样留在草地上。"
+    },
+    {
+      "vocabularyId": "894aa2bd-ea7c-41a1-b5fe-3df21ff27894",
+      "word": "by",
+      "meaningZh": "由；通过；在...旁；被；到...时",
+      "exampleId": "894aa2bd-ea7c-41a1-b5fe-3df21ff27894-visual-ex",
+      "styleFamily": "clay stop-motion illustration",
+      "sentenceEn": "The cracked bowl was repaired by a patient ceramic artist.",
+      "sentenceZh": "破裂的碗由一位耐心的陶艺师修复好了。",
+      "scene": "A stylized clay ceramic artist carefully joins the final piece of a once-cracked bowl at a handcrafted workbench. Repair tools, spare fragments and visible finished seams make the artist's role as the agent unmistakable.",
+      "altText": "一位陶艺师在工作台前耐心修复破裂的碗。"
+    },
+    {
+      "vocabularyId": "8c692246-a6c7-4b7e-a74a-3c109b4baafe",
+      "word": "she",
+      "meaningZh": "她",
+      "exampleId": "8c692246-a6c7-4b7e-a74a-3c109b4baafe-visual-ex",
+      "styleFamily": "hand-drawn cel animation",
+      "sentenceEn": "A marine biologist found a turtle tangled in rope, and she cut it free.",
+      "sentenceZh": "一位海洋生物学家发现海龟被绳子缠住，于是她剪断绳子救了它。",
+      "scene": "A female marine biologist is introduced as the only human character in a clearly hand-drawn coastal scene. She kneels in shallow water and carefully cuts loose rope away from a sea turtle while keeping the animal calm.",
+      "altText": "女海洋生物学家在浅水中剪断绳子，救出被缠住的海龟。"
+    },
+    {
+      "vocabularyId": "a6253cfa-dbed-4283-a8b4-8d70cdd3aee5",
+      "word": "or",
+      "meaningZh": "或；或者；否则",
+      "exampleId": "a6253cfa-dbed-4283-a8b4-8d70cdd3aee5-visual-ex",
+      "styleFamily": "layered paper-sculpture illustration",
+      "sentenceEn": "At the fork, the fox could take the sunny path or the shaded path.",
+      "sentenceZh": "在岔路口，狐狸可以走阳光小路，也可以走林荫小路。",
+      "scene": "A layered paper fox pauses at one clearly divided fork. The left path crosses a sunny meadow while the right path enters cool shaded woodland; both alternatives are equally open and visually distinct.",
+      "altText": "狐狸停在岔路口，可以选择阳光小路或林荫小路。"
+    },
+    {
+      "vocabularyId": "e1647f50-df1d-4320-b73a-df1acaae0d93",
+      "word": "as",
+      "meaningZh": "作为；如同；当...时",
+      "exampleId": "e1647f50-df1d-4320-b73a-df1acaae0d93-visual-ex",
+      "styleFamily": "linocut-inspired limited-color print",
+      "sentenceEn": "The fallen log served as a bridge across the stream.",
+      "sentenceZh": "倒下的原木被当作小桥来跨越溪流。",
+      "scene": "A strong fallen log spans a narrow stream from bank to bank while two deer carefully cross over it. Bold carved marks emphasize that an ordinary log is functioning in the role of a bridge.",
+      "altText": "一根倒下的原木横跨溪流，被鹿群当作小桥使用。"
+    },
+    {
+      "vocabularyId": "661a41ff-1a80-4d4c-827f-ac8609e77058",
+      "word": "what",
+      "meaningZh": "什么；多么；所...的",
+      "exampleId": "661a41ff-1a80-4d4c-827f-ac8609e77058-visual-ex",
+      "styleFamily": "watercolor mystery illustration",
+      "sentenceEn": "The curious raccoon lifted the leaf to see what was glowing underneath.",
+      "sentenceZh": "好奇的浣熊掀起叶子，想看看下面是什么在发光。",
+      "scene": "A curious raccoon lifts the edge of one giant wet leaf at twilight. Warm mysterious light spills from beneath it and reveals several tiny glowworms, capturing the moment a question receives an answer.",
+      "altText": "浣熊掀开大叶子，发现下面发光的是几只萤光虫。"
+    },
+    {
+      "vocabularyId": "c6b479ae-a44e-4cc6-9d0b-223fd4307227",
+      "word": "go",
+      "meaningZh": "去；走；变成；运转；进行",
+      "exampleId": "c6b479ae-a44e-4cc6-9d0b-223fd4307227-visual-ex",
+      "styleFamily": "hand-drawn animation illustration",
+      "sentenceEn": "At dawn, the young sea turtles go toward the open water.",
+      "sentenceZh": "黎明时，小海龟们朝着开阔的海水前进。",
+      "scene": "A small group of newly hatched sea turtles moves decisively from the upper beach toward bright open water at dawn. Repeated footprints, directional poses and rolling waves create unmistakable forward movement.",
+      "altText": "黎明时分，小海龟们沿着沙滩朝开阔海面前进。"
+    },
+    {
+      "vocabularyId": "11816640-1fa2-4ea2-99a5-d184bf067659",
+      "word": "their",
+      "meaningZh": "他们的；她们的；它们的",
+      "exampleId": "11816640-1fa2-4ea2-99a5-d184bf067659-visual-ex",
+      "styleFamily": "embroidery and textile illustration",
+      "sentenceEn": "The bees sealed their hive before the storm.",
+      "sentenceZh": "蜜蜂们在暴风雨来临前封好了它们的蜂巢。",
+      "scene": "Many embroidered bees work together around the entrance of one fabric hive, sealing small gaps with wax as dark stitched storm clouds approach. Their repeated movement to and from the same hive makes shared ownership clear.",
+      "altText": "蜜蜂们在乌云到来前一起封好它们的蜂巢。"
+    },
+    {
+      "vocabularyId": "a587ab36-ae0c-40bd-afc0-1d1677629d95",
+      "word": "can",
+      "meaningZh": "能；可以；罐头",
+      "exampleId": "a587ab36-ae0c-40bd-afc0-1d1677629d95-visual-ex",
+      "styleFamily": "editorial 3D paper-clay illustration",
+      "sentenceEn": "A tiny seed can push through hard soil after the rain.",
+      "sentenceZh": "雨后，一颗小种子能够顶破坚硬的土壤。",
+      "scene": "A cross-section of layered paper-clay soil shows one tiny seed sending a determined green shoot upward through a visible crack in the hard surface after rain. The emerging sprout makes ability and potential tangible.",
+      "altText": "雨后的土层中，一颗小种子长出嫩芽并顶破坚硬地面。"
+    },
+    {
+      "vocabularyId": "5117fd49-f3ec-4323-837a-5d3d87d24a30",
+      "word": "who",
+      "meaningZh": "谁",
+      "exampleId": "5117fd49-f3ec-4323-837a-5d3d87d24a30-visual-ex",
+      "styleFamily": "wordless graphic-novel mystery",
+      "sentenceEn": "The young foxes peeked outside to see who was leaving berries by the den.",
+      "sentenceZh": "小狐狸们探出头，想看看是谁把浆果放在洞穴旁。",
+      "scene": "In a wordless graphic-novel moment, two young foxes peek from their den toward a fresh berry basket. A kind old tortoise is just setting down the final berries, resolving the question of identity through action.",
+      "altText": "小狐狸从洞穴探头，看见老乌龟正在放下一篮浆果。"
+    },
+    {
+      "vocabularyId": "4705c001-1f09-4756-95a6-9f2dd2be68bb",
+      "word": "get",
+      "meaningZh": "得到；变得；到达；理解",
+      "exampleId": "4705c001-1f09-4756-95a6-9f2dd2be68bb-visual-ex",
+      "styleFamily": "painterly gouache storybook illustration",
+      "sentenceEn": "The orangutan used a long branch to get the fruit beyond its reach.",
+      "sentenceZh": "猩猩用一根长树枝拿到了原本够不着的果实。",
+      "scene": "A thoughtful orangutan uses a long fallen branch as a tool to pull one ripe fruit closer from a high outer branch. Its reaching hand is just about to receive the fruit, making successful obtaining central to the scene.",
+      "altText": "猩猩用长树枝把高处够不到的果实拉到手边。"
+    },
+    {
+      "vocabularyId": "6208b58f-63ad-421c-a376-ffbd8b1d7bf5",
+      "word": "if",
+      "meaningZh": "如果；是否；即使",
+      "exampleId": "6208b58f-63ad-421c-a376-ffbd8b1d7bf5-visual-ex",
+      "styleFamily": "Risograph conditional sequence",
+      "sentenceEn": "If the rain fills the dry pond, the frogs will return.",
+      "sentenceZh": "如果雨水填满干涸的池塘，青蛙就会回来。",
+      "scene": "A two-stage Risograph composition links a rain cloud filling a cracked dry pond on the left with frogs returning to fresh water and reeds on the right. Flowing rainwater visually connects the condition to its possible result.",
+      "altText": "雨水流进干涸的池塘后，青蛙重新回到水边。"
+    },
+    {
+      "vocabularyId": "08479857-616e-41fe-88fd-789ce8e4746b",
+      "word": "would",
+      "meaningZh": "将；会；愿意",
+      "exampleId": "08479857-616e-41fe-88fd-789ce8e4746b-visual-ex",
+      "styleFamily": "mixed-media comic sequence",
+      "sentenceEn": "The carpenter promised she would build a ramp for the community hall.",
+      "sentenceZh": "木匠承诺，她会为社区礼堂修建一条坡道。",
+      "scene": "A concise mixed-media sequence shows a female carpenter listening to a wheelchair user at the hall steps, then measuring timber, then completing a sturdy access ramp. Her consistent clothing and tools connect the promise to the later action.",
+      "altText": "女木匠听取轮椅使用者的需求，并为社区礼堂建好坡道。"
+    },
+    {
+      "vocabularyId": "7e4780f7-6213-46f7-90f1-5566501a16fb",
+      "word": "her",
+      "meaningZh": "她；她的",
+      "exampleId": "7e4780f7-6213-46f7-90f1-5566501a16fb-visual-ex",
+      "styleFamily": "expressive watercolor illustration",
+      "sentenceEn": "The team saw Maya fall behind and waited for her.",
+      "sentenceZh": "队友们看到玛雅落在后面，便停下来等她。",
+      "scene": "On a watercolor trail, three runners ahead have stopped and turned back with encouraging gestures toward Maya, the only runner still approaching from behind. Their attention and open space beside them make her the clear recipient of their support.",
+      "altText": "三名队友停下来回头等待落在后面的玛雅。"
+    },
+    {
+      "vocabularyId": "4bf5ad74-f573-47b1-96fd-568a99c4b635",
+      "word": "all",
+      "meaningZh": "所有的；全部的；一切的",
+      "exampleId": "4bf5ad74-f573-47b1-96fd-568a99c4b635-visual-ex",
+      "styleFamily": "felt applique storybook illustration",
+      "sentenceEn": "By sunset, all eight ducklings were safely back beside their mother.",
+      "sentenceZh": "日落前，八只小鸭子全都安全回到了鸭妈妈身边。",
+      "scene": "Exactly eight distinct felt ducklings gather closely around one mother duck at the edge of a calm pond at sunset. No duckling remains in the distant reeds or water, making the complete group visually countable.",
+      "altText": "日落时，八只小鸭子全部安全聚集在鸭妈妈身边。"
+    }
+  ]
+}
