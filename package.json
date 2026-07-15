@@ -19,6 +19,7 @@
     "vocabulary:visuals:top10": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-top-10.json --source-dir output/vocabulary-visuals/top-10 --prepared-dir tmp/vocabulary-visuals/top-10",
     "vocabulary:visuals:next10": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-next-10.json --source-dir output/vocabulary-visuals/next-10 --prepared-dir tmp/vocabulary-visuals/next-10",
     "vocabulary:visuals:rank21to40": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-rank-21-40.json --source-dir output/vocabulary-visuals/rank-21-40 --prepared-dir tmp/vocabulary-visuals/rank-21-40",
+    "vocabulary:visuals:rank41to60": "node scripts/publish-vocabulary-visuals.mjs --manifest scripts/fixtures/vocabulary-visuals-rank-41-60.json --source-dir output/vocabulary-visuals/rank-41-60 --prepared-dir tmp/vocabulary-visuals/rank-41-60",
     "verbs:generate": "node scripts/generate-verb-paths.mjs",
     "verbs:refresh:v2": "node scripts/generate-verb-paths.mjs --refresh-v2",
     "verbs:fixture:v2:local": "node scripts/generate-verb-paths.mjs --fixture scripts/fixtures/verb-paths-v2-golden.json",

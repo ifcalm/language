@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-41-60-2026-07-15",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. People may appear when human action clarifies the meaning, but they must remain deliberately illustrated with designed shapes, simplified expressive faces and non-photographic materials. Vary age, skin tone, body type, hairstyle, clothing, ability and occupation naturally. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b0712817-f9e9-419e-81c3-e52d50d8fbfd",
+      "word": "my",
+      "meaningZh": "我的",
+      "exampleId": "b0712817-f9e9-419e-81c3-e52d50d8fbfd-visual-ex",
+      "styleFamily": "first-person paper-cut collage",
+      "sentenceEn": "I found my missing red mitten beneath the park bench.",
+      "sentenceZh": "我在公园长椅下面找到了我丢失的红手套。",
+      "scene": "From a first-person viewpoint, one hand already wears a distinctive red knitted mitten while the viewer's bare hand reaches beneath a park bench toward its identical missing partner. Matching cuffs and pattern make personal ownership clear.",
+      "altText": "第一人称视角下，一只戴着红手套的手找到了长椅下配对的另一只手套。"
+    },
+    {
+      "vocabularyId": "4750f35f-fd8e-433d-812d-7ae941e3f7c8",
+      "word": "make",
+      "meaningZh": "做；制造；使；让",
+      "exampleId": "4750f35f-fd8e-433d-812d-7ae941e3f7c8-visual-ex",
+      "styleFamily": "clay stop-motion craft illustration",
+      "sentenceEn": "A potter shaped wet clay to make a water bowl for the birds.",
+      "sentenceZh": "陶艺师把湿黏土塑形成供小鸟喝水的碗。",
+      "scene": "A stylized potter shapes a shallow bowl from a rough lump of wet clay on a wheel. A finished matching bowl filled with water sits by the open studio window where two small birds approach, linking making to purpose.",
+      "altText": "陶艺师把湿黏土制成浅水碗，窗边的小鸟正准备来喝水。"
+    },
+    {
+      "vocabularyId": "06114fb8-7bfb-4315-b59c-1f2f662e0eee",
+      "word": "about",
+      "meaningZh": "关于；大约；在...周围",
+      "exampleId": "06114fb8-7bfb-4315-b59c-1f2f662e0eee-visual-ex",
+      "styleFamily": "editorial astronomy collage",
+      "sentenceEn": "The students asked the astronomer about the rings of Saturn.",
+      "sentenceZh": "学生们向天文学家询问了有关土星环的问题。",
+      "scene": "Inside a small observatory, three adult students gather around an astronomer and a large suspended model of Saturn. Their gaze and gestures focus on the planet's layered rings while a telescope points toward the night sky.",
+      "altText": "三名学生围着天文学家和土星模型，讨论土星环。"
+    },
+    {
+      "vocabularyId": "3dc7f898-80bc-4153-9131-414031962642",
+      "word": "know",
+      "meaningZh": "知道；了解；认识；确信",
+      "exampleId": "3dc7f898-80bc-4153-9131-414031962642-visual-ex",
+      "styleFamily": "painterly gouache storybook illustration",
+      "sentenceEn": "The oldest elephant seems to know the hidden path to water.",
+      "sentenceZh": "最年长的大象似乎知道通往水源的隐秘小路。",
+      "scene": "An old matriarch elephant confidently leads a small herd through a narrow gap between dry rocks. Beyond the gap, a concealed green water hole becomes visible while the younger elephants follow her route.",
+      "altText": "年长的大象带领象群穿过岩石间的隐秘通道走向水源。"
+    },
+    {
+      "vocabularyId": "1eee71e8-c03b-43b1-a9e0-0e36297dada2",
+      "word": "will",
+      "meaningZh": "将；会；意志；遗嘱",
+      "exampleId": "1eee71e8-c03b-43b1-a9e0-0e36297dada2-visual-ex",
+      "styleFamily": "Risograph future-season sequence",
+      "sentenceEn": "After the winter rest, this young orchard will bloom again in spring.",
+      "sentenceZh": "经过冬季休眠，这片年轻果园将在春天再次开花。",
+      "scene": "A two-stage seasonal composition shows the same young orchard bare beneath winter snow on the left and full of fresh blossoms when spring arrives on the right. Repeated tree shapes connect the present state to its future change.",
+      "altText": "同一片年轻果园从冬季休眠过渡到春天重新开花。"
+    },
+    {
+      "vocabularyId": "b3e4d456-8bd2-45f7-a1ca-25631c65c745",
+      "word": "up",
+      "meaningZh": "向上；起来；上涨的",
+      "exampleId": "b3e4d456-8bd2-45f7-a1ca-25631c65c745-visual-ex",
+      "styleFamily": "linocut movement illustration",
+      "sentenceEn": "The hot-air balloon rose up through the morning mist.",
+      "sentenceZh": "热气球穿过晨雾向上升起。",
+      "scene": "A hot-air balloon rises vertically from a mist-filled valley toward clear morning sky. Carved wind and mist lines stream downward past the basket while distant hills remain below, emphasizing upward motion.",
+      "altText": "热气球从雾气弥漫的山谷向清晨天空升起。"
+    },
+    {
+      "vocabularyId": "336e9068-584a-43e0-954b-75644fd4a6ee",
+      "word": "one",
+      "meaningZh": "一个；一个人；任何人",
+      "exampleId": "336e9068-584a-43e0-954b-75644fd4a6ee-visual-ex",
+      "styleFamily": "botanical watercolor illustration",
+      "sentenceEn": "One red tulip opened before all the others.",
+      "sentenceZh": "一朵红色郁金香比其他花蕾更早开放。",
+      "scene": "Exactly one fully opened red tulip stands among a bed of closed green tulip buds at early morning. The single flower is isolated by color, height and surrounding negative space.",
+      "altText": "一片尚未开放的郁金香花蕾中，只有一朵红花率先绽放。"
+    },
+    {
+      "vocabularyId": "a0276b04-5faa-4a54-a06d-877c5aa0c1b4",
+      "word": "time",
+      "meaningZh": "时间；时候；时代；次；倍",
+      "exampleId": "a0276b04-5faa-4a54-a06d-877c5aa0c1b4-visual-ex",
+      "styleFamily": "miniature stop-motion bakery illustration",
+      "sentenceEn": "The hourglass showed that it was time to take the bread from the oven.",
+      "sentenceZh": "沙漏显示该把面包从烤箱里取出来了。",
+      "scene": "In a handcrafted bakery, the final grains have fallen through a large hourglass beside the oven. A stylized baker opens the oven and removes a perfectly baked loaf at that exact moment.",
+      "altText": "沙漏刚好流尽，面包师随即从烤箱中取出烤好的面包。"
+    },
+    {
+      "vocabularyId": "660b3a5c-ca71-45ee-a44f-fc47eb4a4123",
+      "word": "there",
+      "meaningZh": "那里；有（存在句）",
+      "exampleId": "660b3a5c-ca71-45ee-a44f-fc47eb4a4123-visual-ex",
+      "styleFamily": "layered paper winter landscape",
+      "sentenceEn": "Beyond the frozen lake, there was a warm cabin among the pines.",
+      "sentenceZh": "结冰湖面的另一边，松林中有一间温暖的小屋。",
+      "scene": "A broad frozen lake fills the foreground while a single warmly lit cabin sits distinctly far away among dark pine trees on the opposite shore. Layered paper depth makes the distant location unmistakable.",
+      "altText": "结冰湖面的远处，松林中坐落着一间亮着灯的小屋。"
+    },
+    {
+      "vocabularyId": "f512d968-d8ec-4bd7-90cb-dba2007c30e2",
+      "word": "year",
+      "meaningZh": "年；年度；岁",
+      "exampleId": "f512d968-d8ec-4bd7-90cb-dba2007c30e2-visual-ex",
+      "styleFamily": "embroidered four-season cycle",
+      "sentenceEn": "Over one year, the young oak changed through four seasons.",
+      "sentenceZh": "在一年里，这棵年轻橡树经历了四季变化。",
+      "scene": "The same young embroidered oak appears through one continuous four-part landscape: spring buds, dense summer leaves, autumn gold and bare winter branches. Its trunk shape remains consistent across the complete seasonal cycle.",
+      "altText": "同一棵年轻橡树依次经历春、夏、秋、冬四季。"
+    },
+    {
+      "vocabularyId": "8ddb2692-329c-41a2-aaf1-82dd8b0975a0",
+      "word": "so",
+      "meaningZh": "所以；如此；那么；很",
+      "exampleId": "8ddb2692-329c-41a2-aaf1-82dd8b0975a0-visual-ex",
+      "styleFamily": "graphic-novel cause-and-result sequence",
+      "sentenceEn": "A storm broke the herons' nest, so they rebuilt it on a stronger branch.",
+      "sentenceZh": "暴风雨弄坏了苍鹭的巢，所以它们在更结实的树枝上重新搭建。",
+      "scene": "A wordless sequence moves from a storm-damaged nest on a thin branch to two herons carrying twigs and completing a new nest on a thicker protected branch. The same birds and materials connect cause to constructive result.",
+      "altText": "旧巢被风暴破坏后，两只苍鹭在更结实的枝头重新筑巢。"
+    },
+    {
+      "vocabularyId": "69cbc285-7de8-46e0-ad93-8fd7eaf259a9",
+      "word": "think",
+      "meaningZh": "想；认为；思考；想象",
+      "exampleId": "69cbc285-7de8-46e0-ad93-8fd7eaf259a9-visual-ex",
+      "styleFamily": "editorial ink problem-solving illustration",
+      "sentenceEn": "The crow paused to think before bending the wire into a hook.",
+      "sentenceZh": "乌鸦停下来思考，然后把铁丝弯成了钩子。",
+      "scene": "A crow studies a straight wire, a narrow jar and food just beyond reach. In the next connected moment it deliberately bends the wire against a stone into a hook, showing observation before action.",
+      "altText": "乌鸦观察细口罐和铁丝，思考后把铁丝弯成钩子。"
+    },
+    {
+      "vocabularyId": "6ed2c123-6a87-4b9a-9402-508a15bdfdd5",
+      "word": "when",
+      "meaningZh": "当...时；何时；什么时候",
+      "exampleId": "6ed2c123-6a87-4b9a-9402-508a15bdfdd5-visual-ex",
+      "styleFamily": "twilight watercolor botanical illustration",
+      "sentenceEn": "The moonflowers open when the sun goes down.",
+      "sentenceZh": "太阳落下时，月光花便会开放。",
+      "scene": "A garden shifts from the last orange edge of sunset to blue twilight while several white moonflowers visibly unfurl at the same moment. A few evening moths approach the newly opened blooms.",
+      "altText": "太阳落下、天空转暗时，白色月光花同步绽放。"
+    },
+    {
+      "vocabularyId": "6fb791a2-d553-437b-9b2c-98909ea02c1f",
+      "word": "which",
+      "meaningZh": "哪一个；哪个",
+      "exampleId": "6fb791a2-d553-437b-9b2c-98909ea02c1f-visual-ex",
+      "styleFamily": "paper-sculpture comparison illustration",
+      "sentenceEn": "The gardener compared two pots to decide which plant needed water.",
+      "sentenceZh": "园丁比较了两个花盆，判断哪一株植物需要浇水。",
+      "scene": "A stylized gardener kneels between exactly two potted plants, holding a watering can while comparing them. One plant is healthy and upright; the other has dry soil and gently drooping leaves, making the choice meaningful.",
+      "altText": "园丁比较两盆植物，判断叶片下垂、土壤干燥的那盆需要浇水。"
+    },
+    {
+      "vocabularyId": "5470a9cd-b03a-47e7-9fb9-fd2b4a0814cd",
+      "word": "them",
+      "meaningZh": "他们；她们；它们",
+      "exampleId": "5470a9cd-b03a-47e7-9fb9-fd2b4a0814cd-visual-ex",
+      "styleFamily": "hand-drawn cel rescue animation",
+      "sentenceEn": "The rescuers found three seal pups on the rocks and guided them back to the sea.",
+      "sentenceZh": "救援人员在岩石上发现三只海豹幼崽，并引导它们回到海里。",
+      "scene": "Exactly three seal pups move together from sun-warmed rocks toward the water while two stylized wildlife rescuers keep a respectful distance and guide the group with open body language.",
+      "altText": "两名野生动物救援人员引导三只海豹幼崽一起回到海中。"
+    },
+    {
+      "vocabularyId": "f8d7b65c-c435-4c96-b11d-75a1b6cff263",
+      "word": "some",
+      "meaningZh": "一些；有些；大约",
+      "exampleId": "f8d7b65c-c435-4c96-b11d-75a1b6cff263-visual-ex",
+      "styleFamily": "felt applique quantity illustration",
+      "sentenceEn": "Some apples fell into the basket while the rest stayed on the tree.",
+      "sentenceZh": "一些苹果落进了篮子，其余的还留在树上。",
+      "scene": "Several felt apples have fallen into a basket below an apple tree while many more remain visibly attached among the branches. The separated partial group and larger remainder are both easy to compare.",
+      "altText": "一些苹果落入树下的篮子，更多苹果仍留在枝头。"
+    },
+    {
+      "vocabularyId": "8e3d0b17-9556-40fd-8874-38dd6ad63cf5",
+      "word": "me",
+      "meaningZh": "我（宾格）",
+      "exampleId": "8e3d0b17-9556-40fd-8874-38dd6ad63cf5-visual-ex",
+      "styleFamily": "first-person gouache narrative",
+      "sentenceEn": "The guide held out a lantern to help me cross the dark bridge.",
+      "sentenceZh": "向导把灯笼递给我，帮助我走过昏暗的桥。",
+      "scene": "From a first-person viewpoint at the entrance to a dark wooden bridge, the viewer's hand reaches forward as a stylized guide offers a glowing lantern directly toward it. Warm light reveals the safe path ahead.",
+      "altText": "第一人称视角中，向导把灯笼递向画面前方，照亮昏暗木桥。"
+    },
+    {
+      "vocabularyId": "9f170a7b-9469-42bf-9a52-a2f06de7d697",
+      "word": "people",
+      "meaningZh": "人；人民；人们；民族",
+      "exampleId": "9f170a7b-9469-42bf-9a52-a2f06de7d697-visual-ex",
+      "styleFamily": "community screen-print illustration",
+      "sentenceEn": "People from the neighborhood worked together to restore the public garden.",
+      "sentenceZh": "社区里的人们一起修复了公共花园。",
+      "scene": "A varied neighborhood group works across one public garden: repairing a raised bed, planting flowers, clearing a path and sharing tools. Include adults and a child, varied skin tones and body types, an older person and a wheelchair user participating naturally.",
+      "altText": "来自社区的不同人们分工合作，一起修复公共花园。"
+    },
+    {
+      "vocabularyId": "feb51a5d-e902-44bf-af59-9cc0eb8e4c94",
+      "word": "take",
+      "meaningZh": "拿；带；花费；接受",
+      "exampleId": "feb51a5d-e902-44bf-af59-9cc0eb8e4c94-visual-ex",
+      "styleFamily": "isometric editorial 3D transport illustration",
+      "sentenceEn": "The small ferry can take farmers and bicycles across the river.",
+      "sentenceZh": "这艘小渡船可以载着农民和自行车过河。",
+      "scene": "A small open ferry travels from one riverbank to the other carrying three stylized farmers, baskets and several bicycles. The visible wake, departure dock and destination dock make transport across the river clear.",
+      "altText": "小渡船载着三名农民、篮子和自行车驶向河对岸。"
+    },
+    {
+      "vocabularyId": "00cb53fa-3511-42c9-ab1b-891428155fac",
+      "word": "out",
+      "meaningZh": "外面；出去；外出",
+      "exampleId": "00cb53fa-3511-42c9-ab1b-891428155fac-visual-ex",
+      "styleFamily": "hand-drawn animation release scene",
+      "sentenceEn": "The rescued fox stepped out of the open carrier and into the forest.",
+      "sentenceZh": "获救的狐狸走出打开的运输箱，回到了森林。",
+      "scene": "A healthy fox places its front paws outside an open wildlife carrier and steps toward a wide sunlit forest. The empty dark interior remains behind while a ranger watches quietly from a respectful distance.",
+      "altText": "狐狸走出打开的运输箱，迈向前方阳光照亮的森林。"
+    }
+  ]
+}
