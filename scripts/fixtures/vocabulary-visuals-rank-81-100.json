@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-81-100-2026-07-15",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. People may appear when human action clarifies the meaning, but they must remain deliberately illustrated with designed shapes, simplified expressive faces and non-photographic materials. Vary age, skin tone, body type, hairstyle, clothing, ability and occupation naturally. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5e31eaf2-05c9-4c6f-a1ea-e2b9d17fb860",
+      "word": "look",
+      "meaningZh": "看；看起来；外表",
+      "exampleId": "5e31eaf2-05c9-4c6f-a1ea-e2b9d17fb860-visual-ex",
+      "styleFamily": "watercolor-and-ink naturalist illustration",
+      "sentenceEn": "The young naturalist paused to look at the blue butterfly without touching it.",
+      "sentenceZh": "年轻的自然观察者停下来观看蓝色蝴蝶，没有伸手触碰它。",
+      "scene": "A stylized young adult naturalist kneels at a respectful distance from a rare blue butterfly resting on a fern. Their eyes and small binoculars point directly toward the butterfly while both hands remain folded away from it.",
+      "altText": "年轻的自然观察者保持距离，安静地看着蕨叶上的蓝色蝴蝶。"
+    },
+    {
+      "vocabularyId": "6a25c65d-8e89-464b-9236-1b6cba0dcd4f",
+      "word": "first",
+      "meaningZh": "第一；首先；最初的",
+      "exampleId": "6a25c65d-8e89-464b-9236-1b6cba0dcd4f-visual-ex",
+      "styleFamily": "layered-paper dawn diorama",
+      "sentenceEn": "The first volunteer opened the food pantry before sunrise.",
+      "sentenceZh": "第一位志愿者在日出前打开了食品储藏室。",
+      "scene": "Before sunrise, one volunteer is already unlocking and opening a community food pantry while several other volunteers are still approaching along the distant path. The open doorway and clear distance establish who arrived first.",
+      "altText": "天还未亮，第一位志愿者已经打开食品储藏室，其他人仍在远处赶来。"
+    },
+    {
+      "vocabularyId": "639ab37b-22d5-456c-b3a7-9e9171742c81",
+      "word": "also",
+      "meaningZh": "也；同样地；此外",
+      "exampleId": "639ab37b-22d5-456c-b3a7-9e9171742c81-visual-ex",
+      "styleFamily": "isometric matte-3D sustainable architecture",
+      "sentenceEn": "The rooftop garden grows vegetables and also collects rainwater.",
+      "sentenceZh": "屋顶花园种植蔬菜，也收集雨水。",
+      "scene": "An isometric building roof visibly performs two useful functions at once: raised beds grow vegetables while a connected canopy and gutter collect rainwater into a storage barrel. Both systems share the same rooftop without diagram labels.",
+      "altText": "同一座屋顶花园既种植蔬菜，也通过排水系统收集雨水。"
+    },
+    {
+      "vocabularyId": "b3540aa6-5611-4aa0-8ecc-08ecc7b0ec8a",
+      "word": "new",
+      "meaningZh": "新的；新近的；新鲜的",
+      "exampleId": "b3540aa6-5611-4aa0-8ecc-08ecc7b0ec8a-visual-ex",
+      "styleFamily": "technical gouache lighthouse illustration",
+      "sentenceEn": "The restored lighthouse received a new lens before storm season.",
+      "sentenceZh": "修复后的灯塔在风暴季到来前换上了新透镜。",
+      "scene": "Inside a restored lighthouse, two stylized technicians carefully install a pristine faceted lens that shines with fresh clear light. The old cracked and clouded lens rests safely on a padded cart nearby for direct old-versus-new contrast.",
+      "altText": "技术人员为修复后的灯塔安装崭新透镜，旧的破损透镜放在一旁。"
+    },
+    {
+      "vocabularyId": "bda72ae0-a0cf-4106-be5c-4edc093da63b",
+      "word": "because",
+      "meaningZh": "因为",
+      "exampleId": "bda72ae0-a0cf-4106-be5c-4edc093da63b-visual-ex",
+      "styleFamily": "seasonal fresco cause-and-result illustration",
+      "sentenceEn": "The young trees survived the dry summer because the community had saved rainwater.",
+      "sentenceZh": "这些小树熬过了干旱的夏季，因为社区提前储存了雨水。",
+      "scene": "A connected seasonal scene shows neighbors filling large rain barrels during spring showers, then using the stored water to keep the same young trees green during a dry summer. Repeated barrels and tree shapes visibly connect the cause to the result.",
+      "altText": "社区雨季储存雨水，因此小树在干旱夏季仍保持翠绿。"
+    },
+    {
+      "vocabularyId": "2dbac45e-9f16-48fc-b4ed-d98b0fd32cd0",
+      "word": "day",
+      "meaningZh": "天；白天；日子；时代",
+      "exampleId": "2dbac45e-9f16-48fc-b4ed-d98b0fd32cd0-visual-ex",
+      "styleFamily": "embroidered wetland day-cycle panorama",
+      "sentenceEn": "One day at the wetland began in silver mist and ended beneath a golden sunset.",
+      "sentenceZh": "湿地的一天从银色晨雾开始，在金色落日下结束。",
+      "scene": "One continuous embroidered wetland panorama flows from pale dawn mist on the left through bright midday reeds to a golden sunset on the right. The same winding river and heron connect the changing light across the complete day.",
+      "altText": "同一片湿地从晨雾、白昼逐渐过渡到金色日落。"
+    },
+    {
+      "vocabularyId": "c901ca68-ac2d-4003-a26c-ba55af4114c6",
+      "word": "use",
+      "meaningZh": "使用；利用；用途；用法",
+      "exampleId": "c901ca68-ac2d-4003-a26c-ba55af4114c6-visual-ex",
+      "styleFamily": "editorial ink workshop illustration",
+      "sentenceEn": "The farmer learned to use the hand pump to bring clean water from the well.",
+      "sentenceZh": "农民学会了使用手压泵从井里取出清洁的水。",
+      "scene": "A stylized mechanic demonstrates the handle motion of a simple hand pump while a farmer operates it and watches clean water flow into a bucket. The tool, user's hands, and immediate result are all visible in one practical scene.",
+      "altText": "农民按照机械师示范的动作使用手压泵，把井水抽进水桶。"
+    },
+    {
+      "vocabularyId": "24d664a2-58da-4e84-ae1a-c3590e3f0854",
+      "word": "no",
+      "meaningZh": "不；没有；禁止",
+      "exampleId": "24d664a2-58da-4e84-ae1a-c3590e3f0854-visual-ex",
+      "styleFamily": "linocut coastal cleanup illustration",
+      "sentenceEn": "There was no plastic left on the beach after the community cleanup.",
+      "sentenceZh": "社区清理结束后，海滩上没有留下塑料垃圾。",
+      "scene": "A broad clean beach contains shells, driftwood and shorebirds but visibly no plastic. At the far edge, stylized volunteers carry away full reusable sacks containing the last collected bottles and wrappers.",
+      "altText": "志愿者带走装满塑料垃圾的袋子，清理后的海滩没有残留塑料。"
+    },
+    {
+      "vocabularyId": "777bde5a-6e02-4f3a-b0e2-98f4ae123dc5",
+      "word": "man",
+      "meaningZh": "男人；人类；人",
+      "exampleId": "777bde5a-6e02-4f3a-b0e2-98f4ae123dc5-visual-ex",
+      "styleFamily": "painterly storybook village illustration",
+      "sentenceEn": "An elderly man repaired the village clock before the market opened.",
+      "sentenceZh": "一位老人在集市开门前修好了村里的钟。",
+      "scene": "An elderly male clockmaker with a silver beard works carefully inside the open mechanism of a village clock tower. Below, market stalls are just being prepared as the repaired clock begins moving again.",
+      "altText": "一位银发老人正在钟楼里修理村庄的大钟，下面的集市即将开门。"
+    },
+    {
+      "vocabularyId": "3bbcf411-38e3-4c43-bc4d-3ac736f24aa9",
+      "word": "find",
+      "meaningZh": "找到；发现；认为",
+      "exampleId": "3bbcf411-38e3-4c43-bc4d-3ac736f24aa9-visual-ex",
+      "styleFamily": "graphic-novel mountain rescue illustration",
+      "sentenceEn": "The rescue dog helped volunteers find the lost hiker before nightfall.",
+      "sentenceZh": "救援犬帮助志愿者在天黑前找到了迷路的徒步者。",
+      "scene": "A rescue dog follows a trail through mountain brush and reaches a tired but safe hiker beside a distinctive red backpack. Two stylized volunteers arrive behind the dog as the last daylight remains on the ridge.",
+      "altText": "救援犬循着踪迹找到迷路的徒步者，志愿者们随后赶到。"
+    },
+    {
+      "vocabularyId": "ec3632c8-549c-44d0-bcdf-5be9322dec03",
+      "word": "here",
+      "meaningZh": "这里；在这里",
+      "exampleId": "ec3632c8-549c-44d0-bcdf-5be9322dec03-visual-ex",
+      "styleFamily": "first-person dimensional paper-cut scene",
+      "sentenceEn": "Plant the young willow here, where its roots can protect the riverbank.",
+      "sentenceZh": "把小柳树种在这里，它的根可以保护河岸。",
+      "scene": "From a first-person viewpoint at an eroded riverbank, a guide points directly to a prepared planting hole beside the viewer while another volunteer holds a young willow ready to lower into that exact nearby place.",
+      "altText": "第一人称视角中，向导指着眼前河岸上的种植坑，示意把柳树种在这里。"
+    },
+    {
+      "vocabularyId": "9c77ac16-dbea-4d69-b375-3c5ec76ebf8d",
+      "word": "thing",
+      "meaningZh": "东西；事情；事物",
+      "exampleId": "9c77ac16-dbea-4d69-b375-3c5ec76ebf8d-visual-ex",
+      "styleFamily": "scratchboard nocturne with selective color",
+      "sentenceEn": "The glowing thing beneath the leaf was a firefly emerging at dusk.",
+      "sentenceZh": "叶子下面发光的东西，是一只黄昏时出现的萤火虫。",
+      "scene": "At dusk, a small mysterious glow appears beneath a broad leaf before revealing the clear silhouette of a firefly crawling into view. A nearby beetle and snail turn toward the unidentified glowing object with curiosity.",
+      "altText": "黄昏时叶片下出现神秘亮光，原来是一只刚爬出来的萤火虫。"
+    },
+    {
+      "vocabularyId": "8ed0f8d7-fd39-4063-aafa-780df78a55e2",
+      "word": "give",
+      "meaningZh": "给；给予；弹性",
+      "exampleId": "8ed0f8d7-fd39-4063-aafa-780df78a55e2-visual-ex",
+      "styleFamily": "clay stop-motion bakery illustration",
+      "sentenceEn": "The baker chose to give the last warm loaf to a tired traveler.",
+      "sentenceZh": "面包师选择把最后一条温热的面包送给疲惫的旅人。",
+      "scene": "A stylized clay baker reaches across a quiet bakery counter to place the last warm loaf into the hands of a tired traveler with a rain-damp coat. The nearly empty bread shelf remains visible behind them.",
+      "altText": "面包师越过柜台，把最后一条温热面包递给疲惫的旅人。"
+    },
+    {
+      "vocabularyId": "fe8d8b8f-4693-4800-bca4-2a820249100b",
+      "word": "many",
+      "meaningZh": "许多的；很多人",
+      "exampleId": "fe8d8b8f-4693-4800-bca4-2a820249100b-visual-ex",
+      "styleFamily": "textile-applique migration illustration",
+      "sentenceEn": "Many monarch butterflies rested together in the forest during migration.",
+      "sentenceZh": "迁徙途中，许多帝王蝶一起停在森林里休息。",
+      "scene": "A dense, clearly abundant gathering of monarch butterflies covers several tree branches in a mountain forest, with additional butterflies arriving through the sky. The large quantity remains readable without arranging them into a pattern.",
+      "altText": "迁徙中的大量帝王蝶聚集在森林树枝上休息。"
+    },
+    {
+      "vocabularyId": "f41e3a75-fe5f-416b-879e-f082807f02ea",
+      "word": "well",
+      "meaningZh": "很好地；健康的；井",
+      "exampleId": "f41e3a75-fe5f-416b-879e-f082807f02ea-visual-ex",
+      "styleFamily": "kinetic screen-print mechanism illustration",
+      "sentenceEn": "The repaired windmill worked well and filled every irrigation channel.",
+      "sentenceZh": "修好的风车运转良好，让每条灌溉渠都流满了水。",
+      "scene": "A restored windmill turns smoothly in a steady breeze, driving a visible pump that sends an even flow of water through every branching irrigation channel. Healthy fields on both sides show the mechanism performing effectively.",
+      "altText": "修复后的风车顺畅带动水泵，让水均匀流进每条灌溉渠。"
+    },
+    {
+      "vocabularyId": "a913fbd3-5dd9-475d-b0a1-a03dc7980b10",
+      "word": "only",
+      "meaningZh": "仅仅；只；唯一；只不过",
+      "exampleId": "a913fbd3-5dd9-475d-b0a1-a03dc7980b10-visual-ex",
+      "styleFamily": "deep-blue cyanotype observatory illustration",
+      "sentenceEn": "Only one lantern remained lit while the astronomers waited for the comet.",
+      "sentenceZh": "天文学家等待彗星时，只有一盏灯笼还亮着。",
+      "scene": "On a dark observatory terrace, exactly one warm lantern remains lit beside several astronomers and telescopes. Every other lantern is visibly dark, preserving the night vision needed to watch the comet.",
+      "altText": "黑暗的观测台上只有一盏灯笼亮着，其余灯笼全部熄灭。"
+    },
+    {
+      "vocabularyId": "0ce8b81d-9065-4218-997e-6169d6621ed2",
+      "word": "those",
+      "meaningZh": "那些",
+      "exampleId": "0ce8b81d-9065-4218-997e-6169d6621ed2-visual-ex",
+      "styleFamily": "atmospheric pastel river panorama",
+      "sentenceEn": "Those young trees across the river were planted after last year's flood.",
+      "sentenceZh": "河对岸的那些小树，是去年洪水过后种下的。",
+      "scene": "From the near riverbank, a stylized ranger points across the broad water toward a distinct distant group of young trees protected by stakes. The separation between the nearby speaker and faraway trees makes the reference clear.",
+      "altText": "护林员从近岸指向河对岸成排生长的那些小树。"
+    },
+    {
+      "vocabularyId": "df81a19b-8252-474d-8b3b-beac88725b50",
+      "word": "tell",
+      "meaningZh": "告诉；说；讲述；辨别",
+      "exampleId": "df81a19b-8252-474d-8b3b-beac88725b50-visual-ex",
+      "styleFamily": "warm folk-mural storytelling illustration",
+      "sentenceEn": "The grandmother began to tell the children how the old bridge was saved.",
+      "sentenceZh": "祖母开始给孩子们讲述那座老桥是怎样被保留下来的。",
+      "scene": "A stylized grandmother gestures expressively while several children listen closely beside an old stone bridge. Behind them, small carved repair marks and newly replaced stones on the bridge support the story she is telling.",
+      "altText": "祖母在老桥旁向孩子们讲述人们如何修复并保住这座桥。"
+    },
+    {
+      "vocabularyId": "cbaa6224-55f4-4438-a185-4e8cfd9d56d3",
+      "word": "very",
+      "meaningZh": "非常；很；真正的",
+      "exampleId": "cbaa6224-55f4-4438-a185-4e8cfd9d56d3-visual-ex",
+      "styleFamily": "dramatic botanical woodcut illustration",
+      "sentenceEn": "The tiny seedling was very strong and pushed through a crack in the pavement.",
+      "sentenceZh": "这株小小的幼苗非常顽强，从路面的裂缝中钻了出来。",
+      "scene": "A tiny but vigorous seedling pushes upward through a narrow crack in heavy pavement, lifting the separated edges slightly as its bright leaves reach the sun. Deep carved lines emphasize the surprising strength of something so small.",
+      "altText": "一株小幼苗凭借强劲生命力顶开路面裂缝，向阳光生长。"
+    },
+    {
+      "vocabularyId": "eb38b2b3-0733-4f1b-9279-92ba1ef448ca",
+      "word": "even",
+      "meaningZh": "甚至；平坦的；偶数的",
+      "exampleId": "eb38b2b3-0733-4f1b-9279-92ba1ef448ca-visual-ex",
+      "styleFamily": "mixed-media collage nest-rebuilding scene",
+      "sentenceEn": "Even the smallest bird carried a twig to rebuild the storm-damaged nest.",
+      "sentenceZh": "就连最小的鸟也叼来一根树枝，帮助重建被风暴破坏的鸟巢。",
+      "scene": "Several differently sized woodland birds carry twigs toward a storm-damaged nest. The visibly smallest bird also flies in with its own tiny twig, contributing alongside the larger birds despite its size.",
+      "altText": "大小不同的鸟共同重建受损鸟巢，最小的鸟也叼来一根细树枝。"
+    }
+  ]
+}

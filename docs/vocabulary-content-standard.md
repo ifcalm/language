@@ -133,6 +133,14 @@ For a batch of 20 or more images, aim to use at least four style families and av
 
 Shared product constraints remain stable across styles: landscape 3:2 framing, mature learner-facing art direction, a clear focal action or relationship, no in-image teaching text, no logos or watermarks, and no live-action or realistic-human impression. People should use clearly designed shapes, simplified expressive faces, stylized proportions, and illustrated materials. Avoid realistic skin pores, photographic facial rendering, camera-real depth of field, live-action staging, stock-photo composition, and lighting that makes the scene easy to mistake for a photograph.
 
+When people appear, every foreground or midground face that is large enough to
+read must have clear, natural eyes, a nose, a mouth, and an expression appropriate
+to the scene. Do not use blank oval faces, featureless masks, mannequin heads, or
+heavy shadow that erases the facial features. A turned-away or genuinely tiny
+background figure may leave the face unseen, but a visible face must never look
+unfinished. Treat a missing-feature face as a generation failure and regenerate
+the image before publishing it.
+
 The style may feel mature and emotionally grounded without becoming photorealistic. Avoid both extremes: realistic human rendering on one side, and childish chibi or glossy toy characters on the other.
 
 ## Batch generation workflow
@@ -156,6 +164,8 @@ deterministic checks.
 5. Build one labeled contact sheet after all images finish. Review the complete
    sheet at overview size, then inspect five images in detail: three selected by
    semantic risk and two selected at random.
+   Any blank or featureless readable human face fails the overview review and must
+   be regenerated even when that image was not selected for detailed sampling.
 6. Treat exact quantities, pronoun reference, comparison, sequence, cause and
    effect, spatial boundaries, and before/after transformations as high-risk visual
    relationships. Prefer these items when selecting the three risk samples.
