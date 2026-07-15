@@ -135,6 +135,65 @@ Shared product constraints remain stable across styles: landscape 3:2 framing, m
 
 The style may feel mature and emotionally grounded without becoming photorealistic. Avoid both extremes: realistic human rendering on one side, and childish chibi or glossy toy characters on the other.
 
+## Batch generation workflow
+
+Use the following fast mode by default for routine vocabulary-image batches. The
+goal is to reduce queueing and repeated manual work without weakening cheap,
+deterministic checks.
+
+### Default fast mode
+
+1. Keep each batch at 20 words so generation failures and content revisions stay
+   easy to isolate.
+2. Read the 20 production vocabulary rows in one request, then draft all examples,
+   scenes, alternative text, and style routing in one manifest pass.
+3. Run full local manifest checks before image generation: item count, vocabulary
+   ID, word, Chinese meaning, unique IDs, required fields, and an exact target-word
+   token in every English example.
+4. Generate with five concurrent image requests, completing 20 images in four
+   waves. Retry only failed requests and save successful outputs immediately.
+   Do not pause to present or discuss each image during a routine batch.
+5. Build one labeled contact sheet after all images finish. Review the complete
+   sheet at overview size, then inspect five images in detail: three selected by
+   semantic risk and two selected at random.
+6. Treat exact quantities, pronoun reference, comparison, sequence, cause and
+   effect, spatial boundaries, and before/after transformations as high-risk visual
+   relationships. Prefer these items when selecting the three risk samples.
+7. Prepare WebP assets, hashes, the published manifest, and D1 SQL in one command;
+   upload R2 objects concurrently and submit D1 SQL as one idempotent batch.
+
+### Verification policy
+
+Keep inexpensive automated verification exhaustive:
+
+- all source files have the expected count, dimensions, format, and manifest entry
+- every manifest item matches its production vocabulary ID, word, and meaning
+- every published object key is present in the exact R2 inventory with no extras
+- D1 reports the expected number of changes and preserves valid example/visual references
+
+Use sampling for repeated visual and network checks:
+
+- visually inspect three high-risk images and two random images in detail
+- read back the first, middle, and last vocabulary detail API responses
+- issue public URL checks for two images plus the published manifest
+
+Any sampled failure upgrades the relevant check to the full batch. A semantic
+failure also triggers review of other items with the same relationship type.
+
+### Strict mode
+
+Use full per-image visual review and full production API/URL readback when any of
+the following applies:
+
+- image model, provider, prompt framework, or major style rules changed
+- schema, publishing script, object-key convention, or API response shape changed
+- the previous batch produced a semantic, upload, or data-integrity failure
+- the batch is a pilot for a new content category
+- a full audit is explicitly requested
+
+The standing principle is: keep deterministic checks exhaustive, sample expensive
+human and network checks, and escalate automatically when a sample fails.
+
 ## Removed public-content tables
 
 The following tables were removed to keep the first public data model focused:
