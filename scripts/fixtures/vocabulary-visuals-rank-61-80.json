@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-61-80-2026-07-15",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. People may appear when human action clarifies the meaning, but they must remain deliberately illustrated with designed shapes, simplified expressive faces and non-photographic materials. Vary age, skin tone, body type, hairstyle, clothing, ability and occupation naturally. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "716244ed-c316-4862-b554-b9e56cfbbf68",
+      "word": "into",
+      "meaningZh": "进入；到...里面",
+      "exampleId": "716244ed-c316-4862-b554-b9e56cfbbf68-visual-ex",
+      "styleFamily": "layered cut-paper coastal illustration",
+      "sentenceEn": "The rescued sea turtle crawled into the ocean as the volunteers watched.",
+      "sentenceZh": "获救的海龟爬进海里，志愿者们在远处静静守望。",
+      "scene": "A healthy sea turtle moves from dry sand across the foamy shoreline into clear blue water. Its front half is already beneath the surface while its tracks lead back to an open transport crate, and two stylized volunteers watch from a respectful distance.",
+      "altText": "获救的海龟越过海岸线爬进海水，两名志愿者在远处守望。"
+    },
+    {
+      "vocabularyId": "6a1a32b4-08e6-4ed6-9547-8aeae5f63050",
+      "word": "just",
+      "meaningZh": "只是；刚刚；恰好；公平的",
+      "exampleId": "6a1a32b4-08e6-4ed6-9547-8aeae5f63050-visual-ex",
+      "styleFamily": "luminous silk-screen metamorphosis illustration",
+      "sentenceEn": "A butterfly had just emerged from its chrysalis when the morning light reached the branch.",
+      "sentenceZh": "晨光照到树枝时，一只蝴蝶刚刚破茧而出。",
+      "scene": "On a dew-covered branch at first light, a newly emerged butterfly rests beside its freshly opened chrysalis. Its wings are still soft and partly unfolded, with tiny droplets and the low sunrise emphasizing that the transformation has only just happened.",
+      "altText": "晨光中，刚破茧而出的蝴蝶停在尚未完全展开的翅膀旁。"
+    },
+    {
+      "vocabularyId": "71191060-924f-426f-8a24-8f017f0972c4",
+      "word": "see",
+      "meaningZh": "看见；看到；理解；明白",
+      "exampleId": "71191060-924f-426f-8a24-8f017f0972c4-visual-ex",
+      "styleFamily": "panoramic chalk-pastel conservation illustration",
+      "sentenceEn": "From the restored watchtower, visitors can see wild horses returning to the valley.",
+      "sentenceZh": "从修复后的瞭望塔上，游客可以看到野马正在重返山谷。",
+      "scene": "Two stylized visitors stand on a restored wooden watchtower in the foreground, looking through binoculars toward a clearly visible herd of wild horses crossing the broad green valley below. Their gaze, binocular direction and open sightline all converge on the herd.",
+      "altText": "游客从修复后的瞭望塔望向山谷中清晰可见的野马群。"
+    },
+    {
+      "vocabularyId": "70a474e1-1ad6-4d72-a857-6e70648cd8f6",
+      "word": "him",
+      "meaningZh": "他（宾格）",
+      "exampleId": "70a474e1-1ad6-4d72-a857-6e70648cd8f6-visual-ex",
+      "styleFamily": "hand-painted tempera storybook mural",
+      "sentenceEn": "When the old sailor returned, the neighbors welcomed him with a warm blanket.",
+      "sentenceZh": "老水手回来时，邻居们拿着温暖的毯子迎接他。",
+      "scene": "An elderly sailor in a weathered blue coat steps from a small boat onto the village pier. A varied group of neighbors directs their welcome toward him, and one neighbor wraps a warm patterned blanket around his shoulders while others carry a lantern and hot drink.",
+      "altText": "邻居们把毯子披在归来的老水手身上，热情迎接他。"
+    },
+    {
+      "vocabularyId": "f7effa2b-d0ca-4622-b2de-cf42cd90e68d",
+      "word": "your",
+      "meaningZh": "你的；你们的",
+      "exampleId": "f7effa2b-d0ca-4622-b2de-cf42cd90e68d-visual-ex",
+      "styleFamily": "first-person soft-pastel narrative",
+      "sentenceEn": "I found your blue scarf and brought it back to you.",
+      "sentenceZh": "我找到了你的蓝色围巾，并把它带回来还给你。",
+      "scene": "From the recipient's first-person viewpoint, a friend holds out a distinctive blue woven scarf directly toward the viewer's reaching hand. A matching blue thread is still caught on a park bench in the background, making the returned possession easy to identify.",
+      "altText": "第一人称视角中，一位朋友把找到的蓝色围巾递还给主人。"
+    },
+    {
+      "vocabularyId": "e8901134-06f7-4775-99c6-26b667ef378a",
+      "word": "come",
+      "meaningZh": "来；来到；到达；变成",
+      "exampleId": "e8901134-06f7-4775-99c6-26b667ef378a-visual-ex",
+      "styleFamily": "Japanese woodblock migration scene",
+      "sentenceEn": "Every spring, swallows come back to the old barn.",
+      "sentenceZh": "每年春天，燕子都会飞回那座老谷仓。",
+      "scene": "Several swallows sweep across a spring sky toward an old red barn with open rafters and familiar nests beneath the eaves. Their curved flight paths all end at the barn while blossoms and melting snow mark their seasonal arrival.",
+      "altText": "春天到来，燕子沿着天空飞回屋檐下有旧巢的谷仓。"
+    },
+    {
+      "vocabularyId": "647f0fd7-619c-4c43-ab80-7f7df3ed1718",
+      "word": "could",
+      "meaningZh": "可以；能；可能",
+      "exampleId": "647f0fd7-619c-4c43-ab80-7f7df3ed1718-visual-ex",
+      "styleFamily": "wool-felt stop-motion rescue illustration",
+      "sentenceEn": "With a simple wooden ramp, the rescued ducklings could climb out of the canal.",
+      "sentenceZh": "有了简单的木坡道，获救的小鸭们就能爬出水渠。",
+      "scene": "A short handmade wooden ramp bridges the water and canal bank. A small line of felt ducklings successfully climbs the ramp toward reeds and safety while a stylized volunteer secures the top, making the newly enabled action unmistakable.",
+      "altText": "小鸭们借助志愿者搭建的木坡道，顺利爬出水渠。"
+    },
+    {
+      "vocabularyId": "c036f1dc-b00d-4edf-8c4d-6419481b8ea4",
+      "word": "now",
+      "meaningZh": "现在；目前；如今",
+      "exampleId": "c036f1dc-b00d-4edf-8c4d-6419481b8ea4-visual-ex",
+      "styleFamily": "architectural watercolor before-and-now illustration",
+      "sentenceEn": "The abandoned railway is now a green path for walkers and cyclists.",
+      "sentenceZh": "这条废弃铁路如今成了供行人和骑行者使用的绿色步道。",
+      "scene": "A continuous before-and-present composition shows rusted rails and weeds fading on the left into the same corridor now transformed on the right with a tree-lined path, walkers, a cyclist and preserved railway stones reused along the edge.",
+      "altText": "昔日废弃的铁路线如今变成绿树环绕的步行与骑行道。"
+    },
+    {
+      "vocabularyId": "65740fa4-fb03-4e9d-95fe-c3218045f0f0",
+      "word": "than",
+      "meaningZh": "比；比较",
+      "exampleId": "65740fa4-fb03-4e9d-95fe-c3218045f0f0-visual-ex",
+      "styleFamily": "botanical etching with selective color",
+      "sentenceEn": "The rescued sapling grew taller than the fence that once protected it.",
+      "sentenceZh": "这棵获救的小树已经长得比曾经保护它的围栏更高了。",
+      "scene": "A thriving young tree rises clearly above the circular protective fence around its trunk. An older height mark on the fence and fresh branches extending well beyond the top create one direct vertical comparison between tree and fence.",
+      "altText": "茁壮成长的小树已经明显高过曾经保护它的围栏。"
+    },
+    {
+      "vocabularyId": "6cb011f4-46e1-4c0a-811c-e0972d79967a",
+      "word": "like",
+      "meaningZh": "像；喜欢；相似的",
+      "exampleId": "6cb011f4-46e1-4c0a-811c-e0972d79967a-visual-ex",
+      "styleFamily": "stained-glass mosaic nature illustration",
+      "sentenceEn": "The dragonfly's wings shone like stained glass in the sun.",
+      "sentenceZh": "阳光下，蜻蜓的翅膀像彩色玻璃一样闪耀。",
+      "scene": "A large dragonfly rests above a pond in sunlight. Its translucent segmented wings visually echo the colored glass pattern of a nearby garden lantern, sharing jewel-like shapes and light without turning into a literal object.",
+      "altText": "阳光照亮蜻蜓半透明的彩色翅膀，使其如彩色玻璃般闪耀。"
+    },
+    {
+      "vocabularyId": "1a8ff589-dafa-433a-a48c-15b4d7a53630",
+      "word": "other",
+      "meaningZh": "其他的；另外的；别的",
+      "exampleId": "1a8ff589-dafa-433a-a48c-15b4d7a53630-visual-ex",
+      "styleFamily": "isometric topographic diorama",
+      "sentenceEn": "One mountain path was blocked by snow, so the hikers chose the other path.",
+      "sentenceZh": "一条山路被积雪封住了，于是徒步者选择了另一条路。",
+      "scene": "A miniature mountain landscape contains exactly two branching paths. One ends visibly beneath a fresh snow slide and fallen branches, while three stylized hikers turn together onto the other clear path that curves safely toward a shelter.",
+      "altText": "两条山路中一条被雪封住，徒步者转而选择另一条安全道路。"
+    },
+    {
+      "vocabularyId": "1858a734-1095-4b00-8ac2-63cf48cd82a8",
+      "word": "how",
+      "meaningZh": "如何；怎样；多少",
+      "exampleId": "1858a734-1095-4b00-8ac2-63cf48cd82a8-visual-ex",
+      "styleFamily": "ink-wash and colored-pencil animal study",
+      "sentenceEn": "The young otter learned how to open a shell by watching its mother.",
+      "sentenceZh": "小水獭通过观察妈妈，学会了怎样打开贝壳。",
+      "scene": "On a calm riverbank, an adult otter demonstrates holding a shell against a flat stone while a young otter watches the exact paw movement and imitates it with another shell. Their mirrored actions show learning a method step by step.",
+      "altText": "小水獭观察妈妈用石头打开贝壳，并模仿同样的方法。"
+    },
+    {
+      "vocabularyId": "1a5d0a28-f3db-4b3e-96ce-1a163bab4087",
+      "word": "then",
+      "meaningZh": "然后；那么；当时",
+      "exampleId": "1a5d0a28-f3db-4b3e-96ce-1a163bab4087-visual-ex",
+      "styleFamily": "block-print ecological sequence",
+      "sentenceEn": "The volunteers cleared plastic from the stream, then the fish returned.",
+      "sentenceZh": "志愿者们清理了溪流中的塑料垃圾，随后鱼儿回来了。",
+      "scene": "A clear two-stage wordless sequence shows volunteers removing plastic from a cloudy stream first, followed by the same stream running clear with reeds, insects and a visible school of fish returning downstream. Repeated rocks and trees connect the moments in order.",
+      "altText": "志愿者清理溪流后，清澈的水中重新出现了鱼群。"
+    },
+    {
+      "vocabularyId": "5114e495-0b11-47e9-9b42-c84ed2268033",
+      "word": "its",
+      "meaningZh": "它的",
+      "exampleId": "5114e495-0b11-47e9-9b42-c84ed2268033-visual-ex",
+      "styleFamily": "nocturnal gouache wildlife illustration",
+      "sentenceEn": "At dawn, the rescued owl spread its wings above the forest.",
+      "sentenceZh": "黎明时，获救的猫头鹰在森林上空展开了它的翅膀。",
+      "scene": "A single owl released from a small open carrier rises over the forest canopy at dawn with both wings fully spread. The wing shapes connect naturally and unmistakably to the owl's own body while a ranger remains small and distant below.",
+      "altText": "获救的猫头鹰在黎明的森林上空展开自己的双翼。"
+    },
+    {
+      "vocabularyId": "05e4d391-6ddd-4501-abe8-b8e39b6cd426",
+      "word": "our",
+      "meaningZh": "我们的",
+      "exampleId": "05e4d391-6ddd-4501-abe8-b8e39b6cd426-visual-ex",
+      "styleFamily": "woven community tapestry illustration",
+      "sentenceEn": "Together, our neighborhood built a rain garden beside the school.",
+      "sentenceZh": "大家一起在我们社区的学校旁建起了一座雨水花园。",
+      "scene": "A diverse neighborhood group works together around one shared rain garden beside a school, shaping the basin, planting native flowers and guiding roof water into it. Several hands hold the same young plant at the center, emphasizing collective care and belonging.",
+      "altText": "社区居民共同在学校旁建设并照料一座共享的雨水花园。"
+    },
+    {
+      "vocabularyId": "1f8f373a-af90-48f8-abf9-de65f4afd697",
+      "word": "two",
+      "meaningZh": "二；两个",
+      "exampleId": "1f8f373a-af90-48f8-abf9-de65f4afd697-visual-ex",
+      "styleFamily": "low-poly 3D woodland illustration",
+      "sentenceEn": "Two beavers balanced a branch across the narrow stream.",
+      "sentenceZh": "两只河狸合力把一根树枝架在狭窄的溪流上。",
+      "scene": "Exactly two beavers cooperate from opposite ends of one long branch, balancing it across a narrow stream. No other beavers appear; their paired positions and shared effort make the number immediately countable.",
+      "altText": "恰好两只河狸从树枝两端协作，把它架过溪流。"
+    },
+    {
+      "vocabularyId": "a11c6f65-18ca-426f-a945-ad4471232014",
+      "word": "more",
+      "meaningZh": "更多；更加；再；另外",
+      "exampleId": "a11c6f65-18ca-426f-a945-ad4471232014-visual-ex",
+      "styleFamily": "glazed ceramic mosaic before-and-after scene",
+      "sentenceEn": "After the birdbath was added, more birds visited the courtyard.",
+      "sentenceZh": "添置鸟浴盆后，更多鸟儿来到了院子。",
+      "scene": "A balanced before-and-after courtyard shows only two small birds on the plain left side. On the right, the same courtyard contains a new shallow birdbath surrounded by a visibly larger and varied group of birds, with repeated paving and tree shapes linking the comparison.",
+      "altText": "院子添置鸟浴盆后，到访的鸟从少数变成了更多的一群。"
+    },
+    {
+      "vocabularyId": "c59db013-b008-446d-b136-d889d0777b5c",
+      "word": "these",
+      "meaningZh": "这些",
+      "exampleId": "c59db013-b008-446d-b136-d889d0777b5c-visual-ex",
+      "styleFamily": "dimensional paper-cut restoration scene",
+      "sentenceEn": "These young trees are ready to be planted beside the river.",
+      "sentenceZh": "这些小树已经准备好种到河边了。",
+      "scene": "In the immediate foreground, a volunteer's open hands gesture toward a clearly grouped tray of young native trees with wrapped roots. Farther back, a restoration team prepares planting holes along an eroded riverbank, linking the nearby selected group to its destination.",
+      "altText": "志愿者指向眼前成组的小树苗，远处团队正在河岸准备种植。"
+    },
+    {
+      "vocabularyId": "34337a5d-2deb-4f81-919b-e5dfad41bf37",
+      "word": "want",
+      "meaningZh": "想要；需要；缺乏",
+      "exampleId": "34337a5d-2deb-4f81-919b-e5dfad41bf37-visual-ex",
+      "styleFamily": "graphic-novel ink and watercolor illustration",
+      "sentenceEn": "I want to return this lost wallet to its owner.",
+      "sentenceZh": "我想把这个捡到的钱包还给失主。",
+      "scene": "From a first-person viewpoint, the viewer offers a found wallet to a stylized attendant at a community lost-and-found desk. In the background, a worried owner checks an empty bag while a small matching keepsake hanging from the wallet makes the honest intention clear. No readable signs or interface text.",
+      "altText": "第一人称视角中，捡到钱包的人主动把它交到失物招领处。"
+    },
+    {
+      "vocabularyId": "bd477cff-193f-46ee-b0dd-b1f0e47db909",
+      "word": "way",
+      "meaningZh": "方式；方法；路；方向；途径",
+      "exampleId": "bd477cff-193f-46ee-b0dd-b1f0e47db909-visual-ex",
+      "styleFamily": "architectural paper-model irrigation illustration",
+      "sentenceEn": "A bamboo channel gave the village a simple way to carry rainwater to dry fields.",
+      "sentenceZh": "一条竹制水渠为村庄提供了把雨水引到旱地的简单方法。",
+      "scene": "A handcrafted landscape model shows rainwater collected from a roof flowing through a clearly connected bamboo channel across the village and into dry terraced fields, where fresh green seedlings begin near the outlet. The entire practical route is visible in one view.",
+      "altText": "竹制水渠把屋顶收集的雨水引向干旱梯田，为村庄提供灌溉方法。"
+    }
+  ]
+}
