@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-141-160-2026-07-16",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "80575362-d6d9-4621-8fb5-dbae7c0219ba",
+      "word": "while",
+      "meaningZh": "当...时；虽然；然而；一会儿",
+      "exampleId": "80575362-d6d9-4621-8fb5-dbae7c0219ba-visual-ex",
+      "styleFamily": "rainy wool-felt wetland animation",
+      "sentenceEn": "While the rain fell, the beavers strengthened their dam with fresh branches.",
+      "sentenceZh": "下雨的时候，河狸们正用新树枝加固水坝。",
+      "scene": "Heavy rain is visibly falling across a wetland at the same moment that several beavers push fresh leafy branches into a leaking dam. Ripples, rain streaks, moving paws and newly blocked gaps make the two simultaneous events unmistakable.",
+      "altText": "雨水不断落下时，河狸们同时用新树枝加固正在漏水的水坝。"
+    },
+    {
+      "vocabularyId": "30951cc0-59c7-4e6c-9211-f355b91370ae",
+      "word": "mean",
+      "meaningZh": "意思是；吝啬的；平均的",
+      "exampleId": "30951cc0-59c7-4e6c-9211-f355b91370ae-visual-ex",
+      "styleFamily": "cyanotype-and-gouache mountain weather scene",
+      "sentenceEn": "Dark clouds over the mountain can mean that a storm is approaching.",
+      "sentenceZh": "山顶上方的乌云可能意味着暴风雨正在接近。",
+      "scene": "A dense wall of dark clouds gathers above a mountain while distant lightning and wind-bent grass show an approaching storm. Below, mountain goats calmly move toward a rock shelter in response to the visible natural sign. No symbols, labels or arrows.",
+      "altText": "山顶聚集的乌云和远处闪电预示风暴将至，山羊正走向岩洞。"
+    },
+    {
+      "vocabularyId": "ed307934-1ddf-4419-8fde-568934cc5498",
+      "word": "keep",
+      "meaningZh": "保持；继续；保留",
+      "exampleId": "ed307934-1ddf-4419-8fde-568934cc5498-visual-ex",
+      "styleFamily": "warm clay-cutaway wildlife shelter",
+      "sentenceEn": "A thick layer of straw helped keep the rescued fawn warm through the cold night.",
+      "sentenceZh": "厚厚的稻草帮助获救的小鹿在寒冷夜晚保持温暖。",
+      "scene": "A cutaway view of a quiet wildlife shelter shows a rescued fawn resting inside a deep ring of dry straw. Frost covers the outside walls, but warm amber air and the fawn's relaxed posture remain steady inside, clearly showing warmth being maintained through the night.",
+      "altText": "寒冷夜晚里，获救的小鹿卧在厚厚的稻草中持续保持温暖。"
+    },
+    {
+      "vocabularyId": "9837afc4-fedc-499f-a21f-c9d560b8967e",
+      "word": "student",
+      "meaningZh": "学生；学习者",
+      "exampleId": "9837afc4-fedc-499f-a21f-c9d560b8967e-visual-ex",
+      "styleFamily": "clean-line animation solar workshop",
+      "sentenceEn": "The student stayed after class to practice repairing a solar lantern.",
+      "sentenceZh": "这名学生课后留下来练习修理太阳能灯。",
+      "scene": "An adult vocational student sits at a tidy workshop bench carefully reconnecting a wire inside an open solar lantern. A completed practice model and simple tools sit nearby, while an instructor observes supportively from farther back. Both readable faces have complete features and focused expressions; no readable interface or text.",
+      "altText": "一名职业学校学生在工作台上认真练习修理太阳能灯。"
+    },
+    {
+      "vocabularyId": "ee5a2014-21ef-422b-ab78-46ea99741e7b",
+      "word": "why",
+      "meaningZh": "为什么；原因",
+      "exampleId": "ee5a2014-21ef-422b-ab78-46ea99741e7b-visual-ex",
+      "styleFamily": "botanical watercolor garden investigation",
+      "sentenceEn": "The student investigated why one garden bed was wilting while the others thrived.",
+      "sentenceZh": "这名学生调查为什么有一块苗床枯萎，而其他苗床长势良好。",
+      "scene": "A young adult agricultural student kneels between one visibly wilted garden bed and two healthy beds, comparing soil moisture with a simple handheld probe and examining a blocked irrigation tube. The contrast and careful investigation make the search for a cause clear. The readable face has complete features and a curious, thoughtful expression.",
+      "altText": "农业学生正在比较枯萎苗床和健康苗床，寻找生长差异的原因。"
+    },
+    {
+      "vocabularyId": "f7dac5fc-a495-47ff-974f-8d6c20977866",
+      "word": "let",
+      "meaningZh": "让；允许；出租",
+      "exampleId": "f7dac5fc-a495-47ff-974f-8d6c20977866-visual-ex",
+      "styleFamily": "bold linocut wildlife-release scene",
+      "sentenceEn": "The ranger opened the gate to let the rescued deer return to the forest.",
+      "sentenceZh": "护林员打开大门，让获救的鹿回到森林。",
+      "scene": "A ranger has swung a rehabilitation gate fully open and stepped aside, allowing a healthy deer to cross from the enclosure into a broad green forest. The deer's forward movement through the offered opening clearly shows permission and release. The ranger's readable face has complete natural features and a calm expression.",
+      "altText": "护林员打开围栏门并退到一旁，让康复的鹿走回森林。"
+    },
+    {
+      "vocabularyId": "a00bd1ce-36b6-4c15-97c8-9e3852a417ba",
+      "word": "great",
+      "meaningZh": "伟大的；大的；极好的",
+      "exampleId": "a00bd1ce-36b6-4c15-97c8-9e3852a417ba-visual-ex",
+      "styleFamily": "monumental layered-paper baobab landscape",
+      "sentenceEn": "The great baobab sheltered an entire herd during the hottest part of the day.",
+      "sentenceZh": "这棵巨大的猴面包树在一天最炎热的时段庇护了整群动物。",
+      "scene": "One monumental baobab dominates a dry savanna, its vast trunk and canopy dramatically larger than every nearby tree. A mixed herd of antelope, zebras and small animals rests safely in its broad shade, making both size and value clear.",
+      "altText": "一棵巨大的猴面包树张开宽阔树冠，为炎热中的动物群提供阴凉。"
+    },
+    {
+      "vocabularyId": "463b2c46-0b2d-4943-983b-949215a5cad5",
+      "word": "same",
+      "meaningZh": "相同的；同样的",
+      "exampleId": "463b2c46-0b2d-4943-983b-949215a5cad5-visual-ex",
+      "styleFamily": "embroidered forest-regeneration panorama",
+      "sentenceEn": "Two young shoots grew from the same weathered tree stump.",
+      "sentenceZh": "两株嫩芽从同一个风化的树桩上长了出来。",
+      "scene": "Exactly two fresh green shoots emerge from opposite sides of one clearly continuous weathered stump with shared roots. The single common source is visually unmistakable against a recovering woodland floor, with no other stumps or shoots nearby.",
+      "altText": "两株嫩绿的新芽从同一个老树桩的两侧共同长出。"
+    },
+    {
+      "vocabularyId": "d280b1cc-f9df-445c-9d0b-77dabbaeee86",
+      "word": "big",
+      "meaningZh": "大的；重要的；大笔的",
+      "exampleId": "d280b1cc-f9df-445c-9d0b-77dabbaeee86-visual-ex",
+      "styleFamily": "graphic woodblock forest-river scene",
+      "sentenceEn": "A big fallen tree became a bridge for animals crossing the flooded stream.",
+      "sentenceZh": "一棵倒下的大树成了动物们跨越涨水溪流的桥。",
+      "scene": "A massive fallen tree spans a swollen stream from bank to bank, visibly much thicker than the fox, rabbits and hedgehog crossing safely along its trunk. Smaller branches and stones emphasize the tree's unusually large scale.",
+      "altText": "一棵粗大的倒树横跨涨水溪流，成为小动物们通行的桥梁。"
+    },
+    {
+      "vocabularyId": "d048f23c-2497-4132-b59e-63c95d40cd2c",
+      "word": "group",
+      "meaningZh": "团体；组；群；集团",
+      "exampleId": "d048f23c-2497-4132-b59e-63c95d40cd2c-visual-ex",
+      "styleFamily": "isometric cut-paper ant teamwork",
+      "sentenceEn": "A group of ants worked together to carry the heavy seed home.",
+      "sentenceZh": "一群蚂蚁齐心协力把沉重的种子搬回家。",
+      "scene": "A clearly bounded group of ants surrounds one large seed and carries it together toward a nearby nest entrance. Their coordinated positions and shared load make them read as one working group, while a few distant ants continue unrelated tasks.",
+      "altText": "一群蚂蚁围在同一颗大种子周围，协力把它搬向巢穴。"
+    },
+    {
+      "vocabularyId": "94dd39dd-f27e-4fc2-9611-17d936ab0f84",
+      "word": "begin",
+      "meaningZh": "开始；着手",
+      "exampleId": "94dd39dd-f27e-4fc2-9611-17d936ab0f84-visual-ex",
+      "styleFamily": "silk-watercolor desert-bloom closeup",
+      "sentenceEn": "The first drops of rain made the desert flowers begin to open.",
+      "sentenceZh": "最初的雨滴让沙漠花朵开始绽放。",
+      "scene": "The first sparse raindrops reach a dry desert floor where several tightly closed buds are just beginning to separate their petals. One flower is only partly open, with dry buds and newly damp soil preserving the exact early stage of change.",
+      "altText": "最初的雨滴落到沙漠地面，紧闭的花苞刚刚开始张开花瓣。"
+    },
+    {
+      "vocabularyId": "b83013d4-ca49-4a06-b94f-6b3d14964de7",
+      "word": "seem",
+      "meaningZh": "似乎；好像",
+      "exampleId": "b83013d4-ca49-4a06-b94f-6b3d14964de7-visual-ex",
+      "styleFamily": "surreal scratchboard water-reflection scene",
+      "sentenceEn": "The still water made the broken branch seem whole again.",
+      "sentenceZh": "平静的水面让折断的树枝看起来又完整了。",
+      "scene": "Half of a broken branch leans above perfectly still dark water. Its precise reflection visually completes the missing half, making the branch appear whole at first glance, while a visible snapped end above the surface reveals the truth.",
+      "altText": "折断的半截树枝与水中倒影拼在一起，看起来仿佛重新完整。"
+    },
+    {
+      "vocabularyId": "8d1bd595-d4c2-4ec6-9168-4c33f5797caf",
+      "word": "country",
+      "meaningZh": "国家；乡村；地区",
+      "exampleId": "8d1bd595-d4c2-4ec6-9168-4c33f5797caf-visual-ex",
+      "styleFamily": "panoramic ceramic-mural rail journey",
+      "sentenceEn": "The new rail line connected farms and cities across the country.",
+      "sentenceZh": "新铁路把全国各地的农场和城市连接起来。",
+      "scene": "A continuous panoramic landscape follows one passenger train across broad regions: coastal fields, central plains, a mountain pass and a distant city. The varied connected landscapes imply travel across an entire country without maps, borders, flags or text.",
+      "altText": "一列火车穿过农田、平原和山地，驶向远方城市，连接全国不同地区。"
+    },
+    {
+      "vocabularyId": "98483dba-2a32-41c5-81b9-f98a3d185ddb",
+      "word": "help",
+      "meaningZh": "帮助；帮忙；有助于",
+      "exampleId": "98483dba-2a32-41c5-81b9-f98a3d185ddb-visual-ex",
+      "styleFamily": "colored-pencil savanna rescue illustration",
+      "sentenceEn": "The elephant used its trunk to help the tortoise climb out of the muddy ditch.",
+      "sentenceZh": "大象用鼻子帮助乌龟爬出泥泞的沟渠。",
+      "scene": "At a shallow muddy ditch, an elephant gently lowers its trunk as a stable ramp and support for a tortoise climbing toward firm ground. The tortoise is halfway out, making the helpful action and beneficiary immediately clear.",
+      "altText": "大象伸下鼻子充当支撑，帮助乌龟从泥沟中爬上坚实地面。"
+    },
+    {
+      "vocabularyId": "81c3ff18-1c05-427d-8cc7-233e532c5f94",
+      "word": "talk",
+      "meaningZh": "谈话；交谈；演讲；讨论",
+      "exampleId": "81c3ff18-1c05-427d-8cc7-233e532c5f94-visual-ex",
+      "styleFamily": "community-gouache village-well meeting",
+      "sentenceEn": "The neighbors sat together to talk before deciding how to share the well.",
+      "sentenceZh": "邻居们坐在一起交谈，然后决定如何共同使用水井。",
+      "scene": "Four diverse adult neighbors sit in an open circle beside a village well, listening and speaking in turn with relaxed open hand gestures. Empty and full water containers nearby establish the shared decision. Every readable face has complete natural features and an attentive expression.",
+      "altText": "四位邻居围坐在水井旁认真交谈，商量如何公平使用水源。"
+    },
+    {
+      "vocabularyId": "914547a1-2cab-479a-9124-c2befbb6bdfc",
+      "word": "where",
+      "meaningZh": "在哪里；哪里",
+      "exampleId": "914547a1-2cab-479a-9124-c2befbb6bdfc-visual-ex",
+      "styleFamily": "hand-drawn animation forest search scene",
+      "sentenceEn": "The rescue dog showed the ranger where the missing hiker had left a backpack.",
+      "sentenceZh": "搜救犬向护林员指出失踪徒步者把背包落在了哪里。",
+      "scene": "In a forest search, a rescue dog has stopped beside one abandoned backpack under a distinctive fallen tree and looks back toward an approaching ranger. The dog's fixed location and the ranger's recognition clearly answer the question of place. The ranger's readable face has complete natural features and a focused, relieved expression.",
+      "altText": "搜救犬停在林中遗落的背包旁，向赶来的护林员指出具体位置。"
+    },
+    {
+      "vocabularyId": "3874e64a-893c-48c1-ac29-39f74ff95bf7",
+      "word": "turn",
+      "meaningZh": "转向；变成；转弯；轮流；转动",
+      "exampleId": "3874e64a-893c-48c1-ac29-39f74ff95bf7-visual-ex",
+      "styleFamily": "mechanical Risograph windmill illustration",
+      "sentenceEn": "The steady wind made the restored mill wheel turn again.",
+      "sentenceZh": "稳定的风让修复后的磨坊风轮重新转动起来。",
+      "scene": "A restored windmill's large sails are captured at several overlapping motion positions while connected wooden gears visibly rotate and fresh flour falls into a sack. Wind-bent grass and streaming cloth reinforce continuous turning without diagram arrows.",
+      "altText": "稳定的风推动修复后的风车叶片和内部齿轮重新转动。"
+    },
+    {
+      "vocabularyId": "0e4712dd-010e-4b84-94f3-7a5655d14eef",
+      "word": "problem",
+      "meaningZh": "问题；难题",
+      "exampleId": "0e4712dd-010e-4b84-94f3-7a5655d14eef-visual-ex",
+      "styleFamily": "layered cut-paper alpine-road obstacle",
+      "sentenceEn": "A fallen boulder created a problem for the medicine delivery truck.",
+      "sentenceZh": "一块落下的巨石给药品配送车制造了难题。",
+      "scene": "A huge fresh boulder completely blocks the only narrow mountain road between a small medicine delivery truck and a remote clinic visible beyond. Steep cliffs prevent driving around it, making the concrete obstacle and its consequence clear without signs or text.",
+      "altText": "巨石堵住唯一的山路，使药品配送车无法到达远处诊所。"
+    },
+    {
+      "vocabularyId": "a13eea63-e26d-4e1d-bce3-9bf4dcb9207b",
+      "word": "every",
+      "meaningZh": "每一个；所有的",
+      "exampleId": "a13eea63-e26d-4e1d-bce3-9bf4dcb9207b-visual-ex",
+      "styleFamily": "luminous stained-glass lighthouse cutaway",
+      "sentenceEn": "Every window in the lighthouse glowed during the winter storm.",
+      "sentenceZh": "冬季风暴中，灯塔里的每一扇窗户都亮着。",
+      "scene": "A lighthouse cutaway during a dark snowstorm shows exactly six clearly separated windows from base to lantern room, and all six glow with warm light. No window is dark, hidden or cropped, making the complete set visually verifiable.",
+      "altText": "冬季风暴中，灯塔从底层到顶层的六扇窗户全部发出温暖灯光。"
+    },
+    {
+      "vocabularyId": "272adeaf-209f-4fce-b0fd-8a6d364bcc4c",
+      "word": "start",
+      "meaningZh": "开始；启动；出发",
+      "exampleId": "272adeaf-209f-4fce-b0fd-8a6d364bcc4c-visual-ex",
+      "styleFamily": "cinematic graphic-novel community orchestra",
+      "sentenceEn": "The conductor raised her hand to start the community orchestra.",
+      "sentenceZh": "指挥举起手，准备让社区管弦乐团开始演奏。",
+      "scene": "At the charged instant before the first note, a woman conductor raises one hand and baton while a diverse community orchestra lifts instruments and watches her, ready but not yet playing. Readable foreground faces have complete natural features and focused expressions; background musicians remain small.",
+      "altText": "女指挥举起指挥棒，乐手们注视着她，等待第一拍开始演奏。"
+    }
+  ]
+}

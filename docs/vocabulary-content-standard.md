@@ -153,11 +153,12 @@ deterministic checks.
 
 1. Keep each batch at 20 words so generation failures and content revisions stay
    easy to isolate.
-2. Read the 20 production vocabulary rows in one request, then draft all examples,
-   scenes, alternative text, and style routing in one manifest pass.
+2. Read the batch from the checked-in local vocabulary queue, then draft all
+   examples, scenes, alternative text, and style routing in one manifest pass.
+   Do not query D1 again while planning, generating, or reviewing the batch.
 3. Run full local manifest checks before image generation: item count, vocabulary
-   ID, word, Chinese meaning, unique IDs, required fields, and an exact target-word
-   token in every English example.
+   ID, word, Chinese meaning, queue membership, unique IDs, required fields, and
+   an exact target-word token in every English example.
 4. Generate with five concurrent image requests, completing 20 images in four
    waves. Retry only failed requests and save successful outputs immediately.
    Do not pause to present or discuss each image during a routine batch.
@@ -172,12 +173,42 @@ deterministic checks.
 7. Prepare WebP assets, hashes, the published manifest, and D1 SQL in one command;
    upload R2 objects concurrently and submit D1 SQL as one idempotent batch.
 
+### Local vocabulary queue
+
+The queue is a small source-data snapshot, not a copy of generated image content.
+It stores each vocabulary ID, word, Chinese meaning, frequency rank, and stable
+one-based list position. Refresh it only when the production vocabulary source or
+ordering changes:
+
+```sh
+npm run vocabulary:visuals:queue:sync
+```
+
+That command reads the complete production vocabulary list with one remote D1
+query. Routine batches then read only the local snapshot:
+
+```sh
+npm run vocabulary:visuals:queue:batch -- --start 121 --limit 20
+```
+
+The reader scans existing batch manifests and skips vocabulary IDs that already
+have visual content, including non-contiguous pilot words. `--limit 20` therefore
+means 20 unfinished words; the ending queue position may extend beyond
+`start + 19`. Pass `--include-completed` only when inspecting the raw queue range.
+
+The publishing script validates every manifest item against this queue. Pass
+`--verify-remote` for a dry-run production check; `--publish` performs the same
+single read automatically before any upload or D1 write. Both checks validate the
+whole current batch in one SQL query rather than querying each word separately.
+
 ### Verification policy
 
 Keep inexpensive automated verification exhaustive:
 
 - all source files have the expected count, dimensions, format, and manifest entry
-- every manifest item matches its production vocabulary ID, word, and meaning
+- every manifest item matches the local queue's vocabulary ID, word, and meaning
+- immediately before publishing, every current-batch item matches production D1
+  in one read query
 - every published object key is present in the exact R2 inventory with no extras
 - D1 reports the expected number of changes and preserves valid example/visual references
 

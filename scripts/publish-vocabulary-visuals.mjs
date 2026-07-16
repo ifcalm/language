@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
+import { createRequire } from 'node:module'
 import {
   existsSync,
   mkdirSync,
@@ -9,11 +10,35 @@ import {
 } from 'node:fs'
 import { basename, extname, join, resolve } from 'node:path'
 import sharp from 'sharp'
+import { queryRemoteD1, sqlString as remoteSqlString } from './lib/d1-query.mjs'
+import {
+  DEFAULT_VOCABULARY_VISUAL_QUEUE,
+  loadVocabularyVisualQueue,
+  validateManifestAgainstQueue,
+  validateRemoteManifestRows,
+} from './lib/vocabulary-visual-queue.mjs'
 
 const rawArgs = process.argv.slice(2)
 const args = new Set(rawArgs)
 const publish = args.has('--publish')
+const verifyRemote = publish || args.has('--verify-remote')
 const root = process.cwd()
+const require = createRequire(import.meta.url)
+const wranglerCliPath = require.resolve('wrangler/bin/wrangler.js')
+const wranglerTimeoutMs = Number(
+  process.env.VOCABULARY_VISUAL_WRANGLER_TIMEOUT_MS ?? '120000',
+)
+const r2UploadAttempts = Number(
+  process.env.VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS ?? '2',
+)
+
+if (!Number.isInteger(wranglerTimeoutMs) || wranglerTimeoutMs < 1000) {
+  throw new Error('VOCABULARY_VISUAL_WRANGLER_TIMEOUT_MS must be at least 1000.')
+}
+
+if (!Number.isInteger(r2UploadAttempts) || r2UploadAttempts < 1) {
+  throw new Error('VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS must be positive.')
+}
 
 function getArgValue(name, fallback) {
   const index = rawArgs.indexOf(name)
@@ -45,7 +70,10 @@ const preparedDir = resolve(
   root,
   getArgValue('--prepared-dir', 'tmp/vocabulary-visuals/pilot-30'),
 )
+const queuePath = getArgValue('--queue', DEFAULT_VOCABULARY_VISUAL_QUEUE)
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
+const { queue } = loadVocabularyVisualQueue(queuePath)
+const queueRange = validateManifestAgainstQueue(manifest, queue)
 const supportedExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp'])
 
 function sql(value) {
@@ -67,6 +95,42 @@ function findSourceFile(word) {
   }
 
   return join(sourceDir, match)
+}
+
+function runWrangler(wranglerArgs, label, attempts = 1) {
+  let lastError = null
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      execFileSync(process.execPath, [wranglerCliPath, ...wranglerArgs], {
+        stdio: 'inherit',
+        timeout: wranglerTimeoutMs,
+        killSignal: 'SIGTERM',
+      })
+      return
+    } catch (error) {
+      lastError = error
+
+      if (attempt < attempts) {
+        console.warn(`${label} attempt ${attempt} failed; retrying.`)
+      }
+    }
+  }
+
+  throw lastError
+}
+
+if (verifyRemote) {
+  const remoteRows = queryRemoteD1(`SELECT id, word, meaning_zh
+FROM vocab
+WHERE id IN (${manifest.items
+    .map((item) => remoteSqlString(item.vocabularyId))
+    .join(', ')});`)
+
+  validateRemoteManifestRows(manifest, remoteRows)
+  console.log(
+    `Remote D1 validation: ${remoteRows.length} items matched with one query.`,
+  )
 }
 
 if (!existsSync(sourceDir)) {
@@ -155,10 +219,8 @@ if (publish) {
   }
 
   for (const item of publishedItems) {
-    execFileSync(
-      'npx',
+    runWrangler(
       [
-        'wrangler',
         'r2',
         'object',
         'put',
@@ -171,14 +233,13 @@ if (publish) {
         '--cache-control',
         'public, max-age=31536000, immutable',
       ],
-      { stdio: 'inherit' },
+      `R2 upload for ${item.word}`,
+      r2UploadAttempts,
     )
   }
 
-  execFileSync(
-    'npx',
+  runWrangler(
     [
-      'wrangler',
       'r2',
       'object',
       'put',
@@ -189,13 +250,12 @@ if (publish) {
       '--content-type',
       'application/json',
     ],
-    { stdio: 'inherit' },
+    'R2 manifest upload',
+    r2UploadAttempts,
   )
 
-  execFileSync(
-    'npx',
+  runWrangler(
     [
-      'wrangler',
       'd1',
       'execute',
       'english-orbit-db',
@@ -203,12 +263,17 @@ if (publish) {
       '--file',
       sqlPath,
     ],
-    { stdio: 'inherit' },
+    'D1 import',
   )
 }
 
 console.log(
   `${publish ? 'Published' : 'Prepared'} ${publishedItems.length} vocabulary visuals.`,
+)
+console.log(
+  queueRange.contiguous
+    ? `Local queue validation: positions ${queueRange.start}-${queueRange.end}.`
+    : `Local queue validation: ${queueRange.positions.length} selected positions matched.`,
 )
 console.log(`Manifest: ${publishedManifestPath}`)
 console.log(`SQL: ${sqlPath}`)

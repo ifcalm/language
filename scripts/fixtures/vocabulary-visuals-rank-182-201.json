@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-182-201-2026-07-16",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "cc35e13d-c040-423e-9489-013c01886b10",
+      "word": "government",
+      "meaningZh": "政府；治理；政体",
+      "exampleId": "cc35e13d-c040-423e-9489-013c01886b10-visual-ex",
+      "styleFamily": "screen-print civic-service illustration",
+      "sentenceEn": "The local government opened a cooling center during the heat wave.",
+      "sentenceZh": "当地政府在热浪期间开放了一处避暑中心。",
+      "scene": "A public community hall has been converted into a cooling center during intense summer heat. Civic workers distribute water and guide older adults and families into a shaded, fan-cooled space while a municipal building stands nearby. No signs, flags with writing or readable text. All readable faces have complete natural features and calm, helpful expressions.",
+      "altText": "热浪中，政府工作人员在社区避暑中心为居民提供饮水和降温帮助。"
+    },
+    {
+      "vocabularyId": "03fb0385-0520-43c9-8b6f-03ec19677a1e",
+      "word": "run",
+      "meaningZh": "跑步；运行；经营；管理；流淌",
+      "exampleId": "03fb0385-0520-43c9-8b6f-03ec19677a1e-visual-ex",
+      "styleFamily": "layered translucent-paper winter stream",
+      "sentenceEn": "The mountain stream continued to run beneath the winter ice.",
+      "sentenceZh": "山间溪流在冬季冰层下继续流淌。",
+      "scene": "A cutaway view of a snowy mountain stream shows still white ice on the surface and a clearly flowing ribbon of blue water beneath it. Pebbles, water plants and small fish bend with the current, making continuous movement under the frozen surface unmistakable.",
+      "altText": "冰封的山间溪流下方，蓝色水流仍绕过石头持续流淌。"
+    },
+    {
+      "vocabularyId": "031ae5d9-ef2f-467b-91dc-d1ed125f5411",
+      "word": "small",
+      "meaningZh": "小的；少的；小型的",
+      "exampleId": "031ae5d9-ef2f-467b-91dc-d1ed125f5411-visual-ex",
+      "styleFamily": "handcrafted felt tidal-pool story",
+      "sentenceEn": "A small hermit crab found shelter inside a tiny empty shell.",
+      "sentenceZh": "一只小寄居蟹在一枚小小的空贝壳里找到了住处。",
+      "scene": "At the edge of a tidal pool, one visibly small hermit crab settles into a tiny empty spiral shell. Larger shells, broad rocks and tall sea grass nearby provide a clear scale comparison while the crab remains the focal subject.",
+      "altText": "潮池边，一只小寄居蟹钻进小贝壳，周围的岩石和贝壳显得更大。"
+    },
+    {
+      "vocabularyId": "3a7f8be8-e13a-467e-b361-6cdc72b0b225",
+      "word": "number",
+      "meaningZh": "数字；号码；数量；编号",
+      "exampleId": "3a7f8be8-e13a-467e-b361-6cdc72b0b225-visual-ex",
+      "styleFamily": "two-season Risograph firefly wetland",
+      "sentenceEn": "The number of fireflies increased after the wetland recovered.",
+      "sentenceZh": "湿地恢复后，萤火虫的数量增加了。",
+      "scene": "A single continuous wetland scene transitions from a sparse damaged edge with only two fireflies to a lush restored area glowing with many fireflies. The contrast in quantity is immediate, with no numerals, labels, chart marks or dividing text.",
+      "altText": "湿地从受损变得繁茂，出现的萤火虫也从两只增加到许多只。"
+    },
+    {
+      "vocabularyId": "9bbc85f7-b731-4d8b-8092-4bd89e5edc20",
+      "word": "off",
+      "meaningZh": "关掉；离开；脱落；休息；折扣",
+      "exampleId": "9bbc85f7-b731-4d8b-8092-4bd89e5edc20-visual-ex",
+      "styleFamily": "dawn graphic-novel lighthouse",
+      "sentenceEn": "The lighthouse keeper switched the lamp off after sunrise.",
+      "sentenceZh": "日出后，灯塔守护员关掉了灯。",
+      "scene": "Inside the lantern room just after sunrise, a lighthouse keeper presses a sturdy wall switch downward while the large beacon behind them is visibly dark. Bright natural sunlight now fills the sea outside. The readable face has complete features and a quietly satisfied expression; no labels or text appear on the switch.",
+      "altText": "日出照亮海面后，灯塔守护员按下开关，灯塔主灯已经熄灭。"
+    },
+    {
+      "vocabularyId": "85cd908d-5e82-4ec7-811f-9dcaa0040030",
+      "word": "always",
+      "meaningZh": "总是；始终",
+      "exampleId": "85cd908d-5e82-4ec7-811f-9dcaa0040030-visual-ex",
+      "styleFamily": "four-season embroidered bakery facade",
+      "sentenceEn": "The bakery always lit its warm window before the town woke.",
+      "sentenceZh": "这家面包店总会在小镇醒来前点亮温暖的橱窗。",
+      "scene": "Four connected seasonal views show the same recognizable bakery window glowing warmly before dawn in spring rain, summer mist, autumn leaves and winter snow. The surrounding town remains dark in every view, expressing a repeated dependable habit without clocks, captions or text.",
+      "altText": "春夏秋冬的黎明前，同一家面包店总是最先亮起温暖的橱窗。"
+    },
+    {
+      "vocabularyId": "eff000e4-96d4-47bc-b3f7-2b27ccc44c30",
+      "word": "move",
+      "meaningZh": "移动；搬家；感动；行动",
+      "exampleId": "eff000e4-96d4-47bc-b3f7-2b27ccc44c30-visual-ex",
+      "styleFamily": "stop-motion clay ant teamwork",
+      "sentenceEn": "The ants worked together to move a fallen berry across the path.",
+      "sentenceZh": "蚂蚁们齐心协力，把掉落的浆果搬过小路。",
+      "scene": "A coordinated line of ants pushes and pulls one large fallen berry across a woodland path. The berry is visibly shifting from a small indentation behind it toward the nest side, with dynamic leg positions and a few loose grains showing movement.",
+      "altText": "一群蚂蚁共同推拉一颗大浆果，让它穿过林间小路。"
+    },
+    {
+      "vocabularyId": "dc6dbd7a-df96-4759-af91-f8f35922b583",
+      "word": "night",
+      "meaningZh": "夜晚；晚上；夜间",
+      "exampleId": "dc6dbd7a-df96-4759-af91-f8f35922b583-visual-ex",
+      "styleFamily": "luminous ink-and-watercolor moon garden",
+      "sentenceEn": "At night, moonflowers opened and welcomed pale moths.",
+      "sentenceZh": "夜晚，月光花开放，吸引来浅色的飞蛾。",
+      "scene": "Under a deep indigo sky, a crescent moon and stars illuminate white moonflowers opening among dark leaves while several pale moths hover and feed. Cool moonlight, long shadows and sleeping daytime flowers establish night clearly.",
+      "altText": "深蓝夜空下，月光花在月色中开放，浅色飞蛾围绕花朵飞舞。"
+    },
+    {
+      "vocabularyId": "39fd9cdf-fa0b-4d93-966f-0df63348c1c1",
+      "word": "live",
+      "meaningZh": "居住；生活；活着的；直播的",
+      "exampleId": "39fd9cdf-fa0b-4d93-966f-0df63348c1c1-visual-ex",
+      "styleFamily": "stained-glass coral reef illustration",
+      "sentenceEn": "Many young fish live among the branches of a healthy coral reef.",
+      "sentenceZh": "许多幼鱼生活在健康珊瑚礁的枝杈之间。",
+      "scene": "A thriving coral reef forms a layered underwater home where many young fish shelter, feed and weave between branching corals. Sea fans, anemones and clean sunlit water make the habitat feel active and alive rather than decorative.",
+      "altText": "健康珊瑚礁中，许多幼鱼在珊瑚枝杈间栖息、觅食和游动。"
+    },
+    {
+      "vocabularyId": "ce8b9eb1-0494-42c7-af8f-1d9225fcff99",
+      "word": "Mr",
+      "meaningZh": "先生",
+      "exampleId": "ce8b9eb1-0494-42c7-af8f-1d9225fcff99-visual-ex",
+      "styleFamily": "warm woodcut neighborhood repair",
+      "sentenceEn": "Mr Chen repaired his neighbor's broken gate before the storm.",
+      "sentenceZh": "陈先生在暴风雨来临前修好了邻居坏掉的院门。",
+      "scene": "An adult man named Mr Chen carefully secures a repaired wooden gate while an appreciative neighbor holds the gate steady and storm clouds approach in the distance. Both readable faces have complete natural features and friendly, focused expressions. No nameplates, signs or readable text.",
+      "altText": "暴风雨将至，陈先生和邻居一起把损坏的木门修好并固定牢靠。"
+    },
+    {
+      "vocabularyId": "91f94b7a-2305-4e1f-a6b3-1da0d441f84e",
+      "word": "point",
+      "meaningZh": "要点；观点；点；指向；得分",
+      "exampleId": "91f94b7a-2305-4e1f-a6b3-1da0d441f84e-visual-ex",
+      "styleFamily": "clean-line alpine expedition animation",
+      "sentenceEn": "The guide used a walking stick to point toward the safe trail.",
+      "sentenceZh": "向导用手杖指向安全的小路。",
+      "scene": "At a fork in an alpine trail, an experienced guide extends a walking stick so its tip clearly points toward a stable path with a bridge, while the other route ends near loose rock. Two hikers follow the direction. All readable faces have complete features and attentive expressions; no arrows or signs.",
+      "altText": "山路岔口处，向导用手杖清楚地指向有桥可通行的安全路线。"
+    },
+    {
+      "vocabularyId": "43044bda-781b-4aaf-97cc-252ae5bcc815",
+      "word": "believe",
+      "meaningZh": "相信；认为",
+      "exampleId": "43044bda-781b-4aaf-97cc-252ae5bcc815-visual-ex",
+      "styleFamily": "hopeful gouache orchard renewal",
+      "sentenceEn": "Mara chose to believe the damaged orchard could bloom again.",
+      "sentenceZh": "玛拉选择相信，受损的果园能够再次开花。",
+      "scene": "After a harsh storm, an adult orchard keeper gently supports a damaged young fruit tree, waters its roots and notices one fresh bud among broken branches. Repaired tree guards and newly planted saplings extend behind her. Her readable face has complete features and a hopeful but grounded expression.",
+      "altText": "风暴后的果园里，玛拉扶正受损果树，并看见枝头长出一枚新芽。"
+    },
+    {
+      "vocabularyId": "02dedf47-d20d-41b7-8daf-8ced70c3f742",
+      "word": "hold",
+      "meaningZh": "握住；持有；举行；保持；容纳",
+      "exampleId": "02dedf47-d20d-41b7-8daf-8ced70c3f742-visual-ex",
+      "styleFamily": "editorial 3D marine-rescue illustration",
+      "sentenceEn": "The strong rescue sling can hold the injured seal safely.",
+      "sentenceZh": "结实的救援吊带能够安全托住受伤的海豹。",
+      "scene": "A wide padded rescue sling fully supports an injured seal above a transport cradle while two wildlife responders guide the sling carefully from opposite sides. The fabric visibly bears the animal's weight without squeezing it. All readable faces have complete natural features and calm, concentrated expressions; avoid glossy toy rendering.",
+      "altText": "宽大的救援吊带稳稳托住受伤海豹，两名救援人员在旁谨慎引导。"
+    },
+    {
+      "vocabularyId": "b67a8a24-6978-428e-af69-64d47ab6cbf6",
+      "word": "today",
+      "meaningZh": "今天；当今",
+      "exampleId": "b67a8a24-6978-428e-af69-64d47ab6cbf6-visual-ex",
+      "styleFamily": "delicate watercolor monarch emergence",
+      "sentenceEn": "The first monarch butterfly emerged from its chrysalis today.",
+      "sentenceZh": "今天，第一只帝王蝶从蛹中羽化而出。",
+      "scene": "In fresh morning light, a newly emerged monarch butterfly hangs beside its split chrysalis while its still-soft wings slowly expand. Dew remains on nearby milkweed and other intact chrysalises have not opened, making this morning's new event the focal point.",
+      "altText": "清晨，一只帝王蝶刚从裂开的蛹中出来，湿润翅膀正在慢慢展开。"
+    },
+    {
+      "vocabularyId": "3fab4bcc-63ee-4841-bf5b-3d87af05c181",
+      "word": "bring",
+      "meaningZh": "带来；引起；促使；提出",
+      "exampleId": "3fab4bcc-63ee-4841-bf5b-3d87af05c181-visual-ex",
+      "styleFamily": "macro layered-paper honeybee journey",
+      "sentenceEn": "Worker bees bring fresh pollen from the orchard to their hive.",
+      "sentenceZh": "工蜂把果园里的新鲜花粉带回蜂巢。",
+      "scene": "Several worker bees fly from flowering orchard branches toward an open hive entrance, with bright pollen baskets clearly visible on their hind legs. One bee is just arriving beside waiting hive mates, making the carried material and destination easy to read.",
+      "altText": "工蜂腿上带着鲜明花粉团，从开花的果园飞回蜂巢入口。"
+    },
+    {
+      "vocabularyId": "577a0af1-f8e4-405b-a4c1-b437e5f206ea",
+      "word": "happen",
+      "meaningZh": "发生；碰巧；偶然",
+      "exampleId": "577a0af1-f8e4-405b-a4c1-b437e5f206ea-visual-ex",
+      "styleFamily": "bold linocut pavement transformation",
+      "sentenceEn": "Unexpected things can happen when a seed finds a crack in the pavement.",
+      "sentenceZh": "当一粒种子落进路面裂缝时，意想不到的事情可能发生。",
+      "scene": "A small seed has landed by chance in a narrow pavement crack and grown into a vivid flowering plant that lifts the broken edges slightly. The surrounding hard gray surface is empty, making the unlikely living event unmistakable without symbols or text.",
+      "altText": "一粒种子偶然落进路面裂缝，后来从坚硬地面中长成了开花植物。"
+    },
+    {
+      "vocabularyId": "48f361e5-f52c-4d1c-bc54-300bbbcb44f6",
+      "word": "next",
+      "meaningZh": "下一个；紧接着；其次",
+      "exampleId": "48f361e5-f52c-4d1c-bc54-300bbbcb44f6-visual-ex",
+      "styleFamily": "painterly storybook duckling sequence",
+      "sentenceEn": "The next duckling waited while its sibling crossed the narrow log.",
+      "sentenceZh": "前一只小鸭穿过窄木头时，下一只在后面等待。",
+      "scene": "One duckling is halfway across a narrow log over a shallow stream while a second duckling waits directly behind at the starting edge, clearly next in order. A parent duck watches from the bank. No arrows, numbers, queue markers or text.",
+      "altText": "一只小鸭正在过独木，下一只紧跟在起点等待轮到自己。"
+    },
+    {
+      "vocabularyId": "afff6809-996e-48cd-8a93-c8a3870083fa",
+      "word": "without",
+      "meaningZh": "没有；无",
+      "exampleId": "afff6809-996e-48cd-8a93-c8a3870083fa-visual-ex",
+      "styleFamily": "botanical screen-print desert baobab",
+      "sentenceEn": "The desert tree survived for months without rain by storing water in its trunk.",
+      "sentenceZh": "这棵沙漠树把水储存在树干里，数月无雨仍能存活。",
+      "scene": "A sturdy desert tree with a swollen water-storing trunk remains green beneath a cloudless sky, surrounded by cracked dry earth and dormant grasses. Faint old water marks lie far below the current dry ground, and no rain or puddles are present.",
+      "altText": "长期无雨的干裂土地上，一棵粗壮树木依靠储水树干保持绿色。"
+    },
+    {
+      "vocabularyId": "48b34e23-cb7e-4da6-8b50-b371253a240e",
+      "word": "before",
+      "meaningZh": "在...之前；以前",
+      "exampleId": "48b34e23-cb7e-4da6-8b50-b371253a240e-visual-ex",
+      "styleFamily": "moody pastel swallows-before-storm",
+      "sentenceEn": "Before the storm arrived, the swallows gathered beneath the old bridge.",
+      "sentenceZh": "暴风雨到来之前，燕子聚集到了老桥下。",
+      "scene": "Many swallows are already settling beneath a stone bridge while a dark storm front approaches across the distant valley but has not reached them. The foreground remains dry and softly lit, with wind beginning to bend grasses, clearly showing the moment before the storm.",
+      "altText": "暴风雨仍在远处逼近，燕子已经提前聚集到尚且干燥的老桥下。"
+    },
+    {
+      "vocabularyId": "18d33ae2-89b0-4f99-9acb-0734b59fb7ce",
+      "word": "large",
+      "meaningZh": "大的；大量的；大规模的",
+      "exampleId": "18d33ae2-89b0-4f99-9acb-0734b59fb7ce-visual-ex",
+      "styleFamily": "hand-painted ocean animation",
+      "sentenceEn": "A large whale guided its calf through the narrow channel.",
+      "sentenceZh": "一头大鲸带着幼鲸穿过狭窄的水道。",
+      "scene": "A very large adult whale moves carefully through a narrow blue channel with a much smaller calf close beside it. Rocky banks and tiny seabirds provide scale while the adult's protective position and immense body size remain the focus.",
+      "altText": "体型庞大的成年鲸护着小幼鲸，缓慢穿过两侧岩岸之间的狭窄水道。"
+    }
+  ]
+}

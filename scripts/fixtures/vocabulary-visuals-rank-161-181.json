@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-161-181-2026-07-16",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7f884613-2964-47d0-8d8c-06b77d7e9250",
+      "word": "hand",
+      "meaningZh": "手；帮助；递；交付",
+      "exampleId": "7f884613-2964-47d0-8d8c-06b77d7e9250-visual-ex",
+      "styleFamily": "earthy gouache pottery workshop",
+      "sentenceEn": "The potter shaped each bowl by hand for the community kitchen.",
+      "sentenceZh": "陶艺师亲手为社区厨房制作每一只碗。",
+      "scene": "A skilled adult potter uses both bare hands to shape a clay bowl on a slowly turning wheel, with several finished matching bowls ready for a community kitchen. Fingers pressing and supporting the wet clay are the clear focal action. The readable face has complete natural features and a calm, absorbed expression.",
+      "altText": "陶艺师用双手在转盘上塑造陶碗，旁边摆着已经完成的碗。"
+    },
+    {
+      "vocabularyId": "d47d6731-1c47-4b4e-8c7e-8b3238ccbc3a",
+      "word": "might",
+      "meaningZh": "可能；也许；可以；力量",
+      "exampleId": "d47d6731-1c47-4b4e-8c7e-8b3238ccbc3a-visual-ex",
+      "styleFamily": "luminous pastel sea-turtle dawn",
+      "sentenceEn": "The last sea turtle egg might hatch when the morning sand grows warm.",
+      "sentenceZh": "当清晨的沙子变暖时，最后一枚海龟蛋也许会孵化。",
+      "scene": "At dawn on a protected beach, one final sea turtle egg remains in an open nest while the surrounding shells are already empty. A hairline crack has only just appeared as sunlight approaches, preserving uncertainty about whether hatching will happen.",
+      "altText": "清晨的海龟巢中只剩一枚带细小裂纹的蛋，或许即将孵化。"
+    },
+    {
+      "vocabularyId": "343e522d-ab68-4396-a6be-810065bec533",
+      "word": "American",
+      "meaningZh": "美国的；美国人",
+      "exampleId": "343e522d-ab68-4396-a6be-810065bec533-visual-ex",
+      "styleFamily": "retro-futurist lunar greenhouse poster",
+      "sentenceEn": "The American astronaut planted the first seed in the lunar greenhouse.",
+      "sentenceZh": "这位美国宇航员在月球温室里种下了第一颗种子。",
+      "scene": "Inside a lunar greenhouse, an astronaut carefully plants one seed in a small soil tray while Earth hangs above the moon outside. A clear but modest United States flag patch on the suit establishes nationality without words; the astronaut's face is visible through the helmet with complete natural features.",
+      "altText": "佩戴美国国旗臂章的宇航员在月球温室中种下第一颗种子。"
+    },
+    {
+      "vocabularyId": "e7fcd0fc-cbf3-4aa9-8b81-50d9299e7e9b",
+      "word": "show",
+      "meaningZh": "展示；显示；表明；演出；节目",
+      "exampleId": "e7fcd0fc-cbf3-4aa9-8b81-50d9299e7e9b-visual-ex",
+      "styleFamily": "silk-watercolor clear mountain pool",
+      "sentenceEn": "As the mud settled, the clear water began to show the stones below.",
+      "sentenceZh": "泥沙沉淀后，清澈的水开始显露出下方的石头。",
+      "scene": "A mountain pool transitions naturally from faint cloudy sediment at one edge to clear still water across most of the scene, revealing smooth colorful stones and tiny aquatic plants on the bottom. The newly visible details make the act of showing concrete.",
+      "altText": "泥沙逐渐沉淀，变清的池水显露出水底的石头和水草。"
+    },
+    {
+      "vocabularyId": "6fef8b86-5b79-4e7a-b56d-3e40c9f83c7c",
+      "word": "part",
+      "meaningZh": "部分；角色；零件；参与；分开",
+      "exampleId": "6fef8b86-5b79-4e7a-b56d-3e40c9f83c7c-visual-ex",
+      "styleFamily": "mechanical cutaway colored-pencil illustration",
+      "sentenceEn": "A small brass gear was the final part needed to repair the village water pump.",
+      "sentenceZh": "一只小黄铜齿轮是修好村庄水泵所需的最后一个零件。",
+      "scene": "A cutaway village water pump shows one clearly empty gear position inside the larger mechanism. A mechanic holds the matching small brass gear just before fitting it into place, while the other connected parts remain assembled. The readable face has complete features and a focused expression.",
+      "altText": "机械师拿着最后一只小黄铜齿轮，准备装入水泵内部的空位。"
+    },
+    {
+      "vocabularyId": "8f05825e-04b4-428c-b353-796cdf5c0c37",
+      "word": "against",
+      "meaningZh": "反对；靠着；对抗",
+      "exampleId": "8f05825e-04b4-428c-b353-796cdf5c0c37-visual-ex",
+      "styleFamily": "windy embroidered orchard scene",
+      "sentenceEn": "The young tree leaned against a strong wooden support during the wind.",
+      "sentenceZh": "刮风时，这棵小树靠在坚固的木支架上。",
+      "scene": "In a windy orchard, one flexible young tree presses visibly against a sturdy angled wooden support tied gently to its trunk. Leaves and grass bend with the wind while the support prevents the tree from falling.",
+      "altText": "大风中，一棵小树紧靠木支架保持直立。"
+    },
+    {
+      "vocabularyId": "2f49d661-8b0d-465a-979d-8a2222a2bcc9",
+      "word": "place",
+      "meaningZh": "地方；位置；放置；安置",
+      "exampleId": "2f49d661-8b0d-465a-979d-8a2222a2bcc9-visual-ex",
+      "styleFamily": "layered-paper migratory wetland sanctuary",
+      "sentenceEn": "The restored wetland became a safe place for migrating birds to rest.",
+      "sentenceZh": "修复后的湿地成了迁徙鸟类安全休息的地方。",
+      "scene": "A broad restored wetland offers calm shallow water, reed islands and sheltered banks where several migrating bird species rest, feed and preen. A stormy open coast is visible far behind, emphasizing this specific protected place.",
+      "altText": "迁徙鸟类在修复后的湿地浅水和芦苇岛间安全休息。"
+    },
+    {
+      "vocabularyId": "9934a2a7-f05c-4827-af5b-cf3afe00b291",
+      "word": "such",
+      "meaningZh": "如此的；这样的",
+      "exampleId": "9934a2a7-f05c-4827-af5b-cf3afe00b291-visual-ex",
+      "styleFamily": "botanical Risograph pond biodiversity",
+      "sentenceEn": "Animals such as frogs and dragonflies returned to the restored pond.",
+      "sentenceZh": "青蛙和蜻蜓等动物回到了修复后的池塘。",
+      "scene": "A healthy restored pond clearly features frogs and dragonflies as prominent examples among a broader returning community that includes fish, snails and water birds. The two named kinds remain visually central without labels or diagrams.",
+      "altText": "修复后的池塘里，青蛙和蜻蜓等多种动物重新出现。"
+    },
+    {
+      "vocabularyId": "5a4bcf5a-61b5-475c-a4e9-89c6017c4667",
+      "word": "again",
+      "meaningZh": "再一次；又",
+      "exampleId": "5a4bcf5a-61b5-475c-a4e9-89c6017c4667-visual-ex",
+      "styleFamily": "ceramic-mosaic seasonal waterfall",
+      "sentenceEn": "After the spring rain, water flowed over the dry waterfall again.",
+      "sentenceZh": "春雨过后，水流再次越过干涸的瀑布。",
+      "scene": "Fresh spring water cascades over a weathered waterfall whose pale dry mineral lines still show the long period without flow. New pools, wet rock and emerging plants make the return of a previously absent flow unmistakable.",
+      "altText": "春雨让长期干涸的瀑布重新流淌，水流越过仍留有干燥痕迹的岩壁。"
+    },
+    {
+      "vocabularyId": "090bf064-8e76-4a22-8451-0179f3362769",
+      "word": "few",
+      "meaningZh": "很少的；少数的",
+      "exampleId": "090bf064-8e76-4a22-8451-0179f3362769-visual-ex",
+      "styleFamily": "delicate botanical paper-cut meadow",
+      "sentenceEn": "A few early crocuses opened while the rest of the meadow remained in bud.",
+      "sentenceZh": "少数早开的番红花已经绽放，而草地上其余花朵仍是花苞。",
+      "scene": "Exactly three open crocus flowers stand together in the foreground of a meadow filled with many closed buds. The small open minority and much larger unopened remainder are easy to compare.",
+      "altText": "草地上只有三朵番红花开放，周围许多花朵仍紧闭着花苞。"
+    },
+    {
+      "vocabularyId": "a1b2e5e4-30d8-440d-9fa5-d6200e691216",
+      "word": "case",
+      "meaningZh": "情况；案例；箱子；病例",
+      "exampleId": "a1b2e5e4-30d8-440d-9fa5-d6200e691216-visual-ex",
+      "styleFamily": "warm woodcut chamber-music scene",
+      "sentenceEn": "The violinist returned the instrument to its case after the concert.",
+      "sentenceZh": "音乐会结束后，小提琴手把乐器放回琴盒。",
+      "scene": "After a small concert, an adult violinist gently lowers a violin into its fitted open hard case lined with soft fabric. Empty chairs and resting music stands establish that the performance has ended. The readable face has complete features and a careful expression.",
+      "altText": "演出结束后，小提琴手正把小提琴放进形状吻合的琴盒中。"
+    },
+    {
+      "vocabularyId": "30f43d2b-83ac-470c-a021-5a5fbd5cba1d",
+      "word": "week",
+      "meaningZh": "星期；周",
+      "exampleId": "30f43d2b-83ac-470c-a021-5a5fbd5cba1d-visual-ex",
+      "styleFamily": "seven-stage watercolor bean growth",
+      "sentenceEn": "In one week, the bean sprout grew tall enough to reach the support string.",
+      "sentenceZh": "一周之内，豆苗长高到能够触及支撑绳。",
+      "scene": "A continuous botanical time-lapse presents exactly seven successive stages of the same bean plant, from a tiny emerging sprout to a taller vine touching a support string. Seven changing bands of daylight subtly separate the stages without numbers or labels.",
+      "altText": "同一株豆苗经过七个连续生长阶段，在一周内长到支撑绳的位置。"
+    },
+    {
+      "vocabularyId": "93688956-8e36-4a53-babe-3cb4ec0dffde",
+      "word": "company",
+      "meaningZh": "公司；陪伴；同伴",
+      "exampleId": "93688956-8e36-4a53-babe-3cb4ec0dffde-visual-ex",
+      "styleFamily": "soft-pastel winter stable illustration",
+      "sentenceEn": "The old horse enjoyed the goat's company during the quiet winter.",
+      "sentenceZh": "安静的冬季里，老马很享受山羊的陪伴。",
+      "scene": "Inside a warm winter stable, an elderly horse rests comfortably beside one friendly goat. They share hay, lean gently toward each other and look relaxed, while snow falls outside the open upper doorway.",
+      "altText": "冬日马厩里，老马和山羊靠在一起分享干草、彼此陪伴。"
+    },
+    {
+      "vocabularyId": "163cc0c2-5d44-4131-a9f9-1744b439d213",
+      "word": "each",
+      "meaningZh": "每个；每一",
+      "exampleId": "163cc0c2-5d44-4131-a9f9-1744b439d213-visual-ex",
+      "styleFamily": "hand-painted ceramic bird sanctuary",
+      "sentenceEn": "Each rescued bird received its own shallow bowl of water.",
+      "sentenceZh": "每只获救的鸟都得到了一只自己的浅水碗。",
+      "scene": "Exactly four recovering birds rest in separate adjacent sanctuary spaces, and each bird has exactly one shallow water bowl directly in front of it. Four birds and four bowls form clear one-to-one pairs, with no extra birds or bowls.",
+      "altText": "四只获救的鸟各自面前都有一只浅水碗，形成清楚的一一对应。"
+    },
+    {
+      "vocabularyId": "b77cc1a5-e309-4192-a72b-436d5cb3cc34",
+      "word": "right",
+      "meaningZh": "正确的；右边；权利；正好；恰好",
+      "exampleId": "b77cc1a5-e309-4192-a72b-436d5cb3cc34-visual-ex",
+      "styleFamily": "precise marquetry bridge-repair illustration",
+      "sentenceEn": "The final wooden piece was the right shape to complete the footbridge.",
+      "sentenceZh": "最后一块木料的形状正好能补全这座人行桥。",
+      "scene": "A craftsperson fits one uniquely shaped wooden piece perfectly into the final matching gap of a patterned footbridge deck. Several rejected pieces of clearly different shapes remain off to the side. The readable face has complete natural features and a satisfied, attentive expression.",
+      "altText": "工匠把形状正合适的最后一块木料嵌入人行桥桥面的缺口。"
+    },
+    {
+      "vocabularyId": "963adb94-65e0-418c-9914-d803960e4f9b",
+      "word": "program",
+      "meaningZh": "程序；节目；计划；项目",
+      "exampleId": "963adb94-65e0-418c-9914-d803960e4f9b-visual-ex",
+      "styleFamily": "isometric eco-technology greenhouse",
+      "sentenceEn": "A small program monitored the greenhouse and opened the vents before it overheated.",
+      "sentenceZh": "一个小程序监测温室，并在过热前自动打开通风口。",
+      "scene": "An isometric greenhouse shows temperature sensors connected to a compact control computer while roof vents are opening and hot air escapes. Healthy plants remain protected below. The software's effect is visible through the connected monitoring system without readable screens or code.",
+      "altText": "温室监控程序连接传感器并自动打开顶部通风口，帮助植物避免过热。"
+    },
+    {
+      "vocabularyId": "53374a8a-489d-43f6-a6b2-1102cac786a4",
+      "word": "hear",
+      "meaningZh": "听到；听见；听说",
+      "exampleId": "53374a8a-489d-43f6-a6b2-1102cac786a4-visual-ex",
+      "styleFamily": "intimate graphic-novel clock workshop",
+      "sentenceEn": "The watchmaker leaned closer to hear the faint click inside the repaired clock.",
+      "sentenceZh": "钟表匠靠近一些，听修好的钟表内部微弱的咔嗒声。",
+      "scene": "In a quiet clock workshop, an older watchmaker turns one ear close to an open repaired clock while holding perfectly still. A tiny moving escapement and the person's listening posture make the act of hearing central. The readable face has complete features and a concentrated expression.",
+      "altText": "钟表匠把耳朵靠近打开的钟表，专注聆听机芯的微弱声响。"
+    },
+    {
+      "vocabularyId": "9dc1b7fe-6f81-49a9-b103-1e485b9d0fc8",
+      "word": "question",
+      "meaningZh": "问题；疑问；质疑",
+      "exampleId": "9dc1b7fe-6f81-49a9-b103-1e485b9d0fc8-visual-ex",
+      "styleFamily": "clean-line science-class animation",
+      "sentenceEn": "The student raised her hand with a question before the experiment began.",
+      "sentenceZh": "实验开始前，这名学生举手提出了一个问题。",
+      "scene": "In a science workshop before any equipment is activated, an adult student raises one hand and looks toward the instructor while classmates pause and listen. The student's readable face has complete natural features and a curious expression; no question mark, text or speech bubble appears.",
+      "altText": "实验尚未开始，一名学生举手看向老师，准备提出疑问。"
+    },
+    {
+      "vocabularyId": "9084c6d1-9649-4e28-91ee-064026fc3151",
+      "word": "during",
+      "meaningZh": "在...期间",
+      "exampleId": "9084c6d1-9649-4e28-91ee-064026fc3151-visual-ex",
+      "styleFamily": "storm-lit woven greenhouse shelter",
+      "sentenceEn": "The seedlings stayed covered during the hailstorm.",
+      "sentenceZh": "冰雹期间，幼苗一直被保护罩覆盖着。",
+      "scene": "Hailstones are actively striking a garden while a row of delicate seedlings remains continuously covered beneath one sturdy translucent protective tunnel. The storm and ongoing protection are visible at the same time.",
+      "altText": "冰雹正在落下，脆弱幼苗始终处在坚固透明保护罩下。"
+    },
+    {
+      "vocabularyId": "ebb12c32-1a5b-435c-b6e9-6624d001b6ba",
+      "word": "play",
+      "meaningZh": "玩；播放；扮演；演奏；比赛",
+      "exampleId": "ebb12c32-1a5b-435c-b6e9-6624d001b6ba-visual-ex",
+      "styleFamily": "joyful hand-drawn dolphin animation",
+      "sentenceEn": "The young dolphins returned to play in the clean bay.",
+      "sentenceZh": "小海豚们回到清洁的海湾里玩耍。",
+      "scene": "Several young dolphins chase one another through clear bay water, leap in paired arcs and circle floating sea grass in obvious voluntary play. A healthy shoreline and visible fish establish the restored clean habitat.",
+      "altText": "几只小海豚在清澈海湾中追逐、跃出水面，快乐地一起玩耍。"
+    }
+  ]
+}
