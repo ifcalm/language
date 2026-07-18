@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-222-243-2026-07-17",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "c5b740ba-1edb-47f1-a214-204e46aef29f",
+      "word": "job",
+      "meaningZh": "工作；职位；任务；职责",
+      "exampleId": "c5b740ba-1edb-47f1-a214-204e46aef29f-visual-ex",
+      "styleFamily": "clean graphic-novel bridge inspection",
+      "sentenceEn": "The inspector's job was to find damaged cables before the bridge reopened.",
+      "sentenceZh": "检查员的工作是在大桥重新开放前找出受损的缆索。",
+      "scene": "A trained bridge inspector in a safety harness carefully examines one frayed cable among many sound cables, marking its location with a plain colored ribbon. The closed empty bridge and repair tools establish a professional safety task. The readable face has complete features and a focused expression; no signs or text.",
+      "altText": "桥梁检查员系着安全绳，认真检查并标记一根受损缆索。"
+    },
+    {
+      "vocabularyId": "a16db9d8-602b-481d-af03-c3adb5331408",
+      "word": "word",
+      "meaningZh": "词；单词；消息；诺言",
+      "exampleId": "a16db9d8-602b-481d-af03-c3adb5331408-visual-ex",
+      "styleFamily": "warm gouache promise-kept story",
+      "sentenceEn": "Ravi kept his word and returned the borrowed tools before sunrise.",
+      "sentenceZh": "拉维信守承诺，在日出前归还了借来的工具。",
+      "scene": "At early dawn, an adult returns a complete toolbox to a relieved neighbor at the neighbor's workshop door. Both compare the neatly restored tools and exchange a grateful look, making a kept promise visible through completed action. Every readable face has complete natural features; no notes, speech bubbles or text.",
+      "altText": "天刚亮，拉维把借来的整套工具完好归还给邻居，兑现了诺言。"
+    },
+    {
+      "vocabularyId": "b8a1f141-71c8-4cb6-b965-92c393b21e95",
+      "word": "though",
+      "meaningZh": "虽然；尽管；然而",
+      "exampleId": "b8a1f141-71c8-4cb6-b965-92c393b21e95-visual-ex",
+      "styleFamily": "bold woodcut mountain mule",
+      "sentenceEn": "Though the slope was steep, the mule carried medicine to the remote village.",
+      "sentenceZh": "尽管山坡陡峭，骡子仍把药品运到了偏远村庄。",
+      "scene": "A strong pack mule steadily climbs a visibly steep switchback trail while carrying two securely balanced plain supply boxes. A small mountain village waits high ahead. The difficult slope and continued forward progress appear together, showing contrast and persistence without people, labels or text.",
+      "altText": "山坡十分陡峭，驮着药品箱的骡子仍沿山路向远处村庄前进。"
+    },
+    {
+      "vocabularyId": "b0d4e4a8-e5ac-42e5-8645-5035dfb304d5",
+      "word": "business",
+      "meaningZh": "商业；生意；企业；事务",
+      "exampleId": "b0d4e4a8-e5ac-42e5-8645-5035dfb304d5-visual-ex",
+      "styleFamily": "stop-motion orchard preserve workshop",
+      "sentenceEn": "The family business turned surplus fruit into preserves instead of waste.",
+      "sentenceZh": "这家家庭企业把多余水果做成果酱，避免了浪费。",
+      "scene": "Inside a small orchard workshop, three adult family members sort surplus fruit, stir one cooking pot and seal plain unlabeled jars along a clear production flow. Compost receives only damaged scraps. Matte handcrafted materials and complete expressive faces make the cooperative enterprise clear without signs, brands or text.",
+      "altText": "一家人在小作坊中分拣多余水果、熬煮并装罐，把它们做成食品。"
+    },
+    {
+      "vocabularyId": "57fc6c79-f888-4af4-95e0-47ffb5f2f026",
+      "word": "side",
+      "meaningZh": "旁边；侧面；方面；一边",
+      "exampleId": "57fc6c79-f888-4af4-95e0-47ffb5f2f026-visual-ex",
+      "styleFamily": "layered-paper canal shade contrast",
+      "sentenceEn": "Tall willow trees shaded one side of the canal.",
+      "sentenceZh": "高大的柳树为运河的一侧遮住了阳光。",
+      "scene": "A straight canal runs through the center. A continuous row of tall willows grows only along the left bank, casting cool shade across that one side, while the opposite bank remains open and sunlit. The two sides are easy to compare without arrows or labels.",
+      "altText": "运河左侧长着一排柳树并形成阴影，右侧河岸则沐浴在阳光中。"
+    },
+    {
+      "vocabularyId": "23239b62-9e83-477f-94cf-60025245c487",
+      "word": "kind",
+      "meaningZh": "种类；善良的；友好的",
+      "exampleId": "23239b62-9e83-477f-94cf-60025245c487-visual-ex",
+      "styleFamily": "gentle watercolor roadside kindness",
+      "sentenceEn": "A kind cyclist stopped to help a turtle cross the quiet road.",
+      "sentenceZh": "一位善良的骑行者停下来帮助乌龟穿过安静的道路。",
+      "scene": "On a quiet country road, an adult cyclist has parked the bicycle safely and gently carries a turtle toward the grassy side it was facing. No traffic is near. The complete readable face shows calm care rather than triumph; the turtle is supported naturally.",
+      "altText": "骑行者停好自行车，轻轻托着乌龟，把它送到道路另一侧的草地。"
+    },
+    {
+      "vocabularyId": "2830dd85-b9e7-4e45-84cd-f25b9f9c416c",
+      "word": "four",
+      "meaningZh": "四；四个",
+      "exampleId": "2830dd85-b9e7-4e45-84cd-f25b9f9c416c-visual-ex",
+      "styleFamily": "handcrafted felt owl nest",
+      "sentenceEn": "Four young owls waited together in the old tree hollow.",
+      "sentenceZh": "四只小猫头鹰一起待在老树洞里。",
+      "scene": "Exactly four young owls sit clearly separated in one large old tree hollow. All four bodies and faces are fully visible and easy to count, with no adult owl, hidden chick, egg or extra bird anywhere in the image.",
+      "altText": "老树洞中并排坐着四只身体和脸都清楚可见的小猫头鹰。"
+    },
+    {
+      "vocabularyId": "5311383e-88e6-43d5-81b9-811e4495d0ec",
+      "word": "head",
+      "meaningZh": "头；头脑；领导；为首；头部",
+      "exampleId": "5311383e-88e6-43d5-81b9-811e4495d0ec-visual-ex",
+      "styleFamily": "stylized macro crowned-crane portrait",
+      "sentenceEn": "The crowned crane raised its head above the tall grass.",
+      "sentenceZh": "冠鹤把头抬到高高的草丛上方。",
+      "scene": "A crowned crane's long neck rises from dense tall grass, placing its distinct head, eye, beak and golden crown clearly above the grass line while most of its body remains hidden. Matte stylized shapes and natural proportions, no photographic rendering.",
+      "altText": "冠鹤从高草中伸长脖子，带金色羽冠的头部清楚露在草丛上方。"
+    },
+    {
+      "vocabularyId": "c55f59aa-77a2-4500-95d6-ca777b3b225c",
+      "word": "far",
+      "meaningZh": "远的；遥远的；...得多",
+      "exampleId": "c55f59aa-77a2-4500-95d6-ca777b3b225c-visual-ex",
+      "styleFamily": "soft-pastel frozen-bay depth",
+      "sentenceEn": "The research station stood far across the frozen bay.",
+      "sentenceZh": "研究站坐落在冰封海湾的遥远对岸。",
+      "scene": "A broad frozen bay fills most of the landscape, with large ice ridges in the foreground and one tiny research station on the distant opposite shore beneath mountains. Strong atmospheric depth and scale make the station feel far away. No people, flags, signs or text.",
+      "altText": "宽阔冰封海湾延伸到远方，对岸山脚下的研究站显得十分小。"
+    },
+    {
+      "vocabularyId": "257c8cfe-cfa0-432b-b889-747631521aca",
+      "word": "black",
+      "meaningZh": "黑色的；黑人；黑暗的",
+      "exampleId": "257c8cfe-cfa0-432b-b889-747631521aca-visual-ex",
+      "styleFamily": "luminous ink black-swan wetland",
+      "sentenceEn": "A black swan glided between the pale reeds at dawn.",
+      "sentenceZh": "黎明时，一只黑天鹅从浅色芦苇之间游过。",
+      "scene": "One elegant black swan with clearly dark feathers glides across reflective dawn water between pale cream reeds and soft mist. The restrained light surroundings create a clear natural color contrast. No other swans or people.",
+      "altText": "一只羽毛乌黑的天鹅在浅色芦苇和晨雾之间平静游过。"
+    },
+    {
+      "vocabularyId": "7b3828b9-dc13-44e2-aa61-f72ff2380a56",
+      "word": "long",
+      "meaningZh": "长的；长期地；渴望",
+      "exampleId": "7b3828b9-dc13-44e2-aa61-f72ff2380a56-visual-ex",
+      "styleFamily": "embroidered wetland boardwalk panorama",
+      "sentenceEn": "A long wooden walkway crossed the entire wetland.",
+      "sentenceZh": "一条长长的木栈道横穿整片湿地。",
+      "scene": "A wooden boardwalk begins large in the immediate foreground and continues uninterrupted through reeds, shallow pools and distant islands until it reaches the far horizon. Its sustained length dominates the wide embroidered panorama. No people or signs.",
+      "altText": "木栈道从近处一直延伸到湿地远方，横跨芦苇、水池和小岛。"
+    },
+    {
+      "vocabularyId": "0ef129c6-a514-4ab2-9d5f-3f493e4b0367",
+      "word": "both",
+      "meaningZh": "两者都",
+      "exampleId": "0ef129c6-a514-4ab2-9d5f-3f493e4b0367-visual-ex",
+      "styleFamily": "hand-painted ceramic twin saplings",
+      "sentenceEn": "Both young trees survived after their roots were protected.",
+      "sentenceZh": "根部得到保护后，两棵幼树都存活了下来。",
+      "scene": "Exactly two young trees stand side by side after a storm, and both have green new leaves and matching protective mulch rings around their roots. Broken unprotected branches lie far behind, but no third tree or extra sapling appears.",
+      "altText": "两棵幼树都长出绿色新叶，根部也都覆盖着保护性的草垫。"
+    },
+    {
+      "vocabularyId": "d087f8a5-04c3-420c-b5ab-bf994f10b22a",
+      "word": "little",
+      "meaningZh": "小的；少的；一点儿；很少",
+      "exampleId": "d087f8a5-04c3-420c-b5ab-bf994f10b22a-visual-ex",
+      "styleFamily": "matte clay summer birdbath",
+      "sentenceEn": "Only a little water remained in the birdbath after the hot day.",
+      "sentenceZh": "炎热的一天过后，鸟浴盆里只剩下一点水。",
+      "scene": "A broad shallow birdbath is almost completely dry, with only one small thin puddle remaining at its lowest point. Dry splash marks show the former level, and one thirsty sparrow looks toward the tiny amount. No other water appears.",
+      "altText": "宽大的鸟浴盆几乎干透，只在最低处剩下一小片浅水。"
+    },
+    {
+      "vocabularyId": "0ae8b313-3f9d-4173-a54c-8361482cc0ec",
+      "word": "house",
+      "meaningZh": "房子；房屋；住宅；议院",
+      "exampleId": "0ae8b313-3f9d-4173-a54c-8361482cc0ec-visual-ex",
+      "styleFamily": "painterly storybook restored stone house",
+      "sentenceEn": "The restored stone house sheltered three families during the storm.",
+      "sentenceZh": "暴风雨期间，修复后的石屋为三个家庭提供了庇护。",
+      "scene": "A sturdy restored stone house glows warmly in a storm, with rain and wind outside. Through broad windows, several small family groups safely share the interior around a stove. Readable faces are complete but secondary; the protective house remains the clear focal object. No text or signs.",
+      "altText": "风雨中，一座坚固石屋亮着暖光，多户人家正在屋内安全避雨。"
+    },
+    {
+      "vocabularyId": "1d50878d-d133-4121-a9ca-5716e5d7884e",
+      "word": "yes",
+      "meaningZh": "是的；对",
+      "exampleId": "1d50878d-d133-4121-a9ca-5716e5d7884e-visual-ex",
+      "styleFamily": "clean-line animal-shelter animation",
+      "sentenceEn": "The volunteer nodded yes and accepted the basket of rescued kittens.",
+      "sentenceZh": "志愿者点头答应，并接过了装着获救小猫的篮子。",
+      "scene": "At an animal shelter doorway, one adult volunteer gently nods with a warm affirmative expression while reaching out with both hands to accept a secure basket containing rescued kittens from another adult. Complete readable faces and the accepting action show agreement without gestures like thumbs-up, speech bubbles or text.",
+      "altText": "动物救助站门口，志愿者微笑点头，并伸手接过装有小猫的篮子。"
+    },
+    {
+      "vocabularyId": "65138022-c07f-4d61-85c9-efe4738444a4",
+      "word": "since",
+      "meaningZh": "自...以来；因为",
+      "exampleId": "65138022-c07f-4d61-85c9-efe4738444a4-visual-ex",
+      "styleFamily": "two-season botanical paper collage",
+      "sentenceEn": "The sapling has doubled in height since last spring.",
+      "sentenceZh": "自去年春天以来，这棵幼树的高度已经增加了一倍。",
+      "scene": "Two connected seasonal views show the same sapling beside the same distinctive gray marker stone. In the earlier spring view it is exactly level with the stone; in the current view it is visibly about twice that height with mature leaves. No labels, calendars, arrows or text.",
+      "altText": "同一块标志石旁，幼树从去年春天的矮小状态长到了约两倍高度。"
+    },
+    {
+      "vocabularyId": "aeaef7d0-dfc1-44cf-bce5-93c7599e2a62",
+      "word": "provide",
+      "meaningZh": "提供；供给；规定",
+      "exampleId": "aeaef7d0-dfc1-44cf-bce5-93c7599e2a62-visual-ex",
+      "styleFamily": "stained-glass mangrove nursery",
+      "sentenceEn": "Mangrove roots provide shelter for young fish.",
+      "sentenceZh": "红树林的根系为幼鱼提供庇护。",
+      "scene": "Under clear tidal water, arching mangrove roots form protected spaces where many young fish hide from one larger fish passing outside the root barrier. Sunlight, roots and sheltered fish make the provided refuge unmistakable. No people or labels.",
+      "altText": "红树林交错的水下根系形成安全空隙，许多幼鱼躲在其中。"
+    },
+    {
+      "vocabularyId": "06e38c6d-d139-4a39-b652-976b36885cf0",
+      "word": "around",
+      "meaningZh": "周围；大约；到处；环绕",
+      "exampleId": "06e38c6d-d139-4a39-b652-976b36885cf0-visual-ex",
+      "styleFamily": "aerial layered-paper elephant circle",
+      "sentenceEn": "The adult elephants formed a circle around the calves.",
+      "sentenceZh": "成年大象围成一圈，把幼象护在中间。",
+      "scene": "From a clear elevated view, several adult elephants stand in a complete protective ring around two calves at the center. Adult bodies face outward while the calves remain fully enclosed, making the around relationship immediately visible. No people.",
+      "altText": "成年象围成完整圆圈，两头幼象被保护在正中央。"
+    },
+    {
+      "vocabularyId": "2b9aca6b-8bea-4056-b881-918dbd860c05",
+      "word": "friend",
+      "meaningZh": "朋友；友人",
+      "exampleId": "2b9aca6b-8bea-4056-b881-918dbd860c05-visual-ex",
+      "styleFamily": "quiet gouache stable friendship",
+      "sentenceEn": "The old dog stayed beside his frightened horse friend during the thunder.",
+      "sentenceZh": "打雷时，老狗一直陪在受惊的马朋友身边。",
+      "scene": "Inside a safe stable during distant thunder, an elderly dog sits pressed gently beside a nervous horse's front legs. The horse lowers its head toward the dog and begins to relax, showing comfort between familiar animal friends. No people.",
+      "altText": "雷声中，老狗紧挨着受惊的马陪伴它，马低头靠近老朋友。"
+    },
+    {
+      "vocabularyId": "83231b11-dc8d-4039-b702-63ca5caba4bb",
+      "word": "important",
+      "meaningZh": "重要的；重大的；有影响的",
+      "exampleId": "83231b11-dc8d-4039-b702-63ca5caba4bb-visual-ex",
+      "styleFamily": "architectural cutaway keystone illustration",
+      "sentenceEn": "The small keystone was important because it held the stone arch together.",
+      "sentenceZh": "这块小小的拱顶石十分重要，因为它让整座石拱保持稳固。",
+      "scene": "A precise cutaway of a stone arch emphasizes one small central keystone locking all surrounding wedge stones into a stable curve. A nearby unfinished comparison arch without its central stone visibly sags, showing the keystone's critical structural role without arrows, labels or text.",
+      "altText": "石拱中央的一块小拱顶石锁住周围石块，让整座拱门保持稳固。"
+    }
+  ]
+}

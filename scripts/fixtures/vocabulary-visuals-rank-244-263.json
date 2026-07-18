@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-244-263-2026-07-17",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "0633330e-d977-46e9-bf47-e5c102e413f1",
+      "word": "father",
+      "meaningZh": "父亲；爸爸；创始人",
+      "exampleId": "0633330e-d977-46e9-bf47-e5c102e413f1-visual-ex",
+      "styleFamily": "warm ink-and-watercolor kite repair",
+      "sentenceEn": "Her father showed her how to repair the broken kite instead of throwing it away.",
+      "sentenceZh": "她的父亲教她修好破损的风筝，而不是把它扔掉。",
+      "scene": "At a bright worktable near an open window, a father patiently shows his school-age daughter how to patch a torn kite with paper and paste. The child holds one repaired edge while the father guides the next careful step. Their complete readable faces show attention and encouragement; no text or labels.",
+      "altText": "父亲在桌边耐心教女儿用纸片修补破损的风筝。"
+    },
+    {
+      "vocabularyId": "32374d5c-25fd-4f80-97da-ecf987073491",
+      "word": "sit",
+      "meaningZh": "坐；坐落；位于；开会",
+      "exampleId": "32374d5c-25fd-4f80-97da-ecf987073491-visual-ex",
+      "styleFamily": "soft felt heron pond patience",
+      "sentenceEn": "The old heron chose to sit beside the pond until the frightened frogs returned.",
+      "sentenceZh": "老苍鹭选择安静地坐在池塘边，直到受惊的青蛙回来。",
+      "scene": "An elderly heron sits calmly with folded legs on a mossy bank, keeping a respectful distance from the water. Several small frogs cautiously return to lily pads nearby. The seated posture is unmistakable, with no hunting or threatening behavior and no people.",
+      "altText": "老苍鹭收起双腿安静地坐在池塘边，青蛙逐渐回到睡莲叶上。"
+    },
+    {
+      "vocabularyId": "b87cdd72-bdfb-49ad-b700-2eb5ac947845",
+      "word": "away",
+      "meaningZh": "离开；离去",
+      "exampleId": "b87cdd72-bdfb-49ad-b700-2eb5ac947845-visual-ex",
+      "styleFamily": "Japanese woodblock seal release",
+      "sentenceEn": "After recovering, the rescued seal swam away from the shore and back toward the open sea.",
+      "sentenceZh": "康复后，获救的海豹游离岸边，重新回到大海。",
+      "scene": "A healthy seal swims decisively away from a quiet beach toward broad open water, leaving a widening wake behind it. A small empty rescue crate and folded blanket remain far back on shore without people, making the departure direction clear through distance and movement alone.",
+      "altText": "康复的海豹离开岸边，沿着逐渐延伸的水纹游向开阔海面。"
+    },
+    {
+      "vocabularyId": "a10e3f6b-9bcc-4259-8384-81a1cea19da3",
+      "word": "until",
+      "meaningZh": "直到...为止",
+      "exampleId": "a10e3f6b-9bcc-4259-8384-81a1cea19da3-visual-ex",
+      "styleFamily": "layered-paper lighthouse night-to-dawn",
+      "sentenceEn": "The lighthouse lamp stayed on until every fishing boat returned at dawn.",
+      "sentenceZh": "灯塔一直亮着，直到所有渔船在黎明时归来。",
+      "scene": "One continuous coastal scene transitions gently from deep night on the left to dawn on the right. The same lighthouse beam remains bright while the last small fishing boats enter the safe harbor at sunrise. The time boundary and continued guiding light are visible without clocks, labels or text.",
+      "altText": "海岸从夜色过渡到黎明，灯塔始终亮着，最后几艘渔船正驶回港湾。"
+    },
+    {
+      "vocabularyId": "dd6f01fb-1579-43e2-8c2b-3fa96078f74f",
+      "word": "power",
+      "meaningZh": "力量；权力；电力；能力",
+      "exampleId": "dd6f01fb-1579-43e2-8c2b-3fa96078f74f-visual-ex",
+      "styleFamily": "isometric solar hillside water system",
+      "sentenceEn": "Solar panels supplied enough power to pump clean water into the hillside garden.",
+      "sentenceZh": "太阳能板提供了足够的电力，把清水抽送到山坡花园。",
+      "scene": "A clear isometric hillside system shows sunlight falling on solar panels connected by plain cables to a working water pump. The pump lifts clean water from a lower cistern through a pipe into irrigation channels across a thriving upper garden. No interface, symbols, arrows or labels.",
+      "altText": "太阳能板为水泵供电，清水经管道被送到高处生机勃勃的花园。"
+    },
+    {
+      "vocabularyId": "436cb3d5-f1c4-4f0e-9715-a198fa2639dd",
+      "word": "hour",
+      "meaningZh": "小时；时间；时刻",
+      "exampleId": "436cb3d5-f1c4-4f0e-9715-a198fa2639dd-visual-ex",
+      "styleFamily": "hand-painted ceramic bakery time",
+      "sentenceEn": "The baker let the dough rest for an hour beside a slowly emptying sandglass.",
+      "sentenceZh": "面包师让面团在缓慢流动的沙漏旁静置了一个小时。",
+      "scene": "A hand-painted ceramic diptych shows the same covered bowl of dough and the same traditional one-hour sandglass. In the first view the upper bulb is full and the dough is low; in the second the sand has moved below and the dough has visibly risen. No numerals, clock faces, people or text.",
+      "altText": "同一碗面团在沙漏计时前后明显膨胀，沙子也从上方全部流到了下方。"
+    },
+    {
+      "vocabularyId": "a3e23140-775c-4181-a520-8e3fffd25696",
+      "word": "game",
+      "meaningZh": "游戏；比赛；运动会；猎物",
+      "exampleId": "a3e23140-775c-4181-a520-8e3fffd25696-visual-ex",
+      "styleFamily": "animated colored-pencil otter tide pool",
+      "sentenceEn": "Two young otters made a game of passing a smooth shell across the tide pool.",
+      "sentenceZh": "两只小水獭把在潮池两边传递光滑贝壳变成了游戏。",
+      "scene": "Exactly two young otters face each other across a small tide pool, playfully passing one smooth shell between their front paws. Their natural lively expressions and curved splashes show cooperative play. No other otters, extra shells, clothing, people or text.",
+      "altText": "两只小水獭隔着潮池把一枚贝壳传给对方，开心地一起游戏。"
+    },
+    {
+      "vocabularyId": "217ea949-5472-4ab9-9921-fc1523e13cb5",
+      "word": "often",
+      "meaningZh": "时常；常常",
+      "exampleId": "217ea949-5472-4ab9-9921-fc1523e13cb5-visual-ex",
+      "styleFamily": "four-season woodblock stork return",
+      "sentenceEn": "The storks often returned to the same rooftop nest each spring.",
+      "sentenceZh": "这些鹳常常在每年春天回到同一个屋顶巢穴。",
+      "scene": "Three connected springtime vignettes show the same distinctive tiled rooftop and the same woven nest across repeated years. In every vignette, a pair of storks returns to the nest as nearby trees bloom in slightly different stages. Repetition is clear without calendars, labels, arrows or text.",
+      "altText": "连续三个春日场景中，同一对鹳都回到了同一座屋顶上的巢穴。"
+    },
+    {
+      "vocabularyId": "6f3541c8-5a9f-447e-bd00-0ee3d01f765c",
+      "word": "yet",
+      "meaningZh": "还；仍然；然而；已经",
+      "exampleId": "6f3541c8-5a9f-447e-bd00-0ee3d01f765c-visual-ex",
+      "styleFamily": "luminous scratchboard island rescue",
+      "sentenceEn": "The rescue boat had not reached the island yet, but its light was already visible.",
+      "sentenceZh": "救援船还没有抵达小岛，但船上的灯光已经可以看见。",
+      "scene": "A small inhabited island occupies the near foreground while a rescue boat remains clearly far offshore. Its warm lamp is visible across the dark water, and the open distance between boat and island shows that arrival has not happened yet. No people are readable, and no text or signals appear.",
+      "altText": "救援船仍在远处海面上，灯光已经可见，但它和小岛之间还有一段距离。"
+    },
+    {
+      "vocabularyId": "dd9f42d0-dea4-4c1e-9ae4-d0b3da039df8",
+      "word": "line",
+      "meaningZh": "线；线条；行；路线",
+      "exampleId": "dd9f42d0-dea4-4c1e-9ae4-d0b3da039df8-visual-ex",
+      "styleFamily": "botanical cut-paper leafcutter ants",
+      "sentenceEn": "A long line of leafcutter ants carried petals across the forest floor.",
+      "sentenceZh": "一长队切叶蚁搬着花瓣穿过森林地面。",
+      "scene": "A single orderly line of leafcutter ants curves across the forest floor from one edge of the image to the other. Each ant carries a small colorful petal or leaf fragment, and the continuous queue remains easy to follow through roots and moss. No extra swarm or people.",
+      "altText": "切叶蚁排成一条连续长队，搬着彩色花瓣和叶片穿过树根与苔藓。"
+    },
+    {
+      "vocabularyId": "91c686d1-5e2b-44b4-a2dd-8c8def28c12f",
+      "word": "political",
+      "meaningZh": "政治的；政府的",
+      "exampleId": "91c686d1-5e2b-44b4-a2dd-8c8def28c12f-visual-ex",
+      "styleFamily": "editorial risograph river town assembly",
+      "sentenceEn": "Residents joined a political meeting to decide how their town should protect the river.",
+      "sentenceZh": "居民参加了一场政治议事会，共同决定城镇应如何保护河流。",
+      "scene": "Inside a modest town assembly hall, diverse adult residents sit in an open circle around a physical model of their river and town. One resident speaks while others listen, compare two plain restoration models and raise hands to participate. Every readable face has complete natural features; no flags, slogans, parties, ballots, labels or text.",
+      "altText": "居民围着城镇与河流模型开会，讨论并共同决定河流保护方案。"
+    },
+    {
+      "vocabularyId": "df819fc5-f0bd-410c-a196-cca948203a62",
+      "word": "end",
+      "meaningZh": "结束；末端；终点；目标",
+      "exampleId": "df819fc5-f0bd-410c-a196-cca948203a62-visual-ex",
+      "styleFamily": "atmospheric gouache mountain trail terminus",
+      "sentenceEn": "A red lantern marked the end of the mountain trail beside a safe overlook.",
+      "sentenceZh": "一盏红灯标出了山路在安全观景台旁的终点。",
+      "scene": "A winding mountain trail enters from the lower foreground and clearly terminates at a fenced stone overlook. One unlit red trail lantern stands at the final paving stone, while no path continues beyond the protective barrier. Expansive mountains open beyond; no people, signs or text.",
+      "altText": "蜿蜒山路在有护栏的石砌观景台终止，最后一块路石旁立着一盏红灯。"
+    },
+    {
+      "vocabularyId": "38be202d-9047-4a09-b3dd-a9171c7cd341",
+      "word": "among",
+      "meaningZh": "在...之中",
+      "exampleId": "38be202d-9047-4a09-b3dd-a9171c7cd341-visual-ex",
+      "styleFamily": "stained-glass poppy meadow",
+      "sentenceEn": "One red poppy grew among hundreds of pale daisies.",
+      "sentenceZh": "一朵红色罂粟花生长在数百朵浅色雏菊之中。",
+      "scene": "One vivid red poppy stands near the center of a broad meadow densely filled with pale cream daisies on every side, including foreground and background. The poppy is visibly surrounded rather than separate. No other red flower, people, labels or text.",
+      "altText": "一朵鲜红的罂粟花被四面八方大片浅色雏菊包围。"
+    },
+    {
+      "vocabularyId": "6e13ac24-73f5-4cc7-abd9-fc6191d11bb9",
+      "word": "ever",
+      "meaningZh": "曾经；永远；究竟",
+      "exampleId": "6e13ac24-73f5-4cc7-abd9-fc6191d11bb9-visual-ex",
+      "styleFamily": "cinematic dry-pastel whale leap",
+      "sentenceEn": "The young whale made its highest leap ever beside its mother.",
+      "sentenceZh": "小鲸在母亲身边完成了自己迄今最高的一次跃出水面。",
+      "scene": "A young whale breaches remarkably high above the sea beside its much larger mother, whose head and complete back remain at the surface below. A tall curtain of spray emphasizes the calf's exceptional height while the mother watches calmly. Exactly two whales, no boats, people or text.",
+      "altText": "小鲸在母鲸身边高高跃出海面，飞溅的水幕衬托出它这次非凡的高度。"
+    },
+    {
+      "vocabularyId": "cce7ff94-5941-485c-8edd-6102694943d8",
+      "word": "stand",
+      "meaningZh": "站立；忍受；立场；位于",
+      "exampleId": "cce7ff94-5941-485c-8edd-6102694943d8-visual-ex",
+      "styleFamily": "sculpted-paper mountain goat balance",
+      "sentenceEn": "The mountain goat could stand steadily on a ledge no wider than its hoof.",
+      "sentenceZh": "山羊能稳稳地站在一条还没有蹄子宽的岩石边缘上。",
+      "scene": "One mountain goat stands upright and balanced on an extremely narrow natural rock ledge, all four hooves visibly planted in a stable stance. The deep valley and broad cliff face establish scale, but the animal remains calm and naturally adapted. No other animals or people.",
+      "altText": "一只山羊四蹄稳稳站在狭窄岩石边缘上，身体保持平衡。"
+    },
+    {
+      "vocabularyId": "cc9cba45-9f0e-49f0-aa06-4ffca4caf249",
+      "word": "bad",
+      "meaningZh": "坏的；糟糕的",
+      "exampleId": "cc9cba45-9f0e-49f0-aa06-4ffca4caf249-visual-ex",
+      "styleFamily": "clean graphic-novel library leak repair",
+      "sentenceEn": "A bad leak was repaired before it could damage the community library.",
+      "sentenceZh": "严重漏水在损坏社区图书馆之前得到了修复。",
+      "scene": "Inside a community library, a badly split ceiling pipe releases a forceful stream into large buckets while two adult repair workers clamp and seal the break. Shelves have been covered and moved safely away. Complete readable faces show focused urgency, not panic; no readable book titles, signs or text.",
+      "altText": "图书馆天花板管道严重漏水，维修人员及时夹紧破口，书架已被安全保护。"
+    },
+    {
+      "vocabularyId": "4bd6625e-8c68-4ed6-92d8-bd40ede246db",
+      "word": "lose",
+      "meaningZh": "失去；输；丢失；迷失",
+      "exampleId": "4bd6625e-8c68-4ed6-92d8-bd40ede246db-visual-ex",
+      "styleFamily": "cozy matte-clay garden key care",
+      "sentenceEn": "Mina tied the garden key to a bright ribbon so she would not lose it again.",
+      "sentenceZh": "米娜把花园钥匙系在一条鲜艳丝带上，以免再次丢失。",
+      "scene": "At a garden shed doorway, an adult woman carefully ties one plain key to a long bright ribbon, then loops the ribbon securely over a visible wooden hook. Her complete readable face shows relief after finding it. No other keys, labels, writing or text.",
+      "altText": "米娜把一把花园钥匙系上鲜艳丝带，并将丝带稳妥挂在木钩上。"
+    },
+    {
+      "vocabularyId": "6771910c-cdbf-4e49-9db6-8dcdcb6b99f2",
+      "word": "however",
+      "meaningZh": "然而；无论如何；不管怎样",
+      "exampleId": "6771910c-cdbf-4e49-9db6-8dcdcb6b99f2-visual-ex",
+      "styleFamily": "woven-textile valley connection contrast",
+      "sentenceEn": "The old bridge was damaged; however, a safe footpath still connected the two villages.",
+      "sentenceZh": "旧桥虽然受损，但一条安全步道仍然连接着两个村庄。",
+      "scene": "A damaged old bridge is visibly closed over a narrow gorge, while a sturdy gently curving footpath with railings crosses the hillside nearby and physically connects villages on opposite sides. Tiny distant walkers use the safe route, but no face is readable. No arrows, barriers with text or labels.",
+      "altText": "峡谷上的旧桥已经损坏，附近一条有护栏的山间步道仍把两座村庄连接起来。"
+    },
+    {
+      "vocabularyId": "90094d3b-7556-4571-8445-9af88b5cdaba",
+      "word": "member",
+      "meaningZh": "成员；会员",
+      "exampleId": "90094d3b-7556-4571-8445-9af88b5cdaba-visual-ex",
+      "styleFamily": "embroidered beaver family teamwork",
+      "sentenceEn": "Every member of the beaver family helped repair the lodge before winter.",
+      "sentenceZh": "海狸家庭的每个成员都在冬天到来前帮忙修补巢穴。",
+      "scene": "A beaver family works together around one lodge: one carries a branch, one presses mud into a gap, one places reeds and a smaller beaver brings a twig. Every visible family member contributes to the same repair while early snow appears on distant banks. No idle extra beavers, people or text.",
+      "altText": "海狸一家分工搬树枝、填泥和铺芦苇，每个成员都在修补同一座巢穴。"
+    },
+    {
+      "vocabularyId": "6ab58960-431c-4fe2-b509-876ff0ce31ee",
+      "word": "pay",
+      "meaningZh": "支付；付款；工资；付出",
+      "exampleId": "6ab58960-431c-4fe2-b509-876ff0ce31ee-visual-ex",
+      "styleFamily": "warm linocut fair pottery market",
+      "sentenceEn": "The customer chose to pay the potter fairly for the handmade bowls.",
+      "sentenceZh": "顾客选择为陶匠手工制作的碗支付公平的价钱。",
+      "scene": "At an open pottery market stall, an adult customer places a fair small stack of plain coins into the potter's open palm while receiving two handmade bowls. Both adults look satisfied and respectful, with complete natural facial features. No price tags, currency symbols, brands, signs or text.",
+      "altText": "陶器摊前，顾客把一叠钱币交到陶匠手中，并接过两只手工碗。"
+    }
+  ]
+}

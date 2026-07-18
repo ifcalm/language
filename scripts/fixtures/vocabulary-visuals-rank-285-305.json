@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-285-305-2026-07-18",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "ffc624f9-974f-4eaa-9cf5-70c39cc7829b",
+      "word": "best",
+      "meaningZh": "最好的；最好地",
+      "exampleId": "ffc624f9-974f-4eaa-9cf5-70c39cc7829b-visual-ex",
+      "styleFamily": "isometric flood-safe route comparison",
+      "sentenceEn": "The raised stone path was the best route because it stayed above the floodwater.",
+      "sentenceZh": "抬高的石路是最好的路线，因为它始终高于洪水。",
+      "scene": "A clear isometric valley shows three possible routes between the same two villages. Two low dirt routes disappear beneath shallow floodwater, while one well-built raised stone path remains dry, continuous and safe above it. Tiny distant walkers use only the raised path; no readable faces, signs, arrows or text.",
+      "altText": "三条村间路线中，两条低路被水淹没，只有抬高的石路保持干燥畅通。"
+    },
+    {
+      "vocabularyId": "81875ff1-8d06-4352-bfd8-6ef1027b9d99",
+      "word": "several",
+      "meaningZh": "几个的；各自的；几个",
+      "exampleId": "81875ff1-8d06-4352-bfd8-6ef1027b9d99-visual-ex",
+      "styleFamily": "layered-paper courtyard young trees",
+      "sentenceEn": "Several young trees now shaded the school courtyard.",
+      "sentenceZh": "几棵小树如今为学校庭院带来了阴凉。",
+      "scene": "Exactly six healthy young trees grow separately around a simple school courtyard, their leafy crowns casting overlapping shade across benches and play space. A few tiny children enjoy the shade, but no face is readable. The trees are easy to count without labels or text.",
+      "altText": "六棵健康小树分布在校园庭院四周，树冠为长椅和活动区形成阴凉。"
+    },
+    {
+      "vocabularyId": "b0fdaeea-18d4-4f9d-b0be-b537299b2f7b",
+      "word": "idea",
+      "meaningZh": "主意；想法；概念",
+      "exampleId": "b0fdaeea-18d4-4f9d-b0be-b537299b2f7b-visual-ex",
+      "styleFamily": "bright cut-paper umbrella garden idea",
+      "sentenceEn": "Mei's idea turned broken umbrellas into shade for new seedlings.",
+      "sentenceZh": "梅的主意把坏掉的雨伞变成了幼苗的遮阳棚。",
+      "scene": "In a community garden, one adult woman transforms several repaired umbrella canopies into a colorful shade structure above rows of delicate seedlings. One damaged umbrella frame and patching materials nearby reveal the reuse idea. Her complete readable face shows thoughtful satisfaction; no text or logos.",
+      "altText": "梅把修补后的旧雨伞架成遮阳棚，为一排排幼苗挡住强烈阳光。"
+    },
+    {
+      "vocabularyId": "8b789dca-831a-41c5-88cf-cc13d24550a7",
+      "word": "kid",
+      "meaningZh": "小孩；开玩笑",
+      "exampleId": "8b789dca-831a-41c5-88cf-cc13d24550a7-visual-ex",
+      "styleFamily": "colored-pencil duckling ramp kindness",
+      "sentenceEn": "The kid built a small ramp so ducklings could climb out of the pond.",
+      "sentenceZh": "这个孩子搭了一块小斜坡，让小鸭能够爬出池塘。",
+      "scene": "A school-age child securely places a short textured wooden ramp from pond water to the grassy bank while three ducklings climb it and their mother waits nearby. The child's complete readable face shows careful concern. Natural proportions, no tools left in the water, signs or text.",
+      "altText": "孩子在池塘边固定一块木质小斜坡，三只小鸭正沿着它爬上草岸。"
+    },
+    {
+      "vocabularyId": "920f0750-e386-4888-aae7-d2aed8bb0591",
+      "word": "body",
+      "meaningZh": "身体；尸体；主体；团体",
+      "exampleId": "920f0750-e386-4888-aae7-d2aed8bb0591-visual-ex",
+      "styleFamily": "luminous ink octopus camouflage",
+      "sentenceEn": "The octopus changed the color of its body to match the coral.",
+      "sentenceZh": "章鱼改变身体颜色，使自己与珊瑚相融。",
+      "scene": "One octopus rests naturally across a coral reef, with its complete body transitioning from its original muted tone into the same patterned colors and textures as the surrounding coral. All eight arms remain visible enough to recognize one animal. No other octopus, people, labels or text.",
+      "altText": "一只章鱼的身体逐渐变成与周围珊瑚相近的颜色和纹理。"
+    },
+    {
+      "vocabularyId": "9241aa94-7f4c-4f9f-81c9-f7544b58ad49",
+      "word": "information",
+      "meaningZh": "信息；资讯；情报",
+      "exampleId": "9241aa94-7f4c-4f9f-81c9-f7544b58ad49-visual-ex",
+      "styleFamily": "editorial naturalist forest evidence",
+      "sentenceEn": "Footprints and a dropped feather gave the ranger information about the hidden owl.",
+      "sentenceZh": "脚印和一根掉落的羽毛为护林员提供了隐藏猫头鹰的信息。",
+      "scene": "A forest ranger kneels beside clear owl footprints and one dropped feather, comparing their shapes with a plain three-dimensional bird model while the real owl remains partly visible in a hollow above. The ranger's complete face shows careful recognition; no notebooks, writing, labels or text.",
+      "altText": "护林员观察林地上的鸟类足迹和羽毛，并发现树洞中藏着猫头鹰。"
+    },
+    {
+      "vocabularyId": "8bfde240-7324-4a65-b181-03ab28042076",
+      "word": "nothing",
+      "meaningZh": "没有什么；没有东西；毫不",
+      "exampleId": "8bfde240-7324-4a65-b181-03ab28042076-visual-ex",
+      "styleFamily": "minimal watercolor empty swallow nest",
+      "sentenceEn": "Nothing remained in the nest after the young swallows flew away.",
+      "sentenceZh": "小燕子飞走后，巢里什么也没有留下。",
+      "scene": "An entirely empty swallow nest fills the near foreground beneath a roof edge, with its clean interior fully visible and containing no bird, egg, shell or object. Three young swallows fly together toward the distant sky. Quiet negative space reinforces the emptiness; no people or text.",
+      "altText": "屋檐下的燕巢完全空了，三只小燕子已经飞向远处天空。"
+    },
+    {
+      "vocabularyId": "17814870-c93f-4e27-91b5-b79806e7416d",
+      "word": "ago",
+      "meaningZh": "以前",
+      "exampleId": "17814870-c93f-4e27-91b5-b79806e7416d-visual-ex",
+      "styleFamily": "geological tapestry glacier past",
+      "sentenceEn": "A glacier filled this valley thousands of years ago.",
+      "sentenceZh": "数千年前，一条冰川曾填满这座山谷。",
+      "scene": "Two connected geological views align the exact same mountain peaks and distinctive central rock. The past view shows a massive glacier filling the valley; the present view shows a green river valley carved into the same shape. No people, dates, numerals, labels, arrows or text.",
+      "altText": "同一座山谷在久远过去被巨大冰川填满，如今已成为绿色河谷。"
+    },
+    {
+      "vocabularyId": "49206e2c-a0f8-4ca6-9816-acce3e3301f8",
+      "word": "lead",
+      "meaningZh": "领导；导致；铅",
+      "exampleId": "49206e2c-a0f8-4ca6-9816-acce3e3301f8-visual-ex",
+      "styleFamily": "matte-clay elephant safe-route leader",
+      "sentenceEn": "The oldest elephant used a safe trail to lead the herd around the flooded plain.",
+      "sentenceZh": "最年长的大象沿安全小路带领象群绕过被淹的平原。",
+      "scene": "One older elephant walks clearly at the front of a herd along a dry raised trail that curves around a flooded plain. Adults and calves follow in one orderly line behind, placing their feet where the leader stepped. No people, arrows, maps, labels or text.",
+      "altText": "年长大象走在队伍最前方，带领成年象和小象沿干燥高地绕过洪水。"
+    },
+    {
+      "vocabularyId": "fab470ed-eff5-4541-946c-2a7f9b5e8e73",
+      "word": "social",
+      "meaningZh": "社会的；社交的；群居的",
+      "exampleId": "fab470ed-eff5-4541-946c-2a7f9b5e8e73-visual-ex",
+      "styleFamily": "stained-glass cooperative dolphin pod",
+      "sentenceEn": "Dolphins are social animals that cooperate to protect their calves.",
+      "sentenceZh": "海豚是群居动物，会合作保护幼崽。",
+      "scene": "A cohesive dolphin pod swims together in clear water, with several adults forming a protective curved formation around two calves at the center. Their body directions and spacing show coordinated social care. No boats, people, predators, labels or text.",
+      "altText": "多只成年海豚结伴游动，并围成弧形把两只幼豚保护在中间。"
+    },
+    {
+      "vocabularyId": "48043cb8-881a-4880-9ff5-87a4c22479f3",
+      "word": "understand",
+      "meaningZh": "理解；了解；明白",
+      "exampleId": "48043cb8-881a-4880-9ff5-87a4c22479f3-visual-ex",
+      "styleFamily": "technical paper-collage pump lesson",
+      "sentenceEn": "A clear pump model helped the apprentice understand how water moved uphill.",
+      "sentenceZh": "一个清晰的水泵模型帮助学徒理解水是如何向高处输送的。",
+      "scene": "An experienced mechanic and adult apprentice examine a transparent physical pump model with visible impeller, inlet pipe and rising outlet pipe carrying colored water into an upper bowl. The apprentice points to the correct connection with an expression of recognition. Both readable faces have complete natural features; no diagrams, arrows, labels or text.",
+      "altText": "师傅和学徒观察透明水泵模型，清水从低处经叶轮和管道进入高处容器。"
+    },
+    {
+      "vocabularyId": "2f712b8c-d365-4939-8286-a13bfcd1edc3",
+      "word": "whether",
+      "meaningZh": "是否；不论",
+      "exampleId": "2f712b8c-d365-4939-8286-a13bfcd1edc3-visual-ex",
+      "styleFamily": "hand-painted ceramic garden decision",
+      "sentenceEn": "The gardeners tested the soil to decide whether the young tree needed more water.",
+      "sentenceZh": "园丁检测土壤，以判断幼树是否需要更多水。",
+      "scene": "Two adult gardeners kneel beside one young tree. One squeezes a soil sample to test its moisture while the other waits with a watering can still resting on the ground, showing the decision has not yet been made. Both complete faces look thoughtful; no gauges, screens, labels or text.",
+      "altText": "两位园丁先检查幼树旁土壤的湿度，再决定是否使用放在地上的水壶。"
+    },
+    {
+      "vocabularyId": "344d8a57-efcf-4503-a765-b14b399681b9",
+      "word": "watch",
+      "meaningZh": "观看；观察；手表；注视；看守",
+      "exampleId": "344d8a57-efcf-4503-a765-b14b399681b9-visual-ex",
+      "styleFamily": "warm gouache meerkat lookout lesson",
+      "sentenceEn": "Young meerkats watch an elder scan the horizon for danger.",
+      "sentenceZh": "小猫鼬们注视着一只年长猫鼬巡视远方是否有危险。",
+      "scene": "One elder meerkat stands upright on a low mound scanning the open horizon, while three young meerkats sit nearby and visibly watch its head and posture with focused natural expressions. The landscape is calm and no predator appears. No people, clothing or text.",
+      "altText": "年长猫鼬站在土丘上巡视远方，三只小猫鼬坐在旁边认真观察。"
+    },
+    {
+      "vocabularyId": "3b75b1ed-b002-4c73-a319-f108e53ca87b",
+      "word": "together",
+      "meaningZh": "一起；共同",
+      "exampleId": "3b75b1ed-b002-4c73-a319-f108e53ca87b-visual-ex",
+      "styleFamily": "bold woodcut neighbors lifting canoe",
+      "sentenceEn": "Four neighbors lifted the heavy canoe onto the rack together.",
+      "sentenceZh": "四位邻居一起把沉重的独木舟抬上支架。",
+      "scene": "Exactly four diverse adult neighbors share the weight of one canoe, lifting it in one coordinated motion toward a sturdy storage rack. Every person has both hands engaged and every readable face has complete natural features with focused cooperative expressions. No extra helpers, logos or text.",
+      "altText": "四位邻居各自托住独木舟的一部分，协调发力把它抬向稳固支架。"
+    },
+    {
+      "vocabularyId": "f7308b67-77e9-4605-a934-08619a527fbc",
+      "word": "follow",
+      "meaningZh": "跟随；追随；遵循；关注；理解",
+      "exampleId": "f7308b67-77e9-4605-a934-08619a527fbc-visual-ex",
+      "styleFamily": "soft-pastel duck family reed path",
+      "sentenceEn": "The ducklings follow their mother through a narrow path in the reeds.",
+      "sentenceZh": "小鸭们跟随母鸭穿过芦苇间的狭窄水道。",
+      "scene": "One mother duck swims at the front of a narrow winding channel through tall reeds, while exactly four ducklings follow in a single close line behind her. Their wake forms one continuous path. No other birds, people, arrows, labels or text.",
+      "altText": "母鸭游在芦苇水道最前方，四只小鸭排成一列紧紧跟随。"
+    },
+    {
+      "vocabularyId": "3bfcb3ef-7f56-41cd-983e-2468391eb06b",
+      "word": "parent",
+      "meaningZh": "父母；母体；起源",
+      "exampleId": "3bfcb3ef-7f56-41cd-983e-2468391eb06b-visual-ex",
+      "styleFamily": "handcrafted felt penguin shelter",
+      "sentenceEn": "The penguin parent sheltered its chick from the icy wind.",
+      "sentenceZh": "企鹅亲鸟为幼崽挡住了冰冷的风。",
+      "scene": "Exactly one adult penguin stands with its body curved protectively around one chick, blocking wind-driven snow while the chick remains warm against its feet. A low ice ridge reinforces the shelter. No other penguins, people, text or toy-like glossy rendering.",
+      "altText": "一只成年企鹅弯身护住脚边的幼崽，用身体挡住迎面吹来的冰雪。"
+    },
+    {
+      "vocabularyId": "1ecd3347-6bfc-4baf-9069-f48235caf294",
+      "word": "stop",
+      "meaningZh": "停止；阻止；车站；停留",
+      "exampleId": "1ecd3347-6bfc-4baf-9069-f48235caf294-visual-ex",
+      "styleFamily": "aerial cut-paper mangrove wave barrier",
+      "sentenceEn": "Dense mangrove roots help stop waves from washing away the shore.",
+      "sentenceZh": "茂密的红树林根系有助于阻止海浪冲走海岸。",
+      "scene": "A clear elevated coastal cutaway shows strong incoming waves breaking and losing force against dense interlocking mangrove roots, while the protected soil and young plants behind the roots remain intact. No people, arrows, labels, diagrams or text.",
+      "altText": "海浪在交错茂密的红树林根系前被削弱，后方土壤和幼苗保持完整。"
+    },
+    {
+      "vocabularyId": "88e2bda7-a138-450b-a561-197d810a8d24",
+      "word": "face",
+      "meaningZh": "脸；面对；面容；表面",
+      "exampleId": "88e2bda7-a138-450b-a561-197d810a8d24-visual-ex",
+      "styleFamily": "clean animation rain-barrel wash",
+      "sentenceEn": "After planting trees, Noah washed the mud from his face at the rain barrel.",
+      "sentenceZh": "种完树后，诺亚在雨水桶旁洗掉了脸上的泥土。",
+      "scene": "Beside newly planted saplings, a school-age boy gently splashes clean collected rainwater onto his muddy face over a basin. His complete face remains clearly readable with natural eyes, nose and mouth, one cheek partly clean and the other still muddy. No other people, writing or text.",
+      "altText": "种树后，诺亚用收集的雨水清洗脸上的泥土，一侧脸颊已经洗净。"
+    },
+    {
+      "vocabularyId": "a253c472-47c5-494b-a2ca-6fbcef8bd582",
+      "word": "anything",
+      "meaningZh": "任何事物",
+      "exampleId": "a253c472-47c5-494b-a2ca-6fbcef8bd582-visual-ex",
+      "styleFamily": "risograph beach cleanup sorting",
+      "sentenceEn": "The beach team sorted anything they found for reuse, recycling, or safe disposal.",
+      "sentenceZh": "海滩团队把发现的任何物品分别用于再利用、回收或安全处理。",
+      "scene": "A diverse adult beach team sorts many different found objects at one cleanup station: reusable rope and buckets in one plain area, glass and metal in another, and unsafe fragments secured in a closed container. Every readable face has complete features; object groupings are clear without labels, symbols or text.",
+      "altText": "海滩清理团队把找到的绳子、容器、玻璃、金属和危险碎片分别妥善整理。"
+    },
+    {
+      "vocabularyId": "073b442d-9446-4e63-86fb-526de7eb171f",
+      "word": "public",
+      "meaningZh": "公共的；公众；公开的",
+      "exampleId": "073b442d-9446-4e63-86fb-526de7eb171f-visual-ex",
+      "styleFamily": "architectural watercolor inclusive public garden",
+      "sentenceEn": "The restored garden became a public space where everyone could rest.",
+      "sentenceZh": "修复后的花园成为人人都可以休息的公共空间。",
+      "scene": "A restored urban garden has open entrances, connected paths, shaded benches, accessible ramps and shared lawns used by people of varied ages and abilities. Foreground faces are complete and natural; the welcoming spatial design communicates public access without gates, tickets, signs or text.",
+      "altText": "开放的城市花园设有连通步道、无障碍坡道、树荫长椅和供大家休息的草地。"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-202-221-2026-07-17",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "e44e9222-2f0f-4d90-93c9-16e0e0f5a40e",
+      "word": "million",
+      "meaningZh": "百万；无数",
+      "exampleId": "e44e9222-2f0f-4d90-93c9-16e0e0f5a40e-visual-ex",
+      "styleFamily": "aerial layered-paper monarch migration",
+      "sentenceEn": "Nearly a million monarch butterflies gathered in the mountain forest.",
+      "sentenceZh": "近百万只帝王蝶聚集在山林中。",
+      "scene": "A sweeping aerial view of a mountain forest shows an immense orange migration of monarch butterflies covering branches, filling the air and continuing into the distance. A few close butterflies establish the species while the vast repeated mass conveys an extraordinary quantity without attempting countable precision.",
+      "altText": "山林的树枝和天空中聚集着规模极其庞大的帝王蝶群。"
+    },
+    {
+      "vocabularyId": "337df900-78f7-43de-97c2-0d54516b55d6",
+      "word": "must",
+      "meaningZh": "必须；一定",
+      "exampleId": "337df900-78f7-43de-97c2-0d54516b55d6-visual-ex",
+      "styleFamily": "dynamic hand-drawn sea-turtle animation",
+      "sentenceEn": "The hatchling must reach the sea before the hot sun dries the sand.",
+      "sentenceZh": "幼龟必须在烈日晒干沙滩前抵达大海。",
+      "scene": "A newly hatched sea turtle moves urgently across a wide beach toward the cool surf as the low morning sun rises and the sand behind it begins to brighten. The safe water is close but not yet reached, making the necessary destination and limited time clear. No people.",
+      "altText": "幼龟迎着初升太阳快速爬向海水，必须赶在沙滩变热前入海。"
+    },
+    {
+      "vocabularyId": "d74db796-64ff-48b8-9380-62d10e71d3d6",
+      "word": "home",
+      "meaningZh": "家；家乡；住宅；本国的",
+      "exampleId": "d74db796-64ff-48b8-9380-62d10e71d3d6-visual-ex",
+      "styleFamily": "warm gouache owl forest return",
+      "sentenceEn": "After recovering, the rescued owl returned home to its forest.",
+      "sentenceZh": "康复后，获救的猫头鹰回到了森林里的家。",
+      "scene": "A healthy owl flies back toward a familiar hollow in an old forest tree at dusk. Its mate waits at the hollow entrance while a distant open transport crate rests empty at the forest edge, showing a completed return to its natural home without people or signs.",
+      "altText": "康复的猫头鹰飞回老树洞，另一只猫头鹰正在家门口迎接它。"
+    },
+    {
+      "vocabularyId": "d2b75963-abcd-47d9-82df-1310a8898700",
+      "word": "under",
+      "meaningZh": "在...之下；低于",
+      "exampleId": "d2b75963-abcd-47d9-82df-1310a8898700-visual-ex",
+      "styleFamily": "handcrafted felt frog rain shelter",
+      "sentenceEn": "A tiny frog waited under a broad leaf during the rain.",
+      "sentenceZh": "下雨时，一只小青蛙躲在宽大的叶子下面。",
+      "scene": "A tiny green frog sits clearly beneath a single broad leaf that acts as an umbrella. Rain strikes the upper surface and runs from the leaf edges while the ground directly around the frog remains dry, making the vertical under relationship unmistakable.",
+      "altText": "雨水落在宽叶上，小青蛙待在叶片正下方的干燥处。"
+    },
+    {
+      "vocabularyId": "7a0db0c1-4fe0-4ed0-9e6c-a64c9c3d6d5c",
+      "word": "water",
+      "meaningZh": "水；水域；浇水；流泪",
+      "exampleId": "7a0db0c1-4fe0-4ed0-9e6c-a64c9c3d6d5c-visual-ex",
+      "styleFamily": "ceramic-mosaic elephant spring",
+      "sentenceEn": "The elephant calves drank clean water from the restored spring.",
+      "sentenceZh": "小象们从修复后的泉眼里饮用干净的水。",
+      "scene": "Several elephant calves lower their trunks into a clear restored spring where ripples, reflections and the visible stony bottom emphasize fresh water. Native plants return around the banks, and no buildings or people distract from the animals drinking.",
+      "altText": "几头小象把鼻子伸进清澈泉水中饮水，水底石头清晰可见。"
+    },
+    {
+      "vocabularyId": "a4353b76-bc69-4bbf-be83-87fc0f7a7e28",
+      "word": "room",
+      "meaningZh": "房间；空间；余地；客房",
+      "exampleId": "a4353b76-bc69-4bbf-be83-87fc0f7a7e28-visual-ex",
+      "styleFamily": "stop-motion handcrafted plant repotting",
+      "sentenceEn": "The growing lemon tree needed more room for its roots.",
+      "sentenceZh": "不断生长的柠檬树需要更多空间伸展根系。",
+      "scene": "A pair of careful gardener's hands lifts a young lemon tree from a visibly cramped cracked pot, revealing tightly coiled roots, and positions it beside a much larger empty pot filled with fresh soil. The contrast makes the need for more space clear without showing a face.",
+      "altText": "柠檬树的根挤满小花盆，园丁正准备把它移入更宽大的盆中。"
+    },
+    {
+      "vocabularyId": "a745536b-a87f-4cca-8d7d-e0de2669e737",
+      "word": "write",
+      "meaningZh": "写；写作；书写；写信",
+      "exampleId": "a745536b-a87f-4cca-8d7d-e0de2669e737-visual-ex",
+      "styleFamily": "clean-line naturalist field-journal animation",
+      "sentenceEn": "The naturalist stopped to write observations about the rare flower.",
+      "sentenceZh": "博物学家停下来记录这种稀有花朵的观察结果。",
+      "scene": "An adult naturalist kneels beside a rare wildflower and actively writes with a pencil in an open field notebook while comparing the page with the plant. The page shows only small abstract non-readable strokes and sketches. The readable face has complete features and a focused expression.",
+      "altText": "博物学家一边观察稀有花朵，一边用铅笔在野外笔记本中记录。"
+    },
+    {
+      "vocabularyId": "d349fb23-17b2-4c1e-8eff-6b0558a85f63",
+      "word": "mother",
+      "meaningZh": "母亲；妈妈",
+      "exampleId": "d349fb23-17b2-4c1e-8eff-6b0558a85f63-visual-ex",
+      "styleFamily": "soft watercolor elephant family",
+      "sentenceEn": "The elephant mother guided her calf across the shallow river.",
+      "sentenceZh": "象妈妈带着幼象穿过浅浅的河流。",
+      "scene": "An adult female elephant walks on the upstream side of her much smaller calf while they cross a shallow river, using her body and trunk to shield and guide it through the current. Their close protective relationship is the focal point.",
+      "altText": "象妈妈走在水流上游一侧，用身体和鼻子保护幼象过河。"
+    },
+    {
+      "vocabularyId": "e9ec9476-ecda-46e7-b527-d95e9da6d445",
+      "word": "area",
+      "meaningZh": "区域；地区；领域；面积",
+      "exampleId": "e9ec9476-ecda-46e7-b527-d95e9da6d445-visual-ex",
+      "styleFamily": "isometric paper-cut meadow restoration",
+      "sentenceEn": "Rangers protected one small area so the wildflowers could recover.",
+      "sentenceZh": "巡护员保护了一小片区域，让野花得以恢复。",
+      "scene": "An isometric meadow shows one clearly bounded patch enclosed by a simple low rope. Inside that defined area, recovering wildflowers and nesting insects thrive; outside, the heavily walked ground remains sparse. No signs, labels, people or text are visible.",
+      "altText": "低矮绳索围出一片明确区域，里面的野花和昆虫正在恢复。"
+    },
+    {
+      "vocabularyId": "1766d4c1-dadb-4135-ae18-fa50029be93b",
+      "word": "national",
+      "meaningZh": "国家的；全国的；民族的",
+      "exampleId": "1766d4c1-dadb-4135-ae18-fa50029be93b-visual-ex",
+      "styleFamily": "bold screen-print national-park valley",
+      "sentenceEn": "The national park protects a wide valley where wild horses roam.",
+      "sentenceZh": "这座国家公园保护着一片野马自由生活的广阔山谷。",
+      "scene": "A vast protected valley extends between recognizable mountain boundaries, containing wild horses, forest, river and open grassland under coordinated ranger observation from a distant unobtrusive lookout. The scene feels like a large publicly protected natural landscape, with no flags, gates, signs or text.",
+      "altText": "广阔国家公园山谷中，野马在森林、河流和草地之间自由活动。"
+    },
+    {
+      "vocabularyId": "d6b0753b-9171-4a78-b11b-8fac8ce4b487",
+      "word": "money",
+      "meaningZh": "钱；货币；财富",
+      "exampleId": "d6b0753b-9171-4a78-b11b-8fac8ce4b487-visual-ex",
+      "styleFamily": "editorial 3D community-garden savings",
+      "sentenceEn": "The neighbors saved money to repair the community garden's water pump.",
+      "sentenceZh": "邻居们存钱修理社区花园的水泵。",
+      "scene": "Several diverse hands place plain unmarked coins into a transparent savings jar beside a visibly broken garden water pump and a tray of thirsty seedlings. A toolbox waits nearby, linking pooled money to the practical repair. No currency symbols, writing, logos or realistic people.",
+      "altText": "邻居们把硬币投入透明储蓄罐，准备修理旁边坏掉的花园水泵。"
+    },
+    {
+      "vocabularyId": "d84b198d-9031-4539-abd9-816524993f67",
+      "word": "story",
+      "meaningZh": "故事；报道；楼层；叙述",
+      "exampleId": "d84b198d-9031-4539-abd9-816524993f67-visual-ex",
+      "styleFamily": "warm linocut lantern storytelling",
+      "sentenceEn": "Grandmother told a story while the storm passed outside.",
+      "sentenceZh": "暴风雨经过时，祖母给大家讲了一个故事。",
+      "scene": "Inside a warm room during a storm, an older woman tells an animated story beside a lantern while three family members listen closely. Her expressive hands and the listeners' absorbed reactions carry the narration without speech bubbles or text. Every readable face has complete natural features.",
+      "altText": "窗外风雨交加，祖母在灯旁讲故事，家人专注地围坐倾听。"
+    },
+    {
+      "vocabularyId": "738cec56-c050-4a10-bff8-701d7c96bc03",
+      "word": "young",
+      "meaningZh": "年轻的；年幼的",
+      "exampleId": "738cec56-c050-4a10-bff8-701d7c96bc03-visual-ex",
+      "styleFamily": "botanical watercolor sapling and ancient tree",
+      "sentenceEn": "A young tree began growing beside the ancient oak.",
+      "sentenceZh": "一棵幼树开始在古老橡树旁生长。",
+      "scene": "A slender new sapling with a smooth trunk and only a few fresh leaves grows beside an enormous ancient oak with deeply textured bark, thick roots and a broad crown. The age and size contrast is immediate, with no people.",
+      "altText": "细小幼树长在枝干粗壮、树皮斑驳的古老橡树旁边。"
+    },
+    {
+      "vocabularyId": "f41eac78-daf4-4593-8120-544dae3275e0",
+      "word": "fact",
+      "meaningZh": "事实；真相；实际",
+      "exampleId": "f41eac78-daf4-4593-8120-544dae3275e0-visual-ex",
+      "styleFamily": "Risograph field-evidence verification",
+      "sentenceEn": "The researchers checked every fact against the original field evidence.",
+      "sentenceZh": "研究人员把每项事实与原始野外证据逐一核对。",
+      "scene": "Two adult researchers compare a pressed leaf specimen, a matching seed pod and a field notebook containing only abstract unreadable marks. One person uses a magnifier while the other aligns the specimen with a careful sketch. Complete readable faces show serious evidence-based concentration; no screens or text.",
+      "altText": "研究人员用叶片、种荚和原始笔记相互核对，确认记录中的事实。"
+    },
+    {
+      "vocabularyId": "73375165-5538-43b0-9400-4393905796f6",
+      "word": "month",
+      "meaningZh": "月",
+      "exampleId": "73375165-5538-43b0-9400-4393905796f6-visual-ex",
+      "styleFamily": "embroidered lunar-cycle panorama",
+      "sentenceEn": "Over one month, the moon passed through a complete cycle of phases.",
+      "sentenceZh": "一个月里，月亮经历了完整的一轮月相变化。",
+      "scene": "A continuous embroidered night-sky panorama shows one moon progressing through nine orderly phases from slim crescent to full moon and back toward crescent above the same quiet landscape. No numbers, calendars, labels, grids or text.",
+      "altText": "同一片夜空中，月亮依次呈现从弯月到满月再回到弯月的完整周期。"
+    },
+    {
+      "vocabularyId": "2bbc58bb-f6db-48a3-9f2f-df2fae4a2f9f",
+      "word": "different",
+      "meaningZh": "不同的；不一样的",
+      "exampleId": "2bbc58bb-f6db-48a3-9f2f-df2fae4a2f9f-visual-ex",
+      "styleFamily": "stained-glass butterfly diversity",
+      "sentenceEn": "Each butterfly had a different pattern on its wings.",
+      "sentenceZh": "每只蝴蝶的翅膀都有不同的花纹。",
+      "scene": "Exactly four butterflies rest side by side on separate flowers. Every butterfly has a clearly distinct symmetrical wing pattern and color family, while all remain recognizably butterflies of similar size. No extra butterflies, labels or diagram lines.",
+      "altText": "四只蝴蝶并排停在花上，每一只都有明显不同的对称翅纹。"
+    },
+    {
+      "vocabularyId": "ff2d6ea6-fa52-4735-8ce6-ac0571cea751",
+      "word": "lot",
+      "meaningZh": "许多；大量；命运；地块",
+      "exampleId": "ff2d6ea6-fa52-4735-8ce6-ac0571cea751-visual-ex",
+      "styleFamily": "rich gouache forest mushroom bloom",
+      "sentenceEn": "A lot of mushrooms appeared after the autumn rain.",
+      "sentenceZh": "秋雨过后，林地里长出了许多蘑菇。",
+      "scene": "A damp autumn forest floor is crowded with many mushrooms of varied natural sizes and species emerging among fallen leaves, moss and decaying logs. Fresh raindrops and wet bark show why the abundant growth appeared. No people.",
+      "altText": "秋雨后的湿润林地上，落叶和苔藓之间长出大量蘑菇。"
+    },
+    {
+      "vocabularyId": "f4729516-43de-4045-b268-7e6e7c868be3",
+      "word": "study",
+      "meaningZh": "学习；研究；书房；学科",
+      "exampleId": "f4729516-43de-4045-b268-7e6e7c868be3-visual-ex",
+      "styleFamily": "clean-line tide-pool research animation",
+      "sentenceEn": "The marine biologist returned to study how the octopus opened shells.",
+      "sentenceZh": "海洋生物学家回来研究章鱼如何打开贝壳。",
+      "scene": "At a clear tide pool, an adult marine biologist quietly observes an octopus manipulating a shell and makes a simple sketch in a waterproof notebook. The page contains only abstract unreadable marks. The person's complete readable face shows patient curiosity, and the octopus action remains central.",
+      "altText": "海洋生物学家在潮池边观察章鱼开贝壳，并把过程记录下来。"
+    },
+    {
+      "vocabularyId": "0afef4a6-61b4-46d5-8da3-17e73dae5d1d",
+      "word": "book",
+      "meaningZh": "书；书籍；预订；登记",
+      "exampleId": "0afef4a6-61b4-46d5-8da3-17e73dae5d1d-visual-ex",
+      "styleFamily": "warm woodcut bookbinding workshop",
+      "sentenceEn": "The bookbinder repaired the old book so others could read it again.",
+      "sentenceZh": "装订师修复了这本旧书，让其他人能够再次阅读它。",
+      "scene": "A skilled adult bookbinder carefully stitches the loose pages of one worn open book and prepares a new cloth spine. Simple tools and repaired books surround the workbench. Page marks are abstract and unreadable; the complete readable face shows careful concentration.",
+      "altText": "装订师在工作台上重新缝合旧书散开的书页，并修补书脊。"
+    },
+    {
+      "vocabularyId": "37b162c7-96f2-49dc-bef6-ebdbfc214ccf",
+      "word": "eye",
+      "meaningZh": "眼睛；视力；注视；眼光",
+      "exampleId": "37b162c7-96f2-49dc-bef6-ebdbfc214ccf-visual-ex",
+      "styleFamily": "macro editorial 3D dragonfly portrait",
+      "sentenceEn": "Each large eye helped the dragonfly detect movement around the pond.",
+      "sentenceZh": "每只大眼睛都帮助蜻蜓察觉池塘周围的动静。",
+      "scene": "A highly stylized macro portrait of a dragonfly beside a pond emphasizes its two enormous multifaceted compound eyes while reeds, tiny insects and reflected movement surround it. Keep the insect anatomically recognizable but clearly illustrated with matte materials, not photographic or glossy.",
+      "altText": "蜻蜓头部两侧的大型复眼清楚可见，周围映着池塘边的细小动静。"
+    }
+  ]
+}

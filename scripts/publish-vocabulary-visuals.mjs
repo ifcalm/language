@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { execFileSync } from 'node:child_process'
+import { spawn } from 'node:child_process'
 import { createRequire } from 'node:module'
 import {
   existsSync,
@@ -31,6 +31,9 @@ const wranglerTimeoutMs = Number(
 const r2UploadAttempts = Number(
   process.env.VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS ?? '2',
 )
+const d1ImportAttempts = Number(
+  process.env.VOCABULARY_VISUAL_D1_IMPORT_ATTEMPTS ?? '2',
+)
 
 if (!Number.isInteger(wranglerTimeoutMs) || wranglerTimeoutMs < 1000) {
   throw new Error('VOCABULARY_VISUAL_WRANGLER_TIMEOUT_MS must be at least 1000.')
@@ -38,6 +41,10 @@ if (!Number.isInteger(wranglerTimeoutMs) || wranglerTimeoutMs < 1000) {
 
 if (!Number.isInteger(r2UploadAttempts) || r2UploadAttempts < 1) {
   throw new Error('VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS must be positive.')
+}
+
+if (!Number.isInteger(d1ImportAttempts) || d1ImportAttempts < 1) {
+  throw new Error('VOCABULARY_VISUAL_D1_IMPORT_ATTEMPTS must be positive.')
 }
 
 function getArgValue(name, fallback) {
@@ -97,16 +104,79 @@ function findSourceFile(word) {
   return join(sourceDir, match)
 }
 
-function runWrangler(wranglerArgs, label, attempts = 1) {
+function runWranglerOnce(wranglerArgs, completionPattern) {
+  return new Promise((resolveRun, rejectRun) => {
+    const child = spawn(process.execPath, [wranglerCliPath, ...wranglerArgs], {
+      stdio: ['ignore', 'pipe', 'pipe'],
+      env: {
+        ...process.env,
+        CI: process.env.CI ?? '1',
+        WRANGLER_SEND_METRICS:
+          process.env.WRANGLER_SEND_METRICS ?? 'false',
+      },
+    })
+    let output = ''
+    let completionMatched = false
+    let timedOut = false
+    let forceKillTimer = null
+
+    const stopChild = () => {
+      child.kill('SIGTERM')
+      forceKillTimer = setTimeout(() => child.kill('SIGKILL'), 1000)
+      forceKillTimer.unref()
+    }
+    const consume = (chunk, destination) => {
+      destination.write(chunk)
+      output += chunk.toString()
+
+      if (
+        !completionMatched &&
+        completionPattern &&
+        completionPattern.test(output)
+      ) {
+        completionMatched = true
+        stopChild()
+      }
+    }
+    const timeout = setTimeout(() => {
+      timedOut = true
+      stopChild()
+    }, wranglerTimeoutMs)
+
+    child.stdout.on('data', (chunk) => consume(chunk, process.stdout))
+    child.stderr.on('data', (chunk) => consume(chunk, process.stderr))
+    child.on('error', rejectRun)
+    child.on('close', (code, signal) => {
+      clearTimeout(timeout)
+      if (forceKillTimer) clearTimeout(forceKillTimer)
+
+      if (completionMatched || (!timedOut && code === 0)) {
+        resolveRun()
+        return
+      }
+
+      const error = new Error(
+        timedOut
+          ? `Wrangler timed out after ${wranglerTimeoutMs}ms.`
+          : `Wrangler exited with code ${code ?? 'unknown'} and signal ${signal ?? 'none'}.`,
+      )
+      error.output = output
+      rejectRun(error)
+    })
+  })
+}
+
+async function runWrangler(
+  wranglerArgs,
+  label,
+  attempts = 1,
+  completionPattern = null,
+) {
   let lastError = null
 
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
-      execFileSync(process.execPath, [wranglerCliPath, ...wranglerArgs], {
-        stdio: 'inherit',
-        timeout: wranglerTimeoutMs,
-        killSignal: 'SIGTERM',
-      })
+      await runWranglerOnce(wranglerArgs, completionPattern)
       return
     } catch (error) {
       lastError = error
@@ -219,7 +289,7 @@ if (publish) {
   }
 
   for (const item of publishedItems) {
-    runWrangler(
+    await runWrangler(
       [
         'r2',
         'object',
@@ -235,10 +305,11 @@ if (publish) {
       ],
       `R2 upload for ${item.word}`,
       r2UploadAttempts,
+      /Upload complete\./,
     )
   }
 
-  runWrangler(
+  await runWrangler(
     [
       'r2',
       'object',
@@ -252,9 +323,10 @@ if (publish) {
     ],
     'R2 manifest upload',
     r2UploadAttempts,
+    /Upload complete\./,
   )
 
-  runWrangler(
+  await runWrangler(
     [
       'd1',
       'execute',
@@ -264,6 +336,8 @@ if (publish) {
       sqlPath,
     ],
     'D1 import',
+    d1ImportAttempts,
+    /Executed \d+ queries/,
   )
 }
 
