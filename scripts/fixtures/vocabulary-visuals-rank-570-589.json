@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-570-589-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b474fd8f-edd4-4ae5-8c4b-5869591772a8",
+      "word": "likely",
+      "meaningZh": "有可能的；合适的；前途有望的",
+      "exampleId": "b474fd8f-edd4-4ae5-8c4b-5869591772a8-visual-ex",
+      "styleFamily": "storm-blue-apricot layered papercut weather valley",
+      "sentenceEn": "Dark clouds and bending trees made rain likely before sunset.",
+      "sentenceZh": "乌云和被风吹弯的树木表明，日落前很可能下雨。",
+      "scene": "Across a dry valley, dark rain clouds advance from one side while trees bend in the same wind and the first distant curtain of rain approaches. A farmer gathers baskets with a complete knowing face. No forecasts, icons, signs, writing or text.",
+      "altText": "乌云、强风和远处雨幕同时逼近山谷，农夫赶紧收起篮子，降雨很可能即将到来。"
+    },
+    {
+      "vocabularyId": "20b98460-984b-43f8-b464-593045ba0a54",
+      "word": "opportunity",
+      "meaningZh": "机会；时机",
+      "exampleId": "20b98460-984b-43f8-b464-593045ba0a54-visual-ex",
+      "styleFamily": "jade-amber watercolor mangrove nursery",
+      "sentenceEn": "The low tide gave volunteers an opportunity to restore the mangroves.",
+      "sentenceZh": "退潮给志愿者提供了修复红树林的机会。",
+      "scene": "During a brief low tide, exposed mudflats create a clear working path and a varied group of volunteers carries mangrove seedlings into empty gaps before water returns. Every readable face is complete and purposeful. No clocks, signs, labels, writing or text.",
+      "altText": "退潮露出泥滩通道，志愿者抓紧时机把红树幼苗栽入空缺地带。"
+    },
+    {
+      "vocabularyId": "1331f315-9857-4de4-86e6-20221259cce9",
+      "word": "term",
+      "meaningZh": "术语；学期；任期；条款",
+      "exampleId": "1331f315-9857-4de4-86e6-20221259cce9-visual-ex",
+      "styleFamily": "navy-mustard chalk-pastel classroom seasons",
+      "sentenceEn": "At the end of the term, the students displayed their finished models.",
+      "sentenceZh": "学期结束时，学生们展示了完成的模型。",
+      "scene": "In an art classroom, a semester-long progression is visible through early rough materials at one end and polished finished models proudly displayed by students at the other. Their complete faces show accomplishment. No calendars, grades, board writing, labels or text.",
+      "altText": "学期末的教室里，学生们把从粗糙材料逐步完成的精致模型集中展示出来。"
+    },
+    {
+      "vocabularyId": "fcc5e089-72d3-4146-bbae-b00f91afaafb",
+      "word": "short",
+      "meaningZh": "短的；简短的；矮的；短缺",
+      "exampleId": "fcc5e089-72d3-4146-bbae-b00f91afaafb-visual-ex",
+      "styleFamily": "scarlet-cream minimalist felt stop-motion pencils",
+      "sentenceEn": "The short pencil could no longer reach through the deep sharpener.",
+      "sentenceZh": "这支短铅笔已经无法伸进很深的卷笔刀。",
+      "scene": "A macro tabletop scene compares one visibly worn short pencil beside one normal-length pencil. The short pencil barely reaches the opening of a deep hand sharpener while the longer one fits easily. No people, rulers, numbers, labels, writing or text.",
+      "altText": "桌面上一支磨得很短的铅笔无法够到深卷笔刀内部，旁边的正常长度铅笔则可以。"
+    },
+    {
+      "vocabularyId": "5804c021-9f9a-4bd4-8135-a74dc5f3c28f",
+      "word": "letter",
+      "meaningZh": "信；字母；文字",
+      "exampleId": "5804c021-9f9a-4bd4-8135-a74dc5f3c28f-visual-ex",
+      "styleFamily": "sepia-cornflower ink-and-wash mountain post",
+      "sentenceEn": "The pilot delivered a letter to the remote mountain clinic.",
+      "sentenceZh": "飞行员把一封信送到了偏远的山间诊所。",
+      "scene": "Beside a small mountain clinic, a bush pilot hands one sealed unmarked envelope to a grateful nurse after landing on a narrow snowy strip. Both complete faces express connection across distance. The envelope has no stamp detail, address, letters, writing or text.",
+      "altText": "偏远山间诊所外，飞行员把一封密封信件亲手交给前来迎接的护士。"
+    },
+    {
+      "vocabularyId": "fcc2917c-2a1e-4f49-b9d5-b251e679f93e",
+      "word": "condition",
+      "meaningZh": "情况；条件",
+      "exampleId": "fcc2917c-2a1e-4f49-b9d5-b251e679f93e-visual-ex",
+      "styleFamily": "moss-lilac botanical scientific illustration",
+      "sentenceEn": "The rare fern grows only under the cool, damp condition of the cave.",
+      "sentenceZh": "这种稀有蕨类只在洞穴凉爽潮湿的条件下生长。",
+      "scene": "A cave mouth forms a clear environmental boundary: rare lush ferns thrive only on the cool damp shaded interior wall with visible droplets, while the hot sunlit rock outside stays bare. No people, diagrams, labels, writing or text.",
+      "altText": "洞穴内凉爽湿润的岩壁长满稀有蕨类，洞外炎热干燥的岩石则没有植物。"
+    },
+    {
+      "vocabularyId": "9e5b96ee-ccef-4b09-8f0d-f5db431a85a2",
+      "word": "choice",
+      "meaningZh": "选择；精选品；选择权",
+      "exampleId": "9e5b96ee-ccef-4b09-8f0d-f5db431a85a2-visual-ex",
+      "styleFamily": "cobalt-persimmon editorial gouache pottery glaze",
+      "sentenceEn": "Amina's choice of blue glaze made the carved waves stand out.",
+      "sentenceZh": "阿米娜选择蓝色釉料，让雕刻的波浪更加醒目。",
+      "scene": "A potter holds a carved bowl between several open bowls of distinctly colored glaze, with her brush decisively touching the blue glaze and a finished blue section making wave carvings vivid. Her complete face shows satisfaction. No swatches with labels, writing or text.",
+      "altText": "陶艺师在多种釉色中选择蓝釉，碗上已上色的波浪雕纹因此格外醒目。"
+    },
+    {
+      "vocabularyId": "60434a0e-1a9e-4ca2-80b9-3aa9e3751d0c",
+      "word": "single",
+      "meaningZh": "单一的；单身的；单程的",
+      "exampleId": "60434a0e-1a9e-4ca2-80b9-3aa9e3751d0c-visual-ex",
+      "styleFamily": "black-gold Japanese woodcut crane marsh",
+      "sentenceEn": "A single white crane remained in the quiet marsh.",
+      "sentenceZh": "安静的湿地里只剩下一只白鹤。",
+      "scene": "Exactly one white crane stands alone in a vast dark reed marsh at dawn, reflected once in still water. No other birds or animals appear, making singularity unmistakable. No people, symbols, writing or text.",
+      "altText": "广阔安静的深色芦苇湿地中，只有一只白鹤独自站在水面旁。"
+    },
+    {
+      "vocabularyId": "19d0f7ca-3c11-43ea-8587-ebdbb79b7fe4",
+      "word": "rule",
+      "meaningZh": "规则；统治；支配",
+      "exampleId": "19d0f7ca-3c11-43ea-8587-ebdbb79b7fe4-visual-ex",
+      "styleFamily": "mint-red flat animation shared workshop",
+      "sentenceEn": "The workshop rule keeps every sharp tool inside its own holder.",
+      "sentenceZh": "工坊规定每件锋利工具都要放进各自的支架。",
+      "scene": "A shared craft workshop shows many people consistently returning sharp tools into fitted wall holders after use, while one open holder receives the final tool. Complete faces show calm routine. No posted rules, safety text, labels, symbols or writing.",
+      "altText": "共享工坊里，每个人用完锋利工具后都把它放回对应支架，形成统一规则。"
+    },
+    {
+      "vocabularyId": "c62aea07-3a29-42a5-91fe-85d261f3f7a7",
+      "word": "daughter",
+      "meaningZh": "女儿；女儿的",
+      "exampleId": "c62aea07-3a29-42a5-91fe-85d261f3f7a7-visual-ex",
+      "styleFamily": "rose-sage colored-linocut beekeeping family",
+      "sentenceEn": "The beekeeper's daughter gently returned the lost queen to the hive.",
+      "sentenceZh": "养蜂人的女儿轻轻地把迷失的蜂王送回蜂箱。",
+      "scene": "In an orchard apiary, an adult beekeeper watches proudly as his teenage daughter gently guides one queen bee from a soft brush toward an open hive frame. Their family resemblance and complete warm faces are visible through lifted veils. No labels, writing or text.",
+      "altText": "果园蜂场里，养蜂人的女儿在父亲注视下轻柔地把蜂王送回蜂箱。"
+    },
+    {
+      "vocabularyId": "fc4948da-9e4a-4cca-9cb1-d8152c7839c5",
+      "word": "administration",
+      "meaningZh": "行政；管理；政府机关；给药",
+      "exampleId": "fc4948da-9e4a-4cca-9cb1-d8152c7839c5-visual-ex",
+      "styleFamily": "slate-coral isometric civic logistics",
+      "sentenceEn": "The park administration coordinated repairs after the storm.",
+      "sentenceZh": "公园管理部门在暴风雨后协调了修复工作。",
+      "scene": "An isometric park operations courtyard shows one coordinated administration directing tree crews, bridge repair workers and wildlife carers from a central open planning table. Faces are complete where readable, and tasks visibly connect without charts or text. No uniforms with emblems, labels or writing.",
+      "altText": "公园管理团队在中央工作区协调树木清理、桥梁维修和野生动物照护等灾后任务。"
+    },
+    {
+      "vocabularyId": "66bddb10-205f-4859-8bc7-3a51a2f638fc",
+      "word": "south",
+      "meaningZh": "南方；南；南的；向南的",
+      "exampleId": "66bddb10-205f-4859-8bc7-3a51a2f638fc-visual-ex",
+      "styleFamily": "ice-blue-vermilion silk-screen migrating swallows",
+      "sentenceEn": "The swallows flew south as frost covered the northern fields.",
+      "sentenceZh": "北方田野结霜时，燕群向南飞去。",
+      "scene": "A sweeping aerial migration scene transitions from frosted fields behind to warm green wetlands ahead, with one flock of swallows flying consistently toward the warmer horizon. Sun position and climate gradient imply south without compass letters. No maps, arrows, labels, writing or text.",
+      "altText": "燕群离开结霜的寒冷田野，统一朝着远方温暖翠绿的湿地飞去。"
+    },
+    {
+      "vocabularyId": "19d9ed4c-c7df-408d-901f-b7f71ac7aae7",
+      "word": "husband",
+      "meaningZh": "丈夫",
+      "exampleId": "19d9ed4c-c7df-408d-901f-b7f71ac7aae7-visual-ex",
+      "styleFamily": "warm-gray-saffron clay-relief home kitchen",
+      "sentenceEn": "Her husband prepared soup while she rested after the long journey.",
+      "sentenceZh": "长途旅行后她休息时，丈夫为她煮了汤。",
+      "scene": "In a modest home kitchen, a husband tastes a pot of soup while his wife rests nearby under a blanket with travel bags set aside. Their wedding bands and complete caring faces establish the relationship naturally. No recipes, package labels, writing or text.",
+      "altText": "家中厨房里，丈夫为刚结束长途旅行、正在休息的妻子煮一锅热汤。"
+    },
+    {
+      "vocabularyId": "09cb2392-dc76-4431-93f9-a48bbe0557da",
+      "word": "Congress",
+      "meaningZh": "国会；会议；讨论会；会合",
+      "exampleId": "09cb2392-dc76-4431-93f9-a48bbe0557da-visual-ex",
+      "styleFamily": "federal-blue-brick-red neutral editorial etching",
+      "sentenceEn": "Congress gathered to hear testimony from coastal communities.",
+      "sentenceZh": "国会开会听取沿海社区的证词。",
+      "scene": "A balanced semicircular legislative chamber shows diverse lawmakers listening attentively while fishers, scientists and coastal residents speak at a central table. All readable faces are complete and respectfully rendered. No party symbols, flags, documents with text, labels or writing.",
+      "altText": "半圆形议事厅中，多元议员认真听取渔民、科学家和沿海居民的陈述。"
+    },
+    {
+      "vocabularyId": "f7b8264f-d367-424d-b906-e1c370de6444",
+      "word": "floor",
+      "meaningZh": "地板；楼层；底部；底价",
+      "exampleId": "f7b8264f-d367-424d-b906-e1c370de6444-visual-ex",
+      "styleFamily": "terracotta-aqua terrazzo collage dance hall",
+      "sentenceEn": "Sunlight revealed a mosaic fish across the old floor.",
+      "sentenceZh": "阳光照出了旧地板上的一条马赛克鱼。",
+      "scene": "An empty restored hall is viewed from a low angle, where a broad sunbeam reveals a large colorful mosaic fish embedded across the worn floor surface. Furniture and walls stay secondary. No people, letters, border inscriptions, writing or text.",
+      "altText": "旧大厅的地板被阳光照亮，磨损表面中显现出一条色彩丰富的马赛克鱼。"
+    },
+    {
+      "vocabularyId": "1d884451-e5ae-4302-9e93-f3a55293fc7c",
+      "word": "campaign",
+      "meaningZh": "运动；战役；活动；竞选活动",
+      "exampleId": "1d884451-e5ae-4302-9e93-f3a55293fc7c-visual-ex",
+      "styleFamily": "turquoise-orange screenprint river cleanup",
+      "sentenceEn": "The cleanup campaign brought the whole neighborhood to the river.",
+      "sentenceZh": "清洁行动让整个社区都来到河边。",
+      "scene": "A wide riverbank is animated by coordinated neighbors collecting litter, sorting reusable materials and planting reeds, with children, adults and elders participating in one shared campaign. Complete faces show purpose and cooperation. No banners, slogans, logos, labels or text.",
+      "altText": "整个社区共同来到河岸清理垃圾、分类材料并补种芦苇，形成有组织的清洁行动。"
+    },
+    {
+      "vocabularyId": "2caa47aa-b09f-47ad-9952-020054f04a52",
+      "word": "material",
+      "meaningZh": "材料；物资；素材；布料；资料",
+      "exampleId": "2caa47aa-b09f-47ad-9952-020054f04a52-visual-ex",
+      "styleFamily": "indigo-ochre textile macro tapestry",
+      "sentenceEn": "The weaver tested each material before making the winter blanket.",
+      "sentenceZh": "织工在制作冬毯前测试了每种材料。",
+      "scene": "A weaver's hands compare distinct raw materials on a broad table: soft wool, tough flax, smooth recycled fiber and an unfinished woven sample, each visibly different in texture. The weaver's complete thoughtful face is visible above. No tags, labels, writing or text.",
+      "altText": "织工在工作台上触摸比较羊毛、亚麻和再生纤维等不同材料，再决定冬毯用料。"
+    },
+    {
+      "vocabularyId": "0fcb968c-eefa-45b7-8dde-9f4b968eb96b",
+      "word": "population",
+      "meaningZh": "人口；群体；总体",
+      "exampleId": "0fcb968c-eefa-45b7-8dde-9f4b968eb96b-visual-ex",
+      "styleFamily": "emerald-copper naturalist seabird colony panorama",
+      "sentenceEn": "The island supports a large population of nesting puffins.",
+      "sentenceZh": "这座岛上生活着大量筑巢的海鹦。",
+      "scene": "A panoramic grassy island cliff contains a visibly large population of puffins occupying many burrows and ledges, with adults carrying fish and chicks peeking out. The dense colony is the clear subject. No people, counting marks, labels, writing or text.",
+      "altText": "海岛草坡和悬崖上聚集着大量筑巢海鹦，成鸟衔鱼归来，幼鸟从洞中探头。"
+    },
+    {
+      "vocabularyId": "122eebe1-eec9-48e6-afce-94980ee43d67",
+      "word": "economy",
+      "meaningZh": "经济；节约；经济体",
+      "exampleId": "122eebe1-eec9-48e6-afce-94980ee43d67-visual-ex",
+      "styleFamily": "cobalt-gold circular isometric market town",
+      "sentenceEn": "The fishing economy connects boats, markets, workshops, and local homes.",
+      "sentenceZh": "渔业经济把渔船、市场、工坊和当地家庭连接起来。",
+      "scene": "An isometric coastal town forms one visible circular flow: boats deliver fish to a market, market activity supports a net workshop, and goods and income continue toward local homes and back to the harbor. People have complete faces where readable. No coins with symbols, charts, labels or text.",
+      "altText": "海滨小镇中，渔船、市场、修网工坊和家庭通过连续流动形成相互支持的经济网络。"
+    },
+    {
+      "vocabularyId": "b9c5533f-0e85-401e-ad12-f8867e23c9ff",
+      "word": "medical",
+      "meaningZh": "医疗的；医学的",
+      "exampleId": "b9c5533f-0e85-401e-ad12-f8867e23c9ff-visual-ex",
+      "styleFamily": "white-teal soft 3D animated rural clinic",
+      "sentenceEn": "The mobile medical team treated families after the flood.",
+      "sentenceZh": "流动医疗队在洪水后为多户家庭提供治疗。",
+      "scene": "Beside a colorful nonbranded mobile clinic, a diverse medical team checks a child's bandaged arm, listens to an elder's breathing and distributes clean supplies after floodwater recedes. Every readable face has clear eyes, nose, mouth and reassuring expression. No red-cross symbols, labels, interfaces, writing or text.",
+      "altText": "洪水退去后，流动医疗团队在诊疗车旁为儿童、老人和家庭提供检查与照护。"
+    }
+  ]
+}

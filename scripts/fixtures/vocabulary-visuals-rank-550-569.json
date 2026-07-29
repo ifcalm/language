@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-550-569-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7a623bfb-690e-496b-939c-16bc90d27ff1",
+      "word": "choose",
+      "meaningZh": "选择；挑选；决定",
+      "exampleId": "7a623bfb-690e-496b-939c-16bc90d27ff1-visual-ex",
+      "styleFamily": "sapphire-coral hand-painted animation mountain trail",
+      "sentenceEn": "Mara had to choose between the steep shortcut and the safe winding trail.",
+      "sentenceZh": "玛拉必须在陡峭的近路和安全的蜿蜒小径之间作出选择。",
+      "scene": "At a clear mountain fork, Mara pauses with one boot lifted and looks thoughtfully between two visibly different paths: a short steep rocky climb and a longer gentle trail with railings and flowers. Her complete expressive face and body orientation show the moment of choosing. No signs, arrows, letters, writing or text.",
+      "altText": "山路岔口处，玛拉停下来，在陡峭近路与有护栏的平缓小径之间认真选择。"
+    },
+    {
+      "vocabularyId": "c79ca732-567a-46c8-b26f-8dc757d0f2dd",
+      "word": "cause",
+      "meaningZh": "导致；引起；原因；事业",
+      "exampleId": "c79ca732-567a-46c8-b26f-8dc757d0f2dd-visual-ex",
+      "styleFamily": "amber-indigo cut-paper domino greenhouse",
+      "sentenceEn": "One loose hose can cause every seedling tray to flood.",
+      "sentenceZh": "一根松脱的水管就可能导致所有育苗盘被淹。",
+      "scene": "Inside a greenhouse, one clearly detached irrigation hose sprays water across the floor, and the spreading stream visibly reaches several seedling trays that are beginning to overflow. The single cause and widening result form one continuous readable chain. No people, labels, diagrams, arrows, writing or text.",
+      "altText": "温室里一根松脱的灌溉水管不断喷水，水流蔓延并使多个育苗盘开始溢水。"
+    },
+    {
+      "vocabularyId": "a3fd0008-dd93-40e1-80d9-5cf9af8946f5",
+      "word": "hair",
+      "meaningZh": "头发；毛发",
+      "exampleId": "a3fd0008-dd93-40e1-80d9-5cf9af8946f5-visual-ex",
+      "styleFamily": "plum-gold embroidered storybook windy orchard",
+      "sentenceEn": "Her long hair streamed behind her as she ran through the windy orchard.",
+      "sentenceZh": "她跑过风中的果园时，长发在身后飘扬。",
+      "scene": "A young adult runs joyfully through an autumn orchard while strong wind lifts her long dark hair into a clear flowing shape behind her. Her face is shown in three-quarter view with distinct eyes, nose, mouth and a lively expression. Leaves move in the same direction. No hair labels, signs, writing or text.",
+      "altText": "秋日果园中，一位年轻人迎风奔跑，长发与落叶一起在身后清晰飘动。"
+    },
+    {
+      "vocabularyId": "5688e972-d79b-4187-9785-472989df8da3",
+      "word": "century",
+      "meaningZh": "世纪；百年",
+      "exampleId": "5688e972-d79b-4187-9785-472989df8da3-visual-ex",
+      "styleFamily": "patina-rust architectural watercolor time-layer courtyard",
+      "sentenceEn": "The oak survived a century while the town grew around it.",
+      "sentenceZh": "这棵橡树存活了一个世纪，小镇在它周围逐渐发展。",
+      "scene": "One enormous old oak anchors a seamless time-layered town courtyard: around its unchanged trunk, the surroundings transition from a few horse carts and stone cottages on the left to trams and mature modern buildings on the right. The tree's growth rings are subtly visible on one fallen branch. No dates, clocks, captions, writing or text.",
+      "altText": "一棵巨大老橡树始终立在庭院中央，四周小镇从旧式石屋马车逐渐发展为现代街区。"
+    },
+    {
+      "vocabularyId": "0da66316-2138-43a7-8128-f1eec858193c",
+      "word": "evidence",
+      "meaningZh": "证据；迹象；根据",
+      "exampleId": "0da66316-2138-43a7-8128-f1eec858193c-visual-ex",
+      "styleFamily": "moonlit-cyan claymation wildlife tracking",
+      "sentenceEn": "Fresh paw prints were evidence that an otter had crossed the muddy bank.",
+      "sentenceZh": "新鲜的爪印是水獭刚刚经过泥岸的证据。",
+      "scene": "At dawn on a muddy riverbank, a wildlife ranger kneels beside a crisp trail of wet otter paw prints leading directly from the water to a small slide mark. A distant otter silhouette is barely departing. The ranger's complete attentive face studies the prints. No clipboards, measuring labels, writing or text.",
+      "altText": "清晨泥岸上留着清晰湿润的水獭爪印和滑行痕迹，护林员正认真查看这些证据。"
+    },
+    {
+      "vocabularyId": "c306584f-2629-4bc4-adca-34c507acce88",
+      "word": "window",
+      "meaningZh": "窗户；窗子；窗口；给...开窗",
+      "exampleId": "c306584f-2629-4bc4-adca-34c507acce88-visual-ex",
+      "styleFamily": "mint-terracotta paper-diorama rainy attic",
+      "sentenceEn": "A round window filled the attic with morning light.",
+      "sentenceZh": "一扇圆窗让晨光洒满阁楼。",
+      "scene": "A cozy attic is centered on one large round window through which bright morning light forms a clean circular beam across trunks, rafters and dust motes. A small cat rests inside the illuminated patch. No people, curtains with symbols, labels, writing or text.",
+      "altText": "阁楼的一扇圆窗引入明亮晨光，圆形光束照亮木梁、旧箱子和一只小猫。"
+    },
+    {
+      "vocabularyId": "7c392c56-cdf1-42d0-bf68-4156496ebd25",
+      "word": "difficult",
+      "meaningZh": "困难的",
+      "exampleId": "7c392c56-cdf1-42d0-bf68-4156496ebd25-visual-ex",
+      "styleFamily": "charcoal-tangerine graphic-novel pottery repair",
+      "sentenceEn": "Repairing the shattered vase was difficult, but Imani placed the final piece.",
+      "sentenceZh": "修复碎裂的花瓶很困难，但伊玛尼最终放好了最后一片。",
+      "scene": "At a craft table, Imani carefully fits the last irregular shard into a nearly reconstructed ceramic vase surrounded by many tiny organized fragments and delicate clamps. Her complete face shows intense concentration and patient relief. The complexity is visible without diagrams. No instructions, labels, writing or text.",
+      "altText": "工作台上，伊玛尼在许多细小碎片和夹具之间，专注地把最后一块陶片嵌回花瓶。"
+    },
+    {
+      "vocabularyId": "34541a0e-aa48-45e2-b350-8875f5ba9fff",
+      "word": "listen",
+      "meaningZh": "听；倾听；听从",
+      "exampleId": "34541a0e-aa48-45e2-b350-8875f5ba9fff-visual-ex",
+      "styleFamily": "ultramarine-silver woodblock nocturnal forest",
+      "sentenceEn": "The young deer stopped to listen for movement beyond the ferns.",
+      "sentenceZh": "小鹿停下来倾听蕨丛外的动静。",
+      "scene": "In a moonlit forest, one young deer stands completely still with both ears turned toward rustling ferns at the edge of the frame. Concentric disturbances in dew and one lifted bird subtly imply a sound source without drawn sound symbols. No people, musical notes, letters, writing or text.",
+      "altText": "月光森林里，小鹿停下脚步，双耳转向正在轻轻晃动的蕨丛，专注倾听。"
+    },
+    {
+      "vocabularyId": "019fbbbe-c507-4dc5-b555-281abf374b54",
+      "word": "soon",
+      "meaningZh": "不久；早；快；宁可",
+      "exampleId": "019fbbbe-c507-4dc5-b555-281abf374b54-visual-ex",
+      "styleFamily": "peach-teal soft pastel bakery dawn",
+      "sentenceEn": "The bread will be ready soon as the crust is already turning golden.",
+      "sentenceZh": "面包很快就会烤好，因为外皮已经开始变成金黄色。",
+      "scene": "Through an old bakery oven window, several loaves are almost finished: their crusts have turned mostly golden while a little pale dough remains at the seams. An adult baker waits nearby with mitts ready and a complete expectant face. No timers, numbers, labels, writing or text.",
+      "altText": "烤炉中的面包外皮大多已呈金黄，面包师戴着手套在旁期待，很快就能出炉。"
+    },
+    {
+      "vocabularyId": "bada0135-8c37-414d-9b45-c330057a5d14",
+      "word": "culture",
+      "meaningZh": "文化；修养；培养；栽培",
+      "exampleId": "bada0135-8c37-414d-9b45-c330057a5d14-visual-ex",
+      "styleFamily": "jewel-tone mosaic community lantern festival",
+      "sentenceEn": "The lantern festival keeps the island's culture alive across generations.",
+      "sentenceZh": "灯笼节让这座岛的文化在代际之间延续。",
+      "scene": "At an island courtyard festival, an elder shows two younger relatives how to shape a traditional patterned lantern while musicians, dancers and food makers share the same celebration in the background. All readable faces have clear eyes, noses, mouths and warm expressions. Patterns are purely decorative, with no letters, writing or text.",
+      "altText": "海岛节庆庭院里，长者教年轻一代制作传统灯笼，周围还有音乐、舞蹈和食物制作。"
+    },
+    {
+      "vocabularyId": "ffed377e-f207-4898-86d6-492b67fecdc7",
+      "word": "billion",
+      "meaningZh": "十亿；十亿个",
+      "exampleId": "ffed377e-f207-4898-86d6-492b67fecdc7-visual-ex",
+      "styleFamily": "violet-gold cosmic screenprint star field",
+      "sentenceEn": "A billion stars can fill a single galaxy with light.",
+      "sentenceZh": "十亿颗恒星可以让一个星系充满光芒。",
+      "scene": "A sweeping spiral galaxy fills the entire landscape frame with an immense dense field of countless luminous stars, dust lanes and glowing nebulae, making vast quantity intuitive through scale. One tiny unmanned telescope satellite provides contrast. No people, numbers, constellations, labels, writing or text.",
+      "altText": "巨大的螺旋星系由难以计数的明亮恒星和星云组成，微小卫星衬托出十亿星辰的庞大尺度。"
+    },
+    {
+      "vocabularyId": "2192ef9e-016b-4ed3-a137-87a70947c888",
+      "word": "chance",
+      "meaningZh": "机会；意外；可能性；偶然发生",
+      "exampleId": "2192ef9e-016b-4ed3-a137-87a70947c888-visual-ex",
+      "styleFamily": "cerulean-ruby ink-wash rescue harbor",
+      "sentenceEn": "A break in the storm gave the rescue boat one chance to reach the island.",
+      "sentenceZh": "暴风雨短暂减弱，给了救援船一次抵达小岛的机会。",
+      "scene": "Dark storm clouds briefly open into one bright calm corridor across rough sea, and a compact rescue boat turns decisively into that narrow passage toward an isolated island. Crew faces are small but complete if readable. No maps, flags, signs, writing or text.",
+      "altText": "暴风云层短暂裂开一条明亮平静的海上通道，救援船抓住机会驶向孤岛。"
+    },
+    {
+      "vocabularyId": "d7e9e039-960a-4719-bf7f-653530833328",
+      "word": "brother",
+      "meaningZh": "兄弟",
+      "exampleId": "d7e9e039-960a-4719-bf7f-653530833328-visual-ex",
+      "styleFamily": "ochre-denim colored-pencil bicycle workshop",
+      "sentenceEn": "My brother held the bicycle steady while I fixed the chain.",
+      "sentenceZh": "我修理链条时，哥哥帮我扶稳自行车。",
+      "scene": "In a home courtyard, two adult brothers cooperate on one bicycle: one kneels to reconnect the chain while the other firmly holds the frame upright. Similar family features but different hairstyles make their relationship plausible. Both complete faces show patient teamwork. No brands, manuals, writing or text.",
+      "altText": "家庭庭院里，两兄弟合作修自行车，一人扶稳车架，另一人蹲下重新装好链条。"
+    },
+    {
+      "vocabularyId": "6f5cc64e-5ba2-4fda-9b43-4b4fd6405497",
+      "word": "energy",
+      "meaningZh": "精力；精神；活力；能量",
+      "exampleId": "6f5cc64e-5ba2-4fda-9b43-4b4fd6405497-visual-ex",
+      "styleFamily": "aqua-sunflower isometric tidal-power illustration",
+      "sentenceEn": "The moving tide supplied energy to the island homes.",
+      "sentenceZh": "流动的潮水为岛上的房屋提供能量。",
+      "scene": "A clean illustrated coastal cutaway shows strong tidal water turning underwater turbines; one continuous cable leads uphill to a cluster of warmly glowing island homes at dusk. Fish swim safely around the protected structure. No meters, lightning symbols, diagrams, labels, writing or text.",
+      "altText": "海岸剖面中，潮水推动水下涡轮，电缆延伸到岛上亮起灯光的房屋。"
+    },
+    {
+      "vocabularyId": "114aa6d3-9b2e-4bff-84a3-a40cd1de343e",
+      "word": "period",
+      "meaningZh": "时期；阶段；句号",
+      "exampleId": "114aa6d3-9b2e-4bff-84a3-a40cd1de343e-visual-ex",
+      "styleFamily": "sage-burgundy botanical time-lapse tapestry",
+      "sentenceEn": "During this period, the orchard changed from blossom to ripe fruit.",
+      "sentenceZh": "在这段时期里，果园从开花逐渐变为果实成熟。",
+      "scene": "One continuous panoramic orchard transitions smoothly from spring blossoms at left through small green fruit in the center to ripe autumn fruit at right, with the same distinctive curved branch visible through every stage. No panels, calendars, clocks, labels, writing or text.",
+      "altText": "同一片果园从左到右连续呈现花开、幼果和成熟果实，表现一段完整生长时期。"
+    },
+    {
+      "vocabularyId": "04518fc3-1e47-41b1-95f4-500ca26a665d",
+      "word": "summer",
+      "meaningZh": "夏季；全盛时期；避暑；过夏天",
+      "exampleId": "04518fc3-1e47-41b1-95f4-500ca26a665d-visual-ex",
+      "styleFamily": "turquoise-citrus mid-century poolside illustration",
+      "sentenceEn": "Dragonflies hovered over the pond throughout the warm summer.",
+      "sentenceZh": "整个温暖的夏季，蜻蜓都在池塘上方飞舞。",
+      "scene": "A lush summer pond under high warm sunlight is filled with lotus leaves, bright dragonflies, rippling water and dense green reeds. A family of ducks rests in shade, emphasizing the season's heat and fullness. No people, seasonal labels, writing or text.",
+      "altText": "盛夏阳光下，荷叶、芦苇和蜻蜓充满池塘，鸭子一家在浓荫中休息。"
+    },
+    {
+      "vocabularyId": "9ce73540-a57d-46eb-a581-41689716497c",
+      "word": "realize",
+      "meaningZh": "意识到；实现",
+      "exampleId": "9ce73540-a57d-46eb-a581-41689716497c-visual-ex",
+      "styleFamily": "indigo-copper cinematic comic cave discovery",
+      "sentenceEn": "Noor began to realize the missing key was still hanging inside the cave.",
+      "sentenceZh": "努尔开始意识到，丢失的钥匙还挂在洞穴里面。",
+      "scene": "At a cave entrance, Noor pats an empty pocket and abruptly turns back as a shaft of light reveals one familiar key hanging from a peg deep inside. Her complete face clearly changes to recognition, with wide eyes and a relieved mouth. No thought bubbles, symbols, labels, writing or text.",
+      "altText": "洞口处，努尔摸到空口袋后突然回头，看见光束照亮洞内挂着的那把钥匙。"
+    },
+    {
+      "vocabularyId": "3be1c066-b19a-43ab-9f06-3ec6f83fb24d",
+      "word": "hundred",
+      "meaningZh": "一百；许多",
+      "exampleId": "3be1c066-b19a-43ab-9f06-3ec6f83fb24d-visual-ex",
+      "styleFamily": "rose-emerald geometric quilt sea-turtle hatchlings",
+      "sentenceEn": "A hundred tiny turtles crossed the moonlit beach together.",
+      "sentenceZh": "一百只小海龟一起穿过月光下的海滩。",
+      "scene": "A broad moonlit beach is densely but clearly filled with exactly one hundred tiny sea-turtle hatchlings traveling from one nest toward the glowing sea, arranged in ten natural staggered groups of ten without visible grid lines. No people, numbers, counting marks, labels, writing or text.",
+      "altText": "月光海滩上，一百只小海龟从同一处巢穴成群爬向发亮的海面。"
+    },
+    {
+      "vocabularyId": "fc70f595-edaf-4c40-9911-0318fdd12653",
+      "word": "available",
+      "meaningZh": "可利用的；可获得的；有效的",
+      "exampleId": "fc70f595-edaf-4c40-9911-0318fdd12653-visual-ex",
+      "styleFamily": "cream-cobalt risograph community tool library",
+      "sentenceEn": "A spare wheelchair was available beside the community hall entrance.",
+      "sentenceZh": "社区礼堂入口旁有一把备用轮椅可供使用。",
+      "scene": "At an accessible community hall entrance, one clean spare wheelchair waits visibly in an open shelter while the other storage spaces are empty. An older visitor and an attendant notice it with relieved complete faces. The ramp and open path show immediate usability. No signs, accessibility symbols, labels, writing or text.",
+      "altText": "社区礼堂入口的开放遮棚中，一把干净的备用轮椅随时可用，访客和工作人员都看到了它。"
+    },
+    {
+      "vocabularyId": "be8c96c2-1692-4a3c-a160-817f03d64955",
+      "word": "plant",
+      "meaningZh": "植物；工厂；种植",
+      "exampleId": "be8c96c2-1692-4a3c-a160-817f03d64955-visual-ex",
+      "styleFamily": "leaf-green-clay sculpted botanical stop-motion",
+      "sentenceEn": "The child helped plant a young mangrove beside the restored shore.",
+      "sentenceZh": "孩子帮忙在修复后的海岸边种下一棵红树幼苗。",
+      "scene": "On a restored tidal shore, a child and an adult conservation worker gently place one young mangrove into wet soil while small crabs and shorebirds occupy the surrounding habitat. Both readable faces have clear eyes, noses, mouths and caring expressions. No tools with logos, signs, labels, writing or text.",
+      "altText": "修复后的潮间带上，孩子与保育员一起把一棵红树幼苗栽进湿润泥土。"
+    }
+  ]
+}

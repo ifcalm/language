@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-651-671-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, arrows, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "22ba0901-5624-4293-a932-37ecbde28930",
+      "word": "poor",
+      "meaningZh": "贫穷的；贫乏的；可怜的；拙劣的",
+      "exampleId": "22ba0901-5624-4293-a932-37ecbde28930-visual-ex",
+      "styleFamily": "ochre-sage botanical cutaway soil comparison",
+      "sentenceEn": "The poor soil could support only a few weak seedlings.",
+      "sentenceZh": "贫瘠的土壤只能支撑少数几株弱小幼苗。",
+      "scene": "A garden bed with pale cracked nutrient-poor soil holds only a few small weak seedlings, contrasted naturally with distant healthy vegetation beyond the bed. A cutaway shows sparse roots and little organic matter. No people, labels, arrows, diagrams, writing or text.",
+      "altText": "一块颜色浅、干裂且缺少有机质的贫瘠土壤里，只长出少数弱小幼苗。"
+    },
+    {
+      "vocabularyId": "b6833752-2174-4f77-8afa-b7fc283edda5",
+      "word": "natural",
+      "meaningZh": "自然的",
+      "exampleId": "b6833752-2174-4f77-8afa-b7fc283edda5-visual-ex",
+      "styleFamily": "emerald-sky hand-painted wetland animation",
+      "sentenceEn": "A natural wetland cleaned the water before it reached the lake.",
+      "sentenceZh": "天然湿地在水流进入湖泊前将其净化。",
+      "scene": "A winding stream enters a lush natural wetland, passes through reeds, stones and plant roots, then emerges visibly clearer into a blue lake where fish swim. No machinery or constructed filters. No people, arrows, labels, writing or text.",
+      "altText": "浑浊溪水流经天然芦苇、石块和植物根系后，变得清澈并汇入湖泊。"
+    },
+    {
+      "vocabularyId": "fbd8c41e-9cb6-41e1-a378-5111e5335d14",
+      "word": "race",
+      "meaningZh": "种族；比赛；赛跑",
+      "exampleId": "fbd8c41e-9cb6-41e1-a378-5111e5335d14-visual-ex",
+      "styleFamily": "cobalt-coral dynamic paper-cut solar boat race",
+      "sentenceEn": "Three solar boats began the race across the bright harbor.",
+      "sentenceZh": "三艘太阳能船在明亮港湾中开始比赛。",
+      "scene": "Exactly three distinct solar-powered boats accelerate side by side from the same harbor line, their wakes lengthening as each crew competes toward a distant buoy. Faces are complete if readable. No boat numbers, flags with symbols, signs, writing or text.",
+      "altText": "三艘太阳能船从港湾同一起点并排加速，船员们向远处浮标展开比赛。"
+    },
+    {
+      "vocabularyId": "fb8fc9b6-0960-4bb9-81ac-3d29eb777b6b",
+      "word": "concern",
+      "meaningZh": "关心；忧虑",
+      "exampleId": "fb8fc9b6-0960-4bb9-81ac-3d29eb777b6b-visual-ex",
+      "styleFamily": "indigo-amber graphic-novel sea turtle rescue",
+      "sentenceEn": "The injured turtle became the fisher's immediate concern.",
+      "sentenceZh": "受伤的海龟立刻成为渔民最关心的事情。",
+      "scene": "On a small fishing boat, a fisher stops sorting the catch and turns full attention to a sea turtle with a loose rope around one flipper, gently cutting it free. The complete face shows clear concern and care. No graphic injury, logos, labels, writing or text.",
+      "altText": "渔民放下手中工作，神情担忧地帮一只被松绳缠住鳍肢的海龟脱困。"
+    },
+    {
+      "vocabularyId": "d90da9af-9629-49dd-b8af-f1d307ef4828",
+      "word": "series",
+      "meaningZh": "系列；连续；丛书；连续剧",
+      "exampleId": "d90da9af-9629-49dd-b8af-f1d307ef4828-visual-ex",
+      "styleFamily": "plum-gold ceramic stop-motion moon phases",
+      "sentenceEn": "A series of clay moons showed the eclipse from beginning to end.",
+      "sentenceZh": "一系列陶土月球展示了月食从开始到结束的过程。",
+      "scene": "A single curved shelf holds a sequential series of seven handcrafted clay moons, progressing smoothly from bright through eclipse darkness and back to bright. No people, numbers, captions, arrows, labels, writing or text.",
+      "altText": "弧形架上连续摆放七个陶土月球，明暗变化完整呈现月食过程。"
+    },
+    {
+      "vocabularyId": "b99843c9-ad4f-4f06-ae70-fb0d2b5a4edb",
+      "word": "significant",
+      "meaningZh": "重要的；显著的；有意义的",
+      "exampleId": "b99843c9-ad4f-4f06-ae70-fb0d2b5a4edb-visual-ex",
+      "styleFamily": "turquoise-russet editorial gouache spring recovery",
+      "sentenceEn": "The return of salmon was a significant change for the restored river.",
+      "sentenceZh": "鲑鱼回归是修复后河流的一项重大变化。",
+      "scene": "A restored river once empty now carries a large visible run of salmon upstream while bears, eagles and riverside plants respond, showing an ecologically significant change across the whole habitat. No people, charts, before-after panels, labels, writing or text.",
+      "altText": "大群鲑鱼重返修复后的河流，鹰、熊和岸边植物共同显示生态系统发生了重大变化。"
+    },
+    {
+      "vocabularyId": "d77abb79-7d6a-4c96-8f54-063898d35da3",
+      "word": "similar",
+      "meaningZh": "相似的；类似的；相似的东西",
+      "exampleId": "d77abb79-7d6a-4c96-8f54-063898d35da3-visual-ex",
+      "styleFamily": "pearl-blue scientific watercolor butterfly mimicry",
+      "sentenceEn": "The two butterflies looked similar even though they were different species.",
+      "sentenceZh": "这两只蝴蝶虽然物种不同，看起来却很相似。",
+      "scene": "Exactly two butterflies rest side by side on neighboring leaves, sharing nearly identical orange and black wing patterns while small differences in spots and shape remain visible. No people, specimen pins, labels, writing or text.",
+      "altText": "两只不同种类的蝴蝶并排停在叶片上，翅膀花纹高度相似但细节略有区别。"
+    },
+    {
+      "vocabularyId": "da7a53f6-1461-4ab7-a92c-148027f9d9af",
+      "word": "hot",
+      "meaningZh": "热的；辣的；热门的",
+      "exampleId": "da7a53f6-1461-4ab7-a92c-148027f9d9af-visual-ex",
+      "styleFamily": "vermilion-cyan linocut desert spring",
+      "sentenceEn": "The sand was too hot for the lizard to remain still.",
+      "sentenceZh": "沙地太热，蜥蜴无法停在原地。",
+      "scene": "Under a high desert sun, a lizard rapidly lifts alternating feet from shimmering hot sand while seeking the small shade of a rock. Heat distortion rises behind it. No flames, thermometers, people, labels, writing or text.",
+      "altText": "烈日下的沙面热浪扭曲，蜥蜴轮流抬脚并赶向岩石阴影避热。"
+    },
+    {
+      "vocabularyId": "fb48fdb3-342f-4ce7-9727-fc90689916b8",
+      "word": "language",
+      "meaningZh": "语言；语言文字",
+      "exampleId": "fb48fdb3-342f-4ce7-9727-fc90689916b8-visual-ex",
+      "styleFamily": "jewel-tone woven community storytelling tapestry",
+      "sentenceEn": "Music became a shared language between the visiting children.",
+      "sentenceZh": "音乐成为来访孩子们之间共同的语言。",
+      "scene": "Children from varied backgrounds who do not share spoken words begin communicating through a circle of drums, clapping and mirrored rhythms, with complete faces showing mutual understanding. No speech bubbles, musical notation, flags, writing or text.",
+      "altText": "来自不同地方的孩子围成一圈，用鼓点、拍手和相互模仿的节奏建立共同交流。"
+    },
+    {
+      "vocabularyId": "2c2032eb-ac95-4561-b29e-aadde80339dd",
+      "word": "usually",
+      "meaningZh": "通常",
+      "exampleId": "2c2032eb-ac95-4561-b29e-aadde80339dd-visual-ex",
+      "styleFamily": "sage-coral cozy cut-paper morning bakery",
+      "sentenceEn": "The baker usually feeds the sparrows after opening the shutters.",
+      "sentenceZh": "面包师通常在打开百叶窗后喂麻雀。",
+      "scene": "A familiar dawn routine is shown in one cozy bakery courtyard: an adult baker opens wooden shutters and scatters crumbs to sparrows already waiting in their regular places. The complete face and birds show comfortable habit. No clocks, signs, labels, writing or text.",
+      "altText": "清晨面包师像往常一样打开百叶窗，并给早已等候在固定位置的麻雀撒下碎屑。"
+    },
+    {
+      "vocabularyId": "d751b715-3646-4224-a67e-547652a53379",
+      "word": "dead",
+      "meaningZh": "死的；不活泼的；麻木的；熄灭的",
+      "exampleId": "d751b715-3646-4224-a67e-547652a53379-visual-ex",
+      "styleFamily": "charcoal-cream quiet wax-relief lantern",
+      "sentenceEn": "The wick was dead after the final spark disappeared.",
+      "sentenceZh": "最后一点火星消失后，灯芯彻底熄灭了。",
+      "scene": "A close still life shows an old oil lamp with a completely dark dead wick, a thin final curl of smoke fading above it, contrasted with warm dawn light outside. No people, flames, skulls, labels, writing or text.",
+      "altText": "旧油灯的灯芯已经完全变黑熄灭，只剩最后一缕烟正在消散。"
+    },
+    {
+      "vocabularyId": "7909dcb3-28e8-4a5d-8611-6cad88162cf2",
+      "word": "rise",
+      "meaningZh": "上升；增加；崛起",
+      "exampleId": "7909dcb3-28e8-4a5d-8611-6cad88162cf2-visual-ex",
+      "styleFamily": "aqua-gold stained-glass hot-air balloon",
+      "sentenceEn": "Warm air made the balloon rise above the valley.",
+      "sentenceZh": "热空气使气球升到山谷上方。",
+      "scene": "A colorful hot-air balloon has just lifted from a meadow and clearly rises above the valley, with taut ropes leaving the ground and birds now below the basket. Occupant faces are complete if readable. No altitude marks, arrows, logos, writing or text.",
+      "altText": "热气球离开草地不断上升，吊篮已高过飞鸟和山谷树梢。"
+    },
+    {
+      "vocabularyId": "af2e9bc5-f5b6-433e-8514-0f2aad31b87b",
+      "word": "animal",
+      "meaningZh": "动物",
+      "exampleId": "af2e9bc5-f5b6-433e-8514-0f2aad31b87b-visual-ex",
+      "styleFamily": "forest-green-ochre naturalist storybook pangolin",
+      "sentenceEn": "The rescued animal curled into a ball beneath the leaves.",
+      "sentenceZh": "获救的动物在落叶下蜷成一团。",
+      "scene": "A rescued pangolin, clearly an animal with scales, eyes, legs and tail, curls protectively into a ball under forest leaves while a wildlife carer watches from a respectful distance. Complete carer face if readable. No cages, labels, writing or text.",
+      "altText": "森林落叶下，一只获救穿山甲蜷成圆球，保育员在远处安静守护。"
+    },
+    {
+      "vocabularyId": "69bec38b-2d93-4832-8795-870f28a072ab",
+      "word": "factor",
+      "meaningZh": "因素；因数；系数；基因；代理人",
+      "exampleId": "69bec38b-2d93-4832-8795-870f28a072ab-visual-ex",
+      "styleFamily": "indigo-lime isometric rooftop garden wind",
+      "sentenceEn": "Strong wind was the main factor shaping the rooftop trees.",
+      "sentenceZh": "强风是塑造屋顶树木形态的主要因素。",
+      "scene": "On an exposed rooftop garden, every young tree bends and grows in the same direction under a persistent visible wind, while sheltered plants behind a wall stay upright. The causal factor is clear through the contrast. No arrows, diagrams, people, labels, writing or text.",
+      "altText": "屋顶迎风处的树木全朝同一方向弯曲生长，墙后避风植物却保持直立，显示强风这一因素。"
+    },
+    {
+      "vocabularyId": "022c4dab-03c5-4cdd-9d3a-23f19e765f7c",
+      "word": "decade",
+      "meaningZh": "十年；十",
+      "exampleId": "022c4dab-03c5-4cdd-9d3a-23f19e765f7c-visual-ex",
+      "styleFamily": "terracotta-teal time-layered mural community orchard",
+      "sentenceEn": "Over a decade, the empty lot became a mature community orchard.",
+      "sentenceZh": "十年间，这块空地变成了成熟的社区果园。",
+      "scene": "One continuous landscape transitions from an empty urban lot through young saplings to a mature fruit orchard, while the same child planter subtly becomes a young adult at the far side. Faces are complete. No calendars, numbers, panels, signs, writing or text.",
+      "altText": "同一块城市空地连续呈现从栽下幼苗到形成成熟果园的十年变化。"
+    },
+    {
+      "vocabularyId": "daa3fd63-bba1-4901-b301-8bdea5a09c5e",
+      "word": "article",
+      "meaningZh": "文章；物品；冠词",
+      "exampleId": "daa3fd63-bba1-4901-b301-8bdea5a09c5e-visual-ex",
+      "styleFamily": "cobalt-russet vintage screenprint laundry line",
+      "sentenceEn": "Each article of clothing dried in the sea breeze.",
+      "sentenceZh": "每件衣物都在海风中晾干。",
+      "scene": "On a coastal clothesline, distinct individual articles of clothing such as a shirt, trousers, scarf and coat move in the sea breeze, each clearly separate and clipped. No people, brand marks, laundry labels, letters, writing or text.",
+      "altText": "海边晾衣绳上，衬衫、裤子、围巾和外套等每件衣物都独立夹好迎风晾晒。"
+    },
+    {
+      "vocabularyId": "9852eefc-f54d-4403-9690-135582c67ead",
+      "word": "shoot",
+      "meaningZh": "射击；拍摄",
+      "exampleId": "9852eefc-f54d-4403-9690-135582c67ead-visual-ex",
+      "styleFamily": "violet-amber graphic-novel wildlife film set",
+      "sentenceEn": "The photographer waited quietly to shoot the owl leaving its nest.",
+      "sentenceZh": "摄影师安静等待，准备拍摄猫头鹰离巢。",
+      "scene": "At twilight, a wildlife photographer with a long camera lens waits behind a low blind as an owl begins to leave its tree hollow, creating the decisive photographic moment. The complete face is focused. No guns, flashes, camera logos, screens, labels, writing or text.",
+      "altText": "黄昏中，野生动物摄影师在隐蔽处等待，镜头对准刚飞出树洞的猫头鹰。"
+    },
+    {
+      "vocabularyId": "d7efed1b-5523-4fee-95e9-a79fc906a255",
+      "word": "east",
+      "meaningZh": "东方；东；东方的；向东的",
+      "exampleId": "d7efed1b-5523-4fee-95e9-a79fc906a255-visual-ex",
+      "styleFamily": "rose-gold Japanese woodblock dawn cranes",
+      "sentenceEn": "The cranes flew east toward the rising sun.",
+      "sentenceZh": "鹤群朝着升起的太阳向东飞去。",
+      "scene": "A flock of cranes flies consistently toward a bright rising sun low over distant wetlands, while dawn shadows trail behind in the opposite direction. No compass, map, arrows, people, labels, writing or text.",
+      "altText": "清晨鹤群迎着湿地上方刚升起的太阳飞行，清楚表现向东前进。"
+    },
+    {
+      "vocabularyId": "48e6d8e7-b7c9-4eb0-9cdf-22aa62efdce7",
+      "word": "save",
+      "meaningZh": "保存；拯救；节省；除了",
+      "exampleId": "48e6d8e7-b7c9-4eb0-9cdf-22aa62efdce7-visual-ex",
+      "styleFamily": "navy-coral cinematic rescue animation",
+      "sentenceEn": "A floating cradle helped save the seal pup from the rising tide.",
+      "sentenceZh": "一个漂浮托架帮助从上涨的潮水中救出海豹幼崽。",
+      "scene": "Wildlife rescuers gently guide a frightened seal pup onto a floating padded cradle as tidewater surrounds a low rock, then pull it toward a safe beach. Every readable face is complete and caring. No danger text, logos, labels, writing or text.",
+      "altText": "潮水包围低岩石时，救援人员把海豹幼崽引上漂浮托架并拉向安全沙滩。"
+    },
+    {
+      "vocabularyId": "55072a77-b8ff-4c08-bd7f-fa945fc90132",
+      "word": "seven",
+      "meaningZh": "七；七个",
+      "exampleId": "55072a77-b8ff-4c08-bd7f-fa945fc90132-visual-ex",
+      "styleFamily": "mint-sunflower felt stop-motion ducklings",
+      "sentenceEn": "Seven ducklings followed their mother across the garden pond.",
+      "sentenceZh": "七只小鸭跟着鸭妈妈穿过花园池塘。",
+      "scene": "Exactly seven clearly separated ducklings swim in one curved line behind one adult mother duck across a garden pond. No other ducks or birds appear. No numbers, counting marks, people, labels, writing or text.",
+      "altText": "正好七只小鸭排成弯曲队伍，跟着鸭妈妈游过花园池塘。"
+    }
+  ]
+}

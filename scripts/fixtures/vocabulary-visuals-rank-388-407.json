@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-388-407-2026-07-19",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7d9e798b-9c36-4971-a60c-d1ae0156e301",
+      "word": "reach",
+      "meaningZh": "到达；伸手；范围；达到",
+      "exampleId": "7d9e798b-9c36-4971-a60c-d1ae0156e301-visual-ex",
+      "styleFamily": "hand-painted clay giraffe rehabilitation",
+      "sentenceEn": "The rescued giraffe stretched to reach the fresh leaves above its enclosure.",
+      "sentenceZh": "获救的长颈鹿伸长脖子，去够围栏上方的新鲜树叶。",
+      "scene": "At a spacious wildlife rehabilitation enclosure, one young giraffe stretches its neck and tongue upward until it can just reach a fresh leafy branch held safely above the fence line. The contact between tongue and leaves makes successful reaching clear. No people, signs, labels, writing or text.",
+      "altText": "康复区里，一只年轻长颈鹿伸长脖子和舌头，终于够到围栏上方的新鲜树叶。"
+    },
+    {
+      "vocabularyId": "5711bdc2-863a-42ff-bbb6-5cf2ae5c9db9",
+      "word": "local",
+      "meaningZh": "当地的；地方的；局部的",
+      "exampleId": "5711bdc2-863a-42ff-bbb6-5cf2ae5c9db9-visual-ex",
+      "styleFamily": "warm woodblock neighborhood harvest",
+      "sentenceEn": "The bakery buys apples and honey from local farms just outside the town.",
+      "sentenceZh": "这家面包店从镇外附近的本地农场购买苹果和蜂蜜。",
+      "scene": "One continuous view connects a small town bakery in the foreground with nearby orchards and beehives visible just beyond the last houses. Two farmers deliver baskets of apples and plain honey jars by bicycle cart directly from those nearby farms to the baker. Complete expressive faces, no distant trucks, signs, labels, logos, writing or text.",
+      "altText": "镇外果园的农民用自行车小车把苹果和蜂蜜直接送到附近的面包店。"
+    },
+    {
+      "vocabularyId": "dd1e5d12-2710-4b59-8c18-f528477c4c02",
+      "word": "kill",
+      "meaningZh": "杀死；消磨；扼杀",
+      "exampleId": "dd1e5d12-2710-4b59-8c18-f528477c4c02-visual-ex",
+      "styleFamily": "retro-futurist paper-cut workshop safety",
+      "sentenceEn": "The emergency switch can kill power before the damaged machine starts a fire.",
+      "sentenceZh": "紧急开关可以在受损机器起火前切断电源。",
+      "scene": "Inside a stylized repair workshop, one adult technician firmly presses a large plain red emergency switch while a damaged machine immediately goes dark and a few harmless sparks stop at a disconnected cable. A second technician stands safely back with a fire blanket ready; no fire has started. Faces complete, no danger icons, text, labels, logos or readable interface.",
+      "altText": "维修工按下红色紧急开关，受损机器立刻断电，电缆旁的火花随之停止。"
+    },
+    {
+      "vocabularyId": "bf892c6c-3a19-43a0-a026-bd9ae36b6784",
+      "word": "six",
+      "meaningZh": "六；六个",
+      "exampleId": "bf892c6c-3a19-43a0-a026-bd9ae36b6784-visual-ex",
+      "styleFamily": "layered felt wetland cygnets",
+      "sentenceEn": "Six young swans followed their mother across the quiet wetland.",
+      "sentenceZh": "六只小天鹅跟着妈妈游过安静的湿地。",
+      "scene": "Exactly six young gray cygnets swim in a clearly countable single group behind exactly one adult white mother swan through a calm reed wetland. Keep every cygnet fully visible with comfortable spacing and no overlapping bodies. No other birds, numbers, labels, writing or text.",
+      "altText": "安静的芦苇湿地里，六只清晰可数的小天鹅跟在一只白色天鹅妈妈身后。"
+    },
+    {
+      "vocabularyId": "5db99b3b-68cc-4442-bf9f-f977770ca1aa",
+      "word": "remain",
+      "meaningZh": "保持；留下；剩余",
+      "exampleId": "5db99b3b-68cc-4442-bf9f-f977770ca1aa-visual-ex",
+      "styleFamily": "expressive ink-wash mangrove resilience",
+      "sentenceEn": "After the storm, three young mangroves remain standing beside the restored shore.",
+      "sentenceZh": "风暴过后，三棵年轻红树林仍然挺立在修复后的海岸边。",
+      "scene": "After a coastal storm, exactly three young mangrove trees remain upright together on the shore, their roots gripping the soil while scattered fallen branches and retreating dark clouds show what passed. Sunlight returns over newly calm water. No other standing trees, people, numbers, symbols, writing or text.",
+      "altText": "风暴后的海岸上，三棵年轻红树林仍牢牢扎根站立，周围散落着折断的树枝。"
+    },
+    {
+      "vocabularyId": "6320e713-db17-4468-98d8-9eca68cef3da",
+      "word": "effect",
+      "meaningZh": "效果；影响；效应；生效",
+      "exampleId": "6320e713-db17-4468-98d8-9eca68cef3da-visual-ex",
+      "styleFamily": "isometric paper-collage seedling shade",
+      "sentenceEn": "The new shade cloth had an immediate effect on the heat-stressed seedlings.",
+      "sentenceZh": "新遮阳布立刻改善了受高温影响的幼苗状态。",
+      "scene": "One greenhouse bench passes beneath a newly installed shade cloth: directly below the cloth, formerly heat-stressed seedlings are upright, cool and green with moist soil, while a small uncovered edge still shows two wilted seedlings in dry hot light. The visible contrast demonstrates the cloth's effect in one continuous scene. No panels, arrows, labels, people, writing or text.",
+      "altText": "温室遮阳布下的幼苗恢复挺立和翠绿，未被遮住的一小块边缘仍有幼苗因高温萎蔫。"
+    },
+    {
+      "vocabularyId": "f04bd486-a254-4790-9a04-3105a233cab5",
+      "word": "yeah",
+      "meaningZh": "是的；对",
+      "exampleId": "f04bd486-a254-4790-9a04-3105a233cab5-visual-ex",
+      "styleFamily": "hand-painted 2D community animation",
+      "sentenceEn": "Yeah, we can repair the playground together this morning.",
+      "sentenceZh": "对，我们今天上午可以一起修好游乐场。",
+      "scene": "At a worn community playground, one adult neighbor proposes a box of repair tools with an open inviting gesture. Three other diverse adults respond with clear agreement by smiling, nodding, joining hands around the toolbox and beginning to lift replacement boards together. Complete faces, no speech bubbles, thumbs-up icons, signs, writing or text.",
+      "altText": "社区游乐场里，几位邻居微笑点头，把手放到工具箱旁，赞同一起进行修缮。"
+    },
+    {
+      "vocabularyId": "2ac387a4-000c-452e-8fee-d204c3dbe79c",
+      "word": "suggest",
+      "meaningZh": "建议；提议；暗示；表明",
+      "exampleId": "2ac387a4-000c-452e-8fee-d204c3dbe79c-visual-ex",
+      "styleFamily": "colored-pencil inclusive park design",
+      "sentenceEn": "Maya used a clay model to suggest a gentler path through the park.",
+      "sentenceZh": "玛雅用黏土模型建议在公园里修一条坡度更缓的道路。",
+      "scene": "Four adult park volunteers study a small clay landscape model with two possible paths. Maya points to and gently places a wheelchair figure on the longer smooth low-slope path, while the others lean in, listen and consider her proposal. Complete faces and respectful expressions, no labels, diagrams, arrows, writing or text.",
+      "altText": "玛雅在公园黏土模型上指出一条平缓路径，其他志愿者认真倾听她的建议。"
+    },
+    {
+      "vocabularyId": "ca87d943-a259-42aa-8c34-bf42a370e0d0",
+      "word": "class",
+      "meaningZh": "班级；阶级；课程",
+      "exampleId": "ca87d943-a259-42aa-8c34-bf42a370e0d0-visual-ex",
+      "styleFamily": "ceramic-stop-motion pottery classroom",
+      "sentenceEn": "The evening class learned to shape bowls from recycled clay.",
+      "sentenceZh": "晚间课程的学员学习用回收陶土制作碗。",
+      "scene": "In one welcoming evening pottery classroom, an adult instructor demonstrates shaping a bowl at a wheel while six diverse adult learners practice the same skill at nearby worktables using recycled clay. Everyone is visibly learning together. Complete faces, no blackboard writing, posters, labels, logos or text.",
+      "altText": "晚间陶艺教室里，老师示范拉坯，六名成年学员一起练习用回收陶土制作碗。"
+    },
+    {
+      "vocabularyId": "ae230764-bf46-41dd-a6fa-5ceded8e0830",
+      "word": "control",
+      "meaningZh": "控制；管理；支配",
+      "exampleId": "ae230764-bf46-41dd-a6fa-5ceded8e0830-visual-ex",
+      "styleFamily": "bold woodcut terrace irrigation",
+      "sentenceEn": "Small stone gates control how much river water enters each rice terrace.",
+      "sentenceZh": "小型石闸控制进入每层稻田的河水量。",
+      "scene": "A hillside of rice terraces receives water from one stream through a series of small adjustable stone gates. Some gates are partly open with narrow flows, one is wider with a stronger flow, and one is closed, visibly regulating water into each level. Two farmers observe safely with complete faces. No diagrams, arrows, labels, numbers, writing or text.",
+      "altText": "梯田间的小石闸有的半开、有的全开、有的关闭，分别控制流入各层稻田的水量。"
+    },
+    {
+      "vocabularyId": "490d0c7b-f305-4ce7-abe2-3a8832dd4023",
+      "word": "raise",
+      "meaningZh": "提高；举起；抚养；筹集；提出",
+      "exampleId": "490d0c7b-f305-4ce7-abe2-3a8832dd4023-visual-ex",
+      "styleFamily": "dynamic gouache dolphin rescue",
+      "sentenceEn": "The rescue team used a padded sling to raise the injured dolphin into the treatment pool.",
+      "sentenceZh": "救援队用软垫吊带把受伤的海豚吊起，放入治疗池。",
+      "scene": "At a marine rehabilitation center, a padded sling attached to a small overhead hoist gently raises one injured dolphin upward from a transport stretcher toward a clean treatment pool. Three adult rescuers guide the sling with open hands and focused complete faces. No visible wounds, labels, logos, writing or text.",
+      "altText": "海洋救助中心里，软垫吊带正把受伤海豚缓缓吊起，送向干净的治疗池。"
+    },
+    {
+      "vocabularyId": "fc23dc28-53b7-4bad-a541-c5c52023fa2a",
+      "word": "care",
+      "meaningZh": "关心；照顾；小心；护理",
+      "exampleId": "fc23dc28-53b7-4bad-a541-c5c52023fa2a-visual-ex",
+      "styleFamily": "embroidered textile bird rehabilitation",
+      "sentenceEn": "Patient care helped the young crane stand on its injured leg again.",
+      "sentenceZh": "耐心的护理帮助幼鹤重新用受伤的腿站立。",
+      "scene": "In a quiet wetland rehabilitation garden, one young crane stands carefully on a previously injured leg with a plain soft wrap while an adult caretaker kneels nearby offering food and steady open-handed support. The caretaker's complete face shows patience and attention. No medical labels, logos, writing or text.",
+      "altText": "湿地康复园中，护理员耐心守在旁边，幼鹤正重新尝试用包扎过的腿站立。"
+    },
+    {
+      "vocabularyId": "94069f73-03ce-4ce4-af8e-ac395c609c8c",
+      "word": "perhaps",
+      "meaningZh": "也许；大概",
+      "exampleId": "94069f73-03ce-4ce4-af8e-ac395c609c8c-visual-ex",
+      "styleFamily": "dreamy pastel desert possibility",
+      "sentenceEn": "Perhaps the sleeping desert seeds will bloom after tonight's distant rain.",
+      "sentenceZh": "也许沉睡的沙漠种子会在今晚远处的雨过后开花。",
+      "scene": "At dusk in a dry desert basin, dormant seeds remain hidden beneath cracked soil while distant rain falls from one cloud and a thin stream of approaching moisture has not yet reached them. One tiny closed bud barely breaks the surface but no flowers are open, keeping the future possibility unresolved. No people, forecast symbols, arrows, writing or text.",
+      "altText": "黄昏沙漠里，远处云层正在降雨，水汽尚未抵达埋有种子的干土，只有一个小花苞刚露头。"
+    },
+    {
+      "vocabularyId": "91267ccd-525a-45a6-8eee-11f936447435",
+      "word": "late",
+      "meaningZh": "迟的；晚的；已故的",
+      "exampleId": "91267ccd-525a-45a6-8eee-11f936447435-visual-ex",
+      "styleFamily": "oil-pastel nocturne rural clinic",
+      "sentenceEn": "The nurse stayed late to prepare medicine for the isolated village.",
+      "sentenceZh": "护士工作到很晚，为偏远村庄准备药品。",
+      "scene": "Long after sunset, one adult nurse remains inside a small rural clinic organizing plain medicine boxes for a dawn delivery while every neighboring building is dark and the moon is high. A packed bicycle waits outside. Her complete face shows calm dedication rather than exhaustion. No clocks, labels, logos, writing or text.",
+      "altText": "深夜的乡村诊所仍亮着灯，一名护士在高悬月亮下为清晨配送整理药品。"
+    },
+    {
+      "vocabularyId": "e407f488-6085-4ecd-9c68-afd4dd4d95b6",
+      "word": "hard",
+      "meaningZh": "困难的；硬的；努力地；艰难地",
+      "exampleId": "e407f488-6085-4ecd-9c68-afd4dd4d95b6-visual-ex",
+      "styleFamily": "macro paper-sculpture walnut winter",
+      "sentenceEn": "The walnut's hard shell protected the seed through the frozen winter.",
+      "sentenceZh": "核桃坚硬的外壳保护种子度过了冰冻的冬天。",
+      "scene": "A large cutaway walnut rests beneath winter leaves and snow, showing a thick intact hard shell surrounding and protecting the living seed inside. Ice and pressure mark the outside while the inner seed remains undamaged. No hammers, people, diagrams, labels, arrows, writing or text.",
+      "altText": "冬雪和冰层下，一颗剖开的核桃露出厚实坚硬的外壳，里面的种子完好无损。"
+    },
+    {
+      "vocabularyId": "93f046ff-9a34-4a6c-b6a9-5ed7ad87a8e5",
+      "word": "field",
+      "meaningZh": "领域；田地；现场；字段",
+      "exampleId": "93f046ff-9a34-4a6c-b6a9-5ed7ad87a8e5-visual-ex",
+      "styleFamily": "luminous impressionist pollinator field",
+      "sentenceEn": "A field of native flowers gave bees food throughout the summer.",
+      "sentenceZh": "一片本地花田在整个夏季为蜜蜂提供食物。",
+      "scene": "A broad continuous field of diverse native summer flowers stretches from the foreground to the horizon, with many bees visibly collecting pollen across the expanse. A narrow path and distant hedgerow establish the field's boundaries without fencing. No people, farm signs, labels, writing or text.",
+      "altText": "大片本地夏花从近处延伸到地平线，许多蜜蜂正在花田中采集花粉。"
+    },
+    {
+      "vocabularyId": "7d07d74d-5d75-46f3-8b23-670dcd23d5ca",
+      "word": "else",
+      "meaningZh": "其他的；别的；另外；否则",
+      "exampleId": "7d07d74d-5d75-46f3-8b23-670dcd23d5ca-visual-ex",
+      "styleFamily": "transparent watercolor frog migration",
+      "sentenceEn": "When the small pond dried, the frogs moved somewhere else with deeper water.",
+      "sentenceZh": "小池塘干涸后，青蛙们迁往了别处水更深的池塘。",
+      "scene": "One continuous wetland landscape shows a dry cracked small pond on the left and a separate deeper green pond on the right. A group of frogs travels along a moist natural channel away from the dry pond toward the other pond, where lilies and water remain. No arrows, maps, signs, labels, writing or text.",
+      "altText": "青蛙们离开左侧干裂的小池塘，沿湿润通道迁往右侧另一处更深的水塘。"
+    },
+    {
+      "vocabularyId": "7da50b26-5ae3-40d7-b931-2811cfe02147",
+      "word": "pass",
+      "meaningZh": "通过；经过；传递；及格；通行",
+      "exampleId": "7da50b26-5ae3-40d7-b931-2811cfe02147-visual-ex",
+      "styleFamily": "graphic-novel flood teamwork",
+      "sentenceEn": "Neighbors pass sandbags hand to hand to protect the riverside homes.",
+      "sentenceZh": "邻居们手递手传送沙袋，保护河边的房屋。",
+      "scene": "A diverse line of adult neighbors forms from a sand pile to a low riverside barrier, each person visibly passing one sandbag into the next person's hands while others place them around homes. The chain of transfer is clear and cooperative. Every readable face has complete focused features. No emergency signs, logos, writing or text.",
+      "altText": "河边居民排成长队，把沙袋一个接一个手递手传到房屋前的防水堤。"
+    },
+    {
+      "vocabularyId": "b192332f-d5a0-4425-9118-43d6ced7e9ae",
+      "word": "former",
+      "meaningZh": "前者的；从前的；前任",
+      "exampleId": "b192332f-d5a0-4425-9118-43d6ced7e9ae-visual-ex",
+      "styleFamily": "isometric adaptive-reuse architecture",
+      "sentenceEn": "The former railway station now serves as a warm community library.",
+      "sentenceZh": "这座从前的火车站如今成了温暖的社区图书馆。",
+      "scene": "An isometric cutaway shows an old railway station building currently used as a welcoming community library. Preserved platform canopy, silent track fragments and an old station clock without readable numbers reveal its former purpose, while shelves, reading tables and families show its new use. Complete faces, no station names, book text, signs, labels or writing.",
+      "altText": "保留站台雨棚和旧铁轨的火车站建筑，如今内部摆满书架和阅读桌，成为社区图书馆。"
+    },
+    {
+      "vocabularyId": "e2572ef9-4c47-4a7f-8e0c-074f55a97cef",
+      "word": "sell",
+      "meaningZh": "卖；销售；出售",
+      "exampleId": "e2572ef9-4c47-4a7f-8e0c-074f55a97cef-visual-ex",
+      "styleFamily": "two-color linocut pottery exchange",
+      "sentenceEn": "The potter chose to sell her bowls at the village market.",
+      "sentenceZh": "陶艺师选择在村庄集市出售她制作的碗。",
+      "scene": "At a village market pottery stall, one adult potter hands a handmade bowl to a customer while receiving a few plain coins in a clear exchange. Rows of distinct handmade bowls remain displayed behind her. Both complete faces show friendly attention. No price tags, stall signs, logos, numbers, writing or text.",
+      "altText": "村庄集市的陶器摊前，陶艺师把手工碗交给顾客，同时接过几枚硬币。"
+    }
+  ]
+}

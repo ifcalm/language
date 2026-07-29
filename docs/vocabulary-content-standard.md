@@ -145,14 +145,87 @@ The style may feel mature and emotionally grounded without becoming photorealist
 
 ## Batch generation workflow
 
-Use the following fast mode by default for routine vocabulary-image batches. The
-goal is to reduce queueing and repeated manual work without weakening cheap,
-deterministic checks.
+Use the resumable pipeline for routine production. It keeps planning, generation,
+verification and publishing in one persistent batch state, so a network or model
+failure does not discard completed work.
 
-### Default fast mode
+### Automated production mode
 
-1. Keep each batch at 20 words so generation failures and content revisions stay
-   easy to isolate.
+The default automated batch is 50 unfinished words. A preview is free and does
+not call OpenAI, R2 or D1:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50
+```
+
+Planning alone creates and validates the content manifest without generating
+images:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --plan
+```
+
+Generate all missing images, run exhaustive deterministic checks, build a contact
+sheet and run sampled semantic QA:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --generate
+```
+
+After reviewing a new pipeline or prompt configuration, run the complete path,
+including concurrent R2 upload and one idempotent D1 import:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --publish
+```
+
+Once a 50-word production batch has confirmed the current models and prompt rules,
+finish the remaining queue unattended while retaining the same 50-word recovery
+boundaries:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --all --publish
+```
+
+The supervisor starts the next batch only after the previous R2/D1 publication
+and fixture record succeed. It stops on the first failed generation, QA or
+publication step. Running the same command again resumes that failed batch and
+then continues through the queue. Individual batches are capped at 100 words;
+use `--all` instead of creating one fragile multi-thousand-image batch.
+
+Each command resumes the same stable `.vocabulary-visual-pipeline/rank-X-Y/`
+state. Existing plans and valid images are reused. When generation or sampled QA
+fails for individual items, regenerate only those items:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --generate --retry-failed
+```
+
+`OPENAI_API_KEY` is required for planning and generation. Publishing also requires
+`CLOUDFLARE_API_TOKEN`. Both may be placed in `.env.local`. The pipeline never
+publishes implicitly: production writes require the explicit `--publish` flag.
+
+The main throughput controls are:
+
+| Setting | Default | Purpose |
+|---|---:|---|
+| `--planner-chunk-size` | 10 | Words returned by one structured planning request |
+| `--planner-concurrency` | 2 | Concurrent planning requests |
+| `--image-concurrency` | 8 | Concurrent image requests |
+| `--qa-concurrency` | 3 | Concurrent sampled visual reviews |
+| `VOCABULARY_VISUAL_R2_CONCURRENCY` | 8 | Concurrent R2 object uploads |
+
+Use `--skip-ai-qa` only for an explicitly accepted deterministic-only run. A
+sampled semantic failure blocks publishing and should be regenerated before the
+batch continues.
+
+### Manual fast mode
+
+Use this 20-word workflow when manually piloting a new style, prompt framework or
+content category:
+
+1. Keep the pilot batch at 20 words so generation failures and content revisions
+   stay easy to isolate.
 2. Read the batch from the checked-in local vocabulary queue, then draft all
    examples, scenes, alternative text, and style routing in one manifest pass.
    Do not query D1 again while planning, generating, or reviewing the batch.

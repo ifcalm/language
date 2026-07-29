@@ -17,6 +17,7 @@ import {
   validateManifestAgainstQueue,
   validateRemoteManifestRows,
 } from './lib/vocabulary-visual-queue.mjs'
+import { mapConcurrent } from './lib/vocabulary-visual-pipeline.mjs'
 
 const rawArgs = process.argv.slice(2)
 const args = new Set(rawArgs)
@@ -31,6 +32,9 @@ const wranglerTimeoutMs = Number(
 const r2UploadAttempts = Number(
   process.env.VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS ?? '2',
 )
+const r2UploadConcurrency = Number(
+  process.env.VOCABULARY_VISUAL_R2_CONCURRENCY ?? '8',
+)
 const d1ImportAttempts = Number(
   process.env.VOCABULARY_VISUAL_D1_IMPORT_ATTEMPTS ?? '2',
 )
@@ -41,6 +45,10 @@ if (!Number.isInteger(wranglerTimeoutMs) || wranglerTimeoutMs < 1000) {
 
 if (!Number.isInteger(r2UploadAttempts) || r2UploadAttempts < 1) {
   throw new Error('VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS must be positive.')
+}
+
+if (!Number.isInteger(r2UploadConcurrency) || r2UploadConcurrency < 1) {
+  throw new Error('VOCABULARY_VISUAL_R2_CONCURRENCY must be positive.')
 }
 
 if (!Number.isInteger(d1ImportAttempts) || d1ImportAttempts < 1) {
@@ -288,8 +296,8 @@ if (publish) {
     throw new Error('CLOUDFLARE_API_TOKEN is required for --publish')
   }
 
-  for (const item of publishedItems) {
-    await runWrangler(
+  await mapConcurrent(publishedItems, r2UploadConcurrency, (item) =>
+    runWrangler(
       [
         'r2',
         'object',
@@ -306,8 +314,8 @@ if (publish) {
       `R2 upload for ${item.word}`,
       r2UploadAttempts,
       /Upload complete\./,
-    )
-  }
+    ),
+  )
 
   await runWrangler(
     [

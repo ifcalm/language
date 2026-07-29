@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-732-751-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, arrows, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "9078e712-dc85-4285-9a37-b0c8d2bb707c",
+      "word": "pretty",
+      "meaningZh": "漂亮的；相当；非常",
+      "exampleId": "9078e712-dc85-4285-9a37-b0c8d2bb707c-visual-ex",
+      "styleFamily": "rose-sage embroidered spring courtyard",
+      "sentenceEn": "The restored courtyard looked pretty beneath the flowering vines.",
+      "sentenceZh": "修复后的庭院在花藤下显得很漂亮。",
+      "scene": "A carefully restored stone courtyard appears harmonious and pretty beneath flowering vines, with a small fountain, repaired mosaic floor and balanced spring colors. A few visitors admire it with complete pleasant faces. No signs, plaques, labels, writing or text.",
+      "altText": "修复后的石庭院铺着雅致马赛克，花藤环绕小喷泉，整体在春日里显得漂亮协调。"
+    },
+    {
+      "vocabularyId": "8824059d-cbd5-4cc3-8ec6-1821c508a215",
+      "word": "trade",
+      "meaningZh": "贸易；交易；行业",
+      "exampleId": "8824059d-cbd5-4cc3-8ec6-1821c508a215-visual-ex",
+      "styleFamily": "indigo-amber historical harbor linocut",
+      "sentenceEn": "River trade exchanged mountain wool for coastal salt.",
+      "sentenceZh": "河运贸易用山地羊毛交换沿海食盐。",
+      "scene": "At a river harbor between mountain and coast, one boat unloads plain wool bundles while another loads sacks of salt, and merchants exchange the goods across a shared dock. Complete faces are respectful. No currency symbols, flags, labels, writing or text.",
+      "altText": "河港码头上，来自山地的羊毛与沿海的盐袋通过船运和商人进行交换贸易。"
+    },
+    {
+      "vocabularyId": "245e4ab5-2902-4203-89af-2b0c660a4424",
+      "word": "election",
+      "meaningZh": "选举",
+      "exampleId": "245e4ab5-2902-4203-89af-2b0c660a4424-visual-ex",
+      "styleFamily": "federal-blue-coral neutral civic paper collage",
+      "sentenceEn": "The town election allowed every adult resident to choose a council.",
+      "sentenceZh": "小镇选举让每位成年居民选择议事会成员。",
+      "scene": "A neutral community polling room shows diverse adult residents privately placing plain ballots into sealed boxes while impartial workers assist access needs. Every readable face is complete. No party colors, candidate images, political symbols, ballot text, numbers, writing or logos.",
+      "altText": "中立的小镇投票室里，不同成年居民依次把无字选票投入密封票箱，参与社区选举。"
+    },
+    {
+      "vocabularyId": "23712e43-703e-4d2a-a82c-730ef55f5101",
+      "word": "everybody",
+      "meaningZh": "每人",
+      "exampleId": "23712e43-703e-4d2a-a82c-730ef55f5101-visual-ex",
+      "styleFamily": "sunflower-teal community mural animation",
+      "sentenceEn": "Everybody carried one plant into the new shared garden.",
+      "sentenceZh": "每个人都带着一株植物走进新的共享花园。",
+      "scene": "A whole diverse neighborhood enters a shared garden, and every visible person without exception carries exactly one plant or seedling, including children, elders and a wheelchair user. Faces are complete and joyful. No signs, labels, writing or text.",
+      "altText": "社区所有人都带着一株植物进入新花园，不同年龄和行动能力的人一个也不少。"
+    },
+    {
+      "vocabularyId": "89860b3b-4654-4038-a2f0-058ff816e5d1",
+      "word": "physical",
+      "meaningZh": "身体的；物理的；物质的；体力的",
+      "exampleId": "89860b3b-4654-4038-a2f0-058ff816e5d1-visual-ex",
+      "styleFamily": "cobalt-orange dynamic adaptive climbing illustration",
+      "sentenceEn": "Regular physical exercise helped Arun climb the wall with confidence.",
+      "sentenceZh": "规律的身体锻炼让阿伦能够自信地攀爬岩壁。",
+      "scene": "At an adaptive climbing gym, Arun uses his whole body to climb a textured wall while a coach safely belays below, showing physical movement, balance and strength. Complete faces show effort and confidence. No route labels, numbers, logos, writing or text.",
+      "altText": "自适应攀岩馆中，阿伦运用全身力量和平衡向上攀爬，展示身体锻炼成果。"
+    },
+    {
+      "vocabularyId": "42f46d0d-3fe5-4705-a8dc-5a31f7aadeb5",
+      "word": "lay",
+      "meaningZh": "放置；铺设；躺下",
+      "exampleId": "42f46d0d-3fe5-4705-a8dc-5a31f7aadeb5-visual-ex",
+      "styleFamily": "moonlit-sand naturalist turtle woodcut",
+      "sentenceEn": "The sea turtle returned at night to lay her eggs.",
+      "sentenceZh": "海龟在夜间返回海滩产卵。",
+      "scene": "At night on a quiet protected beach, one adult sea turtle settles into a deep sand nest and begins to lay round eggs, shown respectfully from a side angle without graphic detail. No people nearby, signs, labels, writing or text.",
+      "altText": "夜晚的安静沙滩上，一只成年海龟在深沙巢中产下圆形海龟蛋。"
+    },
+    {
+      "vocabularyId": "98a39a93-36b0-4a92-898a-ccb99aa8fbb1",
+      "word": "general",
+      "meaningZh": "一般；将军；大体",
+      "exampleId": "98a39a93-36b0-4a92-898a-ccb99aa8fbb1-visual-ex",
+      "styleFamily": "teal-rust panoramic editorial town overview",
+      "sentenceEn": "From the tower, the guide gave a general view of the whole valley.",
+      "sentenceZh": "导游从高塔上概括介绍了整座山谷。",
+      "scene": "From a hill tower, a guide and visitors overlook the whole valley at once: river, farms, forest, town and mountains all appear in broad balanced view without close detail. Complete faces if readable. No maps, signs, labels, writing or text.",
+      "altText": "从高塔俯瞰，河流、农田、森林、小镇和山脉共同构成山谷的整体概貌。"
+    },
+    {
+      "vocabularyId": "3c9e7488-6bfb-49d1-99e0-51ea3c50eb51",
+      "word": "feeling",
+      "meaningZh": "感觉；感情",
+      "exampleId": "3c9e7488-6bfb-49d1-99e0-51ea3c50eb51-visual-ex",
+      "styleFamily": "lavender-gold soft graphic memoir reunion",
+      "sentenceEn": "A feeling of relief spread through the family when the boat returned.",
+      "sentenceZh": "船只归来时，全家人都感到如释重负。",
+      "scene": "At a storm-cleared harbor, a family sees the missing small boat safely return and their tense postures visibly soften into embraces and relieved complete expressions. No speech bubbles, boat names, signs, writing or text.",
+      "altText": "风暴后的港口中，全家看见失联小船平安归来，紧张神情转为拥抱和释然。"
+    },
+    {
+      "vocabularyId": "b3e387fe-4aed-40b5-9818-b0c52852e5ef",
+      "word": "standard",
+      "meaningZh": "标准；规格；旗；军旗；本位",
+      "exampleId": "b3e387fe-4aed-40b5-9818-b0c52852e5ef-visual-ex",
+      "styleFamily": "black-yellow precision screenprint workshop parts",
+      "sentenceEn": "A standard connector allowed every hose to fit the pump.",
+      "sentenceZh": "统一规格的接头让每根软管都能连接水泵。",
+      "scene": "Several hoses of different colors each end in the same-shaped standard connector and all fit the identical plain pump ports, with one technician demonstrating the reliable match. Complete face. No measurements, labels, numbers, writing or arrows.",
+      "altText": "不同颜色软管都使用相同形状的标准接头，因此能顺利连接同一台水泵。"
+    },
+    {
+      "vocabularyId": "d0cc3d5f-4192-4def-a750-49dc24a12fa8",
+      "word": "bill",
+      "meaningZh": "账单；法案；钞票",
+      "exampleId": "d0cc3d5f-4192-4def-a750-49dc24a12fa8-visual-ex",
+      "styleFamily": "mint-coral flat-animation market receipt",
+      "sentenceEn": "The market bill matched the fruit and bread in the basket.",
+      "sentenceZh": "市场账单与篮子里的水果和面包相符。",
+      "scene": "At a market counter, a customer compares a plain pictorial bill showing only small fruit and bread silhouettes with the matching items in one basket, then prepares the corresponding coins. Complete faces. No prices, currency symbols, letters, numbers, labels or text.",
+      "altText": "顾客把用图形表示的市场账单与篮中水果和面包逐一核对，物品完全相符。"
+    },
+    {
+      "vocabularyId": "7a2330d6-5aff-40dc-8407-c0b124eb16cd",
+      "word": "message",
+      "meaningZh": "消息；信息；口信；寓意",
+      "exampleId": "7a2330d6-5aff-40dc-8407-c0b124eb16cd-visual-ex",
+      "styleFamily": "indigo-amber coastal lantern linocut",
+      "sentenceEn": "Three lantern flashes carried a message to the waiting boat.",
+      "sentenceZh": "三次灯光闪烁把消息传给了等待的船只。",
+      "scene": "From a cliff station at dusk, exactly three distinct lantern pulses appear as separated glowing moments across mist toward a waiting boat whose crew responds by turning safely toward harbor. Faces tiny and complete if readable. No Morse letters, signs, writing or text.",
+      "altText": "黄昏悬崖灯站连续发出三次分开的亮光，等待船只接收消息后转向安全港湾。"
+    },
+    {
+      "vocabularyId": "3312efed-9b0b-4311-8c32-fd5d869b32e4",
+      "word": "fail",
+      "meaningZh": "失败；缺乏；中断；衰退；失灵",
+      "exampleId": "3312efed-9b0b-4311-8c32-fd5d869b32e4-visual-ex",
+      "styleFamily": "ochre-sage ceramic stop-motion seeds",
+      "sentenceEn": "A seed may fail to sprout when the soil stays completely dry.",
+      "sentenceZh": "土壤一直完全干燥时，种子可能无法发芽。",
+      "scene": "A transparent-side clay pot shows one intact seed lying dormant in completely dry cracked soil while a nearby watered pot contains a fresh sprout, clearly showing failure to germinate. No people, labels, cross marks, arrows, writing or text.",
+      "altText": "干裂土壤中的种子保持休眠没有发芽，旁边获得水分的种子已经长出嫩芽。"
+    },
+    {
+      "vocabularyId": "151eef4b-3b05-4655-8416-536e7c63d5e2",
+      "word": "outside",
+      "meaningZh": "外面；外部；在...外面",
+      "exampleId": "151eef4b-3b05-4655-8416-536e7c63d5e2-visual-ex",
+      "styleFamily": "rust-blue cutaway fox den storybook",
+      "sentenceEn": "The young fox waited outside the den while its mother returned.",
+      "sentenceZh": "小狐狸在洞穴外面等待母狐归来。",
+      "scene": "A clean hillside cutaway makes the den boundary explicit: one young fox sits on the grass outside the dark entrance, while the empty tunnel interior is visible beneath and its mother approaches across the meadow. No labels, arrows, signs, writing or text.",
+      "altText": "山坡剖面清楚显示，小狐狸坐在洞穴入口外的草地上，母狐正从远处归来。"
+    },
+    {
+      "vocabularyId": "1cec251d-6ed3-4e9a-9c77-93e2f597ab88",
+      "word": "arrive",
+      "meaningZh": "到达；抵达",
+      "exampleId": "1cec251d-6ed3-4e9a-9c77-93e2f597ab88-visual-ex",
+      "styleFamily": "cobalt-gold vintage mountain railway poster",
+      "sentenceEn": "The supply train began to arrive at the snowbound village.",
+      "sentenceZh": "补给列车开始抵达被大雪封住的村庄。",
+      "scene": "A small train crosses the final bridge and its engine enters a snowbound village station where residents step forward with relieved complete faces, clearly capturing arrival at the destination. No station names, schedules, train numbers, signs, writing or text.",
+      "altText": "补给列车越过最后一座桥，车头驶入大雪封锁的村庄车站，居民前来迎接。"
+    },
+    {
+      "vocabularyId": "ef49f29a-56d3-4a2b-8e4e-a9c0e2f7092c",
+      "word": "analysis",
+      "meaningZh": "分析",
+      "exampleId": "ef49f29a-56d3-4a2b-8e4e-a9c0e2f7092c-visual-ex",
+      "styleFamily": "teal-magenta scientific paper collage water samples",
+      "sentenceEn": "Careful analysis revealed which stream carried the clay sediment.",
+      "sentenceZh": "仔细分析揭示了哪条溪流携带黏土沉积物。",
+      "scene": "A scientist compares three transparent stream-water samples under identical light; only one settles into a distinct clay layer matching the muddy tributary visible through the window. Complete face shows careful reasoning. No sample labels, charts, letters, numbers, writing or text.",
+      "altText": "科学家在相同光线下比较三份溪水，只有一份沉降出明显黏土层，对应窗外浑浊支流。"
+    },
+    {
+      "vocabularyId": "d111fc55-2c0e-4c52-9ab7-38fbb56b0978",
+      "word": "benefit",
+      "meaningZh": "利益；有益于",
+      "exampleId": "d111fc55-2c0e-4c52-9ab7-38fbb56b0978-visual-ex",
+      "styleFamily": "emerald-sunflower isometric shaded street",
+      "sentenceEn": "New street trees benefit walkers by providing cool shade.",
+      "sentenceZh": "新栽行道树通过提供凉爽树荫使行人受益。",
+      "scene": "A row of mature street trees casts continuous cool shade over walkers, children and an elder resting on a bench while adjacent unshaded pavement shimmers in heat. Complete faces show comfort. No temperature icons, arrows, signs, writing or text.",
+      "altText": "成排行道树为步行者、儿童和休息老人提供连续凉爽树荫，旁边无遮阴路面仍很炎热。"
+    },
+    {
+      "vocabularyId": "85745937-745f-4bb5-bc6c-0410178e2230",
+      "word": "sex",
+      "meaningZh": "性别；性欲",
+      "exampleId": "85745937-745f-4bb5-bc6c-0410178e2230-visual-ex",
+      "styleFamily": "jade-russet naturalist mallard watercolor",
+      "sentenceEn": "Feather color helped the ranger determine the duck's sex.",
+      "sentenceZh": "羽毛颜色帮助护林员判断这只鸭子的生物性别。",
+      "scene": "A respectful wildlife observation shows two adult mallards side by side: one with an iridescent green head and one with mottled brown plumage, while a ranger observes their natural visible differences from a distance. Complete face if readable. No anatomy, symbols, tags, labels, writing or text.",
+      "altText": "两只成年绿头鸭并排游动，绿色头羽与褐色斑纹的明显差异帮助护林员判断生物性别。"
+    },
+    {
+      "vocabularyId": "41473986-165b-4d1e-a51d-50b0f0e1b3ef",
+      "word": "forward",
+      "meaningZh": "向前；转发；前部的",
+      "exampleId": "41473986-165b-4d1e-a51d-50b0f0e1b3ef-visual-ex",
+      "styleFamily": "cyan-orange kinetic bicycle screenprint",
+      "sentenceEn": "The cyclists leaned forward as the road climbed.",
+      "sentenceZh": "道路上坡时，骑行者身体向前倾。",
+      "scene": "Several cyclists climb a steep road from left foreground toward the high right distance, all leaning their torsos forward over handlebars with motion and effort clearly visible. Complete faces where readable. No directional arrows, race numbers, logos, signs, writing or text.",
+      "altText": "骑行者沿陡峭上坡前进，身体一致向车把前方倾斜，以保持力量和平衡。"
+    },
+    {
+      "vocabularyId": "7e03caea-4f88-4862-bfcd-d8b353ffe557",
+      "word": "lawyer",
+      "meaningZh": "律师",
+      "exampleId": "7e03caea-4f88-4862-bfcd-d8b353ffe557-visual-ex",
+      "styleFamily": "navy-coral editorial legal-aid illustration",
+      "sentenceEn": "The lawyer helped the tenants understand their housing agreement.",
+      "sentenceZh": "律师帮助租户理解住房协议。",
+      "scene": "At a community legal-aid table, a lawyer calmly explains a housing model and uses plain pictorial cards to help diverse tenants understand an agreement. Every readable face is complete and attentive. No legal text, scales symbols, logos, labels, writing or documents with words.",
+      "altText": "社区法律援助桌旁，律师用房屋模型和图形卡帮助不同租户理解住房协议。"
+    },
+    {
+      "vocabularyId": "4a391349-30cc-4b59-8a2f-5b9721e54486",
+      "word": "present",
+      "meaningZh": "现在的；出席的；礼物；提出",
+      "exampleId": "4a391349-30cc-4b59-8a2f-5b9721e54486-visual-ex",
+      "styleFamily": "plum-gold warm community orchestra collage",
+      "sentenceEn": "Every musician was present when the rehearsal began.",
+      "sentenceZh": "排练开始时，每位乐手都已到场。",
+      "scene": "A complete community orchestra sits ready in a semicircle, with every chair occupied and every instrument section represented as the conductor raises a baton. All readable faces are complete and attentive. No empty chairs, sheet music text, labels, writing or numbers.",
+      "altText": "社区乐团排练开始时，半圆形座位全部坐满，每位乐手都带着乐器到场准备演奏。"
+    }
+  ]
+}

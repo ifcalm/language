@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-508-529-2026-07-26",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Keep this batch visibly diverse by alternating indoor and outdoor settings, day and night, human and nonhuman subjects, macro and panoramic framing, natural and engineered environments, and restrained warm and cool palettes. Avoid repeating recent lighthouse, community workshop, garden, shared-farm, courtroom, cave, market-street, factory-line and warm storybook compositions. Keep one coherent visual language inside each image and avoid adjacent images with similar dominant colors. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "a96f71f0-dbcb-4d5d-b7c9-4944336459d4",
+      "word": "image",
+      "meaningZh": "图像；形象；影像；镜像",
+      "exampleId": "a96f71f0-dbcb-4d5d-b7c9-4944336459d4-visual-ex",
+      "styleFamily": "midnight-cyan silver cyanotype observatory optics",
+      "sentenceEn": "The observatory mirror projected a sharp image of the moon onto a white screen.",
+      "sentenceZh": "天文台的镜面把清晰的月球图像投射到白色屏幕上。",
+      "scene": "Inside a dark old observatory, one large angled silver mirror catches moonlight through the open dome and projects one crisp circular image of the cratered moon onto a plain white screen. The optical path is evident from the reflected beam and the projected image is the clear focal subject. No people, star charts, controls, labels, writing or text.",
+      "altText": "昏暗天文台里，银色镜面把带有环形山的清晰月球图像投射在白色屏幕上。"
+    },
+    {
+      "vocabularyId": "fa31ecc9-c244-4414-a7b5-225723393fc4",
+      "word": "itself",
+      "meaningZh": "它自己",
+      "exampleId": "fa31ecc9-c244-4414-a7b5-225723393fc4-visual-ex",
+      "styleFamily": "sage-ochre moonlit mokuhanga pangolin",
+      "sentenceEn": "The young pangolin wrapped its tail around itself while sleeping.",
+      "sentenceZh": "小穿山甲睡觉时把尾巴环绕在自己身上。",
+      "scene": "Beneath a moonlit forest root, one young pangolin sleeps alone in a tight protective curl with its long scaled tail visibly wrapped around its own body. Its peaceful face, closed eyes, small nose and mouth remain readable. No other pangolins, people, symbols, labels, writing or text.",
+      "altText": "月光下的树根旁，一只小穿山甲把长尾环绕在自己身上，安静地蜷缩入睡。"
+    },
+    {
+      "vocabularyId": "0648aefd-2092-482a-bf73-f742f0819fbc",
+      "word": "phone",
+      "meaningZh": "电话",
+      "exampleId": "0648aefd-2092-482a-bf73-f742f0819fbc-visual-ex",
+      "styleFamily": "cobalt-coral felt stop-motion glacier rescue",
+      "sentenceEn": "The climber used a satellite phone to call for help from the glacier.",
+      "sentenceZh": "登山者在冰川上用卫星电话呼救。",
+      "scene": "On a broad blue glacier, one adult climber kneels beside a secured backpack and holds a rugged satellite phone close to one ear while looking toward a distant rescue helicopter. The phone, raised antenna and calling action are clearly visible. Complete concerned but calm face, no screen content, brand marks, maps, writing or text.",
+      "altText": "蓝色冰川上，一名登山者拿着带天线的卫星电话呼救，远处救援直升机正在接近。"
+    },
+    {
+      "vocabularyId": "7b3031c7-e32e-4954-a41c-8871d3917ba5",
+      "word": "either",
+      "meaningZh": "任一的；也（用于否定句）",
+      "exampleId": "7b3031c7-e32e-4954-a41c-8871d3917ba5-visual-ex",
+      "styleFamily": "moss-copper matte low-poly wildlife crossing",
+      "sentenceEn": "Either of the two tunnels would let the otters cross safely under the road.",
+      "sentenceZh": "两条隧道中的任意一条都能让水獭安全穿过公路。",
+      "scene": "A clean cutaway landscape shows exactly two equally open dry wildlife tunnels running side by side beneath one quiet road. One otter family pauses at the shared approach where either tunnel leads to the same stream on the far side. Both choices are unobstructed and visually equal. No cars, arrows, signs, labels, numbers, writing or text.",
+      "altText": "公路下方并排着两条同样畅通的动物隧道，水獭一家可从任意一条安全到达对面溪流。"
+    },
+    {
+      "vocabularyId": "d83c1619-6c26-4c28-85fd-3f1e4a38b384",
+      "word": "cover",
+      "meaningZh": "覆盖；封面；报道",
+      "exampleId": "d83c1619-6c26-4c28-85fd-3f1e4a38b384-visual-ex",
+      "styleFamily": "jade-rose translucent watercolor lily shelter",
+      "sentenceEn": "A broad leaf formed a cool cover over the tree-frog eggs.",
+      "sentenceZh": "一片宽大的叶子在树蛙卵上方形成了清凉的遮盖。",
+      "scene": "At the edge of a tropical pond at noon, one broad curved leaf arches above a cluster of translucent tree-frog eggs attached to a lower stem. Bright sunlight strikes the top of the leaf while the eggs remain visibly shaded and cool beneath its cover. One small tree frog rests nearby. No people, umbrellas, labels, writing or text.",
+      "altText": "正午池塘边，一片宽叶拱在透明树蛙卵上方，为卵块挡住强烈阳光。"
+    },
+    {
+      "vocabularyId": "c81a5356-d552-436d-beb7-585529f3403d",
+      "word": "quite",
+      "meaningZh": "相当；完全；十分",
+      "exampleId": "c81a5356-d552-436d-beb7-585529f3403d-visual-ex",
+      "styleFamily": "mint-plum handmade clay frost greenhouse cutaway",
+      "sentenceEn": "The tiny greenhouse stayed quite warm while frost covered the garden.",
+      "sentenceZh": "花园结霜时，这座小温室里仍然相当温暖。",
+      "scene": "A single cutaway view contrasts a tiny glowing greenhouse with the frosted garden around it. Outside, leaves and soil are white with ice; inside, condensation beads on the glass, seedlings stand upright and one resting tortoise enjoys the warmth. No people, thermometers, temperature numbers, labels, writing or text.",
+      "altText": "结霜花园中央，小温室内部温暖明亮、玻璃凝着水珠，幼苗与陆龟安然待在里面。"
+    },
+    {
+      "vocabularyId": "0dedc3c1-05dc-482d-819f-dc7c04c8508d",
+      "word": "picture",
+      "meaningZh": "图片；照片；画面；想象",
+      "exampleId": "0dedc3c1-05dc-482d-819f-dc7c04c8508d-visual-ex",
+      "styleFamily": "umber-turquoise layered colored-pencil owl identification",
+      "sentenceEn": "The picture helped the ranger identify the rare owl.",
+      "sentenceZh": "这张图片帮助护林员辨认出了那只罕见的猫头鹰。",
+      "scene": "In a forest hide, one adult ranger compares a large plain printed picture of a distinctive spotted owl with the same living owl perched outside the window. The picture contains only the owl image with no words, and the matching markings are clear. Complete thoughtful face, no field-guide text, camera interface, labels, writing or text.",
+      "altText": "森林观察屋里，护林员把一张斑点猫头鹰图片与窗外同样花纹的真实猫头鹰进行比对。"
+    },
+    {
+      "vocabularyId": "5cf46fa1-2cb4-4f0e-b3ab-2ae53d8dc97b",
+      "word": "clear",
+      "meaningZh": "清楚的；明确的；澄清的；清晰地",
+      "exampleId": "5cf46fa1-2cb4-4f0e-b3ab-2ae53d8dc97b-visual-ex",
+      "styleFamily": "aqua-lilac luminous alpine gouache aerial",
+      "sentenceEn": "The mountain lake was so clear that every pebble could be seen below.",
+      "sentenceZh": "山湖清澈见底，水下的每颗鹅卵石都看得清楚。",
+      "scene": "An elevated view looks across one still alpine lake whose transparent water reveals every multicolored pebble, submerged branch and small trout far below the surface. Snowy peaks reflect softly without hiding the visible lakebed. No people, boats, signs, labels, writing or text.",
+      "altText": "高山湖水透明清澈，水下彩色鹅卵石、沉枝与小鳟鱼从水面上方都清晰可见。"
+    },
+    {
+      "vocabularyId": "71c0011b-0673-4348-a665-af1c0eaecd6c",
+      "word": "practice",
+      "meaningZh": "实践；练习",
+      "exampleId": "71c0011b-0673-4348-a665-af1c0eaecd6c-visual-ex",
+      "styleFamily": "indigo-saffron woven textile loom practice",
+      "sentenceEn": "With steady practice, the young weaver learned to make an even pattern.",
+      "sentenceZh": "通过持续练习，年轻织工学会了织出均匀的图案。",
+      "scene": "At one small hand loom, a young adult weaver calmly adds another row to a cloth whose early lower section is uneven but whose newer upper rows have become straight and balanced. A basket holds several discarded practice strips. Complete focused face, no written pattern cards, labels, symbols, writing or text.",
+      "altText": "年轻织工在小织机上继续练习，织物从下方不整齐的旧行逐渐变成上方均匀平直的图案。"
+    },
+    {
+      "vocabularyId": "c8a0bf9a-ebdb-469c-89c2-ab6ecbf84f80",
+      "word": "piece",
+      "meaningZh": "块；片；篇；一件",
+      "exampleId": "c8a0bf9a-ebdb-469c-89c2-ab6ecbf84f80-visual-ex",
+      "styleFamily": "cobalt-ivory macro encaustic mosaic fountain",
+      "sentenceEn": "The mason fitted the final piece into the mosaic fountain.",
+      "sentenceZh": "石匠把最后一块拼片嵌进了马赛克喷泉。",
+      "scene": "A close overhead view centers one gloved hand fitting a single cobalt ceramic piece into the only matching empty space in an ivory-and-blue mosaic fountain. Every surrounding piece is already fixed, and a small bowl of mortar sits to one side. No face required, no extra gaps, letters, symbols, labels, writing or text.",
+      "altText": "俯视特写中，戴手套的手把最后一块钴蓝拼片嵌入马赛克喷泉唯一的空缺。"
+    },
+    {
+      "vocabularyId": "6b4d1f77-d08d-4740-8e6b-398c31775055",
+      "word": "land",
+      "meaningZh": "土地；陆地；着陆",
+      "exampleId": "6b4d1f77-d08d-4740-8e6b-398c31775055-visual-ex",
+      "styleFamily": "vermillion-ice bold arctic screenprint helicopter",
+      "sentenceEn": "The rescue helicopter had to land on a narrow patch of ice.",
+      "sentenceZh": "救援直升机不得不降落在一小块狭窄冰面上。",
+      "scene": "One red rescue helicopter descends with landing skids just touching a narrow flat patch of sea ice between dark open water and jagged ridges. Rotor wash sweeps loose snow outward while two bundled rescuers wait at a safe distance. Faces may be tiny but complete if readable. No flags, markings, numbers, logos, writing or text.",
+      "altText": "一架红色救援直升机把起落架稳稳落在开阔海水与冰脊之间的一块狭窄平冰上。"
+    },
+    {
+      "vocabularyId": "be73c6f0-2c48-48ed-b2df-fc77d41bec8f",
+      "word": "recent",
+      "meaningZh": "最近的；近代的；最新的",
+      "exampleId": "be73c6f0-2c48-48ed-b2df-fc77d41bec8f-visual-ex",
+      "styleFamily": "terracotta-cyan layered-paper ephemeral desert pool",
+      "sentenceEn": "Recent rain filled the dry desert pools with tiny tadpoles.",
+      "sentenceZh": "最近的降雨让干涸的沙漠水洼里出现了小蝌蚪。",
+      "scene": "Across a layered desert basin, fresh shallow pools occupy cracks that were dry moments before. Tiny tadpoles swim in the new water, damp red soil glistens and the last rain cloud moves away while distant ground remains dusty. No people, clocks, calendars, arrows, labels, writing or text.",
+      "altText": "沙漠洼地被刚过去的雨水填满，湿润红土间的新水池里游着许多小蝌蚪，雨云正远去。"
+    },
+    {
+      "vocabularyId": "b04268fc-c835-4bba-a78c-c61a625a0b5b",
+      "word": "describe",
+      "meaningZh": "描述；描绘；画",
+      "exampleId": "b04268fc-c835-4bba-a78c-c61a625a0b5b-visual-ex",
+      "styleFamily": "charcoal-seafoam coastal ink-wash explanation",
+      "sentenceEn": "The fisherman used shells and stones to describe where the boat had overturned.",
+      "sentenceZh": "渔夫用贝壳和石头说明船只倾覆的位置。",
+      "scene": "At a quiet harbor table, an older fisherman arranges shells as islands, a small wooden boat on its side and stones as reefs while using expressive hands to describe the accident to two coast-guard listeners. All three complete faces follow the model closely. No maps, arrows, uniforms with text, notes, labels, writing or text.",
+      "altText": "港口桌旁，老渔夫用贝壳、石头和侧翻木船模型向两名海岸救援人员描述事故地点。"
+    },
+    {
+      "vocabularyId": "5c893ce6-f329-4e8e-aee3-c4753a524d6a",
+      "word": "product",
+      "meaningZh": "产品；结果；乘积；生产物",
+      "exampleId": "5c893ce6-f329-4e8e-aee3-c4753a524d6a-visual-ex",
+      "styleFamily": "bamboo-green cinnabar hand-carved woodblock workshop",
+      "sentenceEn": "The finished basket was the first product of the new bamboo workshop.",
+      "sentenceZh": "这只完成的篮子是新竹编工坊做出的第一件产品。",
+      "scene": "Inside a simple new bamboo workshop, one beautifully finished basket stands alone on a central wooden block while raw bamboo strips, soaking reeds and hand tools remain around the edges. Three adult craftspeople step back and admire the completed useful object. Complete proud faces, no shop signs, tags, packaging, logos, writing or text.",
+      "altText": "新竹编工坊中，第一只完成的竹篮被放在中央木台上，三名工匠在竹条与工具旁欣赏成品。"
+    },
+    {
+      "vocabularyId": "2249227f-bea7-41bf-a793-25508feba6a6",
+      "word": "doctor",
+      "meaningZh": "医生；博士",
+      "exampleId": "2249227f-bea7-41bf-a793-25508feba6a6-visual-ex",
+      "styleFamily": "apricot-teal warm editorial gouache clinic",
+      "sentenceEn": "The doctor listened to the child's breathing before choosing a treatment.",
+      "sentenceZh": "医生在决定治疗方法前先听了孩子的呼吸。",
+      "scene": "In a calm daylight clinic, one adult doctor listens carefully to a seated child's back with a stethoscope while a parent waits nearby. The doctor is attentive, the child breathes calmly and simple treatment tools remain untouched until the examination is complete. All three faces have clear natural features, no charts, medicine labels, screens, logos, writing or text.",
+      "altText": "日光诊室里，医生先用听诊器仔细听孩子背部的呼吸，家长在旁安静陪伴。"
+    },
+    {
+      "vocabularyId": "96d8758a-7521-43c2-820b-2e7a8b35bc3d",
+      "word": "wall",
+      "meaningZh": "墙；墙壁；屏障",
+      "exampleId": "96d8758a-7521-43c2-820b-2e7a8b35bc3d-visual-ex",
+      "styleFamily": "ultramarine-lime isometric paper-engineering flood wall",
+      "sentenceEn": "The curved stone wall guided floodwater away from the orchard.",
+      "sentenceZh": "弧形石墙把洪水引离了果园。",
+      "scene": "An elevated isometric landscape shows one sturdy curved stone wall beside an orchard during a flood. Muddy water strikes the wall and follows its curve into a safe spill channel, while rows of fruit trees remain dry on the protected side. No people, arrows, diagrams, measurements, labels, writing or text.",
+      "altText": "洪水沿着果园外侧的弧形石墙转入泄洪沟，墙后整齐的果树保持干燥。"
+    },
+    {
+      "vocabularyId": "b5d724ae-406b-47f7-931b-2ba122884ce8",
+      "word": "patient",
+      "meaningZh": "病人；耐心的",
+      "exampleId": "b5d724ae-406b-47f7-931b-2ba122884ce8-visual-ex",
+      "styleFamily": "smoky-violet dawn charcoal-pastel heron",
+      "sentenceEn": "The patient heron stood motionless until a fish swam near.",
+      "sentenceZh": "这只耐心的鹭鸟一动不动地等待，直到鱼儿游近。",
+      "scene": "At a misty dawn marsh, one heron stands perfectly motionless in shallow water with its neck relaxed and eyes focused downward. Small ripples show one fish slowly approaching its feet while changing light suggests a long quiet wait. No people, clocks, repeated birds, labels, writing or text.",
+      "altText": "薄雾黎明的浅水中，一只鹭鸟耐心地静立等待，一条小鱼正慢慢游近它的脚边。"
+    },
+    {
+      "vocabularyId": "05e7ea02-719e-4837-8cee-ce552404e656",
+      "word": "worker",
+      "meaningZh": "工人；员工",
+      "exampleId": "05e7ea02-719e-4837-8cee-ce552404e656-visual-ex",
+      "styleFamily": "mustard-navy ligne-claire railway inspection",
+      "sentenceEn": "A railway worker inspected every wheel before the night train departed.",
+      "sentenceZh": "夜班列车出发前，一名铁路工人检查了每个车轮。",
+      "scene": "Beside a stationary night train in a well-lit depot, one adult railway worker kneels safely outside the rail and uses a round inspection mirror and lamp to examine the final wheel assembly. Several already checked wheels recede behind. Complete concentrated face, no train numbers, safety signs, uniforms with logos, labels, writing or text.",
+      "altText": "夜间车库里，一名铁路工人跪在安全位置，用检查镜和灯查看列车最后一组车轮。"
+    },
+    {
+      "vocabularyId": "cbf5854f-3626-462c-a1bf-d138544e08a0",
+      "word": "news",
+      "meaningZh": "新闻；消息；报导",
+      "exampleId": "cbf5854f-3626-462c-a1bf-d138544e08a0-visual-ex",
+      "styleFamily": "navy-coral mid-century harbor radio screenprint",
+      "sentenceEn": "The harbor radio brought news that the stranded whale was swimming free again.",
+      "sentenceZh": "港口无线电传来消息：搁浅的鲸鱼已经重新自由游动。",
+      "scene": "At a harbor lookout, four adults gather around one plain tabletop radio as a rescue boat returns in the background and a freed whale swims offshore with its back and tail visible. Their relieved complete faces connect the broadcast with the positive event. No radio dial text, newspapers, signs, flags, logos, writing or text.",
+      "altText": "港口瞭望室里，人们围着无线电听到好消息，窗外获救的鲸鱼已在返航救援船旁自由游动。"
+    },
+    {
+      "vocabularyId": "0ee34d5d-d2a1-42cd-914e-891c5fe11b1e",
+      "word": "movie",
+      "meaningZh": "电影",
+      "exampleId": "0ee34d5d-d2a1-42cd-914e-891c5fe11b1e-visual-ex",
+      "styleFamily": "indigo-gold luminous paper-cut meadow cinema",
+      "sentenceEn": "The outdoor movie began after fireflies appeared above the meadow.",
+      "sentenceZh": "萤火虫飞过草地后，露天电影开始了。",
+      "scene": "On a summer meadow at night, a small hand-cranked projector casts one animated ocean adventure onto a large plain outdoor screen while families sit on blankets beneath glowing fireflies. The projected movie and beam are clearly visible. All readable faces are complete and stylized, no title cards, captions, tickets, logos, writing or text.",
+      "altText": "夏夜草地上，手摇放映机把海洋冒险电影投到露天银幕，观众坐在萤火虫下观看。"
+    }
+  ]
+}

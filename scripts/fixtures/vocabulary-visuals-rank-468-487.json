@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-468-487-2026-07-23",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. This batch must feel deliberately diverse: alternate indoor and outdoor settings, day and night, human and nonhuman subjects, intimate and panoramic framing, static and kinetic action, natural and technological environments, and warm and cool palettes. Do not reuse the same community-square, river-cleanup, gardening or generic warm-storybook composition. Keep one coherent style inside each image while ensuring adjacent images do not share the same dominant color family. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "465c917f-41bd-4563-88a2-1a9e6ccfa423",
+      "word": "director",
+      "meaningZh": "主任；导演；董事",
+      "exampleId": "465c917f-41bd-4563-88a2-1a9e6ccfa423-visual-ex",
+      "styleFamily": "plum-cyan cut-paper night film set",
+      "sentenceEn": "The director adjusted the moonlit scene before the actors returned.",
+      "sentenceZh": "演员回来之前，导演调整了月夜场景。",
+      "scene": "Inside a dark indoor film soundstage, one adult director stands beside a camera and uses both hands to guide the crew as they reposition a painted moon, a miniature rooftop and one cool spotlight. An empty marked acting area waits in front of the set, so the director's coordinating role is clear. Complete decisive face, no clapperboard text, scripts, logos, writing or text.",
+      "altText": "夜间摄影棚里，导演站在摄影机旁指挥工作人员调整月亮布景、屋顶模型与灯光。"
+    },
+    {
+      "vocabularyId": "927315b6-7b5d-44a7-a815-44f69e276d89",
+      "word": "position",
+      "meaningZh": "位置；职位；立场",
+      "exampleId": "927315b6-7b5d-44a7-a815-44f69e276d89-visual-ex",
+      "styleFamily": "teal-vermilion mangrove woodcut",
+      "sentenceEn": "The nest's high position kept the heron chicks above the floodwater.",
+      "sentenceZh": "鸟巢较高的位置使小鹭鸟远离了洪水。",
+      "scene": "In a flooded mangrove wetland, one heron nest rests high in the fork of a tall tree, clearly above the waterline, while three chicks remain dry inside. Lower branches and reeds are partly submerged, making the nest's elevated position unmistakable. An adult heron returns overhead. No people, arrows, height marks, labels, writing or text.",
+      "altText": "洪水淹没红树林下层枝条，树冠高处的鹭鸟巢与三只幼鸟仍保持干燥。"
+    },
+    {
+      "vocabularyId": "656aa48e-5bed-45ec-a2c3-f775289bd64a",
+      "word": "player",
+      "meaningZh": "玩家；运动员；播放器",
+      "exampleId": "656aa48e-5bed-45ec-a2c3-f775289bd64a-visual-ex",
+      "styleFamily": "violet-lime kinetic wheelchair basketball",
+      "sentenceEn": "The youngest player passed the ball before the defense closed in.",
+      "sentenceZh": "最年轻的球员在防守合围前传出了球。",
+      "scene": "On an indoor wheelchair-basketball court, one young adult player makes a fast two-handed pass to a teammate while two defenders turn toward the ball. The player's athletic chair, focused complete face and dynamic game position make the sports meaning immediate. No scoreboard, team names, jersey numbers, logos, writing or text.",
+      "altText": "室内轮椅篮球赛中，年轻球员在两名防守者靠近前把球快速传给队友。"
+    },
+    {
+      "vocabularyId": "c3ed9775-1461-4427-88f9-c4933765cf4c",
+      "word": "agree",
+      "meaningZh": "同意；赞成",
+      "exampleId": "c3ed9775-1461-4427-88f9-c4933765cf4c-visual-ex",
+      "styleFamily": "primary-color mid-century engineering studio",
+      "sentenceEn": "After testing both designs, the engineers agree on the safer bridge.",
+      "sentenceZh": "测试两种设计后，工程师们同意采用更安全的桥梁方案。",
+      "scene": "In a bright engineering studio, three adult engineers stand around exactly two bridge models after a weight test. All three independently point to the same intact model and nod toward one another, while the rejected model bends under its load. Complete agreeing faces, no handshakes, voting icons, labels, charts, writing or text.",
+      "altText": "两座桥梁模型完成承重测试后，三名工程师同时指向保持完好的同一座并相互点头。"
+    },
+    {
+      "vocabularyId": "0805fdf2-9fe7-4ca2-9bbe-530cdd3654db",
+      "word": "especially",
+      "meaningZh": "尤其；特别",
+      "exampleId": "0805fdf2-9fe7-4ca2-9bbe-530cdd3654db-visual-ex",
+      "styleFamily": "fuchsia-turquoise desert folk-art bloom",
+      "sentenceEn": "The desert blooms after rain, especially around the rocky spring.",
+      "sentenceZh": "雨后沙漠会开花，岩石泉眼周围尤其繁盛。",
+      "scene": "After rare rain, scattered flowers appear across a wide desert, but a dramatically denser ring of vivid blossoms surrounds one small rocky spring. Cacti, lizards and distant mesas establish the dry environment while the concentrated growth makes especially visible. No people, circles, arrows, labels, writing or text.",
+      "altText": "雨后沙漠零星开花，而岩石泉眼周围形成格外茂密鲜艳的花环。"
+    },
+    {
+      "vocabularyId": "2f99b35c-bae1-4e69-a4aa-755935e2c974",
+      "word": "record",
+      "meaningZh": "记录；唱片；纪录；记载",
+      "exampleId": "2f99b35c-bae1-4e69-a4aa-755935e2c974-visual-ex",
+      "styleFamily": "black-lime nocturnal rainforest scratchboard",
+      "sentenceEn": "Biologists record the call of a rare tree frog at night.",
+      "sentenceZh": "生物学家在夜间记录一只稀有树蛙的叫声。",
+      "scene": "In a dark rainforest at night, two adult biologists quietly aim one parabolic microphone toward a small rare tree frog calling from a wet leaf. One researcher listens through headphones while the other adjusts a compact recorder with an unreadable dark screen. Complete concentrated faces, no waveform graphics, labels, writing or text.",
+      "altText": "夜间雨林中，两名生物学家把抛物面麦克风对准叶片上鸣叫的稀有树蛙进行录音。"
+    },
+    {
+      "vocabularyId": "dbc90337-d899-49b0-bcac-d1057e95f7a5",
+      "word": "pick",
+      "meaningZh": "选择；拾取；挑选",
+      "exampleId": "dbc90337-d899-49b0-bcac-d1057e95f7a5-visual-ex",
+      "styleFamily": "mint-orange isometric strawberry robot",
+      "sentenceEn": "The farm robot can pick only ripe strawberries without harming the green ones.",
+      "sentenceZh": "农场机器人能只采摘成熟草莓，而不碰绿色果实。",
+      "scene": "In a clean daylight greenhouse, one compact farm robot uses a soft gripper to pick one ripe red strawberry from a plant while leaving several green strawberries untouched on the same stem. A shallow basket contains only red ripe fruit. No people, targeting graphics, screens, labels, logos, writing or text.",
+      "altText": "温室机器人用柔软夹爪摘下一颗红熟草莓，同枝的绿色果实保持完整，篮中也只有成熟果实。"
+    },
+    {
+      "vocabularyId": "71e00bb7-b582-4a03-9515-14e352889a5c",
+      "word": "wear",
+      "meaningZh": "穿；戴；磨损；服装",
+      "exampleId": "71e00bb7-b582-4a03-9515-14e352889a5c-visual-ex",
+      "styleFamily": "cobalt-lemon rainy-night cycling comic",
+      "sentenceEn": "Cyclists wear reflective jackets so drivers can see them in the rain.",
+      "sentenceZh": "骑行者穿反光夹克，让驾驶员在雨中能够看到他们。",
+      "scene": "On a rain-dark city street at night, three adult cyclists visibly wear bright reflective jackets and helmets while riding in a safe lane. Headlights from a distant car illuminate the reflective fabric, making the clothing the clear safety focus. Complete faces where readable, no brands, road signs, license plates, writing or text.",
+      "altText": "雨夜街道上，三名骑行者穿着明亮反光夹克并戴好头盔，远处车灯照亮了他们。"
+    },
+    {
+      "vocabularyId": "4eed26bb-a5e5-4a11-a401-b2f23de150a4",
+      "word": "paper",
+      "meaningZh": "纸；报纸；论文；文件",
+      "exampleId": "4eed26bb-a5e5-4a11-a401-b2f23de150a4-visual-ex",
+      "styleFamily": "indigo-cream traditional papermaking woodblock",
+      "sentenceEn": "The artist made paper from discarded cotton fibers.",
+      "sentenceZh": "艺术家用废弃棉纤维制成了纸。",
+      "scene": "Inside a traditional papermaking workshop, one adult artist lifts a rectangular deckle from a vat, revealing a thin wet sheet of newly formed paper. Nearby, discarded cotton fibers soak in a plain basket and finished cream sheets dry on wooden racks. Complete face, no printed sheets, labels, writing or text.",
+      "altText": "传统造纸坊里，艺术家从纸浆槽中提起抄纸框，湿纸成形，旁边棉纤维浸泡并有纸张晾干。"
+    },
+    {
+      "vocabularyId": "54f95fa4-9d6e-4286-8cc7-75e16d85247c",
+      "word": "special",
+      "meaningZh": "特殊的；特别的；专门的",
+      "exampleId": "54f95fa4-9d6e-4286-8cc7-75e16d85247c-visual-ex",
+      "styleFamily": "crimson-cobalt stained-glass family kite",
+      "sentenceEn": "The giant kite was special because three generations built it together.",
+      "sentenceZh": "这只巨型风筝很特别，因为它由三代人共同制作。",
+      "scene": "On a windswept grassy hill, one child, one parent and one grandparent launch a single large bird-shaped kite they built together. Matching handmade patches on the kite echo fabric pieces still tied to each person's tool pouch, showing shared authorship across three generations. All three complete joyful faces, no other kites, letters, writing or text.",
+      "altText": "祖孙三代在山坡上共同放飞一只亲手制作的巨型鸟形风筝，风筝补片与他们工具袋中的布料相呼应。"
+    },
+    {
+      "vocabularyId": "b92714bf-41a6-4a57-950e-6878b2dcef7d",
+      "word": "space",
+      "meaningZh": "空间；太空；空地",
+      "exampleId": "b92714bf-41a6-4a57-950e-6878b2dcef7d-visual-ex",
+      "styleFamily": "silver-cyan low-poly orbital space",
+      "sentenceEn": "A repair robot drifted through space beside the research station.",
+      "sentenceZh": "一个维修机器人漂浮在科研空间站旁的太空中。",
+      "scene": "Above the curved blue edge of Earth, one compact repair robot floats freely through open space beside a geometric research station and reaches toward a loose solar-panel hinge. Stars and the vast black distance dominate the background. No astronauts, flags, screens, labels, logos, writing or text.",
+      "altText": "地球弧面上方，一个小型维修机器人漂浮在科研空间站旁，伸向松动的太阳能板铰链。"
+    },
+    {
+      "vocabularyId": "4cb9f40b-4d02-472d-a0d9-eaf80a56d589",
+      "word": "ground",
+      "meaningZh": "地面；土地；场地；理由",
+      "exampleId": "4cb9f40b-4d02-472d-a0d9-eaf80a56d589-visual-ex",
+      "styleFamily": "umber-moss macro rain-on-ground watercolor",
+      "sentenceEn": "The first raindrops softened the dry ground around the acacia tree.",
+      "sentenceZh": "最初的雨滴软化了金合欢树周围干燥的地面。",
+      "scene": "At ground level beneath one acacia tree, the first large raindrops darken and soften cracked dry earth. Tiny channels begin joining around stones, a beetle emerges, and dormant grass tips lift as the soil changes texture. The ground fills most of the frame. No people, footprints, labels, writing or text.",
+      "altText": "金合欢树下的特写中，第一批雨滴落在龟裂土地上，使土色变深、裂缝变软并汇成细流。"
+    },
+    {
+      "vocabularyId": "4f95943c-5f36-47a1-89a3-d56d333172ea",
+      "word": "form",
+      "meaningZh": "形式；表格；形状；形成",
+      "exampleId": "4f95943c-5f36-47a1-89a3-d56d333172ea-visual-ex",
+      "styleFamily": "ice-blue-violet microscopic frost formation",
+      "sentenceEn": "Ice crystals form delicate branches across the cold window.",
+      "sentenceZh": "冰晶在冰冷的窗面上形成精细的枝状纹理。",
+      "scene": "A macro close view of a dark winter window shows fresh ice crystals visibly growing outward from a few seed points into delicate branching structures. The newest translucent tips are still forming along one edge while older branches are complete. No people, snowflakes as symbols, diagrams, labels, writing or text.",
+      "altText": "寒冷窗面的微距画面中，冰晶从少数起点向外生长成细密枝状结构，边缘新晶体仍在形成。"
+    },
+    {
+      "vocabularyId": "98b7815d-12a5-4748-b463-efeaedd6bea5",
+      "word": "support",
+      "meaningZh": "支持",
+      "exampleId": "98b7815d-12a5-4748-b463-efeaedd6bea5-visual-ex",
+      "styleFamily": "sepia-teal architectural restoration etching",
+      "sentenceEn": "A temporary wooden frame will support the ancient stone arch during repairs.",
+      "sentenceZh": "维修期间，一个临时木架将支撑这座古老石拱门。",
+      "scene": "At an ancient stone gateway under careful restoration, one precisely fitted timber frame presses upward beneath the full curve of a cracked arch while masons replace a loose block above. The load path and physical support are visually clear. Complete worker faces where readable, no construction signs, measurements, labels, writing or text.",
+      "altText": "古老石拱门维修时，贴合拱形的临时木架从下方稳稳托住石块，工匠正在更换松动构件。"
+    },
+    {
+      "vocabularyId": "1bbc8c7f-6829-4e58-b5ea-cd86d42c3a8a",
+      "word": "event",
+      "meaningZh": "事件；结果；事情的进程；竞赛项目",
+      "exampleId": "1bbc8c7f-6829-4e58-b5ea-cd86d42c3a8a-visual-ex",
+      "styleFamily": "midnight-gold desert meteor screenprint",
+      "sentenceEn": "The meteor shower was the main event at the desert observatory.",
+      "sentenceZh": "流星雨是沙漠天文台的主要活动。",
+      "scene": "At a remote desert observatory at night, a small audience gathers on reclining mats and beside telescopes as a spectacular meteor shower crosses the sky above the open dome. Everyone faces the same celestial occurrence, making it the shared event. Complete faces where readable, no tickets, posters, signs, star labels, writing or text.",
+      "altText": "沙漠天文台的穹顶敞开，观众躺在垫子上或站在望远镜旁，共同观看壮观流星雨。"
+    },
+    {
+      "vocabularyId": "c5b36e39-6dee-444f-af36-b0dca37246e8",
+      "word": "official",
+      "meaningZh": "官员；公务员；职员",
+      "exampleId": "c5b36e39-6dee-444f-af36-b0dca37246e8-visual-ex",
+      "styleFamily": "sage-terracotta terrazzo civic inspection",
+      "sentenceEn": "A city official tested the new wheelchair ramp before approving it.",
+      "sentenceZh": "一名市政官员在批准新轮椅坡道前亲自进行了测试。",
+      "scene": "Outside a small civic building in daylight, one adult city official personally rolls a weighted test cart down a newly built wheelchair ramp while an architect checks the handrail and a wheelchair user observes. The official leads the safety inspection with a complete responsible face. No badges with text, clipboards, forms, signs, logos, writing or text.",
+      "altText": "市政官员在公共建筑外用负重测试车检查新轮椅坡道，建筑师与轮椅使用者在旁观察。"
+    },
+    {
+      "vocabularyId": "79a5159d-6185-4e9d-b08c-dd1d65fd36b6",
+      "word": "whose",
+      "meaningZh": "谁的",
+      "exampleId": "79a5159d-6185-4e9d-b08c-dd1d65fd36b6-visual-ex",
+      "styleFamily": "snow-white-vermilion paper-silhouette mystery",
+      "sentenceEn": "Whose footprints crossed the fresh snow outside the cabin?",
+      "sentenceZh": "是谁的脚印穿过了小屋外的新雪？",
+      "scene": "Fresh snow surrounds a quiet red cabin at dawn. One uninterrupted line of distinct fox footprints crosses the yard from a forest edge, and the small red fox that made them remains partly visible between two trees at the trail's origin. The image invites the ownership question while preserving a discoverable answer. No people, human footprints, arrows, labels, writing or text.",
+      "altText": "清晨红色小屋外，一串狐狸足迹穿过新雪，足迹起点附近的树间还能看见那只红狐。"
+    },
+    {
+      "vocabularyId": "09e19f1c-302f-4846-9a03-45355a0e686f",
+      "word": "matter",
+      "meaningZh": "事情；问题；物质；要紧",
+      "exampleId": "09e19f1c-302f-4846-9a03-45355a0e686f-visual-ex",
+      "styleFamily": "icy-blue-copper glass states-of-matter sculpture",
+      "sentenceEn": "The exhibit shows how matter changes from ice to water and steam.",
+      "sentenceZh": "这件展品展示了物质如何从冰变成水和蒸汽。",
+      "scene": "One continuous tabletop science exhibit uses a copper-heated glass channel: solid ice rests at the cool left end, liquid water flows through the middle, and visible steam rises from the warm right end. The three connected states form one coherent physical process. No people, captions, arrows, temperature marks, diagrams, writing or text.",
+      "altText": "连续玻璃装置中，左侧固态冰融成中部流水，随后在右侧铜加热区化为可见蒸汽。"
+    },
+    {
+      "vocabularyId": "77ae4585-80dd-47a5-adc2-ac2b76802ec9",
+      "word": "everyone",
+      "meaningZh": "每个人",
+      "exampleId": "77ae4585-80dd-47a5-adc2-ac2b76802ec9-visual-ex",
+      "styleFamily": "burgundy-gold art-deco orchestra readiness",
+      "sentenceEn": "The conductor waited until everyone was ready before raising her baton.",
+      "sentenceZh": "指挥等到每个人都准备好后才举起指挥棒。",
+      "scene": "In an elegant concert hall, one adult conductor stands with baton still lowered and makes eye contact across a full orchestra. Every visible musician has instrument poised, music-free stand aligned and attentive complete face turned toward her, with no one still adjusting equipment. No readable sheet music, programs, signs, writing or text.",
+      "altText": "音乐厅里，指挥暂未举棒，全体乐手都已握好乐器并专注望向她，等待共同开始。"
+    },
+    {
+      "vocabularyId": "eb2bcff4-549c-488c-b838-c07bcd5b95d5",
+      "word": "center",
+      "meaningZh": "中心；中央",
+      "exampleId": "eb2bcff4-549c-488c-b838-c07bcd5b95d5-visual-ex",
+      "styleFamily": "ochre-emerald aerial oasis miniature",
+      "sentenceEn": "An ancient well stands at the center of the desert oasis.",
+      "sentenceZh": "一口古井位于沙漠绿洲的中央。",
+      "scene": "A near-aerial view shows one circular desert oasis with an ancient stone well placed exactly at its geometric center. Date palms, gardens, water channels, tents and resting camels form balanced rings around the well, while empty ochre dunes surround the green oasis. Tiny faces need not be readable, no compass, map symbols, signs, writing or text.",
+      "altText": "俯瞰圆形绿洲，古老石井正位于几何中心，棕榈、菜园、水渠和帐篷围绕它分布。"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-367-387-2026-07-18",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "271c0e3d-471c-45fe-8268-450e10912c3d",
+      "word": "wait",
+      "meaningZh": "等待；等候",
+      "exampleId": "271c0e3d-471c-45fe-8268-450e10912c3d-visual-ex",
+      "styleFamily": "handmade clay-animation tidal patience",
+      "sentenceEn": "Three young otters wait on the rocks while their mother searches for food.",
+      "sentenceZh": "三只小水獭在岩石上等待妈妈寻找食物归来。",
+      "scene": "Exactly three young sea otters sit patiently together on dry rocks above a calm tidal pool, all looking toward the open water where their mother is only a small distant silhouette returning with food. Their still postures and untouched shells beside them show that they are waiting rather than playing. No clocks, signs, arrows, writing or text.",
+      "altText": "三只小水獭安静地坐在潮池岩石上，望着远处带食物归来的妈妈。"
+    },
+    {
+      "vocabularyId": "e649959e-ee72-44a8-95f9-84306c9cfcb1",
+      "word": "serve",
+      "meaningZh": "服务；招待；供应；适用",
+      "exampleId": "e649959e-ee72-44a8-95f9-84306c9cfcb1-visual-ex",
+      "styleFamily": "warm gouache community kitchen",
+      "sentenceEn": "Volunteers serve warm soup to neighbors after the winter storm.",
+      "sentenceZh": "冬季风暴过后，志愿者为邻居们端上热汤。",
+      "scene": "Inside a welcoming community hall after a snowy storm, two adult volunteers ladle steaming vegetable soup into bowls and hand the bowls directly to several seated neighbors. The exchange of food and attentive care is the focal action. All readable faces have complete warm expressions. No menus, banners, logos, writing or text.",
+      "altText": "冬季风暴过后，两名志愿者在社区大厅为邻居们盛上热汤。"
+    },
+    {
+      "vocabularyId": "4a36a0c1-7773-442f-8415-7b97d03d16c9",
+      "word": "market",
+      "meaningZh": "市场；集市；行情；营销",
+      "exampleId": "4a36a0c1-7773-442f-8415-7b97d03d16c9-visual-ex",
+      "styleFamily": "vibrant screen-print harvest market",
+      "sentenceEn": "Farmers bring fresh fruit, vegetables, flowers, and bread to the market each Saturday.",
+      "sentenceZh": "农民们每周六把新鲜水果、蔬菜、鲜花和面包带到集市。",
+      "scene": "A lively open-air market fills one town square with distinct stalls offering baskets of fruit, vegetables, flowers and bread. Farmers arrange produce while neighbors exchange plain coins and carry reusable baskets. Diverse adults and children have complete expressive faces and natural interactions. No stall signs, price labels, logos, numbers, writing or text.",
+      "altText": "露天集市里，农民摆出水果、蔬菜、鲜花和面包，邻居们提着篮子选购。"
+    },
+    {
+      "vocabularyId": "0e72199a-d94c-4e82-92a4-81142e517ca4",
+      "word": "die",
+      "meaningZh": "死；死亡；消失；熄灭",
+      "exampleId": "0e72199a-d94c-4e82-92a4-81142e517ca4-visual-ex",
+      "styleFamily": "soft charcoal-and-pastel dawn campsite",
+      "sentenceEn": "The small campfire began to die as the first light reached the valley.",
+      "sentenceZh": "第一缕晨光照进山谷时，小小的营火开始熄灭。",
+      "scene": "At a peaceful empty campsite before sunrise, one small campfire has nearly gone out: only one faint low flame remains among cool gray embers while a thin thread of smoke rises. Fresh dawn light reaches the valley and the fire is visibly fading, with no danger or destruction. No people, bones, symbols, writing or text.",
+      "altText": "晨光照进山谷，营地的小火堆只剩微弱火苗和渐冷的灰色余烬。"
+    },
+    {
+      "vocabularyId": "ca6dcffd-2142-47c8-b824-d84192b41ea0",
+      "word": "send",
+      "meaningZh": "发送；寄；派遣；使",
+      "exampleId": "ca6dcffd-2142-47c8-b824-d84192b41ea0-visual-ex",
+      "styleFamily": "miniature 3D mountain cable rescue",
+      "sentenceEn": "The mountain clinic used a cable basket to send medicine across the flooded gorge.",
+      "sentenceZh": "山间诊所用缆索吊篮把药品送过被洪水淹没的峡谷。",
+      "scene": "A small sealed medicine case without labels travels inside a suspended cable basket from a tiny mountain clinic on the left across a flooded gorge toward two waiting rescue workers on the right. The cable, departure point and receiving hands make the transfer direction unmistakable. The workers have complete faces. No arrows, signs, logos, writing or text.",
+      "altText": "装着药品的吊篮沿缆索越过洪水峡谷，从山间诊所送向对岸的救援人员。"
+    },
+    {
+      "vocabularyId": "456ff0dc-244e-41ce-9711-4824361523a2",
+      "word": "expect",
+      "meaningZh": "期望；预期；预料；等待",
+      "exampleId": "456ff0dc-244e-41ce-9711-4824361523a2-visual-ex",
+      "styleFamily": "colored-pencil coastal animal shelter",
+      "sentenceEn": "Rescue workers expect several cold seals, so they prepared warm pools and blankets.",
+      "sentenceZh": "救援人员预计会送来几只受冻的海豹，因此提前准备了温水池和毯子。",
+      "scene": "At a coastal wildlife shelter, three adult rescue workers finish preparing several empty shallow warm-water pools and neatly folded blankets while looking through open doors toward a rescue boat approaching in the distance with seal carriers. Preparation happens before arrival, making anticipation clear. All readable faces are complete. No signs, charts, labels, writing or text.",
+      "altText": "海岸救助站里，工作人员提前准备好温水池和毯子，远处的救援船正在驶来。"
+    },
+    {
+      "vocabularyId": "8205ea65-505f-46a5-96cf-7fd33be2090e",
+      "word": "sense",
+      "meaningZh": "感觉；意识；意义；道理",
+      "exampleId": "8205ea65-505f-46a5-96cf-7fd33be2090e-visual-ex",
+      "styleFamily": "botanical paper-quilling moonlit moth",
+      "sentenceEn": "A moth can sense the night-blooming flowers with its delicate antennae.",
+      "sentenceZh": "飞蛾能用纤细的触角感知夜间开放的花朵。",
+      "scene": "One large moth hovers near a cluster of night-blooming flowers under moonlight, with its two delicate antennae clearly oriented toward curling streams of pollen and scent suggested by subtle decorative paper filaments. The moth and flowers remain the only focal subjects. No diagrams, labels, arrows, letters or text.",
+      "altText": "月光下，一只飞蛾伸展纤细触角，靠近正在夜间开放的花朵。"
+    },
+    {
+      "vocabularyId": "8eb0002f-51ad-4a64-bb03-e16c317d8d54",
+      "word": "stay",
+      "meaningZh": "停留；保持；逗留；居住",
+      "exampleId": "8eb0002f-51ad-4a64-bb03-e16c317d8d54-visual-ex",
+      "styleFamily": "Japanese woodblock mountain refuge",
+      "sentenceEn": "The hikers chose to stay inside the refuge until the lightning passed.",
+      "sentenceZh": "徒步者选择留在避难屋里，直到雷电过去。",
+      "scene": "A sturdy mountain refuge is shown in cutaway during a dramatic lightning storm. Exactly three adult hikers remain safely seated inside beside their packed backpacks while rain and lightning fill the exposed trail outside. Their complete calm faces and settled posture emphasize remaining in place. No warning signs, maps, writing or text.",
+      "altText": "雷雨笼罩山路时，三名徒步者安静地留在坚固的山间避难屋内。"
+    },
+    {
+      "vocabularyId": "87665932-39cd-49d2-9e2a-e478a78aab12",
+      "word": "fall",
+      "meaningZh": "落下；跌倒；下降；秋季；瀑布",
+      "exampleId": "87665932-39cd-49d2-9e2a-e478a78aab12-visual-ex",
+      "styleFamily": "minimal sumi-e autumn motion",
+      "sentenceEn": "One golden leaf began to fall from the maple branch into the quiet pond.",
+      "sentenceZh": "一片金色枫叶开始从枝头飘落到安静的池塘中。",
+      "scene": "A spare ink-wash composition shows one golden maple leaf detached below a high branch and visibly descending toward a still pond, following a gentle curved trail of air. A few leaves remain attached above and the water below is undisturbed, capturing the moment before landing. No people, arrows, calligraphy, writing or text.",
+      "altText": "一片金色枫叶离开枝头，正缓缓飘向尚未泛起涟漪的池塘。"
+    },
+    {
+      "vocabularyId": "c214410c-8336-4a12-9398-b9c44b8b1c62",
+      "word": "oh",
+      "meaningZh": "哦；啊",
+      "exampleId": "c214410c-8336-4a12-9398-b9c44b8b1c62-visual-ex",
+      "styleFamily": "storybook animation woodland discovery",
+      "sentenceEn": "Oh, the missing fawn was sleeping safely beneath the ferns.",
+      "sentenceZh": "哦，原来走失的小鹿正安全地睡在蕨叶下面。",
+      "scene": "In a gentle woodland scene, one adult forest ranger parts tall ferns and suddenly discovers a missing young fawn sleeping safely beneath them. The ranger's fully rendered face shows clear relief and quiet surprise, with widened eyes, raised eyebrows and a softly open mouth. No speech bubbles, punctuation marks, signs, writing or text.",
+      "altText": "护林员拨开蕨叶，惊喜地发现走失的小鹿正安全地睡在下面。"
+    },
+    {
+      "vocabularyId": "1a2e05c5-4a2b-4652-9570-5d366a46fa82",
+      "word": "nation",
+      "meaningZh": "国家；民族",
+      "exampleId": "1a2e05c5-4a2b-4652-9570-5d366a46fa82-visual-ex",
+      "styleFamily": "painted isometric island nation conservation",
+      "sentenceEn": "The island nation connected its forests with protected wildlife corridors.",
+      "sentenceZh": "这个岛国用受保护的野生动物廊道连接起各片森林。",
+      "scene": "An elegant isometric aerial view presents one coherent island nation surrounded by ocean, with several towns, farms, mountains and forests linked by continuous green wildlife corridors. Animals move safely through the connected habitat while diverse tiny residents tend trees in different regions. No borders with labels, flags, map legends, writing or text.",
+      "altText": "海洋环绕的岛国中，城镇、农田和森林分布各处，连续的绿色生态廊道连接着森林。"
+    },
+    {
+      "vocabularyId": "7f6d498b-23c1-4fe8-988c-8281e1c2073e",
+      "word": "plan",
+      "meaningZh": "计划；方案；规划；打算",
+      "exampleId": "7f6d498b-23c1-4fe8-988c-8281e1c2073e-visual-ex",
+      "styleFamily": "layered cut-paper community garden",
+      "sentenceEn": "The gardeners followed a plan before turning the empty lot into a shared orchard.",
+      "sentenceZh": "园丁们按照计划把空地改造成共享果园。",
+      "scene": "In an empty urban lot, four diverse adult gardeners gather around a small three-dimensional model made of plain wooden tree pieces, paths and a pond, then place matching young trees into corresponding prepared holes across the real lot. The model-to-action relationship communicates an organized plan. Complete faces, no paper diagrams, labels, numbers, writing or text.",
+      "altText": "四位园丁参照立体果园模型，把树苗种进空地上预先安排好的位置。"
+    },
+    {
+      "vocabularyId": "c767b687-534a-4d16-ae5c-6b9d7c50979c",
+      "word": "cut",
+      "meaningZh": "切；割；削减；减少；切口",
+      "exampleId": "c767b687-534a-4d16-ae5c-6b9d7c50979c-visual-ex",
+      "styleFamily": "bold linocut orchard care",
+      "sentenceEn": "The arborist made one careful cut to remove the storm-damaged branch.",
+      "sentenceZh": "树艺师小心地切下一根被风暴损坏的树枝。",
+      "scene": "One adult arborist secured by a plain rope uses a hand saw to make a single clean cut at the base of one visibly cracked storm-damaged branch, while the rest of the healthy fruit tree remains untouched. The complete face shows concentration and protective care. No power tools, logos, safety text, signs or writing.",
+      "altText": "树艺师用手锯小心切除果树上一根开裂的风暴受损枝条。"
+    },
+    {
+      "vocabularyId": "7e57374e-0ff6-4bc0-9d68-195b1c65ee7b",
+      "word": "college",
+      "meaningZh": "大学；学院；学会",
+      "exampleId": "7e57374e-0ff6-4bc0-9d68-195b1c65ee7b-visual-ex",
+      "styleFamily": "mid-century editorial campus workshop",
+      "sentenceEn": "The college opened a workshop where students repair bicycles for the community.",
+      "sentenceZh": "这所大学开设了一间工坊，学生在这里为社区维修自行车。",
+      "scene": "A welcoming college courtyard and open workshop form one scene: several young adult students learn together while repairing ordinary bicycles for older neighbors, with classroom buildings, a library-like hall and shared green visible around them. Every readable face is complete and engaged. No college name, banners, emblems, signs, writing or text.",
+      "altText": "大学校园的开放工坊里，学生们一起学习，并为社区邻居维修自行车。"
+    },
+    {
+      "vocabularyId": "71b3aeaa-3a20-4085-ab33-733bfb2e6d86",
+      "word": "interest",
+      "meaningZh": "兴趣；利益；利息；利害关系",
+      "exampleId": "71b3aeaa-3a20-4085-ab33-733bfb2e6d86-visual-ex",
+      "styleFamily": "soft chalk rooftop astronomy",
+      "sentenceEn": "Mara's interest in astronomy grew after she saw Saturn through a telescope.",
+      "sentenceZh": "玛拉用望远镜看到土星后，对天文学的兴趣更浓了。",
+      "scene": "On a safe rooftop observatory, one teenage girl lifts her face from a telescope with bright focused eyes and an expression of deep fascination, then eagerly adjusts the instrument to look again. A stylized inset reflection within the telescope lens suggests Saturn without becoming a separate panel. Her face is complete. No star charts, labels, symbols, writing or text.",
+      "altText": "女孩从望远镜中看到土星后满脸着迷，又迫不及待地调整镜头继续观察。"
+    },
+    {
+      "vocabularyId": "1e167e91-df0e-4147-87e8-8086cbf927ee",
+      "word": "death",
+      "meaningZh": "死亡；死；灭亡",
+      "exampleId": "1e167e91-df0e-4147-87e8-8086cbf927ee-visual-ex",
+      "styleFamily": "naturalistic ink woodland renewal",
+      "sentenceEn": "After the old oak's death, its hollow trunk still sheltered owls, beetles, and new seedlings.",
+      "sentenceZh": "老橡树死去后，中空的树干仍为猫头鹰、甲虫和新生幼苗提供庇护。",
+      "scene": "A dignified old fallen oak rests naturally on a forest floor, clearly no longer alive yet rich with renewal: a small owl shelters in its hollow, beetles move through softened bark, and several bright seedlings grow from the decaying wood. Warm filtered light emphasizes the ecological cycle. No grave imagery, people, labels, writing or text.",
+      "altText": "倒下的老橡树已经枯死，但中空树干仍庇护猫头鹰和甲虫，并长出新幼苗。"
+    },
+    {
+      "vocabularyId": "3b1bc728-0808-4a11-978d-797cd5b2cd01",
+      "word": "course",
+      "meaningZh": "课程；过程；路线；一道菜",
+      "exampleId": "3b1bc728-0808-4a11-978d-797cd5b2cd01-visual-ex",
+      "styleFamily": "flowing watercolor river restoration",
+      "sentenceEn": "The restored river followed a winding course through the wetland to the sea.",
+      "sentenceZh": "修复后的河流沿着蜿蜒路线穿过湿地，最终汇入大海。",
+      "scene": "A high oblique landscape view follows one continuous blue river from inland springs through several broad natural bends, reed wetlands and finally into the visible sea. Fish, birds and plants thrive along its winding route, making the entire course readable in one composition. No arrows, maps, labels, structures, writing or text.",
+      "altText": "一条修复后的蓝色河流从内陆蜿蜒穿过芦苇湿地，最终汇入远处大海。"
+    },
+    {
+      "vocabularyId": "2dadb24c-d80e-45c4-9123-0a7bfb6a4287",
+      "word": "someone",
+      "meaningZh": "某人",
+      "exampleId": "2dadb24c-d80e-45c4-9123-0a7bfb6a4287-visual-ex",
+      "styleFamily": "whimsical wool-felt doorstep mystery",
+      "sentenceEn": "Someone left a basket of warm blankets outside the animal shelter before dawn.",
+      "sentenceZh": "天亮前，有人把一篮温暖的毯子放在动物收容所门外。",
+      "scene": "Before dawn, a closed animal shelter doorway has a newly placed basket filled with neatly folded warm blankets. A short trail of fresh footprints leads away around a corner, but the unknown giver is completely out of sight. A curious shelter cat looks from the window. No human figure, notes, signs, labels, writing or text.",
+      "altText": "天亮前，动物收容所门外出现一篮整齐的暖毯，脚印延伸到看不见的转角。"
+    },
+    {
+      "vocabularyId": "965c48e3-c8aa-4efd-af1c-2e9acd4cf89f",
+      "word": "experience",
+      "meaningZh": "经验；经历；体验",
+      "exampleId": "965c48e3-c8aa-4efd-af1c-2e9acd4cf89f-visual-ex",
+      "styleFamily": "mature graphic-novel repair workshop",
+      "sentenceEn": "Years of experience helped Imani repair the clock without damaging its tiny gears.",
+      "sentenceZh": "多年的经验帮助伊玛尼修好了时钟，没有损坏里面细小的齿轮。",
+      "scene": "In a quiet clock repair workshop, one older adult craftswoman confidently guides a delicate gear into an open mechanical clock with precise tools while an adult apprentice watches attentively. Shelves hold many successfully repaired clocks without readable faces or numbers. Both human faces are complete, showing calm expertise and respect. No labels, logos, writing or text.",
+      "altText": "经验丰富的钟表匠稳稳装回细小齿轮，一名学徒在旁认真观察。"
+    },
+    {
+      "vocabularyId": "51957ed7-f6fa-46b7-8ed1-4ce5bb40ed91",
+      "word": "behind",
+      "meaningZh": "在...后面；落后于",
+      "exampleId": "51957ed7-f6fa-46b7-8ed1-4ce5bb40ed91-visual-ex",
+      "styleFamily": "layered paper-theatre moonlit orchard",
+      "sentenceEn": "A small owl waited behind the apple tree while two rabbits crossed the path.",
+      "sentenceZh": "两只兔子穿过小路时，一只小猫头鹰等在苹果树后面。",
+      "scene": "In a moonlit orchard rendered with clear layered depth, one large apple tree occupies the foreground center, exactly two rabbits cross a path in front of it, and one small owl is partly concealed behind the trunk with only its complete head and one wing visible on the far side. The spatial relationship must be unmistakable. No arrows, labels, writing or text.",
+      "altText": "月光果园里，两只兔子从苹果树前经过，一只小猫头鹰藏在树干后面等待。"
+    }
+  ]
+}

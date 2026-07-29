@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-672-691-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, arrows, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "61d56b47-9569-4b5f-835c-62fadc6e1ae7",
+      "word": "artist",
+      "meaningZh": "艺术家",
+      "exampleId": "61d56b47-9569-4b5f-835c-62fadc6e1ae7-visual-ex",
+      "styleFamily": "cobalt-saffron linocut community mural",
+      "sentenceEn": "The artist transformed the blank wall into a garden mural.",
+      "sentenceZh": "艺术家把空白墙面变成了一幅花园壁画。",
+      "scene": "A mural artist paints the final section of a large garden scene across a formerly blank community wall, with paint tools and completed birds and flowers surrounding her. Her complete face shows creative focus. No signatures, letters, labels, writing or text.",
+      "altText": "艺术家在社区墙面上完成大型花园壁画，花鸟图案从原本空白的墙上展开。"
+    },
+    {
+      "vocabularyId": "a4694bdc-3b71-4603-a21c-06c219022a50",
+      "word": "scene",
+      "meaningZh": "场景；场面；现场",
+      "exampleId": "a4694bdc-3b71-4603-a21c-06c219022a50-visual-ex",
+      "styleFamily": "plum-teal theatrical paper diorama",
+      "sentenceEn": "The final scene showed the travelers reaching the hidden valley.",
+      "sentenceZh": "最后一个场景呈现旅人抵达隐秘山谷。",
+      "scene": "A theater stage presents one complete dramatic scene: travelers emerge through a rocky pass into a luminous hidden valley built from layered scenery, while curtains and backstage remain secondary. Performers have complete expressive faces. No script, signage, writing or text.",
+      "altText": "剧场舞台上的最后场景中，旅人穿过岩石隘口，第一次看见明亮的隐秘山谷。"
+    },
+    {
+      "vocabularyId": "bffca573-1982-4b33-a75d-c437c543799c",
+      "word": "stock",
+      "meaningZh": "股票；库存；存货",
+      "exampleId": "bffca573-1982-4b33-a75d-c437c543799c-visual-ex",
+      "styleFamily": "mint-rust isometric winter pantry",
+      "sentenceEn": "The shelter checked its stock of blankets before winter.",
+      "sentenceZh": "避难所在冬季来临前检查了毛毯库存。",
+      "scene": "An isometric shelter storeroom contains organized shelves of folded plain blankets, with two workers counting visually separated stacks and one empty shelf showing remaining capacity. Faces are complete. No inventory sheets, numbers, labels, writing or text.",
+      "altText": "避难所储藏室里整齐堆放着毛毯，工作人员在冬季前检查现有库存。"
+    },
+    {
+      "vocabularyId": "7cb7eddf-4119-4b53-8d1f-0d5f6f05a971",
+      "word": "career",
+      "meaningZh": "事业；生涯；成功",
+      "exampleId": "7cb7eddf-4119-4b53-8d1f-0d5f6f05a971-visual-ex",
+      "styleFamily": "indigo-coral layered editorial nursing journey",
+      "sentenceEn": "Her career in nursing grew from village visits to leading a clinic.",
+      "sentenceZh": "她的护理生涯从乡村出诊发展到管理一家诊所。",
+      "scene": "One continuous life-path composition follows the same nurse from a young adult carrying a medical bag on village visits through years of patient care to an older clinic leader mentoring others. Her recognizable complete face matures naturally. No timelines, uniforms with text, labels or writing.",
+      "altText": "同一位护士从年轻时乡村出诊，逐步成长为管理诊所并指导后辈的护理负责人。"
+    },
+    {
+      "vocabularyId": "b1d01c16-7e14-42e0-9482-86222755e14c",
+      "word": "despite",
+      "meaningZh": "尽管；虽然",
+      "exampleId": "b1d01c16-7e14-42e0-9482-86222755e14c-visual-ex",
+      "styleFamily": "storm-blue-orange graphic novel lighthouse repair",
+      "sentenceEn": "Despite the heavy rain, the crew repaired the lighthouse lens.",
+      "sentenceZh": "尽管大雨倾盆，团队仍修好了灯塔透镜。",
+      "scene": "Heavy rain lashes an exposed lighthouse balcony, yet a protected crew continues carefully fitting the final glass panel into the lens and its warm beam begins to shine. Complete faces show determination. No signs, logos, labels, writing or text.",
+      "altText": "大雨猛烈拍打灯塔，维修团队仍坚持装好最后一块透镜，灯光重新亮起。"
+    },
+    {
+      "vocabularyId": "be30be90-a52e-4165-a4e5-6df927d688f6",
+      "word": "central",
+      "meaningZh": "中心的；核心的",
+      "exampleId": "be30be90-a52e-4165-a4e5-6df927d688f6-visual-ex",
+      "styleFamily": "jade-gold architectural mosaic courtyard",
+      "sentenceEn": "A central fountain connected the four garden paths.",
+      "sentenceZh": "中央喷泉连接着四条花园小径。",
+      "scene": "Viewed from above, one circular fountain sits exactly at the center of a symmetrical garden, with exactly four paths meeting around it from four directions. No people, compass letters, labels, writing or text.",
+      "altText": "俯视花园，一座圆形喷泉位于正中心，四条小径从四个方向汇聚到它周围。"
+    },
+    {
+      "vocabularyId": "2c2d0519-5f04-4902-ab95-9394c26e90ee",
+      "word": "eight",
+      "meaningZh": "八；八个",
+      "exampleId": "2c2d0519-5f04-4902-ab95-9394c26e90ee-visual-ex",
+      "styleFamily": "aqua-peach felt stop-motion octopus jars",
+      "sentenceEn": "The octopus used all eight arms to open the shell.",
+      "sentenceZh": "章鱼用八条腕足打开贝壳。",
+      "scene": "One octopus clearly shows exactly eight distinct arms arranged around a large shell, several gripping while others brace against rocks as it opens the shell. No extra octopus, people, numbers, labels, writing or text.",
+      "altText": "一只章鱼清楚展开正好八条腕足，协同抓住岩石和贝壳并将其打开。"
+    },
+    {
+      "vocabularyId": "fea43360-5e56-430d-8f7d-835774426a4d",
+      "word": "thus",
+      "meaningZh": "因此；如此",
+      "exampleId": "fea43360-5e56-430d-8f7d-835774426a4d-visual-ex",
+      "styleFamily": "turquoise-amber cutaway rain garden",
+      "sentenceEn": "The rain garden absorbed the runoff, thus keeping the cellar dry.",
+      "sentenceZh": "雨水花园吸收了径流，因此地下室保持干燥。",
+      "scene": "A house-and-garden cutaway shows stormwater flowing into a planted rain garden where soil and roots absorb it, while the adjacent cellar remains visibly dry with stored boxes untouched. The causal connection is continuous. No arrows, diagrams, labels, writing or text.",
+      "altText": "雨水汇入种满植物的下沉花园并被土壤吸收，因此旁边房屋的地下室保持干燥。"
+    },
+    {
+      "vocabularyId": "41e3d50c-9c9d-419e-aae5-d77423584074",
+      "word": "treatment",
+      "meaningZh": "治疗；处理",
+      "exampleId": "41e3d50c-9c9d-419e-aae5-d77423584074-visual-ex",
+      "styleFamily": "sage-russet botanical clay animation tree care",
+      "sentenceEn": "The old chestnut recovered after careful treatment of its damaged roots.",
+      "sentenceZh": "受损树根经过精心处理后，老栗树恢复了生机。",
+      "scene": "Arborists gently clean and protect exposed damaged roots of an old chestnut while healthy new shoots and leaves appear above, showing recovery from treatment. Their complete faces are attentive. No chemical labels, signs, writing or text.",
+      "altText": "树艺师精心清理并保护老栗树受损根部，树冠上已经重新长出健康嫩叶。"
+    },
+    {
+      "vocabularyId": "b3dbebdd-bd1d-49ad-9522-3389b66ec4db",
+      "word": "beyond",
+      "meaningZh": "超过；在那一边",
+      "exampleId": "b3dbebdd-bd1d-49ad-9522-3389b66ec4db-visual-ex",
+      "styleFamily": "violet-gold romantic woodcut mountain pass",
+      "sentenceEn": "A bright valley waited beyond the narrow mountain pass.",
+      "sentenceZh": "狭窄山口的另一边是一片明亮山谷。",
+      "scene": "The viewer looks through a dark narrow mountain pass toward a broad sunlit green valley clearly located on the far side beyond the rocky boundary. Tiny travelers approach from the near side. No signs, arrows, labels, writing or text.",
+      "altText": "透过阴暗狭窄的山口，可以看见位于另一边的宽阔明亮绿色山谷。"
+    },
+    {
+      "vocabularyId": "8852623e-e2e6-4995-92bd-5d6b6204b3df",
+      "word": "happy",
+      "meaningZh": "快乐的；幸福的；愉快的；恰当的",
+      "exampleId": "8852623e-e2e6-4995-92bd-5d6b6204b3df-visual-ex",
+      "styleFamily": "sunflower-blue embroidered festival animation",
+      "sentenceEn": "The rescued dog looked happy to run beside its new family.",
+      "sentenceZh": "获救的狗很开心能和新家人一起奔跑。",
+      "scene": "A healthy rescued dog runs freely across a meadow beside a diverse family, tail high and mouth relaxed, while everyone has complete joyful faces and open body language. No collars with tags, signs, writing or text.",
+      "altText": "一只获救的狗摇着尾巴在草地上自由奔跑，新家人在旁陪伴，彼此神情快乐。"
+    },
+    {
+      "vocabularyId": "5feaa4f5-c28b-4360-8b88-cf40f67da034",
+      "word": "exactly",
+      "meaningZh": "恰好；正是",
+      "exampleId": "5feaa4f5-c28b-4360-8b88-cf40f67da034-visual-ex",
+      "styleFamily": "black-yellow precision screenprint stone repair",
+      "sentenceEn": "The final stone fit exactly into the empty space.",
+      "sentenceZh": "最后一块石头恰好嵌入空缺位置。",
+      "scene": "A mason lowers one distinctive irregular stone into the only matching gap of a dry-stone arch, where every edge aligns exactly with neighboring stones. The complete face watches closely. No measurements, markings, arrows, labels, writing or text.",
+      "altText": "石匠把最后一块不规则石头放入拱门唯一空缺，所有边缘都恰好严密吻合。"
+    },
+    {
+      "vocabularyId": "106beaa4-d276-440c-a071-5b110d5e1841",
+      "word": "protect",
+      "meaningZh": "防卫；保护；警戒",
+      "exampleId": "106beaa4-d276-440c-a071-5b110d5e1841-visual-ex",
+      "styleFamily": "sea-green-coral naturalist dune tapestry",
+      "sentenceEn": "Dense mangrove roots protect young fish from strong waves.",
+      "sentenceZh": "茂密的红树根保护幼鱼免受强浪冲击。",
+      "scene": "Strong waves break against an outer wall of dense mangrove roots while a school of young fish shelters calmly within the quiet protected water behind them. No people, shields, symbols, arrows, labels, writing or text.",
+      "altText": "强浪被密集红树根挡在外侧，幼鱼群在根系后方平静水域中获得保护。"
+    },
+    {
+      "vocabularyId": "423b7acd-3758-4e66-a485-8daeaa45990c",
+      "word": "approach",
+      "meaningZh": "方法；接近；途径；处理",
+      "exampleId": "423b7acd-3758-4e66-a485-8daeaa45990c-visual-ex",
+      "styleFamily": "cream-indigo colored-pencil crane observation",
+      "sentenceEn": "A quiet approach allowed the ranger to observe the cranes.",
+      "sentenceZh": "安静接近的方法让护林员能够观察鹤群。",
+      "scene": "A wildlife ranger uses a careful low approach through tall reeds, moving slowly behind natural cover toward distant cranes that remain calm and unaware. The complete face is focused and respectful. No path arrows, binocular labels, writing or text.",
+      "altText": "护林员借芦苇遮挡，放低身体安静缓慢地接近远处未受惊扰的鹤群。"
+    },
+    {
+      "vocabularyId": "ad6c30a1-38d6-4979-8b33-18714e13ea26",
+      "word": "lie",
+      "meaningZh": "躺；位于；说谎；谎言",
+      "exampleId": "ad6c30a1-38d6-4979-8b33-18714e13ea26-visual-ex",
+      "styleFamily": "pearl-cyan minimalist seal island watercolor",
+      "sentenceEn": "The seals lie on warm rocks after leaving the cold water.",
+      "sentenceZh": "海豹离开冷水后躺在温暖岩石上。",
+      "scene": "Several seals lie fully relaxed on broad sun-warmed coastal rocks, bodies horizontal and flippers resting, while cold blue water glistens nearby. No people, signs, labels, writing or text.",
+      "altText": "几只海豹离开冰冷海水，身体平躺在被太阳晒暖的宽阔岩石上休息。"
+    },
+    {
+      "vocabularyId": "b5427906-dcc5-4c7b-9c61-460ca7ed6d55",
+      "word": "size",
+      "meaningZh": "大小；尺寸；规模",
+      "exampleId": "b5427906-dcc5-4c7b-9c61-460ca7ed6d55-visual-ex",
+      "styleFamily": "cobalt-orange ceramic stop-motion nesting bowls",
+      "sentenceEn": "The bowls increased in size from a teacup to a basin.",
+      "sentenceZh": "这些碗从茶杯大小逐渐增大到水盆大小。",
+      "scene": "A clean row of ceramic bowls progresses smoothly from tiny at left through several intermediate sizes to one large basin at right, all sharing the same pattern to isolate size as the difference. No rulers, numbers, people, labels, writing or text.",
+      "altText": "同样花纹的陶碗排成一列，从左侧茶杯大小逐渐增大到右侧水盆大小。"
+    },
+    {
+      "vocabularyId": "3bdf0a85-03d1-4557-a842-809d06b1fb96",
+      "word": "dog",
+      "meaningZh": "狗；坏蛋；跟踪；尾随",
+      "exampleId": "3bdf0a85-03d1-4557-a842-809d06b1fb96-visual-ex",
+      "styleFamily": "russet-mint warm storybook orchard dog",
+      "sentenceEn": "The farm dog carried a dropped glove back to its owner.",
+      "sentenceZh": "农场犬把掉落的手套送回主人身边。",
+      "scene": "A friendly farm dog trots through an orchard carrying one dropped glove gently in its mouth toward an adult owner who turns with a grateful complete face. No collar text, signs, logos, writing or text.",
+      "altText": "一只友善农场犬叼着掉落的手套跑过果园，把它送回正在回头的主人。"
+    },
+    {
+      "vocabularyId": "ebc86d79-8a57-4f80-88be-796ba37c0d2f",
+      "word": "fund",
+      "meaningZh": "基金；资金；存款；财源；贮藏",
+      "exampleId": "ebc86d79-8a57-4f80-88be-796ba37c0d2f-visual-ex",
+      "styleFamily": "teal-gold isometric community greenhouse fund",
+      "sentenceEn": "The community fund paid for a greenhouse after the storm.",
+      "sentenceZh": "社区基金为暴风雨后的温室重建提供了资金。",
+      "scene": "A community gathers small plain contributions into one shared transparent jar, while in the same connected courtyard builders use the pooled resources to raise a new greenhouse. Complete faces show collective purpose. No currency symbols, labels, writing or text.",
+      "altText": "社区居民把小额资源汇入共同资金，并用它在风暴后重建新的温室。"
+    },
+    {
+      "vocabularyId": "b5dc4882-c1d8-4200-8b62-9b2cb0c68a7d",
+      "word": "serious",
+      "meaningZh": "严肃的；认真的；重要的；严重的",
+      "exampleId": "b5dc4882-c1d8-4200-8b62-9b2cb0c68a7d-visual-ex",
+      "styleFamily": "slate-vermilion dramatic gouache dam inspection",
+      "sentenceEn": "A serious crack forced the engineers to close the bridge.",
+      "sentenceZh": "一道严重裂缝迫使工程师关闭桥梁。",
+      "scene": "Engineers inspect one deep structural crack splitting a bridge support while the empty bridge deck is physically blocked by plain barriers. Their complete faces show sober attention. No danger words, measurements, logos, labels, writing or text.",
+      "altText": "工程师严肃检查桥梁支柱上的深大裂缝，桥面已用无字障碍物暂时封闭。"
+    },
+    {
+      "vocabularyId": "9227d960-5257-48b5-8ac8-dc824d47ad96",
+      "word": "occur",
+      "meaningZh": "发生；被想到；存在",
+      "exampleId": "9227d960-5257-48b5-8ac8-dc824d47ad96-visual-ex",
+      "styleFamily": "midnight-magenta luminous storm woodcut",
+      "sentenceEn": "Rare lightning flowers occur when storms meet volcanic ash.",
+      "sentenceZh": "当风暴遇到火山灰时，会出现罕见的闪电花。",
+      "scene": "Above a distant non-erupting ash plume, a storm cloud produces branching violet lightning within the ash, showing a rare event occurring where the two conditions meet. No people, diagrams, labels, writing or text.",
+      "altText": "风暴云与火山灰羽交汇处出现罕见的紫色分叉闪电，展示特殊现象的发生。"
+    }
+  ]
+}
