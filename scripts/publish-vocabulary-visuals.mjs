@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto'
-import { execFileSync } from 'node:child_process'
+import { spawn } from 'node:child_process'
+import { createRequire } from 'node:module'
 import {
   existsSync,
   mkdirSync,
@@ -9,11 +10,50 @@ import {
 } from 'node:fs'
 import { basename, extname, join, resolve } from 'node:path'
 import sharp from 'sharp'
+import { queryRemoteD1, sqlString as remoteSqlString } from './lib/d1-query.mjs'
+import {
+  DEFAULT_VOCABULARY_VISUAL_QUEUE,
+  loadVocabularyVisualQueue,
+  validateManifestAgainstQueue,
+  validateRemoteManifestRows,
+} from './lib/vocabulary-visual-queue.mjs'
+import { mapConcurrent } from './lib/vocabulary-visual-pipeline.mjs'
 
 const rawArgs = process.argv.slice(2)
 const args = new Set(rawArgs)
 const publish = args.has('--publish')
+const verifyRemote = publish || args.has('--verify-remote')
 const root = process.cwd()
+const require = createRequire(import.meta.url)
+const wranglerCliPath = require.resolve('wrangler/bin/wrangler.js')
+const wranglerTimeoutMs = Number(
+  process.env.VOCABULARY_VISUAL_WRANGLER_TIMEOUT_MS ?? '120000',
+)
+const r2UploadAttempts = Number(
+  process.env.VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS ?? '2',
+)
+const r2UploadConcurrency = Number(
+  process.env.VOCABULARY_VISUAL_R2_CONCURRENCY ?? '8',
+)
+const d1ImportAttempts = Number(
+  process.env.VOCABULARY_VISUAL_D1_IMPORT_ATTEMPTS ?? '2',
+)
+
+if (!Number.isInteger(wranglerTimeoutMs) || wranglerTimeoutMs < 1000) {
+  throw new Error('VOCABULARY_VISUAL_WRANGLER_TIMEOUT_MS must be at least 1000.')
+}
+
+if (!Number.isInteger(r2UploadAttempts) || r2UploadAttempts < 1) {
+  throw new Error('VOCABULARY_VISUAL_R2_UPLOAD_ATTEMPTS must be positive.')
+}
+
+if (!Number.isInteger(r2UploadConcurrency) || r2UploadConcurrency < 1) {
+  throw new Error('VOCABULARY_VISUAL_R2_CONCURRENCY must be positive.')
+}
+
+if (!Number.isInteger(d1ImportAttempts) || d1ImportAttempts < 1) {
+  throw new Error('VOCABULARY_VISUAL_D1_IMPORT_ATTEMPTS must be positive.')
+}
 
 function getArgValue(name, fallback) {
   const index = rawArgs.indexOf(name)
@@ -45,7 +85,10 @@ const preparedDir = resolve(
   root,
   getArgValue('--prepared-dir', 'tmp/vocabulary-visuals/pilot-30'),
 )
+const queuePath = getArgValue('--queue', DEFAULT_VOCABULARY_VISUAL_QUEUE)
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
+const { queue } = loadVocabularyVisualQueue(queuePath)
+const queueRange = validateManifestAgainstQueue(manifest, queue)
 const supportedExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp'])
 
 function sql(value) {
@@ -67,6 +110,105 @@ function findSourceFile(word) {
   }
 
   return join(sourceDir, match)
+}
+
+function runWranglerOnce(wranglerArgs, completionPattern) {
+  return new Promise((resolveRun, rejectRun) => {
+    const child = spawn(process.execPath, [wranglerCliPath, ...wranglerArgs], {
+      stdio: ['ignore', 'pipe', 'pipe'],
+      env: {
+        ...process.env,
+        CI: process.env.CI ?? '1',
+        WRANGLER_SEND_METRICS:
+          process.env.WRANGLER_SEND_METRICS ?? 'false',
+      },
+    })
+    let output = ''
+    let completionMatched = false
+    let timedOut = false
+    let forceKillTimer = null
+
+    const stopChild = () => {
+      child.kill('SIGTERM')
+      forceKillTimer = setTimeout(() => child.kill('SIGKILL'), 1000)
+      forceKillTimer.unref()
+    }
+    const consume = (chunk, destination) => {
+      destination.write(chunk)
+      output += chunk.toString()
+
+      if (
+        !completionMatched &&
+        completionPattern &&
+        completionPattern.test(output)
+      ) {
+        completionMatched = true
+        stopChild()
+      }
+    }
+    const timeout = setTimeout(() => {
+      timedOut = true
+      stopChild()
+    }, wranglerTimeoutMs)
+
+    child.stdout.on('data', (chunk) => consume(chunk, process.stdout))
+    child.stderr.on('data', (chunk) => consume(chunk, process.stderr))
+    child.on('error', rejectRun)
+    child.on('close', (code, signal) => {
+      clearTimeout(timeout)
+      if (forceKillTimer) clearTimeout(forceKillTimer)
+
+      if (completionMatched || (!timedOut && code === 0)) {
+        resolveRun()
+        return
+      }
+
+      const error = new Error(
+        timedOut
+          ? `Wrangler timed out after ${wranglerTimeoutMs}ms.`
+          : `Wrangler exited with code ${code ?? 'unknown'} and signal ${signal ?? 'none'}.`,
+      )
+      error.output = output
+      rejectRun(error)
+    })
+  })
+}
+
+async function runWrangler(
+  wranglerArgs,
+  label,
+  attempts = 1,
+  completionPattern = null,
+) {
+  let lastError = null
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      await runWranglerOnce(wranglerArgs, completionPattern)
+      return
+    } catch (error) {
+      lastError = error
+
+      if (attempt < attempts) {
+        console.warn(`${label} attempt ${attempt} failed; retrying.`)
+      }
+    }
+  }
+
+  throw lastError
+}
+
+if (verifyRemote) {
+  const remoteRows = queryRemoteD1(`SELECT id, word, meaning_zh
+FROM vocab
+WHERE id IN (${manifest.items
+    .map((item) => remoteSqlString(item.vocabularyId))
+    .join(', ')});`)
+
+  validateRemoteManifestRows(manifest, remoteRows)
+  console.log(
+    `Remote D1 validation: ${remoteRows.length} items matched with one query.`,
+  )
 }
 
 if (!existsSync(sourceDir)) {
@@ -154,11 +296,9 @@ if (publish) {
     throw new Error('CLOUDFLARE_API_TOKEN is required for --publish')
   }
 
-  for (const item of publishedItems) {
-    execFileSync(
-      'npx',
+  await mapConcurrent(publishedItems, r2UploadConcurrency, (item) =>
+    runWrangler(
       [
-        'wrangler',
         'r2',
         'object',
         'put',
@@ -171,14 +311,14 @@ if (publish) {
         '--cache-control',
         'public, max-age=31536000, immutable',
       ],
-      { stdio: 'inherit' },
-    )
-  }
+      `R2 upload for ${item.word}`,
+      r2UploadAttempts,
+      /Upload complete\./,
+    ),
+  )
 
-  execFileSync(
-    'npx',
+  await runWrangler(
     [
-      'wrangler',
       'r2',
       'object',
       'put',
@@ -189,13 +329,13 @@ if (publish) {
       '--content-type',
       'application/json',
     ],
-    { stdio: 'inherit' },
+    'R2 manifest upload',
+    r2UploadAttempts,
+    /Upload complete\./,
   )
 
-  execFileSync(
-    'npx',
+  await runWrangler(
     [
-      'wrangler',
       'd1',
       'execute',
       'english-orbit-db',
@@ -203,12 +343,19 @@ if (publish) {
       '--file',
       sqlPath,
     ],
-    { stdio: 'inherit' },
+    'D1 import',
+    d1ImportAttempts,
+    /Executed \d+ queries/,
   )
 }
 
 console.log(
   `${publish ? 'Published' : 'Prepared'} ${publishedItems.length} vocabulary visuals.`,
+)
+console.log(
+  queueRange.contiguous
+    ? `Local queue validation: positions ${queueRange.start}-${queueRange.end}.`
+    : `Local queue validation: ${queueRange.positions.length} selected positions matched.`,
 )
 console.log(`Manifest: ${publishedManifestPath}`)
 console.log(`SQL: ${sqlPath}`)

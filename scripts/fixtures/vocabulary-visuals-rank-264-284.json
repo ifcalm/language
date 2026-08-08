@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-264-284-2026-07-17",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "bdb65373-907a-473e-b4cd-ae10b0a4b23d",
+      "word": "law",
+      "meaningZh": "法律；法规；规律；定律",
+      "exampleId": "bdb65373-907a-473e-b4cd-ae10b0a4b23d-visual-ex",
+      "styleFamily": "editorial linocut turtle habitat protection",
+      "sentenceEn": "The new law protected sea turtle nesting grounds from nighttime traffic.",
+      "sentenceZh": "新法律保护海龟筑巢地免受夜间车辆干扰。",
+      "scene": "A coastal nesting beach at dusk is physically protected by simple wooden barriers that redirect a distant empty road inland, while sea turtles safely reach undisturbed nests near the shore. A small civic ranger closes the final plain barrier; the readable face has complete natural features. No signs, writing or vehicles on the beach.",
+      "altText": "傍晚的海龟筑巢海滩被木质护栏安全隔开，车辆道路绕向内陆。"
+    },
+    {
+      "vocabularyId": "bcc34c4c-08cb-4a15-b37f-d75aa90f27da",
+      "word": "meet",
+      "meaningZh": "遇见；会面；满足",
+      "exampleId": "bcc34c4c-08cb-4a15-b37f-d75aa90f27da-visual-ex",
+      "styleFamily": "warm storybook rescue teams meeting",
+      "sentenceEn": "The two rescue teams agreed to meet beneath the old oak before searching the forest.",
+      "sentenceZh": "两支救援队约定在搜寻森林前到老橡树下会合。",
+      "scene": "Exactly two small adult rescue teams approach the same ancient oak from opposite forest paths and greet one another beneath its branches. Their plain backpacks, ropes and shared physical terrain model establish preparation. Every readable face has complete features and a cooperative expression; no uniforms with writing, maps with labels or text.",
+      "altText": "两支救援队从不同林间小路抵达老橡树下，友好会合并准备共同搜寻。"
+    },
+    {
+      "vocabularyId": "85eb0874-0563-4e1e-be94-aef98715691f",
+      "word": "car",
+      "meaningZh": "汽车；轿车",
+      "exampleId": "85eb0874-0563-4e1e-be94-aef98715691f-visual-ex",
+      "styleFamily": "retro-futurist paper electric mountain car",
+      "sentenceEn": "The small electric car carried medicine up the winding mountain road.",
+      "sentenceZh": "这辆小型电动汽车沿着蜿蜒山路把药品送往高处。",
+      "scene": "One compact electric car climbs a winding mountain road toward a remote hill clinic, carrying several secure plain medical supply boxes visible through the rear window. A lower charging shelter with solar panels establishes clean transport. No people are readable, and no brand, road sign or text appears.",
+      "altText": "一辆装有药品箱的小型电动汽车沿盘山路驶向远处的山间诊所。"
+    },
+    {
+      "vocabularyId": "7ae1f6a3-74c8-4542-928e-c24c33bc0f16",
+      "word": "city",
+      "meaningZh": "城市；都市",
+      "exampleId": "7ae1f6a3-74c8-4542-928e-c24c33bc0f16-visual-ex",
+      "styleFamily": "aerial watercolor urban greenway",
+      "sentenceEn": "The city turned an abandoned rail line into a tree-lined public park.",
+      "sentenceZh": "这座城市把废弃铁路改造成了一条绿树成荫的公共公园。",
+      "scene": "A broad elevated city view centers on a long former railway corridor transformed into a continuous green park with mature trees, gardens, walking paths and reused rails embedded in the ground. Surrounding neighborhoods, transit and varied buildings make the city scale clear. People are tiny and faces unreadable; no signs or text.",
+      "altText": "城市楼群之间，一条旧铁路走廊被改造成贯穿社区的绿树公园。"
+    },
+    {
+      "vocabularyId": "7b536e66-6525-4863-8902-8445fc52ab8f",
+      "word": "almost",
+      "meaningZh": "几乎；差不多",
+      "exampleId": "7b536e66-6525-4863-8902-8445fc52ab8f-visual-ex",
+      "styleFamily": "soft-pastel hatchling near ocean",
+      "sentenceEn": "The young turtle was almost at the water when the sun rose.",
+      "sentenceZh": "太阳升起时，小海龟几乎已经爬到海水边了。",
+      "scene": "One young sea turtle crosses damp dawn sand and has nearly reached the first thin wash of ocean water, with only a very short visible gap remaining between its front flippers and the foam. Its track begins far behind near the dunes. No people, other turtles, arrows or text.",
+      "altText": "小海龟沿沙滩爬行，前方只剩很短距离就能触到清晨的海水。"
+    },
+    {
+      "vocabularyId": "cc3d687b-1641-4818-bbc0-10087fe63c6c",
+      "word": "include",
+      "meaningZh": "包括；包含；算入",
+      "exampleId": "cc3d687b-1641-4818-bbc0-10087fe63c6c-visual-ex",
+      "styleFamily": "isometric felt emergency kit",
+      "sentenceEn": "A basic emergency kit should include clean water, a flashlight, and a warm blanket.",
+      "sentenceZh": "基础应急包应包括清水、手电筒和保暖毯。",
+      "scene": "An open emergency backpack clearly contains one sealed plain water bottle, one flashlight and one neatly rolled warm blanket together inside its compartments. A compact first-aid pouch without symbols sits behind them as secondary support. The three named essentials are unmistakably included; no people, labels or text.",
+      "altText": "打开的应急背包中清楚装有一瓶水、一支手电筒和一条卷好的保暖毯。"
+    },
+    {
+      "vocabularyId": "316d3660-9769-4065-b0a0-b37f4395d257",
+      "word": "continue",
+      "meaningZh": "继续；持续；延续",
+      "exampleId": "316d3660-9769-4065-b0a0-b37f4395d257-visual-ex",
+      "styleFamily": "panoramic block-print geese journey",
+      "sentenceEn": "After resting on the lake, the geese continue their journey south.",
+      "sentenceZh": "在湖面休息后，雁群继续向南迁徙。",
+      "scene": "A flock of geese rises from a calm lake after resting and forms a coherent flying line that continues toward warm sunlit wetlands beyond distant hills. A few fading ripples remain where they left the water. No people, maps, arrows, labels or text.",
+      "altText": "雁群从休息过的湖面重新起飞，排成长队继续飞向远方温暖湿地。"
+    },
+    {
+      "vocabularyId": "cf1ef21a-7900-47d8-8188-b20e8d04d5a9",
+      "word": "set",
+      "meaningZh": "放；设置；一套",
+      "exampleId": "cf1ef21a-7900-47d8-8188-b20e8d04d5a9-visual-ex",
+      "styleFamily": "macro ceramic-relief moth release",
+      "sentenceEn": "The scientist set the recovered moth gently on a leaf before sunset.",
+      "sentenceZh": "日落前，科学家把康复的飞蛾轻轻放在叶片上。",
+      "scene": "In a close botanical view, a scientist's careful hands gently place one healthy moth onto a broad leaf beside its open recovery box. The moth's feet are just making contact with the leaf, making the placement action clear. The person's face is outside the frame; no tools touch the moth and no text appears.",
+      "altText": "科学家的双手把一只康复飞蛾轻轻放到宽阔叶片上。"
+    },
+    {
+      "vocabularyId": "def4c065-e853-4dbb-a6fa-00e74f4b1f6b",
+      "word": "later",
+      "meaningZh": "后来；以后；稍后",
+      "exampleId": "def4c065-e853-4dbb-a6fa-00e74f4b1f6b-visual-ex",
+      "styleFamily": "two-season woven hillside restoration",
+      "sentenceEn": "The once-bare hillside was green again several seasons later.",
+      "sentenceZh": "几个季节之后，曾经光秃的山坡重新变绿了。",
+      "scene": "Two connected views show the exact same hillside, distinctive boulders and winding stream. The earlier view has exposed soil with newly planted seedlings; the later view has dense native grass, shrubs and young trees stabilizing the slope. No people, calendars, dates, arrows or text.",
+      "altText": "同一片山坡从裸露土壤和小苗，经过几个季节后恢复成茂密植被。"
+    },
+    {
+      "vocabularyId": "59acd3a6-18ec-4823-b334-26db0b31600d",
+      "word": "community",
+      "meaningZh": "社区；社会；团体",
+      "exampleId": "59acd3a6-18ec-4823-b334-26db0b31600d-visual-ex",
+      "styleFamily": "painterly graphic-novel footbridge rebuild",
+      "sentenceEn": "The whole community worked together to rebuild the storm-damaged footbridge.",
+      "sentenceZh": "整个社区齐心协力重建被暴风雨损坏的人行桥。",
+      "scene": "At a shallow stream, diverse adult and teenage neighbors cooperate on one small wooden footbridge: some align new boards, others carry timber, tighten railings and prepare a shared meal nearby. Every readable face has complete natural features and a purposeful expression. No logos, signs, unsafe machinery or text.",
+      "altText": "社区居民分工搬木料、铺桥板和安装护栏，共同重建小河上的人行桥。"
+    },
+    {
+      "vocabularyId": "177088bc-3ef7-4612-b358-9c9a02360ddb",
+      "word": "name",
+      "meaningZh": "名字；名称；命名；名誉",
+      "exampleId": "177088bc-3ef7-4612-b358-9c9a02360ddb-visual-ex",
+      "styleFamily": "gentle gouache horse responding",
+      "sentenceEn": "The rescued horse turned toward the keeper whenever she called its name.",
+      "sentenceZh": "每当照料员叫它的名字时，获救的马都会转身看向她。",
+      "scene": "In a peaceful pasture, one adult keeper calls softly from an open gate while a rescued horse clearly turns its head and ears toward her in recognition. The keeper's complete readable face and open hand show a gentle call without speech bubbles. No other people, horses, name tags or text.",
+      "altText": "照料员在牧场门边轻声呼唤，获救的马立即转头看向她。"
+    },
+    {
+      "vocabularyId": "aaf62b36-bc6c-46d5-85c5-a41a0b613e40",
+      "word": "five",
+      "meaningZh": "五；五个",
+      "exampleId": "aaf62b36-bc6c-46d5-85c5-a41a0b613e40-visual-ex",
+      "styleFamily": "stained-glass tide-pool sea stars",
+      "sentenceEn": "Five sea stars clung to the rocks in the clear tide pool.",
+      "sentenceZh": "五只海星附着在清澈潮池的岩石上。",
+      "scene": "Exactly five sea stars are fully visible and clearly separated on dark rocks beneath a shallow transparent tide pool. Each has a distinct color and complete five-armed silhouette, with no hidden, partial or extra sea star anywhere. No people or text.",
+      "altText": "清澈潮池的深色岩石上分散附着着五只完整可见的海星。"
+    },
+    {
+      "vocabularyId": "4f2c5f95-1746-419d-b8cd-40fef619f7e1",
+      "word": "once",
+      "meaningZh": "一次；曾经；一旦",
+      "exampleId": "4f2c5f95-1746-419d-b8cd-40fef619f7e1-visual-ex",
+      "styleFamily": "botanical scratchboard night cactus",
+      "sentenceEn": "The rare cactus opens its largest flower only once each year.",
+      "sentenceZh": "这种稀有仙人掌每年只开放一次最大的花朵。",
+      "scene": "Three connected nighttime seasonal views show the exact same distinctive cactus and desert rocks. The first and third show a closed bud, while only the middle view contains one magnificent fully open white flower under moonlight. No dates, calendars, clocks, labels or text.",
+      "altText": "同一株仙人掌的三个夜间场景中，只有中间一次盛开着巨大的白花。"
+    },
+    {
+      "vocabularyId": "2ce5950b-5b45-4630-a2f5-7bf5107c26c8",
+      "word": "white",
+      "meaningZh": "白色的；白人；空白",
+      "exampleId": "2ce5950b-5b45-4630-a2f5-7bf5107c26c8-visual-ex",
+      "styleFamily": "luminous ink white arctic fox contrast",
+      "sentenceEn": "A white arctic fox crossed the dark volcanic sand.",
+      "sentenceZh": "一只白色北极狐穿过深色火山沙地。",
+      "scene": "One naturally proportioned arctic fox with clearly white winter fur walks across a broad field of charcoal-black volcanic sand, creating a strong color contrast. Pale distant snow and dark rocks establish the northern landscape. No other animals, people or text.",
+      "altText": "一只白色北极狐走过大片深黑火山沙地，毛色与地面形成鲜明对比。"
+    },
+    {
+      "vocabularyId": "3124aef7-45fc-44f2-8211-4cae11745619",
+      "word": "least",
+      "meaningZh": "最小的；最少的；至少",
+      "exampleId": "3124aef7-45fc-44f2-8211-4cae11745619-visual-ex",
+      "styleFamily": "geometric ceramic rainwater still life",
+      "sentenceEn": "Of the three jars, the smallest held the least rainwater.",
+      "sentenceZh": "三只罐子中，最小的那只装的雨水最少。",
+      "scene": "Exactly three transparent ceramic-glass jars stand side by side after rain: large, medium and small. Their visible water amounts descend clearly, and the smallest jar contains only a shallow layer, unmistakably the least. No measuring marks, labels, numerals, people or text.",
+      "altText": "大中小三只透明罐并排摆放，最小罐中的雨水明显最少。"
+    },
+    {
+      "vocabularyId": "80d49c39-991f-4424-b7cd-d78825e6defb",
+      "word": "president",
+      "meaningZh": "总统；主席；总裁；校长",
+      "exampleId": "80d49c39-991f-4424-b7cd-d78825e6defb-visual-ex",
+      "styleFamily": "editorial collage inclusive club president",
+      "sentenceEn": "The club president made sure every member had a chance to speak.",
+      "sentenceZh": "社团主席确保每位成员都有发言机会。",
+      "scene": "At a community makers club roundtable, one adult club president gently facilitates discussion with an open palm while members take turns sharing handmade prototypes. Everyone sits at equal height in a circle. Every readable face has complete natural features and an attentive expression; no podium, flags, badges, readable papers or text.",
+      "altText": "社团主席在圆桌旁平等主持讨论，让成员依次展示作品并表达想法。"
+    },
+    {
+      "vocabularyId": "3848d8d8-b613-457b-be9b-0bb01c8bd7f5",
+      "word": "learn",
+      "meaningZh": "学习；学会；了解到",
+      "exampleId": "3848d8d8-b613-457b-be9b-0bb01c8bd7f5-visual-ex",
+      "styleFamily": "matte-clay elephant river lesson",
+      "sentenceEn": "Young elephants learn the safest river crossing by following the herd.",
+      "sentenceZh": "小象通过跟随象群学习最安全的过河路线。",
+      "scene": "Two young elephants carefully follow experienced adults through one shallow, calm section of a broad river, while visibly deeper fast water remains farther away. The adults form a protective path and the calves copy each foot placement. No people, arrows, signs or text.",
+      "altText": "小象跟随成年象从浅而平缓的河段过河，模仿它们稳妥落脚。"
+    },
+    {
+      "vocabularyId": "99ef919d-d020-4c50-a46e-cc9b770627cc",
+      "word": "real",
+      "meaningZh": "真实的；真正的；实际的",
+      "exampleId": "99ef919d-d020-4c50-a46e-cc9b770627cc-visual-ex",
+      "styleFamily": "tactile paper-collage real flower contrast",
+      "sentenceEn": "A real butterfly rested on a real flower beside a folded paper copy.",
+      "sentenceZh": "一只真正的蝴蝶停在真花上，旁边放着一朵折纸仿制花。",
+      "scene": "In one close garden view, a living butterfly with delicate natural wings rests on a living flower with stem, leaves and pollen. Immediately beside it sits a clearly folded paper imitation flower with visible creases and flat paper leaves. The material contrast is unmistakable; no people or text.",
+      "altText": "真正的蝴蝶停在有花粉和叶片的真花上，旁边是一朵带折痕的纸花。"
+    },
+    {
+      "vocabularyId": "513629b2-ea6e-48d7-a982-1264c94c7c0d",
+      "word": "team",
+      "meaningZh": "团队；队；组",
+      "exampleId": "513629b2-ea6e-48d7-a982-1264c94c7c0d-visual-ex",
+      "styleFamily": "embroidered sled-dog medicine team",
+      "sentenceEn": "The sled-dog team carried medicine through the snowstorm together.",
+      "sentenceZh": "雪橇犬团队齐心协力穿过暴风雪运送药品。",
+      "scene": "A coordinated team of six strong sled dogs pulls one secure medicine sled through a snowy valley, all harness lines taut in the same direction. The adult driver is bundled and seen only from behind, with no readable face. Cooperative movement, not danger, dominates; no logos, signs or text.",
+      "altText": "六只雪橇犬步调一致地拉着装有药品箱的雪橇穿过风雪山谷。"
+    },
+    {
+      "vocabularyId": "d518ddac-fd82-44b0-bc47-e79f947c14ad",
+      "word": "minute",
+      "meaningZh": "分钟；片刻；会议记录（minutes）",
+      "exampleId": "d518ddac-fd82-44b0-bc47-e79f947c14ad-visual-ex",
+      "styleFamily": "luminous colored-pencil owl pause",
+      "sentenceEn": "The rescued owl rested for a minute on the open crate before flying into the forest.",
+      "sentenceZh": "获救的猫头鹰在打开的箱子上休息了片刻，随后飞回森林。",
+      "scene": "At a forest clearing in early evening, one healthy owl pauses calmly on the rim of its open recovery crate, body angled toward the nearby trees and wings just beginning to loosen for flight. The empty forest ahead suggests the next moment. No people, clocks, labels or text.",
+      "altText": "康复的猫头鹰在打开的箱沿短暂停留，面向森林准备展翅飞走。"
+    }
+  ]
+}

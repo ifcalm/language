@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-408-427-2026-07-19",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "2d38c4fc-124a-403e-adbd-689ebd28234b",
+      "word": "major",
+      "meaningZh": "主要的；主修；少校",
+      "exampleId": "2d38c4fc-124a-403e-adbd-689ebd28234b-visual-ex",
+      "styleFamily": "epic gouache valley bridge restoration",
+      "sentenceEn": "Restoring the washed-out bridge became a major project for the whole valley.",
+      "sentenceZh": "修复被洪水冲毁的桥梁成了整个山谷的一项重大工程。",
+      "scene": "A broad valley community works on one large washed-out bridge spanning the main river: engineers rebuild central supports, carpenters prepare beams, neighbors deliver materials and a temporary footbridge serves the side. The scale, many coordinated teams and importance to both sides make this visibly a major project. Complete faces, no signs, plans, labels, writing or text.",
+      "altText": "整个山谷的居民分工协作，重建横跨主河道的大桥，这项工程规模庞大而重要。"
+    },
+    {
+      "vocabularyId": "073326cd-5f01-4599-83e7-e1ccb0c099b0",
+      "word": "sometimes",
+      "meaningZh": "有时；偶尔",
+      "exampleId": "073326cd-5f01-4599-83e7-e1ccb0c099b0-visual-ex",
+      "styleFamily": "layered paper seasonal desert rain",
+      "sentenceEn": "Sometimes a brief summer shower reaches the desert garden.",
+      "sentenceZh": "夏天偶尔会有一阵短雨落到沙漠花园。",
+      "scene": "A single wide desert garden is mostly sunlit and dry beneath a large clear sky, but one small isolated rain cloud releases a brief narrow shower over only part of the garden. Most distant land remains dry, and fresh puddles beneath the cloud contrast with older dry ground, expressing an occasional event rather than constant rain. No panels, calendars, symbols, people, writing or text.",
+      "altText": "广阔晴朗的沙漠花园中，只有一小片孤立云层短暂降雨，周围大部分土地仍然干燥。"
+    },
+    {
+      "vocabularyId": "2e73e8ee-1e3c-483c-a5a9-2dc7cd8bd628",
+      "word": "require",
+      "meaningZh": "需要；要求；命令",
+      "exampleId": "2e73e8ee-1e3c-483c-a5a9-2dc7cd8bd628-visual-ex",
+      "styleFamily": "botanical colored-pencil mangrove nursery",
+      "sentenceEn": "Young mangroves require both sunlight and regular tidal water to grow.",
+      "sentenceZh": "幼小的红树林需要阳光和规律的潮水才能生长。",
+      "scene": "At a coastal nursery, healthy young mangroves stand where warm sunlight reaches leaves and a gentle incoming tide wets their exposed roots. Nearby under an opaque cover, one pale seedling stays small; another beyond the water line has dry roots, making both necessary conditions visually clear. No diagrams, labels, arrows, people, writing or text.",
+      "altText": "海岸苗圃中，阳光照耀并被潮水定期浸润根部的幼小红树林生长得最健康。"
+    },
+    {
+      "vocabularyId": "16922abb-0363-459a-bed3-7a846d8b9a7c",
+      "word": "along",
+      "meaningZh": "沿着；一起；向前",
+      "exampleId": "16922abb-0363-459a-bed3-7a846d8b9a7c-visual-ex",
+      "styleFamily": "felted-wool elephant river journey",
+      "sentenceEn": "The elephant family walked along the river until they found a safe crossing.",
+      "sentenceZh": "象群沿着河流行走，直到找到安全的过河地点。",
+      "scene": "One elephant family travels in a single line beside the same winding river, matching its bank through the landscape toward a broad shallow crossing ahead. Their footprints follow the river edge rather than heading directly across open land. No people, arrows, maps, labels, writing or text.",
+      "altText": "象群排成一列，顺着蜿蜒河岸前进，走向前方宽阔而平缓的过河处。"
+    },
+    {
+      "vocabularyId": "4dd4db54-6643-4016-a15f-a2281054e4b9",
+      "word": "development",
+      "meaningZh": "发展；开发；发育",
+      "exampleId": "4dd4db54-6643-4016-a15f-a2281054e4b9-visual-ex",
+      "styleFamily": "luminous watercolor frog development",
+      "sentenceEn": "The development of a frog begins in water and continues as its legs grow.",
+      "sentenceZh": "青蛙的发育始于水中，并随着四肢长出而继续。",
+      "scene": "One continuous pond habitat naturally arranges frog life stages from left to right without panels: eggs attached to reeds underwater, tiny tadpoles nearby, larger tadpoles growing back legs, one froglet at the water edge and one adult frog on a lily pad. Smooth spatial progression communicates development. No arrows, labels, numbers, diagrams, writing or text.",
+      "altText": "同一片池塘中依次可见蛙卵、蝌蚪、长出后腿的蝌蚪、幼蛙和成年青蛙。"
+    },
+    {
+      "vocabularyId": "1c6a79da-e2df-4ded-86c2-efaad70e7d61",
+      "word": "themselves",
+      "meaningZh": "他们自己",
+      "exampleId": "1c6a79da-e2df-4ded-86c2-efaad70e7d61-visual-ex",
+      "styleFamily": "stop-motion beaver lodge teamwork",
+      "sentenceEn": "The young beavers repaired the lodge themselves before winter.",
+      "sentenceZh": "小河狸们在冬天到来前亲自修好了巢穴。",
+      "scene": "Exactly three young beavers independently repair their own lodge: one carries a branch, one packs mud into a gap and one positions reeds, while no adult beaver or human helper appears anywhere. Snow is only beginning on distant banks, showing purposeful self-reliance before winter. No tools with labels, signs, writing or text.",
+      "altText": "三只小河狸没有成年河狸帮助，自己搬树枝、填泥和铺芦苇修补巢穴。"
+    },
+    {
+      "vocabularyId": "008ee55f-cb6b-4daf-811b-164e6eaa4661",
+      "word": "report",
+      "meaningZh": "报告；报道；汇报；举报",
+      "exampleId": "008ee55f-cb6b-4daf-811b-164e6eaa4661-visual-ex",
+      "styleFamily": "graphic-novel coastal field report",
+      "sentenceEn": "The marine biologist gave a report on the recovering coral reef to the fishing village.",
+      "sentenceZh": "海洋生物学家向渔村汇报了珊瑚礁的恢复情况。",
+      "scene": "At an open village meeting, one adult marine biologist speaks to fishers while presenting three large physical coral samples and a simple miniature reef model showing abundant fish. Listeners lean forward, ask questions and compare the model with healthy coral visible through the harbor water behind. Complete faces, no charts, slides, labels, writing or text.",
+      "altText": "海洋生物学家在渔村会议上用珊瑚样本和立体礁石模型向渔民汇报恢复情况。"
+    },
+    {
+      "vocabularyId": "a69f0beb-6083-428a-a87c-97f07c6d56b9",
+      "word": "role",
+      "meaningZh": "角色；作用；任务",
+      "exampleId": "a69f0beb-6083-428a-a87c-97f07c6d56b9-visual-ex",
+      "styleFamily": "embroidered pollination cycle",
+      "sentenceEn": "Wild bees play an essential role in helping the orchard produce fruit.",
+      "sentenceZh": "野生蜜蜂在帮助果园结出果实方面发挥着关键作用。",
+      "scene": "A single embroidered orchard scene shows wild bees carrying pollen between blossoms in the foreground while branches farther along the same trees bear developing fruit. Their direct movement from flower to flower and the visible fruit outcome make the bees' role clear. No arrows, diagrams, labels, people, writing or text.",
+      "altText": "野生蜜蜂在果树花朵间传播花粉，同一片果园的枝头随后结出正在生长的果实。"
+    },
+    {
+      "vocabularyId": "fa4b5313-0a16-4487-86cf-54c1c188d9cd",
+      "word": "better",
+      "meaningZh": "更好的；改善；更好地",
+      "exampleId": "fa4b5313-0a16-4487-86cf-54c1c188d9cd-visual-ex",
+      "styleFamily": "isometric inclusive library improvement",
+      "sentenceEn": "The new ramp made the library better for visitors who use wheelchairs.",
+      "sentenceZh": "新坡道让使用轮椅的访客更方便地进入图书馆。",
+      "scene": "An isometric community library entrance now includes a broad gentle ramp beside the old stairs. One adult wheelchair user travels smoothly toward the open doorway alongside walking friends, while the former steep step-only route remains visible but unused. Complete faces and natural expressions, no accessibility symbols, signs, writing or text.",
+      "altText": "社区图书馆增设平缓坡道后，轮椅访客可以和步行的朋友一起顺利进入大门。"
+    },
+    {
+      "vocabularyId": "e3db5dc2-0106-4878-ac05-ed734e4b7f5a",
+      "word": "economic",
+      "meaningZh": "经济的；经济上的",
+      "exampleId": "e3db5dc2-0106-4878-ac05-ed734e4b7f5a-visual-ex",
+      "styleFamily": "vibrant screen-print repair cooperative",
+      "sentenceEn": "The repair cooperative created new economic opportunities for the neighborhood.",
+      "sentenceZh": "维修合作社为社区创造了新的经济机会。",
+      "scene": "A lively neighborhood repair cooperative employs diverse adults refurbishing bicycles, lamps and small furniture, while local customers exchange plain coins for repaired items and workers share earnings at a central table. Nearby shops receive restored goods, showing money and useful work circulating locally. Complete faces, no price tags, signs, labels, writing or text.",
+      "altText": "社区维修合作社里，居民修复自行车、灯具和家具并获得收入，修好的物品又回到附近商店和家庭。"
+    },
+    {
+      "vocabularyId": "c5ed8e6e-62d7-4c1c-8325-c925382e0740",
+      "word": "effort",
+      "meaningZh": "努力；尽力；努力的成果",
+      "exampleId": "c5ed8e6e-62d7-4c1c-8325-c925382e0740-visual-ex",
+      "styleFamily": "bold woodcut community trail clearing",
+      "sentenceEn": "With one coordinated effort, the hikers moved the fallen tree off the trail.",
+      "sentenceZh": "徒步者们齐心协力，把倒下的树移出了山路。",
+      "scene": "Six adult hikers strain together on ropes and wooden levers to roll one heavy fallen tree away from a blocked mountain trail. Bent knees, taut ropes and synchronized movement visibly communicate effort, while one clear section of path opens behind the log. Complete determined faces, no danger, signs, writing or text.",
+      "altText": "六名徒步者同时拉紧绳索并使用木杠，合力把沉重倒木移出被阻挡的山路。"
+    },
+    {
+      "vocabularyId": "e9601635-0703-4ba2-801c-281058da82ed",
+      "word": "decide",
+      "meaningZh": "决定；下决心",
+      "exampleId": "e9601635-0703-4ba2-801c-281058da82ed-visual-ex",
+      "styleFamily": "editorial collage wetland bridge decision",
+      "sentenceEn": "After comparing two bridge models, the engineers decide to build the one with fewer wetland supports.",
+      "sentenceZh": "比较两种桥梁模型后，工程师们决定建造湿地支柱更少的方案。",
+      "scene": "Four adult engineers stand around two physical bridge models over a tabletop wetland. They have moved all construction tokens and tools beside the model with fewer supports, and all four point or nod toward that chosen model while the other remains untouched. Complete faces, no labels, diagrams, votes, writing or text.",
+      "altText": "四名工程师比较两座湿地桥模型后，把工具和材料集中到支柱更少的那座模型旁。"
+    },
+    {
+      "vocabularyId": "75ea0b60-6fcc-4fd4-b807-62e1c67a88c3",
+      "word": "rate",
+      "meaningZh": "比率；率；速度；价格；等级",
+      "exampleId": "75ea0b60-6fcc-4fd4-b807-62e1c67a88c3-visual-ex",
+      "styleFamily": "clean paper-craft water filter comparison",
+      "sentenceEn": "Water passed through the sand filter at a slower rate than through the gravel filter.",
+      "sentenceZh": "水通过沙滤器的速度比通过砾石滤器慢。",
+      "scene": "Two transparent paper-craft water filters stand side by side under equal full reservoirs. The sand filter releases widely spaced drops into a nearly empty cup, while the gravel filter releases a steady stream into a much fuller cup at the same moment. Material textures and flow difference make the rate comparison clear. No labels, arrows, numbers, people, writing or text.",
+      "altText": "两个等量水箱同时过滤，沙滤器只缓慢滴水，砾石滤器则持续流出更快的水流。"
+    },
+    {
+      "vocabularyId": "e4fa4fd6-8aa7-4cfc-a861-30953ab249a1",
+      "word": "strong",
+      "meaningZh": "强壮的；坚强的；强烈的；有力的",
+      "exampleId": "e4fa4fd6-8aa7-4cfc-a861-30953ab249a1-visual-ex",
+      "styleFamily": "ink-and-wash bamboo bridge strength",
+      "sentenceEn": "The woven bamboo bridge was strong enough to carry the rescue supplies across the gorge.",
+      "sentenceZh": "编织竹桥足够坚固，可以把救援物资运过峡谷。",
+      "scene": "A carefully woven bamboo footbridge spans a narrow gorge without bending while three adult volunteers cross steadily carrying heavy plain supply baskets. Thick lashings and intact supports are clearly visible, and villagers safely receive supplies on the far side. Complete faces, no precarious poses, signs, labels, writing or text.",
+      "altText": "牢固编织的竹桥横跨峡谷，三名志愿者平稳地把沉重物资运到对岸。"
+    },
+    {
+      "vocabularyId": "2e5f3480-187f-45e9-aea5-d1de3a6838b3",
+      "word": "possible",
+      "meaningZh": "可能的；合理的",
+      "exampleId": "2e5f3480-187f-45e9-aea5-d1de3a6838b3-visual-ex",
+      "styleFamily": "clay-animation accessible treehouse",
+      "sentenceEn": "A lightweight ramp made it possible for every child to enter the treehouse.",
+      "sentenceZh": "一条轻便坡道让每个孩子都能进入树屋。",
+      "scene": "A sturdy lightweight ramp now curves gently from the ground to a large community treehouse. One child using a wheelchair ascends beside two walking children, and all three are about to enter the same open doorway together. Complete joyful faces, safe rails, no accessibility symbols, signs, writing or text.",
+      "altText": "轻便而安全的坡道通向树屋，使用轮椅的孩子和两名步行孩子一起顺利进入。"
+    },
+    {
+      "vocabularyId": "e22758a7-b92f-45a1-ac7e-c2359fc6e8a2",
+      "word": "heart",
+      "meaningZh": "心脏；心；中心；核心",
+      "exampleId": "e22758a7-b92f-45a1-ac7e-c2359fc6e8a2-visual-ex",
+      "styleFamily": "soft pastel seal veterinary care",
+      "sentenceEn": "The veterinarian listened to the rescued seal's heart before releasing it.",
+      "sentenceZh": "兽医在放归获救海豹前听了它的心脏。",
+      "scene": "At a quiet coastal rehabilitation center, one adult veterinarian gently places a stethoscope against the chest of a healthy rescued seal while an open path to the sea waits behind them. The listening gesture and stethoscope location make the heart clear. Complete calm face, no anatomical diagrams, medical labels, logos, writing or text.",
+      "altText": "放归前，兽医把听诊器轻轻放在获救海豹胸前，认真听它的心脏。"
+    },
+    {
+      "vocabularyId": "65697847-843d-485c-ba92-27f3010be645",
+      "word": "drug",
+      "meaningZh": "药物；毒品；药品；麻醉药",
+      "exampleId": "65697847-843d-485c-ba92-27f3010be645-visual-ex",
+      "styleFamily": "gouache sea-turtle medicine recovery",
+      "sentenceEn": "The new drug helped the rescued sea turtle recover from an infection.",
+      "sentenceZh": "这种新药帮助获救的海龟从感染中康复。",
+      "scene": "In a marine clinic, one adult veterinarian measures medicine from a plain unmarked vial into a small feeding tube for a rescued sea turtle, while the same turtle appears alert in a clean recovery pool with improving shell color and fresh food nearby. Keep one coherent scene, complete face, no syringes, labels, pills, logos, writing or text.",
+      "altText": "海洋诊所里，兽医从无标记药瓶量取药物，获救海龟已在干净康复池中恢复活力。"
+    },
+    {
+      "vocabularyId": "d67e78c8-3ea8-4ae9-93eb-496585173a69",
+      "word": "leader",
+      "meaningZh": "领导者；领袖",
+      "exampleId": "d67e78c8-3ea8-4ae9-93eb-496585173a69-visual-ex",
+      "styleFamily": "linocut elephant matriarch journey",
+      "sentenceEn": "The herd's oldest elephant became its leader during the long dry season.",
+      "sentenceZh": "在漫长旱季中，象群中最年长的大象成为了领头者。",
+      "scene": "One visibly older elephant matriarch leads a herd in single file across dry grassland toward a distant water source. She walks at the front testing the ground with her trunk, while younger elephants and calves follow her exact path. No humans, crowns, flags, arrows, labels, writing or text.",
+      "altText": "旱季草原上，年长的母象走在最前面探路，整个象群沿着她的路线前往远处水源。"
+    },
+    {
+      "vocabularyId": "163b3ced-a035-44ac-916f-2a7ed10e17ae",
+      "word": "light",
+      "meaningZh": "光；灯；轻的；浅色的",
+      "exampleId": "163b3ced-a035-44ac-916f-2a7ed10e17ae-visual-ex",
+      "styleFamily": "stained-paper forest dawn",
+      "sentenceEn": "Morning light reached the forest floor and opened the sleeping flowers.",
+      "sentenceZh": "晨光照到森林地面，唤醒了沉睡的花朵。",
+      "scene": "Warm morning rays enter a dark forest canopy and form a clear pool of light on the floor, where several woodland flowers are opening. Flowers outside the illuminated area remain closed in cool shadow, making the light itself the active visual subject. No people, lamps, symbols, writing or text.",
+      "altText": "温暖晨光穿过森林树冠照到地面，光斑中的花朵正在开放，阴影中的花仍闭合。"
+    },
+    {
+      "vocabularyId": "ba271892-a685-4d1b-bf81-ea8f6e17bf05",
+      "word": "voice",
+      "meaningZh": "声音；嗓音；发言权；表达",
+      "exampleId": "ba271892-a685-4d1b-bf81-ea8f6e17bf05-visual-ex",
+      "styleFamily": "hand-painted animation town assembly",
+      "sentenceEn": "Leila used her voice to ask the town council for a safer school crossing.",
+      "sentenceZh": "莱拉用自己的声音请求镇议会建设更安全的学校过街设施。",
+      "scene": "At an open town assembly, one teenage girl stands and speaks confidently to seated adult council members while holding a small physical street model with a school, road and raised crossing. The adults listen attentively and one moves a crossing piece into place on the model, showing her voice was heard. Complete faces, no microphones with logos, signs, labels, writing or text.",
+      "altText": "镇议会上，莱拉自信发言并展示街道模型，议员认真倾听并把安全过街设施放到模型上。"
+    }
+  ]
+}

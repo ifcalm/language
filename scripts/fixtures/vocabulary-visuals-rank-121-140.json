@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-121-140-2026-07-16",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "92054476-90ec-4b28-a983-a6c6dcad2910",
+      "word": "ask",
+      "meaningZh": "问；要求；请求",
+      "exampleId": "92054476-90ec-4b28-a983-a6c6dcad2910-visual-ex",
+      "styleFamily": "ink-and-watercolor roadside story illustration",
+      "sentenceEn": "The traveler stopped to ask a farmer which road led to the rural clinic.",
+      "sentenceZh": "旅行者停下来询问一位农民，哪条路通往乡村诊所。",
+      "scene": "At a quiet fork in a country road, an adult traveler politely gestures toward the two paths while asking an older farmer for directions. The farmer responds by clearly pointing toward one road where a small clinic building with a medical cross shape is visible far away, without any readable signs. Both readable faces have complete eyes, noses and mouths with attentive, helpful expressions.",
+      "altText": "旅行者在乡间岔路口向农民询问通往诊所的道路。"
+    },
+    {
+      "vocabularyId": "5493b705-6cbc-442c-a0d8-d4e1677be171",
+      "word": "need",
+      "meaningZh": "需要；必须；需求",
+      "exampleId": "5493b705-6cbc-442c-a0d8-d4e1677be171-visual-ex",
+      "styleFamily": "botanical colored-pencil greenhouse illustration",
+      "sentenceEn": "The dry seedlings need water before the afternoon heat arrives.",
+      "sentenceZh": "这些干渴的幼苗需要在午后高温到来前浇水。",
+      "scene": "Inside a bright greenhouse, several young seedlings have visibly dry soil and gently drooping leaves. A full watering can waits close beside them while intense afternoon sunlight approaches across the floor, making their immediate need for water unmistakable. No people, labels or text.",
+      "altText": "温室里的幼苗土壤干燥、叶片低垂，旁边放着装满水的浇水壶。"
+    },
+    {
+      "vocabularyId": "46f637fb-1760-4d76-8003-b6523d10b481",
+      "word": "too",
+      "meaningZh": "也；太；非常",
+      "exampleId": "46f637fb-1760-4d76-8003-b6523d10b481-visual-ex",
+      "styleFamily": "isometric cut-paper flood-rescue scene",
+      "sentenceEn": "The old bridge was too narrow for the rescue truck, so the crew used a boat.",
+      "sentenceZh": "老桥太窄，救援卡车无法通过，因此队员们改用了船。",
+      "scene": "A broad rescue truck has stopped safely before an obviously much narrower old stone bridge over flooded water. Beside it, two rescue workers transfer supplies into a small boat that can pass under the bridge. The scale mismatch clearly communicates excessive narrowness; readable faces have complete natural features, and no text or logos appear.",
+      "altText": "救援卡车因老桥太窄而停下，队员们把物资转移到小船上。"
+    },
+    {
+      "vocabularyId": "4084b462-3535-40d2-975d-57fad15b4700",
+      "word": "feel",
+      "meaningZh": "感觉；觉得；认为；触摸",
+      "exampleId": "4084b462-3535-40d2-975d-57fad15b4700-visual-ex",
+      "styleFamily": "soft gouache sensory-garden illustration",
+      "sentenceEn": "The blind gardener touched the leaves to feel whether the plant was healthy.",
+      "sentenceZh": "失明的园丁触摸叶片，感受植物是否健康。",
+      "scene": "In an accessible sensory garden, a blind adult gardener gently examines a broad green leaf with both fingertips while a white cane rests against the raised planting bed. The leaf's firm texture, healthy veins and new bud are shown in close detail. The gardener's readable face has clear eyes, nose and mouth with a calm, attentive expression.",
+      "altText": "失明的园丁用指尖轻触叶片，感受植物的健康状况。"
+    },
+    {
+      "vocabularyId": "8e571666-3f6f-45f3-afdc-e69a0d77e63b",
+      "word": "three",
+      "meaningZh": "三；三个",
+      "exampleId": "8e571666-3f6f-45f3-afdc-e69a0d77e63b-visual-ex",
+      "styleFamily": "hand-painted ceramic riverbank diorama",
+      "sentenceEn": "Three otters carried three loose branches back to their riverbank shelter.",
+      "sentenceZh": "三只水獭把三根散落的树枝带回河岸边的住所。",
+      "scene": "Exactly three otters travel together along a riverbank, and each otter carries exactly one branch toward a sheltered den, for exactly three visible branches total. No other otters or loose branches appear anywhere in the image. Warm handcrafted ceramic textures, clear separated silhouettes and an easy-to-count composition.",
+      "altText": "三只水獭各自带着一根树枝返回河岸住所。"
+    },
+    {
+      "vocabularyId": "a6e3599a-28b9-4ddf-bb7c-9cb10d4da65d",
+      "word": "state",
+      "meaningZh": "州；国家；状态；陈述；说明",
+      "exampleId": "a6e3599a-28b9-4ddf-bb7c-9cb10d4da65d-visual-ex",
+      "styleFamily": "luminous glass-and-paper winter landscape",
+      "sentenceEn": "At dawn, the pond remained in a frozen state except for one clear stream.",
+      "sentenceZh": "黎明时，除了汇入的一条清澈溪流，池塘仍处于冰冻状态。",
+      "scene": "A broad pond at dawn is visibly locked in a solid frozen state, with pale ice, trapped bubbles and frost-covered reeds. Only one narrow incoming stream remains liquid and moving, creating a crisp contrast between solid ice and flowing water. No people, diagrams, arrows or text.",
+      "altText": "黎明的池塘大部分保持冰冻，只有一条汇入的小溪仍在流动。"
+    },
+    {
+      "vocabularyId": "6c5e4145-d89f-4114-b179-15869736eba5",
+      "word": "never",
+      "meaningZh": "从不；决不",
+      "exampleId": "6c5e4145-d89f-4114-b179-15869736eba5-visual-ex",
+      "styleFamily": "dramatic linocut animal-sanctuary night scene",
+      "sentenceEn": "The sanctuary gate was never closed to an animal seeking safety from a storm.",
+      "sentenceZh": "避难所的大门从不对躲避风暴的动物关闭。",
+      "scene": "During a fierce nighttime storm, a warmly lit animal sanctuary gate stands fully open as a soaked deer and fox approach safety. The open gate, welcoming lanterns and sheltered animals inside communicate an enduring refusal to close the entrance. No people, readable signs or text.",
+      "altText": "暴风雨中，动物避难所始终敞开大门迎接前来避险的动物。"
+    },
+    {
+      "vocabularyId": "583c7eb3-0a69-4cf3-80c7-1d06420751ec",
+      "word": "become",
+      "meaningZh": "变成；成为；适合",
+      "exampleId": "583c7eb3-0a69-4cf3-80c7-1d06420751ec-visual-ex",
+      "styleFamily": "woven-tapestry oak-life transformation",
+      "sentenceEn": "The tiny acorn would become a strong oak that sheltered many animals.",
+      "sentenceZh": "这颗小橡果会长成一棵为许多动物遮风挡雨的强壮橡树。",
+      "scene": "A continuous left-to-right tapestry transformation shows one tiny acorn sprouting, growing into a sapling and becoming a large mature oak. In the final canopy, birds nest, a squirrel rests and a deer shelters below. The stages belong to one continuous visual story with no labels, arrows or text.",
+      "altText": "一颗小橡果逐渐长成大橡树，为鸟、松鼠和鹿提供庇护。"
+    },
+    {
+      "vocabularyId": "bbba9dc2-ae16-4ff0-a8ea-c19e9b296980",
+      "word": "between",
+      "meaningZh": "在...之间",
+      "exampleId": "bbba9dc2-ae16-4ff0-a8ea-c19e9b296980-visual-ex",
+      "styleFamily": "Japanese woodblock mountain-river panorama",
+      "sentenceEn": "A narrow river flowed between the two mountain villages.",
+      "sentenceZh": "一条狭窄的河流从两座山村之间流过。",
+      "scene": "Two clearly distinct mountain villages occupy the left and right slopes of a wide valley. One narrow blue river flows precisely through the central space between them from foreground to distance. Balanced, spacious composition; no people large enough for facial detail and no text.",
+      "altText": "两座山村分别位于山谷两侧，一条窄河从它们之间流过。"
+    },
+    {
+      "vocabularyId": "162fb419-bc46-4be2-bc54-6687b6c5dbe2",
+      "word": "high",
+      "meaningZh": "高的；高处；高昂的",
+      "exampleId": "162fb419-bc46-4be2-bc54-6687b6c5dbe2-visual-ex",
+      "styleFamily": "charcoal-and-pastel alpine wildlife illustration",
+      "sentenceEn": "The mountain goats climbed high above the valley to reach a safe ledge.",
+      "sentenceZh": "山羊们爬到山谷上方的高处，抵达一块安全的岩架。",
+      "scene": "Mountain goats stand on a small secure ledge near the upper edge of a towering cliff, while the river valley, trees and winding road appear tiny far below. Strong vertical scale and atmospheric depth make their high position unmistakable. No people or text.",
+      "altText": "山羊站在高高的悬崖岩架上，山谷和河流远在下方。"
+    },
+    {
+      "vocabularyId": "89f7dbac-15af-4e59-b4a7-490e39f94272",
+      "word": "really",
+      "meaningZh": "真正地；确实；非常",
+      "exampleId": "89f7dbac-15af-4e59-b4a7-490e39f94272-visual-ex",
+      "styleFamily": "macro botanical ink-and-gouache illustration",
+      "sentenceEn": "The seed from the burned meadow really did sprout in the fresh soil.",
+      "sentenceZh": "来自火烧草地的种子确实在新鲜土壤中发芽了。",
+      "scene": "A close, evidence-focused view shows one dark seed from a scorched meadow cracked open in fresh soil, with a vivid green shoot and fine new roots clearly emerging. A small patch of cooled ash remains nearby, emphasizing that the hoped-for growth is genuinely happening. No people, labels or text.",
+      "altText": "来自烧焦草地的一颗种子裂开发芽，长出清晰可见的新根和绿芽。"
+    },
+    {
+      "vocabularyId": "83176cfb-cdcf-4bef-ae3d-8a8c2df81bf9",
+      "word": "something",
+      "meaningZh": "某事；某物",
+      "exampleId": "83176cfb-cdcf-4bef-ae3d-8a8c2df81bf9-visual-ex",
+      "styleFamily": "mysterious layered-paper autumn woodland",
+      "sentenceEn": "The magpie noticed something shining beneath the fallen leaves.",
+      "sentenceZh": "喜鹊注意到落叶下面有某样东西在发光。",
+      "scene": "An alert magpie tilts its head toward a small unidentified object that is mostly hidden beneath copper autumn leaves. Only one soft silver glint and a tiny curved edge are visible, preserving the sense of an unknown something rather than revealing a specific object. No text.",
+      "altText": "喜鹊望向落叶下露出微光、尚无法辨认的某样东西。"
+    },
+    {
+      "vocabularyId": "16c1f3ad-eab9-4dd9-8dea-58618fdab97b",
+      "word": "most",
+      "meaningZh": "最；大多数；最多",
+      "exampleId": "16c1f3ad-eab9-4dd9-8dea-58618fdab97b-visual-ex",
+      "styleFamily": "bright screen-print sunflower field",
+      "sentenceEn": "Most of the sunflowers turned toward the morning light, while two remained shaded.",
+      "sentenceZh": "大多数向日葵转向了晨光，只有两株仍在阴影中。",
+      "scene": "Exactly nine large sunflowers are easy to count: seven form a clear majority facing the bright rising sun, while exactly two remain turned differently in cool tree shade. Every flower head is distinct and fully visible, with no extra sunflowers in the background and no text.",
+      "altText": "九株向日葵中有七株朝向晨光，两株仍处在树荫里。"
+    },
+    {
+      "vocabularyId": "94590088-2aac-474b-affd-04684b41a29e",
+      "word": "another",
+      "meaningZh": "另一个；再一个",
+      "exampleId": "94590088-2aac-474b-affd-04684b41a29e-visual-ex",
+      "styleFamily": "needle-felt woodland nesting diorama",
+      "sentenceEn": "When one nest box was occupied, the owl moved to another nearby box.",
+      "sentenceZh": "当一个巢箱已有住客时，猫头鹰飞向了附近的另一个巢箱。",
+      "scene": "Two separate wooden nest boxes hang on neighboring trees. A small bird family visibly occupies the first box on the left, while an owl flies toward the second empty box on the right. The destination box is clearly another distinct option, with no additional boxes and no text.",
+      "altText": "左侧巢箱已有鸟儿居住，猫头鹰正飞向右侧另一个空巢箱。"
+    },
+    {
+      "vocabularyId": "ac6137ab-904c-46b9-9174-ebe55e23bfc2",
+      "word": "much",
+      "meaningZh": "很多；非常；大量；几乎",
+      "exampleId": "ac6137ab-904c-46b9-9174-ebe55e23bfc2-visual-ex",
+      "styleFamily": "editorial cut-paper watershed comparison",
+      "sentenceEn": "The restored hillside held much more rainwater after native grasses returned.",
+      "sentenceZh": "本土草木恢复后，修复过的山坡留住了多得多的雨水。",
+      "scene": "A coherent before-and-after hillside comparison uses the same slope during equal rainfall. The bare side loses abundant muddy runoff, while the restored side with deep native grasses holds much more water in rich soil, with only a small clean trickle leaving. No diagrams, arrows, labels or text.",
+      "altText": "同样降雨下，长满本土草木的山坡比裸露山坡留住了多得多的水。"
+    },
+    {
+      "vocabularyId": "27bb68f6-642e-43b5-8bf9-64ecc50f637c",
+      "word": "family",
+      "meaningZh": "家庭；家人；家族",
+      "exampleId": "27bb68f6-642e-43b5-8bf9-64ecc50f637c-visual-ex",
+      "styleFamily": "expressive stylized-3D elephant animation",
+      "sentenceEn": "The elephant family formed a circle around the youngest calf during the dust storm.",
+      "sentenceZh": "沙尘暴中，象群一家围成圆圈保护最小的幼象。",
+      "scene": "A multigenerational elephant family forms a close protective circle around one small calf during a blowing dust storm. Adult bodies face outward while trunks gently reassure the calf at the center. Clearly expressive animal faces, mature cinematic stylized 3D, not glossy toy rendering and no text.",
+      "altText": "沙尘暴中，大象一家围成保护圈守护中央的小象。"
+    },
+    {
+      "vocabularyId": "ee2daa4d-2b63-47b7-99ed-bf1f09d2e715",
+      "word": "own",
+      "meaningZh": "自己的；拥有；承认",
+      "exampleId": "ee2daa4d-2b63-47b7-99ed-bf1f09d2e715-visual-ex",
+      "styleFamily": "storybook woodcut beaver-river scene",
+      "sentenceEn": "The young beaver built its own small lodge beside the larger family home.",
+      "sentenceZh": "小河狸在更大的家庭住所旁建起了自己的小窝。",
+      "scene": "A young beaver works on one small newly built lodge made of fresh branches, clearly separate from a much larger established family lodge nearby. The young beaver carries a final twig to its personal structure while adult beavers remain by the larger home. No text.",
+      "altText": "小河狸正在大型家庭住所旁搭建属于自己的小窝。"
+    },
+    {
+      "vocabularyId": "6f28b6be-a7d2-4726-b9a8-fd536b2be1a2",
+      "word": "leave",
+      "meaningZh": "离开；留下；请假",
+      "exampleId": "6f28b6be-a7d2-4726-b9a8-fd536b2be1a2-visual-ex",
+      "styleFamily": "luminous pastel wildlife-release animation",
+      "sentenceEn": "At sunrise, the rehabilitated eagle was ready to leave the sanctuary for the mountains.",
+      "sentenceZh": "日出时，康复的鹰准备离开救护站，飞向群山。",
+      "scene": "At sunrise, a healthy eagle launches from an open rehabilitation enclosure toward distant mountains. The empty open door and receding sanctuary behind it establish the place being left, while broad wings and the clear forward path communicate departure. A caregiver may appear only as a small rear-view silhouette; no readable text.",
+      "altText": "康复的鹰从敞开的救护站展翅离开，飞向日出中的群山。"
+    },
+    {
+      "vocabularyId": "81239950-e49f-4a8e-b71b-abe1ede18305",
+      "word": "put",
+      "meaningZh": "放；放置；表达",
+      "exampleId": "81239950-e49f-4a8e-b71b-abe1ede18305-visual-ex",
+      "styleFamily": "warm graphic-novel apiary illustration",
+      "sentenceEn": "The beekeeper put a shallow bowl of water beside the hives during the heatwave.",
+      "sentenceZh": "热浪期间，养蜂人把一只浅水碗放在蜂箱旁。",
+      "scene": "A beekeeper is captured at the exact moment of placing a shallow water bowl with floating stones beside several beehives in summer heat. One hand still touches the bowl as bees approach safely. The beekeeper's readable face has complete eyes, nose and mouth with a careful expression; no logos, labels or text.",
+      "altText": "养蜂人正把带有落脚石的浅水碗放到蜂箱旁边。"
+    },
+    {
+      "vocabularyId": "bb29520d-09ce-48a2-afc8-5ea899df15a1",
+      "word": "old",
+      "meaningZh": "老的；旧的；...岁的",
+      "exampleId": "bb29520d-09ce-48a2-afc8-5ea899df15a1-visual-ex",
+      "styleFamily": "ancient-mosaic olive-grove illustration",
+      "sentenceEn": "The old olive tree still sheltered birds inside its hollow trunk.",
+      "sentenceZh": "这棵古老的橄榄树依然让鸟儿在空心树干中安家。",
+      "scene": "A visibly ancient olive tree dominates a quiet grove, with a massive twisted trunk, weathered bark, broad roots and a natural hollow holding a small bird nest. Fresh silver-green leaves and birds show that the old tree remains living and generous. No people or text.",
+      "altText": "一棵树干粗壮扭曲的古老橄榄树，空心处庇护着一窝小鸟。"
+    }
+  ]
+}

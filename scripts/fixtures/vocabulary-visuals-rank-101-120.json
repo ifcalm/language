@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-101-120-2026-07-16",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "27e8101b-9eff-48c9-b0a8-88250767df05",
+      "word": "back",
+      "meaningZh": "回来；背部；后面的；支持",
+      "exampleId": "27e8101b-9eff-48c9-b0a8-88250767df05-visual-ex",
+      "styleFamily": "luminous pastel hand-drawn animation",
+      "sentenceEn": "After recovering, the rescued sea turtle swam back to the open ocean.",
+      "sentenceZh": "康复后，获救的海龟游回了开阔的大海。",
+      "scene": "A healthy sea turtle leaves a quiet coastal rehabilitation lagoon and swims toward the broad open ocean. A fading trail in the water connects the turtle to the sheltered cove behind it, making the return to its natural home clear.",
+      "altText": "康复的海龟离开救护海湾，游回开阔的大海。"
+    },
+    {
+      "vocabularyId": "86e74381-1ac3-4ddd-bda0-c7468c467693",
+      "word": "any",
+      "meaningZh": "任何；一些；丝毫",
+      "exampleId": "86e74381-1ac3-4ddd-bda0-c7468c467693-visual-ex",
+      "styleFamily": "layered-paper woodland watering scene",
+      "sentenceEn": "Any thirsty animal could drink safely from the shallow forest basin.",
+      "sentenceZh": "任何口渴的动物都可以从森林里的浅水盆安全饮水。",
+      "scene": "An accessible shallow stone basin welcomes many different woodland animals without barriers: a deer, rabbit, hedgehog, small birds and butterflies all approach or drink safely. The variety of species communicates that no particular animal is excluded.",
+      "altText": "不同种类的森林动物都能从同一个浅水盆安全饮水。"
+    },
+    {
+      "vocabularyId": "9fdf8403-e5cd-4592-b001-fff8136dee3c",
+      "word": "good",
+      "meaningZh": "好的；好处；利益",
+      "exampleId": "9fdf8403-e5cd-4592-b001-fff8136dee3c-visual-ex",
+      "styleFamily": "botanical gouache garden illustration",
+      "sentenceEn": "The rich compost was good for every plant in the community garden.",
+      "sentenceZh": "肥沃的堆肥对社区花园里的每株植物都有益。",
+      "scene": "Dark finished compost is spread around vegetables, flowers and a young fruit tree in a community garden. Strong roots, healthy leaves, blossoms and abundant produce visibly show the beneficial result without labels or diagrams.",
+      "altText": "肥沃堆肥滋养着蔬菜、花朵和果树，植物生长得健康茂盛。"
+    },
+    {
+      "vocabularyId": "b623384f-6d49-4f75-8fb5-dd6f488eb16e",
+      "word": "woman",
+      "meaningZh": "女人；妇女",
+      "exampleId": "b623384f-6d49-4f75-8fb5-dd6f488eb16e-visual-ex",
+      "styleFamily": "painterly storybook radio workshop",
+      "sentenceEn": "The woman repaired the village radio before the storm arrived.",
+      "sentenceZh": "这位女士在暴风雨到来前修好了村里的无线电。",
+      "scene": "A middle-aged woman electronics technician carefully repairs a large community radio in a warm workshop while storm clouds gather outside. Her readable face has clear eyes, nose and mouth with a focused, confident expression; small tools and newly glowing radio dials show the repair succeeding, but no readable text appears.",
+      "altText": "一位神情专注的女技术员在暴风雨前修好村庄无线电。"
+    },
+    {
+      "vocabularyId": "dd50cc3f-bfa1-4ce3-81cb-a28a945e537c",
+      "word": "through",
+      "meaningZh": "穿过；通过；经过；从头到尾",
+      "exampleId": "dd50cc3f-bfa1-4ce3-81cb-a28a945e537c-visual-ex",
+      "styleFamily": "woven-tapestry woodland passage",
+      "sentenceEn": "The fox cub crawled through the hollow log to rejoin its family.",
+      "sentenceZh": "小狐狸从空心树干中爬过，重新回到家人身边。",
+      "scene": "A fox cub is visibly halfway inside a long hollow fallen log, entering at one opening and emerging from the other. Its family waits beyond the far opening, while the continuous tunnel remains clearly readable from side to side.",
+      "altText": "小狐狸穿过空心倒木的内部，向另一端等待的家人爬去。"
+    },
+    {
+      "vocabularyId": "63686f42-f5f5-4c28-927e-cd712f0e7dd9",
+      "word": "us",
+      "meaningZh": "我们（宾格）",
+      "exampleId": "63686f42-f5f5-4c28-927e-cd712f0e7dd9-visual-ex",
+      "styleFamily": "clear-line graphic-novel sail workshop",
+      "sentenceEn": "The old sailor showed us how to repair the torn sail together.",
+      "sentenceZh": "老水手教我们一起修补破损的船帆。",
+      "scene": "From a near first-person group viewpoint, an elderly sailor demonstrates a careful stitch in a torn sail while several diverse adult learners, including the viewer's visible hands, copy the method together. Every readable face has complete eyes, nose and mouth with attentive expressions.",
+      "altText": "老水手向包括画面视角在内的一群学习者示范如何共同修补船帆。"
+    },
+    {
+      "vocabularyId": "35753522-bf28-4d08-8f53-c6351d8eb27e",
+      "word": "life",
+      "meaningZh": "生活；生命；人生；寿命",
+      "exampleId": "35753522-bf28-4d08-8f53-c6351d8eb27e-visual-ex",
+      "styleFamily": "silk-watercolor wetland revival",
+      "sentenceEn": "New life returned to the pond when clean water began to flow again.",
+      "sentenceZh": "清水重新流动后，新的生命回到了池塘。",
+      "scene": "Fresh water enters a restored pond where frog eggs, tadpoles, fish, dragonflies, water lilies and young reeds thrive together. The abundant stages and forms of living things make the return of life the clear focus.",
+      "altText": "清水流入修复后的池塘，蝌蚪、鱼、蜻蜓和水生植物重新繁盛。"
+    },
+    {
+      "vocabularyId": "f302ac0c-fa3e-4237-86b7-9fd4d0081065",
+      "word": "child",
+      "meaningZh": "孩子；儿童",
+      "exampleId": "f302ac0c-fa3e-4237-86b7-9fd4d0081065-visual-ex",
+      "styleFamily": "handcrafted clay stop-motion pond scene",
+      "sentenceEn": "The child built a small ramp so an injured duck could reach the pond.",
+      "sentenceZh": "这个孩子搭了一座小斜坡，让受伤的鸭子能够到达池塘。",
+      "scene": "A school-age child places the final smooth board of a small accessible ramp beside a pond while a duck with a gently wrapped leg approaches. The child's clearly modeled face has visible eyes, nose and mouth with a caring expression, avoiding blank toy-like facial design.",
+      "altText": "一名神情关切的孩子为腿部受伤的鸭子搭建通往池塘的小斜坡。"
+    },
+    {
+      "vocabularyId": "c0015b96-99fd-4d63-88aa-4a30f3a9e8f5",
+      "word": "work",
+      "meaningZh": "工作；劳动；作品；运转",
+      "exampleId": "c0015b96-99fd-4d63-88aa-4a30f3a9e8f5-visual-ex",
+      "styleFamily": "mechanical Risograph mill illustration",
+      "sentenceEn": "The repaired waterwheel began to work again and powered the grain mill.",
+      "sentenceZh": "修好的水轮重新运转起来，为谷物磨坊提供动力。",
+      "scene": "A restored wooden waterwheel turns under a strong stream and visibly drives connected gears and millstones inside an open-sided grain mill. Flowing grain and fresh flour show that the mechanism is functioning again.",
+      "altText": "修复后的水轮带动齿轮和磨盘重新运转，磨出新鲜面粉。"
+    },
+    {
+      "vocabularyId": "467565ec-c394-4c5b-8eb8-02674c30d3ba",
+      "word": "down",
+      "meaningZh": "向下；下去；沿着",
+      "exampleId": "467565ec-c394-4c5b-8eb8-02674c30d3ba-visual-ex",
+      "styleFamily": "isometric cut-paper mountain watershed",
+      "sentenceEn": "Rainwater ran down the stone channels into the village cistern.",
+      "sentenceZh": "雨水沿着石槽向下流入村庄蓄水池。",
+      "scene": "A high mountain village uses a continuous set of stone channels descending diagonally from rainy upper terraces to a large cistern far below. Bright streams visibly follow the downward slope through every level.",
+      "altText": "雨水沿层层下降的石槽从高处流入山脚的蓄水池。"
+    },
+    {
+      "vocabularyId": "d14bc5ca-76de-4cfb-af46-f27641e5dd63",
+      "word": "may",
+      "meaningZh": "可能；可以；五月",
+      "exampleId": "d14bc5ca-76de-4cfb-af46-f27641e5dd63-visual-ex",
+      "styleFamily": "luminous charcoal-and-pastel wildlife recovery",
+      "sentenceEn": "The injured owl may fly again after its wing heals.",
+      "sentenceZh": "这只受伤的猫头鹰翅膀痊愈后，也许能够再次飞翔。",
+      "scene": "A recovering owl on a woodland rehabilitation perch carefully opens its healed wing toward an open twilight sky. A loose discarded support wrap rests nearby, while the uncertain but hopeful first attempt at flight remains visibly ahead.",
+      "altText": "康复中的猫头鹰展开正在痊愈的翅膀，或许很快能再次飞翔。"
+    },
+    {
+      "vocabularyId": "307a78a8-ac8c-4d96-a354-98df4941dcc2",
+      "word": "after",
+      "meaningZh": "在...之后；在...后面；追求",
+      "exampleId": "307a78a8-ac8c-4d96-a354-98df4941dcc2-visual-ex",
+      "styleFamily": "ceramic-mosaic ecological recovery panorama",
+      "sentenceEn": "After the wildfire, tiny flowers appeared among the blackened trees.",
+      "sentenceZh": "野火过后，焦黑的树木之间开出了小花。",
+      "scene": "A recovering forest floor shows blackened tree trunks and cool ash from a past wildfire, while fresh green shoots and small colorful flowers now emerge between them. The old damage and later renewal coexist in one clear time-after scene.",
+      "altText": "野火留下的焦黑树干之间，新的嫩芽和小花正在生长。"
+    },
+    {
+      "vocabularyId": "ec189b8a-4720-41fe-b108-d4a21888d99c",
+      "word": "should",
+      "meaningZh": "应该；应当",
+      "exampleId": "ec189b8a-4720-41fe-b108-d4a21888d99c-visual-ex",
+      "styleFamily": "editorial watercolor hiking preparation",
+      "sentenceEn": "Hikers should fill their water bottles before crossing the dry canyon.",
+      "sentenceZh": "徒步者在穿越干燥峡谷前应该装满水瓶。",
+      "scene": "At the final spring before a dry canyon, several adult hikers deliberately fill reusable bottles while the arid trail stretches ahead. Their readable faces have clear eyes, noses and mouths with thoughtful, prepared expressions; full bottles and the dry landscape make the prudent advice concrete.",
+      "altText": "徒步者在进入干燥峡谷前，认真把水瓶装满。"
+    },
+    {
+      "vocabularyId": "08771dff-0745-4ef3-b3c5-3808930311e2",
+      "word": "call",
+      "meaningZh": "称为；打电话；呼叫；访问",
+      "exampleId": "08771dff-0745-4ef3-b3c5-3808930311e2-visual-ex",
+      "styleFamily": "folk-art storm shepherd scene",
+      "sentenceEn": "The shepherd rang a bell to call the goats home before the storm.",
+      "sentenceZh": "牧羊人在暴风雨前摇铃召唤山羊回家。",
+      "scene": "A shepherd rings a large hand bell beside an open barn as goats across the hillside turn and hurry toward the sound before dark storm clouds arrive. The shepherd's readable face has complete features and a concerned but calm expression.",
+      "altText": "牧羊人在暴风雨来临前摇铃，山羊们听见后赶回畜棚。"
+    },
+    {
+      "vocabularyId": "602b8bc1-5749-4276-81bf-c663f682b517",
+      "word": "world",
+      "meaningZh": "世界；地球；世人",
+      "exampleId": "602b8bc1-5749-4276-81bf-c663f682b517-visual-ex",
+      "styleFamily": "retro-futurist screen-print exoplanet",
+      "sentenceEn": "The small telescope revealed a distant world wrapped in blue clouds.",
+      "sentenceZh": "小型望远镜发现了一个被蓝色云层包围的遥远世界。",
+      "scene": "A striking distant planet with blue cloud bands, oceans and a thin glowing atmosphere floats beyond a compact orbiting telescope. Nearby stars and a small faraway sun establish it as a complete world in deep space.",
+      "altText": "轨道望远镜观测到一个被蓝色云层和海洋覆盖的遥远世界。"
+    },
+    {
+      "vocabularyId": "a7fbd675-cfbd-4e27-bef7-13db697d8dd7",
+      "word": "over",
+      "meaningZh": "在...上方；越过；超过；结束",
+      "exampleId": "a7fbd675-cfbd-4e27-bef7-13db697d8dd7-visual-ex",
+      "styleFamily": "Japanese woodblock crane migration",
+      "sentenceEn": "A flock of cranes flew over the flooded valley toward dry land.",
+      "sentenceZh": "一群鹤飞越被洪水淹没的山谷，前往干燥的陆地。",
+      "scene": "A flock of cranes crosses high above a broad flooded valley, with reflective water and submerged fields clearly below them and a dry green ridge ahead. Their flight path visibly spans over the entire valley.",
+      "altText": "鹤群从洪水山谷上方飞过，朝前方干燥的山脊前进。"
+    },
+    {
+      "vocabularyId": "871e6f6d-13db-4066-a771-a8bbff29fa41",
+      "word": "school",
+      "meaningZh": "学校；学派；学院",
+      "exampleId": "871e6f6d-13db-4066-a771-a8bbff29fa41-visual-ex",
+      "styleFamily": "warm hand-drawn animation school cutaway",
+      "sentenceEn": "The village school opened its library to every family after sunset.",
+      "sentenceZh": "日落后，村里的学校向每个家庭开放图书馆。",
+      "scene": "A welcoming village school at dusk is shown in a warm cutaway: its bell tower, classrooms, courtyard and brightly lit library are visible as families enter. Every readable adult and child face has clear eyes, nose and mouth with natural welcoming expressions, with no blank or simplified featureless faces.",
+      "altText": "日落后的村庄学校灯火明亮，家庭们正走进开放的图书馆。"
+    },
+    {
+      "vocabularyId": "6852ad1e-143a-4c01-ab36-d6b5e35d4768",
+      "word": "still",
+      "meaningZh": "仍然；还；静止的",
+      "exampleId": "6852ad1e-143a-4c01-ab36-d6b5e35d4768-visual-ex",
+      "styleFamily": "scratchboard lighthouse storm aftermath",
+      "sentenceEn": "After the storm, the old lighthouse was still shining across the bay.",
+      "sentenceZh": "暴风雨过后，古老的灯塔仍然照亮海湾。",
+      "scene": "Broken branches, retreating clouds and rough leftover waves show that a storm has just passed, yet the old lighthouse remains upright and sends a strong beam across the dark bay. Persistence is the unmistakable focus.",
+      "altText": "暴风雨刚刚过去，古老灯塔依然屹立并照亮黑暗海湾。"
+    },
+    {
+      "vocabularyId": "fbd87d85-99bc-45f3-8224-a7755e12bf41",
+      "word": "try",
+      "meaningZh": "尝试；试图；审判；试验",
+      "exampleId": "fbd87d85-99bc-45f3-8224-a7755e12bf41-visual-ex",
+      "styleFamily": "expressive stylized-3D elephant animation",
+      "sentenceEn": "The young elephant chose to try lifting the fallen branch so smaller animals could pass.",
+      "sentenceZh": "小象决定试着抬起倒下的树枝，让较小的动物能够通过。",
+      "scene": "A determined young elephant braces its feet and carefully tries to lift one end of a fallen branch blocking a forest path. Rabbits, tortoises and other small animals wait nearby, while the branch has risen only slightly to preserve the sense of an active attempt rather than an effortless success.",
+      "altText": "小象正努力尝试抬起挡路的树枝，帮助小动物们通过。"
+    },
+    {
+      "vocabularyId": "b16e8db4-7a2c-4e0c-9543-3e103d79fd04",
+      "word": "last",
+      "meaningZh": "最后的；最近的；持续",
+      "exampleId": "b16e8db4-7a2c-4e0c-9543-3e103d79fd04-visual-ex",
+      "styleFamily": "needle-felt duckling crossing diorama",
+      "sentenceEn": "The last duckling crossed the log while its family waited on the far bank.",
+      "sentenceZh": "最后一只小鸭走过圆木时，它的家人正在对岸等待。",
+      "scene": "One small duckling is visibly the final member crossing a narrow log over a stream. The mother duck and all other ducklings already wait together on the far bank, with no ducklings left behind on the starting side.",
+      "altText": "鸭妈妈和其他小鸭都已到达对岸，最后一只小鸭正在走过圆木。"
+    }
+  ]
+}

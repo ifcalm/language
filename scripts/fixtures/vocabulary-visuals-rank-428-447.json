@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-428-447-2026-07-20",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b893512b-f003-426c-8e9e-d2a3c1ff4651",
+      "word": "wife",
+      "meaningZh": "妻子；太太",
+      "exampleId": "b893512b-f003-426c-8e9e-d2a3c1ff4651-visual-ex",
+      "styleFamily": "warm editorial orchard partnership",
+      "sentenceEn": "Mateo and his wife planted the new orchard together.",
+      "sentenceZh": "马特奥和他的妻子一起种下了新的果园。",
+      "scene": "A married adult couple works as equal partners in a new orchard: Mateo steadies one sapling while his wife packs soil around its roots, then they water it together. Their matching simple wedding rings, affectionate eye contact and shared task communicate the relationship naturally. Complete faces, no stereotyped roles, signs, writing or text.",
+      "altText": "马特奥扶着树苗，他的妻子培土，两人戴着婚戒并一起为新果园浇水。"
+    },
+    {
+      "vocabularyId": "00284d74-0129-447d-8b11-99ea81a6eacd",
+      "word": "whole",
+      "meaningZh": "全部的；整个；整体；完全",
+      "exampleId": "00284d74-0129-447d-8b11-99ea81a6eacd-visual-ex",
+      "styleFamily": "macro clay bakery still life",
+      "sentenceEn": "The baker donated the whole loaf instead of keeping part of it.",
+      "sentenceZh": "面包师捐出了整条面包，没有留下任何一部分。",
+      "scene": "One baker places one complete uncut loaf into a community food basket with both intact ends clearly visible. The cutting board behind is empty, the knife remains unused and no slices or missing pieces appear anywhere, emphasizing the whole item. Complete face, no labels, logos, writing or text.",
+      "altText": "面包师把一整条未经切分的完整面包放进社区食物篮，旁边没有任何切片或缺口。"
+    },
+    {
+      "vocabularyId": "623b5584-a3cf-4a70-96f1-fc9b1e705f39",
+      "word": "police",
+      "meaningZh": "警察；警方",
+      "exampleId": "623b5584-a3cf-4a70-96f1-fc9b1e705f39-visual-ex",
+      "styleFamily": "graphic-novel community storm assistance",
+      "sentenceEn": "The police helped residents cross the flooded street safely.",
+      "sentenceZh": "警察帮助居民安全穿过被水淹没的街道。",
+      "scene": "After a storm, two community police officers in plain recognizable uniforms hold a safety rope and guide an older resident and a parent with a child across shallow floodwater toward dry ground. Their role is calm assistance, with complete reassuring faces. No weapons, aggressive posture, badges with text, vehicles, signs, writing or text.",
+      "altText": "暴雨后，两名警察拉起安全绳，帮助老人和带孩子的家长穿过浅水到达干地。"
+    },
+    {
+      "vocabularyId": "461f3713-69fc-4376-8421-e9a8ae37ac3e",
+      "word": "mind",
+      "meaningZh": "头脑；思想；介意；注意",
+      "exampleId": "461f3713-69fc-4376-8421-e9a8ae37ac3e-visual-ex",
+      "styleFamily": "minimal sumi-e forest reflection",
+      "sentenceEn": "A quiet walk through the forest helped Arun clear his mind.",
+      "sentenceZh": "在森林中安静散步帮助阿伦理清了思绪。",
+      "scene": "One adult man walks slowly from a dense tangled thicket into an open sunlit forest clearing beside still water. His posture relaxes, shoulders lower and complete face changes to calm attention as the surroundings become spacious and uncluttered. No thought bubbles, brain symbols, signs, writing or text.",
+      "altText": "阿伦从枝叶纠结的密林缓步走到开阔明亮的水边，神情和姿态逐渐放松平静。"
+    },
+    {
+      "vocabularyId": "a8259b4e-01c7-4122-aa16-ed53db0df17e",
+      "word": "finally",
+      "meaningZh": "终于；最后；最终",
+      "exampleId": "a8259b4e-01c7-4122-aa16-ed53db0df17e-visual-ex",
+      "styleFamily": "sand-textured turtle journey",
+      "sentenceEn": "After a long journey across the beach, the young turtle finally reached the sea.",
+      "sentenceZh": "经过漫长的沙滩旅程，小海龟终于到达了大海。",
+      "scene": "One young sea turtle reaches the foamy waterline at dawn after following a long continuous trail of flipper marks from a distant nest across the wide beach. Its front flippers have just entered the first wave, making the endpoint after a long journey unmistakable. No other turtles, arrows, signs, writing or text.",
+      "altText": "清晨，一只小海龟沿着长长的沙地爬痕来到海边，前鳍终于触到第一道浪花。"
+    },
+    {
+      "vocabularyId": "4dc6ff28-95b6-4394-8db6-6b5ddeca8eb3",
+      "word": "pull",
+      "meaningZh": "拉；拖；拽；吸引",
+      "exampleId": "4dc6ff28-95b6-4394-8db6-6b5ddeca8eb3-visual-ex",
+      "styleFamily": "bold linocut fishing-boat rescue",
+      "sentenceEn": "The villagers used a rope to pull the stranded fishing boat back into the water.",
+      "sentenceZh": "村民们用绳子把搁浅的渔船拉回水中。",
+      "scene": "Five adult villagers lean backward together on one taut rope attached to a small stranded fishing boat, clearly pulling it down wet sand toward the incoming tide. The bow has begun moving and a fresh drag trail follows behind it. Complete determined faces, no motors, labels, signs, writing or text.",
+      "altText": "五名村民向后用力拉紧绳索，把搁浅渔船沿湿沙拖向正在上涨的海水。"
+    },
+    {
+      "vocabularyId": "7e0fe2be-65af-4b4b-82c8-ec8028abb418",
+      "word": "return",
+      "meaningZh": "返回；归还；回报；收益",
+      "exampleId": "7e0fe2be-65af-4b4b-82c8-ec8028abb418-visual-ex",
+      "styleFamily": "felt library book return",
+      "sentenceEn": "Nora remembered to return the borrowed book to the library.",
+      "sentenceZh": "诺拉记得把借来的书归还给图书馆。",
+      "scene": "At a welcoming library desk, one teenage girl hands one closed borrowed book back to an adult librarian, who receives it with both hands and places it beside matching shelves. The girl's now-empty book bag is open at her side, clarifying the return. Complete faces, no readable book covers, cards, signs, writing or text.",
+      "altText": "诺拉在图书馆柜台把借来的书交回管理员手中，身旁的书包已经空了。"
+    },
+    {
+      "vocabularyId": "b0be2a33-1714-4301-9371-0f6e8054a5c5",
+      "word": "free",
+      "meaningZh": "自由的；免费的；空闲的；释放",
+      "exampleId": "b0be2a33-1714-4301-9371-0f6e8054a5c5-visual-ex",
+      "styleFamily": "luminous watercolor owl release",
+      "sentenceEn": "After its wing healed, the owl was free to fly back into the forest.",
+      "sentenceZh": "翅膀康复后，猫头鹰可以自由飞回森林。",
+      "scene": "One healthy owl flies strongly from an open rehabilitation carrier toward a broad moonlit forest, wings fully spread with no wrap or restraint. One adult caretaker stands beside the empty open carrier with a complete joyful face and hands lowered, clearly no longer holding the bird. No cages, labels, writing or text.",
+      "altText": "康复后的猫头鹰从敞开的运输箱展翅飞向森林，护理员微笑着放下双手。"
+    },
+    {
+      "vocabularyId": "3f7c36f8-d36e-473d-b868-cfe0377451b3",
+      "word": "military",
+      "meaningZh": "军事的；军队；军方",
+      "exampleId": "3f7c36f8-d36e-473d-b868-cfe0377451b3-visual-ex",
+      "styleFamily": "paper-collage disaster engineering corps",
+      "sentenceEn": "The military built a temporary bridge after the earthquake isolated the village.",
+      "sentenceZh": "地震使村庄与外界隔绝后，军方修建了一座临时桥梁。",
+      "scene": "Uniformed military engineers without weapons assemble a modular temporary bridge across an earthquake-damaged road while villagers wait safely with food and medical supplies on both sides. Their uniforms, coordinated engineering team and transport trucks establish the military context through disaster relief. Complete faces, no flags, insignia text, weapons, signs, writing or text.",
+      "altText": "没有携带武器的军队工程人员在震断道路上搭建临时桥，让村民和救援物资恢复通行。"
+    },
+    {
+      "vocabularyId": "9ed18b05-6db0-449b-b55b-36157bd8543b",
+      "word": "price",
+      "meaningZh": "价格；价钱；代价",
+      "exampleId": "9ed18b05-6db0-449b-b55b-36157bd8543b-visual-ex",
+      "styleFamily": "ceramic miniature bicycle market",
+      "sentenceEn": "The price of the repaired bicycle was three plain coins.",
+      "sentenceZh": "这辆修好的自行车价格是三枚普通硬币。",
+      "scene": "At a neighborhood repair stall, one adult customer receives one repaired bicycle while placing exactly three large plain coins into the mechanic's open hand. The bicycle and the three-count payment are isolated and unobstructed. Complete faces, no extra coins, price tags, numbers, signs, logos, writing or text.",
+      "altText": "社区维修摊前，顾客接过修好的自行车，同时把清晰可数的三枚硬币交给维修师。"
+    },
+    {
+      "vocabularyId": "ae3c86e0-c8b8-4500-ad57-e929b4adcf59",
+      "word": "less",
+      "meaningZh": "更少的；更小的；较少地",
+      "exampleId": "ae3c86e0-c8b8-4500-ad57-e929b4adcf59-visual-ex",
+      "styleFamily": "isometric water-saving garden comparison",
+      "sentenceEn": "The drip system used less water than the old sprinkler to grow the same number of plants.",
+      "sentenceZh": "滴灌系统比旧喷头使用更少的水，却种出了相同数量的植物。",
+      "scene": "Two equal garden rows contain exactly eight equally healthy plants each. The drip-fed row connects to a small tank still mostly full, while the sprinkler row connects to an identical tank nearly empty with water scattered beyond plants. Equal plants and unequal remaining water make less clear. No labels, arrows, numbers, people, writing or text.",
+      "altText": "两排同样八株健康植物中，滴灌水箱仍大半满，旧喷头的同款水箱却几乎用空。"
+    },
+    {
+      "vocabularyId": "fe399f95-d5ab-491f-aaf5-92bebf00b24f",
+      "word": "according",
+      "meaningZh": "根据；按照",
+      "exampleId": "fe399f95-d5ab-491f-aaf5-92bebf00b24f-visual-ex",
+      "styleFamily": "colored-pencil wildlife tracking",
+      "sentenceEn": "According to the fresh tracks, the lost deer had crossed toward the pine forest.",
+      "sentenceZh": "根据新鲜足迹，走失的鹿已经朝松林方向走去。",
+      "scene": "One adult ranger kneels beside fresh deer tracks in soft mud, compares them with a deer hoof cast held in hand, then looks along the same uninterrupted trail leading toward a pine forest where a distant deer silhouette is barely visible. Evidence and conclusion align spatially. Complete face, no maps, arrows, labels, writing or text.",
+      "altText": "护林员把泥中的新鲜鹿蹄印与蹄模比较，并顺着足迹望向远处松林中的鹿影。"
+    },
+    {
+      "vocabularyId": "f3e03719-9e52-499e-b528-39d1621314ac",
+      "word": "decision",
+      "meaningZh": "决定；决心",
+      "exampleId": "f3e03719-9e52-499e-b528-39d1621314ac-visual-ex",
+      "styleFamily": "cut-paper coastal village decision",
+      "sentenceEn": "The village's decision moved every new house behind the natural dunes.",
+      "sentenceZh": "村庄的决定让所有新房都建在天然沙丘之后。",
+      "scene": "A coastal village model shows every new house foundation repositioned safely behind one continuous line of natural dunes, while the exposed beach side remains empty. Four adult residents together move the final house model behind the dunes and nod in agreement. Complete faces, no voting symbols, signs, labels, writing or text.",
+      "altText": "四名居民把最后一座新房模型移到天然沙丘后方，海滩迎海一侧不再设置房屋。"
+    },
+    {
+      "vocabularyId": "c891abe9-3607-461a-8800-3b538f965f7a",
+      "word": "explain",
+      "meaningZh": "解释；说明",
+      "exampleId": "c891abe9-3607-461a-8800-3b538f965f7a-visual-ex",
+      "styleFamily": "hand-painted animation bicycle workshop",
+      "sentenceEn": "The mechanic used a working model to explain how bicycle gears change speed.",
+      "sentenceZh": "维修师用可动模型解释自行车齿轮如何改变速度。",
+      "scene": "One adult mechanic turns a large open bicycle gear model by hand while pointing from a small gear to a large gear. Two teenage learners watch the linked chain move and then imitate the motion on a real bicycle. Complete attentive faces, no diagrams, labels, numbers, writing or text.",
+      "altText": "维修师转动开放式齿轮模型并指出大小齿轮，两名学员观察链条运动后在自行车上尝试。"
+    },
+    {
+      "vocabularyId": "cd5b0ae7-9d99-4873-a4c9-bdc925546a44",
+      "word": "son",
+      "meaningZh": "儿子；子孙；孩子",
+      "exampleId": "cd5b0ae7-9d99-4873-a4c9-bdc925546a44-visual-ex",
+      "styleFamily": "soft pastel intergenerational garden",
+      "sentenceEn": "The old gardener taught his son how to graft an apple tree.",
+      "sentenceZh": "老园丁教儿子如何嫁接苹果树。",
+      "scene": "An older adult gardener patiently guides the hands of his adult son while they graft one young apple tree in a family orchard. Their similar facial features, affectionate trust, visible age difference and shared family keepsake bracelet suggest the father-son relationship. Both faces complete, no labels, signs, writing or text.",
+      "altText": "老园丁在家族果园里握着成年儿子的手，耐心教他为一棵年轻苹果树嫁接。"
+    },
+    {
+      "vocabularyId": "d078b16e-24d2-4c58-9290-3dc5fbf235dc",
+      "word": "hope",
+      "meaningZh": "希望；期望；盼望",
+      "exampleId": "d078b16e-24d2-4c58-9290-3dc5fbf235dc-visual-ex",
+      "styleFamily": "luminous gouache coral nursery",
+      "sentenceEn": "The first new coral growth gave the divers hope that the reef could recover.",
+      "sentenceZh": "第一批新长出的珊瑚让潜水员看到了珊瑚礁恢复的希望。",
+      "scene": "Two adult conservation divers hover above a damaged reef where one protected nursery frame now holds several tiny vivid new coral branches and the first small fish have returned. Their complete faces are visible through clear masks and show restrained joy; most surrounding reef is still recovering, so the future remains hopeful rather than finished. No signs, labels, writing or text.",
+      "altText": "受损礁区中，苗圃架长出第一批鲜活小珊瑚并迎来小鱼，两名潜水员露出欣慰神情。"
+    },
+    {
+      "vocabularyId": "fac643b6-d40d-417d-8588-641d2dfd76a2",
+      "word": "develop",
+      "meaningZh": "发展；开发；培养；发育",
+      "exampleId": "fac643b6-d40d-417d-8588-641d2dfd76a2-visual-ex",
+      "styleFamily": "botanical paper-cut deep roots",
+      "sentenceEn": "Young trees develop deeper roots when water reaches below the surface.",
+      "sentenceZh": "当水渗到地表以下时，幼树会长出更深的根。",
+      "scene": "A soil cutaway shows several young trees above ground and their roots extending progressively downward toward moisture delivered by a buried clay watering vessel. Fine new root tips visibly grow deeper into damp dark soil, while the surface remains only lightly wet. No arrows, labels, diagrams, people, writing or text.",
+      "altText": "土壤剖面中，幼树的新根尖向埋在地下的湿润区域不断深入生长。"
+    },
+    {
+      "vocabularyId": "2cb07abc-7a3a-4550-a982-365986ac05f1",
+      "word": "view",
+      "meaningZh": "观点；视野；景色；看待",
+      "exampleId": "2cb07abc-7a3a-4550-a982-365986ac05f1-visual-ex",
+      "styleFamily": "woodblock accessible mountain view",
+      "sentenceEn": "The new overlook offers a wide view of the restored mountain valley.",
+      "sentenceZh": "新的观景台可以俯瞰修复后的广阔山谷。",
+      "scene": "A broad accessible overlook opens onto an expansive restored mountain valley with river, forest, wetlands and distant peaks all visible at once. Three diverse visitors stand or sit quietly at a low railing, gazing outward rather than at one another. Complete faces in profile, no telescopes, signs, maps, writing or text.",
+      "altText": "无障碍观景台前视野开阔，游客可以同时看到修复后的河流、森林、湿地和远山。"
+    },
+    {
+      "vocabularyId": "82c94959-36a7-4023-a336-415915d20e3e",
+      "word": "relationship",
+      "meaningZh": "关系；关联",
+      "exampleId": "82c94959-36a7-4023-a336-415915d20e3e-visual-ex",
+      "styleFamily": "embroidered clownfish-anemone symbiosis",
+      "sentenceEn": "The relationship between the clownfish and the anemone protects both animals.",
+      "sentenceZh": "小丑鱼和海葵之间的关系保护着双方。",
+      "scene": "In one richly embroidered reef scene, exactly two clownfish shelter safely among one sea anemone's tentacles while chasing away a small butterflyfish that approaches the anemone; in return, food scraps from the clownfish feed the anemone. Reciprocal benefit is visible without diagrams. No labels, arrows, writing or text.",
+      "altText": "两只小丑鱼藏在海葵触手中获得保护，同时赶走靠近海葵的小鱼并留下食物碎屑。"
+    },
+    {
+      "vocabularyId": "8f47e637-d4da-4430-8339-3ad4d75ad67c",
+      "word": "carry",
+      "meaningZh": "携带；搬运；承载",
+      "exampleId": "8f47e637-d4da-4430-8339-3ad4d75ad67c-visual-ex",
+      "styleFamily": "macro 3D leafcutter-ant caravan",
+      "sentenceEn": "Leafcutter ants carry pieces of fresh leaves back to their underground nest.",
+      "sentenceZh": "切叶蚁把新鲜叶片搬回地下巢穴。",
+      "scene": "A macro trail of leafcutter ants each visibly carries one fresh green leaf piece above its body toward an open underground nest entrance. A cutaway below shows arriving ants placing leaves in fungal garden chambers. Direction and supported loads are clear. No labels, arrows, numbers, writing or text.",
+      "altText": "一队切叶蚁各自托着绿色叶片走向地下巢穴，并把叶片搬进菌圃室。"
+    }
+  ]
+}

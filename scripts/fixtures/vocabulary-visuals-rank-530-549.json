@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-530-549-2026-07-26",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across this batch by alternating human and nonhuman subjects, intimate and panoramic framing, practical and natural settings, simple and complex actions, and warm and cool palettes. Do not repeat recent observatory, glacier rescue, greenhouse, mountain lake, weaving, harbor radio, railway inspection, flood wall or outdoor-cinema compositions. Keep one coherent visual language inside each image and avoid adjacent images with similar dominant colors. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "f5cd4532-7e37-4251-bf07-615e0a9783d6",
+      "word": "certain",
+      "meaningZh": "确定的；某一个的；必然的",
+      "exampleId": "f5cd4532-7e37-4251-bf07-615e0a9783d6-visual-ex",
+      "styleFamily": "turquoise-cream cutaway gouache pipe diagnosis",
+      "sentenceEn": "The plumber was certain which pipe was leaking after a soap bubble formed.",
+      "sentenceZh": "肥皂泡出现后，水管工确定了是哪根管道漏水。",
+      "scene": "Inside a tidy utility room, one adult plumber studies three exposed pipe joints coated with soap solution. Exactly one joint produces a large growing bubble while the other two stay dry, giving clear evidence for the confident diagnosis. The plumber points to that joint with a complete assured face. No gauges with numbers, diagrams, labels, writing or text.",
+      "altText": "三处管道接头中只有一处鼓起明显肥皂泡，水管工据此确定了漏水位置。"
+    },
+    {
+      "vocabularyId": "a69dceb3-5444-41a9-9d52-7b9821a62da4",
+      "word": "north",
+      "meaningZh": "北方；北；北的；北方的",
+      "exampleId": "a69dceb3-5444-41a9-9d52-7b9821a62da4-visual-ex",
+      "styleFamily": "indigo-aurora polar linocut expedition",
+      "sentenceEn": "The expedition followed the compass north toward the midnight sun.",
+      "sentenceZh": "探险队依照指南针向北朝午夜太阳前进。",
+      "scene": "Across an open polar plateau, a large plain compass in the foreground has its colored needle aligned with a distant low midnight sun and the direction of a small expedition traveling away. The continuous alignment makes the northward route clear. Faces are tiny and complete only if readable. No letters on the compass, map markings, flags, labels, writing or text.",
+      "altText": "极地前景的指南针彩色指针与远方低悬太阳和探险队行进方向对齐，队伍正在向北前进。"
+    },
+    {
+      "vocabularyId": "50bdcc52-0ef9-4cbc-bc51-c6b8d0af1cff",
+      "word": "personal",
+      "meaningZh": "个人的",
+      "exampleId": "50bdcc52-0ef9-4cbc-bc51-c6b8d0af1cff-visual-ex",
+      "styleFamily": "russet-teal embroidered sewing-roll still life",
+      "sentenceEn": "Leila kept her personal sewing tools in a blue cloth roll.",
+      "sentenceZh": "莱拉把自己的缝纫工具收在一只蓝色布卷里。",
+      "scene": "At a quiet window table, Leila opens one distinctive blue embroidered cloth roll that holds her carefully fitted scissors, thimble, needles and thread spools. Other shared workshop tools remain in a plain basket farther away, making this organized set clearly her personal kit. Complete calm face, no initials, labels, writing or text.",
+      "altText": "莱拉在窗边展开专属于自己的蓝色刺绣布卷，剪刀、顶针、针与线轴各自放在固定位置。"
+    },
+    {
+      "vocabularyId": "03f091a1-781f-4271-b59b-46724b77c390",
+      "word": "simply",
+      "meaningZh": "仅仅；简单地",
+      "exampleId": "03f091a1-781f-4271-b59b-46724b77c390-visual-ex",
+      "styleFamily": "coral-sky cut-paper one-knot kite repair",
+      "sentenceEn": "The broken kite flew again after Mei simply tied one loose knot.",
+      "sentenceZh": "梅只需系紧一个松开的结，坏掉的风筝就重新飞了起来。",
+      "scene": "On a breezy hill, Mei has just tied one loose string knot at the corner of a paper kite. The repaired kite rises smoothly while an unused box of complex tools remains closed behind her, emphasizing the simple solution. Complete pleased face, no instructions, labels, writing or text.",
+      "altText": "风吹山坡上，梅只系紧风筝角上的一个松结，风筝便重新顺利升空，复杂工具箱仍未打开。"
+    },
+    {
+      "vocabularyId": "3fa3d523-9e40-46d1-899d-420b571b0c00",
+      "word": "third",
+      "meaningZh": "第三",
+      "exampleId": "3fa3d523-9e40-46d1-899d-420b571b0c00-visual-ex",
+      "styleFamily": "celadon-amber ceramic stop-motion seedlings",
+      "sentenceEn": "The third seed sprouted after the first two were already tall.",
+      "sentenceZh": "前两颗种子已经长高后，第三颗种子才发芽。",
+      "scene": "Exactly three small clay pots stand in one left-to-right row. The first two contain tall established seedlings, while the third and rightmost pot contains one newly emerging sprout breaking the soil. No other pots or plants appear. No people, numbers, markers, labels, writing or text.",
+      "altText": "一排正好三个陶盆中，前两盆幼苗已经长高，最右侧第三盆的嫩芽刚刚破土。"
+    },
+    {
+      "vocabularyId": "4afb4c4a-02ca-4069-8096-12361483de7b",
+      "word": "technology",
+      "meaningZh": "技术；工业技术；术语",
+      "exampleId": "4afb4c4a-02ca-4069-8096-12361483de7b-visual-ex",
+      "styleFamily": "slate-magenta matte futurist fog-harvesting mesh",
+      "sentenceEn": "Fog-harvesting technology collected clean water for the dry mountain refuge.",
+      "sentenceZh": "雾水收集技术为干旱山区的避难所收集了清洁用水。",
+      "scene": "On a windy dry ridge, several tall fine-mesh fog collectors catch droplets from low clouds. Beads merge into channels and flow through one continuous pipe into a clear storage tank beside a modest mountain refuge. Two small technicians inspect the flow. Complete faces only if readable, no meters, signs, diagrams, labels, writing or text.",
+      "altText": "干旱山脊上的细网从低云中凝结水滴，水沿沟槽和管道流入山间避难所旁的清水罐。"
+    },
+    {
+      "vocabularyId": "0f965a61-2cd4-416d-81fa-88b2a272cde5",
+      "word": "catch",
+      "meaningZh": "抓住；捕捉；赶上；感染",
+      "exampleId": "0f965a61-2cd4-416d-81fa-88b2a272cde5-visual-ex",
+      "styleFamily": "silver-copper macro botanical spiderweb etching",
+      "sentenceEn": "The spider built a wide web to catch insects between the reeds.",
+      "sentenceZh": "蜘蛛在芦苇之间织了一张宽网来捕捉昆虫。",
+      "scene": "A wide complete orb web stretches between two reeds above still water. One small spider waits at the center while a single flying gnat approaches the sticky strands and several dew beads reveal the web structure. No trapped birds or large prey, people, diagrams, labels, writing or text.",
+      "altText": "两根芦苇之间张着完整蛛网，蜘蛛守在网心，一只小飞虫正接近带露珠的黏丝。"
+    },
+    {
+      "vocabularyId": "b4da9704-c156-4c48-b28a-b4c96341d744",
+      "word": "step",
+      "meaningZh": "步骤；脚步；台阶",
+      "exampleId": "b4da9704-c156-4c48-b28a-b4c96341d744-visual-ex",
+      "styleFamily": "emerald-rose art-nouveau pond stone relief",
+      "sentenceEn": "A wide stone step helped the tortoise climb out of the pond.",
+      "sentenceZh": "一块宽阔的石台阶帮助陆龟爬出了池塘。",
+      "scene": "At a garden pond edge, one broad low stone step bridges the height between shallow water and dry ground. A tortoise places its front feet on the step and climbs comfortably upward while a steeper bank beside it remains inaccessible. No people, arrows, measurements, labels, writing or text.",
+      "altText": "池塘边的宽阔低石阶连接浅水与岸地，一只陆龟正借助台阶轻松爬上岸。"
+    },
+    {
+      "vocabularyId": "bd790532-6642-409a-beb4-25f1d785c14c",
+      "word": "baby",
+      "meaningZh": "婴孩；婴儿",
+      "exampleId": "bd790532-6642-409a-beb4-25f1d785c14c-visual-ex",
+      "styleFamily": "ochre-aqua hand-painted savanna animation",
+      "sentenceEn": "The baby elephant followed its mother through the shallow river.",
+      "sentenceZh": "小象跟着母象穿过浅浅的河流。",
+      "scene": "In warm savanna light, one baby elephant walks closely behind its mother through a shallow river, raising its short trunk while copying her careful steps. Their complete expressive faces and clear size difference show the young animal's relationship. No other elephants, people, signs, writing or text.",
+      "altText": "暖色草原河流中，一头小象紧跟母象穿过浅水，并模仿母象抬起短短的鼻子。"
+    },
+    {
+      "vocabularyId": "6f2bfbe8-3060-4918-a189-db0c4fb0a3df",
+      "word": "computer",
+      "meaningZh": "计算机；电脑",
+      "exampleId": "6f2bfbe8-3060-4918-a189-db0c4fb0a3df-visual-ex",
+      "styleFamily": "violet-lime retro-futurist reef computer console",
+      "sentenceEn": "The computer guided a small restoration robot across the damaged reef.",
+      "sentenceZh": "计算机引导一台小型修复机器人穿过受损珊瑚礁。",
+      "scene": "Inside a compact research submersible, one adult operator uses a rugged computer with a large plain display showing only the live reef and a small restoration robot outside. Through the window, the same robot places a healthy coral fragment on a damaged reef. Complete focused face, no readable interface, data, letters, labels, logos, writing or text.",
+      "altText": "研究潜艇中，操作员通过坚固电脑引导窗外的小型机器人把健康珊瑚片放到受损礁石上。"
+    },
+    {
+      "vocabularyId": "100bebf3-0329-4c87-9cff-ec9d4d6f5285",
+      "word": "type",
+      "meaningZh": "类型；种类；打字",
+      "exampleId": "100bebf3-0329-4c87-9cff-ec9d4d6f5285-visual-ex",
+      "styleFamily": "sepia-cobalt bauhaus blank-keyboard risograph",
+      "sentenceEn": "Rosa learned to type without looking down at the keyboard.",
+      "sentenceZh": "罗莎学会了不用低头看键盘就能打字。",
+      "scene": "Rosa sits upright at a simple desk, eyes calmly focused on a plain screen while both hands actively use a keyboard below her line of sight. The keyboard keys and screen contain no visible characters. Her complete confident face is turned clearly away from the keys. No papers, letters, numbers, labels, writing or text.",
+      "altText": "罗莎目光一直看着空白屏幕，双手在视线下方的无字键盘上熟练打字。"
+    },
+    {
+      "vocabularyId": "c02150a1-9cee-4196-8ad7-792958698571",
+      "word": "attention",
+      "meaningZh": "注意；注意力；关注",
+      "exampleId": "c02150a1-9cee-4196-8ad7-792958698571-visual-ex",
+      "styleFamily": "black-yellow graphic-novel condor hatchery",
+      "sentenceEn": "A soft crack drew the caretaker's attention to the hatching egg.",
+      "sentenceZh": "轻微的破裂声把饲养员的注意力吸引到了正在孵化的蛋上。",
+      "scene": "In a quiet wildlife hatchery, one adult caretaker abruptly turns from arranging empty nesting material toward a large egg where a chick's beak has just opened one clear crack. The caretaker's eyes, head and raised hand all focus on the egg. Complete alert face, no clocks, clipboards, screens, labels, writing or text.",
+      "altText": "安静孵化室里，蛋壳裂缝中露出幼鸟嘴尖，饲养员立刻转头并把全部注意力放到蛋上。"
+    },
+    {
+      "vocabularyId": "bb404f63-5669-4062-b516-077bf8a13a38",
+      "word": "draw",
+      "meaningZh": "画；拉；吸引；绘制",
+      "exampleId": "bb404f63-5669-4062-b516-077bf8a13a38-visual-ex",
+      "styleFamily": "crimson-cream nordic woodcut rescue horses",
+      "sentenceEn": "Two strong horses draw the rescue wagon through deep snow.",
+      "sentenceZh": "两匹强壮的马拉着救援车穿过深雪。",
+      "scene": "Exactly two draft horses lean forward together in harness and pull one rescue wagon through deep winter snow toward a remote cabin. Taut traces and fresh wheel tracks make the drawing action unmistakable. One bundled driver has a complete face if readable. No emblems, signs, numbers, labels, writing or text.",
+      "altText": "正好两匹挽马共同前倾发力，用绷紧的挽具拉着救援车穿过通往远处木屋的深雪。"
+    },
+    {
+      "vocabularyId": "78b42608-59d0-4b2e-b869-97b6fa8428d6",
+      "word": "film",
+      "meaningZh": "软片；薄膜；胶卷；电影",
+      "exampleId": "78b42608-59d0-4b2e-b869-97b6fa8428d6-visual-ex",
+      "styleFamily": "icy-cyan iridescent glass-mosaic puddle macro",
+      "sentenceEn": "A thin film of ice formed across the puddle before sunrise.",
+      "sentenceZh": "日出前，水洼表面形成了一层薄薄的冰膜。",
+      "scene": "A macro dawn view shows one shallow puddle covered by an extremely thin transparent film of ice. Trapped bubbles, delicate cracks and one curled leaf remain visible beneath, while a small unfrozen edge reveals the water below. No people, labels, diagrams, writing or text.",
+      "altText": "日出前的水洼表面覆盖着透明薄冰膜，气泡、细裂纹与冰下卷叶清晰可见，边缘仍露出水面。"
+    },
+    {
+      "vocabularyId": "c8dfc847-b94c-4afd-a001-d2a36b23101c",
+      "word": "Republican",
+      "meaningZh": "共和党的；共和党人",
+      "exampleId": "c8dfc847-b94c-4afd-a001-d2a36b23101c-visual-ex",
+      "styleFamily": "brick-red federal-blue neutral civic linocut",
+      "sentenceEn": "The Republican senator and a Democratic senator planted the first tree in the new public park.",
+      "sentenceZh": "一名共和党参议员和一名民主党参议员共同种下了新公园的第一棵树。",
+      "scene": "In a newly prepared public park, two adult senators work side by side to plant one young tree: one wears a restrained brick-red jacket and the other a federal-blue jacket, with equal placement and shared tools. Their complete friendly faces show practical cooperation, while residents of varied ages watch at a respectful distance. No party symbols, campaign signs, flags, speeches, labels, writing or text.",
+      "altText": "新公园里，一名穿砖红外套的共和党参议员与一名穿蓝色外套的民主党参议员共同栽下第一棵树。"
+    },
+    {
+      "vocabularyId": "605f4268-bbe2-4f00-9a75-8bd17d271b40",
+      "word": "tree",
+      "meaningZh": "树；树木",
+      "exampleId": "605f4268-bbe2-4f00-9a75-8bd17d271b40-visual-ex",
+      "styleFamily": "malachite-gold botanical tapestry kapok habitat",
+      "sentenceEn": "The old tree sheltered owls, bees, orchids, and lizards during the dry season.",
+      "sentenceZh": "旱季里，这棵老树为猫头鹰、蜜蜂、兰花和蜥蜴提供了庇护。",
+      "scene": "One enormous old kapok tree fills the scene during the dry season. Its hollow shelters an owl, a high branch holds a bee colony, orchids grow in a fork and a lizard rests on the textured trunk, while the surrounding grass is dry. No other large trees, people, labels, writing or text.",
+      "altText": "旱季中，一棵巨大的老木棉树同时庇护树洞猫头鹰、枝头蜂群、树杈兰花与树干蜥蜴。"
+    },
+    {
+      "vocabularyId": "62a7a88d-7131-4b50-9070-fc8bb8147560",
+      "word": "source",
+      "meaningZh": "来源；水源；根源；原始资料；源",
+      "exampleId": "62a7a88d-7131-4b50-9070-fc8bb8147560-visual-ex",
+      "styleFamily": "mineral-blue ochre cutaway hillside spring",
+      "sentenceEn": "A hidden hillside spring was the source of water for three fountains.",
+      "sentenceZh": "山坡里隐藏的泉眼是三座喷泉的水源。",
+      "scene": "A clean landscape cutaway reveals one underground spring emerging from a rock layer high on a hillside. One continuous blue channel carries that water downhill and divides only at the end to feed exactly three small plain fountains. No people, arrows, pipe labels, diagrams, writing or text.",
+      "altText": "山坡剖面中，一个地下泉眼涌出清水，连续水道向下延伸并在末端供给正好三座喷泉。"
+    },
+    {
+      "vocabularyId": "6de30f58-22cf-4df9-bfe9-7d8267ab2d60",
+      "word": "red",
+      "meaningZh": "红色的",
+      "exampleId": "6de30f58-22cf-4df9-bfe9-7d8267ab2d60-visual-ex",
+      "styleFamily": "jade-scarlet stained-glass mangrove ibis",
+      "sentenceEn": "A red ibis landed beside the green mangrove pool.",
+      "sentenceZh": "一只红色的朱鹭落在绿色红树林水池旁。",
+      "scene": "Exactly one vivid scarlet ibis lands with wings half open beside a deep green mangrove pool. Its red feathers stand clearly against jade leaves, dark roots and teal water. A few small silver fish may appear below, but no other birds or people. No labels, symbols, writing or text.",
+      "altText": "一只鲜红朱鹭半展双翼落在深绿色红树林水池旁，红色羽毛与翡翠叶片形成鲜明对比。"
+    },
+    {
+      "vocabularyId": "4ee9733b-8c6c-42b8-b303-71f4b95ea365",
+      "word": "nearly",
+      "meaningZh": "几乎；将近",
+      "exampleId": "4ee9733b-8c6c-42b8-b303-71f4b95ea365-visual-ex",
+      "styleFamily": "pearl-lavender silk-embroidery moth emergence",
+      "sentenceEn": "The silk moth had nearly left its cocoon, with only one wing still inside.",
+      "sentenceZh": "蚕蛾几乎已经离开茧，只剩一只翅膀还在里面。",
+      "scene": "A macro view centers one silk moth almost fully emerged from a split cocoon on a mulberry twig. Its head, body, legs and one open wing are outside, while only the second wing remains visibly folded within the cocoon. No other moths, people, sequence panels, labels, writing or text.",
+      "altText": "桑枝上的蚕蛾几乎完全钻出裂开的茧，头、身体与一只翅膀已在外面，只剩另一翼仍在茧中。"
+    },
+    {
+      "vocabularyId": "b8b96cd6-425c-4c75-b886-79c5c33f8f06",
+      "word": "organization",
+      "meaningZh": "组织；机构",
+      "exampleId": "b8b96cd6-425c-4c75-b886-79c5c33f8f06-visual-ex",
+      "styleFamily": "orange-navy architectural axonometric mobile library",
+      "sentenceEn": "The organization transformed an abandoned bus into a traveling library.",
+      "sentenceZh": "这个机构把一辆废弃巴士改造成了流动图书馆。",
+      "scene": "An axonometric workshop scene shows one coordinated nonprofit team converting an old bus: one group installs shelves, another repairs seats into reading benches, another loads plain colorful books and a final pair checks the solar roof. A finished open side reveals the coherent traveling library. Complete faces where readable, no organization name, bus numbers, signs, book titles, labels, writing or text.",
+      "altText": "一个机构的多组成员协作改造旧巴士，安装书架、阅读座椅和太阳能车顶，把它变成流动图书馆。"
+    }
+  ]
+}

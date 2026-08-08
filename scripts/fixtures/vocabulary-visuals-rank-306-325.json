@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-306-325-2026-07-18",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "dfebe038-ecc8-4c32-b90f-fb5d5e39c8c9",
+      "word": "already",
+      "meaningZh": "已经",
+      "exampleId": "dfebe038-ecc8-4c32-b90f-fb5d5e39c8c9-visual-ex",
+      "styleFamily": "painted-wood mountain shelter at sunrise",
+      "sentenceEn": "By sunrise, the volunteers had already prepared the mountain shelter for tired hikers.",
+      "sentenceZh": "日出时，志愿者们已经为疲惫的徒步者准备好了山间小屋。",
+      "scene": "At first sunrise, two tired adult hikers approach an open mountain shelter and discover that two volunteers have already completed every preparation: a warm fire burns safely, dry blankets are neatly laid out, hot soup steams in plain bowls and wet boots can rest beside the entrance. The hikers' surprised relief and the volunteers' welcoming expressions are clear; all four readable faces have complete natural features. No writing, signs or text.",
+      "altText": "清晨，两位徒步者抵达山间小屋时，志愿者已经生火并备好毯子和热汤。"
+    },
+    {
+      "vocabularyId": "0ac30023-3319-47fd-b65a-9aa43e38a3f1",
+      "word": "speak",
+      "meaningZh": "说；讲；发言；演说",
+      "exampleId": "0ac30023-3319-47fd-b65a-9aa43e38a3f1-visual-ex",
+      "styleFamily": "expressive editorial animation community meeting",
+      "sentenceEn": "Lina stood up to speak for protecting the river that supplied her village.",
+      "sentenceZh": "莉娜站起来发言，呼吁保护为村庄供水的河流。",
+      "scene": "In a modest circular community meeting, one adult woman stands and speaks with calm courage while a small diverse group turns toward her and listens attentively. An open window reveals the clean river and village gardens she is defending, but no poster or written material appears. Her speaking mouth, eyes, nose and purposeful expression are fully rendered, as are all other readable faces. No microphones, slogans, logos or text.",
+      "altText": "社区会议上，莉娜勇敢站起发言，听众认真倾听，窗外可见村庄赖以生存的河流。"
+    },
+    {
+      "vocabularyId": "bc0704e6-ce76-4d85-8725-192445986901",
+      "word": "others",
+      "meaningZh": "其他人；其他事物",
+      "exampleId": "bc0704e6-ce76-4d85-8725-192445986901-visual-ex",
+      "styleFamily": "Japanese woodblock crane group roles",
+      "sentenceEn": "One crane kept watch while the others searched the wetland for food.",
+      "sentenceZh": "一只鹤负责警戒，其他鹤在湿地中寻找食物。",
+      "scene": "Exactly five cranes occupy one quiet wetland. One crane stands tall and alert on a slightly raised bank, clearly separate in posture and role, while the other four cranes bend down together to search the shallow water for food. No additional birds, people, labels or text; the one-versus-others relationship must be immediately countable.",
+      "altText": "五只鹤中，一只站在高处警戒，其他四只低头在浅水中觅食。"
+    },
+    {
+      "vocabularyId": "2d02ad9b-e473-4a3b-b584-eda6bc545c9b",
+      "word": "read",
+      "meaningZh": "阅读；读到；朗读；理解",
+      "exampleId": "2d02ad9b-e473-4a3b-b584-eda6bc545c9b-visual-ex",
+      "styleFamily": "cozy gouache family reading",
+      "sentenceEn": "Maya read a bedtime story aloud to her younger brother.",
+      "sentenceZh": "玛雅给弟弟朗读睡前故事。",
+      "scene": "An older school-age girl sits beside her younger brother under a warm bedside lamp and reads aloud from an open illustrated storybook. Her finger follows a line of abstract marks that cannot be read, while the younger child watches the picture with absorbed delight. Both children's readable faces have complete natural eyes, noses, mouths and gentle expressions. No legible letters, words, logos or text anywhere.",
+      "altText": "温暖的床头灯下，玛雅指着打开的绘本，为年幼的弟弟朗读故事。"
+    },
+    {
+      "vocabularyId": "caa801ea-f90f-43ed-b2b1-4223a89c6cd0",
+      "word": "level",
+      "meaningZh": "水平；级别；程度；平坦的",
+      "exampleId": "caa801ea-f90f-43ed-b2b1-4223a89c6cd0-visual-ex",
+      "styleFamily": "crisp paper-cut communicating vessels still life",
+      "sentenceEn": "The water settled at the same level in every connected glass tube.",
+      "sentenceZh": "水在每根相连的玻璃管中都稳定在同一高度。",
+      "scene": "A clean tabletop still life shows four transparent glass vessels of very different shapes connected along their bases by one continuous tube. Calm blue water rests at precisely the same horizontal level in all four vessels despite their different widths and curves. Use clear silhouettes and a perfectly aligned water surface; no rulers, numbers, arrows, labels, people or text.",
+      "altText": "四个形状不同但底部相连的透明容器中，蓝色水面保持在完全相同的高度。"
+    },
+    {
+      "vocabularyId": "d2e07277-91ca-4782-9d13-61403eb5d842",
+      "word": "allow",
+      "meaningZh": "允许；准许；容许",
+      "exampleId": "d2e07277-91ca-4782-9d13-61403eb5d842-visual-ex",
+      "styleFamily": "aerial felt wildlife crossing",
+      "sentenceEn": "The new wildlife bridge allows deer to cross the highway safely.",
+      "sentenceZh": "新建的野生动物桥让鹿群能够安全穿过高速公路。",
+      "scene": "An elevated view shows a broad green wildlife bridge covered with native shrubs connecting two halves of a forest over a busy divided highway. Exactly three deer walk safely across the vegetated bridge while cars remain far below and physically separated. The continuous habitat visibly makes passage possible. No road signs, lane lettering, arrows, people or text.",
+      "altText": "覆盖灌木的生态桥连接高速公路两侧森林，三只鹿正从车辆上方安全通过。"
+    },
+    {
+      "vocabularyId": "0b69a2a4-7e80-4f93-b7ac-69dfec5ce5ff",
+      "word": "add",
+      "meaningZh": "增加；添加；补充；加起来",
+      "exampleId": "0b69a2a4-7e80-4f93-b7ac-69dfec5ce5ff-visual-ex",
+      "styleFamily": "textured linocut compost garden",
+      "sentenceEn": "Noor added fallen leaves to the compost that would feed the garden.",
+      "sentenceZh": "努尔把落叶加入堆肥中，为花园提供养分。",
+      "scene": "An adult gardener tips one basket of dry fallen leaves into an open compost bay already containing vegetable scraps and dark soil. The airborne leaves visibly join the existing pile, while a thriving garden grows nearby. The gardener's readable face has complete features and a purposeful expression. No labels, numbers, writing or text.",
+      "altText": "园丁把一篮落叶倒入已有菜叶和泥土的堆肥箱，旁边花园生长茂盛。"
+    },
+    {
+      "vocabularyId": "65561dbd-ddae-4aec-9d86-9e9f2ecda39d",
+      "word": "office",
+      "meaningZh": "办公室；官职；办事处",
+      "exampleId": "65561dbd-ddae-4aec-9d86-9e9f2ecda39d-visual-ex",
+      "styleFamily": "isometric architectural collage shared office",
+      "sentenceEn": "The old warehouse became a bright office shared by local designers.",
+      "sentenceZh": "旧仓库变成了本地设计师共用的明亮办公室。",
+      "scene": "A spacious isometric cutaway reveals an old brick warehouse carefully converted into a bright shared office with worktables, task lamps, shelves of physical models, plants and a small meeting area. Four diverse adults collaborate naturally, with complete readable facial features and practical postures. Computer screens show only soft blank color fields. No company marks, interface details, labels, writing or text.",
+      "altText": "旧砖仓库被改造成明亮的共享办公室，四位设计师在工作台和模型间协作。"
+    },
+    {
+      "vocabularyId": "f9a31071-0114-4bfc-adb8-1d1800759599",
+      "word": "spend",
+      "meaningZh": "花费；度过；消耗",
+      "exampleId": "f9a31071-0114-4bfc-adb8-1d1800759599-visual-ex",
+      "styleFamily": "warm colored-pencil bicycle workshop afternoon",
+      "sentenceEn": "Ravi chose to spend the afternoon repairing bicycles for neighborhood children.",
+      "sentenceZh": "拉维选择用整个下午为社区里的孩子们修理自行车。",
+      "scene": "Warm late-afternoon sunlight stretches across an open neighborhood bicycle workshop. One older adult man repairs the final small bicycle while three already repaired bicycles stand neatly nearby and two children wait gratefully at a respectful distance. His complete face shows patient concentration; the children's complete faces show appreciation. Long changing shadows and the accumulated repaired bicycles imply time devoted to the work. No clocks, signs, brands or text.",
+      "altText": "午后阳光下，拉维修好最后一辆儿童自行车，旁边整齐放着三辆已经修好的车。"
+    },
+    {
+      "vocabularyId": "257e2a9c-78e7-4c2c-899f-29673e6ec90d",
+      "word": "door",
+      "meaningZh": "门",
+      "exampleId": "257e2a9c-78e7-4c2c-899f-29673e6ec90d-visual-ex",
+      "styleFamily": "cinematic cut-paper garden threshold",
+      "sentenceEn": "The old wooden door opened from the dark hall into a sunlit garden.",
+      "sentenceZh": "那扇旧木门从昏暗的走廊通向阳光明媚的花园。",
+      "scene": "One substantial old wooden door is half open within a dim stone hallway, creating a clear threshold into a vivid sunlit garden filled with green leaves and flowering vines. A strong shape of warm daylight falls through the doorway onto the dark floor. No people, plaques, house numbers, symbols or text.",
+      "altText": "昏暗石廊中的旧木门半开，门外是阳光充足、绿意盎然的花园。"
+    },
+    {
+      "vocabularyId": "ca4148c5-a7be-455c-8bdd-a6cafe2cd2f1",
+      "word": "health",
+      "meaningZh": "健康；卫生；保健",
+      "exampleId": "ca4148c5-a7be-455c-8bdd-a6cafe2cd2f1-visual-ex",
+      "styleFamily": "luminous watercolor restored wetland",
+      "sentenceEn": "Clean water restored the health of the wetland after years of pollution.",
+      "sentenceZh": "清洁水源使受污染多年的湿地恢复了健康。",
+      "scene": "A restored wetland glows with clear flowing water, upright reeds, flowering aquatic plants, frogs, dragonflies, fish and one healthy heron. At the far edge, a small weathered channel with old gray residue contrasts with the thriving central ecosystem, but no dead animals or distress appear. Biodiversity, clean water and vigorous growth communicate renewed health. No people, pipes with labels, diagrams or text.",
+      "altText": "清水流过恢复生机的湿地，芦苇、水生花卉、鱼、青蛙和鸟类共同繁盛。"
+    },
+    {
+      "vocabularyId": "b558aeb0-c756-43f4-af35-b291252e13a1",
+      "word": "person",
+      "meaningZh": "人；个人；人称",
+      "exampleId": "b558aeb0-c756-43f4-af35-b291252e13a1-visual-ex",
+      "styleFamily": "storybook ink individual kindness in rain",
+      "sentenceEn": "One person stopped in the rain to move a snail away from the busy path.",
+      "sentenceZh": "有一个人在雨中停下来，把蜗牛移出繁忙的小路。",
+      "scene": "Exactly one adult person kneels beneath a plain umbrella on a rainy park path and gently moves one snail toward wet leaves beside the pavement. Distant passersby appear only as tiny indistinct silhouettes, while the single foreground person's complete readable face shows quiet care. No signs, lettering, logos or text.",
+      "altText": "雨中，一位行人独自蹲下，把小路上的蜗牛轻轻移到湿润的落叶旁。"
+    },
+    {
+      "vocabularyId": "c9cc4f55-722f-4e84-91cf-3b2b73ad628a",
+      "word": "art",
+      "meaningZh": "艺术；美术；技术",
+      "exampleId": "c9cc4f55-722f-4e84-91cf-3b2b73ad628a-visual-ex",
+      "styleFamily": "terrazzo mosaic community art",
+      "sentenceEn": "The community turned broken tiles into art for the station wall.",
+      "sentenceZh": "社区把碎瓷砖变成了车站墙上的艺术作品。",
+      "scene": "Four diverse adults and one older child assemble cleaned fragments of broken ceramic tile into a large flowing mosaic of local birds and plants on a station wall. Open trays of irregular fragments connect the discarded material to the nearly finished artwork. Every readable face has complete natural features and a creative, focused expression. The mosaic contains imagery only, with no letters, logos, labels or text.",
+      "altText": "社区成员把回收的碎瓷砖拼成描绘鸟类与植物的大型车站墙面马赛克。"
+    },
+    {
+      "vocabularyId": "866f14ad-06a4-401d-b492-9b8667d4a2ed",
+      "word": "sure",
+      "meaningZh": "确定的；当然；确信",
+      "exampleId": "866f14ad-06a4-401d-b492-9b8667d4a2ed-visual-ex",
+      "styleFamily": "matte-clay rope bridge safety inspection",
+      "sentenceEn": "After checking every knot twice, Amina was sure the rescue bridge was secure.",
+      "sentenceZh": "把每个绳结检查两遍后，阿米娜确信救援桥已经牢固。",
+      "scene": "An adult rescue engineer finishes a careful hands-on inspection of a short rope bridge above a shallow training ravine. Every knot is intact, both anchor posts hold firm and a weighted supply bag rests safely at the center while she gives one final confident tug. Her complete readable face shows calm certainty rather than celebration. No check marks, gauges, uniforms with writing, labels or text.",
+      "altText": "救援工程师逐一检查绳桥的结点和锚桩，确认承重袋放上去后桥体依然牢固。"
+    },
+    {
+      "vocabularyId": "08cf545a-81eb-4f97-b11a-c09660ef94f0",
+      "word": "war",
+      "meaningZh": "战争；斗争；冲突",
+      "exampleId": "08cf545a-81eb-4f97-b11a-c09660ef94f0-visual-ex",
+      "styleFamily": "somber hopeful graphic-novel rebuilding",
+      "sentenceEn": "After the war, families from both sides rebuilt the bridge together.",
+      "sentenceZh": "战争结束后，双方家庭共同重建了桥梁。",
+      "scene": "A mature, nonviolent graphic-novel scene shows the scarred stone foundations of a bridge damaged by past conflict, now being rebuilt from both riverbanks by two diverse groups of families working toward one another. New timber spans nearly meet at the center, and children pass saplings for the restored banks. Readable faces have complete features and restrained hopeful expressions. No weapons, combat, flags, uniforms, slogans or text.",
+      "altText": "战争留下的断桥上，河岸两侧的家庭共同铺设新桥板，并为岸边补种树木。"
+    },
+    {
+      "vocabularyId": "b604e351-d330-43ab-96be-c36f546ce66b",
+      "word": "history",
+      "meaningZh": "历史；经历；历史学",
+      "exampleId": "b604e351-d330-43ab-96be-c36f546ce66b-visual-ex",
+      "styleFamily": "naturalist woodcut tree-ring chronology",
+      "sentenceEn": "The rings inside the fallen tree preserved the forest's history of drought and recovery.",
+      "sentenceZh": "倒下树木内部的年轮保存了森林经历干旱与恢复的历史。",
+      "scene": "A large naturally fallen tree trunk fills the foreground with a clean cross-section of many growth rings. Several narrow, tightly spaced rings align visually with a dry sparse period in the surrounding woodland, while later broad rings align with renewed green growth and a healthy stream. The tree fell naturally and new seedlings grow around it. No axes, people, dates, numbers, arrows, labels or text.",
+      "altText": "倒木的年轮由窄变宽，周围景观从干旱稀疏过渡到溪流与新生树林。"
+    },
+    {
+      "vocabularyId": "6319e466-76cb-4bb6-ba6f-3266d4fe0f95",
+      "word": "party",
+      "meaningZh": "聚会；政党；当事人；一方",
+      "exampleId": "6319e466-76cb-4bb6-ba6f-3266d4fe0f95-visual-ex",
+      "styleFamily": "vibrant screenprint neighborhood supper",
+      "sentenceEn": "The neighborhood party brought new and longtime residents to the same table.",
+      "sentenceZh": "社区聚会让新住户和老住户围坐在同一张桌旁。",
+      "scene": "A joyful but uncluttered outdoor neighborhood party centers on one long shared table beneath trees, where diverse new and longtime residents exchange homemade food and conversation. Adults, elders and children interact naturally; every readable face has complete eyes, nose, mouth and a warm individual expression. Use reusable dishes and simple string lights without shapes resembling letters. No banners, invitations, logos or text.",
+      "altText": "社区居民在树下的长桌旁分享食物，新老住户和不同年龄的人自然交流。"
+    },
+    {
+      "vocabularyId": "20d4b657-4f7e-4149-bae3-c554bc5c0103",
+      "word": "within",
+      "meaningZh": "在...之内；内部",
+      "exampleId": "20d4b657-4f7e-4149-bae3-c554bc5c0103-visual-ex",
+      "styleFamily": "botanical watercolor acorn cutaway",
+      "sentenceEn": "A complete young oak waited within the tiny acorn.",
+      "sentenceZh": "一棵完整的小橡树正孕育在小小的橡果之内。",
+      "scene": "A scientifically plausible enlarged watercolor cutaway of one acorn reveals the pale folded embryo and first root enclosed entirely within the intact outer shell and nourishing seed tissue. Beside it, one closed acorn at natural scale rests among oak leaves for context. No fantasy miniature tree, people, arrows, labels, diagrams or text.",
+      "altText": "放大的橡果剖面中，幼小胚芽和初生根完整包裹在外壳与种子组织内部。"
+    },
+    {
+      "vocabularyId": "5e0d78ca-55a5-4b3c-a848-87e0ade53f84",
+      "word": "grow",
+      "meaningZh": "生长；成长；种植；变得",
+      "exampleId": "5e0d78ca-55a5-4b3c-a848-87e0ade53f84-visual-ex",
+      "styleFamily": "embroidered sunflower growth progression",
+      "sentenceEn": "With sunlight and water, the small seed began to grow into a sunflower.",
+      "sentenceZh": "有了阳光和水，小种子开始长成向日葵。",
+      "scene": "One continuous embroidered garden bed presents five clearly separated stages of the same sunflower's growth from left to right: a seed in soil, a tiny root and shoot, a two-leaf seedling, a taller budding stem and one mature sunflower. Consistent soil and repeated leaf shapes connect the stages naturally. No arrows, numbers, labels, people or text.",
+      "altText": "同一片土壤中依次呈现向日葵从种子、萌芽、幼苗、花苞到成熟花朵的生长过程。"
+    },
+    {
+      "vocabularyId": "190966aa-1bcd-45d4-be69-ec9db1091762",
+      "word": "result",
+      "meaningZh": "结果；成果；导致",
+      "exampleId": "190966aa-1bcd-45d4-be69-ec9db1091762-visual-ex",
+      "styleFamily": "stained-glass orchard pollination result",
+      "sentenceEn": "The autumn apples were the result of bees pollinating the spring blossoms.",
+      "sentenceZh": "秋天的苹果是蜜蜂为春日花朵授粉的结果。",
+      "scene": "A single flowing stained-glass orchard composition connects spring on the left to autumn on the right using the same distinctive apple-tree branches. Bees visit abundant pale blossoms on the spring side, while those matching branch positions carry ripe red apples on the autumn side and one basket rests below. No people, arrows, seasonal words, labels or text.",
+      "altText": "同一棵苹果树从春日蜜蜂授粉的花朵过渡到秋日成熟果实，树下放着收获篮。"
+    }
+  ]
+}

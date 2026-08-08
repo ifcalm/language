@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-611-630-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "32ce6753-a580-4ff2-90e4-265568657738",
+      "word": "per",
+      "meaningZh": "每一；通过",
+      "exampleId": "32ce6753-a580-4ff2-90e4-265568657738-visual-ex",
+      "styleFamily": "cream-cobalt geometric risograph orchard baskets",
+      "sentenceEn": "Each volunteer carried one basket per trip across the narrow bridge.",
+      "sentenceZh": "每名志愿者每次过窄桥只携带一个篮子。",
+      "scene": "A narrow footbridge shows several volunteers crossing in spaced succession, each person carrying exactly one basket and no extras, while empty hands return in the opposite direction. Faces are complete where readable. No counting marks, signs, labels, writing or text.",
+      "altText": "志愿者依次过窄桥，每个人每趟只带一个篮子，返回者双手空着。"
+    },
+    {
+      "vocabularyId": "cbc3fdee-30c9-4ed6-b862-a775bac79c42",
+      "word": "subject",
+      "meaningZh": "主题；科目；主语；臣民；受...影响的",
+      "exampleId": "cbc3fdee-30c9-4ed6-b862-a775bac79c42-visual-ex",
+      "styleFamily": "plum-sage museum sketchbook watercolor",
+      "sentenceEn": "The ancient whale skeleton became the subject of Mira's drawing.",
+      "sentenceZh": "这具古老鲸鱼骨架成为米拉绘画的主题。",
+      "scene": "In a natural history hall, Mira's gaze, pencil and open sketchbook all align toward one suspended whale skeleton that dominates the composition as her clear subject. Her complete focused face is visible. The sketch contains only loose shapes, no words, labels or text.",
+      "altText": "博物馆里，米拉专注观察悬挂的鲸鱼骨架，并把它作为画面主题进行素描。"
+    },
+    {
+      "vocabularyId": "5b9d7b23-4b22-4ce8-b169-d4521dd987e0",
+      "word": "officer",
+      "meaningZh": "官员；军官",
+      "exampleId": "5b9d7b23-4b22-4ce8-b169-d4521dd987e0-visual-ex",
+      "styleFamily": "navy-saffron clean-line harbor rescue animation",
+      "sentenceEn": "The coast guard officer guided the damaged boat into calm water.",
+      "sentenceZh": "海岸警卫队官员引导受损船只驶入平静水域。",
+      "scene": "From a small unbranded patrol boat, a coast guard officer uses clear hand gestures to guide a damaged fishing boat away from rough rocks toward a sheltered bay. The officer's complete face is calm and alert. No insignia, flags, labels, writing or text.",
+      "altText": "海岸警卫队官员用手势引导受损渔船离开礁石，驶向平静避风湾。"
+    },
+    {
+      "vocabularyId": "beff000f-6f22-4bcc-8a46-3705ecd92b44",
+      "word": "private",
+      "meaningZh": "私人的；秘密的；私立的；隐蔽的",
+      "exampleId": "beff000f-6f22-4bcc-8a46-3705ecd92b44-visual-ex",
+      "styleFamily": "dusty-rose-indigo intimate cut-paper reading nook",
+      "sentenceEn": "A folding screen created a private place for her to read.",
+      "sentenceZh": "折叠屏风为她创造了一处私密的阅读空间。",
+      "scene": "Inside a shared busy room, a curved folding screen encloses one quiet reading chair and lamp, visually shielding a reader from the surrounding activity while remaining cozy. Her complete relaxed face is visible. No books with titles, signs, writing or text.",
+      "altText": "热闹共享空间中，弧形折叠屏风围出一处不受打扰的安静阅读角。"
+    },
+    {
+      "vocabularyId": "1691e9ee-d5c0-416f-a4d0-b211801f3e50",
+      "word": "rest",
+      "meaningZh": "休息；其余；静止",
+      "exampleId": "1691e9ee-d5c0-416f-a4d0-b211801f3e50-visual-ex",
+      "styleFamily": "sage-lavender soft wool-felt alpine ibex",
+      "sentenceEn": "The ibex found a flat ledge where it could rest after climbing.",
+      "sentenceZh": "岩羊找到一块平坦岩台，可以在攀登后休息。",
+      "scene": "High on a steep mountain, one ibex lies safely on a broad flat sunlit ledge with relaxed legs and half-closed eyes, while the difficult climbing route drops away behind. No people, arrows, signs, writing or text.",
+      "altText": "岩羊攀上高山后，在一块宽阔平坦的阳光岩台上放松卧下休息。"
+    },
+    {
+      "vocabularyId": "ea1bec69-1e74-4556-9b25-d764401196ba",
+      "word": "behavior",
+      "meaningZh": "行为；举止",
+      "exampleId": "ea1bec69-1e74-4556-9b25-d764401196ba-visual-ex",
+      "styleFamily": "aqua-coral naturalist comic octopus observation",
+      "sentenceEn": "The octopus's curious behavior included opening shells and moving stones.",
+      "sentenceZh": "这只章鱼的好奇行为包括打开贝壳和搬动石头。",
+      "scene": "One curious octopus in a clear tide pool simultaneously explores its environment: one arm opens a shell, another moves a smooth stone and its eyes inspect a hidden crab. The observable actions define behavior. No people, labels, diagrams, writing or text.",
+      "altText": "潮池里的章鱼一边打开贝壳，一边搬动石头并观察藏着的小蟹，表现出好奇行为。"
+    },
+    {
+      "vocabularyId": "59d43b17-2713-40fe-96da-a5fd6e82be8a",
+      "word": "deal",
+      "meaningZh": "交易；处理；协议",
+      "exampleId": "59d43b17-2713-40fe-96da-a5fd6e82be8a-visual-ex",
+      "styleFamily": "terracotta-blue editorial market linocut",
+      "sentenceEn": "The farmer and baker made a deal to exchange grain for bread.",
+      "sentenceZh": "农夫和面包师达成协议，用谷物交换面包。",
+      "scene": "At a village market table, a farmer offers a sack of grain while a baker offers baskets of bread, and both complete smiling faces meet over a handshake with goods balanced on each side. No money symbols, contracts, signs, labels, writing or text.",
+      "altText": "村庄市场里，农夫拿出谷物，面包师拿出面包，双方握手达成交换协议。"
+    },
+    {
+      "vocabularyId": "53b1d45a-8dbd-4538-9e01-2e2eb1e58eda",
+      "word": "performance",
+      "meaningZh": "性能；表演；表现",
+      "exampleId": "53b1d45a-8dbd-4538-9e01-2e2eb1e58eda-visual-ex",
+      "styleFamily": "magenta-gold theatrical paper collage acrobatics",
+      "sentenceEn": "The final performance combined drums, silk ribbons, and aerial dance.",
+      "sentenceZh": "最终表演融合了鼓乐、丝带和空中舞蹈。",
+      "scene": "A vivid theater stage captures one coherent live performance: aerial dancers arc through silk ribbons above drummers while floor dancers mirror the rhythm below. All readable faces are complete and expressive. No curtains with text, posters, logos, writing or captions.",
+      "altText": "舞台上，空中舞者穿梭丝带，鼓手和地面舞者同步配合，形成完整表演。"
+    },
+    {
+      "vocabularyId": "9bf44b47-6abb-42e3-b025-7051af7026a9",
+      "word": "fight",
+      "meaningZh": "打架；战斗；斗争；对抗",
+      "exampleId": "9bf44b47-6abb-42e3-b025-7051af7026a9-visual-ex",
+      "styleFamily": "emerald-orange heroic graphic novel wildfire defense",
+      "sentenceEn": "Neighbors worked together to fight the wildfire approaching their farms.",
+      "sentenceZh": "邻居们齐心协力对抗逼近农场的野火。",
+      "scene": "A trained rural fire crew and farmers cooperate at a safe firebreak, directing water and clearing dry brush as distant wildfire approaches, emphasizing collective struggle rather than violence. Faces are complete and determined. No insignia, signs, labels, writing or text.",
+      "altText": "邻里和消防人员在隔离带前喷水、清理干草，共同对抗远处逼近农场的野火。"
+    },
+    {
+      "vocabularyId": "13b73510-0d54-46a5-bf45-d08927077c82",
+      "word": "throw",
+      "meaningZh": "扔；投掷；抛",
+      "exampleId": "13b73510-0d54-46a5-bf45-d08927077c82-visual-ex",
+      "styleFamily": "cobalt-red dynamic cel animation rescue line",
+      "sentenceEn": "The sailor leaned forward to throw a rope toward the stranded swimmer.",
+      "sentenceZh": "水手身体前倾，把绳索抛向受困的游泳者。",
+      "scene": "On a rocky shore, a sailor is captured at the peak of a strong throwing motion as a coiled rescue rope arcs visibly through the air toward a swimmer holding a buoy. Both complete faces show focus. No boat names, symbols, signs, writing or text.",
+      "altText": "岩岸水手用力前倾抛出救援绳，绳圈在空中形成清晰弧线飞向受困者。"
+    },
+    {
+      "vocabularyId": "494d6c9f-3381-4944-afd7-d004ed0ffd45",
+      "word": "top",
+      "meaningZh": "顶部；顶端；最好的",
+      "exampleId": "494d6c9f-3381-4944-afd7-d004ed0ffd45-visual-ex",
+      "styleFamily": "indigo-sunrise woodblock redwood canopy",
+      "sentenceEn": "A hawk built its nest near the top of the tallest redwood.",
+      "sentenceZh": "一只鹰把巢筑在最高红杉接近顶部的位置。",
+      "scene": "A dramatic vertical view of one towering redwood reaches the upper frame, where a hawk nest sits near its highest crown far above the surrounding shorter trees. No people, height marks, arrows, labels, writing or text.",
+      "altText": "最高的一棵红杉远超周围树木，鹰巢位于接近树冠顶端的高处。"
+    },
+    {
+      "vocabularyId": "41d899e9-4bd8-4631-9316-b24976e35948",
+      "word": "quickly",
+      "meaningZh": "快速地",
+      "exampleId": "41d899e9-4bd8-4631-9316-b24976e35948-visual-ex",
+      "styleFamily": "cyan-yellow speed-line risograph hummingbird",
+      "sentenceEn": "The hummingbird moved quickly between the opening flowers.",
+      "sentenceZh": "蜂鸟在盛开的花朵之间快速移动。",
+      "scene": "A hummingbird darts rapidly through a garden between several blossoms, shown once in sharp focus at the newest flower while soft wing arcs and displaced droplets trace its fast route. No multiple duplicate birds, people, arrows, writing or text.",
+      "altText": "蜂鸟在花朵之间迅速穿梭，翅膀和飞散水滴留下清晰快速运动感。"
+    },
+    {
+      "vocabularyId": "a9ad92d9-f579-4312-aacd-569f1d23895c",
+      "word": "past",
+      "meaningZh": "过去；昔时",
+      "exampleId": "a9ad92d9-f579-4312-aacd-569f1d23895c-visual-ex",
+      "styleFamily": "sepia-teal layered memory watercolor train station",
+      "sentenceEn": "The restored station still carried traces of its busy past.",
+      "sentenceZh": "修复后的车站仍保留着昔日繁忙的痕迹。",
+      "scene": "A restored quiet railway station overlays subtle translucent echoes of its past: steam, porters and travelers occupy faded layers behind present-day preserved ironwork and an old clock shape without numbers. No readable signs, tickets, labels, writing or text.",
+      "altText": "修复后的安静车站中，半透明的蒸汽机车、搬运工和旅客仿佛重现昔日繁忙景象。"
+    },
+    {
+      "vocabularyId": "ee646b56-190b-46be-affb-9752639c5795",
+      "word": "goal",
+      "meaningZh": "目标；终点；得分；球门；守门员",
+      "exampleId": "ee646b56-190b-46be-affb-9752639c5795-visual-ex",
+      "styleFamily": "green-coral hand-painted football animation",
+      "sentenceEn": "Her final pass helped the team score the winning goal.",
+      "sentenceZh": "她最后一次传球帮助球队攻入制胜球。",
+      "scene": "A football flies from a precise pass toward a teammate who redirects it just inside a clear goal frame as the goalkeeper dives, capturing the decisive scoring moment. All readable faces are complete. No jerseys with text, scoreboard, logos, numbers or writing.",
+      "altText": "精准传球来到队友脚下，足球越过扑救的门将进入球门，完成制胜进球。"
+    },
+    {
+      "vocabularyId": "b52527da-241d-445f-8db5-5b3ae0ad9ac7",
+      "word": "bed",
+      "meaningZh": "床；河床；地层",
+      "exampleId": "b52527da-241d-445f-8db5-5b3ae0ad9ac7-visual-ex",
+      "styleFamily": "sand-turquoise geological clay diorama riverbed",
+      "sentenceEn": "Smooth stones covered the shallow bed of the clear stream.",
+      "sentenceZh": "光滑石子覆盖着清澈浅溪的河床。",
+      "scene": "A clear shallow stream is viewed partly above and below water, revealing its bed fully covered by smooth colored stones beneath ripples, small fish and drifting leaves. No furniture, people, diagrams, labels, writing or text.",
+      "altText": "清澈浅溪的水面下，光滑彩色石子铺满河床，小鱼在水流中穿行。"
+    },
+    {
+      "vocabularyId": "a3631b1f-2574-4fa1-9f3b-67fba0c52638",
+      "word": "order",
+      "meaningZh": "顺序；命令；订单；秩序",
+      "exampleId": "a3631b1f-2574-4fa1-9f3b-67fba0c52638-visual-ex",
+      "styleFamily": "mint-rust stop-motion seed sorting",
+      "sentenceEn": "The gardener arranged the seeds in order from smallest to largest.",
+      "sentenceZh": "园丁把种子按从小到大的顺序排列。",
+      "scene": "On a potting bench, a gardener arranges a single continuous row of visibly different seeds progressing smoothly from tiny at left to very large at right. The complete face studies the sequence. No numbers, arrows, packets with labels, writing or text.",
+      "altText": "园丁把不同种子排成一列，大小从左侧最小逐渐增加到右侧最大。"
+    },
+    {
+      "vocabularyId": "807f743b-5d88-4379-9716-bc3ecda2c0cf",
+      "word": "author",
+      "meaningZh": "作者；作家；创作",
+      "exampleId": "807f743b-5d88-4379-9716-bc3ecda2c0cf-visual-ex",
+      "styleFamily": "burgundy-cream engraved attic writing room",
+      "sentenceEn": "The author shaped her travel memories into a new story.",
+      "sentenceZh": "这位作者把旅行回忆整理成了一个新故事。",
+      "scene": "An author sits at an attic desk surrounded by visual travel keepsakes such as shells, pressed leaves and sketches, arranging them beside blank manuscript pages as imagined landscapes emerge softly around her. Her complete face is thoughtful. No readable handwriting, book titles, labels or text.",
+      "altText": "阁楼书桌前，作者把贝壳、树叶和旅行素描转化为正在构思的新故事。"
+    },
+    {
+      "vocabularyId": "14bf8e01-c53a-4f05-9507-e13394b3e2e4",
+      "word": "fill",
+      "meaningZh": "填充；装满；满足",
+      "exampleId": "14bf8e01-c53a-4f05-9507-e13394b3e2e4-visual-ex",
+      "styleFamily": "aqua-amber luminous glass mosaic rain cistern",
+      "sentenceEn": "The evening rain began to fill the empty stone cistern.",
+      "sentenceZh": "傍晚的雨水开始注满空石蓄水池。",
+      "scene": "A cutaway stone cistern receives several rain channels, with a visibly rising clear water level filling the previously empty chamber from bottom upward. Frogs wait near the overflow garden. No level marks, numbers, arrows, labels, writing or text.",
+      "altText": "多条雨水沟汇入石砌蓄水池，清水从底部不断上升，逐渐填满空池。"
+    },
+    {
+      "vocabularyId": "3346c74a-41d3-4c94-908a-cd887991c5b2",
+      "word": "represent",
+      "meaningZh": "代表；表示；象征；体现",
+      "exampleId": "3346c74a-41d3-4c94-908a-cd887991c5b2-visual-ex",
+      "styleFamily": "jewel-tone folk-art woven community tapestry",
+      "sentenceEn": "Each woven symbol will represent one habitat in the valley.",
+      "sentenceZh": "每个编织图案都将代表山谷中的一种生境。",
+      "scene": "A community weaver creates a tapestry where distinct nonverbal motifs clearly resemble the valley's river, forest, meadow and mountain, with the actual habitats visible through an open window behind for correspondence. Complete face, no letters, legends, labels or text.",
+      "altText": "织工把河流、森林、草地和山峰化成不同图案，分别代表窗外山谷的各种生境。"
+    },
+    {
+      "vocabularyId": "0c89dc77-aef0-40aa-9cb6-02d5016372bc",
+      "word": "focus",
+      "meaningZh": "焦点；集中；聚焦；专注",
+      "exampleId": "0c89dc77-aef0-40aa-9cb6-02d5016372bc-visual-ex",
+      "styleFamily": "black-yellow cinematic macro watch repair",
+      "sentenceEn": "The watchmaker kept her focus on one tiny spring.",
+      "sentenceZh": "钟表匠把注意力集中在一根微小弹簧上。",
+      "scene": "A watchmaker peers through a magnifying lens at one tiny spring held in fine tweezers; the spring, her eyes and hands are sharply detailed while surrounding tools fall softly out of focus. Her complete face shows concentration. No watch numbers, labels, writing or text.",
+      "altText": "钟表匠透过放大镜专注观察镊子中的微小弹簧，周围工具都虚化退后。"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-448-467-2026-07-20",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5f9d0e3c-a0d5-4fb5-ae5c-7da612669deb",
+      "word": "town",
+      "meaningZh": "城镇；镇",
+      "exampleId": "5f9d0e3c-a0d5-4fb5-ae5c-7da612669deb-visual-ex",
+      "styleFamily": "architectural gouache oak-centered town",
+      "sentenceEn": "The small town rebuilt its central square around an old oak tree.",
+      "sentenceZh": "这座小镇围绕一棵老橡树重建了中心广场。",
+      "scene": "A compact small town is visible as one connected place: homes, bakery, clinic, library and workshop streets all meet at a renewed central square surrounding one large old oak tree. Residents use the square naturally while hills and fields define the town edge. Complete faces where readable, no city skyscrapers, signs, shop names, writing or text.",
+      "altText": "一座紧凑小镇的住宅、商店和公共建筑围绕老橡树广场相连，外围是田野与山丘。"
+    },
+    {
+      "vocabularyId": "2ecc413d-d9c9-4a37-bf32-ee22f03f48cf",
+      "word": "road",
+      "meaningZh": "道路；公路；路",
+      "exampleId": "2ecc413d-d9c9-4a37-bf32-ee22f03f48cf-visual-ex",
+      "styleFamily": "layered topographic paper road",
+      "sentenceEn": "The new road connected the remote farms to the market town.",
+      "sentenceZh": "新公路把偏远农场与集镇连接了起来。",
+      "scene": "One continuous paved road begins among several remote hillside farms, winds safely through a mountain pass and visibly reaches a compact market town in the distance. A small produce truck travels toward the town, making the road's connecting function clear. No road signs, letters, arrows, maps, writing or text.",
+      "altText": "一条连续公路从偏远山地农场穿过山口，通向远处集镇，运菜小车正沿路前行。"
+    },
+    {
+      "vocabularyId": "4b4794f6-2f0a-4c84-94b1-cb98de834b30",
+      "word": "drive",
+      "meaningZh": "驾驶；驱动；开车；推动",
+      "exampleId": "4b4794f6-2f0a-4c84-94b1-cb98de834b30-visual-ex",
+      "styleFamily": "cel-animation electric bus lesson",
+      "sentenceEn": "Mira learned to drive the electric bus along a quiet training route.",
+      "sentenceZh": "米拉沿着安静的训练路线学习驾驶电动公交车。",
+      "scene": "Inside a clearly stylized electric bus, one adult learner sits in the driver's seat with both hands correctly on the steering wheel while an instructor watches calmly from the adjacent seat. Through the wide windshield, the bus follows an empty curving practice road with cones placed safely at the sides. Complete faces, no dashboards with readable interfaces, logos, signs, writing or text.",
+      "altText": "米拉双手握住电动公交车方向盘，在教练陪同下沿空旷训练道路驾驶。"
+    },
+    {
+      "vocabularyId": "f7b17d9d-4953-46f2-92c5-8e37f13dc60d",
+      "word": "arm",
+      "meaningZh": "手臂；胳膊；武器；武装",
+      "exampleId": "f7b17d9d-4953-46f2-92c5-8e37f13dc60d-visual-ex",
+      "styleFamily": "screen-printed cooperative climbing poster",
+      "sentenceEn": "The climber stretched out one arm to help her partner onto the ledge.",
+      "sentenceZh": "攀岩者伸出一只手臂，帮助同伴登上岩台。",
+      "scene": "On a safe roped climb, one adult climber stands securely on a broad ledge and visibly extends one full arm downward, hand clasped with her partner's hand as the partner steps up. The extended shoulder, elbow, forearm and hand form the unmistakable focal line. Complete determined faces, proper harnesses, no danger spectacle, weapons, signs, writing or text.",
+      "altText": "一名攀岩者站稳在岩台上，伸出整条手臂握住同伴的手，帮助对方上来。"
+    },
+    {
+      "vocabularyId": "c1171a5a-3203-4f70-94f0-b2592abde347",
+      "word": "true",
+      "meaningZh": "真实的；真正的；正确的；忠实的",
+      "exampleId": "c1171a5a-3203-4f70-94f0-b2592abde347-visual-ex",
+      "styleFamily": "nocturnal cyanotype rare-flower proof",
+      "sentenceEn": "The gardener's prediction came true when the rare flower opened at midnight.",
+      "sentenceZh": "稀有花朵在午夜开放时，园丁的预言成真了。",
+      "scene": "In a moonlit greenhouse, one rare closed-looking cactus has just produced one spectacular open night flower. An older gardener compares the living bloom with a small hand-painted botanical sketch showing the same flower shape, then smiles in quiet confirmation. Complete face, no clocks with numbers, notes, labels, writing or text.",
+      "altText": "午夜温室里，罕见花朵如园丁手中旧画所示盛开，园丁欣慰地确认预言成真。"
+    },
+    {
+      "vocabularyId": "3f541aa0-8711-4b21-860d-3aa8554b1152",
+      "word": "federal",
+      "meaningZh": "联邦的；联邦政府的",
+      "exampleId": "3f541aa0-8711-4b21-860d-3aa8554b1152-visual-ex",
+      "styleFamily": "cut-paper multi-region wildlife corridor",
+      "sentenceEn": "Federal funding helped three states connect their wildlife corridors.",
+      "sentenceZh": "联邦资金帮助三个州连接了各自的野生动物廊道。",
+      "scene": "A broad stylized landscape contains three visibly different neighboring regions, each with its own terrain and local conservation crew. One shared central public program supplies matching bridge modules that connect all three wildlife corridors into an uninterrupted route used by deer and smaller animals. A modest national civic building sits centrally in the far background. Complete faces where readable, no flags, state outlines, emblems, labels, money symbols, writing or text.",
+      "altText": "三个地貌不同的相邻地区在统一公共项目支持下接通生态桥，动物得以跨区域连续迁徙。"
+    },
+    {
+      "vocabularyId": "9e8ab871-3c09-4979-aeaa-9fe5c34b44d1",
+      "word": "break",
+      "meaningZh": "打破；休息；中断；破坏；突破",
+      "exampleId": "9e8ab871-3c09-4979-aeaa-9fe5c34b44d1-visual-ex",
+      "styleFamily": "plein-air pastel trail-crew rest",
+      "sentenceEn": "The trail crew took a short break beside the waterfall before continuing uphill.",
+      "sentenceZh": "步道工人在继续上山前，在瀑布旁短暂休息。",
+      "scene": "Four adult trail workers sit comfortably beside a waterfall drinking water and sharing fruit, with their shovels, gloves and wheelbarrow neatly set down. A partly repaired uphill trail continues beyond them, showing work paused rather than finished. Complete relaxed faces, no clocks, signs, labels, writing or text.",
+      "altText": "四名步道工人在瀑布旁放下工具、喝水吃水果，未完工的小路仍向山上延伸。"
+    },
+    {
+      "vocabularyId": "3371266c-51ca-4ba7-bdb4-f533860c50e1",
+      "word": "difference",
+      "meaningZh": "差异；不同；差别",
+      "exampleId": "3371266c-51ca-4ba7-bdb4-f533860c50e1-visual-ex",
+      "styleFamily": "wooden tabletop bridge comparison",
+      "sentenceEn": "A single support beam made the difference between the two model bridges.",
+      "sentenceZh": "一根支撑梁造成了两座模型桥之间的差别。",
+      "scene": "On one clean workshop table, exactly two otherwise identical small wooden model bridges carry identical stone weights. The bridge with one clearly visible cross-support remains straight, while the bridge without it bends noticeably. A young builder observes the contrast with a complete curious face. No split panel, captions, numbers, arrows, writing or text.",
+      "altText": "两座相同木桥承受同样石块，有横向支撑梁的桥保持平直，另一座明显下弯。"
+    },
+    {
+      "vocabularyId": "3acc3216-c71f-4fb0-9611-70b57250f403",
+      "word": "thank",
+      "meaningZh": "感谢；谢谢",
+      "exampleId": "3acc3216-c71f-4fb0-9611-70b57250f403-visual-ex",
+      "styleFamily": "warm risograph mountain-guide gratitude",
+      "sentenceEn": "The hikers returned to thank the guide who had led them through the storm.",
+      "sentenceZh": "徒步者回来感谢曾带领他们穿过暴风雨的向导。",
+      "scene": "At a mountain lodge after clear weather returns, three adult hikers warmly thank their guide by offering a handmade basket of food and clasping hands. Damp packs and a rain cape drying nearby recall the difficult journey, while complete faces show sincere gratitude rather than celebration. No cards, gift labels, signs, writing or text.",
+      "altText": "天气转晴后，三名徒步者回到山屋，握手并送上亲手准备的食物感谢向导。"
+    },
+    {
+      "vocabularyId": "b6557a54-edd5-4467-a82c-6c11f9a0f6b0",
+      "word": "receive",
+      "meaningZh": "收到；接收；接待",
+      "exampleId": "b6557a54-edd5-4467-a82c-6c11f9a0f6b0-visual-ex",
+      "styleFamily": "isometric island-clinic drone delivery",
+      "sentenceEn": "The island clinic was ready to receive fresh medicine from a delivery drone.",
+      "sentenceZh": "岛上的诊所准备接收配送无人机送来的新药。",
+      "scene": "Outside a small island clinic, one adult nurse stands in a marked landing area and receives one sealed medical parcel directly into both hands as a delivery drone lowers it on a short cable. The transfer from drone to recipient is unobstructed. Complete face, no package labels, medical text, logos, signs, writing or text.",
+      "altText": "岛上小诊所外，护士用双手接住无人机用短绳缓缓放下的密封药品箱。"
+    },
+    {
+      "vocabularyId": "0f740075-bc25-49af-ab4a-e4d79b4427ad",
+      "word": "value",
+      "meaningZh": "价值；价值观；重视",
+      "exampleId": "0f740075-bc25-49af-ab4a-e4d79b4427ad-visual-ex",
+      "styleFamily": "illuminated seed-bank future harvest",
+      "sentenceEn": "The tiny seed bank has great value because it protects future harvests.",
+      "sentenceZh": "这座小型种子库很有价值，因为它保护着未来的收成。",
+      "scene": "A small carefully protected seed-bank cabinet filled with varied plain seed jars stands in the foreground. From the cabinet area, the composition opens into flourishing future fields of grains, beans, fruit trees and vegetables, visually linking the modest collection to abundant harvests. One caretaker tends the collection with a complete attentive face. No labels, price symbols, writing or text.",
+      "altText": "一座小型种子库保存着多样种子，画面向外延伸为未来丰盛的谷物、豆类、果树和蔬菜田。"
+    },
+    {
+      "vocabularyId": "c3105b8c-562b-48e0-8784-423bc3facdaa",
+      "word": "international",
+      "meaningZh": "国际的；国际性的",
+      "exampleId": "c3105b8c-562b-48e0-8784-423bc3facdaa-visual-ex",
+      "styleFamily": "watercolor international ocean-research crew",
+      "sentenceEn": "An international team worked together to repair the deep-ocean sensor.",
+      "sentenceZh": "一支国际团队共同修复了深海传感器。",
+      "scene": "On one research vessel, a diverse adult crew from several parts of the world cooperates around a large open ocean sensor: one engineer aligns a component, another checks a cable and two marine researchers prepare it for deployment. Varied practical clothing and equipment show different backgrounds without stereotypes. Complete faces, no national flags, country labels, screens, logos, writing or text.",
+      "altText": "来自不同地区的研究人员在同一艘科考船上协作检查、修理并准备投放深海传感器。"
+    },
+    {
+      "vocabularyId": "8c432ac2-2ba8-4263-838a-076e301dca1f",
+      "word": "building",
+      "meaningZh": "建筑物；楼房",
+      "exampleId": "8c432ac2-2ba8-4263-838a-076e301dca1f-visual-ex",
+      "styleFamily": "architectural axonometric rain-harvesting building",
+      "sentenceEn": "The new building stores rainwater on its green roof for the community garden.",
+      "sentenceZh": "这座新建筑把绿化屋顶收集的雨水储存起来，用于社区花园。",
+      "scene": "One prominent multi-story community building is shown in a clear three-quarter axonometric view during light rain. Its planted green roof channels visible rainwater through gutters into tanks, then irrigation pipes lead to a thriving garden beside the building. Tiny residents provide scale with complete faces where readable. No labels, signs, diagrams, writing or text.",
+      "altText": "一座多层公共建筑通过绿化屋顶、排水槽和储水罐收集雨水，浇灌旁边的社区花园。"
+    },
+    {
+      "vocabularyId": "d18eaffc-af28-411a-83e5-ad855eff4dd9",
+      "word": "action",
+      "meaningZh": "行动；动作；行为",
+      "exampleId": "d18eaffc-af28-411a-83e5-ad855eff4dd9-visual-ex",
+      "styleFamily": "kinetic comic river-cleanup action",
+      "sentenceEn": "The students turned concern into action by clearing plastic from the river.",
+      "sentenceZh": "学生们清理河里的塑料，把担忧转化成了行动。",
+      "scene": "A coordinated group of older students actively removes plastic from a shallow river: two use long grabbers from the bank, one sorts recovered material into baskets and another secures a floating collection boom. Their complete focused faces and moving poses emphasize practical action, while a cleaned section flows behind them. No protest signs, labels, writing or text.",
+      "altText": "学生们用夹子、收集篮和浮动拦截带清除河中塑料，干净水面在他们身后重新显现。"
+    },
+    {
+      "vocabularyId": "d080b730-53ba-4a02-86f4-4d761b8ac8e2",
+      "word": "full",
+      "meaningZh": "满的；完整的；全部的",
+      "exampleId": "d080b730-53ba-4a02-86f4-4d761b8ac8e2-visual-ex",
+      "styleFamily": "translucent resin overflowing rain barrel",
+      "sentenceEn": "The rain barrel was full after the overnight storm.",
+      "sentenceZh": "经过一夜暴风雨，雨水桶已经满了。",
+      "scene": "One translucent rain barrel beneath a cottage gutter is visibly filled all the way to its top edge, with a small clean overflow running into a planted drainage bed. Fresh raindrops, wet leaves and clearing dawn clouds show the storm has passed. No people, measuring marks, numbers, labels, writing or text.",
+      "altText": "清晨屋檐下的半透明雨水桶已装到桶口，少量溢水流进种满植物的排水带。"
+    },
+    {
+      "vocabularyId": "e10e366d-cda4-42ae-a30a-3ef4e116df6c",
+      "word": "model",
+      "meaningZh": "模型；模范；模特",
+      "exampleId": "e10e366d-cda4-42ae-a30a-3ef4e116df6c-visual-ex",
+      "styleFamily": "stop-motion floodgate engineering model",
+      "sentenceEn": "The students used a model to test how the floodgate would work.",
+      "sentenceZh": "学生们用模型测试防洪闸门如何运作。",
+      "scene": "In a school workshop, three students test a clearly miniature river-and-town model on a tabletop water channel. One turns a hand crank so a small floodgate rises, another pours a controlled stream of water and the third observes dry tiny houses behind the gate. Complete faces, obvious scale difference, no diagrams, labels, gauges, writing or text.",
+      "altText": "三名学生在桌面缩小河道模型中升起小闸门并放水，观察后方微型房屋是否保持干燥。"
+    },
+    {
+      "vocabularyId": "bced2d20-1209-4aaf-a39c-ce94c0fdd6d5",
+      "word": "join",
+      "meaningZh": "加入；连接；参加",
+      "exampleId": "bced2d20-1209-4aaf-a39c-ce94c0fdd6d5-visual-ex",
+      "styleFamily": "woven-textile community cleanup welcome",
+      "sentenceEn": "Three new volunteers came to join the river cleanup crew.",
+      "sentenceZh": "三名新志愿者前来加入河流清理队。",
+      "scene": "At a riverside cleanup, exactly three new adult volunteers approach together carrying reusable gloves and empty baskets. An established mixed-age crew opens its circle, offers them tools and makes space for them to work alongside the group. Complete welcoming faces, no uniforms, badges, signs, logos, writing or text.",
+      "altText": "三名带着手套和空篮的新志愿者走向河边清理队，队员递出工具并欢迎他们加入。"
+    },
+    {
+      "vocabularyId": "d6476c36-8816-43ff-b449-4f8036cf54a2",
+      "word": "season",
+      "meaningZh": "季节；赛季；时节",
+      "exampleId": "d6476c36-8816-43ff-b449-4f8036cf54a2-visual-ex",
+      "styleFamily": "silkscreen autumn migration wetland",
+      "sentenceEn": "The first migrating geese marked the start of the autumn season.",
+      "sentenceZh": "第一批迁徙的大雁标志着秋季的开始。",
+      "scene": "A V-shaped flock of migrating geese arrives over one broad wetland where reeds have turned gold, maples are beginning to redden and morning mist lies over the water. A few remaining green leaves show the transition has just begun. No people, calendars, four-season panels, symbols, labels, writing or text.",
+      "altText": "第一队大雁排成队形飞过湿地，芦苇变金、枫叶初红，显示秋季刚刚开始。"
+    },
+    {
+      "vocabularyId": "35ce1cba-fc6c-46ff-9038-c00066a5404c",
+      "word": "society",
+      "meaningZh": "社会；协会；社交界",
+      "exampleId": "35ce1cba-fc6c-46ff-9038-c00066a5404c-visual-ex",
+      "styleFamily": "panoramic civic mural inclusive society",
+      "sentenceEn": "The new public square brought every part of society together.",
+      "sentenceZh": "新的公共广场把社会各个群体聚到了一起。",
+      "scene": "One accessible public square functions as a shared civic place: children play, older adults talk, a wheelchair user tends a raised garden, workers eat lunch, artists perform and neighbors exchange repaired household goods. The groups overlap naturally rather than appearing in separate sections. Complete varied faces, no banners, stereotypes, signs, shop names, writing or text.",
+      "altText": "无障碍公共广场里，不同年龄、职业和身体状况的人共同休息、劳动、表演、游戏与互助。"
+    },
+    {
+      "vocabularyId": "7b24a3a6-303b-41b4-8191-84c9d69ce5e2",
+      "word": "tax",
+      "meaningZh": "税；税收；负担；征税",
+      "exampleId": "7b24a3a6-303b-41b4-8191-84c9d69ce5e2-visual-ex",
+      "styleFamily": "clay civic bridge tax contribution",
+      "sentenceEn": "A small local tax helped repair the bridge everyone used.",
+      "sentenceZh": "一笔小额地方税帮助修好了大家都使用的桥。",
+      "scene": "In one clay-diorama town, several residents each contribute one small plain coin to a transparent shared civic box while, directly behind it, workers use matching community funds to repair the only bridge used by walkers, bicycles and a small bus. The shared contribution and public result appear together. Complete faces, no currency marks, receipts, price tags, labels, signs, writing or text.",
+      "altText": "镇民各自投入一枚小硬币作为公共资金，身后工人正修复所有人通行的唯一桥梁。"
+    }
+  ]
+}

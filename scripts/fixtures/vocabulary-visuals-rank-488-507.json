@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-488-507-2026-07-23",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Maintain strong batch diversity by alternating indoor and outdoor settings, day and night, people and nonhuman subjects, close and panoramic framing, natural and technological environments, and warm and cool palettes. Do not repeat recent community-square, river-cleanup, generic garden, orchestra, space-station, desert-observatory or warm storybook compositions. Keep one coherent style inside each image and avoid adjacent images with similar dominant colors. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "e560e5a0-6044-4502-b180-9c3856224663",
+      "word": "couple",
+      "meaningZh": "对；夫妇；数个",
+      "exampleId": "e560e5a0-6044-4502-b180-9c3856224663-visual-ex",
+      "styleFamily": "russet-teal hand-tinted beaver lithograph",
+      "sentenceEn": "A couple of beavers repaired the stream dam before sunset.",
+      "sentenceZh": "两只河狸在日落前修好了溪流中的水坝。",
+      "scene": "Exactly two beavers work together at one stream dam before sunset: one carries a branch while the other presses mud between logs. No other beavers appear, and their paired cooperation is unobstructed. No people, numbers, labels, writing or text.",
+      "altText": "正好两只河狸在日落前合作修坝，一只搬树枝，另一只把泥压进木头缝隙。"
+    },
+    {
+      "vocabularyId": "88b103c6-dfe0-477e-8621-067c4e6636e5",
+      "word": "site",
+      "meaningZh": "位置；场所；地点；给...择址",
+      "exampleId": "88b103c6-dfe0-477e-8621-067c4e6636e5-visual-ex",
+      "styleFamily": "glacier-blue isometric ridge weather site",
+      "sentenceEn": "The dry ridge became the site of a new weather station.",
+      "sentenceZh": "这条干燥山脊成为新气象站的选址。",
+      "scene": "On a high dry alpine ridge, a compact new weather station has just been installed on stable rock above cloud and snow-filled valleys. Its mast, wind sensor and small solar panel occupy the chosen location while fragile slopes remain untouched below. Two tiny technicians secure the final anchor. Complete faces only if readable, no signs, maps, labels, screens, writing or text.",
+      "altText": "新气象站安装在高而干燥的稳定山脊上，云层与积雪山谷位于下方，两名技术员固定最后锚点。"
+    },
+    {
+      "vocabularyId": "b5b33669-83c6-49b4-8a59-cd65ff75726c",
+      "word": "project",
+      "meaningZh": "计划；设计；事业",
+      "exampleId": "b5b33669-83c6-49b4-8a59-cd65ff75726c-visual-ex",
+      "styleFamily": "denim-magenta textile-collage shelter project",
+      "sentenceEn": "The design project turned discarded sails into emergency shelters.",
+      "sentenceZh": "这个设计项目把废弃船帆改造成了应急帐篷。",
+      "scene": "In a spacious reuse workshop, four adult designers measure, cut and stitch weathered boat sails while one completed lightweight emergency shelter stands open beside them. Rolled sails enter from one side and useful shelter panels emerge from the shared work. Complete focused faces, no presentation boards, plans, logos, writing or text.",
+      "altText": "四名设计者在再利用工坊中裁剪缝合旧船帆，旁边已经搭起一座完成的轻型应急帐篷。"
+    },
+    {
+      "vocabularyId": "97430374-8f87-473a-8952-df28cd8dac62",
+      "word": "hit",
+      "meaningZh": "打击；击中；成功；点击",
+      "exampleId": "97430374-8f87-473a-8952-df28cd8dac62-visual-ex",
+      "styleFamily": "black-red-gold sumi-e bronze gong",
+      "sentenceEn": "The percussionist hit the bronze gong to begin the concert.",
+      "sentenceZh": "打击乐手敲响铜锣，音乐会由此开始。",
+      "scene": "On a minimal dark stage, one adult percussionist has just swung a padded mallet into the center of one large bronze gong. The mallet visibly touches the gong and the instrument vibrates through subtle concentric metal ripples while seated musicians wait in shadow. Complete face, no notation, banners, logos, writing or text.",
+      "altText": "暗色舞台上，打击乐手的软槌刚好击中大铜锣中心，锣面泛起清晰振动。"
+    },
+    {
+      "vocabularyId": "d8116c2b-24e7-4dce-9b1b-68ef29174079",
+      "word": "base",
+      "meaningZh": "基础；基地；底部；基于",
+      "exampleId": "d8116c2b-24e7-4dce-9b1b-68ef29174079-visual-ex",
+      "styleFamily": "slate-foam geometric storm lighthouse base",
+      "sentenceEn": "A wide stone base kept the lighthouse steady during the storm.",
+      "sentenceZh": "宽阔的石质底座使灯塔在暴风雨中保持稳定。",
+      "scene": "A low dramatic viewpoint emphasizes the broad interlocking stone base of one lighthouse as storm waves break around it. The tall red-and-white tower remains vertical above while water flows harmlessly around the heavy foundation. No people, ships, diagrams, measurements, labels, writing or text.",
+      "altText": "暴风浪冲过灯塔下方宽阔的咬合石基，塔身仍在坚实底座上保持笔直稳定。"
+    },
+    {
+      "vocabularyId": "281b9d72-cc1a-43bb-81dd-f5a02c12a9a7",
+      "word": "activity",
+      "meaningZh": "活动",
+      "exampleId": "281b9d72-cc1a-43bb-81dd-f5a02c12a9a7-visual-ex",
+      "styleFamily": "sky-cyan coral risograph water-rocket activity",
+      "sentenceEn": "Launching water rockets was the morning activity at science camp.",
+      "sentenceZh": "发射水火箭是科学营的晨间活动。",
+      "scene": "On an open grassy science-camp field in clear morning light, one water rocket launches from a safe stand while three older children pump, observe and celebrate from behind a marked safety rope. Spare plain bottles and pumps wait nearby. Complete excited faces, no camp signs, instructions, numbers, logos, writing or text.",
+      "altText": "清晨科学营草地上，一枚水火箭从支架升空，三名孩子在安全绳后泵气、观察并欢呼。"
+    },
+    {
+      "vocabularyId": "6b610248-618e-4c47-ac9a-fe6dc83fe317",
+      "word": "star",
+      "meaningZh": "星星；明星；恒星；星形",
+      "exampleId": "6b610248-618e-4c47-ac9a-fe6dc83fe317-visual-ex",
+      "styleFamily": "aqua-copper art-nouveau tide-pool star",
+      "sentenceEn": "A bright sea star moved slowly across the tide pool.",
+      "sentenceZh": "一只鲜艳的海星缓慢爬过潮池。",
+      "scene": "In a shallow sunlit tide pool, one vivid five-armed sea star moves across a smooth rock, with several tube feet visibly gripping the surface. Anemones, tiny crabs and sea grass frame it without adding any other sea stars. No people, sky stars, symbols, labels, writing or text.",
+      "altText": "浅潮池里，一只鲜艳的五腕海星用管足缓慢爬过岩石，周围有海葵、小蟹与海草。"
+    },
+    {
+      "vocabularyId": "21962be6-ed92-489c-83f0-24d6df88adb9",
+      "word": "table",
+      "meaningZh": "桌子；表格；目录",
+      "exampleId": "21962be6-ed92-489c-83f0-24d6df88adb9-visual-ex",
+      "styleFamily": "jade-brass art-deco train table",
+      "sentenceEn": "The fold-down table turned the tiny train compartment into a workspace.",
+      "sentenceZh": "折叠桌把狭小的火车包厢变成了工作空间。",
+      "scene": "Inside a compact vintage train compartment, one adult traveler unfolds a broad wall-mounted table between two facing seats and places a closed notebook and camera on its level surface. The newly opened table dominates the small interior and clearly creates usable workspace. Complete face, no readable papers, route maps, logos, writing or text.",
+      "altText": "狭小火车包厢里，旅客把墙上的折叠桌展开在对坐座椅之间，形成平整工作台面。"
+    },
+    {
+      "vocabularyId": "8548330d-5714-4c5f-abb1-e0f8f7dff2a4",
+      "word": "court",
+      "meaningZh": "法院；庭院；奉承",
+      "exampleId": "8548330d-5714-4c5f-abb1-e0f8f7dff2a4-visual-ex",
+      "styleFamily": "burgundy-navy civic courtroom graphic novel",
+      "sentenceEn": "The court heard both sides before deciding how the shared well should be used.",
+      "sentenceZh": "法院在决定如何使用共用水井前听取了双方意见。",
+      "scene": "In a modest formal courtroom, one judge listens from a raised central bench while two village representatives stand at equal tables presenting plain water jars and a small model well as evidence. Both sides receive equal space and attention. Complete serious faces, no flags, legal text, documents, seals, labels, writing or text.",
+      "altText": "法庭中，法官在中央席位听取两方村民代表用水样和水井模型说明共用水井问题。"
+    },
+    {
+      "vocabularyId": "5aee702d-ce69-4b96-ba91-a5b9ac105eb7",
+      "word": "produce",
+      "meaningZh": "生产；制造；农产品",
+      "exampleId": "5aee702d-ce69-4b96-ba91-a5b9ac105eb7-visual-ex",
+      "styleFamily": "ultramarine-citrine paper-cut tidal power",
+      "sentenceEn": "The tidal turbines produce electricity for the island clinic.",
+      "sentenceZh": "潮汐涡轮机为岛上的诊所发电。",
+      "scene": "Below a strong ocean channel, three submerged tidal turbines turn in the current and feed one visible cable toward a small island clinic whose windows glow at dusk. The energy source and destination form one continuous landscape. No people, lightning icons, power labels, screens, logos, writing or text.",
+      "altText": "海峡水下三台潮汐涡轮随水流转动，电缆延伸到黄昏中亮起灯光的岛屿诊所。"
+    },
+    {
+      "vocabularyId": "8c32d78c-220c-4355-8898-f7d17f9babb9",
+      "word": "eat",
+      "meaningZh": "吃；腐蚀",
+      "exampleId": "8c32d78c-220c-4355-8898-f7d17f9babb9-visual-ex",
+      "styleFamily": "milkweed-green botanical monarch gouache",
+      "sentenceEn": "Monarch caterpillars eat milkweed leaves before forming chrysalises.",
+      "sentenceZh": "帝王蝶幼虫在结蛹前会吃马利筋叶片。",
+      "scene": "A botanical close view shows several monarch caterpillars visibly biting and chewing fresh milkweed leaves, with semicircular bite marks and small leaf fragments near their mouths. One completed green chrysalis hangs farther back as the next stage. No people, butterflies, labels, diagrams, writing or text.",
+      "altText": "帝王蝶幼虫正在啃食马利筋叶片，叶缘留下新鲜咬痕，后方悬着一枚绿色蝶蛹。"
+    },
+    {
+      "vocabularyId": "2fc63a60-57a5-49b7-8aed-f4c3c6badbfe",
+      "word": "teach",
+      "meaningZh": "教；讲授；教导；教育",
+      "exampleId": "2fc63a60-57a5-49b7-8aed-f4c3c6badbfe-visual-ex",
+      "styleFamily": "honey-yellow indigo engraved glass hive lesson",
+      "sentenceEn": "The beekeeper used a glass-sided hive to teach children how bees build comb.",
+      "sentenceZh": "养蜂人用玻璃蜂箱教孩子们蜜蜂如何筑巢。",
+      "scene": "At an outdoor apiary, one adult beekeeper points through the clear wall of a protected observation hive where bees build hexagonal comb. Exactly two children watch closely and imitate the comb shape with plain wooden pieces. Complete faces, safe veils lifted away from faces, no classroom board, labels, diagrams, writing or text.",
+      "altText": "户外蜂场里，养蜂人指着透明观察蜂箱中的蜂巢，两名孩子用木片模仿蜂房形状。"
+    },
+    {
+      "vocabularyId": "a6e93160-018f-4f1d-a17f-3d4497902c27",
+      "word": "oil",
+      "meaningZh": "油；石油；油画颜料",
+      "exampleId": "a6e93160-018f-4f1d-a17f-3d4497902c27-visual-ex",
+      "styleFamily": "sunflower-yellow navy linocut oil press",
+      "sentenceEn": "The press squeezed sunflower seeds to make golden oil.",
+      "sentenceZh": "榨油机挤压葵花籽，制成金色的油。",
+      "scene": "One sturdy hand-operated press crushes dark sunflower seeds while a thin stream of clear golden oil flows directly into one plain glass jar. Whole sunflower heads and a small pile of spent seed cake show the source and process. One pair of adult hands turns the press, no face required, no bottle labels, writing or text.",
+      "altText": "手摇压榨机挤压深色葵花籽，透明金色油液流进玻璃罐，旁边放着向日葵与籽粕。"
+    },
+    {
+      "vocabularyId": "a687def0-6969-4808-baf1-8ae04ea7625b",
+      "word": "half",
+      "meaningZh": "一半；半场；不完全",
+      "exampleId": "a687def0-6969-4808-baf1-8ae04ea7625b-visual-ex",
+      "styleFamily": "cobalt-orange cut-paper citrus sharing",
+      "sentenceEn": "Nora gave half of the orange to her friend.",
+      "sentenceZh": "诺拉把橙子的一半给了朋友。",
+      "scene": "At a sunny picnic, one orange has been cut into exactly two equal hemispheres and no other oranges appear. Nora holds one half while handing the matching half to her friend across a cloth. Both complete faces show simple friendly sharing. No wedges, extra fruit, knives, plates, labels, writing or text.",
+      "altText": "野餐时，一个橙子被均分成两半，诺拉保留一半并把完全相等的另一半递给朋友。"
+    },
+    {
+      "vocabularyId": "0fd0c71d-8328-4715-803a-d2b0f54dc16f",
+      "word": "situation",
+      "meaningZh": "情况；处境",
+      "exampleId": "0fd0c71d-8328-4715-803a-d2b0f54dc16f-visual-ex",
+      "styleFamily": "cyan-amber cinematic flooded cave situation",
+      "sentenceEn": "The cave team paused to assess the situation when the lower tunnel flooded.",
+      "sentenceZh": "下层隧道被水淹后，洞穴队伍停下来评估情况。",
+      "scene": "Deep inside a cave, exactly three adult explorers stop at a fork where the lower passage is visibly flooded and the higher passage remains dry. One measures the water depth with a pole, one studies the rock ceiling and the leader gestures calmly toward the safe upper route. Complete alert faces, no panic, maps, arrows, labels, writing or text.",
+      "altText": "洞穴岔口下层通道被水淹，三名探险者停下测水深、观察岩顶并评估上方安全路线。"
+    },
+    {
+      "vocabularyId": "18b9a38f-f0a8-4e0d-9dd1-fb15bec9b238",
+      "word": "easy",
+      "meaningZh": "容易的；舒适的；从容的",
+      "exampleId": "18b9a38f-f0a8-4e0d-9dd1-fb15bec9b238-visual-ex",
+      "styleFamily": "mint-coral clay accessible jar opener",
+      "sentenceEn": "The wide rubber grip made the jar easy to open with one hand.",
+      "sentenceZh": "宽大的橡胶握把让人单手也能轻松打开罐子。",
+      "scene": "In a bright kitchen close-up, one older adult calmly opens a sealed jar using one hand and a broad rubber grip fixed securely around the lid. The lid is visibly turning with little effort while the other hand rests away from the jar. Complete relaxed face, no product branding, packaging text, labels, writing or text.",
+      "altText": "明亮厨房里，一位老人用单手和宽大橡胶握把轻松转开罐盖，另一只手没有参与。"
+    },
+    {
+      "vocabularyId": "e0fb0865-ae5d-4de3-a7e6-09882cefe294",
+      "word": "cost",
+      "meaningZh": "代价；价值；费用；花费",
+      "exampleId": "e0fb0865-ae5d-4de3-a7e6-09882cefe294-visual-ex",
+      "styleFamily": "emerald-orange isometric shared farm delivery",
+      "sentenceEn": "Sharing one delivery truck reduced the cost for four small farms.",
+      "sentenceZh": "共用一辆配送卡车降低了四个小农场的费用。",
+      "scene": "An isometric countryside shows exactly four small farms connected by one efficient loop road to a single shared produce truck. Each farm loads one color-coded crate onto the same truck, while four unused individual carts remain parked under sheds. No coins, price tags, maps, arrows, farm names, labels, writing or text.",
+      "altText": "正好四个小农场把各自一箱农产品装上同一辆共享卡车，四辆单独小车停在棚下未使用。"
+    },
+    {
+      "vocabularyId": "83ae8245-dd08-4fa1-aed5-c3f8af6c6c11",
+      "word": "industry",
+      "meaningZh": "工业；产业；行业；勤勉",
+      "exampleId": "83ae8245-dd08-4fa1-aed5-c3f8af6c6c11-visual-ex",
+      "styleFamily": "violet-lime futuristic seaweed textile industry",
+      "sentenceEn": "The local textile industry turned seaweed fiber into durable cloth.",
+      "sentenceZh": "当地纺织产业把海藻纤维制成了耐用布料。",
+      "scene": "Inside a clean modern textile mill, washed seaweed fiber enters one end of a continuous production line, becomes pale yarn on large spools and emerges as strong woven cloth at the other end. Three adult technicians monitor rollers and test the fabric by hand. Complete faces, no screens with data, labels, factory logos, writing or text.",
+      "altText": "现代纺织厂中，清洗后的海藻纤维依次变成纱线卷轴和结实布料，技术员检查连续生产线。"
+    },
+    {
+      "vocabularyId": "450a7916-db7d-405f-b6e5-cb44756f7f17",
+      "word": "figure",
+      "meaningZh": "数字；人物；身材；认为",
+      "exampleId": "450a7916-db7d-405f-b6e5-cb44756f7f17-visual-ex",
+      "styleFamily": "oxidized-green garnet macro bronze figure",
+      "sentenceEn": "The conservator cleaned a small bronze figure recovered from the shipwreck.",
+      "sentenceZh": "文物修复师清理了一尊从沉船中打捞出的青铜小人像。",
+      "scene": "A macro conservation-table view centers one small human-shaped bronze figure with an oxidized green surface. Gloved hands gently remove sea crust with a soft brush while a shell fragment and dark ship timber sit nearby as context. The complete sculpted head, torso, arms and legs are clearly visible. No living face, catalog cards, numbers, labels, writing or text.",
+      "altText": "修复台上，一尊完整的绿色锈蚀青铜小人像正被戴手套的双手用软刷清理海洋结壳。"
+    },
+    {
+      "vocabularyId": "cad89ec1-8c1a-4352-9521-e8e07ce3e0d9",
+      "word": "street",
+      "meaningZh": "街道；马路；街区；街道的",
+      "exampleId": "cad89ec1-8c1a-4352-9521-e8e07ce3e0d9-visual-ex",
+      "styleFamily": "indigo-saffron twilight market street watercolor",
+      "sentenceEn": "Lanterns lit the narrow street before the evening market opened.",
+      "sentenceZh": "夜市开张前，灯笼照亮了狭窄街道。",
+      "scene": "A long narrow pedestrian street curves between close stone buildings at twilight. Vendors hang warm lanterns and unfold empty awnings while the street itself remains open and clearly visible from foreground to distance, just before customers arrive. Complete faces where readable, no shop names, signs, price cards, writing or text.",
+      "altText": "黄昏时，摊主在狭窄石街两侧挂起灯笼、展开空棚，尚未开市的街面一直延伸到远处。"
+    }
+  ]
+}

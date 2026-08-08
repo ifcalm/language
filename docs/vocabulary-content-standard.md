@@ -133,7 +133,180 @@ For a batch of 20 or more images, aim to use at least four style families and av
 
 Shared product constraints remain stable across styles: landscape 3:2 framing, mature learner-facing art direction, a clear focal action or relationship, no in-image teaching text, no logos or watermarks, and no live-action or realistic-human impression. People should use clearly designed shapes, simplified expressive faces, stylized proportions, and illustrated materials. Avoid realistic skin pores, photographic facial rendering, camera-real depth of field, live-action staging, stock-photo composition, and lighting that makes the scene easy to mistake for a photograph.
 
+When people appear, every foreground or midground face that is large enough to
+read must have clear, natural eyes, a nose, a mouth, and an expression appropriate
+to the scene. Do not use blank oval faces, featureless masks, mannequin heads, or
+heavy shadow that erases the facial features. A turned-away or genuinely tiny
+background figure may leave the face unseen, but a visible face must never look
+unfinished. Treat a missing-feature face as a generation failure and regenerate
+the image before publishing it.
+
 The style may feel mature and emotionally grounded without becoming photorealistic. Avoid both extremes: realistic human rendering on one side, and childish chibi or glossy toy characters on the other.
+
+## Batch generation workflow
+
+Use the resumable pipeline for routine production. It keeps planning, generation,
+verification and publishing in one persistent batch state, so a network or model
+failure does not discard completed work.
+
+### Automated production mode
+
+The default automated batch is 50 unfinished words. A preview is free and does
+not call OpenAI, R2 or D1:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50
+```
+
+Planning alone creates and validates the content manifest without generating
+images:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --plan
+```
+
+Generate all missing images, run exhaustive deterministic checks, build a contact
+sheet and run sampled semantic QA:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --generate
+```
+
+After reviewing a new pipeline or prompt configuration, run the complete path,
+including concurrent R2 upload and one idempotent D1 import:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --publish
+```
+
+Once a 50-word production batch has confirmed the current models and prompt rules,
+finish the remaining queue unattended while retaining the same 50-word recovery
+boundaries:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --all --publish
+```
+
+The supervisor starts the next batch only after the previous R2/D1 publication
+and fixture record succeed. It stops on the first failed generation, QA or
+publication step. Running the same command again resumes that failed batch and
+then continues through the queue. Individual batches are capped at 100 words;
+use `--all` instead of creating one fragile multi-thousand-image batch.
+
+Each command resumes the same stable `.vocabulary-visual-pipeline/rank-X-Y/`
+state. Existing plans and valid images are reused. When generation or sampled QA
+fails for individual items, regenerate only those items:
+
+```sh
+npm run vocabulary:visuals:pipeline -- --limit 50 --generate --retry-failed
+```
+
+`OPENAI_API_KEY` is required for planning and generation. Publishing also requires
+`CLOUDFLARE_API_TOKEN`. Both may be placed in `.env.local`. The pipeline never
+publishes implicitly: production writes require the explicit `--publish` flag.
+
+The main throughput controls are:
+
+| Setting | Default | Purpose |
+|---|---:|---|
+| `--planner-chunk-size` | 10 | Words returned by one structured planning request |
+| `--planner-concurrency` | 2 | Concurrent planning requests |
+| `--image-concurrency` | 8 | Concurrent image requests |
+| `--qa-concurrency` | 3 | Concurrent sampled visual reviews |
+| `VOCABULARY_VISUAL_R2_CONCURRENCY` | 8 | Concurrent R2 object uploads |
+
+Use `--skip-ai-qa` only for an explicitly accepted deterministic-only run. A
+sampled semantic failure blocks publishing and should be regenerated before the
+batch continues.
+
+### Manual fast mode
+
+Use this 20-word workflow when manually piloting a new style, prompt framework or
+content category:
+
+1. Keep the pilot batch at 20 words so generation failures and content revisions
+   stay easy to isolate.
+2. Read the batch from the checked-in local vocabulary queue, then draft all
+   examples, scenes, alternative text, and style routing in one manifest pass.
+   Do not query D1 again while planning, generating, or reviewing the batch.
+3. Run full local manifest checks before image generation: item count, vocabulary
+   ID, word, Chinese meaning, queue membership, unique IDs, required fields, and
+   an exact target-word token in every English example.
+4. Generate with five concurrent image requests, completing 20 images in four
+   waves. Retry only failed requests and save successful outputs immediately.
+   Do not pause to present or discuss each image during a routine batch.
+5. Build one labeled contact sheet after all images finish. Review the complete
+   sheet at overview size, then inspect five images in detail: three selected by
+   semantic risk and two selected at random.
+   Any blank or featureless readable human face fails the overview review and must
+   be regenerated even when that image was not selected for detailed sampling.
+6. Treat exact quantities, pronoun reference, comparison, sequence, cause and
+   effect, spatial boundaries, and before/after transformations as high-risk visual
+   relationships. Prefer these items when selecting the three risk samples.
+7. Prepare WebP assets, hashes, the published manifest, and D1 SQL in one command;
+   upload R2 objects concurrently and submit D1 SQL as one idempotent batch.
+
+### Local vocabulary queue
+
+The queue is a small source-data snapshot, not a copy of generated image content.
+It stores each vocabulary ID, word, Chinese meaning, frequency rank, and stable
+one-based list position. Refresh it only when the production vocabulary source or
+ordering changes:
+
+```sh
+npm run vocabulary:visuals:queue:sync
+```
+
+That command reads the complete production vocabulary list with one remote D1
+query. Routine batches then read only the local snapshot:
+
+```sh
+npm run vocabulary:visuals:queue:batch -- --start 121 --limit 20
+```
+
+The reader scans existing batch manifests and skips vocabulary IDs that already
+have visual content, including non-contiguous pilot words. `--limit 20` therefore
+means 20 unfinished words; the ending queue position may extend beyond
+`start + 19`. Pass `--include-completed` only when inspecting the raw queue range.
+
+The publishing script validates every manifest item against this queue. Pass
+`--verify-remote` for a dry-run production check; `--publish` performs the same
+single read automatically before any upload or D1 write. Both checks validate the
+whole current batch in one SQL query rather than querying each word separately.
+
+### Verification policy
+
+Keep inexpensive automated verification exhaustive:
+
+- all source files have the expected count, dimensions, format, and manifest entry
+- every manifest item matches the local queue's vocabulary ID, word, and meaning
+- immediately before publishing, every current-batch item matches production D1
+  in one read query
+- every published object key is present in the exact R2 inventory with no extras
+- D1 reports the expected number of changes and preserves valid example/visual references
+
+Use sampling for repeated visual and network checks:
+
+- visually inspect three high-risk images and two random images in detail
+- read back the first, middle, and last vocabulary detail API responses
+- issue public URL checks for two images plus the published manifest
+
+Any sampled failure upgrades the relevant check to the full batch. A semantic
+failure also triggers review of other items with the same relationship type.
+
+### Strict mode
+
+Use full per-image visual review and full production API/URL readback when any of
+the following applies:
+
+- image model, provider, prompt framework, or major style rules changed
+- schema, publishing script, object-key convention, or API response shape changed
+- the previous batch produced a semantic, upload, or data-integrity failure
+- the batch is a pilot for a new content category
+- a full audit is explicitly requested
+
+The standing principle is: keep deterministic checks exhaustive, sample expensive
+human and network checks, and escalate automatically when a sample fails.
 
 ## Removed public-content tables
 

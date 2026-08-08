@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-326-345-2026-07-18",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "fbfc2fa1-3d22-4847-950a-f8b4988dd604",
+      "word": "open",
+      "meaningZh": "打开；开放；公开；开阔的",
+      "exampleId": "fbfc2fa1-3d22-4847-950a-f8b4988dd604-visual-ex",
+      "styleFamily": "layered cut-paper mountain refuge at dawn",
+      "sentenceEn": "At dawn, the volunteers kept the mountain refuge open for anyone caught in the storm.",
+      "sentenceZh": "黎明时，志愿者让山间避难所保持开放，接纳所有被暴风雪困住的人。",
+      "scene": "A mountain refuge at first light has one large door visibly wide open, warm amber light reaching onto a snowy path. Two adult volunteers with complete expressive faces welcome a tired hiker approaching from the storm. The doorway and unobstructed entry are the visual focus. No signs, writing, logos or text.",
+      "altText": "黎明的雪山中，避难所大门敞开，两位志愿者迎接一名被风雪困住的徒步者。"
+    },
+    {
+      "vocabularyId": "48db1059-2d5a-44c7-b629-8b5eef8fdaf1",
+      "word": "morning",
+      "meaningZh": "早晨；上午",
+      "exampleId": "48db1059-2d5a-44c7-b629-8b5eef8fdaf1-visual-ex",
+      "styleFamily": "luminous watercolor wetland morning",
+      "sentenceEn": "Every morning, the cranes waded through the mist as the first sunlight reached the marsh.",
+      "sentenceZh": "每天早晨，第一缕阳光照进湿地时，鹤群都会穿过薄雾。",
+      "scene": "A quiet wetland at unmistakable early morning: low golden sun at the horizon, pale mist hovering over reeds, dew shining on grasses and three cranes wading through shallow water. Long soft shadows and cool-to-warm light make the time of day clear. No people, buildings, lettering or text.",
+      "altText": "清晨的湿地笼罩着薄雾，三只鹤在初升阳光中穿过浅水和芦苇。"
+    },
+    {
+      "vocabularyId": "5c2c5bbf-0fa1-491a-945e-bc2f07c14ca2",
+      "word": "walk",
+      "meaningZh": "走；步行；散步；漫步",
+      "exampleId": "5c2c5bbf-0fa1-491a-945e-bc2f07c14ca2-visual-ex",
+      "styleFamily": "hand-drawn animation elephant sanctuary",
+      "sentenceEn": "After weeks of care, the rescued elephant could walk beside the herd again.",
+      "sentenceZh": "经过数周照料，获救的大象终于能再次和象群一起行走。",
+      "scene": "A recovering young elephant takes a clear forward step along a sunlit sanctuary trail beside two calm adult elephants. One front foot is lifted mid-stride and the other feet press into the dusty path, with a gentle sense of movement and reunion. A removed support wrap rests safely at the path edge. No people, labels or text.",
+      "altText": "阳光下，康复的小象抬脚迈步，重新与两只成年大象一起走在保护区小路上。"
+    },
+    {
+      "vocabularyId": "b1488ae2-9866-4f70-a02d-cf78fef48470",
+      "word": "reason",
+      "meaningZh": "原因；理由；推理；理智",
+      "exampleId": "b1488ae2-9866-4f70-a02d-cf78fef48470-visual-ex",
+      "styleFamily": "graphic novel forest cause-and-effect scene",
+      "sentenceEn": "The fallen tree was the reason the forest path had to close.",
+      "sentenceZh": "那棵倒下的树是森林小路不得不封闭的原因。",
+      "scene": "One storm-felled tree lies unmistakably across the full width of a narrow forest path, roots torn from wet earth and branches making passage impossible. Two adult rangers with complete facial features assess the blockage from the safe side while redirecting one hiker toward a visible alternate trail. No signs, barriers with writing, arrows or text.",
+      "altText": "暴风雨刮倒的大树完全横在森林小路上，护林员正在引导徒步者改走另一条路。"
+    },
+    {
+      "vocabularyId": "7dfb57a5-e43e-4fd8-9121-b523e4552076",
+      "word": "low",
+      "meaningZh": "低的；低点；低声地",
+      "exampleId": "7dfb57a5-e43e-4fd8-9121-b523e4552076-visual-ex",
+      "styleFamily": "textile collage coastal ecology",
+      "sentenceEn": "At low tide, volunteers found a trapped turtle among the exposed rocks.",
+      "sentenceZh": "退潮时，志愿者们在露出的礁石间发现了一只被困的海龟。",
+      "scene": "A broad coastal view at very low tide shows the sea pulled far back, a wide band of exposed wet sand, tide pools and dark rocks. Two adult volunteers with fully rendered faces carefully free a small turtle caught between rocks, while the distant waterline makes the unusually low level unmistakable. No signs or text.",
+      "altText": "低潮时海水退得很远，两名志愿者在大片露出的礁石和潮池间救助被困海龟。"
+    },
+    {
+      "vocabularyId": "e71dbe21-4a20-4afc-92ff-7fe878da171a",
+      "word": "win",
+      "meaningZh": "赢；获胜；赢得；胜利",
+      "exampleId": "e71dbe21-4a20-4afc-92ff-7fe878da171a-visual-ex",
+      "styleFamily": "dynamic screen-print community volleyball",
+      "sentenceEn": "The neighborhood team worked together to win the final point.",
+      "sentenceZh": "社区球队齐心协力赢下了最后一分。",
+      "scene": "On a lively outdoor volleyball court, one diverse adult team completes a coordinated play as the ball lands clearly inside the far court beyond the opponents' reach. The near team turns toward one another with joyful, fully rendered expressions, while the opposing team responds respectfully. No scoreboard, trophies, uniforms with lettering, logos or text.",
+      "altText": "社区排球队协作完成最后一击，球落在对方场内，队员们欣喜地拥抱庆祝。"
+    },
+    {
+      "vocabularyId": "5d30b598-45e7-4360-8867-c059eec20cad",
+      "word": "research",
+      "meaningZh": "研究；调查",
+      "exampleId": "5d30b598-45e7-4360-8867-c059eec20cad-visual-ex",
+      "styleFamily": "editorial 3D coral restoration fieldwork",
+      "sentenceEn": "Careful research helped the marine biologists restore the damaged coral nursery.",
+      "sentenceZh": "严谨的研究帮助海洋生物学家修复了受损的珊瑚苗圃。",
+      "scene": "An illustrated underwater coral nursery where two marine biologists carefully compare healthy young coral fragments, measure growth with plain unmarked tools and secure them to restoration frames. Diverse fish return around visibly recovering coral. Faces are behind clear stylized dive masks but eyes, noses and mouths remain readable. No numbers, screens, labels or text.",
+      "altText": "两位海洋生物学家在水下测量并固定珊瑚幼苗，修复中的珊瑚周围已有鱼群回归。"
+    },
+    {
+      "vocabularyId": "020be85e-2fc8-4b21-8d7f-41d476068c7b",
+      "word": "girl",
+      "meaningZh": "女孩；姑娘；女儿",
+      "exampleId": "020be85e-2fc8-4b21-8d7f-41d476068c7b-visual-ex",
+      "styleFamily": "warm gouache neighborhood garden story",
+      "sentenceEn": "The girl returned the lost duckling to the pond beside its mother.",
+      "sentenceZh": "女孩把迷路的小鸭送回池塘边的鸭妈妈身旁。",
+      "scene": "A school-age girl kneels at a leafy neighborhood pond and gently releases one small duckling beside its waiting mother duck. Her complete face shows relief and care, while the reunited birds lean toward each other. A bicycle and garden path remain softly in the background. No writing, logos or text.",
+      "altText": "一名女孩在池塘边轻轻放下迷路的小鸭，让它回到鸭妈妈身边。"
+    },
+    {
+      "vocabularyId": "7f780ea1-f2a2-4164-8811-05affee42508",
+      "word": "guy",
+      "meaningZh": "家伙；人（口语）",
+      "exampleId": "7f780ea1-f2a2-4164-8811-05affee42508-visual-ex",
+      "styleFamily": "colored-pencil street market vignette",
+      "sentenceEn": "The guy in the red apron carried the heavy basket for an older shopper.",
+      "sentenceZh": "那个系红围裙的人帮一位年长顾客提起了沉重的篮子。",
+      "scene": "At an open-air produce market, one friendly adult man in a distinct red apron lifts a heavy basket of vegetables for an older adult shopper walking beside him. Both have complete, expressive faces and natural proportions; surrounding stalls contain produce without signs or price labels. No logos, writing or text.",
+      "altText": "露天市场里，一名系红围裙的男子替年长顾客提着装满蔬菜的沉重篮子。"
+    },
+    {
+      "vocabularyId": "189cd4b7-0297-4b09-b794-3a159752a403",
+      "word": "early",
+      "meaningZh": "早的；早期的；提前；初期",
+      "exampleId": "189cd4b7-0297-4b09-b794-3a159752a403-visual-ex",
+      "styleFamily": "Japanese woodblock spring migration",
+      "sentenceEn": "The swallows returned early, before the last snow had melted from the fields.",
+      "sentenceZh": "燕子提前归来时，田野里的最后一片积雪还没有融化。",
+      "scene": "Several swallows sweep into a rural valley where fresh spring buds and green shoots have begun, yet broad patches of winter snow still remain across the fields. Their arrival before the seasonal transition is complete should be immediately clear. No people, clocks, calendars, buildings with signs or text.",
+      "altText": "田野积雪尚未完全融化，燕子已经提前飞回刚刚萌发新芽的山谷。"
+    },
+    {
+      "vocabularyId": "da46e43f-77fb-4ed5-87dd-587583125b2e",
+      "word": "food",
+      "meaningZh": "食物；食品",
+      "exampleId": "da46e43f-77fb-4ed5-87dd-587583125b2e-visual-ex",
+      "styleFamily": "paper-cut community harvest kitchen",
+      "sentenceEn": "Neighbors carried fresh food from the shared garden to families after the flood.",
+      "sentenceZh": "洪水过后，邻居们把共享菜园里的新鲜食物送给各个家庭。",
+      "scene": "A bright community garden and nearby open kitchen show diverse adult neighbors filling plain baskets with fresh vegetables, fruit and bread, then handing them to two waiting families after floodwater has receded. All readable faces have clear features and grateful, practical expressions. No packaging labels, signs, logos or text.",
+      "altText": "洪水退去后，邻居们把共享菜园收获的蔬果和面包装篮，送给等待的家庭。"
+    },
+    {
+      "vocabularyId": "a00b3514-7714-412e-b917-f3e01096e423",
+      "word": "moment",
+      "meaningZh": "片刻；瞬间；时刻；时机",
+      "exampleId": "a00b3514-7714-412e-b917-f3e01096e423-visual-ex",
+      "styleFamily": "soft pastel nocturnal woodland",
+      "sentenceEn": "For one quiet moment, the fox and the deer drank from opposite sides of the stream.",
+      "sentenceZh": "在一个宁静的瞬间，狐狸和鹿在溪流两岸同时低头饮水。",
+      "scene": "A brief, perfectly still twilight encounter: one fox and one deer pause on opposite banks of a narrow stream and drink at the same time. A single falling leaf hangs just above the water and the first ripple begins beneath it, emphasizing a fleeting instant. No people, buildings, symbols or text.",
+      "altText": "暮色中，一只狐狸和一只鹿在溪流两岸同时饮水，一片落叶将要触及水面。"
+    },
+    {
+      "vocabularyId": "88753f38-e41c-4bd7-a19b-aa01e3886050",
+      "word": "himself",
+      "meaningZh": "他自己",
+      "exampleId": "88753f38-e41c-4bd7-a19b-aa01e3886050-visual-ex",
+      "styleFamily": "stop-motion-inspired beaver riverbank craft",
+      "sentenceEn": "The young beaver repaired the small break in the dam himself.",
+      "sentenceZh": "小河狸独自修补好了水坝上的小缺口。",
+      "scene": "One young male beaver works entirely alone at a small visible break in a stick dam, carrying the final branch into place with his paws. No other beavers or helpers appear anywhere. The repaired section holds back the water while a neat pile of remaining twigs sits nearby. No tools with markings, symbols or text.",
+      "altText": "一只小河狸独自在水坝缺口处放上最后一根树枝，周围没有其他帮手。"
+    },
+    {
+      "vocabularyId": "41c07abf-87b6-4fa0-b066-59e970bad2d6",
+      "word": "air",
+      "meaningZh": "空气；空中；神态；播送",
+      "exampleId": "41c07abf-87b6-4fa0-b066-59e970bad2d6-visual-ex",
+      "styleFamily": "airy watercolor greenhouse interior",
+      "sentenceEn": "Fresh air flowed through the greenhouse after both roof windows opened.",
+      "sentenceZh": "两扇屋顶窗打开后，新鲜空气流进了温室。",
+      "scene": "Inside a lush greenhouse, exactly two roof windows stand open. Lightweight leaves, hanging ribbons without writing and translucent curtains all stream gently in the same direction as cool outdoor air enters, while condensation clears near the openings. No people, arrows, labels, fan devices or text.",
+      "altText": "温室的两扇屋顶窗已经打开，叶片和薄帘随流入的新鲜空气轻轻摆动。"
+    },
+    {
+      "vocabularyId": "feddeeb3-a44c-4ae0-a605-28b7cb33bb1d",
+      "word": "teacher",
+      "meaningZh": "教师；老师",
+      "exampleId": "feddeeb3-a44c-4ae0-a605-28b7cb33bb1d-visual-ex",
+      "styleFamily": "mature hand-painted animation workshop",
+      "sentenceEn": "The teacher showed each student how to repair the broken radio safely.",
+      "sentenceZh": "老师逐一示范如何安全修理坏掉的收音机。",
+      "scene": "In a practical repair workshop, one middle-aged woman teacher demonstrates a safe tool grip beside an opened vintage radio while three teenage students watch and practice on unplugged parts. Every readable face has complete features and focused expression. Components are simple and unmarked. No blackboard writing, labels, screens, logos or text.",
+      "altText": "维修课堂上，一位女老师示范安全使用工具，三名学生围着拆开的旧收音机认真学习。"
+    },
+    {
+      "vocabularyId": "ee4063f5-a0e5-4992-8728-2003e9e77764",
+      "word": "force",
+      "meaningZh": "力量；武力；强迫；强制",
+      "exampleId": "ee4063f5-a0e5-4992-8728-2003e9e77764-visual-ex",
+      "styleFamily": "bold linocut coastal wind farm",
+      "sentenceEn": "The force of the coastal wind turned every turbine above the quiet village.",
+      "sentenceZh": "强劲的海风推动村庄上方的每一台风力涡轮机旋转。",
+      "scene": "A powerful coastal wind sweeps from the sea across a ridge, visibly bending tall grasses, driving clouds and turning exactly four large wind turbines in the same direction. A small peaceful village rests below, protected and still. Strong carved lines convey invisible physical force. No people, signs, utility labels, arrows or text.",
+      "altText": "强劲海风压弯山脊上的草并推动四台风力涡轮机转动，村庄安静地坐落在下方。"
+    },
+    {
+      "vocabularyId": "4a27590a-4364-41ec-8213-913e29dabba0",
+      "word": "offer",
+      "meaningZh": "提供；报价；提议",
+      "exampleId": "4a27590a-4364-41ec-8213-913e29dabba0-visual-ex",
+      "styleFamily": "expressive comic illustration rainy crossing",
+      "sentenceEn": "A cyclist stopped to offer her spare raincoat to a stranded traveler.",
+      "sentenceZh": "一名骑行者停下来，把备用雨衣提供给被困的旅人。",
+      "scene": "During steady rain beside a rural crossing, an adult woman cyclist has stopped and extends one folded spare raincoat with both hands toward a soaked adult traveler. The traveler's hands reach to accept it. Both faces have clear eyes, noses, mouths and warm expressions. The bicycle and one worn raincoat establish the context. No road signs, brands or text.",
+      "altText": "雨中的乡间路口，一名女骑行者停下车，把备用雨衣递给被困的旅人。"
+    },
+    {
+      "vocabularyId": "d62f369e-0c59-4086-9319-369f2c66f63b",
+      "word": "enough",
+      "meaningZh": "足够；充足的；够了",
+      "exampleId": "d62f369e-0c59-4086-9319-369f2c66f63b-visual-ex",
+      "styleFamily": "embroidered miniature rainforest shelter",
+      "sentenceEn": "One wide leaf was enough to shelter the three ladybugs from the rain.",
+      "sentenceZh": "一片宽大的叶子足以为三只瓢虫遮雨。",
+      "scene": "Exactly three ladybugs remain completely dry together beneath one broad green leaf during a rainforest shower. Water beads and runs off the leaf edges while the surrounding ground is visibly wet; no fourth ladybug appears. The single leaf fully covers all three insects, making sufficiency immediately clear. No people, symbols or text.",
+      "altText": "雨中，一片宽大的绿叶完整遮住三只瓢虫，雨水从叶片边缘落下。"
+    },
+    {
+      "vocabularyId": "910ed25e-faee-4a4f-bcb5-347bc2a69689",
+      "word": "education",
+      "meaningZh": "教育；培养",
+      "exampleId": "910ed25e-faee-4a4f-bcb5-347bc2a69689-visual-ex",
+      "styleFamily": "editorial mixed-media traveling library",
+      "sentenceEn": "The traveling library brought education to children in the remote mountain village.",
+      "sentenceZh": "流动图书馆把教育带给了偏远山村的孩子们。",
+      "scene": "A colorful but mature illustrated mobile library has opened beside a remote mountain village. One adult educator with a complete welcoming face helps a diverse group of school-age children explore picture books, a globe without labels and simple science objects. The children's complete faces show curiosity and participation. Book covers contain abstract shapes only, with no letters, logos or text.",
+      "altText": "流动图书馆来到偏远山村，老师带着孩子们阅读图画书并观察地球仪和科学模型。"
+    },
+    {
+      "vocabularyId": "4e335006-df9d-41e6-b7f0-d912867b25b1",
+      "word": "across",
+      "meaningZh": "穿过；横过；在对面",
+      "exampleId": "4e335006-df9d-41e6-b7f0-d912867b25b1-visual-ex",
+      "styleFamily": "macro paper-collage ant journey",
+      "sentenceEn": "The ants carried seeds across the narrow crack to their garden.",
+      "sentenceZh": "蚂蚁们把种子搬过狭窄的裂缝，送往它们的花园。",
+      "scene": "A macro view shows a clear crack splitting a stone path from left to right. A continuous line of ants carries pale seeds from the near side, across one small twig bridge spanning the crack, to a thriving miniature garden on the opposite side. Some ants approach, some are visibly over the gap and some have arrived. No arrows, labels or text.",
+      "altText": "一列蚂蚁驮着种子，沿小树枝桥越过石板裂缝，走向对面的花园。"
+    }
+  ]
+}

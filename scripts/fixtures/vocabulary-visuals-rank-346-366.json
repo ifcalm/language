@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-346-366-2026-07-18",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "c4021d10-fd36-4ecb-a601-5e409ffca91a",
+      "word": "although",
+      "meaningZh": "虽然；尽管",
+      "exampleId": "c4021d10-fd36-4ecb-a601-5e409ffca91a-visual-ex",
+      "styleFamily": "layered paper-cut alpine resilience",
+      "sentenceEn": "Although snow still covered the ridge, the first crocus opened beside a warm stone.",
+      "sentenceZh": "虽然山脊仍被积雪覆盖，第一朵番红花却在温暖的石头旁绽放了。",
+      "scene": "One continuous alpine scene shows a broad ridge still deeply covered in cold late-winter snow, while in the sheltered foreground exactly one vivid crocus has unexpectedly opened beside one sun-warmed dark stone. The strong cold-versus-bloom contrast communicates concession without panels, arrows, symbols, people or text.",
+      "altText": "积雪仍覆盖着山脊，但一块被阳光晒暖的石头旁已经开出第一朵番红花。"
+    },
+    {
+      "vocabularyId": "a05e40f6-9607-4ff4-98df-727b27b0cd2c",
+      "word": "remember",
+      "meaningZh": "记住；记得；想起；纪念",
+      "exampleId": "a05e40f6-9607-4ff4-98df-727b27b0cd2c-visual-ex",
+      "styleFamily": "warm gouache entryway routine",
+      "sentenceEn": "Leah placed her keys beside the door so she would remember them in the morning.",
+      "sentenceZh": "莉娅把钥匙放在门边，好让自己早晨记得带上。",
+      "scene": "In a calm evening entryway, one adult woman deliberately places a distinctive ring of plain keys into a small bowl directly beside her shoes and closed front door, then pauses with a satisfied expression to fix the location in mind. Her complete face and purposeful gesture make the memory aid clear. No notes, calendars, labels, writing or text.",
+      "altText": "晚上，莉娅特意把钥匙放进门边的小碗里，准备第二天早晨记得带走。"
+    },
+    {
+      "vocabularyId": "259eebec-3006-47e4-955a-62a4295f410b",
+      "word": "foot",
+      "meaningZh": "脚；英尺；底部；脚步",
+      "exampleId": "259eebec-3006-47e4-955a-62a4295f410b-visual-ex",
+      "styleFamily": "storybook watercolor lion rescue",
+      "sentenceEn": "The young lion held up his foot while the ranger removed a thorn.",
+      "sentenceZh": "护林员拔刺时，小狮子抬起了自己的脚掌。",
+      "scene": "At a wildlife sanctuary, one young lion calmly lifts one front foot and exposes its paw pad while one kneeling adult ranger carefully removes a single thorn with plain tools. The lion's foot is the unobstructed focal point. The ranger's complete expressive face shows concentration and kindness. No uniforms with badges, labels, writing or text.",
+      "altText": "小狮子抬起一只前脚，护林员正小心地从它的脚掌中取出一根刺。"
+    },
+    {
+      "vocabularyId": "bba906fa-a271-4420-bcf2-b87eb4b29fd0",
+      "word": "second",
+      "meaningZh": "第二；秒；片刻；其次",
+      "exampleId": "bba906fa-a271-4420-bcf2-b87eb4b29fd0-visual-ex",
+      "styleFamily": "felt stop-motion duckling sequence",
+      "sentenceEn": "The second duckling crossed the log just behind its older sister.",
+      "sentenceZh": "第二只小鸭紧跟在姐姐后面走过圆木。",
+      "scene": "Exactly three ducklings move single file across one narrow fallen log over a stream. The first duckling has nearly reached the far bank, the second duckling is unmistakably centered on the log immediately behind it, and the third is only stepping onto the near end. Keep order and spacing crystal clear. No other birds, numbers, labels or text.",
+      "altText": "三只小鸭排成一列过圆木，第一只快到岸边，第二只位于圆木中央，第三只刚刚踏上。"
+    },
+    {
+      "vocabularyId": "bddc8a7f-0428-497e-a28a-98b7d6b6da2d",
+      "word": "boy",
+      "meaningZh": "男孩；儿子；小伙子",
+      "exampleId": "bddc8a7f-0428-497e-a28a-98b7d6b6da2d-visual-ex",
+      "styleFamily": "colored-pencil twilight garden story",
+      "sentenceEn": "The boy carried the exhausted moth from the greenhouse to a flowering bush.",
+      "sentenceZh": "男孩把筋疲力尽的飞蛾从温室带到了一丛开花的灌木旁。",
+      "scene": "At twilight beside a greenhouse, one school-age boy gently cups one large tired moth in both hands and lowers it toward a flowering bush outdoors. His complete face shows quiet care and focused attention. The open greenhouse door behind establishes where he came from. No signs, plant labels, logos, writing or text.",
+      "altText": "暮色中，一名男孩用双手托着疲惫的飞蛾，把它送到温室外的开花灌木旁。"
+    },
+    {
+      "vocabularyId": "e99f06bb-20ba-4ba1-9add-70e11c443e7f",
+      "word": "maybe",
+      "meaningZh": "也许；可能；大概",
+      "exampleId": "e99f06bb-20ba-4ba1-9add-70e11c443e7f-visual-ex",
+      "styleFamily": "quiet editorial 3D nest vigil",
+      "sentenceEn": "Maybe one of the turtle eggs will hatch before sunrise.",
+      "sentenceZh": "也许有一枚海龟蛋会在日出前孵化。",
+      "scene": "A moonlit protected beach nest contains several partly visible sea-turtle eggs beneath loose sand. Exactly one egg has developed a tiny fresh crack but no hatchling is visible yet, while the horizon only begins to pale before sunrise. A watchful shorebird stands at a safe distance. The uncertain possibility must remain unresolved. No people, signs, numbers or text.",
+      "altText": "日出前的月光下，沙窝里有一枚海龟蛋刚出现小裂缝，但小海龟尚未破壳。"
+    },
+    {
+      "vocabularyId": "dc4a8911-e729-487a-83ba-43da8b675c4e",
+      "word": "toward",
+      "meaningZh": "向；朝着；对于",
+      "exampleId": "dc4a8911-e729-487a-83ba-43da8b675c4e-visual-ex",
+      "styleFamily": "Risograph coastal migration",
+      "sentenceEn": "At dusk, the seabirds flew toward the island where they would rest.",
+      "sentenceZh": "黄昏时，海鸟飞向它们将要休息的岛屿。",
+      "scene": "A flock of seabirds crosses open water in one clear shared direction toward a small green island ahead at the right side of the composition. Their bodies and wings all orient toward the island, with faint sunset light behind them and nesting trees visible at the destination. No arrows, boats, people, signs or text.",
+      "altText": "黄昏的海面上，一群海鸟朝同一个方向飞向前方有树林的小岛。"
+    },
+    {
+      "vocabularyId": "80bbc0bd-1a2b-404b-974c-50821d086123",
+      "word": "able",
+      "meaningZh": "能够；有能力的",
+      "exampleId": "80bbc0bd-1a2b-404b-974c-50821d086123-visual-ex",
+      "styleFamily": "hand-painted animation eagle rehabilitation",
+      "sentenceEn": "After months of rehabilitation, the eagle was able to fly over the valley again.",
+      "sentenceZh": "经过数月康复训练，雄鹰终于能够再次飞越山谷。",
+      "scene": "One rehabilitated eagle has just launched from an open sanctuary platform and now flies strongly above a broad green valley with both wings fully extended. A removed soft wing support rests on the empty platform behind, making regained ability clear. No people, cages, labels, tracking marks, writing or text.",
+      "altText": "康复后的雄鹰展开双翼飞越绿色山谷，身后的放飞平台上放着已经取下的护具。"
+    },
+    {
+      "vocabularyId": "4ec9367f-4c92-49cc-a15a-cb14db1fe786",
+      "word": "age",
+      "meaningZh": "年龄；时代；老年",
+      "exampleId": "4ec9367f-4c92-49cc-a15a-cb14db1fe786-visual-ex",
+      "styleFamily": "linocut ancient cedar generations",
+      "sentenceEn": "The great age of the cedar showed in its enormous trunk and twisted branches.",
+      "sentenceZh": "巨大的树干和盘曲的枝条显露出这棵雪松的悠久树龄。",
+      "scene": "One monumental living cedar dominates an old forest, with an exceptionally broad weathered trunk, deeply furrowed bark, twisted heavy branches and a small young cedar growing nearby for scale. Moss, old hollows and layered canopy suggest long passage of time without cutting the tree. No people, plaques, tree rings, numbers or text.",
+      "altText": "古老雪松有着巨大而布满深纹的树干和盘曲枝条，旁边的小树衬托出它的悠久树龄。"
+    },
+    {
+      "vocabularyId": "bea0a84b-7713-4b49-b6ae-0b9fbe050c43",
+      "word": "policy",
+      "meaningZh": "政策；方针；保险单",
+      "exampleId": "bea0a84b-7713-4b49-b6ae-0b9fbe050c43-visual-ex",
+      "styleFamily": "isometric paper-collage zero-waste market",
+      "sentenceEn": "The market's new policy replaced disposable bags with shared reusable baskets.",
+      "sentenceZh": "市场的新规定用共享的可重复使用篮子取代了一次性袋子。",
+      "scene": "An isometric open market shows every stall following the same visible rule: vendors hand goods only in identical sturdy reusable baskets, shoppers return empty baskets to one shared rack, and no disposable bags appear anywhere. Diverse adults have complete faces and natural interactions. Communicate a consistent system through repetition, with no policy signs, labels, logos or text.",
+      "altText": "市场里所有摊位都统一使用可重复利用的篮子，顾客把空篮归还到同一个共享架上。"
+    },
+    {
+      "vocabularyId": "df229c6e-67a0-4f93-8966-bbf16e0b78ac",
+      "word": "everything",
+      "meaningZh": "每件事；一切",
+      "exampleId": "df229c6e-67a0-4f93-8966-bbf16e0b78ac-visual-ex",
+      "styleFamily": "editorial cutaway river clinic boat",
+      "sentenceEn": "The volunteers packed everything the river clinic needed into one small boat.",
+      "sentenceZh": "志愿者把河上诊所需要的一切物资都装进了一艘小船。",
+      "scene": "A clean cutaway view of one small clinic boat being fully prepared by two adult volunteers: sealed medicine cases without labels, bandages, clean water, a solar lantern, folded blankets, fresh food and a compact medical kit all fit into organized compartments. The complete assortment and empty dock shelf show nothing needed was left behind. Faces are fully rendered. No writing or text.",
+      "altText": "两名志愿者把药箱、绷带、净水、太阳能灯、毯子和食物整齐装进一艘河上诊所小船。"
+    },
+    {
+      "vocabularyId": "dabe82f3-c0a5-4fa2-a483-9b0d194446ee",
+      "word": "love",
+      "meaningZh": "爱；热爱；喜爱；爱情",
+      "exampleId": "dabe82f3-c0a5-4fa2-a483-9b0d194446ee-visual-ex",
+      "styleFamily": "soft pastel elephant family care",
+      "sentenceEn": "The elephant mother's patient care showed her love for the injured calf.",
+      "sentenceZh": "象妈妈耐心的照料表现出她对受伤幼象的爱。",
+      "scene": "In a quiet savanna clearing, one adult elephant mother gently shades an injured calf with her body and uses her trunk to place soft leaves beside it. The calf rests safely with a simple plain leg wrap, while the mother's attentive posture communicates enduring care. No people, heart symbols, medical labels, writing or text.",
+      "altText": "象妈妈用身体为受伤幼象遮阳，并用鼻子把柔软树叶放在它身边耐心照料。"
+    },
+    {
+      "vocabularyId": "33b6af01-1cbd-43dd-a45f-8b384f854590",
+      "word": "music",
+      "meaningZh": "音乐；乐曲",
+      "exampleId": "33b6af01-1cbd-43dd-a45f-8b384f854590-visual-ex",
+      "styleFamily": "vibrant screen-print courtyard ensemble",
+      "sentenceEn": "Music filled the courtyard as neighbors played together after sunset.",
+      "sentenceZh": "日落后，邻居们一起演奏，音乐充满了庭院。",
+      "scene": "A welcoming courtyard after sunset holds a small diverse ensemble of four adult neighbors visibly playing a cello, hand drum, flute and acoustic guitar while nearby families listen and sway. All readable faces have complete joyful features; physical playing gestures make sound creation clear. No sheet music, stage banners, logos, writing or text.",
+      "altText": "日落后的庭院里，四位邻居共同演奏大提琴、手鼓、长笛和吉他，周围的人随音乐轻轻摆动。"
+    },
+    {
+      "vocabularyId": "80305293-ceb2-4595-b8c3-c64992a7858a",
+      "word": "including",
+      "meaningZh": "包括；包含",
+      "exampleId": "80305293-ceb2-4595-b8c3-c64992a7858a-visual-ex",
+      "styleFamily": "gouache woodland water gathering",
+      "sentenceEn": "Every woodland animal, including the shy fox, came to drink after the rain.",
+      "sentenceZh": "雨后，所有林中动物都来喝水，其中包括那只胆小的狐狸。",
+      "scene": "At one rain-filled woodland pool, a clearly unified gathering contains one deer, one rabbit, one badger and one shy fox emerging from the edge but visibly drinking at the same pool as the others. The fox must be unmistakably part of the complete group, not separated into another scene. No extra animals, labels, brackets, arrows or text.",
+      "altText": "雨后的林间水池旁，鹿、兔子、獾和胆小的狐狸都聚在一起饮水。"
+    },
+    {
+      "vocabularyId": "e5cc7444-b416-4830-b40c-8da333691c05",
+      "word": "consider",
+      "meaningZh": "考虑；认为；思考",
+      "exampleId": "e5cc7444-b416-4830-b40c-8da333691c05-visual-ex",
+      "styleFamily": "mature editorial design-studio illustration",
+      "sentenceEn": "The engineers paused to consider which bridge model would protect the wetland best.",
+      "sentenceZh": "工程师们停下来思考，哪一种桥梁模型最能保护湿地。",
+      "scene": "Exactly three diverse adult engineers gather around two distinct physical bridge models spanning a tabletop wetland landscape. They pause rather than build: one studies fish passage beneath the first model, another compares the second model's narrow supports, and the third listens thoughtfully. Complete faces show careful deliberation. No blueprints, screens, labels, writing or text.",
+      "altText": "三位工程师围着两种跨越湿地的桥梁模型停下来仔细比较和思考。"
+    },
+    {
+      "vocabularyId": "ea488342-66d3-471f-a5c6-33a60d681c29",
+      "word": "appear",
+      "meaningZh": "出现；显得；似乎；好像",
+      "exampleId": "ea488342-66d3-471f-a5c6-33a60d681c29-visual-ex",
+      "styleFamily": "luminous watercolor firefly dusk",
+      "sentenceEn": "Fireflies began to appear above the meadow as daylight faded.",
+      "sentenceZh": "随着天光渐暗，萤火虫开始出现在草地上方。",
+      "scene": "A meadow transitions from the last cool daylight into dusk. The first scattered fireflies become newly visible as small warm glowing insects above darkening grasses, with more emerging from shadow near the foreground. Their gradual arrival is the visual focus. No people, artificial lights, symbols, letters or text.",
+      "altText": "暮色渐深，第一批发光的萤火虫开始出现在变暗的草地上方。"
+    },
+    {
+      "vocabularyId": "f2e1128b-8a33-4119-b1d6-646fa40555cd",
+      "word": "actually",
+      "meaningZh": "实际上；事实上",
+      "exampleId": "f2e1128b-8a33-4119-b1d6-646fa40555cd-visual-ex",
+      "styleFamily": "graphic-novel rain-reveal geology",
+      "sentenceEn": "The stone looked gray with dust but was actually bright blue underneath.",
+      "sentenceZh": "那块石头蒙着灰尘看似灰色，实际上里面是明亮的蓝色。",
+      "scene": "One large stone occupies a single continuous scene during sudden rain: most of its dusty outer surface remains dull gray, while a broad freshly washed section reveals vivid natural blue mineral beneath as water carries gray dust away. The contrast between misleading appearance and underlying fact must be obvious without split panels, labels, arrows, people or text.",
+      "altText": "雨水冲走石头表面的灰尘，露出下面原本鲜亮的蓝色矿石。"
+    },
+    {
+      "vocabularyId": "fa75aedd-48b8-4c0d-bfb1-43b9fb001c56",
+      "word": "buy",
+      "meaningZh": "买；购买",
+      "exampleId": "fa75aedd-48b8-4c0d-bfb1-43b9fb001c56-visual-ex",
+      "styleFamily": "warm ink-and-watercolor plant nursery",
+      "sentenceEn": "Mina chose to buy native seedlings from the community nursery.",
+      "sentenceZh": "米娜选择从社区苗圃购买本地树苗。",
+      "scene": "At a community plant nursery, one adult woman receives a tray of native seedlings from an older adult grower while handing over a few plain coins in clear exchange. Both complete faces show friendly attention. Rows of healthy local plants surround them without price tags or printed pots. No cash-register screen, signs, logos, numbers or text.",
+      "altText": "社区苗圃里，米娜把硬币递给种植者，同时接过一盘本地树苗。"
+    },
+    {
+      "vocabularyId": "00edf1df-f0cd-420d-af74-14e854236ee3",
+      "word": "probably",
+      "meaningZh": "大概；可能",
+      "exampleId": "00edf1df-f0cd-420d-af74-14e854236ee3-visual-ex",
+      "styleFamily": "dramatic woodcut approaching rain",
+      "sentenceEn": "The heavy clouds will probably bring rain before the farmers finish stacking the hay.",
+      "sentenceZh": "厚重的乌云很可能会在农民堆完干草前带来降雨。",
+      "scene": "A nearly completed haystack sits beneath rapidly approaching dark rain clouds whose low edge already trails visible rain across the distant fields, while exactly two adult farmers hurry to cover the remaining dry hay. Their complete faces show calm urgency. The strong evidence makes rain likely but it has not reached them yet. No clocks, weather icons, signs or text.",
+      "altText": "远处厚重乌云已经降雨，两名农民正赶在雨水到来前覆盖尚未堆完的干草。"
+    },
+    {
+      "vocabularyId": "17ed07ad-c0f1-4829-afb4-b9cebed5b4ba",
+      "word": "human",
+      "meaningZh": "人类；人的；人性的",
+      "exampleId": "17ed07ad-c0f1-4829-afb4-b9cebed5b4ba-visual-ex",
+      "styleFamily": "painterly storybook wildlife trust",
+      "sentenceEn": "The injured wolf slowly learned that a human could help without causing harm.",
+      "sentenceZh": "受伤的狼慢慢明白，人类也可以在不伤害它的情况下提供帮助。",
+      "scene": "In a quiet wildlife rehabilitation enclosure, one adult human veterinarian sits low and still at a respectful distance, sliding a bowl of water toward one injured wolf with a simple leg wrap. The wolf cautiously steps closer rather than fleeing. The veterinarian's complete face and open hands show patience; no other people appear. No cage labels, medical logos, writing or text.",
+      "altText": "野生动物康复区里，一名兽医保持距离把水推向受伤的狼，狼正谨慎地靠近。"
+    }
+  ]
+}

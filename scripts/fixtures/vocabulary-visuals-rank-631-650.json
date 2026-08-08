@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-631-650-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "1387c921-783d-4f41-93aa-07af521de55d",
+      "word": "foreign",
+      "meaningZh": "外国的；外交的；陌生的；外来的",
+      "exampleId": "1387c921-783d-4f41-93aa-07af521de55d-visual-ex",
+      "styleFamily": "cobalt-terracotta cosmopolitan watercolor kitchen",
+      "sentenceEn": "A foreign spice introduced a new aroma to the village kitchen.",
+      "sentenceZh": "一种外来的香料为村庄厨房带来了新的香气。",
+      "scene": "In a village kitchen, a traveler shares one unfamiliar colorful spice pod from a distant landscape, and local cooks smell it with curious complete faces before adding a small amount to a familiar stew. Cultural exchange is respectful. No flags, maps with labels, packaging, writing or text.",
+      "altText": "旅行者把一种来自远方的陌生香料带进村庄厨房，当地厨师好奇地闻香并尝试入菜。"
+    },
+    {
+      "vocabularyId": "e7f34ef3-eec8-4c25-bfda-7c2d7514d396",
+      "word": "drop",
+      "meaningZh": "下降；掉落；滴；放弃",
+      "exampleId": "e7f34ef3-eec8-4c25-bfda-7c2d7514d396-visual-ex",
+      "styleFamily": "pearl-blue macro glass art morning leaf",
+      "sentenceEn": "A single drop of dew fell from the fern into the pond.",
+      "sentenceZh": "一滴露水从蕨叶落入池塘。",
+      "scene": "A macro moment freezes exactly one round dew drop just after leaving the tip of a fern, falling toward a still pond where an earlier ripple is fading. No other falling drops, people, labels, writing or text.",
+      "altText": "一滴圆润露珠刚离开蕨叶尖端，正落向下方平静池塘。"
+    },
+    {
+      "vocabularyId": "b8000c8b-1a02-4ad6-9bf9-cbfb424b985d",
+      "word": "blood",
+      "meaningZh": "血；血统；流血；气质；生命",
+      "exampleId": "b8000c8b-1a02-4ad6-9bf9-cbfb424b985d-visual-ex",
+      "styleFamily": "ruby-cyan educational clay cutaway circulation",
+      "sentenceEn": "The whale's warm blood carries oxygen through its enormous body.",
+      "sentenceZh": "鲸鱼温暖的血液把氧气输送到庞大的身体各处。",
+      "scene": "A mature illustrated whale cutaway uses graceful red and blue vessel paths to show blood circulating from heart and lungs through the enormous body while the whale swims naturally. Anatomical accuracy is clear but not graphic. No arrows, labels, letters, writing or text.",
+      "altText": "鲸鱼游动的身体剖面中，红蓝血管从心肺延伸到全身，表现血液循环输送氧气。"
+    },
+    {
+      "vocabularyId": "df747ef8-1767-45ad-860a-573725db0b80",
+      "word": "upon",
+      "meaningZh": "在...之上；迫近",
+      "exampleId": "df747ef8-1767-45ad-860a-573725db0b80-visual-ex",
+      "styleFamily": "indigo-gold storybook owl moonrise",
+      "sentenceEn": "At dusk, the owl settled upon the highest branch.",
+      "sentenceZh": "黄昏时，猫头鹰停在最高的树枝上。",
+      "scene": "At dusk, one owl lands securely upon the upper surface of the highest branch of an old tree, talons visibly gripping from above while lower branches remain empty. No people, spatial arrows, labels, writing or text.",
+      "altText": "黄昏中，一只猫头鹰稳稳落在老树最高枝条上方，爪子清楚抓住枝面。"
+    },
+    {
+      "vocabularyId": "f9eb40d4-09f9-4ea8-bc67-561a04ccd99b",
+      "word": "agency",
+      "meaningZh": "代理机构；中介；政府部门",
+      "exampleId": "f9eb40d4-09f9-4ea8-bc67-561a04ccd99b-visual-ex",
+      "styleFamily": "teal-orange isometric wildlife response center",
+      "sentenceEn": "The wildlife agency coordinated the rescue of animals after the spill.",
+      "sentenceZh": "野生动物机构协调了泄漏事故后的动物救援。",
+      "scene": "An isometric wildlife response center shows one agency coordinating boats, animal washing stations, veterinarians and habitat crews around a central open table. Complete faces are clear where readable. No agency logos, signs, maps with text, labels or writing.",
+      "altText": "野生动物机构从中央工作区协调船只、清洗站、兽医和栖息地修复队开展救援。"
+    },
+    {
+      "vocabularyId": "d752c513-d065-43f5-902f-09f831a35386",
+      "word": "push",
+      "meaningZh": "推；推动；推进；逼迫",
+      "exampleId": "d752c513-d065-43f5-902f-09f831a35386-visual-ex",
+      "styleFamily": "red-cream bold linocut stranded cart",
+      "sentenceEn": "Three neighbors worked together to push the cart out of the mud.",
+      "sentenceZh": "三位邻居一起把手推车推出泥地。",
+      "scene": "Exactly three diverse adult neighbors lean forward with hands against one stuck cart, legs braced and wheels beginning to climb from deep mud onto firm ground. All complete faces show effort and teamwork. No signs, logos, writing or text.",
+      "altText": "三位邻居同时前倾发力，把陷入深泥的手推车推向坚实地面。"
+    },
+    {
+      "vocabularyId": "2e9e3c2b-8d10-4c7d-ba6f-f831e8c21c2c",
+      "word": "nature",
+      "meaningZh": "自然；大自然；本性；性格；性质",
+      "exampleId": "2e9e3c2b-8d10-4c7d-ba6f-f831e8c21c2c-visual-ex",
+      "styleFamily": "emerald-azure panoramic botanical tapestry",
+      "sentenceEn": "After the dam was removed, nature slowly returned to the river.",
+      "sentenceZh": "大坝拆除后，大自然逐渐回到了河流。",
+      "scene": "A broad restored river flows through a former dam gap as salmon return, reeds spread, beavers build and willow seedlings root along new banks, showing nature reclaiming the system. No people, machinery, before-after panels, labels, writing or text.",
+      "altText": "旧坝缺口中河水重新流动，鲑鱼、芦苇、河狸和柳树逐步回到恢复中的河流。"
+    },
+    {
+      "vocabularyId": "668f56fd-1d3e-4586-8ca3-2f842a749dff",
+      "word": "color",
+      "meaningZh": "颜色",
+      "exampleId": "668f56fd-1d3e-4586-8ca3-2f842a749dff-visual-ex",
+      "styleFamily": "full-spectrum stained-glass reef",
+      "sentenceEn": "The reef changed color as sunlight moved across the shallow water.",
+      "sentenceZh": "阳光掠过浅水时，珊瑚礁呈现出不同颜色。",
+      "scene": "A shallow coral reef bursts with clearly distinct natural colors as moving sunlight passes through rippled water, illuminating coral, anemones and fish in a full balanced spectrum. No people, color swatches, labels, writing or text.",
+      "altText": "浅海阳光穿过波纹，珊瑚、海葵和鱼群呈现丰富而清晰的自然色彩。"
+    },
+    {
+      "vocabularyId": "faca235e-39fb-4de2-a357-8fddcdc5b8d7",
+      "word": "recently",
+      "meaningZh": "最近",
+      "exampleId": "faca235e-39fb-4de2-a357-8fddcdc5b8d7-visual-ex",
+      "styleFamily": "sage-peach editorial gouache new beaver lodge",
+      "sentenceEn": "Beavers had recently built a lodge from still-green branches.",
+      "sentenceZh": "河狸最近用仍然青绿的树枝建起了巢穴。",
+      "scene": "A newly completed beaver lodge sits in a pond, made from freshly cut branches that still have bright green leaves and pale wet wood, while fresh tracks lead from the bank. One beaver adds the last twig. No clocks, dates, signs, writing or text.",
+      "altText": "池塘中的河狸巢由仍带绿叶的新鲜树枝搭成，湿润切口和新脚印说明它最近才完成。"
+    },
+    {
+      "vocabularyId": "7f5afd37-9b71-4348-b321-2faaa97b5f97",
+      "word": "store",
+      "meaningZh": "商店；储存；存储",
+      "exampleId": "7f5afd37-9b71-4348-b321-2faaa97b5f97-visual-ex",
+      "styleFamily": "ochre-indigo cutaway squirrel winter pantry",
+      "sentenceEn": "The squirrel used a hollow tree to store nuts for winter.",
+      "sentenceZh": "松鼠利用树洞储存过冬坚果。",
+      "scene": "A cutaway old tree reveals a dry hollow chamber where one squirrel carefully places nuts into an organized winter cache while snow begins outside. No people, shelves with labels, numbers, writing or text.",
+      "altText": "老树剖面中，松鼠把坚果放入干燥树洞储藏室，外面已开始飘雪。"
+    },
+    {
+      "vocabularyId": "72b243af-1f5d-4a14-ac84-c60c2aa906f6",
+      "word": "reduce",
+      "meaningZh": "减少；分解；降低；使衰退；把...分",
+      "exampleId": "72b243af-1f5d-4a14-ac84-c60c2aa906f6-visual-ex",
+      "styleFamily": "mint-coral before-after paper collage packaging",
+      "sentenceEn": "Reusable jars helped the market reduce its pile of waste.",
+      "sentenceZh": "可重复使用的罐子帮助市场减少了垃圾堆。",
+      "scene": "One continuous market counter transitions from a large pile of disposable packaging at left to a much smaller waste pile at right as shoppers refill durable plain jars. Complete faces show routine participation. No recycling symbols, labels, logos, writing or text.",
+      "altText": "市场顾客改用可重复装填的玻璃罐后，一旁一次性包装垃圾堆明显变小。"
+    },
+    {
+      "vocabularyId": "9cb1168b-5609-4135-bb3e-b811ef0fb3e5",
+      "word": "sound",
+      "meaningZh": "声音；听起来；健全的",
+      "exampleId": "9cb1168b-5609-4135-bb3e-b811ef0fb3e5-visual-ex",
+      "styleFamily": "midnight-cyan luminous woodcut frog pond",
+      "sentenceEn": "The sound of frogs traveled across the pond after dark.",
+      "sentenceZh": "天黑后，蛙鸣声传遍池塘。",
+      "scene": "At a moonlit pond, several frogs call with visibly open mouths as ripples spread across water, reeds tremble and a listening owl turns toward them, suggesting traveling sound without drawn sound waves or notes. No people, symbols, writing or text.",
+      "altText": "月光池塘边，青蛙张口鸣叫，水波与芦苇轻颤，猫头鹰也转头倾听。"
+    },
+    {
+      "vocabularyId": "2ece170f-b432-45db-b7e2-d537f14d2d37",
+      "word": "note",
+      "meaningZh": "笔记；便条；注意；音符",
+      "exampleId": "2ece170f-b432-45db-b7e2-d537f14d2d37-visual-ex",
+      "styleFamily": "lavender-gold lyrical ink bird song",
+      "sentenceEn": "The flute held one clear note above the quiet strings.",
+      "sentenceZh": "长笛在安静的弦乐之上保持着一个清晰音符。",
+      "scene": "A small chamber ensemble plays softly while one flutist sustains a breath, visually isolated by a single long luminous ribbon rising above lower gentle string vibrations. Complete faces show concentration. No written music, note symbols, labels, writing or text.",
+      "altText": "室内乐团轻柔演奏时，长笛手持续吹奏，一条明亮声线高于弦乐的低柔波动。"
+    },
+    {
+      "vocabularyId": "ca2f45b9-5519-47ee-9af8-3376ec9cd129",
+      "word": "fine",
+      "meaningZh": "好的；精细的；罚款",
+      "exampleId": "ca2f45b9-5519-47ee-9af8-3376ec9cd129-visual-ex",
+      "styleFamily": "pearl-russet macro embroidery illustration",
+      "sentenceEn": "A fine thread repaired the delicate moth wing model.",
+      "sentenceZh": "一根细线修复了精致的飞蛾翅膀模型。",
+      "scene": "A craft conservator uses an extremely fine thread and tiny needle to repair one delicate translucent moth-wing model, contrasted with thicker unused cord nearby. Her complete face and magnifier show careful precision. No labels, instructions, writing or text.",
+      "altText": "修复师用极细线和微小针修补透明蛾翼模型，旁边较粗绳线形成明显对比。"
+    },
+    {
+      "vocabularyId": "d5192d79-c83b-494c-9303-e415a69cd0e9",
+      "word": "near",
+      "meaningZh": "近的；近亲的",
+      "exampleId": "d5192d79-c83b-494c-9303-e415a69cd0e9-visual-ex",
+      "styleFamily": "warm-gray-vermillion minimalist snow leopard",
+      "sentenceEn": "The cub stayed near its mother while crossing the rocks.",
+      "sentenceZh": "幼崽穿过岩石时一直靠近母亲。",
+      "scene": "A snow leopard cub crosses a rocky slope pressed closely beside its mother's flank, while the rest of the mountain opens as distant empty space, making nearness unmistakable. No other leopards, people, distance marks, writing or text.",
+      "altText": "雪豹幼崽紧贴母亲身侧穿过岩坡，与远处空旷山谷形成距离对比。"
+    },
+    {
+      "vocabularyId": "5b766b07-f67f-4b42-a52b-437fad8f29a4",
+      "word": "movement",
+      "meaningZh": "运动；移动",
+      "exampleId": "5b766b07-f67f-4b42-a52b-437fad8f29a4-visual-ex",
+      "styleFamily": "cyan-magenta kinetic silk-screen manta ray",
+      "sentenceEn": "The manta ray's smooth movement stirred ribbons of sand below.",
+      "sentenceZh": "蝠鲼流畅的移动搅动了下方带状沙流。",
+      "scene": "One manta ray glides in a graceful bank above the seafloor, its winglike fins curved mid-motion while long ribbons of disturbed sand trail behind to reveal continuous movement. No people, duplicate rays, arrows, labels, writing or text.",
+      "altText": "一只蝠鲼流畅转弯滑过海床，身后被搅起的长条沙流清楚呈现移动轨迹。"
+    },
+    {
+      "vocabularyId": "5c031a99-c3a0-4ead-9640-cf4e5426cb22",
+      "word": "page",
+      "meaningZh": "页；页面；网页",
+      "exampleId": "5c031a99-c3a0-4ead-9640-cf4e5426cb22-visual-ex",
+      "styleFamily": "cream-forest-green woodcut giant botanical book",
+      "sentenceEn": "A pressed fern covered nearly the whole page of the field journal.",
+      "sentenceZh": "一片压制蕨叶几乎覆盖了野外日志的整页。",
+      "scene": "An open field journal shows one clearly bounded blank page nearly filled by a large pressed fern, while the opposite page remains mostly hidden under the cover angle. No handwriting, page numbers, labels, letters or text.",
+      "altText": "打开的野外日志中，一片大型压制蕨叶几乎铺满边界清楚的单张空白页面。"
+    },
+    {
+      "vocabularyId": "5a598864-f9d0-4276-ad49-a9e2b5e5ac41",
+      "word": "enter",
+      "meaningZh": "进入；输入；参加",
+      "exampleId": "5a598864-f9d0-4276-ad49-a9e2b5e5ac41-visual-ex",
+      "styleFamily": "blue-orange cinematic animation sea cave",
+      "sentenceEn": "The kayak began to enter the glowing sea cave.",
+      "sentenceZh": "皮划艇开始进入发光的海蚀洞。",
+      "scene": "A kayak crosses a sharply defined sea-cave threshold, with its bow already inside the blue glowing cavern and its stern still in bright open water. The paddler's complete face looks ahead. No signs, boat names, writing or text.",
+      "altText": "皮划艇船头已越过洞口进入蓝色发光海洞，船尾仍留在明亮外海。"
+    },
+    {
+      "vocabularyId": "7eceaf78-adcf-459e-86d1-b665286996a1",
+      "word": "share",
+      "meaningZh": "分享；共享；股份；份额",
+      "exampleId": "7eceaf78-adcf-459e-86d1-b665286996a1-visual-ex",
+      "styleFamily": "sunflower-teal warm paper collage community oven",
+      "sentenceEn": "Neighbors gathered to share bread from the community oven.",
+      "sentenceZh": "邻居们聚在一起分享社区烤炉烤出的面包。",
+      "scene": "Around a community oven, diverse neighbors divide several fresh loaves into equal pieces and pass them outward so elders, children and workers each receive some. Every readable face is complete and warm. No shop signs, labels, packaging, writing or text.",
+      "altText": "社区烤炉旁，邻居们把新鲜面包均分并传给不同年龄和职业的人共同享用。"
+    },
+    {
+      "vocabularyId": "e19fa5f4-24c1-4e62-9b51-96a309d5c57c",
+      "word": "common",
+      "meaningZh": "通常的；共同的；通俗的；公共的",
+      "exampleId": "e19fa5f4-24c1-4e62-9b51-96a309d5c57c-visual-ex",
+      "styleFamily": "indigo-coral editorial mosaic shared courtyard",
+      "sentenceEn": "A common courtyard connected all four apartment buildings.",
+      "sentenceZh": "一个公共庭院连接着四栋公寓楼。",
+      "scene": "Exactly four distinct apartment buildings open onto one central shared courtyard where residents garden, repair bicycles and rest together, making the common space visibly accessible from every entrance. Complete faces where readable. No building numbers, signs, labels, writing or text.",
+      "altText": "四栋不同公寓楼共同围绕一个中央庭院，每个入口都通向这片共享空间。"
+    }
+  ]
+}

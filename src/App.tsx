@@ -10,6 +10,7 @@ import {
 import VocabularyAdmin from './admin/VocabularyAdmin'
 import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
 import AuthPage from './features/auth/AuthPage'
+import SentencePracticePage from './features/examples/SentencePracticePage'
 import HomePage from './features/home/HomePage'
 import LibraryPage from './features/library/LibraryPage'
 import StrategyPage from './features/strategy/StrategyPage'
@@ -72,12 +73,6 @@ function App() {
       }
     >
   > = {
-    examples: {
-      title: '例句会围绕真实阅读场景整理',
-      description:
-        '这里会优先展示短、准、可复用的英文句子，帮助把单词放回语境里，而不是孤立背词。',
-      note: '第一版先保留入口，后续从公共例句数据中接入。',
-    },
   }
   const placeholderPage = placeholderPages[view]
   const isAuthPage = isAuthView(view)
@@ -226,6 +221,8 @@ function App() {
         {isAuthPage && <AuthPage mode={view} onChangeView={changeView} />}
 
         {view === 'strategy' && <StrategyPage onChangeView={changeView} />}
+
+        {view === 'examples' && <SentencePracticePage />}
 
         {placeholderPage && (
           <section className="panel placeholder-panel">

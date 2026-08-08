@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-590-610-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "04ec84a5-e417-4e80-b121-100b50621bec",
+      "word": "hospital",
+      "meaningZh": "医院",
+      "exampleId": "04ec84a5-e417-4e80-b121-100b50621bec-visual-ex",
+      "styleFamily": "teal-coral architectural cutaway animation",
+      "sentenceEn": "The new hospital brought surgery and emergency care closer to the valley.",
+      "sentenceZh": "新医院让山谷居民更容易获得手术和急救服务。",
+      "scene": "A warm illustrated cutaway of one modern rural hospital shows an emergency bay, operating room and recovery garden working together while an ambulance arrives from the surrounding valley. Faces are complete where readable. No medical logos, signs, labels, interfaces, writing or text.",
+      "altText": "山谷中的新医院以剖面呈现急救区、手术室和康复花园，一辆救护车正抵达。"
+    },
+    {
+      "vocabularyId": "055269c4-325b-4fc8-9d7d-d0a59730e9ba",
+      "word": "church",
+      "meaningZh": "教堂；礼拜；教会",
+      "exampleId": "055269c4-325b-4fc8-9d7d-d0a59730e9ba-visual-ex",
+      "styleFamily": "lapis-amber stained-glass village winter",
+      "sentenceEn": "The old church opened its warm hall to travelers during the blizzard.",
+      "sentenceZh": "暴风雪期间，老教堂开放温暖大厅供旅人避寒。",
+      "scene": "An old stone church glows warmly against a winter blizzard, its broad doors open as local volunteers welcome cold travelers into a shared hall with blankets and soup. Readable faces are complete and compassionate. No denomination symbols, signs, writing or text.",
+      "altText": "暴风雪中的老石教堂敞开大门，志愿者把受冻旅人迎进温暖大厅。"
+    },
+    {
+      "vocabularyId": "cddf9123-0de0-4881-a460-5dd4a5e8bb8b",
+      "word": "close",
+      "meaningZh": "关闭；结束；接近的",
+      "exampleId": "cddf9123-0de0-4881-a460-5dd4a5e8bb8b-visual-ex",
+      "styleFamily": "navy-peach paper-theater observatory dome",
+      "sentenceEn": "The astronomer began to close the dome as morning approached.",
+      "sentenceZh": "清晨临近时，天文学家开始关闭穹顶。",
+      "scene": "At a hilltop observatory before dawn, two curved dome panels visibly move toward each other over a telescope, leaving only a narrowing gap of starry sky. One astronomer operates a plain lever with a complete calm face. No controls with text, labels, writing or numbers.",
+      "altText": "天亮前，天文台穹顶的两片弧形门正在合拢，星空缝隙越来越窄。"
+    },
+    {
+      "vocabularyId": "b08d2215-7332-47af-9269-7b62d781de65",
+      "word": "thousand",
+      "meaningZh": "千；成千的；许多的",
+      "exampleId": "b08d2215-7332-47af-9269-7b62d781de65-visual-ex",
+      "styleFamily": "black-cyan luminous ink firefly forest",
+      "sentenceEn": "A thousand fireflies turned the dark forest into a field of light.",
+      "sentenceZh": "一千只萤火虫把黑暗森林变成了光之原野。",
+      "scene": "A deep night forest is filled with an immense dense cloud of roughly one thousand tiny glowing fireflies flowing between trunks and over a stream, creating overwhelming quantity through light. No people, numbers, constellations, labels, writing or text.",
+      "altText": "黑暗森林中，无数萤火虫像光的河流一样穿过树干并映亮溪水。"
+    },
+    {
+      "vocabularyId": "06ebc7ed-b9f2-43b5-ab37-5f2a3ee48bdb",
+      "word": "risk",
+      "meaningZh": "风险",
+      "exampleId": "06ebc7ed-b9f2-43b5-ab37-5f2a3ee48bdb-visual-ex",
+      "styleFamily": "ochre-slate graphic novel cliff nest rescue",
+      "sentenceEn": "Crossing the cracked ice would be a risk, so the fox turned back.",
+      "sentenceZh": "穿过开裂的冰面会有风险，因此狐狸转身返回。",
+      "scene": "A red fox reaches the edge of a frozen lake where dark water is visible through spreading cracks, then clearly turns back toward solid snowy ground. Its cautious posture makes the danger and decision visible. No people, warning signs, symbols, writing or text.",
+      "altText": "狐狸来到布满裂缝、露出黑水的薄冰边缘后谨慎转身，避免继续冒险。"
+    },
+    {
+      "vocabularyId": "a07bd88e-9c91-4b0e-81f3-881585378a7a",
+      "word": "current",
+      "meaningZh": "当前的；水流；趋势",
+      "exampleId": "a07bd88e-9c91-4b0e-81f3-881585378a7a-visual-ex",
+      "styleFamily": "turquoise-rust linocut river otter",
+      "sentenceEn": "The strong current carried fallen leaves around the resting otter.",
+      "sentenceZh": "强劲的水流把落叶带过休息的水獭身边。",
+      "scene": "From above, a clear river current is visible through long curling trails of colorful leaves and bubbles sweeping around a river otter holding still beside a rock. The directional flow dominates the composition. No arrows, diagrams, labels, writing or text.",
+      "altText": "俯视河面，落叶和气泡形成清晰流线，强劲水流绕过岩石旁休息的水獭。"
+    },
+    {
+      "vocabularyId": "cc4bbac0-42fa-4494-82cb-e61f408f2cbf",
+      "word": "fire",
+      "meaningZh": "火；火灾；解雇；开火",
+      "exampleId": "cc4bbac0-42fa-4494-82cb-e61f408f2cbf-visual-ex",
+      "styleFamily": "charcoal-vermilion dramatic gouache controlled burn",
+      "sentenceEn": "A controlled fire cleared dry brush without harming the old trees.",
+      "sentenceZh": "受控燃烧清除了干燥灌木，同时没有伤害老树。",
+      "scene": "Trained land stewards manage a low controlled line of fire through dry brush while wide cleared bands protect enormous old trees and green habitat beyond. Complete faces are calm and attentive. No uniforms with logos, warning signs, labels, writing or text.",
+      "altText": "土地管理人员控制低矮火线清理干灌木，隔离带保护了后方的大树和绿色生境。"
+    },
+    {
+      "vocabularyId": "6e3cbf1a-9a10-451f-b03d-4623bcc63805",
+      "word": "future",
+      "meaningZh": "未来；将来；将来的；未来的",
+      "exampleId": "6e3cbf1a-9a10-451f-b03d-4623bcc63805-visual-ex",
+      "styleFamily": "emerald-sunrise solarpunk matte painting",
+      "sentenceEn": "The children imagined a future where every rooftop grew food.",
+      "sentenceZh": "孩子们想象着一个每座屋顶都种植食物的未来。",
+      "scene": "A sweeping illustrated future city has abundant rooftop orchards, water gardens and solar canopies connected by green terraces, while diverse children plant seedlings in the foreground. Their complete faces show hope and curiosity. No futuristic text, screens, signs, logos or writing.",
+      "altText": "充满屋顶果园、水景和太阳能棚架的未来城市中，孩子们正在种下新苗。"
+    },
+    {
+      "vocabularyId": "c2a71ea8-6260-4854-9d2f-b7cad0e61590",
+      "word": "wrong",
+      "meaningZh": "错误的；不正当的；失常的；错误地",
+      "exampleId": "c2a71ea8-6260-4854-9d2f-b7cad0e61590-visual-ex",
+      "styleFamily": "coral-indigo comic pottery kiln plumbing",
+      "sentenceEn": "The pipe was connected to the wrong tank, so clean water flowed away.",
+      "sentenceZh": "管道接错了水箱，因此净水白白流走。",
+      "scene": "A workshop cutaway shows one pipe mistakenly connected from a clean-water tank to an outdoor drain while the intended garden tank remains dry beside it. A technician notices the visible mismatch with a complete concerned face. No arrows, diagrams, labels, letters, writing or text.",
+      "altText": "净水管被错误接向排水口，水正流走，而本应蓄水的花园水箱仍然干燥。"
+    },
+    {
+      "vocabularyId": "ec4ddb5a-d4f6-4643-ae4e-5e5fa6df4103",
+      "word": "involve",
+      "meaningZh": "涉及；包含；参与；牵涉",
+      "exampleId": "ec4ddb5a-d4f6-4643-ae4e-5e5fa6df4103-visual-ex",
+      "styleFamily": "violet-lime isometric theater production",
+      "sentenceEn": "Building the stage will involve carpenters, painters, electricians, and dancers.",
+      "sentenceZh": "搭建舞台将涉及木工、油漆工、电工和舞者。",
+      "scene": "One theater stage in progress visibly involves four interdependent groups: carpenters build platforms, painters finish scenery, electricians hang lights and dancers rehearse around them. Readable faces are complete and active. No job labels, signs, scripts, writing or text.",
+      "altText": "同一座剧场舞台上，木工、油漆工、电工和舞者同时协作完成不同环节。"
+    },
+    {
+      "vocabularyId": "09581629-2b89-4534-a12b-ae0fa0c2f536",
+      "word": "defense",
+      "meaningZh": "防御；防卫",
+      "exampleId": "09581629-2b89-4534-a12b-ae0fa0c2f536-visual-ex",
+      "styleFamily": "sea-green-sand sculpted diorama dune defense",
+      "sentenceEn": "The restored dunes formed a natural defense against storm waves.",
+      "sentenceZh": "修复后的沙丘形成了抵御风暴海浪的天然屏障。",
+      "scene": "A coastal cross-section shows tall planted dunes absorbing and breaking powerful storm waves while homes and wetlands behind remain calm and protected. Deep roots visibly hold sand together. No people, arrows, diagrams, labels, writing or text.",
+      "altText": "长满植物的高沙丘阻挡并削弱风暴海浪，后方房屋和湿地保持平静。"
+    },
+    {
+      "vocabularyId": "721b126d-e0e1-4a7d-924a-72f9ea007107",
+      "word": "anyone",
+      "meaningZh": "任何人",
+      "exampleId": "721b126d-e0e1-4a7d-924a-72f9ea007107-visual-ex",
+      "styleFamily": "rainbow-muted editorial collage public piano",
+      "sentenceEn": "Anyone could sit at the public piano and play.",
+      "sentenceZh": "任何人都可以坐到公共钢琴前演奏。",
+      "scene": "An open public square centers on one accessible piano as a child, elder, office worker, wheelchair user and street cleaner each wait or encourage the current player, showing that everyone is welcome. All readable faces are complete. No signs, sheet music, logos, writing or text.",
+      "altText": "公共广场的钢琴向所有人开放，不同年龄、职业和行动能力的人都能轮流演奏。"
+    },
+    {
+      "vocabularyId": "9f8089a2-e824-4cdb-8ab2-71710571f64f",
+      "word": "increase",
+      "meaningZh": "增加；增长；提高",
+      "exampleId": "9f8089a2-e824-4cdb-8ab2-71710571f64f-visual-ex",
+      "styleFamily": "green-magenta time-lapse mushroom watercolor",
+      "sentenceEn": "Daily mist helped increase the number of mushrooms on the log.",
+      "sentenceZh": "每天的水雾让原木上的蘑菇数量增加。",
+      "scene": "One continuous fallen log progresses from a few tiny mushrooms at the dry left end to many healthy mushrooms under fine mist at the right end, with a clear gradual increase. No panels, numbers, arrows, labels, writing or text.",
+      "altText": "同一根倒木上的蘑菇从左侧少量幼小个体逐渐增加为右侧密集成熟的一群。"
+    },
+    {
+      "vocabularyId": "c184fb46-cd74-4397-abab-6f3eacb7cf4a",
+      "word": "bank",
+      "meaningZh": "银行；河岸；库",
+      "exampleId": "c184fb46-cd74-4397-abab-6f3eacb7cf4a-visual-ex",
+      "styleFamily": "willow-blue Chinese brush river landscape",
+      "sentenceEn": "A family of capybaras rested on the sunny river bank.",
+      "sentenceZh": "一群水豚在阳光明媚的河岸上休息。",
+      "scene": "A family of capybaras rests on a clearly defined grassy river bank between flowing water and tall willow trees, some half on land and one near the edge. No buildings, people, financial imagery, labels, writing or text.",
+      "altText": "阳光下的青草河岸连接流水与柳树，一群水豚安静地在岸边休息。"
+    },
+    {
+      "vocabularyId": "64d41227-f614-48b0-88d5-7c2ea4582809",
+      "word": "myself",
+      "meaningZh": "我自己",
+      "exampleId": "64d41227-f614-48b0-88d5-7c2ea4582809-visual-ex",
+      "styleFamily": "lavender-ochre introspective graphic memoir",
+      "sentenceEn": "I repaired the torn sail by myself before the others returned.",
+      "sentenceZh": "其他人回来之前，我独自修好了破损的船帆。",
+      "scene": "On a quiet dock, one sailor works entirely alone stitching a large torn sail, with finished strong seams behind and empty tools beside them. The sailor's complete face shows independent concentration and pride; no other person appears. No boat names, labels, writing or text.",
+      "altText": "安静码头上，只有一名水手独自缝合破损船帆，身后已完成的缝线牢固整齐。"
+    },
+    {
+      "vocabularyId": "6c159897-7e62-46be-8b05-1218ed5fc3de",
+      "word": "certainly",
+      "meaningZh": "当然；肯定",
+      "exampleId": "6c159897-7e62-46be-8b05-1218ed5fc3de-visual-ex",
+      "styleFamily": "cobalt-yellow clean-line animation broken bridge",
+      "sentenceEn": "The fresh tracks certainly belonged to the cart beside the gate.",
+      "sentenceZh": "这些新鲜车辙肯定属于门旁的那辆手推车。",
+      "scene": "Fresh muddy wheel tracks run continuously from a gate and align exactly with the distinctive uneven wheels of one cart parked beside it. A gardener compares them with a complete confident face. No measuring marks, symbols, labels, writing or text.",
+      "altText": "泥地上的新鲜车辙与门旁手推车两只不等宽的轮子完全吻合，来源十分确定。"
+    },
+    {
+      "vocabularyId": "a089b5a3-ed8b-4ee0-a4c7-4efa8519e3c6",
+      "word": "west",
+      "meaningZh": "西方；西部；西方的；向西的",
+      "exampleId": "a089b5a3-ed8b-4ee0-a4c7-4efa8519e3c6-visual-ex",
+      "styleFamily": "sunset-purple-copper desert tapestry",
+      "sentenceEn": "The caravan traveled west toward the setting sun.",
+      "sentenceZh": "商队朝着落日向西行进。",
+      "scene": "A camel caravan moves across broad desert ridges directly toward a low setting sun, its long shadows stretching behind in the opposite direction. Faces are tiny and complete only if readable. No compass, map, flags, labels, writing or text.",
+      "altText": "沙漠商队迎着低悬落日前进，长长影子留在身后，清楚表现向西行进。"
+    },
+    {
+      "vocabularyId": "8b334635-0b34-4fcc-abb1-5f2527aa9240",
+      "word": "sport",
+      "meaningZh": "运动；体育",
+      "exampleId": "8b334635-0b34-4fcc-abb1-5f2527aa9240-visual-ex",
+      "styleFamily": "electric-blue-orange energetic screenprint wheelchair basketball",
+      "sentenceEn": "Wheelchair basketball became her favorite sport.",
+      "sentenceZh": "轮椅篮球成为她最喜欢的运动。",
+      "scene": "An adult wheelchair basketball player turns dynamically around a defender and releases the ball toward a hoop while teammates create an active court composition. All readable faces have clear features and competitive joy. No uniforms with text, scoreboard, logos, writing or numbers.",
+      "altText": "轮椅篮球场上，一名运动员快速转向突破防守，并将球投向篮筐。"
+    },
+    {
+      "vocabularyId": "2d79471a-6351-4c1d-a826-0f81a3847566",
+      "word": "board",
+      "meaningZh": "板；董事会；委员会；登上",
+      "exampleId": "2d79471a-6351-4c1d-a826-0f81a3847566-visual-ex",
+      "styleFamily": "ocean-blue-coral retro travel poster ferry",
+      "sentenceEn": "The cyclists began to board the island ferry at sunrise.",
+      "sentenceZh": "日出时，骑行者开始登上开往小岛的渡船。",
+      "scene": "At sunrise, several cyclists wheel bicycles up one clear gangway from the dock onto an island ferry, with the lead rider crossing the vessel threshold. Faces are complete where readable. No vessel name, tickets, signs, logos, writing or text.",
+      "altText": "日出码头上，骑行者推着自行车沿舷梯依次登上前往小岛的渡船。"
+    },
+    {
+      "vocabularyId": "86f37d4f-38f3-45c7-86ad-65298c8d1dd9",
+      "word": "seek",
+      "meaningZh": "寻求；寻找；追求",
+      "exampleId": "86f37d4f-38f3-45c7-86ad-65298c8d1dd9-visual-ex",
+      "styleFamily": "indigo-ivory scratchboard desert elephant",
+      "sentenceEn": "The elephants crossed the dry plain to seek water.",
+      "sentenceZh": "象群穿过干旱平原寻找水源。",
+      "scene": "An elephant family walks purposefully across a cracked dry plain toward distant green reeds and birds circling above a hidden waterhole, using sensory clues to seek water. No people, arrows, maps, labels, writing or text.",
+      "altText": "象群穿过龟裂平原，朝着远方绿芦苇和盘旋水鸟所在的位置寻找水源。"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-692-711-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, arrows, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7f068cd6-30d8-4a72-9dc8-970d8008d0b9",
+      "word": "media",
+      "meaningZh": "媒体；媒质",
+      "exampleId": "7f068cd6-30d8-4a72-9dc8-970d8008d0b9-visual-ex",
+      "styleFamily": "navy-coral editorial collage flood reporting",
+      "sentenceEn": "Local media documented how the town rebuilt after the flood.",
+      "sentenceZh": "当地媒体记录了小镇在洪水后如何重建。",
+      "scene": "At a rebuilding town square, a radio reporter interviews residents, a camera operator records bridge repairs and an illustrator sketches the restored market, showing several media forms covering one story. Complete faces are respectful. No station logos, screens, papers with text, writing or labels.",
+      "altText": "小镇重建现场，广播记者、摄影人员和插画记录者用不同媒体共同报道恢复过程。"
+    },
+    {
+      "vocabularyId": "793ef5d2-1bab-46b2-884b-c57bc1b49b03",
+      "word": "ready",
+      "meaningZh": "准备好的；乐意的",
+      "exampleId": "793ef5d2-1bab-46b2-884b-c57bc1b49b03-visual-ex",
+      "styleFamily": "teal-saffron isometric mountain rescue station",
+      "sentenceEn": "The rescue team stood ready before the winter storm arrived.",
+      "sentenceZh": "冬季风暴到来前，救援队已经准备就绪。",
+      "scene": "Inside a mountain rescue station, a diverse team has boots on, packs closed, ropes coiled and a sled positioned at the open door as snow clouds approach. Complete alert faces and organized equipment show readiness. No labels, weather screens, logos, writing or text.",
+      "altText": "雪云逼近前，救援队已穿戴整齐，背包、绳索和雪橇全部就位，随时可以出发。"
+    },
+    {
+      "vocabularyId": "355c9ade-6b41-4d67-8749-a372864df491",
+      "word": "sign",
+      "meaningZh": "符号；招牌；征兆；正负号；手势",
+      "exampleId": "355c9ade-6b41-4d67-8749-a372864df491-visual-ex",
+      "styleFamily": "ochre-indigo naturalist woodcut ants before rain",
+      "sentenceEn": "Ants carrying their eggs uphill were a sign of coming rain.",
+      "sentenceZh": "蚂蚁把卵搬向高处，是即将下雨的征兆。",
+      "scene": "A macro hillside shows many ants carrying pale eggs upward from a low nest while dark rain clouds gather and the first drops touch lower ground. The natural sign and approaching event are clear. No people, symbols, arrows, labels, writing or text.",
+      "altText": "乌云聚集时，蚂蚁把卵从低处巢穴搬向高地，预示即将下雨。"
+    },
+    {
+      "vocabularyId": "357f007b-653f-4ceb-ad07-be4ac09cf6f1",
+      "word": "thought",
+      "meaningZh": "想法；思想",
+      "exampleId": "357f007b-653f-4ceb-ad07-be4ac09cf6f1-visual-ex",
+      "styleFamily": "plum-gold introspective paper sculpture",
+      "sentenceEn": "One new thought helped Lina rearrange the entire garden.",
+      "sentenceZh": "一个新想法帮助莉娜重新规划了整座花园。",
+      "scene": "Lina pauses over a physical tabletop garden model, then moves one central water basin so paths and planting beds visibly align around it, capturing a thought becoming a solution. Her complete face shows realization. No thought bubbles, plans with text, labels, writing or arrows.",
+      "altText": "莉娜凝视花园模型后产生新想法，把中央水池移位，使全部小径和花圃重新协调。"
+    },
+    {
+      "vocabularyId": "b569d93f-8c27-4728-bba5-ca13b6eacdbe",
+      "word": "list",
+      "meaningZh": "列表；清单；列出",
+      "exampleId": "b569d93f-8c27-4728-bba5-ca13b6eacdbe-visual-ex",
+      "styleFamily": "mint-rust flat animation emergency pack",
+      "sentenceEn": "The ranger checked every item on the list before closing the pack.",
+      "sentenceZh": "护林员在合上背包前检查了清单上的每件物品。",
+      "scene": "A ranger compares an orderly vertical row of essential objects beside an open emergency pack, placing the final item inside while a small plain checklist card shows only object silhouettes with no marks or words. Complete face. No readable text, letters, numbers or labels.",
+      "altText": "护林员把整齐排列的应急物品逐件核对后，将最后一件放入背包准备合上。"
+    },
+    {
+      "vocabularyId": "348b34f3-2fd7-4645-a75f-37c179e37d4b",
+      "word": "individual",
+      "meaningZh": "人；个人；个体",
+      "exampleId": "348b34f3-2fd7-4645-a75f-37c179e37d4b-visual-ex",
+      "styleFamily": "black-white-red penguin colony screenprint",
+      "sentenceEn": "Each individual penguin recognized its chick in the crowded colony.",
+      "sentenceZh": "每只企鹅都能在拥挤群落中认出自己的幼鸟。",
+      "scene": "In a dense penguin colony, several adult-and-chick pairs face one another through unique posture and feather details, while one central individual adult reunites with its matching chick. No bands, tags, people, labels, writing or text.",
+      "altText": "拥挤企鹅群中，每只成年企鹅凭独特外形和呼叫找到属于自己的幼鸟个体。"
+    },
+    {
+      "vocabularyId": "a9f544a4-9daa-4c4b-85db-eeeec22b80ff",
+      "word": "simple",
+      "meaningZh": "简单的；朴素的；单纯的",
+      "exampleId": "a9f544a4-9daa-4c4b-85db-eeeec22b80ff-visual-ex",
+      "styleFamily": "cream-cobalt minimalist linocut stone lever",
+      "sentenceEn": "A simple wooden lever lifted the heavy stone.",
+      "sentenceZh": "一根简单的木杠杆抬起了沉重石块。",
+      "scene": "One plain wooden pole rests on one small rock fulcrum as a farmer presses one end and the other end lifts a massive stone, with unused complex tools absent. Complete face shows controlled effort. No diagrams, arrows, labels, writing or text.",
+      "altText": "一根普通木杆架在小石支点上，农夫压下一端便轻松抬起沉重巨石。"
+    },
+    {
+      "vocabularyId": "19e7aa16-3a84-4231-978b-0a467cd0e57e",
+      "word": "quality",
+      "meaningZh": "品质；特性；才能；质量；优质的",
+      "exampleId": "19e7aa16-3a84-4231-978b-0a467cd0e57e-visual-ex",
+      "styleFamily": "indigo-amber embroidered craft inspection",
+      "sentenceEn": "The tight, even stitches showed the quality of the handmade sail.",
+      "sentenceZh": "紧密均匀的针脚体现了手工船帆的质量。",
+      "scene": "A sailmaker holds a finished sail toward window light, revealing dense perfectly even stitches and reinforced corners beside a small rough practice scrap. The complete face shows quiet pride. No brand marks, measuring numbers, labels, writing or text.",
+      "altText": "船帆匠迎光检查成品，紧密均匀的针脚和加固边角清楚体现出良好质量。"
+    },
+    {
+      "vocabularyId": "b9a1ba77-cfc2-4867-a69b-810ad7406be9",
+      "word": "pressure",
+      "meaningZh": "压力；压迫；压强",
+      "exampleId": "b9a1ba77-cfc2-4867-a69b-810ad7406be9-visual-ex",
+      "styleFamily": "deep-blue-cyan scientific glass mosaic",
+      "sentenceEn": "Water pressure crushed the empty bottle deep below the surface.",
+      "sentenceZh": "水下深处的水压压瘪了空瓶。",
+      "scene": "A nonpolluting reusable demonstration bottle descends beside a research line, changing from full shape near the bright surface to visibly compressed at great depth, surrounded by dense dark water. No people, depth numbers, arrows, labels, writing or text.",
+      "altText": "演示用空瓶沉入深水后明显被压瘪，直观显示深处水压更强。"
+    },
+    {
+      "vocabularyId": "fee99afb-016e-43d7-bc8f-403518644204",
+      "word": "accept",
+      "meaningZh": "接受；承认；同意",
+      "exampleId": "fee99afb-016e-43d7-bc8f-403518644204-visual-ex",
+      "styleFamily": "sage-coral hand-painted elephant animation",
+      "sentenceEn": "The herd began to accept the orphan calf into its circle.",
+      "sentenceZh": "象群开始接纳这头失去亲人的幼象。",
+      "scene": "Adult elephants gently open their protective circle and touch trunks around one smaller orphan calf as it steps among them, showing acceptance through warm body language. No people, tags, fences, writing or text.",
+      "altText": "成年象群让开保护圈并用鼻子温柔触碰幼象，接纳它进入群体。"
+    },
+    {
+      "vocabularyId": "baf6f050-eaae-4718-899a-6f40aa090ae7",
+      "word": "answer",
+      "meaningZh": "答案；回答；回报；答辩",
+      "exampleId": "baf6f050-eaae-4718-899a-6f40aa090ae7-visual-ex",
+      "styleFamily": "violet-yellow mystery comic greenhouse leak",
+      "sentenceEn": "A wet trail gave the gardener the answer to the missing water.",
+      "sentenceZh": "一条湿痕让园丁找到了水消失问题的答案。",
+      "scene": "A gardener follows one continuous wet trail from an unexpectedly empty watering tank to a hidden cracked pipe beneath a bench, where dripping water reveals the answer. The complete face shows recognition. No question marks, text, labels, writing or arrows.",
+      "altText": "园丁沿湿痕找到长凳下开裂漏水的管道，终于明白水箱为何变空。"
+    },
+    {
+      "vocabularyId": "83373e0c-bf46-410d-b3d5-1ea34ca9bd3f",
+      "word": "resource",
+      "meaningZh": "资源；财力",
+      "exampleId": "83373e0c-bf46-410d-b3d5-1ea34ca9bd3f-visual-ex",
+      "styleFamily": "rust-green isometric compost cycle",
+      "sentenceEn": "Fallen leaves became a useful resource for the community garden.",
+      "sentenceZh": "落叶成为社区花园的一项有用资源。",
+      "scene": "A continuous garden cycle shows neighbors gathering fallen leaves into compost, rich dark compost feeding vegetable beds and healthy produce returning to the community. Complete faces where readable. No recycling symbols, arrows, signs, labels, writing or text.",
+      "altText": "居民把落叶制成堆肥，再用于菜园土壤，让原本废弃的落叶成为有用资源。"
+    },
+    {
+      "vocabularyId": "a55c9397-11df-4c48-b62f-ffc799f61f65",
+      "word": "identify",
+      "meaningZh": "识别；认为...等同于；确定；使参与",
+      "exampleId": "a55c9397-11df-4c48-b62f-ffc799f61f65-visual-ex",
+      "styleFamily": "ochre-teal naturalist frog pattern watercolor",
+      "sentenceEn": "Researchers identify each frog by its unique back pattern.",
+      "sentenceZh": "研究人员通过每只青蛙独特的背部花纹来识别它们。",
+      "scene": "Several frogs sit safely on wet leaves, each with a clearly different natural back pattern, while a researcher visually matches one frog to a pattern sketch made only of shapes. Complete face if readable. No codes, tags, labels, writing or text.",
+      "altText": "多只青蛙背部花纹各不相同，研究人员凭独特图案识别其中一只。"
+    },
+    {
+      "vocabularyId": "87c026a0-c375-49ff-a3eb-2b37dac53e04",
+      "word": "left",
+      "meaningZh": "左边的；左倾的；左侧的；左派的",
+      "exampleId": "87c026a0-c375-49ff-a3eb-2b37dac53e04-visual-ex",
+      "styleFamily": "red-aqua minimalist harbor poster",
+      "sentenceEn": "The red canoe waited on the left side of the dock.",
+      "sentenceZh": "红色独木舟停在码头左侧。",
+      "scene": "A perfectly frontal harbor composition shows one red canoe unmistakably on the viewer's left side of a central wooden dock, while one blue canoe sits on the right for contrast. No people, directional arrows, letters, signs, writing or text.",
+      "altText": "正面看向中央木码头，红色独木舟清楚停在画面左侧，蓝色独木舟位于右侧。"
+    },
+    {
+      "vocabularyId": "169d06c4-955d-4ae5-af9f-b47a3b686f8c",
+      "word": "meeting",
+      "meaningZh": "会议",
+      "exampleId": "169d06c4-955d-4ae5-af9f-b47a3b686f8c-visual-ex",
+      "styleFamily": "cobalt-orange editorial round-table collage",
+      "sentenceEn": "The neighborhood meeting chose a safer route to school.",
+      "sentenceZh": "社区会议选出了一条更安全的上学路线。",
+      "scene": "A diverse neighborhood sits around one round table, comparing a physical street model and moving small route pieces together while a child points to a protected crossing. Complete faces show listening and discussion. No map text, signs, labels, writing or arrows.",
+      "altText": "社区居民围桌开会，通过街区模型共同讨论并选择更安全的上学路线。"
+    },
+    {
+      "vocabularyId": "2794537a-c8a9-4540-8731-47d31423ee90",
+      "word": "determine",
+      "meaningZh": "决定；决心",
+      "exampleId": "2794537a-c8a9-4540-8731-47d31423ee90-visual-ex",
+      "styleFamily": "slate-gold precision clay bridge test",
+      "sentenceEn": "The load test will determine whether the bridge is safe.",
+      "sentenceZh": "载荷测试将确定这座桥是否安全。",
+      "scene": "Engineers conduct a controlled bridge model load test with plain weights as a delicate sensor line remains straight, while they observe the structure carefully. Complete faces show evaluation. No numeric gauges, checkmarks, labels, writing or text.",
+      "altText": "工程师用标准重物测试桥梁模型并观察结构变化，以确定它是否足够安全。"
+    },
+    {
+      "vocabularyId": "dd3fea44-80ce-417e-b8e5-6e3098a2d301",
+      "word": "prepare",
+      "meaningZh": "准备",
+      "exampleId": "dd3fea44-80ce-417e-b8e5-6e3098a2d301-visual-ex",
+      "styleFamily": "amber-indigo cutaway beehive autumn",
+      "sentenceEn": "The bees prepare the hive for winter by sealing every gap.",
+      "sentenceZh": "蜜蜂通过封住每个缝隙为蜂巢过冬做准备。",
+      "scene": "A hive cutaway shows worker bees filling small cracks with resin, packing honey cells and clustering around the queen as autumn leaves fall outside, visibly preparing for winter. No people, labels, diagrams, writing or text.",
+      "altText": "蜂巢剖面中，工蜂封堵缝隙、储满蜂蜜并聚集保暖，为冬季提前准备。"
+    },
+    {
+      "vocabularyId": "d03bff00-1a1f-42de-be4c-2bf010738890",
+      "word": "disease",
+      "meaningZh": "疾病；弊病",
+      "exampleId": "d03bff00-1a1f-42de-be4c-2bf010738890-visual-ex",
+      "styleFamily": "forest-green-russet botanical scientific illustration",
+      "sentenceEn": "A fungal disease left dark spots across the tomato leaves.",
+      "sentenceZh": "一种真菌病害使番茄叶片上布满黑斑。",
+      "scene": "A tomato plant has several leaves with clear spreading dark fungal spots and curled edges, contrasted with nearby healthy green leaves on the same plant. A gardener inspects without touching, complete face concerned. No microscopic labels, charts, writing or text.",
+      "altText": "番茄植株部分叶片出现扩散的黑色真菌斑点，与同株健康绿叶形成明显对比。"
+    },
+    {
+      "vocabularyId": "8de675a1-5fb3-4e38-b098-fd484fe52be1",
+      "word": "whatever",
+      "meaningZh": "无论什么；任何事物",
+      "exampleId": "8de675a1-5fb3-4e38-b098-fd484fe52be1-visual-ex",
+      "styleFamily": "turquoise-coral inventive junk-art animation",
+      "sentenceEn": "Mina used whatever materials she could find to patch the roof.",
+      "sentenceZh": "米娜用能找到的任何材料修补屋顶。",
+      "scene": "After a storm, Mina repairs one roof hole using a varied assortment of available harmless materials: spare wood, woven reeds, a metal sheet and strong cloth, creatively fitting each piece. Complete determined face. No brand marks, labels, writing or text.",
+      "altText": "风暴过后，米娜把木板、芦苇、金属片和结实布料等手边材料组合起来修补屋顶。"
+    },
+    {
+      "vocabularyId": "7a900c3b-74ec-4ada-a173-4fc8b62f0f34",
+      "word": "success",
+      "meaningZh": "成功",
+      "exampleId": "7a900c3b-74ec-4ada-a173-4fc8b62f0f34-visual-ex",
+      "styleFamily": "moonlit-teal celebratory sea-turtle linocut",
+      "sentenceEn": "The first hatchling reaching the sea marked the project's success.",
+      "sentenceZh": "第一只幼龟抵达大海，标志着保护项目取得成功。",
+      "scene": "At moonrise, a healthy sea-turtle hatchling reaches the first shallow wave while many more follow along a protected dark beach and distant conservation workers quietly celebrate. Complete faces if readable. No banners, signs, labels, writing or text.",
+      "altText": "月光下第一只健康幼龟成功进入海浪，更多幼龟紧随其后，远处保育人员安静庆祝。"
+    }
+  ]
+}

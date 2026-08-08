@@ -1,0 +1,229 @@
+{
+  "batchId": "vocabulary-stories-rank-712-731-2026-07-27",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "stylePrompt": "Use the declared styleFamily, setting and palette for each item. Preserve strong diversity across the batch by alternating people, animals, plants, objects, interiors and panoramic landscapes. Keep one coherent illustrated visual language inside each image and avoid adjacent images with similar dominant colors or compositions. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, one clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, arrows, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "d989eced-ec88-4dd7-8375-c079bb8cdf4b",
+      "word": "argue",
+      "meaningZh": "提出理由；争论；辩论",
+      "exampleId": "d989eced-ec88-4dd7-8375-c079bb8cdf4b-visual-ex",
+      "styleFamily": "cobalt-coral editorial round-table debate",
+      "sentenceEn": "The two engineers argue for different ways to cross the river.",
+      "sentenceZh": "两位工程师为不同的过河方案提出各自理由。",
+      "scene": "Two engineers respectfully argue across a shared physical river model: one demonstrates a bridge model while the other demonstrates a ferry route, each pointing to practical evidence as colleagues listen. Complete faces show conviction without anger. No text, labels, diagrams, writing or arrows.",
+      "altText": "两位工程师围绕河流模型理性辩论，一人主张桥梁，另一人展示渡船方案。"
+    },
+    {
+      "vocabularyId": "421d83ba-e919-4678-a12f-78544ddc3719",
+      "word": "cup",
+      "meaningZh": "杯子；茶杯；优胜杯",
+      "exampleId": "421d83ba-e919-4678-a12f-78544ddc3719-visual-ex",
+      "styleFamily": "mint-russet ceramic still-life animation",
+      "sentenceEn": "A warm cup of tea waited beside the rain-soaked gloves.",
+      "sentenceZh": "一杯热茶放在被雨淋湿的手套旁。",
+      "scene": "A handcrafted ceramic cup filled with steaming tea is the clear center of a cozy windowsill still life, beside wet gloves and rain droplets on glass. No people, printed patterns, logos, writing or text.",
+      "altText": "窗边一只装满热茶的陶杯冒着蒸汽，旁边放着刚被雨淋湿的手套。"
+    },
+    {
+      "vocabularyId": "c8c1471e-ba84-4849-be36-ea4aac723bec",
+      "word": "particularly",
+      "meaningZh": "尤其",
+      "exampleId": "c8c1471e-ba84-4849-be36-ea4aac723bec-visual-ex",
+      "styleFamily": "emerald-gold botanical tapestry pollinator meadow",
+      "sentenceEn": "The bees were particularly drawn to the purple flowers.",
+      "sentenceZh": "蜜蜂尤其喜欢紫色花朵。",
+      "scene": "A varied meadow contains flowers of many colors, but a visibly dense concentration of bees gathers around one patch of purple blossoms while other flowers attract only a few. No people, highlighting circles, arrows, labels, writing or text.",
+      "altText": "多彩花田中，蜜蜂明显大量聚集在紫色花丛，尤其偏爱这一片花朵。"
+    },
+    {
+      "vocabularyId": "d7397332-5d34-4af9-afd4-03104ef3d586",
+      "word": "amount",
+      "meaningZh": "总数；总额；总计；等同",
+      "exampleId": "d7397332-5d34-4af9-afd4-03104ef3d586-visual-ex",
+      "styleFamily": "aqua-ochre glass mosaic rain barrels",
+      "sentenceEn": "The storm doubled the amount of water in the stone cistern.",
+      "sentenceZh": "暴风雨使石蓄水池中的水量增加了一倍。",
+      "scene": "A cutaway stone cistern shows a clear old wet line at mid-height and fresh stormwater now filling it to the top, making the changed amount visible through volume alone. Rain channels still flow in. No numbers, gauges, arrows, labels, writing or text.",
+      "altText": "石蓄水池内原来的水痕位于中部，暴雨后清水已接近池顶，水量明显增加。"
+    },
+    {
+      "vocabularyId": "44338f53-2279-4256-8249-fc6c3b1c7229",
+      "word": "ability",
+      "meaningZh": "能力",
+      "exampleId": "44338f53-2279-4256-8249-fc6c3b1c7229-visual-ex",
+      "styleFamily": "violet-cyan naturalist octopus puzzle illustration",
+      "sentenceEn": "The octopus showed its ability by opening the locked shell box.",
+      "sentenceZh": "章鱼通过打开带扣贝壳盒展示了它的能力。",
+      "scene": "An octopus studies and manipulates a simple shell-shaped latch box, using several arms in coordination as the lid opens and a crab-safe treat becomes visible. No people, locks with symbols, labels, writing or text.",
+      "altText": "章鱼协调多条腕足操作贝壳形扣锁并成功打开盒盖，展示解决问题的能力。"
+    },
+    {
+      "vocabularyId": "632b3590-5963-4005-8a0c-ab80ffbb2d05",
+      "word": "staff",
+      "meaningZh": "员工；全体工作人员",
+      "exampleId": "632b3590-5963-4005-8a0c-ab80ffbb2d05-visual-ex",
+      "styleFamily": "teal-orange isometric wildlife clinic",
+      "sentenceEn": "The clinic staff worked together to release the healed eagle.",
+      "sentenceZh": "诊所全体工作人员协力放飞康复的鹰。",
+      "scene": "The whole wildlife clinic staff gathers for one coordinated release: a veterinarian opens the carrier, a carer supports the door, a technician watches the eagle fly and others prepare the cleared path. Complete faces show shared pride. No uniforms with text, logos, labels or writing.",
+      "altText": "野生动物诊所全体员工分工协作，打开运输箱并见证康复的鹰重新飞翔。"
+    },
+    {
+      "vocabularyId": "69e5013b-b4a9-4756-b0ae-1f2fdc91da9a",
+      "word": "recognize",
+      "meaningZh": "认出；承认；认可",
+      "exampleId": "69e5013b-b4a9-4756-b0ae-1f2fdc91da9a-visual-ex",
+      "styleFamily": "indigo-pearl woodcut whale tails",
+      "sentenceEn": "The researcher could recognize the whale by its scarred tail.",
+      "sentenceZh": "研究人员能凭带伤痕的尾鳍认出这头鲸。",
+      "scene": "From a small research boat, a researcher sees one whale tail rise above water with a distinctive natural pale scar matching a simple shape sketch held nearby. The complete face shows recognition. No codes, names, writing, labels or text.",
+      "altText": "研究人员看见鲸尾上独特的浅色伤痕，立即认出这是曾经观察过的鲸。"
+    },
+    {
+      "vocabularyId": "914624e0-edc9-4234-ae4e-30a787f2873f",
+      "word": "indicate",
+      "meaningZh": "表明；指示",
+      "exampleId": "914624e0-edc9-4234-ae4e-30a787f2873f-visual-ex",
+      "styleFamily": "black-yellow botanical graphic novel",
+      "sentenceEn": "Curling leaves indicate that the greenhouse is too dry.",
+      "sentenceZh": "卷曲的叶片表明温室过于干燥。",
+      "scene": "Inside a dry greenhouse, many plant leaves curl inward and soil pulls from pot edges while a gardener notices the shared condition with a complete concerned face. Condensation is absent. No meters, arrows, labels, writing or text.",
+      "altText": "温室里多株植物叶片卷曲、盆土收缩，明显表明环境过于干燥。"
+    },
+    {
+      "vocabularyId": "ca767924-be20-44ff-95cd-a67221f37430",
+      "word": "character",
+      "meaningZh": "角色；字符；性格",
+      "exampleId": "ca767924-be20-44ff-95cd-a67221f37430-visual-ex",
+      "styleFamily": "magenta-gold puppet-theater collage",
+      "sentenceEn": "The brave fox became the children's favorite character.",
+      "sentenceZh": "勇敢的小狐狸成为孩子们最喜欢的角色。",
+      "scene": "In a handcrafted puppet theater, one fox character stands courageously between frightened woodland puppets and a rushing stream, while children watch with delighted complete faces. No dialogue, posters, titles, writing or text.",
+      "altText": "木偶剧中，勇敢狐狸角色挡在受惊动物和急流之间，台下孩子们看得十分投入。"
+    },
+    {
+      "vocabularyId": "26f9292b-ec7e-4ed1-93c4-93b7e515b745",
+      "word": "growth",
+      "meaningZh": "增长；成长",
+      "exampleId": "26f9292b-ec7e-4ed1-93c4-93b7e515b745-visual-ex",
+      "styleFamily": "coral-turquoise reef time-lapse watercolor",
+      "sentenceEn": "New coral growth covered the restored reef frame.",
+      "sentenceZh": "新生珊瑚逐渐覆盖了修复礁架。",
+      "scene": "One continuous reef restoration frame progresses from small attached coral fragments at one end to broad healthy branching coral growth covering the other end, with fish returning around it. No people, panels, arrows, labels, writing or text.",
+      "altText": "同一座修复礁架上，细小珊瑚片逐渐成长为覆盖大面积的健康分枝珊瑚。"
+    },
+    {
+      "vocabularyId": "65808bc3-03ff-4479-a024-457912e9c8d5",
+      "word": "loss",
+      "meaningZh": "损失；亏损；失去",
+      "exampleId": "65808bc3-03ff-4479-a024-457912e9c8d5-visual-ex",
+      "styleFamily": "ice-blue-rust panoramic glacier tapestry",
+      "sentenceEn": "The loss of ice exposed a wide band of bare rock.",
+      "sentenceZh": "冰层消失使一大片裸岩显露出来。",
+      "scene": "A mountain glacier has visibly retreated far uphill, leaving a broad fresh band of bare pale rock and a small meltwater lake where thick ice once filled the valley. No people, date markers, charts, labels, arrows, writing or text.",
+      "altText": "山谷冰川大幅退缩到高处，原本被冰覆盖的大片浅色裸岩和融水湖已经露出。"
+    },
+    {
+      "vocabularyId": "5100ed11-db6c-4697-bbb1-da0c48345a9e",
+      "word": "degree",
+      "meaningZh": "程度；度数；学位；度",
+      "exampleId": "5100ed11-db6c-4697-bbb1-da0c48345a9e-visual-ex",
+      "styleFamily": "sage-amber minimalist shade garden",
+      "sentenceEn": "A small degree of shade kept the young fern from drying out.",
+      "sentenceZh": "少量遮阴使幼蕨免于干枯。",
+      "scene": "A young fern sits beneath the edge of a light woven canopy receiving a small partial degree of shade, remaining fresh while nearby fully exposed soil is dry. No percentages, sun symbols, diagrams, labels, writing or text.",
+      "altText": "轻薄棚架边缘为幼蕨提供少量阴影，使它保持水润，而旁边暴晒土壤已经干燥。"
+    },
+    {
+      "vocabularyId": "2209eaad-8b3f-4be5-b28f-517b0e6cbc9b",
+      "word": "wonder",
+      "meaningZh": "想知道；奇迹；惊奇",
+      "exampleId": "2209eaad-8b3f-4be5-b28f-517b0e6cbc9b-visual-ex",
+      "styleFamily": "midnight-cyan luminous cave storybook",
+      "sentenceEn": "The glowing cave filled the explorers with wonder.",
+      "sentenceZh": "发光洞穴让探险者充满惊奇。",
+      "scene": "Explorers enter a vast cave alive with bioluminescent fungi, crystal pools and tiny glowing insects, pausing in genuine wonder with complete wide-eyed faces. No magical text, signs, labels, writing or symbols.",
+      "altText": "探险者走进布满发光菌类、晶莹水池和微光昆虫的洞穴，惊奇地停下脚步。"
+    },
+    {
+      "vocabularyId": "59f43169-5ab8-4676-90d5-eefcbff06bb3",
+      "word": "attack",
+      "meaningZh": "攻击；进攻；抨击；发作",
+      "exampleId": "59f43169-5ab8-4676-90d5-eefcbff06bb3-visual-ex",
+      "styleFamily": "forest-green-vermilion scientific linocut pine beetles",
+      "sentenceEn": "Beetles attack the weakened pine beneath its bark.",
+      "sentenceZh": "甲虫在树皮下攻击衰弱的松树。",
+      "scene": "A non-graphic pine trunk cutaway shows many small bark beetles boring winding galleries beneath damaged bark while the weakened tree crown thins above. No people, weapons, arrows, labels, diagrams with text or writing.",
+      "altText": "衰弱松树的树皮剖面中，许多甲虫正在蛀出曲折通道，树冠也逐渐稀疏。"
+    },
+    {
+      "vocabularyId": "41eb6860-a6e7-45e6-9cc6-5bb958b7088e",
+      "word": "herself",
+      "meaningZh": "她自己",
+      "exampleId": "41eb6860-a6e7-45e6-9cc6-5bb958b7088e-visual-ex",
+      "styleFamily": "plum-ochre graphic memoir boat repair",
+      "sentenceEn": "She repaired the small boat by herself before sunrise.",
+      "sentenceZh": "日出前，她独自修好了小船。",
+      "scene": "One woman works entirely alone on a small wooden boat before dawn, fitting the final plank while all other tools and the empty dock make her independence clear. Her complete face shows concentration and satisfaction. No other people, boat names, labels, writing or text.",
+      "altText": "日出前的空码头上，只有她一个人安装最后一块木板，独自完成小船修理。"
+    },
+    {
+      "vocabularyId": "b68b114e-2dac-42c6-ac8d-2eb87e4e8071",
+      "word": "region",
+      "meaningZh": "区域；地区；领域",
+      "exampleId": "b68b114e-2dac-42c6-ac8d-2eb87e4e8071-visual-ex",
+      "styleFamily": "indigo-emerald panoramic alpine relief",
+      "sentenceEn": "This alpine region contains glaciers, meadows, and high lakes.",
+      "sentenceZh": "这片高山地区包含冰川、草甸和高山湖泊。",
+      "scene": "One coherent sweeping alpine region fills the landscape, containing connected glaciers, flower meadows, conifer valleys and several high blue lakes within the same mountain system. No boundary lines, maps, people, labels, writing or text.",
+      "altText": "同一片广阔高山区域中，冰川、花甸、针叶林谷地和高山湖泊彼此相连。"
+    },
+    {
+      "vocabularyId": "3da0fc1f-fdc8-4156-9ebb-d637beaa5404",
+      "word": "television",
+      "meaningZh": "电视",
+      "exampleId": "3da0fc1f-fdc8-4156-9ebb-d637beaa5404-visual-ex",
+      "styleFamily": "navy-mustard mid-century public television studio",
+      "sentenceEn": "The television broadcast carried the concert to distant homes.",
+      "sentenceZh": "电视转播把音乐会带到远方家庭。",
+      "scene": "A stylized split environment connects a concert camera and control room to several distant homes where families watch the same orchestra on plain television sets. Faces are complete where readable. Screens show only musicians, no logos, captions, interfaces, writing or text.",
+      "altText": "音乐会由摄像机和演播室转播，远方不同家庭通过电视同时观看同一支乐团。"
+    },
+    {
+      "vocabularyId": "3968039c-e398-43db-9d76-ede04ca60e8b",
+      "word": "box",
+      "meaningZh": "盒子；箱子；方框",
+      "exampleId": "3968039c-e398-43db-9d76-ede04ca60e8b-visual-ex",
+      "styleFamily": "coral-blue cardboard stop-motion attic",
+      "sentenceEn": "The wooden box protected the fragile glass birds.",
+      "sentenceZh": "木盒保护着脆弱的玻璃小鸟。",
+      "scene": "An open sturdy wooden box lined with soft cloth securely holds several delicate glass bird figurines, while a closed fitted lid rests beside it. No people, shipping labels, letters, brand marks, writing or text.",
+      "altText": "一只坚固木盒铺着柔软衬布，里面稳妥放置着几只脆弱玻璃小鸟。"
+    },
+    {
+      "vocabularyId": "40acbb43-5046-41c7-b9f9-4ba726c9318d",
+      "word": "TV",
+      "meaningZh": "电视",
+      "exampleId": "40acbb43-5046-41c7-b9f9-4ba726c9318d-visual-ex",
+      "styleFamily": "turquoise-rust cozy clay animation wildlife program",
+      "sentenceEn": "The children watched a deep-sea documentary on TV.",
+      "sentenceZh": "孩子们通过电视观看深海纪录片。",
+      "scene": "In a cozy room, diverse children watch a plain TV displaying only an illustrated deep-sea submersible, glowing fish and coral, while their complete faces show fascination. No channel logos, captions, controls, letters, writing or text.",
+      "altText": "孩子们围坐在电视前观看深海纪录片，屏幕中是潜水器和发光海洋生物。"
+    },
+    {
+      "vocabularyId": "11a3b74f-bf49-4971-be51-63be887e9c52",
+      "word": "training",
+      "meaningZh": "训练；培训；锻炼",
+      "exampleId": "11a3b74f-bf49-4971-be51-63be887e9c52-visual-ex",
+      "styleFamily": "cobalt-orange dynamic search-dog animation",
+      "sentenceEn": "Daily training taught the rescue dog to find hidden hikers.",
+      "sentenceZh": "每日训练教会救援犬寻找隐藏的徒步者。",
+      "scene": "At a safe mountain training ground, a rescue dog follows a scent trail around rocks toward a hidden volunteer while its trainer encourages from behind. Complete human faces and attentive dog posture show guided practice. No uniforms with logos, course signs, writing or text.",
+      "altText": "山地训练场上，救援犬沿气味绕过岩石寻找隐藏志愿者，训练员在后方指导。"
+    }
+  ]
+}
