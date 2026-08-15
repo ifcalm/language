@@ -1,0 +1,331 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1678-1697-20260813",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "perception",
+      "bedroom",
+      "rare",
+      "nurse",
+      "bond",
+      "era"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items in this batch integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "4576791f-a1eb-426c-b53e-d03697d603f2",
+      "word": "perception",
+      "meaningZh": "感知；知觉；看法",
+      "exampleId": "4576791f-a1eb-426c-b53e-d03697d603f2-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The puppet's shape changes with the viewer's perception.",
+      "sentenceZh": "木偶的形象随着观看者的感知而变化。",
+      "scene": "A Chinese shadow-puppet artist moves one puppet behind a lit screen while a viewer sees its large silhouette from the other side, illustrating how perception depends on viewpoint; no writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“perception”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "perception",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "138a1c59-79e8-4da8-a7ab-bdb8d1a23496",
+      "word": "attract",
+      "meaningZh": "吸引；诱惑；有吸引力",
+      "exampleId": "138a1c59-79e8-4da8-a7ab-bdb8d1a23496-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The bright sunflower can attract several bees.",
+      "sentenceZh": "鲜艳的向日葵能吸引几只蜜蜂。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"attract\" in its Chinese meaning \"吸引；诱惑；有吸引力\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“attract”的含义。",
+      "riskTags": [
+        "attract",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "19e6975e-6d6e-46c2-acd6-198eebe7829b",
+      "word": "confidence",
+      "meaningZh": "信心；可靠",
+      "exampleId": "19e6975e-6d6e-46c2-acd6-198eebe7829b-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She checks her harness with calm confidence.",
+      "sentenceZh": "她满怀信心地检查安全带。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"confidence\" in its Chinese meaning \"信心；可靠\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“confidence”的含义。",
+      "riskTags": [
+        "confidence",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "621af9fe-94f0-463e-8481-e0d8466b3f11",
+      "word": "bedroom",
+      "meaningZh": "卧室",
+      "exampleId": "621af9fe-94f0-463e-8481-e0d8466b3f11-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Morning light enters the quiet bedroom.",
+      "sentenceZh": "晨光照进安静的卧室。",
+      "scene": "A serene traditional Chinese bedroom uses a restrained Ming-style wooden canopy bed, woven mat, low stool and soft morning light; historically plausible, no people, calligraphy, symbols or text.",
+      "altText": "一个具体的中国文化场景清楚表现“bedroom”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "bedroom",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "38314ddf-d109-40e5-b673-4772b9b074fd",
+      "word": "secret",
+      "meaningZh": "秘密；机密；秘诀；秘方",
+      "exampleId": "38314ddf-d109-40e5-b673-4772b9b074fd-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She whispers a secret to her trusted friend.",
+      "sentenceZh": "她向信任的朋友低声说出一个秘密。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"secret\" in its Chinese meaning \"秘密；机密；秘诀；秘方\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“secret”的含义。",
+      "riskTags": [
+        "secret",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2d210cfc-8876-423f-8b5c-8c5af2675001",
+      "word": "debt",
+      "meaningZh": "债务；罪过；借款；欠款",
+      "exampleId": "2d210cfc-8876-423f-8b5c-8c5af2675001-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He returns the borrowed toolbox and repays the debt.",
+      "sentenceZh": "他归还借来的工具箱，偿还这份欠情。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"debt\" in its Chinese meaning \"债务；罪过；借款；欠款\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“debt”的含义。",
+      "riskTags": [
+        "debt",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "eafd398d-f753-4b73-823f-0a4abdd3e160",
+      "word": "rare",
+      "meaningZh": "稀有的；罕见的；半熟的",
+      "exampleId": "eafd398d-f753-4b73-823f-0a4abdd3e160-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "A rare crested ibis stands alone in the wetland.",
+      "sentenceZh": "一只稀有的朱鹮独自站在湿地中。",
+      "scene": "Exactly one rare crested ibis stands in a protected wetland in Shaanxi, with accurate white plumage, red facial skin and curved bill; no people, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“rare”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "rare",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "887d61db-6637-495d-98f9-e99c72151351",
+      "word": "tank",
+      "meaningZh": "坦克；水箱；罐；槽",
+      "exampleId": "887d61db-6637-495d-98f9-e99c72151351-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The rainwater fills the large transparent tank.",
+      "sentenceZh": "雨水装满了大型透明水箱。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"tank\" in its Chinese meaning \"坦克；水箱；罐；槽\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“tank”的含义。",
+      "riskTags": [
+        "tank",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b367b3ec-e89b-4ef7-9f8b-e432e1adadc6",
+      "word": "nurse",
+      "meaningZh": "护士；护理",
+      "exampleId": "b367b3ec-e89b-4ef7-9f8b-e432e1adadc6-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The nurse gently checks the patient's pulse.",
+      "sentenceZh": "护士轻柔地为病人检查脉搏。",
+      "scene": "One adult Chinese community nurse gently checks an elderly resident's pulse in a rural clinic, with accurate uniform and caring expression; no readable charts, brands or text.",
+      "altText": "一个具体的中国文化场景清楚表现“nurse”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "nurse",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "9887f6e9-0d6c-4f86-8d84-a1ece05003cb",
+      "word": "coverage",
+      "meaningZh": "覆盖；报道",
+      "exampleId": "9887f6e9-0d6c-4f86-8d84-a1ece05003cb-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The farmer pulls the tarp across the hay for complete coverage.",
+      "sentenceZh": "农民把防水布拉过干草，使其完全覆盖。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"coverage\" in its Chinese meaning \"覆盖；报道\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“coverage”的含义。",
+      "riskTags": [
+        "coverage",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "d741a226-3c4c-4da4-bcf8-1b6a3b0ff347",
+      "word": "opposition",
+      "meaningZh": "反对；对立",
+      "exampleId": "d741a226-3c4c-4da4-bcf8-1b6a3b0ff347-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The chess players face each other in quiet opposition.",
+      "sentenceZh": "两名棋手安静地对阵。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"opposition\" in its Chinese meaning \"反对；对立\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“opposition”的含义。",
+      "riskTags": [
+        "opposition",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3a17fda7-485a-4ba3-81e3-c7ff084b429d",
+      "word": "aside",
+      "meaningZh": "在旁边；除...以外",
+      "exampleId": "3a17fda7-485a-4ba3-81e3-c7ff084b429d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She takes her colleague aside for a private conversation.",
+      "sentenceZh": "她把同事带到一旁私下交谈。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"aside\" in its Chinese meaning \"在旁边；除...以外\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“aside”的含义。",
+      "riskTags": [
+        "aside",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "17546f1a-3c24-4a74-95b4-e59425a65031",
+      "word": "anywhere",
+      "meaningZh": "任何地方",
+      "exampleId": "17546f1a-3c24-4a74-95b4-e59425a65031-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "With a backpack, the traveler feels ready to go anywhere.",
+      "sentenceZh": "背上背包后，旅行者觉得哪里都能去。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"anywhere\" in its Chinese meaning \"任何地方\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“anywhere”的含义。",
+      "riskTags": [
+        "anywhere",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "43f736fe-9fa7-455b-bb62-36aa9a33ef09",
+      "word": "bond",
+      "meaningZh": "债券；纽带；联结",
+      "exampleId": "43f736fe-9fa7-455b-bb62-36aa9a33ef09-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Shared practice creates a strong bond among the crew.",
+      "sentenceZh": "共同训练在队员之间形成牢固纽带。",
+      "scene": "A Chinese dragon-boat crew of six adults lifts one shared paddle together on shore after practice, their coordinated gesture showing a strong bond; accurate boat construction, no festival banners, logos or text.",
+      "altText": "一个具体的中国文化场景清楚表现“bond”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "bond",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "479a2fb9-17a6-4912-a630-e91e3dce93e3",
+      "word": "pleasure",
+      "meaningZh": "快乐；愉快；乐事",
+      "exampleId": "479a2fb9-17a6-4912-a630-e91e3dce93e3-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She takes pleasure in the scent of fresh herbs.",
+      "sentenceZh": "她从新鲜香草的气味中获得愉悦。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"pleasure\" in its Chinese meaning \"快乐；愉快；乐事\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“pleasure”的含义。",
+      "riskTags": [
+        "pleasure",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f2fe4113-20d8-4e35-9c83-ad9d40a326d4",
+      "word": "master",
+      "meaningZh": "主人；硕士；大师；掌握",
+      "exampleId": "f2fe4113-20d8-4e35-9c83-ad9d40a326d4-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The master teaches precise carving to an apprentice.",
+      "sentenceZh": "大师向学徒传授精细雕刻。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"master\" in its Chinese meaning \"主人；硕士；大师；掌握\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“master”的含义。",
+      "riskTags": [
+        "master",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "31b10beb-e6da-4a78-9001-3b1e2e7412cb",
+      "word": "era",
+      "meaningZh": "时代；纪元；时期",
+      "exampleId": "31b10beb-e6da-4a78-9001-3b1e2e7412cb-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Each model represents a different architectural era.",
+      "sentenceZh": "每个模型代表一个不同的建筑时代。",
+      "scene": "A Chinese museum timeline is conveyed without text by three adjacent architectural scale models from distinct eras—rammed-earth watchtower, timber courtyard house and modern glass tower—clearly separated on one display.",
+      "altText": "一个具体的中国文化场景清楚表现“era”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "era",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "84b75b10-3058-43a2-a0c3-d5f49916deb2",
+      "word": "requirement",
+      "meaningZh": "需求",
+      "exampleId": "84b75b10-3058-43a2-a0c3-d5f49916deb2-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Wearing a helmet is a requirement for entering the course.",
+      "sentenceZh": "佩戴头盔是进入训练场的要求。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"requirement\" in its Chinese meaning \"需求\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“requirement”的含义。",
+      "riskTags": [
+        "requirement",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "91ce99a6-a84d-4051-8861-fc661e4e23f6",
+      "word": "fun",
+      "meaningZh": "乐趣；玩笑；娱乐；开玩笑",
+      "exampleId": "91ce99a6-a84d-4051-8861-fc661e4e23f6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The friends have fun playing a ring-toss game.",
+      "sentenceZh": "朋友们玩套圈游戏，十分开心。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"fun\" in its Chinese meaning \"乐趣；玩笑；娱乐；开玩笑\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“fun”的含义。",
+      "riskTags": [
+        "fun",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "d2e32fee-8f43-430b-ac3c-b7255b9ccc6b",
+      "word": "expectation",
+      "meaningZh": "期望",
+      "exampleId": "d2e32fee-8f43-430b-ac3c-b7255b9ccc6b-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The baker watches the rising loaf with hopeful expectation.",
+      "sentenceZh": "面包师满怀期待地看着面包膨起。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"expectation\" in its Chinese meaning \"期望\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“expectation”的含义。",
+      "riskTags": [
+        "expectation",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+
+

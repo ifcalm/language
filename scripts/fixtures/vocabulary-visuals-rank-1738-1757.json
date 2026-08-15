@@ -1,0 +1,330 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1738-1757-20260814",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "divide",
+      "contemporary",
+      "route",
+      "careful",
+      "holiday",
+      "vast"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "23f8db8f-f046-46ea-b07c-88131a5bc207",
+      "word": "divide",
+      "meaningZh": "分开；分配；分裂",
+      "exampleId": "23f8db8f-f046-46ea-b07c-88131a5bc207-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "They divide the twelve beans into three equal groups.",
+      "sentenceZh": "他们把十二颗豆子分成三组。",
+      "scene": "A Chinese mathematics teacher uses plain counting rods to divide exactly twelve identical beans into exactly three equal groups on a wooden table; no written numerals, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“divide”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "divide",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6072296a-2771-443e-a8ef-3a2cdd2dceaa",
+      "word": "initial",
+      "meaningZh": "最初的；首字母",
+      "exampleId": "6072296a-2771-443e-a8ef-3a2cdd2dceaa-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The initial sketch is simple but clear.",
+      "sentenceZh": "最初的草图简单而清晰。",
+      "scene": "One adult designer compares an early rough clay model with a more developed model in the same workspace, holding the visibly simple initial version; exactly two models, no drawings, labels or text.",
+      "altText": "一个具体场景清楚表现“initial”的含义。",
+      "riskTags": [
+        "initial",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "32aaf03a-89e3-47aa-aa54-5433181fe426",
+      "word": "terrible",
+      "meaningZh": "可怕的；令人恐惧的；极坏的",
+      "exampleId": "32aaf03a-89e3-47aa-aa54-5433181fe426-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The storm leaves the small garden in terrible condition.",
+      "sentenceZh": "暴风雨使小花园变得一团糟。",
+      "scene": "After a severe but finished storm, one adult gardener looks dismayed at a terrible mess of fallen branches, overturned empty pots and flattened flowers; no injury, active danger, signs or text.",
+      "altText": "一个具体场景清楚表现“terrible”的含义。",
+      "riskTags": [
+        "terrible",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b5a1ab9f-4a28-49d8-a0f9-4bf7e49625d2",
+      "word": "oppose",
+      "meaningZh": "反对；对抗",
+      "exampleId": "b5a1ab9f-4a28-49d8-a0f9-4bf7e49625d2-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Two neighbors oppose the plan to cut down the old tree.",
+      "sentenceZh": "两位邻居反对砍掉老树的计划。",
+      "scene": "Exactly two adults stand protectively in front of one healthy old tree while a contractor pauses with an unused saw lowered safely, making their opposition clear; nonviolent, no protest signs or text.",
+      "altText": "一个具体场景清楚表现“oppose”的含义。",
+      "riskTags": [
+        "oppose",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "49c28e3d-d404-4d05-9666-775dea0fc5a3",
+      "word": "contemporary",
+      "meaningZh": "同时代的人",
+      "exampleId": "49c28e3d-d404-4d05-9666-775dea0fc5a3-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The gallery displays contemporary fashion and furniture.",
+      "sentenceZh": "画廊展示当代时装与家具。",
+      "scene": "A bright contemporary Chinese design gallery combines one modern sculptural chair, one minimalist jacket on a form and original abstract ceramic pieces, with an adult curator arranging them; no copied art, traditional costume, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“contemporary”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "contemporary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "c895c64b-8dc1-4a23-9260-29694033677c",
+      "word": "route",
+      "meaningZh": "路径；途径；路线",
+      "exampleId": "c895c64b-8dc1-4a23-9260-29694033677c-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The caravan follows the mountain route through the pass.",
+      "sentenceZh": "商队沿着山间路线穿过关口。",
+      "scene": "A historically grounded Tea Horse Road scene in southwest China: exactly three pack horses and two adult traders follow one clearly winding stone route through a mountain pass; safe terrain, no signs, flags or text.",
+      "altText": "一个具体的中国文化场景清楚表现“route”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "route",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3f82774f-854a-4b9d-a663-c758be7d3524",
+      "word": "multiple",
+      "meaningZh": "多个的；多重的；倍数",
+      "exampleId": "3f82774f-854a-4b9d-a663-c758be7d3524-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Multiple birds gather around the shallow pond.",
+      "sentenceZh": "多只鸟聚集在浅水池边。",
+      "scene": "Exactly seven small birds of three natural species gather at different points around one shallow garden pond, making multiple subjects unmistakable; accurate anatomy, no people or text.",
+      "altText": "一个具体场景清楚表现“multiple”的含义。",
+      "riskTags": [
+        "multiple",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "113fd853-42a4-47d9-a7ca-02677e3f9a71",
+      "word": "essential",
+      "meaningZh": "必要的；本质的；要素",
+      "exampleId": "113fd853-42a4-47d9-a7ca-02677e3f9a71-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Clean water is essential for the young plants.",
+      "sentenceZh": "清洁的水对幼苗至关重要。",
+      "scene": "A row of young plants visibly depends on one drip-irrigation line: healthy green seedlings cluster where water reaches while one dry unused corner remains bare, making water essential; no labels or text.",
+      "altText": "一个具体场景清楚表现“essential”的含义。",
+      "riskTags": [
+        "essential",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a9079764-e11b-463a-9ff7-44997f7518c5",
+      "word": "league",
+      "meaningZh": "联盟；联赛",
+      "exampleId": "a9079764-e11b-463a-9ff7-44997f7518c5-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Four local teams compete in the same basketball league.",
+      "sentenceZh": "四支本地球队参加同一个篮球联赛。",
+      "scene": "Four adult basketball team captains wearing four distinct plain uniform colors meet around one ball before a season, with a simple court behind; equal status, no team names, numbers, logos or text.",
+      "altText": "一个具体场景清楚表现“league”的含义。",
+      "riskTags": [
+        "league",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b9efa85c-56e7-474e-93b2-da3630773e59",
+      "word": "criminal",
+      "meaningZh": "罪犯；犯人；刑事",
+      "exampleId": "b9efa85c-56e7-474e-93b2-da3630773e59-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The police identify the criminal from the stolen bicycle.",
+      "sentenceZh": "警方通过被盗自行车确认了罪犯。",
+      "scene": "A neutral nonviolent property-crime scene: one adult investigator presents a recovered bicycle while one suspected adult stands with legal counsel at a respectful distance; no handcuffs, racial coding, weapons, uniforms with text or guilt spectacle.",
+      "altText": "一个具体场景清楚表现“criminal”的含义。",
+      "riskTags": [
+        "criminal",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "4d9f74b8-dcf0-4b45-bacd-7ab4b5d1457a",
+      "word": "careful",
+      "meaningZh": "小心的",
+      "exampleId": "4d9f74b8-dcf0-4b45-bacd-7ab4b5d1457a-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The conservator is careful with the fragile porcelain.",
+      "sentenceZh": "修复师小心处理易碎瓷器。",
+      "scene": "One Chinese porcelain conservator uses gloved hands and padded supports to carefully align two pieces of a cracked but nonvaluable blue-and-white bowl; authentic studio, original simple motif, no antique copying, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“careful”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "careful",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "84f8967b-a34a-4a15-a088-d5e66e4c48bf",
+      "word": "core",
+      "meaningZh": "核心；果心；要点",
+      "exampleId": "84f8967b-a34a-4a15-a088-d5e66e4c48bf-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The apple core remains after the fruit is eaten.",
+      "sentenceZh": "苹果吃完后只剩果核。",
+      "scene": "One clean apple core stands upright on a plain plate beside one whole apple for comparison, clearly showing the central core; no people, cutlery, labels or text.",
+      "altText": "一个具体场景清楚表现“core”的含义。",
+      "riskTags": [
+        "core",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6e16618f-9edb-4c1d-84a8-7567ad9fce15",
+      "word": "upper",
+      "meaningZh": "上面的；较高的；上层的",
+      "exampleId": "6e16618f-9edb-4c1d-84a8-7567ad9fce15-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The cat rests on the upper shelf.",
+      "sentenceZh": "猫趴在上层架子上。",
+      "scene": "A sturdy two-level wooden shelving unit holds exactly one cat resting on the upper shelf while the lower shelf remains empty; safe proportions, no other animals or text.",
+      "altText": "一个具体场景清楚表现“upper”的含义。",
+      "riskTags": [
+        "upper",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5f86ce8a-68cf-4dc6-ad7f-806a7477b408",
+      "word": "rush",
+      "meaningZh": "匆促；冲进；急流；匆忙",
+      "exampleId": "5f86ce8a-68cf-4dc6-ad7f-806a7477b408-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Commuters rush toward the train before the doors close.",
+      "sentenceZh": "通勤者赶在车门关闭前冲向列车。",
+      "scene": "Exactly three adult commuters hurry toward an open train door with urgent but controlled movement, coats and bags trailing slightly; no dangerous running, station signs, clocks, screens or text.",
+      "altText": "一个具体场景清楚表现“rush”的含义。",
+      "riskTags": [
+        "rush",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "01806ffb-1f65-4fea-b39d-58d82f920427",
+      "word": "necessarily",
+      "meaningZh": "必然地",
+      "exampleId": "01806ffb-1f65-4fea-b39d-58d82f920427-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A large box does not necessarily contain a heavy object.",
+      "sentenceZh": "大箱子不一定装着重物。",
+      "scene": "One adult easily lifts a very large empty cardboard box while struggling to move a much smaller dense stone block on a trolley, showing that size does not necessarily mean weight; one coherent scene, no text.",
+      "altText": "一个具体场景清楚表现“necessarily”的含义。",
+      "riskTags": [
+        "necessarily",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b1e8570c-0519-4c5e-ac9b-f52ad019449c",
+      "word": "specifically",
+      "meaningZh": "具体地",
+      "exampleId": "b1e8570c-0519-4c5e-ac9b-f52ad019449c-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She chooses specifically the blue cup from the group.",
+      "sentenceZh": "她从一组杯子中特意选出蓝色杯子。",
+      "scene": "One adult hand reaches specifically for the only blue cup among exactly six otherwise identical gray cups arranged together; clear selection, complete hand, no labels or text.",
+      "altText": "一个具体场景清楚表现“specifically”的含义。",
+      "riskTags": [
+        "specifically",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "45dced42-ebcf-4433-82a6-19ffd54c6738",
+      "word": "tired",
+      "meaningZh": "疲倦的",
+      "exampleId": "45dced42-ebcf-4433-82a6-19ffd54c6738-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The tired runner rests on a bench after training.",
+      "sentenceZh": "疲惫的跑步者训练后坐在长椅上休息。",
+      "scene": "Exactly one adult runner sits safely on a park bench after exercise, shoulders lowered, eyes tired and water bottle nearby; no collapse, injury, text or brand.",
+      "altText": "一个具体场景清楚表现“tired”的含义。",
+      "riskTags": [
+        "tired",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fc0848f6-5583-4755-9481-4e914153c903",
+      "word": "employ",
+      "meaningZh": "雇用；使用；使从事于",
+      "exampleId": "fc0848f6-5583-4755-9481-4e914153c903-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The workshop will employ three skilled carpenters.",
+      "sentenceZh": "这家工坊将雇用三名熟练木匠。",
+      "scene": "One adult workshop owner welcomes exactly three carpenters to three prepared workstations, handing each a plain apron to show employment beginning; safe tools, no contracts, signs or text.",
+      "altText": "一个具体场景清楚表现“employ”的含义。",
+      "riskTags": [
+        "employ",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "1a2e21ed-9533-43e8-8680-8de196c136b4",
+      "word": "holiday",
+      "meaningZh": "假日；假期；节日；度假",
+      "exampleId": "1a2e21ed-9533-43e8-8680-8de196c136b4-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The family shares mooncakes during the autumn holiday.",
+      "sentenceZh": "一家人在秋日节庆中分享月饼。",
+      "scene": "A contemporary Chinese family of exactly four adults and children shares one cut mooncake and tea beneath the full autumn moon in a courtyard, a warm Mid-Autumn holiday scene; restrained décor, no lantern text, symbols or writing.",
+      "altText": "一个具体的中国文化场景清楚表现“holiday”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "holiday",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "d42bd774-c30e-4cba-9bc6-de4e9315db3e",
+      "word": "vast",
+      "meaningZh": "广阔的；庞大的",
+      "exampleId": "d42bd774-c30e-4cba-9bc6-de4e9315db3e-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The vast grassland stretches beyond the distant hills.",
+      "sentenceZh": "辽阔的草原延伸到远山之外。",
+      "scene": "A vast Inner Mongolian grassland in China stretches to a very distant horizon under a broad sky, with a tiny natural herd far away for scale; no people, yurts, flags, stereotypes or text.",
+      "altText": "一个具体的中国文化场景清楚表现“vast”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "vast",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+

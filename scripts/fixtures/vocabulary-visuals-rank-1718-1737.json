@@ -1,0 +1,330 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1718-1737-20260814",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "seed",
+      "fashion",
+      "pepper",
+      "vegetable",
+      "dish",
+      "opening"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items integrate specific Chinese cultural settings or living crafts accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "28d41aba-399f-45ee-a438-f0b5ffdb0903",
+      "word": "seed",
+      "meaningZh": "种子；起源；播种",
+      "exampleId": "28d41aba-399f-45ee-a438-f0b5ffdb0903-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The farmer saves each seed for the next rice crop.",
+      "sentenceZh": "农民为下一季水稻保存每一粒种子。",
+      "scene": "On a traditional terraced rice farm in southern China, one adult farmer holds a small handful of healthy rice seed above a woven bamboo seed tray while neat nursery rows begin behind; authentic practical clothing and tools, no costumes, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“seed”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "seed",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "36483093-e60b-4e78-a6bd-31f122bbc1c2",
+      "word": "surprised",
+      "meaningZh": "惊讶的",
+      "exampleId": "36483093-e60b-4e78-a6bd-31f122bbc1c2-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She looks surprised when a butterfly lands on her hand.",
+      "sentenceZh": "蝴蝶落到手上时，她显得很惊讶。",
+      "scene": "Exactly one adult gardener looks genuinely surprised as exactly one butterfly unexpectedly lands on her open hand; raised eyebrows, widened eyes and gentle smile, calm garden, no other people or text.",
+      "altText": "一个具体场景清楚表现“surprised”的含义。",
+      "riskTags": [
+        "surprised",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "99469843-db87-4826-84ce-874f6029bb53",
+      "word": "fashion",
+      "meaningZh": "流行；风尚；时样",
+      "exampleId": "99469843-db87-4826-84ce-874f6029bb53-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The designer combines modern fashion with traditional embroidery.",
+      "sentenceZh": "设计师把现代时尚与传统刺绣结合起来。",
+      "scene": "One contemporary Chinese fashion designer fits a clean modern jacket on a dress form while adding one original Suzhou-embroidery-inspired floral panel, with silk threads and hoop nearby; respectful living craft, no historical costume, copied artwork, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“fashion”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "fashion",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b2a4a7a6-97ab-4365-ba73-2bbfc7ba1e02",
+      "word": "pepper",
+      "meaningZh": "胡椒；辣椒",
+      "exampleId": "b2a4a7a6-97ab-4365-ba73-2bbfc7ba1e02-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The cook gathers fresh pepper from the hillside garden.",
+      "sentenceZh": "厨师从山坡菜园采集新鲜花椒。",
+      "scene": "In a Sichuan hillside orchard, one adult Chinese grower harvests ripe red Sichuan pepper husks from a prickly-ash branch into a shallow bamboo basket; accurate plant clusters and leaves, complete hands, no chili confusion, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“pepper”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "pepper",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "954badb7-d3b3-4bd9-b1b7-59afff64eda1",
+      "word": "busy",
+      "meaningZh": "忙碌的；热闹的；没空的；使忙",
+      "exampleId": "954badb7-d3b3-4bd9-b1b7-59afff64eda1-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The baker is busy preparing several orders before sunrise.",
+      "sentenceZh": "面包师天亮前忙着准备多份订单。",
+      "scene": "Exactly one adult baker is visibly busy but organized, shaping dough with one hand while watching an oven and arranging cooling loaves on one rack; active early-morning bakery, safe workspace, no tickets, labels or text.",
+      "altText": "一个具体场景清楚表现“busy”的含义。",
+      "riskTags": [
+        "busy",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "aea23aa1-dcbd-4e92-81d7-dd68f0c9dcd6",
+      "word": "intervention",
+      "meaningZh": "干预",
+      "exampleId": "aea23aa1-dcbd-4e92-81d7-dd68f0c9dcd6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Her calm intervention prevents the argument from getting worse.",
+      "sentenceZh": "她冷静的干预阻止争执进一步恶化。",
+      "scene": "Exactly three adults in a community workshop: two face each other in a tense disagreement while a calm third person steps between them with open hands, creating a clear peaceful intervention; nonviolent, no signs or text.",
+      "altText": "一个具体场景清楚表现“intervention”的含义。",
+      "riskTags": [
+        "intervention",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a6b46234-92fc-4dcb-8595-8f2b98dc9fe7",
+      "word": "copy",
+      "meaningZh": "复制；副本；模仿；复印",
+      "exampleId": "a6b46234-92fc-4dcb-8595-8f2b98dc9fe7-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She makes a careful copy of the small clay bird.",
+      "sentenceZh": "她仔细复制了那只小陶鸟。",
+      "scene": "One adult ceramic artist shapes a second small clay bird to match one finished original bird placed beside it, making the copy relationship clear; only two clay birds, original simple design, no molds, labels or text.",
+      "altText": "一个具体场景清楚表现“copy”的含义。",
+      "riskTags": [
+        "copy",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f51d5563-d025-47fc-80b2-e6687fd320f6",
+      "word": "tip",
+      "meaningZh": "小费；尖端；提示；倾斜",
+      "exampleId": "f51d5563-d025-47fc-80b2-e6687fd320f6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He leaves a tip beside the empty coffee cup.",
+      "sentenceZh": "他在喝空的咖啡杯旁留下小费。",
+      "scene": "One adult café customer places exactly two plain coins beside an empty coffee cup as a tip while a server turns toward him with a grateful expression; no currency markings, receipt, menu, signs or text.",
+      "altText": "一个具体场景清楚表现“tip”的含义。",
+      "riskTags": [
+        "tip",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b7804dda-a98b-4e7f-b9f4-4509b4d2c76c",
+      "word": "cheap",
+      "meaningZh": "便宜的；廉价的；不值钱的",
+      "exampleId": "b7804dda-a98b-4e7f-b9f4-4509b4d2c76c-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The simple basket is cheap enough for her to buy.",
+      "sentenceZh": "这个简易篮子的价格便宜，她买得起。",
+      "scene": "At an open market, one shopper happily exchanges only two plain coins for a simple sturdy woven basket while a more elaborate basket remains nearby with a larger pile of coins, making cheap cost clear without price tags or text.",
+      "altText": "一个具体场景清楚表现“cheap”的含义。",
+      "riskTags": [
+        "cheap",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5054c375-26d0-4904-8f42-745af81d877b",
+      "word": "aim",
+      "meaningZh": "目标；目的；瞄准",
+      "exampleId": "5054c375-26d0-4904-8f42-745af81d877b-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The archer takes careful aim at the center of the target.",
+      "sentenceZh": "射手仔细瞄准靶心。",
+      "scene": "Exactly one adult archer stands in accurate safe form, drawing a bow and taking careful aim at the center of one distant circular straw target; empty range, no numbers, lettering, audience or text.",
+      "altText": "一个具体场景清楚表现“aim”的含义。",
+      "riskTags": [
+        "aim",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "0351908b-955c-4ead-b302-9a376202f5bd",
+      "word": "cite",
+      "meaningZh": "引用；引证；传唤",
+      "exampleId": "0351908b-955c-4ead-b302-9a376202f5bd-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The speaker will cite the source during the presentation.",
+      "sentenceZh": "演讲者会在展示中引用这项来源。",
+      "scene": "One adult presenter explains a small archaeological replica while clearly gesturing toward one open reference book on a stand as the source being cited; pages show only indistinct image blocks with no readable marks, no screen or text.",
+      "altText": "一个具体场景清楚表现“cite”的含义。",
+      "riskTags": [
+        "cite",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "791508db-e17d-4ff9-a8af-3c9e3426504d",
+      "word": "welfare",
+      "meaningZh": "福利；安宁；幸福；福利事业",
+      "exampleId": "791508db-e17d-4ff9-a8af-3c9e3426504d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The community center protects the welfare of older residents.",
+      "sentenceZh": "社区中心保障老年居民的福祉。",
+      "scene": "One adult community worker delivers a warm meal and folded blanket to an older resident at home, with respectful eye contact and visible comfort, clearly supporting welfare; no charity branding, paperwork or text.",
+      "altText": "一个具体场景清楚表现“welfare”的含义。",
+      "riskTags": [
+        "welfare",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "80c9c9cc-e1b0-4193-8396-f0217bd4ae65",
+      "word": "vegetable",
+      "meaningZh": "蔬菜；植物的",
+      "exampleId": "80c9c9cc-e1b0-4193-8396-f0217bd4ae65-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The gardener picks a fresh vegetable for dinner.",
+      "sentenceZh": "园丁摘下一只新鲜蔬菜准备晚餐。",
+      "scene": "In a traditional Chinese courtyard vegetable garden, one adult gardener picks exactly one ripe winter melon from a supported vine among neat beds of bok choy and scallions; accurate plants, everyday setting, no decorative clichés, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“vegetable”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "vegetable",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "9d807047-e9bf-402b-8cf7-fc621d1768fc",
+      "word": "gray",
+      "meaningZh": "灰色的",
+      "exampleId": "9d807047-e9bf-402b-8cf7-fc621d1768fc-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The old stone wall turns gray in the rain.",
+      "sentenceZh": "老石墙在雨中呈现灰色。",
+      "scene": "A rain-darkened old stone wall and paving form a rich range of unmistakable gray tones, with one small bright green fern providing color contrast; no people, graffiti, signs or text.",
+      "altText": "一个具体场景清楚表现“gray”的含义。",
+      "riskTags": [
+        "gray",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "091b931e-36ec-4b1e-ada5-d475a54312eb",
+      "word": "dish",
+      "meaningZh": "盘子；碟；菜肴；皿",
+      "exampleId": "091b931e-36ec-4b1e-ada5-d475a54312eb-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The family shares a warm dish of steamed fish.",
+      "sentenceZh": "一家人分享一盘热腾腾的清蒸鱼。",
+      "scene": "A Chinese family dining table centers on exactly one oval porcelain dish holding a whole steamed fish with ginger and scallion, served family-style by one adult; appetizing non-graphic presentation, authentic tableware, no writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“dish”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "dish",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "833a1243-916f-41e6-9a24-7542fdb00b02",
+      "word": "beach",
+      "meaningZh": "海滩",
+      "exampleId": "833a1243-916f-41e6-9a24-7542fdb00b02-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Gentle waves wash across the quiet beach.",
+      "sentenceZh": "轻柔的海浪冲过安静的海滩。",
+      "scene": "A broad quiet sandy beach with one clear line of gentle waves washing ashore, scattered natural shells and distant dunes; no people, buildings, litter, signs or text.",
+      "altText": "一个具体场景清楚表现“beach”的含义。",
+      "riskTags": [
+        "beach",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "59bf7bf4-4b65-428e-9f23-5edd19ee26a6",
+      "word": "improvement",
+      "meaningZh": "改进",
+      "exampleId": "59bf7bf4-4b65-428e-9f23-5edd19ee26a6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The repaired bench is a clear improvement over its damaged condition.",
+      "sentenceZh": "修好的长椅相比损坏时有了明显改进。",
+      "scene": "One adult craftsperson finishes restoring a park bench: most slats are newly repaired and smooth while one last damaged slat and a small pile of removed splinters show the prior condition, making improvement clear in one scene; no text.",
+      "altText": "一个具体场景清楚表现“improvement”的含义。",
+      "riskTags": [
+        "improvement",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3908031c-1581-4441-b8eb-7655ad0b9a7b",
+      "word": "everywhere",
+      "meaningZh": "到处",
+      "exampleId": "3908031c-1581-4441-b8eb-7655ad0b9a7b-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "After the storm, fallen leaves are everywhere in the park.",
+      "sentenceZh": "暴风雨过后，公园里到处都是落叶。",
+      "scene": "A park path, lawn, benches and low branches are covered with windblown autumn leaves everywhere after a storm, while one adult groundskeeper surveys the widespread scene; no signs or text.",
+      "altText": "一个具体场景清楚表现“everywhere”的含义。",
+      "riskTags": [
+        "everywhere",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "85c08339-fb40-4a74-84c9-7e4cefb0b313",
+      "word": "opening",
+      "meaningZh": "开口；开始",
+      "exampleId": "85c08339-fb40-4a74-84c9-7e4cefb0b313-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The round opening reveals a pine tree in the garden.",
+      "sentenceZh": "圆形开口显露出园中的松树。",
+      "scene": "A restrained Suzhou-style garden wall contains one prominent circular moon-gate opening that reveals a pine tree and limestone rock beyond; the empty passage is clearly an opening, no people, plaques, calligraphy or text.",
+      "altText": "一个具体的中国文化场景清楚表现“opening”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "opening",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5602fd8f-700a-4675-b94c-e66896ed08f6",
+      "word": "overall",
+      "meaningZh": "全部的；全体的；从头至尾的；一切在内的",
+      "exampleId": "5602fd8f-700a-4675-b94c-e66896ed08f6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The overall view shows how every part of the garden connects.",
+      "sentenceZh": "整体视图展示了花园各部分如何连接。",
+      "scene": "A high oblique overall view of one community garden clearly shows all connected parts at once—vegetable beds, paths, tool shed, rain tank and seating area—within one boundary; coherent overview, no labels, maps, people or text.",
+      "altText": "一个具体场景清楚表现“overall”的含义。",
+      "riskTags": [
+        "overall",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+

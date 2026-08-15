@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T06:15:06.597Z",
+  "generatedAt": "2026-08-14T10:52:11.175Z",
   "source": {
     "database": "english-orbit-db",
     "orderBy": "COALESCE(frequency_rank, 999999) ASC, word ASC"

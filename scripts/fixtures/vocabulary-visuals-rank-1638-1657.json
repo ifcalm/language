@@ -1,0 +1,331 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1638-1657-20260813",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "golden",
+      "landscape",
+      "bowl",
+      "frame",
+      "hall",
+      "trust"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items in this batch integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "ea66f34d-dc7b-4494-8369-510f92443c63",
+      "word": "rating",
+      "meaningZh": "评级",
+      "exampleId": "ea66f34d-dc7b-4494-8369-510f92443c63-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The critic gives the finest cup a high rating.",
+      "sentenceZh": "评审给最精美的杯子很高的评级。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"rating\" in its Chinese meaning \"评级\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“rating”的含义。",
+      "riskTags": [
+        "rating",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "0ea23049-27ae-4610-ad2a-ad847b4f1626",
+      "word": "golden",
+      "meaningZh": "金色的",
+      "exampleId": "0ea23049-27ae-4610-ad2a-ad847b4f1626-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The artisan restores a golden roof tile.",
+      "sentenceZh": "工匠修复一块金色琉璃瓦。",
+      "scene": "A Chinese architectural conservator inspects one newly restored golden glazed roof tile beside an orderly row of muted tiles, with historically accurate tools and no palace spectacle or text.",
+      "altText": "一个具体的中国文化场景清楚表现“golden”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "golden",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "407d67b9-8710-4b18-948e-6a19b253c94a",
+      "word": "motion",
+      "meaningZh": "运动；动作；动议",
+      "exampleId": "407d67b9-8710-4b18-948e-6a19b253c94a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Falling leaves emphasize the cyclist's forward motion.",
+      "sentenceZh": "飘落的树叶突出了骑车人的向前运动。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"motion\" in its Chinese meaning \"运动；动作；动议\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“motion”的含义。",
+      "riskTags": [
+        "motion",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3fa5618a-8167-4d6f-914f-aa275319d78f",
+      "word": "German",
+      "meaningZh": "德国的；德国人",
+      "exampleId": "3fa5618a-8167-4d6f-914f-aa275319d78f-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The German baker hands a pretzel to a customer.",
+      "sentenceZh": "德国面包师把一只椒盐卷饼递给顾客。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"German\" in its Chinese meaning \"德国的；德国人\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“German”的含义。",
+      "riskTags": [
+        "German",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a95268c7-40ba-452c-b047-101ad74ed55e",
+      "word": "gender",
+      "meaningZh": "性别；性",
+      "exampleId": "a95268c7-40ba-452c-b047-101ad74ed55e-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "People of every gender contribute equally to the project.",
+      "sentenceZh": "不同性别的人都平等参与这个项目。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"gender\" in its Chinese meaning \"性别；性\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“gender”的含义。",
+      "riskTags": [
+        "gender",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "ce7e4d56-a678-455d-b100-08703763672e",
+      "word": "solve",
+      "meaningZh": "解决；解答；破解",
+      "exampleId": "ce7e4d56-a678-455d-b100-08703763672e-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He works carefully to solve the bicycle problem.",
+      "sentenceZh": "他认真设法解决自行车的问题。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"solve\" in its Chinese meaning \"解决；解答；破解\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“solve”的含义。",
+      "riskTags": [
+        "solve",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "de8e242a-69bd-4247-a048-6caaf0f36445",
+      "word": "fee",
+      "meaningZh": "费用；费；酬金",
+      "exampleId": "de8e242a-69bd-4247-a048-6caaf0f36445-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The visitor pays a small fee before entering the pool.",
+      "sentenceZh": "访客进入泳池前支付一小笔费用。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"fee\" in its Chinese meaning \"费用；费；酬金\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“fee”的含义。",
+      "riskTags": [
+        "fee",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "33029c88-09f2-41b5-a28d-e67d2828208f",
+      "word": "landscape",
+      "meaningZh": "风景；景观",
+      "exampleId": "33029c88-09f2-41b5-a28d-e67d2828208f-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Mist drifts across the mountain landscape.",
+      "sentenceZh": "薄雾飘过山地景观。",
+      "scene": "A naturalistic Chinese shanshui-inspired mountain landscape shows layered mist, pine-covered ridges, a winding stream and a tiny footbridge, rendered as original ink-and-color editorial art with no copied painting, seals, calligraphy or text.",
+      "altText": "一个具体的中国文化场景清楚表现“landscape”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "landscape",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3d99aa61-e6f6-4081-8323-ffe62b5f2ed8",
+      "word": "used",
+      "meaningZh": "用过的；习惯的",
+      "exampleId": "3d99aa61-e6f6-4081-8323-ffe62b5f2ed8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The used glove is softer and more worn than the new one.",
+      "sentenceZh": "用过的手套比新手套更柔软也更磨损。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"used\" in its Chinese meaning \"用过的；习惯的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“used”的含义。",
+      "riskTags": [
+        "used",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "71ffcc73-44c8-4553-8588-eede542be453",
+      "word": "bowl",
+      "meaningZh": "碗；木球；大酒杯",
+      "exampleId": "71ffcc73-44c8-4553-8588-eede542be453-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The potter holds a finished porcelain bowl.",
+      "sentenceZh": "陶工捧着一只烧制完成的瓷碗。",
+      "scene": "A Jingdezhen ceramic artisan holds one finished blue-and-white bowl beside a plain unpainted bowl form, in an authentic clean studio; original simple botanical motif, no copied antiques, marks or text.",
+      "altText": "一个具体的中国文化场景清楚表现“bowl”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "bowl",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "cbe49675-3061-42a6-89a4-8870868416e8",
+      "word": "equal",
+      "meaningZh": "平等的；相等的；等于",
+      "exampleId": "cbe49675-3061-42a6-89a4-8870868416e8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Both sides of the scale carry equal weight.",
+      "sentenceZh": "天平两边的重量相等。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"equal\" in its Chinese meaning \"平等的；相等的；等于\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“equal”的含义。",
+      "riskTags": [
+        "equal",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "ec95bbbb-e647-4774-9529-3c22932b01cd",
+      "word": "forth",
+      "meaningZh": "往前；以后；向外",
+      "exampleId": "ec95bbbb-e647-4774-9529-3c22932b01cd-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The hiker steps forth from the cave into the valley.",
+      "sentenceZh": "徒步者从洞穴向前走进山谷。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"forth\" in its Chinese meaning \"往前；以后；向外\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“forth”的含义。",
+      "riskTags": [
+        "forth",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2336724d-77b6-42de-b0d5-cd9da9f4c668",
+      "word": "frame",
+      "meaningZh": "框架；边框；帧（视频）；陷害",
+      "exampleId": "2336724d-77b6-42de-b0d5-cd9da9f4c668-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The moon gate forms a natural frame around the pine tree.",
+      "sentenceZh": "月洞门为松树构成一个天然画框。",
+      "scene": "A circular moon gate in a restrained Suzhou-style garden perfectly frames one distant pine and limestone rock, making the architectural frame unmistakable; no people, plaques or text.",
+      "altText": "一个具体的中国文化场景清楚表现“frame”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "frame",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e13ea333-86cd-4b92-84b1-f23a6a573837",
+      "word": "typical",
+      "meaningZh": "典型的；有代表性的",
+      "exampleId": "e13ea333-86cd-4b92-84b1-f23a6a573837-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The gray bird has the typical features of a city pigeon.",
+      "sentenceZh": "这只灰鸟具有城市鸽子的典型特征。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"typical\" in its Chinese meaning \"典型的；有代表性的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“typical”的含义。",
+      "riskTags": [
+        "typical",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fea04dfc-58ac-4d3b-8938-aab8a5d0ad54",
+      "word": "except",
+      "meaningZh": "除；除外",
+      "exampleId": "fea04dfc-58ac-4d3b-8938-aab8a5d0ad54-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Every apple is red except the green one.",
+      "sentenceZh": "除了那只绿苹果，其余苹果都是红色的。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"except\" in its Chinese meaning \"除；除外\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“except”的含义。",
+      "riskTags": [
+        "except",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "365f9590-ccb6-4191-a196-1ca17b67dcc1",
+      "word": "conservative",
+      "meaningZh": "保守的；守旧的；有保存力的",
+      "exampleId": "365f9590-ccb6-4191-a196-1ca17b67dcc1-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The gardener takes a conservative approach to trimming the old hedge.",
+      "sentenceZh": "园丁以保守谨慎的方式修剪老树篱。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"conservative\" in its Chinese meaning \"保守的；守旧的；有保存力的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“conservative”的含义。",
+      "riskTags": [
+        "conservative",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e080dc96-98e1-497b-9cf7-ba3515bd46d5",
+      "word": "eliminate",
+      "meaningZh": "消除；排除；消灭",
+      "exampleId": "e080dc96-98e1-497b-9cf7-ba3515bd46d5-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She pulls the last weed to eliminate the problem.",
+      "sentenceZh": "她拔掉最后一棵杂草以消除问题。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"eliminate\" in its Chinese meaning \"消除；排除；消灭\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“eliminate”的含义。",
+      "riskTags": [
+        "eliminate",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "8d1f3b7a-04fe-44ff-94be-5921e9e23ac8",
+      "word": "host",
+      "meaningZh": "主人；主持人；主办；主机（计算机）",
+      "exampleId": "8d1f3b7a-04fe-44ff-94be-5921e9e23ac8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The host welcomes three guests into her home.",
+      "sentenceZh": "主人欢迎三位客人进入家中。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"host\" in its Chinese meaning \"主人；主持人；主办；主机（计算机）\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“host”的含义。",
+      "riskTags": [
+        "host",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "19706407-de1a-48bc-bc21-dd0a8a972a72",
+      "word": "hall",
+      "meaningZh": "大厅；礼堂；走廊",
+      "exampleId": "19706407-de1a-48bc-bc21-dd0a8a972a72-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The community gathers in the spacious hall.",
+      "sentenceZh": "社区居民在宽敞的大厅里聚集。",
+      "scene": "A wide view inside a well-preserved traditional Chinese community hall shows timber columns, tiled floor and open central space prepared for a gathering; no altar focus, banners, plaques or text.",
+      "altText": "一个具体的中国文化场景清楚表现“hall”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "hall",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b04a0ba5-0067-45c9-805b-5cc5a766dac2",
+      "word": "trust",
+      "meaningZh": "信任",
+      "exampleId": "b04a0ba5-0067-45c9-805b-5cc5a766dac2-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The neighbors show trust as they return the borrowed tool.",
+      "sentenceZh": "邻居归还借来的工具，表现出彼此的信任。",
+      "scene": "Two adult Chinese neighbors on a rural stone bridge exchange a borrowed tool hand-to-hand with relaxed eye contact, clearly showing trust; authentic everyday setting, no costumes, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“trust”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "trust",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+
+
