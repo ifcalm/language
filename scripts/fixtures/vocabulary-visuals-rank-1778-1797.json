@@ -1,0 +1,136 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1778-1797-20260814",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": ["mass", "enormous", "tone", "wheel", "rural", "narrow"]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "733c8c10-4eaa-4a36-b70c-8cf4c6824785", "word": "mass", "meaningZh": "大量；群众；质量", "exampleId": "733c8c10-4eaa-4a36-b70c-8cf4c6824785-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "A mass of freshly picked tea leaves fills the wide basket.", "sentenceZh": "大量新采的茶叶装满了宽大的竹篮。",
+      "scene": "At a Chinese tea farm, one large woven bamboo basket is visibly heaped with a dense mass of freshly picked green tea leaves while one adult grower steadies it; authentic practical work clothing, no labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“mass”的含义。", "riskTags": ["Chinese_culture", "mass", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "489e49a0-e91b-4d12-b472-005a615958fb", "word": "emphasize", "meaningZh": "强调", "exampleId": "489e49a0-e91b-4d12-b472-005a615958fb-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The coach emphasizes the importance of balance.", "sentenceZh": "教练强调平衡的重要性。",
+      "scene": "An adult coach demonstrates a stable balancing pose while three learners watch the coach's deliberate open-hand gesture toward the firmly planted feet, clearly emphasizing this one point; no boards, diagrams, sports logos or text.",
+      "altText": "一个具体场景清楚表现“emphasize”的含义。", "riskTags": ["emphasize", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "59fc4357-9712-4c9a-a169-fe8393ad5332", "word": "experiment", "meaningZh": "实验；试验；实验仪器", "exampleId": "59fc4357-9712-4c9a-a169-fe8393ad5332-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The students conduct an experiment with two plants.", "sentenceZh": "学生们用两株植物进行实验。",
+      "scene": "Two adult students compare exactly two similar potted plants under different safe lamps, carefully observing leaf growth with a magnifying glass; tidy laboratory table, no liquids, labels, notes, screens or text.",
+      "altText": "一个具体场景清楚表现“experiment”的含义。", "riskTags": ["experiment", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "88e6ea7f-6ea5-44ef-a075-61b079a9f7a7", "word": "definitely", "meaningZh": "肯定地", "exampleId": "88e6ea7f-6ea5-44ef-a075-61b079a9f7a7-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She definitely chooses the sturdy bridge.", "sentenceZh": "她肯定地选择了坚固的桥。",
+      "scene": "At a fork in a walking path, one adult traveler points decisively and steps toward a visibly sturdy bridge while turning away from a muddy dead end, showing complete certainty; no signs, arrows or text.",
+      "altText": "一个具体场景清楚表现“definitely”的含义。", "riskTags": ["definitely", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "fd6fbe94-fab1-4913-86a8-bb6256bf5531", "word": "bomb", "meaningZh": "炸弹；轰炸；投弹于", "exampleId": "fd6fbe94-fab1-4913-86a8-bb6256bf5531-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A specialist uses a robot to inspect the suspected bomb.", "sentenceZh": "专业人员使用机器人检查疑似炸弹。",
+      "scene": "In an empty cordoned training ground, a small bomb-disposal robot approaches one plain inert training object while an adult safety specialist watches from far behind a protective barrier; no construction details, exposed mechanisms, explosion, injury, crowds, labels or text.",
+      "altText": "一个安全且非血腥的场景清楚表现“bomb”的含义。", "riskTags": ["bomb", "non_graphic", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "ea8e5d63-7d3a-4ccc-aab0-3749f7054447", "word": "enormous", "meaningZh": "巨大的；庞大的", "exampleId": "ea8e5d63-7d3a-4ccc-aab0-3749f7054447-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The enormous ancient wall stretches across the mountains.", "sentenceZh": "巨大的古城墙横跨群山。",
+      "scene": "A restrained wide view of an enormous historic Chinese defensive wall crossing rugged northern mountains, with exactly two tiny modern hikers on the path for scale; accurate stone and brick structure, no flags, plaques, crowds or text.",
+      "altText": "一个具体的中国文化场景清楚表现“enormous”的含义。", "riskTags": ["Chinese_culture", "enormous", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "0b6224bc-eadf-42a1-a273-e00caa6d5415", "word": "tone", "meaningZh": "语气；音调；色调", "exampleId": "0b6224bc-eadf-42a1-a273-e00caa6d5415-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The musician listens carefully to the instrument's warm tone.", "sentenceZh": "乐师仔细聆听乐器温暖的音色。",
+      "scene": "One adult Chinese musician plays a historically grounded guqin on a plain wooden table and pauses attentively as a single string vibrates, emphasizing the warm tone; quiet scholar's studio, complete hands, no calligraphy, score, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“tone”的含义。", "riskTags": ["Chinese_culture", "tone", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "5f7df965-21de-4a0e-b5d9-9bca962f291e", "word": "liberal", "meaningZh": "自由主义的；开明的；慷慨的", "exampleId": "5f7df965-21de-4a0e-b5d9-9bca962f291e-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The teacher has a liberal attitude toward new ideas.", "sentenceZh": "这位教师对新观念持开明态度。",
+      "scene": "An adult teacher welcomes three learners presenting visibly different handmade prototypes around one table, listening with an open posture and encouraging exploration, conveying a liberal open-minded attitude; no political symbols, boards, labels or text.",
+      "altText": "一个中性场景清楚表现“liberal”的开明含义。", "riskTags": ["liberal", "neutral", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "48a6cbd4-5354-4afd-bd2a-dbc2c1e5dd4c", "word": "massive", "meaningZh": "大而重的；宽大的；宏伟的", "exampleId": "48a6cbd4-5354-4afd-bd2a-dbc2c1e5dd4c-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A massive boulder blocks the forest path.", "sentenceZh": "一块巨大的巨石挡住了林间小路。",
+      "scene": "One massive heavy boulder fills most of a forest path while a lone adult hiker stands safely several steps away for scale, clearly showing great bulk and weight; no danger action, signs or text.",
+      "altText": "一个具体场景清楚表现“massive”的含义。", "riskTags": ["massive", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "de4af3f2-66e0-4910-8ab2-1bb67454b9d6", "word": "engineer", "meaningZh": "工程师；设计", "exampleId": "de4af3f2-66e0-4910-8ab2-1bb67454b9d6-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The engineer checks the new footbridge structure.", "sentenceZh": "工程师检查新建人行桥的结构。",
+      "scene": "One adult civil engineer in practical safety gear inspects the bolts and beams of a small newly built footbridge while holding a blank clipboard; clear professional task, complete hands, no logos, diagrams or text.",
+      "altText": "一个具体场景清楚表现“engineer”的含义。", "riskTags": ["engineer", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "fff2d899-c42f-44a0-9d29-198ea257bc29", "word": "wheel", "meaningZh": "轮子；车轮；轮；方向盘；旋转；机构", "exampleId": "fff2d899-c42f-44a0-9d29-198ea257bc29-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The wooden wheel turns as the stream flows.", "sentenceZh": "溪水流动时木轮随之转动。",
+      "scene": "A traditional Chinese wooden waterwheel turns beside a terraced field as a clear stream pushes its paddles, with one farmer observing the mechanism; historically plausible joinery, no decorative clichés, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“wheel”的含义。", "riskTags": ["Chinese_culture", "wheel", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "70ec8a00-22c2-4079-9e54-086b3d3e69ac", "word": "decline", "meaningZh": "下降；衰退；拒绝；减少", "exampleId": "70ec8a00-22c2-4079-9e54-086b3d3e69ac-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The water level continues to decline during the dry season.", "sentenceZh": "旱季期间水位持续下降。",
+      "scene": "A reservoir in dry season shows current water far below several old mineral-stain lines on the bank, while one adult ranger observes the declining level; no charts, drought suffering, dead animals, labels or text.",
+      "altText": "一个具体场景清楚表现“decline”的含义。", "riskTags": ["decline", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "736c2dc5-99e0-4239-a65a-b993bc3a34d8", "word": "invest", "meaningZh": "投资；投入", "exampleId": "736c2dc5-99e0-4239-a65a-b993bc3a34d8-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "They invest time and tools in the community garden.", "sentenceZh": "他们为社区花园投入时间和工具。",
+      "scene": "Three adults devote effort and new gardening tools to planting a shared community garden, showing investment through useful resources and sustained work; no money, financial promises, signs or text.",
+      "altText": "一个具体场景清楚表现“invest”的含义。", "riskTags": ["invest", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "b2cb9b58-ce69-4d07-bf94-d6aa5d571545", "word": "cable", "meaningZh": "电缆；海底电报；缆；索", "exampleId": "b2cb9b58-ce69-4d07-bf94-d6aa5d571545-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The technician secures a thick cable beneath the bridge.", "sentenceZh": "技术人员把粗电缆固定在桥下。",
+      "scene": "One adult utility technician in safe gear secures a single thick insulated cable to supports beneath a small bridge, with the long cable clearly visible; complete hands, no exposed wires, electricity arc, logos or text.",
+      "altText": "一个具体场景清楚表现“cable”的含义。", "riskTags": ["cable", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "96c37fab-c031-477d-ac83-ccbd11b38f0c", "word": "towards", "meaningZh": "向；对于", "exampleId": "96c37fab-c031-477d-ac83-ccbd11b38f0c-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The child walks towards the waiting parent.", "sentenceZh": "孩子朝着等候的家长走去。",
+      "scene": "In a quiet park, one school-age child walks clearly towards one waiting parent with open arms, using body direction, footprints and gaze to show movement; safe distance, no signs, uniforms, bags with logos or text.",
+      "altText": "一个具体场景清楚表现“towards”的含义。", "riskTags": ["towards", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "6167284a-25b1-437f-b31f-e50b340498d6", "word": "expose", "meaningZh": "使暴露；使曝光；揭穿；陈列", "exampleId": "6167284a-25b1-437f-b31f-e50b340498d6-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Removing the cloth exposes the restored painting.", "sentenceZh": "揭开布料后，修复的画作显露出来。",
+      "scene": "An adult conservator gently lifts a plain protective cloth to expose a restored abstract landscape painting beneath it, with half still covered and half newly visible; complete hands, no famous artwork, labels, signatures or text.",
+      "altText": "一个具体场景清楚表现“expose”的含义。", "riskTags": ["expose", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "43626830-d543-4d7b-8cc8-58a7474686df", "word": "rural", "meaningZh": "乡下的；田园的；乡村风味的", "exampleId": "43626830-d543-4d7b-8cc8-58a7474686df-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "A rural village rests beside the terraced fields.", "sentenceZh": "一个乡村坐落在梯田旁。",
+      "scene": "A lived-in rural Chinese village beside cultivated mountain terraces, with two adults carrying ordinary farm baskets along a narrow path and modest regional houses in the distance; grounded contemporary life, no costumes, tourism banners, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“rural”的含义。", "riskTags": ["Chinese_culture", "rural", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "e614c08c-7dff-4c93-896b-1da74f20fd4f", "word": "AIDS", "meaningZh": "艾滋病", "exampleId": "e614c08c-7dff-4c93-896b-1da74f20fd4f-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Regular medical care helps a person living with AIDS.", "sentenceZh": "规律的医疗照护帮助艾滋病患者生活。",
+      "scene": "A respectful private healthcare visit: one adult living with AIDS speaks calmly with one physician beside an ordinary closed medication organizer, conveying ongoing care and dignity; healthy everyday appearance, no symptoms, needles, stigma, ribbons, test results, labels or text.",
+      "altText": "一个尊重且非污名化的医疗场景表现“AIDS”相关照护。", "riskTags": ["AIDS", "medical", "non_stigmatizing", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "1783aace-8650-4d1a-a61b-40ca4873605f", "word": "Jew", "meaningZh": "犹太人", "exampleId": "1783aace-8650-4d1a-a61b-40ca4873605f-visual-ex", "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The Jewish neighbor shares bread at a community meal.", "sentenceZh": "这位犹太邻居在社区聚餐中分享面包。",
+      "scene": "A respectful ordinary community meal where one Jewish adult neighbor shares a loaf of bread with three diverse adult friends at the same table; warm contemporary setting, individualized natural faces, no caricature, costume coding, religious spectacle, flags, political symbols or text.",
+      "altText": "一个尊重且日常的场景表现一位犹太邻居。", "riskTags": ["Jew", "religion_ethnicity", "respectful", "no_readable_text"]
+    },
+    {
+      "vocabularyId": "fee7e118-f6ae-45df-b67e-b07acbe46697", "word": "narrow", "meaningZh": "狭窄的；狭隘的；变窄", "exampleId": "fee7e118-f6ae-45df-b67e-b07acbe46697-visual-ex", "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The bicycle moves slowly through the narrow hutong lane.", "sentenceZh": "自行车缓慢穿过狭窄的胡同。",
+      "scene": "A restrained Beijing hutong lane is so narrow that exactly one adult cyclist moves slowly between weathered gray-brick courtyard walls, with only a slim passage visible; authentic contemporary details, no signs, posters, door couplets or text.",
+      "altText": "一个具体的中国文化场景清楚表现“narrow”的含义。", "riskTags": ["Chinese_culture", "narrow", "no_readable_text"]
+    }
+  ]
+}

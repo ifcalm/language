@@ -1,0 +1,331 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1698-1717-20260813",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "wing",
+      "pour",
+      "stir",
+      "judgment",
+      "cloud",
+      "hero"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items in this batch integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "5756588f-d986-4578-a87c-f802a65e55f1",
+      "word": "wing",
+      "meaningZh": "翅膀；侧翼；飞行",
+      "exampleId": "5756588f-d986-4578-a87c-f802a65e55f1-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The artisan gently tests one wing of the kite.",
+      "sentenceZh": "工匠轻轻测试风筝的一侧翅膀。",
+      "scene": "A Chinese kite artisan tests one flexible wing of a traditional swallow kite, gently bending the bamboo spar while the other wing rests symmetrical; accurate craft, no writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“wing”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "wing",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "709ecd41-7a80-46ae-80df-dd97c30a9432",
+      "word": "separate",
+      "meaningZh": "分开的；单独的；分离",
+      "exampleId": "709ecd41-7a80-46ae-80df-dd97c30a9432-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She keeps the white and colored clothes separate.",
+      "sentenceZh": "她把白色和彩色衣物分开放置。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"separate\" in its Chinese meaning \"分开的；单独的；分离\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“separate”的含义。",
+      "riskTags": [
+        "separate",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "946cc232-143d-4905-aecf-a3d8aa28aa7d",
+      "word": "somewhat",
+      "meaningZh": "有点；稍微；几分",
+      "exampleId": "946cc232-143d-4905-aecf-a3d8aa28aa7d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The middle glass is somewhat full.",
+      "sentenceZh": "中间的玻璃杯装了一些水。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"somewhat\" in its Chinese meaning \"有点；稍微；几分\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“somewhat”的含义。",
+      "riskTags": [
+        "somewhat",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "12b45359-93f9-4950-a2a8-67fa44fa7948",
+      "word": "pour",
+      "meaningZh": "倒；倾泻",
+      "exampleId": "12b45359-93f9-4950-a2a8-67fa44fa7948-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The host begins to pour tea into three small cups.",
+      "sentenceZh": "主人开始把茶倒入三个小杯子。",
+      "scene": "A gongfu tea host pours amber tea from one small clay teapot into exactly three tiny cups in a smooth continuous stream; accurate Chinese tea tray, complete hands, no labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“pour”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "pour",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f2b3ed30-e011-4905-bc50-bbae46a2df1b",
+      "word": "stir",
+      "meaningZh": "搅拌；激起",
+      "exampleId": "f2b3ed30-e011-4905-bc50-bbae46a2df1b-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The cook uses a long spatula to stir the vegetables.",
+      "sentenceZh": "厨师用长锅铲翻炒蔬菜。",
+      "scene": "A Chinese cook uses one long metal spatula to stir vegetables in a seasoned round-bottom wok over controlled heat; dynamic safe movement, no flames out of control, brands or text.",
+      "altText": "一个具体的中国文化场景清楚表现“stir”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "stir",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "081b7437-ffa6-481f-bd8f-92dbb6606774",
+      "word": "judgment",
+      "meaningZh": "判断；审判",
+      "exampleId": "081b7437-ffa6-481f-bd8f-92dbb6606774-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The jury examines both pieces before making a judgment.",
+      "sentenceZh": "评审团在作出判断前检查两件作品。",
+      "scene": "Three adult members of a contemporary Chinese craft jury quietly compare two handmade ceramic pieces before making a judgment, using observation rather than scorecards; no numbers, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“judgment”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "judgment",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "7764c224-9a89-435c-b100-09bc90b3e29a",
+      "word": "beer",
+      "meaningZh": "啤酒",
+      "exampleId": "7764c224-9a89-435c-b100-09bc90b3e29a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The brewery makes beer from barley and hops.",
+      "sentenceZh": "这家酿造坊用大麦和啤酒花酿制啤酒。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"beer\" in its Chinese meaning \"啤酒\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“beer”的含义。",
+      "riskTags": [
+        "beer",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5c89b2bc-deeb-4a13-bf9d-d0766d84bfee",
+      "word": "reference",
+      "meaningZh": "参考；引用",
+      "exampleId": "5c89b2bc-deeb-4a13-bf9d-d0766d84bfee-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The sculptor uses a real pear as a reference.",
+      "sentenceZh": "雕塑家以真实的梨作为参考。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"reference\" in its Chinese meaning \"参考；引用\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“reference”的含义。",
+      "riskTags": [
+        "reference",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "452fb16b-05df-419d-95fb-1af2957bfc22",
+      "word": "tear",
+      "meaningZh": "眼泪；撕裂；撕破",
+      "exampleId": "452fb16b-05df-419d-95fb-1af2957bfc22-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A single tear rolls down her cheek.",
+      "sentenceZh": "一滴眼泪从她的脸颊滑落。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"tear\" in its Chinese meaning \"眼泪；撕裂；撕破\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“tear”的含义。",
+      "riskTags": [
+        "tear",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "8fd1e2a8-1576-4b60-adcc-f2f8e7cd4d48",
+      "word": "doubt",
+      "meaningZh": "怀疑；疑惑；不信",
+      "exampleId": "8fd1e2a8-1576-4b60-adcc-f2f8e7cd4d48-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He pauses at the fork because he has doubt about the route.",
+      "sentenceZh": "他在岔路口停下，因为对路线心存疑虑。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"doubt\" in its Chinese meaning \"怀疑；疑惑；不信\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“doubt”的含义。",
+      "riskTags": [
+        "doubt",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "4414a482-18ed-47ee-88f5-82108f357874",
+      "word": "grant",
+      "meaningZh": "授予；拨款",
+      "exampleId": "4414a482-18ed-47ee-88f5-82108f357874-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "They grant the gardener permission to use the plot.",
+      "sentenceZh": "他们准许园丁使用这块土地。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"grant\" in its Chinese meaning \"授予；拨款\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“grant”的含义。",
+      "riskTags": [
+        "grant",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a0c47933-5f73-4f9a-bcef-bc2ae890563e",
+      "word": "seriously",
+      "meaningZh": "严肃地；认真地",
+      "exampleId": "a0c47933-5f73-4f9a-bcef-bc2ae890563e-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The engineers seriously examine the damaged support.",
+      "sentenceZh": "工程师们严肃认真地检查受损支撑。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"seriously\" in its Chinese meaning \"严肃地；认真地\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“seriously”的含义。",
+      "riskTags": [
+        "seriously",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "63177ed0-3d77-45e0-9dba-a79fc9b72189",
+      "word": "minister",
+      "meaningZh": "部长；牧师",
+      "exampleId": "63177ed0-3d77-45e0-9dba-a79fc9b72189-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The minister reviews the flood-defense model with experts.",
+      "sentenceZh": "部长与专家一起审查防洪模型。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"minister\" in its Chinese meaning \"部长；牧师\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“minister”的含义。",
+      "riskTags": [
+        "minister",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "8e5a9c37-57a4-4368-b769-dbfb0de4cb2d",
+      "word": "totally",
+      "meaningZh": "完全地",
+      "exampleId": "8e5a9c37-57a4-4368-b769-dbfb0de4cb2d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "One jar is totally filled with pebbles.",
+      "sentenceZh": "一个罐子完全装满了鹅卵石。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"totally\" in its Chinese meaning \"完全地\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“totally”的含义。",
+      "riskTags": [
+        "totally",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e84074ba-92cd-4a32-be96-7377397e2b75",
+      "word": "hero",
+      "meaningZh": "英雄；超越常人者；男主角",
+      "exampleId": "e84074ba-92cd-4a32-be96-7377397e2b75-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The volunteer becomes a hero during the rescue drill.",
+      "sentenceZh": "志愿者在救援演练中成为英雄。",
+      "scene": "During a Chinese riverside rescue drill, one adult volunteer in a life jacket pulls a child-sized training mannequin into a safe boat, presenting everyday heroism without danger or spectacle; no logos or text.",
+      "altText": "一个具体的中国文化场景清楚表现“hero”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "hero",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "7c95a2ed-63c4-43f2-8f66-60030076d985",
+      "word": "industrial",
+      "meaningZh": "工业的",
+      "exampleId": "7c95a2ed-63c4-43f2-8f66-60030076d985-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Large machines fill the modern industrial factory.",
+      "sentenceZh": "大型机器遍布这座现代工业工厂。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"industrial\" in its Chinese meaning \"工业的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“industrial”的含义。",
+      "riskTags": [
+        "industrial",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3295567b-eb1e-414a-ae3c-ce7aa9f24a7b",
+      "word": "cloud",
+      "meaningZh": "云；阴暗；烟雾；疑团",
+      "exampleId": "3295567b-eb1e-414a-ae3c-ce7aa9f24a7b-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "A sea of cloud flows between the mountain peaks.",
+      "sentenceZh": "云海在群峰之间流动。",
+      "scene": "A sea of cloud flows between the granite peaks and pine trees of Huangshan at dawn, with one foreground pine and layered mist; natural landscape, no people, temples, calligraphy or text.",
+      "altText": "一个具体的中国文化场景清楚表现“cloud”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "cloud",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "edabf2ea-ff98-4fee-bc00-a232ddfbbad8",
+      "word": "stretch",
+      "meaningZh": "伸展；拉伸；一段时间",
+      "exampleId": "edabf2ea-ff98-4fee-bc00-a232ddfbbad8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The runner stops to stretch his calf before exercise.",
+      "sentenceZh": "跑步者在锻炼前停下来拉伸小腿。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"stretch\" in its Chinese meaning \"伸展；拉伸；一段时间\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“stretch”的含义。",
+      "riskTags": [
+        "stretch",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "de7d8f3b-5db7-484a-9209-309ee6b59ce2",
+      "word": "winner",
+      "meaningZh": "获胜者",
+      "exampleId": "de7d8f3b-5db7-484a-9209-309ee6b59ce2-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The winner crosses the finish line first.",
+      "sentenceZh": "获胜者第一个越过终点线。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"winner\" in its Chinese meaning \"获胜者\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“winner”的含义。",
+      "riskTags": [
+        "winner",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "24224b4d-7fb7-4b3c-a938-cabfea164594",
+      "word": "volume",
+      "meaningZh": "体积；音量；卷",
+      "exampleId": "24224b4d-7fb7-4b3c-a938-cabfea164594-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The largest vessel holds the greatest volume of water.",
+      "sentenceZh": "最大的容器能容纳最多体积的水。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"volume\" in its Chinese meaning \"体积；音量；卷\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“volume”的含义。",
+      "riskTags": [
+        "volume",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+
+

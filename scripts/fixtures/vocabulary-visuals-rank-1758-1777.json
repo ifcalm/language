@@ -1,0 +1,330 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1758-1777-20260814",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "household",
+      "fewer",
+      "match",
+      "beneath",
+      "proud",
+      "flow"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "caec1084-6bd7-4820-8c08-f937176a6103",
+      "word": "resolution",
+      "meaningZh": "决心；决议；分辨率",
+      "exampleId": "caec1084-6bd7-4820-8c08-f937176a6103-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A calm conversation leads to a peaceful resolution.",
+      "sentenceZh": "冷静的交谈带来了和平解决。",
+      "scene": "Two adult neighbors who had disagreed now shake hands beside a repaired shared fence while one mediator smiles nearby, clearly showing resolution; nonviolent, no documents, signs or text.",
+      "altText": "一个具体场景清楚表现“resolution”的含义。",
+      "riskTags": [
+        "resolution",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "7520f694-4286-4c42-bfd5-260bbc64b572",
+      "word": "household",
+      "meaningZh": "家庭；家用的",
+      "exampleId": "7520f694-4286-4c42-bfd5-260bbc64b572-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Everyone in the household helps prepare dinner.",
+      "sentenceZh": "这个家庭中的每个人都帮忙准备晚餐。",
+      "scene": "Inside a modest Fujian tulou household kitchen, exactly four family members of different ages prepare one shared dinner together, with authentic earthen courtyard architecture visible; no costumes, shrine focus, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“household”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "household",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "392d68ac-8504-40bb-b8f1-02e8fbf39dad",
+      "word": "fewer",
+      "meaningZh": "更少的",
+      "exampleId": "392d68ac-8504-40bb-b8f1-02e8fbf39dad-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The small tray holds fewer dumplings than the large tray.",
+      "sentenceZh": "小托盘里的饺子比大托盘少。",
+      "scene": "In a Chinese dumpling kitchen, one bamboo tray holds exactly three finished dumplings while a second identical tray holds exactly seven, making fewer unmistakable; one adult cook nearby, no labels, numbers or text.",
+      "altText": "一个具体的中国文化场景清楚表现“fewer”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "fewer",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "804c5e8e-7703-49db-b555-3aab2c35f445",
+      "word": "abortion",
+      "meaningZh": "流产；堕胎",
+      "exampleId": "804c5e8e-7703-49db-b555-3aab2c35f445-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She discusses abortion care privately with a physician.",
+      "sentenceZh": "她私下与医生讨论流产医疗。",
+      "scene": "A private compassionate clinic consultation between exactly one adult patient and one adult physician seated at equal eye level, discussing abortion care with calm supportive expressions; no procedure, fetus imagery, pregnancy test, political symbols, paperwork or text.",
+      "altText": "一个具体场景清楚表现“abortion”的含义。",
+      "riskTags": [
+        "abortion",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "ed7fb6cd-bc46-4b82-ba38-ec125eb57f97",
+      "word": "apart",
+      "meaningZh": "分开；分离；相距",
+      "exampleId": "ed7fb6cd-bc46-4b82-ba38-ec125eb57f97-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The two chairs stand far apart in the empty room.",
+      "sentenceZh": "两把椅子在空房间里相隔很远。",
+      "scene": "Exactly two identical chairs stand far apart at opposite sides of one otherwise empty room, with a broad visible gap between them; no people, other furniture or text.",
+      "altText": "一个具体场景清楚表现“apart”的含义。",
+      "riskTags": [
+        "apart",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "26f17f3c-e157-4176-ab00-1c903fd16e1a",
+      "word": "witness",
+      "meaningZh": "证人；目击",
+      "exampleId": "26f17f3c-e157-4176-ab00-1c903fd16e1a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "One neighbor is a witness to the falling branch.",
+      "sentenceZh": "一位邻居目睹了树枝掉落。",
+      "scene": "One adult witness watches from a safe porch as a large dead branch falls harmlessly onto an empty yard, with widened attentive eyes and clear line of sight; no injury, other people or text.",
+      "altText": "一个具体场景清楚表现“witness”的含义。",
+      "riskTags": [
+        "witness",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2d13a346-4a4b-4a46-8507-5a193a2eaa5b",
+      "word": "match",
+      "meaningZh": "比赛；火柴；对手",
+      "exampleId": "2d13a346-4a4b-4a46-8507-5a193a2eaa5b-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The carpenter finds two pieces that match exactly.",
+      "sentenceZh": "木匠找到两块完全匹配的构件。",
+      "scene": "A Chinese woodworker aligns exactly two matching mortise-and-tenon components that fit perfectly, beside one clearly incompatible spare piece; authentic traditional joinery, complete hands, no labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“match”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "match",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "bf49b609-44ce-427c-b73d-6a26843e5563",
+      "word": "barely",
+      "meaningZh": "几乎不",
+      "exampleId": "bf49b609-44ce-427c-b73d-6a26843e5563-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The glass is barely filled with water.",
+      "sentenceZh": "杯子里几乎没有水。",
+      "scene": "One clear drinking glass contains only a very thin layer of water at the bottom, barely filled, beside a full glass for contrast; no measurement marks, people or text.",
+      "altText": "一个具体场景清楚表现“barely”的含义。",
+      "riskTags": [
+        "barely",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6ea6da77-b1fa-4db6-9a30-f1a11948d079",
+      "word": "sector",
+      "meaningZh": "部门；扇形；区域；行业",
+      "exampleId": "6ea6da77-b1fa-4db6-9a30-f1a11948d079-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The renewable-energy sector employs many engineers.",
+      "sentenceZh": "可再生能源行业雇用了许多工程师。",
+      "scene": "A coordinated renewable-energy worksite combines a solar array, one wind turbine and exactly three adult engineers maintaining equipment, clearly representing the energy sector; safe gear, no logos, screens or text.",
+      "altText": "一个具体场景清楚表现“sector”的含义。",
+      "riskTags": [
+        "sector",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3431d195-bab5-4777-b73a-65f03c39e728",
+      "word": "representative",
+      "meaningZh": "代表",
+      "exampleId": "3431d195-bab5-4777-b73a-65f03c39e728-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The representative listens to concerns from local residents.",
+      "sentenceZh": "代表听取当地居民的关切。",
+      "scene": "One adult community representative sits at the same round table as exactly four residents, listening while one speaks with open hands; neutral civic room, no flags, campaign material, documents or text.",
+      "altText": "一个具体场景清楚表现“representative”的含义。",
+      "riskTags": [
+        "representative",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "efa9e70a-bbf2-466a-82e1-aee602b58687",
+      "word": "beneath",
+      "meaningZh": "在...下方",
+      "exampleId": "efa9e70a-bbf2-466a-82e1-aee602b58687-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The small boat passes beneath the stone bridge.",
+      "sentenceZh": "小船从石桥下方经过。",
+      "scene": "In a restrained Jiangnan water-town setting, exactly one small wooden boat passes beneath one old stone arch bridge, making the vertical relationship clear; authentic masonry, no tourist banners, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“beneath”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "beneath",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6abe4f2e-a7c9-4de4-98bd-93aaaba575cf",
+      "word": "beside",
+      "meaningZh": "在旁边",
+      "exampleId": "6abe4f2e-a7c9-4de4-98bd-93aaaba575cf-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The dog sits beside the park bench.",
+      "sentenceZh": "狗坐在公园长椅旁边。",
+      "scene": "Exactly one healthy dog sits directly beside one empty park bench, close enough that the spatial relationship is unmistakable; no people, leash, other animals, signs or text.",
+      "altText": "一个具体场景清楚表现“beside”的含义。",
+      "riskTags": [
+        "beside",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "95c90a5d-3bd5-416c-8c56-f944db8763ba",
+      "word": "incident",
+      "meaningZh": "事件；事故",
+      "exampleId": "95c90a5d-3bd5-416c-8c56-f944db8763ba-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The spilled paint is a minor workshop incident.",
+      "sentenceZh": "打翻的油漆是一次小型工坊意外。",
+      "scene": "A minor workshop incident: one closed paint can has tipped and spilled a small puddle while an adult worker calmly places absorbent cloth around it; safe cleanup, no injury, labels or text.",
+      "altText": "一个具体场景清楚表现“incident”的含义。",
+      "riskTags": [
+        "incident",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6aa9c5e3-18ae-458a-a0cb-3e483d330df3",
+      "word": "limited",
+      "meaningZh": "有限的",
+      "exampleId": "6aa9c5e3-18ae-458a-a0cb-3e483d330df3-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Only two seats are available because space is limited.",
+      "sentenceZh": "空间有限，所以只有两个座位可用。",
+      "scene": "A very small waiting alcove contains exactly two chairs fitted tightly between walls while three adults wait just outside, clearly showing limited space; no signs, tickets or text.",
+      "altText": "一个具体场景清楚表现“limited”的含义。",
+      "riskTags": [
+        "limited",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "55331552-36bc-4341-9eea-c58c0d132fa4",
+      "word": "proud",
+      "meaningZh": "骄傲的；自豪的；得意的",
+      "exampleId": "55331552-36bc-4341-9eea-c58c0d132fa4-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The artisan feels proud of the finished embroidery.",
+      "sentenceZh": "工匠为完成的刺绣感到自豪。",
+      "scene": "One Chinese Suzhou embroidery artisan proudly presents an original finished silk panel of simple local flowers in a studio, with a genuine restrained smile and work hoop nearby; no copied artwork, seals, writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“proud”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "proud",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "514af872-6926-4920-8be3-43a624ac2878",
+      "word": "flow",
+      "meaningZh": "流动；流程；流量",
+      "exampleId": "514af872-6926-4920-8be3-43a624ac2878-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Clear water continues to flow through the old canal.",
+      "sentenceZh": "清水继续流过古老运河。",
+      "scene": "A Jiangnan canal visibly flows beneath a small stone bridge, with ripples, drifting leaves and one moored boat emphasizing continuous water movement; restrained authentic architecture, no signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“flow”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "flow",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a8ad4f15-dadc-4e91-b69d-d1e8d347a745",
+      "word": "faculty",
+      "meaningZh": "能力；才能；全体教员",
+      "exampleId": "a8ad4f15-dadc-4e91-b69d-d1e8d347a745-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The university faculty gathers for a teaching workshop.",
+      "sentenceZh": "大学教师们参加教学研讨。",
+      "scene": "Exactly six diverse adult university faculty members collaborate around a table with blank teaching models, clearly a group of educators; campus room, no students, boards, papers or text.",
+      "altText": "一个具体场景清楚表现“faculty”的含义。",
+      "riskTags": [
+        "faculty",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "21a42d3c-76b1-47c5-b366-f77f91360769",
+      "word": "increased",
+      "meaningZh": "增加的",
+      "exampleId": "21a42d3c-76b1-47c5-b366-f77f91360769-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Heavy rain has increased the reservoir level.",
+      "sentenceZh": "大雨使水库水位上升。",
+      "scene": "A reservoir now holds high water above a clearly visible older mineral stain line on the retaining wall, while recent rain clouds recede, showing the level has increased; no gauges, numbers, people or text.",
+      "altText": "一个具体场景清楚表现“increased”的含义。",
+      "riskTags": [
+        "increased",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "cd85ad3c-4320-4507-bac4-2715d2c38d0a",
+      "word": "waste",
+      "meaningZh": "浪费；废物；损耗；消耗；荒地；垃圾",
+      "exampleId": "cd85ad3c-4320-4507-bac4-2715d2c38d0a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Throwing away fresh food creates unnecessary waste.",
+      "sentenceZh": "丢弃新鲜食物造成不必要的浪费。",
+      "scene": "A cafeteria worker looks concerned at a large bin containing untouched bread and vegetables while a nearly empty compost pail sits beside it, clearly showing avoidable food waste; non-graphic, no labels or text.",
+      "altText": "一个具体场景清楚表现“waste”的含义。",
+      "riskTags": [
+        "waste",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "794a6ee1-b15b-47f4-bf82-04b83e5427c6",
+      "word": "merely",
+      "meaningZh": "仅仅",
+      "exampleId": "794a6ee1-b15b-47f4-bf82-04b83e5427c6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The large box contains merely one small button.",
+      "sentenceZh": "这个大盒子里仅仅装着一枚小纽扣。",
+      "scene": "One adult opens a very large ornate box to reveal merely one tiny plain button at its center, with a mildly amused expression; no other contents, labels or text.",
+      "altText": "一个具体场景清楚表现“merely”的含义。",
+      "riskTags": [
+        "merely",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+

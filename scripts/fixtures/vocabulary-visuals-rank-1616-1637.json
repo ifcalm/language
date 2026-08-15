@@ -1,0 +1,330 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1616-1637-20260813",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "correct",
+      "estimate",
+      "combination",
+      "relief",
+      "manner",
+      "ancient"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items in this batch integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "40c1f964-1af8-407e-9d56-2b128ff01f29",
+      "word": "correct",
+      "meaningZh": "正确的；合适的；改正；订正",
+      "exampleId": "40c1f964-1af8-407e-9d56-2b128ff01f29-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The artisan checks the proof and makes the carving correct.",
+      "sentenceZh": "工匠检查样张，把雕版修改正确。",
+      "scene": "In a traditional Chinese woodblock-print workshop, one adult artisan compares a freshly pulled proof with the carved block and carefully corrects one small carving flaw using an appropriate fine tool; authentic bench, ink stone and bamboo paper, safe posture, no readable characters or text.",
+      "altText": "一个具体的中国文化场景清楚表现“correct”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "correct",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2341b32e-28fb-4642-8b8a-675f9175d915",
+      "word": "Jewish",
+      "meaningZh": "犹太的",
+      "exampleId": "2341b32e-28fb-4642-8b8a-675f9175d915-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The Jewish neighbors greet each other outside their synagogue.",
+      "sentenceZh": "两位犹太邻居在会堂外互相问候。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"Jewish\" in its Chinese meaning \"犹太的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“Jewish”的含义。",
+      "riskTags": [
+        "Jewish",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "577dd88c-2ca5-4973-98bb-438352636460",
+      "word": "blame",
+      "meaningZh": "过失；责备；归咎于",
+      "exampleId": "577dd88c-2ca5-4973-98bb-438352636460-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "One coworker places the blame on another after the pot breaks.",
+      "sentenceZh": "花盆打碎后，一名同事把责任归咎于另一人。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"blame\" in its Chinese meaning \"过失；责备；归咎于\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“blame”的含义。",
+      "riskTags": [
+        "blame",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f51057dd-a9b6-4922-a13b-bb5f73ac8b24",
+      "word": "estimate",
+      "meaningZh": "估计；判断；评价",
+      "exampleId": "f51057dd-a9b6-4922-a13b-bb5f73ac8b24-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The carpenter makes an estimate of how much wood is needed.",
+      "sentenceZh": "木匠估计需要多少木料。",
+      "scene": "At a historic Chinese timber workshop, one adult carpenter studies a stack of measured wooden beams and estimates how much material is needed for a small bracket set, using a traditional ink line and wooden rule without visible markings; no text.",
+      "altText": "一个具体的中国文化场景清楚表现“estimate”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "estimate",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e0be6b76-6449-4bae-954e-1a822db0b682",
+      "word": "due",
+      "meaningZh": "由于；到期的；应得的",
+      "exampleId": "e0be6b76-6449-4bae-954e-1a822db0b682-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The library book is due before closing time.",
+      "sentenceZh": "这本图书需要在闭馆前归还。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"due\" in its Chinese meaning \"由于；到期的；应得的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“due”的含义。",
+      "riskTags": [
+        "due",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "11087cef-0556-4a42-9253-d3d9a9f8307a",
+      "word": "basketball",
+      "meaningZh": "篮球",
+      "exampleId": "11087cef-0556-4a42-9253-d3d9a9f8307a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "They play basketball together in the quiet gym.",
+      "sentenceZh": "他们在安静的体育馆里一起打篮球。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"basketball\" in its Chinese meaning \"篮球\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“basketball”的含义。",
+      "riskTags": [
+        "basketball",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b9d36a7e-5c6d-421e-b7c4-7a4d88218fa8",
+      "word": "golf",
+      "meaningZh": "高尔夫球；打高尔夫球",
+      "exampleId": "b9d36a7e-5c6d-421e-b7c4-7a4d88218fa8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He plays golf on the open green.",
+      "sentenceZh": "他在开阔的果岭上打高尔夫球。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"golf\" in its Chinese meaning \"高尔夫球；打高尔夫球\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“golf”的含义。",
+      "riskTags": [
+        "golf",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "240a59b9-e2fa-463a-a064-de46ed661b32",
+      "word": "investigate",
+      "meaningZh": "调查；审查",
+      "exampleId": "240a59b9-e2fa-463a-a064-de46ed661b32-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She begins to investigate the strange footprint.",
+      "sentenceZh": "她开始调查这个奇怪的脚印。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"investigate\" in its Chinese meaning \"调查；审查\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“investigate”的含义。",
+      "riskTags": [
+        "investigate",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "c4f68115-f638-426d-a816-794dd0f26d3d",
+      "word": "crazy",
+      "meaningZh": "发狂的；狂热的",
+      "exampleId": "c4f68115-f638-426d-a816-794dd0f26d3d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The crazy machine sends colorful balls everywhere.",
+      "sentenceZh": "这台疯狂的机器把彩球弹得到处都是。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"crazy\" in its Chinese meaning \"发狂的；狂热的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“crazy”的含义。",
+      "riskTags": [
+        "crazy",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "9955db41-6b3e-493b-841b-40dd40436b2a",
+      "word": "significantly",
+      "meaningZh": "显著地",
+      "exampleId": "9955db41-6b3e-493b-841b-40dd40436b2a-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "One plant has grown significantly taller than the other.",
+      "sentenceZh": "其中一株植物长得明显比另一株高。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"significantly\" in its Chinese meaning \"显著地\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“significantly”的含义。",
+      "riskTags": [
+        "significantly",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "298d4aee-bbec-45b2-a7c7-207a11eb8715",
+      "word": "chain",
+      "meaningZh": "链；枷锁；束缚",
+      "exampleId": "298d4aee-bbec-45b2-a7c7-207a11eb8715-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A strong chain secures the boat to the post.",
+      "sentenceZh": "一条结实的链条把船固定在柱子上。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"chain\" in its Chinese meaning \"链；枷锁；束缚\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“chain”的含义。",
+      "riskTags": [
+        "chain",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "c43b2090-05af-493a-baa4-c642e252dd64",
+      "word": "combination",
+      "meaningZh": "组合",
+      "exampleId": "c43b2090-05af-493a-baa4-c642e252dd64-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The tea maker creates a combination of three ingredients.",
+      "sentenceZh": "制茶师把三种原料组合在一起。",
+      "scene": "A Chinese tea blender combines exactly three distinct dried tea ingredients in one shallow bamboo tray, with three source baskets arranged behind; authentic workshop, precise hands, no labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“combination”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "combination",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "dd0557a2-d9d1-420d-96c2-655d62af2ffa",
+      "word": "frequently",
+      "meaningZh": "频繁地",
+      "exampleId": "dd0557a2-d9d1-420d-96c2-655d62af2ffa-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The hummingbird returns to this flower frequently.",
+      "sentenceZh": "蜂鸟频繁地回到这朵花前。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"frequently\" in its Chinese meaning \"频繁地\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“frequently”的含义。",
+      "riskTags": [
+        "frequently",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fff9ee4b-3a00-49b1-9f5c-d0995c30c085",
+      "word": "governor",
+      "meaningZh": "州长；总督",
+      "exampleId": "fff9ee4b-3a00-49b1-9f5c-d0995c30c085-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The governor listens carefully to local residents.",
+      "sentenceZh": "州长认真听取当地居民的意见。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"governor\" in its Chinese meaning \"州长；总督\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“governor”的含义。",
+      "riskTags": [
+        "governor",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "83fddcd1-5257-4216-8c21-5191953709ea",
+      "word": "relief",
+      "meaningZh": "缓解；救济；安慰",
+      "exampleId": "83fddcd1-5257-4216-8c21-5191953709ea-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "Cool water brings relief after the summer rain.",
+      "sentenceZh": "清凉的水在夏雨后带来舒缓。",
+      "scene": "After summer rain, villagers at a traditional covered Chinese corridor receive cool drinking water and rest in visible relief; restrained Jiangnan architecture, calm expressions, no signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“relief”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "relief",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fd3fc281-3f6d-475b-89f3-b8ecc1561a7d",
+      "word": "dad",
+      "meaningZh": "爸爸；爹爹",
+      "exampleId": "fd3fc281-3f6d-475b-89f3-b8ecc1561a7d-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Dad helps his child fasten the bicycle helmet.",
+      "sentenceZh": "爸爸帮助孩子系好自行车头盔。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"dad\" in its Chinese meaning \"爸爸；爹爹\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“dad”的含义。",
+      "riskTags": [
+        "dad",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5288d2c0-3a1c-40de-8095-3481e2d71279",
+      "word": "kick",
+      "meaningZh": "踢；踢腿；戒除",
+      "exampleId": "5288d2c0-3a1c-40de-8095-3481e2d71279-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The player prepares to kick the ball toward the goal.",
+      "sentenceZh": "球员准备把球踢向球门。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"kick\" in its Chinese meaning \"踢；踢腿；戒除\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“kick”的含义。",
+      "riskTags": [
+        "kick",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "c6a0eee0-24d4-472e-85f2-f43c68d539ab",
+      "word": "manner",
+      "meaningZh": "方式；举止；礼貌；风格",
+      "exampleId": "c6a0eee0-24d4-472e-85f2-f43c68d539ab-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The host offers tea in a courteous manner.",
+      "sentenceZh": "主人以礼貌的方式奉茶。",
+      "scene": "In a quiet Chinese tea room, one adult host offers a small cup with both hands in a courteous manner while one guest receives it respectfully; accurate gongfu tea setting, no decorative writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“manner”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "manner",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "d40b21c3-f4af-43a3-89a5-20a922f82a90",
+      "word": "ancient",
+      "meaningZh": "古代的；古老的；年老的；旧的",
+      "exampleId": "d40b21c3-f4af-43a3-89a5-20a922f82a90-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The expert examines an ancient bronze vessel.",
+      "sentenceZh": "专家检查一件古代青铜器。",
+      "scene": "A Chinese archaeologist examines one ancient bronze ritual vessel in a conservation studio, with gloved hands and accurate patina; no fantasy, inscriptions, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“ancient”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "ancient",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "17ff3427-49cd-4f6a-ab97-c48830d80691",
+      "word": "silence",
+      "meaningZh": "沉默；无声；静寂；湮没；无声息",
+      "exampleId": "17ff3427-49cd-4f6a-ab97-c48830d80691-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The empty reading room is filled with silence.",
+      "sentenceZh": "空旷的阅览室一片寂静。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"silence\" in its Chinese meaning \"沉默；无声；静寂；湮没；无声息\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“silence”的含义。",
+      "riskTags": [
+        "silence",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+

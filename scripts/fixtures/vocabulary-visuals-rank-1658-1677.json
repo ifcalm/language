@@ -1,0 +1,331 @@
+{
+  "generationMode": "codex-built-in-imagegen",
+  "batchId": "auto-rank-1658-1677-20260813",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "ocean",
+      "division",
+      "fix",
+      "mirror",
+      "topic",
+      "telephone"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging. Exactly six declared items in this batch integrate specific Chinese cultural settings accurately and without stereotypes.",
+  "items": [
+    {
+      "vocabularyId": "9b28fafa-2a22-4c4d-ad23-72a8a603ea96",
+      "word": "ocean",
+      "meaningZh": "海洋；广阔；许多；一大片",
+      "exampleId": "9b28fafa-2a22-4c4d-ad23-72a8a603ea96-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The research team lowers a sampler into the ocean.",
+      "sentenceZh": "科研团队把采样器放入海洋。",
+      "scene": "A modern Chinese marine research team safely lowers one sampling bottle from a small research vessel into the vast blue ocean; accurate equipment, complete hands, no flags, logos, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“ocean”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "ocean",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2c4b900c-fe8a-4caa-94a2-a603d393b5f9",
+      "word": "row",
+      "meaningZh": "行；排；划船",
+      "exampleId": "2c4b900c-fe8a-4caa-94a2-a603d393b5f9-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Six wooden chairs stand in a straight row.",
+      "sentenceZh": "六把木椅排成笔直的一行。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"row\" in its Chinese meaning \"行；排；划船\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“row”的含义。",
+      "riskTags": [
+        "row",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3d2f923e-61cd-4d42-989a-d4b40646c979",
+      "word": "producer",
+      "meaningZh": "制片人；生产者",
+      "exampleId": "3d2f923e-61cd-4d42-989a-d4b40646c979-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The producer coordinates the camera and lighting crews.",
+      "sentenceZh": "制片人协调摄影和灯光团队。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"producer\" in its Chinese meaning \"制片人；生产者\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“producer”的含义。",
+      "riskTags": [
+        "producer",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "83c27959-0a9a-4c6c-b304-72011cafc9f6",
+      "word": "afford",
+      "meaningZh": "买得起；足以；给予",
+      "exampleId": "83c27959-0a9a-4c6c-b304-72011cafc9f6-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She has enough money to afford the shoes.",
+      "sentenceZh": "她有足够的钱买得起这双鞋。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"afford\" in its Chinese meaning \"买得起；足以；给予\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“afford”的含义。",
+      "riskTags": [
+        "afford",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "4324ae26-43c9-458e-9088-80962de46656",
+      "word": "meanwhile",
+      "meaningZh": "其时；其间；同时；于此时",
+      "exampleId": "4324ae26-43c9-458e-9088-80962de46656-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "He cooks the soup; meanwhile, she sets the table.",
+      "sentenceZh": "他煮汤；与此同时，她摆放餐具。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"meanwhile\" in its Chinese meaning \"其时；其间；同时；于此时\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“meanwhile”的含义。",
+      "riskTags": [
+        "meanwhile",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6513a274-a107-4c94-80b6-c949443e46de",
+      "word": "regime",
+      "meaningZh": "政权；当权期间；政体；社会制度；体制",
+      "exampleId": "6513a274-a107-4c94-80b6-c949443e46de-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "A new regime takes control of the administrative chamber.",
+      "sentenceZh": "一个新政权接管了行政大厅。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"regime\" in its Chinese meaning \"政权；当权期间；政体；社会制度；体制\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“regime”的含义。",
+      "riskTags": [
+        "regime",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "751b4c1f-f418-4587-ae58-98ffd154793f",
+      "word": "division",
+      "meaningZh": "部门；除法；分割",
+      "exampleId": "751b4c1f-f418-4587-ae58-98ffd154793f-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The teacher demonstrates division by making three equal groups.",
+      "sentenceZh": "老师通过分成三个相等的小组演示除法。",
+      "scene": "A Chinese mathematics teacher uses plain red counting rods on a blank wooden table to separate twelve identical beans into three equal groups, clearly showing division without written numerals or text.",
+      "altText": "一个具体的中国文化场景清楚表现“division”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "division",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e1f4ae71-e040-4343-bb71-ade77bc54395",
+      "word": "confirm",
+      "meaningZh": "确认",
+      "exampleId": "e1f4ae71-e040-4343-bb71-ade77bc54395-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The attendant checks the ticket to confirm the seat.",
+      "sentenceZh": "乘务员检查车票以确认座位。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"confirm\" in its Chinese meaning \"确认\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“confirm”的含义。",
+      "riskTags": [
+        "confirm",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "499afd4f-6629-42b8-be60-78a76291ebc3",
+      "word": "fix",
+      "meaningZh": "修理；固定；确定",
+      "exampleId": "499afd4f-6629-42b8-be60-78a76291ebc3-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The artisan uses paper and paste to fix the torn kite.",
+      "sentenceZh": "工匠用纸和浆糊修补破损的风筝。",
+      "scene": "One Chinese kite maker carefully fixes a torn traditional swallow-shaped kite with a narrow strip of paper and paste; authentic bamboo frame, original undecorated pattern, no writing or text.",
+      "altText": "一个具体的中国文化场景清楚表现“fix”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "fix",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "cab7c413-a326-448a-bee8-9556c75a49f1",
+      "word": "appeal",
+      "meaningZh": "上诉；呼吁；吸引；恳求",
+      "exampleId": "cab7c413-a326-448a-bee8-9556c75a49f1-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Residents make an appeal for help after the storm.",
+      "sentenceZh": "居民在暴风雨后发出求助呼吁。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"appeal\" in its Chinese meaning \"上诉；呼吁；吸引；恳求\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“appeal”的含义。",
+      "riskTags": [
+        "appeal",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "158c5f98-e658-4a06-b051-27fa0c7c0f8d",
+      "word": "mirror",
+      "meaningZh": "镜子；反映；反射",
+      "exampleId": "158c5f98-e658-4a06-b051-27fa0c7c0f8d-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The conservator examines both sides of the bronze mirror.",
+      "sentenceZh": "修复师检查铜镜的两面。",
+      "scene": "A museum conservator wearing gloves examines one ancient Chinese bronze mirror with a simple geometric back beside its clear modern reflection surface; no inscriptions, labels or text.",
+      "altText": "一个具体的中国文化场景清楚表现“mirror”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "mirror",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "bdbf2813-be81-492e-ab53-d4177b689cc8",
+      "word": "tooth",
+      "meaningZh": "牙齿；齿状物；爱好",
+      "exampleId": "bdbf2813-be81-492e-ab53-d4177b689cc8-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The dentist examines one healthy tooth.",
+      "sentenceZh": "牙医检查一颗健康的牙齿。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"tooth\" in its Chinese meaning \"牙齿；齿状物；爱好\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“tooth”的含义。",
+      "riskTags": [
+        "tooth",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "d77ce470-2907-4324-a80e-1f71e2ea5753",
+      "word": "smart",
+      "meaningZh": "聪明的；智能的；时髦的",
+      "exampleId": "d77ce470-2907-4324-a80e-1f71e2ea5753-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The smart engineer quickly solves the wooden puzzle.",
+      "sentenceZh": "聪明的工程师很快解开木制拼图。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"smart\" in its Chinese meaning \"聪明的；智能的；时髦的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“smart”的含义。",
+      "riskTags": [
+        "smart",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fe3d7bb7-6d38-4568-93bd-1b9403baf063",
+      "word": "length",
+      "meaningZh": "长度；长；期间；一段",
+      "exampleId": "fe3d7bb7-6d38-4568-93bd-1b9403baf063-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "She compares the length of three ropes.",
+      "sentenceZh": "她比较三根绳子的长度。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"length\" in its Chinese meaning \"长度；长；期间；一段\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“length”的含义。",
+      "riskTags": [
+        "length",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "8ae3f38c-12c4-4a77-8e37-a9d15ac6dd04",
+      "word": "entirely",
+      "meaningZh": "完全地",
+      "exampleId": "8ae3f38c-12c4-4a77-8e37-a9d15ac6dd04-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "Blue dye covers the tablecloth entirely.",
+      "sentenceZh": "蓝色染料完全覆盖了桌布。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"entirely\" in its Chinese meaning \"完全地\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“entirely”的含义。",
+      "riskTags": [
+        "entirely",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "79dbb596-e3da-4f71-b61b-2abf6bf63c21",
+      "word": "rely",
+      "meaningZh": "信赖；依赖；信任",
+      "exampleId": "79dbb596-e3da-4f71-b61b-2abf6bf63c21-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The climber can rely on the secured rope and belayer.",
+      "sentenceZh": "攀岩者可以依靠固定好的绳索和保护员。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"rely\" in its Chinese meaning \"信赖；依赖；信任\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“rely”的含义。",
+      "riskTags": [
+        "rely",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "0e32c901-5f40-441a-bf33-9936fa7e4e1d",
+      "word": "topic",
+      "meaningZh": "主题；论题；话题",
+      "exampleId": "0e32c901-5f40-441a-bf33-9936fa7e4e1d-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "The model at the center is the topic of their discussion.",
+      "sentenceZh": "中央的模型是他们讨论的主题。",
+      "scene": "Four adults in a contemporary Chinese teahouse focus their discussion on one clay architectural model placed at the center, making the shared topic visible; natural faces, no papers, signs or text.",
+      "altText": "一个具体的中国文化场景清楚表现“topic”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "topic",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6583c631-bd1b-4a83-b018-184025317991",
+      "word": "complain",
+      "meaningZh": "抱怨；抗议；控诉",
+      "exampleId": "6583c631-bd1b-4a83-b018-184025317991-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The resident begins to complain about the leaking ceiling.",
+      "sentenceZh": "住户开始抱怨漏水的天花板。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"complain\" in its Chinese meaning \"抱怨；抗议；控诉\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“complain”的含义。",
+      "riskTags": [
+        "complain",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f05b0d66-2e33-418f-b957-9eec84eb7e5f",
+      "word": "variable",
+      "meaningZh": "变量；可变的",
+      "exampleId": "f05b0d66-2e33-418f-b957-9eec84eb7e5f-visual-ex",
+      "styleFamily": "mature editorial educational illustration",
+      "sentenceEn": "The variable wind makes the turbines turn at different speeds.",
+      "sentenceZh": "多变的风使风机以不同速度转动。",
+      "scene": "Create one concrete, visually unambiguous real-world scene that communicates the English word \"variable\" in its Chinese meaning \"变量；可变的\". Use a fitting subject, action, relationship or environment; show the meaning directly without relying on captions, symbols, split panels or written language.",
+      "altText": "一个具体场景清楚表现“variable”的含义。",
+      "riskTags": [
+        "variable",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "67f299b5-9f6b-4a12-98be-9b908aebd18c",
+      "word": "telephone",
+      "meaningZh": "电话；电话机；打电话",
+      "exampleId": "67f299b5-9f6b-4a12-98be-9b908aebd18c-visual-ex",
+      "styleFamily": "specific Chinese cultural educational illustration",
+      "sentenceEn": "She speaks to a relative on the telephone.",
+      "sentenceZh": "她通过电话和亲人交谈。",
+      "scene": "Inside a modest late-1980s Chinese family room, one adult speaks into a corded rotary telephone while listening attentively; period-accurate furniture, no propaganda, posters, numbers or text.",
+      "altText": "一个具体的中国文化场景清楚表现“telephone”的含义。",
+      "riskTags": [
+        "Chinese_culture",
+        "telephone",
+        "no_readable_text"
+      ]
+    }
+  ]
+}
+
+
