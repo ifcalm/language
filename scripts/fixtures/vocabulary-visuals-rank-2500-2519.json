@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2500-2519",
+  "batchId": "auto-rank-2500-2519-20260828",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "shooting",
+      "counter",
+      "DNA",
+      "craft",
+      "tap",
+      "episode"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "51e3dbdc-dd06-4997-a9ab-1afc47ed4082",
+      "word": "shooting",
+      "meaningZh": "射击；拍摄",
+      "exampleId": "51e3dbdc-dd06-4997-a9ab-1afc47ed4082-visual-ex",
+      "styleFamily": "Chinese film-studio editorial illustration",
+      "sentenceEn": "The crew finished shooting the historical scene before sunset.",
+      "sentenceZh": "摄制组在日落前完成了历史场景的拍摄。",
+      "scene": "At a Chinese historical-film studio, a professional crew finishes shooting a peaceful costume scene with cameras, lights, and actors, no weapons or logos.",
+      "altText": "摄制组在中国古装片场完成拍摄",
+      "riskTags": [
+        "weapon_term",
+        "cultural_setting",
+        "many_people"
+      ]
+    },
+    {
+      "vocabularyId": "76c52674-ba86-4213-aa2f-82a086043da9",
+      "word": "partly",
+      "meaningZh": "部分地",
+      "exampleId": "76c52674-ba86-4213-aa2f-82a086043da9-visual-ex",
+      "styleFamily": "weather contrast illustration",
+      "sentenceEn": "The mountain was partly hidden by clouds.",
+      "sentenceZh": "山峰部分被云层遮住。",
+      "scene": "A tall mountain remains clearly visible below while its upper half is partly hidden behind drifting white clouds.",
+      "altText": "云层部分遮住高山上半部",
+      "riskTags": [
+        "landscape",
+        "weather",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "20385cd5-45bb-49e6-b8d3-396a856740bc",
+      "word": "unknown",
+      "meaningZh": "未知的",
+      "exampleId": "20385cd5-45bb-49e6-b8d3-396a856740bc-visual-ex",
+      "styleFamily": "mystery storybook illustration",
+      "sentenceEn": "The source of the strange footprints remained unknown.",
+      "sentenceZh": "奇怪脚印的来源仍然未知。",
+      "scene": "Two curious adults examine an unexplained trail of unusual footprints leading into misty woods, with the creature itself completely unknown and unseen.",
+      "altText": "迷雾森林中的奇怪脚印来源未知",
+      "riskTags": [
+        "mystery",
+        "people_face",
+        "no_creature"
+      ]
+    },
+    {
+      "vocabularyId": "9156b0f0-abd6-4fd0-980b-fa5f6adb9b5f",
+      "word": "offense",
+      "meaningZh": "冒犯；进攻",
+      "exampleId": "9156b0f0-abd6-4fd0-980b-fa5f6adb9b5f-visual-ex",
+      "styleFamily": "sports editorial illustration",
+      "sentenceEn": "The team strengthened its offense with faster passing.",
+      "sentenceZh": "球队通过更快的传球加强了进攻。",
+      "scene": "A basketball team executes a quick coordinated offense, passing around defenders toward the basket in a competitive but nonviolent game.",
+      "altText": "篮球队用快速传球加强进攻",
+      "riskTags": [
+        "sports",
+        "many_people",
+        "conflict"
+      ]
+    },
+    {
+      "vocabularyId": "54ae02d2-7d0e-4543-b9eb-13c957cc1a60",
+      "word": "counter",
+      "meaningZh": "柜台；计数器；反驳；相反",
+      "exampleId": "54ae02d2-7d0e-4543-b9eb-13c957cc1a60-visual-ex",
+      "styleFamily": "Chinese herbal-shop watercolor illustration",
+      "sentenceEn": "The herbalist arranged jars behind the counter.",
+      "sentenceZh": "药师把药罐整齐摆在柜台后。",
+      "scene": "In a traditional Chinese herbal shop, an herbalist stands behind a long wooden counter arranging ceramic jars and weighing dried plants, with no readable labels.",
+      "altText": "中药铺药师在木柜台后整理药罐",
+      "riskTags": [
+        "cultural_setting",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "a9dd26c3-caf9-440e-8fc0-18872923d13f",
+      "word": "DNA",
+      "meaningZh": "脱氧核糖核酸",
+      "exampleId": "a9dd26c3-caf9-440e-8fc0-18872923d13f-visual-ex",
+      "styleFamily": "Chinese biomedical editorial illustration",
+      "sentenceEn": "The scientist extracted DNA from the plant sample.",
+      "sentenceZh": "科学家从植物样本中提取了DNA。",
+      "scene": "A Chinese biomedical researcher carefully transfers a plant sample beside a clear colorful double-helix model in a modern laboratory, with no labels or interfaces.",
+      "altText": "中国科研人员从植物样本提取DNA",
+      "riskTags": [
+        "science_accuracy",
+        "cultural_setting",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "d4eef19a-e233-423b-84df-59a6d49b7fe1",
+      "word": "potentially",
+      "meaningZh": "潜在地",
+      "exampleId": "d4eef19a-e233-423b-84df-59a6d49b7fe1-visual-ex",
+      "styleFamily": "risk-awareness editorial illustration",
+      "sentenceEn": "The loose branch was potentially dangerous in strong wind.",
+      "sentenceZh": "松动的树枝在强风中可能造成危险。",
+      "scene": "A park worker notices a large loose branch above an empty path and safely closes the area before strong wind arrives, illustrating potential danger without injury.",
+      "altText": "公园人员发现松动树枝的潜在危险",
+      "riskTags": [
+        "hazard",
+        "weather",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "bb8f0e76-64b9-4276-8331-ff8936b7d6f8",
+      "word": "thirty",
+      "meaningZh": "三十；三十个",
+      "exampleId": "bb8f0e76-64b9-4276-8331-ff8936b7d6f8-visual-ex",
+      "styleFamily": "counting-object illustration",
+      "sentenceEn": "Thirty oranges filled the market basket.",
+      "sentenceZh": "市场篮子里装满了三十个橙子。",
+      "scene": "A top-down view shows exactly thirty distinct oranges arranged clearly in five rows of six inside a wide market basket, with no numerals or text.",
+      "altText": "篮子里整齐摆放三十个橙子",
+      "riskTags": [
+        "exact_count",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "8303c49d-eca7-465a-9f44-e4c538e0e1be",
+      "word": "justify",
+      "meaningZh": "替...辩护；证明；证明合法",
+      "exampleId": "8303c49d-eca7-465a-9f44-e4c538e0e1be-visual-ex",
+      "styleFamily": "ethical workplace illustration",
+      "sentenceEn": "The clear safety benefit helped justify the extra cost.",
+      "sentenceZh": "明确的安全收益证明这笔额外费用是合理的。",
+      "scene": "Engineers compare a basic helmet with a visibly stronger protective design and agree that the added safety justifies the extra materials, using no charts or text.",
+      "altText": "更强安全性能证明额外成本合理",
+      "riskTags": [
+        "abstract_concept",
+        "people_face",
+        "safety_gear"
+      ]
+    },
+    {
+      "vocabularyId": "012ae46f-124a-4e7a-b656-66f6978b7fba",
+      "word": "protest",
+      "meaningZh": "抗议；反对",
+      "exampleId": "012ae46f-124a-4e7a-b656-66f6978b7fba-visual-ex",
+      "styleFamily": "peaceful civic editorial illustration",
+      "sentenceEn": "Residents held a peaceful protest to protect the park.",
+      "sentenceZh": "居民举行和平抗议，要求保护公园。",
+      "scene": "A diverse group of residents peacefully gathers around threatened park trees, holding blank green shapes and linking arms calmly, with no slogans or confrontation.",
+      "altText": "居民和平聚集保护社区公园",
+      "riskTags": [
+        "political_activity",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "bd24917f-109b-4a7e-b5b4-7df878b6e72b",
+      "word": "crash",
+      "meaningZh": "哗啦声；猛撞；崩溃；粗布",
+      "exampleId": "bd24917f-109b-4a7e-b5b4-7df878b6e72b-visual-ex",
+      "styleFamily": "computer-workplace illustration",
+      "sentenceEn": "The computer crash interrupted the designer's work.",
+      "sentenceZh": "电脑崩溃打断了设计师的工作。",
+      "scene": "A designer reacts with frustration as a generic computer screen suddenly goes dark beside an unfinished physical model, with no error text or logos.",
+      "altText": "电脑突然崩溃打断设计工作",
+      "riskTags": [
+        "technology",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c00d72c2-84ce-4927-98d2-e079c07c55e7",
+      "word": "craft",
+      "meaningZh": "工艺；手艺；精心制作",
+      "exampleId": "c00d72c2-84ce-4927-98d2-e079c07c55e7-visual-ex",
+      "styleFamily": "Chinese bamboo-weaving gouache illustration",
+      "sentenceEn": "She learned the craft of bamboo weaving from her grandfather.",
+      "sentenceZh": "她向祖父学习竹编手艺。",
+      "scene": "In a Chinese village workshop, a grandfather guides an adult granddaughter as they practice the craft of weaving thin bamboo strips into a basket.",
+      "altText": "祖父向孙女传授中国竹编手艺",
+      "riskTags": [
+        "cultural_craft",
+        "hands",
+        "family"
+      ]
+    },
+    {
+      "vocabularyId": "6ccac565-992c-4d03-b1fd-bc7702e54048",
+      "word": "treaty",
+      "meaningZh": "条约；协定",
+      "exampleId": "6ccac565-992c-4d03-b1fd-bc7702e54048-visual-ex",
+      "styleFamily": "diplomatic editorial illustration",
+      "sentenceEn": "The two countries signed a peace treaty after long talks.",
+      "sentenceZh": "两国经过长期谈判后签署了和平条约。",
+      "scene": "Two diplomatic delegations exchange handshakes across a formal table after reaching a peace treaty, with blank documents, no flags, and a hopeful atmosphere.",
+      "altText": "两国代表握手达成和平条约",
+      "riskTags": [
+        "political",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "bdf662d4-d25c-4eab-84e4-9488be1d0883",
+      "word": "terrorist",
+      "meaningZh": "恐怖分子",
+      "exampleId": "bdf662d4-d25c-4eab-84e4-9488be1d0883-visual-ex",
+      "styleFamily": "restrained public-safety illustration",
+      "sentenceEn": "Police safely arrested the terrorist before anyone was harmed.",
+      "sentenceZh": "警方在无人受伤前安全逮捕了恐怖分子。",
+      "scene": "A restrained, nonviolent scene shows trained officers peacefully securing an adult terrorist suspect outside an evacuated building, no weapons visible, no injuries, bystanders safely distant.",
+      "altText": "警方在无人受伤前控制恐怖分子嫌疑人",
+      "riskTags": [
+        "terrorism",
+        "law_enforcement",
+        "nonviolent"
+      ]
+    },
+    {
+      "vocabularyId": "9556f582-d207-4336-9630-4f5292c7e1bd",
+      "word": "insight",
+      "meaningZh": "察看；洞察力；见识",
+      "exampleId": "9556f582-d207-4336-9630-4f5292c7e1bd-visual-ex",
+      "styleFamily": "research editorial illustration",
+      "sentenceEn": "Careful observation gave her insight into the animal's behavior.",
+      "sentenceZh": "仔细观察让她洞察了动物的行为。",
+      "scene": "A wildlife researcher quietly observes a family of otters sharing food, her thoughtful expression showing a new insight, with a blank notebook.",
+      "altText": "研究者观察水獭行为获得新见解",
+      "riskTags": [
+        "animals",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "5fe81043-d7fa-4f6e-ac0b-299f5719eab7",
+      "word": "possess",
+      "meaningZh": "拥有；具有；支配",
+      "exampleId": "5fe81043-d7fa-4f6e-ac0b-299f5719eab7-visual-ex",
+      "styleFamily": "fantasy editorial illustration",
+      "sentenceEn": "The old compass seemed to possess a mysterious power.",
+      "sentenceZh": "那枚旧指南针似乎拥有神秘力量。",
+      "scene": "An antique compass glows softly in an explorer's hands and causes nearby iron filings to form elegant patterns, suggesting it possesses unusual power.",
+      "altText": "旧指南针似乎拥有神秘力量",
+      "riskTags": [
+        "fantasy",
+        "hands",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "7c390871-d43f-4ed9-8a79-1af316487f58",
+      "word": "politically",
+      "meaningZh": "政治上",
+      "exampleId": "7c390871-d43f-4ed9-8a79-1af316487f58-visual-ex",
+      "styleFamily": "civic editorial illustration",
+      "sentenceEn": "The issue became politically important before the election.",
+      "sentenceZh": "这个议题在选举前变得具有政治重要性。",
+      "scene": "Citizens and candidates discuss a community water problem at an orderly public forum, showing it has become politically important without party signs or text.",
+      "altText": "社区水问题在选举前成为政治议题",
+      "riskTags": [
+        "politics",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "79cdf351-c0a8-454b-8d73-4c9baba2fb10",
+      "word": "tap",
+      "meaningZh": "轻敲；水龙头",
+      "exampleId": "79cdf351-c0a8-454b-8d73-4c9baba2fb10-visual-ex",
+      "styleFamily": "Chinese courtyard watercolor illustration",
+      "sentenceEn": "She turned the tap to fill the stone basin.",
+      "sentenceZh": "她打开水龙头给石盆注水。",
+      "scene": "In a traditional Chinese courtyard garden, an adult turns a simple brass tap and clear water flows into a carved stone basin beside bamboo.",
+      "altText": "女子打开中式庭院水龙头给石盆注水",
+      "riskTags": [
+        "cultural_setting",
+        "hands",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "820c2a16-ffad-4335-aa08-9593e55a7428",
+      "word": "extensive",
+      "meaningZh": "广泛的；大量的",
+      "exampleId": "820c2a16-ffad-4335-aa08-9593e55a7428-visual-ex",
+      "styleFamily": "library panorama illustration",
+      "sentenceEn": "The archive held an extensive collection of maps.",
+      "sentenceZh": "档案馆收藏了大量地图。",
+      "scene": "A wide archive room contains long rows of drawers, rolled maps, globes, and flat storage cases extending into the distance, all unlabeled.",
+      "altText": "档案馆拥有规模庞大的地图收藏",
+      "riskTags": [
+        "many_objects",
+        "text_risk",
+        "perspective"
+      ]
+    },
+    {
+      "vocabularyId": "b7372f4e-03e5-4766-a1f0-f3beef9601f3",
+      "word": "episode",
+      "meaningZh": "插曲；插话；有趣的事件；一段情节",
+      "exampleId": "b7372f4e-03e5-4766-a1f0-f3beef9601f3-visual-ex",
+      "styleFamily": "Chinese teahouse storytelling illustration",
+      "sentenceEn": "The final episode ended with the travelers reaching home.",
+      "sentenceZh": "最后一集以旅行者回到家乡结束。",
+      "scene": "In a Chinese teahouse, a storyteller performs the final episode of a travel tale as a painted imagination scene shows weary travelers arriving home, with no written banners.",
+      "altText": "说书人讲述旅行者归乡的最后一集",
+      "riskTags": [
+        "cultural_performance",
+        "many_people",
+        "text_risk"
+      ]
+    }
+  ]
+}

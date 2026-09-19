@@ -1,0 +1,346 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2620-2639",
+  "batchId": "auto-rank-2620-2639-20260907",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": []
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "254e9e35-1a12-4bce-894d-8596f38ff8a6",
+      "word": "gradually",
+      "meaningZh": "逐渐地",
+      "exampleId": "254e9e35-1a12-4bce-894d-8596f38ff8a6-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The lotus opens gradually from dawn to noon.",
+      "sentenceZh": "莲花从清晨到中午逐渐开放。",
+      "scene": "A Chinese pond scene shows exactly four stages of one lotus bud gradually opening from left to right as the light strengthens.",
+      "altText": "Four stages of a lotus gradually opening.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "ce9de7fd-28a1-4bd3-9731-4f9bc538b85a",
+      "word": "stability",
+      "meaningZh": "稳定",
+      "exampleId": "ce9de7fd-28a1-4bd3-9731-4f9bc538b85a-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The wide stone base gives the tower stability in the wind.",
+      "sentenceZh": "宽阔的石基让塔在风中保持稳定。",
+      "scene": "A tall pagoda-inspired model stands firm in strong wind because its broad layered stone base anchors it, while loose leaves blow sideways.",
+      "altText": "A tower remaining stable because of its wide base.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "8028c69a-3059-4547-81a5-b13dea254809",
+      "word": "fantasy",
+      "meaningZh": "幻想；想象的产物",
+      "exampleId": "8028c69a-3059-4547-81a5-b13dea254809-visual-ex",
+      "styleFamily": "Chinese shadow-puppet-inspired illustration",
+      "sentenceEn": "Her fantasy carries her above the clouds on a silver dragon.",
+      "sentenceZh": "她的幻想让她乘着银龙飞越云端。",
+      "scene": "A Chinese adult reader sits beside an open blank book while an imagined silver dragon and floating cloud city rise vividly behind her.",
+      "altText": "A reader imagining a fantasy of flying with a silver dragon.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c8de0bc8-c794-4204-be64-b39e64ba4cd4",
+      "word": "scared",
+      "meaningZh": "害怕的",
+      "exampleId": "c8de0bc8-c794-4204-be64-b39e64ba4cd4-visual-ex",
+      "styleFamily": "graphic novel illustration",
+      "sentenceEn": "The sudden thunder makes the hiker scared.",
+      "sentenceZh": "突如其来的雷声让徒步者感到害怕。",
+      "scene": "An adult hiker on a mountain trail recoils at a sudden nearby lightning flash and thunder, with a visibly frightened face and tense posture.",
+      "altText": "A hiker looking scared by sudden thunder.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "ae3fe8cc-82c4-4ccd-b7bf-febdb261df46",
+      "word": "plot",
+      "meaningZh": "情节；阴谋",
+      "exampleId": "ae3fe8cc-82c4-4ccd-b7bf-febdb261df46-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "The detective connects the clues and reveals the plot.",
+      "sentenceZh": "侦探把线索联系起来，揭示了阴谋。",
+      "scene": "An adult detective arranges five visual clues around a central silhouette of a planned museum theft, connecting their relationships without writing.",
+      "altText": "A detective connecting clues to uncover a plot.",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "exact_quantity",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2dcbc2f3-dedf-4901-927b-42c6dc4957ea",
+      "word": "framework",
+      "meaningZh": "框架；结构；体系",
+      "exampleId": "2dcbc2f3-dedf-4901-927b-42c6dc4957ea-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "The wooden framework supports the new roof.",
+      "sentenceZh": "木制框架支撑着新屋顶。",
+      "scene": "Chinese carpenters assemble a visible timber framework of posts and crossbeams that clearly supports a partly completed tiled roof.",
+      "altText": "A timber framework supporting a new roof.",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary",
+        "cause_effect",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2d2d2d18-6505-47cc-8f78-b6a66008b1d2",
+      "word": "gesture",
+      "meaningZh": "手势；姿态；作手势；作姿态",
+      "exampleId": "2d2d2d18-6505-47cc-8f78-b6a66008b1d2-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "A welcoming gesture invites the visitor to enter.",
+      "sentenceZh": "一个欢迎的手势邀请访客进入。",
+      "scene": "At a doorway, one adult host smiles and makes a clear open-palm welcoming gesture toward the interior while an adult visitor responds.",
+      "altText": "A host making a welcoming gesture to a visitor.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "f1625323-8dee-4bde-8523-5cbce7a454e5",
+      "word": "depending",
+      "meaningZh": "取决于",
+      "exampleId": "f1625323-8dee-4bde-8523-5cbce7a454e5-visual-ex",
+      "styleFamily": "mixed-media collage",
+      "sentenceEn": "The seedlings grow differently depending on how much water they receive.",
+      "sentenceZh": "幼苗的生长情况取决于它们获得的水量。",
+      "scene": "Three identical seedlings receive no water, a little water, and enough water, producing wilted, weak, and healthy results in parallel compartments.",
+      "altText": "Three seedlings growing differently depending on water supply.",
+      "riskTags": [
+        "cause_effect",
+        "comparison",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "463cc922-3884-44b3-9556-34728fd253e2",
+      "word": "ongoing",
+      "meaningZh": "前进的；进行的；不间断的",
+      "exampleId": "463cc922-3884-44b3-9556-34728fd253e2-visual-ex",
+      "styleFamily": "hand-drawn animation still",
+      "sentenceEn": "The ongoing bridge repair continues through the evening.",
+      "sentenceZh": "大桥维修工作一直持续到傍晚。",
+      "scene": "A Chinese bridge repair crew works across a clear time progression from afternoon light to evening lamps, with the same unfinished repair continuing.",
+      "altText": "An ongoing bridge repair continuing into the evening.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "b8b42b36-1f59-4f31-9dc4-6f93c470e1c1",
+      "word": "psychology",
+      "meaningZh": "心理学；心理状态",
+      "exampleId": "b8b42b36-1f59-4f31-9dc4-6f93c470e1c1-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The class studies psychology by comparing emotional reactions.",
+      "sentenceZh": "课堂通过比较情绪反应来学习心理学。",
+      "scene": "Adult Chinese university students observe a set of expressive human faces and discuss how the same event produces different emotions, without written labels.",
+      "altText": "Students studying psychology through different emotional reactions.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "4b4f8914-63a9-4b96-8adf-7d78d2191b16",
+      "word": "counselor",
+      "meaningZh": "辅导员；顾问",
+      "exampleId": "4b4f8914-63a9-4b96-8adf-7d78d2191b16-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "The counselor listens carefully to the worried student.",
+      "sentenceZh": "辅导员认真倾听忧虑的学生。",
+      "scene": "An adult counselor and an adult university student sit in a quiet office; the counselor listens attentively with open posture while the student speaks.",
+      "altText": "A counselor listening carefully to a worried adult student.",
+      "riskTags": [
+        "people_face",
+        "body_posture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ad520773-ee74-421a-ae3c-e3611f0ad4d1",
+      "word": "chapter",
+      "meaningZh": "章节；篇章",
+      "exampleId": "ad520773-ee74-421a-ae3c-e3611f0ad4d1-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Moving to a new city begins a new chapter in her life.",
+      "sentenceZh": "搬到新城市开启了她人生的新篇章。",
+      "scene": "A Chinese woman steps from one completed life scene into a bright new city scene through the turning page of a giant blank book.",
+      "altText": "A woman beginning a new chapter of life in a new city.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8c3acafc-ea07-443c-8188-b8d5458251df",
+      "word": "divorce",
+      "meaningZh": "离婚；与...离婚",
+      "exampleId": "8c3acafc-ea07-443c-8188-b8d5458251df-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "After the divorce, they move into separate homes.",
+      "sentenceZh": "离婚后，他们搬进了各自的住所。",
+      "scene": "Two respectful middle-aged adults leave one shared doorway and carry separate moving boxes toward two different modest homes, calm but emotionally serious.",
+      "altText": "Two adults moving into separate homes after a divorce.",
+      "riskTags": [
+        "sequence",
+        "spatial_boundary",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "b3065cf4-09f3-4109-96f7-a84c70946f15",
+      "word": "owe",
+      "meaningZh": "亏欠；负...债；归功于；怀有；应给",
+      "exampleId": "b3065cf4-09f3-4109-96f7-a84c70946f15-visual-ex",
+      "styleFamily": "Chinese folk-art-inspired illustration",
+      "sentenceEn": "I owe my neighbor a basket because she lent me one.",
+      "sentenceZh": "邻居借过我一个篮子，所以我欠她一个篮子。",
+      "scene": "In a Chinese courtyard, one adult returns a woven basket to a neighbor who had lent it, while the neighbor holds the matching basket lid and receives it warmly.",
+      "altText": "A person returning a basket they owe to a neighbor.",
+      "riskTags": [
+        "Chinese_culture",
+        "reference",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d1fa0f47-dfd7-46bf-98b1-be09f094dd41",
+      "word": "pipe",
+      "meaningZh": "管道；烟斗；管子；用管道输送",
+      "exampleId": "d1fa0f47-dfd7-46bf-98b1-be09f094dd41-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "The plumber connects the blue pipe to the water tank.",
+      "sentenceZh": "水管工把蓝色管道连接到水箱上。",
+      "scene": "A plumber fits one bright blue pipe between a water tank and a wall outlet, with the open cross-section and flowing water path clearly visible.",
+      "altText": "A plumber connecting a blue pipe to a water tank.",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7884812a-5358-4e25-a59a-0d9f56af4829",
+      "word": "athletic",
+      "meaningZh": "运动的",
+      "exampleId": "7884812a-5358-4e25-a59a-0d9f56af4829-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "Her athletic movement carries her cleanly over the high bar.",
+      "sentenceZh": "她矫健的动作让她顺利越过高杆。",
+      "scene": "An adult woman performs a powerful high jump over a bar, with controlled muscles, balance, and motion showing athletic ability.",
+      "altText": "An athletic high jumper clearing a bar.",
+      "riskTags": [
+        "body_posture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b0cc8502-f030-40cb-b236-cfe1425fe691",
+      "word": "slight",
+      "meaningZh": "轻微的；微小的；轻视",
+      "exampleId": "b0cc8502-f030-40cb-b236-cfe1425fe691-visual-ex",
+      "styleFamily": "bold geometric poster illustration",
+      "sentenceEn": "There is only a slight difference between the two bowls.",
+      "sentenceZh": "这两只碗之间只有细微差别。",
+      "scene": "Two nearly identical blue bowls sit side by side; only one has a subtly narrower rim, emphasized through close comparison.",
+      "altText": "Two bowls with only a slight difference in rim width.",
+      "riskTags": [
+        "comparison",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "c5a001dd-abb3-43c2-95bb-1fdd49653e8e",
+      "word": "math",
+      "meaningZh": "数学",
+      "exampleId": "c5a001dd-abb3-43c2-95bb-1fdd49653e8e-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The engineer uses math to plan the curved bridge.",
+      "sentenceZh": "工程师运用数学规划弧形桥梁。",
+      "scene": "A Chinese engineer uses an abacus, compass, geometric wooden pieces, and a scale bridge model to solve a structural problem without written equations.",
+      "altText": "An engineer using math tools to plan a curved bridge.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8cff6111-87d5-4ef7-ab48-3d39bd2b9f1d",
+      "word": "shade",
+      "meaningZh": "阴凉处；遮光物；色调",
+      "exampleId": "8cff6111-87d5-4ef7-ab48-3d39bd2b9f1d-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "The old tree gives the workers shade at noon.",
+      "sentenceZh": "老树在正午为工人们遮阴。",
+      "scene": "Three Chinese field workers rest in the cool dark shade beneath a broad old tree while the surrounding field glows in harsh midday sun.",
+      "altText": "Workers resting in shade beneath a broad tree.",
+      "riskTags": [
+        "Chinese_culture",
+        "comparison",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9efcf72d-ac36-4a04-89bd-eddc4bbe66a8",
+      "word": "tail",
+      "meaningZh": "尾巴；尾部；跟踪",
+      "exampleId": "9efcf72d-ac36-4a04-89bd-eddc4bbe66a8-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "The red fox wraps its long tail around its paws.",
+      "sentenceZh": "红狐用长尾巴围住爪子。",
+      "scene": "A full-bodied red fox sits in snow and clearly curls its large bushy tail around its front paws.",
+      "altText": "A red fox wrapping its long tail around its paws.",
+      "riskTags": [
+        "animal_group",
+        "body_posture"
+      ]
+    }
+  ]
+}

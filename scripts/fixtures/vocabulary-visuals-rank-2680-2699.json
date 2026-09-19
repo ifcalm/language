@@ -1,0 +1,346 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2680-2699",
+  "batchId": "auto-rank-2680-2699-20260908",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "educate",
+      "friendship",
+      "calculate",
+      "scholarship",
+      "mall",
+      "derive"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "6cc32168-98ff-4a35-9244-216688f20222",
+      "word": "admission",
+      "meaningZh": "准许进入；承认；录取",
+      "exampleId": "6cc32168-98ff-4a35-9244-216688f20222-visual-ex",
+      "styleFamily": "editorial watercolor",
+      "sentenceEn": "Her admission ticket allows her to enter the concert hall.",
+      "sentenceZh": "她的入场券准许她进入音乐厅。",
+      "scene": "An adult woman presents a blank decorative admission ticket at a concert-hall entrance and an usher clearly opens the barrier for her, while people without tickets wait outside.",
+      "altText": "A ticket allowing a woman admission to a concert hall.",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3c73e3f4-4381-4666-9bc3-3b00784b00e6",
+      "word": "hunter",
+      "meaningZh": "猎人",
+      "exampleId": "3c73e3f4-4381-4666-9bc3-3b00784b00e6-visual-ex",
+      "styleFamily": "wildlife woodcut illustration",
+      "sentenceEn": "The hunter follows deer tracks but lowers his bow near the fawn.",
+      "sentenceZh": "猎人沿着鹿的足迹前进，但在幼鹿附近放下了弓。",
+      "scene": "An adult traditional hunter follows deer tracks through a forest, then deliberately lowers an unstrung bow after seeing a doe and fawn, emphasizing tracking rather than violence.",
+      "altText": "A hunter following deer tracks and lowering his bow.",
+      "riskTags": [
+        "safety",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8d43f500-2083-44a2-8e90-e1c5c6f8ebfc",
+      "word": "educate",
+      "meaningZh": "教育；培养；训练",
+      "exampleId": "8d43f500-2083-44a2-8e90-e1c5c6f8ebfc-visual-ex",
+      "styleFamily": "Chinese ink-and-color classroom illustration",
+      "sentenceEn": "The teacher uses a garden to educate the children about plants.",
+      "sentenceZh": "老师利用花园教育孩子们认识植物。",
+      "scene": "In a Chinese community garden, an adult teacher educates a diverse group of older children by letting them examine roots, leaves, flowers, and seeds directly, with attentive faces and no labels.",
+      "altText": "A teacher educating children about plants in a garden.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "19b615b1-8992-4a97-aad2-ffaadd56a79d",
+      "word": "painful",
+      "meaningZh": "痛苦的",
+      "exampleId": "19b615b1-8992-4a97-aad2-ffaadd56a79d-visual-ex",
+      "styleFamily": "expressive gouache illustration",
+      "sentenceEn": "The runner's injured ankle makes every step painful.",
+      "sentenceZh": "跑步者受伤的脚踝让每一步都很痛苦。",
+      "scene": "An adult runner stops on a trail and carefully holds a swollen ankle, with a tense painful facial expression and guarded posture while a friend offers support.",
+      "altText": "A runner experiencing a painful ankle injury.",
+      "riskTags": [
+        "people_face",
+        "body_posture",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "7619b143-b219-4fa8-8b28-96b381ee5148",
+      "word": "friendship",
+      "meaningZh": "友谊",
+      "exampleId": "7619b143-b219-4fa8-8b28-96b381ee5148-visual-ex",
+      "styleFamily": "Chinese paper-cut collage",
+      "sentenceEn": "Years of shared work have built a strong friendship between them.",
+      "sentenceZh": "多年的共同工作使他们建立了深厚的友谊。",
+      "scene": "Two older Chinese craftswomen sit together repairing one woven basket, sharing tea and warm laughter while nearby objects suggest many years of collaboration.",
+      "altText": "Two longtime friends sharing work, tea, and laughter.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f792d400-7c89-49ce-807e-afb6e147b8c6",
+      "word": "aide",
+      "meaningZh": "助手；助理；副官",
+      "exampleId": "f792d400-7c89-49ce-807e-afb6e147b8c6-visual-ex",
+      "styleFamily": "mid-century editorial illustration",
+      "sentenceEn": "The aide organizes the materials before the director arrives.",
+      "sentenceZh": "助理在主管到达前整理好材料。",
+      "scene": "An adult aide efficiently arranges blank folders, models, and meeting materials around a central chair while an adult director approaches the room.",
+      "altText": "An aide organizing materials before a director arrives.",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "23fcc84f-7fdc-4c07-a568-98a799407b5f",
+      "word": "infant",
+      "meaningZh": "婴儿；儿童；初学者",
+      "exampleId": "23fcc84f-7fdc-4c07-a568-98a799407b5f-visual-ex",
+      "styleFamily": "warm linocut family illustration",
+      "sentenceEn": "The infant sleeps safely in a crib beside the parents.",
+      "sentenceZh": "婴儿安全地睡在父母身旁的婴儿床里。",
+      "scene": "A peacefully sleeping infant lies safely on its back in a clear uncluttered crib while two adult parents quietly watch nearby, with mature natural proportions and a calm home setting.",
+      "altText": "An infant sleeping safely in a crib near the parents.",
+      "riskTags": [
+        "safety",
+        "people_face",
+        "family"
+      ]
+    },
+    {
+      "vocabularyId": "586c08a8-f349-4a0d-bafc-d4aec1885df3",
+      "word": "calculate",
+      "meaningZh": "计算；预测；计划；打算",
+      "exampleId": "586c08a8-f349-4a0d-bafc-d4aec1885df3-visual-ex",
+      "styleFamily": "Chinese technical ink illustration",
+      "sentenceEn": "The engineer uses an abacus to calculate the bridge materials.",
+      "sentenceZh": "工程师用算盘计算桥梁所需材料。",
+      "scene": "An adult Chinese engineer uses an abacus, measured wooden pieces, and a scale bridge model to calculate required materials, with groups of pieces being counted but no written equations.",
+      "altText": "An engineer using an abacus to calculate bridge materials.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "df14e723-8a9b-4489-86dc-6a39c0c63fe1",
+      "word": "fifty",
+      "meaningZh": "五十",
+      "exampleId": "df14e723-8a9b-4489-86dc-6a39c0c63fe1-visual-ex",
+      "styleFamily": "clean geometric paper collage",
+      "sentenceEn": "Fifty seedlings grow in five equal rows.",
+      "sentenceZh": "五十株幼苗分成五排生长。",
+      "scene": "Exactly fifty small seedlings are shown from directly above in five perfectly separated rows of ten, every plant individually visible and countable, with no extra plants or numerals.",
+      "altText": "Fifty seedlings arranged in five rows of ten.",
+      "riskTags": [
+        "exact_quantity",
+        "counting",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "4b2cab01-14c7-41c4-b467-f06dcbd2b3cd",
+      "word": "rid",
+      "meaningZh": "免除；以...清除；使获自由；使摆脱",
+      "exampleId": "4b2cab01-14c7-41c4-b467-f06dcbd2b3cd-visual-ex",
+      "styleFamily": "bold editorial poster",
+      "sentenceEn": "The cleanup crew gets rid of plastic waste from the beach.",
+      "sentenceZh": "清理队清除了海滩上的塑料垃圾。",
+      "scene": "Adult volunteers move all plastic waste from a polluted side of a beach into sorting containers, revealing a clean restored shoreline behind them.",
+      "altText": "Volunteers getting rid of plastic waste from a beach.",
+      "riskTags": [
+        "cause_effect",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6db336ba-b45a-4916-97ee-a8cc11a2ed65",
+      "word": "porch",
+      "meaningZh": "门廊；走廊",
+      "exampleId": "6db336ba-b45a-4916-97ee-a8cc11a2ed65-visual-ex",
+      "styleFamily": "architectural gouache illustration",
+      "sentenceEn": "The family relaxes on the shaded front porch.",
+      "sentenceZh": "一家人在有阴影的前门廊上休息。",
+      "scene": "A clearly defined roofed front porch projects from a house, with adults relaxing in chairs between support posts while bright sunlight remains outside the shaded space.",
+      "altText": "A family relaxing on a shaded front porch.",
+      "riskTags": [
+        "spatial_boundary",
+        "people_face",
+        "architecture"
+      ]
+    },
+    {
+      "vocabularyId": "191b6b2f-d462-4a45-a164-b65d3a6dab9f",
+      "word": "tendency",
+      "meaningZh": "趋势；倾向",
+      "exampleId": "191b6b2f-d462-4a45-a164-b65d3a6dab9f-visual-ex",
+      "styleFamily": "conceptual Risograph illustration",
+      "sentenceEn": "The sunflowers show a tendency to turn toward the light.",
+      "sentenceZh": "向日葵表现出朝向光线生长的倾向。",
+      "scene": "A field of many sunflowers mostly bends toward a bright sunrise, while only a few vary slightly, making the dominant natural tendency visually clear.",
+      "altText": "Sunflowers showing a tendency to turn toward light.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "50f6ccb5-36c5-440d-a8fe-ad0e259d1792",
+      "word": "uniform",
+      "meaningZh": "制服；一致的",
+      "exampleId": "50f6ccb5-36c5-440d-a8fe-ad0e259d1792-visual-ex",
+      "styleFamily": "screen-print workplace illustration",
+      "sentenceEn": "Every member of the rescue team wears the same uniform.",
+      "sentenceZh": "救援队的每位成员都穿着相同的制服。",
+      "scene": "Five diverse adult rescue workers stand together wearing the same clearly matching protective jacket, trousers, helmet, and boots, with no insignia or writing.",
+      "altText": "A rescue team wearing matching uniforms.",
+      "riskTags": [
+        "exact_quantity",
+        "people_face",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "00eb2fad-8120-49fa-882e-8ab622ab169e",
+      "word": "formation",
+      "meaningZh": "形成；队形",
+      "exampleId": "00eb2fad-8120-49fa-882e-8ab622ab169e-visual-ex",
+      "styleFamily": "natural-history watercolor",
+      "sentenceEn": "The geese fly south in a V formation.",
+      "sentenceZh": "雁群以V字队形向南飞行。",
+      "scene": "A flock of wild geese crosses an autumn sky in one unmistakable V-shaped formation, each bird naturally rendered and separated.",
+      "altText": "Geese flying in a V formation.",
+      "riskTags": [
+        "spatial_boundary",
+        "animals",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "bfb98bd8-0ed7-4206-bddb-bafb361a1f49",
+      "word": "scholarship",
+      "meaningZh": "学问；学术成就；奖学金",
+      "exampleId": "bfb98bd8-0ed7-4206-bddb-bafb361a1f49-visual-ex",
+      "styleFamily": "Chinese contemporary watercolor",
+      "sentenceEn": "Her scholarship covers the cost of university study.",
+      "sentenceZh": "奖学金承担了她的大学学习费用。",
+      "scene": "A Chinese university student receives a plain award folder and enters a campus library and laboratory while a heavy stack of expense tokens is visibly lifted away, showing financial support without text.",
+      "altText": "A scholarship enabling a student to attend university.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2293c9d6-91bd-4b73-98c7-dcb10c40a740",
+      "word": "reservation",
+      "meaningZh": "预订；保留",
+      "exampleId": "2293c9d6-91bd-4b73-98c7-dcb10c40a740-visual-ex",
+      "styleFamily": "editorial cut-paper illustration",
+      "sentenceEn": "The restaurant keeps a table ready for their reservation.",
+      "sentenceZh": "餐厅为他们的预订保留了一张桌子。",
+      "scene": "A restaurant host keeps one neatly set table empty and ready while an adult couple arrives and other tables are occupied, with no name cards, signs, or writing.",
+      "altText": "A restaurant table kept ready for a reservation.",
+      "riskTags": [
+        "spatial_boundary",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7cc25fd5-7a21-40e3-ae66-258ef50e0b4b",
+      "word": "efficiency",
+      "meaningZh": "效率",
+      "exampleId": "7cc25fd5-7a21-40e3-ae66-258ef50e0b4b-visual-ex",
+      "styleFamily": "isometric process illustration",
+      "sentenceEn": "The redesigned kitchen improves efficiency by shortening every route.",
+      "sentenceZh": "重新设计的厨房通过缩短路线提高效率。",
+      "scene": "A restaurant kitchen shows a compact triangular workflow among storage, preparation, and cooking stations, allowing three adults to work smoothly with very short paths and little wasted motion.",
+      "altText": "A compact kitchen layout improving work efficiency.",
+      "riskTags": [
+        "sequence",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "45a5125c-77f4-486c-8c42-081f77862f1c",
+      "word": "qualify",
+      "meaningZh": "取得资格；有资格",
+      "exampleId": "45a5125c-77f4-486c-8c42-081f77862f1c-visual-ex",
+      "styleFamily": "sports linocut illustration",
+      "sentenceEn": "The swimmer must finish ahead of the line to qualify for the final.",
+      "sentenceZh": "游泳运动员必须在达标线前完成比赛，才能取得决赛资格。",
+      "scene": "An adult swimmer touches the pool wall just ahead of a clearly visual finish threshold and is welcomed toward a final lane, while another finishes just behind, with no clocks or numbers.",
+      "altText": "A swimmer meeting the standard to qualify for a final.",
+      "riskTags": [
+        "comparison",
+        "sports",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "22cae657-00be-4761-812b-0f9c5f7d551a",
+      "word": "mall",
+      "meaningZh": "购物中心；商场",
+      "exampleId": "22cae657-00be-4761-812b-0f9c5f7d551a-visual-ex",
+      "styleFamily": "Chinese urban paper collage",
+      "sentenceEn": "The new mall connects shops, cafés, and a public garden.",
+      "sentenceZh": "新商场连接了商店、咖啡馆和公共花园。",
+      "scene": "A modern Chinese city shopping mall interior visibly connects varied storefronts, a café, and an indoor public garden across multiple levels, with diverse adults moving through the shared atrium and no store names.",
+      "altText": "A shopping mall connecting shops, cafés, and a garden.",
+      "riskTags": [
+        "Chinese_culture",
+        "architecture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d2696e5c-48c1-4806-97d3-05cbad2a68ae",
+      "word": "derive",
+      "meaningZh": "得自；起源",
+      "exampleId": "d2696e5c-48c1-4806-97d3-05cbad2a68ae-visual-ex",
+      "styleFamily": "Chinese silk-painting-inspired illustration",
+      "sentenceEn": "The fine thread is derived from silkworm cocoons.",
+      "sentenceZh": "这种细线来自蚕茧。",
+      "scene": "A Chinese silk artisan draws one continuous fine thread from pale silkworm cocoons through a traditional reeling tool into a shining spool of silk, showing source and result clearly.",
+      "altText": "Fine silk thread derived from silkworm cocoons.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "hands",
+        "cause_effect"
+      ]
+    }
+  ]
+}

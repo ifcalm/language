@@ -1,0 +1,366 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3421-3440",
+  "batchId": "auto-rank-3421-3440-20260919",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "bath",
+      "feedback",
+      "purple",
+      "expertise",
+      "parade",
+      "blend"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "ee4a74fc-4c86-43cc-bfb0-67193b47cdd0",
+      "word": "bath",
+      "meaningZh": "沐浴；浴室；浴",
+      "exampleId": "ee4a74fc-4c86-43cc-bfb0-67193b47cdd0-visual-ex",
+      "styleFamily": "serene Chinese architectural watercolor illustration",
+      "sentenceEn": "Steam rose from the warm bath beside a folded towel.",
+      "sentenceZh": "温暖浴池旁放着叠好的毛巾，水面升起蒸汽。",
+      "scene": "A private bathing room in a quiet Chinese courtyard residence contains one clean wooden soaking tub filled with warm water, gentle steam rising beside a folded towel, wooden stool and leafy courtyard window. No person is present, emphasizing the prepared bath respectfully. No characters, signs, toiletries with labels, nudity or logos.",
+      "altText": "中式庭院住宅的木制浴池盛着温水并升起蒸汽。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "object_detail",
+        "privacy"
+      ]
+    },
+    {
+      "vocabularyId": "078f3561-5bea-4d82-a8d7-c5301f50d859",
+      "word": "thereby",
+      "meaningZh": "从而；因此",
+      "exampleId": "078f3561-5bea-4d82-a8d7-c5301f50d859-visual-ex",
+      "styleFamily": "clear cause-and-effect paper-cut illustration",
+      "sentenceEn": "She opened the greenhouse vents, thereby cooling the seedlings.",
+      "sentenceZh": "她打开温室通风窗，从而给幼苗降温。",
+      "scene": "An adult gardener turns a plain handle to open roof vents in a warm greenhouse; fresh air moves through the newly open vents while previously drooping seedlings below visibly lift in the cooler space. One coherent scene shows action and beneficial result without arrows or split panels. Complete focused face and natural hand on the handle, no thermometers, text, symbols or labels.",
+      "altText": "园丁打开温室通风窗，从而让闷热中的幼苗恢复精神。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "fcf5c5b7-4bcf-4609-bf5f-c23cb05f2201",
+      "word": "indicator",
+      "meaningZh": "指标",
+      "exampleId": "fcf5c5b7-4bcf-4609-bf5f-c23cb05f2201-visual-ex",
+      "styleFamily": "observational botanical gouache illustration",
+      "sentenceEn": "Drooping leaves were an indicator that the plant needed water.",
+      "sentenceZh": "叶片下垂表明这株植物需要浇水。",
+      "scene": "A houseplant with visibly drooping but intact leaves sits in dry pale soil beside a full plain watering can, while an adult gardener notices the leaves and reaches toward the can. The leaves are the natural indicator of thirst. Complete attentive face and natural hands, no dead plant, diagrams, arrows, written labels or icons.",
+      "altText": "下垂的叶片提示园丁植物需要浇水。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cause_effect",
+        "plant_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "24278e5b-cb89-4cb8-a52e-fd971d582a44",
+      "word": "sunlight",
+      "meaningZh": "阳光",
+      "exampleId": "24278e5b-cb89-4cb8-a52e-fd971d582a44-visual-ex",
+      "styleFamily": "luminous botanical pastel illustration",
+      "sentenceEn": "Morning sunlight streamed through the window onto the herbs.",
+      "sentenceZh": "晨光透过窗户洒在香草上。",
+      "scene": "Strong warm morning sunlight streams through a large window in visible angled beams and illuminates pots of healthy kitchen herbs, casting crisp leaf shadows across a wooden table. Human-free quiet interior, with the light itself as the unmistakable subject. No curtains with patterns, text, labels or logos.",
+      "altText": "明亮的晨光透过窗户照在一排香草盆栽上。",
+      "riskTags": [
+        "lighting",
+        "plant_accuracy",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "94813bf8-cada-423c-b93f-3df67c6bfce9",
+      "word": "feedback",
+      "meaningZh": "反馈",
+      "exampleId": "94813bf8-cada-423c-b93f-3df67c6bfce9-visual-ex",
+      "styleFamily": "warm Chinese ceramic-workshop colored-pencil illustration",
+      "sentenceEn": "The potter used her mentor's feedback to smooth the uneven rim.",
+      "sentenceZh": "陶工根据师傅的反馈把不平整的碗口修平。",
+      "scene": "In a contemporary Chinese pottery workshop, an experienced adult ceramic artist gestures precisely toward the uneven rim of a bowl while a younger adult potter listens and smooths that rim on a slow wheel. A finished even-rimmed bowl nearby suggests the helpful goal. Both complete attentive faces and natural clay-working hands visible. No criticism caricature, characters, notes, labels or logos.",
+      "altText": "中国陶艺师指出碗口问题，年轻陶工根据反馈进行修整。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "f0823d8e-318b-4b1d-8334-b0bce7b84f69",
+      "word": "spectrum",
+      "meaningZh": "光谱；范围；系列",
+      "exampleId": "f0823d8e-318b-4b1d-8334-b0bce7b84f69-visual-ex",
+      "styleFamily": "precise scientific watercolor illustration",
+      "sentenceEn": "The prism separated white light into a visible spectrum.",
+      "sentenceZh": "棱镜把白光分成了可见光谱。",
+      "scene": "On a dark laboratory table, one clear glass prism receives a narrow beam of white light and projects a continuous ordered band of violet, blue, green, yellow, orange and red across a pale surface. Human-free close composition with physically plausible refraction and no decorative extra rainbows. No wavelength numbers, labels, arrows, equations or text.",
+      "altText": "玻璃棱镜把一束白光分解成连续的彩色光谱。",
+      "riskTags": [
+        "scientific_accuracy",
+        "sequence",
+        "color_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "b22c0ac9-f1f4-4444-b0d9-f2a712ce9219",
+      "word": "purple",
+      "meaningZh": "紫色；帝位",
+      "exampleId": "b22c0ac9-f1f4-4444-b0d9-f2a712ce9219-visual-ex",
+      "styleFamily": "rich Chinese textile-workshop gouache illustration",
+      "sentenceEn": "The dyer lifted a length of purple silk from the vat.",
+      "sentenceZh": "染匠从染缸中提起一段紫色丝绸。",
+      "scene": "In a traditional-inspired Chinese textile workshop, an adult dyer lifts one long length of richly purple silk from a plain dye vat, with undyed pale cloth and indigo cloth nearby making the purple hue unmistakable. Complete focused face and natural gloved hands, respectful working setting. No imperial symbolism, characters, fabric patterns with writing, labels or logos.",
+      "altText": "中国染坊工匠从染缸中提起一段鲜明的紫色丝绸。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "color_accuracy",
+        "material_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "c8991193-b3bc-4a88-bd03-c4dbe4c54697",
+      "word": "laser",
+      "meaningZh": "激光；激光器",
+      "exampleId": "c8991193-b3bc-4a88-bd03-c4dbe4c54697-visual-ex",
+      "styleFamily": "crisp retro-technical cutaway illustration",
+      "sentenceEn": "The technician watched the laser cut a precise circle in the metal.",
+      "sentenceZh": "技术员观察激光在金属上切出精确的圆形。",
+      "scene": "An adult technician wearing proper protective eyewear observes through the closed amber safety window of an enclosed industrial laser cutter as one concentrated beam cuts a clean circle in a thin metal sheet inside. Complete face remains readable behind clear protective lenses, hands safely outside the machine. No open beam, fire, brand marks, control-screen text, warning labels or logos.",
+      "altText": "技术员隔着安全窗观察激光在金属片上切出圆形。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "equipment_detail",
+        "safety",
+        "scientific_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "096e5e06-a43e-4fb0-bd08-a50f49ebff8a",
+      "word": "bold",
+      "meaningZh": "大胆的；粗体",
+      "exampleId": "096e5e06-a43e-4fb0-bd08-a50f49ebff8a-visual-ex",
+      "styleFamily": "dramatic civic poster-style illustration",
+      "sentenceEn": "The bold volunteer stepped forward to speak before the crowded hall.",
+      "sentenceZh": "勇敢的志愿者走上前，在满座礼堂中发言。",
+      "scene": "An adult volunteer confidently steps from a seated group toward a simple standing microphone in a full community hall, shoulders steady and expression composed while the audience turns encouragingly toward her. Complete face and natural hands, with the decisive forward step conveying boldness. No stage text, banners, political cues, letters or logos.",
+      "altText": "一名勇敢的志愿者从人群中走出，准备在礼堂发言。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "movement"
+      ]
+    },
+    {
+      "vocabularyId": "da767099-125d-4679-97d9-0bbb99ee3247",
+      "word": "reluctant",
+      "meaningZh": "不情愿的；勉强的",
+      "exampleId": "da767099-125d-4679-97d9-0bbb99ee3247-visual-ex",
+      "styleFamily": "subtle narrative charcoal-and-wash illustration",
+      "sentenceEn": "He was reluctant to join the dance despite his friend's invitation.",
+      "sentenceZh": "尽管朋友邀请，他仍不太情愿加入舞蹈。",
+      "scene": "At a relaxed community dance, one adult friend warmly extends an open hand toward an adult man who remains at the edge of the floor, leaning slightly back with one foot held behind and a hesitant but respectful expression. Other adults dance softly in the background. Complete faces and natural hands, no coercion, ridicule, speech bubbles, signs or text.",
+      "altText": "朋友伸手邀请，一名男子却犹豫地停在舞池边。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "body_language"
+      ]
+    },
+    {
+      "vocabularyId": "bedaef76-f0cd-4176-b887-4885852a314a",
+      "word": "starting",
+      "meaningZh": "开始；启动",
+      "exampleId": "bedaef76-f0cd-4176-b887-4885852a314a-visual-ex",
+      "styleFamily": "fresh bakery editorial watercolor illustration",
+      "sentenceEn": "The baker is starting the dough by mixing flour and water.",
+      "sentenceZh": "面包师正从混合面粉和水开始制作面团。",
+      "scene": "An adult baker at a clean worktable pours water from a plain jug into a bowl of loose flour and begins the first gentle stir, while all later baking tools and an empty loaf tin remain unused farther back. Complete focused face and natural hands, clearly the beginning rather than finished dough. No recipe cards, measurements, packaging text or logos.",
+      "altText": "面包师把水倒入面粉并开始制作面团。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sequence",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "c76a092f-8af9-464d-9bcb-42895846292f",
+      "word": "expertise",
+      "meaningZh": "专家意见；专门技术",
+      "exampleId": "c76a092f-8af9-464d-9bcb-42895846292f-visual-ex",
+      "styleFamily": "textured Chinese bamboo-craft ink-and-gouache illustration",
+      "sentenceEn": "Her expertise allowed her to weave the bamboo strips evenly.",
+      "sentenceZh": "她凭借专业技艺把竹篾编得均匀整齐。",
+      "scene": "In a Chinese bamboo-weaving studio, an experienced adult craftswoman confidently interlaces thin bamboo strips into an even basket wall while an adult apprentice observes the precise spacing. Several neatly finished baskets show consistent mastery. Complete concentrated faces and natural working hands, respectful craft setting. No certificates, characters, labels, decorative text or logos.",
+      "altText": "中国竹编师傅熟练地把竹篾编成间距均匀的篮子。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "expertise",
+        "material_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "d0f92bbf-08fd-4577-8a62-64bc0587d6d6",
+      "word": "practically",
+      "meaningZh": "实际上",
+      "exampleId": "d0f92bbf-08fd-4577-8a62-64bc0587d6d6-visual-ex",
+      "styleFamily": "quiet dawn urban pastel illustration",
+      "sentenceEn": "The station platform was practically empty before sunrise.",
+      "sentenceZh": "日出前，车站站台几乎空无一人。",
+      "scene": "A broad railway platform before sunrise is visibly almost empty, with only one distant adult traveler beside a small suitcase and long stretches of vacant benches and open pavement. Soft pre-dawn light emphasizes near-emptiness without suggesting closure. The lone face is too distant to read. No station name, clocks, platform numbers, timetables, signs or logos.",
+      "altText": "日出前宽阔的车站站台几乎无人，只有一名远处旅客。",
+      "riskTags": [
+        "abstract_meaning",
+        "exact_quantity",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "eacf4d10-d4a5-4e6b-84b7-d9eff3351178",
+      "word": "eating",
+      "meaningZh": "吃",
+      "exampleId": "eacf4d10-d4a5-4e6b-84b7-d9eff3351178-visual-ex",
+      "styleFamily": "lively natural-history gouache illustration",
+      "sentenceEn": "The red panda was eating bamboo leaves on a low branch.",
+      "sentenceZh": "小熊猫正在低矮树枝上吃竹叶。",
+      "scene": "One anatomically plausible red panda sits securely on a thick low branch and actively bites a cluster of fresh bamboo leaves held between its front paws, with partly chewed leaves visible near its mouth. Natural forest habitat, no people, bowls, human food, anthropomorphic pose, text or logos.",
+      "altText": "一只小熊猫坐在低树枝上吃竹叶。",
+      "riskTags": [
+        "animal_anatomy",
+        "hands",
+        "movement"
+      ]
+    },
+    {
+      "vocabularyId": "211228d0-9277-4eeb-a54a-46767dabecfe",
+      "word": "hint",
+      "meaningZh": "暗示；提示",
+      "exampleId": "211228d0-9277-4eeb-a54a-46767dabecfe-visual-ex",
+      "styleFamily": "gentle classroom paper-collage illustration",
+      "sentenceEn": "The teacher gave a hint by pointing toward the matching shape.",
+      "sentenceZh": "老师指向相匹配的形状，给了一个提示。",
+      "scene": "At a small table, an adult teacher gently points near one loose blue triangle while an adult learner studies a nearly completed pattern containing an obvious triangle-shaped gap. The teacher does not place the piece, making the indirect hint clear. Both complete thoughtful faces and natural hands visible. No written instructions, letters, numbers, arrows or speech bubbles.",
+      "altText": "老师指向蓝色三角形，提示学习者填入图案空缺。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "72ae0041-be35-4e25-9d01-2559bce4294f",
+      "word": "sharply",
+      "meaningZh": "急剧地",
+      "exampleId": "72ae0041-be35-4e25-9d01-2559bce4294f-visual-ex",
+      "styleFamily": "aerial landscape linocut illustration",
+      "sentenceEn": "The mountain road bends sharply around the rocky hill.",
+      "sentenceZh": "山路绕着岩石山丘急转弯。",
+      "scene": "A high oblique view shows one safe paved mountain road making a single unmistakably tight hairpin bend around a rocky hill, with one small unbranded car following the curve at a controlled speed. Guardrails line the outside edge. No skid marks, crash, road signs, arrows, lane text or logos.",
+      "altText": "一条山路绕着岩石山丘形成明显的急转弯。",
+      "riskTags": [
+        "spatial_boundary",
+        "movement",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "4c0782ef-647d-4b77-bee9-194f7d99bccb",
+      "word": "parade",
+      "meaningZh": "游行；炫耀；阅兵",
+      "exampleId": "4c0782ef-647d-4b77-bee9-194f7d99bccb-visual-ex",
+      "styleFamily": "festive Chinese community woodblock-and-gouache illustration",
+      "sentenceEn": "Neighbors carried handmade lanterns in the evening parade.",
+      "sentenceZh": "邻居们在傍晚游行中提着手工灯笼。",
+      "scene": "A diverse Chinese neighborhood evening parade moves together down a lantern-lit pedestrian street, adults and older residents carrying handmade round and animal-shaped lanterns while a small drum group keeps rhythm. Complete joyful foreground faces and natural hands, respectful community celebration without assigning a specific festival. No national flags, military formation, characters, banners, signs, text or logos.",
+      "altText": "中国社区邻居提着手工灯笼参加傍晚游行。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "crowd",
+        "movement"
+      ]
+    },
+    {
+      "vocabularyId": "e51473ec-1e58-4d3a-a172-0373da706d57",
+      "word": "realm",
+      "meaningZh": "领域；王国",
+      "exampleId": "e51473ec-1e58-4d3a-a172-0373da706d57-visual-ex",
+      "styleFamily": "atmospheric fantasy map-inspired gouache illustration",
+      "sentenceEn": "Beyond the stone gate lay a quiet realm of floating islands.",
+      "sentenceZh": "石门之外是一片漂浮岛屿的宁静领域。",
+      "scene": "An adult traveler stands before an ancient unmarked stone gate that clearly frames the boundary into a coherent fantastical realm of floating green islands, waterfalls and distant bridges, visually distinct from the ordinary rocky foreground. Back three-quarter view with face partly visible, natural hand resting on a walking staff. No crown, flags, map labels, runes, letters or logos.",
+      "altText": "旅行者穿过石门望见一片漂浮岛屿构成的奇异领域。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "35f0a4ef-902a-43e5-b342-2870833d0a62",
+      "word": "cancel",
+      "meaningZh": "取消；撤消；盖销(邮票)",
+      "exampleId": "35f0a4ef-902a-43e5-b342-2870833d0a62-visual-ex",
+      "styleFamily": "stormy editorial watercolor illustration",
+      "sentenceEn": "The sudden storm forced the band to cancel the outdoor concert.",
+      "sentenceZh": "突如其来的暴风雨迫使乐队取消了户外音乐会。",
+      "scene": "Heavy rain sweeps across an outdoor concert area as three adult musicians calmly pack a guitar, violin and small drum into protective cases beneath a canopy; rows of wet empty chairs face a dark, unlit stage. Their complete disappointed but composed faces and natural hands show the planned event will not proceed. No performance, damaged instruments, cancellation sign, tickets, writing or logos.",
+      "altText": "暴雨中乐队收起乐器，空椅表明户外演出被取消。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect",
+        "sequence",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "fd740f2a-f441-4498-b053-a03b38e7490c",
+      "word": "blend",
+      "meaningZh": "混合",
+      "exampleId": "fd740f2a-f441-4498-b053-a03b38e7490c-visual-ex",
+      "styleFamily": "refined Chinese tea-shop botanical illustration",
+      "sentenceEn": "The tea maker used a bamboo tray to blend tea leaves with dried flowers.",
+      "sentenceZh": "制茶师用竹盘把茶叶与干花混合。",
+      "scene": "In a calm Chinese tea workshop, an adult tea maker uses both hands to gently combine dark tea leaves and pale dried chrysanthemum petals across one wide bamboo tray; separate small piles visibly merge into an even mixture at the center. Complete focused face and natural hands, with plain unlabeled jars in the background. No medicinal claims, characters, packaging text, labels or logos.",
+      "altText": "中国制茶师在竹盘中把茶叶和干花均匀混合。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "before_after",
+        "material_accuracy"
+      ]
+    }
+  ]
+}

@@ -122,7 +122,7 @@
     },
     {
       "vocabularyId": "1783aace-8650-4d1a-a61b-40ca4873605f", "word": "Jew", "meaningZh": "犹太人", "exampleId": "1783aace-8650-4d1a-a61b-40ca4873605f-visual-ex", "styleFamily": "mature editorial educational illustration",
-      "sentenceEn": "The Jewish neighbor shares bread at a community meal.", "sentenceZh": "这位犹太邻居在社区聚餐中分享面包。",
+      "sentenceEn": "A Jew shares fresh bread with neighbors at the community meal.", "sentenceZh": "一位犹太人在社区聚餐上与邻居分享面包。",
       "scene": "A respectful ordinary community meal where one Jewish adult neighbor shares a loaf of bread with three diverse adult friends at the same table; warm contemporary setting, individualized natural faces, no caricature, costume coding, religious spectacle, flags, political symbols or text.",
       "altText": "一个尊重且日常的场景表现一位犹太邻居。", "riskTags": ["Jew", "religion_ethnicity", "respectful", "no_readable_text"]
     },

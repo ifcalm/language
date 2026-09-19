@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2400-2419",
+  "batchId": "auto-rank-2400-2419-20260822",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "shopping",
+      "cousin",
+      "encounter",
+      "wipe",
+      "port",
+      "electricity"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "6334411f-a5eb-46f2-b206-7462dbf8aafa",
+      "word": "assistant",
+      "meaningZh": "助手",
+      "exampleId": "6334411f-a5eb-46f2-b206-7462dbf8aafa-visual-ex",
+      "styleFamily": "warm workplace editorial illustration",
+      "sentenceEn": "The assistant organized the tools before the workshop.",
+      "sentenceZh": "助手在工作坊开始前整理好工具。",
+      "scene": "A capable adult assistant arranges craft tools and materials on a workbench while the lead instructor prepares nearby, showing helpful support.",
+      "altText": "助手在工作坊前整理工具",
+      "riskTags": [
+        "hands",
+        "many_objects",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "287506fa-b922-4cc1-ae1a-3559b8126de4",
+      "word": "overcome",
+      "meaningZh": "战胜；克服；胜过；得胜",
+      "exampleId": "287506fa-b922-4cc1-ae1a-3559b8126de4-visual-ex",
+      "styleFamily": "uplifting mountain-trail illustration",
+      "sentenceEn": "She learned to overcome her fear and cross the high bridge.",
+      "sentenceZh": "她克服恐惧，走过了高桥。",
+      "scene": "An adult traveler takes a steady final step across a secure high footbridge, visibly changing from tense to relieved as a friend waits supportively.",
+      "altText": "旅行者克服恐惧走过高桥",
+      "riskTags": [
+        "heights",
+        "people_face",
+        "emotion"
+      ]
+    },
+    {
+      "vocabularyId": "14a31407-fb88-4cfa-8ad8-35486d152a6d",
+      "word": "remarkable",
+      "meaningZh": "非凡的",
+      "exampleId": "14a31407-fb88-4cfa-8ad8-35486d152a6d-visual-ex",
+      "styleFamily": "natural-history watercolor illustration",
+      "sentenceEn": "The tree made a remarkable recovery after the fire.",
+      "sentenceZh": "这棵树在火灾后恢复得非常惊人。",
+      "scene": "A once-scorched old tree sends out abundant fresh green shoots in a recovering woodland, creating a striking contrast of damage and renewal.",
+      "altText": "火后老树长出惊人的新芽",
+      "riskTags": [
+        "fire_aftermath",
+        "landscape",
+        "contrast"
+      ]
+    },
+    {
+      "vocabularyId": "681c9b6b-d5bd-4014-9896-f08620bc49ce",
+      "word": "occupy",
+      "meaningZh": "占据；占领；占用",
+      "exampleId": "681c9b6b-d5bd-4014-9896-f08620bc49ce-visual-ex",
+      "styleFamily": "spatial editorial illustration",
+      "sentenceEn": "Books occupy most of the desk.",
+      "sentenceZh": "书本占据了桌面的大部分空间。",
+      "scene": "A desktop is visibly crowded by tall stacks of closed books that occupy nearly all its surface, leaving only a small clear corner.",
+      "altText": "书本占据桌面大部分空间",
+      "riskTags": [
+        "many_objects",
+        "spatial_relationship",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "87ae6b3b-a765-4d51-829a-961078b380ce",
+      "word": "statistics",
+      "meaningZh": "统计",
+      "exampleId": "87ae6b3b-a765-4d51-829a-961078b380ce-visual-ex",
+      "styleFamily": "data-story editorial illustration",
+      "sentenceEn": "The statistics revealed a steady rise in bicycle use.",
+      "sentenceZh": "统计数据显示骑车人数稳步上升。",
+      "scene": "An analyst compares groups of increasingly numerous miniature bicycles arranged in ascending rows, using objects only without charts, numbers, or text.",
+      "altText": "逐渐增多的模型自行车呈现统计趋势",
+      "riskTags": [
+        "data_concept",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "0be4d075-a060-4506-8684-e93037e18c12",
+      "word": "shopping",
+      "meaningZh": "购物",
+      "exampleId": "0be4d075-a060-4506-8684-e93037e18c12-visual-ex",
+      "styleFamily": "Chinese morning-market gouache illustration",
+      "sentenceEn": "She went shopping for vegetables at the morning market.",
+      "sentenceZh": "她去早市买菜。",
+      "scene": "At a bustling Chinese morning market, an adult shopper selects leafy greens and eggplants from a friendly vendor, using a woven basket and no price signs.",
+      "altText": "顾客在中国早市选购新鲜蔬菜",
+      "riskTags": [
+        "many_objects",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "77461201-4d0f-4690-8049-874cb7cc30e9",
+      "word": "cousin",
+      "meaningZh": "堂兄弟姊妹；表兄弟姊妹",
+      "exampleId": "77461201-4d0f-4690-8049-874cb7cc30e9-visual-ex",
+      "styleFamily": "Chinese family-reunion watercolor illustration",
+      "sentenceEn": "My cousin taught me the family dumpling recipe.",
+      "sentenceZh": "我的表姐教我家传的饺子做法。",
+      "scene": "Two adult Chinese cousins fold dumplings side by side at a family reunion table while older relatives smile in the background.",
+      "altText": "表亲在家庭团聚时一起包饺子",
+      "riskTags": [
+        "family",
+        "hands",
+        "many_people"
+      ]
+    },
+    {
+      "vocabularyId": "1be6dff9-0789-4ad1-a89a-8f3b6bfd4208",
+      "word": "encounter",
+      "meaningZh": "相会；相遇；遭遇",
+      "exampleId": "1be6dff9-0789-4ad1-a89a-8f3b6bfd4208-visual-ex",
+      "styleFamily": "Beijing hutong storybook illustration",
+      "sentenceEn": "We encountered an old friend in the hutong.",
+      "sentenceZh": "我们在胡同里偶遇了一位老朋友。",
+      "scene": "Two adults unexpectedly meet an old friend at a Beijing hutong corner, their surprised smiles and open gestures showing a happy chance encounter.",
+      "altText": "朋友们在北京胡同意外相遇",
+      "riskTags": [
+        "people_face",
+        "cultural_setting",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6f52e6a7-3e7c-46d0-a744-54b5ab2bf1c8",
+      "word": "wipe",
+      "meaningZh": "擦；擦拭；清除",
+      "exampleId": "6f52e6a7-3e7c-46d0-a744-54b5ab2bf1c8-visual-ex",
+      "styleFamily": "Chinese calligraphy-studio illustration",
+      "sentenceEn": "He wiped the ink from the table with a cloth.",
+      "sentenceZh": "他用布擦掉桌上的墨水。",
+      "scene": "In a traditional Chinese studio, an adult quickly wipes a small spilled pool of black ink from a wooden table beside brushes and blank paper, with no writing.",
+      "altText": "男子用布擦去书案上的墨水",
+      "riskTags": [
+        "hands",
+        "spill",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "4b67360b-d5e5-4dd2-b586-0e068c957319",
+      "word": "initially",
+      "meaningZh": "最初",
+      "exampleId": "4b67360b-d5e5-4dd2-b586-0e068c957319-visual-ex",
+      "styleFamily": "two-stage editorial illustration",
+      "sentenceEn": "Initially, the room felt cold and empty.",
+      "sentenceZh": "起初，这个房间显得寒冷而空荡。",
+      "scene": "An adult first enters a cold empty room through a doorway while warm furniture being carried in from behind suggests how the initial state will change.",
+      "altText": "起初房间寒冷而空荡",
+      "riskTags": [
+        "sequence",
+        "people_face",
+        "interior"
+      ]
+    },
+    {
+      "vocabularyId": "af8bd676-4a97-4754-9698-672c40caea75",
+      "word": "blind",
+      "meaningZh": "盲的；失明的；盲目的；窗帘",
+      "exampleId": "af8bd676-4a97-4754-9698-672c40caea75-visual-ex",
+      "styleFamily": "inclusive urban watercolor illustration",
+      "sentenceEn": "The blind traveler followed the textured path safely.",
+      "sentenceZh": "这位盲人旅客沿触觉引导路安全前行。",
+      "scene": "A blind adult traveler uses a white cane along a tactile paved path at a station, moving independently while other travelers keep the route clear.",
+      "altText": "盲人旅客沿触觉引导路独立前行",
+      "riskTags": [
+        "disability",
+        "people_face",
+        "mobility_aid"
+      ]
+    },
+    {
+      "vocabularyId": "67a3aec8-a11e-49bb-b03b-1adb04671914",
+      "word": "port",
+      "meaningZh": "港口；港口城市；端口；左舷",
+      "exampleId": "67a3aec8-a11e-49bb-b03b-1adb04671914-visual-ex",
+      "styleFamily": "Shanghai-inspired waterfront illustration",
+      "sentenceEn": "Cargo ships entered the busy port at sunrise.",
+      "sentenceZh": "货轮在日出时驶入繁忙港口。",
+      "scene": "At a Shanghai-inspired modern port at sunrise, cargo ships approach orderly cranes and stacked containers along a broad river, with no company marks.",
+      "altText": "货轮在日出时驶入现代中国港口",
+      "riskTags": [
+        "many_objects",
+        "vehicle",
+        "cultural_setting"
+      ]
+    },
+    {
+      "vocabularyId": "9569d523-6c49-4174-a981-c552928361fa",
+      "word": "electricity",
+      "meaningZh": "电力",
+      "exampleId": "9569d523-6c49-4174-a981-c552928361fa-visual-ex",
+      "styleFamily": "Chinese clean-energy landscape illustration",
+      "sentenceEn": "Electricity from the dam powered towns across the valley.",
+      "sentenceZh": "大坝产生的电力为山谷各城镇供能。",
+      "scene": "A major Chinese hydroelectric dam sends clean electricity toward glowing valley towns, suggested by connected pylons and lit homes without diagrams or text.",
+      "altText": "水电站为山谷城镇输送电力",
+      "riskTags": [
+        "infrastructure",
+        "landscape",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "424d3c36-f83d-4214-b9b5-9de6c0a9b6a8",
+      "word": "genetic",
+      "meaningZh": "基因的；遗传的",
+      "exampleId": "424d3c36-f83d-4214-b9b5-9de6c0a9b6a8-visual-ex",
+      "styleFamily": "medical research editorial illustration",
+      "sentenceEn": "A genetic test explained the inherited condition.",
+      "sentenceZh": "基因检测解释了这种遗传性疾病。",
+      "scene": "A genetic counselor calmly discusses a colorful double-helix model with an adult patient, using physical models and no readable reports.",
+      "altText": "遗传顾问用双螺旋模型讲解检测结果",
+      "riskTags": [
+        "medical",
+        "science_accuracy",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ad8b14aa-ac5f-4581-8551-d2072f7a2cb1",
+      "word": "adviser",
+      "meaningZh": "顾问",
+      "exampleId": "ad8b14aa-ac5f-4581-8551-d2072f7a2cb1-visual-ex",
+      "styleFamily": "professional editorial illustration",
+      "sentenceEn": "The adviser helped the student compare two career paths.",
+      "sentenceZh": "顾问帮助学生比较两条职业道路。",
+      "scene": "A career adviser and adult student compare two sets of occupation-related objects on a desk, discussing options without documents or text.",
+      "altText": "职业顾问帮助学生比较发展方向",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "00724932-c570-45b1-bbd3-50603d910e7d",
+      "word": "spokesman",
+      "meaningZh": "发言人；代言者",
+      "exampleId": "00724932-c570-45b1-bbd3-50603d910e7d-visual-ex",
+      "styleFamily": "press-room editorial illustration",
+      "sentenceEn": "The spokesman answered questions after the meeting.",
+      "sentenceZh": "发言人在会议后回答了问题。",
+      "scene": "An adult spokesman responds calmly to a small group of reporters after a meeting, with plain microphones and a blank backdrop free of logos or text.",
+      "altText": "发言人在会议后回答记者提问",
+      "riskTags": [
+        "people_face",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "164ecc96-58ee-47a2-bc9e-7e0c0029e7bd",
+      "word": "retain",
+      "meaningZh": "保留；保持；记住",
+      "exampleId": "164ecc96-58ee-47a2-bc9e-7e0c0029e7bd-visual-ex",
+      "styleFamily": "memory-themed editorial illustration",
+      "sentenceEn": "The sponge retained water even after it was lifted.",
+      "sentenceZh": "海绵被提起后仍然保留着水分。",
+      "scene": "A hand lifts a saturated sponge above a bowl while droplets remain visibly trapped inside and slowly fall, illustrating retention.",
+      "altText": "湿海绵被提起后仍保有水分",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "b98b23ff-c39c-4d13-9208-45a84c58a1d4",
+      "word": "latter",
+      "meaningZh": "后者的；较后的；近来的",
+      "exampleId": "b98b23ff-c39c-4d13-9208-45a84c58a1d4-visual-ex",
+      "styleFamily": "paired-choice editorial illustration",
+      "sentenceEn": "Of the tea and coffee, she chose the latter.",
+      "sentenceZh": "在茶和咖啡之间，她选择了后者。",
+      "scene": "Two drinks appear in a clear left-to-right sequence: tea first, coffee second; an adult hand selects the second cup, with no labels.",
+      "altText": "在先后两杯饮品中选择后者咖啡",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "4d7bc8e9-9e27-4259-94e5-ffe3a91152cc",
+      "word": "incentive",
+      "meaningZh": "动机；激励的",
+      "exampleId": "4d7bc8e9-9e27-4259-94e5-ffe3a91152cc-visual-ex",
+      "styleFamily": "workplace motivation illustration",
+      "sentenceEn": "The extra day off was a strong incentive to finish early.",
+      "sentenceZh": "额外一天休假是提前完成工作的强大动力。",
+      "scene": "A project team works efficiently toward a finished model while a sunny leisure scene visible through an open doorway motivates them as an incentive.",
+      "altText": "休假愿景激励团队提前完成工作",
+      "riskTags": [
+        "abstract_concept",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e99cd4b8-6a3c-4a59-9023-a0b3c8e31db5",
+      "word": "slave",
+      "meaningZh": "奴隶；从动装置；卑鄙的人",
+      "exampleId": "e99cd4b8-6a3c-4a59-9023-a0b3c8e31db5-visual-ex",
+      "styleFamily": "dignified historical editorial illustration",
+      "sentenceEn": "The museum honored each slave who resisted oppression.",
+      "sentenceZh": "博物馆纪念了反抗奴役的人们。",
+      "scene": "A dignified historical museum scene honors formerly enslaved adults standing together in resilience beside broken chains, without depicting violence, ownership, or readable exhibits.",
+      "altText": "博物馆以破碎锁链纪念反抗奴役者",
+      "riskTags": [
+        "slavery",
+        "historical_trauma",
+        "dignified_depiction"
+      ]
+    }
+  ]
+}

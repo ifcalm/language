@@ -1,0 +1,370 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2920-2939",
+  "batchId": "auto-rank-2920-2939-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "exhibit",
+      "blanket",
+      "rope",
+      "patch",
+      "consensus",
+      "painter"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5e10bd2d-91c1-4567-8a04-86c344271b2f",
+      "word": "intensity",
+      "meaningZh": "强度",
+      "exampleId": "5e10bd2d-91c1-4567-8a04-86c344271b2f-visual-ex",
+      "styleFamily": "dynamic gradient sports illustration",
+      "sentenceEn": "The intensity of the workout increases on the steep hill.",
+      "sentenceZh": "在陡坡上，锻炼强度会增加。",
+      "scene": "An adult cyclist climbs from a gentle lower slope into a much steeper final section, with stronger body effort, deeper breathing, and a focused expression as the hill rises.",
+      "altText": "A cyclist's effort increases with the intensity of a steep uphill workout.",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face",
+        "physical_effort"
+      ]
+    },
+    {
+      "vocabularyId": "1bc75027-5555-40e5-8e07-aa9e2bd23f2e",
+      "word": "exhibit",
+      "meaningZh": "显示；显现；展览品；陈列品；展览",
+      "exampleId": "1bc75027-5555-40e5-8e07-aa9e2bd23f2e-visual-ex",
+      "styleFamily": "refined museum watercolor illustration",
+      "sentenceEn": "The bronze vessel is the museum's central exhibit.",
+      "sentenceZh": "这件青铜器是博物馆的核心展品。",
+      "scene": "In a Chinese history museum, an ancient bronze ritual vessel stands alone in a softly lit glass case while adult visitors circle it attentively and a curator gestures toward its details.",
+      "altText": "Visitors study an ancient Chinese bronze vessel displayed as a museum exhibit.",
+      "riskTags": [
+        "museum_object",
+        "people_face",
+        "chinese_cultural_context",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "ee925d93-4a6f-4d97-9cec-2c2040b5cba0",
+      "word": "blanket",
+      "meaningZh": "毛毯；毯子；掩盖；覆盖",
+      "exampleId": "ee925d93-4a6f-4d97-9cec-2c2040b5cba0-visual-ex",
+      "styleFamily": "warm textile-collage illustration",
+      "sentenceEn": "She places a thick blanket over her grandfather's knees.",
+      "sentenceZh": "她把一条厚毯子盖在祖父膝上。",
+      "scene": "In a cozy Chinese family home, an adult granddaughter gently spreads a thick quilted blanket with simple floral patterns over her seated grandfather's knees as he smiles appreciatively.",
+      "altText": "A granddaughter covers her grandfather's knees with a warm blanket.",
+      "riskTags": [
+        "family_care",
+        "hands",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "42ac4bc8-7b89-4c01-96ad-4bec9b80a4cb",
+      "word": "margin",
+      "meaningZh": "边缘；利润",
+      "exampleId": "42ac4bc8-7b89-4c01-96ad-4bec9b80a4cb-visual-ex",
+      "styleFamily": "minimalist editorial paper illustration",
+      "sentenceEn": "The designer leaves a wide margin around the drawing.",
+      "sentenceZh": "设计师在图画四周留出宽阔的空白边缘。",
+      "scene": "An adult designer arranges a small botanical illustration at the center of a large blank sheet, leaving an unmistakably wide clean white border around every edge.",
+      "altText": "A botanical drawing is surrounded by a wide blank margin.",
+      "riskTags": [
+        "spatial_boundary",
+        "document_layout",
+        "comparison",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "475b6d84-e294-438a-80cd-2304c6bde890",
+      "word": "quarterback",
+      "meaningZh": "四分卫（橄榄球）",
+      "exampleId": "475b6d84-e294-438a-80cd-2304c6bde890-visual-ex",
+      "styleFamily": "bold screen-print football illustration",
+      "sentenceEn": "The quarterback looks downfield before throwing the ball.",
+      "sentenceZh": "四分卫在传球前观察前场。",
+      "scene": "An adult American football quarterback in full protective gear holds the ball near his shoulder, scanning downfield behind blockers while receivers begin their routes on a marked field.",
+      "altText": "A quarterback prepares to throw while scanning downfield behind blockers.",
+      "riskTags": [
+        "sports_role",
+        "people_face",
+        "protective_gear",
+        "natural_pose"
+      ]
+    },
+    {
+      "vocabularyId": "e3231807-c575-47c8-94ae-4745e01dc9ff",
+      "word": "mouse",
+      "meaningZh": "老鼠；胆小羞怯的人；鼠标",
+      "exampleId": "e3231807-c575-47c8-94ae-4745e01dc9ff-visual-ex",
+      "styleFamily": "detailed natural-history illustration",
+      "sentenceEn": "A small mouse carries a seed beneath the fallen log.",
+      "sentenceZh": "一只小老鼠把种子搬到倒木下面。",
+      "scene": "A realistic but gently illustrated field mouse carries a single seed toward shelter beneath a mossy fallen log, with its long tail, rounded ears, whiskers, and tiny paws clearly visible.",
+      "altText": "A small field mouse carries a seed under a mossy log.",
+      "riskTags": [
+        "animal",
+        "natural_anatomy",
+        "small_subject"
+      ]
+    },
+    {
+      "vocabularyId": "746aea92-1b0e-4f4b-8ec1-6832ce73cf71",
+      "word": "rope",
+      "meaningZh": "绳子；绳索",
+      "exampleId": "746aea92-1b0e-4f4b-8ec1-6832ce73cf71-visual-ex",
+      "styleFamily": "rustic linocut craft illustration",
+      "sentenceEn": "The craftsperson twists plant fibers into a strong rope.",
+      "sentenceZh": "工匠把植物纤维拧成一根结实的绳子。",
+      "scene": "In a traditional Chinese village workshop, an adult rope maker twists several thin hemp-fiber strands together into one thick rope, with raw fibers at one end and a finished coil at the other.",
+      "altText": "A Chinese craftsperson twists hemp fibers into a strong rope.",
+      "riskTags": [
+        "craft",
+        "before_after",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "0f269e39-5523-413c-aa94-f11f06085536",
+      "word": "concrete",
+      "meaningZh": "凝结物；混凝土",
+      "exampleId": "0f269e39-5523-413c-aa94-f11f06085536-visual-ex",
+      "styleFamily": "clean construction-process illustration",
+      "sentenceEn": "The crew pours concrete to form a new walkway.",
+      "sentenceZh": "施工队浇筑混凝土来铺设新步道。",
+      "scene": "A protected construction crew pours wet gray concrete from a small mixer into wooden walkway forms while another worker uses a long screed to level the fresh surface.",
+      "altText": "Construction workers pour and level concrete for a walkway.",
+      "riskTags": [
+        "construction",
+        "people_face",
+        "protective_gear",
+        "material_process"
+      ]
+    },
+    {
+      "vocabularyId": "840aba62-6539-4233-ac6e-c99c9f68f650",
+      "word": "prescription",
+      "meaningZh": "处方；命令；指定；药方",
+      "exampleId": "840aba62-6539-4233-ac6e-c99c9f68f650-visual-ex",
+      "styleFamily": "calm healthcare editorial illustration",
+      "sentenceEn": "The doctor gives her a prescription for the medicine.",
+      "sentenceZh": "医生给她开了一张药物处方。",
+      "scene": "In a clinic consultation, an adult doctor hands a patient a plain prescription sheet showing only a simple medicine-bottle pictogram, while a closed unlabelled medicine box rests nearby.",
+      "altText": "A doctor hands a patient a prescription during a clinic visit.",
+      "riskTags": [
+        "medical",
+        "document",
+        "people_face",
+        "no_readable_text",
+        "no_dosage"
+      ]
+    },
+    {
+      "vocabularyId": "c855a0f4-ce74-48e5-953c-27745e4c72e5",
+      "word": "African-American",
+      "meaningZh": "非裔美国人",
+      "exampleId": "c855a0f4-ce74-48e5-953c-27745e4c72e5-visual-ex",
+      "styleFamily": "confident contemporary editorial illustration",
+      "sentenceEn": "The African-American architect presents her sustainable design.",
+      "sentenceZh": "这位非裔美国建筑师展示她的可持续设计。",
+      "scene": "A confident African-American woman architect presents a detailed sustainable building model to a diverse professional team, with natural dark skin, textured hair, expressive features, and respected expertise.",
+      "altText": "An African-American woman architect presents a sustainable building model.",
+      "riskTags": [
+        "identity_term",
+        "people_face",
+        "respectful_representation",
+        "professional_context"
+      ]
+    },
+    {
+      "vocabularyId": "5ecdcb29-8b45-4760-8a79-16267266be05",
+      "word": "chase",
+      "meaningZh": "追求；狩猎；追逐",
+      "exampleId": "5ecdcb29-8b45-4760-8a79-16267266be05-visual-ex",
+      "styleFamily": "energetic colored-pencil park illustration",
+      "sentenceEn": "The playful dog begins to chase the rolling ball.",
+      "sentenceZh": "这只顽皮的狗开始追逐滚动的球。",
+      "scene": "In a sunny open park, a happy dog sprints after one brightly colored ball rolling across the grass while its adult owner watches from a safe distance with a cheerful expression.",
+      "altText": "A playful dog chases a rolling ball across a sunny park.",
+      "riskTags": [
+        "animal_action",
+        "cause_effect",
+        "people_face",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "9a6a2dc9-97af-4105-88aa-f705829b41f8",
+      "word": "brick",
+      "meaningZh": "砖块；积木；用砖做的",
+      "exampleId": "9a6a2dc9-97af-4105-88aa-f705829b41f8-visual-ex",
+      "styleFamily": "tactile masonry gouache illustration",
+      "sentenceEn": "The mason places one brick into the new garden wall.",
+      "sentenceZh": "泥瓦匠把一块砖砌进新的花园墙。",
+      "scene": "An adult mason wearing gloves sets one rectangular red clay brick onto a fresh strip of mortar, aligning it carefully with the straight courses of a partly built garden wall.",
+      "altText": "A mason places a red brick into a partly built wall.",
+      "riskTags": [
+        "construction",
+        "hands",
+        "people_face",
+        "single_object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "3715b126-5848-446a-b9bc-6f6aba612f8a",
+      "word": "recruit",
+      "meaningZh": "招聘；招募；新成员",
+      "exampleId": "3715b126-5848-446a-b9bc-6f6aba612f8a-visual-ex",
+      "styleFamily": "welcoming team-poster illustration",
+      "sentenceEn": "The rescue team welcomes its newest recruit.",
+      "sentenceZh": "救援队欢迎最新加入的成员。",
+      "scene": "At a mountain rescue station, experienced adult volunteers greet a new recruit with a handshake and offer a safety helmet, while neatly arranged ropes and packs show the shared mission.",
+      "altText": "A mountain rescue team welcomes a new recruit with safety gear.",
+      "riskTags": [
+        "team_membership",
+        "people_face",
+        "hands",
+        "protective_gear",
+        "no_logos"
+      ]
+    },
+    {
+      "vocabularyId": "39c63b95-fd88-4152-af56-bd790b48f3f6",
+      "word": "patch",
+      "meaningZh": "补丁（软件）；修补；小块",
+      "exampleId": "39c63b95-fd88-4152-af56-bd790b48f3f6-visual-ex",
+      "styleFamily": "delicate embroidery-and-paper collage illustration",
+      "sentenceEn": "She sews a colorful patch over the tear in the jacket.",
+      "sentenceZh": "她把一块彩色补丁缝在夹克破口上。",
+      "scene": "A Chinese textile artisan uses a needle and thread to sew one bright embroidered floral patch over a clearly visible tear in a dark work jacket, with the repaired area centered.",
+      "altText": "A Chinese artisan sews an embroidered patch over a torn jacket.",
+      "riskTags": [
+        "repair",
+        "before_after",
+        "hands",
+        "needle",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "c676b085-7609-4081-ac6c-02c73b06355c",
+      "word": "consensus",
+      "meaningZh": "共识；一致意见",
+      "exampleId": "c676b085-7609-4081-ac6c-02c73b06355c-visual-ex",
+      "styleFamily": "harmonious community-meeting illustration",
+      "sentenceEn": "The neighbors reach a consensus on the courtyard garden plan.",
+      "sentenceZh": "邻居们就庭院花园方案达成共识。",
+      "scene": "Five adult neighbors in a Chinese courtyard gather around an illustrated garden model; after discussion, every person smiles, nods, and points toward the same chosen layout.",
+      "altText": "Chinese neighbors reach consensus on one shared courtyard garden design.",
+      "riskTags": [
+        "abstract_meaning",
+        "group_agreement",
+        "people_face",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "a7c53f5b-5d6e-426f-8a60-434b824608e4",
+      "word": "horror",
+      "meaningZh": "惊骇；恐怖；惨状；恐惧",
+      "exampleId": "a7c53f5b-5d6e-426f-8a60-434b824608e4-visual-ex",
+      "styleFamily": "moody cinema editorial illustration",
+      "sentenceEn": "The audience gasps in horror when the shadow appears.",
+      "sentenceZh": "阴影出现时，观众惊恐地倒吸一口气。",
+      "scene": "Three adult friends in a dim cinema react with wide eyes and tense expressions to a large mysterious shadow appearing on the movie screen, frightening but clearly fictional and non-graphic.",
+      "altText": "Cinema viewers react in horror to a mysterious shadow on screen.",
+      "riskTags": [
+        "fear_emotion",
+        "people_face",
+        "non_graphic",
+        "fictional_scene",
+        "low_light"
+      ]
+    },
+    {
+      "vocabularyId": "ad3b8d97-2f0a-427c-be84-ff9f2db6fd2c",
+      "word": "recording",
+      "meaningZh": "录音；记录",
+      "exampleId": "ad3b8d97-2f0a-427c-be84-ff9f2db6fd2c-visual-ex",
+      "styleFamily": "warm analog-studio illustration",
+      "sentenceEn": "She makes a recording of the violin performance.",
+      "sentenceZh": "她为这场小提琴演奏制作录音。",
+      "scene": "An adult violinist performs before a studio microphone while a sound engineer wearing headphones monitors a reel-to-reel recorder through glass, with one simple red indicator light.",
+      "altText": "A violin performance is captured as a studio recording.",
+      "riskTags": [
+        "audio_process",
+        "people_face",
+        "hands",
+        "no_readable_interface"
+      ]
+    },
+    {
+      "vocabularyId": "b54985e7-511d-47ab-897d-9f1de5e32a9b",
+      "word": "changing",
+      "meaningZh": "变化中的",
+      "exampleId": "b54985e7-511d-47ab-897d-9f1de5e32a9b-visual-ex",
+      "styleFamily": "four-season panoramic illustration",
+      "sentenceEn": "The changing seasons transform the same hillside.",
+      "sentenceZh": "变换的季节改变着同一片山坡。",
+      "scene": "A continuous panorama of the same hillside transitions from spring blossoms to summer green, autumn gold, and winter snow, with one distinctive tree anchoring all four seasonal zones.",
+      "altText": "Changing seasons transform one continuous hillside across the year.",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "same_place_consistency",
+        "four_stages"
+      ]
+    },
+    {
+      "vocabularyId": "9bb3afc5-3219-41cf-a61b-4f9bf8c27902",
+      "word": "painter",
+      "meaningZh": "画家",
+      "exampleId": "9bb3afc5-3219-41cf-a61b-4f9bf8c27902-visual-ex",
+      "styleFamily": "expressive Chinese ink-and-color illustration",
+      "sentenceEn": "The painter adds mist to the mountain landscape.",
+      "sentenceZh": "画家为山水画增添云雾。",
+      "scene": "An adult Chinese painter works at a long studio table, brushing pale ink mist between layered mountains on rice paper while pigments, brushes, and an ink stone sit nearby.",
+      "altText": "A Chinese painter adds mist to an ink mountain landscape.",
+      "riskTags": [
+        "artist_role",
+        "hands",
+        "people_face",
+        "chinese_cultural_context",
+        "no_calligraphy"
+      ]
+    },
+    {
+      "vocabularyId": "c7d275f2-f34f-44a8-95bb-859f014526f1",
+      "word": "colonial",
+      "meaningZh": "殖民地的",
+      "exampleId": "c7d275f2-f34f-44a8-95bb-859f014526f1-visual-ex",
+      "styleFamily": "measured architectural-history illustration",
+      "sentenceEn": "The museum preserves colonial architecture from a difficult period.",
+      "sentenceZh": "博物馆保存了一个艰难时期的殖民建筑。",
+      "scene": "A restored colonial-era courthouse with deep verandas, tall shuttered windows, and stone arcades now functions as a history museum, visited respectfully by local adults without flags or celebratory military imagery.",
+      "altText": "A former colonial courthouse is preserved as a history museum.",
+      "riskTags": [
+        "historical_context",
+        "architecture",
+        "people_face",
+        "no_flags",
+        "non_celebratory"
+      ]
+    }
+  ]
+}

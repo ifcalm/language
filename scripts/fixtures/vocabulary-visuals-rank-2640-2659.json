@@ -1,0 +1,346 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2640-2659",
+  "batchId": "auto-rank-2640-2659-20260907",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "sustain",
+      "custom",
+      "soup",
+      "celebration",
+      "composition",
+      "carbon"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "d2c94d84-11a0-487c-97ee-2f05149311d5",
+      "word": "sustain",
+      "meaningZh": "维持；支撑；遭受",
+      "exampleId": "d2c94d84-11a0-487c-97ee-2f05149311d5-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The old waterwheel helps sustain the rice terraces through the dry month.",
+      "sentenceZh": "古老的水车帮助稻田在旱月维持生长。",
+      "scene": "A traditional Chinese wooden waterwheel continuously lifts stream water into channels that keep layered rice terraces green while nearby dry ground turns pale.",
+      "altText": "A waterwheel sustaining green rice terraces during a dry month.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "50c48f8f-bced-408e-b25e-7b8b4ee6ebd7",
+      "word": "mount",
+      "meaningZh": "安装；挂载（计算机）；登上；增加",
+      "exampleId": "50c48f8f-bced-408e-b25e-7b8b4ee6ebd7-visual-ex",
+      "styleFamily": "technical cutaway illustration",
+      "sentenceEn": "The technician mounts the camera securely on the wall.",
+      "sentenceZh": "技术员把摄像机牢固地安装在墙上。",
+      "scene": "An adult technician fastens a compact camera onto a wall bracket, with the bracket, screws, and final mounted position visible as a clear three-step progression.",
+      "altText": "A technician mounting a camera on a wall bracket.",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f2e1c854-38e9-40b0-adb5-0fca81c2f25b",
+      "word": "obligation",
+      "meaningZh": "义务",
+      "exampleId": "f2e1c854-38e9-40b0-adb5-0fca81c2f25b-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "Caring for the adopted dog is a daily obligation.",
+      "sentenceZh": "照顾领养的狗是每天的义务。",
+      "scene": "An adult dog owner leaves a leisure invitation behind to feed, walk, and care for an adopted dog, showing a responsibility that must be fulfilled.",
+      "altText": "A dog owner fulfilling the obligation to care for an adopted dog.",
+      "riskTags": [
+        "abstract_meaning",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2946908f-2042-4ca0-a3a7-fee0d65545e8",
+      "word": "angle",
+      "meaningZh": "角；角度；角落",
+      "exampleId": "2946908f-2042-4ca0-a3a7-fee0d65545e8-visual-ex",
+      "styleFamily": "bold geometric poster",
+      "sentenceEn": "The ladder rests against the wall at a safe angle.",
+      "sentenceZh": "梯子以安全的角度靠在墙上。",
+      "scene": "A ladder forms a clear acute angle with level ground as it leans against a vertical wall, beside a contrasting ladder that is dangerously steep, with no written measurements.",
+      "altText": "A ladder leaning against a wall at a clear angle.",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "97097944-91e4-44ab-ba8e-783d66e4b261",
+      "word": "palm",
+      "meaningZh": "手掌；棕榈；胜利",
+      "exampleId": "97097944-91e4-44ab-ba8e-783d66e4b261-visual-ex",
+      "styleFamily": "botanical gouache illustration",
+      "sentenceEn": "She holds the tiny seed carefully in her palm.",
+      "sentenceZh": "她小心地把小种子托在手掌里。",
+      "scene": "A close view of an adult woman's open hand holding one tiny sprouting seed, with all five fingers naturally rendered and the palm as the focal point.",
+      "altText": "A tiny sprouting seed resting in an open palm.",
+      "riskTags": [
+        "hands",
+        "exact_quantity",
+        "scale"
+      ]
+    },
+    {
+      "vocabularyId": "c34f0781-9f22-4ff4-9f7c-a29c44263ae3",
+      "word": "differ",
+      "meaningZh": "不一致；不同；差异",
+      "exampleId": "c34f0781-9f22-4ff4-9f7c-a29c44263ae3-visual-ex",
+      "styleFamily": "screen-print illustration",
+      "sentenceEn": "The two routes differ in distance and terrain.",
+      "sentenceZh": "两条路线在距离和地形上有所不同。",
+      "scene": "Two paths connect the same starting hut and mountain shelter: one is short and steep over rocks, while the other is long and gentle around a meadow.",
+      "altText": "Two routes that differ in distance and terrain.",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "409ce928-7e8d-4a1b-9cdd-51cdf1cbaf9a",
+      "word": "custom",
+      "meaningZh": "习惯；风俗；海关；自定义",
+      "exampleId": "409ce928-7e8d-4a1b-9cdd-51cdf1cbaf9a-visual-ex",
+      "styleFamily": "Chinese folk-art-inspired illustration",
+      "sentenceEn": "Serving tea to elders is a respected local custom.",
+      "sentenceZh": "给长辈敬茶是当地受尊重的风俗。",
+      "scene": "At a Chinese family gathering, a younger adult respectfully offers a cup of tea with both hands to a seated elder while relatives observe warmly.",
+      "altText": "A younger adult following the custom of serving tea to an elder.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "722a19dd-ad32-4bb3-91d8-bab6428254fb",
+      "word": "economist",
+      "meaningZh": "经济学家",
+      "exampleId": "722a19dd-ad32-4bb3-91d8-bab6428254fb-visual-ex",
+      "styleFamily": "mid-century editorial illustration",
+      "sentenceEn": "The economist studies how prices affect household choices.",
+      "sentenceZh": "经济学家研究价格如何影响家庭选择。",
+      "scene": "An adult economist compares baskets of household goods, stacks of coins, and changing purchase choices across three families without any written charts or currency symbols.",
+      "altText": "An economist studying how prices affect household choices.",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "464ecb46-a07f-45af-ac14-52d6ade9fd14",
+      "word": "fifteen",
+      "meaningZh": "十五",
+      "exampleId": "464ecb46-a07f-45af-ac14-52d6ade9fd14-visual-ex",
+      "styleFamily": "clean paper-cut collage",
+      "sentenceEn": "Fifteen oranges fill three equal baskets.",
+      "sentenceZh": "十五个橙子装满三个相同的篮子。",
+      "scene": "Exactly fifteen bright oranges are arranged as three clearly separated equal groups of five in three baskets, with no written numerals.",
+      "altText": "Fifteen oranges arranged in three baskets of five.",
+      "riskTags": [
+        "exact_quantity",
+        "counting",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "007e398c-25c8-4ee1-b062-f682f77d4548",
+      "word": "soup",
+      "meaningZh": "汤",
+      "exampleId": "007e398c-25c8-4ee1-b062-f682f77d4548-visual-ex",
+      "styleFamily": "warm Chinese watercolor illustration",
+      "sentenceEn": "A bowl of hot soup warms the family on a winter evening.",
+      "sentenceZh": "一碗热汤让一家人在冬夜感到温暖。",
+      "scene": "A Chinese family shares steaming vegetable and noodle soup around a wooden table on a snowy evening, with one large serving bowl and individual bowls clearly visible.",
+      "altText": "A family sharing hot soup on a winter evening.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "food"
+      ]
+    },
+    {
+      "vocabularyId": "cb9c2255-4cd0-4363-97fb-bffd57d9b94c",
+      "word": "celebration",
+      "meaningZh": "庆祝",
+      "exampleId": "cb9c2255-4cd0-4363-97fb-bffd57d9b94c-visual-ex",
+      "styleFamily": "Chinese New Year woodblock print",
+      "sentenceEn": "The neighborhood holds a lively celebration after the harvest.",
+      "sentenceZh": "丰收后，街坊举行了热闹的庆祝活动。",
+      "scene": "A Chinese village square hosts a joyful harvest celebration with adult drummers, a lion dance, shared produce, and smiling neighbors, without banners or writing.",
+      "altText": "A village holding a lively harvest celebration.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "08fa5de0-3d05-4d76-b046-cb299917c534",
+      "word": "efficient",
+      "meaningZh": "有效率的；能干的",
+      "exampleId": "08fa5de0-3d05-4d76-b046-cb299917c534-visual-ex",
+      "styleFamily": "isometric editorial illustration",
+      "sentenceEn": "The efficient workshop completes more bicycles with less wasted motion.",
+      "sentenceZh": "高效的车间用更少的无效动作组装更多自行车。",
+      "scene": "A compact bicycle workshop uses a smooth U-shaped workflow where three adults pass parts directly from one station to the next, contrasted with unused scattered paths in the background.",
+      "altText": "An efficient bicycle workshop with a smooth workflow.",
+      "riskTags": [
+        "cause_effect",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9fdaec2d-39dc-4ef2-9047-965e9f6a0ce7",
+      "word": "composition",
+      "meaningZh": "构成；作文",
+      "exampleId": "9fdaec2d-39dc-4ef2-9047-965e9f6a0ce7-visual-ex",
+      "styleFamily": "Chinese ink-wash painting workshop illustration",
+      "sentenceEn": "The painter balances mountain, river, and empty space in the composition.",
+      "sentenceZh": "画家在构图中平衡山、水和留白。",
+      "scene": "An adult Chinese painter arranges a mountain, winding river, pine tree, and broad empty mist on a large blank-edged scroll, visibly adjusting their visual balance with no calligraphy or seals.",
+      "altText": "A painter balancing landscape elements in a composition.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6ade7c60-4c24-49ef-9123-e8ad7d49b818",
+      "word": "satisfy",
+      "meaningZh": "满足；使满意；符合",
+      "exampleId": "6ade7c60-4c24-49ef-9123-e8ad7d49b818-visual-ex",
+      "styleFamily": "gouache editorial illustration",
+      "sentenceEn": "The repaired chair satisfies the customer's needs.",
+      "sentenceZh": "修好的椅子满足了顾客的需要。",
+      "scene": "A craftsperson presents a repaired sturdy chair that meets an adult customer's clear needs for comfort, strength, and the correct height; the customer sits with a satisfied expression.",
+      "altText": "A repaired chair satisfying a customer's needs.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "9973d938-251f-4424-8652-7707f6d4f444",
+      "word": "pile",
+      "meaningZh": "堆；大量；堆积",
+      "exampleId": "9973d938-251f-4424-8652-7707f6d4f444-visual-ex",
+      "styleFamily": "textured linocut illustration",
+      "sentenceEn": "Workers pile the cut logs beside the shed.",
+      "sentenceZh": "工人们把切好的木柴堆在棚屋旁。",
+      "scene": "Two adult forestry workers stack many cut logs into one orderly high pile beside a wooden shed, with several loose logs still being added.",
+      "altText": "Workers stacking cut logs into a high pile.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c26eb8a7-1b4f-4a53-9361-07b53bdb86b3",
+      "word": "briefly",
+      "meaningZh": "简短地",
+      "exampleId": "c26eb8a7-1b4f-4a53-9361-07b53bdb86b3-visual-ex",
+      "styleFamily": "minimal sequential poster",
+      "sentenceEn": "The sun appears briefly between two storm clouds.",
+      "sentenceZh": "太阳在两片暴风云之间短暂出现。",
+      "scene": "Three connected weather moments show dark storm clouds, a very short central opening with sunlight, and clouds closing again, emphasizing the brief interval without clocks or text.",
+      "altText": "Sunlight appearing briefly between storm clouds.",
+      "riskTags": [
+        "sequence",
+        "exact_quantity",
+        "time"
+      ]
+    },
+    {
+      "vocabularyId": "f62c1c20-54ff-41ff-aa1a-23d953f1c9be",
+      "word": "carbon",
+      "meaningZh": "碳；副本；复写纸",
+      "exampleId": "f62c1c20-54ff-41ff-aa1a-23d953f1c9be-visual-ex",
+      "styleFamily": "scientific paper collage",
+      "sentenceEn": "The forest stores carbon that the factory releases into the air.",
+      "sentenceZh": "森林储存工厂排放到空气中的碳。",
+      "scene": "A Chinese bamboo forest visibly holds dark carbon particles inside trunks and soil while a distant factory releases matching particles into the air, linked by a circular natural cycle without labels or symbols.",
+      "altText": "A forest storing carbon while a factory releases it.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "cause_effect",
+        "science"
+      ]
+    },
+    {
+      "vocabularyId": "879cc233-cab7-4d18-8919-6f1e8b6cac54",
+      "word": "closer",
+      "meaningZh": "更近的",
+      "exampleId": "879cc233-cab7-4d18-8919-6f1e8b6cac54-visual-ex",
+      "styleFamily": "layered depth illustration",
+      "sentenceEn": "Each step brings the hiker closer to the lighthouse.",
+      "sentenceZh": "每一步都让徒步者更接近灯塔。",
+      "scene": "The same adult hiker appears at three successive points along a coastal path, each position visibly closer to a large lighthouse at the end.",
+      "altText": "A hiker moving closer to a lighthouse with each step.",
+      "riskTags": [
+        "sequence",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "89418a60-7479-4226-b724-b8ede4548378",
+      "word": "consume",
+      "meaningZh": "消耗；消费；吃掉；耗尽",
+      "exampleId": "89418a60-7479-4226-b724-b8ede4548378-visual-ex",
+      "styleFamily": "bold editorial infographic illustration",
+      "sentenceEn": "The old heater consumes fuel much faster than the new one.",
+      "sentenceZh": "旧暖炉消耗燃料的速度比新暖炉快得多。",
+      "scene": "Two heaters warm identical rooms: the old heater rapidly empties a large stack of fuel while the efficient new heater uses only a small stack, with no gauges or written labels.",
+      "altText": "An old heater consuming more fuel than a new heater.",
+      "riskTags": [
+        "comparison",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "40538c66-a3ff-4ed9-ba40-03bbe51fc54b",
+      "word": "scheme",
+      "meaningZh": "方案；阴谋",
+      "exampleId": "40538c66-a3ff-4ed9-ba40-03bbe51fc54b-visual-ex",
+      "styleFamily": "noir graphic-novel illustration",
+      "sentenceEn": "The investigator uncovers a scheme to switch the valuable painting.",
+      "sentenceZh": "调查员揭露了调包珍贵画作的阴谋。",
+      "scene": "An adult investigator discovers a concealed plan in which two conspirators intend to replace a valuable framed painting with a fake, shown through connected objects and suspicious actions without written notes.",
+      "altText": "An investigator uncovering a scheme to switch a valuable painting.",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "people_face"
+      ]
+    }
+  ]
+}

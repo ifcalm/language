@@ -1,0 +1,371 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3060-3079",
+  "batchId": "auto-rank-3060-3079-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "melt",
+      "suburban",
+      "greet",
+      "corridor",
+      "retail",
+      "march"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "89478b51-d1d2-47de-822b-6f088651c82e",
+      "word": "melt",
+      "meaningZh": "熔化；熔化物；溶解",
+      "exampleId": "89478b51-d1d2-47de-822b-6f088651c82e-visual-ex",
+      "styleFamily": "Chinese dessert-workshop gouache illustration",
+      "sentenceEn": "The warm syrup makes the sugar sculpture melt.",
+      "sentenceZh": "温热的糖浆使糖塑融化。",
+      "scene": "In a traditional Chinese sugar-art workshop, a craftsperson watches the edge of a small amber sugar sculpture soften and melt into a glossy puddle beside a gently warmed bowl; the solid-to-liquid change is unmistakable.",
+      "altText": "Warm syrup causes a sugar sculpture to melt.",
+      "riskTags": [
+        "Chinese_context",
+        "heat",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "bec49fc5-2b34-43d1-81ce-b2c8f451b44f",
+      "word": "midnight",
+      "meaningZh": "午夜",
+      "exampleId": "bec49fc5-2b34-43d1-81ce-b2c8f451b44f-visual-ex",
+      "styleFamily": "atmospheric nocturne digital illustration",
+      "sentenceEn": "The quiet town square is empty at midnight.",
+      "sentenceZh": "午夜时分，安静的城镇广场空无一人。",
+      "scene": "An empty town square under a deep indigo sky, with a round moon directly overhead, closed dark windows and a single softly glowing streetlamp; the stillness and peak-of-night atmosphere clearly suggest midnight without clocks or numbers.",
+      "altText": "An empty town square lies quiet at midnight.",
+      "riskTags": [
+        "night",
+        "empty_scene",
+        "no_clock_text",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "69a290d4-af3c-4fa8-aa2c-d08afa0b246f",
+      "word": "curve",
+      "meaningZh": "曲线；弯曲；曲线球；弯；使弯曲",
+      "exampleId": "69a290d4-af3c-4fa8-aa2c-d08afa0b246f-visual-ex",
+      "styleFamily": "bold geometric landscape illustration",
+      "sentenceEn": "The road follows a gentle curve around the hill.",
+      "sentenceZh": "道路沿着山丘缓缓转弯。",
+      "scene": "A high oblique view of a single road making a broad smooth curve around a green hill, with one small car following the bend and clear continuous lane edges but no road signs or markings with text.",
+      "altText": "A road curves gently around a green hill.",
+      "riskTags": [
+        "road",
+        "vehicle",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "844158f2-e13e-4949-9bc4-639f17e20e19",
+      "word": "integrity",
+      "meaningZh": "正直；廉正；完整；完整性",
+      "exampleId": "844158f2-e13e-4949-9bc4-639f17e20e19-visual-ex",
+      "styleFamily": "warm editorial ink-and-watercolor illustration",
+      "sentenceEn": "She shows integrity by returning the extra change.",
+      "sentenceZh": "她归还多找的钱，表现出正直。",
+      "scene": "At a small market counter, an adult customer notices extra coins in her open palm and deliberately hands them back to the surprised cashier, whose expression shifts to appreciative trust; no price tags or readable labels.",
+      "altText": "A customer returns extra change with integrity.",
+      "riskTags": [
+        "ethics",
+        "people_face",
+        "money",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5df72fe8-b857-472b-b12c-cca73cc4ce1c",
+      "word": "entitle",
+      "meaningZh": "给...权利；取名为；给予名称；叫做",
+      "exampleId": "5df72fe8-b857-472b-b12c-cca73cc4ce1c-visual-ex",
+      "styleFamily": "clean contemporary editorial illustration",
+      "sentenceEn": "The wristband entitles its wearer to enter the exhibition.",
+      "sentenceZh": "这条腕带使佩戴者有权进入展览。",
+      "scene": "At an exhibition entrance, an adult visitor presents a plain colored wristband to an attendant, who opens the rope barrier and gestures them through; another visitor without a wristband waits outside, making the granted right clear.",
+      "altText": "A wristband entitles a visitor to enter an exhibition.",
+      "riskTags": [
+        "access_right",
+        "people_face",
+        "no_readable_badge",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2e962006-476a-451a-ae2e-07cdb2091d8a",
+      "word": "evident",
+      "meaningZh": "显然的；明显的",
+      "exampleId": "2e962006-476a-451a-ae2e-07cdb2091d8a-visual-ex",
+      "styleFamily": "playful mystery-book illustration for adults",
+      "sentenceEn": "The muddy paw prints make it evident that the dog came inside.",
+      "sentenceZh": "泥泞的爪印清楚地表明狗进过屋。",
+      "scene": "A trail of fresh muddy paw prints leads from an open garden door across a clean floor to a sheepish wet dog, while an adult homeowner looks from the obvious evidence to the dog with amused recognition.",
+      "altText": "Muddy paw prints make the dog's entrance evident.",
+      "riskTags": [
+        "animal",
+        "people_face",
+        "evidence",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e1b3cdbc-9cd1-481a-90e2-56654ed7baa2",
+      "word": "logic",
+      "meaningZh": "逻辑",
+      "exampleId": "e1b3cdbc-9cd1-481a-90e2-56654ed7baa2-visual-ex",
+      "styleFamily": "precise isometric puzzle illustration",
+      "sentenceEn": "She uses logic to complete the pattern of shapes.",
+      "sentenceZh": "她运用逻辑补全图形规律。",
+      "scene": "An adult solver at a table studies a neat sequence of colored geometric tiles that changes by one consistent visual rule, then places the only matching final shape into an empty slot; no letters, numbers or symbols.",
+      "altText": "A woman uses logic to complete a shape pattern.",
+      "riskTags": [
+        "reasoning",
+        "people_face",
+        "geometric_shapes",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6d6d32ca-ac54-40c3-a5e1-54621411f863",
+      "word": "essence",
+      "meaningZh": "实质；本质；香精",
+      "exampleId": "6d6d32ca-ac54-40c3-a5e1-54621411f863-visual-ex",
+      "styleFamily": "poetic botanical cut-paper illustration",
+      "sentenceEn": "A single fragrant blossom captures the essence of spring.",
+      "sentenceZh": "一朵芬芳的花抓住了春天的精髓。",
+      "scene": "One luminous blossom in sharp focus embodies spring amid a simplified surrounding cycle of new leaves, gentle rain droplets, warm sunlight and a small emerging butterfly, concentrating the season's defining qualities into the flower.",
+      "altText": "A fragrant blossom captures the essence of spring.",
+      "riskTags": [
+        "symbolic",
+        "botanical",
+        "season",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "bd271644-1e8b-4574-8c58-2e1c7e0c93c6",
+      "word": "exclude",
+      "meaningZh": "除外；排除；排斥；除外(诊断)",
+      "exampleId": "bd271644-1e8b-4574-8c58-2e1c7e0c93c6-visual-ex",
+      "styleFamily": "tactile educational collage illustration",
+      "sentenceEn": "The fine mesh excludes large stones from the sand.",
+      "sentenceZh": "细网把大石块排除在沙子之外。",
+      "scene": "A worker shakes a broad fine-mesh sieve: pale sand falls through into a container below while several large dark stones remain clearly excluded on top of the mesh.",
+      "altText": "A fine mesh excludes large stones from sand.",
+      "riskTags": [
+        "tool",
+        "people_face",
+        "process",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "33686716-044f-4c86-b5b6-4a9943996c25",
+      "word": "harsh",
+      "meaningZh": "粗糙的；刺耳的；严厉的",
+      "exampleId": "33686716-044f-4c86-b5b6-4a9943996c25-visual-ex",
+      "styleFamily": "dramatic textured pastel illustration",
+      "sentenceEn": "The young tree survives the harsh winter wind.",
+      "sentenceZh": "小树熬过了严酷的冬季寒风。",
+      "scene": "A slender young tree bends under fierce icy wind and blowing snow on an exposed hillside, its few remaining leaves whipped sideways while its roots hold firm; the weather feels severe but the scene remains nonviolent.",
+      "altText": "A young tree bends in harsh winter wind.",
+      "riskTags": [
+        "weather",
+        "cold",
+        "non_graphic",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "df7d9651-253a-480e-af13-e5b6b678cd28",
+      "word": "closet",
+      "meaningZh": "壁橱；衣柜",
+      "exampleId": "df7d9651-253a-480e-af13-e5b6b678cd28-visual-ex",
+      "styleFamily": "cozy interior-design illustration",
+      "sentenceEn": "He hangs his coat in the bedroom closet.",
+      "sentenceZh": "他把外套挂进卧室衣柜。",
+      "scene": "An adult man opens a built-in bedroom closet and places a coat on a hanger among neatly arranged clothes, shelves and shoes; the closet doors and recessed storage space are fully visible.",
+      "altText": "A man hangs a coat in a bedroom closet.",
+      "riskTags": [
+        "home",
+        "people_face",
+        "storage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0c0a1f42-38fd-4dc5-93e0-867c4b64021e",
+      "word": "suburban",
+      "meaningZh": "郊区的",
+      "exampleId": "0c0a1f42-38fd-4dc5-93e0-867c4b64021e-visual-ex",
+      "styleFamily": "Chinese suburban neighborhood editorial illustration",
+      "sentenceEn": "They live on a quiet suburban street outside the city.",
+      "sentenceZh": "他们住在城外一条安静的郊区街道上。",
+      "scene": "A quiet Chinese suburban neighborhood at morning: modest low-rise homes with small gardens line a tree-filled street, a family cycles toward a nearby commuter rail stop, and a distant city skyline sits beyond open green space.",
+      "altText": "A family travels along a quiet suburban street.",
+      "riskTags": [
+        "Chinese_context",
+        "neighborhood",
+        "people_face",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "fa7b8ca1-8302-40f1-b4e3-e4e6cc1cc26a",
+      "word": "greet",
+      "meaningZh": "问候；致敬；欢迎；映入眼帘",
+      "exampleId": "fa7b8ca1-8302-40f1-b4e3-e4e6cc1cc26a-visual-ex",
+      "styleFamily": "festive Chinese family watercolor illustration",
+      "sentenceEn": "The hosts greet their guests at the front door.",
+      "sentenceZh": "主人们在门口迎接客人。",
+      "scene": "At the open front door of a Chinese family home prepared for a seasonal gathering, two adult hosts smile, wave and extend welcoming hands toward arriving guests carrying a plain gift box; decorations are abstract and contain no characters.",
+      "altText": "Hosts warmly greet guests at their front door.",
+      "riskTags": [
+        "Chinese_context",
+        "greeting",
+        "people_face",
+        "no_characters",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "152c91ca-ab5b-46b7-9a7a-4858ec2f0372",
+      "word": "interior",
+      "meaningZh": "内部；内政",
+      "exampleId": "152c91ca-ab5b-46b7-9a7a-4858ec2f0372-visual-ex",
+      "styleFamily": "architectural cutaway illustration",
+      "sentenceEn": "The cabin has a warm and comfortable interior.",
+      "sentenceZh": "这间小屋的内部温暖舒适。",
+      "scene": "A clean cutaway view removes one wall of a small wooden cabin to reveal its warm interior: a glowing fireplace, comfortable chair, woven rug, wooden table and soft lamp contrast with the cold exterior.",
+      "altText": "A cutaway reveals the warm interior of a cabin.",
+      "riskTags": [
+        "architecture",
+        "cutaway",
+        "fireplace",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2fae9e8f-e708-49b5-b07a-4ddb003f7cd7",
+      "word": "corridor",
+      "meaningZh": "走廊；回廊；人口密集地带",
+      "exampleId": "2fae9e8f-e708-49b5-b07a-4ddb003f7cd7-visual-ex",
+      "styleFamily": "Chinese courtyard architectural ink illustration",
+      "sentenceEn": "A covered corridor connects the two halls.",
+      "sentenceZh": "一条有顶走廊连接着两座厅堂。",
+      "scene": "In a traditional Chinese courtyard complex, a long roofed corridor with repeating wooden columns clearly links one hall to another across the garden; one adult walks through it for scale, with no plaques or calligraphy.",
+      "altText": "A covered corridor connects two courtyard halls.",
+      "riskTags": [
+        "Chinese_context",
+        "architecture",
+        "people_face",
+        "no_calligraphy",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e94d19cf-291f-4661-a0c6-b978410236e8",
+      "word": "retail",
+      "meaningZh": "零售；零售的",
+      "exampleId": "e94d19cf-291f-4661-a0c6-b978410236e8-visual-ex",
+      "styleFamily": "lively Chinese neighborhood-shop illustration",
+      "sentenceEn": "The shop sells tea directly to retail customers.",
+      "sentenceZh": "这家商店直接向零售顾客售卖茶叶。",
+      "scene": "Inside a small Chinese neighborhood tea shop, a shopkeeper hands one sealed unmarked tea packet to an individual customer at the counter while shelves display many plain packets behind them, clearly showing direct retail sale rather than bulk shipping.",
+      "altText": "A tea shop sells directly to a retail customer.",
+      "riskTags": [
+        "Chinese_context",
+        "commerce",
+        "people_face",
+        "unmarked_packaging",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4966631e-c7f9-41e4-924b-4148974690d3",
+      "word": "pitcher",
+      "meaningZh": "投手（棒球）；水罐",
+      "exampleId": "4966631e-c7f9-41e4-924b-4148974690d3-visual-ex",
+      "styleFamily": "dynamic screen-print sports illustration",
+      "sentenceEn": "The pitcher throws the ball toward home plate.",
+      "sentenceZh": "投手把球投向本垒。",
+      "scene": "A baseball pitcher stands on the mound in a powerful full-body throwing motion, one foot planted and the ball just released toward a distant catcher at home plate; uniforms are plain with no letters, numbers or logos.",
+      "altText": "A baseball pitcher throws toward home plate.",
+      "riskTags": [
+        "sports",
+        "people_face",
+        "no_uniform_text",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c0029a6a-80eb-4ea8-9056-f95f939e1697",
+      "word": "march",
+      "meaningZh": "行军；游行；三月",
+      "exampleId": "c0029a6a-80eb-4ea8-9056-f95f939e1697-visual-ex",
+      "styleFamily": "Chinese community-festival linocut illustration",
+      "sentenceEn": "The musicians march together through the square.",
+      "sentenceZh": "乐手们列队走过广场。",
+      "scene": "A community percussion group in a Chinese public square marches forward in synchronized steps while playing drums and cymbals; their bodies clearly advance as an organized procession, and all banners and clothing remain blank.",
+      "altText": "Musicians march together through a public square.",
+      "riskTags": [
+        "Chinese_context",
+        "procession",
+        "people_face",
+        "blank_banners",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "41b1ffed-fbf4-4cba-b7ee-1d4574f78572",
+      "word": "snake",
+      "meaningZh": "蛇；阴险的人；曲折行进",
+      "exampleId": "41b1ffed-fbf4-4cba-b7ee-1d4574f78572-visual-ex",
+      "styleFamily": "natural-history colored-pencil illustration",
+      "sentenceEn": "A green snake moves silently through the tall grass.",
+      "sentenceZh": "一条青蛇悄无声息地穿过高草。",
+      "scene": "A clearly recognizable slender green snake forms a smooth S-shaped path through tall meadow grass, head raised slightly and tongue tasting the air, shown at a respectful natural distance with no threatening attack.",
+      "altText": "A green snake moves through tall grass.",
+      "riskTags": [
+        "animal",
+        "reptile",
+        "non_threatening",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "684ec053-5a0d-4e00-97ab-092aec279010",
+      "word": "excuse",
+      "meaningZh": "原谅；申辩；做为...的托辞",
+      "exampleId": "684ec053-5a0d-4e00-97ab-092aec279010-visual-ex",
+      "styleFamily": "expressive workplace editorial illustration",
+      "sentenceEn": "Please excuse me for interrupting the meeting.",
+      "sentenceZh": "请原谅我打断会议。",
+      "scene": "An apologetic adult pauses at an open meeting-room door with one hand raised gently, while several seated colleagues turn toward them with calm, understanding expressions; the interruption and request for pardon are clear without speech bubbles.",
+      "altText": "A person asks to be excused for interrupting a meeting.",
+      "riskTags": [
+        "workplace",
+        "people_face",
+        "social_interaction",
+        "no_speech_bubbles",
+        "no_text"
+      ]
+    }
+  ]
+}

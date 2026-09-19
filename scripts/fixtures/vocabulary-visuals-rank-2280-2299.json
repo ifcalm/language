@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2280-2299",
+  "batchId": "auto-rank-2280-2299-20260820",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "onion",
+      "deputy",
+      "award",
+      "highway",
+      "routine",
+      "wage"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "a9d6578f-89a7-44d2-a113-29048e0d2211",
+      "word": "onion",
+      "meaningZh": "洋葱",
+      "exampleId": "a9d6578f-89a7-44d2-a113-29048e0d2211-visual-ex",
+      "styleFamily": "Chinese market kitchen watercolor illustration",
+      "sentenceEn": "The cook sliced an onion for the evening noodle soup.",
+      "sentenceZh": "厨师切了一个洋葱，准备晚上的汤面。",
+      "scene": "At a Chinese neighborhood noodle kitchen, an adult cook slices one large onion beside broth, greens, and handmade noodles while evening customers arrive.",
+      "altText": "厨师为晚间汤面切洋葱",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "69d6721a-cfd8-4a6b-b5a7-b8182fd02e15",
+      "word": "deputy",
+      "meaningZh": "副手；代理人",
+      "exampleId": "69d6721a-cfd8-4a6b-b5a7-b8182fd02e15-visual-ex",
+      "styleFamily": "Chinese flood-response editorial illustration",
+      "sentenceEn": "The deputy coordinated rescue boats while the director checked shelters.",
+      "sentenceZh": "副手协调救援船只，主管则检查安置点。",
+      "scene": "During a Chinese flood-response exercise, the deputy coordinates rescue boats at the river landing while the director departs toward shelters, showing distinct shared leadership roles.",
+      "altText": "防汛演练中副手协调救援船只",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "327fdbe0-4684-46ff-bee6-a299e01709b3",
+      "word": "flat",
+      "meaningZh": "平坦的；单调的；无力的；浅的；萧条的",
+      "exampleId": "327fdbe0-4684-46ff-bee6-a299e01709b3-visual-ex",
+      "styleFamily": "clear construction gouache illustration",
+      "sentenceEn": "Workers made the path flat enough for wheelchairs and carts.",
+      "sentenceZh": "工人把道路铺得足够平坦，方便轮椅和推车通行。",
+      "scene": "Workers finish a broad flat park path, checking the smooth level surface as a wheelchair user and a parent with a cart test it comfortably.",
+      "altText": "平坦公园道路方便轮椅和推车通行",
+      "riskTags": [
+        "people_face",
+        "spatial_relationship",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "8fa4e151-96fd-440e-b594-8ea7ffe3e102",
+      "word": "brand",
+      "meaningZh": "商标；牌子；烙印；打烙印于",
+      "exampleId": "8fa4e151-96fd-440e-b594-8ea7ffe3e102-visual-ex",
+      "styleFamily": "ethical business editorial illustration",
+      "sentenceEn": "The cooperative built its brand through consistent quality and fair trade.",
+      "sentenceZh": "这家合作社凭借稳定品质和公平贸易建立品牌。",
+      "scene": "A craft cooperative inspects consistently made baskets and packages them with one distinctive woven blue band while producers and customers shake hands, with no logos or text.",
+      "altText": "手工合作社以稳定品质建立品牌认知",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "512ab5dd-df5d-4d86-a3b7-33ffbb896f73",
+      "word": "assure",
+      "meaningZh": "保证；使确信；弄清楚；担保",
+      "exampleId": "512ab5dd-df5d-4d86-a3b7-33ffbb896f73-visual-ex",
+      "styleFamily": "calm medical editorial illustration",
+      "sentenceEn": "The surgeon took time to assure the patient that every safety check was complete.",
+      "sentenceZh": "外科医生耐心向患者保证所有安全检查均已完成。",
+      "scene": "A surgeon sits at eye level with an anxious patient, calmly reviewing plain physical safety items and offering a reassuring expression before a planned procedure.",
+      "altText": "医生耐心向患者保证安全检查已完成",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "87ae2e22-2b2b-49d4-ae72-a69d1c20bc9d",
+      "word": "mad",
+      "meaningZh": "疯狂的；生气的；狂热的；着迷的",
+      "exampleId": "87ae2e22-2b2b-49d4-ae72-a69d1c20bc9d-visual-ex",
+      "styleFamily": "emotionally clear watercolor illustration",
+      "sentenceEn": "She was mad when careless movers scratched the restored table.",
+      "sentenceZh": "粗心的搬运工刮伤修复好的桌子后，她很生气。",
+      "scene": "An adult owner shows clear but controlled anger at a fresh scratch across a restored wooden table while the movers stop, listen, and prepare to repair the damage.",
+      "altText": "修复好的桌子被刮伤让主人很生气",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "36e395fc-b861-4d57-a70d-42c48d6a3f23",
+      "word": "award",
+      "meaningZh": "奖品；裁定；判决；授予；给予",
+      "exampleId": "36e395fc-b861-4d57-a70d-42c48d6a3f23-visual-ex",
+      "styleFamily": "Chinese craft ceremony gouache illustration",
+      "sentenceEn": "The young potter received an award for reviving a traditional glaze.",
+      "sentenceZh": "年轻陶艺家因复兴传统釉色而获奖。",
+      "scene": "At a Chinese ceramics gathering, a young potter receives a simple medal and flowers beside her traditional-glaze vessel as senior craftspeople applaud, with no banners or logos.",
+      "altText": "年轻陶艺家因复兴传统釉色获得奖项",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "316611ef-884f-4790-8e74-7f3cf611725d",
+      "word": "criteria",
+      "meaningZh": "标准；准则",
+      "exampleId": "316611ef-884f-4790-8e74-7f3cf611725d-visual-ex",
+      "styleFamily": "product-testing editorial illustration",
+      "sentenceEn": "Durability, comfort, and repairability were the main criteria for the chair.",
+      "sentenceZh": "耐用、舒适和易维修是评选椅子的主要标准。",
+      "scene": "Judges physically test three chair prototypes for stability, sitting comfort, and replaceable joints, using actions and tools rather than written scorecards to show the criteria.",
+      "altText": "评审按耐用舒适和易维修标准测试椅子",
+      "riskTags": [
+        "comparison",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "31c241a7-4621-4eab-af99-4c392f2f24ee",
+      "word": "dealer",
+      "meaningZh": "经销商",
+      "exampleId": "31c241a7-4621-4eab-af99-4c392f2f24ee-visual-ex",
+      "styleFamily": "friendly bicycle-shop watercolor illustration",
+      "sentenceEn": "The bicycle dealer adjusted the seat before the customer tested the bike.",
+      "sentenceZh": "自行车经销商在顾客试骑前调整了座椅。",
+      "scene": "Inside a logo-free bicycle shop, a dealer adjusts the seat height and checks the brakes while an adult customer stands ready with a helmet.",
+      "altText": "自行车经销商为顾客调整座椅",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "857c65aa-48c6-4626-af6c-cb96659dcc40",
+      "word": "via",
+      "meaningZh": "经由；经过",
+      "exampleId": "857c65aa-48c6-4626-af6c-cb96659dcc40-visual-ex",
+      "styleFamily": "logistics editorial illustration",
+      "sentenceEn": "Fresh produce reached the city via an overnight freight train.",
+      "sentenceZh": "新鲜农产品经由夜间货运列车运抵城市。",
+      "scene": "At dawn, crates of fresh produce are unloaded from an overnight freight train directly into city market carts, making the route via rail visually clear.",
+      "altText": "新鲜农产品经由夜间列车运抵城市",
+      "riskTags": [
+        "sequence",
+        "many_objects",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "40953cbd-b49f-41e8-983e-515b3381aa89",
+      "word": "utility",
+      "meaningZh": "公用事业；实用；工具；效用",
+      "exampleId": "40953cbd-b49f-41e8-983e-515b3381aa89-visual-ex",
+      "styleFamily": "public-infrastructure gouache illustration",
+      "sentenceEn": "The local utility restored electricity after the ice storm.",
+      "sentenceZh": "当地公用事业部门在冰暴后恢复了供电。",
+      "scene": "Utility crews safely repair ice-damaged power lines while homes regain warm window light one block at a time under clearing winter skies.",
+      "altText": "公用事业人员在冰暴后恢复供电",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "0832e57c-7d99-4a00-a9c4-8f37fa5cb5f6",
+      "word": "precisely",
+      "meaningZh": "精确地",
+      "exampleId": "0832e57c-7d99-4a00-a9c4-8f37fa5cb5f6-visual-ex",
+      "styleFamily": "precision carpentry editorial illustration",
+      "sentenceEn": "The carpenter cut each joint precisely so the frame fit without gaps.",
+      "sentenceZh": "木匠精确切割每个接头，使框架严丝合缝。",
+      "scene": "A carpenter measures and cuts a timber joint precisely, then fits two pieces together with perfectly flush edges beside a square and fine hand saw.",
+      "altText": "木匠精确切割接头使木框严密吻合",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "concentrate"
+      ]
+    },
+    {
+      "vocabularyId": "c6cb11b0-9dd4-470f-9136-07282dc645c9",
+      "word": "arise",
+      "meaningZh": "站立；出现；起来",
+      "exampleId": "c6cb11b0-9dd4-470f-9136-07282dc645c9-visual-ex",
+      "styleFamily": "forest-floor naturalist illustration",
+      "sentenceEn": "Mushrooms arise from the damp forest floor after autumn rain.",
+      "sentenceZh": "秋雨过后，蘑菇从潮湿林地中冒出。",
+      "scene": "After autumn rain, clusters of mushrooms arise through wet leaves and moss while a naturalist kneels nearby without touching them.",
+      "altText": "秋雨后蘑菇从潮湿林地冒出",
+      "riskTags": [
+        "small_object",
+        "landscape",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "cfe07e99-b4f0-45a6-ae0b-b726a03c1930",
+      "word": "armed",
+      "meaningZh": "武装的；携带武器的",
+      "exampleId": "cfe07e99-b4f0-45a6-ae0b-b726a03c1930-visual-ex",
+      "styleFamily": "nonviolent technology editorial illustration",
+      "sentenceEn": "The research drone was armed with cameras and weather sensors.",
+      "sentenceZh": "这架研究无人机配备了摄像头和气象传感器。",
+      "scene": "Scientists prepare a research drone equipped only with multiple cameras and weather sensors before a safe flight over a glacier, with no weapons or military markings.",
+      "altText": "研究无人机配备摄像头和气象传感器",
+      "riskTags": [
+        "small_object",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "3703b51e-1dd5-446d-b315-c758a869fad1",
+      "word": "nevertheless",
+      "meaningZh": "然而；虽然如此",
+      "exampleId": "3703b51e-1dd5-446d-b315-c758a869fad1-visual-ex",
+      "styleFamily": "resilient community watercolor illustration",
+      "sentenceEn": "Rain soaked the site; nevertheless, volunteers continued planting trees.",
+      "sentenceZh": "雨水浸透了现场，然而志愿者仍继续植树。",
+      "scene": "Steady rain drenches a community planting site; nevertheless, adult volunteers in rain gear keep placing young trees into prepared holes with determined warm expressions.",
+      "altText": "尽管下雨志愿者仍继续植树",
+      "riskTags": [
+        "weather",
+        "many_people",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "47a04df5-7484-45af-a240-5b587076d500",
+      "word": "highway",
+      "meaningZh": "公路；高速公路",
+      "exampleId": "47a04df5-7484-45af-a240-5b587076d500-visual-ex",
+      "styleFamily": "Chinese mountain infrastructure illustration",
+      "sentenceEn": "The new highway crossed the mountains through tunnels and bridges.",
+      "sentenceZh": "新公路通过隧道和桥梁穿越群山。",
+      "scene": "A modern Chinese mountain highway curves across a valley bridge and enters a tunnel, carefully threading through steep forested terrain with light traffic.",
+      "altText": "高速公路通过桥梁和隧道穿越中国群山",
+      "riskTags": [
+        "landscape",
+        "spatial_relationship",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "899f62e7-c296-48c0-ab45-8d48736f5618",
+      "word": "clinical",
+      "meaningZh": "临床的",
+      "exampleId": "899f62e7-c296-48c0-ab45-8d48736f5618-visual-ex",
+      "styleFamily": "ethical health-research editorial illustration",
+      "sentenceEn": "The clinical study monitored patients under careful medical supervision.",
+      "sentenceZh": "这项临床研究在严密医疗监督下监测患者。",
+      "scene": "In a calm hospital research room, diverse adult patients undergo noninvasive checks while clinicians monitor comfort, collect samples, and explain each step with blank forms.",
+      "altText": "临床研究在医护监督下进行安全监测",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "e51b1636-f049-4e5e-9e59-7444e8802c2a",
+      "word": "routine",
+      "meaningZh": "常规；日常工作；惯例；例行公事",
+      "exampleId": "e51b1636-f049-4e5e-9e59-7444e8802c2a-visual-ex",
+      "styleFamily": "Chinese morning-life watercolor illustration",
+      "sentenceEn": "Tai chi became part of her daily routine.",
+      "sentenceZh": "太极拳成了她日常生活的一部分。",
+      "scene": "At sunrise in a Chinese park, an older woman practices tai chi in the same peaceful spot as neighbors walk, stretch, and prepare tea, conveying a steady daily routine.",
+      "altText": "老人每天清晨在公园练太极",
+      "riskTags": [
+        "people_face",
+        "motion",
+        "many_people"
+      ]
+    },
+    {
+      "vocabularyId": "4e41e03e-bae0-4199-87a6-c0f3b13a2eae",
+      "word": "wage",
+      "meaningZh": "工资",
+      "exampleId": "4e41e03e-bae0-4199-87a6-c0f3b13a2eae-visual-ex",
+      "styleFamily": "Chinese workshop editorial illustration",
+      "sentenceEn": "The workshop paid every craft worker a fair wage.",
+      "sentenceZh": "这家作坊向每位手艺人支付公平工资。",
+      "scene": "At a Chinese textile workshop, the owner hands equal plain pay envelopes to craft workers after finished cloth is inspected, while everyone reviews the transparent distribution without readable figures.",
+      "altText": "纺织作坊向每位工匠支付公平工资",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "ad0937da-0767-4b9d-b44c-80004621d25d",
+      "word": "normally",
+      "meaningZh": "正常地",
+      "exampleId": "ad0937da-0767-4b9d-b44c-80004621d25d-visual-ex",
+      "styleFamily": "nocturnal animal watercolor illustration",
+      "sentenceEn": "The owl normally sleeps in the hollow tree during daylight.",
+      "sentenceZh": "猫头鹰通常白天在树洞里睡觉。",
+      "scene": "In bright daytime woodland, an owl normally rests with closed eyes inside a shaded hollow tree while daytime birds move outside.",
+      "altText": "猫头鹰通常白天在树洞中休息",
+      "riskTags": [
+        "animal_anatomy",
+        "lighting",
+        "spatial_relationship"
+      ]
+    }
+  ]
+}

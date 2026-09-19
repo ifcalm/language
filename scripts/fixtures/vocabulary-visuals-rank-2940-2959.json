@@ -1,0 +1,369 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2940-2959",
+  "batchId": "auto-rank-2940-2959-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "courage",
+      "reinforce",
+      "occupation",
+      "sacred",
+      "collective",
+      "uncle"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "dcc3bd8f-87d1-4b51-9237-d4174b790f0f",
+      "word": "pie",
+      "meaningZh": "馅饼；派",
+      "exampleId": "dcc3bd8f-87d1-4b51-9237-d4174b790f0f-visual-ex",
+      "styleFamily": "cozy food-still-life illustration",
+      "sentenceEn": "She removes a golden apple pie from the oven.",
+      "sentenceZh": "她从烤箱里取出一个金黄的苹果派。",
+      "scene": "An adult baker wearing oven mitts sets a round golden apple pie with a woven lattice crust onto a wooden cooling board, with gentle steam rising from the fresh pastry.",
+      "altText": "A baker places a freshly baked apple pie on a cooling board.",
+      "riskTags": [
+        "food",
+        "heat",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5144654c-18c4-4148-944c-5b89382cf13e",
+      "word": "sake",
+      "meaningZh": "缘故；目的",
+      "exampleId": "5144654c-18c4-4148-944c-5b89382cf13e-visual-ex",
+      "styleFamily": "clear cause-and-purpose editorial illustration",
+      "sentenceEn": "For the sake of the garden, she collects rainwater.",
+      "sentenceZh": "为了花园，她收集雨水。",
+      "scene": "An adult gardener directs rain from a roof gutter into a large barrel and then uses the stored water on healthy vegetable beds, clearly connecting her effort to the garden's benefit.",
+      "altText": "A gardener collects rainwater for the sake of her garden.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "2dc6edd1-6db1-4a94-8f86-79d10d631bd9",
+      "word": "gaze",
+      "meaningZh": "注视；凝视",
+      "exampleId": "2dc6edd1-6db1-4a94-8f86-79d10d631bd9-visual-ex",
+      "styleFamily": "luminous night-sky watercolor illustration",
+      "sentenceEn": "They gaze at the bright comet crossing the night sky.",
+      "sentenceZh": "他们凝视着划过夜空的明亮彗星。",
+      "scene": "Two adult stargazers stand quietly on a dark hill and look steadily upward at a brilliant comet arching through a star-filled sky, their faces and eyes clearly directed toward it.",
+      "altText": "Two stargazers gaze upward at a bright comet.",
+      "riskTags": [
+        "gaze_direction",
+        "people_face",
+        "night_scene",
+        "astronomy"
+      ]
+    },
+    {
+      "vocabularyId": "ca234b48-d15f-4bf1-a225-612b957a0f66",
+      "word": "courage",
+      "meaningZh": "勇气；胆量",
+      "exampleId": "ca234b48-d15f-4bf1-a225-612b957a0f66-visual-ex",
+      "styleFamily": "dramatic Chinese stage-poster illustration",
+      "sentenceEn": "She gathers the courage to step onto the stage alone.",
+      "sentenceZh": "她鼓起勇气独自走上舞台。",
+      "scene": "A young adult Chinese opera performer pauses nervously behind a red curtain, takes a steady breath, and then steps alone into the warm stage light with a determined natural expression.",
+      "altText": "A Chinese opera performer finds the courage to step onstage alone.",
+      "riskTags": [
+        "abstract_meaning",
+        "before_after",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "230bebe3-a36b-4b35-b40f-70855be45147",
+      "word": "pregnancy",
+      "meaningZh": "怀孕",
+      "exampleId": "230bebe3-a36b-4b35-b40f-70855be45147-visual-ex",
+      "styleFamily": "gentle healthcare editorial illustration",
+      "sentenceEn": "She attends a routine appointment during her pregnancy.",
+      "sentenceZh": "她在怀孕期间参加常规检查。",
+      "scene": "A visibly pregnant adult sits comfortably in a calm clinic while a doctor listens near her abdomen with a handheld device and her supportive partner sits beside her, all fully clothed.",
+      "altText": "A pregnant woman attends a calm routine prenatal appointment.",
+      "riskTags": [
+        "medical",
+        "pregnancy",
+        "people_face",
+        "respectful_body",
+        "non_graphic"
+      ]
+    },
+    {
+      "vocabularyId": "ae6b7bc5-3e19-4b7c-92e6-3caa1dced28b",
+      "word": "swear",
+      "meaningZh": "发誓；咒骂",
+      "exampleId": "ae6b7bc5-3e19-4b7c-92e6-3caa1dced28b-visual-ex",
+      "styleFamily": "formal civic editorial illustration",
+      "sentenceEn": "The witness raises her hand to swear that she will tell the truth.",
+      "sentenceZh": "证人举手发誓会说出真相。",
+      "scene": "In a formal hearing room, an adult witness stands upright with one hand raised and a solemn natural expression while an official observes, conveying a serious spoken oath.",
+      "altText": "A witness raises her hand to swear a formal oath.",
+      "riskTags": [
+        "oath",
+        "people_face",
+        "raised_hand",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "60c3220d-02a2-4641-b478-244bc0d03c64",
+      "word": "defeat",
+      "meaningZh": "败北；失败；击败；使落空",
+      "exampleId": "60c3220d-02a2-4641-b478-244bc0d03c64-visual-ex",
+      "styleFamily": "respectful sports editorial illustration",
+      "sentenceEn": "The team accepts defeat and congratulates the winners.",
+      "sentenceZh": "这支队伍接受失败并向获胜者表示祝贺。",
+      "scene": "After a close volleyball match, adult players from the losing team shake hands with the winners across the net, showing disappointment with dignity and mutual respect.",
+      "altText": "Volleyball players accept defeat and congratulate the winning team.",
+      "riskTags": [
+        "competition",
+        "people_face",
+        "hands",
+        "respectful_emotion"
+      ]
+    },
+    {
+      "vocabularyId": "0f51aa8d-96b5-438c-a643-8c5e88787380",
+      "word": "clue",
+      "meaningZh": "线索；暗示；提供线索",
+      "exampleId": "0f51aa8d-96b5-438c-a643-8c5e88787380-visual-ex",
+      "styleFamily": "playful mystery editorial illustration",
+      "sentenceEn": "A muddy footprint gives her the final clue to find the missing keys.",
+      "sentenceZh": "一个泥脚印为她找到丢失钥匙提供了最后线索。",
+      "scene": "An adult investigator kneels beside one clear muddy footprint leading from a garden door toward a flowerpot, where a small keyring is partly visible beneath the leaves.",
+      "altText": "A muddy footprint provides a clue leading to missing keys.",
+      "riskTags": [
+        "cause_effect",
+        "spatial_relation",
+        "people_face",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "4fa3c5e4-d2ea-43c1-b64f-e4a1ce5f7aee",
+      "word": "reinforce",
+      "meaningZh": "加强；增援；补充",
+      "exampleId": "4fa3c5e4-d2ea-43c1-b64f-e4a1ce5f7aee-visual-ex",
+      "styleFamily": "architectural restoration ink illustration",
+      "sentenceEn": "The workers reinforce the old bridge with new supports.",
+      "sentenceZh": "工人们用新的支撑加固这座古桥。",
+      "scene": "Skilled adult workers restore a traditional Chinese covered bridge by adding strong diagonal timber braces beneath a weakened span, with temporary scaffolding and safety gear clearly visible.",
+      "altText": "Workers reinforce a traditional Chinese bridge with diagonal timber supports.",
+      "riskTags": [
+        "construction",
+        "before_after",
+        "people_face",
+        "protective_gear",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "623bca5f-7b1a-47af-85c1-6ccfd704a3b3",
+      "word": "confusion",
+      "meaningZh": "困惑；混淆",
+      "exampleId": "623bca5f-7b1a-47af-85c1-6ccfd704a3b3-visual-ex",
+      "styleFamily": "expressive conceptual editorial illustration",
+      "sentenceEn": "The conflicting directions leave the traveler in confusion.",
+      "sentenceZh": "相互矛盾的方向让旅行者感到困惑。",
+      "scene": "At a fork with several winding paths, an adult traveler turns a blank map in different directions and looks between mismatched arrow-shaped signboards with a puzzled expression.",
+      "altText": "A traveler experiences confusion at a maze of conflicting paths.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "spatial_relation",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "15fd661d-643d-42f2-b4ae-e702e55a3b5f",
+      "word": "slice",
+      "meaningZh": "薄片；切片；一份",
+      "exampleId": "15fd661d-643d-42f2-b4ae-e702e55a3b5f-visual-ex",
+      "styleFamily": "fresh culinary gouache illustration",
+      "sentenceEn": "He cuts a thin slice from the ripe orange.",
+      "sentenceZh": "他从成熟的橙子上切下一片薄片。",
+      "scene": "On a clean kitchen board, an adult cook uses a small knife to cut one thin circular slice from a ripe orange, with the separated slice clearly visible beside the remaining fruit.",
+      "altText": "A cook cuts one thin slice from a ripe orange.",
+      "riskTags": [
+        "food",
+        "sharp_tool",
+        "hands",
+        "single_object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "c87807da-185d-4098-a61d-e242020c9c9c",
+      "word": "occupation",
+      "meaningZh": "职业；占有；占有期；占领；占领军",
+      "exampleId": "c87807da-185d-4098-a61d-e242020c9c9c-visual-ex",
+      "styleFamily": "warm craft-workshop watercolor illustration",
+      "sentenceEn": "Pottery is her chosen occupation and daily craft.",
+      "sentenceZh": "制陶是她选择的职业，也是每日从事的手艺。",
+      "scene": "An adult Chinese ceramicist works confidently at a pottery wheel in her professional studio, surrounded by finished bowls, clay tools, shelves, and a kiln that establish her daily occupation.",
+      "altText": "A Chinese ceramicist practices pottery as her professional occupation.",
+      "riskTags": [
+        "profession",
+        "people_face",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "557fdff3-6e82-423e-b779-ae7ca52b2f2d",
+      "word": "dear",
+      "meaningZh": "亲爱的人",
+      "exampleId": "557fdff3-6e82-423e-b779-ae7ca52b2f2d-visual-ex",
+      "styleFamily": "tender colored-pencil family illustration",
+      "sentenceEn": "Her grandfather is very dear to her.",
+      "sentenceZh": "祖父对她来说非常亲爱而珍贵。",
+      "scene": "An adult granddaughter warmly embraces her elderly grandfather at a train platform reunion, and both show affectionate natural expressions while holding each other closely.",
+      "altText": "A granddaughter warmly embraces a grandfather who is dear to her.",
+      "riskTags": [
+        "abstract_meaning",
+        "family_affection",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "33fd4ad9-3252-4bbd-bcdb-cd0fb2b895cb",
+      "word": "coal",
+      "meaningZh": "煤；木炭；加煤",
+      "exampleId": "33fd4ad9-3252-4bbd-bcdb-cd0fb2b895cb-visual-ex",
+      "styleFamily": "earth-science cutaway illustration",
+      "sentenceEn": "The geologist examines a piece of coal from the dark rock layer.",
+      "sentenceZh": "地质学家检查从深色岩层中取得的一块煤。",
+      "scene": "At a safe exposed rock face, an adult geologist in protective gear holds one black glossy piece of coal beside the dark seam it came from, with surrounding sediment layers visible.",
+      "altText": "A geologist examines coal beside a dark seam in layered rock.",
+      "riskTags": [
+        "geology",
+        "people_face",
+        "protective_gear",
+        "material_reference"
+      ]
+    },
+    {
+      "vocabularyId": "f18119ba-aebd-4842-a35d-b0683ec636a7",
+      "word": "sacred",
+      "meaningZh": "神圣的；献给上帝的；庄严的；祭祀的",
+      "exampleId": "f18119ba-aebd-4842-a35d-b0683ec636a7-visual-ex",
+      "styleFamily": "serene Chinese ink-and-gold illustration",
+      "sentenceEn": "Visitors treat the mountain temple as a sacred place.",
+      "sentenceZh": "访客把这座山间寺庙视为神圣之地。",
+      "scene": "At dawn, respectful adult visitors pause quietly before entering an old Chinese mountain temple courtyard, lowering their voices and bowing slightly beneath ancient trees and soft lantern light.",
+      "altText": "Visitors respectfully approach a sacred Chinese mountain temple.",
+      "riskTags": [
+        "religious_context",
+        "people_face",
+        "respectful_representation",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "1159b852-d803-45be-a326-2f7531a54927",
+      "word": "formula",
+      "meaningZh": "公式；方案；配方；方程式",
+      "exampleId": "1159b852-d803-45be-a326-2f7531a54927-visual-ex",
+      "styleFamily": "clean process-diagram illustration",
+      "sentenceEn": "The baker tests a new formula for the bread dough.",
+      "sentenceZh": "面包师测试一种新的面团配方。",
+      "scene": "An adult baker combines measured portions of flour, water, and yeast from three plain bowls into one mixing bowl, then compares the resulting risen dough with a flatter earlier batch.",
+      "altText": "A baker follows a formula by combining measured bread ingredients.",
+      "riskTags": [
+        "process",
+        "cause_effect",
+        "comparison",
+        "hands",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "7a7f7dc9-ac7a-4569-b298-aa9ad8230579",
+      "word": "cognitive",
+      "meaningZh": "认知的；认识的",
+      "exampleId": "7a7f7dc9-ac7a-4569-b298-aa9ad8230579-visual-ex",
+      "styleFamily": "sophisticated neural-collage illustration",
+      "sentenceEn": "The puzzle requires careful cognitive effort and memory.",
+      "sentenceZh": "这道谜题需要仔细的认知努力和记忆。",
+      "scene": "An adult concentrates on arranging complex geometric pieces into a matching spatial pattern, while subtle branching light shapes around the head suggest attention, memory, and reasoning.",
+      "altText": "A person uses cognitive skills to solve a complex spatial puzzle.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands",
+        "spatial_reasoning"
+      ]
+    },
+    {
+      "vocabularyId": "a6ef3479-696e-4abc-a93d-cc9c318690c4",
+      "word": "collective",
+      "meaningZh": "集体的",
+      "exampleId": "a6ef3479-696e-4abc-a93d-cc9c318690c4-visual-ex",
+      "styleFamily": "panoramic rural mural illustration",
+      "sentenceEn": "The harvest is a collective effort by the whole village.",
+      "sentenceZh": "这场收获是全村人的集体努力。",
+      "scene": "Adults of different ages work together across a Chinese rice terrace, cutting ripe stalks, bundling sheaves, carrying baskets, and stacking the harvest as one coordinated community.",
+      "altText": "A Chinese village completes the rice harvest through collective effort.",
+      "riskTags": [
+        "group_action",
+        "people_face",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "1470242f-798c-4ca5-b88d-a8f874fe09c8",
+      "word": "exact",
+      "meaningZh": "精确的；准确的；精密的",
+      "exampleId": "1470242f-798c-4ca5-b88d-a8f874fe09c8-visual-ex",
+      "styleFamily": "precise minimalist laboratory illustration",
+      "sentenceEn": "The two samples have the exact same weight.",
+      "sentenceZh": "这两个样品的重量完全相同。",
+      "scene": "A laboratory balance stands perfectly level with one identical sealed sample jar on each side, while a scientist checks the centered pointer without any printed scale or numbers.",
+      "altText": "A level balance shows two samples with the exact same weight.",
+      "riskTags": [
+        "comparison",
+        "precision",
+        "two_objects",
+        "people_face",
+        "no_numerals"
+      ]
+    },
+    {
+      "vocabularyId": "43951b5b-fcc6-4647-bc44-83ac81064f93",
+      "word": "uncle",
+      "meaningZh": "叔父；伯父；姨丈",
+      "exampleId": "43951b5b-fcc6-4647-bc44-83ac81064f93-visual-ex",
+      "styleFamily": "warm Chinese family-story illustration",
+      "sentenceEn": "Her uncle teaches her how to repair the bicycle chain.",
+      "sentenceZh": "她的叔叔教她如何修理自行车链条。",
+      "scene": "In a Chinese courtyard, a friendly adult uncle kneels beside a bicycle and shows his school-age niece how to guide the slipped chain back onto the gear, both focused and smiling.",
+      "altText": "An uncle teaches his niece to repair a bicycle chain.",
+      "riskTags": [
+        "family_relation",
+        "people_face",
+        "hands",
+        "repair",
+        "chinese_cultural_context"
+      ]
+    }
+  ]
+}

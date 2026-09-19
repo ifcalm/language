@@ -1,0 +1,370 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3140-3159",
+  "batchId": "auto-rank-3140-3159-20260914",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "companion",
+      "assemble",
+      "hallway",
+      "cave",
+      "southwest",
+      "herb"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "312c20ac-405c-4950-b2ee-76e4522e9bef",
+      "word": "companion",
+      "meaningZh": "朋友；陪伴；指南；升降口围罩",
+      "exampleId": "312c20ac-405c-4950-b2ee-76e4522e9bef-visual-ex",
+      "styleFamily": "Chinese riverside friendship gouache",
+      "sentenceEn": "Her longtime companion walks beside her every morning.",
+      "sentenceZh": "她多年的伙伴每天早晨都陪她一起散步。",
+      "scene": "Two older Chinese women walk side by side along a quiet riverside path, sharing an umbrella and steadying each other with warm familiar expressions; no signs or writing.",
+      "altText": "Two longtime companions walk closely together by the river.",
+      "riskTags": [
+        "Chinese_context",
+        "older_adults",
+        "friendship",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "df086df9-4537-4a3b-b3cc-9e994f8fe96b",
+      "word": "contend",
+      "meaningZh": "奋斗；斗争；竞争；为...斗争",
+      "exampleId": "df086df9-4537-4a3b-b3cc-9e994f8fe96b-visual-ex",
+      "styleFamily": "dynamic cycling editorial illustration",
+      "sentenceEn": "Three cyclists contend for the lead near the finish.",
+      "sentenceZh": "三名自行车手在终点附近争夺领先位置。",
+      "scene": "Three adult road cyclists ride nearly level on a closed course, each working hard to gain the lead as a plain finish ribbon stretches ahead; no numbers, sponsors, banners or text.",
+      "altText": "Three cyclists contend closely for the lead.",
+      "riskTags": [
+        "sport",
+        "competition",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d41543a3-2b85-4c97-9e2c-101238fbf0e2",
+      "word": "nail",
+      "meaningZh": "钉子；指甲",
+      "exampleId": "d41543a3-2b85-4c97-9e2c-101238fbf0e2-visual-ex",
+      "styleFamily": "craft workshop colored-pencil illustration",
+      "sentenceEn": "The carpenter drives a nail into the wooden frame.",
+      "sentenceZh": "木匠把一枚钉子钉进木框。",
+      "scene": "Close view of an adult carpenter safely holding a small iron nail with a wooden guide tool while bringing down a hammer into a timber frame; clear hand positions and no injury.",
+      "altText": "A carpenter hammers a nail into a wooden frame.",
+      "riskTags": [
+        "tool",
+        "hands",
+        "safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0a4c441b-4d5a-4b53-beac-203a1323e81d",
+      "word": "array",
+      "meaningZh": "数组（编程）；一系列；排列",
+      "exampleId": "0a4c441b-4d5a-4b53-beac-203a1323e81d-visual-ex",
+      "styleFamily": "orderly ceramic still-life illustration",
+      "sentenceEn": "The shop displays an array of colorful bowls.",
+      "sentenceZh": "商店陈列着一系列色彩丰富的碗。",
+      "scene": "A broad tabletop holds a carefully arranged grid-like array of many handcrafted ceramic bowls in varied colors and shapes, with an adult shopkeeper making one final adjustment; no price tags or signs.",
+      "altText": "A colorful array of bowls is arranged in orderly rows.",
+      "riskTags": [
+        "collection",
+        "ceramics",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "26a75503-7c51-4fda-a33e-d9302a0df4d5",
+      "word": "strict",
+      "meaningZh": "严格的；严厉的；精确的",
+      "exampleId": "26a75503-7c51-4fda-a33e-d9302a0df4d5-visual-ex",
+      "styleFamily": "quiet library editorial watercolor",
+      "sentenceEn": "The library has a strict rule of silence.",
+      "sentenceZh": "图书馆有严格的安静规定。",
+      "scene": "A calm adult librarian firmly but politely places one finger near her lips as two chatting adult readers immediately lower their voices; everyone else studies quietly, with no signs or written rules.",
+      "altText": "A librarian strictly maintains silence in a reading room.",
+      "riskTags": [
+        "library",
+        "gesture",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "3387f0e7-5ca5-436a-bc24-58eadd7f461f",
+      "word": "assemble",
+      "meaningZh": "集合；收集；装配",
+      "exampleId": "3387f0e7-5ca5-436a-bc24-58eadd7f461f-visual-ex",
+      "styleFamily": "Chinese cooperative workshop illustration",
+      "sentenceEn": "The team assembles the wooden table from separate parts.",
+      "sentenceZh": "团队把分开的部件组装成一张木桌。",
+      "scene": "In a modern Chinese community workshop, three adults fit four legs and a tabletop together into one sturdy wooden table; loose parts and safe hand tools remain nearby, all unmarked.",
+      "altText": "A team assembles separate wooden parts into a table.",
+      "riskTags": [
+        "Chinese_context",
+        "teamwork",
+        "tools",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "af117f1d-0e73-487f-b23c-1f5bbb51b7bb",
+      "word": "frankly",
+      "meaningZh": "坦率地说",
+      "exampleId": "af117f1d-0e73-487f-b23c-1f5bbb51b7bb-visual-ex",
+      "styleFamily": "candid meeting-room gouache",
+      "sentenceEn": "She speaks frankly about the problem in the meeting.",
+      "sentenceZh": "她在会议上坦率地谈论这个问题。",
+      "scene": "An adult woman leans forward in a small team meeting, speaking openly with steady eye contact and an honest direct expression while colleagues listen attentively; blank papers only, no speech bubbles.",
+      "altText": "A woman speaks frankly while her colleagues listen.",
+      "riskTags": [
+        "communication",
+        "meeting",
+        "no_speech_bubbles",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4bbff319-1cfc-4de6-9e9e-e1daedd52807",
+      "word": "rat",
+      "meaningZh": "鼠；卑鄙的人；破坏者；变节者",
+      "exampleId": "4bbff319-1cfc-4de6-9e9e-e1daedd52807-visual-ex",
+      "styleFamily": "natural-history barn watercolor",
+      "sentenceEn": "A brown rat searches for grain in the old barn.",
+      "sentenceZh": "一只褐色老鼠在旧谷仓里寻找谷物。",
+      "scene": "A realistically proportioned but clearly illustrated brown rat sniffs scattered grain beside a plain burlap sack in a rustic barn, shown as an ordinary animal without menace or dirt exaggeration.",
+      "altText": "A brown rat searches for scattered grain in a barn.",
+      "riskTags": [
+        "animal",
+        "non_grotesque",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "af982231-5cb0-4fea-a2bb-24da5869ad86",
+      "word": "burst",
+      "meaningZh": "爆裂；爆发；突发",
+      "exampleId": "af982231-5cb0-4fea-a2bb-24da5869ad86-visual-ex",
+      "styleFamily": "high-speed water-splash illustration",
+      "sentenceEn": "The overfilled water balloon bursts in her hands.",
+      "sentenceZh": "装得太满的水球在她手中爆开了。",
+      "scene": "An adult in summer clothes holds a plain water balloon at arm’s length at the instant its thin shell splits and a dramatic ring of clean water sprays outward; playful surprise, no injury or debris.",
+      "altText": "An overfilled water balloon bursts into a spray.",
+      "riskTags": [
+        "water",
+        "safe_surprise",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "15185de8-e6a5-4716-9b44-2ecc56e0e2cf",
+      "word": "hallway",
+      "meaningZh": "走廊",
+      "exampleId": "15185de8-e6a5-4716-9b44-2ecc56e0e2cf-visual-ex",
+      "styleFamily": "Chinese architectural perspective illustration",
+      "sentenceEn": "Sunlight fills the long hallway between the rooms.",
+      "sentenceZh": "阳光洒满房间之间的长走廊。",
+      "scene": "A long bright hallway inside a contemporary Chinese community center recedes in strong perspective, with several plain doorways opening on both sides and an adult walking through the center; no room numbers or signs.",
+      "altText": "A long sunlit hallway connects several rooms.",
+      "riskTags": [
+        "Chinese_context",
+        "architecture",
+        "perspective",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "cf7e27f6-7ebd-4f15-a0d8-1109f3f34251",
+      "word": "cave",
+      "meaningZh": "洞；穴；凹陷；塌落",
+      "exampleId": "cf7e27f6-7ebd-4f15-a0d8-1109f3f34251-visual-ex",
+      "styleFamily": "Chinese karst travel-poster gouache",
+      "sentenceEn": "The explorers enter a wide limestone cave.",
+      "sentenceZh": "探险者们走进一个宽阔的石灰岩洞穴。",
+      "scene": "Two adult Chinese explorers wearing helmets and headlamps stand safely at the broad entrance of a magnificent Guilin-style limestone cave, with layered stalactites and a clear dry path inside; no writing.",
+      "altText": "Explorers enter a broad limestone cave.",
+      "riskTags": [
+        "Chinese_context",
+        "cave",
+        "safety_gear",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5f735f40-3e43-4e55-8d63-301782341182",
+      "word": "inevitable",
+      "meaningZh": "不可避免的；必然的",
+      "exampleId": "5f735f40-3e43-4e55-8d63-301782341182-visual-ex",
+      "styleFamily": "conceptual domino editorial illustration",
+      "sentenceEn": "Once the first tile falls, the next fall is inevitable.",
+      "sentenceZh": "第一块牌倒下后，接下来的倒下便不可避免。",
+      "scene": "A long curved line of plain standing domino tiles is captured just after the first few have fallen, with the falling wave physically reaching the next tile and no gaps or escape path; no dots, numbers or symbols.",
+      "altText": "A chain of falling dominoes makes the next fall inevitable.",
+      "riskTags": [
+        "cause_effect",
+        "dominoes",
+        "no_numbers",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "816e03b8-1c72-40b7-bf51-6abc54ea4dab",
+      "word": "southwest",
+      "meaningZh": "西南",
+      "exampleId": "816e03b8-1c72-40b7-bf51-6abc54ea4dab-visual-ex",
+      "styleFamily": "Chinese relief-map editorial illustration",
+      "sentenceEn": "The travelers head southwest from the central town.",
+      "sentenceZh": "旅行者们从中心城镇向西南方向前进。",
+      "scene": "A clean top-down relief map with a small central Chinese town and a distinctive destination of red-earth hills in the lower-left quadrant; a tiny unmarked vehicle has left the town and faces along the road toward that lower-left destination. No compass, arrows, labels, letters or borders.",
+      "altText": "Travelers head toward a destination southwest of a central town.",
+      "riskTags": [
+        "Chinese_context",
+        "direction",
+        "map",
+        "no_compass",
+        "no_arrows",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "91e31baa-389f-42ef-942d-30aa39537a53",
+      "word": "monster",
+      "meaningZh": "怪物；巨兽；恶人",
+      "exampleId": "91e31baa-389f-42ef-942d-30aa39537a53-visual-ex",
+      "styleFamily": "theater workshop storybook gouache",
+      "sentenceEn": "The costume designer builds a friendly monster for the play.",
+      "sentenceZh": "服装设计师为这出戏制作了一个友善的怪物。",
+      "scene": "Adult theater artists in a backstage workshop adjust an oversized friendly monster costume with soft horns, colorful fabric and a clearly expressive gentle face; the costume stands visibly on a support frame, playful rather than frightening.",
+      "altText": "Theater artists build a large friendly monster costume.",
+      "riskTags": [
+        "fantasy",
+        "friendly",
+        "non_scary",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9b57a77e-f65f-449d-9bb7-255ca42c8342",
+      "word": "unexpected",
+      "meaningZh": "出乎意料的",
+      "exampleId": "9b57a77e-f65f-449d-9bb7-255ca42c8342-visual-ex",
+      "styleFamily": "expressive picnic watercolor",
+      "sentenceEn": "An unexpected rain shower interrupts their picnic.",
+      "sentenceZh": "一场突如其来的阵雨打断了他们的野餐。",
+      "scene": "Adult friends at a sunny park picnic look upward in genuine surprise as one small rain cloud suddenly showers only their blanket, while the surrounding park remains bright; they quickly lift a plain cloth for cover.",
+      "altText": "An unexpected shower surprises friends at a picnic.",
+      "riskTags": [
+        "weather",
+        "surprise",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e56bad1c-b702-49e4-b458-a56e6584bae8",
+      "word": "obstacle",
+      "meaningZh": "障碍；妨害物；阻碍",
+      "exampleId": "e56bad1c-b702-49e4-b458-a56e6584bae8-visual-ex",
+      "styleFamily": "outdoor trail problem-solving illustration",
+      "sentenceEn": "A fallen tree becomes an obstacle across the bike path.",
+      "sentenceZh": "一棵倒下的树成为自行车道上的障碍。",
+      "scene": "An adult cyclist stops safely before a large fallen tree lying completely across a forest bike path, then studies how to carry the bicycle over it; no crash, injury or warning signs.",
+      "altText": "A fallen tree blocks a cyclist’s path as an obstacle.",
+      "riskTags": [
+        "barrier",
+        "cycling",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "675b6176-8123-4d97-841c-04d877e1980c",
+      "word": "facilitate",
+      "meaningZh": "促进；使便利",
+      "exampleId": "675b6176-8123-4d97-841c-04d877e1980c-visual-ex",
+      "styleFamily": "accessible logistics editorial illustration",
+      "sentenceEn": "The new ramp facilitates moving heavy boxes.",
+      "sentenceZh": "新坡道使搬运重箱子更加方便。",
+      "scene": "A smooth sturdy ramp lets two adult workers easily roll a cart of plain heavy boxes from a lower loading area to a higher doorway, replacing a steep set of stairs beside it; motion is clear without arrows.",
+      "altText": "A ramp facilitates the movement of heavy boxes.",
+      "riskTags": [
+        "access",
+        "logistics",
+        "no_arrows",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "7b45f09f-9d4b-4850-bdf4-54f12b47701f",
+      "word": "rip",
+      "meaningZh": "撕裂；扯破",
+      "exampleId": "7b45f09f-9d4b-4850-bdf4-54f12b47701f-visual-ex",
+      "styleFamily": "fabric-repair close-up illustration",
+      "sentenceEn": "The sharp branch makes a long rip in the jacket sleeve.",
+      "sentenceZh": "尖锐的树枝在夹克袖子上划出一道长裂口。",
+      "scene": "Close safe view of an adult hiker examining a long clean rip in the outer fabric of a loose jacket sleeve after it snagged on a small branch; skin beneath is untouched and there is no blood or injury.",
+      "altText": "A branch leaves a long rip in a jacket sleeve.",
+      "riskTags": [
+        "fabric_damage",
+        "no_injury",
+        "no_blood",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a83b1299-15ee-46d1-af7f-d54407678d72",
+      "word": "herb",
+      "meaningZh": "药草；香草；草；草本；草药",
+      "exampleId": "a83b1299-15ee-46d1-af7f-d54407678d72-visual-ex",
+      "styleFamily": "Chinese medicinal garden ink-and-color",
+      "sentenceEn": "The gardener picks a fragrant herb for the soup.",
+      "sentenceZh": "园丁采下一株芳香草本放进汤里。",
+      "scene": "An adult Chinese gardener gently picks fresh aromatic herb leaves from a lush courtyard herb garden and places them in a small woven basket beside an unmarked soup pot; botanical detail is prominent, no labels.",
+      "altText": "A gardener picks a fresh herb for cooking.",
+      "riskTags": [
+        "Chinese_context",
+        "plant",
+        "food",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c03dbeee-ad9a-4072-b826-73b8708ad963",
+      "word": "overwhelming",
+      "meaningZh": "压倒性的",
+      "exampleId": "c03dbeee-ad9a-4072-b826-73b8708ad963-visual-ex",
+      "styleFamily": "empathetic workplace editorial collage",
+      "sentenceEn": "The sudden pile of tasks feels overwhelming.",
+      "sentenceZh": "突然堆积起来的任务让人感到难以招架。",
+      "scene": "An adult office worker sits at a desk as tall stacks of plain folders, unopened parcels and multiple ringing desk devices crowd inward, showing too many demands at once; a colleague calmly begins helping sort the pile, all surfaces blank.",
+      "altText": "Too many simultaneous tasks feel overwhelming to a worker.",
+      "riskTags": [
+        "stress",
+        "support",
+        "blank_surfaces",
+        "no_text"
+      ]
+    }
+  ]
+}

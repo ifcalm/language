@@ -1,0 +1,393 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3100-3119",
+  "batchId": "auto-rank-3100-3119-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "administrative",
+      "monthly",
+      "lecture",
+      "van",
+      "bay",
+      "suburb"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "44590c16-162b-471b-bfde-b9679d21f8c1",
+      "word": "occasional",
+      "meaningZh": "偶尔的",
+      "exampleId": "44590c16-162b-471b-bfde-b9679d21f8c1-visual-ex",
+      "styleFamily": "wordless seasonal editorial triptych",
+      "sentenceEn": "An occasional rain shower interrupts the sunny week.",
+      "sentenceZh": "这一周晴天居多，偶尔会有阵雨。",
+      "scene": "A horizontal sequence of several matching views of the same garden across successive days: almost every view is bright and sunny, while just one isolated view has a brief small rain cloud and shower; no calendar, labels or numbers.",
+      "altText": "One occasional shower appears among many sunny days.",
+      "riskTags": [
+        "weather",
+        "time_sequence",
+        "no_calendar",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d07843d2-c526-46b4-a60a-7bd93e8a7345",
+      "word": "administrative",
+      "meaningZh": "管理的；行政的",
+      "exampleId": "d07843d2-c526-46b4-a60a-7bd93e8a7345-visual-ex",
+      "styleFamily": "Chinese community-office editorial illustration",
+      "sentenceEn": "She handles the administrative work for the community center.",
+      "sentenceZh": "她负责社区中心的行政工作。",
+      "scene": "In a Chinese neighborhood community center office, an adult administrator sorts blank forms into color-coded trays, schedules rooms with plain colored tiles on a board, and hands a completed folder to a colleague; all papers and screens are unreadable and contain no text.",
+      "altText": "An administrator organizes work at a community center.",
+      "riskTags": [
+        "Chinese_context",
+        "office",
+        "people_face",
+        "blank_documents",
+        "no_readable_ui",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0dd494a6-f1f9-45ec-9b67-d5c3afc12f4f",
+      "word": "elbow",
+      "meaningZh": "手肘；弯头；扶手",
+      "exampleId": "0dd494a6-f1f9-45ec-9b67-d5c3afc12f4f-visual-ex",
+      "styleFamily": "clean anatomical sports illustration without labels",
+      "sentenceEn": "The player bends her elbow before throwing the ball.",
+      "sentenceZh": "运动员投球前弯曲手肘。",
+      "scene": "A female athlete in a plain training outfit prepares to throw a ball, her arm bent sharply so the elbow joint is centered and unmistakable; a subtle translucent joint overlay shows the hinge shape without arrows, labels or anatomical text.",
+      "altText": "An athlete bends her elbow before a throw.",
+      "riskTags": [
+        "anatomy",
+        "sports",
+        "people_face",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b21588c1-5ec8-4626-90f2-849b50e1a81e",
+      "word": "deadly",
+      "meaningZh": "致命的",
+      "exampleId": "b21588c1-5ec8-4626-90f2-849b50e1a81e-visual-ex",
+      "styleFamily": "dramatic botanical field-guide illustration without labels",
+      "sentenceEn": "Some wild mushrooms can be deadly if eaten.",
+      "sentenceZh": "有些野生蘑菇食用后可能致命。",
+      "scene": "A gloved adult field researcher stops a forager's hand before it reaches a cluster of striking toxic wild mushrooms, placing the dangerous specimens safely under a clear protective cover; expressions are serious, and nobody eats or is harmed.",
+      "altText": "A researcher prevents someone from touching deadly mushrooms.",
+      "riskTags": [
+        "poison",
+        "mushrooms",
+        "people_face",
+        "prevention",
+        "non_graphic",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "261324fc-7b97-4dbe-b2bd-e9e622d77a6f",
+      "word": "Hispanic",
+      "meaningZh": "西班牙裔的",
+      "exampleId": "261324fc-7b97-4dbe-b2bd-e9e622d77a6f-visual-ex",
+      "styleFamily": "respectful contemporary neighborhood mural illustration",
+      "sentenceEn": "The Hispanic community organizes a neighborhood art festival.",
+      "sentenceZh": "西班牙裔社区组织了一场街区艺术节。",
+      "scene": "A diverse multigenerational group of Hispanic adults collaborates at a welcoming neighborhood art festival, painting a large mural of abstract flowers, local streets and family silhouettes while musicians and visitors gather nearby; no flags, slogans, labels or exaggerated stereotypes.",
+      "altText": "A Hispanic community creates art at a neighborhood festival.",
+      "riskTags": [
+        "Hispanic_community",
+        "people_face",
+        "respectful_representation",
+        "no_flags",
+        "no_stereotypes",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "22c49be7-c9e9-428d-96f2-5727eb779cc8",
+      "word": "allegation",
+      "meaningZh": "指控",
+      "exampleId": "22c49be7-c9e9-428d-96f2-5727eb779cc8-visual-ex",
+      "styleFamily": "balanced investigative editorial illustration",
+      "sentenceEn": "The committee investigates the allegation before judging anyone.",
+      "sentenceZh": "委员会在评判任何人之前先调查这项指控。",
+      "scene": "A neutral committee of three adults carefully examines an unlabeled evidence folder at a round table while two concerned parties sit separately at equal distance, both heard without being portrayed as guilty; a balanced scale sculpture sits centered in the background.",
+      "altText": "A committee investigates an allegation fairly.",
+      "riskTags": [
+        "legal_context",
+        "people_face",
+        "neutrality",
+        "no_guilt_assumption",
+        "blank_documents",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "8f37852e-bce5-44d3-87be-13b853a9bb72",
+      "word": "confuse",
+      "meaningZh": "使混乱；使狼狈；使困惑；混淆",
+      "exampleId": "8f37852e-bce5-44d3-87be-13b853a9bb72-visual-ex",
+      "styleFamily": "light situational-comedy editorial illustration",
+      "sentenceEn": "The two identical suitcases confuse the travelers.",
+      "sentenceZh": "两个一模一样的行李箱让旅客们分不清。",
+      "scene": "At a station luggage area, two adult travelers pause with puzzled expressions and point toward two genuinely identical plain suitcases placed side by side, unsure which belongs to whom; no tags, signage or readable tickets.",
+      "altText": "Two identical suitcases confuse their owners.",
+      "riskTags": [
+        "travel",
+        "people_face",
+        "luggage",
+        "no_tags",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0cbc5039-4508-452c-a765-b290dfc53512",
+      "word": "airplane",
+      "meaningZh": "飞机",
+      "exampleId": "0cbc5039-4508-452c-a765-b290dfc53512-visual-ex",
+      "styleFamily": "vintage aviation poster illustration",
+      "sentenceEn": "The airplane climbs above the clouds after takeoff.",
+      "sentenceZh": "飞机起飞后爬升到云层之上。",
+      "scene": "A clearly recognizable modern passenger airplane with two wings and engines climbs through soft clouds into a bright blue sky, seen from a dynamic three-quarter angle; its fuselage and tail are entirely unmarked.",
+      "altText": "A passenger airplane climbs above the clouds.",
+      "riskTags": [
+        "aircraft",
+        "travel",
+        "unmarked_vehicle",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5010f137-9dc6-4495-a21d-e30f7027f442",
+      "word": "monthly",
+      "meaningZh": "每月的",
+      "exampleId": "5010f137-9dc6-4495-a21d-e30f7027f442-visual-ex",
+      "styleFamily": "Chinese household paper-cut cycle illustration",
+      "sentenceEn": "The family sets aside money for the monthly rent.",
+      "sentenceZh": "这家人每月预留房租。",
+      "scene": "A Chinese couple places one plain payment envelope beside a house key at the center of a circular sequence of changing moon phases, with identical envelopes repeating once around each completed lunar cycle; no calendar, writing, currency symbols or numbers.",
+      "altText": "A family prepares a recurring monthly rent payment.",
+      "riskTags": [
+        "Chinese_context",
+        "recurrence",
+        "people_face",
+        "money_implied",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6f4af84c-2d96-4f60-9271-67d12cf21cd5",
+      "word": "duck",
+      "meaningZh": "鸭子；没入水中；闪避",
+      "exampleId": "6f4af84c-2d96-4f60-9271-67d12cf21cd5-visual-ex",
+      "styleFamily": "serene natural-history watercolor",
+      "sentenceEn": "A brown duck swims across the pond with her ducklings.",
+      "sentenceZh": "一只棕色母鸭带着小鸭游过池塘。",
+      "scene": "A clearly recognizable brown adult duck glides across a calm reed-lined pond with several small ducklings following in a neat wake; natural proportions, soft ripples and no human-made objects.",
+      "altText": "A brown duck swims with her ducklings.",
+      "riskTags": [
+        "animal",
+        "water",
+        "natural_scene",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c7d8a326-6520-4093-8a0a-fc9a4bd18a3f",
+      "word": "dose",
+      "meaningZh": "剂量；服用量；给药；(用药)医治",
+      "exampleId": "c7d8a326-6520-4093-8a0a-fc9a4bd18a3f-visual-ex",
+      "styleFamily": "reassuring clinical editorial illustration",
+      "sentenceEn": "The nurse gives the patient the correct dose of medicine.",
+      "sentenceZh": "护士给病人服用正确剂量的药物。",
+      "scene": "In a calm clinic, an adult nurse hands a patient one precisely premeasured cup of liquid medicine while the closed plain bottle stays on a tray; the nurse double-checks the single cup visually, with no labels, scales, numbers or readable records.",
+      "altText": "A nurse provides one measured dose of medicine.",
+      "riskTags": [
+        "medical",
+        "people_face",
+        "medicine",
+        "supervised_care",
+        "no_labels",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "7d07081a-ec87-44c8-bf03-89f61717d4e6",
+      "word": "Korean",
+      "meaningZh": "韩国的；韩国人",
+      "exampleId": "7d07081a-ec87-44c8-bf03-89f61717d4e6-visual-ex",
+      "styleFamily": "respectful contemporary Korean family gouache illustration",
+      "sentenceEn": "The Korean family shares dinner together at home.",
+      "sentenceZh": "这个韩国家庭在家一起吃晚饭。",
+      "scene": "A contemporary multigenerational Korean family shares an everyday meal around a low dining table in a modern Seoul apartment, using metal chopsticks and enjoying rice, soup and varied small side dishes; clothing is modern and natural, with no flags, writing or caricature.",
+      "altText": "A Korean family shares dinner at home.",
+      "riskTags": [
+        "Korean_context",
+        "people_face",
+        "respectful_representation",
+        "food",
+        "no_flags",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1407e99f-c5f7-4438-bf9b-96f0b3adcb15",
+      "word": "plead",
+      "meaningZh": "辩护；恳求",
+      "exampleId": "1407e99f-c5f7-4438-bf9b-96f0b3adcb15-visual-ex",
+      "styleFamily": "emotive civic watercolor illustration",
+      "sentenceEn": "Residents plead with the planners to save the old tree.",
+      "sentenceZh": "居民恳求规划人员保留这棵老树。",
+      "scene": "Several adult residents stand protectively beside a magnificent old neighborhood tree and plead with two city planners using open hands and earnest expressions; the planners listen thoughtfully while holding completely blank rolled plans.",
+      "altText": "Residents plead with planners to save an old tree.",
+      "riskTags": [
+        "civic_context",
+        "people_face",
+        "emotional_request",
+        "blank_plans",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ee4b0cc2-113c-4f47-a6be-cc989047fa32",
+      "word": "initiate",
+      "meaningZh": "入会；开始；新加入的",
+      "exampleId": "ee4b0cc2-113c-4f47-a6be-cc989047fa32-visual-ex",
+      "styleFamily": "precision laboratory screen-print illustration",
+      "sentenceEn": "The technician presses a button to initiate the test.",
+      "sentenceZh": "技术员按下按钮启动测试。",
+      "scene": "An adult laboratory technician deliberately presses one large plain green button on a compact test machine, causing a clear sequence of indicator lights and moving mechanical parts to begin; all controls are unmarked and screens are absent.",
+      "altText": "A technician initiates a test by pressing a button.",
+      "riskTags": [
+        "laboratory",
+        "people_face",
+        "machine",
+        "unmarked_controls",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "123f11d9-ccde-45f6-8d8c-01c5ec66caa6",
+      "word": "lecture",
+      "meaningZh": "演讲；谴责；讲稿",
+      "exampleId": "123f11d9-ccde-45f6-8d8c-01c5ec66caa6-visual-ex",
+      "styleFamily": "Chinese university ink-and-color illustration",
+      "sentenceEn": "The professor gives a lecture to a full auditorium.",
+      "sentenceZh": "教授在坐满听众的礼堂里讲课。",
+      "scene": "In a modern Chinese university auditorium, an adult professor speaks and gestures beside a large display containing only simple unlabeled geometric diagrams while rows of attentive adult students listen and take notes on blank pages.",
+      "altText": "A professor gives a lecture in a full auditorium.",
+      "riskTags": [
+        "Chinese_context",
+        "education",
+        "people_face",
+        "blank_notes",
+        "no_readable_slide",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "8489762b-0964-4df1-8b90-abf8bbd5cf91",
+      "word": "van",
+      "meaningZh": "货车；篷车；先锋；前驱；前卫",
+      "exampleId": "8489762b-0964-4df1-8b90-abf8bbd5cf91-visual-ex",
+      "styleFamily": "Chinese urban-delivery flat illustration",
+      "sentenceEn": "The delivery van carries packages across the city.",
+      "sentenceZh": "送货车载着包裹穿过城市。",
+      "scene": "A compact unmarked delivery van drives along a Chinese city street while its open rear side door at a safe curbside stop reveals neatly stacked plain parcels; an adult courier loads one box, with no license characters, signs or branding.",
+      "altText": "A delivery van carries plain packages through the city.",
+      "riskTags": [
+        "Chinese_context",
+        "vehicle",
+        "people_face",
+        "unmarked_packages",
+        "no_license_text",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "57074756-2a3c-4118-837b-1b44ab076415",
+      "word": "sixth",
+      "meaningZh": "第六",
+      "exampleId": "57074756-2a3c-4118-837b-1b44ab076415-visual-ex",
+      "styleFamily": "minimal tactile counting illustration",
+      "sentenceEn": "The red bead is sixth in the row.",
+      "sentenceZh": "红色珠子排在这一行的第六个。",
+      "scene": "A perfectly straight horizontal row of seven large round beads viewed from above: the first five beads are identical blue, the sixth bead is vivid red, and the seventh is blue, with ample spacing so an adult learner can count the exact ordinal position; no numerals or labels.",
+      "altText": "A red bead appears sixth in a row of seven.",
+      "riskTags": [
+        "ordinal",
+        "objects",
+        "counting",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ee6842c8-f88c-45f8-a53c-1f762e800891",
+      "word": "bay",
+      "meaningZh": "海湾；狗吠声；月桂",
+      "exampleId": "ee6842c8-f88c-45f8-a53c-1f762e800891-visual-ex",
+      "styleFamily": "Chinese coastal landscape silk-painting illustration",
+      "sentenceEn": "Fishing boats rest in the sheltered bay.",
+      "sentenceZh": "渔船停泊在避风的海湾里。",
+      "scene": "A high view of a broad crescent-shaped bay on the Chinese coast, almost enclosed by two green headlands, where several small unmarked fishing boats float on calm protected water while rougher open sea lies beyond.",
+      "altText": "Fishing boats rest inside a sheltered bay.",
+      "riskTags": [
+        "Chinese_context",
+        "coast",
+        "boats",
+        "no_markings",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "de10f5a8-2799-494c-9235-de175265ed42",
+      "word": "mainstream",
+      "meaningZh": "主流",
+      "exampleId": "de10f5a8-2799-494c-9235-de175265ed42-visual-ex",
+      "styleFamily": "contemporary urban editorial collage",
+      "sentenceEn": "Reusable bottles have become mainstream in the city.",
+      "sentenceZh": "可重复使用的水瓶已成为城市中的主流选择。",
+      "scene": "A busy everyday city scene where a broad cross-section of commuters, workers, students and older adults naturally carry reusable bottles of varied plain designs, showing the practice is widespread and ordinary rather than niche; no advertising or labels.",
+      "altText": "Many ordinary city residents use mainstream reusable bottles.",
+      "riskTags": [
+        "city",
+        "people_face",
+        "common_practice",
+        "unmarked_products",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1751915f-200e-41d4-ab27-5352adf3526b",
+      "word": "suburb",
+      "meaningZh": "市郊住宅区；郊区；边缘",
+      "exampleId": "1751915f-200e-41d4-ab27-5352adf3526b-visual-ex",
+      "styleFamily": "Chinese metropolitan-edge architectural illustration",
+      "sentenceEn": "They bought a home in a quiet suburb outside the city.",
+      "sentenceZh": "他们在城外一个安静的郊区买了房。",
+      "scene": "A Chinese couple stands beside their modest new low-rise home on a quiet tree-lined residential street, holding a plain key, while open green space separates the peaceful suburb from a distant dense city skyline connected by a commuter train.",
+      "altText": "A couple stands by their home in a quiet suburb.",
+      "riskTags": [
+        "Chinese_context",
+        "neighborhood",
+        "people_face",
+        "housing",
+        "no_signage",
+        "no_text"
+      ]
+    }
+  ]
+}

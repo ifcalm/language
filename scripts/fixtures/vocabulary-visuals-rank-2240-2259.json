@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2240-2259",
+  "batchId": "auto-rank-2240-2259-20260820",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "drawing",
+      "protein",
+      "diversity",
+      "employment",
+      "essay",
+      "respondent"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "41e65cc3-2840-4ce4-9d76-85ccb7c9970b",
+      "word": "intention",
+      "meaningZh": "意图",
+      "exampleId": "41e65cc3-2840-4ce4-9d76-85ccb7c9970b-visual-ex",
+      "styleFamily": "thoughtful conservation editorial illustration",
+      "sentenceEn": "Her intention was to protect the wetland without blocking public access.",
+      "sentenceZh": "她的意图是在不妨碍公众通行的情况下保护湿地。",
+      "scene": "A landscape architect presents a raised boardwalk model that protects marsh plants while welcoming walkers and wheelchair users, making her constructive intention clear.",
+      "altText": "设计师计划用高架步道兼顾湿地保护和公众通行",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "47d4c0cb-dfc1-4ed8-b99b-f5966de0b245",
+      "word": "channel",
+      "meaningZh": "频道；渠道；海峡",
+      "exampleId": "47d4c0cb-dfc1-4ed8-b99b-f5966de0b245-visual-ex",
+      "styleFamily": "water-engineering gouache illustration",
+      "sentenceEn": "Workers cleared the irrigation channel so water could reach the fields.",
+      "sentenceZh": "工人清理灌溉渠道，让水流到田地。",
+      "scene": "Farm workers remove branches and silt from a narrow irrigation channel as clean water resumes flowing toward dry vegetable fields.",
+      "altText": "工人清理灌溉渠道让水流向农田",
+      "riskTags": [
+        "hands",
+        "water",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "303f747e-7fae-4d2b-9abe-d715649c2d9e",
+      "word": "extreme",
+      "meaningZh": "极端；末端",
+      "exampleId": "303f747e-7fae-4d2b-9abe-d715649c2d9e-visual-ex",
+      "styleFamily": "dramatic climate editorial illustration",
+      "sentenceEn": "The research station was designed for extreme cold.",
+      "sentenceZh": "这座研究站专为极端严寒设计。",
+      "scene": "A compact polar research station withstands extreme cold, blowing snow, and ice while insulated researchers safely check exterior instruments beneath a pale winter sky.",
+      "altText": "极地研究站抵御极端严寒",
+      "riskTags": [
+        "weather",
+        "people_face",
+        "lighting"
+      ]
+    },
+    {
+      "vocabularyId": "dfabbc67-eb6a-4b58-aea2-6133f535c2e3",
+      "word": "tube",
+      "meaningZh": "管；管道",
+      "exampleId": "dfabbc67-eb6a-4b58-aea2-6133f535c2e3-visual-ex",
+      "styleFamily": "clean industrial cutaway illustration",
+      "sentenceEn": "The clear tube carried water from the tank to the seedlings.",
+      "sentenceZh": "透明管子把水从水箱输送到幼苗处。",
+      "scene": "In a greenhouse, a clearly visible transparent tube runs from an elevated water tank down to drip outlets beside rows of young seedlings, with a gardener checking the flow.",
+      "altText": "透明管把水箱里的水输送给幼苗",
+      "riskTags": [
+        "spatial_relationship",
+        "small_object",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "564ae05e-49e5-4f24-ab8c-6136c2ce8027",
+      "word": "drawing",
+      "meaningZh": "绘画",
+      "exampleId": "564ae05e-49e5-4f24-ab8c-6136c2ce8027-visual-ex",
+      "styleFamily": "Chinese ink-art watercolor illustration",
+      "sentenceEn": "The artist completed a drawing of the ancient pine beside the temple.",
+      "sentenceZh": "艺术家完成了一幅寺旁古松的画。",
+      "scene": "A Chinese artist sits outdoors with brush and ink, completing a drawing of an old pine beside a quiet mountain temple; the paper shows only the tree image and no readable writing.",
+      "altText": "艺术家描绘寺庙旁的古松",
+      "riskTags": [
+        "hands",
+        "text_risk",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "70e14cee-c41e-4099-93a1-21d70a742db1",
+      "word": "protein",
+      "meaningZh": "蛋白质",
+      "exampleId": "70e14cee-c41e-4099-93a1-21d70a742db1-visual-ex",
+      "styleFamily": "Chinese food editorial gouache illustration",
+      "sentenceEn": "Tofu and beans added protein to the vegetable meal.",
+      "sentenceZh": "豆腐和豆类为这顿蔬菜餐增加了蛋白质。",
+      "scene": "At a Chinese family table, an adult cook serves a balanced vegetable meal centered on tofu, edamame, and mixed beans while family members share the dishes.",
+      "altText": "豆腐和豆类为蔬菜餐提供蛋白质",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d046c5ef-2600-4218-918b-7df8bcf41527",
+      "word": "quit",
+      "meaningZh": "离开；辞职；停止",
+      "exampleId": "d046c5ef-2600-4218-918b-7df8bcf41527-visual-ex",
+      "styleFamily": "positive lifestyle watercolor illustration",
+      "sentenceEn": "He decided to quit smoking and began walking every morning.",
+      "sentenceZh": "他决定戒烟，并开始每天早晨散步。",
+      "scene": "An adult places an extinguished final cigarette into a disposal container, then steps into morning light wearing walking shoes as a supportive friend waits outside.",
+      "altText": "男子戒烟后开始晨间散步",
+      "riskTags": [
+        "sequence",
+        "people_face",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "0121e543-5483-4672-b108-e0fc2ad26f52",
+      "word": "absence",
+      "meaningZh": "缺席；缺乏；没有；失神",
+      "exampleId": "0121e543-5483-4672-b108-e0fc2ad26f52-visual-ex",
+      "styleFamily": "ecological editorial illustration",
+      "sentenceEn": "The absence of bees left the orchard blossoms untouched.",
+      "sentenceZh": "蜜蜂的缺席让果园花朵无人授粉。",
+      "scene": "A gardener examines rows of flowering orchard trees with no bees present, while a nearby comparison patch has active pollinators and forming fruit.",
+      "altText": "缺少蜜蜂的果园花朵未能授粉",
+      "riskTags": [
+        "comparison",
+        "small_object",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "414875d7-b669-41f8-abc1-02d2103c3a10",
+      "word": "Latin",
+      "meaningZh": "拉丁的；拉丁语",
+      "exampleId": "414875d7-b669-41f8-abc1-02d2103c3a10-visual-ex",
+      "styleFamily": "classical choral watercolor illustration",
+      "sentenceEn": "The choir performed the old hymn in Latin.",
+      "sentenceZh": "合唱团用拉丁语演唱了这首古老赞美诗。",
+      "scene": "An adult choir performs an old hymn inside a historic stone hall, following a conductor while closed or blank music folders prevent readable words.",
+      "altText": "合唱团在古老石厅演唱拉丁语赞美诗",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "718ca53a-a8ed-4f3c-90ab-0b709b8269c0",
+      "word": "rapidly",
+      "meaningZh": "迅速地",
+      "exampleId": "718ca53a-a8ed-4f3c-90ab-0b709b8269c0-visual-ex",
+      "styleFamily": "dynamic weather gouache illustration",
+      "sentenceEn": "The river rose rapidly after heavy rain in the mountains.",
+      "sentenceZh": "山区暴雨后，河水迅速上涨。",
+      "scene": "A riverside ranger watches water climb rapidly against plain stone steps after mountain rain, while residents move calmly to higher ground in the background.",
+      "altText": "山区暴雨后河水迅速上涨",
+      "riskTags": [
+        "motion",
+        "water",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "37814c1d-be05-4d4f-8802-2152739d97cb",
+      "word": "jail",
+      "meaningZh": "监牢；监狱；拘留所；监禁；下狱",
+      "exampleId": "37814c1d-be05-4d4f-8802-2152739d97cb-visual-ex",
+      "styleFamily": "dignified justice-system editorial illustration",
+      "sentenceEn": "The jail expanded its education and reentry program.",
+      "sentenceZh": "这所拘留所扩大了教育和重返社会项目。",
+      "scene": "Inside a humane jail classroom, incarcerated adults in ordinary clothing learn carpentry and interview skills from instructors, with open books but no readable text and no restraints.",
+      "altText": "拘留所内开展教育与重返社会课程",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "46599fd4-53b1-4916-a236-99212ee8fd96",
+      "word": "diversity",
+      "meaningZh": "多样性",
+      "exampleId": "46599fd4-53b1-4916-a236-99212ee8fd96-visual-ex",
+      "styleFamily": "Chinese community festival watercolor illustration",
+      "sentenceEn": "The neighborhood celebrated its diversity through food, music, and craft.",
+      "sentenceZh": "社区通过美食、音乐和手工艺庆祝多样性。",
+      "scene": "At a Chinese neighborhood courtyard festival, residents of varied ages, ethnic backgrounds, abilities, and occupations share regional foods, instruments, weaving, and paper craft together.",
+      "altText": "社区居民通过美食音乐和手工艺庆祝多样性",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "48a9c747-d072-4a7e-93f2-eb09a7826e4b",
+      "word": "honest",
+      "meaningZh": "诚实的；坦直的；可靠的",
+      "exampleId": "48a9c747-d072-4a7e-93f2-eb09a7826e4b-visual-ex",
+      "styleFamily": "warm marketplace editorial illustration",
+      "sentenceEn": "The honest vendor returned the wallet a customer had dropped.",
+      "sentenceZh": "诚实的摊主归还了顾客掉落的钱包。",
+      "scene": "At a busy market stall, a vendor holds out a dropped wallet to its relieved owner while nearby shoppers witness the honest return.",
+      "altText": "诚实摊主把掉落的钱包归还顾客",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "d8073724-9d34-436e-bf1d-e86c504ffb02",
+      "word": "Palestinian",
+      "meaningZh": "巴勒斯坦的",
+      "exampleId": "d8073724-9d34-436e-bf1d-e86c504ffb02-visual-ex",
+      "styleFamily": "respectful agricultural watercolor illustration",
+      "sentenceEn": "The Palestinian farmers gathered olives at the family grove.",
+      "sentenceZh": "巴勒斯坦农民在家族橄榄园采收橄榄。",
+      "scene": "A Palestinian family of adult farmers gathers olives peacefully in a long-tended grove, spreading woven cloth beneath old trees and sharing baskets at sunset, with no political symbols.",
+      "altText": "巴勒斯坦家庭在橄榄园和平采收",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "d760ee35-d758-4749-808f-61c735c5938a",
+      "word": "pace",
+      "meaningZh": "步伐；速度；节奏",
+      "exampleId": "d760ee35-d758-4749-808f-61c735c5938a-visual-ex",
+      "styleFamily": "running-club editorial illustration",
+      "sentenceEn": "The coach set a steady pace for the long training run.",
+      "sentenceZh": "教练为长距离训练跑设定了稳定配速。",
+      "scene": "A running coach leads a diverse adult group at a steady shared pace along a riverside trail, with relaxed posture and even spacing rather than a sprint.",
+      "altText": "教练带领跑者保持稳定配速",
+      "riskTags": [
+        "motion",
+        "many_people",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "f447c0ce-0bf6-40be-8e6f-ed7998edb421",
+      "word": "employment",
+      "meaningZh": "就业",
+      "exampleId": "f447c0ce-0bf6-40be-8e6f-ed7998edb421-visual-ex",
+      "styleFamily": "Chinese vocational fair gouache illustration",
+      "sentenceEn": "The training fair connected graduates with local employment.",
+      "sentenceZh": "培训招聘会把毕业生与本地就业机会连接起来。",
+      "scene": "At a Chinese vocational fair, adult graduates demonstrate welding, caregiving, culinary, and repair skills while local employers hold practical conversations at logo-free booths.",
+      "altText": "职业招聘会帮助毕业生获得本地就业机会",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "10a7eb56-2a6f-40e8-bdbf-5e416686040c",
+      "word": "speaker",
+      "meaningZh": "发言人",
+      "exampleId": "10a7eb56-2a6f-40e8-bdbf-5e416686040c-visual-ex",
+      "styleFamily": "public-meeting editorial illustration",
+      "sentenceEn": "The speaker paused to answer questions from the audience.",
+      "sentenceZh": "发言人停下来回答听众的问题。",
+      "scene": "At a community meeting, a speaker steps away from a plain lectern and listens attentively to an audience member asking a question, with no projected text.",
+      "altText": "社区会议发言人回答听众提问",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "94296980-bf52-4b27-8fa3-a1214134adad",
+      "word": "impression",
+      "meaningZh": "印象；感觉",
+      "exampleId": "94296980-bf52-4b27-8fa3-a1214134adad-visual-ex",
+      "styleFamily": "tactile craft watercolor illustration",
+      "sentenceEn": "The leaf left a delicate impression in the soft clay.",
+      "sentenceZh": "叶子在柔软黏土上留下了细致的印痕。",
+      "scene": "A ceramic artist lifts a veined leaf from a slab of soft clay, revealing a crisp physical impression beside the original leaf.",
+      "altText": "叶子在软黏土上留下清晰印痕",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "0d3614f7-950d-45ab-ab19-ea1df7b82d30",
+      "word": "essay",
+      "meaningZh": "随笔；短文；评论；企图；试图",
+      "exampleId": "0d3614f7-950d-45ab-ab19-ea1df7b82d30-visual-ex",
+      "styleFamily": "Chinese garden study watercolor illustration",
+      "sentenceEn": "She drafted an essay after observing the changing garden.",
+      "sentenceZh": "她观察花园变化后起草了一篇随笔。",
+      "scene": "An adult writer sits in a Chinese classical garden through a light seasonal transition, studying pond reflections and drafting an essay on blank-looking pages without readable words.",
+      "altText": "作家观察中式园林后起草随笔",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "a05396d2-638e-43f2-8b0f-f7d846acbf50",
+      "word": "respondent",
+      "meaningZh": "受访者",
+      "exampleId": "a05396d2-638e-43f2-8b0f-f7d846acbf50-visual-ex",
+      "styleFamily": "Chinese field-research editorial illustration",
+      "sentenceEn": "Each respondent described how the new bus route affected daily life.",
+      "sentenceZh": "每位受访者都描述了新公交线路对日常生活的影响。",
+      "scene": "In a Chinese village square, a researcher listens respectfully as one respondent explains beside a small bus stop model, while other residents wait for separate interviews and forms remain unreadable.",
+      "altText": "研究人员倾听受访者讲述公交线路影响",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    }
+  ]
+}

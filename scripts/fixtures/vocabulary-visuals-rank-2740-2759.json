@@ -1,0 +1,353 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2740-2759",
+  "batchId": "auto-rank-2740-2759-20260910",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "narrative",
+      "photographer",
+      "agricultural",
+      "handful",
+      "downtown",
+      "absorb"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "ef6d3ef5-a5f3-46ca-a591-dc904b50d2f2",
+      "word": "narrative",
+      "meaningZh": "叙述；叙事",
+      "exampleId": "ef6d3ef5-a5f3-46ca-a591-dc904b50d2f2-visual-ex",
+      "styleFamily": "Chinese shadow-puppet and watercolor illustration",
+      "sentenceEn": "The narrative follows a traveler from departure through danger to a joyful return.",
+      "sentenceZh": "这段叙事讲述旅行者从出发、遇险到欣喜归来的过程。",
+      "scene": "A traditional Chinese shadow-puppet stage presents the same traveler in three connected scenes from leaving home, crossing a stormy mountain pass, and returning to a welcoming family, making a coherent narrative sequence clear without text.",
+      "altText": "Three connected shadow-puppet scenes forming a traveler narrative.",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "dae41678-f3aa-4a7b-9030-ba9f3e975cde",
+      "word": "photographer",
+      "meaningZh": "摄影师",
+      "exampleId": "dae41678-f3aa-4a7b-9030-ba9f3e975cde-visual-ex",
+      "styleFamily": "ink-and-gouache documentary illustration",
+      "sentenceEn": "The photographer captures a precise moment during the opera performance.",
+      "sentenceZh": "摄影师捕捉了戏曲表演中的一个精彩瞬间。",
+      "scene": "An adult photographer carefully frames a Chinese opera performer through a professional camera while the performer holds a dramatic pose on a richly colored stage, with the camera and act of taking a picture unmistakable.",
+      "altText": "A photographer capturing a Chinese opera performer.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "technical",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "29653c76-f1dc-418e-ad14-dd6c8998ea80",
+      "word": "helicopter",
+      "meaningZh": "直升机；由直升机运送",
+      "exampleId": "29653c76-f1dc-418e-ad14-dd6c8998ea80-visual-ex",
+      "styleFamily": "bold technical adventure illustration",
+      "sentenceEn": "The helicopter lifts medical supplies toward the isolated mountain village.",
+      "sentenceZh": "直升机把医疗物资运往与外界隔绝的山村。",
+      "scene": "A clearly recognizable rescue helicopter hovers above a snowy mountain village while lowering a secured crate of medical supplies by cable, with accurate main rotor, tail rotor, landing skids, and safe clearance.",
+      "altText": "A helicopter delivering supplies to an isolated mountain village.",
+      "riskTags": [
+        "technical",
+        "spatial_relationship",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "2911a696-fbb3-480e-90b4-2c2f8c520778",
+      "word": "modest",
+      "meaningZh": "谦逊的；羞怯的；端庄的；适度的",
+      "exampleId": "2911a696-fbb3-480e-90b4-2c2f8c520778-visual-ex",
+      "styleFamily": "warm editorial watercolor",
+      "sentenceEn": "Despite winning the prize, she gives a modest bow and credits her team.",
+      "sentenceZh": "尽管获了奖，她仍谦逊地鞠躬并把功劳归于团队。",
+      "scene": "An adult prizewinner stands beside her teammates, gently bows with a modest expression, and gestures toward the team while they applaud her; a simple trophy is present but no words or labels.",
+      "altText": "A prizewinner making a modest bow and crediting her team.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "body_posture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e7951154-327d-4f00-aa91-050f2210336c",
+      "word": "provider",
+      "meaningZh": "提供者",
+      "exampleId": "e7951154-327d-4f00-aa91-050f2210336c-visual-ex",
+      "styleFamily": "layered paper-cut community illustration",
+      "sentenceEn": "The clinic is the main provider of medicine for nearby villages.",
+      "sentenceZh": "这家诊所是附近村庄药品的主要提供者。",
+      "scene": "A central rural clinic distributes sealed medicine boxes along several paths to multiple small surrounding villages, with health workers handing supplies to residents and clear source-to-recipient relationships, no readable packaging.",
+      "altText": "A clinic acting as the medicine provider for nearby villages.",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_relationship",
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "7011ef00-bbab-4bfc-b4f0-d2d264498a7b",
+      "word": "delay",
+      "meaningZh": "耽搁；迟滞；延迟",
+      "exampleId": "7011ef00-bbab-4bfc-b4f0-d2d264498a7b-visual-ex",
+      "styleFamily": "graphic editorial collage",
+      "sentenceEn": "A fallen tree causes a delay for the bus on the mountain road.",
+      "sentenceZh": "倒下的树导致山路上的公交车延误。",
+      "scene": "A bus waits motionless behind a fallen tree blocking a winding mountain road while passengers check an analog clock and road workers begin clearing the obstacle, clearly showing the cause of a delay without text.",
+      "altText": "A fallen tree causing a delay for a bus.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "20499249-1392-42b0-91d1-972725e4f2aa",
+      "word": "agricultural",
+      "meaningZh": "农业的",
+      "exampleId": "20499249-1392-42b0-91d1-972725e4f2aa-visual-ex",
+      "styleFamily": "Chinese rural woodblock illustration",
+      "sentenceEn": "The valley is an agricultural region filled with rice fields and orchards.",
+      "sentenceZh": "这片山谷是遍布稻田和果园的农业地区。",
+      "scene": "A broad Chinese valley contains terraced rice paddies, fruit orchards, irrigation channels, farmers, a small tractor, and farmhouses, clearly presenting an agricultural landscape rather than a city or wilderness.",
+      "altText": "An agricultural valley with rice fields, orchards, and farmers.",
+      "riskTags": [
+        "spatial_relationship",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "c25709d7-55a9-4f8f-8c5f-905293569f08",
+      "word": "explode",
+      "meaningZh": "爆炸；爆发；激增；使爆炸",
+      "exampleId": "c25709d7-55a9-4f8f-8c5f-905293569f08-visual-ex",
+      "styleFamily": "dynamic cut-paper kitchen illustration",
+      "sentenceEn": "The heated kernels explode into fluffy popcorn inside the covered pot.",
+      "sentenceZh": "受热的玉米粒在盖着的锅里爆成蓬松的爆米花。",
+      "scene": "A safe cutaway view of a lidded cooking pot shows corn kernels changing in sequence from small heated kernels to sudden puffs and fully opened popcorn, using energetic motion without fire, injury, or destruction.",
+      "altText": "Heated kernels that explode into popcorn inside a pot.",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "3d3fa90f-55bf-4a95-9912-0642046fb561",
+      "word": "stroke",
+      "meaningZh": "中风；击打；抚摸",
+      "exampleId": "3d3fa90f-55bf-4a95-9912-0642046fb561-visual-ex",
+      "styleFamily": "soft colored-pencil illustration",
+      "sentenceEn": "She gives the nervous cat a gentle stroke along its back.",
+      "sentenceZh": "她轻轻抚摸紧张猫咪的背部。",
+      "scene": "An adult kneels beside a nervous cat and gives it one slow gentle stroke from shoulders toward the back; the cat visibly relaxes between two subtle motion stages, with anatomically correct hand and animal.",
+      "altText": "A person giving a nervous cat a gentle stroke.",
+      "riskTags": [
+        "hands",
+        "animal_anatomy",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "caeadf05-12d2-4bd7-960a-2029407d6242",
+      "word": "scope",
+      "meaningZh": "范围；作用域（编程）；眼界",
+      "exampleId": "caeadf05-12d2-4bd7-960a-2029407d6242-visual-ex",
+      "styleFamily": "minimal isometric planning illustration",
+      "sentenceEn": "The scope of the project includes the bridge and park but not the distant tower.",
+      "sentenceZh": "项目范围包括桥梁和公园，但不包括远处的塔楼。",
+      "scene": "An isometric town model shows a clearly bounded project area enclosing a bridge and public park, while a distant tower sits visibly outside the boundary, conveying what is inside and outside the scope without text.",
+      "altText": "A project scope enclosing a bridge and park but excluding a tower.",
+      "riskTags": [
+        "spatial_boundary",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9ba889d3-1978-42ec-bbd6-152a1bd8cb96",
+      "word": "punishment",
+      "meaningZh": "惩罚",
+      "exampleId": "9ba889d3-1978-42ec-bbd6-152a1bd8cb96-visual-ex",
+      "styleFamily": "balanced editorial story illustration",
+      "sentenceEn": "His punishment for breaking the window is helping repair it after school.",
+      "sentenceZh": "他打破窗户后的惩罚是放学后帮忙修理。",
+      "scene": "A teenager who accidentally broke a classroom window carefully helps an adult custodian install a safe replacement pane after other students have left, showing a fair consequence without humiliation, anger, injury, or readable signs.",
+      "altText": "A student repairing a window as punishment for breaking it.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "6550863e-3738-4126-8531-9ed5e7c2ea74",
+      "word": "handful",
+      "meaningZh": "一把；少数",
+      "exampleId": "6550863e-3738-4126-8531-9ed5e7c2ea74-visual-ex",
+      "styleFamily": "Chinese botanical gouache illustration",
+      "sentenceEn": "The tea maker adds a handful of dried leaves to the clay pot.",
+      "sentenceZh": "制茶师往陶壶里加入一把干茶叶。",
+      "scene": "In a traditional Chinese tea room, a close anatomically accurate adult hand holds one natural handful of dried tea leaves above an open clay teapot, with a few loose leaves emphasizing the small hand-sized amount.",
+      "altText": "A tea maker holding a handful of dried leaves above a clay pot.",
+      "riskTags": [
+        "hands",
+        "exact_quantity",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "1ee61406-d1c4-4df3-b024-e5a30c12863f",
+      "word": "badly",
+      "meaningZh": "糟糕地",
+      "exampleId": "1ee61406-d1c4-4df3-b024-e5a30c12863f-visual-ex",
+      "styleFamily": "expressive editorial linocut",
+      "sentenceEn": "The shelf was assembled badly and now leans to one side.",
+      "sentenceZh": "架子装得很糟糕，现在歪向了一边。",
+      "scene": "A newly assembled wooden shelf leans obviously to one side with uneven joints and wobbling objects, while a nearby correctly assembled shelf stands straight for comparison and an adult notices the poor result.",
+      "altText": "A shelf assembled badly leaning beside a straight shelf.",
+      "riskTags": [
+        "comparison",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3a38e0c8-1b0f-4d11-8981-8513c4f7bbef",
+      "word": "horizon",
+      "meaningZh": "地平线；视野；眼界",
+      "exampleId": "3a38e0c8-1b0f-4d11-8981-8513c4f7bbef-visual-ex",
+      "styleFamily": "atmospheric pastel landscape illustration",
+      "sentenceEn": "The sun sinks below the horizon where the sea meets the sky.",
+      "sentenceZh": "太阳沉到海天相接的地平线下。",
+      "scene": "A wide calm seascape at sunset emphasizes the crisp distant line where the ocean visually meets the sky, with the sun half below that horizon and a small sailboat adding scale.",
+      "altText": "The sun setting below the horizon where sea meets sky.",
+      "riskTags": [
+        "spatial_boundary",
+        "natural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "c4b2e9b6-d388-45b9-96dd-9467f9c8eb5c",
+      "word": "curious",
+      "meaningZh": "好奇的；求知的；古怪的",
+      "exampleId": "c4b2e9b6-d388-45b9-96dd-9467f9c8eb5c-visual-ex",
+      "styleFamily": "warm ink-and-watercolor illustration",
+      "sentenceEn": "The curious child examines the unfamiliar seedpod from every angle.",
+      "sentenceZh": "好奇的孩子从各个角度观察陌生的种荚。",
+      "scene": "A school-age child with a clearly curious expression uses a magnifying glass to examine an unusual seedpod from several angles while an open collection tray holds ordinary leaves for comparison, no written notes.",
+      "altText": "A curious child examining an unfamiliar seedpod.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ef93aba0-9a23-4567-9dbf-a3973c5b199e",
+      "word": "downtown",
+      "meaningZh": "市中心",
+      "exampleId": "ef93aba0-9a23-4567-9dbf-a3973c5b199e-visual-ex",
+      "styleFamily": "vibrant Chinese urban screen-print illustration",
+      "sentenceEn": "The subway carries commuters directly into the busy downtown district.",
+      "sentenceZh": "地铁把通勤者直接送往繁忙的市中心。",
+      "scene": "A lively central Chinese city district clusters tall offices, shops, a civic plaza, dense pedestrian activity, buses, and a subway entrance, clearly contrasting with quieter low-rise neighborhoods visible at the edges, no readable signs.",
+      "altText": "Commuters arriving in a busy downtown district.",
+      "riskTags": [
+        "spatial_relationship",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "82709415-8c32-4063-be98-37933547876f",
+      "word": "girlfriend",
+      "meaningZh": "女朋友",
+      "exampleId": "82709415-8c32-4063-be98-37933547876f-visual-ex",
+      "styleFamily": "gentle contemporary gouache illustration",
+      "sentenceEn": "Maya introduces her girlfriend to friends at the picnic.",
+      "sentenceZh": "玛雅在野餐时把女朋友介绍给朋友们。",
+      "scene": "At an adult friends picnic, one woman warmly introduces her girlfriend by standing close, holding her hand, and gesturing toward her as the group welcomes the couple, with affectionate but understated body language.",
+      "altText": "A woman introducing her girlfriend to friends at a picnic.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_relationship",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "37dbde4f-08a0-4f4a-bc52-9a083979a674",
+      "word": "prompt",
+      "meaningZh": "提示；促使；迅速的；提示词（AI）",
+      "exampleId": "37dbde4f-08a0-4f4a-bc52-9a083979a674-visual-ex",
+      "styleFamily": "theatrical paper-cut illustration",
+      "sentenceEn": "The conductor's raised hand is the prompt for the orchestra to begin.",
+      "sentenceZh": "指挥抬起的手是乐团开始演奏的提示。",
+      "scene": "An adult orchestra conductor raises one hand decisively, prompting seated musicians to lift bows and instruments together at the exact starting moment, showing cue then response without musical notation or text.",
+      "altText": "A raised hand serving as the prompt for an orchestra to begin.",
+      "riskTags": [
+        "cause_effect",
+        "sequence",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ac261f0c-a5d4-48c2-9f26-873c1f3a4f18",
+      "word": "cholesterol",
+      "meaningZh": "胆固醇",
+      "exampleId": "ac261f0c-a5d4-48c2-9f26-873c1f3a4f18-visual-ex",
+      "styleFamily": "clean scientific cut-paper illustration",
+      "sentenceEn": "Too much cholesterol can build up inside an artery over time.",
+      "sentenceZh": "过多胆固醇会随时间在动脉内积聚。",
+      "scene": "A simplified educational cutaway compares a clear healthy artery with an artery narrowed by gradual yellow fatty buildup representing excess cholesterol, using tasteful symbolic anatomy, directional blood cells, and no labels or diagnostic claims.",
+      "altText": "Excess cholesterol buildup narrowing an artery over time.",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "technical",
+        "medical"
+      ]
+    },
+    {
+      "vocabularyId": "a53a2472-8927-431a-a5f3-d5a8fcd25954",
+      "word": "absorb",
+      "meaningZh": "吸收；理解；使全神贯注",
+      "exampleId": "a53a2472-8927-431a-a5f3-d5a8fcd25954-visual-ex",
+      "styleFamily": "Chinese ink-wash educational illustration",
+      "sentenceEn": "The sheet of rice paper begins to absorb the drop of black ink.",
+      "sentenceZh": "宣纸开始吸收这滴黑墨。",
+      "scene": "A close overhead view shows one black ink drop touching Chinese rice paper and spreading gradually into the visible fibers across three connected stages, while a brush and inkstone rest nearby without writing.",
+      "altText": "Rice paper beginning to absorb a drop of black ink.",
+      "riskTags": [
+        "sequence",
+        "cause_effect",
+        "cultural_scene"
+      ]
+    }
+  ]
+}

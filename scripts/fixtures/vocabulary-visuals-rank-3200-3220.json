@@ -1,0 +1,356 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3200-3220",
+  "batchId": "auto-rank-3200-3220-20260915",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "cattle",
+      "walking",
+      "fiscal",
+      "tune",
+      "railroad",
+      "skirt"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "2c8c0f3b-7c7a-43f8-be04-89a1b6858ad8",
+      "word": "domain",
+      "meaningZh": "领域；域名；范围",
+      "exampleId": "2c8c0f3b-7c7a-43f8-be04-89a1b6858ad8-visual-ex",
+      "styleFamily": "marine research editorial gouache",
+      "sentenceEn": "Marine ecology is her main domain of expertise.",
+      "sentenceZh": "海洋生态学是她的主要专业领域。",
+      "scene": "An adult marine ecologist confidently studies tide-pool plants and shells at a coastal field station, surrounded only by plain sampling tools that make her area of expertise unmistakable; complete natural face, no maps, charts, labels, letters, numbers, logos or writing.",
+      "altText": "A marine ecologist works confidently in her domain of expertise.",
+      "riskTags": [
+        "abstract_concept",
+        "profession",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "86c9d775-ebc1-4d0c-8ea3-40a6b1613f9e",
+      "word": "guilt",
+      "meaningZh": "内疚；罪恶感",
+      "exampleId": "86c9d775-ebc1-4d0c-8ea3-40a6b1613f9e-visual-ex",
+      "styleFamily": "quiet emotional colored-pencil illustration",
+      "sentenceEn": "He felt guilt after breaking his friend’s vase.",
+      "sentenceZh": "打碎朋友的花瓶后，他感到内疚。",
+      "scene": "In a calm living room, an adult man looks remorseful beside the harmless broken pieces of a ceramic vase and offers an intact replacement vase to his friend, who listens calmly; complete expressive faces, no injury, anger, accusation, labels or writing.",
+      "altText": "A remorseful man feels guilt after breaking a vase.",
+      "riskTags": [
+        "emotion",
+        "broken_object",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "42f1f934-6d94-4c0f-b3e6-2761f06d6946",
+      "word": "cattle",
+      "meaningZh": "牛；家畜",
+      "exampleId": "42f1f934-6d94-4c0f-b3e6-2761f06d6946-visual-ex",
+      "styleFamily": "northern Chinese grassland linocut watercolor",
+      "sentenceEn": "The herder guided the cattle toward fresh grass.",
+      "sentenceZh": "牧民把牛群赶向新鲜的草地。",
+      "scene": "On a broad northern Chinese grassland, an adult herder calmly guides a small herd of healthy cattle toward fresh green pasture beneath open hills; humane peaceful handling, complete natural face, no brands, ear tags, signs, letters, numbers or writing.",
+      "altText": "A herder guides cattle across a Chinese grassland.",
+      "riskTags": [
+        "Chinese_context",
+        "animals",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1a561dac-0ff6-4be4-893f-0adb04baedba",
+      "word": "walking",
+      "meaningZh": "步行",
+      "exampleId": "1a561dac-0ff6-4be4-893f-0adb04baedba-visual-ex",
+      "styleFamily": "Beijing hutong soft ink-and-wash illustration",
+      "sentenceEn": "Walking through the neighborhood is part of her morning routine.",
+      "sentenceZh": "在社区里步行是她晨间习惯的一部分。",
+      "scene": "An adult woman walks at an easy pace through a quiet Beijing hutong in soft morning light, passing gray brick walls, bicycles and leafy courtyard trees; natural stride and complete face, all door plaques absent, no shop signs, road markings, letters or writing.",
+      "altText": "A woman enjoys walking through a quiet Beijing hutong.",
+      "riskTags": [
+        "Chinese_context",
+        "everyday_activity",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "82211db8-632b-4c13-b8f9-d91f6a1435f4",
+      "word": "playoff",
+      "meaningZh": "季后赛",
+      "exampleId": "82211db8-632b-4c13-b8f9-d91f6a1435f4-visual-ex",
+      "styleFamily": "dynamic screen-print sports illustration",
+      "sentenceEn": "The team won a close playoff game.",
+      "sentenceZh": "这支球队赢下了一场比分接近的季后赛。",
+      "scene": "Adult basketball players celebrate together at center court after a close postseason game while the opposing team exchanges respectful handshakes; energetic but mature scene, complete expressive faces, plain uniforms, scoreboard hidden, no team marks, trophies, letters, numbers, logos or writing.",
+      "altText": "Basketball players celebrate winning a close playoff game.",
+      "riskTags": [
+        "sports",
+        "crowd",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "80dd00f0-de5a-4ab2-8552-86cec9e0d420",
+      "word": "minimum",
+      "meaningZh": "最小的；最低的；最小值",
+      "exampleId": "80dd00f0-de5a-4ab2-8552-86cec9e0d420-visual-ex",
+      "styleFamily": "precise still-life paper-cut illustration",
+      "sentenceEn": "She packed the minimum amount needed for the short trip.",
+      "sentenceZh": "这次短途旅行她只带了最低限度的物品。",
+      "scene": "On a tidy table, an adult traveler places only three essential objects—a folded shirt, toothbrush and small water flask—into a compact open bag while a large pile of optional belongings remains clearly outside; complete face, no tickets, tags, product marks, letters, numbers or writing.",
+      "altText": "A traveler packs only the minimum amount needed.",
+      "riskTags": [
+        "abstract_concept",
+        "everyday_activity",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b82a14bf-8534-4bd3-b65b-0f0428852c54",
+      "word": "fiscal",
+      "meaningZh": "财政的",
+      "exampleId": "b82a14bf-8534-4bd3-b65b-0f0428852c54-visual-ex",
+      "styleFamily": "Chinese civic meeting layered-paper editorial art",
+      "sentenceEn": "The city adopted a careful fiscal plan for the coming year.",
+      "sentenceZh": "这座城市为来年制定了审慎的财政计划。",
+      "scene": "At a modern Chinese municipal meeting, diverse adult officials thoughtfully allocate plain wooden tokens among miniature models of a school, clinic, park and bridge, clearly representing public finances; complete natural faces, no flags, emblems, currency marks, documents, charts, letters, numbers or writing.",
+      "altText": "City officials discuss a careful fiscal plan.",
+      "riskTags": [
+        "Chinese_context",
+        "civic_finance",
+        "no_currency_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d5241e28-9f20-46eb-9bf1-9e71e4fc8ac3",
+      "word": "skirt",
+      "meaningZh": "裙子；下摆；边缘；郊区",
+      "exampleId": "d5241e28-9f20-46eb-9bf1-9e71e4fc8ac3-visual-ex",
+      "styleFamily": "fashion atelier textured pastel illustration",
+      "sentenceEn": "The tailor adjusted the hem of the blue skirt.",
+      "sentenceZh": "裁缝调整了蓝色裙子的下摆。",
+      "scene": "In a bright tailoring studio, an adult tailor carefully adjusts the hem of a blue skirt worn by an adult client standing naturally on a low fitting platform; respectful professional setting, both complete faces visible, no exposed underwear, brand marks, measuring numbers, labels or writing.",
+      "altText": "A tailor adjusts the hem of a blue skirt.",
+      "riskTags": [
+        "clothing",
+        "professional_fitting",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "61e1e7f1-b025-4906-8933-e1ca392b7bcd",
+      "word": "dump",
+      "meaningZh": "倾倒；垃圾场",
+      "exampleId": "61e1e7f1-b025-4906-8933-e1ca392b7bcd-visual-ex",
+      "styleFamily": "environmental work bold gouache illustration",
+      "sentenceEn": "The gardener dumped the dry leaves into the compost bin.",
+      "sentenceZh": "园丁把干树叶倒进了堆肥箱。",
+      "scene": "An adult community gardener tips a basket of dry autumn leaves into a large open wooden compost bin, with the falling leaves clearly visible; complete face, clean garden setting, no household trash, pollution, labels, symbols or writing.",
+      "altText": "A gardener dumps dry leaves into a compost bin.",
+      "riskTags": [
+        "action",
+        "environment",
+        "no_pollution",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "344960c1-7294-4d46-9974-6ac3349a2fb5",
+      "word": "hence",
+      "meaningZh": "因此；从此",
+      "exampleId": "344960c1-7294-4d46-9974-6ac3349a2fb5-visual-ex",
+      "styleFamily": "cause-and-result editorial watercolor",
+      "sentenceEn": "The path was flooded; hence, the hikers used the bridge.",
+      "sentenceZh": "小路被水淹了，因此徒步者改走桥。",
+      "scene": "A flooded footpath ends at shallow water in the foreground while two adult hikers visibly choose the adjacent raised wooden bridge and continue safely across; the cause and result are clear from one scene, complete faces, no arrows, signs, maps, symbols or writing.",
+      "altText": "A flooded path causes hikers to use a bridge instead.",
+      "riskTags": [
+        "abstract_concept",
+        "cause_effect",
+        "water",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "28727a2e-d7e8-49ed-b2b8-a8d10df785b7",
+      "word": "uncomfortable",
+      "meaningZh": "不舒服的",
+      "exampleId": "28727a2e-d7e8-49ed-b2b8-a8d10df785b7-visual-ex",
+      "styleFamily": "expressive interior crayon-and-gouache illustration",
+      "sentenceEn": "The stiff chair became uncomfortable after a while.",
+      "sentenceZh": "坐了一会儿后，这把硬椅子变得很不舒服。",
+      "scene": "An adult office worker shifts awkwardly on a visibly stiff wooden chair, rubbing a tense shoulder with a mild strained expression while a comfortable cushioned chair sits nearby; complete face, no severe pain, injury, medical setting, screens, letters or writing.",
+      "altText": "A worker feels uncomfortable on a stiff chair.",
+      "riskTags": [
+        "discomfort",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "92c08996-da53-406b-bfe3-d7c1d2de7acf",
+      "word": "execute",
+      "meaningZh": "执行；实行；完成；处死；制成",
+      "exampleId": "92c08996-da53-406b-bfe3-d7c1d2de7acf-visual-ex",
+      "styleFamily": "garden project editorial cut-paper illustration",
+      "sentenceEn": "The crew executed the garden plan with precision.",
+      "sentenceZh": "施工团队精准地实施了花园方案。",
+      "scene": "A diverse adult landscaping crew carefully builds a geometric garden from a small plain physical model, placing curved stones and rows of plants so the real garden visibly matches the model; complete faces, safe tools, no paper plans, labels, machinery logos, letters or writing.",
+      "altText": "A landscaping crew precisely executes a garden plan.",
+      "riskTags": [
+        "action",
+        "nonviolent_sense",
+        "teamwork",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c3190d3f-f16a-4ea3-8f66-c9e6a5cfa76d",
+      "word": "limb",
+      "meaningZh": "肢体；四肢；大树枝",
+      "exampleId": "c3190d3f-f16a-4ea3-8f66-c9e6a5cfa76d-visual-ex",
+      "styleFamily": "botanical vintage block-print illustration",
+      "sentenceEn": "A heavy limb extended from the old oak tree.",
+      "sentenceZh": "一根粗大的枝干从老橡树上伸展开来。",
+      "scene": "A majestic old oak tree fills a meadow scene, with one especially heavy main limb extending horizontally from the trunk and supporting many smaller leafy branches; no people, broken wood, tools, labels, diagrams, arrows or writing.",
+      "altText": "A heavy limb extends from an old oak tree.",
+      "riskTags": [
+        "tree_sense",
+        "nature",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "f6326347-3f59-462f-9f52-4325f1747f94",
+      "word": "ideology",
+      "meaningZh": "意识形态；思想体系",
+      "exampleId": "f6326347-3f59-462f-9f52-4325f1747f94-visual-ex",
+      "styleFamily": "thoughtful seminar mixed-media editorial illustration",
+      "sentenceEn": "The seminar compared different political ideologies.",
+      "sentenceZh": "研讨会比较了不同的政治意识形态。",
+      "scene": "In a neutral university seminar room, diverse adult participants calmly compare two contrasting abstract tabletop models—one formed from tightly linked figures and one from distinct individual figures—while listening respectfully; complete faces, no flags, party colors, propaganda, raised fists, documents, letters, symbols or writing.",
+      "altText": "A neutral seminar compares different ideologies.",
+      "riskTags": [
+        "politics",
+        "neutral_education",
+        "no_propaganda",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "eaab443c-c653-4c58-b837-1fea99c7a66d",
+      "word": "tune",
+      "meaningZh": "曲调；调整；调音",
+      "exampleId": "eaab443c-c653-4c58-b837-1fea99c7a66d-visual-ex",
+      "styleFamily": "Chinese music studio mineral-pigment illustration",
+      "sentenceEn": "The musician paused to tune her erhu.",
+      "sentenceZh": "这位乐师停下来给二胡调音。",
+      "scene": "In a serene Chinese music rehearsal room, an adult musician listens closely while adjusting a tuning peg on her erhu, with two fellow adult musicians waiting nearby holding plain traditional instruments; complete faces, no sheet music, wall scrolls, instrument labels, letters or writing.",
+      "altText": "A Chinese musician carefully tunes her erhu.",
+      "riskTags": [
+        "Chinese_context",
+        "music",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2e6367c0-785a-45d5-a343-5a583188741b",
+      "word": "continuing",
+      "meaningZh": "持续的",
+      "exampleId": "2e6367c0-785a-45d5-a343-5a583188741b-visual-ex",
+      "styleFamily": "atmospheric landscape soft-pastel illustration",
+      "sentenceEn": "The continuing rain kept the fields wet all week.",
+      "sentenceZh": "持续的降雨使田地整周都很湿润。",
+      "scene": "Steady rain continues across broad saturated farm fields beneath layered gray clouds, with several puddles, dripping fence posts and distant rain bands conveying long duration; no people, flood disaster, calendars, clocks, symbols, letters, numbers or writing.",
+      "altText": "Continuing rain falls over already wet fields.",
+      "riskTags": [
+        "weather",
+        "duration",
+        "no_disaster",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4bf7d1e8-4ac4-493a-af56-97fbef21aa24",
+      "word": "harm",
+      "meaningZh": "伤害；害处；损害",
+      "exampleId": "4bf7d1e8-4ac4-493a-af56-97fbef21aa24-visual-ex",
+      "styleFamily": "gentle conservation storybook gouache for adults",
+      "sentenceEn": "The mesh cover protects young plants from harm.",
+      "sentenceZh": "网罩保护幼苗免受伤害。",
+      "scene": "An adult gardener secures a soft mesh cover over tender vegetable seedlings while curious rabbits remain safely outside the garden bed, clearly showing prevention of harm; complete face, calm humane scene, no traps, injury, pesticides, warning signs, labels or writing.",
+      "altText": "A mesh cover protects young plants from harm.",
+      "riskTags": [
+        "prevention",
+        "animals",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2b5f0c4f-1816-4e52-87da-c43dbf34c6e8",
+      "word": "railroad",
+      "meaningZh": "铁路",
+      "exampleId": "2b5f0c4f-1816-4e52-87da-c43dbf34c6e8-visual-ex",
+      "styleFamily": "Chinese mountain railway panoramic ink-and-color illustration",
+      "sentenceEn": "The railroad carries freight through the mountains.",
+      "sentenceZh": "这条铁路穿越群山运输货物。",
+      "scene": "A long electric freight train travels along a modern railroad curving through dramatic green mountains in southwest China, crossing a sturdy viaduct and entering a tunnel; no people, station signs, container logos, locomotive numbers, letters or writing.",
+      "altText": "A freight train follows a railroad through Chinese mountains.",
+      "riskTags": [
+        "Chinese_context",
+        "transport",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9faf4ee6-9def-4f85-a903-033b4f4822c3",
+      "word": "endure",
+      "meaningZh": "忍受；忍耐；容忍；耐",
+      "exampleId": "9faf4ee6-9def-4f85-a903-033b4f4822c3-visual-ex",
+      "styleFamily": "resilient nature impasto illustration",
+      "sentenceEn": "The lone pine endured the winter storm.",
+      "sentenceZh": "这棵孤松经受住了冬季风暴。",
+      "scene": "A sturdy lone pine bends but remains rooted on a snowy ridge during a strong winter storm, its trunk intact as wind sweeps snow around it and faint dawn light appears beyond the clouds; no people, damage, symbols, letters or writing.",
+      "altText": "A lone pine endures a harsh winter storm.",
+      "riskTags": [
+        "weather",
+        "resilience",
+        "no_disaster",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e2666dbc-9348-439d-badd-f9fdd7cf2589",
+      "word": "radiation",
+      "meaningZh": "辐射",
+      "exampleId": "e2666dbc-9348-439d-badd-f9fdd7cf2589-visual-ex",
+      "styleFamily": "scientific safety layered-paper illustration",
+      "sentenceEn": "The canopy shields visitors from intense solar radiation.",
+      "sentenceZh": "遮阳棚保护游客免受强烈太阳辐射。",
+      "scene": "At a sunny desert research walkway, a broad protective canopy casts deep shade over two adult visitors while stylized bands of intense sunlight stop clearly at the canopy edge; complete natural faces, calm educational context, no sunburn, hazard symbols, gauges, diagrams, arrows, letters or writing.",
+      "altText": "A canopy shields visitors from intense solar radiation.",
+      "riskTags": [
+        "science",
+        "solar_radiation",
+        "safety",
+        "no_text"
+      ]
+    }
+  ]
+}

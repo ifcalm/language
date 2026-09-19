@@ -1,0 +1,329 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3321-3340",
+  "batchId": "auto-rank-3321-3340-20260918",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "pleasant",
+      "frozen",
+      "pension",
+      "promotion",
+      "delicate",
+      "rebuild"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "90e4a489-b411-486d-8dd0-6224dec55163",
+      "word": "technological",
+      "meaningZh": "技术的",
+      "exampleId": "90e4a489-b411-486d-8dd0-6224dec55163-visual-ex",
+      "styleFamily": "clean vector editorial illustration",
+      "sentenceEn": "Technological advances help the robot harvest ripe tomatoes.",
+      "sentenceZh": "技术进步帮助机器人采摘成熟的番茄。",
+      "scene": "A compact agricultural robot gently picks ripe red tomatoes in a greenhouse using a simple padded gripper. Neat tomato plants and a crate show practical technological progress. No people, screens, labels, letters or numerals; believable machinery and clearly connected joints.",
+      "altText": "温室中的机器人采摘成熟番茄。",
+      "riskTags": [
+        "mechanical_detail"
+      ]
+    },
+    {
+      "vocabularyId": "61c85b19-6dec-4b13-b3c3-79edfcf46117",
+      "word": "signature",
+      "meaningZh": "签字；识别标志；调号；签名附件",
+      "exampleId": "61c85b19-6dec-4b13-b3c3-79edfcf46117-visual-ex",
+      "styleFamily": "colored-pencil narrative illustration",
+      "sentenceEn": "The visitor added her signature to the register.",
+      "sentenceZh": "访客在登记簿上签了名。",
+      "scene": "An adult woman signs an otherwise blank register with a pen at a small reception desk. Close enough to see a single abstract flowing ink flourish with no identifiable letters or words. Her naturally drawn hand holds the pen, complete expressive face visible. No other text, numbers or logos.",
+      "altText": "访客用笔在登记簿上留下签名。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c1df1910-2381-454d-89b7-f3db3b154e21",
+      "word": "pleasant",
+      "meaningZh": "愉快的",
+      "exampleId": "c1df1910-2381-454d-89b7-f3db3b154e21-visual-ex",
+      "styleFamily": "soft gouache narrative illustration",
+      "sentenceEn": "We spent a pleasant afternoon in the quiet teahouse.",
+      "sentenceZh": "我们在安静的茶馆度过了愉快的下午。",
+      "scene": "Two adult friends smile gently over plain tea cups in a traditional Chinese garden teahouse. Through an open wooden window, soft rain falls on bamboo and a stone path. Warm relaxed atmosphere, complete readable natural faces and hands; no writing or signs.",
+      "altText": "朋友在园林茶馆里惬意地喝茶。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "05d665a2-2941-4d5c-8781-5d1498903164",
+      "word": "wow",
+      "meaningZh": "哇",
+      "exampleId": "05d665a2-2941-4d5c-8781-5d1498903164-visual-ex",
+      "styleFamily": "luminous watercolor landscape illustration",
+      "sentenceEn": "Wow, the northern lights filled the sky!",
+      "sentenceZh": "哇，北极光铺满了天空！",
+      "scene": "A traveler in a warm coat stands safely on a snowy overlook under vivid flowing green and violet aurora. Three-quarter face clearly shows wide amazed eyes, nose and open mouth. A vast night sky is the focal spectacle. No written exclamation, speech bubble or text.",
+      "altText": "旅行者惊叹于天空中的绚丽极光。",
+      "riskTags": [
+        "people_face",
+        "emotion"
+      ]
+    },
+    {
+      "vocabularyId": "d15a89cd-0705-4ec6-a73e-883d207b317d",
+      "word": "suspend",
+      "meaningZh": "暂停",
+      "exampleId": "d15a89cd-0705-4ec6-a73e-883d207b317d-visual-ex",
+      "styleFamily": "textured editorial cut-paper illustration",
+      "sentenceEn": "The crew had to suspend work because of the heavy rain.",
+      "sentenceZh": "施工队因大雨不得不暂停工作。",
+      "scene": "At a small bridge construction site heavy rain begins. A supervisor with complete face raises an open palm to pause work; two workers put their tools down and head toward a covered shelter. Idle equipment and covered materials make the temporary stop clear. Hard hats, safe ground, no signs or labels.",
+      "altText": "大雨中施工人员暂停工作并收好工具。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6d41d1af-dd2b-4fd0-b206-bea046f4f84d",
+      "word": "rebel",
+      "meaningZh": "反叛者；反抗；叛乱",
+      "exampleId": "6d41d1af-dd2b-4fd0-b206-bea046f4f84d-visual-ex",
+      "styleFamily": "expressive ink-and-gouache illustration",
+      "sentenceEn": "The young artist was a rebel against traditional painting styles.",
+      "sentenceZh": "这位年轻艺术家是传统绘画风格的反叛者。",
+      "scene": "A confident young adult artist with complete face paints a bold angular abstract flower composition while nearby easels display conventional naturalistic floral still lifes. The nonconformist contrast communicates a creative rebel without conflict or political symbols. Natural paintbrush grip, no written labels.",
+      "altText": "年轻艺术家用大胆画风挑战传统。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "bbeb6933-fba9-4cce-83fe-af94d18b4868",
+      "word": "frozen",
+      "meaningZh": "冰冻的",
+      "exampleId": "bbeb6933-fba9-4cce-83fe-af94d18b4868-visual-ex",
+      "styleFamily": "winter watercolor landscape illustration",
+      "sentenceEn": "The garden pond was frozen after the cold night.",
+      "sentenceZh": "寒夜过后，园中的池塘结冰了。",
+      "scene": "A traditional Chinese garden pond has a clearly solid frosted ice surface, delicate crack patterns and trapped fallen leaves, surrounded by snow-dusted rocks, bamboo and a small pavilion. No people on the ice. Quiet winter light, no writing or symbols.",
+      "altText": "中式园林池塘在寒夜后结了冰。",
+      "riskTags": [
+        "material_state"
+      ]
+    },
+    {
+      "vocabularyId": "e4e82401-026e-43fa-96af-01539f2ad461",
+      "word": "spouse",
+      "meaningZh": "配偶",
+      "exampleId": "e4e82401-026e-43fa-96af-01539f2ad461-visual-ex",
+      "styleFamily": "warm colored-pencil illustration",
+      "sentenceEn": "Her spouse helped her put on a coat before their walk.",
+      "sentenceZh": "散步前，她的配偶帮她穿上外套。",
+      "scene": "An older married couple in their home entrance: a gray-haired man gently helps his smiling wife into her coat. Their complete natural faces and ordinary wedding bands show a warm spouse relationship. Natural anatomical hands and clothing interaction; no text or logos.",
+      "altText": "丈夫温柔地帮助妻子穿上外套。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "relationship"
+      ]
+    },
+    {
+      "vocabularyId": "bced53e9-d9a0-4bf3-aea3-a11a17c5afeb",
+      "word": "fluid",
+      "meaningZh": "液体；分泌液；流体",
+      "exampleId": "bced53e9-d9a0-4bf3-aea3-a11a17c5afeb-visual-ex",
+      "styleFamily": "precise flat-shaded still-life illustration",
+      "sentenceEn": "The clear fluid flowed smoothly from the jug into the bowl.",
+      "sentenceZh": "清澈的液体从壶中顺畅地流进碗里。",
+      "scene": "A transparent glass jug tilted above a plain bowl pours a continuous stream of clear fluid, with plausible gravity, ripples and reflections emphasizing flowing liquid rather than solid matter. Human-free close-up still life, clean unmarked objects; no labels or symbols.",
+      "altText": "透明液体从玻璃壶流入碗中。",
+      "riskTags": [
+        "physical_process"
+      ]
+    },
+    {
+      "vocabularyId": "5cd53552-90b5-4a5e-85e1-9fb37c0d7e49",
+      "word": "pension",
+      "meaningZh": "养老金；退休金；津贴",
+      "exampleId": "5cd53552-90b5-4a5e-85e1-9fb37c0d7e49-visual-ex",
+      "styleFamily": "warm gouache community illustration",
+      "sentenceEn": "The retired gardener collected his pension at the community office.",
+      "sentenceZh": "退休园丁在社区办公室领取了养老金。",
+      "scene": "An elderly retired gardener in a Chinese community service office receives a small envelope of fictional plain banknotes from a clerk. His gardening hat and rolled gloves rest beside him, suggesting retired occupation. Friendly complete faces, natural hands; banknotes have only geometric shapes with no currency letters or numbers, no office signs.",
+      "altText": "退休园丁在社区办公室领取养老金。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "4df1d326-ec2c-4673-8efa-d26f01b199bb",
+      "word": "resume",
+      "meaningZh": "恢复；继续；简历",
+      "exampleId": "4df1d326-ec2c-4673-8efa-d26f01b199bb-visual-ex",
+      "styleFamily": "textured editorial illustration",
+      "sentenceEn": "The crew will resume work after the rain stops.",
+      "sentenceZh": "雨停后，施工队将恢复工作。",
+      "scene": "Sun breaks through clouds above the same type of small bridge construction site after rain. Workers in hard hats return from a nearby shelter, uncover materials and lift tools to restart safe construction. Visible puddles and opened cover clarify resuming paused work. Complete readable faces, natural hands, no labels.",
+      "altText": "雨停后施工人员重新开始工作。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f8153137-6811-463f-932e-90b934a7b2b9",
+      "word": "theoretical",
+      "meaningZh": "理论的",
+      "exampleId": "f8153137-6811-463f-932e-90b934a7b2b9-visual-ex",
+      "styleFamily": "minimal architectural pencil-and-watercolor illustration",
+      "sentenceEn": "The theoretical design existed only as a sketch.",
+      "sentenceZh": "这个理论设计还只存在于草图中。",
+      "scene": "A human-free architect desk displays a carefully drawn concept sketch of an imagined pedestrian bridge on one sheet. Pencil and clean drafting tools nearby, no physical bridge model and no built structure. Conceptual design drawing only, abstract pictorial lines without dimensions, letters, numbers or annotations.",
+      "altText": "理论中的桥梁设计还只是纸上草图。",
+      "riskTags": [
+        "abstract_meaning",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "677c571a-b2ef-404f-abc0-34f5ba648a7c",
+      "word": "sodium",
+      "meaningZh": "钠",
+      "exampleId": "677c571a-b2ef-404f-abc0-34f5ba648a7c-visual-ex",
+      "styleFamily": "restrained scientific still-life illustration",
+      "sentenceEn": "The sodium sample was stored under oil in a sealed container.",
+      "sentenceZh": "钠样品保存在密封容器的油中。",
+      "scene": "Scientific still life of a securely closed transparent laboratory sample jar containing a small dull silvery sodium metal piece fully submerged beneath protective clear mineral oil. Stable tray and uncluttered lab bench, no water, no reaction, no human handling, no flames. Illustration not photograph. Container completely unmarked, no labels or atomic diagrams.",
+      "altText": "密封容器中的钠样品浸在保护油下。",
+      "riskTags": [
+        "scientific_accuracy",
+        "material_state"
+      ]
+    },
+    {
+      "vocabularyId": "788eb1dd-4e42-4702-b6e0-01d68d9ea2d7",
+      "word": "promotion",
+      "meaningZh": "晋升；推广",
+      "exampleId": "788eb1dd-4e42-4702-b6e0-01d68d9ea2d7-visual-ex",
+      "styleFamily": "warm textured gouache illustration",
+      "sentenceEn": "Her promotion put her in charge of the pottery workshop.",
+      "sentenceZh": "她晋升后开始负责陶艺作坊。",
+      "scene": "Inside a Chinese pottery workshop, an experienced manager ceremonially hands the workshop key to an adult woman as colleagues smile and turn toward her for direction. Shelves of ceramics and a potter wheel give occupational context. Complete natural faces and hands, key handoff unambiguous, no written titles or badges.",
+      "altText": "陶艺作坊员工晋升为负责人并接过钥匙。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "02a490aa-35b1-465c-90e8-d3d9c919c62e",
+      "word": "delicate",
+      "meaningZh": "细致优雅的；微妙的；美味的",
+      "exampleId": "02a490aa-35b1-465c-90e8-d3d9c919c62e-visual-ex",
+      "styleFamily": "fine ink-and-watercolor craft illustration",
+      "sentenceEn": "The artist cut a delicate flower pattern from red paper.",
+      "sentenceZh": "艺术家用红纸剪出精巧的花纹。",
+      "scene": "A Chinese paper-cutting artisan makes a finely detailed red paper flower with thin connecting stems and intricate petals. Small scissors held naturally, workpiece and fine cut edges are the focal point, adult face has readable eyes nose mouth. Floral design only, no Chinese characters or symbols.",
+      "altText": "剪纸艺人剪出细致精巧的红色花纹。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "fine_detail"
+      ]
+    },
+    {
+      "vocabularyId": "88c5d544-13dd-40fc-ad83-30e3b8a42333",
+      "word": "forehead",
+      "meaningZh": "额头；前额",
+      "exampleId": "88c5d544-13dd-40fc-ad83-30e3b8a42333-visual-ex",
+      "styleFamily": "soft colored-pencil character illustration",
+      "sentenceEn": "She wiped the sweat from her forehead after gardening.",
+      "sentenceZh": "园艺劳动后，她擦去额头上的汗。",
+      "scene": "An adult gardener rests beside garden tools and wipes her forehead above the eyebrows with a small cloth. Complete face shown in three-quarter view, eyes nose mouth and forehead clearly readable; anatomically natural hand, modest sweat marks. Cheerful tired expression, no injuries or text.",
+      "altText": "园艺劳动后的女子用布擦拭额头。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "body_part"
+      ]
+    },
+    {
+      "vocabularyId": "3e6cf741-95ff-43ca-b153-c32865e2b9bc",
+      "word": "rebuild",
+      "meaningZh": "重建",
+      "exampleId": "3e6cf741-95ff-43ca-b153-c32865e2b9bc-visual-ex",
+      "styleFamily": "textured gouache architectural illustration",
+      "sentenceEn": "The workers will rebuild the damaged courtyard wall.",
+      "sentenceZh": "工人们将重建受损的院墙。",
+      "scene": "Chinese courtyard renovation: two workers in hard hats place new bricks on the surviving foundation of a partially damaged courtyard wall. An old broken section beside fresh rising masonry clearly communicates rebuilding. Safe scaffolding, natural arms and hands, complete readable faces, no plaques or characters.",
+      "altText": "工人沿原有地基重建中式院墙。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "1d9716ff-86d2-4c39-aaee-052469d2eb7b",
+      "word": "bounce",
+      "meaningZh": "跳；跳跃；弹力；撞击",
+      "exampleId": "1d9716ff-86d2-4c39-aaee-052469d2eb7b-visual-ex",
+      "styleFamily": "dynamic hand-drawn object illustration",
+      "sentenceEn": "The rubber ball bounced high after hitting the floor.",
+      "sentenceZh": "橡胶球撞到地板后高高弹起。",
+      "scene": "A single bright rubber ball rising from a clean floor just after impact, with a subtly flattened contact shadow below and graceful curved motion strokes showing upward rebound. No multiple balls, no arrows or written symbols. Human-free simple indoor composition, visually clear elastic bounce.",
+      "altText": "橡胶球碰地后向上弹起。",
+      "riskTags": [
+        "physical_process"
+      ]
+    },
+    {
+      "vocabularyId": "549a2c01-2cd4-4b34-acad-08e49bc804e4",
+      "word": "electrical",
+      "meaningZh": "电的",
+      "exampleId": "549a2c01-2cd4-4b34-acad-08e49bc804e4-visual-ex",
+      "styleFamily": "precise editorial object illustration",
+      "sentenceEn": "The electrical circuit powered the small lamp.",
+      "sentenceZh": "这个电路给小灯供电。",
+      "scene": "A safe tabletop low-voltage demonstration circuit: one unmarked small battery connected by clearly visible insulated wires through a simple closed switch to a glowing tiny lamp and back to the battery. Complete believable closed circuit, no wall mains, no exposed hazardous wires, no people, labels or plus-minus symbols.",
+      "altText": "低压电池电路使小灯亮起来。",
+      "riskTags": [
+        "mechanical_detail",
+        "scientific_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "3eb3037a-5d79-4ac7-9c84-954af9233657",
+      "word": "hook",
+      "meaningZh": "钩；钩状；镰刀；陷阱",
+      "exampleId": "3eb3037a-5d79-4ac7-9c84-954af9233657-visual-ex",
+      "styleFamily": "clean gouache still-life illustration",
+      "sentenceEn": "He hung his coat on the curved hook by the door.",
+      "sentenceZh": "他把外套挂在门旁弯曲的挂钩上。",
+      "scene": "Close-up of a single curved metal wall hook beside a doorway supporting one coat by its neck loop. Hook shape, attachment and coat loop are plainly visible, stable gravity and clean wall. Human-free mature illustration, no text, logos or markings.",
+      "altText": "外套挂在门旁弯曲的墙钩上。",
+      "riskTags": [
+        "object_relationship"
+      ]
+    }
+  ]
+}

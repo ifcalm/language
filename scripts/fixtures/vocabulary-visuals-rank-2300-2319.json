@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2300-2319",
+  "batchId": "auto-rank-2300-2319-20260820",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "phrase",
+      "ingredient",
+      "Muslim",
+      "fiber",
+      "Islamic",
+      "gear"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "d40af116-5360-4020-8bcc-a94342354f99",
+      "word": "phrase",
+      "meaningZh": "惯用语；词组；成语；措词；乐句",
+      "exampleId": "d40af116-5360-4020-8bcc-a94342354f99-visual-ex",
+      "styleFamily": "Chinese guqin watercolor illustration",
+      "sentenceEn": "The musician repeated a short phrase until its rhythm felt natural.",
+      "sentenceZh": "音乐家反复练习一个短乐句，直到节奏变得自然。",
+      "scene": "In a quiet Chinese studio, a guqin player repeats one short musical phrase while a teacher listens and marks the rhythm gently with a hand, with no written notation.",
+      "altText": "古琴演奏者反复练习一个短乐句",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "8203e6a7-2cde-476f-9e54-b98d9c352088",
+      "word": "ingredient",
+      "meaningZh": "成分；因素",
+      "exampleId": "8203e6a7-2cde-476f-9e54-b98d9c352088-visual-ex",
+      "styleFamily": "Chinese medicinal-food gouache illustration",
+      "sentenceEn": "Fresh ginger was the final ingredient in the warming soup.",
+      "sentenceZh": "新鲜生姜是这道暖汤的最后一种配料。",
+      "scene": "In a Chinese home kitchen, a cook adds sliced fresh ginger as the final ingredient to a steaming soup while mushrooms, greens, and tofu sit prepared nearby.",
+      "altText": "厨师把鲜姜作为暖汤最后一种配料",
+      "riskTags": [
+        "hands",
+        "many_objects",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "15804f84-fdd1-4182-9087-176ef558133a",
+      "word": "stake",
+      "meaningZh": "股份；利害关系；木桩；赌注",
+      "exampleId": "15804f84-fdd1-4182-9087-176ef558133a-visual-ex",
+      "styleFamily": "community garden editorial illustration",
+      "sentenceEn": "She drove a wooden stake beside the young tomato plant.",
+      "sentenceZh": "她在幼小番茄苗旁打入一根木桩。",
+      "scene": "A gardener drives one sturdy wooden stake into soil beside a young tomato plant, then loosely ties the stem for support without damaging it.",
+      "altText": "园丁在番茄幼苗旁打入支撑木桩",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "c0e9c888-d0be-41e3-a46f-c265c447413c",
+      "word": "Muslim",
+      "meaningZh": "穆斯林的",
+      "exampleId": "c0e9c888-d0be-41e3-a46f-c265c447413c-visual-ex",
+      "styleFamily": "respectful Chinese community watercolor illustration",
+      "sentenceEn": "The Muslim family prepared food for neighbors after the flood.",
+      "sentenceZh": "这个穆斯林家庭在洪水后为邻居准备食物。",
+      "scene": "A Chinese Hui Muslim family works with neighbors in a community kitchen after a flood, preparing halal meals and distributing plain food containers respectfully, with no religious caricature.",
+      "altText": "回族穆斯林家庭为受灾邻居准备饭菜",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "2a40a4c0-575c-4cb0-927d-2b6b60d603ed",
+      "word": "fiber",
+      "meaningZh": "纤维",
+      "exampleId": "2a40a4c0-575c-4cb0-927d-2b6b60d603ed-visual-ex",
+      "styleFamily": "Chinese textile craft illustration",
+      "sentenceEn": "The artisan twisted plant fiber into a strong weaving thread.",
+      "sentenceZh": "工匠把植物纤维捻成结实的织线。",
+      "scene": "In a Chinese rural weaving workshop, an artisan twists long plant fiber into strong thread while another weaver uses the finished thread on a wooden loom.",
+      "altText": "工匠把植物纤维捻成织线",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "materials"
+      ]
+    },
+    {
+      "vocabularyId": "c2044552-d079-4fd6-a9ac-c920c4850c21",
+      "word": "activist",
+      "meaningZh": "活动家",
+      "exampleId": "c2044552-d079-4fd6-a9ac-c920c4850c21-visual-ex",
+      "styleFamily": "constructive civic editorial illustration",
+      "sentenceEn": "The clean-air activist organized residents to measure neighborhood pollution.",
+      "sentenceZh": "清洁空气活动家组织居民测量社区污染。",
+      "scene": "A clean-air activist trains residents to use small portable air sensors beside a busy road and trees, gathering evidence calmly with blank notebooks and no protest slogans.",
+      "altText": "清洁空气活动家组织居民测量污染",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "acbb5fed-e18c-4284-ba51-2cbff9937dd1",
+      "word": "Islamic",
+      "meaningZh": "伊斯兰的",
+      "exampleId": "acbb5fed-e18c-4284-ba51-2cbff9937dd1-visual-ex",
+      "styleFamily": "Chinese architectural conservation watercolor illustration",
+      "sentenceEn": "Conservators repaired the Islamic geometric tiles of the historic mosque.",
+      "sentenceZh": "修复人员修补了历史清真寺的伊斯兰几何瓷砖。",
+      "scene": "At a historic Chinese mosque, conservators respectfully repair Islamic geometric tilework and timber details while community elders observe, with no readable sacred text.",
+      "altText": "修复人员维护历史清真寺的伊斯兰几何装饰",
+      "riskTags": [
+        "hands",
+        "architecture",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "c9cd25c8-d574-4cea-bb8f-03e66bb2a6c7",
+      "word": "snap",
+      "meaningZh": "折断；快照；突然说",
+      "exampleId": "c9cd25c8-d574-4cea-bb8f-03e66bb2a6c7-visual-ex",
+      "styleFamily": "winter nature gouache illustration",
+      "sentenceEn": "The frozen branch began to snap under the weight of ice.",
+      "sentenceZh": "结冰树枝在冰的重量下开始折断。",
+      "scene": "A heavily iced tree branch visibly bends and begins to snap while a park worker keeps people safely away from the falling zone.",
+      "altText": "结冰树枝在重压下开始折断",
+      "riskTags": [
+        "motion",
+        "weather",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "1a447b3d-33ee-4cc9-88ac-d6d0e17be199",
+      "word": "terrorism",
+      "meaningZh": "恐怖主义",
+      "exampleId": "1a447b3d-33ee-4cc9-88ac-d6d0e17be199-visual-ex",
+      "styleFamily": "solemn community resilience illustration",
+      "sentenceEn": "The city responded to terrorism with unity, care, and stronger public safety.",
+      "sentenceZh": "这座城市以团结、关怀和更强的公共安全应对恐怖主义。",
+      "scene": "Without depicting violence, diverse residents, emergency workers, counselors, and faith leaders gather at a peaceful remembrance garden, supporting one another while public-safety teams coordinate calmly in the distance.",
+      "altText": "社区以团结关怀和公共安全应对恐怖主义",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "8a1b0eae-2318-42c2-87af-5ab8a5fa041c",
+      "word": "refugee",
+      "meaningZh": "难民",
+      "exampleId": "8a1b0eae-2318-42c2-87af-5ab8a5fa041c-visual-ex",
+      "styleFamily": "dignified welcome-center watercolor illustration",
+      "sentenceEn": "The refugee family received keys to a safe temporary apartment.",
+      "sentenceZh": "这个难民家庭拿到了安全临时住所的钥匙。",
+      "scene": "At a welcoming housing center, a refugee family receives apartment keys from a caseworker while local volunteers carry bedding and food, showing dignity, relief, and agency.",
+      "altText": "难民家庭获得安全临时住所的钥匙",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "5b55168b-ad40-4246-9a10-dd2b268c9b05",
+      "word": "incorporate",
+      "meaningZh": "合并；包含",
+      "exampleId": "5b55168b-ad40-4246-9a10-dd2b268c9b05-visual-ex",
+      "styleFamily": "sustainable architecture editorial illustration",
+      "sentenceEn": "The architect chose to incorporate a rain garden into the courtyard.",
+      "sentenceZh": "建筑师决定把雨水花园纳入庭院设计。",
+      "scene": "An architect and gardeners incorporate a planted rain garden into a real courtyard, directing roof runoff into a shallow bed while accessible paths remain open.",
+      "altText": "建筑师把雨水花园纳入庭院设计",
+      "riskTags": [
+        "people_face",
+        "water",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "32276cfb-ad84-44e8-b1c7-dd2b6a6e47f8",
+      "word": "hip",
+      "meaningZh": "臀部；髋部；时髦的",
+      "exampleId": "32276cfb-ad84-44e8-b1c7-dd2b6a6e47f8-visual-ex",
+      "styleFamily": "gentle rehabilitation editorial illustration",
+      "sentenceEn": "The therapist showed her how to strengthen the muscles around her hip.",
+      "sentenceZh": "治疗师教她如何加强髋部周围的肌肉。",
+      "scene": "In a rehabilitation studio, a therapist guides an adult through a safe side-step exercise with a resistance band around the upper legs, indicating the hip area through posture rather than diagrams.",
+      "altText": "治疗师指导患者锻炼髋部周围肌肉",
+      "riskTags": [
+        "people_face",
+        "motion",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "6bf0a863-b592-45c6-9f84-07bd12b7d3ac",
+      "word": "ultimate",
+      "meaningZh": "最终的；终极的；根本的",
+      "exampleId": "6bf0a863-b592-45c6-9f84-07bd12b7d3ac-visual-ex",
+      "styleFamily": "mountain expedition gouache illustration",
+      "sentenceEn": "The ultimate goal was the remote summit beyond the three lower ridges.",
+      "sentenceZh": "最终目标是越过三道较低山脊后的遥远峰顶。",
+      "scene": "Adult hikers pause after crossing three lower ridges and look toward the ultimate distant summit glowing beyond them, with the full route suggested by landscape depth and no arrows.",
+      "altText": "徒步者望向三道山脊后的最终峰顶",
+      "riskTags": [
+        "landscape",
+        "spatial_relationship",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1680c6d3-8995-4f09-b8e8-a6eca3ed6105",
+      "word": "switch",
+      "meaningZh": "开关；转换",
+      "exampleId": "1680c6d3-8995-4f09-b8e8-a6eca3ed6105-visual-ex",
+      "styleFamily": "industrial safety editorial illustration",
+      "sentenceEn": "The technician used the main switch to stop the machine safely.",
+      "sentenceZh": "技术员使用总开关安全停止机器。",
+      "scene": "A technician firmly moves one large mechanical safety switch to the off position while a workshop machine visibly slows and coworkers stand clear, with no readable labels.",
+      "altText": "技术员用总开关安全停止机器",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "60b1f0f3-4538-465a-9d0d-b326e164e2ca",
+      "word": "corporation",
+      "meaningZh": "公司",
+      "exampleId": "60b1f0f3-4538-465a-9d0d-b326e164e2ca-visual-ex",
+      "styleFamily": "employee-owned business editorial illustration",
+      "sentenceEn": "The recycling corporation was owned jointly by its workers.",
+      "sentenceZh": "这家回收公司由员工共同所有。",
+      "scene": "Workers from collection, sorting, repair, and administration gather as equal owners around a circular table inside a clean recycling corporation, with recovered materials behind them and no logos.",
+      "altText": "员工共同拥有并经营回收公司",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "69ec0b61-8d02-4e55-890f-131d7e1a076a",
+      "word": "valuable",
+      "meaningZh": "有价值的",
+      "exampleId": "69ec0b61-8d02-4e55-890f-131d7e1a076a-visual-ex",
+      "styleFamily": "seed-bank watercolor illustration",
+      "sentenceEn": "The seed bank protected valuable varieties from drought and disease.",
+      "sentenceZh": "种子库保护珍贵品种免受干旱和疾病威胁。",
+      "scene": "Inside a cool seed bank, researchers carefully store diverse valuable heirloom seeds in sealed transparent containers while healthy crop varieties grow in a protected greenhouse beyond.",
+      "altText": "种子库保存珍贵的传统作物品种",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "d698bcb1-8779-4760-a538-aba8faaf1a64",
+      "word": "assumption",
+      "meaningZh": "假设；设想；承担",
+      "exampleId": "d698bcb1-8779-4760-a538-aba8faaf1a64-visual-ex",
+      "styleFamily": "scientific reasoning editorial illustration",
+      "sentenceEn": "The experiment proved their first assumption wrong.",
+      "sentenceZh": "实验结果证明他们最初的假设是错误的。",
+      "scene": "Researchers expected a plant under one lamp to thrive, but compare it with a healthier plant under a different light and visibly reconsider their first assumption, with blank notes only.",
+      "altText": "实验结果让研究人员修正最初假设",
+      "riskTags": [
+        "comparison",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "39ab1f90-bf2d-442b-8f02-5f0ea12a5c69",
+      "word": "gear",
+      "meaningZh": "齿轮；工具",
+      "exampleId": "39ab1f90-bf2d-442b-8f02-5f0ea12a5c69-visual-ex",
+      "styleFamily": "Chinese watermill craft illustration",
+      "sentenceEn": "The miller replaced a worn wooden gear inside the old watermill.",
+      "sentenceZh": "磨坊工更换了古老水磨中的磨损木齿轮。",
+      "scene": "Inside a traditional Chinese watermill, a miller fits a new wooden gear beside the worn gear it replaces while the larger wheel mechanism waits motionless.",
+      "altText": "磨坊工更换水磨中的木齿轮",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "3ca26bef-0570-43c7-bcb7-13b934f91c69",
+      "word": "barrier",
+      "meaningZh": "障碍；屏障；栅栏",
+      "exampleId": "3ca26bef-0570-43c7-bcb7-13b934f91c69-visual-ex",
+      "styleFamily": "wildlife infrastructure gouache illustration",
+      "sentenceEn": "A new crossing helped animals bypass the highway barrier.",
+      "sentenceZh": "新的通道帮助动物绕过公路障碍。",
+      "scene": "Deer and smaller wildlife use a broad planted overpass to cross above a divided highway, bypassing the barrier of traffic and fencing below.",
+      "altText": "野生动物通过生态桥跨越公路障碍",
+      "riskTags": [
+        "animal_anatomy",
+        "spatial_relationship",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "d63af830-cc86-4d03-8d96-5ad903e851ac",
+      "word": "minor",
+      "meaningZh": "次要的；未成年人",
+      "exampleId": "d63af830-cc86-4d03-8d96-5ad903e851ac-visual-ex",
+      "styleFamily": "calm auto-repair editorial illustration",
+      "sentenceEn": "The mechanic repaired a minor dent without replacing the door.",
+      "sentenceZh": "修理工修复了一个小凹痕，无需更换车门。",
+      "scene": "A mechanic gently removes one minor dent from an otherwise undamaged car door using a small suction tool, while a replacement door remains unnecessary and absent.",
+      "altText": "修理工修复车门上的轻微凹痕",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "concentrate"
+      ]
+    }
+  ]
+}

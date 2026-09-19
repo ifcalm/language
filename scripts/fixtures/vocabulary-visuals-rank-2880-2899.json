@@ -1,0 +1,369 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2880-2899",
+  "batchId": "auto-rank-2880-2899-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "impressive",
+      "portray",
+      "powder",
+      "ghost",
+      "cooking",
+      "admire"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "4c6f3f76-1102-44f5-b8a5-3c33aaafe076",
+      "word": "fighting",
+      "meaningZh": "战斗",
+      "exampleId": "4c6f3f76-1102-44f5-b8a5-3c33aaafe076-visual-ex",
+      "styleFamily": "dynamic sports-poster illustration",
+      "sentenceEn": "The two athletes are fighting for the championship under strict rules.",
+      "sentenceZh": "两名运动员正在严格规则下争夺冠军。",
+      "scene": "Two adult martial artists wearing full protective gear spar inside a supervised ring, blocking and countering with controlled technique while a referee watches closely and no one is injured.",
+      "altText": "Two protected martial artists fight competitively under a referee's supervision.",
+      "riskTags": [
+        "combat_sport",
+        "people_face",
+        "protective_gear",
+        "no_injury"
+      ]
+    },
+    {
+      "vocabularyId": "f20d0eaf-2512-4c8d-9a8c-1c5dfb788e3c",
+      "word": "impressive",
+      "meaningZh": "令人印象深刻的",
+      "exampleId": "f20d0eaf-2512-4c8d-9a8c-1c5dfb788e3c-visual-ex",
+      "styleFamily": "monumental Chinese ink-and-color landscape illustration",
+      "sentenceEn": "The impressive view leaves every visitor silent with wonder.",
+      "sentenceZh": "这令人印象深刻的景色让每位游客都惊叹无言。",
+      "scene": "Several adult visitors pause on a mountain overlook as an immense section of the Great Wall winds across dramatic misty ridges at sunrise, its scale dwarfing the people below.",
+      "altText": "Visitors admire an impressive Great Wall panorama across misty mountains.",
+      "riskTags": [
+        "scale",
+        "people_face",
+        "chinese_cultural_context",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "7532f2fa-6eb6-4b4f-8e81-13d8edc7eb81",
+      "word": "competitor",
+      "meaningZh": "竞争者",
+      "exampleId": "7532f2fa-6eb6-4b4f-8e81-13d8edc7eb81-visual-ex",
+      "styleFamily": "bold geometric athletics illustration",
+      "sentenceEn": "Her strongest competitor waits in the next lane.",
+      "sentenceZh": "她最强的竞争者正在相邻跑道上等待。",
+      "scene": "Two adult sprinters crouch in adjacent starting lanes with focused expressions, each glancing briefly toward the other as an evenly matched rival before the race begins.",
+      "altText": "Two evenly matched runners prepare to compete in neighboring lanes.",
+      "riskTags": [
+        "competition",
+        "comparison",
+        "people_face",
+        "natural_pose"
+      ]
+    },
+    {
+      "vocabularyId": "3d835ba1-3ffd-4a4b-8488-c6717dc75308",
+      "word": "ugly",
+      "meaningZh": "丑陋的；邪恶的；险恶的；不祥的",
+      "exampleId": "3d835ba1-3ffd-4a4b-8488-c6717dc75308-visual-ex",
+      "styleFamily": "satirical editorial collage illustration",
+      "sentenceEn": "The abandoned factory has an ugly, neglected exterior.",
+      "sentenceZh": "这座废弃工厂有着丑陋而失修的外观。",
+      "scene": "An abandoned factory stands with mismatched patched walls, crooked gutters, peeling paint, broken drainpipes, and an awkward concrete facade, clearly unattractive without judging any person.",
+      "altText": "An ugly abandoned factory has a damaged and neglected exterior.",
+      "riskTags": [
+        "negative_quality",
+        "building",
+        "no_person_judgment"
+      ]
+    },
+    {
+      "vocabularyId": "a7d4fe3d-8386-4cda-ab2f-ca32db816f41",
+      "word": "worried",
+      "meaningZh": "担心的",
+      "exampleId": "a7d4fe3d-8386-4cda-ab2f-ca32db816f41-visual-ex",
+      "styleFamily": "expressive soft-pastel editorial illustration",
+      "sentenceEn": "She looks worried when her bicycle tire goes flat before work.",
+      "sentenceZh": "上班前自行车爆胎让她显得很担心。",
+      "scene": "An adult commuter crouches beside a visibly flat bicycle tire, checking her watchless wrist instinctively while dark rain clouds gather and her natural face shows concern rather than panic.",
+      "altText": "A commuter looks worried beside her bicycle's flat tire.",
+      "riskTags": [
+        "emotion",
+        "people_face",
+        "cause_effect",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "169f1cef-089d-413d-8706-3f072f84eb23",
+      "word": "portray",
+      "meaningZh": "描绘；描写；描绘...的肖像",
+      "exampleId": "169f1cef-089d-413d-8706-3f072f84eb23-visual-ex",
+      "styleFamily": "elegant watercolor-and-ink studio illustration",
+      "sentenceEn": "The artist uses ink to portray the musician's calm character.",
+      "sentenceZh": "艺术家用水墨描绘这位音乐家沉静的气质。",
+      "scene": "In a Chinese art studio, an adult painter uses expressive black ink washes to portray a seated erhu musician on rice paper, capturing the model's calm posture and thoughtful expression.",
+      "altText": "An ink painter portrays a seated erhu musician in a Chinese studio.",
+      "riskTags": [
+        "portrait",
+        "reference",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b565e1b1-4785-4581-b257-4d4ad13db1cb",
+      "word": "powder",
+      "meaningZh": "粉；粉末；火药",
+      "exampleId": "b565e1b1-4785-4581-b257-4d4ad13db1cb-visual-ex",
+      "styleFamily": "warm botanical gouache illustration",
+      "sentenceEn": "She grinds the dried herbs into a fine powder.",
+      "sentenceZh": "她把干燥药草研磨成细粉。",
+      "scene": "At a traditional Chinese herbal workbench, an adult practitioner uses a stone mortar and pestle to grind dried roots into a small mound of fine golden-brown powder, with whole herbs beside it for comparison.",
+      "altText": "A practitioner grinds dried herbs into fine powder with a mortar and pestle.",
+      "riskTags": [
+        "fine_material",
+        "hands",
+        "comparison",
+        "chinese_cultural_context",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "4e30d087-854a-483e-85a8-e5fc53fae500",
+      "word": "ghost",
+      "meaningZh": "鬼；灵魂；幻影；一丝；一点",
+      "exampleId": "4e30d087-854a-483e-85a8-e5fc53fae500-visual-ex",
+      "styleFamily": "atmospheric storybook woodblock illustration",
+      "sentenceEn": "A pale ghost appears quietly beside the old courtyard gate.",
+      "sentenceZh": "一个苍白的幽灵悄然出现在古老院门旁。",
+      "scene": "A translucent, softly glowing ghost in flowing historical robes stands quietly beside an old Chinese courtyard gate under round lantern light, mysterious but gentle, with no gore or frightening attack.",
+      "altText": "A gentle translucent ghost appears beside an old Chinese courtyard gate.",
+      "riskTags": [
+        "supernatural",
+        "non_graphic",
+        "chinese_cultural_context",
+        "night_scene"
+      ]
+    },
+    {
+      "vocabularyId": "c7f6c68d-b304-4f79-992f-efbf715b53d1",
+      "word": "persuade",
+      "meaningZh": "劝；使相信；恳求；敦促；说服",
+      "exampleId": "c7f6c68d-b304-4f79-992f-efbf715b53d1-visual-ex",
+      "styleFamily": "clear cause-and-effect editorial illustration",
+      "sentenceEn": "She tries to persuade her friend to wear a bicycle helmet.",
+      "sentenceZh": "她试图说服朋友戴上自行车头盔。",
+      "scene": "One adult cyclist calmly demonstrates a helmet's protective shell and points to a safe cycling route, while her initially hesitant friend listens, then reaches toward the offered helmet.",
+      "altText": "A cyclist persuades a friend to choose a safety helmet.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "hands",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "ac09ac8d-0185-4ccf-aa70-5ce17e8fe485",
+      "word": "moderate",
+      "meaningZh": "适度的；稳健的；中等的；节制的",
+      "exampleId": "ac09ac8d-0185-4ccf-aa70-5ce17e8fe485-visual-ex",
+      "styleFamily": "clean isometric comparison illustration",
+      "sentenceEn": "The cook keeps the flame at a moderate level.",
+      "sentenceZh": "厨师把火焰保持在适中的程度。",
+      "scene": "Three simple burners appear side by side for comparison: a tiny weak flame, a steady medium flame under a saucepan, and an overly tall flame, with the balanced center setting clearly emphasized.",
+      "altText": "A steady middle-sized cooking flame represents a moderate level.",
+      "riskTags": [
+        "comparison",
+        "three_objects",
+        "heat",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "54b1f091-6629-44f3-89f0-5f2f37df0523",
+      "word": "subsequent",
+      "meaningZh": "后来的；接下去的",
+      "exampleId": "54b1f091-6629-44f3-89f0-5f2f37df0523-visual-ex",
+      "styleFamily": "sequential botanical paper-cut illustration",
+      "sentenceEn": "Each subsequent stage shows the plant growing taller.",
+      "sentenceZh": "随后的每个阶段都显示植物长得更高。",
+      "scene": "A left-to-right sequence shows the same plant in four clear stages: seedling, young leafy plant, budding stem, and tall flowering plant, with each later stage following the one before it.",
+      "altText": "Four subsequent growth stages show a plant becoming taller.",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "same_subject_consistency",
+        "four_stages"
+      ]
+    },
+    {
+      "vocabularyId": "793fff78-0bc8-48fa-b1da-63ff67538482",
+      "word": "continued",
+      "meaningZh": "持续的",
+      "exampleId": "793fff78-0bc8-48fa-b1da-63ff67538482-visual-ex",
+      "styleFamily": "triptych weather editorial illustration",
+      "sentenceEn": "The continued rain keeps the street wet from morning until night.",
+      "sentenceZh": "持续的雨让街道从早到晚一直湿漉漉的。",
+      "scene": "Three connected views of the same street show steady rain continuing through pale morning, gray afternoon, and lamp-lit evening, with the same puddles gradually widening over time.",
+      "altText": "Continued rain falls on the same street from morning through night.",
+      "riskTags": [
+        "sequence",
+        "continued_action",
+        "weather",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "0c3e81a3-c9e8-45e5-a381-2bd280f3253a",
+      "word": "cookie",
+      "meaningZh": "饼干；Cookie",
+      "exampleId": "0c3e81a3-c9e8-45e5-a381-2bd280f3253a-visual-ex",
+      "styleFamily": "cozy textured food illustration",
+      "sentenceEn": "He places a warm chocolate cookie on the cooling rack.",
+      "sentenceZh": "他把一块温热的巧克力饼干放到冷却架上。",
+      "scene": "A baker's hand places one round golden chocolate-chip cookie onto a wire cooling rack beside several freshly baked cookies, with soft steam and a mixing bowl in the background.",
+      "altText": "A baker places a warm chocolate-chip cookie on a cooling rack.",
+      "riskTags": [
+        "food",
+        "hands",
+        "no_packaging"
+      ]
+    },
+    {
+      "vocabularyId": "f9d58526-309d-4419-ae29-0b4ab4813784",
+      "word": "carrier",
+      "meaningZh": "载体；承运人",
+      "exampleId": "f9d58526-309d-4419-ae29-0b4ab4813784-visual-ex",
+      "styleFamily": "bright urban linocut illustration",
+      "sentenceEn": "The bicycle carrier delivers parcels across the busy city.",
+      "sentenceZh": "这名自行车承运人穿过繁忙的城市递送包裹。",
+      "scene": "An adult cargo-bike carrier pedals through a protected city lane with several securely strapped plain parcels in the front box, heading toward apartment buildings without any company branding.",
+      "altText": "A bicycle carrier transports secured parcels through a city lane.",
+      "riskTags": [
+        "transport",
+        "people_face",
+        "packages",
+        "no_logos"
+      ]
+    },
+    {
+      "vocabularyId": "d696e091-4a8f-446f-be1b-d2573fa53eae",
+      "word": "cooking",
+      "meaningZh": "烹饪",
+      "exampleId": "d696e091-4a8f-446f-be1b-d2573fa53eae-visual-ex",
+      "styleFamily": "lively brush-and-ink culinary illustration",
+      "sentenceEn": "Cooking together fills the kitchen with warmth and energy.",
+      "sentenceZh": "一起烹饪让厨房充满温暖与活力。",
+      "scene": "Two adults cook together in a welcoming Chinese home kitchen, one tossing colorful vegetables in a wok while the other prepares dumpling filling, both smiling with natural concentration.",
+      "altText": "Two adults enjoy cooking Chinese dishes together in a warm kitchen.",
+      "riskTags": [
+        "food_preparation",
+        "heat",
+        "hands",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "a5df0ff6-f556-4ff2-bcc8-8f54d1d8b514",
+      "word": "frequent",
+      "meaningZh": "时常发生的；频繁的；快速的",
+      "exampleId": "a5df0ff6-f556-4ff2-bcc8-8f54d1d8b514-visual-ex",
+      "styleFamily": "rhythmic sequential transit illustration",
+      "sentenceEn": "Frequent trains arrive at the platform throughout the morning.",
+      "sentenceZh": "整个上午都有列车频繁抵达站台。",
+      "scene": "Three successive moments of the same station platform show similar commuter trains arriving, departing, and arriving again under changing morning light, emphasizing short repeated intervals.",
+      "altText": "Repeated train arrivals illustrate frequent service at a station.",
+      "riskTags": [
+        "sequence",
+        "repetition",
+        "transport",
+        "same_place_consistency"
+      ]
+    },
+    {
+      "vocabularyId": "7e2cc75c-346f-4b0c-954c-2b9b0f7a54cc",
+      "word": "ban",
+      "meaningZh": "禁令；禁止；取缔",
+      "exampleId": "7e2cc75c-346f-4b0c-954c-2b9b0f7a54cc-visual-ex",
+      "styleFamily": "crisp civic-information illustration",
+      "sentenceEn": "The park has a ban on flying drones near nesting birds.",
+      "sentenceZh": "公园禁止在筑巢鸟类附近放飞无人机。",
+      "scene": "At a nature reserve entrance, a ranger gently stops a visitor from launching a small drone beside nesting birds, pointing to a clear red prohibition pictogram showing a crossed-out drone with no words.",
+      "altText": "A ranger enforces a ban on drones near nesting birds.",
+      "riskTags": [
+        "prohibition",
+        "cause_effect",
+        "wildlife_safety",
+        "people_face",
+        "symbol_no_text"
+      ]
+    },
+    {
+      "vocabularyId": "177ef430-ecff-4fc1-bef0-2f97217233aa",
+      "word": "awful",
+      "meaningZh": "可怕的；庄严的；虔敬的",
+      "exampleId": "177ef430-ecff-4fc1-bef0-2f97217233aa-visual-ex",
+      "styleFamily": "expressive kitchen-comedy illustration",
+      "sentenceEn": "The burnt meal smells awful when the oven door opens.",
+      "sentenceZh": "烤箱门打开时，烧焦的饭菜闻起来糟透了。",
+      "scene": "An adult opens an oven to reveal a badly burnt casserole, recoiling from a dark curl of smoke with a wrinkled nose and disappointed expression while a smoke alarm remains unlabelled overhead.",
+      "altText": "A cook reacts to the awful smell of a badly burnt meal.",
+      "riskTags": [
+        "negative_quality",
+        "smoke",
+        "people_face",
+        "food",
+        "no_fire"
+      ]
+    },
+    {
+      "vocabularyId": "77390d09-a479-4e43-99e3-2da1bb586b62",
+      "word": "admire",
+      "meaningZh": "赞美；钦佩；爱慕；称赞；惊奇",
+      "exampleId": "77390d09-a479-4e43-99e3-2da1bb586b62-visual-ex",
+      "styleFamily": "refined porcelain-and-watercolor illustration",
+      "sentenceEn": "The apprentice stops to admire the master's delicate porcelain work.",
+      "sentenceZh": "学徒停下来欣赏师傅精巧的瓷器作品。",
+      "scene": "In a Chinese ceramics studio, a young adult apprentice gazes with genuine admiration at a master artisan's newly finished blue-and-white porcelain vase, appreciating its delicate painted pattern without readable characters.",
+      "altText": "An apprentice admires a master's delicate Chinese porcelain vase.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "craft",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "abf91ec3-b8cd-4d1b-a144-89ac0d652da0",
+      "word": "pet",
+      "meaningZh": "宠物；宠儿；爱抚",
+      "exampleId": "abf91ec3-b8cd-4d1b-a144-89ac0d652da0-visual-ex",
+      "styleFamily": "gentle colored-pencil lifestyle illustration",
+      "sentenceEn": "She kneels to pet the friendly dog behind its ears.",
+      "sentenceZh": "她跪下来轻抚这只友善小狗的耳后。",
+      "scene": "An adult woman kneels in a sunny park to gently pet a relaxed friendly dog behind its ears, with the dog's loose posture and wagging tail showing comfort and trust.",
+      "altText": "A woman gently pets a relaxed and friendly dog in a park.",
+      "riskTags": [
+        "animal_interaction",
+        "hands",
+        "people_face",
+        "gentle_touch"
+      ]
+    }
+  ]
+}

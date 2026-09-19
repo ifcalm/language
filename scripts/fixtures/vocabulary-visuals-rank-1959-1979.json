@@ -1,0 +1,364 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-1959-1979",
+  "batchId": "auto-rank-1959-1979-20260815",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "print",
+      "preserve",
+      "passage",
+      "participation",
+      "arrange",
+      "atmosphere"
+    ]
+  },
+  "stylePrompt": "Mature learner-facing educational illustration, landscape 3:2, one clear focal meaning, refined gouache, watercolor or naturalist editorial style with visible brushwork, no photographic or live-action impression, no in-image teaching text, letters, numbers, labels, interfaces, logos or watermarks. Faces and hands must be complete and natural. Avoid blank faces, chibi proportions, glossy toy rendering and stock-photo staging.",
+  "items": [
+    {
+      "vocabularyId": "9013a8ed-2c8c-4d10-8d83-82f49370e58a",
+      "word": "enable",
+      "meaningZh": "使能够；启用；允许",
+      "exampleId": "9013a8ed-2c8c-4d10-8d83-82f49370e58a-visual-ex",
+      "styleFamily": "naturalist editorial illustration",
+      "sentenceEn": "The new ramp enables the wheelchair user to reach the library door alone.",
+      "sentenceZh": "新建的坡道使坐轮椅的读者能够独自到达图书馆门口。",
+      "scene": "Outside a small neighborhood library, one adult wheelchair user rolls up a gentle new ramp toward the open entrance without any help, while the old flight of stone steps sits unused beside it; the ramp is clearly the reason access is now possible, ordinary daytime setting, no signs, banners or text.",
+      "altText": "一位坐轮椅的成年人沿新建坡道独自进入图书馆，旁边是原来无法使用的石阶。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "spatial_boundary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "38f37750-d0db-4b90-a697-931b642d3832",
+      "word": "bend",
+      "meaningZh": "变弯曲；屈服；使弯曲；使屈服",
+      "exampleId": "38f37750-d0db-4b90-a697-931b642d3832-visual-ex",
+      "styleFamily": "warm gouache garden illustration",
+      "sentenceEn": "The gardener bends the young branch gently to guide its growth.",
+      "sentenceZh": "园丁轻轻把幼枝弯向支架，引导它生长。",
+      "scene": "In a sunlit orchard, one adult gardener curves a slender young apple branch along a wooden support and ties it with a soft cloth strip; the trained branch shows one clear smooth curve while the rest of the tree stays straight, careful complete hands, no raised tools, no signs or text.",
+      "altText": "园丁把一根幼枝弯成弧形并用布条固定在木架上。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "eb7ed34a-6c57-4dac-9b5e-5bab90731f5b",
+      "word": "saving",
+      "meaningZh": "节省；拯救",
+      "exampleId": "eb7ed34a-6c57-4dac-9b5e-5bab90731f5b-visual-ex",
+      "styleFamily": "warm watercolor domestic illustration",
+      "sentenceEn": "Her patient saving slowly fills the glass jar with coins.",
+      "sentenceZh": "她耐心地攒钱，硬币渐渐装满玻璃罐。",
+      "scene": "At a modest kitchen table in the evening, one adult drops a single coin into a tall glass jar that is already about two thirds full of mixed coins, while an empty purse rests nearby; the visible level of coins makes slow accumulation obvious, calm lamplight, no numbers, price tags, labels or text.",
+      "altText": "一个人在灯下把硬币投入已装了三分之二的玻璃储蓄罐。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f5a58f3b-1e94-4b5d-a26d-f3d55d7e3450",
+      "word": "desert",
+      "meaningZh": "沙漠；抛弃",
+      "exampleId": "f5a58f3b-1e94-4b5d-a26d-f3d55d7e3450-visual-ex",
+      "styleFamily": "refined gouache desert landscape illustration",
+      "sentenceEn": "A lone traveler crosses the wide desert before the midday heat.",
+      "sentenceZh": "一位旅人在正午酷热来临前穿过广阔的沙漠。",
+      "scene": "A vast dry desert of tall wind-shaped dunes stretching to the horizon under a pale hot sky, where one small distant adult traveler with a shoulder pack walks along a curved dune ridge; sparse dry shrubs and clean wind ripples in the sand show extreme dryness and emptiness, no oasis, vehicles, signs or text.",
+      "altText": "一位旅人独自走在辽阔干燥、只有稀疏灌木的沙丘之间。",
+      "riskTags": [
+        "spatial_boundary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "4c9014b8-67fc-4234-8457-747811fcb1d9",
+      "word": "shall",
+      "meaningZh": "将",
+      "exampleId": "4c9014b8-67fc-4234-8457-747811fcb1d9-visual-ex",
+      "styleFamily": "paired grammar micro-scene illustration",
+      "sentenceEn": "We shall meet at the old stone bridge at sunrise.",
+      "sentenceZh": "我们将在日出时于那座古石桥相见。",
+      "scene": "One landscape split into two clear halves showing the same old stone bridge. On the left at dusk, two adult friends stand together and one points ahead while stating a plan. On the right, a softer, lighter sunrise version of the identical bridge shows the same two friends arriving from opposite ends and meeting in the middle. Matching clothing links the pair across both halves and the lighter right half reads as the promised future, no clocks, calendars, arrows, signs or text.",
+      "altText": "左侧黄昏两位朋友约定，右侧日出时同一座石桥上两人如约相见。",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "reference",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "502281fc-6b87-4ce1-a520-e20f42c812a4",
+      "word": "cop",
+      "meaningZh": "警官；抓住",
+      "exampleId": "502281fc-6b87-4ce1-a520-e20f42c812a4-visual-ex",
+      "styleFamily": "friendly editorial community illustration",
+      "sentenceEn": "A helpful cop walks a lost child back to her worried parent.",
+      "sentenceZh": "一位热心警官把走失的孩子送回焦急的家长身边。",
+      "scene": "At a busy outdoor market, one uniformed adult police officer walks hand in hand with a small child toward a relieved parent stepping forward a few paces away; calm helpful mood and warm expressions on all three faces, plain uniform without readable badges, insignia lettering, logos, signs or text.",
+      "altText": "一位警官牵着走失的孩子走向迎上前来的家长。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "reference",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "78110565-661d-4353-8ea5-ef5054faca9b",
+      "word": "Arab",
+      "meaningZh": "阿拉伯的",
+      "exampleId": "78110565-661d-4353-8ea5-ef5054faca9b-visual-ex",
+      "styleFamily": "respectful editorial cultural illustration",
+      "sentenceEn": "An Arab family serves dates and coffee to visiting friends.",
+      "sentenceZh": "一个阿拉伯家庭用椰枣和咖啡招待来访的朋友。",
+      "scene": "In a warm contemporary home with traditional patterned textiles and floor cushions, three adult members of an Arab family pour coffee from a long-spouted dallah and offer a plate of dates to two seated visiting friends; individualized natural faces, everyday modern dress, ordinary relaxed hospitality, no caricature, religious spectacle, flags, political symbols or text.",
+      "altText": "一个阿拉伯家庭用长嘴咖啡壶和椰枣招待来访的朋友。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "respectful",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "f26309a1-afa3-49b4-a1ef-9851d51e349f",
+      "word": "double",
+      "meaningZh": "两倍；两倍的；双重的",
+      "exampleId": "f26309a1-afa3-49b4-a1ef-9851d51e349f-visual-ex",
+      "styleFamily": "clean editorial still-life illustration",
+      "sentenceEn": "The baker made a double batch, so the tray holds twelve buns instead of six.",
+      "sentenceZh": "面包师做了双倍的量，托盘上是十二个面包而不是六个。",
+      "scene": "On a bakery counter, exactly two identical trays sit side by side: the left tray holds exactly six round buns in two rows of three, and the right tray holds exactly twelve identical buns in three rows of four. The doubled amount is countable at a glance, warm bakery light, no numbers, price tags, labels, signs or text.",
+      "altText": "左侧托盘上六个面包，右侧托盘上十二个，数量正好翻倍。",
+      "riskTags": [
+        "exact_quantity",
+        "comparison",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "821994d8-84ad-41bd-9b4c-a896eaeb1644",
+      "word": "sand",
+      "meaningZh": "沙；沙子；沙滩",
+      "exampleId": "821994d8-84ad-41bd-9b4c-a896eaeb1644-visual-ex",
+      "styleFamily": "bright watercolor seaside illustration",
+      "sentenceEn": "Fine sand runs between the child's fingers on the warm beach.",
+      "sentenceZh": "细沙从孩子的指间滑落，洒在温暖的沙滩上。",
+      "scene": "Close to a calm summer shoreline, one child crouches and lets a handful of pale fine sand pour from cupped fingers into a small mound below, with the falling stream of grains clearly visible; a half-built sand mound and gentle waves sit behind, complete natural hands, no buckets with brand marks, signs or text.",
+      "altText": "孩子蹲在海滩上，细沙从指缝间流下堆成小丘。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "a47230c1-36eb-4fe4-b897-d2bcfb40bc11",
+      "word": "Spanish",
+      "meaningZh": "西班牙的；西班牙语",
+      "exampleId": "a47230c1-36eb-4fe4-b897-d2bcfb40bc11-visual-ex",
+      "styleFamily": "sunlit Mediterranean courtyard illustration",
+      "sentenceEn": "A Spanish grandmother teaches her grandson a traditional dance step.",
+      "sentenceZh": "一位西班牙祖母在庭院里教孙子跳传统舞步。",
+      "scene": "In a whitewashed Andalusian courtyard with blue-tiled walls and potted red geraniums, one older Spanish woman guides a boy through a dance step with one hand raised and one foot forward, while a neighbor claps the rhythm from a nearby chair; individualized natural faces, everyday clothing with one simple traditional touch, no costume spectacle, flags, posters or text.",
+      "altText": "西班牙祖母在铺着蓝瓷砖的庭院里教孙子跳传统舞步。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "respectful",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "5d8a0059-8a75-46c0-b284-051579954fb2",
+      "word": "print",
+      "meaningZh": "打印；印刷；印刷品",
+      "exampleId": "5d8a0059-8a75-46c0-b284-051579954fb2-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "The artisan prints a bright pattern from a carved wooden block.",
+      "sentenceZh": "工匠用刻好的木版印出鲜艳的图案。",
+      "scene": "In a traditional Chinese workshop, one adult artisan presses a sheet of paper onto an inked carved woodblock with a flat brush and lifts the previous sheet to reveal a crisp printed pattern of fish and lotus flowers; more finished sheets hang drying on a line above. Every printed motif is purely pictorial, with no Chinese characters, letters, numbers, seals or text anywhere in the image.",
+      "altText": "工匠在传统作坊里用木版印出鱼与莲花图案，成品挂在绳上晾干。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face",
+        "cause_effect",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "9865adf2-cf6f-48ff-884e-20baabf66c41",
+      "word": "preserve",
+      "meaningZh": "保存；保护；保留",
+      "exampleId": "9865adf2-cf6f-48ff-884e-20baabf66c41-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "The family preserves fresh vegetables in a sealed ceramic jar for winter.",
+      "sentenceZh": "一家人把新鲜蔬菜腌进密封的陶坛，留到冬天吃。",
+      "scene": "In a tidy Chinese home kitchen in late autumn, two adults pack washed leafy vegetables and coarse salt into a tall glazed ceramic pickling jar and seal its water-sealed rim, while several earlier sealed jars stand in a row on the shelf behind them; the sealed jars clearly signal food kept for much later, warm daylight, no labels, signs or text.",
+      "altText": "两位家人把洗好的蔬菜和粗盐装入陶制腌菜坛并封口，架上还有先前封好的坛子。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face",
+        "sequence",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b718bb65-25cf-48bd-8d61-32898a17fb21",
+      "word": "passage",
+      "meaningZh": "通道；通过；移居；航行；一段；走廊",
+      "exampleId": "b718bb65-25cf-48bd-8d61-32898a17fb21-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "A covered passage leads visitors from the garden to the moon gate.",
+      "sentenceZh": "一条带顶的长廊把游客从园中引向月洞门。",
+      "scene": "In a classical Chinese garden, one long covered wooden corridor with red columns runs from the foreground into the distance and ends at a round moon gate that opens onto a bright pond courtyard; two unhurried adult visitors walk along it, and the enclosed route with its single clear exit is unmistakable. No hanging plaques, lantern characters, signs or text.",
+      "altText": "古典园林中的红柱长廊从前景延伸，尽头是通向池院的月洞门。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary",
+        "reference",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "36b72792-e438-437a-a00f-bed39427d555",
+      "word": "formal",
+      "meaningZh": "正式的；正规的；形式上的",
+      "exampleId": "36b72792-e438-437a-a00f-bed39427d555-visual-ex",
+      "styleFamily": "restrained editorial illustration",
+      "sentenceEn": "The guests wear formal clothes to the evening ceremony.",
+      "sentenceZh": "宾客们穿着正式的服装出席晚间典礼。",
+      "scene": "In a bright hall at dusk, exactly five adult guests in carefully pressed formal clothing, dark suits and long evening dresses, stand in an orderly group beside a set table with folded napkins and polished glasses, while one person in an everyday jacket and jeans pauses at the doorway, making the formal dress code obvious by contrast; individualized natural faces, no banners, monograms, signs or text.",
+      "altText": "五位穿正装的宾客站在典礼厅中，门口一位穿日常衣服的人形成对比。",
+      "riskTags": [
+        "comparison",
+        "exact_quantity",
+        "people_face",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fce4110e-2593-4621-92b9-c91c307b289b",
+      "word": "transition",
+      "meaningZh": "转变；转换；变迁；过渡时期；临时转调",
+      "exampleId": "fce4110e-2593-4621-92b9-c91c307b289b-visual-ex",
+      "styleFamily": "refined gouache landscape illustration",
+      "sentenceEn": "The hillside shows the slow transition from autumn gold to winter white.",
+      "sentenceZh": "山坡呈现出从秋日金黄到冬日雪白的缓慢过渡。",
+      "scene": "One continuous hillside seen in a single wide view: the left slope is full autumn with golden and russet foliage, the middle is a mixed band of bare branches and light frost, and the right slope is quiet winter under fresh snow. The gradual change across one unbroken landscape is the whole focus, no people, no panel divisions, arrows, signs or text.",
+      "altText": "同一片山坡自左向右由秋日金黄逐渐过渡到冬日积雪。",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "sequence",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "266d0a77-1aba-4fa3-8391-edbb278d8277",
+      "word": "existence",
+      "meaningZh": "存在",
+      "exampleId": "266d0a77-1aba-4fa3-8391-edbb278d8277-visual-ex",
+      "styleFamily": "naturalist editorial illustration",
+      "sentenceEn": "Fresh tracks in the snow prove the existence of a wolf nearby.",
+      "sentenceZh": "雪地上新鲜的足迹证明附近有狼存在。",
+      "scene": "On a still snowy forest edge at dawn, one adult ranger crouches beside a clear line of fresh wolf paw prints that leads away between the trees, while the animal itself remains completely unseen; the prints are sharp and unmistakable and the ranger's attentive posture shows evidence being read. No wolf visible anywhere, no equipment labels, signs or text.",
+      "altText": "护林员蹲在雪地上查看一串通向林间的新鲜狼爪印，狼本身并未出现。",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "18e835ed-365d-4eb4-a09c-8089bdec2da9",
+      "word": "album",
+      "meaningZh": "专辑；相册；唱片",
+      "exampleId": "18e835ed-365d-4eb4-a09c-8089bdec2da9-visual-ex",
+      "styleFamily": "warm watercolor domestic illustration",
+      "sentenceEn": "They turn the pages of an old family album together.",
+      "sentenceZh": "他们一起翻看一本旧的家庭相册。",
+      "scene": "On a soft couch beside a window, one older adult and one teenager hold a thick open photo album across their laps, its pages filled with small pictorial photographs of people and places held in place by paper corners, with a few loose photographs resting beside them; warm afternoon light and shared attention. Every photograph is purely pictorial, with no captions, dates, letters or text.",
+      "altText": "一位长者和一个青少年一起翻看摊开的厚相册，页面上贴着旧照片。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "66cfab3a-cf39-40d1-9152-3810b46605ed",
+      "word": "participation",
+      "meaningZh": "参与",
+      "exampleId": "66cfab3a-cf39-40d1-9152-3810b46605ed-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "Everyone's participation makes the village bridge repair go quickly.",
+      "sentenceZh": "全村人的参与让村口石桥的修缮进展得很快。",
+      "scene": "At a village stone bridge in the Chinese countryside, exactly seven adults and two older children are all actively taking part at the same moment: four pass stones hand to hand in a line, one mixes mortar, one steadies a plank, one carries a kettle of tea to the workers, and the two children hand up small tools. Nobody stands watching; varied ages, builds and individualized natural faces, no banners, slogans, signs or text.",
+      "altText": "村民们排成一列传递石块、拌浆、送茶，人人动手共同修缮村口石桥。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "exact_quantity",
+        "organized_group"
+      ]
+    },
+    {
+      "vocabularyId": "d897a36a-0622-4dd5-b2f5-8d7f1ffc1fa4",
+      "word": "arrange",
+      "meaningZh": "安排；排列；达成协议；重排",
+      "exampleId": "d897a36a-0622-4dd5-b2f5-8d7f1ffc1fa4-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "The host arranges six cups in a neat row before the tea gathering.",
+      "sentenceZh": "主人在茶会开始前把六只茶杯整齐排成一列。",
+      "scene": "At a wooden tea table in a quiet Chinese room, one adult host places small porcelain cups into a perfectly even row beside a clay teapot and a folded cloth: four cups already stand precisely aligned and the remaining two wait on a tray at hand, so exactly six cups will complete the row. The act of ordering is obvious, calm morning light, no hanging scrolls with characters, labels, signs or text.",
+      "altText": "主人把瓷杯排成整齐的一列，桌上已排好四只，托盘上还有两只待摆放。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "sequence",
+        "hands",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3906acf0-feb4-4a2b-aabb-1442288b21b7",
+      "word": "atmosphere",
+      "meaningZh": "气氛；大气；氛围",
+      "exampleId": "3906acf0-feb4-4a2b-aabb-1442288b21b7-visual-ex",
+      "styleFamily": "specific Chinese cultural gouache illustration",
+      "sentenceEn": "Red lanterns and warm light give the night market a festive atmosphere.",
+      "sentenceZh": "红灯笼和暖光给夜市带来喜庆的气氛。",
+      "scene": "A busy Chinese night market street glowing under rows of round red lanterns, where steam rises from food stalls and many relaxed, smiling adults and children stroll shoulder to shoulder; warm amber light, a deep blue evening sky and cheerful faces carry the festive mood. Lanterns, stalls and awnings stay completely free of characters, brand marks, signs or text.",
+      "altText": "夜市街道挂满红灯笼，暖光、热气与人群营造出喜庆的气氛。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "people_face",
+        "no_readable_text"
+      ]
+    }
+  ]
+}

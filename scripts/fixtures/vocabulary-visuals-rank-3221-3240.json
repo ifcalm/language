@@ -1,0 +1,355 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3221-3240",
+  "batchId": "auto-rank-3221-3240-20260915",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "horn",
+      "innovation",
+      "guitar",
+      "dancer",
+      "retired",
+      "grace"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "afc24e54-8d7e-41e1-ab0a-5030bba9331b",
+      "word": "horn",
+      "meaningZh": "角；角质；喇叭；号角；角制的",
+      "exampleId": "afc24e54-8d7e-41e1-ab0a-5030bba9331b-visual-ex",
+      "styleFamily": "Chinese riverside festival woodblock watercolor",
+      "sentenceEn": "The musician raised the brass horn and played a clear note.",
+      "sentenceZh": "乐手举起铜号，吹出了清亮的音符。",
+      "scene": "At a relaxed riverside community festival in China, an adult musician raises a plain curved brass horn to play while nearby adults listen with warm expressions; complete natural faces, no stage banner, flags, costumes with emblems, sheet music, signs, letters or writing.",
+      "altText": "A musician plays a brass horn at a riverside gathering.",
+      "riskTags": [
+        "Chinese_context",
+        "music",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6382968d-ce0b-489b-8923-fc1b0482286c",
+      "word": "chronic",
+      "meaningZh": "慢性的；习惯性的；慢性病患者",
+      "exampleId": "6382968d-ce0b-489b-8923-fc1b0482286c-visual-ex",
+      "styleFamily": "gentle health editorial pastel illustration",
+      "sentenceEn": "She manages chronic back pain with gentle daily exercise.",
+      "sentenceZh": "她通过每天进行温和锻炼来缓解慢性背痛。",
+      "scene": "In a bright physiotherapy studio, an adult woman calmly performs a gentle standing back stretch beside an adult therapist who demonstrates supportive posture; complete reassuring faces, no acute distress, injury, medical procedure, anatomy chart, labels or writing.",
+      "altText": "A woman manages chronic back pain with gentle exercise.",
+      "riskTags": [
+        "health",
+        "chronic_pain",
+        "no_distress",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4b0d78d1-bca7-42c8-a37f-f1dc36582570",
+      "word": "peaceful",
+      "meaningZh": "和平的",
+      "exampleId": "4b0d78d1-bca7-42c8-a37f-f1dc36582570-visual-ex",
+      "styleFamily": "serene dawn landscape gouache",
+      "sentenceEn": "The lakeside garden was peaceful at dawn.",
+      "sentenceZh": "黎明时分，湖畔花园十分宁静。",
+      "scene": "A quiet lakeside garden at dawn with still water, soft mist, reeds, smooth stones and a small empty wooden bench beneath flowering trees; serene balanced composition, no people, signs, plaques, letters or writing.",
+      "altText": "A peaceful lakeside garden rests in the dawn mist.",
+      "riskTags": [
+        "nature",
+        "calm",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ba1fcbf5-5861-4601-bd84-6bbb2202b7e0",
+      "word": "innovation",
+      "meaningZh": "创新",
+      "exampleId": "ba1fcbf5-5861-4601-bd84-6bbb2202b7e0-visual-ex",
+      "styleFamily": "rural Chinese engineering layered-paper illustration",
+      "sentenceEn": "The new irrigation system was a useful innovation for the village.",
+      "sentenceZh": "这套新灌溉系统是对村庄很有用的一项创新。",
+      "scene": "In a rural Chinese vegetable field, diverse adult engineers and farmers proudly test a clever solar-powered drip irrigation device that evenly waters rows of healthy plants; complete natural faces, plain equipment, no screens, solar panel marks, labels, letters or writing.",
+      "altText": "Farmers test an innovative irrigation system in a Chinese village.",
+      "riskTags": [
+        "Chinese_context",
+        "technology",
+        "agriculture",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d45b7877-e9b5-471b-acd9-84c27598f278",
+      "word": "strain",
+      "meaningZh": "压力；拉伤；竭力；菌株",
+      "exampleId": "d45b7877-e9b5-471b-acd9-84c27598f278-visual-ex",
+      "styleFamily": "workplace safety colored-pencil illustration",
+      "sentenceEn": "He stopped lifting when he felt a strain in his shoulder.",
+      "sentenceZh": "他感到肩膀拉伤后停止了搬运。",
+      "scene": "In a tidy storeroom, an adult worker has safely set a plain light box onto a waist-high cart and gently holds one tense shoulder while a coworker offers help; mild discomfort only, complete faces, no severe pain, injury, medicine, hazard signs, labels or writing.",
+      "altText": "A worker stops lifting after feeling a shoulder strain.",
+      "riskTags": [
+        "health",
+        "mild_strain",
+        "workplace_safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "411ea82d-d87d-4239-8f94-62edb957add9",
+      "word": "guitar",
+      "meaningZh": "吉他",
+      "exampleId": "411ea82d-d87d-4239-8f94-62edb957add9-visual-ex",
+      "styleFamily": "Shanghai lane evening ink-and-color illustration",
+      "sentenceEn": "She practiced the guitar in the quiet courtyard.",
+      "sentenceZh": "她在安静的院子里练习吉他。",
+      "scene": "In a leafy Shanghai lane-house courtyard at early evening, an adult woman sits comfortably and practices an unbranded acoustic guitar while two neighbors listen nearby; complete faces, no sheet music, shop signs, door numbers, instrument logos, letters or writing.",
+      "altText": "A woman practices guitar in a quiet Shanghai courtyard.",
+      "riskTags": [
+        "Chinese_context",
+        "music",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "123505df-fe9b-4b62-a0a8-6f61e97bc89b",
+      "word": "replacement",
+      "meaningZh": "替代；更换",
+      "exampleId": "123505df-fe9b-4b62-a0a8-6f61e97bc89b-visual-ex",
+      "styleFamily": "bicycle workshop cut-paper illustration",
+      "sentenceEn": "The mechanic fitted a replacement tire to the bicycle.",
+      "sentenceZh": "修车师傅给自行车换上了替换轮胎。",
+      "scene": "In a clean bicycle workshop, an adult mechanic installs a fresh new tire on a bicycle wheel while the clearly worn old tire lies beside the work stand; complete face, safe tools, plain bicycle, no brand marks, size markings, labels, letters or writing.",
+      "altText": "A mechanic fits a replacement tire to a bicycle.",
+      "riskTags": [
+        "repair",
+        "object_replacement",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "398808de-d8a4-4c31-a08c-0a3c5b5ebcab",
+      "word": "behave",
+      "meaningZh": "表现；行为；举止；守规矩",
+      "exampleId": "398808de-d8a4-4c31-a08c-0a3c5b5ebcab-visual-ex",
+      "styleFamily": "urban café warm editorial gouache",
+      "sentenceEn": "The dog behaved calmly while customers walked past.",
+      "sentenceZh": "顾客经过时，这只狗表现得很安静。",
+      "scene": "Outside a calm neighborhood café, a well-trained medium-size dog sits quietly beside its adult owner while diverse adult customers walk past at close range; complete natural faces, relaxed leash, humane scene, no menu boards, storefront words, logos or writing.",
+      "altText": "A dog behaves calmly as café customers pass.",
+      "riskTags": [
+        "animals",
+        "public_behavior",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "558d444e-e77e-4bec-8e69-09c008f61882",
+      "word": "administer",
+      "meaningZh": "管理；料理；执行",
+      "exampleId": "558d444e-e77e-4bec-8e69-09c008f61882-visual-ex",
+      "styleFamily": "community care soft watercolor illustration",
+      "sentenceEn": "The nurse administered the liquid medicine carefully.",
+      "sentenceZh": "护士小心地给病人服用了药液。",
+      "scene": "In a comfortable clinic room, an adult nurse carefully offers a measured spoon of liquid medicine to a seated older adult patient, who accepts it calmly; complete reassuring faces, no needles, distress, visible illness, medicine labels, measurement numbers, logos or writing.",
+      "altText": "A nurse carefully administers liquid medicine.",
+      "riskTags": [
+        "medical",
+        "medicine",
+        "no_needle",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b62fcf3d-92fa-4b9b-afd9-82ca824dd3a5",
+      "word": "simultaneously",
+      "meaningZh": "同时地",
+      "exampleId": "b62fcf3d-92fa-4b9b-afd9-82ca824dd3a5-visual-ex",
+      "styleFamily": "performance screen-print illustration",
+      "sentenceEn": "She played the piano and sang simultaneously.",
+      "sentenceZh": "她同时弹钢琴并唱歌。",
+      "scene": "An adult musician sings with an expressive open mouth while both hands actively play a grand piano at the same moment, watched by a small attentive adult audience; complete faces, plain piano, no microphone branding, sheet music, stage signs, letters or writing.",
+      "altText": "A musician sings and plays piano simultaneously.",
+      "riskTags": [
+        "music",
+        "simultaneous_actions",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0fb5b55f-6586-43f9-b020-801b4fd40d8a",
+      "word": "dancer",
+      "meaningZh": "舞者",
+      "exampleId": "0fb5b55f-6586-43f9-b020-801b4fd40d8a-visual-ex",
+      "styleFamily": "Chinese contemporary dance mineral-pigment illustration",
+      "sentenceEn": "The dancer practiced a graceful leap across the studio.",
+      "sentenceZh": "舞者在练功房里练习优美的跳跃。",
+      "scene": "In a spacious Chinese dance studio with wooden floors, an adult contemporary dancer performs a graceful traveling leap while two adult dancers observe supportively near a plain practice rail; full body visible, complete faces, modest rehearsal clothes, no mirrors, posters, labels or writing.",
+      "altText": "A dancer practices a graceful leap in a Chinese studio.",
+      "riskTags": [
+        "Chinese_context",
+        "dance",
+        "full_body",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9a5fe530-0504-4d97-b7ce-7b0210614c82",
+      "word": "amendment",
+      "meaningZh": "修正案",
+      "exampleId": "9a5fe530-0504-4d97-b7ce-7b0210614c82-visual-ex",
+      "styleFamily": "civic accessibility editorial collage",
+      "sentenceEn": "The committee approved an amendment adding a ramp to the park plan.",
+      "sentenceZh": "委员会通过了一项为公园方案增加坡道的修正案。",
+      "scene": "At a neutral community planning meeting, diverse adult committee members approve adding a detachable miniature accessibility ramp to a plain model of a park entrance, clearly showing a specific change to the original design; complete faces, no government emblems, voting cards, documents, flags, letters or writing.",
+      "altText": "A committee approves an amendment adding an access ramp.",
+      "riskTags": [
+        "civic_process",
+        "neutral",
+        "accessibility",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "fd87df8d-dcd1-4eb8-879d-68d4d9f8370e",
+      "word": "pad",
+      "meaningZh": "垫子；便签本；填充",
+      "exampleId": "fd87df8d-dcd1-4eb8-879d-68d4d9f8370e-visual-ex",
+      "styleFamily": "home repair object-focused pastel illustration",
+      "sentenceEn": "She placed a soft pad beneath the chair leg.",
+      "sentenceZh": "她在椅子腿下面垫了一块软垫。",
+      "scene": "An adult homeowner kneels beside a wooden dining chair and slides a thick round felt pad clearly beneath one chair leg to protect the polished floor; complete face, simple close composition, no packaging, labels, product marks, letters or writing.",
+      "altText": "A woman places a soft pad beneath a chair leg.",
+      "riskTags": [
+        "object_focus",
+        "home",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1a5b011b-288b-4ce1-a9dd-4340a186b930",
+      "word": "transmission",
+      "meaningZh": "传输；变速器",
+      "exampleId": "1a5b011b-288b-4ce1-a9dd-4340a186b930-visual-ex",
+      "styleFamily": "signal technology geometric gouache illustration",
+      "sentenceEn": "The mountain station improved radio transmission across the valley.",
+      "sentenceZh": "山顶信号站改善了山谷中的无线电传输。",
+      "scene": "A compact radio station on a mountain ridge sends soft concentric signal waves across a wide valley toward a plain receiver tower on the opposite ridge; clear transmission relationship, no people, lightning, hazard symbols, screens, logos, letters or writing.",
+      "altText": "A mountain station transmits radio signals across a valley.",
+      "riskTags": [
+        "technology",
+        "signal_waves",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e6a4a222-05c2-4e22-8470-eed7a1ecf7a3",
+      "word": "await",
+      "meaningZh": "等候；等待着",
+      "exampleId": "e6a4a222-05c2-4e22-8470-eed7a1ecf7a3-visual-ex",
+      "styleFamily": "quiet railway platform colored-pencil illustration",
+      "sentenceEn": "The passengers await the arriving train.",
+      "sentenceZh": "乘客们等候即将进站的列车。",
+      "scene": "Several diverse adult passengers wait calmly behind a safe platform edge as a train approaches in the far distance; their still postures and attentive gazes show waiting, complete faces, plain luggage, no station signs, clocks, tickets, train numbers, letters or writing.",
+      "altText": "Passengers calmly await an arriving train.",
+      "riskTags": [
+        "transport",
+        "waiting",
+        "platform_safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "931ddd76-5c65-4f54-ae12-b4d59c640c53",
+      "word": "retired",
+      "meaningZh": "退休的",
+      "exampleId": "931ddd76-5c65-4f54-ae12-b4d59c640c53-visual-ex",
+      "styleFamily": "Chinese community garden warm linocut watercolor",
+      "sentenceEn": "The retired engineer now tends a community garden.",
+      "sentenceZh": "这位退休工程师现在照料社区花园。",
+      "scene": "In a lively Chinese community garden, an older retired engineer happily tends vegetables and shows a simple handmade watering device to two adult neighbors; complete expressive faces, active dignified portrayal, no workplace badges, signs, labels, letters or writing.",
+      "altText": "A retired engineer tends a Chinese community garden.",
+      "riskTags": [
+        "Chinese_context",
+        "older_adult",
+        "active_retirement",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0ca5c125-5cd7-42d7-8e79-96b3f819ab78",
+      "word": "trigger",
+      "meaningZh": "触发；扳机",
+      "exampleId": "0ca5c125-5cd7-42d7-8e79-96b3f819ab78-visual-ex",
+      "styleFamily": "evening home technology paper-cut illustration",
+      "sentenceEn": "The motion sensor triggered the porch light.",
+      "sentenceZh": "动作感应器触发了门廊灯。",
+      "scene": "At dusk, a small cat steps onto a front porch and a warm overhead lamp instantly turns on, with a tiny plain motion sensor mounted nearby; the cause and effect are clear, no people, weapons, alarm, arrows, interface lights, symbols, labels or writing.",
+      "altText": "A cat’s movement triggers a porch light.",
+      "riskTags": [
+        "nonweapon_sense",
+        "technology",
+        "cause_effect",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "cbe5492d-8de4-4827-a5e0-7e41366e4bdb",
+      "word": "spill",
+      "meaningZh": "洒出；溢出；泄漏",
+      "exampleId": "cbe5492d-8de4-4827-a5e0-7e41366e4bdb-visual-ex",
+      "styleFamily": "kitchen action bold colored-pencil illustration",
+      "sentenceEn": "He quickly caught the juice before it could spill farther.",
+      "sentenceZh": "他赶紧接住果汁，防止它洒得更多。",
+      "scene": "At a kitchen table, an adult man quickly rights a tipped glass as a small stream of orange juice spills onto a plain cloth, while another adult reaches for a towel; complete faces, mild everyday mishap, no broken glass, injury, product packaging, labels or writing.",
+      "altText": "Orange juice spills from a tipped glass.",
+      "riskTags": [
+        "everyday_accident",
+        "liquid",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "84473e21-397c-491f-acd3-be332dbcfaec",
+      "word": "grateful",
+      "meaningZh": "感谢的；感激的；令人快意的；受欢迎的",
+      "exampleId": "84473e21-397c-491f-acd3-be332dbcfaec-visual-ex",
+      "styleFamily": "neighborly warmth textured gouache illustration",
+      "sentenceEn": "She was grateful when her neighbor carried the groceries.",
+      "sentenceZh": "邻居帮忙提杂货时，她十分感激。",
+      "scene": "At an apartment entrance, an older adult woman expresses warm gratitude with hands gently clasped while an adult neighbor carries two plain reusable grocery bags for her; complete expressive faces, friendly equal interaction, no receipts, package labels, door numbers, logos or writing.",
+      "altText": "A woman feels grateful for a neighbor’s help.",
+      "riskTags": [
+        "emotion",
+        "community_help",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5f0b8bcc-ce98-4b9a-a099-b9d53ab635da",
+      "word": "grace",
+      "meaningZh": "优雅；风度；慈悲；恩惠；体面；赦免",
+      "exampleId": "5f0b8bcc-ce98-4b9a-a099-b9d53ab635da-visual-ex",
+      "styleFamily": "Chinese wetland silk-painting illustration",
+      "sentenceEn": "The crane landed beside the lake with effortless grace.",
+      "sentenceZh": "仙鹤轻盈优雅地落在湖边。",
+      "scene": "A red-crowned crane descends with elegant extended wings toward a quiet reed-lined lake in a Chinese wetland, one foot nearing the water and its reflection visible below; refined flowing composition, no people, temple, calligraphy, seals, symbols or writing.",
+      "altText": "A crane lands beside a Chinese lake with graceful movement.",
+      "riskTags": [
+        "Chinese_context",
+        "animal",
+        "elegance",
+        "no_text"
+      ]
+    }
+  ]
+}

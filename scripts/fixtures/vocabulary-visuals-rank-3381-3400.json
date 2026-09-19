@@ -1,0 +1,360 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3381-3400",
+  "batchId": "auto-rank-3381-3400-20260919",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "businessman",
+      "donor",
+      "opera",
+      "acquisition",
+      "hug",
+      "equity"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b4fd3b37-4ad9-4df8-8f41-2567e94a9034",
+      "word": "crawl",
+      "meaningZh": "爬行；匍匐而行；养鱼池",
+      "exampleId": "b4fd3b37-4ad9-4df8-8f41-2567e94a9034-visual-ex",
+      "styleFamily": "fine botanical watercolor illustration",
+      "sentenceEn": "The caterpillar began to crawl along the leaf.",
+      "sentenceZh": "毛毛虫开始沿着叶片爬行。",
+      "scene": "Close side view of one anatomically plausible caterpillar moving slowly along the central vein of a broad green leaf, its segmented body visibly contacting the leaf in a gentle crawling curve. Human-free garden background with soft depth, no arrows, motion words, letters, numbers or anthropomorphic expression.",
+      "altText": "一只毛毛虫沿着绿色叶片缓慢爬行。",
+      "riskTags": [
+        "animal_anatomy",
+        "movement",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "cbd25159-3be9-46ff-9884-309616841af3",
+      "word": "oxygen",
+      "meaningZh": "氧；氧O-2",
+      "exampleId": "cbd25159-3be9-46ff-9884-309616841af3-visual-ex",
+      "styleFamily": "clean retro-futurist cut-paper illustration",
+      "sentenceEn": "The spacesuit carries oxygen for the astronaut to breathe.",
+      "sentenceZh": "宇航服携带供宇航员呼吸的氧气。",
+      "scene": "An astronaut performs a calm spacewalk beside an unbranded orbital structure, with the spacesuit's life-support backpack and connected suit clearly visible as the source of breathing oxygen. Three-quarter back view with visor turned slightly toward Earth, face naturally obscured by reflective visor. No exposed tanks, flames, flags, mission patches, labels or technical diagrams.",
+      "altText": "宇航员穿着带生命保障背包的宇航服进行太空行走。",
+      "riskTags": [
+        "scientific_accuracy",
+        "equipment_detail",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "c6cad94e-3f8f-4c77-bb09-5d99d4595c71",
+      "word": "handsome",
+      "meaningZh": "英俊的；大方的；可观的",
+      "exampleId": "c6cad94e-3f8f-4c77-bb09-5d99d4595c71-visual-ex",
+      "styleFamily": "elegant colored-pencil portrait illustration",
+      "sentenceEn": "The handsome man adjusted his bow tie before the concert.",
+      "sentenceZh": "这位英俊的男士在音乐会前整理领结。",
+      "scene": "A well-groomed adult man with distinctive natural features adjusts a plain bow tie beside a concert-hall coat rack, wearing a well-cut dark suit and relaxed confident expression. Waist-up three-quarter portrait, complete face and both anatomically natural hands visible. No mirror, beauty-ad staging, tickets, signs, letters or logos.",
+      "altText": "一位英俊的男士在音乐会前整理领结。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "subjective_attribute"
+      ]
+    },
+    {
+      "vocabularyId": "bc549db0-b6c8-4928-a786-41647ba3d489",
+      "word": "sum",
+      "meaningZh": "总数；总和；金额；概要；顶点",
+      "exampleId": "bc549db0-b6c8-4928-a786-41647ba3d489-visual-ex",
+      "styleFamily": "warm editorial paper-collage illustration",
+      "sentenceEn": "The sum of the donations filled the collection jar.",
+      "sentenceZh": "捐款的总和装满了募捐罐。",
+      "scene": "Several adult hands contribute plain round tokens into one transparent collection jar already nearly full, making the combined total the focal idea. The jar sits at the center while a few remaining tokens from separate hands converge toward it. Tokens are fictional and unmarked; no real currency, written totals, equations, labels or logos.",
+      "altText": "多人投入的捐赠汇集起来装满了一个透明罐。",
+      "riskTags": [
+        "hands",
+        "abstract_meaning",
+        "cause_effect",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "db347963-b8cf-458d-834e-1f704b606812",
+      "word": "provided",
+      "meaningZh": "如果；在...条件下",
+      "exampleId": "db347963-b8cf-458d-834e-1f704b606812-visual-ex",
+      "styleFamily": "clear flat-shaded narrative illustration",
+      "sentenceEn": "You may borrow the bicycle, provided that you wear a helmet.",
+      "sentenceZh": "只要你戴上头盔，就可以借用这辆自行车。",
+      "scene": "Beside one bicycle, an adult wearing a correctly fastened helmet receives the bicycle key from a friend who approvingly gestures toward the helmet. The conditional relationship is clear: the key is handed over only after the safety condition is met. Both complete friendly faces and natural hands visible, no contracts, speech bubbles, signs, numbers or logos.",
+      "altText": "戴好头盔的人在满足条件后收到自行车钥匙。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "a345aacc-3643-4738-a7f2-ba9168ded515",
+      "word": "businessman",
+      "meaningZh": "商人",
+      "exampleId": "a345aacc-3643-4738-a7f2-ba9168ded515-visual-ex",
+      "styleFamily": "textured Chinese workshop gouache illustration",
+      "sentenceEn": "The businessman compared fabric samples with the workshop owner.",
+      "sentenceZh": "商人与作坊主人一起比较布料样品。",
+      "scene": "In a contemporary Chinese textile workshop, an adult businessman in a practical jacket compares several folded fabric swatches with an adult workshop owner beside a loom and shelves of cloth. Both complete attentive faces and natural hands clearly interact with the samples. No contracts, business charts, characters, labels, brand marks or luxury stereotype.",
+      "altText": "商人与中国纺织作坊主人一起比较布料样品。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_sensitivity",
+        "occupation"
+      ]
+    },
+    {
+      "vocabularyId": "e95bd71b-18a9-4032-aa66-a5d9793025f0",
+      "word": "promising",
+      "meaningZh": "有前途的",
+      "exampleId": "e95bd71b-18a9-4032-aa66-a5d9793025f0-visual-ex",
+      "styleFamily": "hopeful layered-paper botanical illustration",
+      "sentenceEn": "The promising seedling grew several healthy new leaves.",
+      "sentenceZh": "这株有希望的幼苗长出了几片健康的新叶。",
+      "scene": "A small vigorous seedling rises from dark soil in a simple pot, with several fresh bright-green leaves and two new buds opening above older leaves. Soft morning light and visible healthy growth make future potential unmistakable. Human-free close composition, no arrows, progress charts, faces, text or labels.",
+      "altText": "一株有希望的幼苗长出健康的新叶和嫩芽。",
+      "riskTags": [
+        "abstract_meaning",
+        "plant_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "d28f950d-b5db-4334-b84d-b427a70c0c5a",
+      "word": "conscious",
+      "meaningZh": "有意识的；知觉的；觉察的",
+      "exampleId": "d28f950d-b5db-4334-b84d-b427a70c0c5a-visual-ex",
+      "styleFamily": "crisp winter pastel illustration",
+      "sentenceEn": "She was conscious of the icy step and held the handrail.",
+      "sentenceZh": "她注意到结冰的台阶，于是扶住了栏杆。",
+      "scene": "An adult woman pauses before a visibly icy outdoor step, looking directly at the thin patch of ice while firmly holding the handrail and placing one boot cautiously on dry ground. Complete alert face and natural hand grip, restrained winter setting. No falling, injury, warning sign, arrows, letters or exaggerated fear.",
+      "altText": "女子注意到结冰的台阶并谨慎握住扶手。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "safety",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "7aa003ad-e371-4db5-8313-e9175c718184",
+      "word": "determination",
+      "meaningZh": "决心",
+      "exampleId": "7aa003ad-e371-4db5-8313-e9175c718184-visual-ex",
+      "styleFamily": "dynamic ink-and-gouache outdoor illustration",
+      "sentenceEn": "Her determination carried her to the top of the steep trail.",
+      "sentenceZh": "她凭借决心走到了陡峭山路的顶端。",
+      "scene": "An adult hiker takes the final steady step onto a mountain overlook after a steep winding trail visible below, posture tired but resolute and face focused with quiet satisfaction. Safe boots, backpack and walking pole used naturally, complete face and hands. No cliff-edge peril, summit signs, flags, letters or triumph cliché.",
+      "altText": "坚定的徒步者走完陡峭山路来到山顶。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "9eac0dc1-cfde-48dd-ba40-f50d8b9075ea",
+      "word": "donor",
+      "meaningZh": "捐赠者；捐献者",
+      "exampleId": "9eac0dc1-cfde-48dd-ba40-f50d8b9075ea-visual-ex",
+      "styleFamily": "warm Chinese community watercolor illustration",
+      "sentenceEn": "The donor delivered boxes of books to the community library.",
+      "sentenceZh": "捐赠者把几箱书送到了社区图书馆。",
+      "scene": "At a welcoming Chinese neighborhood library, an adult donor hands a sturdy open box of plain-covered books to an adult librarian while more sealed book boxes rest on a cart. Both complete appreciative faces and natural hands visible; shelves and reading tables establish the library. No book titles, donation signs, characters, labels or logos.",
+      "altText": "捐赠者把成箱图书送到中国社区图书馆。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_sensitivity",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "684a67c4-1186-4d0c-a261-03efe28af195",
+      "word": "hers",
+      "meaningZh": "她的（东西）",
+      "exampleId": "684a67c4-1186-4d0c-a261-03efe28af195-visual-ex",
+      "styleFamily": "clean comparative editorial illustration",
+      "sentenceEn": "The blue umbrella was hers, while the green one belonged to him.",
+      "sentenceZh": "蓝色雨伞是她的，绿色那把属于他。",
+      "scene": "Exactly two adults stand beside an umbrella rack in light rain: a woman confidently opens and holds one blue umbrella, while a man holds one green umbrella and steps the other way. Their separate ownership is clear through grip, gaze and movement. Complete faces and natural hands, exactly two umbrellas, no labels, initials, arrows, writing or logos.",
+      "altText": "女子拿着属于她的蓝伞，男子拿着绿色雨伞。",
+      "riskTags": [
+        "reference",
+        "comparison",
+        "exact_quantity",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d9c5468f-3035-4f20-b8f1-5f34c400cb9b",
+      "word": "pastor",
+      "meaningZh": "牧师",
+      "exampleId": "d9c5468f-3035-4f20-b8f1-5f34c400cb9b-visual-ex",
+      "styleFamily": "gentle stained-glass-inspired gouache illustration",
+      "sentenceEn": "The pastor welcomed neighbors into the church.",
+      "sentenceZh": "牧师欢迎邻居们走进教堂。",
+      "scene": "An adult pastor in a plain dark clerical shirt warmly welcomes several adult neighbors through the open doorway of a modest community church. The pastor's complete kind face and natural greeting hands are clearly visible; visitors are respectful and varied. Simple architecture with one small cross, no sermon, sacred text, denominational symbols, banners or signs.",
+      "altText": "牧师在社区教堂门口欢迎邻居们进入。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_sensitivity",
+        "religion"
+      ]
+    },
+    {
+      "vocabularyId": "2f5cda80-f615-4eb8-9d15-8ef818db5325",
+      "word": "jazz",
+      "meaningZh": "爵士乐；喧闹；爵士乐的；喧吵的",
+      "exampleId": "2f5cda80-f615-4eb8-9d15-8ef818db5325-visual-ex",
+      "styleFamily": "rhythmic mid-century jazz poster illustration",
+      "sentenceEn": "The trio played jazz in the small club.",
+      "sentenceZh": "三人乐队在小俱乐部演奏爵士乐。",
+      "scene": "Exactly three adult musicians perform an energetic jazz set in a small intimate club: one saxophonist, one pianist at an unbranded upright piano and one double-bass player. All complete expressive faces and anatomically natural hands interact correctly with instruments. No singer, extra musician, sheet music, venue sign, letters, numbers or logos.",
+      "altText": "萨克斯、钢琴和低音提琴组成的三人乐队演奏爵士乐。",
+      "riskTags": [
+        "exact_quantity",
+        "people_face",
+        "hands",
+        "instrument_detail"
+      ]
+    },
+    {
+      "vocabularyId": "75653111-a7a0-47c3-aa24-7c7596482100",
+      "word": "opera",
+      "meaningZh": "歌剧",
+      "exampleId": "75653111-a7a0-47c3-aa24-7c7596482100-visual-ex",
+      "styleFamily": "vibrant Chinese theatrical ink-and-gouache illustration",
+      "sentenceEn": "The performers rehearsed a traditional Chinese opera.",
+      "sentenceZh": "演员们正在排练一出中国传统戏曲。",
+      "scene": "Two adult performers rehearse a traditional Chinese opera movement on a simple wooden stage, wearing stylized embroidered costumes and restrained stage makeup while an adult percussion accompanist sits farther back. Complete expressive facial features remain readable beneath makeup, hands and sleeves form deliberate theatrical poses. Respectful generalized presentation, no claim of a specific role or school, characters, banners or text.",
+      "altText": "演员们在木台上排练中国传统戏曲动作。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "people_face",
+        "hands",
+        "costume_detail"
+      ]
+    },
+    {
+      "vocabularyId": "3d96a3fb-4280-4a02-91ed-b528a5062837",
+      "word": "acquisition",
+      "meaningZh": "获得；收购；习得",
+      "exampleId": "3d96a3fb-4280-4a02-91ed-b528a5062837-visual-ex",
+      "styleFamily": "refined Chinese museum editorial illustration",
+      "sentenceEn": "The museum's latest acquisition was a painted porcelain vase.",
+      "sentenceZh": "博物馆最新获得的藏品是一只彩绘瓷瓶。",
+      "scene": "In a Chinese museum preparation room, an adult curator carefully lifts one newly arrived fictional porcelain vase with painted botanical motifs from a padded open crate onto a secure examination table. Complete focused face and natural gloved hands, another staff member steadies the padding. No real artifact reproduction, price, auction scene, title card, characters, inventory numbers or logos.",
+      "altText": "博物馆工作人员接收一只新获得的彩绘瓷瓶。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_sensitivity",
+        "object_detail"
+      ]
+    },
+    {
+      "vocabularyId": "c1a971c7-0505-48ab-941f-e94cd349f5d9",
+      "word": "pit",
+      "meaningZh": "坑；矿井；果核",
+      "exampleId": "c1a971c7-0505-48ab-941f-e94cd349f5d9-visual-ex",
+      "styleFamily": "architectural cut-paper safety illustration",
+      "sentenceEn": "The workers placed a barrier around the deep pit.",
+      "sentenceZh": "工人们在深坑周围设置了安全围栏。",
+      "scene": "Two adult construction workers stand safely outside a sturdy continuous barrier enclosing a clearly deep excavated pit, fitting the final barrier section into place. The hole has visible earth layers and stable sloped sides, while workers wear plain helmets and gloves. Complete faces and natural hands, no person inside the pit, warning text, danger symbols, machinery logos or accident.",
+      "altText": "工人们在施工深坑周围安装安全围栏。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "safety",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ab85931b-56d0-4c38-bad8-d9ef3c60e6da",
+      "word": "hug",
+      "meaningZh": "拥抱；紧抱",
+      "exampleId": "ab85931b-56d0-4c38-bad8-d9ef3c60e6da-visual-ex",
+      "styleFamily": "warm Chinese travel watercolor illustration",
+      "sentenceEn": "The friends shared a warm hug at the railway station.",
+      "sentenceZh": "朋友们在火车站温暖地拥抱。",
+      "scene": "Two adult friends share a natural two-person hug on a modern Chinese railway platform beside plain luggage, while an unbranded train waits in the background. Both complete joyful faces are partly visible in three-quarter view and each person has exactly two anatomically plausible arms. No platform numbers, station characters, timetable, tickets, uniforms or logos.",
+      "altText": "两位朋友在中国火车站见面后温暖拥抱。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "anatomy",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "9ce8885f-1fed-4717-b78d-ef34fe1a5ea3",
+      "word": "hay",
+      "meaningZh": "干草；制干草；供给干草",
+      "exampleId": "9ce8885f-1fed-4717-b78d-ef34fe1a5ea3-visual-ex",
+      "styleFamily": "rustic linocut-and-gouache farm illustration",
+      "sentenceEn": "The farmer stacked dry hay inside the barn.",
+      "sentenceZh": "农民把干草堆放在谷仓里。",
+      "scene": "An adult farmer stacks compact golden-green bales of dried meadow grass inside a ventilated wooden barn, with loose long grass stems and seed heads making the hay distinct from straw. Complete content face and natural lifting hands, safe posture and stable stack. No wheat sheaves, livestock feed labels, letters, numbers, machinery brands or dust cloud.",
+      "altText": "农民在木制谷仓里堆放干燥的草捆。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "material_accuracy",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "ade45132-188a-486d-b532-d93cc6a09ee4",
+      "word": "punish",
+      "meaningZh": "处罚；惩罚；严厉对待",
+      "exampleId": "ade45132-188a-486d-b532-d93cc6a09ee4-visual-ex",
+      "styleFamily": "restrained sports editorial illustration",
+      "sentenceEn": "The referee raised a card to punish the dangerous foul.",
+      "sentenceZh": "裁判举牌处罚危险犯规。",
+      "scene": "On a soccer field after a dangerous foul has stopped, an adult referee raises one plain yellow card toward the offending adult player, who stands apologetically nearby. The other player is safely upright and uninjured with a teammate. Complete faces and natural hands, no collision in progress, aggression, jersey numbers, team crests, scoreboard, writing or logos.",
+      "altText": "足球裁判举起黄牌处罚危险犯规。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "91bee4b0-3331-4445-a117-851f8c26b8b2",
+      "word": "equity",
+      "meaningZh": "公平；公正；权益；产权",
+      "exampleId": "91bee4b0-3331-4445-a117-851f8c26b8b2-visual-ex",
+      "styleFamily": "inclusive Chinese community mural-style illustration",
+      "sentenceEn": "The workshop promoted equity by giving each artist the support they needed.",
+      "sentenceZh": "工作坊通过为每位艺术家提供所需支持来促进公平。",
+      "scene": "In a Chinese community art workshop, three adults create paintings side by side with tailored but equally valued support: a wheelchair user works at an accessible-height easel, an older artist uses a comfortable large-grip brush, and a standing artist uses a standard easel with focused task light. All have complete engaged faces and natural hands; moon-gate architecture subtly locates the setting. No hierarchy, pity framing, labels, slogans, characters or logos.",
+      "altText": "社区艺术工作坊为不同艺术家提供各自需要的工具支持。",
+      "riskTags": [
+        "abstract_meaning",
+        "accessibility",
+        "people_face",
+        "cultural_sensitivity"
+      ]
+    }
+  ]
+}

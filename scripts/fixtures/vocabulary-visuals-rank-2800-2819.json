@@ -1,0 +1,364 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2800-2819",
+  "batchId": "auto-rank-2800-2819-20260911",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "chef",
+      "boom",
+      "heritage",
+      "hungry",
+      "economics",
+      "legacy"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "527a2e1e-c35b-4727-ae69-6b544fce5dba",
+      "word": "chef",
+      "meaningZh": "厨师",
+      "exampleId": "527a2e1e-c35b-4727-ae69-6b544fce5dba-visual-ex",
+      "styleFamily": "Chinese culinary gouache illustration",
+      "sentenceEn": "The chef tosses vegetables in a hot wok.",
+      "sentenceZh": "厨师在热锅里翻炒蔬菜。",
+      "scene": "Inside an open Chinese restaurant kitchen, an adult chef in a clean jacket confidently tosses bright vegetables in a flaming wok while steam curls upward and neatly arranged ingredients wait nearby.",
+      "altText": "A chef tossing vegetables in a hot wok.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_scene",
+        "fire"
+      ]
+    },
+    {
+      "vocabularyId": "979de620-cb25-4eb6-9d17-abdf13d4c4e1",
+      "word": "discrimination",
+      "meaningZh": "歧视",
+      "exampleId": "979de620-cb25-4eb6-9d17-abdf13d4c4e1-visual-ex",
+      "styleFamily": "thoughtful editorial watercolor illustration",
+      "sentenceEn": "The unfair rejection is a clear case of discrimination.",
+      "sentenceZh": "这种不公平的拒绝明显属于歧视。",
+      "scene": "At an office entrance, two equally prepared adult applicants hold matching plain portfolios, but a gatekeeper warmly welcomes one while unfairly blocking the applicant who uses a wheelchair; nearby colleagues react with concern.",
+      "altText": "An applicant facing unfair discrimination at an office entrance.",
+      "riskTags": [
+        "sensitive_topic",
+        "people_face",
+        "hands",
+        "body_posture",
+        "disability"
+      ]
+    },
+    {
+      "vocabularyId": "9e80de5d-9c46-4a91-af26-29b328ab1311",
+      "word": "offensive",
+      "meaningZh": "冒犯的",
+      "exampleId": "9e80de5d-9c46-4a91-af26-29b328ab1311-visual-ex",
+      "styleFamily": "expressive magazine-style ink illustration",
+      "sentenceEn": "His mocking gesture is offensive to everyone at the table.",
+      "sentenceZh": "他的嘲弄手势冒犯了桌边的所有人。",
+      "scene": "During a shared meal, one adult makes a vague mocking gesture without displaying any recognizable insult, while the targeted guest looks hurt and the other diners clearly signal disapproval and support.",
+      "altText": "Diners reacting to an offensive mocking gesture.",
+      "riskTags": [
+        "sensitive_topic",
+        "people_face",
+        "hands",
+        "social_cue"
+      ]
+    },
+    {
+      "vocabularyId": "cb3f782f-9514-4cc2-a193-ea6093d8271a",
+      "word": "boom",
+      "meaningZh": "繁荣；隆隆声；急速发展；发隆隆声",
+      "exampleId": "cb3f782f-9514-4cc2-a193-ea6093d8271a-visual-ex",
+      "styleFamily": "contemporary Chinese city poster illustration",
+      "sentenceEn": "New shops and apartments reveal the town's economic boom.",
+      "sentenceZh": "新商店和住宅展现了这座城镇的经济繁荣。",
+      "scene": "A fast-growing Chinese riverside town bustles with newly opened small shops, occupied apartment buildings, construction cranes, delivery bicycles, and flourishing street trees, clearly conveying a broad economic boom without signs or logos.",
+      "altText": "A rapidly growing town during an economic boom.",
+      "riskTags": [
+        "cultural_scene",
+        "many_objects",
+        "urban_scene"
+      ]
+    },
+    {
+      "vocabularyId": "7bca4cbf-13f0-4dc7-a21a-d91e91a6361f",
+      "word": "register",
+      "meaningZh": "注册；登记；寄存器（计算机）",
+      "exampleId": "7bca4cbf-13f0-4dc7-a21a-d91e91a6361f-visual-ex",
+      "styleFamily": "clean civic-service vector illustration",
+      "sentenceEn": "Visitors register at the desk before entering the workshop.",
+      "sentenceZh": "访客进入工作坊前先在服务台登记。",
+      "scene": "At a community workshop entrance, several adult visitors register one by one at a staffed desk by handing over blank invitation cards and receiving simple colored wristbands, with no readable forms or signage.",
+      "altText": "Visitors registering at a workshop entrance desk.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "no_readable_text",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "f0fa2b09-4c2d-446c-bbe2-93be86d07ed6",
+      "word": "appoint",
+      "meaningZh": "任命；指定；下令",
+      "exampleId": "f0fa2b09-4c2d-446c-bbe2-93be86d07ed6-visual-ex",
+      "styleFamily": "formal editorial cut-paper illustration",
+      "sentenceEn": "The board will appoint Maya as the new team leader.",
+      "sentenceZh": "董事会将任命玛雅为新的团队负责人。",
+      "scene": "In a meeting room, board members ceremonially appoint an adult woman as team leader by presenting her with the office key and inviting her into the central chair as colleagues applaud.",
+      "altText": "A board appointing a woman as team leader.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "group_scene"
+      ]
+    },
+    {
+      "vocabularyId": "838f5eaf-59d3-4104-9ae2-be5846cf1875",
+      "word": "heritage",
+      "meaningZh": "遗产；祖先遗留物；继承物；遗传性",
+      "exampleId": "838f5eaf-59d3-4104-9ae2-be5846cf1875-visual-ex",
+      "styleFamily": "Chinese museum ink-and-mineral-pigment illustration",
+      "sentenceEn": "The ancient glazed roof is part of the city's cultural heritage.",
+      "sentenceZh": "这座古老的琉璃屋顶是城市文化遗产的一部分。",
+      "scene": "Adult conservators carefully restore a weathered traditional Chinese glazed-tile roof above a historic courtyard while visitors observe from a respectful distance, emphasizing the shared cultural heritage preserved across generations.",
+      "altText": "Conservators preserving a historic Chinese roof as cultural heritage.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "architecture",
+        "heritage_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "b55b33b0-c2d5-49b0-8543-1eedf734bf64",
+      "word": "God",
+      "meaningZh": "上帝；神像；偶像；使神化",
+      "exampleId": "b55b33b0-c2d5-49b0-8543-1eedf734bf64-visual-ex",
+      "styleFamily": "reverent stained-glass-inspired illustration",
+      "sentenceEn": "They pray to God in a quiet place of worship.",
+      "sentenceZh": "他们在安静的礼拜场所向上帝祈祷。",
+      "scene": "A diverse group of adults pray quietly inside a simple place of worship as warm rays of light stream through high windows; the divine presence remains symbolic and no deity is physically depicted.",
+      "altText": "People praying to God beneath warm symbolic light.",
+      "riskTags": [
+        "religion",
+        "people_face",
+        "symbolic",
+        "sensitive_topic"
+      ]
+    },
+    {
+      "vocabularyId": "b0d5372c-03bf-48a2-bfe9-ee017b1ec060",
+      "word": "dominant",
+      "meaningZh": "占优势的；支配的；优性的；显性的",
+      "exampleId": "b0d5372c-03bf-48a2-bfe9-ee017b1ec060-visual-ex",
+      "styleFamily": "bold botanical screen-print illustration",
+      "sentenceEn": "One giant sunflower is dominant over the smaller plants.",
+      "sentenceZh": "一株巨大的向日葵在较小的植物中占据优势。",
+      "scene": "In a dense garden bed, one exceptionally tall sunflower with a broad crown rises above and shades many shorter flowers, making its dominant size and position immediately clear.",
+      "altText": "A dominant sunflower towering above smaller plants.",
+      "riskTags": [
+        "scale",
+        "spatial_relationship",
+        "botanical"
+      ]
+    },
+    {
+      "vocabularyId": "c130de32-3a84-46dc-9b7b-9c44a24fa8b2",
+      "word": "successfully",
+      "meaningZh": "成功地",
+      "exampleId": "c130de32-3a84-46dc-9b7b-9c44a24fa8b2-visual-ex",
+      "styleFamily": "optimistic engineering watercolor illustration",
+      "sentenceEn": "The crew successfully completes the bridge across the ravine.",
+      "sentenceZh": "施工队成功地完成了横跨峡谷的桥梁。",
+      "scene": "A diverse adult construction crew celebrates after the final central bridge section locks securely into place across a deep ravine, with both sides now connected and safety equipment visible.",
+      "altText": "A crew successfully completing a bridge across a ravine.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "engineering",
+        "success_state"
+      ]
+    },
+    {
+      "vocabularyId": "bec24eed-7ae4-43f0-9fac-ac6274da5358",
+      "word": "shit",
+      "meaningZh": "屎；糟糕",
+      "exampleId": "bec24eed-7ae4-43f0-9fac-ac6274da5358-visual-ex",
+      "styleFamily": "polite flat editorial illustration",
+      "sentenceEn": "The dog owner uses a bag to clean up the shit from the path.",
+      "sentenceZh": "狗主人用袋子清理小路上的狗屎。",
+      "scene": "On a park path, a responsible adult dog owner uses an opaque waste bag to pick up a small stylized pile of dog shit while the leashed dog waits nearby; the depiction is discreet and non-graphic.",
+      "altText": "A dog owner discreetly cleaning up dog waste from a path.",
+      "riskTags": [
+        "bodily_waste",
+        "hands",
+        "people_face",
+        "non_graphic"
+      ]
+    },
+    {
+      "vocabularyId": "f9e7d090-6828-43c2-a125-487cbe255760",
+      "word": "lemon",
+      "meaningZh": "柠檬；柠檬树；柠檬色",
+      "exampleId": "f9e7d090-6828-43c2-a125-487cbe255760-visual-ex",
+      "styleFamily": "fresh botanical linocut illustration",
+      "sentenceEn": "She squeezes a lemon over the grilled vegetables.",
+      "sentenceZh": "她把柠檬汁挤在烤蔬菜上。",
+      "scene": "An adult cook squeezes one bright yellow lemon half over a colorful plate of grilled vegetables, with visible droplets falling and several whole lemons resting beside leafy branches.",
+      "altText": "A cook squeezing a lemon over grilled vegetables.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "food",
+        "droplets"
+      ]
+    },
+    {
+      "vocabularyId": "747f6b3f-1bc4-4cdb-b229-160b5b07c729",
+      "word": "hungry",
+      "meaningZh": "饥饿的",
+      "exampleId": "747f6b3f-1bc4-4cdb-b229-160b5b07c729-visual-ex",
+      "styleFamily": "warm Chinese street-food watercolor illustration",
+      "sentenceEn": "After the long journey, the hungry traveler eagerly lifts a bowl of noodles.",
+      "sentenceZh": "长途跋涉后，饥饿的旅人急切地端起一碗面。",
+      "scene": "At a modest Chinese noodle stall, a tired adult traveler with an unmistakably hungry expression eagerly lifts a steaming bowl toward the table while the cook adds fresh greens nearby.",
+      "altText": "A hungry traveler eagerly receiving a bowl of noodles.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "food"
+      ]
+    },
+    {
+      "vocabularyId": "27d2a90c-fc29-4e9d-aa67-14af44db833b",
+      "word": "wander",
+      "meaningZh": "漫步；徘徊；走神",
+      "exampleId": "27d2a90c-fc29-4e9d-aa67-14af44db833b-visual-ex",
+      "styleFamily": "lyrical landscape pastel illustration",
+      "sentenceEn": "The hiker likes to wander through the meadow without a fixed route.",
+      "sentenceZh": "这位徒步者喜欢没有固定路线地漫步穿过草地。",
+      "scene": "A lone adult hiker leisurely wanders across a broad flowered meadow along a gently curving informal trail, pausing to look in different directions instead of heading toward a single destination.",
+      "altText": "A hiker wandering through a broad meadow.",
+      "riskTags": [
+        "people_face",
+        "landscape",
+        "path",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "2dcac735-9691-4991-b356-285ce89cefe7",
+      "word": "submit",
+      "meaningZh": "提交；屈服",
+      "exampleId": "2dcac735-9691-4991-b356-285ce89cefe7-visual-ex",
+      "styleFamily": "clear classroom paper-collage illustration",
+      "sentenceEn": "Each student must submit a finished model to the teacher.",
+      "sentenceZh": "每位学生都必须把完成的模型提交给老师。",
+      "scene": "In a design classroom, an adult student submits a finished miniature bridge model by placing it carefully on the teacher's review table, while other completed models wait in an orderly line without labels.",
+      "altText": "A student submitting a finished model to a teacher.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "object_transfer",
+        "classroom"
+      ]
+    },
+    {
+      "vocabularyId": "256ae5dc-f477-42b8-ac26-9b1bb99d9884",
+      "word": "economics",
+      "meaningZh": "经济学",
+      "exampleId": "256ae5dc-f477-42b8-ac26-9b1bb99d9884-visual-ex",
+      "styleFamily": "Chinese marketplace isometric illustration",
+      "sentenceEn": "She studies economics by observing prices, supply, and customer choices.",
+      "sentenceZh": "她通过观察价格、供给和顾客选择来研究经济学。",
+      "scene": "At a lively Chinese produce market, an adult economics student observes how plentiful and scarce goods, exchanging coins, customer choices, and restocking carts interact, using only visual relationships and no written prices.",
+      "altText": "A student observing economic activity in a Chinese market.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "abstract_meaning",
+        "many_objects",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "b24dc132-3cf5-4f02-ab2d-ed6f6c49921e",
+      "word": "naked",
+      "meaningZh": "裸体的；无装饰的；无保护的；赤贫的",
+      "exampleId": "b24dc132-3cf5-4f02-ab2d-ed6f6c49921e-visual-ex",
+      "styleFamily": "quiet seasonal woodcut illustration",
+      "sentenceEn": "After the last leaves fall, the naked tree stands against the winter sky.",
+      "sentenceZh": "最后的叶子落下后，光秃的树立在冬日天空下。",
+      "scene": "A completely leafless deciduous tree stands exposed on a snowy hill beneath a pale winter sky, its intricate bare branches fully visible beside a few fallen leaves.",
+      "altText": "A naked leafless tree standing against a winter sky.",
+      "riskTags": [
+        "safe_sense",
+        "botanical",
+        "winter",
+        "no_nudity"
+      ]
+    },
+    {
+      "vocabularyId": "90c8fbe1-f813-43bf-8621-fa813dc1b180",
+      "word": "anticipate",
+      "meaningZh": "预期；占先；加速；提前使用",
+      "exampleId": "90c8fbe1-f813-43bf-8621-fa813dc1b180-visual-ex",
+      "styleFamily": "narrative weather gouache illustration",
+      "sentenceEn": "The shopkeeper puts out umbrellas because she can anticipate the storm.",
+      "sentenceZh": "店主预料到暴风雨将至，所以提前摆出雨伞。",
+      "scene": "An adult shopkeeper arranges a stand of umbrellas beneath an awning before the rain begins, glancing toward dark approaching clouds while pedestrians still walk on a dry street.",
+      "altText": "A shopkeeper preparing umbrellas in anticipation of a storm.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "weather",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "7a5d545f-6440-4136-b182-e2f346c59dfc",
+      "word": "nut",
+      "meaningZh": "坚果；核心；螺帽",
+      "exampleId": "7a5d545f-6440-4136-b182-e2f346c59dfc-visual-ex",
+      "styleFamily": "detailed woodland colored-pencil illustration",
+      "sentenceEn": "The squirrel cracks a nut between its paws.",
+      "sentenceZh": "松鼠用两只前爪剥开一颗坚果。",
+      "scene": "A red squirrel perches on a mossy branch and cracks open one walnut-shaped nut between its front paws, with the shell splitting to reveal the edible kernel inside.",
+      "altText": "A squirrel cracking open a nut on a branch.",
+      "riskTags": [
+        "animal_anatomy",
+        "hands_paws",
+        "close_up"
+      ]
+    },
+    {
+      "vocabularyId": "a03aa720-8c96-4430-a92f-d42011e84160",
+      "word": "legacy",
+      "meaningZh": "遗产；遗留物",
+      "exampleId": "a03aa720-8c96-4430-a92f-d42011e84160-visual-ex",
+      "styleFamily": "Chinese courtyard storybook gouache illustration",
+      "sentenceEn": "The craftswoman passes her tools on as a legacy to her granddaughter.",
+      "sentenceZh": "女工匠把自己的工具作为传承交给孙女。",
+      "scene": "In a traditional Chinese courtyard workshop, an elderly craftswoman places a well-used carving tool into her adult granddaughter's hands beside finished wooden pieces, symbolizing a treasured creative legacy passing between generations.",
+      "altText": "A craftswoman passing her tools on as a legacy.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "intergenerational",
+        "symbolic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2780-2799",
+  "batchId": "auto-rank-2780-2799-20260911",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "demonstration",
+      "orange",
+      "edition",
+      "valley",
+      "pine",
+      "manufacturing"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b06e071f-3bb3-4933-a73a-c9184c5ccb6c",
+      "word": "sequence",
+      "meaningZh": "顺序；序列；一连串",
+      "exampleId": "b06e071f-3bb3-4933-a73a-c9184c5ccb6c-visual-ex",
+      "styleFamily": "clean botanical cut-paper illustration",
+      "sentenceEn": "The pictures show the sequence from seed to flowering plant.",
+      "sentenceZh": "这些图画展示了种子成长为开花植物的顺序。",
+      "scene": "Five connected stages show the exact same plant progressing from seed, tiny root, green sprout, leafy young plant, to mature flowering plant, arranged in an unmistakable left-to-right sequence without arrows or labels.",
+      "altText": "A sequence showing a seed growing into a flowering plant.",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "57d26570-48a6-4c6c-a341-877a0354a9ec",
+      "word": "demonstration",
+      "meaningZh": "示威；演示",
+      "exampleId": "57d26570-48a6-4c6c-a341-877a0354a9ec-visual-ex",
+      "styleFamily": "Chinese culinary ink-and-gouache illustration",
+      "sentenceEn": "The chef gives a demonstration of how to fold a dumpling.",
+      "sentenceZh": "厨师演示如何包饺子。",
+      "scene": "At a Chinese cooking workshop, an adult chef slowly demonstrates three clear hand stages for filling, folding, and sealing one dumpling while adult learners imitate the technique at a long table.",
+      "altText": "A chef giving a dumpling-folding demonstration.",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "db0113cb-5a19-42d6-96f5-4dbe42b320c8",
+      "word": "jet",
+      "meaningZh": "喷射；喷气式飞机；喷嘴",
+      "exampleId": "db0113cb-5a19-42d6-96f5-4dbe42b320c8-visual-ex",
+      "styleFamily": "dynamic aviation poster illustration",
+      "sentenceEn": "The passenger jet climbs above the runway after takeoff.",
+      "sentenceZh": "客机起飞后爬升到跑道上空。",
+      "scene": "A modern twin-engine passenger jet climbs safely above a long airport runway just after takeoff, with clearly accurate wings, two engines, tail, landing gear retracting, and a distant terminal without airline branding.",
+      "altText": "A passenger jet climbing above a runway after takeoff.",
+      "riskTags": [
+        "technical",
+        "spatial_relationship",
+        "vehicle_anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "c7998406-4c69-45d2-8a89-47dac84b5071",
+      "word": "orange",
+      "meaningZh": "柑橘；桔子；橘色；橘色的",
+      "exampleId": "c7998406-4c69-45d2-8a89-47dac84b5071-visual-ex",
+      "styleFamily": "Chinese harvest woodblock illustration",
+      "sentenceEn": "She picks a ripe orange from the tree and places it in the basket.",
+      "sentenceZh": "她从树上摘下一个成熟的橙子放进篮子。",
+      "scene": "In a southern Chinese citrus orchard, an adult farmer picks one vivid ripe orange from a leafy tree heavy with round oranges and places it into a woven harvest basket, with tiled village roofs in the distance.",
+      "altText": "A farmer picking a ripe orange in a citrus orchard.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "0a8e15c1-0f48-4c43-aaa8-cc3b9d7ab093",
+      "word": "consumption",
+      "meaningZh": "消费；消耗",
+      "exampleId": "0a8e15c1-0f48-4c43-aaa8-cc3b9d7ab093-visual-ex",
+      "styleFamily": "isometric resource-flow illustration",
+      "sentenceEn": "Daily water consumption lowers the level in the household tank.",
+      "sentenceZh": "日常用水消耗使家庭水箱的水位下降。",
+      "scene": "A transparent household water tank appears full at dawn and much lower by evening as visible pipes supply a shower, sink, washing machine, and garden, clearly showing consumption reducing a finite resource over time.",
+      "altText": "Household water consumption lowering a storage tank level.",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "sequence",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "ef3c4b0e-5ca3-45fd-a411-e34077a5e185",
+      "word": "assert",
+      "meaningZh": "主张；坚称；断言",
+      "exampleId": "ef3c4b0e-5ca3-45fd-a411-e34077a5e185-visual-ex",
+      "styleFamily": "bold editorial watercolor",
+      "sentenceEn": "The engineer continues to assert that the cracked support is unsafe.",
+      "sentenceZh": "工程师坚持断言开裂的支柱不安全。",
+      "scene": "At a site meeting, an adult engineer stands firmly and points to a clearly cracked structural support while presenting a confident stop gesture; several colleagues listen, making her forceful assertion visually clear without documents or text.",
+      "altText": "An engineer firmly asserting that a cracked support is unsafe.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "981a4190-c8b9-4525-ae52-10de8e2c9634",
+      "word": "blade",
+      "meaningZh": "叶片；刀锋；刀口；剑",
+      "exampleId": "981a4190-c8b9-4525-ae52-10de8e2c9634-visual-ex",
+      "styleFamily": "precise industrial cutaway illustration",
+      "sentenceEn": "A crane lifts one enormous blade toward the wind turbine hub.",
+      "sentenceZh": "起重机把一片巨大的叶片吊向风力涡轮机轮毂。",
+      "scene": "At a wind farm construction site, a crane safely lifts one long aerodynamic turbine blade horizontally toward an exposed three-slot hub while helmeted workers guide it from a distance with ropes.",
+      "altText": "A crane lifting a wind turbine blade toward its hub.",
+      "riskTags": [
+        "technical",
+        "spatial_relationship",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "421d6288-dad2-47a1-8f5f-5e4d4c9e3fd4",
+      "word": "temporary",
+      "meaningZh": "暂时的；临时的；临时工；临时雇员",
+      "exampleId": "421d6288-dad2-47a1-8f5f-5e4d4c9e3fd4-visual-ex",
+      "styleFamily": "layered civic paper-cut illustration",
+      "sentenceEn": "A temporary footbridge serves pedestrians while the main bridge is repaired.",
+      "sentenceZh": "主桥维修期间，一座临时人行桥供行人使用。",
+      "scene": "Beside a stone bridge under repair, pedestrians cross a lightweight modular footbridge with removable supports, barriers, and unfinished construction details that clearly make it temporary rather than permanent.",
+      "altText": "A temporary footbridge beside a permanent bridge under repair.",
+      "riskTags": [
+        "comparison",
+        "spatial_relationship",
+        "people_face",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "9b11dc65-f2ac-4920-8248-9ea51d9c64db",
+      "word": "medication",
+      "meaningZh": "药物治疗；药物处理；医药",
+      "exampleId": "9b11dc65-f2ac-4920-8248-9ea51d9c64db-visual-ex",
+      "styleFamily": "gentle healthcare editorial illustration",
+      "sentenceEn": "The nurse places the prescribed medication into a weekly organizer.",
+      "sentenceZh": "护士把处方药放进每周药盒。",
+      "scene": "An adult nurse and older adult patient review a plain symbol-coded pill organizer as the nurse places prescribed medication from an unbranded container into one compartment, with no dosage, labels, or self-treatment implication.",
+      "altText": "A nurse organizing prescribed medication for a patient.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "medical",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "03fe8480-48c5-4aa9-83ec-34490224e3e6",
+      "word": "cabin",
+      "meaningZh": "小屋；客舱；关在小屋",
+      "exampleId": "03fe8480-48c5-4aa9-83ec-34490224e3e6-visual-ex",
+      "styleFamily": "cozy linocut landscape illustration",
+      "sentenceEn": "A small wooden cabin stands alone beside the frozen lake.",
+      "sentenceZh": "一间小木屋独自坐落在结冰的湖边。",
+      "scene": "A single compact wooden cabin with chimney, porch, and warmly lit windows stands beside a broad frozen mountain lake, clearly separate from any village and surrounded by snow-covered pine trees.",
+      "altText": "A small wooden cabin beside a frozen mountain lake.",
+      "riskTags": [
+        "spatial_relationship",
+        "natural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "621ff5ae-76f8-4084-b50b-988e6c599b02",
+      "word": "bite",
+      "meaningZh": "咬；一口；刺痛；穿透",
+      "exampleId": "621ff5ae-76f8-4084-b50b-988e6c599b02-visual-ex",
+      "styleFamily": "crisp colored-pencil illustration",
+      "sentenceEn": "He takes one bite from the apple and leaves a curved mark.",
+      "sentenceZh": "他咬了一口苹果，留下弧形牙印。",
+      "scene": "An adult holds a red apple immediately after taking one bite, showing one clean curved bite mark and a natural chewing expression, with anatomically accurate hand and no exaggerated teeth.",
+      "altText": "A person taking one bite from a red apple.",
+      "riskTags": [
+        "exact_quantity",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "bd87585f-3e17-4dfd-a5a0-35277facaed0",
+      "word": "edition",
+      "meaningZh": "版本；版次",
+      "exampleId": "bd87585f-3e17-4dfd-a5a0-35277facaed0-visual-ex",
+      "styleFamily": "Chinese bookmaking woodblock illustration",
+      "sentenceEn": "The new edition adds restored illustrations to the classic book.",
+      "sentenceZh": "新版为这部经典书籍加入了修复后的插图。",
+      "scene": "A Chinese book conservator compares two copies of the same thread-bound classic: an older worn edition with faded incomplete pictures and a new edition with clear restored full-page illustrations, matching bindings but no readable characters.",
+      "altText": "An old book compared with a new edition containing restored illustrations.",
+      "riskTags": [
+        "comparison",
+        "before_after",
+        "reference",
+        "cultural_scene",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2b67660a-74c3-42d1-bb4c-5bcd19f406e2",
+      "word": "valley",
+      "meaningZh": "山谷；溪谷；流域；凹地；谷",
+      "exampleId": "2b67660a-74c3-42d1-bb4c-5bcd19f406e2-visual-ex",
+      "styleFamily": "Chinese ink-and-color landscape illustration",
+      "sentenceEn": "A winding river flows through the deep valley between two mountain ranges.",
+      "sentenceZh": "一条蜿蜒的河流穿过两列山脉之间的深谷。",
+      "scene": "A sweeping Chinese ink-and-color landscape looks down into a broad low valley with a winding river and farms, clearly enclosed on both sides by two high mountain ranges fading into mist.",
+      "altText": "A river winding through a valley between mountain ranges.",
+      "riskTags": [
+        "spatial_relationship",
+        "natural_scene",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "49ff4abd-f007-43fc-b69a-d987bb0b0f45",
+      "word": "yours",
+      "meaningZh": "你的；你们的",
+      "exampleId": "49ff4abd-f007-43fc-b69a-d987bb0b0f45-visual-ex",
+      "styleFamily": "friendly contemporary gouache illustration",
+      "sentenceEn": "The blue umbrella is yours, while the green one belongs to me.",
+      "sentenceZh": "蓝色雨伞是你的，绿色雨伞是我的。",
+      "scene": "At a rainy doorway, one adult hands a blue umbrella to a friend wearing a matching blue raincoat and keeps a green umbrella beside their own green coat, clearly distinguishing yours from mine through gesture and color.",
+      "altText": "A blue umbrella being handed to its owner while a green one is kept.",
+      "riskTags": [
+        "reference",
+        "comparison",
+        "hands",
+        "people_face",
+        "abstract_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "9e6dd41b-8d98-4929-8378-c7392929990e",
+      "word": "pitch",
+      "meaningZh": "音高；推销；投掷；球场",
+      "exampleId": "9e6dd41b-8d98-4929-8378-c7392929990e-visual-ex",
+      "styleFamily": "dynamic screen-print sports illustration",
+      "sentenceEn": "The pitcher delivers a fast pitch toward the waiting catcher.",
+      "sentenceZh": "投手向等候的接球手投出一记快速球。",
+      "scene": "On a baseball field, an adult pitcher completes a powerful throwing motion as one baseball travels directly toward a crouching catcher with mitt open behind home plate, using accurate sports posture and equipment.",
+      "altText": "A pitcher delivering a fast pitch toward a catcher.",
+      "riskTags": [
+        "body_posture",
+        "hands",
+        "sports_equipment",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "36878a8b-a6ab-43f2-ae5d-1cc799610952",
+      "word": "pine",
+      "meaningZh": "松树；渴望",
+      "exampleId": "36878a8b-a6ab-43f2-ae5d-1cc799610952-visual-ex",
+      "styleFamily": "traditional Chinese ink landscape",
+      "sentenceEn": "The ancient pine bends over the cliff but remains firmly rooted.",
+      "sentenceZh": "古松弯向悬崖外侧，却依然牢牢扎根。",
+      "scene": "A venerable pine tree with rugged bark, long needle clusters, and twisted branches grows from a rocky Chinese mountain cliff, visibly bent by wind yet held by strong exposed roots in classic ink-wash style.",
+      "altText": "An ancient pine firmly rooted on a windy cliff.",
+      "riskTags": [
+        "plant_anatomy",
+        "natural_scene",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "79b75101-5d41-4639-96d9-f53f0beacb20",
+      "word": "brilliant",
+      "meaningZh": "光辉的；灿烂的；有才气的；亮的",
+      "exampleId": "79b75101-5d41-4639-96d9-f53f0beacb20-visual-ex",
+      "styleFamily": "luminous stained-glass-inspired illustration",
+      "sentenceEn": "A brilliant beam of sunlight fills the dark hall with color.",
+      "sentenceZh": "一道灿烂的阳光让昏暗大厅充满色彩。",
+      "scene": "A single intense beam of sunlight passes through colored glass and spreads radiant jewel-toned light across an otherwise dark stone hall, creating unmistakable brilliant brightness without religious symbols or text.",
+      "altText": "A brilliant beam of colored sunlight filling a dark hall.",
+      "riskTags": [
+        "comparison",
+        "cause_effect",
+        "lighting"
+      ]
+    },
+    {
+      "vocabularyId": "85bdac89-d06e-434f-8dde-49f60b615b0c",
+      "word": "versus",
+      "meaningZh": "对；与...相比",
+      "exampleId": "85bdac89-d06e-434f-8dde-49f60b615b0c-visual-ex",
+      "styleFamily": "balanced editorial poster illustration",
+      "sentenceEn": "The final match is the red team versus the blue team.",
+      "sentenceZh": "决赛由红队对阵蓝队。",
+      "scene": "Two adult tug-of-war teams face each other across a central line, one consistently dressed in red and the other in blue, pulling opposite ends of one rope in an evenly matched contest, with no lettering.",
+      "altText": "A red team versus a blue team in tug-of-war.",
+      "riskTags": [
+        "comparison",
+        "body_posture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "9adceb4a-9c48-4950-b718-84e2ff0b8bd9",
+      "word": "manufacturing",
+      "meaningZh": "制造业",
+      "exampleId": "9adceb4a-9c48-4950-b718-84e2ff0b8bd9-visual-ex",
+      "styleFamily": "Chinese industrial isometric illustration",
+      "sentenceEn": "Modern manufacturing turns metal tubes and parts into finished bicycles.",
+      "sentenceZh": "现代制造业把金属管材和零件变成成品自行车。",
+      "scene": "Inside a modern Chinese bicycle factory, one continuous assembly line progresses from metal tubes through frame welding, painting, wheel fitting, inspection, and completed bicycles, with adult workers and robotic tools but no brand marks.",
+      "altText": "A manufacturing line turning metal parts into finished bicycles.",
+      "riskTags": [
+        "sequence",
+        "technical",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "81ba50d4-6ca0-40ff-be8b-428d50c00f48",
+      "word": "absolute",
+      "meaningZh": "绝对的；专制的；完全的；独立的",
+      "exampleId": "81ba50d4-6ca0-40ff-be8b-428d50c00f48-visual-ex",
+      "styleFamily": "dramatic two-panel charcoal illustration",
+      "sentenceEn": "The room falls into absolute darkness when the final lamp goes out.",
+      "sentenceZh": "最后一盏灯熄灭时，房间陷入完全黑暗。",
+      "scene": "A before-and-after split shows the same room first dimly lit by one final lamp and then completely dark after an adult switches it off, leaving only subtle object silhouettes and no remaining light source.",
+      "altText": "A room entering absolute darkness after its final lamp goes out.",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "cause_effect",
+        "people_face"
+      ]
+    }
+  ]
+}

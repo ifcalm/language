@@ -10,23 +10,16 @@ import {
 import { basename, dirname, extname, join, resolve } from 'node:path'
 import sharp from 'sharp'
 
-export const PIPELINE_SCHEMA_VERSION = 1
-
 export const DEFAULT_STYLE_PROMPT =
   'Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.'
 
-export const RISK_TAGS = [
-  'exact_quantity',
-  'reference',
-  'comparison',
-  'sequence',
-  'cause_effect',
-  'spatial_boundary',
-  'before_after',
-  'people_face',
-  'abstract_meaning',
-]
+export const MAX_RISK_TAGS = 8
 
+const RISK_TAG_PATTERN = /^[A-Za-z][A-Za-z0-9_]*$/
+
+// Scored risk tags steer QA sampling toward the relationships image models get
+// wrong most often. Batches may add their own descriptive tags; those stay valid
+// and simply carry no sampling weight.
 const HIGH_RISK_WEIGHTS = new Map([
   ['exact_quantity', 9],
   ['reference', 8],
@@ -36,8 +29,11 @@ const HIGH_RISK_WEIGHTS = new Map([
   ['spatial_boundary', 6],
   ['before_after', 6],
   ['people_face', 5],
+  ['hands', 5],
   ['abstract_meaning', 4],
 ])
+
+export const SCORED_RISK_TAGS = [...HIGH_RISK_WEIGHTS.keys()]
 
 function normalizedText(value) {
   return typeof value === 'string' ? value.trim().replace(/\s+/g, ' ') : ''
@@ -54,6 +50,80 @@ export function hasExactTargetWord(sentence, word) {
   )
 
   return pattern.test(sentence)
+}
+
+const VOWELS = new Set(['a', 'e', 'i', 'o', 'u'])
+
+// Regular inflections only. Derivations such as compete/competition or Jew/Jewish
+// are a different word and must not satisfy the target-word rule.
+export function inflectedForms(word) {
+  const base = word.toLocaleLowerCase('en-US')
+  const forms = new Set()
+
+  if (!/^[a-z]+$/.test(base)) return forms
+
+  const last = base.at(-1)
+  const secondLast = base.at(-2)
+  const endsInSibilant = /(s|x|z|ch|sh)$/.test(base)
+
+  forms.add(`${base}s`)
+  forms.add(`${base}ed`)
+  forms.add(`${base}ing`)
+  forms.add(`${base}er`)
+  forms.add(`${base}est`)
+
+  if (endsInSibilant) forms.add(`${base}es`)
+
+  if (last === 'e') {
+    const stem = base.slice(0, -1)
+    forms.add(`${base}d`)
+    forms.add(`${base}r`)
+    forms.add(`${base}st`)
+    forms.add(`${stem}ing`)
+  }
+
+  if (last === 'y' && secondLast && !VOWELS.has(secondLast)) {
+    const stem = base.slice(0, -1)
+    forms.add(`${stem}ies`)
+    forms.add(`${stem}ied`)
+    forms.add(`${stem}ier`)
+    forms.add(`${stem}iest`)
+  }
+
+  if (
+    base.length >= 3 &&
+    !VOWELS.has(last) &&
+    last !== 'y' &&
+    last !== 'w' &&
+    VOWELS.has(secondLast) &&
+    base.at(-3) &&
+    !VOWELS.has(base.at(-3))
+  ) {
+    forms.add(`${base}${last}ed`)
+    forms.add(`${base}${last}ing`)
+    forms.add(`${base}${last}er`)
+    forms.add(`${base}${last}est`)
+  }
+
+  return forms
+}
+
+export function targetWordMatch(sentence, word) {
+  if (hasExactTargetWord(sentence, word)) return 'exact'
+
+  const tokens = String(sentence)
+    .toLocaleLowerCase('en-US')
+    .split(/[^a-z]+/)
+    .filter(Boolean)
+  const forms = inflectedForms(word)
+
+  return tokens.some((token) => forms.has(token)) ? 'inflected' : 'none'
+}
+
+export function findInflectedTargetWords(items) {
+  return items
+    .filter((item) => targetWordMatch(item.sentenceEn, item.word) === 'inflected')
+    .map((item) => item.word)
 }
 
 export function completedVocabularyIds(manifestDir) {
@@ -111,47 +181,6 @@ export function buildBatchKey(items) {
   return `rank-${items[0].position}-${items.at(-1).position}`
 }
 
-export function buildPlannerSchema(items) {
-  return {
-    type: 'object',
-    properties: {
-      items: {
-        type: 'array',
-        items: {
-          type: 'object',
-          properties: {
-            vocabularyId: {
-              type: 'string',
-              enum: items.map((item) => item.vocabularyId),
-            },
-            styleFamily: { type: 'string' },
-            sentenceEn: { type: 'string' },
-            sentenceZh: { type: 'string' },
-            scene: { type: 'string' },
-            altText: { type: 'string' },
-            riskTags: {
-              type: 'array',
-              items: { type: 'string', enum: RISK_TAGS },
-            },
-          },
-          required: [
-            'vocabularyId',
-            'styleFamily',
-            'sentenceEn',
-            'sentenceZh',
-            'scene',
-            'altText',
-            'riskTags',
-          ],
-          additionalProperties: false,
-        },
-      },
-    },
-    required: ['items'],
-    additionalProperties: false,
-  }
-}
-
 export function validatePlannedItems(queueItems, plannedItems) {
   if (!Array.isArray(plannedItems) || plannedItems.length !== queueItems.length) {
     throw new Error(
@@ -166,11 +195,11 @@ export function validatePlannedItems(queueItems, plannedItems) {
     const queueItem = queueById.get(planned.vocabularyId)
 
     if (!queueItem) {
-      throw new Error(`Planner returned an unexpected vocabulary ID: ${planned.vocabularyId}.`)
+      throw new Error(`The manifest has an unexpected vocabulary ID: ${planned.vocabularyId}.`)
     }
 
     if (seen.has(planned.vocabularyId)) {
-      throw new Error(`Planner duplicated ${queueItem.word}.`)
+      throw new Error(`The manifest lists ${queueItem.word} more than once.`)
     }
     seen.add(planned.vocabularyId)
 
@@ -184,22 +213,28 @@ export function validatePlannedItems(queueItems, plannedItems) {
 
     for (const [field, minimumLength] of Object.entries(minimumLengths)) {
       if (normalizedText(planned[field]).length < minimumLength) {
-        throw new Error(`Planner left ${field} empty for ${queueItem.word}.`)
+        throw new Error(
+          `${queueItem.word} needs at least ${minimumLength} characters of ${field}.`,
+        )
       }
     }
 
-    if (!hasExactTargetWord(planned.sentenceEn, queueItem.word)) {
+    if (targetWordMatch(planned.sentenceEn, queueItem.word) === 'none') {
       throw new Error(
-        `The English sentence for ${queueItem.word} must contain the exact target word.`,
+        `The English sentence for ${queueItem.word} must contain that word or a regular inflection of it.`,
       )
     }
 
     if (
       !Array.isArray(planned.riskTags) ||
-      planned.riskTags.length > 5 ||
-      planned.riskTags.some((tag) => !RISK_TAGS.includes(tag))
+      planned.riskTags.length > MAX_RISK_TAGS ||
+      planned.riskTags.some(
+        (tag) => typeof tag !== 'string' || !RISK_TAG_PATTERN.test(tag),
+      )
     ) {
-      throw new Error(`Planner returned invalid risk tags for ${queueItem.word}.`)
+      throw new Error(
+        `${queueItem.word} needs up to ${MAX_RISK_TAGS} snake_case risk tags. Prefer the scored tags: ${SCORED_RISK_TAGS.join(', ')}.`,
+      )
     }
   }
 
@@ -211,41 +246,73 @@ export function validatePlannedItems(queueItems, plannedItems) {
   })
 }
 
-export function buildManifest(
+export function buildExampleId(vocabularyId) {
+  return `${vocabularyId}-visual-ex`
+}
+
+export function buildManifestDraft(
   queueItems,
-  plannedItems,
   {
+    batchKey,
     batchId,
+    generationMode = 'agent-built-in-imagegen',
     bucket = 'english-orbit',
     assetBaseUrl = 'https://assets.english.ifcalm.org',
     objectPrefix = 'vocabulary/visuals',
     stylePrompt = DEFAULT_STYLE_PROMPT,
+    culture = 'Chinese',
+    culturalRatio = 0.3,
   },
 ) {
-  const orderedPlans = validatePlannedItems(queueItems, plannedItems)
-
   return {
+    generationMode,
+    batchKey,
     batchId,
     bucket,
     assetBaseUrl,
     objectPrefix,
+    culturalIntegration: {
+      targetRatio: culturalRatio,
+      culture,
+      itemCount: Math.round(queueItems.length * culturalRatio),
+      words: [],
+    },
     stylePrompt,
-    items: queueItems.map((item, index) => ({
+    items: queueItems.map((item) => ({
       vocabularyId: item.vocabularyId,
       word: item.word,
       meaningZh: item.meaningZh,
-      exampleId: `${item.vocabularyId}-visual-ex`,
-      styleFamily: orderedPlans[index].styleFamily,
-      sentenceEn: orderedPlans[index].sentenceEn,
-      sentenceZh: orderedPlans[index].sentenceZh,
-      scene: orderedPlans[index].scene,
-      altText: orderedPlans[index].altText,
-      riskTags: orderedPlans[index].riskTags,
+      exampleId: buildExampleId(item.vocabularyId),
+      styleFamily: '',
+      sentenceEn: '',
+      sentenceZh: '',
+      scene: '',
+      altText: '',
+      riskTags: [],
     })),
   }
 }
 
-export function buildImagePrompt(manifest, item, retryNote = '') {
+export function validateManifestMetadata(manifest) {
+  const requiredFields = ['batchId', 'bucket', 'assetBaseUrl', 'objectPrefix', 'stylePrompt']
+  const missing = requiredFields.filter((field) => !normalizedText(manifest[field]))
+
+  if (missing.length) {
+    throw new Error(`Manifest is missing required batch metadata: ${missing.join(', ')}.`)
+  }
+
+  for (const item of manifest.items) {
+    const expectedExampleId = buildExampleId(item.vocabularyId)
+
+    if (item.exampleId !== expectedExampleId) {
+      throw new Error(
+        `Manifest exampleId for ${item.word} should be ${expectedExampleId}.`,
+      )
+    }
+  }
+}
+
+export function buildImagePrompt(manifest, item) {
   return `Use case: illustration-story
 Asset type: vocabulary memory scene for an adult English-learning app
 Primary request: Create one image that makes the word "${item.word}" and this sentence visually memorable: "${item.sentenceEn}"
@@ -254,9 +321,7 @@ Style/medium: ${item.styleFamily}; unmistakably illustrated, polished and mature
 Composition/framing: landscape 3:2, one clear focal action or relationship, readable at card size
 Lighting/mood: constructive, emotionally clear, natural to the scene
 Constraints: ${manifest.stylePrompt}
-Avoid: any readable text, letters, numbers, captions, labels, logos, watermarks, realistic-human or live-action appearance, blank or missing facial features, visual clutter${
-    retryNote ? `\nRetry correction: ${retryNote}` : ''
-  }`
+Avoid: any readable text, letters, numbers, captions, labels, logos, watermarks, realistic-human or live-action appearance, blank or missing facial features, visual clutter`
 }
 
 function stableNumber(seed, value) {

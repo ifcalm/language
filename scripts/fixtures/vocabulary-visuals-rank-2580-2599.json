@@ -1,0 +1,339 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2580-2599",
+  "batchId": "auto-rank-2580-2599-20260904",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": []
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5caa701d-0d82-43dd-b4db-79a4b68dd5b6",
+      "word": "earnings",
+      "meaningZh": "收入；收益",
+      "exampleId": "5caa701d-0d82-43dd-b4db-79a4b68dd5b6-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "Her earnings from the busy week fill three envelopes.",
+      "sentenceZh": "她一周的收入装满了三个信封。",
+      "scene": "A Chinese night-market owner divides the week’s cash earnings into three household envelopes after closing.",
+      "altText": "A night-market owner sorting her weekly earnings into three envelopes.",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6eceddbf-7972-4f41-a7ca-3a8b5ae6ab72",
+      "word": "oven",
+      "meaningZh": "烤箱；烤炉；炉",
+      "exampleId": "6eceddbf-7972-4f41-a7ca-3a8b5ae6ab72-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The baker slides two loaves into the hot oven.",
+      "sentenceZh": "面包师把两条面包放进热烤箱。",
+      "scene": "Inside a small Chinese neighborhood bakery, an adult baker uses a peel to slide exactly two loaves into a glowing oven.",
+      "altText": "A baker placing two loaves into a glowing oven.",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "63374990-18da-4e16-bd4b-49684bd592e2",
+      "word": "distinction",
+      "meaningZh": "区别；荣誉",
+      "exampleId": "63374990-18da-4e16-bd4b-49684bd592e2-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "The red-crowned crane makes a clear distinction between the two birds.",
+      "sentenceZh": "丹顶鹤让两只鸟之间的区别一目了然。",
+      "scene": "Two similar white birds stand side by side, but one red-crowned crane has a vivid red crown and longer legs, emphasizing their distinction.",
+      "altText": "Two similar birds with one clear distinguishing feature.",
+      "riskTags": [
+        "comparison",
+        "animal_group"
+      ]
+    },
+    {
+      "vocabularyId": "afdd6f93-da66-4ebc-80e1-eec7ab1b9edf",
+      "word": "segment",
+      "meaningZh": "部分；片段",
+      "exampleId": "afdd6f93-da66-4ebc-80e1-eec7ab1b9edf-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "One orange segment has been separated from the fruit.",
+      "sentenceZh": "一瓣橙子已经从果实上分开。",
+      "scene": "A stylized orange rests open with exactly one wedge-shaped segment pulled clearly away from the remaining circle.",
+      "altText": "One orange segment separated from the rest of the fruit.",
+      "riskTags": [
+        "exact_quantity",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7e39c5da-dc5a-45bd-9870-9a47d899a8d6",
+      "word": "nowhere",
+      "meaningZh": "无处",
+      "exampleId": "7e39c5da-dc5a-45bd-9870-9a47d899a8d6-visual-ex",
+      "styleFamily": "graphic novel illustration",
+      "sentenceEn": "The lost traveler is nowhere near a road or house.",
+      "sentenceZh": "迷路的旅行者周围看不到道路或房屋。",
+      "scene": "A lone adult traveler stands in a vast empty salt flat, turning in every direction with no road, building, or landmark anywhere.",
+      "altText": "A lone traveler surrounded by an empty landscape with nowhere to go.",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "58fa1288-13d4-482b-ac1f-4a654723f578",
+      "word": "poet",
+      "meaningZh": "诗人",
+      "exampleId": "58fa1288-13d4-482b-ac1f-4a654723f578-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The poet writes a verse beside the moonlit river.",
+      "sentenceZh": "诗人在月下河边写诗。",
+      "scene": "A mature Chinese poet sits at a stone table beside a moonlit river, brush poised over blank paper, inspired by bamboo and distant mountains.",
+      "altText": "A Chinese poet composing beside a moonlit river.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7079fd55-1328-47e8-bbd1-f8c26c03eba1",
+      "word": "mere",
+      "meaningZh": "仅仅的；只不过的",
+      "exampleId": "7079fd55-1328-47e8-bbd1-f8c26c03eba1-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "A mere candle lights the enormous hall.",
+      "sentenceZh": "仅仅一支蜡烛照亮了巨大的大厅。",
+      "scene": "One tiny candle glows at the center of an enormous dark ceremonial hall, its smallness contrasted with the vast interior.",
+      "altText": "A mere candle glowing in a vast dark hall.",
+      "riskTags": [
+        "comparison",
+        "exact_quantity",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "6144c854-a421-4f65-aafa-8357fdd3262d",
+      "word": "exciting",
+      "meaningZh": "令人兴奋的",
+      "exampleId": "6144c854-a421-4f65-aafa-8357fdd3262d-visual-ex",
+      "styleFamily": "hand-drawn animation still",
+      "sentenceEn": "The exciting finish brings the cyclists neck and neck.",
+      "sentenceZh": "激动人心的冲刺让自行车手并驾齐驱。",
+      "scene": "Three adult cyclists race neck and neck toward an unseen finish while a diverse crowd reacts with suspense and energy.",
+      "altText": "Three cyclists in an exciting close finish.",
+      "riskTags": [
+        "exact_quantity",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "5f67f17b-bc23-43ad-bf8f-f613f62e9f1a",
+      "word": "variation",
+      "meaningZh": "变化；变动",
+      "exampleId": "5f67f17b-bc23-43ad-bf8f-f613f62e9f1a-visual-ex",
+      "styleFamily": "mixed-media collage",
+      "sentenceEn": "Each bowl shows a variation of the same blue pattern.",
+      "sentenceZh": "每只碗都展现同一种蓝色图案的变化。",
+      "scene": "Five ceramic bowls are arranged in one row, sharing a blue wave motif that changes slightly in shape and rhythm on each bowl.",
+      "altText": "Five bowls showing variations of one blue pattern.",
+      "riskTags": [
+        "comparison",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "43152d82-d1c1-408c-8b5a-2f694b8cc4f5",
+      "word": "comfort",
+      "meaningZh": "舒适；安慰；安慰者",
+      "exampleId": "43152d82-d1c1-408c-8b5a-2f694b8cc4f5-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "A warm blanket gives the tired nurse comfort.",
+      "sentenceZh": "温暖的毯子给疲惫的护士带来安慰。",
+      "scene": "After a long shift, an adult nurse rests in a quiet chair as a friend wraps a warm blanket around her shoulders and offers tea.",
+      "altText": "A tired nurse receiving comfort from a friend and warm blanket.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "5015756c-86d2-43fe-a642-2b64ea67d54e",
+      "word": "radical",
+      "meaningZh": "激进的；根本的",
+      "exampleId": "5015756c-86d2-43fe-a642-2b64ea67d54e-visual-ex",
+      "styleFamily": "bold geometric poster illustration",
+      "sentenceEn": "The radical redesign replaces the old staircase with a green spiral ramp.",
+      "sentenceZh": "这次彻底的重新设计用绿色螺旋坡道取代了旧楼梯。",
+      "scene": "A split architectural view contrasts an ordinary gray staircase with a dramatically different green spiral ramp replacing it.",
+      "altText": "A radical redesign changing stairs into a green spiral ramp.",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "1dd5f1e8-b6c5-4638-8629-5ad304d23d5d",
+      "word": "adapt",
+      "meaningZh": "使适应；改编；适应",
+      "exampleId": "1dd5f1e8-b6c5-4638-8629-5ad304d23d5d-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The farmer must adapt the field to the dry climate.",
+      "sentenceZh": "农民必须调整农田以适应干旱气候。",
+      "scene": "A Chinese farmer changes a dry field by adding shade cloth and drip irrigation; healthy crops grow where plants had wilted.",
+      "altText": "A farmer adapting a dry field with shade and drip irrigation.",
+      "riskTags": [
+        "Chinese_culture",
+        "before_after",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7150b979-66de-4cc9-a71d-737d66aa9dc5",
+      "word": "Irish",
+      "meaningZh": "爱尔兰的；爱尔兰人",
+      "exampleId": "7150b979-66de-4cc9-a71d-737d66aa9dc5-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "The Irish musicians play together in a lively pub session.",
+      "sentenceZh": "爱尔兰乐手们在热闹的酒馆合奏。",
+      "scene": "Three adult Irish folk musicians play fiddle, flute, and bodhrán together at a warm wooden pub table, with no flags or text.",
+      "altText": "Irish folk musicians playing fiddle, flute, and bodhrán together.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "74138d76-3853-4341-94e8-544c76b77d26",
+      "word": "honey",
+      "meaningZh": "蜂蜜；甜蜜；爱人",
+      "exampleId": "74138d76-3853-4341-94e8-544c76b77d26-visual-ex",
+      "styleFamily": "Chinese folk-art-inspired illustration",
+      "sentenceEn": "Golden honey flows from the comb into a glass jar.",
+      "sentenceZh": "金色蜂蜜从蜂巢流进玻璃罐。",
+      "scene": "At a rural Chinese apiary, an adult beekeeper holds a honeycomb frame while thick golden honey drips visibly into one clear jar; bees hover nearby.",
+      "altText": "A beekeeper collecting golden honey from a comb.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b9922d89-c926-4043-a03f-296013881ee0",
+      "word": "correspondent",
+      "meaningZh": "记者；通讯员；对应物",
+      "exampleId": "b9922d89-c926-4043-a03f-296013881ee0-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "The correspondent reports from the flooded street.",
+      "sentenceZh": "记者在被淹的街道进行报道。",
+      "scene": "A Chinese field correspondent in plain rain gear speaks into an unmarked microphone while observing rescue boats on a flooded city street.",
+      "altText": "A field correspondent reporting beside rescue boats on a flooded street.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f8151d77-b701-489e-9de6-baf7f767cb3e",
+      "word": "pale",
+      "meaningZh": "苍白的；浅色的",
+      "exampleId": "f8151d77-b701-489e-9de6-baf7f767cb3e-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The pale moon almost disappears in the morning sky.",
+      "sentenceZh": "苍白的月亮几乎消失在晨空中。",
+      "scene": "A faint pale moon hangs in a brightening dawn sky, contrasted with a richly colored orange sun low on the opposite horizon.",
+      "altText": "A pale moon fading in the bright morning sky.",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "14dd6784-3539-4ad1-bc47-947b351c1cdd",
+      "word": "musician",
+      "meaningZh": "音乐家",
+      "exampleId": "14dd6784-3539-4ad1-bc47-947b351c1cdd-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The musician draws a long note from the erhu.",
+      "sentenceZh": "音乐家用二胡拉出一个悠长的音符。",
+      "scene": "A Chinese adult musician performs on an erhu in a quiet garden pavilion; the bow movement and attentive audience show the act of making music.",
+      "altText": "A Chinese musician performing on an erhu in a garden pavilion.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "d1ba812d-eaa5-493d-8f13-397c7725a4a8",
+      "word": "significance",
+      "meaningZh": "重要性；意义",
+      "exampleId": "d1ba812d-eaa5-493d-8f13-397c7725a4a8-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The old key has great significance for the returning family.",
+      "sentenceZh": "这把旧钥匙对归来的家人意义重大。",
+      "scene": "An adult family member holds one worn brass key close to their heart while standing before a restored ancestral courtyard, with layered family photographs shown only as image shapes without text.",
+      "altText": "A family member holding a meaningful old key at an ancestral courtyard.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "0ef1c9cf-d73b-4717-b0c6-2545d251fcfa",
+      "word": "vessel",
+      "meaningZh": "船；容器",
+      "exampleId": "0ef1c9cf-d73b-4717-b0c6-2545d251fcfa-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "The painted vessel carries water across the courtyard.",
+      "sentenceZh": "彩绘容器装着水穿过院子。",
+      "scene": "In a Chinese courtyard, an adult carries a large painted ceramic vessel filled with water, with visible ripples at its open rim.",
+      "altText": "A person carrying a painted ceramic vessel filled with water.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7082474c-b9e5-4a57-87cb-3012c7e9d9e2",
+      "word": "storage",
+      "meaningZh": "存储",
+      "exampleId": "7082474c-b9e5-4a57-87cb-3012c7e9d9e2-visual-ex",
+      "styleFamily": "isometric cut-paper illustration",
+      "sentenceEn": "The pantry provides storage for jars, grain, and baskets.",
+      "sentenceZh": "储藏室为罐子、粮食和篮子提供存放空间。",
+      "scene": "An organized Chinese household pantry is shown in cutaway, with jars, grain sacks, and baskets placed neatly in separate shelves and compartments.",
+      "altText": "An organized pantry used for storage of jars, grain, and baskets.",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

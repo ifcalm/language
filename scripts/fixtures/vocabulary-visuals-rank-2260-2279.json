@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2260-2279",
+  "batchId": "auto-rank-2260-2279-20260820",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "cake",
+      "historian",
+      "restore",
+      "origin",
+      "conventional",
+      "wealth"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "9d2c9565-d8a9-4c9c-8157-66d9092d84d5",
+      "word": "giant",
+      "meaningZh": "巨人；大力士；巨大怪物",
+      "exampleId": "9d2c9565-d8a9-4c9c-8157-66d9092d84d5-visual-ex",
+      "styleFamily": "majestic naturalist gouache illustration",
+      "sentenceEn": "The giant redwood towered above the surrounding forest.",
+      "sentenceZh": "这棵巨大的红杉高耸在周围森林之上。",
+      "scene": "A giant ancient redwood rises far above neighboring trees while two adult conservationists at its base look upward, emphasizing scale without fantasy creatures.",
+      "altText": "巨大古红杉高耸于森林之上",
+      "riskTags": [
+        "spatial_relationship",
+        "people_face",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "82203cac-de3e-4293-80a1-bf493a5b8c7a",
+      "word": "cake",
+      "meaningZh": "蛋糕；块；饼",
+      "exampleId": "82203cac-de3e-4293-80a1-bf493a5b8c7a-visual-ex",
+      "styleFamily": "Chinese celebration watercolor illustration",
+      "sentenceEn": "The family shared a peach-shaped cake for Grandmother's birthday.",
+      "sentenceZh": "全家在奶奶生日时分享寿桃形蛋糕。",
+      "scene": "At a warm Chinese family birthday table, several generations gather around a carefully made peach-shaped celebration cake as Grandmother smiles and begins the first slice.",
+      "altText": "家人围坐分享奶奶生日的寿桃蛋糕",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "989ba0e6-4e87-4520-b7bd-2a229dd0c4fe",
+      "word": "historian",
+      "meaningZh": "历史学家",
+      "exampleId": "989ba0e6-4e87-4520-b7bd-2a229dd0c4fe-visual-ex",
+      "styleFamily": "Chinese archives editorial illustration",
+      "sentenceEn": "The historian compared maps, photographs, and objects from the old port.",
+      "sentenceZh": "历史学家比较了旧港口的地图、照片和实物。",
+      "scene": "In a Chinese city archive, a historian wearing cotton gloves compares an old harbor model, faded photographs, and map-like sheets with no readable labels.",
+      "altText": "历史学家在档案馆研究旧港口资料",
+      "riskTags": [
+        "hands",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "1d7b014a-196f-4155-95dc-9c259933afd3",
+      "word": "negotiate",
+      "meaningZh": "商议；谈判；交涉",
+      "exampleId": "1d7b014a-196f-4155-95dc-9c259933afd3-visual-ex",
+      "styleFamily": "constructive civic editorial illustration",
+      "sentenceEn": "Farmers and fishers met to negotiate a fair use of the river.",
+      "sentenceZh": "农民和渔民会面协商公平使用河流。",
+      "scene": "Farmers, fishers, and water managers negotiate around a tactile river-basin model, placing shared water tokens between irrigation fields and wetland habitat without signs or diagrams.",
+      "altText": "农民渔民围绕河流模型协商用水",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "513295a6-e2cf-4b78-85c1-95ae3e3e9a40",
+      "word": "restore",
+      "meaningZh": "恢复；修复；归还",
+      "exampleId": "513295a6-e2cf-4b78-85c1-95ae3e3e9a40-visual-ex",
+      "styleFamily": "Chinese heritage conservation gouache illustration",
+      "sentenceEn": "Craft workers used traditional methods to restore the temple roof.",
+      "sentenceZh": "工匠用传统方法修复寺庙屋顶。",
+      "scene": "Skilled Chinese craft workers restore a weathered temple roof, replacing damaged glazed tiles and repairing timber joints while preserving intact historical material.",
+      "altText": "工匠用传统技艺修复寺庙屋顶",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "architecture"
+      ]
+    },
+    {
+      "vocabularyId": "57c5236a-a775-4f22-ab37-7db9f70cd0de",
+      "word": "substantial",
+      "meaningZh": "大量的；实质的；重大的",
+      "exampleId": "57c5236a-a775-4f22-ab37-7db9f70cd0de-visual-ex",
+      "styleFamily": "clear resource editorial illustration",
+      "sentenceEn": "The storm caused substantial damage to the coastal boardwalk.",
+      "sentenceZh": "风暴对海滨木栈道造成了严重破坏。",
+      "scene": "After a storm, a long section of coastal boardwalk shows substantial damage with many broken planks and displaced railings while repair crews safely assess the broad affected area.",
+      "altText": "风暴造成海滨栈道大面积严重损坏",
+      "riskTags": [
+        "many_objects",
+        "weather",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "c3db1d84-926e-4e75-a97c-fc84db643018",
+      "word": "pop",
+      "meaningZh": "流行音乐；流行文化；砰的一声；突然出现",
+      "exampleId": "c3db1d84-926e-4e75-a97c-fc84db643018-visual-ex",
+      "styleFamily": "lively kitchen gouache illustration",
+      "sentenceEn": "They heard the first kernel pop inside the covered pan.",
+      "sentenceZh": "他们听见盖着的锅里第一颗玉米粒爆开。",
+      "scene": "In a cozy kitchen, two adults react with delight as the first popcorn kernel visibly bursts against the glass lid of a pan, while unpopped kernels remain below.",
+      "altText": "锅里的第一颗玉米粒砰然爆开",
+      "riskTags": [
+        "motion",
+        "small_object",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7a402992-5fce-4cee-a44a-1b68220539da",
+      "word": "specialist",
+      "meaningZh": "专家",
+      "exampleId": "7a402992-5fce-4cee-a44a-1b68220539da-visual-ex",
+      "styleFamily": "precision repair editorial illustration",
+      "sentenceEn": "A specialist repaired the antique clock's smallest gear.",
+      "sentenceZh": "一位专家修复了古董钟表最小的齿轮。",
+      "scene": "At a watchmaker's bench, a clock specialist uses magnification and fine tools to fit a tiny gear into an antique clock mechanism.",
+      "altText": "钟表专家修复古董钟的微小齿轮",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "concentrate"
+      ]
+    },
+    {
+      "vocabularyId": "9d8ad58a-b2dc-4e9d-9327-0a8d54b7f780",
+      "word": "origin",
+      "meaningZh": "起源；起因；出身；开端",
+      "exampleId": "9d8ad58a-b2dc-4e9d-9327-0a8d54b7f780-visual-ex",
+      "styleFamily": "Chinese tea landscape watercolor illustration",
+      "sentenceEn": "Researchers traced the tea's origin to a high mountain garden.",
+      "sentenceZh": "研究人员追溯出这种茶源自高山茶园。",
+      "scene": "Tea researchers follow samples back to their origin in a misty Chinese mountain garden where growers pick leaves from old tea bushes, with matching loose leaves compared in plain bowls.",
+      "altText": "研究人员追溯茶叶到高山茶园的起源",
+      "riskTags": [
+        "comparison",
+        "people_face",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "59508b22-7edd-4656-8001-a99fa67479fd",
+      "word": "approval",
+      "meaningZh": "批准；赞成",
+      "exampleId": "59508b22-7edd-4656-8001-a99fa67479fd-visual-ex",
+      "styleFamily": "positive planning editorial illustration",
+      "sentenceEn": "The accessible housing plan received approval from the review panel.",
+      "sentenceZh": "无障碍住房方案获得了评审小组批准。",
+      "scene": "A review panel gives clear approval through warm handshakes and raised affirmative gestures around an accessible apartment model with ramps, wide doors, and no written plans.",
+      "altText": "无障碍住房方案获得评审小组赞成",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "dfd82669-6fcf-4755-993e-d6555d64810f",
+      "word": "quietly",
+      "meaningZh": "安静地",
+      "exampleId": "dfd82669-6fcf-4755-993e-d6555d64810f-visual-ex",
+      "styleFamily": "peaceful wildlife watercolor illustration",
+      "sentenceEn": "The ranger closed the gate quietly so the nesting birds stayed calm.",
+      "sentenceZh": "护林员轻轻关门，让筑巢的鸟保持平静。",
+      "scene": "A ranger closes a wooden sanctuary gate quietly with both hands while nearby nesting shorebirds remain undisturbed among reeds.",
+      "altText": "护林员轻轻关门避免惊扰筑巢鸟类",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "animal_anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "e69a92f8-7ce2-48f8-9dfa-fc26814e4dd6",
+      "word": "advise",
+      "meaningZh": "劝告；给...出主意；通知；建议",
+      "exampleId": "e69a92f8-7ce2-48f8-9dfa-fc26814e4dd6-visual-ex",
+      "styleFamily": "supportive financial editorial illustration",
+      "sentenceEn": "The counselor will advise the couple on reducing household debt.",
+      "sentenceZh": "顾问将建议这对夫妻如何减少家庭债务。",
+      "scene": "A financial counselor advises a couple by arranging plain household objects into needs and optional purchases beside a savings jar, using no readable charts or figures.",
+      "altText": "财务顾问建议夫妻减少家庭债务",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b51b7e77-4623-42b1-b542-6876c3f68f9b",
+      "word": "conventional",
+      "meaningZh": "传统的",
+      "exampleId": "b51b7e77-4623-42b1-b542-6876c3f68f9b-visual-ex",
+      "styleFamily": "Chinese craft comparison illustration",
+      "sentenceEn": "The builder chose a conventional timber joint proven over centuries.",
+      "sentenceZh": "建造者选择了历经数百年验证的传统木结构接头。",
+      "scene": "In a Chinese carpentry workshop, a builder fits a conventional interlocking timber joint by hand while a modern metal connector rests unused nearby for comparison.",
+      "altText": "木匠选择传统榫卯结构连接木材",
+      "riskTags": [
+        "hands",
+        "comparison",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "808f7168-a979-4252-8392-a7fd67f2573d",
+      "word": "depth",
+      "meaningZh": "深度",
+      "exampleId": "808f7168-a979-4252-8392-a7fd67f2573d-visual-ex",
+      "styleFamily": "scientific lake watercolor illustration",
+      "sentenceEn": "The research team measured the depth of the alpine lake.",
+      "sentenceZh": "研究团队测量了高山湖泊的深度。",
+      "scene": "From a small research boat, scientists lower a weighted measuring line straight into a clear alpine lake, with the line visibly descending far below the surface.",
+      "altText": "研究人员从船上测量高山湖泊深度",
+      "riskTags": [
+        "spatial_relationship",
+        "water",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "55ce113f-9a56-447c-aeb4-ffe959449eac",
+      "word": "wealth",
+      "meaningZh": "财富；资源；财产；丰富；富裕；大量",
+      "exampleId": "55ce113f-9a56-447c-aeb4-ffe959449eac-visual-ex",
+      "styleFamily": "Chinese ecological landscape illustration",
+      "sentenceEn": "The valley's forests and clean water were its greatest wealth.",
+      "sentenceZh": "山谷的森林和清洁水源是它最大的财富。",
+      "scene": "A thriving Chinese valley shows dense protected forest feeding clear streams, farms, and village reservoirs while residents care for the watershed, presenting natural resources as shared wealth.",
+      "altText": "森林和清洁水源构成山谷的共同财富",
+      "riskTags": [
+        "landscape",
+        "many_people",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f0bd6491-fea4-4070-9a95-220b5dd57ea3",
+      "word": "disability",
+      "meaningZh": "残疾",
+      "exampleId": "f0bd6491-fea4-4070-9a95-220b5dd57ea3-visual-ex",
+      "styleFamily": "inclusive workplace editorial illustration",
+      "sentenceEn": "The workshop adapted its tools so disability did not limit participation.",
+      "sentenceZh": "作坊改造了工具，使残疾不会限制参与。",
+      "scene": "In an inclusive fabrication workshop, adults with varied disabilities use height-adjustable benches, tactile guides, and adapted grips alongside nondisabled colleagues as equal makers.",
+      "altText": "无障碍工具让残障工匠平等参与制作",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "d90043de-10d5-4358-8211-12ca1933b797",
+      "word": "shell",
+      "meaningZh": "壳；外壳；炮弹",
+      "exampleId": "d90043de-10d5-4358-8211-12ca1933b797-visual-ex",
+      "styleFamily": "coastal naturalist watercolor illustration",
+      "sentenceEn": "The hermit crab examined a larger shell beside the tide pool.",
+      "sentenceZh": "寄居蟹在潮池旁查看一个更大的贝壳。",
+      "scene": "A hermit crab emerges partly from its current shell to inspect a larger empty spiral shell beside a clear tide pool, with realistic animal anatomy.",
+      "altText": "寄居蟹在潮池边查看更大的空贝壳",
+      "riskTags": [
+        "animal_anatomy",
+        "small_object",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "d66f317a-f17e-4a30-9997-192a129db40b",
+      "word": "criticize",
+      "meaningZh": "批评",
+      "exampleId": "d66f317a-f17e-4a30-9997-192a129db40b-visual-ex",
+      "styleFamily": "constructive design-review illustration",
+      "sentenceEn": "The reviewers learned to criticize the design without attacking the designer.",
+      "sentenceZh": "评审者学会了批评设计而不攻击设计师。",
+      "scene": "In a respectful studio review, colleagues examine a chair prototype, pointing calmly to an unstable joint while the designer listens and everyone focuses on the object rather than the person.",
+      "altText": "评审者针对椅子设计提出建设性批评",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c944c697-9ad8-4001-9181-7a9d28d60d1b",
+      "word": "effectively",
+      "meaningZh": "有效地",
+      "exampleId": "c944c697-9ad8-4001-9181-7a9d28d60d1b-visual-ex",
+      "styleFamily": "emergency teamwork editorial illustration",
+      "sentenceEn": "The crew worked effectively to clear the fallen tree before dark.",
+      "sentenceZh": "队伍高效协作，在天黑前清除了倒树。",
+      "scene": "A coordinated road crew works effectively in clear roles: one saws a fallen tree, two move sections, and another safely directs waiting traffic as sunset approaches.",
+      "altText": "道路队伍高效协作清理倒树",
+      "riskTags": [
+        "sequence",
+        "many_people",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c214fd68-548d-4372-8d73-e704f7bb5276",
+      "word": "biological",
+      "meaningZh": "生物学的",
+      "exampleId": "c214fd68-548d-4372-8d73-e704f7bb5276-visual-ex",
+      "styleFamily": "marine science gouache illustration",
+      "sentenceEn": "The reef's biological recovery attracted fish and sea turtles.",
+      "sentenceZh": "珊瑚礁的生物恢复吸引了鱼类和海龟。",
+      "scene": "Marine biologists observe a recovering reef where living coral, fish, sea turtles, algae, and invertebrates form a rich biological community beside a sparse damaged patch.",
+      "altText": "恢复中的珊瑚礁呈现丰富生物群落",
+      "riskTags": [
+        "animal_anatomy",
+        "comparison",
+        "many_objects"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3361-3380",
+  "batchId": "auto-rank-3361-3380-20260919",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "historically",
+      "mild",
+      "noon",
+      "residential",
+      "poster",
+      "nonprofit"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "f91bd77f-23c7-4dbb-86a9-0bdd0f4cbd5c",
+      "word": "rescue",
+      "meaningZh": "援救；解救；营救",
+      "exampleId": "f91bd77f-23c7-4dbb-86a9-0bdd0f4cbd5c-visual-ex",
+      "styleFamily": "warm hand-painted rescue gouache illustration",
+      "sentenceEn": "The rescue team brought the stranded dog to safety.",
+      "sentenceZh": "救援队把受困的小狗带到了安全地带。",
+      "scene": "Two adult rescue workers in plain high-visibility jackets lift a calm wet dog from a shallow stream onto the grassy bank using a soft animal sling. The current is gentle and safety is already near; complete reassuring faces and anatomically natural hands, no emergency insignia, writing or danger spectacle.",
+      "altText": "救援人员把受困的小狗从浅溪带到岸边。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "safety",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c31affee-a2c1-4d33-aa41-da9adf7bf5ec",
+      "word": "counterpart",
+      "meaningZh": "对应的人或物",
+      "exampleId": "c31affee-a2c1-4d33-aa41-da9adf7bf5ec-visual-ex",
+      "styleFamily": "clean editorial colored-pencil illustration",
+      "sentenceEn": "The day-shift nurse met her night-shift counterpart.",
+      "sentenceZh": "白班护士见到了她的夜班对应同事。",
+      "scene": "Two adult nurses with different appearances but matching professional roles meet at a hospital doorway during a calm shift handoff, one arriving in daylight and one leaving under soft evening light. They exchange one plain closed clipboard, complete friendly faces and natural hands; no medical procedure, badges, clocks, writing or logos.",
+      "altText": "白班护士与承担相同职责的夜班护士交接。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b55dc9bf-2984-4d3e-8c5e-8a0f03861bb9",
+      "word": "historically",
+      "meaningZh": "历史上",
+      "exampleId": "b55dc9bf-2984-4d3e-8c5e-8a0f03861bb9-visual-ex",
+      "styleFamily": "muted historical ink-and-watercolor illustration",
+      "sentenceEn": "Historically, the canal carried grain into the city.",
+      "sentenceZh": "历史上，这条运河把粮食运进城里。",
+      "scene": "A historical Chinese canal scene with wooden grain boats moving beneath an old stone arch bridge toward a walled town, boat decks visibly carrying tied sacks and baskets of grain. Restrained period clothing and architecture, distant people with non-readable faces, no modern objects, flags, writing or exact dynasty claims.",
+      "altText": "历史上的运粮船沿中国古运河驶向城镇。",
+      "riskTags": [
+        "historical_accuracy",
+        "cultural_sensitivity",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ce38f2ce-115e-4b85-8253-2272d32b4e53",
+      "word": "firmly",
+      "meaningZh": "坚定地",
+      "exampleId": "ce38f2ce-115e-4b85-8253-2272d32b4e53-visual-ex",
+      "styleFamily": "precise cut-paper workshop illustration",
+      "sentenceEn": "The clamp held the wooden board firmly in place.",
+      "sentenceZh": "夹具把木板牢牢固定在原位。",
+      "scene": "Close view of a sturdy unbranded bench clamp gripping a wooden board flat against a workbench while a small curl of wood and nearby hand plane imply active work. The board is visibly immobile and square to the bench, human-free composition, mechanically plausible clamp contact, no letters, numbers or logos.",
+      "altText": "夹具把木板牢牢固定在工作台上。",
+      "riskTags": [
+        "mechanical_detail",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "ad2be66b-c4a2-4c15-a101-41d94a4ad985",
+      "word": "mild",
+      "meaningZh": "温和的；轻微的",
+      "exampleId": "ad2be66b-c4a2-4c15-a101-41d94a4ad985-visual-ex",
+      "styleFamily": "soft Chinese watercolor garden illustration",
+      "sentenceEn": "The mild spring weather invited everyone into the garden.",
+      "sentenceZh": "温和的春日天气吸引大家走进花园。",
+      "scene": "A gentle spring day in a classical Chinese garden with pale blossoms, still water and a light breeze moving willow branches. Several adults stroll comfortably in light layers beneath soft sun, complete relaxed faces and natural hands, while folded heavy coats rest on a bench. No characters, signs or dramatic weather.",
+      "altText": "人们在天气温和的中式春日花园中散步。",
+      "riskTags": [
+        "people_face",
+        "weather",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "466fd6c9-61f6-4bf9-835a-31259e842e76",
+      "word": "rider",
+      "meaningZh": "骑手",
+      "exampleId": "466fd6c9-61f6-4bf9-835a-31259e842e76-visual-ex",
+      "styleFamily": "dynamic linocut-and-gouache sports illustration",
+      "sentenceEn": "The rider followed the winding bicycle trail.",
+      "sentenceZh": "骑手沿着蜿蜒的自行车道前行。",
+      "scene": "An adult bicycle rider wearing a properly fitted helmet follows a clearly winding trail through open green hills. The full bicycle, both wheels, pedals and believable riding posture are visible, with complete focused face and natural hands on the bars. No race numbers, road signs, letters, logos or reckless stunt.",
+      "altText": "戴头盔的骑手沿蜿蜒自行车道骑行。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "vehicle_detail",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "8df099d2-05a1-4acf-8bf6-9f31f90c636b",
+      "word": "doll",
+      "meaningZh": "洋娃娃；无头脑的美丽女人",
+      "exampleId": "8df099d2-05a1-4acf-8bf6-9f31f90c636b-visual-ex",
+      "styleFamily": "cozy fabric-collage still-life illustration",
+      "sentenceEn": "The handmade doll rested beside the sewing basket.",
+      "sentenceZh": "手工洋娃娃放在针线篮旁。",
+      "scene": "A handmade cloth doll with stitched clothing rests upright beside a wicker sewing basket on a craft table, surrounded by folded fabric and a safely closed pin cushion. Soft textile textures, simple sewn facial features appropriate to a doll, human-free composition, no plastic gloss, letters, brand marks or childlike commercial styling.",
+      "altText": "手工布娃娃放在针线篮和布料旁。",
+      "riskTags": [
+        "object_detail",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c95faf32-1cf1-4e2b-9f6d-6040e38e6385",
+      "word": "noon",
+      "meaningZh": "正午；中午；全盛期",
+      "exampleId": "c95faf32-1cf1-4e2b-9f6d-6040e38e6385-visual-ex",
+      "styleFamily": "sunlit architectural gouache illustration",
+      "sentenceEn": "At noon, the courtyard shadows were very short.",
+      "sentenceZh": "正午时，院子里的影子很短。",
+      "scene": "A quiet traditional Chinese courtyard under a sun almost directly overhead, with columns, potted plants and a stone table casting unmistakably short compact shadows beneath them. Bright vertical midday light and open blue sky, no people, clocks, sundials, characters, signs or other time labels.",
+      "altText": "正午阳光下中式院落里的影子很短。",
+      "riskTags": [
+        "lighting",
+        "spatial_boundary",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "7c67638c-1214-4c3f-af3f-a87d00763c22",
+      "word": "amid",
+      "meaningZh": "在其间；在其中",
+      "exampleId": "7c67638c-1214-4c3f-af3f-a87d00763c22-visual-ex",
+      "styleFamily": "bold overhead editorial illustration",
+      "sentenceEn": "A red umbrella stood out amid the gray ones.",
+      "sentenceZh": "一把红伞在一片灰伞中格外醒目。",
+      "scene": "Overhead view of exactly one vivid red open umbrella positioned near the center among many muted gray open umbrellas in gentle rain. The red umbrella is fully surrounded on every side, with only small glimpses of adult walkers beneath and no readable faces. No letters, numbers, arrows or logos.",
+      "altText": "一把红伞位于许多灰伞中间。",
+      "riskTags": [
+        "spatial_boundary",
+        "exact_quantity",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "a64040f6-4834-4896-a906-1a5908e877d6",
+      "word": "identical",
+      "meaningZh": "同一的；恒等的；完全相同的",
+      "exampleId": "a64040f6-4834-4896-a906-1a5908e877d6-visual-ex",
+      "styleFamily": "crisp ceramic still-life gouache illustration",
+      "sentenceEn": "The two bowls were identical in shape and pattern.",
+      "sentenceZh": "这两只碗的形状和花纹完全相同。",
+      "scene": "Exactly two ceramic bowls sit side by side on a plain tabletop, perfectly matching in size, silhouette, rim, pale blue geometric pattern and glaze color. Symmetrical frontal composition makes direct comparison effortless. Human-free, no other bowls, tiny differences, characters, written marks or maker logos.",
+      "altText": "两只形状和花纹完全相同的陶碗并排摆放。",
+      "riskTags": [
+        "exact_quantity",
+        "comparison",
+        "symmetry"
+      ]
+    },
+    {
+      "vocabularyId": "71eef57c-df51-46e3-98d1-fb030192f2f6",
+      "word": "precise",
+      "meaningZh": "精确的；严谨的；明确的",
+      "exampleId": "71eef57c-df51-46e3-98d1-fb030192f2f6-visual-ex",
+      "styleFamily": "fine ink-and-gouache craft illustration",
+      "sentenceEn": "The artisan made a precise cut along the marked line.",
+      "sentenceZh": "工匠沿着标记线做出了精确的切割。",
+      "scene": "An adult artisan uses a straightedge and small craft knife to make one exact cut along a thin nonverbal guide line on heavy paper. Close three-quarter workshop view with aligned ruler edge, controlled safe hand positions, complete concentrated face and clearly separated fingers. No measurements, letters, numbers or logos.",
+      "altText": "工匠沿着细直线精确裁切厚纸。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "tool_interaction",
+        "fine_detail"
+      ]
+    },
+    {
+      "vocabularyId": "0c688a9d-6712-48bc-9f09-dc58dc326459",
+      "word": "anxious",
+      "meaningZh": "忧虑的；发愁的；渴望的",
+      "exampleId": "0c688a9d-6712-48bc-9f09-dc58dc326459-visual-ex",
+      "styleFamily": "expressive pastel editorial illustration",
+      "sentenceEn": "The anxious student waited outside the interview room.",
+      "sentenceZh": "焦虑的学生在面试室外等待。",
+      "scene": "An adult student sits outside a closed office door holding a plain portfolio, shoulders slightly tense and one foot restless while waiting for an interview. Complete worried but restrained face with visible eyes, nose and mouth; natural hands clasp the portfolio. Calm safe hallway, no door label, clocks, writing or exaggerated panic.",
+      "altText": "焦虑的学生抱着作品夹在面试室外等待。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "emotion",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "301ee23f-90ac-4de6-8175-0c6f2a8ea4d0",
+      "word": "structural",
+      "meaningZh": "结构的",
+      "exampleId": "301ee23f-90ac-4de6-8175-0c6f2a8ea4d0-visual-ex",
+      "styleFamily": "architectural blueprint-inspired gouache illustration",
+      "sentenceEn": "Structural beams supported the new roof.",
+      "sentenceZh": "结构梁支撑着新屋顶。",
+      "scene": "Cutaway view of a small unfinished building where several exposed vertical posts and strong horizontal and diagonal beams visibly carry the weight of a newly framed roof. Connections and load path are easy to read, human-free and mechanically plausible. No measurements, arrows, labels, letters, numbers or construction logos.",
+      "altText": "建筑的结构梁清楚地支撑着新屋顶。",
+      "riskTags": [
+        "structural_accuracy",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "eec71ece-c090-4711-a5e3-5e9daabbbe53",
+      "word": "residential",
+      "meaningZh": "住宅的",
+      "exampleId": "eec71ece-c090-4711-a5e3-5e9daabbbe53-visual-ex",
+      "styleFamily": "warm urban watercolor illustration",
+      "sentenceEn": "The residential street was lined with family homes.",
+      "sentenceZh": "这条住宅街道两旁都是居民住宅。",
+      "scene": "A calm Chinese residential lane lined on both sides with lived-in family homes, small planted doorways, parked bicycles and laundry drying inside courtyards. A few adult neighbors converse in the midground with complete but small faces. No shops, factories, traffic, business signs, house numbers, characters or logos.",
+      "altText": "安静的中国住宅街道两旁排列着居民住宅。",
+      "riskTags": [
+        "cultural_sensitivity",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8a59c93b-692d-4cae-b282-824150324840",
+      "word": "diagnose",
+      "meaningZh": "诊断",
+      "exampleId": "8a59c93b-692d-4cae-b282-824150324840-visual-ex",
+      "styleFamily": "detailed editorial workshop illustration",
+      "sentenceEn": "The mechanic listened carefully to diagnose the engine noise.",
+      "sentenceZh": "机械师仔细倾听，以诊断发动机异响。",
+      "scene": "An adult mechanic examines a stationary open car engine, holding a mechanic's listening probe against one component while comparing the sound from adjacent parts. Complete attentive face, natural hands, engine safely off and vehicle secured. No sparks, medical equipment, readable diagnostic screens, brand badges, letters or numbers.",
+      "altText": "机械师通过仔细听发动机各部位来诊断异响。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "mechanical_detail",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "63c71c79-1053-47b0-beaf-3f7a17d58255",
+      "word": "carbohydrate",
+      "meaningZh": "碳水化合物；糖类",
+      "exampleId": "63c71c79-1053-47b0-beaf-3f7a17d58255-visual-ex",
+      "styleFamily": "clear food-science cut-paper illustration",
+      "sentenceEn": "Rice is a common source of carbohydrate.",
+      "sentenceZh": "米饭是常见的碳水化合物来源。",
+      "scene": "A centered bowl of cooked rice is paired with a small serving of plain noodles, one slice of bread and a potato arranged as a coherent still life of familiar carbohydrate-containing foods. Rice remains the dominant focal object. Human-free, appetizing but educational, no package labels, nutrition charts, molecules, letters or numbers.",
+      "altText": "一碗米饭与面条、面包和土豆共同呈现碳水化合物食物。",
+      "riskTags": [
+        "scientific_accuracy",
+        "reference",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "5fb4890c-7fbe-4337-bf0e-860670eedf2b",
+      "word": "liberty",
+      "meaningZh": "自由；特权；许可；冒失",
+      "exampleId": "5fb4890c-7fbe-4337-bf0e-860670eedf2b-visual-ex",
+      "styleFamily": "lyrical paper-cut sanctuary illustration",
+      "sentenceEn": "Opening the cage gave the rescued bird its liberty.",
+      "sentenceZh": "打开笼门让获救的鸟重获自由。",
+      "scene": "An adult wildlife carer opens the wide door of a simple rehabilitation cage as a healthy small bird flies out toward open sky and trees. The bird's path from enclosure to open landscape clearly conveys regained freedom. Complete gentle face and natural hands, no injury, flags, political symbols, writing or logos.",
+      "altText": "获救的小鸟飞出打开的笼门重获自由。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "9c9eca18-1928-4cc1-a1d9-1c1051318c88",
+      "word": "poster",
+      "meaningZh": "海报",
+      "exampleId": "9c9eca18-1928-4cc1-a1d9-1c1051318c88-visual-ex",
+      "styleFamily": "contemporary Chinese risograph studio illustration",
+      "sentenceEn": "She pinned a colorful poster above her desk.",
+      "sentenceZh": "她把一张彩色海报钉在书桌上方。",
+      "scene": "An adult Chinese illustrator pins one large colorful graphic poster above a tidy studio desk. The poster contains only a bold stylized peony, abstract color blocks and a decorative border, clearly a flat sheet attached at the corners. Complete pleased face and natural raised hands, no characters, letters, numbers, slogans or logos.",
+      "altText": "插画师把彩色牡丹图案海报钉在书桌上方。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "6c02de9a-24fb-4b3a-a007-d87aa2195bdf",
+      "word": "theology",
+      "meaningZh": "神学",
+      "exampleId": "6c02de9a-24fb-4b3a-a007-d87aa2195bdf-visual-ex",
+      "styleFamily": "quiet layered-pencil academic illustration",
+      "sentenceEn": "She studied theology in the quiet library.",
+      "sentenceZh": "她在安静的图书馆学习神学。",
+      "scene": "An adult scholar studies at a library table surrounded by several plain open reference books and small nonverbal architectural sketches of varied places of worship, suggesting comparative study of beliefs and the divine. Complete thoughtful face and natural hands. Respectful neutral mood, no sacred text, quotations, denominational claim, readable titles or logos.",
+      "altText": "学者在图书馆通过多种宗教资料学习神学。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_sensitivity",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e82d49bc-dc3d-4404-8ca5-101a5640cc55",
+      "word": "nonprofit",
+      "meaningZh": "非营利的",
+      "exampleId": "e82d49bc-dc3d-4404-8ca5-101a5640cc55-visual-ex",
+      "styleFamily": "warm Chinese community mural-style illustration",
+      "sentenceEn": "The nonprofit provides fresh food to local families.",
+      "sentenceZh": "这家非营利组织为当地家庭提供新鲜食物。",
+      "scene": "At a Chinese neighborhood community center, adult volunteers hand reusable boxes of fresh vegetables and fruit to local adults and an older resident. Everyone has a complete warm face and natural hands; many full boxes and an open welcoming doorway show organized public service. No money exchange, charity logos, banners, characters or written signs.",
+      "altText": "社区非营利组织的志愿者向居民分发新鲜食物。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cultural_sensitivity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3020-3039",
+  "batchId": "auto-rank-3020-3039-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "physics",
+      "rape",
+      "counsel",
+      "sculpture",
+      "integrate",
+      "flour"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7d4d625f-2427-4354-b4a0-a666eb08f64a",
+      "word": "stem",
+      "meaningZh": "茎；干；阻止；源于",
+      "exampleId": "7d4d625f-2427-4354-b4a0-a666eb08f64a-visual-ex",
+      "styleFamily": "botanical cut-paper illustration",
+      "sentenceEn": "The thick stem supports the flower above the leaves.",
+      "sentenceZh": "粗壮的茎支撑着叶片上方的花朵。",
+      "scene": "A side-view flowering plant rises from soil, with a thick central green stem visibly holding the leaves and blossom upright; a clean cutaway near the soil shows roots without labels.",
+      "altText": "A thick plant stem supports leaves and a flower.",
+      "riskTags": [
+        "botany",
+        "single_object",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5991e9eb-0dcb-4d7b-b14c-bcd67223683e",
+      "word": "surgeon",
+      "meaningZh": "外科医生；军医；船医；外科医师",
+      "exampleId": "5991e9eb-0dcb-4d7b-b14c-bcd67223683e-visual-ex",
+      "styleFamily": "calm medical editorial illustration",
+      "sentenceEn": "The surgeon prepares carefully before the operation.",
+      "sentenceZh": "外科医生在手术前认真准备。",
+      "scene": "An adult surgeon in clean scrubs, cap, mask and gloves checks sterile instruments with a nurse before an operation; the patient is not visible and nothing graphic appears.",
+      "altText": "A surgeon prepares sterile instruments before an operation.",
+      "riskTags": [
+        "medical",
+        "people_face_partly_masked",
+        "non_graphic",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "20bfc787-087e-497c-bdef-c08ffcad4d1a",
+      "word": "acceptable",
+      "meaningZh": "可接受的",
+      "exampleId": "20bfc787-087e-497c-bdef-c08ffcad4d1a-visual-ex",
+      "styleFamily": "workshop editorial illustration",
+      "sentenceEn": "The repaired chair is now acceptable to the inspector.",
+      "sentenceZh": "修好的椅子现在达到了检查员可接受的标准。",
+      "scene": "A craftsperson presents a neatly repaired wooden chair to an inspector, who tests its stability and gives a clear approving open-hand gesture; a rejected broken chair sits in the distant background.",
+      "altText": "An inspector approves a repaired chair as acceptable.",
+      "riskTags": [
+        "abstract_quality",
+        "people_face",
+        "approval_gesture",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "580204d8-46fa-404e-96e2-aa03611a7225",
+      "word": "physics",
+      "meaningZh": "物理学；物理过程；物理现象",
+      "exampleId": "580204d8-46fa-404e-96e2-aa03611a7225-visual-ex",
+      "styleFamily": "Chinese classroom gouache illustration",
+      "sentenceEn": "The students study physics by observing a swinging pendulum.",
+      "sentenceZh": "学生们通过观察摆动的钟摆学习物理学。",
+      "scene": "Chinese university students in a bright laboratory observe a long pendulum swinging through repeated positions while a teacher demonstrates motion with an open hand; all boards and notebooks are blank.",
+      "altText": "Students study physics with a swinging pendulum.",
+      "riskTags": [
+        "science",
+        "Chinese_context",
+        "people_face",
+        "no_formulas"
+      ]
+    },
+    {
+      "vocabularyId": "34ac7d59-82f7-4289-83dd-3ce9af005e82",
+      "word": "rape",
+      "meaningZh": "强奸；蹂躏；油菜",
+      "exampleId": "34ac7d59-82f7-4289-83dd-3ce9af005e82-visual-ex",
+      "styleFamily": "Chinese countryside linocut illustration",
+      "sentenceEn": "Yellow rape flowers cover the fields in spring.",
+      "sentenceZh": "春天，黄色的油菜花覆盖田野。",
+      "scene": "A Chinese farmer walks between broad spring fields filled with tall yellow oilseed rape flowers, clearly emphasizing the crop and blossoms in a peaceful rural landscape.",
+      "altText": "Yellow rape flowers fill a spring field.",
+      "riskTags": [
+        "botanical_sense",
+        "ambiguous_word",
+        "Chinese_context",
+        "no_violence",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e8939eee-ed76-48c5-8367-62d7be9a7693",
+      "word": "counsel",
+      "meaningZh": "商议；忠告；法律顾问",
+      "exampleId": "e8939eee-ed76-48c5-8367-62d7be9a7693-visual-ex",
+      "styleFamily": "restrained Chinese legal editorial illustration",
+      "sentenceEn": "She seeks counsel before signing the agreement.",
+      "sentenceZh": "她在签署协议前寻求法律意见。",
+      "scene": "A Chinese adult client consults a professional legal counsel across a desk; the adviser calmly points to a completely blank agreement while the client listens before signing.",
+      "altText": "A client seeks legal counsel before signing an agreement.",
+      "riskTags": [
+        "legal",
+        "Chinese_context",
+        "people_face",
+        "blank_document",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4dc60656-8d9a-453d-a419-5d627f4063d4",
+      "word": "jeans",
+      "meaningZh": "工装裤；牛仔裤",
+      "exampleId": "4dc60656-8d9a-453d-a419-5d627f4063d4-visual-ex",
+      "styleFamily": "textile collage illustration",
+      "sentenceEn": "She wears durable blue jeans while working in the garden.",
+      "sentenceZh": "她在花园劳动时穿着耐用的蓝色牛仔裤。",
+      "scene": "An adult gardener kneels beside a raised garden bed wearing clearly textured blue denim jeans with visible seams, pockets and sturdy fabric; her upper body and face are also naturally shown.",
+      "altText": "A gardener wears durable blue jeans.",
+      "riskTags": [
+        "clothing",
+        "people_face",
+        "no_brand",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "7207772a-6a25-4ef6-a63d-4e6e582af048",
+      "word": "hunt",
+      "meaningZh": "狩猎；追捕；搜寻；猎区",
+      "exampleId": "7207772a-6a25-4ef6-a63d-4e6e582af048-visual-ex",
+      "styleFamily": "community search screen-print illustration",
+      "sentenceEn": "The volunteers hunt for a missing dog in the park.",
+      "sentenceZh": "志愿者们在公园里寻找一只走失的狗。",
+      "scene": "Several adult volunteers actively hunt for a missing dog in a large park, checking behind benches and bushes while one person follows pawprints; the dog is safely visible far ahead.",
+      "altText": "Volunteers hunt for a missing dog in a park.",
+      "riskTags": [
+        "search_sense",
+        "people_face",
+        "animal_safe",
+        "no_weapons",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "99cafc30-f881-41f1-a7af-29a345bc186f",
+      "word": "continuous",
+      "meaningZh": "连续的",
+      "exampleId": "99cafc30-f881-41f1-a7af-29a345bc186f-visual-ex",
+      "styleFamily": "minimal geometric paper illustration",
+      "sentenceEn": "A continuous line circles the track without a break.",
+      "sentenceZh": "一条连续不断的线环绕跑道。",
+      "scene": "A single bright ribbon-like line travels smoothly around an oval running track and returns to its starting point with no gaps, breaks or interruptions anywhere.",
+      "altText": "An unbroken continuous line circles a track.",
+      "riskTags": [
+        "abstract_concept",
+        "diagram_like",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "58d8342c-9539-4f02-bd2f-7b175aaa5d56",
+      "word": "log",
+      "meaningZh": "记录；圆木；日志；计程仪",
+      "exampleId": "58d8342c-9539-4f02-bd2f-7b175aaa5d56-visual-ex",
+      "styleFamily": "rustic woodblock illustration",
+      "sentenceEn": "The worker rolls a heavy log toward the sawmill.",
+      "sentenceZh": "工人把一根沉重的原木滚向锯木厂。",
+      "scene": "An adult forestry worker uses a long wooden lever to roll one large cut log along a safe timber yard toward a distant sawmill, with the log rings and bark clearly visible.",
+      "altText": "A worker rolls a heavy log toward a sawmill.",
+      "riskTags": [
+        "wood",
+        "people_face",
+        "tool_safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "318b1ccc-19e0-496e-963e-9ab03dfcf84f",
+      "word": "echo",
+      "meaningZh": "回声；回响",
+      "exampleId": "318b1ccc-19e0-496e-963e-9ab03dfcf84f-visual-ex",
+      "styleFamily": "atmospheric mountain ink illustration",
+      "sentenceEn": "Her call produces an echo across the canyon.",
+      "sentenceZh": "她的呼喊在峡谷中产生了回声。",
+      "scene": "An adult hiker calls across a wide canyon; visible curved sound waves travel to the opposite cliff and return as softer repeated waves toward her.",
+      "altText": "A hiker hears an echo return across a canyon.",
+      "riskTags": [
+        "sound",
+        "people_face",
+        "conceptual_waves",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "91b8cd46-a828-4901-a5f5-7879c2cd28f8",
+      "word": "pill",
+      "meaningZh": "药丸；药片",
+      "exampleId": "91b8cd46-a828-4901-a5f5-7879c2cd28f8-visual-ex",
+      "styleFamily": "clean healthcare still-life illustration",
+      "sentenceEn": "He takes one pill with a glass of water.",
+      "sentenceZh": "他用一杯水服下一片药。",
+      "scene": "An adult holds one plain oval pill in an open palm beside a clear glass of water and an unmarked medicine container, preparing to take the prescribed dose.",
+      "altText": "A person prepares to take one pill with water.",
+      "riskTags": [
+        "medicine",
+        "adult",
+        "single_dose",
+        "unmarked_container",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "af573dd8-1309-4c65-8214-a9f6302d7cf6",
+      "word": "excited",
+      "meaningZh": "兴奋的",
+      "exampleId": "af573dd8-1309-4c65-8214-a9f6302d7cf6-visual-ex",
+      "styleFamily": "energetic festival pastel illustration",
+      "sentenceEn": "The children are excited to see the hot-air balloons rise.",
+      "sentenceZh": "孩子们看到热气球升空时非常兴奋。",
+      "scene": "A diverse group of children and accompanying adults look upward with wide smiles, raised hands and energetic poses as colorful hot-air balloons begin rising at a safe festival field.",
+      "altText": "Excited children watch hot-air balloons rise.",
+      "riskTags": [
+        "emotion",
+        "children_with_adults",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b57482ce-25f4-411c-9a0e-c78caa9aa4f1",
+      "word": "sculpture",
+      "meaningZh": "雕塑",
+      "exampleId": "b57482ce-25f4-411c-9a0e-c78caa9aa4f1-visual-ex",
+      "styleFamily": "Chinese stone-carving watercolor illustration",
+      "sentenceEn": "The artist shapes a stone sculpture with careful strokes.",
+      "sentenceZh": "艺术家用细致的凿刻塑造石雕。",
+      "scene": "A Chinese adult sculptor in a bright studio carefully chisels a graceful abstract stone sculpture, with several smooth carved forms and stone chips nearby; protective glasses are worn.",
+      "altText": "An artist carefully shapes a stone sculpture.",
+      "riskTags": [
+        "art",
+        "Chinese_context",
+        "people_face",
+        "tool_safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a2a30044-89b3-402f-b9e5-d70d3c4f5d87",
+      "word": "compound",
+      "meaningZh": "混合物；复合词；化合物；院子",
+      "exampleId": "a2a30044-89b3-402f-b9e5-d70d3c4f5d87-visual-ex",
+      "styleFamily": "molecular paper-cut illustration",
+      "sentenceEn": "The chemist combines two elements to form a compound.",
+      "sentenceZh": "化学家把两种元素结合形成一种化合物。",
+      "scene": "A chemist combines two differently colored molecular groups in glass vessels, and the resulting vessel contains a new bonded cluster made from both colors; no labels or formulas appear.",
+      "altText": "A chemist forms a compound from two elements.",
+      "riskTags": [
+        "chemistry",
+        "people_face",
+        "unlabeled_glassware",
+        "no_formulas"
+      ]
+    },
+    {
+      "vocabularyId": "61005dde-3c63-4fbc-bffb-e33418f326cd",
+      "word": "integrate",
+      "meaningZh": "综合；使完整；使成整体；成一体",
+      "exampleId": "61005dde-3c63-4fbc-bffb-e33418f326cd-visual-ex",
+      "styleFamily": "Chinese community textile illustration",
+      "sentenceEn": "The team integrates separate pieces into one complete design.",
+      "sentenceZh": "团队把分开的部分整合成一个完整设计。",
+      "scene": "A diverse Chinese design team fits separate patterned fabric panels into one seamless circular community artwork on a large table, with every formerly separate piece visibly joining the whole.",
+      "altText": "A team integrates separate pieces into one design.",
+      "riskTags": [
+        "abstract_action",
+        "Chinese_context",
+        "people_face",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "f3810efe-121a-44cb-8a6d-df5c88254f5a",
+      "word": "flour",
+      "meaningZh": "面粉；粉沫；碎粉；麦粉",
+      "exampleId": "f3810efe-121a-44cb-8a6d-df5c88254f5a-visual-ex",
+      "styleFamily": "warm Chinese kitchen gouache illustration",
+      "sentenceEn": "The cook sifts flour before making noodles.",
+      "sentenceZh": "厨师在做面条前筛面粉。",
+      "scene": "A Chinese adult cook sifts fine white flour into a large wooden mixing bowl in a home kitchen, with a soft flour cloud, wheat stalks and hand-cut noodles nearby.",
+      "altText": "A cook sifts flour before making noodles.",
+      "riskTags": [
+        "food",
+        "Chinese_context",
+        "people_face",
+        "no_packaging",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "43920f75-489f-46a4-8b32-c418b9f4c5af",
+      "word": "bitter",
+      "meaningZh": "苦的；痛苦的；怀恨的；刺骨",
+      "exampleId": "43920f75-489f-46a4-8b32-c418b9f4c5af-visual-ex",
+      "styleFamily": "expressive café ink illustration",
+      "sentenceEn": "The herbal tea tastes bitter without any sugar.",
+      "sentenceZh": "这杯不加糖的草药茶味道很苦。",
+      "scene": "An adult tastes dark herbal tea from a small cup and makes a clear but restrained bitter expression, with unsweetened herbs beside the plain teapot.",
+      "altText": "A person reacts to the bitter taste of herbal tea.",
+      "riskTags": [
+        "taste",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4991aee7-ba26-429e-9d42-93f145320ebb",
+      "word": "bare",
+      "meaningZh": "赤裸的；缺少的；无遮蔽的；坦率的",
+      "exampleId": "4991aee7-ba26-429e-9d42-93f145320ebb-visual-ex",
+      "styleFamily": "seasonal linocut landscape illustration",
+      "sentenceEn": "The tree stands bare after losing all its leaves.",
+      "sentenceZh": "树叶落尽后，这棵树光秃秃地立着。",
+      "scene": "One deciduous tree stands completely bare on a late-autumn hillside, every branch exposed, while fallen leaves cover the ground beneath it.",
+      "altText": "A bare tree stands without leaves.",
+      "riskTags": [
+        "nature",
+        "non_nude_sense",
+        "no_people",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d2f6481d-4e49-4bcb-b227-296cbf9e648f",
+      "word": "slope",
+      "meaningZh": "倾斜；斜坡；斜率；扛枪姿势",
+      "exampleId": "d2f6481d-4e49-4bcb-b227-296cbf9e648f-visual-ex",
+      "styleFamily": "graphic alpine travel-poster illustration",
+      "sentenceEn": "The cyclist pushes the bicycle up a steep slope.",
+      "sentenceZh": "骑行者把自行车推上陡坡。",
+      "scene": "An adult cyclist leans forward while pushing a bicycle up a clearly steep grassy hillside path, with the strong diagonal ground angle emphasized against a distant valley.",
+      "altText": "A cyclist pushes a bicycle up a steep slope.",
+      "riskTags": [
+        "landform",
+        "people_face",
+        "safe_activity",
+        "no_text"
+      ]
+    }
+  ]
+}

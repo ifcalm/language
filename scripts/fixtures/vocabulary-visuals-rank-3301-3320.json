@@ -1,0 +1,329 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3301-3320",
+  "batchId": "auto-rank-3301-3320-20260918",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "unity",
+      "compromise",
+      "commonly",
+      "convey",
+      "residence",
+      "meaningful"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7faf93fe-887a-4423-b801-9fe46bf79969",
+      "word": "thumb",
+      "meaningZh": "拇指",
+      "exampleId": "7faf93fe-887a-4423-b801-9fe46bf79969-visual-ex",
+      "styleFamily": "clean graphic-novel close-up",
+      "sentenceEn": "Her thumb rested on the handle of the mug.",
+      "sentenceZh": "她的拇指搭在杯子的把手上。",
+      "scene": "Close-up of one natural adult right hand holding a plain ceramic mug by its handle. Clearly show exactly five anatomically coherent digits: thumb above the handle in opposition to fingers curling around it, neutral textured background, no faces or symbols.",
+      "altText": "手握杯柄，拇指清晰搭在上方。",
+      "riskTags": [
+        "hands",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "d99c9590-8ef5-4174-8995-b887840ff425",
+      "word": "unity",
+      "meaningZh": "团结；统一",
+      "exampleId": "d99c9590-8ef5-4174-8995-b887840ff425-visual-ex",
+      "styleFamily": "ink and paper collage narrative",
+      "sentenceEn": "Unity helped the villagers repair the flood-damaged bridge.",
+      "sentenceZh": "团结帮助村民修好了被洪水损坏的桥。",
+      "scene": "Adults of different ages in a Chinese village work together safely to repair a low stone-and-timber footbridge over a shallow stream. Coordinated teamwork: one steadies a plank, others carry tools and align it, complete visible faces and natural hands, tiled roofs background, no banners.",
+      "altText": "村民齐心协力修复河上的小桥。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b77e8e05-7e86-446f-b4d9-78ace70339ae",
+      "word": "compromise",
+      "meaningZh": "妥协；折中；折中方案；和解",
+      "exampleId": "b77e8e05-7e86-446f-b4d9-78ace70339ae-visual-ex",
+      "styleFamily": "two-panel watercolor story",
+      "sentenceEn": "They reached a compromise by dividing the garden space.",
+      "sentenceZh": "他们通过划分园地达成了折中方案。",
+      "scene": "Two connected panels in a Chinese courtyard garden: left two adult neighbors gently discuss one empty rectangular garden bed with separate flower and vegetable seedling trays; right both smile while tending the same bed divided evenly between flowers and vegetables. Preserve people and geometry, no labels or arrows.",
+      "altText": "邻居协商后把园地分给花卉和蔬菜。",
+      "riskTags": [
+        "comparison",
+        "reference",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "10adec95-250a-44c5-8c3a-d68b750d8abc",
+      "word": "horrible",
+      "meaningZh": "可怕的；遭透的；极讨厌的",
+      "exampleId": "10adec95-250a-44c5-8c3a-d68b750d8abc-visual-ex",
+      "styleFamily": "dramatic gouache illustration",
+      "sentenceEn": "The horrible storm shattered the greenhouse windows.",
+      "sentenceZh": "可怕的暴风雨击碎了温室的玻璃窗。",
+      "scene": "A violent storm over a small greenhouse with wind-bent trees, dark clouds and broken window panes, plants sheltered inside and a gardener safely watching from a nearby solid building. No visible injuries, gardener face clear through doorway, emphasize horrible weather and safe response.",
+      "altText": "暴风雨损坏温室窗户，园丁在安全处观察。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "bcceea51-64a1-436e-89cc-c0dfd05eadea",
+      "word": "behavioral",
+      "meaningZh": "行为的",
+      "exampleId": "bcceea51-64a1-436e-89cc-c0dfd05eadea-visual-ex",
+      "styleFamily": "paired hand-drawn animated panels",
+      "sentenceEn": "The researcher observed behavioral changes in the rescue dog.",
+      "sentenceZh": "研究员观察到了救助犬的行为变化。",
+      "scene": "Two connected panels of the same rescue dog and adult researcher: first dog cautiously crouches with tail tucked near an open shelter bed; second dog confidently approaches a toy with relaxed tail after patient care. Researcher quietly observes with a completely blank notebook, no written charts, full face.",
+      "altText": "研究员观察同一只狗从畏缩到放松的行为变化。",
+      "riskTags": [
+        "before_after",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "576afa65-298e-4b18-bac4-99b7572bad8d",
+      "word": "exclusive",
+      "meaningZh": "独有的；排外的",
+      "exampleId": "576afa65-298e-4b18-bac4-99b7572bad8d-visual-ex",
+      "styleFamily": "architectural cut-paper narrative",
+      "sentenceEn": "The keeper had exclusive access to the locked archive.",
+      "sentenceZh": "管理员独有进入锁闭档案室的权限。",
+      "scene": "One adult archive keeper opens an ornate iron gate with a single key and steps into a secure room of plain archival boxes. Other visitors wait respectfully outside a low barrier in the adjacent lobby; key and locked threshold clearly visible, all readable faces complete, no signs.",
+      "altText": "管理员用钥匙打开档案室门，访客等在外面。",
+      "riskTags": [
+        "spatial_boundary",
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4a1ed8eb-04c1-49d6-8b0c-e966ff5b2051",
+      "word": "scatter",
+      "meaningZh": "分散；散开；撒",
+      "exampleId": "4a1ed8eb-04c1-49d6-8b0c-e966ff5b2051-visual-ex",
+      "styleFamily": "screen-print botanical scene",
+      "sentenceEn": "The breeze scattered dandelion seeds across the meadow.",
+      "sentenceZh": "微风把蒲公英种子吹散在草地上。",
+      "scene": "Close view of a dandelion seed head with airy white seeds dispersing naturally across a sunlit meadow in a steady breeze, clusters spread farther apart through the frame. No arrows, symbols, people or words; botanical detail with mature print texture.",
+      "altText": "蒲公英种子被风吹散到草地上。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "6299b7c1-ec28-4067-8a82-e7c0c03a6404",
+      "word": "commonly",
+      "meaningZh": "通常地",
+      "exampleId": "6299b7c1-ec28-4067-8a82-e7c0c03a6404-visual-ex",
+      "styleFamily": "warm watercolor daily-life narrative",
+      "sentenceEn": "Chopsticks are commonly used at family meals.",
+      "sentenceZh": "家庭用餐时通常使用筷子。",
+      "scene": "A present-day Chinese family of adults and an older child share a relaxed dinner with vegetables and rice in bowls. Each person naturally uses a pair of chopsticks, complete facial features, varied contemporary clothes, ordinary apartment dining room not ceremonial stereotypes, no packaging or text.",
+      "altText": "家人围坐餐桌，用筷子吃饭。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "0460c9e7-12ee-4dc0-99ab-ae36b40e61c1",
+      "word": "convey",
+      "meaningZh": "传达；运输；转让",
+      "exampleId": "0460c9e7-12ee-4dc0-99ab-ae36b40e61c1-visual-ex",
+      "styleFamily": "ink-wash community illustration",
+      "sentenceEn": "The boat conveyed fresh vegetables to the canal market.",
+      "sentenceZh": "小船把新鲜蔬菜运到了运河市场。",
+      "scene": "A small working boat loaded with baskets of leafy vegetables travels along a Jiangnan canal toward a waterside produce stall. Adult boat operator guides the craft safely with a pole; white walls and dark roofs establish Chinese setting, natural complete profile and hands, no signs or lettering.",
+      "altText": "装着蔬菜的小船驶向运河边的市场。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "614c63e3-b4dd-4256-bcb5-bb0bb68979ab",
+      "word": "twist",
+      "meaningZh": "扭曲；转折；拧",
+      "exampleId": "614c63e3-b4dd-4256-bcb5-bb0bb68979ab-visual-ex",
+      "styleFamily": "tactile textile illustration",
+      "sentenceEn": "She twisted the two strands into a strong rope.",
+      "sentenceZh": "她把两股纤维拧成结实的绳子。",
+      "scene": "Close view of two natural adult hands twisting exactly two loose fiber strands into one thick rope. Show loose separated strands at one end and tight spiral intertwined rope at the other, hands oriented plausibly, woven background without letters or arrows.",
+      "altText": "双手把两股纤维拧成绳子。",
+      "riskTags": [
+        "hands",
+        "exact_quantity",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "f639858c-9fb1-4c13-95bb-54d2f74cffa2",
+      "word": "complexity",
+      "meaningZh": "复杂性",
+      "exampleId": "f639858c-9fb1-4c13-95bb-54d2f74cffa2-visual-ex",
+      "styleFamily": "matte paper and metal 3D illustration",
+      "sentenceEn": "The watchmaker studied the complexity of the tiny mechanism.",
+      "sentenceZh": "钟表匠研究着微小机械装置的复杂性。",
+      "scene": "Close-up of an open mechanical pocket-watch mechanism, intricate interconnected gears, springs and axles with a magnifying glass hovering above. No people needed; no numbered watch dial, only internal mechanism, matte nonphotographic sculptural art and careful mechanical relationships.",
+      "altText": "放大镜下的钟表内部齿轮和弹簧错综复杂。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3e278bdc-3e2c-43fa-adee-1a04308f55cb",
+      "word": "fork",
+      "meaningZh": "叉子；叉状物；分岔；分支；分歧",
+      "exampleId": "3e278bdc-3e2c-43fa-adee-1a04308f55cb-visual-ex",
+      "styleFamily": "editorial gouache still life",
+      "sentenceEn": "A fork rested beside the plate of pasta.",
+      "sentenceZh": "一把叉子放在意大利面盘旁。",
+      "scene": "Clear still life of one four-tined metal dining fork lying beside a plate of spaghetti with tomato sauce on a linen tablecloth. Handle and all tines entirely visible, no knife or spoon to confuse target, no people or packaging.",
+      "altText": "餐叉放在意大利面盘旁，叉齿清晰可见。",
+      "riskTags": [
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "caa14827-e16f-402f-8b02-76fe6c75d4a2",
+      "word": "disk",
+      "meaningZh": "磁盘",
+      "exampleId": "caa14827-e16f-402f-8b02-76fe6c75d4a2-visual-ex",
+      "styleFamily": "stylized cut-paper technical illustration",
+      "sentenceEn": "The technician removed the old disk from the computer.",
+      "sentenceZh": "技术员从电脑中取出了旧磁盘。",
+      "scene": "Close view of adult hands withdrawing a blank unlabelled square floppy disk from an older desktop computer floppy drive. The characteristic shutter and central hub shape make it recognizable as magnetic storage; no readable screens, keyboard letters, logos or labels; focus tightly on hand, disk and slot.",
+      "altText": "技术员的手从旧电脑中取出软磁盘。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "79a9a8b3-e65f-4da9-921d-c0a4cd36c007",
+      "word": "relieve",
+      "meaningZh": "减轻；缓解；救济；解除",
+      "exampleId": "79a9a8b3-e65f-4da9-921d-c0a4cd36c007-visual-ex",
+      "styleFamily": "gentle graphic-novel narrative",
+      "sentenceEn": "Her friend took the heavy bag to relieve her burden.",
+      "sentenceZh": "朋友接过沉重的袋子，减轻了她的负担。",
+      "scene": "An exhausted adult woman on station steps passes a heavy travel bag to a helpful adult friend, her shoulders relax and she exhales in relief. Natural complete faces and coordinated weight-bearing hands, no logos, station signs blank, constructive assistance.",
+      "altText": "朋友接过重袋，疲惫的旅客放松了肩膀。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "acaa97ed-604b-4602-b0e6-31a8f9d877de",
+      "word": "suspicion",
+      "meaningZh": "怀疑；觉察；嫌疑",
+      "exampleId": "acaa97ed-604b-4602-b0e6-31a8f9d877de-visual-ex",
+      "styleFamily": "playful watercolor narrative",
+      "sentenceEn": "The tipped jar raised her suspicion that the cat had taken a treat.",
+      "sentenceZh": "倒下的罐子让她怀疑猫偷吃了零食。",
+      "scene": "An adult woman notices a tipped unlabelled treat jar and a few crumbs on a kitchen counter, looking with raised eyebrow toward a sheepish cat beside the jar. Curious suspicion rather than punishment, complete natural face, no text on jar or equipment.",
+      "altText": "女子看着倒下的零食罐和旁边的猫，露出怀疑神情。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ce926e7c-63d5-4217-89d0-e3ee7778ea22",
+      "word": "residence",
+      "meaningZh": "住宅；居住",
+      "exampleId": "ce926e7c-63d5-4217-89d0-e3ee7778ea22-visual-ex",
+      "styleFamily": "architectural watercolor illustration",
+      "sentenceEn": "The family's residence stood beside a bamboo grove.",
+      "sentenceZh": "这户人家的住宅位于竹林旁。",
+      "scene": "A lived-in contemporary Chinese countryside residence with simple white walls, dark tiled roof, shoes by the entry, open sunlit window, small vegetable plot and adjacent bamboo grove. Welcoming habitation cues without people, plaques, calligraphy, signs or text.",
+      "altText": "竹林旁的住宅有开着的窗和小菜园。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "c7e31996-a426-4332-9eb3-efd062b1454b",
+      "word": "shame",
+      "meaningZh": "羞耻",
+      "exampleId": "c7e31996-a426-4332-9eb3-efd062b1454b-visual-ex",
+      "styleFamily": "restrained painterly character narrative",
+      "sentenceEn": "He felt shame about the lie and returned the missing tools.",
+      "sentenceZh": "他为撒谎感到羞耻，归还了失踪的工具。",
+      "scene": "An adult man with lowered gaze and visibly remorseful complete face offers borrowed tools back to an adult teammate at a workshop door. Teammate receives them calmly, open unlabelled toolbox foreground has spaces for the tools, focus on accountable repair not public humiliation.",
+      "altText": "男子羞愧地低头，把工具归还给同伴。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "50ebd9d1-b976-4e15-8c7f-f47ed8d32f3c",
+      "word": "meaningful",
+      "meaningZh": "有意义的",
+      "exampleId": "50ebd9d1-b976-4e15-8c7f-f47ed8d32f3c-visual-ex",
+      "styleFamily": "ink and watercolor illustration",
+      "sentenceEn": "Teaching his granddaughter the guqin was meaningful to him.",
+      "sentenceZh": "教孙女弹古琴对他而言很有意义。",
+      "scene": "An elderly Chinese man gently teaches his adult granddaughter to play a seven-string guqin in a contemporary home with view of a small garden. Both complete faces show quiet connection, hands positioned naturally at strings, scholarly objects without writing, no sentimental symbols.",
+      "altText": "祖父和成年孙女一起练习古琴，神情专注而温暖。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "fe6dc24a-73f4-4ab8-9757-6046e870e0c8",
+      "word": "sidewalk",
+      "meaningZh": "人行道",
+      "exampleId": "fe6dc24a-73f4-4ab8-9757-6046e870e0c8-visual-ex",
+      "styleFamily": "editorial geometric city illustration",
+      "sentenceEn": "The cyclist stopped before crossing the sidewalk.",
+      "sentenceZh": "骑车人在穿过人行道前停了下来。",
+      "scene": "A cyclist dismounts and waits at a driveway edge while an adult pedestrian and wheelchair user pass along a clearly raised continuous sidewalk separated from the roadway by curb. Complete readable faces, realistic spatial boundary in illustrated city, no road text or signs.",
+      "altText": "骑车人在车道口停下，让人行道上的行人先行。",
+      "riskTags": [
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3618e1b4-6ca5-46c4-a4d7-af2707076084",
+      "word": "Olympics",
+      "meaningZh": "奥运会",
+      "exampleId": "3618e1b4-6ca5-46c4-a4d7-af2707076084-visual-ex",
+      "styleFamily": "bold screen-print sports narrative",
+      "sentenceEn": "The runner carried the torch at the Olympics.",
+      "sentenceZh": "跑者在奥运会上手持火炬。",
+      "scene": "An anonymous adult torchbearer runs along the track toward a huge ceremonial stadium cauldron at an international sporting opening ceremony. Flame held safely away from body, dignified athletic motion, complete expressive face, broad stands with distant abstract crowd shapes too small for faces. No Olympic rings, logos, flags, branding, letters or numbers.",
+      "altText": "跑者举着火炬奔向体育场中的大型火盆。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

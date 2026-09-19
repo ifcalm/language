@@ -1,0 +1,367 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3000-3019",
+  "batchId": "auto-rank-3000-3019-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "gentle",
+      "invent",
+      "laughter",
+      "ritual",
+      "trading",
+      "magic"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "baed8214-c1c5-41df-9f01-39b75c4a96c0",
+      "word": "resign",
+      "meaningZh": "辞职",
+      "exampleId": "baed8214-c1c5-41df-9f01-39b75c4a96c0-visual-ex",
+      "styleFamily": "restrained workplace editorial illustration",
+      "sentenceEn": "She resigns from her job and clears her desk.",
+      "sentenceZh": "她辞去工作并清理自己的办公桌。",
+      "scene": "An adult employee calmly hands her plain office keycard to a manager while carrying a small box containing her desk plant and personal mug, leaving an emptied workstation behind her.",
+      "altText": "An employee resigns and leaves with her personal belongings.",
+      "riskTags": [
+        "employment",
+        "abstract_action",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "169f9dc0-9c3e-407e-bbf2-037a86380118",
+      "word": "reward",
+      "meaningZh": "报酬；酬谢；赏金",
+      "exampleId": "169f9dc0-9c3e-407e-bbf2-037a86380118-visual-ex",
+      "styleFamily": "warm animal-training gouache illustration",
+      "sentenceEn": "The trainer gives the dog a reward for finding the ball.",
+      "sentenceZh": "训练员因小狗找到球而给它奖励。",
+      "scene": "A happy dog returns a hidden ball to an adult trainer, who immediately offers one small treat with an approving gesture, clearly linking successful behavior to the reward.",
+      "altText": "A trainer rewards a dog with a treat after it finds a ball.",
+      "riskTags": [
+        "animal",
+        "reward_relationship",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0485f31e-cb85-4fde-8751-b84b63e37131",
+      "word": "gentle",
+      "meaningZh": "温和的；文雅的",
+      "exampleId": "0485f31e-cb85-4fde-8751-b84b63e37131-visual-ex",
+      "styleFamily": "delicate Chinese ink-and-color illustration",
+      "sentenceEn": "Her gentle hands wrap the injured bird safely.",
+      "sentenceZh": "她用轻柔的双手安全包扎受伤的小鸟。",
+      "scene": "A Chinese wildlife volunteer uses slow gentle hands to wrap a tiny bird’s wing in soft gauze while the calm bird rests in a padded basket, with no visible wound or blood.",
+      "altText": "A volunteer gently wraps a small bird’s wing.",
+      "riskTags": [
+        "animal_care",
+        "injury_non_graphic",
+        "hands",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "fa332c31-09c4-4187-ac8f-ab11157a63fc",
+      "word": "related",
+      "meaningZh": "相关的",
+      "exampleId": "fa332c31-09c4-4187-ac8f-ab11157a63fc-visual-ex",
+      "styleFamily": "botanical comparison linocut illustration",
+      "sentenceEn": "The two plants are closely related species.",
+      "sentenceZh": "这两种植物是关系密切的物种。",
+      "scene": "A botanist compares two living plants whose flowers differ in color but share the same distinctive leaf shape and branching pattern, placing matching leaves side by side to show their close relationship.",
+      "altText": "A botanist compares features of two related plant species.",
+      "riskTags": [
+        "abstract_relationship",
+        "science",
+        "plant",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "21f93549-7f77-401c-a5a9-40bc57f8f610",
+      "word": "organ",
+      "meaningZh": "器官；机构；风琴",
+      "exampleId": "21f93549-7f77-401c-a5a9-40bc57f8f610-visual-ex",
+      "styleFamily": "friendly anatomical cut-paper illustration",
+      "sentenceEn": "The heart is an organ that pumps blood through the body.",
+      "sentenceZh": "心脏是把血液泵送到全身的器官。",
+      "scene": "A clean educational side view of an adult torso silhouette contains one clearly illustrated anatomical heart connected to simplified red and blue vessels, with rhythmic pulse rings indicating its pumping action.",
+      "altText": "A clean anatomical illustration shows the heart organ pumping.",
+      "riskTags": [
+        "anatomy",
+        "medical",
+        "non_graphic",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "7225f616-d3e6-4670-9565-45686b33d363",
+      "word": "lightly",
+      "meaningZh": "轻轻地；轻松地；轻度地",
+      "exampleId": "7225f616-d3e6-4670-9565-45686b33d363-visual-ex",
+      "styleFamily": "minimal luminous watercolor illustration",
+      "sentenceEn": "A feather rests lightly on the surface of the water.",
+      "sentenceZh": "一根羽毛轻轻地落在水面上。",
+      "scene": "A single pale feather barely touches the glassy surface of a pond, supported by surface tension and creating only the smallest delicate circular ripples.",
+      "altText": "A feather rests lightly on calm water.",
+      "riskTags": [
+        "adverb_concept",
+        "delicate_object",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "279a99ed-2822-4597-b6b4-34cb4a5a1323",
+      "word": "concerning",
+      "meaningZh": "关于",
+      "exampleId": "279a99ed-2822-4597-b6b4-34cb4a5a1323-visual-ex",
+      "styleFamily": "clear civic-conversation illustration",
+      "sentenceEn": "Their discussion is concerning the damaged bridge.",
+      "sentenceZh": "他们的讨论是关于那座受损桥梁的。",
+      "scene": "Two engineers converse around a tabletop bridge model, both pointing to the same visibly cracked support and examining it thoughtfully, making the damaged bridge the clear subject of their discussion.",
+      "altText": "Two engineers discuss a matter concerning a damaged bridge.",
+      "riskTags": [
+        "preposition_concept",
+        "infrastructure",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "25f43d0b-51ca-460a-9bcd-dd0149ac5af8",
+      "word": "invent",
+      "meaningZh": "发明；创作；虚构",
+      "exampleId": "25f43d0b-51ca-460a-9bcd-dd0149ac5af8-visual-ex",
+      "styleFamily": "Chinese maker-lab blueprint gouache illustration",
+      "sentenceEn": "The engineer invents a portable water filter.",
+      "sentenceZh": "工程师发明了一种便携式滤水器。",
+      "scene": "A Chinese engineer assembles and tests a new hand-sized water filter prototype, pouring cloudy water into the top and watching clear water emerge below while earlier parts and sketches lie nearby without writing.",
+      "altText": "A Chinese engineer invents a portable water filter.",
+      "riskTags": [
+        "invention",
+        "water",
+        "hands",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0e6ced64-3c52-4cca-a813-45fbee853466",
+      "word": "laughter",
+      "meaningZh": "笑；笑声；大笑",
+      "exampleId": "0e6ced64-3c52-4cca-a813-45fbee853466-visual-ex",
+      "styleFamily": "joyful Chinese family pastel illustration",
+      "sentenceEn": "A puff of flour fills the kitchen with laughter.",
+      "sentenceZh": "一团面粉让厨房里充满笑声。",
+      "scene": "A Chinese family making dumplings together bursts into warm laughter after a harmless puff of flour dusts one adult’s nose, with open smiling mouths and shared amused expressions.",
+      "altText": "A Chinese family shares laughter while making dumplings.",
+      "riskTags": [
+        "emotion",
+        "group_action",
+        "people_face",
+        "food",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "40823abb-292f-460d-b36d-ba9766746cf8",
+      "word": "northwest",
+      "meaningZh": "西北",
+      "exampleId": "40823abb-292f-460d-b36d-ba9766746cf8-visual-ex",
+      "styleFamily": "graphic map-and-landscape illustration",
+      "sentenceEn": "The hikers travel northwest across the valley.",
+      "sentenceZh": "徒步者朝西北方向穿过山谷。",
+      "scene": "An overhead landscape diagram shows hikers moving diagonally toward the upper-left across a valley, reinforced by a simple compass star whose bold arrow points midway between top and left, without letters or labels.",
+      "altText": "Hikers travel northwest across a valley.",
+      "riskTags": [
+        "direction",
+        "map_like",
+        "people_small",
+        "no_letters"
+      ]
+    },
+    {
+      "vocabularyId": "4bf505ae-c6e7-4bf8-a57e-8f5a2d0b5caa",
+      "word": "counseling",
+      "meaningZh": "咨询；辅导",
+      "exampleId": "4bf505ae-c6e7-4bf8-a57e-8f5a2d0b5caa-visual-ex",
+      "styleFamily": "calm supportive editorial illustration",
+      "sentenceEn": "Counseling helps him talk through a difficult change.",
+      "sentenceZh": "心理辅导帮助他谈论并面对一次艰难的变化。",
+      "scene": "In a private comfortable office, an adult client speaks with a professional counselor seated at a respectful distance; the counselor listens attentively while the client gradually relaxes, with no notes or diagnostic symbols visible.",
+      "altText": "A client speaks openly during a supportive counseling session.",
+      "riskTags": [
+        "mental_health",
+        "privacy",
+        "people_face",
+        "respectful_representation"
+      ]
+    },
+    {
+      "vocabularyId": "d8a3c33b-a8fa-4cb7-8c3b-18872c74f482",
+      "word": "receiver",
+      "meaningZh": "接收器；接受者",
+      "exampleId": "d8a3c33b-a8fa-4cb7-8c3b-18872c74f482-visual-ex",
+      "styleFamily": "retro scientific signal illustration",
+      "sentenceEn": "The receiver captures a radio signal from space.",
+      "sentenceZh": "接收器捕捉到来自太空的无线电信号。",
+      "scene": "A large radio telescope dish angles toward a star-filled sky as concentric signal waves arrive at its central receiver, with a small equipment cabinet glowing softly but showing no interface or writing.",
+      "altText": "A radio receiver captures a signal from space.",
+      "riskTags": [
+        "device",
+        "signal",
+        "astronomy",
+        "no_interface"
+      ]
+    },
+    {
+      "vocabularyId": "5b2ac69e-df6b-4a4c-9eeb-b37ef44de5c2",
+      "word": "ritual",
+      "meaningZh": "仪式；典礼；宗教仪式",
+      "exampleId": "5b2ac69e-df6b-4a4c-9eeb-b37ef44de5c2-visual-ex",
+      "styleFamily": "serene Chinese tea-ritual watercolor illustration",
+      "sentenceEn": "Preparing tea is a quiet morning ritual for them.",
+      "sentenceZh": "泡茶是他们安静的晨间仪式。",
+      "scene": "Two Chinese adults perform a calm, deliberate morning tea ritual at a low wooden table, warming small cups and pouring tea in a repeated orderly sequence with attentive gestures.",
+      "altText": "Two people perform a quiet Chinese morning tea ritual.",
+      "riskTags": [
+        "cultural_practice",
+        "hot_liquid",
+        "hands",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "24d0b44c-d4b2-40d2-9872-4384eb26f8f0",
+      "word": "insect",
+      "meaningZh": "昆虫；卑鄙的人",
+      "exampleId": "24d0b44c-d4b2-40d2-9872-4384eb26f8f0-visual-ex",
+      "styleFamily": "detailed natural-history colored-pencil illustration",
+      "sentenceEn": "The beetle is an insect with six legs.",
+      "sentenceZh": "甲虫是一种有六条腿的昆虫。",
+      "scene": "A large clearly drawn beetle stands on a green leaf in side-three-quarter view, with all six jointed legs, two antennae, segmented body, and wing covers visibly distinct.",
+      "altText": "A beetle insect stands on a leaf with all six legs visible.",
+      "riskTags": [
+        "animal",
+        "anatomy_accuracy",
+        "macro_view"
+      ]
+    },
+    {
+      "vocabularyId": "dfb31402-21b0-4591-a3b0-d7a88daa5d1d",
+      "word": "interrupt",
+      "meaningZh": "中断；妨碍；插嘴；打断",
+      "exampleId": "dfb31402-21b0-4591-a3b0-d7a88daa5d1d-visual-ex",
+      "styleFamily": "dynamic domestic comic-panel illustration",
+      "sentenceEn": "A ringing alarm interrupts her quiet reading.",
+      "sentenceZh": "响起的闹钟打断了她安静的阅读。",
+      "scene": "An adult reading peacefully in a chair suddenly looks up as a plain mechanical alarm clock rings on a nearby table, illustrated with vibration lines while her finger pauses midway down the page.",
+      "altText": "A ringing alarm clock interrupts a woman’s reading.",
+      "riskTags": [
+        "sudden_event",
+        "sound_visualization",
+        "people_face",
+        "no_clock_numbers"
+      ]
+    },
+    {
+      "vocabularyId": "46cfda3d-26df-42a4-8919-901cfa1062f4",
+      "word": "salmon",
+      "meaningZh": "鲑鱼；大麻哈鱼；鲑",
+      "exampleId": "46cfda3d-26df-42a4-8919-901cfa1062f4-visual-ex",
+      "styleFamily": "underwater nature gouache illustration",
+      "sentenceEn": "The salmon swims upstream through the rushing river.",
+      "sentenceZh": "鲑鱼逆流游过湍急的河水。",
+      "scene": "A strong silver-pink salmon swims upstream against a rushing clear river, leaping past smooth rocks toward quieter spawning water while several other salmon follow below.",
+      "altText": "A salmon swims upstream through rushing water.",
+      "riskTags": [
+        "animal",
+        "water",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "1fdd7415-c0fa-4c3c-872c-2a06fe278398",
+      "word": "trading",
+      "meaningZh": "交易",
+      "exampleId": "1fdd7415-c0fa-4c3c-872c-2a06fe278398-visual-ex",
+      "styleFamily": "historical Chinese market mural illustration",
+      "sentenceEn": "Trading brings silk and spices between the merchants.",
+      "sentenceZh": "交易让商人们互换丝绸和香料。",
+      "scene": "At a historical Chinese market along a caravan route, two merchants exchange a folded bolt of silk for baskets of colorful spices while both groups inspect the goods and agree with a handshake.",
+      "altText": "Merchants trade silk for spices at a historical Chinese market.",
+      "riskTags": [
+        "commerce",
+        "historical_scene",
+        "people_face",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "5cdb20b7-595b-4bf1-b3d4-8a7b97d29387",
+      "word": "magic",
+      "meaningZh": "魔术；魔法",
+      "exampleId": "5cdb20b7-595b-4bf1-b3d4-8a7b97d29387-visual-ex",
+      "styleFamily": "Chinese theater cut-paper fantasy illustration",
+      "sentenceEn": "The magician makes flowers appear as if by magic.",
+      "sentenceZh": "魔术师仿佛用魔法变出了鲜花。",
+      "scene": "On a traditional Chinese theater stage, an adult magician displays both empty hands and then produces a bright cascade of flowers from an empty silk sleeve, delighting the audience through harmless stage magic.",
+      "altText": "A magician makes flowers appear during a Chinese stage show.",
+      "riskTags": [
+        "performance",
+        "illusion",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "59f6e5c6-592b-4b0f-b8c9-395b79ea3127",
+      "word": "superior",
+      "meaningZh": "长者；占优势的人；上级",
+      "exampleId": "59f6e5c6-592b-4b0f-b8c9-395b79ea3127-visual-ex",
+      "styleFamily": "balanced workplace line-and-color illustration",
+      "sentenceEn": "Her superior approves the final bridge design.",
+      "sentenceZh": "她的上级批准了最终的桥梁设计。",
+      "scene": "A civil engineer presents a bridge scale model to her workplace superior, who examines the structure and gives a clear approving nod and open-hand gesture, with no hierarchy symbols or readable plans.",
+      "altText": "An engineer’s superior approves her bridge model.",
+      "riskTags": [
+        "workplace_role",
+        "people_face",
+        "gesture",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "efb79fea-98ee-4f71-9115-73b19f30915d",
+      "word": "combat",
+      "meaningZh": "争斗；战斗",
+      "exampleId": "efb79fea-98ee-4f71-9115-73b19f30915d-visual-ex",
+      "styleFamily": "controlled athletic screen-print illustration",
+      "sentenceEn": "The athletes practice combat skills with protective gear.",
+      "sentenceZh": "运动员们穿着护具练习格斗技巧。",
+      "scene": "Two adult martial arts athletes practice a controlled sparring exchange on padded mats while wearing full head, hand, and body protection, with a referee close by and no visible injury.",
+      "altText": "Two protected athletes practice controlled combat skills.",
+      "riskTags": [
+        "sport_combat",
+        "protective_gear",
+        "people_face",
+        "non_graphic"
+      ]
+    }
+  ]
+}
