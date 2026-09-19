@@ -1,0 +1,376 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3120-3139",
+  "batchId": "auto-rank-3120-3139-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "trunk",
+      "implementation",
+      "cloth",
+      "legislative",
+      "inspector",
+      "plain"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "0e8494de-eeb7-4cc8-8e50-ed475731bd1e",
+      "word": "sandwich",
+      "meaningZh": "三明治；夹心面包；夹层板",
+      "exampleId": "0e8494de-eeb7-4cc8-8e50-ed475731bd1e-visual-ex",
+      "styleFamily": "warm editorial food illustration",
+      "sentenceEn": "She makes a sandwich with fresh vegetables for lunch.",
+      "sentenceZh": "她用新鲜蔬菜做了一个午餐三明治。",
+      "scene": "An adult cook at a home kitchen counter builds one clear sandwich from two slices of bread, lettuce, tomato and cheese, with the separated layers still visible; no packaging or labels.",
+      "altText": "A cook layers vegetables and cheese between bread to make a sandwich.",
+      "riskTags": [
+        "food",
+        "hands",
+        "no_packaging",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "60b83a3b-0beb-4a07-859c-a059050fbc45",
+      "word": "trunk",
+      "meaningZh": "树干；后备箱；躯干",
+      "exampleId": "60b83a3b-0beb-4a07-859c-a059050fbc45-visual-ex",
+      "styleFamily": "Chinese botanical ink-and-color illustration",
+      "sentenceEn": "The old tree has a wide, strong trunk.",
+      "sentenceZh": "这棵老树有着宽阔而粗壮的树干。",
+      "scene": "In a Chinese village courtyard, an adult gardener places both hands against the massive textured trunk of an ancient tree while its roots spread visibly into the earth; branches and foliage frame the upper scene.",
+      "altText": "A gardener touches the wide trunk of an ancient courtyard tree.",
+      "riskTags": [
+        "Chinese_context",
+        "tree",
+        "scale",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6d6492d6-2e09-4536-ad59-85225a345f5e",
+      "word": "rumor",
+      "meaningZh": "谣言",
+      "exampleId": "6d6492d6-2e09-4536-ad59-85225a345f5e-visual-ex",
+      "styleFamily": "expressive office editorial watercolor",
+      "sentenceEn": "A false rumor quickly spreads through the office.",
+      "sentenceZh": "一则不实传闻很快传遍了办公室。",
+      "scene": "A chain of adult coworkers lean from one person to the next to whisper privately; reactions grow increasingly exaggerated along the chain while the first speaker looks uncertain, making the spread of unverified information clear without speech bubbles.",
+      "altText": "Coworkers pass a rumor from person to person through whispers.",
+      "riskTags": [
+        "communication",
+        "office",
+        "no_speech_bubbles",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5ff11229-0229-4e0b-aa8b-ede32a18580f",
+      "word": "implementation",
+      "meaningZh": "实现",
+      "exampleId": "5ff11229-0229-4e0b-aa8b-ede32a18580f-visual-ex",
+      "styleFamily": "Chinese infrastructure blueprint-to-reality illustration",
+      "sentenceEn": "The team begins the implementation of the bridge plan.",
+      "sentenceZh": "团队开始实施这项桥梁计划。",
+      "scene": "Chinese engineers stand beside a river holding a completely blank technical plan while construction crews turn the design into a real half-completed pedestrian bridge; the image flows visually from plan to built structure with no labels.",
+      "altText": "Engineers turn a bridge plan into a real structure during implementation.",
+      "riskTags": [
+        "Chinese_context",
+        "construction",
+        "blank_plan",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "7a32076f-ee34-43c3-9caa-4ea4cf8e7d9e",
+      "word": "swallow",
+      "meaningZh": "吞下；燕子；忍受",
+      "exampleId": "7a32076f-ee34-43c3-9caa-4ea4cf8e7d9e-visual-ex",
+      "styleFamily": "clear health editorial illustration",
+      "sentenceEn": "He swallows the tablet with a glass of water.",
+      "sentenceZh": "他用一杯水把药片吞了下去。",
+      "scene": "An adult at a kitchen table safely places one plain tablet into his mouth and drinks from a clear glass of water, with a closed unmarked medicine container nearby; calm everyday setting.",
+      "altText": "A man swallows one tablet with a glass of water.",
+      "riskTags": [
+        "medicine",
+        "adult",
+        "safe_use",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "d0b2d99d-a165-4bad-8c1e-8f32d0a11a31",
+      "word": "motivate",
+      "meaningZh": "激励",
+      "exampleId": "d0b2d99d-a165-4bad-8c1e-8f32d0a11a31-visual-ex",
+      "styleFamily": "energetic sports poster illustration",
+      "sentenceEn": "Her coach motivates her to finish the final lap.",
+      "sentenceZh": "教练激励她跑完最后一圈。",
+      "scene": "A tired adult runner on the final curve of an outdoor track gains determination as her adult coach encourages her with an open supportive gesture from beside the lane; no banners, lane numbers or signs.",
+      "altText": "A supportive coach motivates a tired runner to keep going.",
+      "riskTags": [
+        "sports",
+        "encouragement",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "159871c2-0669-441a-91a7-7a0e8a6bfea9",
+      "word": "render",
+      "meaningZh": "渲染（计算机）；使成为；提供",
+      "exampleId": "159871c2-0669-441a-91a7-7a0e8a6bfea9-visual-ex",
+      "styleFamily": "digital art process editorial illustration",
+      "sentenceEn": "The computer renders the simple model as a detailed chair.",
+      "sentenceZh": "计算机把简单模型渲染成一把细节丰富的椅子。",
+      "scene": "An adult designer works at a large unmarked screen where a simple gray wireframe chair visually transforms from left to right into a richly textured finished wooden chair; no menus, buttons, icons, text or interface labels.",
+      "altText": "A plain wireframe chair becomes a detailed rendered wooden chair.",
+      "riskTags": [
+        "computer",
+        "unmarked_screen",
+        "transformation",
+        "no_ui_text"
+      ]
+    },
+    {
+      "vocabularyId": "dcbb2c56-ca4b-40fd-b92a-8753a9cb998d",
+      "word": "longtime",
+      "meaningZh": "长期的",
+      "exampleId": "dcbb2c56-ca4b-40fd-b92a-8753a9cb998d-visual-ex",
+      "styleFamily": "nostalgic reunion gouache",
+      "sentenceEn": "The two longtime friends warmly reunite at the station.",
+      "sentenceZh": "两位相识多年的朋友在车站温暖重逢。",
+      "scene": "Two older adult friends embrace warmly on a station platform while one holds a small wordless photograph of the same pair together as young adults; matching distinctive scarves connect past and present, with no signs or train markings.",
+      "altText": "Longtime friends reunite while holding an old photo of their younger selves.",
+      "riskTags": [
+        "friendship",
+        "time",
+        "station",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a8fb58e5-5233-4145-9474-ce6809749a13",
+      "word": "trap",
+      "meaningZh": "陷阱",
+      "exampleId": "a8fb58e5-5233-4145-9474-ce6809749a13-visual-ex",
+      "styleFamily": "woodland safety adventure illustration",
+      "sentenceEn": "The hiker notices the hidden trap before stepping into it.",
+      "sentenceZh": "徒步者在踩中隐藏的陷阱前发现了它。",
+      "scene": "An alert adult hiker stops mid-step and points out a concealed rope loop and shallow covered pit among forest leaves, warning a companion behind; nobody is caught or injured.",
+      "altText": "A hiker spots a concealed forest trap before anyone steps into it.",
+      "riskTags": [
+        "hazard",
+        "prevention",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1da92d27-6db4-4d55-bca6-e0309f110a03",
+      "word": "restrict",
+      "meaningZh": "限制；限定；约束",
+      "exampleId": "1da92d27-6db4-4d55-bca6-e0309f110a03-visual-ex",
+      "styleFamily": "museum spatial editorial illustration",
+      "sentenceEn": "The rope barriers restrict visitors to the marked path.",
+      "sentenceZh": "绳索护栏把游客限制在指定通道内。",
+      "scene": "Inside a museum gallery, adult visitors naturally follow a narrow route created by velvet rope barriers around a delicate sculpture, clearly showing limited access; no placards, arrows, floor words or labels.",
+      "altText": "Rope barriers restrict museum visitors to a narrow route.",
+      "riskTags": [
+        "museum",
+        "barrier",
+        "no_arrows",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "3b00266b-2500-4706-959b-35fb633ce6ca",
+      "word": "cloth",
+      "meaningZh": "布料；织品；布",
+      "exampleId": "3b00266b-2500-4706-959b-35fb633ce6ca-visual-ex",
+      "styleFamily": "Chinese textile-market colored-pencil illustration",
+      "sentenceEn": "The tailor chooses a soft blue cloth for the jacket.",
+      "sentenceZh": "裁缝为这件外套挑选了一块柔软的蓝布。",
+      "scene": "At a Chinese textile market stall, an adult tailor feels and unfolds a large bolt of soft blue cloth among neatly stacked plain fabrics; fibers, folds and woven texture are prominent, with no price tags or signs.",
+      "altText": "A tailor unfolds soft blue cloth at a textile market.",
+      "riskTags": [
+        "Chinese_context",
+        "textile",
+        "texture",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "dd7d1587-4925-4ba0-b2d6-597231d67db9",
+      "word": "seemingly",
+      "meaningZh": "看似",
+      "exampleId": "dd7d1587-4925-4ba0-b2d6-597231d67db9-visual-ex",
+      "styleFamily": "cutaway mechanical editorial illustration",
+      "sentenceEn": "The seemingly simple clock contains many tiny parts.",
+      "sentenceZh": "这个看似简单的钟表内部有许多细小零件。",
+      "scene": "A plain round clock with a completely blank face appears simple from the front, while a clean cutaway reveals dense interlocking gears and springs inside; no numerals, tick marks, symbols, brand or text.",
+      "altText": "A seemingly simple clock reveals a complex system of gears inside.",
+      "riskTags": [
+        "cutaway",
+        "clock",
+        "no_numerals",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5718ec69-b4cd-480c-bd4a-079d0b8abbf5",
+      "word": "legislative",
+      "meaningZh": "立法的",
+      "exampleId": "5718ec69-b4cd-480c-bd4a-079d0b8abbf5-visual-ex",
+      "styleFamily": "Chinese civic assembly ink-and-wash editorial",
+      "sentenceEn": "The legislative committee debates a new environmental law.",
+      "sentenceZh": "立法委员会正在讨论一项新的环境法。",
+      "scene": "A diverse group of adult Chinese lawmakers in a modern circular committee chamber thoughtfully debate around a table with blank documents; a small model of a healthy tree and clean river sits at the center to suggest environmental legislation, with no emblems or flags.",
+      "altText": "A legislative committee debates environmental protections around a round table.",
+      "riskTags": [
+        "Chinese_context",
+        "civic",
+        "neutral",
+        "blank_documents",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b7cfc5cf-6108-4aa1-b084-f3510777644f",
+      "word": "effectiveness",
+      "meaningZh": "有效性",
+      "exampleId": "b7cfc5cf-6108-4aa1-b084-f3510777644f-visual-ex",
+      "styleFamily": "experimental garden infographic-like illustration",
+      "sentenceEn": "The healthy plants show the effectiveness of the new watering system.",
+      "sentenceZh": "茁壮的植物显示出新灌溉系统的有效性。",
+      "scene": "A gardener compares two otherwise matching garden beds: one supplied by a simple drip system is lush and healthy, while the other with a leaky wasteful hose is sparse and wilted; no labels, symbols, arrows or measurements.",
+      "altText": "Healthy plants demonstrate the effectiveness of a drip watering system.",
+      "riskTags": [
+        "comparison",
+        "gardening",
+        "no_labels",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "10183210-da62-4925-a500-1c6c3af96874",
+      "word": "enforce",
+      "meaningZh": "强迫；执行；坚持；予以强制执行",
+      "exampleId": "10183210-da62-4925-a500-1c6c3af96874-visual-ex",
+      "styleFamily": "worksite safety editorial illustration",
+      "sentenceEn": "The safety officer enforces the helmet rule at the entrance.",
+      "sentenceZh": "安全员在入口处执行佩戴安全帽的规定。",
+      "scene": "At a construction-site entrance, an adult safety officer calmly stops an adult worker who has not entered yet and hands him a plain hard hat; workers already inside all wear helmets, with no warning signs or writing.",
+      "altText": "A safety officer enforces a helmet rule by providing a hard hat.",
+      "riskTags": [
+        "safety",
+        "rule",
+        "prevention",
+        "no_signs",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "618254eb-17cb-4f34-b2c3-3d4cb8426c9b",
+      "word": "lens",
+      "meaningZh": "透镜；镜头；镜片；晶状体",
+      "exampleId": "618254eb-17cb-4f34-b2c3-3d4cb8426c9b-visual-ex",
+      "styleFamily": "optical science watercolor illustration",
+      "sentenceEn": "The lens makes the tiny leaf veins look larger.",
+      "sentenceZh": "透镜让细小的叶脉看起来更大。",
+      "scene": "An adult botanist holds a large round magnifying lens above a leaf; delicate veins appear visibly enlarged only through the glass while the surrounding leaf remains normal size, on a clean worktable with no labels.",
+      "altText": "A round lens enlarges the tiny veins of a leaf.",
+      "riskTags": [
+        "science",
+        "magnification",
+        "leaf",
+        "no_labels",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ae213f3e-d077-4516-bd9e-ea8a48710229",
+      "word": "inspector",
+      "meaningZh": "检查员",
+      "exampleId": "ae213f3e-d077-4516-bd9e-ea8a48710229-visual-ex",
+      "styleFamily": "Chinese engineering field-report illustration",
+      "sentenceEn": "The inspector carefully checks every bolt on the bridge.",
+      "sentenceZh": "检查员仔细检查桥上的每一颗螺栓。",
+      "scene": "An adult Chinese bridge inspector in full safety gear kneels at a pedestrian bridge joint, shining a flashlight and checking large bolts with a small tool while a colleague observes; clipboard pages are blank and no equipment is branded.",
+      "altText": "A bridge inspector closely checks bolts at a structural joint.",
+      "riskTags": [
+        "Chinese_context",
+        "inspection",
+        "safety_gear",
+        "blank_clipboard",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "93424c73-19cf-4523-b7c9-d3cebd79bccc",
+      "word": "lend",
+      "meaningZh": "借；贷款给；增添；提供；出租",
+      "exampleId": "93424c73-19cf-4523-b7c9-d3cebd79bccc-visual-ex",
+      "styleFamily": "friendly neighborhood gouache illustration",
+      "sentenceEn": "My neighbor lends me a ladder for the afternoon.",
+      "sentenceZh": "邻居把梯子借给我用一个下午。",
+      "scene": "Across a low garden fence, one adult neighbor warmly hands a sturdy folded ladder to another adult who reaches to receive it; both homes and gardens are visible, with no signs or labels.",
+      "altText": "One neighbor lends a folded ladder to another.",
+      "riskTags": [
+        "neighbor",
+        "object_transfer",
+        "ladder",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "454aba51-c7e4-48db-b193-0080f044ebeb",
+      "word": "plain",
+      "meaningZh": "平原；草原；朴实无华的东西；无格式",
+      "exampleId": "454aba51-c7e4-48db-b193-0080f044ebeb-visual-ex",
+      "styleFamily": "Chinese grassland panoramic gouache",
+      "sentenceEn": "A wide green plain stretches toward the distant mountains.",
+      "sentenceZh": "广阔的绿色平原一直延伸到远山。",
+      "scene": "A sweeping treeless green plain in northern China extends across a broad level horizon toward distant blue mountains, with a tiny grazing horse herd establishing scale; no roads, buildings, fences, signs or writing.",
+      "altText": "A wide level green plain stretches toward distant mountains.",
+      "riskTags": [
+        "Chinese_context",
+        "landscape",
+        "open_space",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9bbef41c-b2e4-4e41-97ff-ce629110259e",
+      "word": "fraud",
+      "meaningZh": "欺骗；欺诈；诡计；骗子",
+      "exampleId": "9bbef41c-b2e4-4e41-97ff-ce629110259e-visual-ex",
+      "styleFamily": "cautionary consumer editorial illustration",
+      "sentenceEn": "The buyer discovers the fraud inside the sealed jewelry box.",
+      "sentenceZh": "买家发现密封的首饰盒里藏着一场骗局。",
+      "scene": "At a neutral market counter, an adult buyer opens an elegant unmarked jewelry box that was presented as valuable but contains plain glass beads and stones, while the seller guiltily conceals the real necklace behind his back; no money, receipts, labels or text.",
+      "altText": "A buyer uncovers fraud when a jewelry box contains worthless stones.",
+      "riskTags": [
+        "deception",
+        "consumer",
+        "fictional_scene",
+        "no_money",
+        "no_text"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2900-2919",
+  "batchId": "auto-rank-2900-2919-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "rhythm",
+      "charity",
+      "transformation",
+      "everyday",
+      "piano",
+      "grocery"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "76c9948b-0844-44a5-84e4-12cde39da083",
+      "word": "miracle",
+      "meaningZh": "奇迹；奇事",
+      "exampleId": "76c9948b-0844-44a5-84e4-12cde39da083-visual-ex",
+      "styleFamily": "luminous magical-realism landscape illustration",
+      "sentenceEn": "The desert bloom after one night of rain feels like a miracle.",
+      "sentenceZh": "一夜雨后沙漠开花，仿佛是一个奇迹。",
+      "scene": "At sunrise, a once-barren desert valley is suddenly carpeted with vivid wildflowers after rare rain, while two travelers stand in quiet amazement beside fresh pools of water.",
+      "altText": "Travelers witness a miraculous desert bloom after rare rainfall.",
+      "riskTags": [
+        "abstract_meaning",
+        "before_after",
+        "people_face",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "b3fe46f2-7fb3-4eeb-9deb-9a3b851084da",
+      "word": "exceed",
+      "meaningZh": "超过；超越；胜过；超过其他",
+      "exampleId": "b3fe46f2-7fb3-4eeb-9deb-9a3b851084da-visual-ex",
+      "styleFamily": "dynamic geometric sports illustration",
+      "sentenceEn": "The athlete's jump will exceed the target height.",
+      "sentenceZh": "这名运动员的跳跃将超过目标高度。",
+      "scene": "An adult high jumper arches cleanly over a horizontal bar with a generous visible gap, while a lower practice bar stands nearby as a clear comparison of the exceeded height.",
+      "altText": "A high jumper exceeds the target height by clearing the higher bar.",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "people_face",
+        "athletic_pose"
+      ]
+    },
+    {
+      "vocabularyId": "f58c10d6-14ee-486f-ad0d-5fca94f14dcc",
+      "word": "rhythm",
+      "meaningZh": "节奏；韵律",
+      "exampleId": "f58c10d6-14ee-486f-ad0d-5fca94f14dcc-visual-ex",
+      "styleFamily": "energetic Chinese woodblock concert illustration",
+      "sentenceEn": "The drummers keep a powerful rhythm together.",
+      "sentenceZh": "鼓手们共同保持着有力的节奏。",
+      "scene": "Four adult Chinese festival drummers strike large red barrel drums in synchronized alternating poses, with repeating arcs of motion and coordinated expressions making the steady beat visually clear.",
+      "altText": "Chinese festival drummers maintain a synchronized and powerful rhythm.",
+      "riskTags": [
+        "sequence",
+        "repetition",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "3f7c5901-67e9-4cb6-bec5-85ba72a5169c",
+      "word": "widespread",
+      "meaningZh": "充分伸展的；广布的；普及的；流传广的",
+      "exampleId": "3f7c5901-67e9-4cb6-bec5-85ba72a5169c-visual-ex",
+      "styleFamily": "aerial isometric cityscape illustration",
+      "sentenceEn": "Solar power is now widespread across the city.",
+      "sentenceZh": "太阳能如今已在全城广泛普及。",
+      "scene": "A wide aerial view shows solar panels distributed across homes, schools, shops, apartment roofs, and factories in every district of a sprawling city, not clustered in only one area.",
+      "altText": "Solar panels are widespread across many different parts of a city.",
+      "riskTags": [
+        "wide_distribution",
+        "spatial_boundary",
+        "cityscape",
+        "repetition"
+      ]
+    },
+    {
+      "vocabularyId": "ce4bfcf1-6dfb-4d61-a86e-f82fe9ad786e",
+      "word": "killing",
+      "meaningZh": "杀害",
+      "exampleId": "ce4bfcf1-6dfb-4d61-a86e-f82fe9ad786e-visual-ex",
+      "styleFamily": "non-graphic scientific cutaway illustration",
+      "sentenceEn": "The disinfectant is killing harmful bacteria on the surface.",
+      "sentenceZh": "消毒剂正在杀灭表面的有害细菌。",
+      "scene": "A magnified educational view shows a disinfectant droplet breaking apart stylized harmful bacteria on one side of a clean surface, while untouched bacteria remain visible farther away for comparison.",
+      "altText": "A disinfectant droplet kills harmful bacteria in a non-graphic microscopic view.",
+      "riskTags": [
+        "non_graphic",
+        "microbiology",
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "bf651f0d-91a8-469d-8e14-40f57908f1fa",
+      "word": "lovely",
+      "meaningZh": "可爱的",
+      "exampleId": "bf651f0d-91a8-469d-8e14-40f57908f1fa-visual-ex",
+      "styleFamily": "soft watercolor garden illustration",
+      "sentenceEn": "They discover a lovely garden hidden behind the old gate.",
+      "sentenceZh": "他们在旧门后发现了一座美丽可爱的花园。",
+      "scene": "Two adults open a weathered wooden gate onto a charming flower garden with climbing roses, a curved stone path, butterflies, and a small sunlit gazebo, reacting with gentle delight.",
+      "altText": "Two visitors discover a lovely hidden flower garden.",
+      "riskTags": [
+        "positive_quality",
+        "people_face",
+        "garden"
+      ]
+    },
+    {
+      "vocabularyId": "fc2cd670-8757-44e8-813f-340a6b1a7295",
+      "word": "sin",
+      "meaningZh": "罪；罪过；犯罪",
+      "exampleId": "fc2cd670-8757-44e8-813f-340a6b1a7295-visual-ex",
+      "styleFamily": "symbolic editorial chiaroscuro illustration",
+      "sentenceEn": "He regrets the sin of stealing and returns the lost wallet.",
+      "sentenceZh": "他为偷窃的罪过感到后悔，并归还了丢失的钱包。",
+      "scene": "A remorseful adult hands a closed lost wallet back to its relieved owner beneath a warm light, stepping away from a dark shadow that suggests wrongdoing without showing money or violence.",
+      "altText": "A remorseful man returns a wallet after regretting his wrongdoing.",
+      "riskTags": [
+        "abstract_meaning",
+        "moral_context",
+        "people_face",
+        "cause_effect",
+        "non_graphic"
+      ]
+    },
+    {
+      "vocabularyId": "dfe00706-7216-42bb-9bee-d666629e47e6",
+      "word": "charity",
+      "meaningZh": "慈悲；博爱；慈善团体；施舍",
+      "exampleId": "dfe00706-7216-42bb-9bee-d666629e47e6-visual-ex",
+      "styleFamily": "warm community mural illustration",
+      "sentenceEn": "The charity distributes food and blankets after the flood.",
+      "sentenceZh": "慈善组织在洪水后分发食物和毛毯。",
+      "scene": "In a Chinese neighborhood courtyard after floodwater has receded, diverse adult volunteers hand plain food boxes and folded blankets to families, with care, dignity, and no branding.",
+      "altText": "Charity volunteers distribute food and blankets after a neighborhood flood.",
+      "riskTags": [
+        "community_aid",
+        "people_face",
+        "chinese_cultural_context",
+        "no_logos"
+      ]
+    },
+    {
+      "vocabularyId": "bb388e03-7652-47f5-a329-93899ae57020",
+      "word": "script",
+      "meaningZh": "脚本；剧本；手稿",
+      "exampleId": "bb388e03-7652-47f5-a329-93899ae57020-visual-ex",
+      "styleFamily": "cinematic desk-top editorial illustration",
+      "sentenceEn": "The director reviews the script before filming the scene.",
+      "sentenceZh": "导演在拍摄场景前审阅剧本。",
+      "scene": "An adult director studies a bound stack of screenplay pages beside a clapperboard, storyboard sketches, and a pencil, with page structure shown only as unreadable gray lines and no actual writing.",
+      "altText": "A film director reviews a bound script before a shoot.",
+      "riskTags": [
+        "document",
+        "no_readable_text",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1c9c9dc4-39b9-4b4c-a5d6-8bb11c808ca2",
+      "word": "tactic",
+      "meaningZh": "一项战术；一条策略",
+      "exampleId": "1c9c9dc4-39b9-4b4c-a5d6-8bb11c808ca2-visual-ex",
+      "styleFamily": "precise overhead chess illustration",
+      "sentenceEn": "Her tactic traps both of the opponent's strongest pieces.",
+      "sentenceZh": "她的战术同时困住了对手最强的两个棋子。",
+      "scene": "Viewed from above, a focused adult chess player moves one knight into a central fork that visibly threatens the opposing king and queen at once, while her opponent studies the board.",
+      "altText": "A chess player's knight fork demonstrates an effective tactic.",
+      "riskTags": [
+        "strategy",
+        "cause_effect",
+        "spatial_relation",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "9c66525c-cb73-4438-b169-306e3bcfe6ad",
+      "word": "identification",
+      "meaningZh": "身份识别",
+      "exampleId": "9c66525c-cb73-4438-b169-306e3bcfe6ad-visual-ex",
+      "styleFamily": "clean civic-service editorial illustration",
+      "sentenceEn": "The guard checks her identification before opening the gate.",
+      "sentenceZh": "警卫在开门前核验她的身份证明。",
+      "scene": "At a secure building entrance, an adult visitor holds a plain identification card containing only her portrait, while a guard compares the card's face with her natural face before unlocking the gate.",
+      "altText": "A guard verifies a visitor's identification by matching her portrait.",
+      "riskTags": [
+        "identity_document",
+        "reference",
+        "people_face",
+        "privacy",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "24c8d8cc-eec0-4246-8ebc-1c2c604369ad",
+      "word": "transformation",
+      "meaningZh": "转变；变革",
+      "exampleId": "24c8d8cc-eec0-4246-8ebc-1c2c604369ad-visual-ex",
+      "styleFamily": "before-and-after Chinese paper-cut illustration",
+      "sentenceEn": "The transformation turns an abandoned courtyard into a community garden.",
+      "sentenceZh": "这场改造把废弃院落变成了社区花园。",
+      "scene": "A split view of the same Chinese courtyard shows cracked paving and debris on the left, then vegetable beds, flowers, seating, and neighbors gardening together on the renewed right side.",
+      "altText": "A Chinese courtyard undergoes a transformation into a community garden.",
+      "riskTags": [
+        "before_after",
+        "same_place_consistency",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "8f0bec6a-5e3f-4192-bfe4-c1ef8213ad65",
+      "word": "everyday",
+      "meaningZh": "日常的",
+      "exampleId": "8f0bec6a-5e3f-4192-bfe4-c1ef8213ad65-visual-ex",
+      "styleFamily": "observational ink-and-wash neighborhood illustration",
+      "sentenceEn": "Her everyday routine begins with breakfast and a bicycle ride to work.",
+      "sentenceZh": "她的日常生活从早餐和骑车上班开始。",
+      "scene": "A flowing morning scene in a Chinese lane shows the same adult woman finishing soy milk and steamed buns, locking her apartment, and cycling past neighbors opening their shops.",
+      "altText": "A woman's everyday morning routine unfolds in a Chinese neighborhood lane.",
+      "riskTags": [
+        "sequence",
+        "daily_routine",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "128a520e-7bdc-4448-ab3d-4e40311acdd0",
+      "word": "headline",
+      "meaningZh": "大标题；新闻摘要",
+      "exampleId": "128a520e-7bdc-4448-ab3d-4e40311acdd0-visual-ex",
+      "styleFamily": "bold newsroom collage illustration",
+      "sentenceEn": "The editor places the biggest story in the headline.",
+      "sentenceZh": "编辑把最重要的新闻放进大标题。",
+      "scene": "An adult newspaper editor points to the prominent top band of a front-page layout above a large news photograph, while smaller gray blocks sit below as clearly secondary content.",
+      "altText": "An editor emphasizes the headline area at the top of a newspaper layout.",
+      "riskTags": [
+        "document_layout",
+        "visual_hierarchy",
+        "no_readable_text",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "630ad40f-efc7-44d0-a89c-9ee863b5fe56",
+      "word": "venture",
+      "meaningZh": "冒险；风险企业；敢于",
+      "exampleId": "630ad40f-efc7-44d0-a89c-9ee863b5fe56-visual-ex",
+      "styleFamily": "optimistic small-business editorial illustration",
+      "sentenceEn": "They invest their savings in a new bakery venture.",
+      "sentenceZh": "他们把积蓄投入一家新的烘焙创业项目。",
+      "scene": "Two adult partners raise the shutter of their newly fitted neighborhood bakery for the first time, exchanging a hopeful but slightly nervous look as the first customers approach.",
+      "altText": "Two partners begin a risky new bakery venture together.",
+      "riskTags": [
+        "business_risk",
+        "people_face",
+        "cause_effect",
+        "no_signage"
+      ]
+    },
+    {
+      "vocabularyId": "f5183fdc-d35d-4cec-b28e-845d13180088",
+      "word": "invasion",
+      "meaningZh": "侵犯；侵入；侵害",
+      "exampleId": "f5183fdc-d35d-4cec-b28e-845d13180088-visual-ex",
+      "styleFamily": "ecological field-guide illustration",
+      "sentenceEn": "The forest faces an invasion of fast-growing non-native vines.",
+      "sentenceZh": "这片森林正面临快速生长的外来藤蔓入侵。",
+      "scene": "A clear ecological boundary shows dense invasive vines crossing from a roadside into a native forest and smothering young trees, while conservation workers carefully contain the advancing plants.",
+      "altText": "Fast-growing invasive vines advance across a boundary into a native forest.",
+      "riskTags": [
+        "ecology",
+        "spatial_boundary",
+        "cause_effect",
+        "people_face",
+        "non_military"
+      ]
+    },
+    {
+      "vocabularyId": "2d1eaa66-336f-4ca0-872c-e2777a68b53b",
+      "word": "nonetheless",
+      "meaningZh": "尽管如此；不过",
+      "exampleId": "2d1eaa66-336f-4ca0-872c-e2777a68b53b-visual-ex",
+      "styleFamily": "dramatic perseverance poster illustration",
+      "sentenceEn": "The rain was heavy; nonetheless, she finished the race.",
+      "sentenceZh": "雨下得很大；尽管如此，她还是完成了比赛。",
+      "scene": "In heavy rain and strong wind, an exhausted adult runner continues forward and crosses a plain finish ribbon, her determined expression contrasting with the difficult weather around her.",
+      "altText": "A runner finishes the race nonetheless despite heavy rain.",
+      "riskTags": [
+        "contrast",
+        "cause_effect",
+        "weather",
+        "people_face",
+        "perseverance"
+      ]
+    },
+    {
+      "vocabularyId": "38ec50a5-48a9-4848-a72c-8272a48157ac",
+      "word": "adequate",
+      "meaningZh": "适当的；足够的",
+      "exampleId": "38ec50a5-48a9-4848-a72c-8272a48157ac-visual-ex",
+      "styleFamily": "clear outdoor-safety illustration",
+      "sentenceEn": "The small shelter provides adequate protection for two hikers.",
+      "sentenceZh": "这座小棚屋为两名徒步者提供了足够的保护。",
+      "scene": "Exactly two adult hikers sit dry and comfortable inside a compact trail shelter while heavy rain falls just beyond the roof edge, showing that the modest space is sufficient for both.",
+      "altText": "A compact shelter gives two hikers adequate protection from heavy rain.",
+      "riskTags": [
+        "adequacy",
+        "exact_quantity",
+        "spatial_boundary",
+        "people_face",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "87fdbb6e-6d92-4f3c-b95e-b09955803e69",
+      "word": "piano",
+      "meaningZh": "钢琴",
+      "exampleId": "87fdbb6e-6d92-4f3c-b95e-b09955803e69-visual-ex",
+      "styleFamily": "elegant concert-poster watercolor illustration",
+      "sentenceEn": "She practices the piano before the evening recital.",
+      "sentenceZh": "她在晚间独奏会前练习钢琴。",
+      "scene": "An adult Chinese pianist practices at a polished grand piano in a quiet conservatory hall, reading from blank abstract staff shapes while her natural hands rest correctly across the keys.",
+      "altText": "A Chinese pianist practices at a grand piano in a conservatory hall.",
+      "riskTags": [
+        "musical_instrument",
+        "hands",
+        "people_face",
+        "chinese_cultural_context",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "4e8edf75-fafd-4f50-ae5f-058a5991e930",
+      "word": "grocery",
+      "meaningZh": "食品杂货店；食品杂货业",
+      "exampleId": "4e8edf75-fafd-4f50-ae5f-058a5991e930-visual-ex",
+      "styleFamily": "lively market watercolor illustration",
+      "sentenceEn": "She buys fresh vegetables at the neighborhood grocery.",
+      "sentenceZh": "她在社区食品杂货店购买新鲜蔬菜。",
+      "scene": "At a welcoming Chinese neighborhood grocery, an adult shopper selects leafy greens and tomatoes from wooden produce crates while the shopkeeper weighs vegetables on a simple scale.",
+      "altText": "A shopper buys fresh vegetables at a Chinese neighborhood grocery.",
+      "riskTags": [
+        "food_market",
+        "people_face",
+        "hands",
+        "chinese_cultural_context",
+        "no_labels"
+      ]
+    }
+  ]
+}

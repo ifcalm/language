@@ -6,10 +6,34 @@ import {
 } from '../vocabulary/api'
 import './sentence-practice.css'
 
-const PRACTICE_VOCABULARY_LIMIT = 240
-const SIMPLE_SENTENCE_MIN_WORDS = 5
-const SIMPLE_SENTENCE_MAX_WORDS = 12
+const PRACTICE_PAGE_SIZE = 500
+const RECENT_SECONDARY_WINDOW = 50
+const PROGRESS_STORAGE_KEY = 'english-orbit:sentence-practice-progress-v2'
 const WORD_PATTERN = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g
+
+async function requestPracticePage(
+  offset: number,
+  signal: AbortSignal,
+) {
+  let lastError: unknown
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      return await requestVocabularyList(
+        { query: '', offset, limit: PRACTICE_PAGE_SIZE },
+        signal,
+      )
+    } catch (error) {
+      lastError = error
+      if (signal.aborted) {
+        throw error
+      }
+      await new Promise((resolve) => window.setTimeout(resolve, 300 * (attempt + 1)))
+    }
+  }
+
+  throw lastError
+}
 
 const SECOND_TARGET_STOP_WORDS = new Set([
   'about',
@@ -63,21 +87,59 @@ interface PracticeTarget extends SentenceWord {
 
 interface SentenceExercise {
   id: string
+  vocabularyWord: string
   sentenceEn: string
   sentenceZh: string
   targets: [PracticeTarget, PracticeTarget]
+}
+
+interface ExerciseDraft {
+  id: string
+  vocabularyWord: string
+  sentenceEn: string
+  sentenceZh: string
+  primary: SentenceWord
+  secondaryCandidates: SentenceWord[]
+}
+
+const IRREGULAR_FORMS: Record<string, string[]> = {
+  be: ['am', 'is', 'are', 'was', 'were', 'been', 'being'],
+  become: ['became', 'become', 'becomes', 'becoming'],
+  begin: ['began', 'begun', 'begins', 'beginning'],
+  bring: ['brought', 'brings', 'bringing'],
+  come: ['came', 'comes', 'coming'],
+  do: ['does', 'did', 'done', 'doing'],
+  feel: ['felt', 'feels', 'feeling'],
+  find: ['found', 'finds', 'finding'],
+  get: ['got', 'gotten', 'gets', 'getting'],
+  give: ['gave', 'given', 'gives', 'giving'],
+  go: ['went', 'gone', 'goes', 'going'],
+  have: ['has', 'had', 'having'],
+  hear: ['heard', 'hears', 'hearing'],
+  hold: ['held', 'holds', 'holding'],
+  keep: ['kept', 'keeps', 'keeping'],
+  know: ['knew', 'known', 'knows', 'knowing'],
+  leave: ['left', 'leaves', 'leaving'],
+  make: ['made', 'makes', 'making'],
+  put: ['put', 'puts', 'putting'],
+  say: ['said', 'says', 'saying'],
+  see: ['saw', 'seen', 'sees', 'seeing'],
+  stand: ['stood', 'stands', 'standing'],
+  take: ['took', 'taken', 'takes', 'taking'],
+  tell: ['told', 'tells', 'telling'],
+  think: ['thought', 'thinks', 'thinking'],
+  write: ['wrote', 'written', 'writes', 'writing'],
 }
 
 function normalizeWord(value: string) {
   return value.trim().toLowerCase().replace('’', "'")
 }
 
-function isTargetWordForm(candidate: string, vocabularyWord: string) {
+function getTargetWordForms(vocabularyWord: string) {
   const word = normalizeWord(vocabularyWord)
-  const token = normalizeWord(candidate)
 
   if (!word || !/^[a-z]+$/.test(word)) {
-    return token === word
+    return new Set([word])
   }
 
   const forms = new Set([
@@ -98,7 +160,15 @@ function isTargetWordForm(candidate: string, vocabularyWord: string) {
     forms.add(`${word.slice(0, -1)}ing`)
   }
 
-  return forms.has(token)
+  for (const irregularForm of IRREGULAR_FORMS[word] ?? []) {
+    forms.add(irregularForm)
+  }
+
+  return forms
+}
+
+function isTargetWordForm(candidate: string, vocabularyWord: string) {
+  return getTargetWordForms(vocabularyWord).has(normalizeWord(candidate))
 }
 
 function getSentenceWords(sentence: string): SentenceWord[] {
@@ -109,28 +179,11 @@ function getSentenceWords(sentence: string): SentenceWord[] {
   }))
 }
 
-function buildExercise(
+function buildExerciseDraft(
   item: CoreVocabularyEntry,
   example: VocabularyExample,
-): SentenceExercise | null {
-  const normalizedVocabularyWord = normalizeWord(item.word)
-
-  if (
-    normalizedVocabularyWord.length < 4 ||
-    SECOND_TARGET_STOP_WORDS.has(normalizedVocabularyWord)
-  ) {
-    return null
-  }
-
+): ExerciseDraft | null {
   const words = getSentenceWords(example.sentenceEn)
-
-  if (
-    words.length < SIMPLE_SENTENCE_MIN_WORDS ||
-    words.length > SIMPLE_SENTENCE_MAX_WORDS ||
-    /[;:]/.test(example.sentenceEn)
-  ) {
-    return null
-  }
 
   const primaryIndex = words.findIndex((word) =>
     isTargetWordForm(word.text, item.word),
@@ -146,49 +199,87 @@ function buildExercise(
       const normalized = normalizeWord(word.text)
       return (
         index !== primaryIndex &&
-        normalized.length >= 4 &&
+        normalized.length >= 3 &&
         !SECOND_TARGET_STOP_WORDS.has(normalized)
       )
     })
-    .sort((left, right) => {
-      const leftDistance = Math.abs(left.index - primaryIndex)
-      const rightDistance = Math.abs(right.index - primaryIndex)
-      return leftDistance - rightDistance || left.index - right.index
-    })
+    .map(({ word }) => word)
 
-  const secondary = secondaryCandidates[0]?.word
-
-  if (!secondary) {
+  if (secondaryCandidates.length === 0) {
     return null
   }
 
-  const primary = words[primaryIndex]
-  const targets = [primary, secondary]
-    .sort((left, right) => left.start - right.start)
-    .map((word, index) => ({
-      ...word,
-      id: `${example.id}-${index}`,
-    })) as [PracticeTarget, PracticeTarget]
-
   return {
     id: `${item.id}-${example.id}`,
+    vocabularyWord: item.word,
     sentenceEn: example.sentenceEn,
     sentenceZh: example.sentenceZh,
-    targets,
+    primary: words[primaryIndex],
+    secondaryCandidates,
   }
 }
 
 function buildExercises(items: CoreVocabularyEntry[]) {
+  const frequencyByWord = new Map(
+    items.map((item) => [normalizeWord(item.word), item.frequencyRank ?? 999_999]),
+  )
+  const practicedWords = new Set<string>()
+  const recentSecondaryWords: string[] = []
   const exercises: SentenceExercise[] = []
 
   for (const item of items) {
-    for (const example of item.examples ?? []) {
-      const exercise = buildExercise(item, example)
+    let draft: ExerciseDraft | null = null
 
-      if (exercise) {
-        exercises.push(exercise)
+    for (const example of item.examples ?? []) {
+      draft = buildExerciseDraft(item, example)
+
+      if (draft) {
         break
       }
+    }
+
+    if (!draft) {
+      continue
+    }
+
+    const recentWords = new Set(recentSecondaryWords)
+    const rankedCandidates = [...draft.secondaryCandidates].sort((left, right) => {
+      const leftWord = normalizeWord(left.text)
+      const rightWord = normalizeWord(right.text)
+      const leftRecent = recentWords.has(leftWord) ? 1 : 0
+      const rightRecent = recentWords.has(rightWord) ? 1 : 0
+      const leftPracticed = practicedWords.has(leftWord) ? 1 : 0
+      const rightPracticed = practicedWords.has(rightWord) ? 1 : 0
+
+      return (
+        leftRecent - rightRecent ||
+        leftPracticed - rightPracticed ||
+        (frequencyByWord.get(leftWord) ?? 999_999) -
+          (frequencyByWord.get(rightWord) ?? 999_999) ||
+        left.start - right.start
+      )
+    })
+    const secondary = rankedCandidates[0]
+    const targets = [draft.primary, secondary]
+      .sort((left, right) => left.start - right.start)
+      .map((word, index) => ({
+        ...word,
+        id: `${draft.id}-${index}`,
+      })) as [PracticeTarget, PracticeTarget]
+
+    exercises.push({
+      id: draft.id,
+      vocabularyWord: draft.vocabularyWord,
+      sentenceEn: draft.sentenceEn,
+      sentenceZh: draft.sentenceZh,
+      targets,
+    })
+
+    practicedWords.add(normalizeWord(draft.primary.text))
+    practicedWords.add(normalizeWord(secondary.text))
+    recentSecondaryWords.push(normalizeWord(secondary.text))
+    if (recentSecondaryWords.length > RECENT_SECONDARY_WINDOW) {
+      recentSecondaryWords.shift()
     }
   }
 
@@ -216,6 +307,8 @@ function SentencePracticePage() {
   const [answers, setAnswers] = useState(['', ''])
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState('')
+  const [loadedCount, setLoadedCount] = useState(0)
+  const [availableCount, setAvailableCount] = useState(0)
   const inputRefs = useRef<Array<HTMLInputElement | null>>([])
 
   const exercises = useMemo(() => buildExercises(vocabulary), [vocabulary])
@@ -226,6 +319,7 @@ function SentencePracticePage() {
       )
     : []
   const isComplete = answerStates.every((state) => state === 'complete')
+  const displayedExerciseCount = availableCount || exercises.length
 
   useEffect(() => {
     const controller = new AbortController()
@@ -233,17 +327,70 @@ function SentencePracticePage() {
     async function loadPracticeSentences() {
       setIsLoading(true)
       setLoadError('')
+      let hasLoadedInitialPage = false
 
       try {
-        const payload = await requestVocabularyList(
-          { query: '', offset: 0, limit: PRACTICE_VOCABULARY_LIMIT },
-          controller.signal,
-        )
-        setVocabulary(payload.items.map(mapApiVocabularyItem))
+        const firstPage = await requestPracticePage(0, controller.signal)
+        const allItems = [...firstPage.items]
+        setAvailableCount(firstPage.pagination.total)
+        setLoadedCount(allItems.length)
+        hasLoadedInitialPage = true
+
+        const savedExerciseId = (() => {
+          try {
+            return window.localStorage.getItem(PROGRESS_STORAGE_KEY)
+          } catch {
+            return null
+          }
+        })()
+
+        function publishLoadedItems() {
+          const mappedVocabulary = allItems.map(mapApiVocabularyItem)
+          const preparedExercises = buildExercises(mappedVocabulary)
+          if (savedExerciseId) {
+            const savedIndex = preparedExercises.findIndex(
+              (candidate) => candidate.id === savedExerciseId,
+            )
+            if (savedIndex >= 0) {
+              setExerciseIndex(savedIndex)
+            }
+          }
+          setVocabulary(mappedVocabulary)
+        }
+
+        publishLoadedItems()
+        setIsLoading(false)
+
+        const remainingOffsets: number[] = []
+        for (
+          let offset = PRACTICE_PAGE_SIZE;
+          offset < firstPage.pagination.total;
+          offset += PRACTICE_PAGE_SIZE
+        ) {
+          remainingOffsets.push(offset)
+        }
+
+        for (let index = 0; index < remainingOffsets.length; index += 2) {
+          const offsetBatch = remainingOffsets.slice(index, index + 2)
+          const pageBatch = await Promise.all(
+            offsetBatch.map((offset) =>
+              requestPracticePage(offset, controller.signal),
+            ),
+          )
+          for (const page of pageBatch) {
+            allItems.push(...page.items)
+          }
+          setLoadedCount(allItems.length)
+          publishLoadedItems()
+        }
       } catch (error) {
         if (!controller.signal.aborted) {
           setLoadError(
-            error instanceof Error ? error.message : '例句暂时无法读取',
+            hasLoadedInitialPage
+              ? '部分例句暂时无法读取，请刷新后继续加载。'
+              : error instanceof Error
+                ? error.message
+                : '例句暂时无法读取',
           )
         }
       } finally {
@@ -268,8 +415,17 @@ function SentencePracticePage() {
       return
     }
 
-    setExerciseIndex((index) => (index + 1) % exercises.length)
+    const nextIndex = (exerciseIndex + 1) % exercises.length
+    setExerciseIndex(nextIndex)
     setAnswers(['', ''])
+    try {
+      window.localStorage.setItem(
+        PROGRESS_STORAGE_KEY,
+        exercises[nextIndex].id,
+      )
+    } catch {
+      // Progress remains usable for the current session without persistence.
+    }
   }
 
   function updateAnswer(index: number, value: string) {
@@ -331,13 +487,18 @@ function SentencePracticePage() {
   }
 
   if (isLoading) {
-    return <section className="panel sentence-practice-message">正在准备例句…</section>
+    return (
+      <section className="panel sentence-practice-message">
+        正在准备例句…
+        {availableCount > 0 ? `（${loadedCount} / ${availableCount}）` : ''}
+      </section>
+    )
   }
 
-  if (loadError || !exercise) {
+  if (!exercise) {
     return (
       <section className="panel sentence-practice-message" role="status">
-        {loadError ? '例句暂时无法读取，请稍后再试。' : '暂时没有可练习的例句。'}
+        {loadError || '暂时没有可练习的例句。'}
       </section>
     )
   }
@@ -345,9 +506,17 @@ function SentencePracticePage() {
   return (
     <section className="panel sentence-practice-card">
       <div className="sentence-practice-intro">
-        <span>Sentence Practice</span>
+        <div className="sentence-practice-meta">
+          <span>Sentence Practice</span>
+          <strong>
+            第 {exerciseIndex + 1} / {displayedExerciseCount} 题
+          </strong>
+        </div>
         <h2>补全句子中的两个单词</h2>
-        <p>灰色单词是提示。直接输入，拼写正确会变绿，错误会变红。</p>
+        <p>
+          共 {displayedExerciseCount * 2} 个填空。优先练习新词，必要时复习高频核心词。
+        </p>
+        {loadError ? <p className="sentence-practice-load-warning">{loadError}</p> : null}
       </div>
 
       <div className="sentence-practice-stage">

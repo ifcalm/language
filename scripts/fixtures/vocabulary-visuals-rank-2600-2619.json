@@ -1,0 +1,350 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2600-2619",
+  "batchId": "auto-rank-2600-2619-20260907",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": []
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "17661308-32f7-4143-9846-953f0d44cf91",
+      "word": "flee",
+      "meaningZh": "逃避；逃跑；逃走；逃；消失",
+      "exampleId": "17661308-32f7-4143-9846-953f0d44cf91-visual-ex",
+      "styleFamily": "graphic novel illustration",
+      "sentenceEn": "Residents flee the village as floodwater rises.",
+      "sentenceZh": "洪水上涨时，居民们逃离村庄。",
+      "scene": "Chinese adult residents move quickly uphill away from visibly rising floodwater while rescue workers guide them toward safety.",
+      "altText": "Residents fleeing rising floodwater toward higher ground.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "cause_effect",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "f302546d-460f-494d-b758-0f32e05ddda7",
+      "word": "mm-hmm",
+      "meaningZh": "嗯哼",
+      "exampleId": "f302546d-460f-494d-b758-0f32e05ddda7-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "She nods and says mm-hmm to show that she agrees.",
+      "sentenceZh": "她点头说“嗯哼”，表示同意。",
+      "scene": "During a face-to-face conversation, one adult listener nods warmly with closed lips and an affirming expression while the other person speaks.",
+      "altText": "A listener nodding in agreement during a conversation.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "8430bdc4-2c4c-4972-ab0c-690d83b51672",
+      "word": "leather",
+      "meaningZh": "皮革；皮制品；马镫的皮带",
+      "exampleId": "8430bdc4-2c4c-4972-ab0c-690d83b51672-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "The craftsperson cuts a piece of brown leather for the bag.",
+      "sentenceZh": "手艺人裁下一块棕色皮革来制作包。",
+      "scene": "An adult leatherworker cuts a flexible brown hide on a workbench beside a partly assembled bag, showing the material clearly.",
+      "altText": "A craftsperson cutting brown leather for a bag.",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "40d7d6d7-2417-4f7b-a37e-9d284a6d2c36",
+      "word": "distribute",
+      "meaningZh": "分配；分发；分布",
+      "exampleId": "40d7d6d7-2417-4f7b-a37e-9d284a6d2c36-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "Volunteers distribute food boxes to five families.",
+      "sentenceZh": "志愿者向五户家庭分发食品箱。",
+      "scene": "Chinese adult volunteers pass identical food boxes from one central stack outward to exactly five waiting family groups in an orderly community courtyard.",
+      "altText": "Volunteers distributing food boxes to five families.",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "47b63f29-48b1-401c-8cfa-3f1cc1db004a",
+      "word": "evolution",
+      "meaningZh": "进化；演变",
+      "exampleId": "47b63f29-48b1-401c-8cfa-3f1cc1db004a-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The display shows the evolution of the bicycle.",
+      "sentenceZh": "展览展示了自行车的演变。",
+      "scene": "A museum-like sequence of exactly four bicycles progresses from an early wooden model to a modern streamlined bicycle, all shown at the same scale.",
+      "altText": "Four bicycles showing evolution from early to modern designs.",
+      "riskTags": [
+        "sequence",
+        "comparison",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "e921a868-0802-4075-a018-9833da6bb593",
+      "word": "ill",
+      "meaningZh": "生病的；不健康的；坏的",
+      "exampleId": "e921a868-0802-4075-a018-9833da6bb593-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "The ill child rests while a doctor checks her temperature.",
+      "sentenceZh": "生病的孩子休息时，医生为她测量体温。",
+      "scene": "A Chinese school-age child rests in bed looking unwell while an adult doctor gently checks her forehead with a thermometer and a parent watches.",
+      "altText": "An ill child resting while a doctor checks her temperature.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "c5cf4c03-eb49-4f38-9ebf-39e5837b5abe",
+      "word": "tribe",
+      "meaningZh": "部落",
+      "exampleId": "c5cf4c03-eb49-4f38-9ebf-39e5837b5abe-visual-ex",
+      "styleFamily": "woven textile illustration",
+      "sentenceEn": "The tribe gathers around the council fire to share decisions.",
+      "sentenceZh": "部落成员围着议事火堆共同作出决定。",
+      "scene": "Members of an Indigenous community from multiple generations gather in a respectful circle around a central council fire, listening to one another; culturally neutral clothing and no invented sacred symbols.",
+      "altText": "Members of a tribe gathered respectfully around a council fire.",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "8501f6e0-dd6c-49c6-9622-8fc4ae12dce8",
+      "word": "shelf",
+      "meaningZh": "架子；搁板",
+      "exampleId": "8501f6e0-dd6c-49c6-9622-8fc4ae12dce8-visual-ex",
+      "styleFamily": "isometric cut-paper illustration",
+      "sentenceEn": "The librarian places the atlas on the top shelf.",
+      "sentenceZh": "图书管理员把地图册放到最上层书架。",
+      "scene": "In a Chinese public library, an adult librarian reaches up to place one large blank-covered atlas on the clearly visible top shelf of a tall bookcase.",
+      "altText": "A librarian placing an atlas on the top shelf.",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9aa601f4-cecc-4536-b79e-c6658da2aa12",
+      "word": "grandfather",
+      "meaningZh": "祖父；外祖父",
+      "exampleId": "9aa601f4-cecc-4536-b79e-c6658da2aa12-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "My grandfather teaches me how to prune the bonsai tree.",
+      "sentenceZh": "我的祖父教我如何修剪盆景。",
+      "scene": "An elderly Chinese grandfather patiently guides his adult grandchild’s hands while they prune a bonsai together in a courtyard.",
+      "altText": "A grandfather teaching his grandchild to prune a bonsai.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "cf2090c6-3c8d-4a2e-95c1-040a5bd75d80",
+      "word": "lawn",
+      "meaningZh": "草地；草坪；上等细麻布；细筛",
+      "exampleId": "cf2090c6-3c8d-4a2e-95c1-040a5bd75d80-visual-ex",
+      "styleFamily": "hand-drawn animation still",
+      "sentenceEn": "The gardener mows a neat path across the lawn.",
+      "sentenceZh": "园丁在草坪上修剪出一条整齐的小路。",
+      "scene": "An adult gardener pushes a mower across a wide green lawn, leaving one crisp shorter strip behind that contrasts with the taller grass.",
+      "altText": "A gardener mowing a neat strip across a green lawn.",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "a8f6f2f6-f696-4138-b0e5-a0320a462993",
+      "word": "buyer",
+      "meaningZh": "买家",
+      "exampleId": "a8f6f2f6-f696-4138-b0e5-a0320a462993-visual-ex",
+      "styleFamily": "mixed-media collage",
+      "sentenceEn": "The buyer inspects the pottery before making a choice.",
+      "sentenceZh": "买家在作出选择前仔细查看陶器。",
+      "scene": "At a Chinese craft market, an adult buyer carefully lifts one bowl to inspect it while comparing it with three others on the stall.",
+      "altText": "A buyer inspecting pottery before choosing one bowl.",
+      "riskTags": [
+        "Chinese_culture",
+        "comparison",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ce2e0bad-93df-49f6-a496-cfb11e66b950",
+      "word": "dining",
+      "meaningZh": "用餐",
+      "exampleId": "ce2e0bad-93df-49f6-a496-cfb11e66b950-visual-ex",
+      "styleFamily": "Chinese folk-art-inspired illustration",
+      "sentenceEn": "The family is dining together around a round table.",
+      "sentenceZh": "一家人围着圆桌一起用餐。",
+      "scene": "A multigenerational Chinese family shares dishes while dining around one round table, actively serving and eating together.",
+      "altText": "A Chinese family dining together around a round table.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7c2326f9-b710-4726-bbb6-51781f6c2b6d",
+      "word": "wisdom",
+      "meaningZh": "智慧",
+      "exampleId": "7c2326f9-b710-4726-bbb6-51781f6c2b6d-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "Years of experience gave the carpenter wisdom about the wood.",
+      "sentenceZh": "多年的经验让木匠懂得如何判断木材。",
+      "scene": "An elderly Chinese carpenter studies the grain and taps a board while a younger apprentice listens carefully, surrounded by finished joinery.",
+      "altText": "An experienced carpenter sharing wisdom about wood with an apprentice.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "reference",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "81107a98-c99d-45a4-81b3-2561a004e064",
+      "word": "council",
+      "meaningZh": "会议；委员会",
+      "exampleId": "81107a98-c99d-45a4-81b3-2561a004e064-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The village council meets to decide where to build the bridge.",
+      "sentenceZh": "村民议事会开会决定把桥建在哪里。",
+      "scene": "Exactly five Chinese village council members sit around a map-shaped model of a river, jointly pointing toward two possible bridge sites without written labels.",
+      "altText": "Five council members discussing where to build a bridge.",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "27be15a4-59da-4aef-9f07-775e130b4525",
+      "word": "vulnerable",
+      "meaningZh": "易受伤害的；有弱点的；脆弱的",
+      "exampleId": "27be15a4-59da-4aef-9f07-775e130b4525-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The young tree is vulnerable to the strong coastal wind.",
+      "sentenceZh": "这棵幼树容易受到沿海强风的伤害。",
+      "scene": "A thin young tree bends sharply under strong coastal wind while mature trees and a new support stake reveal why it needs protection.",
+      "altText": "A vulnerable young tree bending in strong coastal wind.",
+      "riskTags": [
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "7e082abb-808a-4974-836b-802d67cc3cf4",
+      "word": "instance",
+      "meaningZh": "实例；例子；情况",
+      "exampleId": "7e082abb-808a-4974-836b-802d67cc3cf4-visual-ex",
+      "styleFamily": "bold geometric poster illustration",
+      "sentenceEn": "This cracked cup is one instance of the factory defect.",
+      "sentenceZh": "这个裂开的杯子是工厂缺陷的一个实例。",
+      "scene": "One cracked ceramic cup is spotlighted in the foreground while a larger group of intact cups recedes behind it, clearly presenting a single instance of a problem.",
+      "altText": "One cracked cup shown as an instance among many intact cups.",
+      "riskTags": [
+        "exact_quantity",
+        "comparison",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "b00c6fbb-e1ee-477a-ac10-a03f02522617",
+      "word": "garlic",
+      "meaningZh": "大蒜",
+      "exampleId": "b00c6fbb-e1ee-477a-ac10-a03f02522617-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The cook crushes three cloves of garlic for the sauce.",
+      "sentenceZh": "厨师为酱汁压碎三瓣大蒜。",
+      "scene": "In a Chinese home kitchen, an adult cook crushes exactly three peeled garlic cloves beside a bowl of sauce and a whole garlic bulb.",
+      "altText": "A cook crushing three cloves of garlic for a sauce.",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "595a54cd-de37-4fac-b3a6-f9a2d7314cf4",
+      "word": "capability",
+      "meaningZh": "能力",
+      "exampleId": "595a54cd-de37-4fac-b3a6-f9a2d7314cf4-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "The rescue robot proves its capability by climbing the broken stairs.",
+      "sentenceZh": "救援机器人通过攀爬破损楼梯证明了它的能力。",
+      "scene": "A stylized rescue robot successfully climbs broken stairs while carrying a medical pack, demonstrating what it is capable of doing.",
+      "altText": "A rescue robot demonstrating its capability on broken stairs.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "360507ef-aa48-443a-ba8e-668cc921fe6a",
+      "word": "poetry",
+      "meaningZh": "诗歌",
+      "exampleId": "360507ef-aa48-443a-ba8e-668cc921fe6a-visual-ex",
+      "styleFamily": "Chinese shadow-puppet-inspired illustration",
+      "sentenceEn": "She finds poetry in the rhythm of rain on lotus leaves.",
+      "sentenceZh": "她在雨打荷叶的节奏中感受到诗意。",
+      "scene": "A Chinese adult writer listens beneath a pavilion as raindrops create rhythmic rings across lotus leaves, inspiring her blank open notebook.",
+      "altText": "A writer finding poetry in rain falling on lotus leaves.",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "db87e6ae-d805-40b1-91b9-548603dffc8a",
+      "word": "celebrity",
+      "meaningZh": "名人；名流",
+      "exampleId": "db87e6ae-d805-40b1-91b9-548603dffc8a-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "The celebrity greets photographers at the film premiere.",
+      "sentenceZh": "这位名人在电影首映式上向摄影师致意。",
+      "scene": "A Chinese adult film celebrity in elegant plain clothing waves to a row of photographers at a premiere entrance, clearly recognized by the surrounding attention.",
+      "altText": "A film celebrity greeting photographers at a premiere.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

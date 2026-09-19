@@ -1,0 +1,342 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3341-3360",
+  "batchId": "auto-rank-3341-3360-20260919",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "traveler",
+      "dedicate",
+      "carve",
+      "needle",
+      "portfolio",
+      "engagement"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "8960cb30-e2d3-4035-ae9e-5c440e9f88c7",
+      "word": "detective",
+      "meaningZh": "侦探",
+      "exampleId": "8960cb30-e2d3-4035-ae9e-5c440e9f88c7-visual-ex",
+      "styleFamily": "ink-and-watercolor mystery illustration",
+      "sentenceEn": "The detective examined the muddy footprints beside the window.",
+      "sentenceZh": "侦探仔细查看窗边泥泞的脚印。",
+      "scene": "An adult woman detective in an ordinary coat kneels beside clear muddy shoe prints below an open window, using a magnifying glass to inspect a clue. Complete thoughtful face, natural hands. Quiet nonviolent investigation, no weapons, police badges, papers with writing or logos.",
+      "altText": "侦探用放大镜查看窗边的泥脚印。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "43859a8b-7c5a-4697-8ad2-e381e750124a",
+      "word": "traveler",
+      "meaningZh": "旅行者",
+      "exampleId": "43859a8b-7c5a-4697-8ad2-e381e750124a-visual-ex",
+      "styleFamily": "textured travel watercolor illustration",
+      "sentenceEn": "The traveler crossed the stone bridge with a backpack.",
+      "sentenceZh": "旅行者背着背包走过石桥。",
+      "scene": "An adult traveler with a practical backpack walks across a traditional Chinese stone arch bridge beside a waterside village of white walls and dark tiled roofs. Complete curious three-quarter face, natural walking anatomy, gentle daylight; no signs, characters or logos.",
+      "altText": "背包旅行者走过江南水乡的石桥。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c061ae6d-1af8-42e3-9b9f-1d69cbc7d373",
+      "word": "click",
+      "meaningZh": "咔哒声；啪嗒声；作咔哒声",
+      "exampleId": "c061ae6d-1af8-42e3-9b9f-1d69cbc7d373-visual-ex",
+      "styleFamily": "precise gouache object illustration",
+      "sentenceEn": "The buckle closed with a clear click.",
+      "sentenceZh": "搭扣合上时发出清脆的咔哒声。",
+      "scene": "Close-up of an adult hand fastening a plain backpack quick-release buckle at the instant its two halves snap together. The paired buckle sections align and visibly lock, a few subtle motion ticks convey the small sound without text. Anatomically natural fingers, no letters, numbers, brand symbols or onomatopoeia.",
+      "altText": "手把背包搭扣扣紧，发出咔哒声。",
+      "riskTags": [
+        "hands",
+        "mechanical_detail",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "5112b498-2384-42cd-95ff-5c102ec060b7",
+      "word": "compensation",
+      "meaningZh": "补偿；报酬",
+      "exampleId": "5112b498-2384-42cd-95ff-5c102ec060b7-visual-ex",
+      "styleFamily": "warm editorial cut-paper illustration",
+      "sentenceEn": "The customer received compensation for the broken vase.",
+      "sentenceZh": "顾客因花瓶破损获得了补偿。",
+      "scene": "At a small shop counter a clerk apologetically gives an adult customer an envelope with fictional plain geometric banknotes. A safely contained broken vase on a tray connects the payment to the loss. Both complete faces visible, hands natural. No actual currency designs, readable text or logos.",
+      "altText": "店员为破损花瓶向顾客提供补偿。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "f11ecd4f-1adb-44ac-a9e3-d746422e64b4",
+      "word": "exit",
+      "meaningZh": "出口；退场；离去；去世",
+      "exampleId": "f11ecd4f-1adb-44ac-a9e3-d746422e64b4-visual-ex",
+      "styleFamily": "architectural gouache narrative illustration",
+      "sentenceEn": "The visitors walked through the exit into the garden.",
+      "sentenceZh": "访客们从出口走进花园。",
+      "scene": "View from inside a small museum toward its open outward doorway leading into a bright garden. Two adult visitors walk from the darker interior through the threshold into sunlight, their complete three-quarter faces visible. Doorway and departure direction clearly focal. No exit sign or text.",
+      "altText": "访客通过出口从室内走进花园。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "74e82d38-1588-411a-b633-abfa781acf15",
+      "word": "attraction",
+      "meaningZh": "吸引力",
+      "exampleId": "74e82d38-1588-411a-b633-abfa781acf15-visual-ex",
+      "styleFamily": "fine botanical watercolor illustration",
+      "sentenceEn": "The bright flowers were the main attraction for the butterflies.",
+      "sentenceZh": "鲜艳的花朵是吸引蝴蝶的主要因素。",
+      "scene": "Several anatomically plausible butterflies approach and settle on vivid flowers in a simple sunlit garden. Nectar-rich blossoms are the clear focus drawing the insects toward them. Human-free botanical illustration, no arrows, written labels or marks.",
+      "altText": "鲜艳的花朵吸引蝴蝶飞来。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "a370a3d0-059b-438b-a16c-b849a50ff29a",
+      "word": "dedicate",
+      "meaningZh": "献出；贡献",
+      "exampleId": "a370a3d0-059b-438b-a16c-b849a50ff29a-visual-ex",
+      "styleFamily": "warm textured community gouache illustration",
+      "sentenceEn": "She will dedicate her weekends to restoring the old courtyard.",
+      "sentenceZh": "她将把周末时间用于修复老院子。",
+      "scene": "An adult community volunteer carefully repairs weathered wooden lattice in a traditional Chinese courtyard with a small hand tool, while a basket of tools and partly restored panels show ongoing committed work. Complete intent face, natural hand grip, safe posture. No calendar, characters or text.",
+      "altText": "志愿者投入时间修复中式老院子。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "d23677c4-8f9b-4314-befc-f8fd5696d7da",
+      "word": "altogether",
+      "meaningZh": "完全地；总而言之",
+      "exampleId": "d23677c4-8f9b-4314-befc-f8fd5696d7da-visual-ex",
+      "styleFamily": "misty watercolor landscape illustration",
+      "sentenceEn": "The rest of the path disappeared altogether beneath the floodwater.",
+      "sentenceZh": "小路的其余部分完全消失在洪水之下。",
+      "scene": "A formerly narrow forest footpath visible only on the dry foreground stops at broad calm floodwater, with its continuation completely submerged and nowhere visible. Tree trunks and grass partly underwater establish flooding. No people, danger, arrows or text; clear visual total disappearance.",
+      "altText": "森林小路的后半段完全被洪水淹没。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "e02bdbc1-2605-4dba-8a44-4148c6291d37",
+      "word": "pickup",
+      "meaningZh": "取件；皮卡",
+      "exampleId": "e02bdbc1-2605-4dba-8a44-4148c6291d37-visual-ex",
+      "styleFamily": "clean flat-shaded vehicle illustration",
+      "sentenceEn": "The farmer loaded pumpkins into the pickup.",
+      "sentenceZh": "农民把南瓜装进皮卡。",
+      "scene": "An adult farmer loads orange pumpkins into the open cargo bed of a small unbranded pickup truck beside a field. Entire vehicle silhouette visible with passenger cab and separate open bed unmistakable. Complete natural face and hands. Plain blank plate and grille, no badges or letters.",
+      "altText": "农民把南瓜装入皮卡的货斗。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "vehicle_detail",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "b0fdf6a7-90b5-4fcd-98ec-03acb6abc865",
+      "word": "carve",
+      "meaningZh": "雕刻；切开",
+      "exampleId": "b0fdf6a7-90b5-4fcd-98ec-03acb6abc865-visual-ex",
+      "styleFamily": "fine ink-and-gouache craft illustration",
+      "sentenceEn": "The artisan used a chisel to carve a flower into the wood.",
+      "sentenceZh": "工匠用凿子在木头上雕刻花朵。",
+      "scene": "A Chinese woodcarving artisan works a restrained floral relief on a firmly clamped wooden panel. A small chisel held safely away from the supporting hand removes a thin wood shaving, flower relief and grain clearly visible. Complete mature focused face and natural hands, no inscription or text.",
+      "altText": "木雕工匠用凿子雕刻木质花纹。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "tool_interaction"
+      ]
+    },
+    {
+      "vocabularyId": "49d5827c-3871-4a2c-8d95-c5db59ef7714",
+      "word": "needle",
+      "meaningZh": "针；尖；用针缝",
+      "exampleId": "49d5827c-3871-4a2c-8d95-c5db59ef7714-visual-ex",
+      "styleFamily": "colored-pencil embroidery illustration",
+      "sentenceEn": "She guided the needle through the embroidered silk.",
+      "sentenceZh": "她把针穿过绣花丝绸。",
+      "scene": "Close-up of an adult Chinese embroiderer at a silk hoop, a single slender sewing needle with a visible eye and thread passing through floral embroidered silk. Natural hand positioning, complete focused face visible above work. Needle and continuous thread path clear, no words or symbols.",
+      "altText": "绣娘用穿线的针缝制丝绸花纹。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "fine_detail"
+      ]
+    },
+    {
+      "vocabularyId": "101ab2a6-3142-477e-96d5-10ba75b4e944",
+      "word": "belly",
+      "meaningZh": "腹部；食欲；使鼓起",
+      "exampleId": "101ab2a6-3142-477e-96d5-10ba75b4e944-visual-ex",
+      "styleFamily": "warm animal gouache illustration",
+      "sentenceEn": "The puppy rolled over to show its belly.",
+      "sentenceZh": "小狗翻过身来露出肚子。",
+      "scene": "A healthy puppy lies playfully on its back on soft grass, paws relaxed and rounded belly plainly exposed toward viewer. Natural canine anatomy, happy expressive animal face, no clothing or anthropomorphic props. Human-free simple composition, no marks or text.",
+      "altText": "小狗仰躺在草地上露出肚子。",
+      "riskTags": [
+        "body_part",
+        "animal_anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "e343f82e-c71c-4d6f-a4f5-4ad2abe852b6",
+      "word": "scare",
+      "meaningZh": "惊吓；恐慌；使恐慌",
+      "exampleId": "e343f82e-c71c-4d6f-a4f5-4ad2abe852b6-visual-ex",
+      "styleFamily": "expressive hand-drawn narrative illustration",
+      "sentenceEn": "The sudden thunder gave the camper a scare.",
+      "sentenceZh": "突如其来的雷声吓了露营者一跳。",
+      "scene": "An adult camper safely inside the open entrance of a sturdy tent flinches slightly at distant lightning and thunder beyond a forest clearing. Wide startled eyes, nose and mouth clearly visible, hand pauses over an unmarked mug. No injury, no close lightning strike, no speech text.",
+      "altText": "帐篷中的露营者被突如其来的雷声吓到。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "emotion",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "a2a6c512-b061-4cd5-902a-f7ad4d27698d",
+      "word": "portfolio",
+      "meaningZh": "作品集；投资组合；公文包",
+      "exampleId": "a2a6c512-b061-4cd5-902a-f7ad4d27698d-visual-ex",
+      "styleFamily": "colored-pencil editorial illustration",
+      "sentenceEn": "The designer presented her portfolio of courtyard sketches.",
+      "sentenceZh": "设计师展示了她的庭院草图作品集。",
+      "scene": "An adult Chinese courtyard designer shows an open large portfolio binder to a client, containing several clearly different hand-drawn courtyard design images with paving, bamboo and pavilions. Complete faces, plausible hands support the binder. Pictures only, no headings, labels, signatures, dimensions or numerals.",
+      "altText": "设计师展示收录庭院草图的作品集。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "49913299-bc62-40e2-aa16-b22c1018cd1d",
+      "word": "shuttle",
+      "meaningZh": "穿梭；梭子；往返移动之物",
+      "exampleId": "49913299-bc62-40e2-aa16-b22c1018cd1d-visual-ex",
+      "styleFamily": "clean architectural cut-paper illustration",
+      "sentenceEn": "The shuttle carried passengers from the station to the hotel.",
+      "sentenceZh": "接驳车把乘客从车站送到酒店。",
+      "scene": "A small unbranded passenger shuttle bus moves on a short road between a recognizable railway platform with tracks and a small hotel-like lodging building with balconies and suitcases near its entrance. A few adult passengers visible through side windows have complete faces. Blank plates, no signs, logos or route text.",
+      "altText": "接驳车在车站与旅馆之间运送乘客。",
+      "riskTags": [
+        "people_face",
+        "vehicle_detail",
+        "spatial_boundary",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "d6a9283d-8ed2-4294-b2f3-5eb2a18919ff",
+      "word": "invisible",
+      "meaningZh": "看不见的",
+      "exampleId": "d6a9283d-8ed2-4294-b2f3-5eb2a18919ff-visual-ex",
+      "styleFamily": "poetic botanical watercolor illustration",
+      "sentenceEn": "The invisible wind bent the tall grass.",
+      "sentenceZh": "看不见的风吹弯了高高的草。",
+      "scene": "Human-free meadow with tall grass stems and a small sapling consistently bending in one direction while loose leaves lift through the air. Show only physical effects of invisible wind, not a personified wind face, visible ribbons, ghost forms, arrows or written symbols.",
+      "altText": "看不见的风使草叶弯曲并卷起落叶。",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "bc79900e-6f9e-47e0-b65d-161a7a23a9ed",
+      "word": "timing",
+      "meaningZh": "时机",
+      "exampleId": "bc79900e-6f9e-47e0-b65d-161a7a23a9ed-visual-ex",
+      "styleFamily": "dynamic ink-and-gouache sports illustration",
+      "sentenceEn": "Perfect timing helped the goalkeeper catch the ball.",
+      "sentenceZh": "恰到好处的时机帮助守门员接住了球。",
+      "scene": "An adult goalkeeper with complete concentrated face catches one soccer ball at exactly the point it reaches gloved hands near the goal. Natural balanced body motion, single ball, visible net, no opposing collision. Plain unnumbered uniform and unbranded ball, no scoreboard or signs.",
+      "altText": "守门员在准确的时机接住足球。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "physical_process"
+      ]
+    },
+    {
+      "vocabularyId": "25870a0e-6169-42ec-9054-56ad4e93390c",
+      "word": "engagement",
+      "meaningZh": "订婚；参与",
+      "exampleId": "25870a0e-6169-42ec-9054-56ad4e93390c-visual-ex",
+      "styleFamily": "warm romantic gouache illustration",
+      "sentenceEn": "They celebrated their engagement in the lantern-lit courtyard.",
+      "sentenceZh": "他们在灯光映照的院子里庆祝订婚。",
+      "scene": "An adult couple celebrates engagement in a Chinese courtyard with plain glowing lanterns. One partner gently slides a modest engagement ring onto the other's ring finger beside a small open ring box. Complete joyful natural faces and anatomically plausible hands. No writing on lanterns or objects, no wedding ceremony yet.",
+      "altText": "情侣在灯笼照亮的院子里戴上订婚戒指。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "relationship",
+        "fine_detail"
+      ]
+    },
+    {
+      "vocabularyId": "0a925380-d54b-49de-9582-c4e0c492a634",
+      "word": "ankle",
+      "meaningZh": "踝；踝关节",
+      "exampleId": "0a925380-d54b-49de-9582-c4e0c492a634-visual-ex",
+      "styleFamily": "restrained colored-pencil body-detail illustration",
+      "sentenceEn": "Her ankle showed above the low hiking shoe.",
+      "sentenceZh": "她的脚踝露在低帮徒步鞋上方。",
+      "scene": "Close-up of one adult lower leg and foot resting naturally on a low rock, a low-cut plain hiking shoe and short sock leaving the ankle joint and rounded ankle bone clearly exposed between lower leg and foot. Healthy skin, no swelling or injury, no medical diagram labels, brand marks or text.",
+      "altText": "低帮徒步鞋上方露出脚踝关节。",
+      "riskTags": [
+        "body_part",
+        "anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "36037823-caa4-4a24-8dce-0abba7b007af",
+      "word": "transaction",
+      "meaningZh": "交易；事务（数据库）",
+      "exampleId": "36037823-caa4-4a24-8dce-0abba7b007af-visual-ex",
+      "styleFamily": "warm market editorial illustration",
+      "sentenceEn": "The transaction was complete when she paid for the apples.",
+      "sentenceZh": "她付了苹果的钱后，这笔交易就完成了。",
+      "scene": "At an ordinary produce stall an adult customer hands a few fictional unmarked banknotes to the seller while receiving a small bag of apples. Clear reciprocal exchange, complete friendly faces and natural hands. Banknotes have abstract geometric shapes only, no readable denominations or real currency details, no price labels or signs.",
+      "altText": "顾客付款并接过苹果，完成交易。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "text_risk"
+      ]
+    }
+  ]
+}

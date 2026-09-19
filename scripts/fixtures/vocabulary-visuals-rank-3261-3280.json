@@ -1,0 +1,365 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3261-3280",
+  "batchId": "auto-rank-3261-3280-20260917",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "traditionally",
+      "southeast",
+      "enthusiasm",
+      "accommodate",
+      "praise",
+      "mandate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "c9e4a32e-4600-45e5-ae5d-6bd6e76cd78e",
+      "word": "outer",
+      "meaningZh": "外部的",
+      "exampleId": "c9e4a32e-4600-45e5-ae5d-6bd6e76cd78e-visual-ex",
+      "styleFamily": "editorial 3D illustration with matte sculpted-paper surfaces",
+      "sentenceEn": "The onion's outer layer curled away from the white layers inside.",
+      "sentenceZh": "洋葱的外层卷起，与里面的白色层次分离。",
+      "scene": "A close still life shows an onion opened in a clean cross-section, with its golden-brown outer skin curling away as one continuous peel while nested white inner layers remain clearly visible; deep plum tabletop and warm cream palette, no people, utensils or writing.",
+      "altText": "洋葱金褐色的外皮卷起，露出里面的白色层次。",
+      "riskTags": [
+        "spatial_boundary",
+        "comparison",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "6ab51cb3-0077-4e10-b5f2-c63a4b405074",
+      "word": "drunk",
+      "meaningZh": "喝醉的",
+      "exampleId": "6ab51cb3-0077-4e10-b5f2-c63a4b405074-visual-ex",
+      "styleFamily": "restrained graphic-novel illustration with expressive ink contours",
+      "sentenceEn": "The drunk man handed his car keys to a sober friend.",
+      "sentenceZh": "喝醉的男子把车钥匙交给了清醒的朋友。",
+      "scene": "Outside a quiet restaurant at night, an unsteady adult man with an unfocused gaze hands his car keys to a sober adult friend who supports his elbow; a waiting taxi and a half-empty plain wine glass on a distant patio table establish the context, navy and muted amber palette, full natural faces and hands, no glamorization, logos or readable signs.",
+      "altText": "喝醉的男子将车钥匙交给朋友，旁边有等待的出租车。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "reference",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "eb550743-4b56-4193-9763-af0a45cb3374",
+      "word": "separation",
+      "meaningZh": "分离",
+      "exampleId": "eb550743-4b56-4193-9763-af0a45cb3374-visual-ex",
+      "styleFamily": "gouache landscape illustration with broad textured brushwork",
+      "sentenceEn": "A narrow channel marked the separation between the two islands.",
+      "sentenceZh": "一条狭窄水道标示出两座岛屿之间的分隔。",
+      "scene": "A high oblique view shows exactly two lush rocky islands separated by a continuous narrow ribbon of blue seawater; the shoreline shapes make the boundary unmistakable and seabirds remain tiny background accents, turquoise, moss green and chalk white palette, no boats, people, text or map labels.",
+      "altText": "两座绿色岛屿被一条连续的蓝色水道分隔开。",
+      "riskTags": [
+        "exact_quantity",
+        "spatial_boundary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "fcb4ab87-563b-4dfc-b567-cc750139dab8",
+      "word": "traditionally",
+      "meaningZh": "传统上",
+      "exampleId": "fcb4ab87-563b-4dfc-b567-cc750139dab8-visual-ex",
+      "styleFamily": "warm watercolor and expressive-line illustration",
+      "sentenceEn": "Families traditionally make dumplings together before Lunar New Year.",
+      "sentenceZh": "传统上，家人会在农历新年前一起包饺子。",
+      "scene": "In a contemporary northern Chinese family kitchen, three adult generations calmly fold crescent-shaped dumplings together around a wooden table, with a bowl of filling and neatly pleated finished dumplings in view; one plain red paper-cut window decoration without characters hints at Lunar New Year, warm terracotta and pale jade palette, complete natural faces and hands, no written couplets or labels.",
+      "altText": "农历新年前，三代家人在厨房里一起包饺子。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "Chinese_culture",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "62f65211-50af-4892-aed8-3ae44f0298d3",
+      "word": "govern",
+      "meaningZh": "统治；支配；管理",
+      "exampleId": "62f65211-50af-4892-aed8-3ae44f0298d3-visual-ex",
+      "styleFamily": "Risograph-inspired astronomical editorial illustration",
+      "sentenceEn": "Gravity governs the planets' motion around the sun.",
+      "sentenceZh": "引力支配着行星围绕太阳的运动。",
+      "scene": "A coherent stylized astronomical scene shows a luminous sun as the clear central mass and several differently sized planets following thin curved orbital paths around it; dark indigo, coral and warm yellow layered ink textures, no faces on celestial bodies, no arrows, labels, numbers or claim to depict a complete solar-system inventory.",
+      "altText": "太阳位于中心，行星沿曲线轨道围绕它运行。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning",
+        "spatial_boundary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "439ed877-30e9-415a-821a-6aa35b5ff53d",
+      "word": "southeast",
+      "meaningZh": "东南",
+      "exampleId": "439ed877-30e9-415a-821a-6aa35b5ff53d-visual-ex",
+      "styleFamily": "paper-cut geographic illustration with subtle watercolor texture",
+      "sentenceEn": "The boat sailed southeast from the island.",
+      "sentenceZh": "船从岛屿向东南方向航行。",
+      "scene": "An explicitly north-up top-down illustrated nautical map shows one coastal island with a small Jiangnan-style white-walled waterfront settlement; a red wooden boat leaves the island toward the lower-right corner along a dotted wake. An unlabeled compass rose in an otherwise empty corner has its prominent north pointer aimed straight up, establishing north-up orientation. East is right and south is down, so the boat heads diagonally southeast. Blue-green sea and warm ochre land, no letters, numbers, labels or written symbols.",
+      "altText": "朝北向上的航海图中，小船从岛屿驶向右下方的东南方向。",
+      "riskTags": [
+        "spatial_boundary",
+        "reference",
+        "directionality",
+        "Chinese_culture",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "bcac8234-e2f7-47ef-b339-0d299201c05a",
+      "word": "intelligent",
+      "meaningZh": "聪明的；智能的",
+      "exampleId": "bcac8234-e2f7-47ef-b339-0d299201c05a-visual-ex",
+      "styleFamily": "hand-drawn animation illustration with lively natural forms",
+      "sentenceEn": "The intelligent dog found a way to open the garden gate.",
+      "sentenceZh": "聪明的狗找到了打开花园门的方法。",
+      "scene": "A medium-sized dog stands on its hind legs and carefully lifts a simple low gate latch with one front paw, opening the wooden gate just enough to reveal a sunlit garden; visible latch mechanics communicate problem-solving rather than force, warm green and golden palette, anatomically plausible animal, no people, costumes or text.",
+      "altText": "聪明的狗用前爪抬起门闩，打开花园木门。",
+      "riskTags": [
+        "cause_effect",
+        "animal_accuracy",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "7dada349-e8e8-443f-a3a2-37ccacf18cae",
+      "word": "wherever",
+      "meaningZh": "无论哪里",
+      "exampleId": "7dada349-e8e8-443f-a3a2-37ccacf18cae-visual-ex",
+      "styleFamily": "three-scene graphic-novel collage with watercolor washes",
+      "sentenceEn": "Wherever the traveler camped, her dog stayed close.",
+      "sentenceZh": "无论旅行者在哪里露营，她的狗总待在身边。",
+      "scene": "Exactly three clear connected illustrated panels show the same adult traveler in the same rust jacket and the same black-and-white dog camping in different places: a pine forest, a sandy desert and a snowy lakeshore. In every panel the dog sits close beside the traveler and a small tent, preserving recognizable identities and relative proximity. All readable faces have full features, varied landscape palettes, no speech bubbles, writing, numbering or labels.",
+      "altText": "旅行者在森林、沙漠和雪地露营时，同一只狗始终陪在身边。",
+      "riskTags": [
+        "reference",
+        "sequence",
+        "comparison",
+        "people_face",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "804eaa52-e531-4454-987a-592df015f559",
+      "word": "ballot",
+      "meaningZh": "投票；投票用纸；抽签",
+      "exampleId": "804eaa52-e531-4454-987a-592df015f559-visual-ex",
+      "styleFamily": "clean editorial illustration with layered cut-paper shapes",
+      "sentenceEn": "She placed her folded ballot in the voting box.",
+      "sentenceZh": "她把折好的选票放进投票箱。",
+      "scene": "In a neutral community voting room, an adult woman drops one folded blank ballot through the narrow slot of a plain blue voting box; her calm face and complete voting hand are clearly visible, a modest table and empty wall keep the action uncluttered, no candidates, party colors, flags, symbols, written names or readable marks.",
+      "altText": "一名女子把折好的选票投入蓝色投票箱。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "exact_quantity",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "7870372e-120a-47f9-bebb-095a961558c5",
+      "word": "rhetoric",
+      "meaningZh": "修辞；花言巧语",
+      "exampleId": "7870372e-120a-47f9-bebb-095a961558c5-visual-ex",
+      "styleFamily": "two-scene linocut-inspired graphic-novel illustration",
+      "sentenceEn": "The volunteers preferred practical help to empty rhetoric.",
+      "sentenceZh": "志愿者更愿意实际帮忙，而不是说空洞的漂亮话。",
+      "scene": "A wordless two-scene composition contrasts a well-dressed adult making grand persuasive gestures at an unattended lectern beside a damaged community fence with volunteers quietly repairing that same fence using boards and tools. Preserve the recognizable courtyard and fence across both scenes. The repair work is constructive and prominent, complete natural faces and hands, charcoal and warm orange ink palette, no speech bubbles, captions, banners or text.",
+      "altText": "一边是夸夸其谈的演讲者，另一边是实际修补围栏的志愿者。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning",
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c94ef18a-f315-47dd-be9f-87c06e38018f",
+      "word": "convinced",
+      "meaningZh": "确信的",
+      "exampleId": "c94ef18a-f315-47dd-be9f-87c06e38018f-visual-ex",
+      "styleFamily": "painterly gouache workshop illustration",
+      "sentenceEn": "The load test left the carpenter convinced that the chair was safe.",
+      "sentenceZh": "承重测试让木匠确信这把椅子是安全的。",
+      "scene": "In a bright workshop, an adult carpenter studies a newly repaired wooden chair holding a stable stack of plain heavy sandbags; the carpenter's relieved, confident expression connects visible evidence to certainty, hands resting naturally at the waist, teal and honey-colored wood palette, no tick symbols, written measurements, slogans or exaggerated victory pose.",
+      "altText": "木匠看到椅子稳稳承受沙袋重量后露出确信的神情。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6a79848d-59ac-4f46-bb73-e6ef46d90649",
+      "word": "driving",
+      "meaningZh": "驾驶",
+      "exampleId": "6a79848d-59ac-4f46-bb73-e6ef46d90649-visual-ex",
+      "styleFamily": "stylized 3D animation with matte illustrated materials",
+      "sentenceEn": "Driving slowly, she guided the bus through the fog.",
+      "sentenceZh": "她慢慢驾驶，让公交车穿过雾气。",
+      "scene": "A clear view from inside a bus cab shows an adult woman driver wearing a seat belt, with both hands naturally on the steering wheel and her eyes focused on the road; beyond the windshield a quiet winding road disappears into soft fog, muted blue-gray and rust palette, no readable instruments, route signs, speed values, branding or distractions.",
+      "altText": "一名女司机专注地握住方向盘，缓慢驾车穿过雾路。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "spatial_boundary",
+        "safety",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "2e09a728-711d-4805-872f-a336b3c3e063",
+      "word": "vitamin",
+      "meaningZh": "维生素",
+      "exampleId": "2e09a728-711d-4805-872f-a336b3c3e063-visual-ex",
+      "styleFamily": "tactile felt and textile still-life illustration",
+      "sentenceEn": "She placed a vitamin beside her breakfast.",
+      "sentenceZh": "她把一片维生素放在早餐旁。",
+      "scene": "A tidy morning breakfast still life shows exactly one plain oval vitamin tablet beside an unmarked small amber supplement bottle, a bowl of oats and a sliced orange; warm cream, orange and sage felt textures, no dosage instructions, labels, letters, symbols or people. The single tablet remains visually separate from the food and bottle.",
+      "altText": "早餐麦片和橙子旁放着一片维生素及无标签的小瓶。",
+      "riskTags": [
+        "exact_quantity",
+        "abstract_meaning",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "80f49d22-edef-43a2-8be9-8a19235eea64",
+      "word": "enthusiasm",
+      "meaningZh": "巨大的热情；热心",
+      "exampleId": "80f49d22-edef-43a2-8be9-8a19235eea64-visual-ex",
+      "styleFamily": "Chinese shadow-puppet-inspired mixed-media illustration",
+      "sentenceEn": "The students' enthusiasm filled the shadow-puppet workshop.",
+      "sentenceZh": "学生们的热情充满了皮影工作坊。",
+      "scene": "Inside a Chinese shadow-puppet workshop, engaged young adult students lean forward eagerly as an older artisan demonstrates a carved leather donkey puppet against a softly lit cloth screen; warm curious expressions and active attentive postures convey enthusiasm, rich ochre, burgundy and black patterned textures, complete readable faces and hands, no characters, written signs or generic decorative symbols.",
+      "altText": "皮影工作坊里，学生们热情地观看工匠演示皮影。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6af3deeb-7de5-4933-bd48-927b42fca9f0",
+      "word": "accommodate",
+      "meaningZh": "容纳；适应；通融",
+      "exampleId": "6af3deeb-7de5-4933-bd48-927b42fca9f0-visual-ex",
+      "styleFamily": "paper-cut editorial architecture illustration",
+      "sentenceEn": "The tea house moved a table to accommodate a guest in a wheelchair.",
+      "sentenceZh": "茶馆移开了一张桌子，以方便使用轮椅的客人。",
+      "scene": "In an accessible contemporary Chinese courtyard tea house, a worker slides a small wooden table aside to create a generous unobstructed passage as an adult guest in a wheelchair approaches from a level doorway; simple porcelain cups, bamboo shade and a gray-tile courtyard ground the setting, clear spatial relationship and complete natural faces and hands, no stairs, labels, stereotypes or text.",
+      "altText": "茶馆工作人员移开桌子，为使用轮椅的客人留出通道。",
+      "riskTags": [
+        "spatial_boundary",
+        "before_after",
+        "people_face",
+        "hands",
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "b590cdaa-f03f-48fa-b99f-f2b347c448fd",
+      "word": "praise",
+      "meaningZh": "赞美；称赞；崇拜",
+      "exampleId": "b590cdaa-f03f-48fa-b99f-f2b347c448fd-visual-ex",
+      "styleFamily": "soft ink-and-watercolor craft illustration",
+      "sentenceEn": "The teacher praised the apprentice's carefully glazed bowl.",
+      "sentenceZh": "老师称赞了学徒精心上釉的碗。",
+      "scene": "In a contemporary Chinese ceramics studio, an older teacher looks warmly at a young adult apprentice and gestures appreciatively toward a beautifully glazed celadon bowl between them; the apprentice responds with quiet pride, a pottery wheel and unglazed forms establish the craft context, pale jade and warm brown palette, full natural facial features and complete hands, no certificates, medals, text or generic costume.",
+      "altText": "陶艺老师指着学徒精心上釉的青瓷碗给予称赞。",
+      "riskTags": [
+        "reference",
+        "people_face",
+        "hands",
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "e2676bc9-fafb-4cad-a6cd-80ae3141a1ff",
+      "word": "injure",
+      "meaningZh": "伤害；损害；使受冤屈；损伤",
+      "exampleId": "e2676bc9-fafb-4cad-a6cd-80ae3141a1ff-visual-ex",
+      "styleFamily": "restrained adventure graphic-novel illustration",
+      "sentenceEn": "The hiker injured his ankle on a loose stone.",
+      "sentenceZh": "徒步者踩到松动的石头，伤了脚踝。",
+      "scene": "On a quiet rocky hiking trail, an adult hiker sits safely on a low rock holding his sore ankle while a companion gently wraps it with a clean bandage; a loose displaced stone beside the boot explains the cause, complete natural faces and hands, muted forest green and slate palette, no blood, exposed wound, dramatic agony, medical lettering or text.",
+      "altText": "徒步者因松石伤了脚踝，同伴正为他包扎。",
+      "riskTags": [
+        "cause_effect",
+        "sequence",
+        "people_face",
+        "hands",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "43f5e1d2-28ae-4c34-a55d-823a55517bcc",
+      "word": "wilderness",
+      "meaningZh": "荒野；旷野",
+      "exampleId": "43f5e1d2-28ae-4c34-a55d-823a55517bcc-visual-ex",
+      "styleFamily": "naturalist watercolor landscape with expressive linework",
+      "sentenceEn": "A lone deer crossed the quiet wilderness at dawn.",
+      "sentenceZh": "黎明时，一只独行的鹿穿过寂静的荒野。",
+      "scene": "A vast untouched mountain valley stretches between rocky ridges, old forest and a winding river; one small but recognizable deer crosses a misty foreground meadow, conveying uninhabited wilderness rather than a park, deep green, lavender and soft gold palette, no roads, buildings, fences, people, signs or writing.",
+      "altText": "黎明的原始山谷中，一只鹿穿过无人荒野。",
+      "riskTags": [
+        "exact_quantity",
+        "animal_accuracy",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "67352b75-ffb4-4f11-8a70-5cb4f04a673b",
+      "word": "endless",
+      "meaningZh": "无尽的",
+      "exampleId": "67352b75-ffb4-4f11-8a70-5cb4f04a673b-visual-ex",
+      "styleFamily": "screen-print panoramic landscape illustration",
+      "sentenceEn": "The desert seemed endless beneath the pale sky.",
+      "sentenceZh": "苍白天空下，沙漠仿佛无边无际。",
+      "scene": "An expansive panoramic view shows repeating sand dunes receding through many subtle layers into a horizon that nearly dissolves into a pale sky; no landmark, settlement or visible endpoint interrupts the sense of endless space, restrained apricot, ochre and pale lilac layered inks, no people, animals, roads, maps or text.",
+      "altText": "层层沙丘一直延伸至模糊的地平线，仿佛无边无际。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "e70a778d-40df-4d01-8d54-569c7a384471",
+      "word": "mandate",
+      "meaningZh": "授权；命令",
+      "exampleId": "e70a778d-40df-4d01-8d54-569c7a384471-visual-ex",
+      "styleFamily": "mature ink-and-paper collage narrative illustration",
+      "sentenceEn": "The committee gave the engineer a mandate to restore the canal.",
+      "sentenceZh": "委员会授权工程师修复运河。",
+      "scene": "In a present-day Chinese canal town, committee members formally hand a plain folder with a simple non-text seal to an adult civil engineer holding a rolled restoration drawing; through the open meeting-room window an aging canal wall and traditional stone bridge show the assigned project. The handover is the central action, modern work clothes, full natural faces and hands, slate blue and muted red palette, no written documents, characters, flags, badges or logos.",
+      "altText": "委员会成员把授权文件交给工程师，委托其修复窗外的运河。",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "people_face",
+        "hands",
+        "Chinese_culture"
+      ]
+    }
+  ]
+}

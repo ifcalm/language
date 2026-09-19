@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2320-2339",
+  "batchId": "auto-rank-2320-2339-20260822",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "provision",
+      "classic",
+      "label",
+      "vacation",
+      "heaven",
+      "drama"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "525b4b03-7cc4-4999-aedf-bddae3a94dd4",
+      "word": "provision",
+      "meaningZh": "规定；条款；供应；准备",
+      "exampleId": "525b4b03-7cc4-4999-aedf-bddae3a94dd4-visual-ex",
+      "styleFamily": "Chinese community-center gouache illustration",
+      "sentenceEn": "The shelter stored enough provision for three days.",
+      "sentenceZh": "避难所储备了足够三天使用的物资。",
+      "scene": "Volunteers in a Chinese neighborhood community center stack water, blankets, rice, and first-aid boxes neatly for emergencies, with no readable labels.",
+      "altText": "社区志愿者整齐储备应急物资",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "e4a54cf9-0802-42d1-96e8-5d82c40c5892",
+      "word": "killer",
+      "meaningZh": "杀手",
+      "exampleId": "e4a54cf9-0802-42d1-96e8-5d82c40c5892-visual-ex",
+      "styleFamily": "tense editorial noir illustration",
+      "sentenceEn": "The detective realized that the missing key was the killer clue.",
+      "sentenceZh": "侦探意识到，那把失踪的钥匙是决定性线索。",
+      "scene": "A thoughtful detective in a safe, nonviolent study examines one distinctive key among harmless clues, conveying that it solves the mystery; no victim or weapon.",
+      "altText": "侦探发现破解谜案的决定性钥匙",
+      "riskTags": [
+        "violence_term",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "4385fff3-4459-4426-b79c-99188b18e762",
+      "word": "assign",
+      "meaningZh": "分配；指派；赋值",
+      "exampleId": "4385fff3-4459-4426-b79c-99188b18e762-visual-ex",
+      "styleFamily": "modern workplace cut-paper illustration",
+      "sentenceEn": "The manager assigned one clear task to each team member.",
+      "sentenceZh": "经理给每位团队成员分配了一项明确任务。",
+      "scene": "A friendly manager distributes different colored project folders to three colleagues around a table, each person accepting one distinct responsibility.",
+      "altText": "经理向三位同事分配不同任务",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "6659b633-62fe-4290-b0a1-5da71c63b3fb",
+      "word": "gang",
+      "meaningZh": "队；群；帮；成群结队；结成一伙",
+      "exampleId": "6659b633-62fe-4290-b0a1-5da71c63b3fb-visual-ex",
+      "styleFamily": "warm neighborhood editorial illustration",
+      "sentenceEn": "A gang of friends repaired the playground together.",
+      "sentenceZh": "一群朋友一起修好了游乐场。",
+      "scene": "A cheerful diverse group of adult friends works together painting and repairing a neighborhood playground, clearly a friendly team rather than criminals.",
+      "altText": "一群朋友合作修缮社区游乐场",
+      "riskTags": [
+        "people_face",
+        "many_people",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "8aa395ef-8f93-4b18-bc86-adfcfaa2a76a",
+      "word": "developing",
+      "meaningZh": "发展中的",
+      "exampleId": "8aa395ef-8f93-4b18-bc86-adfcfaa2a76a-visual-ex",
+      "styleFamily": "hopeful infrastructure digital illustration",
+      "sentenceEn": "The developing town added clean water and a new clinic.",
+      "sentenceZh": "这座发展中的城镇增设了清洁供水和新诊所。",
+      "scene": "Residents watch clean water begin flowing beside a newly completed small clinic in a growing town, emphasizing gradual community development.",
+      "altText": "发展中的城镇新增供水和诊所",
+      "riskTags": [
+        "people_face",
+        "architecture",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "e415db1b-40af-4b6f-9469-ca61864d45ac",
+      "word": "classic",
+      "meaningZh": "经典的；古典的；一流的；经典作品",
+      "exampleId": "e415db1b-40af-4b6f-9469-ca61864d45ac-visual-ex",
+      "styleFamily": "Chinese ink-and-color opera illustration",
+      "sentenceEn": "The classic opera still moved audiences after many generations.",
+      "sentenceZh": "这部经典戏曲历经数代仍打动观众。",
+      "scene": "A mature Chinese opera performer in elegant traditional costume holds a poised gesture on a historic stage as an attentive multigenerational audience watches; no signage.",
+      "altText": "经典中国戏曲打动多代观众",
+      "riskTags": [
+        "cultural_attire",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c700e1ee-086e-4d73-a023-61b997b42e56",
+      "word": "chemical",
+      "meaningZh": "化学药品；化学的；化学上用的",
+      "exampleId": "c700e1ee-086e-4d73-a023-61b997b42e56-visual-ex",
+      "styleFamily": "clean science editorial illustration",
+      "sentenceEn": "The technician handled the chemical with protective gloves.",
+      "sentenceZh": "技术员戴着防护手套处理这种化学品。",
+      "scene": "A laboratory technician wearing goggles and gloves carefully transfers a colored liquid between glass vessels inside a tidy safety tray, with no labels.",
+      "altText": "技术员戴防护装备处理化学品",
+      "riskTags": [
+        "science_accuracy",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "e575109c-d9f4-4fc1-bc79-524c1d5854c9",
+      "word": "label",
+      "meaningZh": "标签；标注",
+      "exampleId": "e575109c-d9f4-4fc1-bc79-524c1d5854c9-visual-ex",
+      "styleFamily": "Chinese tea-shop watercolor illustration",
+      "sentenceEn": "She placed a label on each tea jar.",
+      "sentenceZh": "她给每个茶罐贴上标签。",
+      "scene": "In a traditional Chinese tea shop, a shopkeeper attaches simple blank color-coded tags to ceramic tea jars, with every tag free of writing.",
+      "altText": "茶铺店员给茶罐贴上空白标签",
+      "riskTags": [
+        "text_risk",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "a5175665-f308-4ca2-b5b7-d83b2c63ebfe",
+      "word": "teen",
+      "meaningZh": "青少年；十几岁的",
+      "exampleId": "a5175665-f308-4ca2-b5b7-d83b2c63ebfe-visual-ex",
+      "styleFamily": "youth community editorial illustration",
+      "sentenceEn": "The teen practiced basketball after school.",
+      "sentenceZh": "这名青少年放学后练习篮球。",
+      "scene": "A focused teenage student practices a layup on an outdoor school court while a supportive coach observes from a respectful distance.",
+      "altText": "青少年在放学后练习篮球",
+      "riskTags": [
+        "minor",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "56f27fb6-1374-4eb5-bd0f-ea5f1b9f3352",
+      "word": "index",
+      "meaningZh": "索引；指数",
+      "exampleId": "56f27fb6-1374-4eb5-bd0f-ea5f1b9f3352-visual-ex",
+      "styleFamily": "library collage illustration",
+      "sentenceEn": "The index helped her find the topic quickly.",
+      "sentenceZh": "索引帮助她迅速找到这个主题。",
+      "scene": "A researcher opens a thick reference book to a tabbed index section and then locates the matching colored section, using shapes only and no readable text.",
+      "altText": "研究者通过索引快速查找主题",
+      "riskTags": [
+        "text_risk",
+        "hands",
+        "small_details"
+      ]
+    },
+    {
+      "vocabularyId": "3ea8769b-e9d0-4f0c-9f55-c03200d06a5c",
+      "word": "vacation",
+      "meaningZh": "假期",
+      "exampleId": "3ea8769b-e9d0-4f0c-9f55-c03200d06a5c-visual-ex",
+      "styleFamily": "West Lake travel-poster illustration",
+      "sentenceEn": "They spent their vacation walking beside West Lake.",
+      "sentenceZh": "他们在西湖边散步度过假期。",
+      "scene": "A relaxed couple strolls beside Hangzhou's West Lake during vacation, with willow trees, a stone bridge, distant hills, and a small boat under soft morning light.",
+      "altText": "游客在西湖边悠闲度假",
+      "riskTags": [
+        "people_face",
+        "landscape",
+        "cultural_landmark"
+      ]
+    },
+    {
+      "vocabularyId": "f549e825-1b67-4234-bec8-74781b52bc8a",
+      "word": "advocate",
+      "meaningZh": "提倡者；拥护者；主张；提倡",
+      "exampleId": "f549e825-1b67-4234-bec8-74781b52bc8a-visual-ex",
+      "styleFamily": "civic editorial illustration",
+      "sentenceEn": "The doctor became an advocate for cleaner city air.",
+      "sentenceZh": "这位医生成了城市清洁空气的倡导者。",
+      "scene": "A doctor speaks calmly to neighbors beside newly planted street trees and cyclists, advocating cleaner air without placards, microphones, or text.",
+      "altText": "医生向社区倡导更清洁的空气",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_concept"
+      ]
+    },
+    {
+      "vocabularyId": "23cf9572-7d9b-4d03-9e34-4f732ccdb170",
+      "word": "draft",
+      "meaningZh": "草稿；草案；起草；征兵",
+      "exampleId": "23cf9572-7d9b-4d03-9e34-4f732ccdb170-visual-ex",
+      "styleFamily": "architectural sketchbook illustration",
+      "sentenceEn": "She prepared a rough draft before the final design.",
+      "sentenceZh": "她在最终设计前先画了一份草稿。",
+      "scene": "An architect compares a loose pencil draft with a polished miniature building model on a desk, with all paper marks abstract and unreadable.",
+      "altText": "建筑师比较草稿与最终模型",
+      "riskTags": [
+        "text_risk",
+        "hands",
+        "small_details"
+      ]
+    },
+    {
+      "vocabularyId": "f675fbc4-8d22-496f-b385-999bc243f6e4",
+      "word": "extraordinary",
+      "meaningZh": "非常的；特别的；非凡的",
+      "exampleId": "f675fbc4-8d22-496f-b385-999bc243f6e4-visual-ex",
+      "styleFamily": "cinematic storybook illustration",
+      "sentenceEn": "An extraordinary rainbow appeared over the desert.",
+      "sentenceZh": "一道非凡的彩虹出现在沙漠上空。",
+      "scene": "Travelers pause in wonder as a vivid double rainbow spans a vast sunlit desert after rain, creating an unmistakably extraordinary sight.",
+      "altText": "沙漠上空出现非凡的双彩虹",
+      "riskTags": [
+        "landscape",
+        "weather",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "22b38458-2d16-4ed0-a0f4-476abde2f4ce",
+      "word": "heaven",
+      "meaningZh": "天堂；上帝；天空",
+      "exampleId": "22b38458-2d16-4ed0-a0f4-476abde2f4ce-visual-ex",
+      "styleFamily": "Dunhuang-inspired celestial mural illustration",
+      "sentenceEn": "The quiet sky felt like heaven after the long journey.",
+      "sentenceZh": "漫长旅途后，宁静的天空仿佛天堂。",
+      "scene": "A weary traveler rests beneath a serene celestial sky inspired by Dunhuang mural colors, with flowing clouds and radiant light suggesting peace rather than a literal deity.",
+      "altText": "旅人在敦煌色彩的宁静天空下休息",
+      "riskTags": [
+        "religious_concept",
+        "cultural_style",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d6fa8fc5-80a7-40e3-9cdb-7a021a6ea072",
+      "word": "rough",
+      "meaningZh": "粗糙的；大致的；艰难的",
+      "exampleId": "d6fa8fc5-80a7-40e3-9cdb-7a021a6ea072-visual-ex",
+      "styleFamily": "textured mixed-media illustration",
+      "sentenceEn": "The rough road made the bicycle ride difficult.",
+      "sentenceZh": "崎岖的道路让骑车变得很困难。",
+      "scene": "A cyclist carefully pushes a bicycle over a visibly rough, rocky country road while a smooth paved path can be seen farther ahead.",
+      "altText": "骑车人艰难通过粗糙石路",
+      "riskTags": [
+        "texture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "9e3ada5a-4b58-4c9b-835c-8337bf11cf26",
+      "word": "yell",
+      "meaningZh": "叫喊；大叫",
+      "exampleId": "9e3ada5a-4b58-4c9b-835c-8337bf11cf26-visual-ex",
+      "styleFamily": "expressive editorial illustration",
+      "sentenceEn": "He had to yell over the noise of the storm.",
+      "sentenceZh": "他不得不在暴风雨的噪声中大喊。",
+      "scene": "On a windy dock during a storm, one worker cups his hands and yells to a distant colleague, both safely secured and clearly communicating.",
+      "altText": "工人在风暴声中向同伴大喊",
+      "riskTags": [
+        "people_face",
+        "weather",
+        "open_mouth"
+      ]
+    },
+    {
+      "vocabularyId": "e2c61434-b368-447f-8758-20ec04057bab",
+      "word": "pregnant",
+      "meaningZh": "怀孕的；充满的；思想丰富的；成果丰硕的",
+      "exampleId": "e2c61434-b368-447f-8758-20ec04057bab-visual-ex",
+      "styleFamily": "gentle healthcare watercolor illustration",
+      "sentenceEn": "The pregnant woman rested during her afternoon walk.",
+      "sentenceZh": "这位孕妇在午后散步时停下来休息。",
+      "scene": "A visibly pregnant adult rests comfortably on a park bench during a walk while her partner offers water, with a calm respectful mood.",
+      "altText": "孕妇在散步途中安静休息",
+      "riskTags": [
+        "pregnancy",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "80d316a2-24b3-4404-9363-6471137c03e8",
+      "word": "distant",
+      "meaningZh": "遥远的；远方的；疏远的",
+      "exampleId": "80d316a2-24b3-4404-9363-6471137c03e8-visual-ex",
+      "styleFamily": "atmospheric landscape illustration",
+      "sentenceEn": "A distant lighthouse shone across the bay.",
+      "sentenceZh": "远处的灯塔在海湾彼岸闪耀。",
+      "scene": "A small glowing lighthouse stands far across a broad misty bay, viewed from a quiet rocky shore to emphasize great distance.",
+      "altText": "远处灯塔照亮宽阔海湾",
+      "riskTags": [
+        "landscape",
+        "distance",
+        "low_light"
+      ]
+    },
+    {
+      "vocabularyId": "8a06d1e0-48cd-42d6-8c97-825e6514986f",
+      "word": "drama",
+      "meaningZh": "戏剧；戏剧艺术",
+      "exampleId": "8a06d1e0-48cd-42d6-8c97-825e6514986f-visual-ex",
+      "styleFamily": "Chinese shadow-puppet theater illustration",
+      "sentenceEn": "The village drama drew a large evening audience.",
+      "sentenceZh": "这场乡村戏剧吸引了许多夜间观众。",
+      "scene": "A Chinese shadow-puppet drama unfolds behind a glowing cloth screen while villagers watch expressive figures and musicians perform, with no written banners.",
+      "altText": "乡村观众观看中国皮影戏剧",
+      "riskTags": [
+        "many_people",
+        "cultural_performance",
+        "low_light"
+      ]
+    }
+  ]
+}

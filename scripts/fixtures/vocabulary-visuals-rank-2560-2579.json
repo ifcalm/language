@@ -1,0 +1,348 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2560-2579",
+  "batchId": "auto-rank-2560-2579-20260904",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "convert",
+      "presentation",
+      "elderly",
+      "deer",
+      "pollution",
+      "fate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "8e49b14c-235d-40ed-ab8e-90a509a7bc51",
+      "word": "convert",
+      "meaningZh": "转换；转变；使皈依",
+      "exampleId": "8e49b14c-235d-40ed-ab8e-90a509a7bc51-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "Workers will convert the old factory into an art center.",
+      "sentenceZh": "工人们将把旧工厂改造成艺术中心。",
+      "scene": "A Shanghai brick factory transforms from dusty machinery on one side into a bright community art center on the other as adult workers complete the conversion.",
+      "altText": "上海旧工厂正在被工人改造成明亮的艺术中心。",
+      "riskTags": [
+        "Chinese_culture",
+        "before_after",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2ae7c008-81c5-4bc8-9bb3-784dd741c3fa",
+      "word": "comprehensive",
+      "meaningZh": "广泛的；有理解力的；综合的",
+      "exampleId": "2ae7c008-81c5-4bc8-9bb3-784dd741c3fa-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The guide offered a comprehensive view of the entire museum.",
+      "sentenceZh": "导览员全面展示了整座博物馆。",
+      "scene": "A museum guide gestures across one panoramic cutaway that includes galleries, archives, workshop and courtyard together, giving visitors a complete view rather than one detail.",
+      "altText": "导览员向游客展示包含所有区域的博物馆全景。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "549cceea-d58d-4666-9857-d02c81d4c205",
+      "word": "prominent",
+      "meaningZh": "卓越的；显著的；突出的；凸出的",
+      "exampleId": "549cceea-d58d-4666-9857-d02c81d4c205-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "The lighthouse remains prominent above the low coastal houses.",
+      "sentenceZh": "灯塔高高耸立在低矮的海边房屋之上，十分醒目。",
+      "scene": "A tall bright lighthouse rises unmistakably above a cluster of small dark coastal houses, its strong vertical silhouette dominating the horizon.",
+      "altText": "高大的灯塔醒目地耸立在低矮海边房屋之上。",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7ea9aa02-8f00-40b3-baf7-c7a7f3e74f35",
+      "word": "presentation",
+      "meaningZh": "展示；报告",
+      "exampleId": "7ea9aa02-8f00-40b3-baf7-c7a7f3e74f35-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "Mei used a model bridge during her presentation.",
+      "sentenceZh": "梅在展示中使用了一座桥梁模型。",
+      "scene": "A Chinese engineer confidently explains a detailed bridge model to attentive colleagues, using clear hand gestures and visual demonstration without slides or readable text.",
+      "altText": "中国工程师梅用桥梁模型向同事做展示。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "0d199360-248f-4646-a8eb-1122328e23f3",
+      "word": "regardless",
+      "meaningZh": "无论如何",
+      "exampleId": "0d199360-248f-4646-a8eb-1122328e23f3-visual-ex",
+      "styleFamily": "hand-drawn animation still",
+      "sentenceEn": "Regardless of the rain, the rescue team continued forward.",
+      "sentenceZh": "无论下雨与否，救援队都继续前进。",
+      "scene": "A determined adult rescue team walks forward through heavy rain toward a safe mountain cabin, their direction unchanged while weather presses against them.",
+      "altText": "救援队不顾大雨，仍坚定地朝山间木屋前进。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "dd6f98eb-db6f-4d37-928c-88ef6eceacbc",
+      "word": "load",
+      "meaningZh": "负载；装载；加载（计算机）",
+      "exampleId": "dd6f98eb-db6f-4d37-928c-88ef6eceacbc-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "The crane lifted a heavy load from the dock.",
+      "sentenceZh": "起重机从码头吊起了一件重货。",
+      "scene": "At a clean harbor, a large crane suspends one visibly heavy shipping crate above the dock while adult workers guide it from a safe distance.",
+      "altText": "港口起重机从码头吊起一只沉重货箱。",
+      "riskTags": [
+        "exact_quantity",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "178d4ae4-d326-449a-8763-5547380d7be2",
+      "word": "stable",
+      "meaningZh": "稳定的；稳固的；马厩",
+      "exampleId": "178d4ae4-d326-449a-8763-5547380d7be2-visual-ex",
+      "styleFamily": "stop-motion-inspired handcrafted illustration",
+      "sentenceEn": "The wide base keeps the sculpture stable in strong wind.",
+      "sentenceZh": "宽大的底座使雕塑在强风中保持稳定。",
+      "scene": "A tall abstract sculpture stands upright in gusting wind because its broad weighted base grips the ground, while leaves and nearby flags bend sharply.",
+      "altText": "强风中，雕塑依靠宽大底座保持稳定直立。",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "0f23f453-aa4b-4179-a0e8-52f7a896b1a6",
+      "word": "introduction",
+      "meaningZh": "介绍；引入",
+      "exampleId": "0f23f453-aa4b-4179-a0e8-52f7a896b1a6-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "Their introduction began with a friendly handshake.",
+      "sentenceZh": "他们的初次介绍从友好的握手开始。",
+      "scene": "Two adults meet for the first time at a community workshop as a host brings them together; they exchange a warm handshake and attentive smiles.",
+      "altText": "在社区活动上，两位初次见面的人友好握手。",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c64cf0c3-6e0e-46c7-b525-1c0083fc996d",
+      "word": "pretend",
+      "meaningZh": "假装；伪称；自命；自称",
+      "exampleId": "c64cf0c3-6e0e-46c7-b525-1c0083fc996d-visual-ex",
+      "styleFamily": "graphic novel illustration",
+      "sentenceEn": "The actor pretended that the empty box was very heavy.",
+      "sentenceZh": "演员假装空箱子非常沉重。",
+      "scene": "On a rehearsal stage, an actor dramatically strains to lift an obviously empty open box while a director watches with amused understanding.",
+      "altText": "演员夸张地假装一个敞开的空箱子很沉重。",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "a81c9910-d799-42b3-bdfe-441768c1bee3",
+      "word": "elderly",
+      "meaningZh": "年老的",
+      "exampleId": "a81c9910-d799-42b3-bdfe-441768c1bee3-visual-ex",
+      "styleFamily": "Chinese ink-and-color illustration",
+      "sentenceEn": "The elderly neighbors practice tai chi together each morning.",
+      "sentenceZh": "年长的邻居们每天早晨一起练太极。",
+      "scene": "Several elderly Chinese adults practice gentle tai chi in a leafy public park at sunrise, with balanced poses, calm complete faces and respectful natural diversity.",
+      "altText": "清晨，中国公园里的年长邻居们一起练习太极。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "465bfb37-6dd5-460d-b623-c984337c6a76",
+      "word": "representation",
+      "meaningZh": "代表；表现",
+      "exampleId": "465bfb37-6dd5-460d-b623-c984337c6a76-visual-ex",
+      "styleFamily": "mixed-media collage",
+      "sentenceEn": "The woven circle is a representation of the whole community.",
+      "sentenceZh": "这个编织圆环代表整个社区。",
+      "scene": "Adults from varied backgrounds each contribute one colored strand to a single woven circle, the completed shared form symbolizing their community.",
+      "altText": "不同社区成员各添一根彩线，共同编成象征社区的圆环。",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c03482b0-b671-4b9d-b993-e282be34f7db",
+      "word": "deer",
+      "meaningZh": "鹿",
+      "exampleId": "c03482b0-b671-4b9d-b993-e282be34f7db-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "A herd of deer crossed the wetland at sunrise.",
+      "sentenceZh": "一群鹿在日出时穿过湿地。",
+      "scene": "A small herd of Père David's deer walks through golden reeds and shallow water in a Chinese wetland reserve at sunrise, reflected softly below.",
+      "altText": "日出时，一群麋鹿穿过中国湿地保护区的浅水。",
+      "riskTags": [
+        "Chinese_culture",
+        "animal_group"
+      ]
+    },
+    {
+      "vocabularyId": "6b7678ac-5ae8-4f02-a50c-0e63fa452dfa",
+      "word": "split",
+      "meaningZh": "分裂；分割；拆分",
+      "exampleId": "6b7678ac-5ae8-4f02-a50c-0e63fa452dfa-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "A narrow crack split the ice into two sections.",
+      "sentenceZh": "一道狭窄裂缝把冰面分成了两部分。",
+      "scene": "Top-down view of one frozen pond divided cleanly into exactly two large sections by a single dark branching crack, with safe empty ice and no people.",
+      "altText": "一道裂缝把冰面清晰地分成两部分。",
+      "riskTags": [
+        "exact_quantity",
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "219b9aa2-c2a6-4f9f-85ce-d0caf16c2ae1",
+      "word": "violate",
+      "meaningZh": "违反；侵犯",
+      "exampleId": "219b9aa2-c2a6-4f9f-85ce-d0caf16c2ae1-visual-ex",
+      "styleFamily": "graphic illustration",
+      "sentenceEn": "Dumping paint into the river would violate the safety rules.",
+      "sentenceZh": "把油漆倒进河里会违反安全规定。",
+      "scene": "A worker stops another person's paint bucket before it reaches a clean river, clearly redirecting it toward a proper sealed collection container without written signs.",
+      "altText": "工作人员阻止他人把油漆倒入河中，并指向回收容器。",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e4c4486a-f2bd-4dbf-af6e-d167387807e5",
+      "word": "partnership",
+      "meaningZh": "合作关系",
+      "exampleId": "e4c4486a-f2bd-4dbf-af6e-d167387807e5-visual-ex",
+      "styleFamily": "gouache storybook illustration",
+      "sentenceEn": "Their partnership combined her designs with his woodworking skills.",
+      "sentenceZh": "他们的合作把她的设计与他的木工技艺结合起来。",
+      "scene": "Two adult craft partners build one elegant chair together: one points to a visual sketch while the other shapes wood, and both contributions visibly meet in the finished piece.",
+      "altText": "两位伙伴把设计和木工技能结合，共同制作一把椅子。",
+      "riskTags": [
+        "cause_effect",
+        "hands",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "86120d8e-9e65-4a4d-a6a1-1916d93aac8a",
+      "word": "pollution",
+      "meaningZh": "污染",
+      "exampleId": "86120d8e-9e65-4a4d-a6a1-1916d93aac8a-visual-ex",
+      "styleFamily": "Risograph-inspired illustration",
+      "sentenceEn": "Volunteers removed plastic pollution from the riverbank.",
+      "sentenceZh": "志愿者清除了河岸上的塑料污染物。",
+      "scene": "Chinese community volunteers collect colorful plastic waste from one side of a riverbank while the cleaned side shows reeds, clear water and returning birds.",
+      "altText": "中国志愿者清理河岸塑料垃圾，恢复清洁环境。",
+      "riskTags": [
+        "Chinese_culture",
+        "before_after",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "98ce675d-a042-4aba-bdb4-e53945e93827",
+      "word": "emission",
+      "meaningZh": "排放",
+      "exampleId": "98ce675d-a042-4aba-bdb4-e53945e93827-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "The new filter reduced smoke emission from the chimney.",
+      "sentenceZh": "新过滤器减少了烟囱的烟气排放。",
+      "scene": "A factory chimney cutaway shows a newly installed filter trapping dark particles, with thick smoke below the filter becoming a much cleaner faint plume above it.",
+      "altText": "烟囱中的新过滤器拦截颗粒，使排放烟雾明显减少。",
+      "riskTags": [
+        "cause_effect",
+        "before_after",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "f058efe3-eb4c-4a0b-bd5a-c20c51ef65cb",
+      "word": "steady",
+      "meaningZh": "稳定的；平稳的；沉着的",
+      "exampleId": "f058efe3-eb4c-4a0b-bd5a-c20c51ef65cb-visual-ex",
+      "styleFamily": "linocut-inspired illustration",
+      "sentenceEn": "She kept a steady hand while painting the thin line.",
+      "sentenceZh": "她画细线时手一直很稳。",
+      "scene": "A focused adult sign painter guides a fine brush along one perfectly even curved line, with calm posture and a supported wrist shown in dramatic carved lines.",
+      "altText": "画师保持稳定的手势，绘出一条均匀细线。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "1f40ce81-1bcc-4901-a9fd-972f9a68a514",
+      "word": "vital",
+      "meaningZh": "生命的；重要的；充满活力的；生死攸关的",
+      "exampleId": "1f40ce81-1bcc-4901-a9fd-972f9a68a514-visual-ex",
+      "styleFamily": "hand-drawn animation still",
+      "sentenceEn": "Clean water is vital to every plant in the greenhouse.",
+      "sentenceZh": "清洁的水对温室里的每株植物都至关重要。",
+      "scene": "A greenhouse irrigation line delivers clear water to rows of thriving plants, while one disconnected dry plant visibly wilts, showing water essential role.",
+      "altText": "清水滋养温室植物，一株断水植物正在枯萎。",
+      "riskTags": [
+        "cause_effect",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0d1e3cfd-fe31-4189-b523-ba3407766faf",
+      "word": "fate",
+      "meaningZh": "命运；运气；注定",
+      "exampleId": "0d1e3cfd-fe31-4189-b523-ba3407766faf-visual-ex",
+      "styleFamily": "Chinese shadow-puppet-inspired illustration",
+      "sentenceEn": "In the old tale, fate brought the two travelers together again.",
+      "sentenceZh": "在古老故事里，命运让两位旅人再次相遇。",
+      "scene": "Two travelers who chose separate winding paths unexpectedly meet again beneath the same Chinese pavilion, linked compositionally by a subtle red thread motif without text.",
+      "altText": "古老故事中，分道而行的两位旅人在亭下再次相遇。",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "abstract_meaning",
+        "people_face"
+      ]
+    }
+  ]
+}

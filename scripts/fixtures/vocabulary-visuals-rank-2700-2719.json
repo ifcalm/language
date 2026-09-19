@@ -1,0 +1,347 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2700-2719",
+  "batchId": "auto-rank-2700-2719-20260908",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "fabric",
+      "proportion",
+      "maintenance",
+      "organic",
+      "publisher",
+      "strengthen"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b1a07766-4351-4bcf-8351-d8074e4b4a2f",
+      "word": "scandal",
+      "meaningZh": "丑闻；中伤；耻辱；反感；流言蜚语",
+      "exampleId": "b1a07766-4351-4bcf-8351-d8074e4b4a2f-visual-ex",
+      "styleFamily": "noir editorial collage",
+      "sentenceEn": "The hidden payments caused a public scandal.",
+      "sentenceZh": "秘密付款引发了一场公众丑闻。",
+      "scene": "Investigative reporters uncover concealed bags of money exchanged behind a civic office while a shocked public gathers outside, showing exposure of serious misconduct without readable documents.",
+      "altText": "Reporters uncovering hidden payments that caused a scandal.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1cca4658-cb4d-45fd-b515-b10c331768f2",
+      "word": "PC",
+      "meaningZh": "个人电脑",
+      "exampleId": "1cca4658-cb4d-45fd-b515-b10c331768f2-visual-ex",
+      "styleFamily": "retro technical illustration",
+      "sentenceEn": "She repairs the PC by replacing a faulty component.",
+      "sentenceZh": "她通过更换故障部件修好了个人电脑。",
+      "scene": "An adult technician opens a desktop personal computer tower beside a monitor, keyboard, and mouse and replaces one clearly damaged internal component, with no readable interface.",
+      "altText": "A technician repairing a desktop PC.",
+      "riskTags": [
+        "hands",
+        "technical",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "67e5245a-8c5b-4562-950f-df4162bbb7c9",
+      "word": "helpful",
+      "meaningZh": "有帮助的",
+      "exampleId": "67e5245a-8c5b-4562-950f-df4162bbb7c9-visual-ex",
+      "styleFamily": "warm gouache illustration",
+      "sentenceEn": "The map is helpful when the hikers reach the confusing junction.",
+      "sentenceZh": "徒步者到达复杂岔路口时，地图很有帮助。",
+      "scene": "At a confusing forest junction, one adult hiker uses a simple picture map to point out the correct path, helping two companions move confidently onward without written labels.",
+      "altText": "A map being helpful at a confusing trail junction.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "941c0179-a86d-47e8-81cb-7a0d81ec2606",
+      "word": "impress",
+      "meaningZh": "给...留下深刻印象；使钦佩",
+      "exampleId": "941c0179-a86d-47e8-81cb-7a0d81ec2606-visual-ex",
+      "styleFamily": "bold editorial watercolor",
+      "sentenceEn": "Her skillful glasswork impresses the visiting artists.",
+      "sentenceZh": "她精湛的玻璃工艺令来访的艺术家钦佩。",
+      "scene": "An adult glass artist shapes a glowing vessel with remarkable control while several visiting adult artists watch with visibly impressed expressions.",
+      "altText": "A glass artist impressing visitors with her skill.",
+      "riskTags": [
+        "people_face",
+        "body_posture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "48469d6b-7a35-4bc1-bcc7-e719a5a4edfb",
+      "word": "heel",
+      "meaningZh": "脚后跟；踵；后部；倾侧",
+      "exampleId": "48469d6b-7a35-4bc1-bcc7-e719a5a4edfb-visual-ex",
+      "styleFamily": "anatomical cut-paper illustration",
+      "sentenceEn": "The runner lands gently on the heel before rolling forward.",
+      "sentenceZh": "跑步者用脚后跟轻柔着地，然后向前滚动。",
+      "scene": "A close side view shows an adult runner's shoe touching the ground first at the heel and then rolling toward the toes in three clear motion stages, with anatomically correct foot position.",
+      "altText": "A runner landing first on the heel.",
+      "riskTags": [
+        "sequence",
+        "body_posture",
+        "anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "c95de355-e8fa-4fba-aa38-49af71871358",
+      "word": "resemble",
+      "meaningZh": "像；类似于",
+      "exampleId": "c95de355-e8fa-4fba-aa38-49af71871358-visual-ex",
+      "styleFamily": "natural-history linocut",
+      "sentenceEn": "The harmless moth resembles a dry leaf.",
+      "sentenceZh": "这只无害的飞蛾看起来像一片枯叶。",
+      "scene": "A harmless moth rests among dry leaves, its wing shape, veins, and brown color closely resembling one nearby leaf while remaining identifiable as an insect.",
+      "altText": "A moth that resembles a dry leaf.",
+      "riskTags": [
+        "comparison",
+        "animals",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "98d0ce50-bb56-4c91-8408-d188c9bf9fcd",
+      "word": "privacy",
+      "meaningZh": "隐私；隐居；秘密；个人保密权",
+      "exampleId": "98d0ce50-bb56-4c91-8408-d188c9bf9fcd-visual-ex",
+      "styleFamily": "conceptual paper-cut collage",
+      "sentenceEn": "The closed screen gives the patient privacy.",
+      "sentenceZh": "拉上的屏风为患者提供了隐私。",
+      "scene": "In a clinic, a solid folding screen creates a clear private space around an adult patient while staff and other visitors remain visibly outside the boundary.",
+      "altText": "A folding screen providing privacy for a patient.",
+      "riskTags": [
+        "spatial_boundary",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "06efc943-4c62-49a5-b157-c6542f01f975",
+      "word": "fabric",
+      "meaningZh": "织物；布；结构；构造；建筑物",
+      "exampleId": "06efc943-4c62-49a5-b157-c6542f01f975-visual-ex",
+      "styleFamily": "Chinese textile gouache",
+      "sentenceEn": "The artisan weaves blue fabric on a wooden loom.",
+      "sentenceZh": "工匠在木织机上织出蓝色布料。",
+      "scene": "An adult Chinese textile artisan operates a traditional wooden loom as many fine threads interlace into a broad piece of indigo fabric, with woven texture as the focal point.",
+      "altText": "An artisan weaving indigo fabric on a loom.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "ab218367-c521-441f-ad0f-a89bf82b13ea",
+      "word": "contest",
+      "meaningZh": "竞赛；争论；竞争；争取；争辩",
+      "exampleId": "ab218367-c521-441f-ad0f-a89bf82b13ea-visual-ex",
+      "styleFamily": "dynamic Risograph illustration",
+      "sentenceEn": "Two teams compete in a boat-building contest.",
+      "sentenceZh": "两支队伍参加造船竞赛。",
+      "scene": "Two diverse adult teams race side by side to assemble small wooden boats while judges compare the finished results, clearly showing a friendly contest without signs or scores.",
+      "altText": "Two teams competing in a boat-building contest.",
+      "riskTags": [
+        "comparison",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6c942c80-0fba-42ea-be59-535fe3c933b8",
+      "word": "proportion",
+      "meaningZh": "比例；比率；均衡；部分；面积",
+      "exampleId": "6c942c80-0fba-42ea-be59-535fe3c933b8-visual-ex",
+      "styleFamily": "Chinese garden plan illustration",
+      "sentenceEn": "The designer adjusts the proportion of pond, rocks, and pavilion.",
+      "sentenceZh": "设计师调整池塘、山石和亭子的比例。",
+      "scene": "An adult Chinese garden designer compares two miniature layouts, choosing the one where a large pond, medium rock group, and small pavilion have balanced proportions, with no measurements.",
+      "altText": "A garden designer balancing the proportions of three elements.",
+      "riskTags": [
+        "Chinese_culture",
+        "comparison",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6e06bc06-6df1-4c84-91c3-4bf8bd51adfe",
+      "word": "guideline",
+      "meaningZh": "指导路线；方针；指标",
+      "exampleId": "6e06bc06-6df1-4c84-91c3-4bf8bd51adfe-visual-ex",
+      "styleFamily": "minimal sequential poster",
+      "sentenceEn": "The safety guideline shows how to lift the box correctly.",
+      "sentenceZh": "安全指南展示了正确搬箱子的方式。",
+      "scene": "Three clear picture-only stages show an adult bending the knees, gripping a box close to the body, and standing with a straight back, contrasted with one faint unsafe posture, no arrows or text.",
+      "altText": "A visual guideline for lifting a box safely.",
+      "riskTags": [
+        "sequence",
+        "safety",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "2e633cc0-1e2b-4f3b-b8f7-ac74748d4891",
+      "word": "rifle",
+      "meaningZh": "步枪",
+      "exampleId": "2e633cc0-1e2b-4f3b-b8f7-ac74748d4891-visual-ex",
+      "styleFamily": "museum woodcut illustration",
+      "sentenceEn": "The curator displays the historic rifle safely behind glass.",
+      "sentenceZh": "馆长将这支历史步枪安全地陈列在玻璃柜后。",
+      "scene": "An adult museum curator carefully places an unloaded antique rifle inside a locked glass display case, secured and separated from visitors, with no firing or ammunition.",
+      "altText": "A historic rifle displayed safely in a museum case.",
+      "riskTags": [
+        "safety",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5d16b154-ce04-4825-b3de-159bd5c06bc0",
+      "word": "maintenance",
+      "meaningZh": "维护",
+      "exampleId": "5d16b154-ce04-4825-b3de-159bd5c06bc0-visual-ex",
+      "styleFamily": "Chinese architectural linocut",
+      "sentenceEn": "Regular maintenance keeps the old wooden bridge safe.",
+      "sentenceZh": "定期维护使这座古老木桥保持安全。",
+      "scene": "Adult Chinese carpenters inspect joints, replace one worn plank, and apply protective oil to an old covered wooden bridge while pedestrians use a safe alternate side.",
+      "altText": "Workers performing maintenance on an old wooden bridge.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "aee36057-1b71-4e76-a626-60179d983617",
+      "word": "conviction",
+      "meaningZh": "定罪；信念",
+      "exampleId": "aee36057-1b71-4e76-a626-60179d983617-visual-ex",
+      "styleFamily": "symbolic editorial illustration",
+      "sentenceEn": "She speaks with conviction despite the doubtful audience.",
+      "sentenceZh": "尽管观众心存怀疑，她仍坚定地发言。",
+      "scene": "An adult woman stands upright before a doubtful seated audience, speaking with calm unwavering expression and firm open posture, while a small steady light behind her suggests strong belief.",
+      "altText": "A woman speaking with firm conviction.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "2291388e-40c7-41ab-acf3-5c553aabc89d",
+      "word": "trick",
+      "meaningZh": "诡计；技巧；欺骗",
+      "exampleId": "2291388e-40c7-41ab-acf3-5c553aabc89d-visual-ex",
+      "styleFamily": "graphic-novel illustration",
+      "sentenceEn": "The street magician reveals the trick behind the floating ring.",
+      "sentenceZh": "街头魔术师揭示了圆环悬浮技巧的秘密。",
+      "scene": "An adult street magician demonstrates a floating metal ring, then reveals the concealed support mechanism to an amused adult audience, making the clever trick understandable without exposing harmful deception.",
+      "altText": "A magician revealing the trick behind a floating ring.",
+      "riskTags": [
+        "sequence",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "26b13d69-7cd6-40d4-9bcf-368537b100f0",
+      "word": "organic",
+      "meaningZh": "有机的；器官的；生物的",
+      "exampleId": "26b13d69-7cd6-40d4-9bcf-368537b100f0-visual-ex",
+      "styleFamily": "Chinese botanical watercolor",
+      "sentenceEn": "The farmers grow organic vegetables without synthetic sprays.",
+      "sentenceZh": "农民不用合成喷剂种植有机蔬菜。",
+      "scene": "On a Chinese cooperative farm, adults enrich vegetable beds with compost, release ladybugs, and hand-remove weeds, while synthetic spray equipment remains absent.",
+      "altText": "Farmers growing organic vegetables with natural methods.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "265ce2f0-1c5e-4e4f-8d24-1c42a53a7874",
+      "word": "tent",
+      "meaningZh": "帐篷；帷幕；住处；塞条；塞子",
+      "exampleId": "265ce2f0-1c5e-4e4f-8d24-1c42a53a7874-visual-ex",
+      "styleFamily": "screen-print outdoor illustration",
+      "sentenceEn": "They secure the tent before the mountain wind arrives.",
+      "sentenceZh": "他们在山风来临前固定好帐篷。",
+      "scene": "Two adult campers tighten guy lines and drive stakes around a clearly visible dome tent on a mountain plateau as wind approaches, with natural hands and safe spacing.",
+      "altText": "Campers securing a tent before strong wind.",
+      "riskTags": [
+        "hands",
+        "safety",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "de37a680-2d71-476b-b851-20c1076d62ff",
+      "word": "examination",
+      "meaningZh": "检查；考试",
+      "exampleId": "de37a680-2d71-476b-b851-20c1076d62ff-visual-ex",
+      "styleFamily": "medical editorial gouache",
+      "sentenceEn": "The doctor performs a careful examination of the patient's knee.",
+      "sentenceZh": "医生仔细检查患者的膝盖。",
+      "scene": "An adult doctor performs a respectful physical examination of an adult patient's knee, checking movement and swelling in a bright clinic without charts or text.",
+      "altText": "A doctor performing a knee examination.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "medical"
+      ]
+    },
+    {
+      "vocabularyId": "6bad7416-e8cd-4547-9d4b-e27d9f9bb329",
+      "word": "publisher",
+      "meaningZh": "出版商",
+      "exampleId": "6bad7416-e8cd-4547-9d4b-e27d9f9bb329-visual-ex",
+      "styleFamily": "Chinese book-arts collage",
+      "sentenceEn": "The publisher reviews the illustrated book before printing.",
+      "sentenceZh": "出版商在印刷前审阅这本插图书。",
+      "scene": "At a Chinese independent publishing studio, an adult publisher compares blank-layout illustrated pages, paper samples, and a bound proof with an editor before sending it to a printing press.",
+      "altText": "A publisher reviewing an illustrated book before printing.",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3e2f0c22-a4bd-456b-8bfc-3498ed72ec85",
+      "word": "strengthen",
+      "meaningZh": "加强",
+      "exampleId": "3e2f0c22-a4bd-456b-8bfc-3498ed72ec85-visual-ex",
+      "styleFamily": "Chinese bamboo-craft illustration",
+      "sentenceEn": "Cross braces strengthen the bamboo footbridge.",
+      "sentenceZh": "交叉支撑加固了竹制人行桥。",
+      "scene": "Chinese builders add visible diagonal cross braces beneath a bamboo footbridge; one side with braces holds a heavy load firmly while an unfinished unbraced model bends slightly.",
+      "altText": "Cross braces strengthening a bamboo footbridge.",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "comparison",
+        "hands"
+      ]
+    }
+  ]
+}

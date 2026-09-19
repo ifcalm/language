@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2380-2399",
+  "batchId": "auto-rank-2380-2399-20260822",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "resort",
+      "tissue",
+      "constitutional",
+      "apple",
+      "literary",
+      "fortune"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "fe74ae9f-b7aa-442c-ba4c-055ab6cf90b6",
+      "word": "resort",
+      "meaningZh": "度假村；诉诸；手段",
+      "exampleId": "fe74ae9f-b7aa-442c-ba4c-055ab6cf90b6-visual-ex",
+      "styleFamily": "Hainan coastal travel-poster illustration",
+      "sentenceEn": "The family chose a quiet seaside resort in Hainan.",
+      "sentenceZh": "这家人选择了海南一处安静的海滨度假村。",
+      "scene": "A family relaxes at a peaceful Hainan seaside resort with palms, a curved beach, shaded pavilion, and calm turquoise water, with no signage.",
+      "altText": "一家人在海南海滨度假村放松",
+      "riskTags": [
+        "people_face",
+        "landscape",
+        "cultural_setting"
+      ]
+    },
+    {
+      "vocabularyId": "5eac18a9-531d-4b94-8e6e-38bb63948fed",
+      "word": "destruction",
+      "meaningZh": "毁灭；破坏",
+      "exampleId": "5eac18a9-531d-4b94-8e6e-38bb63948fed-visual-ex",
+      "styleFamily": "environmental restoration illustration",
+      "sentenceEn": "The storm caused destruction along the empty coast.",
+      "sentenceZh": "暴风雨破坏了无人居住的海岸。",
+      "scene": "After a storm, broken branches, damaged empty huts, and scattered debris line an unoccupied coast while recovery workers assess safely; no injury or bodies.",
+      "altText": "风暴过后海岸设施受损",
+      "riskTags": [
+        "disaster",
+        "no_injury",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "58c9f708-2fba-4383-b2fc-bd7d577ee94f",
+      "word": "unlikely",
+      "meaningZh": "不太可能的",
+      "exampleId": "58c9f708-2fba-4383-b2fc-bd7d577ee94f-visual-ex",
+      "styleFamily": "whimsical editorial illustration",
+      "sentenceEn": "It seemed unlikely that the tiny boat could carry the huge pumpkin.",
+      "sentenceZh": "那艘小船似乎不太可能载得动巨大的南瓜。",
+      "scene": "A very small rowboat sits beside an enormous pumpkin on a dock as two adults puzzle over the clearly unlikely transport plan.",
+      "altText": "小船似乎不可能载走巨大南瓜",
+      "riskTags": [
+        "scale_contrast",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "7228b56c-c72e-4903-9653-95290e1f4ba2",
+      "word": "tissue",
+      "meaningZh": "纸巾；组织",
+      "exampleId": "7228b56c-c72e-4903-9653-95290e1f4ba2-visual-ex",
+      "styleFamily": "Chinese paper-cut craft illustration",
+      "sentenceEn": "She folded the thin tissue paper for a festive decoration.",
+      "sentenceZh": "她折叠薄薄的绵纸制作节庆装饰。",
+      "scene": "A Chinese craftsperson folds layers of delicate red tissue paper into a festive flower decoration, with natural hands and no cut characters or writing.",
+      "altText": "匠人折叠红色绵纸制作节庆花饰",
+      "riskTags": [
+        "hands",
+        "cultural_craft",
+        "small_details"
+      ]
+    },
+    {
+      "vocabularyId": "6a4c20c2-2f14-4733-a569-91d22879acee",
+      "word": "constitutional",
+      "meaningZh": "宪法的",
+      "exampleId": "6a4c20c2-2f14-4733-a569-91d22879acee-visual-ex",
+      "styleFamily": "civic-library editorial illustration",
+      "sentenceEn": "The scholar explained the constitutional limits on government power.",
+      "sentenceZh": "学者解释了宪法对政府权力的限制。",
+      "scene": "In a dignified Chinese public library, a scholar uses balanced wooden blocks and a restrained government-building model to explain constitutional limits, with no text or symbols.",
+      "altText": "学者用平衡模型解释宪法限制",
+      "riskTags": [
+        "political_concept",
+        "text_risk",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d6b7cf5e-e564-4e28-9e03-d7e2ca4f1a44",
+      "word": "pant",
+      "meaningZh": "裤子",
+      "exampleId": "d6b7cf5e-e564-4e28-9e03-d7e2ca4f1a44-visual-ex",
+      "styleFamily": "fashion editorial illustration",
+      "sentenceEn": "He chose a loose pant for the summer hike.",
+      "sentenceZh": "他为夏季徒步选择了一条宽松长裤。",
+      "scene": "An adult hiker compares a loose lightweight pair of pants with heavy winter trousers before packing for a warm-weather trip.",
+      "altText": "徒步者为夏季行程选择宽松长裤",
+      "riskTags": [
+        "clothing",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "88a008b9-2bc8-414f-bfe4-9444dd30befa",
+      "word": "stranger",
+      "meaningZh": "陌生人",
+      "exampleId": "88a008b9-2bc8-414f-bfe4-9444dd30befa-visual-ex",
+      "styleFamily": "warm public-transit illustration",
+      "sentenceEn": "A kind stranger helped her lift the stroller.",
+      "sentenceZh": "一位好心的陌生人帮她抬起婴儿车。",
+      "scene": "At a station entrance, an unfamiliar adult politely helps another adult lift a stroller up one step while maintaining respectful space.",
+      "altText": "陌生人友善地帮忙抬婴儿车",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "child_equipment"
+      ]
+    },
+    {
+      "vocabularyId": "ab80da94-8625-4e47-af97-64e3a36f562f",
+      "word": "infection",
+      "meaningZh": "感染",
+      "exampleId": "ab80da94-8625-4e47-af97-64e3a36f562f-visual-ex",
+      "styleFamily": "medical editorial illustration",
+      "sentenceEn": "The nurse cleaned the cut to prevent infection.",
+      "sentenceZh": "护士清洁伤口以防感染。",
+      "scene": "A nurse wearing gloves gently cleans a small superficial cut on an adult patient's forearm in a bright clinic, with no blood or distress.",
+      "altText": "护士清洁小伤口预防感染",
+      "riskTags": [
+        "medical",
+        "minor_injury",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "706e66f3-3cba-41a5-8e24-5b7e6e8540ff",
+      "word": "cabinet",
+      "meaningZh": "橱柜；内阁；陈列柜",
+      "exampleId": "706e66f3-3cba-41a5-8e24-5b7e6e8540ff-visual-ex",
+      "styleFamily": "domestic watercolor illustration",
+      "sentenceEn": "The cups are stored in the kitchen cabinet.",
+      "sentenceZh": "杯子存放在厨房橱柜里。",
+      "scene": "An adult opens a wooden kitchen cabinet containing neatly arranged cups and bowls, clearly showing the storage furniture.",
+      "altText": "打开的厨房橱柜里整齐放着杯碗",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "interior"
+      ]
+    },
+    {
+      "vocabularyId": "ed3c8ac2-0037-4b61-92b1-6852c0f8452b",
+      "word": "broken",
+      "meaningZh": "破碎的",
+      "exampleId": "ed3c8ac2-0037-4b61-92b1-6852c0f8452b-visual-ex",
+      "styleFamily": "repair-themed editorial illustration",
+      "sentenceEn": "He repaired the broken chair instead of throwing it away.",
+      "sentenceZh": "他修理了坏椅子，而没有把它扔掉。",
+      "scene": "A craftsperson clamps and repairs a chair with one clearly broken wooden leg, while the other three legs remain intact.",
+      "altText": "工匠修理一条腿断裂的椅子",
+      "riskTags": [
+        "hands",
+        "tools",
+        "object_damage"
+      ]
+    },
+    {
+      "vocabularyId": "749c9c67-05e5-4664-b16c-d131997cb365",
+      "word": "apple",
+      "meaningZh": "苹果",
+      "exampleId": "749c9c67-05e5-4664-b16c-d131997cb365-visual-ex",
+      "styleFamily": "Chinese orchard gouache illustration",
+      "sentenceEn": "She picked a crisp apple in the autumn orchard.",
+      "sentenceZh": "她在秋日果园摘下一颗脆甜的苹果。",
+      "scene": "In a Chinese highland orchard at harvest, a farmer picks one bright red apple from a laden tree while baskets of fruit rest nearby.",
+      "altText": "果农在中国秋日果园采摘苹果",
+      "riskTags": [
+        "hands",
+        "many_objects",
+        "cultural_setting"
+      ]
+    },
+    {
+      "vocabularyId": "7927d2ed-5544-4cfb-8048-f575038557b3",
+      "word": "electric",
+      "meaningZh": "电的；导电的；电动的",
+      "exampleId": "7927d2ed-5544-4cfb-8048-f575038557b3-visual-ex",
+      "styleFamily": "clean-energy editorial illustration",
+      "sentenceEn": "The electric bus moved quietly through the city.",
+      "sentenceZh": "电动公交车安静地驶过城市。",
+      "scene": "A modern electric city bus glides quietly along a green boulevard, connected visually to a clean charging station without logos or text.",
+      "altText": "电动公交车安静驶过绿色街道",
+      "riskTags": [
+        "vehicle",
+        "text_risk",
+        "urban_scene"
+      ]
+    },
+    {
+      "vocabularyId": "d44c4a42-cf44-41c8-b4ea-a26261255e34",
+      "word": "proceed",
+      "meaningZh": "继续进行；前进；着手",
+      "exampleId": "d44c4a42-cf44-41c8-b4ea-a26261255e34-visual-ex",
+      "styleFamily": "sequential editorial illustration",
+      "sentenceEn": "After the gate opened, the hikers proceeded along the trail.",
+      "sentenceZh": "大门打开后，徒步者继续沿小径前进。",
+      "scene": "A trail gate swings open and a group of hikers moves forward together along the clearly continuing path through the hills.",
+      "altText": "大门打开后徒步者继续前行",
+      "riskTags": [
+        "people_face",
+        "sequence",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "f19298bf-0245-4b2e-affb-1dc6859b2823",
+      "word": "bet",
+      "meaningZh": "打赌；赌注",
+      "exampleId": "f19298bf-0245-4b2e-affb-1dc6859b2823-visual-ex",
+      "styleFamily": "friendly game-night illustration",
+      "sentenceEn": "He bet a cookie that his guess was correct.",
+      "sentenceZh": "他用一块饼干打赌自己的猜测正确。",
+      "scene": "Two adult friends playfully place one cookie beside a covered mystery object while guessing its contents, conveying a harmless small bet.",
+      "altText": "朋友用一块饼干进行友好打赌",
+      "riskTags": [
+        "gambling_term",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c1363c6a-5435-44fc-ab11-1a557e148993",
+      "word": "literary",
+      "meaningZh": "文学的",
+      "exampleId": "c1363c6a-5435-44fc-ab11-1a557e148993-visual-ex",
+      "styleFamily": "Chinese scholar-studio watercolor illustration",
+      "sentenceEn": "Her literary style was inspired by classical poetry.",
+      "sentenceZh": "她的文学风格受到古典诗歌启发。",
+      "scene": "A contemporary Chinese writer reflects in a scholar's studio beside bamboo, an inkstone, and closed poetry volumes, with every page blank and no calligraphy.",
+      "altText": "中国作家在书斋汲取古诗灵感",
+      "riskTags": [
+        "text_risk",
+        "cultural_setting",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b535942d-d8dd-4adc-ad16-1c7bac1bb906",
+      "word": "virus",
+      "meaningZh": "病毒；滤过性病毒；毒害",
+      "exampleId": "b535942d-d8dd-4adc-ad16-1c7bac1bb906-visual-ex",
+      "styleFamily": "medical-science 3D editorial illustration",
+      "sentenceEn": "The vaccine trained the body to recognize the virus.",
+      "sentenceZh": "疫苗训练身体识别这种病毒。",
+      "scene": "A clean nonliteral scientific visualization shows immune cells surrounding stylized virus particles, with a calm clinician observing a model and no labels.",
+      "altText": "免疫细胞围住程式化病毒颗粒",
+      "riskTags": [
+        "medical",
+        "science_accuracy",
+        "abstract_visualization"
+      ]
+    },
+    {
+      "vocabularyId": "bc111453-8c6b-4e3e-8f87-dbd813281243",
+      "word": "stupid",
+      "meaningZh": "愚蠢的；麻木的",
+      "exampleId": "bc111453-8c6b-4e3e-8f87-dbd813281243-visual-ex",
+      "styleFamily": "empathetic editorial illustration",
+      "sentenceEn": "He felt stupid after making the same mistake twice.",
+      "sentenceZh": "同样的错误犯了两次后，他觉得自己很愚蠢。",
+      "scene": "An adult looks embarrassed beside two identical toppled block structures while a supportive friend calmly helps rebuild, avoiding ridicule or caricature.",
+      "altText": "男子因重复犯错而尴尬",
+      "riskTags": [
+        "emotion",
+        "people_face",
+        "stigmatizing_term"
+      ]
+    },
+    {
+      "vocabularyId": "482df8ce-32b7-4f00-8876-e1e892dd0b4a",
+      "word": "dispute",
+      "meaningZh": "争议；争论；质疑",
+      "exampleId": "482df8ce-32b7-4f00-8876-e1e892dd0b4a-visual-ex",
+      "styleFamily": "mediation editorial illustration",
+      "sentenceEn": "A mediator helped the neighbors settle their dispute.",
+      "sentenceZh": "调解员帮助邻居解决了争议。",
+      "scene": "Two neighbors sit on opposite sides of a table while a neutral mediator helps them reach a calm agreement about a shared fence model.",
+      "altText": "调解员帮助邻居解决围栏争议",
+      "riskTags": [
+        "conflict",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e7dfb260-430d-47f5-a64b-140007ec777d",
+      "word": "fortune",
+      "meaningZh": "财富；运气；命运；巨款",
+      "exampleId": "e7dfb260-430d-47f5-a64b-140007ec777d-visual-ex",
+      "styleFamily": "Chinese New Year family illustration",
+      "sentenceEn": "Good health was the family's greatest fortune.",
+      "sentenceZh": "健康是这个家庭最大的福气。",
+      "scene": "A multigenerational Chinese family celebrates good health together at New Year, sharing tea and fruit beneath blank red decorations, emphasizing fortune beyond money.",
+      "altText": "春节团聚家庭把健康视为最大福气",
+      "riskTags": [
+        "many_people",
+        "cultural_event",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c2f148f5-75ad-4f31-b06e-74e796f968e9",
+      "word": "strategic",
+      "meaningZh": "战略的",
+      "exampleId": "c2f148f5-75ad-4f31-b06e-74e796f968e9-visual-ex",
+      "styleFamily": "strategy-board editorial illustration",
+      "sentenceEn": "The team chose a strategic position near the bridge.",
+      "sentenceZh": "团队选择了桥边的战略位置。",
+      "scene": "A rescue-planning team arranges plain miniature vehicles and supply tents on a terrain model near a bridge, choosing an effective position without maps or labels.",
+      "altText": "救援团队在桥边选择战略位置",
+      "riskTags": [
+        "text_risk",
+        "many_objects",
+        "hands"
+      ]
+    }
+  ]
+}

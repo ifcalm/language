@@ -1,0 +1,364 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3180-3199",
+  "batchId": "auto-rank-3180-3199-20260914",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "announcement",
+      "mud",
+      "infrastructure",
+      "temple",
+      "broadcast",
+      "pond"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "87c6e85c-5525-4880-8b9f-2a73ba61b0cf",
+      "word": "prosecution",
+      "meaningZh": "起诉",
+      "exampleId": "87c6e85c-5525-4880-8b9f-2a73ba61b0cf-visual-ex",
+      "styleFamily": "balanced courtroom editorial gouache",
+      "sentenceEn": "The prosecution presented its evidence calmly to the court.",
+      "sentenceZh": "控方平静地向法庭出示了证据。",
+      "scene": "Inside a dignified modern courtroom, an adult prosecutor calmly presents a plain sealed evidence box to a seated judge while the defense observes attentively; neutral professional mood, complete faces, no visible crime, weapons, restraints, distress, labels, legal text, seals or writing.",
+      "altText": "A prosecutor presents evidence calmly in court.",
+      "riskTags": [
+        "legal",
+        "neutral_proceeding",
+        "no_crime_scene",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5950eaba-b27a-49a0-84d4-af567634631f",
+      "word": "maximum",
+      "meaningZh": "极点；最大量；极大",
+      "exampleId": "5950eaba-b27a-49a0-84d4-af567634631f-visual-ex",
+      "styleFamily": "clear object-concept colored-pencil illustration",
+      "sentenceEn": "The container was filled to its maximum capacity.",
+      "sentenceZh": "这个容器已经装到了最大容量。",
+      "scene": "A large transparent glass container sits on a sturdy table filled with smooth blue glass beads exactly to the brim, while a few extra beads remain beside it and clearly cannot fit; clean object-focused composition, no people, measurement lines, numbers, arrows, labels or writing.",
+      "altText": "A container filled exactly to its maximum capacity.",
+      "riskTags": [
+        "abstract_concept",
+        "object_focus",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2acbd2d6-ccb3-4603-b243-5d8f368e6fe4",
+      "word": "announcement",
+      "meaningZh": "公告",
+      "exampleId": "2acbd2d6-ccb3-4603-b243-5d8f368e6fe4-visual-ex",
+      "styleFamily": "Chinese railway hall warm watercolor",
+      "sentenceEn": "The announcement asked all passengers to wait calmly.",
+      "sentenceZh": "广播通知请所有乘客耐心等候。",
+      "scene": "In a modern Chinese railway waiting hall, an adult staff member makes an announcement through a desk microphone while seated passengers turn their attention toward the speaker; complete natural faces, all screens turned off or absent, no station names, timetable, signs, tickets, uniforms marks, letters or numbers.",
+      "altText": "Passengers listen to an announcement in a railway hall.",
+      "riskTags": [
+        "Chinese_context",
+        "public_address",
+        "crowd",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "fa81fbef-9530-4bd1-91b1-464dc890f56b",
+      "word": "warrior",
+      "meaningZh": "战士；勇士",
+      "exampleId": "fa81fbef-9530-4bd1-91b1-464dc890f56b-visual-ex",
+      "styleFamily": "historical guardian textured tempera",
+      "sentenceEn": "The warrior stood guard at the city gate.",
+      "sentenceZh": "这名勇士守卫在城门口。",
+      "scene": "A mature woman warrior stands watchfully at an ancient stone city gate in practical historical armor, holding a plain round shield while her sword remains fully sheathed; calm defensive posture, complete face, no battle, injuries, blood, enemies, banners, crests, emblems or writing.",
+      "altText": "An armored warrior stands guard peacefully at a city gate.",
+      "riskTags": [
+        "historical",
+        "weapon_sheathed",
+        "no_violence",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1b09360f-3226-4dca-8ee3-a3e2c42675d6",
+      "word": "prediction",
+      "meaningZh": "预测",
+      "exampleId": "1b09360f-3226-4dca-8ee3-a3e2c42675d6-visual-ex",
+      "styleFamily": "weather observation editorial pastel",
+      "sentenceEn": "Her prediction of rain proved correct by afternoon.",
+      "sentenceZh": "她对降雨的预测到下午得到了验证。",
+      "scene": "An adult weather observer stands under a simple shelter watching rain begin over a field, with a closed umbrella and plain instruments she prepared earlier beside her; thoughtful satisfied expression, complete face, no forecast screens, weather icons, maps, gauges with numbers, arrows or writing.",
+      "altText": "Rain confirms a weather observer’s prediction.",
+      "riskTags": [
+        "weather",
+        "abstract_concept",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "aeedc864-9e84-49b6-86ab-205e40b47a82",
+      "word": "bacteria",
+      "meaningZh": "细菌",
+      "exampleId": "aeedc864-9e84-49b6-86ab-205e40b47a82-visual-ex",
+      "styleFamily": "scientific laboratory cut-paper illustration",
+      "sentenceEn": "The scientist examined the bacteria in a culture dish.",
+      "sentenceZh": "科学家检查了培养皿中的细菌。",
+      "scene": "An adult laboratory scientist safely examines a clear culture dish containing small harmless-looking round colonies under a bench magnifier, with a microscope nearby; gloves and complete face visible, clean controlled setting, no illness, bodily fluids, hazard symbols, specimen labels, writing or readable equipment screens.",
+      "altText": "A scientist examines bacteria growing in a culture dish.",
+      "riskTags": [
+        "science",
+        "bacteria",
+        "non_graphic",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "e39b8a9c-089a-4f3a-8f45-0a962fd08f6d",
+      "word": "questionnaire",
+      "meaningZh": "调查表；问卷",
+      "exampleId": "e39b8a9c-089a-4f3a-8f45-0a962fd08f6d-visual-ex",
+      "styleFamily": "survey desk ink-and-watercolor illustration",
+      "sentenceEn": "Each participant completed the questionnaire before the interview.",
+      "sentenceZh": "每位参与者都在访谈前填写了问卷。",
+      "scene": "Several adults at separate tables complete paper questionnaires before an interview, each using a pen on a tidy clipboard; papers show only abstract pale horizontal strokes and empty circles with no readable questions, letters, numbers, checkmarks, logos or identifying information; complete faces.",
+      "altText": "Adults complete questionnaires before an interview.",
+      "riskTags": [
+        "paperwork",
+        "group_scene",
+        "no_personal_data",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "21192294-853d-4856-9989-50640931629c",
+      "word": "mud",
+      "meaningZh": "泥；诽谤；弄脏",
+      "exampleId": "21192294-853d-4856-9989-50640931629c-visual-ex",
+      "styleFamily": "Chinese rice-field earthy gouache",
+      "sentenceEn": "His boots sank deep into the soft mud.",
+      "sentenceZh": "他的靴子深深陷进了松软的泥里。",
+      "scene": "In a Chinese rice field after rain, an adult farmer carefully pulls one tall rubber boot from thick soft mud while balancing with a plain wooden pole; mildly amused complete expression, safe posture, no fall, machinery, crop signs, labels or writing.",
+      "altText": "A farmer pulls a boot from soft field mud.",
+      "riskTags": [
+        "Chinese_context",
+        "farm",
+        "safe_action",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "f3075877-4c33-4675-b65a-43dae0333005",
+      "word": "infrastructure",
+      "meaningZh": "基础设施",
+      "exampleId": "f3075877-4c33-4675-b65a-43dae0333005-visual-ex",
+      "styleFamily": "Chinese city systems panoramic gouache",
+      "sentenceEn": "Reliable infrastructure keeps the growing city connected.",
+      "sentenceZh": "可靠的基础设施让不断发展的城市保持互联。",
+      "scene": "Panoramic illustrated view of a modern Chinese city district where a rail viaduct, pedestrian bridge, waterworks, power lines and maintained roads visibly function together, with small adult maintenance crews at work; coherent real-world layout, no maps, callouts, station signs, road markings with letters, vehicle logos or writing.",
+      "altText": "Transport, water and power infrastructure connect a modern city.",
+      "riskTags": [
+        "Chinese_context",
+        "city_systems",
+        "wide_scene",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c802b240-071e-4ec1-9eb9-d5ac35388292",
+      "word": "hurry",
+      "meaningZh": "匆忙；急忙；急促；急派；催促",
+      "exampleId": "c802b240-071e-4ec1-9eb9-d5ac35388292-visual-ex",
+      "styleFamily": "dynamic transit colored-pencil illustration",
+      "sentenceEn": "We had to hurry to catch the departing bus.",
+      "sentenceZh": "我们必须赶快才能赶上即将出发的公交车。",
+      "scene": "Two adults hurry safely along a broad sidewalk toward an open city bus door, carrying small bags and moving with purposeful quick steps; driver waits visibly, complete faces, no running into traffic, motion streaks, bus route numbers, destination display, tickets, signs or logos.",
+      "altText": "Two travelers hurry safely toward a waiting bus.",
+      "riskTags": [
+        "quick_motion",
+        "transport",
+        "safe_action",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "16d41342-a72b-41ad-b01e-45b65e28bc20",
+      "word": "privilege",
+      "meaningZh": "特权；特别恩典；基本权利；特免",
+      "exampleId": "16d41342-a72b-41ad-b01e-45b65e28bc20-visual-ex",
+      "styleFamily": "quiet archive access editorial watercolor",
+      "sentenceEn": "Access to the private archive was a rare privilege.",
+      "sentenceZh": "获准进入私人档案室是一项难得的特权。",
+      "scene": "An archive curator unlocks a special climate-controlled reading room for a grateful adult researcher wearing clean gloves, with carefully boxed collections visible inside; respectful sense of rare access, complete faces, no exclusion crowd, access badges, labels, book titles, door signs or writing.",
+      "altText": "A researcher receives the privilege of entering a private archive.",
+      "riskTags": [
+        "abstract_concept",
+        "special_access",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a04a180f-e8d0-4747-8044-9853897853fb",
+      "word": "temple",
+      "meaningZh": "寺庙；神殿；太阳穴",
+      "exampleId": "a04a180f-e8d0-4747-8044-9853897853fb-visual-ex",
+      "styleFamily": "Chinese temple courtyard ink-and-color painting",
+      "sentenceEn": "Visitors entered the temple courtyard in respectful silence.",
+      "sentenceZh": "游客们安静而恭敬地走进寺庙庭院。",
+      "scene": "Adult visitors quietly enter a serene traditional Chinese Buddhist temple courtyard with tiled roofs, stone steps, old trees and a simple incense vessel, behaving respectfully; complete faces, no readable plaques, calligraphy, banners, deity close-ups, ritual text, commercial signs or writing.",
+      "altText": "Visitors respectfully enter a quiet Chinese temple courtyard.",
+      "riskTags": [
+        "Chinese_context",
+        "religious_site",
+        "respectful",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "eb575865-ecb3-47bc-8f97-3b98e49eece9",
+      "word": "outdoor",
+      "meaningZh": "户外的",
+      "exampleId": "eb575865-ecb3-47bc-8f97-3b98e49eece9-visual-ex",
+      "styleFamily": "sunlit garden lifestyle gouache",
+      "sentenceEn": "They chose an outdoor table for lunch.",
+      "sentenceZh": "他们选择了户外餐桌吃午饭。",
+      "scene": "Three adults enjoy lunch at a shaded outdoor table in a leafy garden patio, with open sky, trees and natural breeze clearly distinguishing it from the interior visible through a doorway; complete faces, plain dishes, no menus, food packaging, signs, logos or writing.",
+      "altText": "Friends have lunch at an outdoor garden table.",
+      "riskTags": [
+        "outdoors",
+        "meal",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "bc946ce6-996d-4621-88a0-5f49f41426e8",
+      "word": "suck",
+      "meaningZh": "吸；吮吸；很糟糕（口语）",
+      "exampleId": "bc946ce6-996d-4621-88a0-5f49f41426e8-visual-ex",
+      "styleFamily": "simple café close-up pastel illustration",
+      "sentenceEn": "She used a straw to suck juice from the glass.",
+      "sentenceZh": "她用吸管从杯子里吸果汁。",
+      "scene": "A fully clothed adult woman naturally drinks fresh orange juice by sucking through a plain reusable straw from a clear glass at a simple café table; neutral everyday action, side view with complete face, no exaggerated lips, suggestive framing, packaged drink, straw decoration, labels, logos or writing.",
+      "altText": "A woman uses a straw to suck juice from a glass.",
+      "riskTags": [
+        "drinking",
+        "adult",
+        "neutral_action",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "11f8688d-ad62-4df2-beed-24b85c753518",
+      "word": "broadcast",
+      "meaningZh": "广播；传播；广播的",
+      "exampleId": "11f8688d-ad62-4df2-beed-24b85c753518-visual-ex",
+      "styleFamily": "Chinese radio studio editorial gouache",
+      "sentenceEn": "The morning broadcast reached listeners across the region.",
+      "sentenceZh": "早间广播传到了这一地区的听众耳中。",
+      "scene": "A Chinese adult radio presenter speaks into a professional microphone in a warm studio while an adult producer listens behind a glass partition; expressive complete faces, equipment controls are plain and unlit, no station branding, on-air sign, clocks, screens, sound-wave graphics, letters or numbers.",
+      "altText": "A radio presenter delivers a morning broadcast from a studio.",
+      "riskTags": [
+        "Chinese_context",
+        "radio",
+        "no_UI",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a522d53c-1ba1-45b2-9c77-5caaa2272d61",
+      "word": "leap",
+      "meaningZh": "跳跃；飞跃；猛增",
+      "exampleId": "a522d53c-1ba1-45b2-9c77-5caaa2272d61-visual-ex",
+      "styleFamily": "outdoor movement graphic watercolor",
+      "sentenceEn": "The hiker made a careful leap across the narrow stream.",
+      "sentenceZh": "徒步者小心地跃过了狭窄的小溪。",
+      "scene": "An athletic adult hiker makes a controlled leap over a very narrow shallow woodland stream, with both banks close and a companion watching safely from solid ground; dynamic pose, complete faces, no cliff, dangerous height, fall, injury, motion lines, trail signs or writing.",
+      "altText": "A hiker makes a careful leap across a narrow stream.",
+      "riskTags": [
+        "motion",
+        "outdoors",
+        "safe_action",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "3f1015d9-6009-4319-9519-cd960e375a3c",
+      "word": "random",
+      "meaningZh": "随意；随机",
+      "exampleId": "3f1015d9-6009-4319-9519-cd960e375a3c-visual-ex",
+      "styleFamily": "probability object-scene colored-pencil art",
+      "sentenceEn": "She selected one colored ball at random from the bag.",
+      "sentenceZh": "她从袋子里随机抽取了一个彩球。",
+      "scene": "An adult woman closes her eyes and reaches into an opaque cloth bag to select one smooth colored wooden ball at random, while several other plain balls rest in a bowl nearby; complete face, no raffle tickets, labels, numbers, letters, dice markings, arrows or probability symbols.",
+      "altText": "A woman draws a colored ball at random from an opaque bag.",
+      "riskTags": [
+        "abstract_concept",
+        "selection",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5dc7cc0c-e1cc-417a-9ff6-c88870e490cf",
+      "word": "wrist",
+      "meaningZh": "手腕；腕关节；腕",
+      "exampleId": "5dc7cc0c-e1cc-417a-9ff6-c88870e490cf-visual-ex",
+      "styleFamily": "gentle therapy clinic pencil illustration",
+      "sentenceEn": "The therapist gently examined her sore wrist.",
+      "sentenceZh": "治疗师轻柔地检查了她疼痛的手腕。",
+      "scene": "An adult physical therapist gently supports and examines another adult woman’s wrist across a plain clinic table, making the wrist joint the clear focal point; both calm, fully clothed and complete-faced, no swelling, bruising, injury, needles, anatomical diagrams, labels or writing.",
+      "altText": "A therapist gently examines a patient’s wrist.",
+      "riskTags": [
+        "medical",
+        "non_graphic",
+        "joint_focus",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e95c1abd-a8b8-4821-b875-8cec8385c257",
+      "word": "curtain",
+      "meaningZh": "帐；幕；窗帘；装帘子于；遮蔽",
+      "exampleId": "e95c1abd-a8b8-4821-b875-8cec8385c257-visual-ex",
+      "styleFamily": "morning interior soft watercolor",
+      "sentenceEn": "She opened the curtain and let sunlight into the room.",
+      "sentenceZh": "她拉开窗帘，让阳光照进房间。",
+      "scene": "An adult woman draws open one heavy fabric curtain at a tall window as warm morning sunlight spreads across a quiet living room; curtain fabric and opening action dominate, complete profile face, no patterned letters, wall signs, book titles, logos or writing.",
+      "altText": "A woman opens a curtain to let sunlight into the room.",
+      "riskTags": [
+        "interior",
+        "fabric",
+        "complete_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "aeea06f5-e63c-41c2-910b-90c57204e104",
+      "word": "pond",
+      "meaningZh": "池塘；筑成池塘",
+      "exampleId": "aeea06f5-e63c-41c2-910b-90c57204e104-visual-ex",
+      "styleFamily": "Chinese classical garden watercolor",
+      "sentenceEn": "Lotus flowers covered the quiet pond.",
+      "sentenceZh": "荷花铺满了宁静的池塘。",
+      "scene": "A tranquil pond in a Chinese classical garden filled with lotus leaves and blooming lotus flowers, a few koi visible beneath clear water, with a stone edge, willow branches and a small unmarked pavilion reflected in the surface; no people, plaques, calligraphy, signs, symbols or writing.",
+      "altText": "Lotus flowers cover a quiet garden pond.",
+      "riskTags": [
+        "Chinese_context",
+        "garden",
+        "water",
+        "no_text"
+      ]
+    }
+  ]
+}

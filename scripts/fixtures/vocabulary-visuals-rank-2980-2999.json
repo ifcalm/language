@@ -1,0 +1,364 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2980-2999",
+  "batchId": "auto-rank-2980-2999-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "rose",
+      "anniversary",
+      "alliance",
+      "compose",
+      "legend",
+      "adolescent"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "57b39faa-5298-4a72-94db-67ec6e0305c7",
+      "word": "rose",
+      "meaningZh": "玫瑰；上升",
+      "exampleId": "57b39faa-5298-4a72-94db-67ec6e0305c7-visual-ex",
+      "styleFamily": "Chinese garden gouache illustration",
+      "sentenceEn": "A red rose opens beside the garden path.",
+      "sentenceZh": "一朵红玫瑰在花园小径旁绽放。",
+      "scene": "In a tranquil Suzhou-style garden, a gardener gently supports one fully opened red rose beside a stone path, with several closed buds making the mature bloom unmistakable.",
+      "altText": "A red rose blooms beside a path in a Chinese garden.",
+      "riskTags": [
+        "plant",
+        "flower",
+        "hands",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "b9db8dc1-f278-48b5-91d3-9197648517cd",
+      "word": "surprisingly",
+      "meaningZh": "惊人地",
+      "exampleId": "b9db8dc1-f278-48b5-91d3-9197648517cd-visual-ex",
+      "styleFamily": "playful editorial cut-paper illustration",
+      "sentenceEn": "Surprisingly, the tiny seed grows into a huge sunflower.",
+      "sentenceZh": "令人惊讶的是，小种子长成了巨大的向日葵。",
+      "scene": "An adult gardener looks up in delighted surprise at an enormous sunflower towering from a tiny garden pot, with the dramatic size contrast and expression communicating the unexpected result.",
+      "altText": "A gardener is surprised by a huge sunflower from a tiny seed.",
+      "riskTags": [
+        "adverb_concept",
+        "scale_contrast",
+        "people_face",
+        "plant"
+      ]
+    },
+    {
+      "vocabularyId": "131295a2-63a9-404c-bc7d-b256ec3e6d27",
+      "word": "highlight",
+      "meaningZh": "高亮；突出；强调；精彩部分",
+      "exampleId": "131295a2-63a9-404c-bc7d-b256ec3e6d27-visual-ex",
+      "styleFamily": "bold museum screen-print illustration",
+      "sentenceEn": "The curator highlights the finest vase in the collection.",
+      "sentenceZh": "策展人突出展示了藏品中最精美的花瓶。",
+      "scene": "In a gallery alcove, a curator directs a focused warm spotlight onto one exceptional ceramic vase while several other vessels remain softly subdued, making the emphasized object unmistakable.",
+      "altText": "A curator highlights one exceptional vase with a spotlight.",
+      "riskTags": [
+        "verb_concept",
+        "lighting",
+        "people_face",
+        "artwork"
+      ]
+    },
+    {
+      "vocabularyId": "b55fbafb-f588-4ad8-b054-f630c4a4f9d7",
+      "word": "decrease",
+      "meaningZh": "减少；减少量",
+      "exampleId": "b55fbafb-f588-4ad8-b054-f630c4a4f9d7-visual-ex",
+      "styleFamily": "clean sequential flat-color illustration",
+      "sentenceEn": "The number of apples decreases as shoppers take them.",
+      "sentenceZh": "随着顾客拿走苹果，苹果的数量逐渐减少。",
+      "scene": "A left-to-right sequence on one market shelf shows a full pile of apples, then a smaller pile, then only a few apples as adult hands remove them, with no arrows, numerals, labels, or writing.",
+      "altText": "A pile of apples decreases as shoppers take them.",
+      "riskTags": [
+        "quantity_change",
+        "sequence",
+        "hands",
+        "no_numbers"
+      ]
+    },
+    {
+      "vocabularyId": "8c04d87a-08be-4e44-bf57-f43434577acc",
+      "word": "indication",
+      "meaningZh": "迹象；指示",
+      "exampleId": "8c04d87a-08be-4e44-bf57-f43434577acc-visual-ex",
+      "styleFamily": "atmospheric weather watercolor illustration",
+      "sentenceEn": "Dark clouds are an indication that rain is coming.",
+      "sentenceZh": "乌云是即将下雨的迹象。",
+      "scene": "A farmer pauses in a field and looks toward thick dark clouds gathering over distant hills while wind bends the crops and the first isolated raindrops appear, clearly signaling approaching rain.",
+      "altText": "Dark clouds and wind indicate that rain is approaching.",
+      "riskTags": [
+        "abstract_meaning",
+        "weather",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e9e7fae1-24b7-419e-883d-151f2564aabb",
+      "word": "rail",
+      "meaningZh": "轨道；铁路；栏杆",
+      "exampleId": "e9e7fae1-24b7-419e-883d-151f2564aabb-visual-ex",
+      "styleFamily": "crisp architectural line-and-wash illustration",
+      "sentenceEn": "She holds the rail while walking down the steps.",
+      "sentenceZh": "她下台阶时扶着栏杆。",
+      "scene": "An older adult safely descends a short outdoor staircase with one hand wrapped naturally around the continuous metal handrail, which is clearly visible from top to bottom.",
+      "altText": "A woman holds a rail while walking down steps.",
+      "riskTags": [
+        "object_focus",
+        "mobility",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "360b64b4-1b9f-410d-b477-b17b976828b4",
+      "word": "anniversary",
+      "meaningZh": "周年纪念",
+      "exampleId": "360b64b4-1b9f-410d-b477-b17b976828b4-visual-ex",
+      "styleFamily": "warm Chinese family-story illustration",
+      "sentenceEn": "The couple celebrates their wedding anniversary together.",
+      "sentenceZh": "这对夫妻一起庆祝结婚纪念日。",
+      "scene": "An older Chinese couple shares tea and exchanges a small wrapped gift beside their wedding photograph and a simple flower arrangement, smiling warmly during a quiet anniversary celebration with no dates or writing.",
+      "altText": "An older Chinese couple celebrates their wedding anniversary.",
+      "riskTags": [
+        "celebration",
+        "relationship",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "dbf706af-3980-4baf-8489-e27279bb37a0",
+      "word": "couch",
+      "meaningZh": "长沙发；睡椅",
+      "exampleId": "dbf706af-3980-4baf-8489-e27279bb37a0-visual-ex",
+      "styleFamily": "cozy textured domestic illustration",
+      "sentenceEn": "The dog sleeps comfortably on the couch.",
+      "sentenceZh": "小狗舒服地睡在长沙发上。",
+      "scene": "A relaxed dog stretches across the cushions of a large soft living-room couch, with its head on one armrest and a folded blanket nearby, making the furniture the central object.",
+      "altText": "A dog sleeps across a comfortable couch.",
+      "riskTags": [
+        "furniture",
+        "animal",
+        "interior"
+      ]
+    },
+    {
+      "vocabularyId": "88d40063-8164-4ddf-a75d-43254aae86f3",
+      "word": "alliance",
+      "meaningZh": "联盟；联合；同盟；联姻",
+      "exampleId": "88d40063-8164-4ddf-a75d-43254aae86f3-visual-ex",
+      "styleFamily": "Chinese rural cooperative mural illustration",
+      "sentenceEn": "The two villages form an alliance to repair the canal.",
+      "sentenceZh": "两个村庄结成联盟，共同修复水渠。",
+      "scene": "Representatives from two Chinese farming villages clasp hands across a repaired irrigation canal while mixed teams from both communities work together behind them, visibly joining resources for one shared goal.",
+      "altText": "Two Chinese villages form an alliance to repair a canal.",
+      "riskTags": [
+        "abstract_meaning",
+        "group_cooperation",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "73f5b64a-d975-47ac-989e-a1ab4e562626",
+      "word": "hypothesis",
+      "meaningZh": "假设；假说",
+      "exampleId": "73f5b64a-d975-47ac-989e-a1ab4e562626-visual-ex",
+      "styleFamily": "stylized scientific notebook illustration",
+      "sentenceEn": "The scientist tests her hypothesis about plant growth.",
+      "sentenceZh": "科学家检验她关于植物生长的假设。",
+      "scene": "A scientist prepares two identical seedlings under different colored lamps, thoughtfully predicting that one will grow taller before beginning the controlled experiment; show a faint imagined taller plant above one pot without words or labels.",
+      "altText": "A scientist prepares to test a hypothesis about plant growth.",
+      "riskTags": [
+        "scientific_method",
+        "abstract_meaning",
+        "people_face",
+        "plant"
+      ]
+    },
+    {
+      "vocabularyId": "4e3f0468-366c-436e-ac2f-4ad6414651d6",
+      "word": "boyfriend",
+      "meaningZh": "男朋友",
+      "exampleId": "4e3f0468-366c-436e-ac2f-4ad6414651d6-visual-ex",
+      "styleFamily": "gentle contemporary relationship illustration",
+      "sentenceEn": "Her boyfriend brings soup while she is sick.",
+      "sentenceZh": "她生病时，男朋友给她带来热汤。",
+      "scene": "A young adult man arrives at his partner’s apartment with a covered bowl of warm soup and a caring expression while she rests fully clothed under a blanket on a chair, greeting him appreciatively.",
+      "altText": "A caring boyfriend brings warm soup to his sick partner.",
+      "riskTags": [
+        "relationship",
+        "illness",
+        "people_face",
+        "respectful_representation"
+      ]
+    },
+    {
+      "vocabularyId": "c1b1bd4b-9979-4bb0-9ad5-8810c0601389",
+      "word": "compose",
+      "meaningZh": "组成；写作；作曲；使平静",
+      "exampleId": "c1b1bd4b-9979-4bb0-9ad5-8810c0601389-visual-ex",
+      "styleFamily": "lyrical Chinese ink-and-color music illustration",
+      "sentenceEn": "She composes a new melody for the erhu.",
+      "sentenceZh": "她为二胡创作了一段新旋律。",
+      "scene": "A Chinese musician experiments with phrases on an erhu at a quiet desk, pausing to shape the melody as flowing colored sound ribbons curl through the room; blank sheets and a pencil suggest active composition without notation or writing.",
+      "altText": "A Chinese musician composes a melody for the erhu.",
+      "riskTags": [
+        "creative_action",
+        "music",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6fab4dc3-d9f1-4128-aa01-c80dd7bd8a7c",
+      "word": "mess",
+      "meaningZh": "混乱；食堂；困境；弄乱",
+      "exampleId": "6fab4dc3-d9f1-4128-aa01-c80dd7bd8a7c-visual-ex",
+      "styleFamily": "expressive cluttered-room editorial illustration",
+      "sentenceEn": "The spilled art supplies make a mess on the floor.",
+      "sentenceZh": "洒落的美术用品把地板弄得一团糟。",
+      "scene": "An overturned craft box has scattered brushes, colored paper, yarn, and safe washable paint across the floor while an adult kneels nearby gathering the disorder into neat piles.",
+      "altText": "Spilled art supplies make a mess on the floor.",
+      "riskTags": [
+        "clutter",
+        "spill",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9d119c22-73b7-44f1-ae8a-0d91d4d4b35c",
+      "word": "legend",
+      "meaningZh": "传说；传奇；图例",
+      "exampleId": "9d119c22-73b7-44f1-ae8a-0d91d4d4b35c-visual-ex",
+      "styleFamily": "Chinese folklore woodblock-style illustration",
+      "sentenceEn": "The grandmother tells a legend about a hero in the mountains.",
+      "sentenceZh": "祖母讲述一位山中英雄的传说。",
+      "scene": "A Chinese grandmother tells children an old fireside story while a clearly imagined heroic traveler appears in a cloud-shaped vignette above misty mountains, separating the legendary tale from the listeners’ real room.",
+      "altText": "A grandmother tells children a Chinese mountain legend.",
+      "riskTags": [
+        "storytelling",
+        "imagined_scene",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "117e3a26-2c38-471a-a88f-041536642855",
+      "word": "regulate",
+      "meaningZh": "监管；调节；管理",
+      "exampleId": "117e3a26-2c38-471a-a88f-041536642855-visual-ex",
+      "styleFamily": "clear mechanical cutaway illustration",
+      "sentenceEn": "The thermostat regulates the greenhouse temperature.",
+      "sentenceZh": "恒温器调节温室温度。",
+      "scene": "A large simple thermostat dial controls greenhouse vents and a heater as the temperature stabilizes and healthy plants remain comfortable, shown through balanced warm and cool color zones without numbers or readable markings.",
+      "altText": "A thermostat regulates conditions inside a greenhouse.",
+      "riskTags": [
+        "system_control",
+        "mechanical_object",
+        "plant",
+        "no_numbers"
+      ]
+    },
+    {
+      "vocabularyId": "8d956ec2-f7c7-441e-a020-66e76ef44eb0",
+      "word": "adolescent",
+      "meaningZh": "青少年；青春期的",
+      "exampleId": "8d956ec2-f7c7-441e-a020-66e76ef44eb0-visual-ex",
+      "styleFamily": "modern Chinese coming-of-age editorial illustration",
+      "sentenceEn": "The adolescent becomes more independent each year.",
+      "sentenceZh": "这名青少年每年都变得更加独立。",
+      "scene": "A Chinese teenager independently repairs a bicycle in a school courtyard while an adult mentor watches from a respectful distance, showing the capable stage between childhood and adulthood.",
+      "altText": "A Chinese adolescent repairs a bicycle independently.",
+      "riskTags": [
+        "minor",
+        "age_concept",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "5f4037a7-3385-4f8c-a465-afd77a24489a",
+      "word": "shine",
+      "meaningZh": "光泽；阳光；使发光",
+      "exampleId": "5f4037a7-3385-4f8c-a465-afd77a24489a-visual-ex",
+      "styleFamily": "luminous object-study gouache illustration",
+      "sentenceEn": "The polished copper bowl shines in the sunlight.",
+      "sentenceZh": "擦亮的铜碗在阳光下闪闪发光。",
+      "scene": "A freshly polished copper bowl on a wooden table catches a strong beam of morning sunlight, producing a bright clean gleam and warm reflections while a polishing cloth rests beside it.",
+      "altText": "A polished copper bowl shines in sunlight.",
+      "riskTags": [
+        "light_effect",
+        "reflective_object",
+        "no_glare_text"
+      ]
+    },
+    {
+      "vocabularyId": "31ce33b3-c09d-4e01-80c3-c36bc08b9ac5",
+      "word": "norm",
+      "meaningZh": "基准；模范；标准；准则；平均数",
+      "exampleId": "31ce33b3-c09d-4e01-80c3-c36bc08b9ac5-visual-ex",
+      "styleFamily": "orderly public-life flat illustration",
+      "sentenceEn": "Waiting in line is the norm at this station.",
+      "sentenceZh": "在这个车站，排队等候是常态。",
+      "scene": "At a clean transit platform, many different adults naturally form one orderly queue behind a plain floor boundary, with the repeated shared behavior clearly presented as the usual norm.",
+      "altText": "People form an orderly line as the normal behavior at a station.",
+      "riskTags": [
+        "abstract_meaning",
+        "group_behavior",
+        "people_face",
+        "no_signage"
+      ]
+    },
+    {
+      "vocabularyId": "3e279768-330e-4927-b7d4-d07cc345d01c",
+      "word": "upset",
+      "meaningZh": "弄翻的；混乱的；心烦的",
+      "exampleId": "3e279768-330e-4927-b7d4-d07cc345d01c-visual-ex",
+      "styleFamily": "emotion-focused pastel illustration",
+      "sentenceEn": "He feels upset after accidentally breaking the plant pot.",
+      "sentenceZh": "不小心打碎花盆后，他感到很难过。",
+      "scene": "An adult kneels beside a fallen broken flowerpot and spilled soil, looking visibly upset with lowered brows and tense shoulders while carefully lifting the unharmed plant.",
+      "altText": "A man feels upset after accidentally breaking a plant pot.",
+      "riskTags": [
+        "emotion",
+        "broken_object",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "864bce05-f7ed-4753-b1af-49cdd8b6e0be",
+      "word": "remark",
+      "meaningZh": "评论；注意；谈论",
+      "exampleId": "864bce05-f7ed-4753-b1af-49cdd8b6e0be-visual-ex",
+      "styleFamily": "conversational gallery line-art illustration",
+      "sentenceEn": "She makes a thoughtful remark about the sculpture.",
+      "sentenceZh": "她对这座雕塑发表了深思熟虑的评论。",
+      "scene": "Two adult gallery visitors study an abstract sculpture as one gestures thoughtfully toward a specific curve and speaks a brief comment while the other listens with interest, without speech bubbles or text.",
+      "altText": "A visitor makes a thoughtful remark about a sculpture.",
+      "riskTags": [
+        "speech_action",
+        "people_face",
+        "artwork",
+        "no_text"
+      ]
+    }
+  ]
+}

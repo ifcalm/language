@@ -1,0 +1,370 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3040-3059",
+  "batchId": "auto-rank-3040-3059-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "rent",
+      "serving",
+      "candy",
+      "sponsor",
+      "export",
+      "experimental"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "4042de6c-2d3a-4364-b343-8a03c3783ccf",
+      "word": "rent",
+      "meaningZh": "租金；出租",
+      "exampleId": "4042de6c-2d3a-4364-b343-8a03c3783ccf-visual-ex",
+      "styleFamily": "modern Chinese apartment editorial illustration",
+      "sentenceEn": "The tenant pays the rent at the beginning of each month.",
+      "sentenceZh": "房客每月初支付租金。",
+      "scene": "At the doorway of a modern Chinese apartment, an adult tenant hands a plain payment envelope to the landlord while holding the apartment key; moving boxes are absent so the recurring rental relationship is clear.",
+      "altText": "A tenant pays rent to the apartment landlord.",
+      "riskTags": [
+        "housing",
+        "Chinese_context",
+        "money_implied",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "c3a172c3-5060-41f6-8ab1-bd06f6f913c7",
+      "word": "presidency",
+      "meaningZh": "总统职位",
+      "exampleId": "c3a172c3-5060-41f6-8ab1-bd06f6f913c7-visual-ex",
+      "styleFamily": "civic ceremony screen-print illustration",
+      "sentenceEn": "She begins her presidency with a public oath.",
+      "sentenceZh": "她以公开宣誓开始总统任期。",
+      "scene": "An adult elected president stands at a plain outdoor podium with one hand raised for an oath while a diverse civic audience watches; the setting is fictional and contains no national symbols or writing.",
+      "altText": "An elected leader begins her presidency with an oath.",
+      "riskTags": [
+        "civic_role",
+        "fictional",
+        "people_face",
+        "no_symbols",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "3bb46c6c-f414-4cf1-8ddb-f873b2133e9b",
+      "word": "serving",
+      "meaningZh": "服务；一份",
+      "exampleId": "3bb46c6c-f414-4cf1-8ddb-f873b2133e9b-visual-ex",
+      "styleFamily": "warm Chinese restaurant gouache illustration",
+      "sentenceEn": "The server brings one serving of noodles to the table.",
+      "sentenceZh": "服务员端来一份面条。",
+      "scene": "In a welcoming Chinese restaurant, an adult server carries one complete bowl-sized serving of noodles on a tray toward a seated diner, with the single portion clearly emphasized.",
+      "altText": "A server brings one serving of noodles.",
+      "riskTags": [
+        "food",
+        "Chinese_context",
+        "people_face",
+        "no_menu_text"
+      ]
+    },
+    {
+      "vocabularyId": "0ec932ef-ea62-41c8-a31e-5c88fe4b84aa",
+      "word": "subtle",
+      "meaningZh": "微妙的；敏锐的；精细的",
+      "exampleId": "0ec932ef-ea62-41c8-a31e-5c88fe4b84aa-visual-ex",
+      "styleFamily": "textile studio colored-pencil illustration",
+      "sentenceEn": "The two fabrics have a subtle difference in color.",
+      "sentenceZh": "这两块布料的颜色有细微差别。",
+      "scene": "A textile designer compares two large fabric swatches that are almost the same muted blue, with only a slight difference in hue visible under neutral studio light; the designer points carefully between them.",
+      "altText": "A designer notices a subtle color difference between fabrics.",
+      "riskTags": [
+        "fine_difference",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0ee005e6-77df-4d5f-b9e9-27fe98ffcb83",
+      "word": "greatly",
+      "meaningZh": "大大地",
+      "exampleId": "0ee005e6-77df-4d5f-b9e9-27fe98ffcb83-visual-ex",
+      "styleFamily": "before-and-after mechanical collage illustration",
+      "sentenceEn": "Repairing the pump greatly increases the flow of water.",
+      "sentenceZh": "修好水泵后，水流量大幅增加。",
+      "scene": "A split workshop scene shows the same pipe before repair releasing only a weak trickle and after repair producing a powerful clean stream, while an adult mechanic observes the dramatic improvement.",
+      "altText": "A repair greatly increases the water flow.",
+      "riskTags": [
+        "degree_adverb",
+        "before_after",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ab129899-ae9c-46e3-941f-cda18d66151c",
+      "word": "bishop",
+      "meaningZh": "主教；(国际象棋中的)象；热果子酒",
+      "exampleId": "ab129899-ae9c-46e3-941f-cda18d66151c-visual-ex",
+      "styleFamily": "dramatic chessboard woodcut illustration",
+      "sentenceEn": "The bishop moves diagonally across the chessboard.",
+      "sentenceZh": "象沿棋盘斜线移动。",
+      "scene": "A tall chess bishop piece travels along a clearly highlighted diagonal path across a wooden chessboard, passing between other pieces; the bishop silhouette and diagonal movement are unmistakable.",
+      "altText": "A chess bishop moves diagonally across the board.",
+      "riskTags": [
+        "chess_sense",
+        "object_only",
+        "no_notation",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "22de68d2-9e98-49e0-b82c-52b2a59885fa",
+      "word": "drinking",
+      "meaningZh": "喝；饮酒",
+      "exampleId": "22de68d2-9e98-49e0-b82c-52b2a59885fa-visual-ex",
+      "styleFamily": "fresh outdoor pastel illustration",
+      "sentenceEn": "Drinking water helps her recover after the run.",
+      "sentenceZh": "跑步后喝水帮助她恢复体力。",
+      "scene": "An adult runner pauses safely on a park bench and visibly drinks clear water from an unmarked reusable bottle after exercise, looking refreshed rather than exhausted.",
+      "altText": "A runner is drinking water after exercise.",
+      "riskTags": [
+        "hydration",
+        "adult",
+        "people_face",
+        "no_alcohol",
+        "no_brand"
+      ]
+    },
+    {
+      "vocabularyId": "c539f19e-8733-4e55-9c87-a0f1c7e6cc75",
+      "word": "acceptance",
+      "meaningZh": "接受",
+      "exampleId": "c539f19e-8733-4e55-9c87-a0f1c7e6cc75-visual-ex",
+      "styleFamily": "gentle community ink illustration",
+      "sentenceEn": "His acceptance of the gift brings relief to everyone.",
+      "sentenceZh": "他接受礼物让大家都松了一口气。",
+      "scene": "An adult initially hesitant recipient reaches out with both hands and accepts a carefully wrapped plain gift from a friend, while nearby adults relax and smile with relief.",
+      "altText": "A person shows acceptance by receiving a gift.",
+      "riskTags": [
+        "abstract_noun",
+        "people_face",
+        "gift",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9ce57c81-ceae-402b-97d7-6b9dde807ae9",
+      "word": "pump",
+      "meaningZh": "泵；打气；抽送",
+      "exampleId": "9ce57c81-ceae-402b-97d7-6b9dde807ae9-visual-ex",
+      "styleFamily": "rural mechanical cutaway illustration",
+      "sentenceEn": "The hand pump draws water into the bucket.",
+      "sentenceZh": "手压泵把水抽进桶里。",
+      "scene": "An adult operates a sturdy manual water pump, pushing its long handle down as a strong stream pours from the spout into a metal bucket; a simple ground cutaway shows water rising through the pipe without labels.",
+      "altText": "A hand pump draws water into a bucket.",
+      "riskTags": [
+        "machine",
+        "water",
+        "people_face",
+        "unlabeled_cutaway"
+      ]
+    },
+    {
+      "vocabularyId": "462ade73-28e6-4f3a-9e6c-0f3c76532b84",
+      "word": "candy",
+      "meaningZh": "糖果；冰糖",
+      "exampleId": "462ade73-28e6-4f3a-9e6c-0f3c76532b84-visual-ex",
+      "styleFamily": "Chinese sugar-craft watercolor illustration",
+      "sentenceEn": "The candy maker shapes warm sugar into small treats.",
+      "sentenceZh": "糖果师把温热的糖塑成小点心。",
+      "scene": "A Chinese adult confectioner stretches and shapes glossy warm sugar into colorful bite-sized candy pieces on a clean worktable, with finished sweets arranged in a plain bowl.",
+      "altText": "A candy maker shapes colorful sugar treats.",
+      "riskTags": [
+        "food",
+        "Chinese_context",
+        "people_face",
+        "no_packaging",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "04d1df7d-679a-448b-a1fe-35b8f9ca9a0e",
+      "word": "evil",
+      "meaningZh": "邪恶；不幸；罪恶",
+      "exampleId": "04d1df7d-679a-448b-a1fe-35b8f9ca9a0e-visual-ex",
+      "styleFamily": "symbolic folktale paper-cut illustration",
+      "sentenceEn": "The tale shows evil as a dark force threatening the village.",
+      "sentenceZh": "故事把邪恶表现为威胁村庄的黑暗力量。",
+      "scene": "In a symbolic folktale landscape, a dark thorny shadow spreads toward a warm peaceful village while a ring of lantern light holds it back; no people are harmed and the contrast between evil and safety is clear.",
+      "altText": "A dark evil force threatens a peaceful village.",
+      "riskTags": [
+        "symbolic",
+        "fantasy",
+        "non_graphic",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "90bcf4b9-ed68-459b-80df-b3cb7a1b3236",
+      "word": "pleased",
+      "meaningZh": "高兴的",
+      "exampleId": "90bcf4b9-ed68-459b-80df-b3cb7a1b3236-visual-ex",
+      "styleFamily": "cozy bakery pastel illustration",
+      "sentenceEn": "The baker is pleased with the golden loaf.",
+      "sentenceZh": "面包师对烤得金黄的面包很满意。",
+      "scene": "An adult baker lifts a perfectly golden loaf from a cooling rack and smiles with quiet satisfaction, admiring the even crust in a warm bakery.",
+      "altText": "A pleased baker admires a golden loaf.",
+      "riskTags": [
+        "emotion",
+        "food",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ef36596a-a410-4e17-bbc2-0374989fb1bd",
+      "word": "medal",
+      "meaningZh": "奖牌；勋章；授勋予",
+      "exampleId": "ef36596a-a410-4e17-bbc2-0374989fb1bd-visual-ex",
+      "styleFamily": "athletic poster illustration",
+      "sentenceEn": "The runner receives a medal after the race.",
+      "sentenceZh": "赛跑结束后，运动员获得一枚奖牌。",
+      "scene": "At a finish-area ceremony, an official places a plain round medal on a smiling adult runner while other competitors applaud; the medal and ribbon are central and have no markings.",
+      "altText": "A runner receives a medal after a race.",
+      "riskTags": [
+        "sport",
+        "people_face",
+        "unmarked_medal",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "ae448d0c-e369-45ca-beae-a544212b1b71",
+      "word": "beg",
+      "meaningZh": "乞求；乞讨；请求",
+      "exampleId": "ae448d0c-e369-45ca-beae-a544212b1b71-visual-ex",
+      "styleFamily": "roadside narrative comic illustration",
+      "sentenceEn": "The stranded traveler begs a passerby for help.",
+      "sentenceZh": "被困的旅人恳求路人帮忙。",
+      "scene": "Beside a harmlessly stalled car with its hood raised, an adult traveler clasps both hands and earnestly begs an approaching passerby for help, while pointing toward the engine.",
+      "altText": "A stranded traveler begs a passerby for help.",
+      "riskTags": [
+        "request",
+        "people_face",
+        "non_exploitative",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "db8d4119-091c-46e1-b341-0d34758a968c",
+      "word": "sponsor",
+      "meaningZh": "保证人；赞助者；发起者；倡议者；教父",
+      "exampleId": "db8d4119-091c-46e1-b341-0d34758a968c-visual-ex",
+      "styleFamily": "Chinese community sports mural illustration",
+      "sentenceEn": "A local business agrees to sponsor the youth team.",
+      "sentenceZh": "一家本地企业同意赞助青少年队。",
+      "scene": "A Chinese adult business owner presents boxes of plain sports equipment to a youth team and their adult coach at a community field, sealing the sponsorship with a handshake; all uniforms and boxes are unbranded.",
+      "altText": "A local business sponsors a youth sports team.",
+      "riskTags": [
+        "community",
+        "Chinese_context",
+        "children_with_adults",
+        "no_brand",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5d5654e6-a863-4fe8-bb73-4a6215efca94",
+      "word": "ethical",
+      "meaningZh": "伦理的；道德的",
+      "exampleId": "5d5654e6-a863-4fe8-bb73-4a6215efca94-visual-ex",
+      "styleFamily": "moral-choice editorial illustration",
+      "sentenceEn": "She makes the ethical choice to return the lost wallet.",
+      "sentenceZh": "她作出合乎道德的选择，把遗失的钱包还回去。",
+      "scene": "An adult finds a wallet on a café chair and immediately returns it intact to its relieved owner, who recognizes the kind and honest choice; no money is displayed prominently.",
+      "altText": "A woman makes the ethical choice to return a wallet.",
+      "riskTags": [
+        "ethics",
+        "people_face",
+        "lost_property",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1fb794d2-2949-45d6-988c-7434ba7b763a",
+      "word": "secondary",
+      "meaningZh": "次要的；中等的",
+      "exampleId": "1fb794d2-2949-45d6-988c-7434ba7b763a-visual-ex",
+      "styleFamily": "graphic landscape diagram illustration",
+      "sentenceEn": "A secondary road branches away from the main highway.",
+      "sentenceZh": "一条次要道路从主干道分岔出去。",
+      "scene": "An overhead countryside view shows a broad busy main highway continuing straight while a narrower quieter secondary road branches away toward a small village, with no signs or labels.",
+      "altText": "A secondary road branches from a main highway.",
+      "riskTags": [
+        "relative_importance",
+        "road",
+        "no_signs",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "78f1a67d-0c9e-4035-8746-9b475a001a24",
+      "word": "slam",
+      "meaningZh": "猛关；抨击",
+      "exampleId": "78f1a67d-0c9e-4035-8746-9b475a001a24-visual-ex",
+      "styleFamily": "dynamic domestic comic illustration",
+      "sentenceEn": "A sudden gust makes the open window slam shut.",
+      "sentenceZh": "一阵突然的风把敞开的窗户猛地吹关上。",
+      "scene": "A powerful gust blows curtains inward and makes an open wooden window swing rapidly shut, with bold motion lines and rattling leaves outside; no person is close enough to be hurt.",
+      "altText": "A gust makes an open window slam shut.",
+      "riskTags": [
+        "forceful_motion",
+        "safe_scene",
+        "no_people",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5958e879-2d6c-49c3-a888-f5b024f6ecb5",
+      "word": "export",
+      "meaningZh": "输出品；输出；出口",
+      "exampleId": "5958e879-2d6c-49c3-a888-f5b024f6ecb5-visual-ex",
+      "styleFamily": "Chinese port logistics screen-print illustration",
+      "sentenceEn": "The company exports fresh oranges to overseas markets.",
+      "sentenceZh": "该公司把新鲜橙子出口到海外市场。",
+      "scene": "At a modern Chinese seaport, workers load open crates visibly filled with fresh oranges into a cargo container beside a waiting ship, clearly showing goods leaving by sea; everything is unmarked.",
+      "altText": "Workers export crates of oranges by cargo ship.",
+      "riskTags": [
+        "trade",
+        "Chinese_context",
+        "people_face",
+        "no_brand",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "68d3d2f4-62b9-4aed-8793-4b5da0dd8d42",
+      "word": "experimental",
+      "meaningZh": "实验的",
+      "exampleId": "68d3d2f4-62b9-4aed-8793-4b5da0dd8d42-visual-ex",
+      "styleFamily": "Chinese innovation-lab concept illustration",
+      "sentenceEn": "The engineers test an experimental solar vehicle.",
+      "sentenceZh": "工程师们测试一辆实验性太阳能车。",
+      "scene": "Chinese university engineers test a small unusual prototype vehicle with a broad solar-panel roof on a closed track, taking careful measurements with plain instruments while the design is visibly unfinished.",
+      "altText": "Engineers test an experimental solar vehicle.",
+      "riskTags": [
+        "prototype",
+        "Chinese_context",
+        "people_face",
+        "no_readable_ui",
+        "no_text"
+      ]
+    }
+  ]
+}

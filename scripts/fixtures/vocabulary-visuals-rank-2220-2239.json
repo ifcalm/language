@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2220-2239",
+  "batchId": "auto-rank-2220-2239-20260820",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "fifth",
+      "enterprise",
+      "favor",
+      "mail",
+      "recipe",
+      "concert"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "1f9dc1a9-41c8-4671-86b6-dc0e608f810f",
+      "word": "fifth",
+      "meaningZh": "第五",
+      "exampleId": "1f9dc1a9-41c8-4671-86b6-dc0e608f810f-visual-ex",
+      "styleFamily": "Chinese tea ceremony watercolor illustration",
+      "sentenceEn": "The fifth cup completed the careful tasting sequence.",
+      "sentenceZh": "第五杯完成了这次细致的品茶顺序。",
+      "scene": "At a Chinese tea table, a taster places the fifth and final small cup into a clearly ordered row while four used cups sit before it and friends observe.",
+      "altText": "品茶人把第五只茶杯放到有序队列末端",
+      "riskTags": [
+        "sequence",
+        "small_object",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e42901c9-a0e7-4b97-ae6e-da50ea3477a2",
+      "word": "constantly",
+      "meaningZh": "不断地",
+      "exampleId": "e42901c9-a0e7-4b97-ae6e-da50ea3477a2-visual-ex",
+      "styleFamily": "busy urban editorial gouache illustration",
+      "sentenceEn": "The station clock moved constantly as travelers crossed the hall.",
+      "sentenceZh": "旅客穿过大厅时，车站时钟不断运行。",
+      "scene": "A lively railway hall shows a large analog clock with a moving second hand while streams of adult travelers continually pass beneath it in successive poses.",
+      "altText": "车站时钟不断运行，旅客持续穿行",
+      "riskTags": [
+        "motion",
+        "many_people",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "fbffffed-1da2-4c92-a655-f1103bc583d3",
+      "word": "enterprise",
+      "meaningZh": "企业；事业心；进取心；干事业",
+      "exampleId": "fbffffed-1da2-4c92-a655-f1103bc583d3-visual-ex",
+      "styleFamily": "Chinese workshop editorial illustration",
+      "sentenceEn": "The family enterprise grew from one workshop into a thriving cooperative.",
+      "sentenceZh": "这家家庭企业从一间作坊发展成兴旺的合作社。",
+      "scene": "A Chinese craft enterprise fills a bright shared workshop where several generations make bamboo household goods, package finished pieces without logos, and coordinate orders together.",
+      "altText": "家庭竹器企业在合作作坊中蓬勃发展",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "9bf08ac8-016f-4176-bcaa-15129fd19e51",
+      "word": "favor",
+      "meaningZh": "支持；偏爱；恩惠",
+      "exampleId": "9bf08ac8-016f-4176-bcaa-15129fd19e51-visual-ex",
+      "styleFamily": "warm Chinese neighborhood watercolor illustration",
+      "sentenceEn": "The neighbors returned the favor by repairing her garden gate.",
+      "sentenceZh": "邻居们修好她的花园门，以此回报她的帮助。",
+      "scene": "In a Chinese lane courtyard, neighbors repair an older woman's wooden garden gate while she brings them tea, showing a favor warmly returned through reciprocal help.",
+      "altText": "邻居修门回报老人此前的帮助",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "1fe78bd8-63d6-40de-9146-b4a9b9a0e5d1",
+      "word": "testing",
+      "meaningZh": "测试",
+      "exampleId": "1fe78bd8-63d6-40de-9146-b4a9b9a0e5d1-visual-ex",
+      "styleFamily": "professional laboratory editorial illustration",
+      "sentenceEn": "Testing confirmed that the new water filter removed the sediment.",
+      "sentenceZh": "测试证实新滤水器去除了沉淀物。",
+      "scene": "Scientists compare two transparent water samples beside a working filter: one visibly cloudy before testing and one clear afterward, with blank notebooks and no labels.",
+      "altText": "实验室测试比较过滤前后的水样",
+      "riskTags": [
+        "comparison",
+        "small_object",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "eea4d11d-1962-4c07-b674-8b2c3393b039",
+      "word": "stomach",
+      "meaningZh": "胃；食欲；欲望；肚子",
+      "exampleId": "eea4d11d-1962-4c07-b674-8b2c3393b039-visual-ex",
+      "styleFamily": "gentle medical watercolor illustration",
+      "sentenceEn": "A warm meal settled his empty stomach after the long journey.",
+      "sentenceZh": "长途旅行后，一顿热饭安抚了他空空的胃。",
+      "scene": "A tired adult traveler sits at a quiet kitchen table, one hand resting over his stomach as he begins a warm nourishing meal and visibly relaxes.",
+      "altText": "长途旅行者用热饭安抚空腹",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "e3aacd5c-722d-4c2c-b9f2-327a35cca218",
+      "word": "apparent",
+      "meaningZh": "清晰可见的；显然的；表面上的",
+      "exampleId": "e3aacd5c-722d-4c2c-b9f2-327a35cca218-visual-ex",
+      "styleFamily": "clear investigative editorial illustration",
+      "sentenceEn": "The leak became apparent when sunlight revealed water beneath the pipe.",
+      "sentenceZh": "阳光照出管道下方的积水后，泄漏变得明显。",
+      "scene": "A maintenance worker notices a bright puddle and fresh droplets beneath a ceiling pipe as a shaft of sunlight makes the previously hidden leak apparent.",
+      "altText": "阳光让管道下方的泄漏清晰可见",
+      "riskTags": [
+        "lighting",
+        "small_object",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "c903d469-61c3-4f19-8551-4a287e282272",
+      "word": "weigh",
+      "meaningZh": "称...重量；衡量；把...压弯；考虑",
+      "exampleId": "c903d469-61c3-4f19-8551-4a287e282272-visual-ex",
+      "styleFamily": "market-day gouache illustration",
+      "sentenceEn": "The vendor used a balance scale to weigh the fresh apples.",
+      "sentenceZh": "摊主用天平称新鲜苹果的重量。",
+      "scene": "At an open-air produce stall, a vendor places apples on one side of a sturdy balance scale and calibrated metal weights on the other while a customer watches.",
+      "altText": "摊主用天平称量新鲜苹果",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "e750e280-5026-4034-b1af-87c0f56657e6",
+      "word": "install",
+      "meaningZh": "安装；设置",
+      "exampleId": "e750e280-5026-4034-b1af-87c0f56657e6-visual-ex",
+      "styleFamily": "practical home-improvement editorial illustration",
+      "sentenceEn": "Technicians arrived to install solar panels on the community center.",
+      "sentenceZh": "技术人员前来为社区中心安装太阳能板。",
+      "scene": "A diverse crew safely installs solar panels on a low community-center roof, securing brackets and lifting one panel while ground staff manage ropes and tools.",
+      "altText": "技术人员在社区中心屋顶安装太阳能板",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "96bd325c-7e87-4410-8052-2a01be839df7",
+      "word": "sensitive",
+      "meaningZh": "敏感的；易感的；灵敏的；感光的",
+      "exampleId": "96bd325c-7e87-4410-8052-2a01be839df7-visual-ex",
+      "styleFamily": "scientific greenhouse watercolor illustration",
+      "sentenceEn": "A sensitive sensor detected the smallest change in humidity.",
+      "sentenceZh": "灵敏的传感器检测到了湿度最细微的变化。",
+      "scene": "Inside a greenhouse, a tiny sensitive humidity sensor reacts to mist near delicate seedlings while a researcher checks the plants and a blank handheld display.",
+      "altText": "温室里的灵敏传感器检测细微湿度变化",
+      "riskTags": [
+        "small_object",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "d0e2cac0-387b-43ad-b050-ccac5061cac9",
+      "word": "suggestion",
+      "meaningZh": "建议",
+      "exampleId": "d0e2cac0-387b-43ad-b050-ccac5061cac9-visual-ex",
+      "styleFamily": "collaborative office editorial illustration",
+      "sentenceEn": "Her suggestion inspired the team to reuse the leftover materials.",
+      "sentenceZh": "她的建议启发团队重新利用剩余材料。",
+      "scene": "Around a workshop table, one designer offers a suggestion by holding up scrap wood as teammates begin arranging leftovers into a useful bench prototype, with no diagrams or text.",
+      "altText": "设计师建议把剩余材料做成实用长椅",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "8c83684a-d541-4dfa-9d36-7284e9d352b3",
+      "word": "mail",
+      "meaningZh": "邮件；邮寄；邮政",
+      "exampleId": "8c83684a-d541-4dfa-9d36-7284e9d352b3-visual-ex",
+      "styleFamily": "Chinese rural postal watercolor illustration",
+      "sentenceEn": "The postal worker carried the mail across the mountain village.",
+      "sentenceZh": "邮递员把邮件送过山村。",
+      "scene": "A postal worker rides a sturdy electric bicycle along a Chinese mountain-village path, delivering plain envelopes and parcels to residents beside terraced fields.",
+      "altText": "邮递员骑车给山村居民送邮件",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "6408e84b-9621-4af1-b6e7-f59c8fa4551e",
+      "word": "recipe",
+      "meaningZh": "食谱；处方；秘诀",
+      "exampleId": "6408e84b-9621-4af1-b6e7-f59c8fa4551e-visual-ex",
+      "styleFamily": "Chinese family kitchen gouache illustration",
+      "sentenceEn": "Grandfather shared his dumpling recipe with the younger cooks.",
+      "sentenceZh": "爷爷把自己的饺子食谱传给年轻厨师们。",
+      "scene": "In a Chinese family kitchen, a grandfather demonstrates dumpling filling and folding step by step while younger adults imitate his technique around a flour-dusted table, with no written recipe visible.",
+      "altText": "爷爷向年轻人传授饺子食谱",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "17b6433d-e081-453f-afda-a281973c84b9",
+      "word": "reasonable",
+      "meaningZh": "合理的",
+      "exampleId": "17b6433d-e081-453f-afda-a281973c84b9-visual-ex",
+      "styleFamily": "balanced civic editorial illustration",
+      "sentenceEn": "The committee reached a reasonable compromise on the park design.",
+      "sentenceZh": "委员会就公园设计达成了合理的折中方案。",
+      "scene": "Residents and planners gather around a park model that preserves mature trees while adding an accessible path and play space, showing a balanced reasonable compromise.",
+      "altText": "居民和规划者达成合理的公园设计折中",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "dc844470-1c86-4d20-9573-13e59b9d0465",
+      "word": "preparation",
+      "meaningZh": "准备",
+      "exampleId": "dc844470-1c86-4d20-9573-13e59b9d0465-visual-ex",
+      "styleFamily": "calm expedition watercolor illustration",
+      "sentenceEn": "Careful preparation kept the hikers safe when the weather changed.",
+      "sentenceZh": "周密准备让徒步者在天气变化时保持安全。",
+      "scene": "Before a hike, adults methodically pack rain shells, water, first-aid supplies, headlamps, and a map as dark clouds gather beyond the cabin window.",
+      "altText": "徒步者为天气变化做周密准备",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "579b560c-2fa3-4caf-ad4b-f4ba7a8a90e4",
+      "word": "wooden",
+      "meaningZh": "木制的",
+      "exampleId": "579b560c-2fa3-4caf-ad4b-f4ba7a8a90e4-visual-ex",
+      "styleFamily": "mature craft gouache illustration",
+      "sentenceEn": "The carpenter shaped a wooden chair from seasoned oak.",
+      "sentenceZh": "木匠用干燥橡木制作了一把木椅。",
+      "scene": "In a sunlit workshop, a carpenter shapes the curved arm of a clearly wooden chair amid oak shavings, grain-rich boards, hand planes, and clamps.",
+      "altText": "木匠用橡木制作木制椅子",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "materials"
+      ]
+    },
+    {
+      "vocabularyId": "e3de61b7-68d9-4b0e-be8a-57e92196e946",
+      "word": "elementary",
+      "meaningZh": "基本的；初级的",
+      "exampleId": "e3de61b7-68d9-4b0e-be8a-57e92196e946-visual-ex",
+      "styleFamily": "friendly adult-learning editorial illustration",
+      "sentenceEn": "The instructor began with an elementary lesson on electrical safety.",
+      "sentenceZh": "老师从电气安全的基础课程讲起。",
+      "scene": "In an adult vocational class, an instructor demonstrates the elementary difference between a safely disconnected plug and an energized circuit using simple physical props and no written board.",
+      "altText": "职业老师讲解基础电气安全知识",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "07e39a49-0db4-4457-bae0-9565f4277c10",
+      "word": "concert",
+      "meaningZh": "音乐会；和声；一致；协力；协调",
+      "exampleId": "07e39a49-0db4-4457-bae0-9565f4277c10-visual-ex",
+      "styleFamily": "Chinese musical performance watercolor illustration",
+      "sentenceEn": "The evening concert united traditional instruments with a modern ensemble.",
+      "sentenceZh": "晚间音乐会把传统乐器与现代乐团融合在一起。",
+      "scene": "On an intimate Chinese theater stage, musicians perform a concert combining erhu, pipa, bamboo flute, cello, and percussion before an attentive adult audience.",
+      "altText": "传统乐器与现代乐团共同举行音乐会",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "68a51087-40a3-4a2b-a427-06fe09228c0e",
+      "word": "aggressive",
+      "meaningZh": "好斗的；侵略的；进取的；积极的",
+      "exampleId": "68a51087-40a3-4a2b-a427-06fe09228c0e-visual-ex",
+      "styleFamily": "environmental garden editorial illustration",
+      "sentenceEn": "The aggressive vine quickly covered the young orchard trees.",
+      "sentenceZh": "生长迅猛的藤蔓很快覆盖了幼小果树。",
+      "scene": "Gardeners work together to remove an aggressive fast-growing vine that has tangled over several young orchard trees, while unaffected trees stand clear nearby.",
+      "altText": "园丁清除覆盖幼果树的强势藤蔓",
+      "riskTags": [
+        "hands",
+        "many_objects",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "2fd162f4-5fd4-47c2-a403-ba22f45e8492",
+      "word": "false",
+      "meaningZh": "错误的；虚伪的；假的；不老实的",
+      "exampleId": "2fd162f4-5fd4-47c2-a403-ba22f45e8492-visual-ex",
+      "styleFamily": "calm safety editorial illustration",
+      "sentenceEn": "Steam from the shower triggered a false alarm in the hallway.",
+      "sentenceZh": "淋浴蒸汽触发了走廊里的误报。",
+      "scene": "Harmless bathroom steam drifts toward a hallway smoke detector while a resident calmly opens a window and confirms there is no fire or smoke source.",
+      "altText": "淋浴蒸汽触发走廊里的错误警报",
+      "riskTags": [
+        "spatial_relationship",
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

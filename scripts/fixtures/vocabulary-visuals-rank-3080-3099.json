@@ -1,0 +1,385 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3080-3099",
+  "batchId": "auto-rank-3080-3099-20260913",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "pig",
+      "civilization",
+      "fold",
+      "beef",
+      "architecture",
+      "classical"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "83031ec5-1247-4ab3-b030-5aefc08eacad",
+      "word": "weakness",
+      "meaningZh": "弱点",
+      "exampleId": "83031ec5-1247-4ab3-b030-5aefc08eacad-visual-ex",
+      "styleFamily": "symbolic engineering charcoal-and-gouache illustration",
+      "sentenceEn": "A small crack reveals the weakness in the metal chain.",
+      "sentenceZh": "一道小裂缝暴露了金属链条的弱点。",
+      "scene": "A heavy metal chain holds a suspended wooden crate, but one link has a clearly visible hairline crack and bends under the strain while every other link remains solid; focus on the vulnerable point without showing a break or accident.",
+      "altText": "A cracked chain link reveals a point of weakness.",
+      "riskTags": [
+        "symbolic",
+        "heavy_object",
+        "non_accident",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "79145714-cc10-494c-873d-e71b837db316",
+      "word": "pig",
+      "meaningZh": "猪；猪肉；贪婪的人；猪一样的人",
+      "exampleId": "79145714-cc10-494c-873d-e71b837db316-visual-ex",
+      "styleFamily": "Chinese countryside woodblock-inspired illustration",
+      "sentenceEn": "The farmer feeds a pink pig in the yard.",
+      "sentenceZh": "农民在院子里喂一头粉色的猪。",
+      "scene": "In a tidy Chinese rural farmyard, an adult farmer pours vegetables into a low trough for one clearly recognizable healthy pink pig with a curly tail; the animal is relaxed and the enclosure is clean.",
+      "altText": "A farmer feeds a pink pig in a clean yard.",
+      "riskTags": [
+        "Chinese_context",
+        "animal",
+        "people_face",
+        "farm",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1f356f7b-6a50-4216-9543-07792a48b5d5",
+      "word": "classical",
+      "meaningZh": "古典的",
+      "exampleId": "1f356f7b-6a50-4216-9543-07792a48b5d5-visual-ex",
+      "styleFamily": "elegant concert-poster tempera illustration",
+      "sentenceEn": "The quartet performs a classical piece in the concert hall.",
+      "sentenceZh": "四重奏乐团在音乐厅演奏一首古典乐曲。",
+      "scene": "Four adult string musicians perform with two violins, a viola and a cello on a refined concert-hall stage, seated in a balanced semicircle beneath warm lights; music stands hold blank pages without notation or text.",
+      "altText": "A string quartet performs classical music.",
+      "riskTags": [
+        "music",
+        "people_face",
+        "blank_pages",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "23b0c6a5-901e-4250-8cf0-9adad5e94bd0",
+      "word": "estimated",
+      "meaningZh": "估计的",
+      "exampleId": "23b0c6a5-901e-4250-8cf0-9adad5e94bd0-visual-ex",
+      "styleFamily": "practical workshop editorial illustration",
+      "sentenceEn": "The carpenter estimated how much wood the shelves would need.",
+      "sentenceZh": "木匠估算了这些架子需要多少木材。",
+      "scene": "An experienced carpenter compares a partly built shelving frame with several plain wooden boards laid nearby, measuring the open spans with an unnumbered folding rule and thoughtfully selecting an approximate stack; no written calculations.",
+      "altText": "A carpenter estimated the wood needed for shelves.",
+      "riskTags": [
+        "workshop",
+        "people_face",
+        "tool",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0c97a26b-8ecc-4593-b9d5-914fb1037731",
+      "word": "T-shirt",
+      "meaningZh": "T恤",
+      "exampleId": "0c97a26b-8ecc-4593-b9d5-914fb1037731-visual-ex",
+      "styleFamily": "crisp fashion-flat illustration",
+      "sentenceEn": "She wears a plain white T-shirt with blue jeans.",
+      "sentenceZh": "她穿着一件纯白色T恤和蓝色牛仔裤。",
+      "scene": "A casually dressed adult woman stands in a bright everyday room wearing a clearly visible plain white short-sleeved T-shirt and blue jeans; the shirt front is completely blank and its classic T shape is unobstructed.",
+      "altText": "A woman wears a plain white T-shirt.",
+      "riskTags": [
+        "clothing",
+        "people_face",
+        "blank_shirt",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "52009735-b723-4708-9c8f-cab254c1db0a",
+      "word": "unemployment",
+      "meaningZh": "失业",
+      "exampleId": "52009735-b723-4708-9c8f-cab254c1db0a-visual-ex",
+      "styleFamily": "empathetic social editorial watercolor",
+      "sentenceEn": "She searches for a new job during a period of unemployment.",
+      "sentenceZh": "她在失业期间寻找新工作。",
+      "scene": "A capable adult job seeker sits at a modest home desk reviewing several blank application sheets beside a closed work badge and neatly prepared interview clothes, with a laptop showing only abstract blocks; her focused expression conveys an active job search with dignity.",
+      "altText": "A woman searches for work during unemployment.",
+      "riskTags": [
+        "employment",
+        "people_face",
+        "sensitive_context",
+        "blank_documents",
+        "no_readable_ui",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "840df1f6-e737-4895-88c5-b951f05b6ebf",
+      "word": "civilization",
+      "meaningZh": "文明",
+      "exampleId": "840df1f6-e737-4895-88c5-b951f05b6ebf-visual-ex",
+      "styleFamily": "ancient Chinese river-valley mural illustration",
+      "sentenceEn": "The river supported an early civilization.",
+      "sentenceZh": "这条河流孕育了一个早期文明。",
+      "scene": "A wide cutaway-like panorama of an early Chinese river-valley settlement with organized streets, irrigation channels, cultivated fields, pottery workshops, timber buildings and a busy market, all sustained by the river; no inscriptions or anachronistic machinery.",
+      "altText": "A river supports an organized early civilization.",
+      "riskTags": [
+        "Chinese_context",
+        "historical",
+        "community",
+        "no_inscriptions",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "48d663a0-d504-41dc-9a9e-e7335c165d3d",
+      "word": "fold",
+      "meaningZh": "折叠；折痕；倒闭",
+      "exampleId": "48d663a0-d504-41dc-9a9e-e7335c165d3d-visual-ex",
+      "styleFamily": "Chinese paper-craft instructional illustration without labels",
+      "sentenceEn": "Fold the square paper carefully along the center.",
+      "sentenceZh": "沿着正中间小心地折叠这张方纸。",
+      "scene": "Close view of an adult pair of hands folding a plain red square sheet precisely in half on a clean wooden table, one crisp center crease forming as the two edges meet; nearby sits one finished simple folded paper bird with no markings.",
+      "altText": "Hands fold square paper along its center.",
+      "riskTags": [
+        "Chinese_context",
+        "hands",
+        "paper_craft",
+        "no_markings",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5e54e6e4-4432-45ba-9ef7-141b9b8e86ed",
+      "word": "reverse",
+      "meaningZh": "相反的；颠倒；倒退；逆转",
+      "exampleId": "5e54e6e4-4432-45ba-9ef7-141b9b8e86ed-visual-ex",
+      "styleFamily": "clear urban driving editorial illustration",
+      "sentenceEn": "He puts the car in reverse to leave the narrow space.",
+      "sentenceZh": "他挂倒挡驶出狭窄的车位。",
+      "scene": "A driver looks carefully over his shoulder while a small car backs out of a narrow parking space, white reversing lights glowing and curved tire tracks showing backward movement; surrounding cars are stationary and there are no signs or license characters.",
+      "altText": "A car moves in reverse out of a narrow space.",
+      "riskTags": [
+        "vehicle",
+        "people_face",
+        "driving",
+        "no_license_text",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "6a95211a-9c82-487c-8ad1-c0a7e36df94e",
+      "word": "missing",
+      "meaningZh": "失踪的；缺少的",
+      "exampleId": "6a95211a-9c82-487c-8ad1-c0a7e36df94e-visual-ex",
+      "styleFamily": "minimal tactile still-life illustration",
+      "sentenceEn": "One piece is missing from the nearly finished puzzle.",
+      "sentenceZh": "这幅快完成的拼图缺少一块。",
+      "scene": "A nearly completed tabletop jigsaw puzzle has one unmistakable empty piece-shaped gap near the center, with all surrounding pieces fitted and no loose matching piece visible anywhere in the clean scene.",
+      "altText": "A nearly finished puzzle has one missing piece.",
+      "riskTags": [
+        "object",
+        "puzzle",
+        "absence",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "05b48ecd-0754-4485-8248-13bed563c2f1",
+      "word": "correlation",
+      "meaningZh": "关联",
+      "exampleId": "05b48ecd-0754-4485-8248-13bed563c2f1-visual-ex",
+      "styleFamily": "wordless scientific editorial triptych",
+      "sentenceEn": "The study found a correlation between rainfall and river level.",
+      "sentenceZh": "研究发现降雨量与河流水位之间存在关联。",
+      "scene": "One continuous landscape arranged as three adjacent moments: light rain with a low river, moderate rain with a medium river, and heavy rain with a high river, using identical banks and a simple measuring post without marks so the paired increase is visually obvious.",
+      "altText": "Increasing rainfall correlates with a rising river level.",
+      "riskTags": [
+        "science",
+        "weather",
+        "water",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0f0d3282-eb79-4d20-849e-9985c0a78816",
+      "word": "humanity",
+      "meaningZh": "人类",
+      "exampleId": "0f0d3282-eb79-4d20-849e-9985c0a78816-visual-ex",
+      "styleFamily": "inclusive global-community collage illustration",
+      "sentenceEn": "Humanity shares responsibility for protecting the planet.",
+      "sentenceZh": "全人类共同承担保护地球的责任。",
+      "scene": "A diverse intergenerational group of adults from many regions works together around one shared landscape, planting trees, clearing litter from a stream and restoring soil; their coordinated circle represents humanity without flags, maps or national stereotypes.",
+      "altText": "People work together to protect the planet.",
+      "riskTags": [
+        "global",
+        "diverse_people",
+        "people_face",
+        "environment",
+        "no_flags",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4e3d77bf-69d3-448d-a62d-a07bd5ecfcca",
+      "word": "flash",
+      "meaningZh": "闪光；闪现；快速显示",
+      "exampleId": "4e3d77bf-69d3-448d-a62d-a07bd5ecfcca-visual-ex",
+      "styleFamily": "dramatic graphic-novel weather illustration",
+      "sentenceEn": "A sudden flash of lightning lights the dark room.",
+      "sentenceZh": "一道突如其来的闪电照亮了黑暗的房间。",
+      "scene": "Viewed from inside a dark room, a brilliant lightning bolt flashes beyond the rain-streaked window and briefly illuminates the furniture in stark white-blue light; no people, fire or damage.",
+      "altText": "A flash of lightning illuminates a dark room.",
+      "riskTags": [
+        "weather",
+        "lightning",
+        "no_damage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "2a443592-8746-46d4-aa7d-6d3455fbad2f",
+      "word": "developer",
+      "meaningZh": "开发者",
+      "exampleId": "2a443592-8746-46d4-aa7d-6d3455fbad2f-visual-ex",
+      "styleFamily": "modern isometric technology illustration",
+      "sentenceEn": "The developer tests a new mobile application.",
+      "sentenceZh": "开发者测试一款新的手机应用。",
+      "scene": "An adult software developer at a desk tests the same simple colored interface on a phone and a monitor, pointing to a bug represented by a visibly misaligned colored block; all screens contain only abstract shapes with no letters, numbers or readable code.",
+      "altText": "A software developer tests a mobile application.",
+      "riskTags": [
+        "technology",
+        "people_face",
+        "abstract_ui",
+        "no_readable_code",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "74e96191-00a9-4d85-ba42-04150b818ba3",
+      "word": "reliable",
+      "meaningZh": "可靠的",
+      "exampleId": "74e96191-00a9-4d85-ba42-04150b818ba3-visual-ex",
+      "styleFamily": "warm commuter-life lineless illustration",
+      "sentenceEn": "The reliable bus arrives every morning in any weather.",
+      "sentenceZh": "这辆可靠的公交车每天早晨无论天气如何都会准时到达。",
+      "scene": "In gentle morning rain, a clean well-maintained city bus pulls safely to the curb as waiting commuters relax and prepare to board, while repeated faint weather layers suggest the same dependable arrival on sunny, rainy and snowy mornings; no route numbers or signs.",
+      "altText": "A reliable bus arrives for commuters despite the rain.",
+      "riskTags": [
+        "transport",
+        "people_face",
+        "weather",
+        "no_route_text",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a5899731-d2b7-462f-882b-7ba795f51c5f",
+      "word": "excitement",
+      "meaningZh": "兴奋；激动",
+      "exampleId": "a5899731-d2b7-462f-882b-7ba795f51c5f-visual-ex",
+      "styleFamily": "energetic retro-futurist poster illustration",
+      "sentenceEn": "The crowd jumps with excitement as the rocket lifts off.",
+      "sentenceZh": "火箭升空时，人群兴奋地跳了起来。",
+      "scene": "At a safe public viewing area far from the launchpad, a diverse crowd of adults leaps, cheers and raises their arms as a sleek unmarked rocket lifts into a bright sky, faces showing unmistakable excitement; no banners, text or logos.",
+      "altText": "A crowd shows excitement during a rocket launch.",
+      "riskTags": [
+        "rocket",
+        "people_face",
+        "crowd",
+        "safe_distance",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e0ce0821-9dca-4635-ad94-d2944d5cf001",
+      "word": "beef",
+      "meaningZh": "牛肉；肌肉；养(牛), 宰(牛)",
+      "exampleId": "e0ce0821-9dca-4635-ad94-d2944d5cf001-visual-ex",
+      "styleFamily": "Chinese home-kitchen gouache illustration",
+      "sentenceEn": "The cook slices the beef into thin pieces for the stew.",
+      "sentenceZh": "厨师把牛肉切成薄片来炖煮。",
+      "scene": "In a Chinese home kitchen, an adult cook carefully slices a clearly recognizable boneless cut of raw beef into thin pieces beside vegetables and a simmering clay pot, using safe knife technique; the scene is appetizing and non-graphic.",
+      "altText": "A cook slices beef for a stew.",
+      "riskTags": [
+        "Chinese_context",
+        "food",
+        "people_face",
+        "knife",
+        "non_graphic",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "f096f66e-8829-499e-8b9c-ff31921db1be",
+      "word": "Islam",
+      "meaningZh": "伊斯兰教",
+      "exampleId": "f096f66e-8829-499e-8b9c-ff31921db1be-visual-ex",
+      "styleFamily": "respectful contemporary community watercolor",
+      "sentenceEn": "Followers of Islam gather for prayer at the mosque.",
+      "sentenceZh": "伊斯兰教信众聚集在清真寺礼拜。",
+      "scene": "A diverse Muslim community of adults and families approaches a serene mosque courtyard for communal prayer, wearing varied modest everyday clothing and placing shoes neatly near the entrance; architecture uses simple geometric patterns with absolutely no calligraphy, writing or invented sacred text.",
+      "altText": "Muslim families gather peacefully at a mosque.",
+      "riskTags": [
+        "religion",
+        "Muslim_community",
+        "people_face",
+        "respectful_representation",
+        "no_calligraphy",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "32ae6a23-79f9-4732-9030-d14aa45660a9",
+      "word": "Roman",
+      "meaningZh": "罗马的",
+      "exampleId": "32ae6a23-79f9-4732-9030-d14aa45660a9-visual-ex",
+      "styleFamily": "historically grounded Roman fresco illustration",
+      "sentenceEn": "Roman engineers built stone aqueducts to carry water.",
+      "sentenceZh": "罗马工程师修建石砌渡槽来输送水。",
+      "scene": "In the ancient Roman era, engineers and stoneworkers construct a long arched aqueduct across a valley while clear water already flows through a completed upper channel; clothing, hand tools and masonry are period-appropriate, with no inscriptions, modern machines or military imagery.",
+      "altText": "Roman engineers build a stone aqueduct.",
+      "riskTags": [
+        "historical",
+        "Roman_context",
+        "people_face",
+        "construction",
+        "no_inscriptions",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "235775d2-45d1-4ba3-90ef-75bce976f5d0",
+      "word": "architecture",
+      "meaningZh": "建筑学；建筑式样；体系结构",
+      "exampleId": "235775d2-45d1-4ba3-90ef-75bce976f5d0-visual-ex",
+      "styleFamily": "contemporary Chinese architectural concept illustration",
+      "sentenceEn": "The museum combines traditional and modern architecture.",
+      "sentenceZh": "这座博物馆融合了传统与现代建筑风格。",
+      "scene": "A striking Chinese museum complex visibly combines a low tiled courtyard with timber screens and a sweeping modern glass-and-stone pavilion around one shared garden; two adult architects compare a small physical model to the finished buildings, with blank plans and no signage.",
+      "altText": "A museum combines traditional and modern architecture.",
+      "riskTags": [
+        "Chinese_context",
+        "architecture",
+        "people_face",
+        "blank_plans",
+        "no_signage",
+        "no_text"
+      ]
+    }
+  ]
+}

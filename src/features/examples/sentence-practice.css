@@ -19,6 +19,20 @@
   text-transform: uppercase;
 }
 
+.sentence-practice-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sentence-practice-meta strong {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
 .sentence-practice-intro h2 {
   margin: 10px 0 8px;
   color: var(--text);
@@ -30,6 +44,12 @@
   margin: 0;
   color: var(--text-soft);
   line-height: 1.7;
+}
+
+.sentence-practice-intro .sentence-practice-load-warning {
+  margin-top: 10px;
+  color: #b66518;
+  font-size: 0.84rem;
 }
 
 .sentence-practice-stage {

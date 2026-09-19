@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2460-2479",
+  "batchId": "auto-rank-2460-2479-20260828",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "remote",
+      "journal",
+      "bench",
+      "deck",
+      "dialogue",
+      "founder"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "61597ce4-3fcf-4a54-87b3-48ac53ee187f",
+      "word": "remote",
+      "meaningZh": "遥远的；偏僻的；疏远的；微少的",
+      "exampleId": "61597ce4-3fcf-4a54-87b3-48ac53ee187f-visual-ex",
+      "styleFamily": "Chinese mountain-village watercolor illustration",
+      "sentenceEn": "A remote village sat beyond three mountain passes.",
+      "sentenceZh": "一个偏远村庄坐落在三道山口之外。",
+      "scene": "A small Chinese mountain village with tiled homes lies deep beyond several layered ridges, reached by a winding path and surrounded by vast quiet scenery.",
+      "altText": "偏远中国山村坐落在层叠山岭深处",
+      "riskTags": [
+        "cultural_landscape",
+        "distance",
+        "architecture"
+      ]
+    },
+    {
+      "vocabularyId": "3497a4b3-ed88-4302-b7c1-a3ca78ed98f7",
+      "word": "satisfaction",
+      "meaningZh": "满意；满足",
+      "exampleId": "3497a4b3-ed88-4302-b7c1-a3ca78ed98f7-visual-ex",
+      "styleFamily": "warm craft-studio illustration",
+      "sentenceEn": "She smiled with satisfaction at the finished cabinet.",
+      "sentenceZh": "她满意地看着完工的橱柜微笑。",
+      "scene": "A woodworker steps back from a beautifully finished cabinet and smiles with quiet satisfaction, tools resting neatly nearby.",
+      "altText": "木工满意地欣赏完工橱柜",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "tools"
+      ]
+    },
+    {
+      "vocabularyId": "c9a8482d-870b-496c-a859-e0fa137314e0",
+      "word": "journal",
+      "meaningZh": "日记；杂志；日报；轴颈",
+      "exampleId": "c9a8482d-870b-496c-a859-e0fa137314e0-visual-ex",
+      "styleFamily": "Chinese travel-sketch watercolor illustration",
+      "sentenceEn": "He recorded the mountain journey in his journal.",
+      "sentenceZh": "他把山中旅程记录在日记里。",
+      "scene": "A traveler rests in a traditional Chinese mountain pavilion and draws the surrounding peaks in an open journal, with only abstract sketch marks and no writing.",
+      "altText": "旅人在中式山亭记录山中旅程",
+      "riskTags": [
+        "text_risk",
+        "cultural_setting",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f7cb1cef-528b-4460-b11e-cf9e8d56f45d",
+      "word": "bench",
+      "meaningZh": "长椅子；台",
+      "exampleId": "f7cb1cef-528b-4460-b11e-cf9e8d56f45d-visual-ex",
+      "styleFamily": "Chinese garden ink-and-color illustration",
+      "sentenceEn": "They rested on a stone bench beside the lotus pond.",
+      "sentenceZh": "他们坐在荷塘边的石凳上休息。",
+      "scene": "Two older friends rest on a carved stone bench beside a lotus pond in a classical Chinese garden, talking beneath willow branches.",
+      "altText": "老人坐在中国园林荷塘边石凳休息",
+      "riskTags": [
+        "cultural_setting",
+        "people_face",
+        "architecture"
+      ]
+    },
+    {
+      "vocabularyId": "76b34377-c693-48d7-98b5-2977c571fad7",
+      "word": "lover",
+      "meaningZh": "情人；爱好者",
+      "exampleId": "76b34377-c693-48d7-98b5-2977c571fad7-visual-ex",
+      "styleFamily": "romantic editorial illustration",
+      "sentenceEn": "As a music lover, she attended every neighborhood concert.",
+      "sentenceZh": "作为音乐爱好者，她参加了社区的每场音乐会。",
+      "scene": "An enthusiastic adult music lover listens joyfully to a small outdoor neighborhood ensemble, clearly focused on appreciation rather than romance.",
+      "altText": "音乐爱好者陶醉地欣赏社区演奏",
+      "riskTags": [
+        "people_face",
+        "many_people",
+        "ambiguous_term"
+      ]
+    },
+    {
+      "vocabularyId": "05c7e85f-d58b-4b0b-88da-29e09f027aad",
+      "word": "raw",
+      "meaningZh": "生的；原始的；未加工的",
+      "exampleId": "05c7e85f-d58b-4b0b-88da-29e09f027aad-visual-ex",
+      "styleFamily": "food-preparation gouache illustration",
+      "sentenceEn": "Keep the raw vegetables separate from the cooked food.",
+      "sentenceZh": "把生蔬菜和熟食分开放置。",
+      "scene": "A cook safely separates raw vegetables on one clean board from steaming cooked food on another, with distinct utensils and tidy surfaces.",
+      "altText": "厨师把生蔬菜与熟食分开放置",
+      "riskTags": [
+        "food_safety",
+        "hands",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "bde0e45c-1a37-4295-8c61-f58fdd2833fa",
+      "word": "awareness",
+      "meaningZh": "意识",
+      "exampleId": "bde0e45c-1a37-4295-8c61-f58fdd2833fa-visual-ex",
+      "styleFamily": "environmental editorial illustration",
+      "sentenceEn": "The exhibit raised awareness of plastic pollution.",
+      "sentenceZh": "展览提高了人们对塑料污染的认识。",
+      "scene": "Visitors study a powerful installation made from recovered ocean plastic beside a clean-water scene, gaining visible awareness without labels or text.",
+      "altText": "海洋塑料装置提高环保意识",
+      "riskTags": [
+        "environmental",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c0fd730f-50ea-45b1-a0c0-12630d3379fb",
+      "word": "surprising",
+      "meaningZh": "令人惊讶的",
+      "exampleId": "c0fd730f-50ea-45b1-a0c0-12630d3379fb-visual-ex",
+      "styleFamily": "whimsical nature illustration",
+      "sentenceEn": "A surprising flower bloomed through the sidewalk crack.",
+      "sentenceZh": "一朵令人惊讶的花从人行道裂缝中绽放。",
+      "scene": "Commuters stop in delighted surprise around one vivid flower blooming through a narrow crack in a gray city sidewalk.",
+      "altText": "人们惊喜发现裂缝中绽放的花",
+      "riskTags": [
+        "people_face",
+        "contrast",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "4594157d-a486-4929-a79b-ebc769756a74",
+      "word": "withdraw",
+      "meaningZh": "撤回；撤退；取（款）",
+      "exampleId": "4594157d-a486-4929-a79b-ebc769756a74-visual-ex",
+      "styleFamily": "banking editorial illustration",
+      "sentenceEn": "She used the machine to withdraw cash.",
+      "sentenceZh": "她用机器取出现金。",
+      "scene": "An adult uses a generic cash machine to withdraw several banknotes, with a blank interface, no numbers, logos, or readable text.",
+      "altText": "女子从自动柜员机取出现金",
+      "riskTags": [
+        "financial",
+        "text_risk",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "35092984-7b58-4bb0-ae0c-9b136003e997",
+      "word": "deck",
+      "meaningZh": "甲板；一副（牌）；装饰",
+      "exampleId": "35092984-7b58-4bb0-ae0c-9b136003e997-visual-ex",
+      "styleFamily": "Chinese riverboat watercolor illustration",
+      "sentenceEn": "Passengers watched the sunset from the upper deck.",
+      "sentenceZh": "乘客们从上层甲板观看日落。",
+      "scene": "Passengers relax on the wooden upper deck of a traditional Chinese-inspired riverboat as the sun sets over misty hills, with no flags or writing.",
+      "altText": "乘客在中式河船甲板欣赏日落",
+      "riskTags": [
+        "cultural_vessel",
+        "people_face",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "f1063a39-e037-4d34-af35-5f302c8f2ea6",
+      "word": "similarly",
+      "meaningZh": "相似地",
+      "exampleId": "f1063a39-e037-4d34-af35-5f302c8f2ea6-visual-ex",
+      "styleFamily": "paired-action editorial illustration",
+      "sentenceEn": "The twins dressed similarly for the celebration.",
+      "sentenceZh": "双胞胎在庆祝活动中穿得很相似。",
+      "scene": "Adult twins stand side by side wearing similarly styled but not identical outfits, sharing matching colors and shapes while retaining individual details.",
+      "altText": "成年双胞胎穿着相似服装参加庆典",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "clothing"
+      ]
+    },
+    {
+      "vocabularyId": "21487aac-68ec-4b2a-a6d1-8db9cd25d0a2",
+      "word": "newly",
+      "meaningZh": "新近",
+      "exampleId": "21487aac-68ec-4b2a-a6d1-8db9cd25d0a2-visual-ex",
+      "styleFamily": "fresh-renovation illustration",
+      "sentenceEn": "The newly painted door shone in the morning light.",
+      "sentenceZh": "新刷漆的门在晨光中闪亮。",
+      "scene": "A homeowner admires a newly painted bright blue door, with a clean brush and covered paint tray nearby and the old faded color visible on one small unfinished edge.",
+      "altText": "新刷漆的大门在晨光中闪亮",
+      "riskTags": [
+        "hands",
+        "paint",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8ee51a7f-976f-4777-a60d-9fb320fb1d89",
+      "word": "pole",
+      "meaningZh": "杆；柱；极点",
+      "exampleId": "8ee51a7f-976f-4777-a60d-9fb320fb1d89-visual-ex",
+      "styleFamily": "circus-training editorial illustration",
+      "sentenceEn": "The acrobat balanced a long pole while crossing the low beam.",
+      "sentenceZh": "杂技演员走过低平衡木时手持长杆保持平衡。",
+      "scene": "A trained adult acrobat safely crosses a low practice beam while holding a long horizontal balancing pole, with mats and a coach nearby.",
+      "altText": "杂技演员手持长杆走过低平衡木",
+      "riskTags": [
+        "sports_safety",
+        "people_face",
+        "long_object"
+      ]
+    },
+    {
+      "vocabularyId": "3bd40d48-ce86-49a9-9d77-b6c13721785a",
+      "word": "testify",
+      "meaningZh": "作证；证明",
+      "exampleId": "3bd40d48-ce86-49a9-9d77-b6c13721785a-visual-ex",
+      "styleFamily": "courtroom editorial illustration",
+      "sentenceEn": "The witness agreed to testify about what she saw.",
+      "sentenceZh": "证人同意就自己所见出庭作证。",
+      "scene": "An adult witness speaks clearly from the stand while a judge and lawyers listen attentively in a calm courtroom, with no documents or text.",
+      "altText": "证人在法庭上陈述自己所见",
+      "riskTags": [
+        "legal",
+        "people_face",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "f595d2e2-b1d9-409c-9c39-aecdea0f2d5e",
+      "word": "mode",
+      "meaningZh": "模式；方式；状态",
+      "exampleId": "f595d2e2-b1d9-409c-9c39-aecdea0f2d5e-visual-ex",
+      "styleFamily": "device-state editorial illustration",
+      "sentenceEn": "The lamp switched from reading mode to soft night mode.",
+      "sentenceZh": "台灯从阅读模式切换到柔和夜间模式。",
+      "scene": "One desk lamp changes from a bright focused beam to a soft warm glow as an adult turns a simple unmarked dial, showing two modes without labels.",
+      "altText": "台灯从明亮阅读模式切换到柔和夜间模式",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "f6d675a5-6e94-4925-96e9-90b92e74f37e",
+      "word": "dialogue",
+      "meaningZh": "对话；用对话表达",
+      "exampleId": "f6d675a5-6e94-4925-96e9-90b92e74f37e-visual-ex",
+      "styleFamily": "Chinese teahouse gouache illustration",
+      "sentenceEn": "The two scholars continued their dialogue over tea.",
+      "sentenceZh": "两位学者一边喝茶一边继续对话。",
+      "scene": "In a traditional Chinese teahouse, two adult scholars exchange thoughtful gestures across a tea table, clearly engaged in balanced dialogue with attentive faces.",
+      "altText": "两位学者在中国茶馆展开对话",
+      "riskTags": [
+        "cultural_setting",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "fe01ad5a-96a2-4af9-b996-630b009a2597",
+      "word": "imply",
+      "meaningZh": "暗示；意味；隐含",
+      "exampleId": "fe01ad5a-96a2-4af9-b996-630b009a2597-visual-ex",
+      "styleFamily": "subtle editorial illustration",
+      "sentenceEn": "The empty plate seemed to imply that everyone enjoyed the cake.",
+      "sentenceZh": "空盘子似乎暗示大家都喜欢这个蛋糕。",
+      "scene": "A completely empty cake plate surrounded by satisfied guests and a few crumbs visually implies that the dessert was enjoyed, with no words.",
+      "altText": "空蛋糕盘暗示甜点很受欢迎",
+      "riskTags": [
+        "abstract_concept",
+        "people_face",
+        "food"
+      ]
+    },
+    {
+      "vocabularyId": "a80e70c7-a8eb-4006-addb-eeabd2f448a8",
+      "word": "naturally",
+      "meaningZh": "自然地",
+      "exampleId": "a80e70c7-a8eb-4006-addb-eeabd2f448a8-visual-ex",
+      "styleFamily": "botanical watercolor illustration",
+      "sentenceEn": "Wildflowers grew naturally along the riverbank.",
+      "sentenceZh": "野花自然地生长在河岸边。",
+      "scene": "A varied patch of wildflowers grows freely and irregularly along a riverbank, contrasting with a distant neatly planted formal garden.",
+      "altText": "野花自然生长在河岸边",
+      "riskTags": [
+        "nature",
+        "contrast",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "31b09f7f-6c8f-44cf-9f96-d04c1a61ceb3",
+      "word": "mutual",
+      "meaningZh": "相互的；共有的",
+      "exampleId": "31b09f7f-6c8f-44cf-9f96-d04c1a61ceb3-visual-ex",
+      "styleFamily": "community editorial illustration",
+      "sentenceEn": "Their mutual respect made the partnership strong.",
+      "sentenceZh": "相互尊重使他们的合作关系更加牢固。",
+      "scene": "Two craftspeople exchange finished pieces and appreciative smiles, each valuing the other's work equally in a shared studio.",
+      "altText": "两位匠人相互欣赏彼此作品",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_concept"
+      ]
+    },
+    {
+      "vocabularyId": "b35c09ba-0a12-4a1c-aa15-637a472f47f8",
+      "word": "founder",
+      "meaningZh": "创始人",
+      "exampleId": "b35c09ba-0a12-4a1c-aa15-637a472f47f8-visual-ex",
+      "styleFamily": "Chinese startup-studio illustration",
+      "sentenceEn": "The founder welcomed the first employees to the studio.",
+      "sentenceZh": "创始人欢迎首批员工来到工作室。",
+      "scene": "A Chinese technology founder warmly welcomes a small diverse first team into a modest new studio filled with prototypes, plants, and blank boards.",
+      "altText": "中国创业公司创始人欢迎首批员工",
+      "riskTags": [
+        "cultural_setting",
+        "many_people",
+        "text_risk"
+      ]
+    }
+  ]
+}

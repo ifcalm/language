@@ -1,0 +1,359 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2760-2779",
+  "batchId": "auto-rank-2760-2779-20260910",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "principal",
+      "workshop",
+      "cotton",
+      "flavor",
+      "overlook",
+      "undergo"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "c97ba5ea-69f0-46b5-82e3-900b3d7102e3",
+      "word": "adjustment",
+      "meaningZh": "调整",
+      "exampleId": "c97ba5ea-69f0-46b5-82e3-900b3d7102e3-visual-ex",
+      "styleFamily": "precise editorial cut-paper illustration",
+      "sentenceEn": "A small adjustment makes the crooked picture frame level.",
+      "sentenceZh": "稍作调整就让歪斜的画框变平了。",
+      "scene": "An adult gently turns one corner screw on a wall-mounted picture frame, shown in a clear before-and-after split from visibly crooked to perfectly level, emphasizing one small adjustment and accurate hands.",
+      "altText": "A small adjustment changing a crooked frame into a level one.",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "hands",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "f16481f2-d1a5-4686-b9e7-b3d5c8de18ac",
+      "word": "taxpayer",
+      "meaningZh": "纳税人",
+      "exampleId": "f16481f2-d1a5-4686-b9e7-b3d5c8de18ac-visual-ex",
+      "styleFamily": "civic editorial collage",
+      "sentenceEn": "Each taxpayer contributes money that supports shared public services.",
+      "sentenceZh": "每位纳税人缴纳的钱都会支持共享的公共服务。",
+      "scene": "A diverse adult citizen places coins into a transparent civic collection box, and clear visual pathways lead from the shared fund to a public library, bus, park, and fire station, showing taxpayer contribution without forms or text.",
+      "altText": "A taxpayer contributing to a fund that supports public services.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b90ae8c2-bd3f-44f6-a456-993d95497ee6",
+      "word": "eager",
+      "meaningZh": "热心的；渴望的；热望的",
+      "exampleId": "b90ae8c2-bd3f-44f6-a456-993d95497ee6-visual-ex",
+      "styleFamily": "energetic ink-and-watercolor illustration",
+      "sentenceEn": "The eager apprentices lean forward to watch the glassmaker begin.",
+      "sentenceZh": "满怀期待的学徒们探身观看玻璃匠开工。",
+      "scene": "Several adult apprentices lean forward with bright attentive expressions and prepared tools as a skilled glassmaker begins shaping glowing glass, clearly conveying eagerness through faces and posture.",
+      "altText": "Eager apprentices leaning forward to watch a glassmaker.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "body_posture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "cb42f588-600e-47c5-b4d2-a2276c5cb327",
+      "word": "principal",
+      "meaningZh": "校长；主要的；本金",
+      "exampleId": "cb42f588-600e-47c5-b4d2-a2276c5cb327-visual-ex",
+      "styleFamily": "warm Chinese school gouache illustration",
+      "sentenceEn": "The principal welcomes students at the school gate each morning.",
+      "sentenceZh": "校长每天早晨在校门口迎接学生。",
+      "scene": "At the entrance of a contemporary Chinese school, the adult principal warmly greets arriving students while teachers and families recognize her leadership role through respectful interaction, with no signs or written labels.",
+      "altText": "A school principal welcoming students at the gate.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_role",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "cede6d51-f44e-4135-a4c3-ce56e4cef59b",
+      "word": "detailed",
+      "meaningZh": "详细的",
+      "exampleId": "cede6d51-f44e-4135-a4c3-ce56e4cef59b-visual-ex",
+      "styleFamily": "intricate botanical pen-and-wash illustration",
+      "sentenceEn": "The detailed drawing reveals every vein and tiny hair on the leaf.",
+      "sentenceZh": "这幅细致的图画呈现了叶片的每条叶脉和细小绒毛。",
+      "scene": "An adult botanical artist examines a large leaf beside an exceptionally detailed scientific drawing that reveals branching veins, serrated edges, and tiny surface hairs, contrasted with a simple rough outline nearby and no labels.",
+      "altText": "A detailed leaf drawing showing veins and tiny surface hairs.",
+      "riskTags": [
+        "comparison",
+        "hands",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "052ad22e-a0c9-4df3-9022-f1c05cefb15b",
+      "word": "motivation",
+      "meaningZh": "动机",
+      "exampleId": "052ad22e-a0c9-4df3-9022-f1c05cefb15b-visual-ex",
+      "styleFamily": "symbolic editorial watercolor",
+      "sentenceEn": "Protecting sea turtles is her motivation for studying marine science.",
+      "sentenceZh": "保护海龟是她学习海洋科学的动力。",
+      "scene": "An adult student works intently with marine samples and a microscope while a connected vision of a healthy sea turtle swimming free above restored coral shows the motivating goal behind her effort, without text.",
+      "altText": "Sea turtle protection providing motivation for marine science study.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "204f388e-6714-43ab-bda6-bfc5a529835f",
+      "word": "assignment",
+      "meaningZh": "任务；作业",
+      "exampleId": "204f388e-6714-43ab-bda6-bfc5a529835f-visual-ex",
+      "styleFamily": "friendly editorial story illustration",
+      "sentenceEn": "Their assignment is to build a bridge from a limited set of sticks.",
+      "sentenceZh": "他们的任务是用有限数量的木棍搭一座桥。",
+      "scene": "A teacher presents a simple bridge model and one small tray of craft sticks, while a team of adult learners begins building their own bridge at a classroom table, clearly showing an assigned task without written instructions.",
+      "altText": "Learners completing an assignment to build a bridge from sticks.",
+      "riskTags": [
+        "reference",
+        "hands",
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "3a9bd538-7301-441e-84fc-0ff17e581551",
+      "word": "restriction",
+      "meaningZh": "限制",
+      "exampleId": "3a9bd538-7301-441e-84fc-0ff17e581551-visual-ex",
+      "styleFamily": "bold geometric transport illustration",
+      "sentenceEn": "The height restriction prevents the tall truck from entering the tunnel.",
+      "sentenceZh": "限高规定阻止高大的卡车进入隧道。",
+      "scene": "At a tunnel entrance, a rigid overhead height bar physically stops one tall truck while lower cars pass safely underneath in another lane, making the restriction and its effect clear without numbers or signs.",
+      "altText": "A height restriction stopping a tall truck at a tunnel.",
+      "riskTags": [
+        "spatial_boundary",
+        "comparison",
+        "cause_effect",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "c8b3efca-c82f-4499-8ae0-025816992861",
+      "word": "laboratory",
+      "meaningZh": "实验室；研究室；化工厂",
+      "exampleId": "c8b3efca-c82f-4499-8ae0-025816992861-visual-ex",
+      "styleFamily": "clean scientific isometric illustration",
+      "sentenceEn": "The samples are tested under controlled conditions in the laboratory.",
+      "sentenceZh": "这些样本在实验室的受控条件下接受检测。",
+      "scene": "Inside a modern laboratory, adult scientists wearing appropriate coats, gloves, and eye protection use microscopes, pipettes, sealed sample tubes, and controlled equipment at orderly benches, with no readable screens or labels.",
+      "altText": "Scientists testing samples in a controlled laboratory.",
+      "riskTags": [
+        "technical",
+        "hands",
+        "people_face",
+        "safety_equipment"
+      ]
+    },
+    {
+      "vocabularyId": "789a1954-9eee-4713-97e0-fc2ec33e8a71",
+      "word": "workshop",
+      "meaningZh": "工场；车间；研讨会",
+      "exampleId": "789a1954-9eee-4713-97e0-fc2ec33e8a71-visual-ex",
+      "styleFamily": "Chinese woodblock-inspired craft illustration",
+      "sentenceEn": "The workshop is filled with benches where artisans carve wooden toys.",
+      "sentenceZh": "工坊里摆满了供工匠雕刻木制玩具的工作台。",
+      "scene": "A traditional Chinese woodworking workshop contains several sturdy benches where adult artisans carve, sand, and assemble small wooden animals, surrounded by organized hand tools, wood shavings, and finished examples.",
+      "altText": "Artisans carving wooden toys at benches in a workshop.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "technical",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "60199e1d-4b58-46e4-be53-3374014da7b6",
+      "word": "differently",
+      "meaningZh": "不同地",
+      "exampleId": "60199e1d-4b58-46e4-be53-3374014da7b6-visual-ex",
+      "styleFamily": "split-panel expressive gouache illustration",
+      "sentenceEn": "The two artists paint the same vase differently.",
+      "sentenceZh": "两位艺术家用不同的方式画同一个花瓶。",
+      "scene": "Two adult artists observe the exact same blue vase placed between them; one creates a precise realistic painting while the other creates a bold abstract interpretation, clearly showing the same subject treated differently.",
+      "altText": "Two artists painting the same vase differently.",
+      "riskTags": [
+        "comparison",
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "d22ab1ac-2c8b-4e97-97d3-c4cce457c116",
+      "word": "auto",
+      "meaningZh": "汽车",
+      "exampleId": "d22ab1ac-2c8b-4e97-97d3-c4cce457c116-visual-ex",
+      "styleFamily": "retro technical poster illustration",
+      "sentenceEn": "The mechanic raises the auto to inspect its wheels and brakes.",
+      "sentenceZh": "修理工升起汽车以检查车轮和刹车。",
+      "scene": "In a clean repair garage, an adult mechanic uses a hydraulic lift to raise a clearly recognizable passenger auto and inspect its wheel and brake assembly, with accurate vehicle structure and no brand marks.",
+      "altText": "A mechanic inspecting an auto raised on a garage lift.",
+      "riskTags": [
+        "technical",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c95fdebb-5394-4c1d-ab9d-ce8a122e39e3",
+      "word": "romantic",
+      "meaningZh": "浪漫的；传奇性的",
+      "exampleId": "c95fdebb-5394-4c1d-ab9d-ce8a122e39e3-visual-ex",
+      "styleFamily": "luminous pastel storybook illustration",
+      "sentenceEn": "They share a romantic evening beside the lantern-lit lake.",
+      "sentenceZh": "他们在灯笼映照的湖边共度浪漫夜晚。",
+      "scene": "Two adults sit close together at a quiet lakeside table at dusk, exchanging affectionate smiles beneath warm lantern light with flowers and reflected moonlight, creating a tender romantic mood without exaggerated gestures.",
+      "altText": "A couple sharing a romantic evening beside a lantern-lit lake.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "53d958e7-2dc3-4fbe-879a-18379cb3e977",
+      "word": "cotton",
+      "meaningZh": "棉花；和谐；有好感；理解",
+      "exampleId": "53d958e7-2dc3-4fbe-879a-18379cb3e977-visual-ex",
+      "styleFamily": "Chinese rural textile gouache illustration",
+      "sentenceEn": "The cotton is picked from soft white bolls and spun into thread.",
+      "sentenceZh": "棉花从柔软的白色棉铃中采下并纺成线。",
+      "scene": "A connected Chinese rural textile scene shows mature cotton plants with fluffy white bolls, an adult farmer gathering the cotton, and an artisan spinning the same soft fiber into thread on a wooden wheel.",
+      "altText": "Cotton being picked from white bolls and spun into thread.",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "hands",
+        "people_face",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "f14342bc-36be-4720-b7f9-76ac7c818542",
+      "word": "motor",
+      "meaningZh": "马达；发动机；原动力；汽车",
+      "exampleId": "f14342bc-36be-4720-b7f9-76ac7c818542-visual-ex",
+      "styleFamily": "precise cutaway technical illustration",
+      "sentenceEn": "The electric motor turns the fan blades when power reaches the coils.",
+      "sentenceZh": "电流到达线圈时，电动机带动风扇叶片旋转。",
+      "scene": "A clear cutaway of an electric desk fan reveals copper coils, rotor, shaft, and bearings inside the motor, with motion lines connecting the rotating shaft to turning fan blades, no labels or exposed unsafe wiring.",
+      "altText": "An electric motor turning the blades of a fan.",
+      "riskTags": [
+        "technical",
+        "cause_effect",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "b1f584c6-0469-4632-868b-fa3a0ae8f2da",
+      "word": "sue",
+      "meaningZh": "起诉",
+      "exampleId": "b1f584c6-0469-4632-868b-fa3a0ae8f2da-visual-ex",
+      "styleFamily": "restrained courthouse editorial illustration",
+      "sentenceEn": "The shop owner decides to sue the contractor for the serious damage.",
+      "sentenceZh": "店主决定就严重损失起诉承包商。",
+      "scene": "An adult shop owner shows photographs of severe construction damage to a lawyer, then both walk toward a courthouse while the contractor and owner remain visibly separate, clearly conveying the decision to sue without documents or readable text.",
+      "altText": "A shop owner consulting a lawyer to sue a contractor.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "legal"
+      ]
+    },
+    {
+      "vocabularyId": "a9cae194-8925-46c3-9aad-53a07de1a658",
+      "word": "flavor",
+      "meaningZh": "味道；风味",
+      "exampleId": "a9cae194-8925-46c3-9aad-53a07de1a658-visual-ex",
+      "styleFamily": "Chinese culinary watercolor illustration",
+      "sentenceEn": "Toasted sesame and scallions give the noodles a rich flavor.",
+      "sentenceZh": "烤芝麻和葱花赋予面条浓郁的风味。",
+      "scene": "In a Chinese kitchen, an adult cook adds toasted sesame and fresh scallions to a steaming bowl of noodles while aromatic color swirls visually connect the ingredients to a delighted diner's tasting expression.",
+      "altText": "Sesame and scallions giving noodles a rich flavor.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "dcf8a136-6016-4bbe-986f-822629821cad",
+      "word": "overlook",
+      "meaningZh": "忽视；俯瞰",
+      "exampleId": "dcf8a136-6016-4bbe-986f-822629821cad-visual-ex",
+      "styleFamily": "layered mountain landscape illustration",
+      "sentenceEn": "The old pavilion can overlook the river valley from the high cliff.",
+      "sentenceZh": "古老的亭子可以从高崖俯瞰河谷。",
+      "scene": "A traditional Chinese pavilion stands securely on a high cliff terrace with a sweeping unobstructed view downward across a winding river, villages, and fields, clearly emphasizing the elevated overlook relationship.",
+      "altText": "A high pavilion that can overlook a winding river valley.",
+      "riskTags": [
+        "spatial_relationship",
+        "cultural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "b69857da-263c-46bd-a919-1b4fa3a50bfb",
+      "word": "float",
+      "meaningZh": "漂浮；浮动；浮点数（编程）",
+      "exampleId": "b69857da-263c-46bd-a919-1b4fa3a50bfb-visual-ex",
+      "styleFamily": "serene paper-cut nature illustration",
+      "sentenceEn": "A fallen leaf can float on the pond instead of sinking.",
+      "sentenceZh": "落叶可以漂浮在池塘水面而不下沉。",
+      "scene": "A single autumn leaf rests clearly on the surface of a still pond with its reflection and small ripples, while one waterlogged pebble is visible beneath the surface for contrast, making float versus sink unmistakable.",
+      "altText": "A fallen leaf that can float on the surface of a pond.",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "natural_scene"
+      ]
+    },
+    {
+      "vocabularyId": "c653d785-a3b7-463d-ab70-ebbcf470e132",
+      "word": "undergo",
+      "meaningZh": "经历；经受；接受",
+      "exampleId": "c653d785-a3b7-463d-ab70-ebbcf470e132-visual-ex",
+      "styleFamily": "three-stage architectural linocut illustration",
+      "sentenceEn": "The old bridge must undergo major repairs before it reopens.",
+      "sentenceZh": "这座旧桥必须经过大修才能重新开放。",
+      "scene": "The same stone bridge appears in three connected stages: cracked and closed, surrounded by workers repairing its arch and surface, then restored and safely reopened, clearly showing it undergo a process over time without signs or text.",
+      "altText": "An old bridge undergoing repairs before reopening.",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "reference",
+        "technical"
+      ]
+    }
+  ]
+}

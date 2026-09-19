@@ -145,106 +145,85 @@ The style may feel mature and emotionally grounded without becoming photorealist
 
 ## Batch generation workflow
 
-Use the resumable pipeline for routine production. It keeps planning, generation,
-verification and publishing in one persistent batch state, so a network or model
-failure does not discard completed work.
+Images are produced by the agent's built-in image generation. No image model API,
+provider key or automated planner is involved: the agent writes the batch content,
+renders each scene, and the pipeline script selects the batch, validates the
+content, checks the rendered images and publishes them.
 
-### Automated production mode
+A batch is 20 words by default so a weak scene stays cheap to redo. The batch
+key is `rank-X-Y`, taken from the first and last queue position in the batch.
 
-The default automated batch is 50 unfinished words. A preview is free and does
-not call OpenAI, R2 or D1:
+### Batch steps
 
-```sh
-npm run vocabulary:visuals:pipeline -- --limit 50
-```
-
-Planning alone creates and validates the content manifest without generating
-images:
+Select the next unfinished batch and write a manifest draft. The draft carries the
+vocabulary IDs, words, meanings, example IDs and batch metadata, and leaves the
+content fields empty:
 
 ```sh
-npm run vocabulary:visuals:pipeline -- --limit 50 --plan
+npm run vocabulary:visuals:pipeline -- --limit 20 --prepare
 ```
 
-Generate all missing images, run exhaustive deterministic checks, build a contact
-sheet and run sampled semantic QA:
+The agent then fills `styleFamily`, `sentenceEn`, `sentenceZh`, `scene`, `altText`
+and `riskTags` for every item in `tmp/vocabulary-visuals/<batch>/manifest.json`,
+planning the whole batch in one pass. Do not query D1 again while planning,
+generating or reviewing the batch.
+
+Validate the filled manifest before rendering anything. This checks queue
+membership, unique IDs and words, Chinese meanings, example IDs, batch metadata,
+required content fields, risk-tag format, and that every English sentence contains
+the target word or a regular inflection of it. It also writes `prompts.md`, one
+ready-to-use image prompt per word:
 
 ```sh
-npm run vocabulary:visuals:pipeline -- --limit 50 --generate
+npm run vocabulary:visuals:pipeline -- --batch rank-1959-1979 --validate
 ```
 
-After reviewing a new pipeline or prompt configuration, run the complete path,
-including concurrent R2 upload and one idempotent D1 import:
+Render each scene as `output/vocabulary-visuals/<batch>/<word>.png` at 1536x1024,
+then verify the rendered batch. This checks the file inventory, dimensions and
+duplicate content, builds a labeled contact sheet, and names the five review
+samples: three chosen by semantic risk and two seeded at random:
 
 ```sh
-npm run vocabulary:visuals:pipeline -- --limit 50 --publish
+npm run vocabulary:visuals:pipeline -- --batch rank-1959-1979 --check-images
 ```
 
-Once a 50-word production batch has confirmed the current models and prompt rules,
-finish the remaining queue unattended while retaining the same 50-word recovery
-boundaries:
+Review the complete contact sheet at overview size, then inspect the named samples
+in detail. A blank or featureless readable human face fails the overview review and
+must be regenerated even when that image was not sampled. Treat exact quantities,
+pronoun reference, comparison, sequence, cause and effect, spatial boundaries, and
+before/after transformations as high-risk relationships.
+
+Publish only after that review. Publishing re-runs both checks, prepares WebP
+assets, hashes and D1 SQL, uploads R2 objects concurrently, submits one idempotent
+D1 batch, and finally copies the manifest to
+`scripts/fixtures/vocabulary-visuals-<batch>.json`:
 
 ```sh
-npm run vocabulary:visuals:pipeline -- --all --publish
+npm run vocabulary:visuals:pipeline -- --batch rank-1959-1979 --publish
 ```
 
-The supervisor starts the next batch only after the previous R2/D1 publication
-and fixture record succeed. It stops on the first failed generation, QA or
-publication step. Running the same command again resumes that failed batch and
-then continues through the queue. Individual batches are capped at 100 words;
-use `--all` instead of creating one fragile multi-thousand-image batch.
+The fixture is the completion ledger: the batch selector skips every vocabulary ID
+that already appears in a checked-in manifest. The manifest is therefore recorded
+only after a successful publication, so a failed upload never marks words complete.
 
-Each command resumes the same stable `.vocabulary-visual-pipeline/rank-X-Y/`
-state. Existing plans and valid images are reused. When generation or sampled QA
-fails for individual items, regenerate only those items:
+`CLOUDFLARE_API_TOKEN` is required for `--publish` and may live in `.env.local`.
+The pipeline never publishes implicitly; every other step is local and free.
 
-```sh
-npm run vocabulary:visuals:pipeline -- --limit 50 --generate --retry-failed
-```
+### Target words and risk tags
 
-`OPENAI_API_KEY` is required for planning and generation. Publishing also requires
-`CLOUDFLARE_API_TOKEN`. Both may be placed in `.env.local`. The pipeline never
-publishes implicitly: production writes require the explicit `--publish` flag.
+An example sentence may inflect the headword naturally: `informs` for `inform`,
+`denies` for `deny`, `launches` for `launch`. Validation accepts regular
+inflections and reports them, so a batch can be reviewed for tone. It rejects a
+different word, such as `compete` for `competition` or `Jewish` for `Jew`.
 
-The main throughput controls are:
+Risk tags are free-form snake_case, at most eight per item. These tags also steer
+QA sampling and should be preferred whenever they apply:
 
-| Setting | Default | Purpose |
-|---|---:|---|
-| `--planner-chunk-size` | 10 | Words returned by one structured planning request |
-| `--planner-concurrency` | 2 | Concurrent planning requests |
-| `--image-concurrency` | 8 | Concurrent image requests |
-| `--qa-concurrency` | 3 | Concurrent sampled visual reviews |
-| `VOCABULARY_VISUAL_R2_CONCURRENCY` | 8 | Concurrent R2 object uploads |
+`exact_quantity`, `reference`, `comparison`, `sequence`, `cause_effect`,
+`spatial_boundary`, `before_after`, `people_face`, `hands`, `abstract_meaning`
 
-Use `--skip-ai-qa` only for an explicitly accepted deterministic-only run. A
-sampled semantic failure blocks publishing and should be regenerated before the
-batch continues.
-
-### Manual fast mode
-
-Use this 20-word workflow when manually piloting a new style, prompt framework or
-content category:
-
-1. Keep the pilot batch at 20 words so generation failures and content revisions
-   stay easy to isolate.
-2. Read the batch from the checked-in local vocabulary queue, then draft all
-   examples, scenes, alternative text, and style routing in one manifest pass.
-   Do not query D1 again while planning, generating, or reviewing the batch.
-3. Run full local manifest checks before image generation: item count, vocabulary
-   ID, word, Chinese meaning, queue membership, unique IDs, required fields, and
-   an exact target-word token in every English example.
-4. Generate with five concurrent image requests, completing 20 images in four
-   waves. Retry only failed requests and save successful outputs immediately.
-   Do not pause to present or discuss each image during a routine batch.
-5. Build one labeled contact sheet after all images finish. Review the complete
-   sheet at overview size, then inspect five images in detail: three selected by
-   semantic risk and two selected at random.
-   Any blank or featureless readable human face fails the overview review and must
-   be regenerated even when that image was not selected for detailed sampling.
-6. Treat exact quantities, pronoun reference, comparison, sequence, cause and
-   effect, spatial boundaries, and before/after transformations as high-risk visual
-   relationships. Prefer these items when selecting the three risk samples.
-7. Prepare WebP assets, hashes, the published manifest, and D1 SQL in one command;
-   upload R2 objects concurrently and submit D1 SQL as one idempotent batch.
+Descriptive batch tags such as `Chinese_culture`, `no_readable_text` or
+`single_person` remain valid and simply carry no sampling weight.
 
 ### Local vocabulary queue
 

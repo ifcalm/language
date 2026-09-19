@@ -1,0 +1,360 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2960-2979",
+  "batchId": "auto-rank-2960-2979-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "captain",
+      "gallery",
+      "soccer",
+      "virtue",
+      "architect",
+      "inquiry"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "60b67f6e-e512-49b8-bfda-bc5b9532d044",
+      "word": "captain",
+      "meaningZh": "船长；队长；上尉；机长",
+      "exampleId": "60b67f6e-e512-49b8-bfda-bc5b9532d044-visual-ex",
+      "styleFamily": "atmospheric Chinese river-travel illustration",
+      "sentenceEn": "The captain guides the ferry safely through the morning mist.",
+      "sentenceZh": "船长带领渡船安全穿过晨雾。",
+      "scene": "An experienced Chinese woman stands at the wheel inside the open bridge of a small Yangtze River ferry, calmly steering between misty green mountains while passengers remain safely behind her.",
+      "altText": "A ferry captain steers through misty Chinese mountains.",
+      "riskTags": [
+        "occupation",
+        "vehicle",
+        "water",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "32e50547-8e5f-4885-93ec-4a63a0d64840",
+      "word": "sigh",
+      "meaningZh": "叹气；叹息",
+      "exampleId": "32e50547-8e5f-4885-93ec-4a63a0d64840-visual-ex",
+      "styleFamily": "quiet expressive pastel illustration",
+      "sentenceEn": "He sighs with relief after finishing the difficult task.",
+      "sentenceZh": "完成这项艰难的任务后，他如释重负地叹了口气。",
+      "scene": "An adult craftsperson leans back from a completed wooden model, shoulders relaxing as one visible soft breath curls from his mouth, with a relieved natural expression and tools resting nearby.",
+      "altText": "A craftsperson sighs with relief after completing a model.",
+      "riskTags": [
+        "subtle_action",
+        "facial_expression",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e12ad317-cda5-4dc3-877a-6488359350ec",
+      "word": "attribute",
+      "meaningZh": "属性；标志；定语",
+      "exampleId": "e12ad317-cda5-4dc3-877a-6488359350ec-visual-ex",
+      "styleFamily": "clean scientific editorial illustration",
+      "sentenceEn": "Bright color is one attribute of this mineral.",
+      "sentenceZh": "鲜艳的颜色是这种矿物的一项属性。",
+      "scene": "A geologist compares several mineral samples on a neutral worktable, using a magnifying lens to focus on the unusually bright blue color of one crystal as its distinctive property, with no labels or writing.",
+      "altText": "A geologist studies the bright color attribute of a mineral.",
+      "riskTags": [
+        "abstract_meaning",
+        "scientific_object",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "02872b91-ce57-4caf-9d82-5e4a3bb1b03a",
+      "word": "dare",
+      "meaningZh": "挑战；挑动；大胆；敢；胆敢",
+      "exampleId": "02872b91-ce57-4caf-9d82-5e4a3bb1b03a-visual-ex",
+      "styleFamily": "energetic community-poster illustration",
+      "sentenceEn": "She dares to sing alone at the open microphone.",
+      "sentenceZh": "她敢于独自在开放麦上唱歌。",
+      "scene": "A nervous young adult steps toward a simple microphone on a small community stage while supportive friends encourage her from nearby seats; she gathers herself and begins to sing, with no signs or lettering.",
+      "altText": "A young woman dares to sing alone on a community stage.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "performance",
+        "microphone"
+      ]
+    },
+    {
+      "vocabularyId": "b99e8f8d-c780-4312-bece-ec769b7c6780",
+      "word": "homeless",
+      "meaningZh": "无家可归的",
+      "exampleId": "b99e8f8d-c780-4312-bece-ec769b7c6780-visual-ex",
+      "styleFamily": "respectful social-care editorial illustration",
+      "sentenceEn": "The shelter offers a warm meal to people who are homeless.",
+      "sentenceZh": "收容所为无家可归的人提供热饭。",
+      "scene": "Inside a welcoming community shelter, a volunteer respectfully serves a warm meal to an adult carrying a worn backpack and folded blanket, showing dignity, eye contact, and a safe indoor setting without stereotypes.",
+      "altText": "A shelter volunteer respectfully offers a warm meal to a homeless adult.",
+      "riskTags": [
+        "sensitive_topic",
+        "housing_insecurity",
+        "people_face",
+        "respectful_representation"
+      ]
+    },
+    {
+      "vocabularyId": "cac63111-c09e-449a-ab25-ddde8b2675de",
+      "word": "gallery",
+      "meaningZh": "走廊；最高楼座；画廊；收集；图库",
+      "exampleId": "cac63111-c09e-449a-ab25-ddde8b2675de-visual-ex",
+      "styleFamily": "elegant Chinese ink-and-color illustration",
+      "sentenceEn": "Visitors admire landscape paintings in the gallery.",
+      "sentenceZh": "参观者在画廊里欣赏山水画。",
+      "scene": "Adults walk through a bright contemporary gallery displaying framed Chinese ink landscape paintings, pausing to study the brushwork; the artworks contain no seals, calligraphy, captions, or readable text.",
+      "altText": "Visitors admire Chinese landscape paintings in an art gallery.",
+      "riskTags": [
+        "interior",
+        "artwork",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "a6dbe66f-4b5e-48ef-9227-984a6d1bc89e",
+      "word": "soccer",
+      "meaningZh": "足球",
+      "exampleId": "a6dbe66f-4b5e-48ef-9227-984a6d1bc89e-visual-ex",
+      "styleFamily": "dynamic Chinese youth-sports illustration",
+      "sentenceEn": "The students play soccer after school.",
+      "sentenceZh": "学生们放学后踢足球。",
+      "scene": "A mixed group of Chinese teenagers plays soccer on a neighborhood field after school, one player passing a black-and-white ball toward a teammate while others move into position, all faces naturally rendered.",
+      "altText": "Chinese students play soccer together after school.",
+      "riskTags": [
+        "sport",
+        "group_action",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "697a2764-dd91-4f5a-9dda-12282a84c4b4",
+      "word": "defendant",
+      "meaningZh": "被告",
+      "exampleId": "697a2764-dd91-4f5a-9dda-12282a84c4b4-visual-ex",
+      "styleFamily": "balanced civic-process editorial illustration",
+      "sentenceEn": "The defendant listens carefully beside her lawyer.",
+      "sentenceZh": "被告在律师身旁认真听取庭审。",
+      "scene": "In a neutral modern courtroom, an adult defendant sits calmly beside her lawyer and listens to the judge, clearly positioned at the defense table without handcuffs, prison clothing, flags, emblems, signs, or any suggestion of guilt.",
+      "altText": "A defendant listens carefully beside her lawyer in court.",
+      "riskTags": [
+        "legal_context",
+        "neutral_representation",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f9ed8316-a46c-47d9-ae95-283483b99e84",
+      "word": "tunnel",
+      "meaningZh": "隧道",
+      "exampleId": "f9ed8316-a46c-47d9-ae95-283483b99e84-visual-ex",
+      "styleFamily": "bold cutaway infrastructure illustration",
+      "sentenceEn": "The train enters a tunnel through the mountain.",
+      "sentenceZh": "火车驶入穿山隧道。",
+      "scene": "A passenger train approaches and partly enters a clearly visible arched tunnel bored through a rocky green mountain, with the dark passage and bright exit in the distance both visible in a clean cutaway view.",
+      "altText": "A train enters a tunnel through a rocky mountain.",
+      "riskTags": [
+        "infrastructure",
+        "vehicle",
+        "cutaway"
+      ]
+    },
+    {
+      "vocabularyId": "4d9bf530-ade2-4cd6-857a-6d0e98282b41",
+      "word": "fitness",
+      "meaningZh": "健康；健身",
+      "exampleId": "4d9bf530-ade2-4cd6-857a-6d0e98282b41-visual-ex",
+      "styleFamily": "fresh inclusive wellness illustration",
+      "sentenceEn": "Regular exercise improves their fitness.",
+      "sentenceZh": "规律运动提升了他们的健康水平。",
+      "scene": "Three adults of different ages and body types complete a balanced outdoor circuit with brisk walking, light resistance bands, and stretching, appearing energetic and healthy rather than competitive.",
+      "altText": "Adults improve their fitness through regular outdoor exercise.",
+      "riskTags": [
+        "exercise",
+        "inclusive_bodies",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ab81a054-f89e-48f7-bf9c-d6797488d45e",
+      "word": "lap",
+      "meaningZh": "膝盖；舔；一圈；下摆；衣兜；山坳",
+      "exampleId": "ab81a054-f89e-48f7-bf9c-d6797488d45e-visual-ex",
+      "styleFamily": "graphic overhead athletics illustration",
+      "sentenceEn": "The runner completes one lap around the track.",
+      "sentenceZh": "这名跑步者绕跑道完成了一圈。",
+      "scene": "From a high angled view, one adult runner follows the full oval path of a running track and returns to the same plain start marker, with a faint continuous motion trail making one complete circuit clear and no numbers or writing.",
+      "altText": "A runner completes one full lap around an oval track.",
+      "riskTags": [
+        "sport",
+        "motion_path",
+        "overhead_view",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "178df862-e968-4293-8d6e-e3b47e6be862",
+      "word": "grave",
+      "meaningZh": "墓穴；坟墓；终结；死亡",
+      "exampleId": "178df862-e968-4293-8d6e-e3b47e6be862-visual-ex",
+      "styleFamily": "restrained memorial watercolor illustration",
+      "sentenceEn": "They place flowers beside the grave.",
+      "sentenceZh": "他们把鲜花放在墓旁。",
+      "scene": "Two adults quietly place fresh flowers beside a simple unmarked stone grave in a peaceful green cemetery at sunset, conveying remembrance without visible names, dates, religious symbols, text, or a body.",
+      "altText": "Two people place flowers beside a simple grave.",
+      "riskTags": [
+        "death_related",
+        "memorial",
+        "people_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9e5824c1-ff64-4ddd-83d3-ea7c34d6d438",
+      "word": "toe",
+      "meaningZh": "足趾；趾部；脚趾",
+      "exampleId": "9e5824c1-ff64-4ddd-83d3-ea7c34d6d438-visual-ex",
+      "styleFamily": "clear anatomical everyday-life illustration",
+      "sentenceEn": "He dips one toe into the cool water.",
+      "sentenceZh": "他把一根脚趾伸进清凉的水里。",
+      "scene": "At the edge of a calm swimming pool, an adult seated safely on the deck extends one bare foot and gently dips the big toe into the water, creating small ripples; the framing is educational and non-sensational.",
+      "altText": "A person tests the pool water with one toe.",
+      "riskTags": [
+        "body_part",
+        "water",
+        "close_detail"
+      ]
+    },
+    {
+      "vocabularyId": "9461278c-64fd-442d-a513-feaf7b5c781d",
+      "word": "container",
+      "meaningZh": "容器",
+      "exampleId": "9461278c-64fd-442d-a513-feaf7b5c781d-visual-ex",
+      "styleFamily": "crisp household-object still-life illustration",
+      "sentenceEn": "She stores the rice in a sealed container.",
+      "sentenceZh": "她把大米储存在密封容器里。",
+      "scene": "A pair of adult hands pours dry rice from a scoop into a clear reusable kitchen container and presses its fitted lid securely into place, with the container as the unmistakable focal object.",
+      "altText": "Rice is stored in a clear sealed container.",
+      "riskTags": [
+        "household_object",
+        "food_storage",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f1f93f85-8eee-4166-ba11-d73c3b295143",
+      "word": "virtue",
+      "meaningZh": "美德",
+      "exampleId": "f1f93f85-8eee-4166-ba11-d73c3b295143-visual-ex",
+      "styleFamily": "warm Chinese community-story illustration",
+      "sentenceEn": "Patience is a virtue she shows while teaching the child.",
+      "sentenceZh": "她在教孩子时展现了耐心这一美德。",
+      "scene": "In a Chinese community courtyard, an older woman patiently guides a child learning to tie a loose bamboo knot, calmly demonstrating again while the child watches; their expressions make patience and kindness clear.",
+      "altText": "A woman demonstrates the virtue of patience while teaching a child.",
+      "riskTags": [
+        "abstract_meaning",
+        "intergenerational",
+        "people_face",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "4675ebac-3151-4d8a-acec-e0f84e401a62",
+      "word": "abroad",
+      "meaningZh": "往国外；到室外；到处",
+      "exampleId": "4675ebac-3151-4d8a-acec-e0f84e401a62-visual-ex",
+      "styleFamily": "bright international-travel illustration",
+      "sentenceEn": "He travels abroad to experience another country.",
+      "sentenceZh": "他出国去体验另一个国家。",
+      "scene": "An adult traveler with a suitcase steps from an airplane walkway into a distinctly different coastal city, looking with curiosity at unfamiliar architecture and landscape; use visual transition without flags, maps, words, tickets, or signs.",
+      "altText": "A traveler arrives abroad in another country.",
+      "riskTags": [
+        "travel",
+        "international_context",
+        "people_face",
+        "no_flags"
+      ]
+    },
+    {
+      "vocabularyId": "75aef74a-5239-4108-a53e-753992723ab5",
+      "word": "architect",
+      "meaningZh": "建筑师；设计者；缔造者",
+      "exampleId": "75aef74a-5239-4108-a53e-753992723ab5-visual-ex",
+      "styleFamily": "refined Chinese architectural-design illustration",
+      "sentenceEn": "The architect reviews her design for the courtyard.",
+      "sentenceZh": "建筑师审视她为庭院所做的设计。",
+      "scene": "A Chinese woman architect stands at a worktable beside a scale model of a modern courtyard inspired by traditional siheyuan geometry, comparing the model with an unmarked line drawing while the real structure rises beyond the window.",
+      "altText": "A Chinese architect reviews a courtyard scale model.",
+      "riskTags": [
+        "occupation",
+        "architecture",
+        "people_face",
+        "chinese_cultural_context",
+        "no_readable_plans"
+      ]
+    },
+    {
+      "vocabularyId": "d6abb28e-eeb9-4166-a3ba-4a43ea51ba2e",
+      "word": "dramatically",
+      "meaningZh": "显著地；戏剧性地",
+      "exampleId": "d6abb28e-eeb9-4166-a3ba-4a43ea51ba2e-visual-ex",
+      "styleFamily": "high-contrast environmental before-and-after illustration",
+      "sentenceEn": "The river level rises dramatically after the storm.",
+      "sentenceZh": "暴雨过后，河流水位显著上涨。",
+      "scene": "A split-time view of the same riverbank shows shallow water before a storm and much higher rushing water afterward, with identical rocks and trees establishing the location and a striking, unmistakable change without measurement marks or text.",
+      "altText": "The river level rises dramatically after a storm.",
+      "riskTags": [
+        "adverb_concept",
+        "before_after",
+        "weather",
+        "water"
+      ]
+    },
+    {
+      "vocabularyId": "4449493b-1336-4689-90f4-96fa8105205c",
+      "word": "makeup",
+      "meaningZh": "化妆品；构成",
+      "exampleId": "4449493b-1336-4689-90f4-96fa8105205c-visual-ex",
+      "styleFamily": "polished backstage editorial illustration",
+      "sentenceEn": "The performer applies makeup before the show.",
+      "sentenceZh": "演员在演出前化妆。",
+      "scene": "An adult stage performer sits at a backstage mirror and carefully applies colored makeup to one cheek with a brush, with a small open palette and soft bulbs visible; the reflection shows a complete natural face and there are no product labels.",
+      "altText": "A stage performer applies makeup before a show.",
+      "riskTags": [
+        "cosmetics",
+        "mirror",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "d9aa5da9-9dc1-4c62-9936-0d0e1cab2b7a",
+      "word": "inquiry",
+      "meaningZh": "询问；调查",
+      "exampleId": "d9aa5da9-9dc1-4c62-9936-0d0e1cab2b7a-visual-ex",
+      "styleFamily": "thoughtful Chinese workshop editorial illustration",
+      "sentenceEn": "Her inquiry reveals how the old clock was made.",
+      "sentenceZh": "她的调查揭示了这座老钟的制作方法。",
+      "scene": "In a traditional Chinese clock-repair workshop, an adult researcher asks an elderly craftsperson questions while examining an opened mechanical clock, comparing its gears with a small hand sketch that contains no writing; attentive gestures show a careful inquiry.",
+      "altText": "A researcher makes an inquiry about how an old clock was built.",
+      "riskTags": [
+        "investigation",
+        "craft",
+        "people_face",
+        "chinese_cultural_context",
+        "no_text"
+      ]
+    }
+  ]
+}

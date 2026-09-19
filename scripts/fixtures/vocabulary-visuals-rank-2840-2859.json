@@ -1,0 +1,376 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2840-2859",
+  "batchId": "auto-rank-2840-2859-20260911",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "comedy",
+      "habitat",
+      "grain",
+      "brush",
+      "province",
+      "ease"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "179f352c-3a90-4f52-83be-c8307da1f033",
+      "word": "collapse",
+      "meaningZh": "崩溃；倒塌；虚脱",
+      "exampleId": "179f352c-3a90-4f52-83be-c8307da1f033-visual-ex",
+      "styleFamily": "dynamic architectural paper-cut illustration",
+      "sentenceEn": "The unstable tower of wooden blocks begins to collapse.",
+      "sentenceZh": "不稳固的木块塔开始倒塌。",
+      "scene": "A tall tower made from plain wooden blocks tilts dramatically as its unsupported middle gives way, with upper blocks visibly tumbling toward a padded floor and no people nearby, clearly showing collapse without danger.",
+      "altText": "An unstable wooden block tower beginning to collapse.",
+      "riskTags": [
+        "motion",
+        "cause_effect",
+        "falling_objects",
+        "safe_scene"
+      ]
+    },
+    {
+      "vocabularyId": "4e3fc978-9a76-42e0-9cb7-6eeac0f7a7c2",
+      "word": "borrow",
+      "meaningZh": "借；借入；借用",
+      "exampleId": "4e3fc978-9a76-42e0-9cb7-6eeac0f7a7c2-visual-ex",
+      "styleFamily": "friendly neighborhood gouache illustration",
+      "sentenceEn": "She asks to borrow her neighbor's bicycle pump.",
+      "sentenceZh": "她请求借用邻居的自行车打气筒。",
+      "scene": "Beside a bicycle with a flat tire, one adult neighbor politely offers a portable pump while the other reaches to borrow it, and a small return gesture with an open hand suggests the item will be given back later.",
+      "altText": "A cyclist borrowing a bicycle pump from a neighbor.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "object_transfer",
+        "social_cue"
+      ]
+    },
+    {
+      "vocabularyId": "84dc3983-5f8f-4a00-8f9e-973901ed137d",
+      "word": "furthermore",
+      "meaningZh": "此外；而且",
+      "exampleId": "84dc3983-5f8f-4a00-8f9e-973901ed137d-visual-ex",
+      "styleFamily": "conceptual ecological editorial illustration",
+      "sentenceEn": "The rooftop garden cools the building; furthermore, it provides fresh vegetables.",
+      "sentenceZh": "屋顶花园能给建筑降温；此外，它还能提供新鲜蔬菜。",
+      "scene": "One rooftop garden creates two clearly connected benefits in a unified scene: leafy shade visibly cools the building below, and an additional harvest basket overflows with fresh vegetables beside the gardeners, conveying furthermore as an added point.",
+      "altText": "A rooftop garden cooling a building and furthermore providing vegetables.",
+      "riskTags": [
+        "abstract_meaning",
+        "two_benefits",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "792548e7-f678-41c7-b7e1-605a5770d689",
+      "word": "comedy",
+      "meaningZh": "喜剧；有趣的事情",
+      "exampleId": "792548e7-f678-41c7-b7e1-605a5770d689-visual-ex",
+      "styleFamily": "Chinese theater ink-and-gouache illustration",
+      "sentenceEn": "The lively comedy makes the entire audience laugh.",
+      "sentenceZh": "这场生动的喜剧逗得全场观众大笑。",
+      "scene": "On a small Chinese teahouse stage, two adult xiangsheng-style comedy performers use expressive timing and harmless gestures while a diverse adult audience leans forward laughing warmly, with no banners or written backdrop.",
+      "altText": "Two comedy performers making a teahouse audience laugh.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "performance",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0f261713-80ca-4b99-992c-9921054c4d0c",
+      "word": "mortgage",
+      "meaningZh": "抵押；约束性义务；抵押借款",
+      "exampleId": "0f261713-80ca-4b99-992c-9921054c4d0c-visual-ex",
+      "styleFamily": "clear financial collage illustration",
+      "sentenceEn": "The couple uses a mortgage to buy their first home.",
+      "sentenceZh": "这对夫妻通过住房抵押贷款购买第一套房。",
+      "scene": "At a bank desk, an adult couple receives a house key beside a small home model while a long orderly path of identical future coin payments connects them to the lender, clearly illustrating a mortgage without documents or text.",
+      "altText": "A couple using a mortgage to buy their first home.",
+      "riskTags": [
+        "finance",
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "3ff4cf4a-8e5b-4345-ade6-e920d8a315ad",
+      "word": "sanction",
+      "meaningZh": "核准；制裁；处罚；约束力",
+      "exampleId": "3ff4cf4a-8e5b-4345-ade6-e920d8a315ad-visual-ex",
+      "styleFamily": "formal civic watercolor illustration",
+      "sentenceEn": "The safety board gives its sanction to open the repaired bridge.",
+      "sentenceZh": "安全委员会批准开放修复后的桥梁。",
+      "scene": "After inspecting a fully repaired pedestrian bridge, a diverse adult safety board activates a large green approval light and opens the barrier while waiting citizens applaud, clearly showing official sanction in the approval sense without words.",
+      "altText": "A safety board giving official sanction to open a repaired bridge.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands",
+        "approval",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a89da34f-57b2-4f9e-b887-b7d271b0717b",
+      "word": "civilian",
+      "meaningZh": "平民；民用的；文职的",
+      "exampleId": "a89da34f-57b2-4f9e-b887-b7d271b0717b-visual-ex",
+      "styleFamily": "humanitarian editorial illustration",
+      "sentenceEn": "A civilian volunteer delivers meals to emergency workers.",
+      "sentenceZh": "一名平民志愿者为应急人员送来餐食。",
+      "scene": "An adult civilian in ordinary everyday clothing brings a crate of prepared meals to uniformed firefighters at a community emergency center, with the contrast in roles clear and no military weapons or conflict present.",
+      "altText": "A civilian volunteer delivering meals to emergency workers.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "uniform_contrast",
+        "emergency_context",
+        "no_weapons"
+      ]
+    },
+    {
+      "vocabularyId": "9ba88721-bdb4-4475-a20d-40650d64c914",
+      "word": "twelve",
+      "meaningZh": "十二；十二个",
+      "exampleId": "9ba88721-bdb4-4475-a20d-40650d64c914-visual-ex",
+      "styleFamily": "precise farm-kitchen colored-pencil illustration",
+      "sentenceEn": "The carton holds exactly twelve fresh eggs.",
+      "sentenceZh": "这个蛋盒正好装着十二枚新鲜鸡蛋。",
+      "scene": "An open plain egg carton fills the composition and contains exactly twelve clearly separated eggs arranged in two neat rows of six, with every egg fully visible and no extra eggs anywhere in the scene.",
+      "altText": "An open carton holding exactly twelve eggs.",
+      "riskTags": [
+        "exact_quantity",
+        "counting",
+        "twelve_objects",
+        "no_extra_objects"
+      ]
+    },
+    {
+      "vocabularyId": "f66616d6-a13c-4479-b5bc-d8132e4740fa",
+      "word": "weekly",
+      "meaningZh": "每周的",
+      "exampleId": "f66616d6-a13c-4479-b5bc-d8132e4740fa-visual-ex",
+      "styleFamily": "gentle sequential calendar-collage illustration",
+      "sentenceEn": "The neighbors hold a weekly garden cleanup every Sunday morning.",
+      "sentenceZh": "邻居们每周日上午进行一次花园清理。",
+      "scene": "Four connected vignettes show the same adult neighbors cleaning the same garden at the same morning light once in each successive week, with subtle plant growth between visits and no calendar text or numerals.",
+      "altText": "Neighbors returning for a weekly garden cleanup.",
+      "riskTags": [
+        "sequence",
+        "recurrence",
+        "people_face",
+        "same_characters",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "9d90e410-1ca3-44c2-8b4e-ef75c9b64af8",
+      "word": "habitat",
+      "meaningZh": "栖息地；生长地",
+      "exampleId": "9d90e410-1ca3-44c2-8b4e-ef75c9b64af8-visual-ex",
+      "styleFamily": "Chinese wildlife conservation watercolor illustration",
+      "sentenceEn": "A cool bamboo forest is the giant panda's natural habitat.",
+      "sentenceZh": "凉爽的竹林是大熊猫的自然栖息地。",
+      "scene": "A healthy adult giant panda rests and eats bamboo in a misty mountain forest with dense living bamboo, clean water, shaded shelter, and varied native plants, clearly presenting this Chinese ecosystem as its natural habitat.",
+      "altText": "A giant panda in its natural bamboo forest habitat.",
+      "riskTags": [
+        "cultural_scene",
+        "wildlife",
+        "animal_anatomy",
+        "habitat_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "74ab2323-c1bc-4442-bd26-f36163112d75",
+      "word": "grain",
+      "meaningZh": "谷物；颗粒；纹理",
+      "exampleId": "74ab2323-c1bc-4442-bd26-f36163112d75-visual-ex",
+      "styleFamily": "Chinese harvest woodblock illustration",
+      "sentenceEn": "The farmer pours harvested grain into a woven basket.",
+      "sentenceZh": "农民把收获的谷物倒进编织篮。",
+      "scene": "In a golden Chinese rice field, an adult farmer pours a stream of clean harvested rice grain from a shallow winnowing tray into a woven basket, with individual pale grains visible and ripe rice stalks nearby.",
+      "altText": "A farmer pouring harvested grain into a woven basket.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "many_small_objects",
+        "agriculture"
+      ]
+    },
+    {
+      "vocabularyId": "ce1a3bbb-1754-4c87-8d95-10a857c7beac",
+      "word": "brush",
+      "meaningZh": "刷子；毛笔；争吵；刷",
+      "exampleId": "ce1a3bbb-1754-4c87-8d95-10a857c7beac-visual-ex",
+      "styleFamily": "Chinese ink-and-mineral-color illustration",
+      "sentenceEn": "She uses a soft brush to paint bamboo leaves with ink.",
+      "sentenceZh": "她用柔软的毛笔蘸墨画竹叶。",
+      "scene": "At a traditional Chinese studio table, an adult artist holds one soft calligraphy brush vertically and paints expressive black bamboo leaves on otherwise blank rice paper, with an ink stone nearby and absolutely no characters.",
+      "altText": "An artist using a soft brush to paint bamboo leaves.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "tool_accuracy",
+        "no_calligraphy"
+      ]
+    },
+    {
+      "vocabularyId": "44c231a3-0ef5-4490-ab69-130c6b7e54d7",
+      "word": "consciousness",
+      "meaningZh": "意识",
+      "exampleId": "44c231a3-0ef5-4490-ab69-130c6b7e54d7-visual-ex",
+      "styleFamily": "gentle medical storybook illustration",
+      "sentenceEn": "After fainting, she slowly regains consciousness and opens her eyes.",
+      "sentenceZh": "晕倒后，她慢慢恢复意识并睁开眼睛。",
+      "scene": "In a calm clinic recovery room, an adult patient who had fainted slowly opens her eyes and focuses on a reassuring nurse, with a glass of water nearby and no injury, emergency drama, or invasive equipment.",
+      "altText": "A patient regaining consciousness and opening her eyes.",
+      "riskTags": [
+        "medical",
+        "people_face",
+        "recovery",
+        "non_graphic"
+      ]
+    },
+    {
+      "vocabularyId": "bdf3ee8f-33ed-4042-8670-5b69db0c3850",
+      "word": "devote",
+      "meaningZh": "投入于；献身",
+      "exampleId": "bdf3ee8f-33ed-4042-8670-5b69db0c3850-visual-ex",
+      "styleFamily": "seasonal conservation mural illustration",
+      "sentenceEn": "The biologist will devote years to restoring the damaged wetland.",
+      "sentenceZh": "这位生物学家将投入多年修复受损湿地。",
+      "scene": "A flowing seasonal composition follows the same adult biologist devoting sustained effort to a wetland: planting reeds, testing clean water, and later observing returning birds as the once-damaged landscape becomes healthy.",
+      "altText": "A biologist devoting years to restoring a wetland.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "time_progression",
+        "same_character",
+        "ecology"
+      ]
+    },
+    {
+      "vocabularyId": "5ea619ce-b503-4559-a220-c7aa7007e5d3",
+      "word": "measurement",
+      "meaningZh": "测量",
+      "exampleId": "5ea619ce-b503-4559-a220-c7aa7007e5d3-visual-ex",
+      "styleFamily": "precise tailoring gouache illustration",
+      "sentenceEn": "The tailor takes a careful measurement of the jacket sleeve.",
+      "sentenceZh": "裁缝仔细测量夹克袖长。",
+      "scene": "An adult tailor wraps a flexible measuring tape along a customer's jacket sleeve from shoulder to wrist, carefully pinching the endpoint while the customer stands naturally, with tape marks visible but no readable numerals.",
+      "altText": "A tailor taking a careful measurement of a jacket sleeve.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "measurement_tool",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "21d3f1ea-66de-4d56-8f6c-c86806b75f69",
+      "word": "province",
+      "meaningZh": "省；地方；职权；领域",
+      "exampleId": "21d3f1ea-66de-4d56-8f6c-c86806b75f69-visual-ex",
+      "styleFamily": "Chinese geographic relief-map illustration",
+      "sentenceEn": "The river crosses the province from its western mountains to the eastern plain.",
+      "sentenceZh": "这条河从西部山区横穿该省，流向东部平原。",
+      "scene": "A raised-relief map of one generic Chinese province is shown as a single clearly bounded inland region, with one river flowing across it from high western mountains through villages to an eastern plain, without names, borders of China, or text.",
+      "altText": "A river crossing a province from mountains to plains.",
+      "riskTags": [
+        "cultural_scene",
+        "map",
+        "geography",
+        "no_text",
+        "generic_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "fa4d118c-d996-4c69-ad4d-0ba75ec4cbab",
+      "word": "ease",
+      "meaningZh": "安乐；安逸；悠闲",
+      "exampleId": "fa4d118c-d996-4c69-ad4d-0ba75ec4cbab-visual-ex",
+      "styleFamily": "serene Chinese garden watercolor illustration",
+      "sentenceEn": "After finishing her work, she rests with ease beside the lotus pond.",
+      "sentenceZh": "完成工作后，她在荷塘边悠闲地休息。",
+      "scene": "In a quiet Chinese garden, an adult woman rests with complete ease on a shaded bench beside a lotus pond, shoulders relaxed and eyes peacefully half closed while tea steams on a small table.",
+      "altText": "A woman resting with ease beside a lotus pond.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "relaxed_posture",
+        "quiet_scene"
+      ]
+    },
+    {
+      "vocabularyId": "587ca3ee-ee43-47a0-8738-c8bbea009edb",
+      "word": "seize",
+      "meaningZh": "抓住；夺取；把握（机会）",
+      "exampleId": "587ca3ee-ee43-47a0-8738-c8bbea009edb-visual-ex",
+      "styleFamily": "dynamic natural-history pastel illustration",
+      "sentenceEn": "The eagle dives to seize a fish with its talons.",
+      "sentenceZh": "鹰俯冲下来，用利爪抓住一条鱼。",
+      "scene": "A powerful eagle swoops just above a clear lake and extends accurate talons to seize one small fish at the water surface, freezing the decisive grasping moment without blood, injury, or graphic predation.",
+      "altText": "An eagle diving to seize a fish with its talons.",
+      "riskTags": [
+        "animal_anatomy",
+        "motion",
+        "predation",
+        "non_graphic",
+        "hands_talons"
+      ]
+    },
+    {
+      "vocabularyId": "9b898e3d-1876-4645-9914-d3ed132ce598",
+      "word": "ethics",
+      "meaningZh": "伦理学；道德准则",
+      "exampleId": "9b898e3d-1876-4645-9914-d3ed132ce598-visual-ex",
+      "styleFamily": "thoughtful civic editorial illustration",
+      "sentenceEn": "Her ethics guide her to return the lost wallet untouched.",
+      "sentenceZh": "她的道德准则促使她原封不动地归还遗失的钱包。",
+      "scene": "An adult commuter finds a dropped wallet beside a park bench and chooses to return it intact to its relieved owner, while ignoring an easy chance to keep it, visually expressing ethics through an honest decision.",
+      "altText": "A commuter following her ethics by returning a lost wallet.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands",
+        "object_transfer",
+        "ethical_choice"
+      ]
+    },
+    {
+      "vocabularyId": "a4d7e5e0-10d8-417a-812e-b1b791fbce64",
+      "word": "nomination",
+      "meaningZh": "提名",
+      "exampleId": "a4d7e5e0-10d8-417a-812e-b1b791fbce64-visual-ex",
+      "styleFamily": "celebratory workplace paper-collage illustration",
+      "sentenceEn": "Her colleagues celebrate her nomination for the community service award.",
+      "sentenceZh": "同事们庆祝她获得社区服务奖提名。",
+      "scene": "At a community center, adult colleagues place a plain portrait card of their surprised coworker into a formal nomination box and gesture proudly toward her as she receives congratulatory flowers, with no award title or writing.",
+      "altText": "Colleagues celebrating a coworker's award nomination.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "portrait_within_image",
+        "no_text"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2480-2499",
+  "batchId": "auto-rank-2480-2499-20260828",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "advanced",
+      "delivery",
+      "bake",
+      "platform",
+      "joy",
+      "singer"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7a40f9dc-577f-40c0-8de2-816fd5da13dd",
+      "word": "advanced",
+      "meaningZh": "先进的",
+      "exampleId": "7a40f9dc-577f-40c0-8de2-816fd5da13dd-visual-ex",
+      "styleFamily": "Chinese high-speed-rail illustration",
+      "sentenceEn": "The advanced train crossed the valley quietly.",
+      "sentenceZh": "先进的列车安静地穿过山谷。",
+      "scene": "A sleek Chinese high-speed train glides across a long valley bridge, combining advanced engineering with green mountains and clear morning light, no logos.",
+      "altText": "先进高铁安静穿越山谷大桥",
+      "riskTags": [
+        "vehicle",
+        "cultural_infrastructure",
+        "logo_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c920d7d6-70fe-4f70-91b6-5c017acfd252",
+      "word": "pride",
+      "meaningZh": "骄傲；自尊心；自豪；精华；勇气",
+      "exampleId": "c920d7d6-70fe-4f70-91b6-5c017acfd252-visual-ex",
+      "styleFamily": "warm graduation editorial illustration",
+      "sentenceEn": "Her parents felt great pride at her graduation.",
+      "sentenceZh": "她毕业时，父母感到非常自豪。",
+      "scene": "An adult graduate embraces smiling parents after a ceremony, their posture and expressions showing deep pride, with blank diploma and no institutional marks.",
+      "altText": "父母为女儿毕业深感自豪",
+      "riskTags": [
+        "people_face",
+        "family",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "fa0fe1c7-3bbb-4c33-a350-0a5285c7b6aa",
+      "word": "dismiss",
+      "meaningZh": "解雇；解散；不考虑",
+      "exampleId": "fa0fe1c7-3bbb-4c33-a350-0a5285c7b6aa-visual-ex",
+      "styleFamily": "workplace editorial illustration",
+      "sentenceEn": "The manager refused to dismiss the safety concern.",
+      "sentenceZh": "经理拒绝忽视这个安全问题。",
+      "scene": "A manager listens seriously as a worker points to a loose machine guard, choosing not to dismiss the concern and pausing work safely.",
+      "altText": "经理认真对待工人的安全担忧",
+      "riskTags": [
+        "workplace_safety",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3f2b6fac-ee86-4ce5-9318-9c7c112191ab",
+      "word": "aircraft",
+      "meaningZh": "航空器；飞机",
+      "exampleId": "3f2b6fac-ee86-4ce5-9318-9c7c112191ab-visual-ex",
+      "styleFamily": "aviation editorial illustration",
+      "sentenceEn": "The aircraft climbed smoothly above the clouds.",
+      "sentenceZh": "飞机平稳地升到云层上方。",
+      "scene": "A modern passenger aircraft climbs through soft clouds into clear blue sky, viewed from a safe distant angle with no airline branding.",
+      "altText": "客机平稳升到云层上方",
+      "riskTags": [
+        "vehicle",
+        "logo_risk",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "04a96773-5b19-444c-b209-a609cdd56d24",
+      "word": "delivery",
+      "meaningZh": "递送；交付",
+      "exampleId": "04a96773-5b19-444c-b209-a609cdd56d24-visual-ex",
+      "styleFamily": "Chinese hutong courier illustration",
+      "sentenceEn": "The courier made a grocery delivery to the elderly couple.",
+      "sentenceZh": "快递员给老年夫妇送来食品。",
+      "scene": "In a Beijing hutong courtyard, a friendly courier hands a basket of fresh groceries to an elderly Chinese couple at their doorway, with blank packaging.",
+      "altText": "快递员在胡同给老年夫妇送菜",
+      "riskTags": [
+        "cultural_setting",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "1c8978fc-dc4f-4310-9dfc-6a304e0f262a",
+      "word": "mainly",
+      "meaningZh": "主要地",
+      "exampleId": "1c8978fc-dc4f-4310-9dfc-6a304e0f262a-visual-ex",
+      "styleFamily": "nature editorial illustration",
+      "sentenceEn": "The island is mainly covered by forest.",
+      "sentenceZh": "这座岛主要被森林覆盖。",
+      "scene": "Aerial view of an island whose surface is overwhelmingly dense green forest, with only a small strip of beach and one tiny village.",
+      "altText": "岛屿主要被茂密森林覆盖",
+      "riskTags": [
+        "aerial_view",
+        "landscape",
+        "proportion"
+      ]
+    },
+    {
+      "vocabularyId": "d4d245c4-92ff-45f0-a37f-cc9b2acccc05",
+      "word": "bake",
+      "meaningZh": "烘焙；烤；烤面包",
+      "exampleId": "d4d245c4-92ff-45f0-a37f-cc9b2acccc05-visual-ex",
+      "styleFamily": "Chinese mooncake-kitchen gouache illustration",
+      "sentenceEn": "They bake mooncakes together before the festival.",
+      "sentenceZh": "他们在节日前一起烤月饼。",
+      "scene": "A Chinese family prepares and bakes round mooncakes in a warm kitchen, pressing decorative patterns without characters and watching a tray turn golden.",
+      "altText": "一家人在节日前一起烤月饼",
+      "riskTags": [
+        "cultural_food",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "96d2036e-6530-4c63-a780-1123e0299cfe",
+      "word": "freeze",
+      "meaningZh": "冻结；冷冻；僵硬；楞住",
+      "exampleId": "96d2036e-6530-4c63-a780-1123e0299cfe-visual-ex",
+      "styleFamily": "winter safety illustration",
+      "sentenceEn": "Water will freeze overnight in this cold weather.",
+      "sentenceZh": "在这样的寒冷天气里，水会在夜间结冰。",
+      "scene": "A clear bowl of water outdoors changes into solid ice overnight beneath frost-covered branches and a cold moon, shown as one coherent time-transition scene.",
+      "altText": "室外清水在寒夜中冻结成冰",
+      "riskTags": [
+        "weather",
+        "sequence",
+        "science_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "6b748f2b-a9f2-4080-aa54-0dc2d7143326",
+      "word": "platform",
+      "meaningZh": "站台；月台；讲台；论坛；平台",
+      "exampleId": "6b748f2b-a9f2-4080-aa54-0dc2d7143326-visual-ex",
+      "styleFamily": "Chinese railway-station watercolor illustration",
+      "sentenceEn": "Passengers waited calmly on the railway platform.",
+      "sentenceZh": "乘客们在火车站台上安静等候。",
+      "scene": "Travelers wait in an orderly line on a Chinese railway platform as a train approaches slowly, with tactile paving and all signs blurred or blank.",
+      "altText": "乘客在中国火车站台有序候车",
+      "riskTags": [
+        "cultural_setting",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "039de641-7844-4b27-b663-01dbf75b3881",
+      "word": "finance",
+      "meaningZh": "财政；金融；财务；资金",
+      "exampleId": "039de641-7844-4b27-b663-01dbf75b3881-visual-ex",
+      "styleFamily": "business editorial illustration",
+      "sentenceEn": "She studied finance to understand how companies raise money.",
+      "sentenceZh": "她学习金融，以了解公司如何筹集资金。",
+      "scene": "An adult student compares coins, investment tokens, and a growing small-business model arranged on a desk, with no charts, numbers, or currency symbols.",
+      "altText": "学生通过模型学习公司金融",
+      "riskTags": [
+        "financial",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "06ea9b47-3af7-4e72-a716-552c5247dfa2",
+      "word": "sink",
+      "meaningZh": "水槽；下沉；沉没；陷入",
+      "exampleId": "06ea9b47-3af7-4e72-a716-552c5247dfa2-visual-ex",
+      "styleFamily": "domestic editorial illustration",
+      "sentenceEn": "The heavy stone began to sink in the pond.",
+      "sentenceZh": "沉重的石头开始沉入池塘。",
+      "scene": "A smooth heavy stone descends beneath clear pond water while a light leaf floats at the surface, making sink visually unmistakable.",
+      "altText": "沉重石头沉入水中而树叶漂浮",
+      "riskTags": [
+        "underwater",
+        "contrast",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "b3e3cf09-11b0-43af-bef1-dcdf38b7bd13",
+      "word": "attractive",
+      "meaningZh": "有吸引力的",
+      "exampleId": "b3e3cf09-11b0-43af-bef1-dcdf38b7bd13-visual-ex",
+      "styleFamily": "garden-design watercolor illustration",
+      "sentenceEn": "The attractive courtyard drew visitors inside.",
+      "sentenceZh": "漂亮的庭院吸引游客走进来。",
+      "scene": "Visitors pause admiringly at an inviting courtyard filled with harmonious flowers, warm stone paths, and a graceful fountain.",
+      "altText": "美丽庭院吸引游客驻足欣赏",
+      "riskTags": [
+        "people_face",
+        "landscape",
+        "subjective_quality"
+      ]
+    },
+    {
+      "vocabularyId": "c689ee39-3e54-4d7f-8241-2a250c28d09a",
+      "word": "diverse",
+      "meaningZh": "不同的；变化多的",
+      "exampleId": "c689ee39-3e54-4d7f-8241-2a250c28d09a-visual-ex",
+      "styleFamily": "inclusive community illustration",
+      "sentenceEn": "The market offered a diverse range of foods.",
+      "sentenceZh": "市场提供了种类丰富的食物。",
+      "scene": "A lively covered market displays a diverse range of breads, fruit, vegetables, spices, and prepared foods, served by vendors from varied backgrounds.",
+      "altText": "市场陈列种类丰富的食物",
+      "riskTags": [
+        "many_objects",
+        "many_people",
+        "cultural_diversity"
+      ]
+    },
+    {
+      "vocabularyId": "eefb5c17-5aae-4d05-b5ee-97e5a4571f83",
+      "word": "relevant",
+      "meaningZh": "有关联的；有关系的；适当的；相应的",
+      "exampleId": "eefb5c17-5aae-4d05-b5ee-97e5a4571f83-visual-ex",
+      "styleFamily": "focused research editorial illustration",
+      "sentenceEn": "She selected only the evidence relevant to the question.",
+      "sentenceZh": "她只选择与问题相关的证据。",
+      "scene": "A researcher sorts many abstract photo cards, placing a few matching nature images beside a specimen while setting unrelated cards aside, with no words.",
+      "altText": "研究者挑选与问题相关的证据",
+      "riskTags": [
+        "abstract_concept",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "3c3cc3ee-4486-472c-8c57-929f25f341d2",
+      "word": "ideal",
+      "meaningZh": "理想；典范；观念；思想；最后目标",
+      "exampleId": "3c3cc3ee-4486-472c-8c57-929f25f341d2-visual-ex",
+      "styleFamily": "architectural concept illustration",
+      "sentenceEn": "The sunny corner was ideal for a reading chair.",
+      "sentenceZh": "阳光充足的角落是放阅读椅的理想位置。",
+      "scene": "An adult places a comfortable chair in a sunny window corner perfectly suited for quiet reading, while darker crowded corners remain unused.",
+      "altText": "阳光角落是放阅读椅的理想位置",
+      "riskTags": [
+        "interior",
+        "people_face",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "59c898ea-217c-4969-80f7-2a91aa0e1f63",
+      "word": "joy",
+      "meaningZh": "欢喜；乐事；高兴",
+      "exampleId": "59c898ea-217c-4969-80f7-2a91aa0e1f63-visual-ex",
+      "styleFamily": "Chinese Lantern Festival gouache illustration",
+      "sentenceEn": "The children jumped with joy beneath the lanterns.",
+      "sentenceZh": "孩子们在灯笼下高兴地跳起来。",
+      "scene": "Children and adults share visible joy during a Chinese Lantern Festival, laughing beneath glowing blank lanterns while watching a colorful lion dance.",
+      "altText": "灯会上的孩子们欢喜跳跃",
+      "riskTags": [
+        "minor",
+        "cultural_event",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "54d5cabe-7666-4c0a-9c19-1792e4f3c174",
+      "word": "regularly",
+      "meaningZh": "定期地",
+      "exampleId": "54d5cabe-7666-4c0a-9c19-1792e4f3c174-visual-ex",
+      "styleFamily": "routine editorial illustration",
+      "sentenceEn": "He regularly waters the plants every Sunday morning.",
+      "sentenceZh": "他每个星期天早晨都会定期给植物浇水。",
+      "scene": "The same adult waters a row of thriving houseplants in steady morning light, with subtle repeated watering cans suggesting a regular weekly routine without calendars.",
+      "altText": "男子每周定期给室内植物浇水",
+      "riskTags": [
+        "routine",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "93c5dab1-9bab-4f5e-8ce0-2666b3b7b4bc",
+      "word": "working",
+      "meaningZh": "工作；运转",
+      "exampleId": "93c5dab1-9bab-4f5e-8ce0-2666b3b7b4bc-visual-ex",
+      "styleFamily": "repair-shop illustration",
+      "sentenceEn": "The old radio is still working after the repair.",
+      "sentenceZh": "这台旧收音机修理后仍能正常工作。",
+      "scene": "A repaired vintage radio glows and plays music as a delighted technician tests its knobs, with no station numbers, brands, or text.",
+      "altText": "旧收音机修理后恢复正常运转",
+      "riskTags": [
+        "mechanical",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "3aaac81f-4862-46eb-88b1-04eb18ce7afa",
+      "word": "singer",
+      "meaningZh": "歌手",
+      "exampleId": "3aaac81f-4862-46eb-88b1-04eb18ce7afa-visual-ex",
+      "styleFamily": "Chinese opera-stage illustration",
+      "sentenceEn": "The singer held a long note on the opera stage.",
+      "sentenceZh": "歌手在戏曲舞台上唱出一个悠长的音。",
+      "scene": "A mature Chinese opera singer in elegant traditional costume holds a sustained note on stage while musicians accompany and an audience listens, with no banners.",
+      "altText": "中国戏曲歌手在舞台上唱出长音",
+      "riskTags": [
+        "cultural_performance",
+        "people_face",
+        "open_mouth"
+      ]
+    },
+    {
+      "vocabularyId": "21cf9e8a-f220-4e71-a7cb-c1141468f3af",
+      "word": "evolve",
+      "meaningZh": "进展；进化；展开",
+      "exampleId": "21cf9e8a-f220-4e71-a7cb-c1141468f3af-visual-ex",
+      "styleFamily": "natural-history illustration",
+      "sentenceEn": "Over generations, the island birds began to evolve different beaks.",
+      "sentenceZh": "经过许多代，岛上的鸟开始进化出不同的喙。",
+      "scene": "A coherent natural-history scene shows related island birds across generations gradually developing different beak shapes suited to seeds, insects, and fruit, without diagrams or arrows.",
+      "altText": "岛屿鸟类逐代进化出不同喙形",
+      "riskTags": [
+        "science_accuracy",
+        "animals",
+        "sequence"
+      ]
+    }
+  ]
+}

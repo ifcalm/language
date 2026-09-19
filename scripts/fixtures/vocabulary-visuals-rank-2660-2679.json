@@ -1,0 +1,347 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2660-2679",
+  "batchId": "auto-rank-2660-2679-20260908",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "crack",
+      "galaxy",
+      "ski",
+      "appointment",
+      "rapid",
+      "frequency"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "38c3616c-6d35-4b80-8c35-15fb26006e4f",
+      "word": "crack",
+      "meaningZh": "裂缝；破裂；破解",
+      "exampleId": "38c3616c-6d35-4b80-8c35-15fb26006e4f-visual-ex",
+      "styleFamily": "Chinese porcelain repair illustration",
+      "sentenceEn": "A thin crack runs across the old porcelain bowl.",
+      "sentenceZh": "一道细裂缝横贯这只旧瓷碗。",
+      "scene": "A close view of an old Chinese blue-and-white porcelain bowl with one unmistakable thin crack running from the rim toward the center, beside a craftsperson preparing to repair it.",
+      "altText": "A thin crack running across an old porcelain bowl.",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "095b1778-0078-4d71-83c9-a58da861a9e2",
+      "word": "frequency",
+      "meaningZh": "频率",
+      "exampleId": "095b1778-0078-4d71-83c9-a58da861a9e2-visual-ex",
+      "styleFamily": "scientific screen-print illustration",
+      "sentenceEn": "The beacon flashes with a steady frequency.",
+      "sentenceZh": "信标以稳定的频率闪烁。",
+      "scene": "A beacon beside a Chinese river navigation tower appears in six evenly spaced moments, alternating light and dark at a perfectly regular rhythm, with no clocks, numbers, graphs, or symbols.",
+      "altText": "A beacon flashing at a steady regular frequency.",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "exact_quantity",
+        "time"
+      ]
+    },
+    {
+      "vocabularyId": "3a975bd5-ab7d-44d4-ab5e-9966925052d7",
+      "word": "tobacco",
+      "meaningZh": "烟草；香烟",
+      "exampleId": "3a975bd5-ab7d-44d4-ab5e-9966925052d7-visual-ex",
+      "styleFamily": "botanical woodcut illustration",
+      "sentenceEn": "The farmer hangs tobacco leaves to dry in the barn.",
+      "sentenceZh": "农民把烟叶挂在谷仓里晾干。",
+      "scene": "An adult farmer hangs broad harvested tobacco leaves in orderly rows inside an airy barn, with living tobacco plants visible outside for botanical context and no smoking products.",
+      "altText": "A farmer hanging tobacco leaves to dry.",
+      "riskTags": [
+        "plants",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "79a2aeb3-7dc8-46bf-b48e-160b912f1770",
+      "word": "survivor",
+      "meaningZh": "幸存者",
+      "exampleId": "79a2aeb3-7dc8-46bf-b48e-160b912f1770-visual-ex",
+      "styleFamily": "dramatic gouache illustration",
+      "sentenceEn": "A rescue boat reaches the survivor after the storm.",
+      "sentenceZh": "暴风雨后，救援船抵达幸存者身边。",
+      "scene": "An exhausted but alert adult survivor in a life jacket signals from a small damaged sailboat as a rescue vessel approaches across calmer water after a storm.",
+      "altText": "A rescue boat approaching a survivor after a storm.",
+      "riskTags": [
+        "safety",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "fef21e19-38bd-4eb2-8a21-7a41746a09ea",
+      "word": "besides",
+      "meaningZh": "除...之外；而且",
+      "exampleId": "fef21e19-38bd-4eb2-8a21-7a41746a09ea-visual-ex",
+      "styleFamily": "editorial cut-paper collage",
+      "sentenceEn": "Besides the violin, she can play the flute and drum.",
+      "sentenceZh": "除了小提琴，她还会吹长笛和打鼓。",
+      "scene": "One adult musician stands beside a central violin while also holding a flute and reaching toward a drum, clearly showing additional abilities beyond the first instrument.",
+      "altText": "A musician who plays the flute and drum besides the violin.",
+      "riskTags": [
+        "abstract_meaning",
+        "reference",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a1dd81fb-c372-49cc-8763-c87e02dafb08",
+      "word": "psychologist",
+      "meaningZh": "心理学家",
+      "exampleId": "a1dd81fb-c372-49cc-8763-c87e02dafb08-visual-ex",
+      "styleFamily": "warm editorial watercolor",
+      "sentenceEn": "The psychologist helps the client understand a recurring fear.",
+      "sentenceZh": "心理学家帮助来访者理解反复出现的恐惧。",
+      "scene": "An adult psychologist listens attentively to an adult client and arranges simple emotion picture cards showing a repeated fear pattern, in a calm professional office without written notes.",
+      "altText": "A psychologist helping a client understand recurring fear.",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "867c9543-6099-4577-a62d-255e1b1a161e",
+      "word": "wealthy",
+      "meaningZh": "富有的",
+      "exampleId": "867c9543-6099-4577-a62d-255e1b1a161e-visual-ex",
+      "styleFamily": "satirical editorial linocut",
+      "sentenceEn": "The wealthy merchant owns warehouses filled with goods.",
+      "sentenceZh": "这位富有的商人拥有装满货物的仓库。",
+      "scene": "An adult merchant stands before several large warehouses packed with grain sacks, fabric bolts, and crates, while abundant plain coin-like tokens and ledgers without writing suggest great material wealth.",
+      "altText": "A wealthy merchant with warehouses full of goods.",
+      "riskTags": [
+        "abstract_meaning",
+        "scale",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7d036f3a-b7d9-4198-a3ac-fd689208745b",
+      "word": "galaxy",
+      "meaningZh": "星系；银河",
+      "exampleId": "7d036f3a-b7d9-4198-a3ac-fd689208745b-visual-ex",
+      "styleFamily": "Chinese ink-and-color astronomy illustration",
+      "sentenceEn": "The telescope reveals a spiral galaxy beyond the stars.",
+      "sentenceZh": "望远镜揭示了群星之外的螺旋星系。",
+      "scene": "At a modern Chinese mountain observatory, an adult astronomer looks through a telescope while a vast spiral galaxy dominates the night sky above, scientifically recognizable and luminous.",
+      "altText": "A telescope revealing a vast spiral galaxy.",
+      "riskTags": [
+        "Chinese_culture",
+        "science",
+        "scale",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c4817c39-3342-4ad7-a5e7-733412a1f39e",
+      "word": "given",
+      "meaningZh": "特定的；给定的；考虑到；已知的",
+      "exampleId": "c4817c39-3342-4ad7-a5e7-733412a1f39e-visual-ex",
+      "styleFamily": "clean geometric editorial illustration",
+      "sentenceEn": "Given the heavy rain, the hikers choose the sheltered route.",
+      "sentenceZh": "考虑到大雨，徒步者选择了有遮蔽的路线。",
+      "scene": "Two adult hikers observe heavy rain over an exposed ridge and therefore choose a covered forest path, making the known condition and resulting decision visually clear.",
+      "altText": "Hikers choosing a sheltered route given the heavy rain.",
+      "riskTags": [
+        "cause_effect",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c4dde85e-45eb-4ddb-9ef4-a3a8df5cb604",
+      "word": "ski",
+      "meaningZh": "滑雪橇；滑雪",
+      "exampleId": "c4dde85e-45eb-4ddb-9ef4-a3a8df5cb604-visual-ex",
+      "styleFamily": "Chinese papercut sports illustration",
+      "sentenceEn": "She skis down the snowy slope with controlled turns.",
+      "sentenceZh": "她沿着雪坡有控制地转弯滑雪。",
+      "scene": "An adult Chinese woman skis down a broad snowy mountain slope through a sequence of controlled S-shaped turns, with poles and skis clearly visible and natural athletic anatomy.",
+      "altText": "A woman skiing down a snowy slope.",
+      "riskTags": [
+        "Chinese_culture",
+        "body_posture",
+        "sports"
+      ]
+    },
+    {
+      "vocabularyId": "d6efe1f8-c08c-48dc-9f97-343eba6fe2d1",
+      "word": "limitation",
+      "meaningZh": "限制",
+      "exampleId": "d6efe1f8-c08c-48dc-9f97-343eba6fe2d1-visual-ex",
+      "styleFamily": "conceptual editorial collage",
+      "sentenceEn": "The narrow bridge creates a limitation for the wide truck.",
+      "sentenceZh": "狭窄的桥梁限制了宽卡车通行。",
+      "scene": "A wide delivery truck cannot cross a visibly narrower old bridge, while a small vehicle passes easily, making the physical limitation unmistakable without signs or measurements.",
+      "altText": "A narrow bridge limiting passage for a wide truck.",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "2d0da93e-b3be-4f84-a254-808ff89a4b90",
+      "word": "trace",
+      "meaningZh": "痕迹；追踪；微量",
+      "exampleId": "2d0da93e-b3be-4f84-a254-808ff89a4b90-visual-ex",
+      "styleFamily": "forensic ink illustration",
+      "sentenceEn": "The investigator follows a trace of muddy footprints.",
+      "sentenceZh": "调查员沿着一串泥脚印追踪。",
+      "scene": "An adult investigator follows a faint trail of muddy footprints from a rain-soaked doorway toward a hidden shed, examining the trace with a magnifying glass.",
+      "altText": "An investigator following a trace of muddy footprints.",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "30ddb8db-76e9-4175-beb8-e6c3dd6bee78",
+      "word": "appointment",
+      "meaningZh": "预约；任命",
+      "exampleId": "30ddb8db-76e9-4175-beb8-e6c3dd6bee78-visual-ex",
+      "styleFamily": "Chinese urban gouache illustration",
+      "sentenceEn": "She arrives early for her appointment at the clinic.",
+      "sentenceZh": "她提前到诊所赴约。",
+      "scene": "An adult Chinese woman arrives at a modern community clinic and is greeted by a doctor who is clearly expecting her at a reserved consultation chair, with no clocks, signs, or documents.",
+      "altText": "A woman arriving early for a clinic appointment.",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "79894594-3e51-4a46-8156-ad30711e002c",
+      "word": "preference",
+      "meaningZh": "偏好",
+      "exampleId": "79894594-3e51-4a46-8156-ad30711e002c-visual-ex",
+      "styleFamily": "Risograph comparison illustration",
+      "sentenceEn": "His preference is clear when he chooses tea over coffee.",
+      "sentenceZh": "当他选择茶而不是咖啡时，他的偏好很明确。",
+      "scene": "An adult diner is offered one cup of tea and one cup of coffee and reaches decisively for the tea with a pleased expression, leaving the coffee untouched.",
+      "altText": "A diner showing a preference for tea over coffee.",
+      "riskTags": [
+        "comparison",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "902817d6-73f3-4718-840a-067766ff3504",
+      "word": "meter",
+      "meaningZh": "米；仪表",
+      "exampleId": "902817d6-73f3-4718-840a-067766ff3504-visual-ex",
+      "styleFamily": "technical editorial illustration",
+      "sentenceEn": "The technician checks the meter before opening the valve.",
+      "sentenceZh": "技术员在打开阀门前检查仪表。",
+      "scene": "An adult utility technician closely checks a large analog pressure meter connected to a pipe before reaching for a valve, with a clear needle and tick marks but no readable numbers.",
+      "altText": "A technician checking a meter before opening a valve.",
+      "riskTags": [
+        "sequence",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "07eea547-66f9-4833-8502-3605cddd6756",
+      "word": "explosion",
+      "meaningZh": "爆炸；爆发；激增",
+      "exampleId": "07eea547-66f9-4833-8502-3605cddd6756-visual-ex",
+      "styleFamily": "dramatic graphic-novel illustration",
+      "sentenceEn": "The controlled explosion breaks the old rock wall.",
+      "sentenceZh": "受控爆破炸开了旧石墙。",
+      "scene": "At a secured quarry, a controlled explosion bursts through an old rock wall while adult workers observe from a distant protective shelter, emphasizing force and safety without injury.",
+      "altText": "A controlled explosion breaking a rock wall.",
+      "riskTags": [
+        "safety",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "e6741b07-be0c-430f-9d12-fe8060b82018",
+      "word": "publicly",
+      "meaningZh": "公开地",
+      "exampleId": "e6741b07-be0c-430f-9d12-fe8060b82018-visual-ex",
+      "styleFamily": "bold civic poster illustration",
+      "sentenceEn": "The scientist publicly presents the discovery to the community.",
+      "sentenceZh": "科学家向公众公开介绍这项发现。",
+      "scene": "An adult scientist stands in an open town square and presents a newly discovered plant specimen to a visible crowd and press cameras, clearly sharing the discovery in public without banners or text.",
+      "altText": "A scientist publicly presenting a discovery to a crowd.",
+      "riskTags": [
+        "people_face",
+        "body_posture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "758b6fbc-3632-4811-a5f0-1eec7091296e",
+      "word": "incredible",
+      "meaningZh": "难以置信的",
+      "exampleId": "758b6fbc-3632-4811-a5f0-1eec7091296e-visual-ex",
+      "styleFamily": "surreal mixed-media illustration",
+      "sentenceEn": "The climbers see an incredible waterfall glowing at sunrise.",
+      "sentenceZh": "登山者看到瀑布在日出时发出令人难以置信的光芒。",
+      "scene": "Two adult climbers gaze in astonishment at an immense waterfall illuminated gold by sunrise, with towering scale and expressive faces conveying that the sight is incredible.",
+      "altText": "Climbers amazed by an incredible glowing waterfall.",
+      "riskTags": [
+        "scale",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "9c20b55d-330d-4e9d-8289-d7f7eb01f830",
+      "word": "fighter",
+      "meaningZh": "战斗机；战士",
+      "exampleId": "9c20b55d-330d-4e9d-8289-d7f7eb01f830-visual-ex",
+      "styleFamily": "aviation linocut illustration",
+      "sentenceEn": "The fighter turns sharply above the clouds.",
+      "sentenceZh": "战斗机在云层上方急转弯。",
+      "scene": "A modern unmarked fighter aircraft performs a sharp banking turn above layered clouds, with aerodynamic motion and vapor trails clearly shown, no weapons firing and no military insignia.",
+      "altText": "A fighter aircraft banking sharply above the clouds.",
+      "riskTags": [
+        "vehicle",
+        "motion",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "fc393d31-3359-4d17-951a-d0c623608b09",
+      "word": "rapid",
+      "meaningZh": "迅速的；飞快的；急促的；陡的",
+      "exampleId": "fc393d31-3359-4d17-951a-d0c623608b09-visual-ex",
+      "styleFamily": "Chinese brush-and-ink action illustration",
+      "sentenceEn": "Rapid water rushes through the mountain gorge.",
+      "sentenceZh": "湍急的水流冲过山峡。",
+      "scene": "A Chinese mountain gorge channels rapid white water between dark cliffs, carrying leaves and spray swiftly downstream while a sturdy stone footbridge remains above.",
+      "altText": "Rapid water rushing through a mountain gorge.",
+      "riskTags": [
+        "Chinese_culture",
+        "motion",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

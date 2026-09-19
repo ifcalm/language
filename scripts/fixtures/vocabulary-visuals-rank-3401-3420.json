@@ -1,0 +1,359 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3401-3420",
+  "batchId": "auto-rank-3401-3420-20260919",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "doorway",
+      "happiness",
+      "statue",
+      "clerk",
+      "envelope",
+      "generous"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "ffb73c84-1fe1-4c69-8a9d-55ffcacf7c44",
+      "word": "doorway",
+      "meaningZh": "门口",
+      "exampleId": "ffb73c84-1fe1-4c69-8a9d-55ffcacf7c44-visual-ex",
+      "styleFamily": "warm Chinese architectural watercolor illustration",
+      "sentenceEn": "She paused in the doorway between the courtyard and garden.",
+      "sentenceZh": "她在连接院子和花园的门口停下脚步。",
+      "scene": "An adult woman pauses exactly within the open wooden doorway that separates a traditional Chinese courtyard behind her from a leafy garden ahead. The threshold, doorframe and two distinct spaces are clearly visible around her, with complete thoughtful face and natural hands. No door signs, couplets, characters, house numbers or logos.",
+      "altText": "女子停在连接中式院落和花园的门口。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "eabc835f-3f8d-4311-aa32-a9012fed2309",
+      "word": "departure",
+      "meaningZh": "离开；出发",
+      "exampleId": "eabc835f-3f8d-4311-aa32-a9012fed2309-visual-ex",
+      "styleFamily": "misty travel gouache illustration",
+      "sentenceEn": "The ferry began its departure from the harbor.",
+      "sentenceZh": "渡轮开始驶离港口。",
+      "scene": "A small unbranded passenger ferry moves away from a quiet harbor pier, leaving a widening wake and visible open water between the stern and dock. A few adult passengers wave from the deck with complete small faces; mooring ropes are already clear of the boat. No timetable, flags, vessel name, letters, numbers or logos.",
+      "altText": "渡轮离开码头，开始驶出港口。",
+      "riskTags": [
+        "vehicle_detail",
+        "movement",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "52114355-748e-41f3-afb8-b3b57148a7ae",
+      "word": "elevator",
+      "meaningZh": "电梯",
+      "exampleId": "52114355-748e-41f3-afb8-b3b57148a7ae-visual-ex",
+      "styleFamily": "clean architectural cut-paper illustration",
+      "sentenceEn": "They stepped into the elevator with their luggage.",
+      "sentenceZh": "他们带着行李走进电梯。",
+      "scene": "Two adult travelers roll plain suitcases across a hallway threshold into a clearly recognizable open elevator cabin with sliding metal doors, interior handrail and blank button panel. Their complete relaxed faces and natural hands are visible, and both luggage wheels remain aligned. No floor numbers, arrows, safety notices, letters, interface text or logos.",
+      "altText": "两名旅客拖着行李走进打开的电梯。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "spatial_boundary",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "9cbc8e94-7d1f-489e-97a1-80aea4e5673e",
+      "word": "teenage",
+      "meaningZh": "十三岁到十九岁的",
+      "exampleId": "9cbc8e94-7d1f-489e-97a1-80aea4e5673e-visual-ex",
+      "styleFamily": "energetic colored-pencil music illustration",
+      "sentenceEn": "The teenage drummer practiced after school.",
+      "sentenceZh": "这名十几岁的鼓手放学后练习打鼓。",
+      "scene": "An older teenage musician practices a compact drum kit in a bright community rehearsal room, wearing ordinary casual clothes with a closed backpack resting nearby. Clearly adolescent rather than a young child or adult, with complete focused face and anatomically natural hands holding two drumsticks. No school crest, band name, posters, sheet music, letters or logos.",
+      "altText": "一名十几岁的鼓手在排练室认真练习。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "age_representation",
+        "instrument_detail"
+      ]
+    },
+    {
+      "vocabularyId": "db4eb8e3-4097-4ffa-b362-1dc6c432cdb0",
+      "word": "guidance",
+      "meaningZh": "指导",
+      "exampleId": "db4eb8e3-4097-4ffa-b362-1dc6c432cdb0-visual-ex",
+      "styleFamily": "soft studio pastel illustration",
+      "sentenceEn": "The mentor offered guidance as she shaped the clay.",
+      "sentenceZh": "她塑造陶土时，导师在一旁给予指导。",
+      "scene": "At a pottery studio, an adult learner shapes a simple clay bowl on a stationary work surface while an older adult mentor gently demonstrates hand placement on a separate small piece of clay beside her. Both complete attentive faces and anatomically natural hands visible; the mentor advises without taking over. No written instructions, labels, wheels in motion or logos.",
+      "altText": "陶艺导师通过示范为正在塑形的学习者提供指导。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "tool_interaction"
+      ]
+    },
+    {
+      "vocabularyId": "ce963ac0-633a-4893-8859-2ebfcf87ea04",
+      "word": "happiness",
+      "meaningZh": "幸福",
+      "exampleId": "ce963ac0-633a-4893-8859-2ebfcf87ea04-visual-ex",
+      "styleFamily": "luminous Chinese family gouache illustration",
+      "sentenceEn": "Sharing tea with her family brought her happiness.",
+      "sentenceZh": "与家人一起喝茶给她带来了幸福。",
+      "scene": "Three generations of an adult Chinese family share tea and fruit around a courtyard table, exchanging warm attention and relaxed laughter. The central adult woman's genuine happiness is clear through her complete expressive face, while all visible hands interact naturally with plain cups. No exaggerated celebration, tea labels, characters, banners or logos.",
+      "altText": "中国家庭三代人围坐喝茶，脸上洋溢着幸福。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "d2ebbcc8-fd52-45a7-908d-bbfe7b04894d",
+      "word": "statue",
+      "meaningZh": "雕像",
+      "exampleId": "d2ebbcc8-fd52-45a7-908d-bbfe7b04894d-visual-ex",
+      "styleFamily": "serene Chinese garden ink-and-gouache illustration",
+      "sentenceEn": "A stone statue of a musician stood beside the garden pond.",
+      "sentenceZh": "一尊音乐家的石雕像矗立在花园池塘旁。",
+      "scene": "A clearly carved fictional stone statue of a seated musician holding a simple flute stands on a plain low pedestal beside a pond in a Chinese public garden. Stone texture, rigid sculpted folds and still pose distinguish the statue from a living person. No real historical figure, inscription, plaque, characters, offerings or religious symbolism.",
+      "altText": "中式花园池塘边矗立着一尊音乐家石雕像。",
+      "riskTags": [
+        "object_detail",
+        "cultural_sensitivity",
+        "identity_avoidance"
+      ]
+    },
+    {
+      "vocabularyId": "fedffd6f-0a71-496d-8faf-759009559f18",
+      "word": "pursuit",
+      "meaningZh": "追求；追赶；事业",
+      "exampleId": "fedffd6f-0a71-496d-8faf-759009559f18-visual-ex",
+      "styleFamily": "playful dynamic linocut illustration",
+      "sentenceEn": "The dog raced in pursuit of the rolling ball.",
+      "sentenceZh": "小狗飞奔着追赶滚动的球。",
+      "scene": "One energetic dog runs across a grassy field in close pursuit of one brightly colored ball rolling just ahead, with the dog's gaze and body direction fixed on the ball. Natural canine anatomy, grounded paws and modest motion lines communicate chase without text. Human-free, no extra balls, leash, arrows, letters or logos.",
+      "altText": "一只狗在草地上追赶前方滚动的球。",
+      "riskTags": [
+        "animal_anatomy",
+        "movement",
+        "cause_effect",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "b5b319b0-ef8d-4d1d-95a9-d68b7c0a114d",
+      "word": "repair",
+      "meaningZh": "修理；补救；修复",
+      "exampleId": "b5b319b0-ef8d-4d1d-95a9-d68b7c0a114d-visual-ex",
+      "styleFamily": "precise workshop editorial illustration",
+      "sentenceEn": "The technician began to repair the broken desk lamp.",
+      "sentenceZh": "技术人员开始修理坏掉的台灯。",
+      "scene": "An adult repair technician inspects an unplugged desk lamp on a padded workbench, using a small screwdriver to reconnect one visible loose wire inside the open base. The detached plug lies clearly away from the outlet, complete focused face and natural safe hands visible. No live electricity, sparks, exposed mains voltage, repair manual text, labels or logos.",
+      "altText": "技术人员在断电状态下修理坏掉的台灯。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "mechanical_detail",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "a8f7ffd9-5749-4bb9-bcd4-907882348ab5",
+      "word": "decent",
+      "meaningZh": "有分寸的；得体的；大方的",
+      "exampleId": "a8f7ffd9-5749-4bb9-bcd4-907882348ab5-visual-ex",
+      "styleFamily": "calm editorial apartment watercolor illustration",
+      "sentenceEn": "They found a decent apartment with clean rooms and good light.",
+      "sentenceZh": "他们找到了一套整洁、采光不错的体面公寓。",
+      "scene": "Two adults look around a modest but well-kept apartment with clean floors, sound walls, practical windows and generous natural daylight. Their complete pleasantly satisfied faces and relaxed hands convey that the home is decent without appearing luxurious. A few simple furnishings, no sales agent, rental signs, price sheets, letters or logos.",
+      "altText": "两人查看一套整洁明亮而不过分豪华的体面公寓。",
+      "riskTags": [
+        "people_face",
+        "subjective_attribute",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a4133fd8-5a2b-46be-aff6-28bcaeda0887",
+      "word": "gym",
+      "meaningZh": "健身房",
+      "exampleId": "a4133fd8-5a2b-46be-aff6-28bcaeda0887-visual-ex",
+      "styleFamily": "bold flat-shaded fitness illustration",
+      "sentenceEn": "She trained with a coach at the gym.",
+      "sentenceZh": "她在健身房里跟着教练训练。",
+      "scene": "An adult woman performs a controlled squat with one light kettlebell in a clean neighborhood gym while an adult coach stands beside her demonstrating stable posture. Both complete focused faces and anatomically natural hands, ample safe space around them. Visible racks, mats and unbranded equipment establish the gym; no mirrors, weight numbers, slogans or logos.",
+      "altText": "女子在健身房里由教练指导进行壶铃训练。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "body_mechanics",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "10301432-0b54-41cd-b9c0-21d6e01b62de",
+      "word": "oral",
+      "meaningZh": "口试；口头的；口述的；口部的",
+      "exampleId": "10301432-0b54-41cd-b9c0-21d6e01b62de-visual-ex",
+      "styleFamily": "clean seminar colored-pencil illustration",
+      "sentenceEn": "He gave an oral report to the small group.",
+      "sentenceZh": "他向小组作了口头报告。",
+      "scene": "An adult speaker stands facing four seated colleagues, speaking clearly and gesturing with empty hands while everyone looks toward him. A blank easel and closed laptop emphasize that the report is delivered orally rather than read from text. Complete engaged faces and natural hands, no speech bubbles, notes, slides, letters, numbers or logos.",
+      "altText": "一名男子面对小组成员作口头报告。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "e5dd8fe5-88d7-49a0-89ed-0e166fbe2824",
+      "word": "clerk",
+      "meaningZh": "办事员；职员；文书；当店员",
+      "exampleId": "e5dd8fe5-88d7-49a0-89ed-0e166fbe2824-visual-ex",
+      "styleFamily": "warm Chinese neighborhood market illustration",
+      "sentenceEn": "The clerk arranged fresh fruit at the shop counter.",
+      "sentenceZh": "店员在商店柜台上摆放新鲜水果。",
+      "scene": "An adult clerk at a small Chinese neighborhood produce shop carefully arranges apples, pears and oranges in shallow baskets on the front counter while greeting an adult customer. Complete friendly faces and natural hands, ordinary apron and lived-in shop interior. No price tags, shop signs, characters, packaging labels, register text or logos.",
+      "altText": "中国社区小店的店员在柜台上整理新鲜水果。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "occupation",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "60d34f03-db23-4bc9-83f9-ab8b56833be3",
+      "word": "envelope",
+      "meaningZh": "信封；封套；封袋；膜；包袋",
+      "exampleId": "60d34f03-db23-4bc9-83f9-ab8b56833be3-visual-ex",
+      "styleFamily": "delicate Chinese stationery still-life illustration",
+      "sentenceEn": "She sealed the letter inside an envelope.",
+      "sentenceZh": "她把信装进信封并封好。",
+      "scene": "Close view at a Chinese-inspired stationery desk as an adult woman folds the flap of one plain cream envelope over a fully inserted sheet of blank paper. A small plum-blossom paperweight and bamboo brush rest nearby as cultural context. Complete focused face partly visible and natural hands clear, no wax seal emblem, address, stamp, characters, letters or handwriting.",
+      "altText": "女子把信纸装进一个信封并合上封口。",
+      "riskTags": [
+        "hands",
+        "fine_detail",
+        "text_risk",
+        "cultural_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "50b7a3e0-e005-4faf-b375-bf6b609c4884",
+      "word": "reporting",
+      "meaningZh": "报道；报告",
+      "exampleId": "50b7a3e0-e005-4faf-b375-bf6b609c4884-visual-ex",
+      "styleFamily": "contemporary broadcast editorial illustration",
+      "sentenceEn": "The journalist was reporting from the town square.",
+      "sentenceZh": "记者正在城镇广场进行现场报道。",
+      "scene": "An adult field journalist speaks into a plain handheld microphone in a busy but calm town square while an adult camera operator records with an unbranded shoulder camera. Both complete professional faces and natural hands visible; passersby remain secondary. No breaking-news drama, channel badge, microphone flag, camera interface, captions, signs or logos.",
+      "altText": "记者在城镇广场面对摄像机进行现场报道。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "equipment_detail",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "bda24d97-f8fd-4ef2-be0a-bc5bb0402ed5",
+      "word": "destination",
+      "meaningZh": "目的地；目标；目的",
+      "exampleId": "bda24d97-f8fd-4ef2-be0a-bc5bb0402ed5-visual-ex",
+      "styleFamily": "sunlit travel poster-style gouache illustration",
+      "sentenceEn": "The hikers reached their destination, a cabin by the lake.",
+      "sentenceZh": "徒步者到达了目的地——湖边小屋。",
+      "scene": "Two adult hikers step off a forest trail at a welcoming cabin beside a clear lake, their backpacks loosened and expressions relieved as they look directly toward the cabin. The completed trail ends at the cabin door, making the destination unmistakable. Complete faces and natural hands, no trail signs, address, flags, letters or logos.",
+      "altText": "两名徒步者沿小路到达湖边小屋这一目的地。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "e276e9fa-2233-4b3b-9fa6-d41140951af2",
+      "word": "fist",
+      "meaningZh": "拳头；手；拳打；握成拳；紧握",
+      "exampleId": "e276e9fa-2233-4b3b-9fa6-d41140951af2-visual-ex",
+      "styleFamily": "dynamic sports ink-and-gouache illustration",
+      "sentenceEn": "She raised a fist in celebration after finishing the race.",
+      "sentenceZh": "她完成比赛后举起拳头庆祝。",
+      "scene": "An adult runner just beyond a plain finish ribbon raises one clearly formed celebratory fist, fingers curled naturally with thumb resting outside, while her other hand relaxes at her side. Complete joyful face, balanced anatomy and nonaggressive body language. No opponent, punching, race number, finish text, scoreboard, brand marks or logos.",
+      "altText": "跑者冲过终点后高兴地举起一个拳头。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "body_part",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "d5f306b9-591c-430b-a4c7-df279822f5c2",
+      "word": "endorse",
+      "meaningZh": "支持；赞同；背书于；签署",
+      "exampleId": "d5f306b9-591c-430b-a4c7-df279822f5c2-visual-ex",
+      "styleFamily": "civic editorial cut-paper illustration",
+      "sentenceEn": "The council members raised their hands to endorse the garden plan.",
+      "sentenceZh": "委员会成员举手赞同花园方案。",
+      "scene": "Around a tabletop model of a community garden, five adult council members openly raise one hand each in clear approval while looking toward the shared model. Complete affirmative faces and anatomically natural hands, with garden paths and trees represented as simple miniatures. No ballots, political party cues, written proposal, vote tally, letters or logos.",
+      "altText": "委员会成员围着社区花园模型举手表示赞同。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "100e921c-317b-411a-bb40-ab2a79d31763",
+      "word": "exploration",
+      "meaningZh": "探索",
+      "exampleId": "100e921c-317b-411a-bb40-ab2a79d31763-visual-ex",
+      "styleFamily": "detailed coastal field-journal illustration",
+      "sentenceEn": "The researchers began their exploration of the rocky tide pools.",
+      "sentenceZh": "研究人员开始探索岩石潮池。",
+      "scene": "Three adult field researchers carefully explore shallow rocky tide pools at low tide, kneeling on stable dry rocks to observe small crabs, sea stars and anemones through a plain magnifier without touching them. Complete curious faces and natural hands, safe footwear and calm sea. No specimen collection, labels, field notes with writing, arrows or logos.",
+      "altText": "研究人员在退潮时观察并探索岩石潮池。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "animal_anatomy",
+        "safety"
+      ]
+    },
+    {
+      "vocabularyId": "4edc242b-8a54-44e3-9b3a-1060927930d4",
+      "word": "generous",
+      "meaningZh": "慷慨的；有雅量的；大量的；丰富的",
+      "exampleId": "4edc242b-8a54-44e3-9b3a-1060927930d4-visual-ex",
+      "styleFamily": "warm Chinese community mural-style illustration",
+      "sentenceEn": "The generous cook served extra bowls of soup to the neighbors.",
+      "sentenceZh": "慷慨的厨师给邻居们盛了更多汤。",
+      "scene": "At a Chinese neighborhood community kitchen, an adult cook generously fills several plain bowls with abundant vegetable soup and passes them across a long table to smiling adult neighbors and an older resident. Complete warm faces and natural hands, visibly plentiful pot and equal respectful exchange. No money, charity hierarchy, menu, characters, banners, labels or logos.",
+      "altText": "社区厨师慷慨地为邻居们盛上更多热汤。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "cultural_sensitivity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3160-3179",
+  "batchId": "auto-rank-3160-3179-20260914",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "integration",
+      "crystal",
+      "inspection",
+      "consult",
+      "forgive",
+      "basement"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "bdea1626-8c01-47f7-af40-a4f0ba68c158",
+      "word": "integration",
+      "meaningZh": "整合；融合",
+      "exampleId": "bdea1626-8c01-47f7-af40-a4f0ba68c158-visual-ex",
+      "styleFamily": "Chinese community garden editorial gouache",
+      "sentenceEn": "The integration of new members made the community team stronger.",
+      "sentenceZh": "新成员的融入使社区团队更加强大。",
+      "scene": "In a Chinese neighborhood community garden, longtime residents and newcomers of varied adult ages work together around one shared flower bed, passing tools and planting as a unified team; warm natural expressions, complete faces, no signs or writing.",
+      "altText": "New and longtime community members integrate into one gardening team.",
+      "riskTags": [
+        "Chinese_context",
+        "group_scene",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "74e60d07-99e9-415c-9ae9-1765c5005b37",
+      "word": "crystal",
+      "meaningZh": "水晶；水晶装饰品；结晶",
+      "exampleId": "74e60d07-99e9-415c-9ae9-1765c5005b37-visual-ex",
+      "styleFamily": "Chinese mineral study luminous watercolor",
+      "sentenceEn": "Sunlight sparkled through the clear crystal.",
+      "sentenceZh": "阳光透过透明的水晶闪耀。",
+      "scene": "A Chinese adult mineral curator gently holds a large clear quartz crystal beside a sunlit museum window, with subtle rainbow refractions on a plain table and unlabeled mineral specimens behind; complete natural face and hands, no labels, writing or display text.",
+      "altText": "Sunlight shines through a clear crystal held by a curator.",
+      "riskTags": [
+        "Chinese_context",
+        "mineral",
+        "hands",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5faa4040-c2ac-479b-9562-d228b9ee39a7",
+      "word": "recession",
+      "meaningZh": "衰退；不景气；后退",
+      "exampleId": "5faa4040-c2ac-479b-9562-d228b9ee39a7-visual-ex",
+      "styleFamily": "restrained economic editorial illustration",
+      "sentenceEn": "The recession left many small shops unusually quiet.",
+      "sentenceZh": "经济衰退使许多小商店异常冷清。",
+      "scene": "A subdued commercial street during an economic recession: several plain small-shop windows are dark, a café owner stacks unused chairs, and only a few adults walk past cautiously; no foreclosure imagery, distress, signs, prices, letters or logos.",
+      "altText": "A quiet shopping street reflects an economic recession.",
+      "riskTags": [
+        "economy",
+        "subdued_mood",
+        "no_signage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "bc691f7a-7794-4b71-a2b9-d182da7d5cc5",
+      "word": "written",
+      "meaningZh": "书面的",
+      "exampleId": "bc691f7a-7794-4b71-a2b9-d182da7d5cc5-visual-ex",
+      "styleFamily": "desk scene ink-and-wash illustration",
+      "sentenceEn": "She gave me written instructions before the trip.",
+      "sentenceZh": "旅行前，她给了我书面说明。",
+      "scene": "An adult woman hands a neatly prepared instruction sheet to another traveler beside a packed bag and a pen, clearly contrasting the paper with their spoken conversation; the paper contains only faint abstract non-language strokes, with no readable text, letters, numbers or symbols.",
+      "altText": "A traveler receives written instructions on a sheet of paper.",
+      "riskTags": [
+        "paper",
+        "implied_writing",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "a19c70cf-458c-40a3-a5b5-23c910410c6f",
+      "word": "motive",
+      "meaningZh": "动机；目的；主题；基调",
+      "exampleId": "a19c70cf-458c-40a3-a5b5-23c910410c6f-visual-ex",
+      "styleFamily": "human-centered volunteer pastel illustration",
+      "sentenceEn": "Her motive for volunteering was a sincere wish to help.",
+      "sentenceZh": "她参加志愿服务的动机是真诚地想帮助他人。",
+      "scene": "An adult volunteer warmly delivers a box of groceries to an older neighbor, her attentive expression and practical action showing a sincere helpful motive; simple residential entrance, complete natural faces, no badges, charity logos, signs or writing.",
+      "altText": "A volunteer helps an older neighbor out of a sincere motive.",
+      "riskTags": [
+        "abstract_concept",
+        "helping",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "85afae61-b41d-4b39-a7c1-2e6cd0895124",
+      "word": "flood",
+      "meaningZh": "洪水；大量之水；涨潮",
+      "exampleId": "85afae61-b41d-4b39-a7c1-2e6cd0895124-visual-ex",
+      "styleFamily": "calm emergency-response gouache",
+      "sentenceEn": "The flood covered the road after days of heavy rain.",
+      "sentenceZh": "连续多日暴雨后，洪水淹没了道路。",
+      "scene": "A wide illustrated view of a flooded residential road after heavy rain, with knee-deep calm water around parked cars and trained rescue workers safely guiding two adults into a small boat; everyone composed and unharmed, no bodies, panic, injuries, readable signs or vehicle logos.",
+      "altText": "Rescue workers guide residents through a flooded road.",
+      "riskTags": [
+        "natural_disaster",
+        "safe_rescue",
+        "no_injury",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "4f2d6e3a-e6ba-4f76-84b6-a0b80cdbc933",
+      "word": "pen",
+      "meaningZh": "钢笔；笔；笔调；笔杆子；作家；围栏",
+      "exampleId": "4f2d6e3a-e6ba-4f76-84b6-a0b80cdbc933-visual-ex",
+      "styleFamily": "close-up colored-pencil desk illustration",
+      "sentenceEn": "He signed the form with a blue pen.",
+      "sentenceZh": "他用一支蓝色钢笔签了表格。",
+      "scene": "Close view of an adult hand using a blue fountain pen on a formal sheet atop a tidy wooden desk, with the pen as the unmistakable focal object; the paper shows only soft abstract lines without readable handwriting, letters, numbers, signatures, stamps or logos.",
+      "altText": "A hand uses a blue pen to complete a paper form.",
+      "riskTags": [
+        "object_focus",
+        "hand",
+        "paper",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "07785b39-f1c5-4f6c-913a-305146171afd",
+      "word": "ownership",
+      "meaningZh": "所有权",
+      "exampleId": "07785b39-f1c5-4f6c-913a-305146171afd-visual-ex",
+      "styleFamily": "home handover warm editorial watercolor",
+      "sentenceEn": "The keys confirmed her ownership of the small house.",
+      "sentenceZh": "这些钥匙确认了她对这栋小房子的所有权。",
+      "scene": "An adult woman stands at the open door of a modest newly acquired home, receiving a key ring and a plain document folder from another adult while looking proudly at the house; complete faces, no real-estate signs, contracts, printed text, logos or numbers.",
+      "altText": "A woman receives the keys that represent home ownership.",
+      "riskTags": [
+        "property",
+        "keys",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "b818a5e3-1b01-4c30-a2e9-94ff42f14e5d",
+      "word": "nightmare",
+      "meaningZh": "梦魇；恶梦；可怕的事物(或情景、人物)",
+      "exampleId": "b818a5e3-1b01-4c30-a2e9-94ff42f14e5d-visual-ex",
+      "styleFamily": "gentle moonlit bedroom story illustration",
+      "sentenceEn": "He woke suddenly from a nightmare.",
+      "sentenceZh": "他突然从噩梦中惊醒。",
+      "scene": "A fully clothed adult man sits upright in bed after a nightmare, breathing deeply with a startled but safe expression as soft moonlight enters a calm bedroom; a rumpled blanket and dark rain clouds outside suggest unease, but no monsters, threatening figures, horror, injury, text or symbols.",
+      "altText": "A startled adult wakes safely from a nightmare.",
+      "riskTags": [
+        "sleep",
+        "mild_fear",
+        "no_horror",
+        "complete_face"
+      ]
+    },
+    {
+      "vocabularyId": "4cdf7d53-de97-41de-8d45-0e7714cf6bca",
+      "word": "inspection",
+      "meaningZh": "检查",
+      "exampleId": "4cdf7d53-de97-41de-8d45-0e7714cf6bca-visual-ex",
+      "styleFamily": "Chinese tea workshop detailed gouache",
+      "sentenceEn": "The workshop completed a careful safety inspection.",
+      "sentenceZh": "车间完成了一次细致的安全检查。",
+      "scene": "Inside a clean Chinese tea-processing workshop, an adult safety inspector closely examines a machine guard while a worker observes, with baskets of tea leaves nearby; the inspector holds a plain clipboard with no visible writing, complete faces, no brands, warning words, labels or numbers.",
+      "altText": "An inspector carefully checks equipment in a tea workshop.",
+      "riskTags": [
+        "Chinese_context",
+        "workplace",
+        "machine_safety",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "adb53cbd-c37a-4444-afb4-aab1f133bc72",
+      "word": "supervisor",
+      "meaningZh": "主管",
+      "exampleId": "adb53cbd-c37a-4444-afb4-aab1f133bc72-visual-ex",
+      "styleFamily": "construction teamwork graphic illustration",
+      "sentenceEn": "The supervisor checked the work before the crew continued.",
+      "sentenceZh": "主管在施工队继续工作前检查了成果。",
+      "scene": "An adult construction supervisor in plain safety gear examines a newly built wall with two crew members, pointing calmly at the alignment while the team listens; complete natural faces, safe stationary tools, no hard-hat logos, plans, signs, numbers or writing.",
+      "altText": "A supervisor checks a wall with the construction crew.",
+      "riskTags": [
+        "workplace",
+        "safety_gear",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1e6077d8-d351-43f2-8cc3-0753053d91aa",
+      "word": "consult",
+      "meaningZh": "商讨；商量；协商；会诊",
+      "exampleId": "1e6077d8-d351-43f2-8cc3-0753053d91aa-visual-ex",
+      "styleFamily": "Chinese courtyard planning watercolor",
+      "sentenceEn": "The architect will consult a local craftsperson before restoration begins.",
+      "sentenceZh": "修缮开始前，建筑师会咨询当地工匠。",
+      "scene": "In a traditional Chinese courtyard, an adult architect consults an experienced local craftsperson beside a wooden lattice window, comparing a small material sample with a plain rolled drawing; respectful collaboration, complete faces, no readable plans, calligraphy, plaques, signs or symbols.",
+      "altText": "An architect consults a craftsperson about courtyard restoration.",
+      "riskTags": [
+        "Chinese_context",
+        "consultation",
+        "heritage_craft",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "a292114e-274f-450a-9de0-99c6baecaa25",
+      "word": "arena",
+      "meaningZh": "角斗场；舞台；场地",
+      "exampleId": "a292114e-274f-450a-9de0-99c6baecaa25-visual-ex",
+      "styleFamily": "energetic indoor sports poster illustration",
+      "sentenceEn": "The crowd filled the arena for the basketball final.",
+      "sentenceZh": "观众坐满了体育馆，观看篮球决赛。",
+      "scene": "Wide interior of a large indoor basketball arena during active play, with adult athletes on the court and layered spectators in the stands creating a strong sense of scale; no scoreboard content, banners, court lettering, jersey numbers, team marks, advertisements or logos.",
+      "altText": "A large crowd watches a basketball game inside an arena.",
+      "riskTags": [
+        "sports_venue",
+        "crowd",
+        "no_numbers",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "5e076ebf-5c50-4f34-9f6e-2ca9a2871992",
+      "word": "diagnosis",
+      "meaningZh": "诊断",
+      "exampleId": "5e076ebf-5c50-4f34-9f6e-2ca9a2871992-visual-ex",
+      "styleFamily": "reassuring clinic editorial illustration",
+      "sentenceEn": "The doctor explained the diagnosis in calm, simple terms.",
+      "sentenceZh": "医生用平静易懂的话解释了诊断结果。",
+      "scene": "In a bright consultation room, an adult doctor calmly explains a diagnosis to an attentive adult patient using a generic grayscale scan image with simple anatomical shapes; both appear composed, complete natural faces, no visible illness, procedures, labels, readable screens, medical text or logos.",
+      "altText": "A doctor calmly explains a diagnosis to a patient.",
+      "riskTags": [
+        "medical",
+        "non_graphic",
+        "complete_faces",
+        "no_readable_UI"
+      ]
+    },
+    {
+      "vocabularyId": "920e4d2b-c0e5-4c2e-bf5f-ac5f2f440d69",
+      "word": "possession",
+      "meaningZh": "拥有；财产",
+      "exampleId": "920e4d2b-c0e5-4c2e-bf5f-ac5f2f440d69-visual-ex",
+      "styleFamily": "musician portrait textured pastel",
+      "sentenceEn": "The old violin is her most treasured possession.",
+      "sentenceZh": "这把旧小提琴是她最珍爱的财物。",
+      "scene": "An adult musician carefully holds a well-worn violin close to her chest beside its open case, her warm protective expression showing that it is a treasured possession; uncluttered music room, complete face and hands, no sheet music, labels, signatures or text.",
+      "altText": "A musician holds her treasured violin possession with care.",
+      "riskTags": [
+        "personal_property",
+        "instrument",
+        "complete_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "95ce9e2a-bee7-4b1b-ba96-81f5ba349c80",
+      "word": "forgive",
+      "meaningZh": "原谅；宽恕；免除",
+      "exampleId": "95ce9e2a-bee7-4b1b-ba96-81f5ba349c80-visual-ex",
+      "styleFamily": "Chinese family reconciliation soft gouache",
+      "sentenceEn": "She chose to forgive her brother after his sincere apology.",
+      "sentenceZh": "哥哥真诚道歉后，她选择了原谅他。",
+      "scene": "Two adult Chinese siblings reconcile in a quiet family courtyard: the brother offers a sincere apologetic gesture and the sister accepts by warmly taking his hands; relieved natural expressions, complete faces, no dramatic conflict, calligraphy, plaques, signs or writing.",
+      "altText": "A woman forgives her brother after a sincere apology.",
+      "riskTags": [
+        "Chinese_context",
+        "reconciliation",
+        "complete_faces",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "17df5ca7-115f-4cc8-98bd-f43fe4009a7b",
+      "word": "consistently",
+      "meaningZh": "一贯地",
+      "exampleId": "17df5ca7-115f-4cc8-98bd-f43fe4009a7b-visual-ex",
+      "styleFamily": "artisan bakery colored-pencil illustration",
+      "sentenceEn": "The baker consistently produces loaves of the same high quality.",
+      "sentenceZh": "这位面包师始终如一地制作同样高品质的面包。",
+      "scene": "An experienced adult baker compares several evenly baked loaves arranged in a neat row, each with the same shape and golden crust, while another identical batch cools behind; complete face and hands, no packaging, labels, menu boards, numbers or writing.",
+      "altText": "A baker consistently produces matching high-quality loaves.",
+      "riskTags": [
+        "repetition",
+        "food",
+        "complete_face",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "e2835030-5edb-49e4-9e41-511790514281",
+      "word": "basement",
+      "meaningZh": "地下室；墙脚",
+      "exampleId": "e2835030-5edb-49e4-9e41-511790514281-visual-ex",
+      "styleFamily": "Chinese urban-home cutaway watercolor",
+      "sentenceEn": "They stored the winter supplies in the basement.",
+      "sentenceZh": "他们把冬季用品存放在地下室里。",
+      "scene": "A Chinese adult homeowner descends a short indoor staircase into a clean, dry basement storage room beneath an urban home, carrying a plain box toward shelves of folded blankets and sealed containers; full natural face visible, no labels, utility markings, signs or writing.",
+      "altText": "A homeowner carries supplies down into a basement.",
+      "riskTags": [
+        "Chinese_context",
+        "stairs",
+        "storage",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "1ea3ecc3-3722-4e76-a3f2-9c0497d3c38a",
+      "word": "drift",
+      "meaningZh": "漂流；漂移；趋势",
+      "exampleId": "1ea3ecc3-3722-4e76-a3f2-9c0497d3c38a-visual-ex",
+      "styleFamily": "serene nature ink-and-watercolor illustration",
+      "sentenceEn": "The small boat began to drift across the calm lake.",
+      "sentenceZh": "小船开始在平静的湖面上漂流。",
+      "scene": "A small empty wooden rowboat gently drifts away from a quiet reed-lined shore across a calm lake, its loose rope trailing on the water and soft ripples showing slow unpowered movement; no people, motors, signs, lettering or symbols.",
+      "altText": "An empty wooden boat drifts slowly across a calm lake.",
+      "riskTags": [
+        "water",
+        "unpowered_motion",
+        "no_people",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "bb6ddf42-8648-4ba6-93e5-f603d0eec7ac",
+      "word": "drain",
+      "meaningZh": "排水；耗尽；下水道",
+      "exampleId": "bb6ddf42-8648-4ba6-93e5-f603d0eec7ac-visual-ex",
+      "styleFamily": "practical home-repair editorial illustration",
+      "sentenceEn": "The plumber cleared the drain so the water could flow away.",
+      "sentenceZh": "水管工疏通了排水口，让积水能够排走。",
+      "scene": "An adult plumber safely removes a small clump of leaves from a round outdoor floor drain as a shallow puddle visibly funnels through the clear metal grate, with clean gloves and tools nearby; non-gross, complete face visible, no sewage, brands, labels or writing.",
+      "altText": "A plumber clears a drain so a puddle can flow away.",
+      "riskTags": [
+        "home_repair",
+        "water",
+        "non_gross",
+        "no_text"
+      ]
+    }
+  ]
+}

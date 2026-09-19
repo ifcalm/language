@@ -4,11 +4,15 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 import {
+  buildManifestDraft,
   chooseQaSample,
+  findInflectedTargetWords,
   hasExactTargetWord,
   mapConcurrent,
   readJsonIfExists,
   selectUnfinishedItems,
+  targetWordMatch,
+  validateManifestMetadata,
   validatePlannedItems,
   writeJsonAtomic,
 } from './vocabulary-visual-pipeline.mjs'
@@ -57,7 +61,17 @@ test('hasExactTargetWord checks standalone tokens case-insensitively', () => {
   assert.equal(hasExactTargetWord('Whoever arrives may enter.', 'who'), false)
 })
 
-test('validatePlannedItems restores queue order and rejects a missing token', () => {
+test('targetWordMatch accepts regular inflections but not derivations', () => {
+  assert.equal(targetWordMatch('The caretaker informs the residents.', 'inform'), 'inflected')
+  assert.equal(targetWordMatch('She denies touching the paint.', 'deny'), 'inflected')
+  assert.equal(targetWordMatch('The crew launches the boat.', 'launch'), 'inflected')
+  assert.equal(targetWordMatch('He shipped the parcel today.', 'ship'), 'inflected')
+  assert.equal(targetWordMatch('Two teams compete to finish first.', 'competition'), 'none')
+  assert.equal(targetWordMatch('The fisherman casts a net.', 'fishing'), 'none')
+  assert.equal(targetWordMatch('A Jewish neighbor shares bread.', 'Jew'), 'none')
+})
+
+test('validatePlannedItems restores queue order and rejects an absent target word', () => {
   const ordered = validatePlannedItems(queueItems.slice(0, 2), [
     plan(queueItems[1]),
     plan(queueItems[0]),
@@ -73,7 +87,59 @@ test('validatePlannedItems restores queue order and rejects a missing token', ()
       validatePlannedItems([queueItems[0]], [
         plan(queueItems[0], { sentenceEn: 'The party begins at noon.' }),
       ]),
-    /exact target word/,
+    /regular inflection/,
+  )
+})
+
+test('validatePlannedItems keeps custom risk tags but rejects malformed ones', () => {
+  assert.doesNotThrow(() =>
+    validatePlannedItems([queueItems[0]], [
+      plan(queueItems[0], { riskTags: ['people_face', 'Chinese_culture', 'hands'] }),
+    ]),
+  )
+
+  assert.throws(
+    () =>
+      validatePlannedItems([queueItems[0]], [
+        plan(queueItems[0], { riskTags: ['people face'] }),
+      ]),
+    /snake_case risk tags/,
+  )
+})
+
+test('findInflectedTargetWords reports only headwords that changed form', () => {
+  assert.deepEqual(
+    findInflectedTargetWords([
+      { word: 'inform', sentenceEn: 'The caretaker informs the residents.' },
+      { word: 'art', sentenceEn: 'Art can comfort a community.' },
+    ]),
+    ['inform'],
+  )
+})
+
+test('a manifest draft carries batch metadata and empty content slots', () => {
+  const draft = buildManifestDraft(queueItems, {
+    batchKey: 'rank-1-3',
+    batchId: 'auto-rank-1-3-20260815',
+  })
+
+  assert.equal(draft.generationMode, 'agent-built-in-imagegen')
+  assert.equal(draft.items.length, 3)
+  assert.equal(draft.items[0].exampleId, 'id-1-visual-ex')
+  assert.equal(draft.items[0].sentenceEn, '')
+  assert.doesNotThrow(() => validateManifestMetadata(draft))
+
+  assert.throws(
+    () => validateManifestMetadata({ ...draft, stylePrompt: '' }),
+    /batch metadata/,
+  )
+  assert.throws(
+    () =>
+      validateManifestMetadata({
+        ...draft,
+        items: [{ ...draft.items[0], exampleId: 'wrong' }],
+      }),
+    /exampleId/,
   )
 })
 

@@ -1,0 +1,354 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2860-2879",
+  "batchId": "auto-rank-2860-2879-20260912",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "wise",
+      "actress",
+      "gifted",
+      "running",
+      "artistic",
+      "basket"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "7fca1af0-1e4a-42f7-a459-b013acd8460c",
+      "word": "permission",
+      "meaningZh": "权限",
+      "exampleId": "7fca1af0-1e4a-42f7-a459-b013acd8460c-visual-ex",
+      "styleFamily": "editorial gouache illustration",
+      "sentenceEn": "She receives permission to use the workshop tools.",
+      "sentenceZh": "她获得了使用工坊工具的许可。",
+      "scene": "In a bright community workshop, an adult supervisor smiles and hands a green access token to a visitor while opening a secured tool cabinet, making authorized access unmistakable.",
+      "altText": "A supervisor grants a visitor access to a workshop tool cabinet.",
+      "riskTags": [
+        "abstract_meaning",
+        "access_control",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "0fbbbdd3-4ac3-48ce-bddd-e03f760dd7ae",
+      "word": "wise",
+      "meaningZh": "明智的；慎虑的；聪明的；博学的；狡猾",
+      "exampleId": "0fbbbdd3-4ac3-48ce-bddd-e03f760dd7ae-visual-ex",
+      "styleFamily": "Chinese ink-and-color editorial illustration",
+      "sentenceEn": "It is wise to secure the greenhouse before the storm.",
+      "sentenceZh": "暴风雨前加固温室是明智的。",
+      "scene": "In a Chinese courtyard garden, an experienced gardener calmly fastens bamboo supports around a greenhouse as dark storm clouds approach, while delicate plants remain protected inside.",
+      "altText": "A gardener wisely secures a greenhouse before an approaching storm.",
+      "riskTags": [
+        "abstract_meaning",
+        "weather",
+        "chinese_cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "0138b24b-02bb-41aa-ba54-6efc1dd95503",
+      "word": "actress",
+      "meaningZh": "女演员",
+      "exampleId": "0138b24b-02bb-41aa-ba54-6efc1dd95503-visual-ex",
+      "styleFamily": "richly textured stage-poster illustration",
+      "sentenceEn": "The actress rehearses her entrance before the evening performance.",
+      "sentenceZh": "这位女演员在晚场演出前排练登场。",
+      "scene": "A confident adult Chinese opera actress rehearses a graceful entrance beneath warm stage lights, wearing an ornate traditional costume and expressive makeup while musicians prepare in the background.",
+      "altText": "A Chinese opera actress rehearses a graceful stage entrance.",
+      "riskTags": [
+        "performer",
+        "ornate_costume",
+        "chinese_cultural_context",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "40c6c0ba-32a4-436c-937f-c34d883eab80",
+      "word": "summit",
+      "meaningZh": "峰会；顶峰",
+      "exampleId": "40c6c0ba-32a4-436c-937f-c34d883eab80-visual-ex",
+      "styleFamily": "cinematic painted adventure illustration",
+      "sentenceEn": "The climbers finally reach the snowy summit at sunrise.",
+      "sentenceZh": "登山者终于在日出时到达积雪覆盖的山顶。",
+      "scene": "Two adult climbers stand safely on the highest snowy point of a mountain at sunrise, embracing beside a small cairn with lower ridges and clouds stretching far beneath them.",
+      "altText": "Two climbers celebrate reaching a snowy mountain summit at sunrise.",
+      "riskTags": [
+        "mountain",
+        "heights",
+        "safe_climbing_gear"
+      ]
+    },
+    {
+      "vocabularyId": "0e63d8da-9fa3-4922-971b-613e25bf8838",
+      "word": "acid",
+      "meaningZh": "酸；酸性物质；尖刻的",
+      "exampleId": "0e63d8da-9fa3-4922-971b-613e25bf8838-visual-ex",
+      "styleFamily": "clean scientific editorial illustration",
+      "sentenceEn": "The scientist tests the acid in a safe laboratory.",
+      "sentenceZh": "科学家在安全的实验室中测试这种酸。",
+      "scene": "A laboratory scientist wearing goggles and gloves carefully uses a glass dropper to add lemon juice to a blue indicator solution that changes color, with tidy glassware on a protective tray.",
+      "altText": "A protected scientist safely tests an acidic liquid with an indicator.",
+      "riskTags": [
+        "chemical",
+        "laboratory_safety",
+        "ppe",
+        "no_hazard_labels"
+      ]
+    },
+    {
+      "vocabularyId": "b3ef33a4-8fb9-4cd3-a89e-29bf32ca9814",
+      "word": "odds",
+      "meaningZh": "几率",
+      "exampleId": "b3ef33a4-8fb9-4cd3-a89e-29bf32ca9814-visual-ex",
+      "styleFamily": "precise isometric educational illustration",
+      "sentenceEn": "The odds of drawing a blue ball are much higher.",
+      "sentenceZh": "抽到蓝球的几率要高得多。",
+      "scene": "A transparent glass bowl contains exactly nine blue balls and one red ball, while an adult hand reaches toward the opening, visually showing that blue is the far more likely outcome.",
+      "altText": "A bowl with nine blue balls and one red ball illustrates unequal odds.",
+      "riskTags": [
+        "probability",
+        "exact_quantity",
+        "no_numerals"
+      ]
+    },
+    {
+      "vocabularyId": "ab6de38a-9813-4f9c-add8-04e55fb31572",
+      "word": "gifted",
+      "meaningZh": "有天赋的",
+      "exampleId": "ab6de38a-9813-4f9c-add8-04e55fb31572-visual-ex",
+      "styleFamily": "warm watercolor-and-ink illustration",
+      "sentenceEn": "The gifted musician performs a difficult piece with ease.",
+      "sentenceZh": "这位有天赋的音乐家轻松演奏了一首高难度乐曲。",
+      "scene": "A poised young adult musician performs an intricate passage on a guzheng in a Chinese music studio, hands moving confidently as an older teacher listens with impressed delight.",
+      "altText": "A gifted guzheng musician impresses a teacher with a skilled performance.",
+      "riskTags": [
+        "talent",
+        "musical_instrument",
+        "chinese_cultural_context",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a77094ae-6b32-4d12-9e76-a2bbfe77598b",
+      "word": "frustration",
+      "meaningZh": "挫折",
+      "exampleId": "a77094ae-6b32-4d12-9e76-a2bbfe77598b-visual-ex",
+      "styleFamily": "expressive modern editorial illustration",
+      "sentenceEn": "He feels frustration when the pieces will not fit together.",
+      "sentenceZh": "当这些零件无法拼合时，他感到挫折。",
+      "scene": "An adult sits on the floor beside a half-assembled wooden chair, holding two mismatched pieces and frowning with visible frustration while organized tools and spare parts surround him.",
+      "altText": "A man feels frustrated while struggling to assemble a wooden chair.",
+      "riskTags": [
+        "emotion",
+        "assembly",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f664fe5b-3db9-43ce-8a23-7bfa5743906c",
+      "word": "medium",
+      "meaningZh": "媒体；媒介；中等的",
+      "exampleId": "f664fe5b-3db9-43ce-8a23-7bfa5743906c-visual-ex",
+      "styleFamily": "minimalist clay-texture illustration",
+      "sentenceEn": "She chooses the medium bowl between the small and large ones.",
+      "sentenceZh": "她选择了夹在小碗和大碗之间的中号碗。",
+      "scene": "On a pottery shop counter, three clearly graduated ceramic bowls sit in a row from small to medium to large, and a shopper's hand lifts the middle-sized bowl.",
+      "altText": "A shopper selects the medium bowl from three clearly different sizes.",
+      "riskTags": [
+        "comparison",
+        "three_objects",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "c14e0f38-5c10-47ce-a664-3dca4a14980f",
+      "word": "physically",
+      "meaningZh": "身体上",
+      "exampleId": "c14e0f38-5c10-47ce-a664-3dca4a14980f-visual-ex",
+      "styleFamily": "dynamic cut-paper editorial illustration",
+      "sentenceEn": "Moving the heavy sofa is physically demanding.",
+      "sentenceZh": "搬动这张沉重的沙发对体力要求很高。",
+      "scene": "Two adult movers coordinate to lift a heavy sofa up a short staircase, using safe posture and showing effort through bent knees, tense arms, and focused facial expressions.",
+      "altText": "Two movers exert themselves physically while lifting a heavy sofa.",
+      "riskTags": [
+        "physical_effort",
+        "lifting_safety",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1336b4ac-991c-4ce3-8a94-b2d9fc7613ca",
+      "word": "distinguish",
+      "meaningZh": "区别；辨别",
+      "exampleId": "1336b4ac-991c-4ce3-8a94-b2d9fc7613ca-visual-ex",
+      "styleFamily": "detailed natural-history illustration",
+      "sentenceEn": "She can distinguish the two butterflies by their wing patterns.",
+      "sentenceZh": "她能通过翅膀花纹辨别这两只蝴蝶。",
+      "scene": "A field naturalist gently observes two similar butterflies resting on nearby leaves, one with round wing spots and the other with striped markings, using a magnifying glass without touching them.",
+      "altText": "A naturalist distinguishes two butterflies by their different wing patterns.",
+      "riskTags": [
+        "comparison",
+        "insects",
+        "humane_observation"
+      ]
+    },
+    {
+      "vocabularyId": "a3aab252-bcf7-47cf-9c3e-6c4598f44de1",
+      "word": "shore",
+      "meaningZh": "海岸；岸",
+      "exampleId": "a3aab252-bcf7-47cf-9c3e-6c4598f44de1-visual-ex",
+      "styleFamily": "serene layered-paper landscape illustration",
+      "sentenceEn": "Small waves wash shells onto the rocky shore.",
+      "sentenceZh": "小浪把贝壳冲上多石的海岸。",
+      "scene": "Gentle turquoise waves curl onto a clearly defined rocky shore scattered with shells and seaweed, while the broad ocean extends toward a calm horizon under soft morning light.",
+      "altText": "Gentle waves wash shells onto a rocky seashore.",
+      "riskTags": [
+        "coastline",
+        "water",
+        "landscape"
+      ]
+    },
+    {
+      "vocabularyId": "bd8f6557-5bbd-41a2-a3cf-1cf25134ce21",
+      "word": "repeatedly",
+      "meaningZh": "反复地",
+      "exampleId": "bd8f6557-5bbd-41a2-a3cf-1cf25134ce21-visual-ex",
+      "styleFamily": "sequential-panel editorial illustration",
+      "sentenceEn": "The potter repeatedly reshapes the clay until the bowl is even.",
+      "sentenceZh": "陶工反复重塑黏土，直到碗形匀称。",
+      "scene": "Three flowing sequential moments show the same adult potter at one wheel centering, reshaping, and refining the same clay bowl again and again, with consistent clothing and workspace.",
+      "altText": "Sequential moments show a potter repeatedly reshaping one clay bowl.",
+      "riskTags": [
+        "repetition",
+        "sequence",
+        "same_person_consistency"
+      ]
+    },
+    {
+      "vocabularyId": "2d7459db-07ab-49b3-a5ad-c50c29c9497e",
+      "word": "lung",
+      "meaningZh": "肺；肺脏；空地",
+      "exampleId": "2d7459db-07ab-49b3-a5ad-c50c29c9497e-visual-ex",
+      "styleFamily": "non-graphic medical textbook illustration",
+      "sentenceEn": "Each lung expands as the person breathes in.",
+      "sentenceZh": "人在吸气时，每个肺都会扩张。",
+      "scene": "A respectful educational cutaway of an adult upper torso shows a correctly paired set of healthy lungs expanding during inhalation, with the trachea and diaphragm simplified and no surgical detail.",
+      "altText": "A non-graphic anatomical view shows both lungs expanding during inhalation.",
+      "riskTags": [
+        "anatomy",
+        "medical",
+        "non_graphic",
+        "paired_organs",
+        "no_labels"
+      ]
+    },
+    {
+      "vocabularyId": "5374791e-e75e-4d88-9b1a-e27f07495e91",
+      "word": "running",
+      "meaningZh": "跑步；运转",
+      "exampleId": "5374791e-e75e-4d88-9b1a-e27f07495e91-visual-ex",
+      "styleFamily": "energetic screen-print illustration",
+      "sentenceEn": "Running beside the river helps her start the day with energy.",
+      "sentenceZh": "沿河跑步帮助她精力充沛地开始一天。",
+      "scene": "An adult woman is running along a riverside path in a Chinese city park at dawn, passing tai chi practitioners, willow trees, and a traditional pavilion with a relaxed athletic stride.",
+      "altText": "A woman goes running through a Chinese riverside park at dawn.",
+      "riskTags": [
+        "exercise",
+        "public_park",
+        "chinese_cultural_context",
+        "natural_gait"
+      ]
+    },
+    {
+      "vocabularyId": "61844177-7715-4e92-aec2-85655986b582",
+      "word": "distinct",
+      "meaningZh": "清楚的；显著的；不同的",
+      "exampleId": "61844177-7715-4e92-aec2-85655986b582-visual-ex",
+      "styleFamily": "bold geometric editorial illustration",
+      "sentenceEn": "The orange umbrella is distinct from all the blue ones.",
+      "sentenceZh": "这把橙色雨伞与所有蓝色雨伞明显不同。",
+      "scene": "Viewed from above on a rainy plaza, one vivid orange open umbrella stands clearly apart in a neat crowd of otherwise identical blue umbrellas, creating an immediate visual contrast.",
+      "altText": "One orange umbrella appears distinct among many matching blue umbrellas.",
+      "riskTags": [
+        "comparison",
+        "crowd",
+        "overhead_view"
+      ]
+    },
+    {
+      "vocabularyId": "c5f53d46-199c-4d16-8933-fc1a54657651",
+      "word": "artistic",
+      "meaningZh": "艺术的",
+      "exampleId": "c5f53d46-199c-4d16-8933-fc1a54657651-visual-ex",
+      "styleFamily": "delicate paper-cut collage illustration",
+      "sentenceEn": "Her artistic design transforms red paper into an intricate pattern.",
+      "sentenceZh": "她富有艺术性的设计把红纸变成了精美图案。",
+      "scene": "An adult Chinese paper-cut artist works at a sunlit craft table, unfolding an intricate symmetrical red floral design while scissors, blank paper, and finished decorative motifs lie nearby.",
+      "altText": "A Chinese paper-cut artist unfolds an intricate artistic design.",
+      "riskTags": [
+        "craft",
+        "scissors",
+        "chinese_cultural_context",
+        "no_symbols_or_text"
+      ]
+    },
+    {
+      "vocabularyId": "508a6a6d-7789-42bf-98da-d22e8cff2e05",
+      "word": "discourse",
+      "meaningZh": "话语；论述",
+      "exampleId": "508a6a6d-7789-42bf-98da-d22e8cff2e05-visual-ex",
+      "styleFamily": "sophisticated magazine editorial illustration",
+      "sentenceEn": "The seminar encourages thoughtful discourse among the participants.",
+      "sentenceZh": "研讨会鼓励参与者展开深思熟虑的讨论。",
+      "scene": "Four diverse adults sit around a circular seminar table, listening and responding thoughtfully as abstract interlocking shapes above them suggest connected ideas without any written words.",
+      "altText": "Seminar participants engage in thoughtful, connected discourse.",
+      "riskTags": [
+        "abstract_meaning",
+        "group_discussion",
+        "no_speech_text",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "edde7f24-026e-4c7d-b091-507c9dc6f6be",
+      "word": "basket",
+      "meaningZh": "篮；篮子；装入篮",
+      "exampleId": "edde7f24-026e-4c7d-b091-507c9dc6f6be-visual-ex",
+      "styleFamily": "warm linocut-and-watercolor illustration",
+      "sentenceEn": "The craftswoman finishes a sturdy bamboo basket for the market.",
+      "sentenceZh": "女工匠为集市编好了一个结实的竹篮。",
+      "scene": "In a rural Chinese courtyard, an adult craftswoman weaves pale bamboo strips into a sturdy handled basket, with finished baskets and fresh lychees arranged beside her in warm afternoon light.",
+      "altText": "A Chinese craftswoman weaves a sturdy bamboo basket by hand.",
+      "riskTags": [
+        "woven_object",
+        "craft",
+        "chinese_cultural_context",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b8e21814-8ac5-42a6-b36a-f692879515a9",
+      "word": "ah",
+      "meaningZh": "啊",
+      "exampleId": "b8e21814-8ac5-42a6-b36a-f692879515a9-visual-ex",
+      "styleFamily": "playful conceptual editorial illustration",
+      "sentenceEn": "Ah, now he understands where the final piece belongs.",
+      "sentenceZh": "啊，他现在明白最后一块该放在哪里了。",
+      "scene": "An adult puzzle maker suddenly brightens with a clear realization as he holds the final piece above its matching gap, with raised eyebrows, a delighted smile, and a subtle burst of light behind him.",
+      "altText": "A man has an ah moment when he finds where the last puzzle piece fits.",
+      "riskTags": [
+        "interjection",
+        "realization",
+        "emotion",
+        "no_text"
+      ]
+    }
+  ]
+}

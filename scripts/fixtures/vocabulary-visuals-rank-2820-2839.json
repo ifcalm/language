@@ -1,0 +1,374 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2820-2839",
+  "batchId": "auto-rank-2820-2839-20260911",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "battery",
+      "arrival",
+      "inflation",
+      "cope",
+      "depict",
+      "instructor"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "0d97de2e-9262-4a04-bed1-ca00b16d7e6f",
+      "word": "extension",
+      "meaningZh": "延长；扩充；范围；扩展名",
+      "exampleId": "0d97de2e-9262-4a04-bed1-ca00b16d7e6f-visual-ex",
+      "styleFamily": "warm workshop cut-paper illustration",
+      "sentenceEn": "The carpenter slides out an extension to make the table longer.",
+      "sentenceZh": "木匠拉出延伸板，使桌子变得更长。",
+      "scene": "An adult carpenter pulls a hidden wooden extension leaf from the center of a dining table, clearly showing the tabletop becoming longer while the original compact position remains suggested by the sliding rails.",
+      "altText": "A carpenter adding an extension to a wooden table.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "mechanism",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "cc94cdf8-2a58-4a84-aed5-292183ba03ff",
+      "word": "shrug",
+      "meaningZh": "耸肩",
+      "exampleId": "cc94cdf8-2a58-4a84-aed5-292183ba03ff-visual-ex",
+      "styleFamily": "expressive editorial watercolor illustration",
+      "sentenceEn": "He gives a shrug because he does not know the answer.",
+      "sentenceZh": "他因为不知道答案而耸了耸肩。",
+      "scene": "An adult man gives an unmistakable shrug with both shoulders raised, elbows bent, open palms turned upward, lifted eyebrows, and a puzzled expression while a friend waits for his answer.",
+      "altText": "A puzzled man giving a shrug with raised shoulders.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "body_posture",
+        "gesture"
+      ]
+    },
+    {
+      "vocabularyId": "8bd2f4ad-06de-4bb3-a598-4c23a0bd828d",
+      "word": "battery",
+      "meaningZh": "电池；殴打；蓄电池",
+      "exampleId": "8bd2f4ad-06de-4bb3-a598-4c23a0bd828d-visual-ex",
+      "styleFamily": "Chinese urban technical gouache illustration",
+      "sentenceEn": "She locks a charged battery into her electric bicycle.",
+      "sentenceZh": "她把充好电的电池锁进电动自行车。",
+      "scene": "On a Chinese residential street, an adult commuter slides a rectangular rechargeable battery securely into the frame of an electric bicycle while another identical battery charges safely indoors in the background.",
+      "altText": "A commuter installing a battery in an electric bicycle.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "technical",
+        "no_logos"
+      ]
+    },
+    {
+      "vocabularyId": "eb4b26c9-58c2-4d50-8369-4a66ba9f995e",
+      "word": "arrival",
+      "meaningZh": "到达",
+      "exampleId": "eb4b26c9-58c2-4d50-8369-4a66ba9f995e-visual-ex",
+      "styleFamily": "Chinese travel-poster illustration",
+      "sentenceEn": "The family cheers at the arrival of the high-speed train.",
+      "sentenceZh": "高铁到达时，这家人高兴地欢呼。",
+      "scene": "A sleek unbranded Chinese high-speed train glides into a bright station platform as an awaiting adult family waves happily and arriving passengers prepare to step down, making the moment of arrival unmistakable.",
+      "altText": "A family greeting the arrival of a high-speed train.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "vehicle_anatomy",
+        "station_safety"
+      ]
+    },
+    {
+      "vocabularyId": "0106f36a-af15-4a83-b3f7-e85d3c6a36a8",
+      "word": "legitimate",
+      "meaningZh": "合法的；正当的；婚生的",
+      "exampleId": "0106f36a-af15-4a83-b3f7-e85d3c6a36a8-visual-ex",
+      "styleFamily": "clean civic editorial illustration",
+      "sentenceEn": "The scanner confirms that her ticket is legitimate and opens the gate.",
+      "sentenceZh": "扫描器确认她的车票合法有效，并打开闸门。",
+      "scene": "At a secure venue entrance, an adult visitor presents a plain ticket to a scanner; a clear green approval light appears and the gate opens while a counterfeit ticket held nearby triggers a red light, with no readable text.",
+      "altText": "A scanner confirming that a visitor's ticket is legitimate.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning",
+        "no_readable_text",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "acedd457-3aab-45b8-94ac-41b280ead23d",
+      "word": "orientation",
+      "meaningZh": "方向；定位",
+      "exampleId": "acedd457-3aab-45b8-94ac-41b280ead23d-visual-ex",
+      "styleFamily": "precise outdoor map-collage illustration",
+      "sentenceEn": "She rotates the map until its orientation matches the landscape.",
+      "sentenceZh": "她转动地图，直到地图方向与周围景观一致。",
+      "scene": "At a hilltop viewpoint, an adult hiker rotates a simple illustrated map so its river bend, mountain, bridge, and tower align with the same landmarks in the real landscape, clearly demonstrating orientation without labels.",
+      "altText": "A hiker matching a map's orientation to the landscape.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "spatial_relationship",
+        "map",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "cdd1ec84-60f6-411d-b829-dc8a6d570094",
+      "word": "inflation",
+      "meaningZh": "通货膨胀",
+      "exampleId": "cdd1ec84-60f6-411d-b829-dc8a6d570094-visual-ex",
+      "styleFamily": "Chinese market editorial screen-print illustration",
+      "sentenceEn": "Inflation means the same basket of food now requires more coins.",
+      "sentenceZh": "通货膨胀意味着同一篮食物现在需要更多硬币。",
+      "scene": "A split-time view of the same Chinese produce stall shows an identical basket of rice, vegetables, and fruit bought with a small coin stack earlier but requiring a much taller coin stack later, visually explaining inflation without prices or text.",
+      "altText": "The same market basket costing more coins because of inflation.",
+      "riskTags": [
+        "cultural_scene",
+        "abstract_meaning",
+        "comparison",
+        "exact_objects",
+        "no_readable_text"
+      ]
+    },
+    {
+      "vocabularyId": "92e4e872-c5e3-4492-b0c2-1ac705ffb5b7",
+      "word": "cope",
+      "meaningZh": "应对；处理",
+      "exampleId": "92e4e872-c5e3-4492-b0c2-1ac705ffb5b7-visual-ex",
+      "styleFamily": "resilient Chinese community watercolor illustration",
+      "sentenceEn": "Neighbors work together to cope with the rising floodwater.",
+      "sentenceZh": "邻居们齐心协力应对不断上涨的洪水。",
+      "scene": "In a Chinese riverside neighborhood during a nonviolent flood, diverse adult neighbors cope by stacking sandbags, operating a water pump, moving supplies onto high shelves, and calmly helping an older resident reach dry ground.",
+      "altText": "Neighbors working together to cope with rising floodwater.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "flood",
+        "community_action"
+      ]
+    },
+    {
+      "vocabularyId": "71558d45-c118-4ec1-a1dc-1e97a857a941",
+      "word": "flame",
+      "meaningZh": "火焰；激情",
+      "exampleId": "71558d45-c118-4ec1-a1dc-1e97a857a941-visual-ex",
+      "styleFamily": "dramatic macro pastel illustration",
+      "sentenceEn": "A small flame rises from the newly lit candle.",
+      "sentenceZh": "一小簇火焰从刚点燃的蜡烛上升起。",
+      "scene": "A close view shows one newly lit candle with a single bright teardrop-shaped flame rising from the blackened wick, casting a warm glow against a dark blue background while a spent match rests safely aside.",
+      "altText": "A bright flame rising from a newly lit candle.",
+      "riskTags": [
+        "fire",
+        "close_up",
+        "single_object",
+        "lighting"
+      ]
+    },
+    {
+      "vocabularyId": "a9604fe7-00a4-4214-a63b-0eecd9761e5e",
+      "word": "cluster",
+      "meaningZh": "集群（计算机）；簇；群",
+      "exampleId": "a9604fe7-00a4-4214-a63b-0eecd9761e5e-visual-ex",
+      "styleFamily": "detailed botanical colored-pencil illustration",
+      "sentenceEn": "A cluster of ripe purple grapes hangs from the vine.",
+      "sentenceZh": "一簇成熟的紫葡萄挂在藤蔓上。",
+      "scene": "One dense cluster of ripe purple grapes hangs naturally from a twisting green vine, with many individual grapes packed closely around a central stem and broad leaves framing the group.",
+      "altText": "A dense cluster of purple grapes hanging from a vine.",
+      "riskTags": [
+        "botanical",
+        "many_objects",
+        "close_up",
+        "grouping"
+      ]
+    },
+    {
+      "vocabularyId": "f43fe352-5a31-466c-8bba-ea556a4207ac",
+      "word": "wound",
+      "meaningZh": "创伤；伤口；伤疤；伤害；痛苦",
+      "exampleId": "f43fe352-5a31-466c-8bba-ea556a4207ac-visual-ex",
+      "styleFamily": "gentle first-aid gouache illustration",
+      "sentenceEn": "The nurse cleans the small wound before applying a bandage.",
+      "sentenceZh": "护士在贴绷带前清洁这个小伤口。",
+      "scene": "An adult nurse gently cleans a small superficial scrape on an adult cyclist's knee with sterile gauze before applying a bandage; the patient remains calm and the wound is discreet, clean, and non-graphic.",
+      "altText": "A nurse cleaning a small wound on a cyclist's knee.",
+      "riskTags": [
+        "minor_injury",
+        "non_graphic",
+        "people_face",
+        "hands",
+        "medical"
+      ]
+    },
+    {
+      "vocabularyId": "6c371685-52b3-4d63-a914-56355c0ec10a",
+      "word": "dependent",
+      "meaningZh": "依赖的",
+      "exampleId": "6c371685-52b3-4d63-a914-56355c0ec10a-visual-ex",
+      "styleFamily": "symbolic botanical linocut illustration",
+      "sentenceEn": "The young climbing vine is dependent on the wooden trellis for support.",
+      "sentenceZh": "这株幼小的藤蔓依靠木架支撑。",
+      "scene": "A delicate young climbing vine winds tightly around a sturdy wooden trellis, remaining upright only where it is supported while an unsupported tendril droops toward the ground, making its dependent relationship clear.",
+      "altText": "A climbing vine dependent on a trellis for support.",
+      "riskTags": [
+        "botanical",
+        "abstract_meaning",
+        "cause_effect",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "e5f4dc03-f3c2-44bc-b64b-62f18e5ee220",
+      "word": "shower",
+      "meaningZh": "淋浴；阵雨；大量给予",
+      "exampleId": "e5f4dc03-f3c2-44bc-b64b-62f18e5ee220-visual-ex",
+      "styleFamily": "atmospheric landscape watercolor illustration",
+      "sentenceEn": "A brief shower darkens one strip of the sunny valley.",
+      "sentenceZh": "一阵短暂的阵雨使阳光下山谷的一小片区域变暗。",
+      "scene": "Across a mostly sunlit green valley, one narrow gray rain cloud releases a clearly visible shower over a small strip of fields while nearby hills remain bright and dry beneath blue sky.",
+      "altText": "A brief shower falling over one part of a sunny valley.",
+      "riskTags": [
+        "weather",
+        "landscape",
+        "spatial_relationship",
+        "safe_sense"
+      ]
+    },
+    {
+      "vocabularyId": "e0f7aaf6-d6d6-412d-ab06-feeb3b047b9f",
+      "word": "institutional",
+      "meaningZh": "制度的",
+      "exampleId": "e0f7aaf6-d6d6-412d-ab06-feeb3b047b9f-visual-ex",
+      "styleFamily": "structured public-service isometric illustration",
+      "sentenceEn": "Institutional support connects the university's library, clinic, and advising center.",
+      "sentenceZh": "制度性支持把大学的图书馆、诊所和咨询中心连接起来。",
+      "scene": "A unified university campus system visually connects a library, health clinic, and advising center through matching geometric emblems, coordinated staff badges, accessible paths, and shared service counters, conveying institutional support without words.",
+      "altText": "Connected university services providing institutional support.",
+      "riskTags": [
+        "abstract_meaning",
+        "many_objects",
+        "architecture",
+        "no_readable_text",
+        "accessibility"
+      ]
+    },
+    {
+      "vocabularyId": "61e37865-6945-4f2d-8bdc-b36d9584ac48",
+      "word": "depict",
+      "meaningZh": "描绘；描述；刻画",
+      "exampleId": "61e37865-6945-4f2d-8bdc-b36d9584ac48-visual-ex",
+      "styleFamily": "Chinese ink-painting workshop illustration",
+      "sentenceEn": "The artist uses ink to depict misty mountains and a winding river.",
+      "sentenceZh": "艺术家用水墨描绘云雾缭绕的群山和蜿蜒的河流。",
+      "scene": "In a quiet Chinese studio, an adult artist uses an ink brush to depict layered misty mountains and a winding river on a wide blank-edged scroll, with the real mountain view visible beyond the open window and no calligraphy.",
+      "altText": "An artist using ink to depict mountains and a river.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "art_within_art",
+        "no_text"
+      ]
+    },
+    {
+      "vocabularyId": "0658f528-2c7d-406b-9188-528543db3a3d",
+      "word": "operating",
+      "meaningZh": "操作的",
+      "exampleId": "0658f528-2c7d-406b-9188-528543db3a3d-visual-ex",
+      "styleFamily": "precise industrial safety illustration",
+      "sentenceEn": "The technician checks the machine while it is operating.",
+      "sentenceZh": "机器运转时，技术员对它进行检查。",
+      "scene": "An adult factory technician safely observes a running automated packaging machine from behind a transparent guard, with rollers moving, status lights glowing, and hands kept away from all operating parts.",
+      "altText": "A technician checking a machine while it is operating.",
+      "riskTags": [
+        "technical",
+        "people_face",
+        "industrial_safety",
+        "machine_anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "54176862-8bd9-42a9-9f29-c29878199b33",
+      "word": "flesh",
+      "meaningZh": "肉；肉体；果肉；血肉",
+      "exampleId": "54176862-8bd9-42a9-9f29-c29878199b33-visual-ex",
+      "styleFamily": "fresh botanical still-life illustration",
+      "sentenceEn": "The ripe peach has soft golden flesh beneath its skin.",
+      "sentenceZh": "成熟的桃子表皮下有柔软的金黄色果肉。",
+      "scene": "A ripe peach is cut neatly in half on a ceramic plate, revealing juicy golden flesh surrounding the central stone, while one whole fuzzy peach and green leaves clarify the fruit context.",
+      "altText": "A cut peach revealing soft golden flesh beneath its skin.",
+      "riskTags": [
+        "safe_sense",
+        "food",
+        "close_up",
+        "no_gore"
+      ]
+    },
+    {
+      "vocabularyId": "fa2bf8b4-1e46-4dd7-a240-d490b90fa9f2",
+      "word": "garage",
+      "meaningZh": "车库；汽车修理厂；机库",
+      "exampleId": "fa2bf8b4-1e46-4dd7-a240-d490b90fa9f2-visual-ex",
+      "styleFamily": "cozy architectural cutaway illustration",
+      "sentenceEn": "They park the family car inside the garage every night.",
+      "sentenceZh": "他们每天晚上把家用汽车停进车库。",
+      "scene": "A cutaway view of a tidy home garage shows an unbranded family car parked fully inside beside a workbench, bicycles, storage shelves, and a wide roll-up door connected to the driveway.",
+      "altText": "A family car parked inside a tidy home garage.",
+      "riskTags": [
+        "architecture",
+        "vehicle_anatomy",
+        "cutaway",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "89ae7be4-33e7-4755-9ea5-4f7884d959ea",
+      "word": "operator",
+      "meaningZh": "操作员",
+      "exampleId": "89ae7be4-33e7-4755-9ea5-4f7884d959ea-visual-ex",
+      "styleFamily": "dynamic construction poster illustration",
+      "sentenceEn": "The crane operator carefully lifts the steel beam into place.",
+      "sentenceZh": "起重机操作员小心地把钢梁吊装到位。",
+      "scene": "Inside a clearly enclosed crane cab, an adult operator grips two control levers and watches through broad windows as the crane safely lifts one steel beam toward waiting construction workers below.",
+      "altText": "A crane operator lifting a steel beam into place.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "technical",
+        "construction_safety",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "8a9142aa-5242-4996-b673-f07d6d2279f6",
+      "word": "instructor",
+      "meaningZh": "教练；讲师",
+      "exampleId": "8a9142aa-5242-4996-b673-f07d6d2279f6-visual-ex",
+      "styleFamily": "Chinese park storybook gouache illustration",
+      "sentenceEn": "The tai chi instructor demonstrates a balanced movement to the class.",
+      "sentenceZh": "太极拳教练向学员示范一个平衡动作。",
+      "scene": "At dawn in a leafy Chinese park, an experienced adult tai chi instructor demonstrates a precise balanced stance at the front while a diverse group of adult learners carefully mirrors the movement.",
+      "altText": "A tai chi instructor demonstrating a movement in a park.",
+      "riskTags": [
+        "cultural_scene",
+        "people_face",
+        "hands",
+        "body_posture",
+        "group_scene"
+      ]
+    }
+  ]
+}

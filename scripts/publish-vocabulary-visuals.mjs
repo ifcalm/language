@@ -24,6 +24,12 @@ const args = new Set(rawArgs)
 const publish = args.has('--publish')
 const verifyRemote = publish || args.has('--verify-remote')
 const root = process.cwd()
+const localEnvPath = resolve(root, '.env.local')
+
+if (existsSync(localEnvPath)) {
+  process.loadEnvFile(localEnvPath)
+}
+
 const require = createRequire(import.meta.url)
 const wranglerCliPath = require.resolve('wrangler/bin/wrangler.js')
 const wranglerTimeoutMs = Number(

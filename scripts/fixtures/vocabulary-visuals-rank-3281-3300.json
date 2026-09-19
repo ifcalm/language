@@ -1,0 +1,323 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-3281-3300",
+  "batchId": "auto-rank-3281-3300-20260918",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "canvas",
+      "forty",
+      "lobby",
+      "beam",
+      "contractor",
+      "doctrine"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "8175eb41-46a4-4c85-9ff6-196b5cbd975a",
+      "word": "respectively",
+      "meaningZh": "分别地",
+      "exampleId": "8175eb41-46a4-4c85-9ff6-196b5cbd975a-visual-ex",
+      "styleFamily": "editorial cut-paper illustration",
+      "sentenceEn": "Maya and Leo held a red cup and a blue bowl, respectively.",
+      "sentenceZh": "玛雅和利奥分别拿着红色杯子和蓝色碗。",
+      "scene": "Two adult friends side by side at a pottery shelf: a curly-haired woman on the left holds only a red cup, a short-haired man on the right holds only a blue bowl. Match the paired order clearly without arrows or symbols; complete expressive faces and natural hands.",
+      "altText": "两位朋友分别拿着红色杯子和蓝色碗。",
+      "riskTags": [
+        "exact_quantity",
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "aa0faec3-baec-4dae-b828-22782c832d0d",
+      "word": "uncertainty",
+      "meaningZh": "不确定性",
+      "exampleId": "aa0faec3-baec-4dae-b828-22782c832d0d-visual-ex",
+      "styleFamily": "misty watercolor narrative",
+      "sentenceEn": "Uncertainty made the hiker pause at the foggy fork.",
+      "sentenceZh": "不确定感让徒步者在雾中的岔路口停了下来。",
+      "scene": "A middle-aged woman hiker in a mustard raincoat pauses at a forest path splitting into two mist-covered routes. Her thoughtful uncertain face remains clearly visible; she holds an unmarked folded map and studies the paths. No signposts or writing.",
+      "altText": "徒步者在雾中的岔路口犹豫。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "a1d380b3-f11e-440b-a02d-a2123435bf3a",
+      "word": "chaos",
+      "meaningZh": "大混乱；混沌；浑沌",
+      "exampleId": "a1d380b3-f11e-440b-a02d-a2123435bf3a-visual-ex",
+      "styleFamily": "expressive hand-drawn animated illustration",
+      "sentenceEn": "The playful kittens created chaos in the sewing room.",
+      "sentenceZh": "顽皮的小猫把缝纫室弄得一团乱。",
+      "scene": "Playful kittens have tangled colorful yarn, tipped a basket and scattered soft fabric in a cozy sewing room. One elderly tailor with complete facial features calmly starts gathering the yarn. Funny disorder but no dangerous needles or injuries.",
+      "altText": "小猫弄乱纱线和布料，裁缝开始收拾。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e2fc2b48-a4cc-4e13-a0ea-f961eb67ba84",
+      "word": "mechanical",
+      "meaningZh": "机械的",
+      "exampleId": "e2fc2b48-a4cc-4e13-a0ea-f961eb67ba84-visual-ex",
+      "styleFamily": "matte sculptural 3D illustration",
+      "sentenceEn": "A mechanical arm lifted the heavy crate.",
+      "sentenceZh": "机械臂抬起了沉重的箱子。",
+      "scene": "A clearly jointed industrial mechanical arm with visible hinges and gripper lifts a plain wooden crate just above a workshop platform. Focus on articulated metal parts and weight-bearing grip, no people, buttons without labels, matte designed illustration not a photo.",
+      "altText": "机械臂用夹爪抬起木箱。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "28ba29e6-8972-402a-b232-85decb3bf76a",
+      "word": "canvas",
+      "meaningZh": "帆布；画布；油画",
+      "exampleId": "28ba29e6-8972-402a-b232-85decb3bf76a-visual-ex",
+      "styleFamily": "painterly gouache illustration",
+      "sentenceEn": "The artist brushed blue paint onto the canvas.",
+      "sentenceZh": "画家把蓝色颜料刷在画布上。",
+      "scene": "An adult Chinese woman artist in a contemporary studio overlooking a Jiangnan canal paints a blue river on stretched textured canvas on an easel. Clearly show the canvas weave and brush touching its surface, natural face and hand, scenery with white walls and tiled roofs, no calligraphy.",
+      "altText": "画家在画布上描绘蓝色河流。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e77de49d-d10e-4acb-bffe-e35c8f828506",
+      "word": "forty",
+      "meaningZh": "四十",
+      "exampleId": "e77de49d-d10e-4acb-bffe-e35c8f828506-visual-ex",
+      "styleFamily": "precise botanical paper-cut illustration",
+      "sentenceEn": "The vendor arranged forty oranges in four neat rows.",
+      "sentenceZh": "摊主把四十个橙子排成整齐的四行。",
+      "scene": "Strict overhead still life at a Chinese produce market: exactly forty whole oranges arranged in four straight horizontal rows with exactly ten separate oranges per row on a dark rectangular cloth. All oranges fully visible, equal spacing, no overlap, no extra fruit, baskets empty at edge, no people or numerals.",
+      "altText": "四行橙子，每行十个，总共四十个。",
+      "riskTags": [
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "8318d196-bd68-47cb-a893-fbeb4e4ae162",
+      "word": "lobby",
+      "meaningZh": "大厅；休息室；游说议员者",
+      "exampleId": "8318d196-bd68-47cb-a893-fbeb4e4ae162-visual-ex",
+      "styleFamily": "architectural watercolor and ink",
+      "sentenceEn": "The travelers waited in the hotel lobby.",
+      "sentenceZh": "旅客们在酒店大厅等候。",
+      "scene": "Wide welcoming lobby of a contemporary Chinese courtyard hotel with reception counter, comfortable seats, luggage and a few adult travelers waiting calmly. A central view through wooden lattice openings reveals an inner courtyard, red lanterns without writing, all readable faces complete, blank counter walls.",
+      "altText": "旅客在带有庭院景观的酒店大厅等候。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0513d175-9892-4930-b1cc-155c954a47f5",
+      "word": "profound",
+      "meaningZh": "深刻的；深远的；深奥的；渊博的",
+      "exampleId": "0513d175-9892-4930-b1cc-155c954a47f5-visual-ex",
+      "styleFamily": "two-panel risograph landscape narrative",
+      "sentenceEn": "Planting trees brought a profound change to the dry village.",
+      "sentenceZh": "植树给干旱的村庄带来了深远的变化。",
+      "scene": "Exactly two connected landscape panels show the same small village and same hillside before and years after restoration: left dry eroded slopes and bare soil, right mature green trees stabilizing the hillside with revived stream and thriving fields. Match house shapes and geography across panels, no arrows, dates or labels, no people.",
+      "altText": "同一村庄从干旱荒坡变成绿树成荫的景象。",
+      "riskTags": [
+        "before_after",
+        "abstract_meaning",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "e7004ad5-779e-47a0-ade2-a892555e90c8",
+      "word": "format",
+      "meaningZh": "开本；版式；形式；格式；格式化",
+      "exampleId": "e7004ad5-779e-47a0-ade2-a892555e90c8-visual-ex",
+      "styleFamily": "editorial geometric collage",
+      "sentenceEn": "The photographer chose a square format for the portrait.",
+      "sentenceZh": "摄影师为肖像选择了方形版式。",
+      "scene": "Close overhead view of a single clearly square printed illustrated portrait lying beside a blank wider rectangular sheet and simple trimming tools. Portrait shows complete stylized face of an older woman, equal width and height obvious, no written interface or measurement marks.",
+      "altText": "方形肖像照片放在长方形纸张旁。",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7a2abdcb-416a-4898-8083-2b5911442ebb",
+      "word": "trait",
+      "meaningZh": "特征；特点",
+      "exampleId": "7a2abdcb-416a-4898-8083-2b5911442ebb-visual-ex",
+      "styleFamily": "gentle graphic-novel illustration",
+      "sentenceEn": "Patience was the gardener's most noticeable trait.",
+      "sentenceZh": "耐心是这位园丁最明显的特点。",
+      "scene": "A patient elderly Black gardener kneels beside a tiny delicate seedling, watering it slowly with a small spout while a child watches attentively. Garden beds and younger sprouts around, gentle steady expression and complete faces, focus on careful unhurried action not symbolic hearts or medals.",
+      "altText": "园丁耐心照料幼苗，孩子在旁观察。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "8197bc58-f706-4608-a58e-fe4ed3bac509",
+      "word": "currency",
+      "meaningZh": "货币；通货；流通；通用",
+      "exampleId": "8197bc58-f706-4608-a58e-fe4ed3bac509-visual-ex",
+      "styleFamily": "textile mixed-media still life",
+      "sentenceEn": "The traveler exchanged coins for local currency.",
+      "sentenceZh": "旅客把硬币兑换成当地货币。",
+      "scene": "Close view of two adult hands at a simple exchange counter: one hand presents plain silver coins, another returns a small stack of differently colored fictional banknotes with geometric patterns only. Blank notes with no letters, numerals, flags, portraits or actual currency designs; illustrate exchange clearly.",
+      "altText": "柜台上硬币被换成不同颜色的纸币。",
+      "riskTags": [
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c55218ae-1985-44ff-a1ba-c85c66a9ad7a",
+      "word": "turkey",
+      "meaningZh": "火鸡；土耳其",
+      "exampleId": "c55218ae-1985-44ff-a1ba-c85c66a9ad7a-visual-ex",
+      "styleFamily": "naturalist gouache illustration",
+      "sentenceEn": "A turkey spread its tail in the meadow.",
+      "sentenceZh": "一只火鸡在草地上展开尾羽。",
+      "scene": "A single unmistakable wild turkey stands in a sunlit meadow, fan-shaped barred tail fully spread, small bare reddish head and wattle, bronze dark feathers. Mature naturalist illustration with plants and soft woodland background, no people or text.",
+      "altText": "火鸡在草地上展开扇形尾羽。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "dffa52e0-3b35-4c3a-a1f6-4050ff388a56",
+      "word": "reserve",
+      "meaningZh": "预订；储备；保留",
+      "exampleId": "dffa52e0-3b35-4c3a-a1f6-4050ff388a56-visual-ex",
+      "styleFamily": "warm matte 3D story illustration",
+      "sentenceEn": "We kept a reserve of drinking water for the storm.",
+      "sentenceZh": "我们为暴风雨储备了饮用水。",
+      "scene": "A shelf in a tidy home holds sealed clear drinking-water jugs set aside while storm rain is visible outside a window. An adult couple calmly places another jug on the shelf, no panic or hoarding, all faces complete, containers entirely unlabelled.",
+      "altText": "家人在暴风雨前把饮用水存放在架子上。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e59ce111-56a0-4c5c-aec5-096fe32267ba",
+      "word": "beam",
+      "meaningZh": "横梁；杆；光线；容光焕发",
+      "exampleId": "e59ce111-56a0-4c5c-aec5-096fe32267ba-visual-ex",
+      "styleFamily": "ink-wash architectural illustration",
+      "sentenceEn": "A strong wooden beam supported the old roof.",
+      "sentenceZh": "一根结实的木梁支撑着旧屋顶。",
+      "scene": "Interior upward view of a traditional Chinese timber house showing one thick horizontal wooden beam bearing rafters and aged clay roof tiles. Clearly expose the load-bearing connection and wood grain, warm sunlight, no people, plaques or writing.",
+      "altText": "粗大的横向木梁支撑着瓦屋顶。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c3c2d953-ab79-495c-b35a-0ad66914d7eb",
+      "word": "astronomer",
+      "meaningZh": "天文学家",
+      "exampleId": "c3c2d953-ab79-495c-b35a-0ad66914d7eb-visual-ex",
+      "styleFamily": "screen-print night narrative",
+      "sentenceEn": "The astronomer studied the stars through a telescope.",
+      "sentenceZh": "天文学家通过望远镜研究星星。",
+      "scene": "An adult woman astronomer with short silver hair observes through a large telescope at a quiet hilltop observatory under a rich starry sky. Her profile has natural eye, nose and mouth, telescope aligned upward, matte midnight palette, no constellation labels or instrument text.",
+      "altText": "天文学家在夜间用望远镜观测星空。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b8ae1717-e97b-4e56-a78b-e1658940263f",
+      "word": "corruption",
+      "meaningZh": "腐败",
+      "exampleId": "b8ae1717-e97b-4e56-a78b-e1658940263f-visual-ex",
+      "styleFamily": "restrained graphic-novel illustration",
+      "sentenceEn": "The clerk refused the envelope to prevent corruption.",
+      "sentenceZh": "职员拒绝收下信封，以防止腐败。",
+      "scene": "A fictional anonymous office scene: a visitor discreetly offers an open envelope with plain unmarked banknotes while an adult female clerk firmly holds up an open palm in refusal and keeps the paperwork aside. Complete faces show calm integrity, no real politicians, insignia, flags, logos or writing.",
+      "altText": "职员以手势拒绝装有钱的信封。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "5185a3d0-b2c7-4e83-b467-dc30e176799d",
+      "word": "contractor",
+      "meaningZh": "承包商",
+      "exampleId": "5185a3d0-b2c7-4e83-b467-dc30e176799d-visual-ex",
+      "styleFamily": "architectural cut-paper narrative",
+      "sentenceEn": "The contractor checked the courtyard renovation.",
+      "sentenceZh": "承包商检查了庭院改造工程。",
+      "scene": "A contemporary Chinese courtyard renovation site: a woman contractor wearing a plain hard hat checks a newly installed doorway with a measuring tool while two workers safely align timber. Clear hands and complete natural faces, Chinese lattice woodwork, stable scaffolding, blank plans without writing.",
+      "altText": "承包商在庭院改造现场检查门框。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "da481289-a22f-408f-9a2f-3e2a3d5e6626",
+      "word": "apologize",
+      "meaningZh": "道歉",
+      "exampleId": "da481289-a22f-408f-9a2f-3e2a3d5e6626-visual-ex",
+      "styleFamily": "soft hand-drawn animated narrative",
+      "sentenceEn": "He apologized after spilling tea on his friend's sketch.",
+      "sentenceZh": "他把茶洒在朋友的素描上后道了歉。",
+      "scene": "Two adult friends at a cafe table: one man looks sincerely apologetic, offers a clean cloth and replacement blank sketch paper after a cup spilled tea onto a simple nontext drawing; the friend responds calmly. Complete readable faces, natural hands, focus on repairing mistake, no words or speech bubbles.",
+      "altText": "男子弄湿朋友的素描后递上布和新纸道歉。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "0e030470-ba70-4473-9c50-90245d40d3b0",
+      "word": "doctrine",
+      "meaningZh": "教义；学说",
+      "exampleId": "0e030470-ba70-4473-9c50-90245d40d3b0-visual-ex",
+      "styleFamily": "ink and paper collage illustration",
+      "sentenceEn": "The students discussed the doctrine of nonviolence.",
+      "sentenceZh": "学生们讨论了非暴力学说。",
+      "scene": "A small diverse adult study circle in a contemporary Chinese garden pavilion discusses peaceful conflict resolution. A teacher opens a blank book with only a pictorial scene of people calmly resolving a disagreement; attentive complete faces, bamboo and moon gate background. No historical attribution, religious symbols or readable writing.",
+      "altText": "学生在园亭中讨论和平解决冲突的学说。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1a7921bf-64c0-4a3d-be66-978c0dd2c96b",
+      "word": "genuine",
+      "meaningZh": "真正的；真实的；诚恳的；真性的",
+      "exampleId": "1a7921bf-64c0-4a3d-be66-978c0dd2c96b-visual-ex",
+      "styleFamily": "warm watercolor character illustration",
+      "sentenceEn": "Her genuine smile reassured the nervous visitor.",
+      "sentenceZh": "她真诚的微笑让紧张的访客安心。",
+      "scene": "A warm elderly receptionist greets a nervous young adult visitor at a quiet community center with a relaxed genuine smile and open welcoming gesture. Visitor starts to relax, complete expressive facial features, plain walls, no badges, text or symbols.",
+      "altText": "接待者真诚的微笑让访客放松下来。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    }
+  ]
+}

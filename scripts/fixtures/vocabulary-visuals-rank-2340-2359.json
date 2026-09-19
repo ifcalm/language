@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2340-2359",
+  "batchId": "auto-rank-2340-2359-20260822",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "clock",
+      "chocolate",
+      "Italian",
+      "sweep",
+      "bell",
+      "clothing"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "4637c172-bbbe-4dc2-9115-33c2664f6e71",
+      "word": "satellite",
+      "meaningZh": "人造卫星",
+      "exampleId": "4637c172-bbbe-4dc2-9115-33c2664f6e71-visual-ex",
+      "styleFamily": "space-science editorial illustration",
+      "sentenceEn": "The satellite circles Earth and sends weather images home.",
+      "sentenceZh": "这颗卫星环绕地球并传回气象图像。",
+      "scene": "A compact communications satellite orbits above Earth's curved blue atmosphere while broad cloud systems swirl below, with no flags or logos.",
+      "altText": "人造卫星环绕地球观测云层",
+      "riskTags": [
+        "science_accuracy",
+        "space",
+        "small_details"
+      ]
+    },
+    {
+      "vocabularyId": "c5340576-0af8-4d95-862c-84846f9f783c",
+      "word": "personally",
+      "meaningZh": "个人地",
+      "exampleId": "c5340576-0af8-4d95-862c-84846f9f783c-visual-ex",
+      "styleFamily": "intimate editorial illustration",
+      "sentenceEn": "I personally delivered the gift to her door.",
+      "sentenceZh": "我亲自把礼物送到了她家门口。",
+      "scene": "An adult visitor personally hands a wrapped gift to a smiling neighbor at her front door instead of using a courier.",
+      "altText": "来访者亲自把礼物交给邻居",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "gift"
+      ]
+    },
+    {
+      "vocabularyId": "1c5a6abe-734f-44bc-b12b-b6b63d8c9a3d",
+      "word": "clock",
+      "meaningZh": "时钟；计时",
+      "exampleId": "1c5a6abe-734f-44bc-b12b-b6b63d8c9a3d-visual-ex",
+      "styleFamily": "Chinese clock-tower watercolor illustration",
+      "sentenceEn": "The old clock struck noon above the town square.",
+      "sentenceZh": "老钟在城镇广场上敲响正午。",
+      "scene": "A historic Chinese-style clock tower overlooks a lively square as the large clock hands point straight up, with no numerals or writing on the face.",
+      "altText": "中式老钟楼在正午俯瞰广场",
+      "riskTags": [
+        "text_risk",
+        "architecture",
+        "many_people"
+      ]
+    },
+    {
+      "vocabularyId": "529529eb-83e4-41c0-9564-b7e6baa34da8",
+      "word": "chocolate",
+      "meaningZh": "巧克力；巧克力制的",
+      "exampleId": "529529eb-83e4-41c0-9564-b7e6baa34da8-visual-ex",
+      "styleFamily": "Chinese New Year confectionery gouache",
+      "sentenceEn": "She shared handmade chocolate during the family reunion.",
+      "sentenceZh": "她在家庭团聚时分享了手工巧克力。",
+      "scene": "At a warm Chinese New Year family gathering, an adult offers a tray of handmade chocolate pieces beside oranges and red paper decorations without characters.",
+      "altText": "春节团聚时家人分享手工巧克力",
+      "riskTags": [
+        "food",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "68c40a15-5ec1-4a75-88c3-ab8dd7797ee0",
+      "word": "Italian",
+      "meaningZh": "意大利的；意大利人",
+      "exampleId": "68c40a15-5ec1-4a75-88c3-ab8dd7797ee0-visual-ex",
+      "styleFamily": "China-Italy cultural-exchange illustration",
+      "sentenceEn": "The Italian chef learned to fold dumplings with his hosts.",
+      "sentenceZh": "这位意大利厨师跟主人学习包饺子。",
+      "scene": "An Italian chef and Chinese home cooks laugh together while learning to fold dumplings at a kitchen table, respectfully blending two culinary cultures.",
+      "altText": "意大利厨师和中国主人一起包饺子",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cultural_identity"
+      ]
+    },
+    {
+      "vocabularyId": "ade7c0fe-01d9-4714-9145-1b559fb2cd49",
+      "word": "Canadian",
+      "meaningZh": "加拿大的；加拿大人",
+      "exampleId": "ade7c0fe-01d9-4714-9145-1b559fb2cd49-visual-ex",
+      "styleFamily": "winter travel-poster illustration",
+      "sentenceEn": "The Canadian guide led us across the snowy trail.",
+      "sentenceZh": "这位加拿大向导带我们穿过雪道。",
+      "scene": "A Canadian wilderness guide in practical winter clothing leads two hikers safely along a snowy forest trail, with no flags, text, or logos.",
+      "altText": "加拿大向导带领游客穿越雪道",
+      "riskTags": [
+        "people_face",
+        "snow",
+        "cultural_identity"
+      ]
+    },
+    {
+      "vocabularyId": "c227c6f8-f190-49c8-9f34-838655802574",
+      "word": "ceiling",
+      "meaningZh": "天花板；顶点；顶线；上限",
+      "exampleId": "c227c6f8-f190-49c8-9f34-838655802574-visual-ex",
+      "styleFamily": "interior cutaway illustration",
+      "sentenceEn": "A glass ceiling filled the hall with sunlight.",
+      "sentenceZh": "玻璃天花板让大厅洒满阳光。",
+      "scene": "Looking upward inside a spacious hall, a geometric glass ceiling pours warm daylight onto the floor and people below.",
+      "altText": "玻璃天花板让大厅充满阳光",
+      "riskTags": [
+        "architecture",
+        "perspective",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a9bd7482-d1d8-440f-8b57-18966ef024ca",
+      "word": "sweep",
+      "meaningZh": "打扫；扫过；横扫",
+      "exampleId": "a9bd7482-d1d8-440f-8b57-18966ef024ca-visual-ex",
+      "styleFamily": "Chinese courtyard ink-and-color illustration",
+      "sentenceEn": "He used a broom to sweep the courtyard before the New Year gathering.",
+      "sentenceZh": "他在新年聚会前打扫庭院。",
+      "scene": "An adult sweeps fallen leaves from a traditional Chinese courtyard before a family gathering, with red lanterns that contain no writing.",
+      "altText": "男子在新年前清扫传统庭院",
+      "riskTags": [
+        "hands",
+        "cultural_setting",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "b9e1e7fe-9a96-4ab9-bac9-1a453e8f5b50",
+      "word": "advertising",
+      "meaningZh": "广告",
+      "exampleId": "b9e1e7fe-9a96-4ab9-bac9-1a453e8f5b50-visual-ex",
+      "styleFamily": "editorial collage illustration",
+      "sentenceEn": "Bright advertising covered the bus shelter.",
+      "sentenceZh": "鲜艳的广告覆盖了公交候车亭。",
+      "scene": "A city bus shelter displays bold abstract product imagery and color blocks without any readable words, while commuters notice the advertising.",
+      "altText": "候车亭展示鲜艳的无字广告",
+      "riskTags": [
+        "text_risk",
+        "people_face",
+        "urban_scene"
+      ]
+    },
+    {
+      "vocabularyId": "63e5f19d-3b9c-48e5-8230-0ce617437288",
+      "word": "universal",
+      "meaningZh": "普遍的",
+      "exampleId": "63e5f19d-3b9c-48e5-8230-0ce617437288-visual-ex",
+      "styleFamily": "inclusive editorial illustration",
+      "sentenceEn": "A smile is a universal sign of welcome.",
+      "sentenceZh": "微笑是一种普遍的欢迎方式。",
+      "scene": "People of varied ages and backgrounds greet one another with warm natural smiles in a shared public garden, conveying a universal welcome.",
+      "altText": "不同背景的人用微笑表达共同欢迎",
+      "riskTags": [
+        "many_people",
+        "people_face",
+        "abstract_concept"
+      ]
+    },
+    {
+      "vocabularyId": "088cd66a-f6f4-48f2-a534-74409129119a",
+      "word": "spin",
+      "meaningZh": "旋转；纺纱",
+      "exampleId": "088cd66a-f6f4-48f2-a534-74409129119a-visual-ex",
+      "styleFamily": "dynamic motion illustration",
+      "sentenceEn": "The potter made the clay spin on the wheel.",
+      "sentenceZh": "陶工让黏土在转盘上旋转。",
+      "scene": "A potter shapes wet clay as the wheel spins rapidly, with visible circular motion in the clay and steady hands guiding it.",
+      "altText": "陶工在旋转的转盘上塑造陶土",
+      "riskTags": [
+        "hands",
+        "motion",
+        "craft"
+      ]
+    },
+    {
+      "vocabularyId": "96c13d50-2a3c-471d-83d0-4eb4f43ad78b",
+      "word": "button",
+      "meaningZh": "钮扣；按钮；扣住",
+      "exampleId": "96c13d50-2a3c-471d-83d0-4eb4f43ad78b-visual-ex",
+      "styleFamily": "fashion-detail editorial illustration",
+      "sentenceEn": "She fastened the last button on her coat.",
+      "sentenceZh": "她扣上了外套最后一颗纽扣。",
+      "scene": "Close view of an adult fastening the final large round button on a winter coat, with natural hands and a satisfied expression.",
+      "altText": "女子扣好冬衣最后一颗纽扣",
+      "riskTags": [
+        "hands",
+        "small_object",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e512540a-9551-4490-9faa-34c7923c747c",
+      "word": "bell",
+      "meaningZh": "铃；钟；铃声",
+      "exampleId": "e512540a-9551-4490-9faa-34c7923c747c-visual-ex",
+      "styleFamily": "Chinese temple watercolor illustration",
+      "sentenceEn": "The bronze bell rang softly at dawn.",
+      "sentenceZh": "青铜钟在黎明时轻轻响起。",
+      "scene": "At dawn in a peaceful Chinese temple courtyard, a caretaker gently sounds a large bronze bell suspended in a wooden pavilion, with no inscriptions.",
+      "altText": "中国寺院青铜钟在黎明响起",
+      "riskTags": [
+        "religious_setting",
+        "cultural_landmark",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "7df852ae-65e4-4c2f-a3cd-9ff544cd717d",
+      "word": "rank",
+      "meaningZh": "等级；军衔；排名；排列",
+      "exampleId": "7df852ae-65e4-4c2f-a3cd-9ff544cd717d-visual-ex",
+      "styleFamily": "sports editorial illustration",
+      "sentenceEn": "She rose to the top rank after the final race.",
+      "sentenceZh": "她在决赛后升至最高排名。",
+      "scene": "A runner stands proudly on the tallest of three plain podium levels after a race, with no numbers, flags, or writing.",
+      "altText": "赛跑选手登上最高领奖台",
+      "riskTags": [
+        "people_face",
+        "sports",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "fc2c88bb-8a12-4492-a2b0-7a29ae616a0e",
+      "word": "darkness",
+      "meaningZh": "黑暗",
+      "exampleId": "fc2c88bb-8a12-4492-a2b0-7a29ae616a0e-visual-ex",
+      "styleFamily": "moody storybook illustration",
+      "sentenceEn": "A single candle pushed back the darkness.",
+      "sentenceZh": "一支蜡烛驱散了黑暗。",
+      "scene": "One warm candle illuminates a dark room, revealing a calm adult face and nearby objects emerging gently from the darkness.",
+      "altText": "一支蜡烛照亮黑暗房间",
+      "riskTags": [
+        "low_light",
+        "fire",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "36126934-12ee-437f-88df-2320a791bd1f",
+      "word": "clothing",
+      "meaningZh": "服装",
+      "exampleId": "36126934-12ee-437f-88df-2320a791bd1f-visual-ex",
+      "styleFamily": "Chinese textile-market gouache illustration",
+      "sentenceEn": "The shop sells traditional clothing made from silk.",
+      "sentenceZh": "这家店出售丝绸制作的传统服装。",
+      "scene": "Inside a Chinese textile market, a tailor displays elegant silk jackets and dresses on wooden racks while advising an adult customer; no price tags or writing.",
+      "altText": "中国裁缝展示传统丝绸服装",
+      "riskTags": [
+        "cultural_attire",
+        "many_objects",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3d13e983-ba92-448f-9658-d072199b2145",
+      "word": "super",
+      "meaningZh": "超级的；极好的；特级的",
+      "exampleId": "3d13e983-ba92-448f-9658-d072199b2145-visual-ex",
+      "styleFamily": "bright retro editorial illustration",
+      "sentenceEn": "The new telescope gives a super view of the moon.",
+      "sentenceZh": "这台新望远镜能极清楚地观察月亮。",
+      "scene": "An amateur astronomer looks delighted by an exceptionally crisp view of the moon through a backyard telescope under a clear sky.",
+      "altText": "望远镜带来极佳的月球视野",
+      "riskTags": [
+        "people_face",
+        "science_accuracy",
+        "night"
+      ]
+    },
+    {
+      "vocabularyId": "d55e7349-2d1d-469b-a1b2-916ca26cd429",
+      "word": "yield",
+      "meaningZh": "产出；屈服",
+      "exampleId": "d55e7349-2d1d-469b-a1b2-916ca26cd429-visual-ex",
+      "styleFamily": "agricultural editorial illustration",
+      "sentenceEn": "The orchard yielded baskets of ripe peaches.",
+      "sentenceZh": "果园收获了数篮成熟桃子。",
+      "scene": "Farm workers proudly gather abundant ripe peaches from healthy trees into several full baskets, clearly showing a rich yield.",
+      "altText": "果园产出多篮成熟桃子",
+      "riskTags": [
+        "many_objects",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c3328473-4f94-4e33-af7d-8fae7d32fefd",
+      "word": "fence",
+      "meaningZh": "围墙；栅栏；买卖赃物的人；剑术",
+      "exampleId": "c3328473-4f94-4e33-af7d-8fae7d32fefd-visual-ex",
+      "styleFamily": "pastoral watercolor illustration",
+      "sentenceEn": "A wooden fence separates the garden from the field.",
+      "sentenceZh": "一道木栅栏把花园和田野隔开。",
+      "scene": "A sturdy wooden fence runs clearly between a cultivated flower garden and an open green field, emphasizing the boundary.",
+      "altText": "木栅栏分隔花园与田野",
+      "riskTags": [
+        "spatial_relationship",
+        "landscape",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "89e040a1-ae59-4999-af28-d3ffc6acbaa6",
+      "word": "portrait",
+      "meaningZh": "肖像；人像；半身像；描写；竖排格式",
+      "exampleId": "89e040a1-ae59-4999-af28-d3ffc6acbaa6-visual-ex",
+      "styleFamily": "studio pastel illustration",
+      "sentenceEn": "The artist painted a portrait of the violinist.",
+      "sentenceZh": "画家为小提琴手画了一幅肖像。",
+      "scene": "An artist at an easel paints the expressive face and upper body of an adult violinist seated in a softly lit studio, with no text.",
+      "altText": "画家为小提琴手绘制肖像",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "artwork_within_artwork"
+      ]
+    }
+  ]
+}

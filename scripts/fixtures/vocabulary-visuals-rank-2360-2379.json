@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2360-2379",
+  "batchId": "auto-rank-2360-2379-20260822",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "bunch",
+      "found",
+      "cooperation",
+      "string",
+      "ceremony",
+      "communicate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "89b45d13-1164-4f94-9245-5848931c53af",
+      "word": "survival",
+      "meaningZh": "生存",
+      "exampleId": "89b45d13-1164-4f94-9245-5848931c53af-visual-ex",
+      "styleFamily": "wilderness editorial illustration",
+      "sentenceEn": "Clean water was essential for their survival.",
+      "sentenceZh": "清洁的水对他们的生存至关重要。",
+      "scene": "Two prepared hikers safely collect and filter stream water at a marked campsite, emphasizing practical survival without danger or distress.",
+      "altText": "徒步者过滤溪水保障生存",
+      "riskTags": [
+        "outdoor_safety",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f326cc26-7206-4149-91a4-8fcfa1ace668",
+      "word": "roughly",
+      "meaningZh": "粗略地",
+      "exampleId": "f326cc26-7206-4149-91a4-8fcfa1ace668-visual-ex",
+      "styleFamily": "hand-drawn estimation illustration",
+      "sentenceEn": "She roughly divided the bread into four pieces.",
+      "sentenceZh": "她把面包大致分成了四块。",
+      "scene": "An adult cook casually divides a round loaf into four visibly unequal pieces, showing a rough estimate rather than exact measurement.",
+      "altText": "厨师把面包粗略分成四块",
+      "riskTags": [
+        "hands",
+        "food",
+        "quantity"
+      ]
+    },
+    {
+      "vocabularyId": "13f5923f-ae38-468f-ba3b-d39a38feac08",
+      "word": "lawsuit",
+      "meaningZh": "诉讼",
+      "exampleId": "13f5923f-ae38-468f-ba3b-d39a38feac08-visual-ex",
+      "styleFamily": "restrained legal editorial illustration",
+      "sentenceEn": "The two companies settled the lawsuit outside court.",
+      "sentenceZh": "两家公司在庭外解决了诉讼。",
+      "scene": "Two business representatives shake hands with their lawyers outside a courthouse after resolving a dispute, with folders bearing no text.",
+      "altText": "双方在法院外和解诉讼",
+      "riskTags": [
+        "legal",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "9474be5f-eb00-4f0c-b24b-c8e9f00cb87c",
+      "word": "testimony",
+      "meaningZh": "证词；证言；证明",
+      "exampleId": "9474be5f-eb00-4f0c-b24b-c8e9f00cb87c-visual-ex",
+      "styleFamily": "courtroom editorial illustration",
+      "sentenceEn": "Her calm testimony clarified what happened.",
+      "sentenceZh": "她平静的证词澄清了事情经过。",
+      "scene": "An adult witness speaks calmly from a courtroom witness stand while a judge and attentive listeners focus respectfully, no visible documents or text.",
+      "altText": "证人在法庭上平静陈述证词",
+      "riskTags": [
+        "legal",
+        "people_face",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "5f2fc4a1-cb45-444b-94f3-422026aba0f6",
+      "word": "bunch",
+      "meaningZh": "束；串；一群；大量",
+      "exampleId": "5f2fc4a1-cb45-444b-94f3-422026aba0f6-visual-ex",
+      "styleFamily": "Chinese flower-market watercolor illustration",
+      "sentenceEn": "He bought a bunch of peonies for his grandmother.",
+      "sentenceZh": "他给祖母买了一束牡丹。",
+      "scene": "At a lively Chinese flower market, a young adult presents his grandmother with a lush bunch of peonies wrapped in plain paper, both smiling warmly.",
+      "altText": "青年在花市送祖母一束牡丹",
+      "riskTags": [
+        "many_objects",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e517c8e1-a7de-482d-9c7f-173c335be52b",
+      "word": "found",
+      "meaningZh": "发现；建立；创立",
+      "exampleId": "e517c8e1-a7de-482d-9c7f-173c335be52b-visual-ex",
+      "styleFamily": "Jingdezhen ceramic-studio illustration",
+      "sentenceEn": "They founded a small pottery studio together.",
+      "sentenceZh": "他们一起创办了一间小陶艺工作室。",
+      "scene": "Three artisans open a new ceramics studio inspired by Jingdezhen, standing proudly among kilns, clay, and blue-and-white pottery with no signage.",
+      "altText": "三位匠人共同创办陶艺工作室",
+      "riskTags": [
+        "people_face",
+        "many_objects",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "0692c7f0-561e-4944-8e90-76b7f4f996bd",
+      "word": "burden",
+      "meaningZh": "负担；重载；担子；责任",
+      "exampleId": "0692c7f0-561e-4944-8e90-76b7f4f996bd-visual-ex",
+      "styleFamily": "symbolic editorial illustration",
+      "sentenceEn": "She shared the burden instead of carrying every box alone.",
+      "sentenceZh": "她与人分担重担，而不是独自搬所有箱子。",
+      "scene": "Two coworkers divide a heavy stack of moving boxes between them, visibly lightening one person's burden through teamwork.",
+      "altText": "同事分担沉重的搬家箱子",
+      "riskTags": [
+        "hands",
+        "lifting",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "34945954-aa6c-4289-9928-7e8514d83b5e",
+      "word": "react",
+      "meaningZh": "起反应；起作用；反攻",
+      "exampleId": "34945954-aa6c-4289-9928-7e8514d83b5e-visual-ex",
+      "styleFamily": "expressive science-class illustration",
+      "sentenceEn": "The powder reacted when water touched it.",
+      "sentenceZh": "粉末遇水后发生了反应。",
+      "scene": "A safe classroom demonstration shows colored powder fizzing dramatically in a glass vessel as a protected adult observer reacts with surprise.",
+      "altText": "粉末遇水起泡产生反应",
+      "riskTags": [
+        "science_accuracy",
+        "people_face",
+        "chemical"
+      ]
+    },
+    {
+      "vocabularyId": "2f7b724f-9f8b-4809-858a-0a767f0375de",
+      "word": "chamber",
+      "meaningZh": "室；房间；枪膛",
+      "exampleId": "2f7b724f-9f8b-4809-858a-0a767f0375de-visual-ex",
+      "styleFamily": "historic interior watercolor illustration",
+      "sentenceEn": "Sunlight entered the quiet stone chamber.",
+      "sentenceZh": "阳光照进安静的石室。",
+      "scene": "A beam of morning sunlight enters a secluded historic stone chamber through a narrow arched window, revealing simple furniture.",
+      "altText": "阳光照进安静的石室",
+      "riskTags": [
+        "architecture",
+        "low_light",
+        "perspective"
+      ]
+    },
+    {
+      "vocabularyId": "1540c03a-8a1b-4263-99f2-f5c3ef8740d9",
+      "word": "furniture",
+      "meaningZh": "家具；帆具",
+      "exampleId": "1540c03a-8a1b-4263-99f2-f5c3ef8740d9-visual-ex",
+      "styleFamily": "interior-design editorial illustration",
+      "sentenceEn": "The apartment needs only a few pieces of furniture.",
+      "sentenceZh": "这套公寓只需要几件家具。",
+      "scene": "A nearly empty apartment becomes welcoming with a sofa, table, chair, and lamp arranged thoughtfully by two adults.",
+      "altText": "几件家具让空公寓变得温馨",
+      "riskTags": [
+        "many_objects",
+        "people_face",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "b0f82f73-3ffa-4751-92c2-6dbf11b66efc",
+      "word": "cooperation",
+      "meaningZh": "合作",
+      "exampleId": "b0f82f73-3ffa-4751-92c2-6dbf11b66efc-visual-ex",
+      "styleFamily": "Chinese dragon-boat gouache illustration",
+      "sentenceEn": "Their cooperation kept the dragon boat moving in rhythm.",
+      "sentenceZh": "他们的合作让龙舟有节奏地前进。",
+      "scene": "A Chinese dragon-boat team paddles in perfect unison while a drummer sets the rhythm, vividly expressing cooperation on calm water.",
+      "altText": "龙舟队员合作划桨保持节奏",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "cultural_sport"
+      ]
+    },
+    {
+      "vocabularyId": "97537256-115e-4722-baf9-b75f984d0f8b",
+      "word": "string",
+      "meaningZh": "线；细绳；一串；字符串",
+      "exampleId": "97537256-115e-4722-baf9-b75f984d0f8b-visual-ex",
+      "styleFamily": "Chinese knotting craft illustration",
+      "sentenceEn": "She tied the red string into a decorative knot.",
+      "sentenceZh": "她把红绳系成一个装饰结。",
+      "scene": "Close view of a Chinese craftsperson's natural hands weaving a red string into an elegant traditional knot, with completed knots nearby and no text.",
+      "altText": "匠人把红绳编成传统中国结",
+      "riskTags": [
+        "hands",
+        "small_details",
+        "cultural_craft"
+      ]
+    },
+    {
+      "vocabularyId": "c53d67e7-6f7e-48e1-8ebb-fdf9a2f905cb",
+      "word": "ceremony",
+      "meaningZh": "典礼；仪式；礼节",
+      "exampleId": "c53d67e7-6f7e-48e1-8ebb-fdf9a2f905cb-visual-ex",
+      "styleFamily": "Chinese tea-ceremony watercolor illustration",
+      "sentenceEn": "The tea ceremony began with a respectful bow.",
+      "sentenceZh": "茶礼以恭敬的鞠躬开始。",
+      "scene": "In a serene Chinese tea room, a host and guests begin a formal tea ceremony with a respectful bow beside a carefully arranged tea set.",
+      "altText": "中式茶礼以相互鞠躬开始",
+      "riskTags": [
+        "cultural_ritual",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4bc17b77-c76d-46a9-90da-b0c3196aea2f",
+      "word": "communicate",
+      "meaningZh": "显露；传达；感染；通讯",
+      "exampleId": "4bc17b77-c76d-46a9-90da-b0c3196aea2f-visual-ex",
+      "styleFamily": "lantern-festival editorial illustration",
+      "sentenceEn": "They communicated with gestures across the noisy square.",
+      "sentenceZh": "他们在喧闹的广场上用手势交流。",
+      "scene": "During a Chinese lantern festival, two adults across a busy square use clear friendly hand gestures to communicate over the crowd, with blank lanterns.",
+      "altText": "灯会广场上两人用手势交流",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "ab045e7d-1d80-48a6-878d-fb44297e3854",
+      "word": "cheek",
+      "meaningZh": "颊；厚颜；脸蛋",
+      "exampleId": "ab045e7d-1d80-48a6-878d-fb44297e3854-visual-ex",
+      "styleFamily": "gentle family pastel illustration",
+      "sentenceEn": "The child kissed her grandmother on the cheek.",
+      "sentenceZh": "孩子亲吻了祖母的脸颊。",
+      "scene": "A child gives a grandmother a gentle kiss on the cheek during a warm family greeting, with natural expressive faces and respectful affection.",
+      "altText": "孩子亲吻祖母的脸颊",
+      "riskTags": [
+        "minor",
+        "people_face",
+        "family"
+      ]
+    },
+    {
+      "vocabularyId": "8d24bae7-51c3-4a2a-8a1d-8b98181a1d5c",
+      "word": "lost",
+      "meaningZh": "丢失的；迷路的",
+      "exampleId": "8d24bae7-51c3-4a2a-8a1d-8b98181a1d5c-visual-ex",
+      "styleFamily": "atmospheric city illustration",
+      "sentenceEn": "The lost traveler studied the street corners for a landmark.",
+      "sentenceZh": "迷路的旅客观察街角寻找地标。",
+      "scene": "A concerned adult traveler pauses at a fork between city streets, scanning distinctive buildings for direction without maps, signs, or text.",
+      "altText": "迷路的旅客在街角寻找方向",
+      "riskTags": [
+        "people_face",
+        "text_risk",
+        "urban_scene"
+      ]
+    },
+    {
+      "vocabularyId": "922fb5d0-4ff8-48f1-8b47-4171e465afa6",
+      "word": "profile",
+      "meaningZh": "简介；侧面；轮廓；资料",
+      "exampleId": "922fb5d0-4ff8-48f1-8b47-4171e465afa6-visual-ex",
+      "styleFamily": "clean editorial portrait illustration",
+      "sentenceEn": "The sculptor studied the model's profile.",
+      "sentenceZh": "雕塑家观察模特的侧面轮廓。",
+      "scene": "A sculptor views an adult model from the side, focusing on the clear profile of forehead, nose, lips, and chin while shaping a clay bust.",
+      "altText": "雕塑家观察模特的清晰侧面轮廓",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "artwork_within_artwork"
+      ]
+    },
+    {
+      "vocabularyId": "c08eedc7-8d92-4b88-b3ce-0fe38f8c99df",
+      "word": "mechanism",
+      "meaningZh": "机械；机构；结构；机理；技巧",
+      "exampleId": "c08eedc7-8d92-4b88-b3ce-0fe38f8c99df-visual-ex",
+      "styleFamily": "technical cutaway illustration",
+      "sentenceEn": "The transparent case revealed the clock's mechanism.",
+      "sentenceZh": "透明外壳展示了时钟的机械结构。",
+      "scene": "A transparent clock case reveals interlocking gears, springs, and a swinging pendulum working together, with no numbers or labels.",
+      "altText": "透明钟壳展示内部机械结构",
+      "riskTags": [
+        "small_details",
+        "mechanical_accuracy",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "eb7d3ff2-b13a-4886-b7ba-6f6b98c6e5ad",
+      "word": "disagree",
+      "meaningZh": "不同意；意见不合",
+      "exampleId": "eb7d3ff2-b13a-4886-b7ba-6f6b98c6e5ad-visual-ex",
+      "styleFamily": "constructive workplace illustration",
+      "sentenceEn": "The colleagues disagreed but listened to each other.",
+      "sentenceZh": "同事们意见不同，但仍互相倾听。",
+      "scene": "Two colleagues at a table express different views with contrasting prototype objects while maintaining calm eye contact and respectful gestures.",
+      "altText": "同事意见不同但保持尊重交流",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "conflict"
+      ]
+    },
+    {
+      "vocabularyId": "a24d4643-81a0-48e2-9e19-04d3a2d68221",
+      "word": "penalty",
+      "meaningZh": "处罚；刑罚；罚款；罚球；报应；不利",
+      "exampleId": "a24d4643-81a0-48e2-9e19-04d3a2d68221-visual-ex",
+      "styleFamily": "sports editorial illustration",
+      "sentenceEn": "The referee awarded a penalty after the foul.",
+      "sentenceZh": "犯规后，裁判判罚了点球。",
+      "scene": "On a soccer field, a referee points firmly to the penalty spot after a minor foul while players respond without aggression, no cards or text foregrounded.",
+      "altText": "足球裁判在犯规后判罚点球",
+      "riskTags": [
+        "sports",
+        "people_face",
+        "conflict"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2420-2439",
+  "batchId": "auto-rank-2420-2439-20260828",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "translate",
+      "rice",
+      "Bible",
+      "solar",
+      "square",
+      "gently"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "19f36216-cefb-44a0-900d-0b7ea1e65527",
+      "word": "translate",
+      "meaningZh": "翻译；解释；转化；转变为；调动",
+      "exampleId": "19f36216-cefb-44a0-900d-0b7ea1e65527-visual-ex",
+      "styleFamily": "Silk Road museum editorial illustration",
+      "sentenceEn": "The guide can translate the visitor's question into Chinese.",
+      "sentenceZh": "导游能把游客的问题翻译成中文。",
+      "scene": "Inside a Silk Road museum, a bilingual Chinese guide helps an international visitor understand an artifact through warm face-to-face interpretation, with no visible writing.",
+      "altText": "博物馆导游为外国游客翻译问题",
+      "riskTags": [
+        "people_face",
+        "cultural_setting",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "f82dde19-812f-4c46-a035-f30485b3a9c4",
+      "word": "accurate",
+      "meaningZh": "正确的；精确的；准确的",
+      "exampleId": "f82dde19-812f-4c46-a035-f30485b3a9c4-visual-ex",
+      "styleFamily": "precision workshop illustration",
+      "sentenceEn": "The craftsperson used an accurate scale to measure the silver.",
+      "sentenceZh": "工匠用精确的秤称量银料。",
+      "scene": "A focused craftsperson weighs a small piece of silver on a finely balanced scale, comparing two perfectly level pans in a tidy workshop.",
+      "altText": "工匠用精密天平准确称量银料",
+      "riskTags": [
+        "hands",
+        "small_details",
+        "measurement"
+      ]
+    },
+    {
+      "vocabularyId": "f16f83cb-bb68-42af-87c2-76c49631024b",
+      "word": "whereas",
+      "meaningZh": "然而；鉴于",
+      "exampleId": "f16f83cb-bb68-42af-87c2-76c49631024b-visual-ex",
+      "styleFamily": "contrasting split-scene illustration",
+      "sentenceEn": "The city was sunny, whereas the mountains were covered in snow.",
+      "sentenceZh": "城市阳光明媚，然而群山白雪覆盖。",
+      "scene": "One continuous landscape contrasts a warm sunny city foreground with distant snow-covered mountains under darker clouds, clearly showing whereas without text.",
+      "altText": "晴朗城市与雪山形成鲜明对比",
+      "riskTags": [
+        "contrast",
+        "landscape",
+        "weather"
+      ]
+    },
+    {
+      "vocabularyId": "dff8398b-9c28-4a21-b5bb-e7c365c4aa81",
+      "word": "terror",
+      "meaningZh": "恐怖；可怕的人；惊吓；惊悸",
+      "exampleId": "dff8398b-9c28-4a21-b5bb-e7c365c4aa81-visual-ex",
+      "styleFamily": "safe suspense storybook illustration",
+      "sentenceEn": "A sudden thunderclap filled the camper with terror.",
+      "sentenceZh": "突然的雷声让露营者感到恐惧。",
+      "scene": "A startled adult camper sits safely inside a sturdy tent during a loud thunderstorm, wide-eyed but unharmed, with a warm lantern and calm companion nearby.",
+      "altText": "雷声让帐篷里的露营者惊恐",
+      "riskTags": [
+        "fear",
+        "weather",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5cf5c097-6063-4cf6-8dbf-7dcfec1d4c60",
+      "word": "expansion",
+      "meaningZh": "扩充；开展；膨胀；扩展",
+      "exampleId": "5cf5c097-6063-4cf6-8dbf-7dcfec1d4c60-visual-ex",
+      "styleFamily": "urban-planning editorial illustration",
+      "sentenceEn": "The library's expansion added a bright new reading wing.",
+      "sentenceZh": "图书馆扩建后增加了明亮的新阅览区。",
+      "scene": "Architects observe a library where a new modern wing visibly extends from the original smaller building, with active readers inside and no signs.",
+      "altText": "图书馆扩建出新的阅览翼楼",
+      "riskTags": [
+        "architecture",
+        "spatial_relationship",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b84d4d7e-84ba-4c1c-a5de-1f969eb2d75f",
+      "word": "elite",
+      "meaningZh": "精英；精锐的",
+      "exampleId": "b84d4d7e-84ba-4c1c-a5de-1f969eb2d75f-visual-ex",
+      "styleFamily": "professional team editorial illustration",
+      "sentenceEn": "An elite rescue team trained for difficult mountain missions.",
+      "sentenceZh": "一支精英救援队为艰难的山地任务训练。",
+      "scene": "A highly skilled mountain rescue team practices coordinated rope techniques on a safe training wall, wearing proper protective equipment.",
+      "altText": "精英救援队进行专业山地训练",
+      "riskTags": [
+        "people_face",
+        "safety_gear",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "57672a83-cf4f-415e-8659-e9cbcab0b087",
+      "word": "Olympic",
+      "meaningZh": "奥运会的",
+      "exampleId": "57672a83-cf4f-415e-8659-e9cbcab0b087-visual-ex",
+      "styleFamily": "global sports-poster illustration",
+      "sentenceEn": "The swimmer trained for an Olympic competition.",
+      "sentenceZh": "这名游泳运动员为奥运比赛训练。",
+      "scene": "An adult competitive swimmer powers through a regulation pool beneath five abstract colored light circles that do not form an official logo, with no flags or text.",
+      "altText": "游泳运动员为奥运赛事刻苦训练",
+      "riskTags": [
+        "sports",
+        "logo_risk",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e34aba49-4b46-4f44-9959-b3de3a19281e",
+      "word": "dirt",
+      "meaningZh": "泥土；灰尘",
+      "exampleId": "e34aba49-4b46-4f44-9959-b3de3a19281e-visual-ex",
+      "styleFamily": "gardening gouache illustration",
+      "sentenceEn": "The child brushed the dirt from a freshly picked carrot.",
+      "sentenceZh": "孩子刷掉刚拔出的胡萝卜上的泥土。",
+      "scene": "A child and adult gardener gently brush dark garden dirt from a bright carrot beside a vegetable bed, with natural hands and warm expressions.",
+      "altText": "孩子刷去胡萝卜上的泥土",
+      "riskTags": [
+        "minor",
+        "hands",
+        "texture"
+      ]
+    },
+    {
+      "vocabularyId": "bb5fbaf5-84d4-4234-8699-35f81b6e1587",
+      "word": "odd",
+      "meaningZh": "奇怪的；奇数的",
+      "exampleId": "bb5fbaf5-84d4-4234-8699-35f81b6e1587-visual-ex",
+      "styleFamily": "whimsical editorial illustration",
+      "sentenceEn": "One odd duck wore a leaf like a hat.",
+      "sentenceZh": "一只奇怪的鸭子把树叶当成帽子。",
+      "scene": "Among several ordinary ducks by a pond, one odd duck balances a large green leaf on its head, creating a charming visual contrast.",
+      "altText": "一只头顶树叶的奇怪鸭子",
+      "riskTags": [
+        "animals",
+        "contrast",
+        "whimsical"
+      ]
+    },
+    {
+      "vocabularyId": "992fe705-2450-4fa6-8233-c002a7941faf",
+      "word": "rice",
+      "meaningZh": "米；米饭；稻；将...压成米粒状",
+      "exampleId": "992fe705-2450-4fa6-8233-c002a7941faf-visual-ex",
+      "styleFamily": "Chinese rice-terrace watercolor illustration",
+      "sentenceEn": "Farmers harvested rice from the golden terraces.",
+      "sentenceZh": "农民们在金色梯田里收割稻谷。",
+      "scene": "Chinese farmers harvest ripe rice by hand across layered golden terraces, bundling stalks beneath soft mountain light.",
+      "altText": "农民在中国金色梯田收割水稻",
+      "riskTags": [
+        "cultural_landscape",
+        "many_people",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f9e5de26-53a3-47dc-857f-ebc2c817ae1f",
+      "word": "bullet",
+      "meaningZh": "子弹；项目符号",
+      "exampleId": "f9e5de26-53a3-47dc-857f-ebc2c817ae1f-visual-ex",
+      "styleFamily": "safe stationery editorial illustration",
+      "sentenceEn": "She used a bullet to mark each item in the plan.",
+      "sentenceZh": "她用项目符号标记计划中的每一项。",
+      "scene": "A planner arranges several blank cards in a vertical list, each preceded by one simple round colored dot, clearly depicting bullet points without words or weapons.",
+      "altText": "圆点项目符号标记空白计划条目",
+      "riskTags": [
+        "weapon_term",
+        "text_risk",
+        "abstract_concept"
+      ]
+    },
+    {
+      "vocabularyId": "938a8364-5cc9-4f28-bdf9-8c8b55940497",
+      "word": "tight",
+      "meaningZh": "紧的；密封的；吝啬的；严厉的",
+      "exampleId": "938a8364-5cc9-4f28-bdf9-8c8b55940497-visual-ex",
+      "styleFamily": "close-up fashion illustration",
+      "sentenceEn": "The lid was too tight for him to open.",
+      "sentenceZh": "盖子太紧，他打不开。",
+      "scene": "An adult strains to twist a tightly sealed jar lid while a friend offers a rubber grip, with clear natural hand positions.",
+      "altText": "男子费力拧开过紧的瓶盖",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "small_object"
+      ]
+    },
+    {
+      "vocabularyId": "4abc6e22-2ff9-4b4a-af49-3c63e82358af",
+      "word": "Bible",
+      "meaningZh": "圣经",
+      "exampleId": "4abc6e22-2ff9-4b4a-af49-3c63e82358af-visual-ex",
+      "styleFamily": "Chinese church watercolor illustration",
+      "sentenceEn": "She kept her Bible beside a quiet reading chair.",
+      "sentenceZh": "她把《圣经》放在安静的阅读椅旁。",
+      "scene": "In a modest Chinese church interior, an adult reads a plainly bound Bible beside a wooden chair and soft window light, with blank pages and no religious text visible.",
+      "altText": "信徒在中国教堂内安静阅读圣经",
+      "riskTags": [
+        "religion",
+        "cultural_setting",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "0b33ca73-ca20-4643-8868-7375d7593591",
+      "word": "chart",
+      "meaningZh": "图表；海图；制成图表",
+      "exampleId": "0b33ca73-ca20-4643-8868-7375d7593591-visual-ex",
+      "styleFamily": "data-editorial illustration",
+      "sentenceEn": "The chart showed how the river level changed each month.",
+      "sentenceZh": "图表展示了河流水位每月的变化。",
+      "scene": "A scientist studies a clean wall chart made only of rising and falling colored bars beside a river gauge model, with no numbers, labels, or words.",
+      "altText": "无字柱状图展示河流水位变化",
+      "riskTags": [
+        "data_concept",
+        "text_risk",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "31c02cf9-e8f0-4367-8bda-c1a0664ff2ae",
+      "word": "solar",
+      "meaningZh": "太阳的；太阳能的",
+      "exampleId": "31c02cf9-e8f0-4367-8bda-c1a0664ff2ae-visual-ex",
+      "styleFamily": "Chinese clean-energy landscape illustration",
+      "sentenceEn": "Solar panels powered the remote village clinic.",
+      "sentenceZh": "太阳能板为偏远村庄的诊所供电。",
+      "scene": "Rows of solar panels catch bright sunlight beside a small Chinese village clinic, where warm interior lights and working equipment show clean power in use.",
+      "altText": "太阳能板为中国村庄诊所供电",
+      "riskTags": [
+        "cultural_setting",
+        "infrastructure",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "c1e6f98d-1864-48a1-8ea5-0f8823bd5427",
+      "word": "square",
+      "meaningZh": "正方形；街区；广场；平方；直角尺",
+      "exampleId": "c1e6f98d-1864-48a1-8ea5-0f8823bd5427-visual-ex",
+      "styleFamily": "Chinese town-square ink-and-color illustration",
+      "sentenceEn": "Families gathered in the town square at sunset.",
+      "sentenceZh": "傍晚，许多家庭聚集在城镇广场。",
+      "scene": "Families gather in a spacious Chinese old-town square at sunset for dancing and conversation, surrounded by traditional tiled roofs and blank lanterns.",
+      "altText": "家庭傍晚聚集在中国古镇广场",
+      "riskTags": [
+        "many_people",
+        "cultural_setting",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "9b67e0c7-8648-437b-a90e-da7ab128454a",
+      "word": "concentration",
+      "meaningZh": "集中；专注",
+      "exampleId": "9b67e0c7-8648-437b-a90e-da7ab128454a-visual-ex",
+      "styleFamily": "focused studio editorial illustration",
+      "sentenceEn": "Deep concentration helped the watchmaker repair the tiny gear.",
+      "sentenceZh": "高度专注帮助钟表匠修好微小齿轮。",
+      "scene": "A watchmaker leans close over a tiny gear with intense concentration, using a magnifying lens and precise tools in a quiet studio.",
+      "altText": "钟表匠专注修理微小齿轮",
+      "riskTags": [
+        "small_details",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5fc0537a-0ff7-4d26-81f2-af6b156d3167",
+      "word": "complicated",
+      "meaningZh": "复杂的",
+      "exampleId": "5fc0537a-0ff7-4d26-81f2-af6b156d3167-visual-ex",
+      "styleFamily": "intricate mechanical illustration",
+      "sentenceEn": "The complicated machine contained dozens of moving parts.",
+      "sentenceZh": "这台复杂的机器包含数十个运动部件。",
+      "scene": "An engineer examines an intricate open machine packed with interlocking gears, belts, valves, and levers, all coherently connected without labels.",
+      "altText": "工程师观察结构复杂的机械装置",
+      "riskTags": [
+        "mechanical_accuracy",
+        "many_objects",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5c68db09-eb2a-412f-9981-89e8531e3ca1",
+      "word": "gently",
+      "meaningZh": "轻轻地",
+      "exampleId": "5c68db09-eb2a-412f-9981-89e8531e3ca1-visual-ex",
+      "styleFamily": "Chinese tea-room watercolor illustration",
+      "sentenceEn": "She gently poured tea into the small cup.",
+      "sentenceZh": "她轻轻地把茶倒进小杯子。",
+      "scene": "In a serene Chinese tea room, a host gently pours a thin stream of tea from a clay teapot into a small cup, using graceful natural hands.",
+      "altText": "茶艺主人轻轻把茶倒入小杯",
+      "riskTags": [
+        "cultural_ritual",
+        "hands",
+        "small_details"
+      ]
+    },
+    {
+      "vocabularyId": "f5cb5ffd-fc32-4d2f-ba78-37bd9c0efb9d",
+      "word": "champion",
+      "meaningZh": "冠军；拥护者；战士；保卫；拥护",
+      "exampleId": "f5cb5ffd-fc32-4d2f-ba78-37bd9c0efb9d-visual-ex",
+      "styleFamily": "victory editorial illustration",
+      "sentenceEn": "The young boxer became a champion after years of disciplined training.",
+      "sentenceZh": "年轻拳手经过多年自律训练后成为冠军。",
+      "scene": "An adult boxer stands proudly in a gym holding a simple championship belt after training, smiling with a supportive coach and no branding.",
+      "altText": "拳手经过多年训练成为冠军",
+      "riskTags": [
+        "sports",
+        "people_face",
+        "logo_risk"
+      ]
+    }
+  ]
+}

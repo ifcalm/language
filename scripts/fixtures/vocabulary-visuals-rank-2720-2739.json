@@ -1,0 +1,350 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2720-2739",
+  "batchId": "auto-rank-2720-2739-20260909",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "myth",
+      "cow",
+      "barrel",
+      "menu",
+      "lifestyle",
+      "sufficient"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "40180018-c0ec-4771-a229-a1184861cf39",
+      "word": "proposed",
+      "meaningZh": "提议的",
+      "exampleId": "40180018-c0ec-4771-a229-a1184861cf39-visual-ex",
+      "styleFamily": "editorial cut-paper illustration",
+      "sentenceEn": "The proposed bridge appears as a model beside the old crossing.",
+      "sentenceZh": "拟建的桥梁以模型形式展示在旧渡口旁。",
+      "scene": "At a community planning table, adults study a detailed model of a proposed pedestrian bridge placed beside a miniature old river crossing, clearly showing an idea awaiting approval without readable documents.",
+      "altText": "A proposed bridge model beside the existing river crossing.",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "9d4547da-4f80-449d-a4bf-4da1cab67a58",
+      "word": "myth",
+      "meaningZh": "神话；虚构的事；虚构的人",
+      "exampleId": "9d4547da-4f80-449d-a4bf-4da1cab67a58-visual-ex",
+      "styleFamily": "Chinese ink-and-color storybook illustration",
+      "sentenceEn": "The ancient myth tells of a dragon lifting rain from the sea.",
+      "sentenceZh": "这个古老神话讲述一条龙从海中唤起雨水。",
+      "scene": "A traditional Chinese storyteller gestures toward an imagined celestial dragon spiraling above stylized waves and bringing rain to dry fields, making the legendary nature of the myth unmistakable.",
+      "altText": "A storyteller sharing a myth about a rain-bringing dragon.",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "90dc60c4-9d0f-498c-8ded-cf37ee8fc332",
+      "word": "sophisticated",
+      "meaningZh": "复杂的；久经世故的",
+      "exampleId": "90dc60c4-9d0f-498c-8ded-cf37ee8fc332-visual-ex",
+      "styleFamily": "intricate isometric illustration",
+      "sentenceEn": "The sophisticated clock contains many precisely connected parts.",
+      "sentenceZh": "这座复杂的时钟包含许多精密连接的部件。",
+      "scene": "A cutaway mechanical clock reveals many interlocking gears, springs, levers, and counterweights working together in an intricate but orderly system, with no labels or numbers.",
+      "altText": "A sophisticated clock with many interconnected mechanisms.",
+      "riskTags": [
+        "technical",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "6c18b92b-c7f2-444c-8ecd-e3fb3183c287",
+      "word": "cow",
+      "meaningZh": "母牛；奶牛；恐吓",
+      "exampleId": "6c18b92b-c7f2-444c-8ecd-e3fb3183c287-visual-ex",
+      "styleFamily": "warm rural gouache illustration",
+      "sentenceEn": "The cow rests beside a rice terrace after pulling a small plow.",
+      "sentenceZh": "奶牛拉完小犁后在稻田梯田旁休息。",
+      "scene": "In a southern Chinese rice-terrace landscape, a calm clearly recognizable adult cow rests beside a small wooden plow while a farmer offers it water, with lush paddies and tiled farmhouses behind.",
+      "altText": "A cow resting beside a rice terrace and wooden plow.",
+      "riskTags": [
+        "animal_anatomy",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "d4700c52-1302-4321-a03c-47df04ab368e",
+      "word": "standing",
+      "meaningZh": "站立；长期",
+      "exampleId": "d4700c52-1302-4321-a03c-47df04ab368e-visual-ex",
+      "styleFamily": "clean editorial watercolor",
+      "sentenceEn": "Only one passenger is standing while the others remain seated.",
+      "sentenceZh": "只有一名乘客站着，其他人仍然坐着。",
+      "scene": "Inside a stylized city tram, one adult passenger is clearly standing upright and holding a rail while several other passengers sit, creating an unmistakable posture contrast.",
+      "altText": "One passenger standing among several seated passengers.",
+      "riskTags": [
+        "comparison",
+        "body_posture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4afb661d-cbcc-407b-9572-e90d7aed9d37",
+      "word": "asleep",
+      "meaningZh": "睡着的；入睡的",
+      "exampleId": "4afb661d-cbcc-407b-9572-e90d7aed9d37-visual-ex",
+      "styleFamily": "soft pastel night illustration",
+      "sentenceEn": "The child is asleep while the bedside lamp still glows.",
+      "sentenceZh": "床头灯仍亮着，孩子已经睡着了。",
+      "scene": "A peaceful child lies asleep under a blanket with eyes naturally closed, relaxed face and body, while a warm bedside lamp glows and a toy rests nearby, clearly nighttime and non-photorealistic.",
+      "altText": "A child asleep under a blanket beside a glowing lamp.",
+      "riskTags": [
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "5e0d56d9-3811-429f-b70d-b812c7a59907",
+      "word": "tennis",
+      "meaningZh": "网球",
+      "exampleId": "5e0d56d9-3811-429f-b70d-b812c7a59907-visual-ex",
+      "styleFamily": "dynamic screen-print sports illustration",
+      "sentenceEn": "They play tennis across a net on the outdoor court.",
+      "sentenceZh": "他们隔着球网在室外球场上打网球。",
+      "scene": "Two adult athletes play tennis on opposite sides of a clearly marked outdoor court as one racket strikes a bright ball over the central net, with anatomically plausible poses.",
+      "altText": "Two athletes playing tennis across a net.",
+      "riskTags": [
+        "body_posture",
+        "hands",
+        "people_face",
+        "sports_equipment"
+      ]
+    },
+    {
+      "vocabularyId": "bc4a8192-388c-4af5-a187-0cb7b206ac8e",
+      "word": "nerve",
+      "meaningZh": "神经；勇气",
+      "exampleId": "bc4a8192-388c-4af5-a187-0cb7b206ac8e-visual-ex",
+      "styleFamily": "scientific cut-paper illustration",
+      "sentenceEn": "A nerve carries the touch signal from the fingertip to the brain.",
+      "sentenceZh": "神经把触觉信号从指尖传到大脑。",
+      "scene": "A tasteful simplified anatomical cutaway shows a glowing nerve pathway running from an adult fingertip through the arm and spinal cord to the brain, with a clear directional pulse and no labels.",
+      "altText": "A nerve carrying a touch signal from fingertip to brain.",
+      "riskTags": [
+        "sequence",
+        "anatomy",
+        "technical"
+      ]
+    },
+    {
+      "vocabularyId": "c5c8cc00-e438-4c50-8930-fa791c98df6a",
+      "word": "barrel",
+      "meaningZh": "桶；装入桶内",
+      "exampleId": "c5c8cc00-e438-4c50-8930-fa791c98df6a-visual-ex",
+      "styleFamily": "textured woodblock-inspired illustration",
+      "sentenceEn": "The tea maker stores compressed leaves inside a wooden barrel.",
+      "sentenceZh": "制茶师把压制茶叶储存在木桶里。",
+      "scene": "In a traditional Chinese tea workshop, an adult tea maker places bundled tea leaves into a large round wooden barrel with visible staves and metal hoops, while similar barrels stand nearby.",
+      "altText": "A tea maker placing leaves into a wooden barrel.",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "object_structure"
+      ]
+    },
+    {
+      "vocabularyId": "25dce941-659d-4e0a-b0f5-08bdd90932e2",
+      "word": "bombing",
+      "meaningZh": "轰炸",
+      "exampleId": "25dce941-659d-4e0a-b0f5-08bdd90932e2-visual-ex",
+      "styleFamily": "somber historical editorial illustration",
+      "sentenceEn": "The bombing damaged several empty buildings during the night.",
+      "sentenceZh": "夜间轰炸损坏了几座空置建筑。",
+      "scene": "A distant nighttime city edge shows several empty buildings damaged by a bombing, with smoke rising and emergency crews approaching after the event; no bodies, injuries, weapons close-up, or graphic content.",
+      "altText": "Empty buildings damaged by a nighttime bombing.",
+      "riskTags": [
+        "cause_effect",
+        "sensitive_event",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "7832c2d2-0905-4c78-8654-5191c43dd5b9",
+      "word": "membership",
+      "meaningZh": "会员资格",
+      "exampleId": "7832c2d2-0905-4c78-8654-5191c43dd5b9-visual-ex",
+      "styleFamily": "friendly geometric editorial illustration",
+      "sentenceEn": "Her membership gives her access to the community workshop.",
+      "sentenceZh": "她的会员资格使她能够进入社区工坊。",
+      "scene": "At a community workshop entrance, an adult presents a simple symbol-only membership card and is welcomed inside to use shared tools, while a nonmember visitor waits outside, with no readable text.",
+      "altText": "A membership card granting access to a community workshop.",
+      "riskTags": [
+        "abstract_meaning",
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e182e9a2-db9b-435e-9319-1ab0da227982",
+      "word": "ratio",
+      "meaningZh": "比；比率；比例",
+      "exampleId": "e182e9a2-db9b-435e-9319-1ab0da227982-visual-ex",
+      "styleFamily": "minimal clay-and-paper infographic illustration",
+      "sentenceEn": "The ratio of blue tiles to yellow tiles is two to one.",
+      "sentenceZh": "蓝色瓷砖与黄色瓷砖的比例是二比一。",
+      "scene": "A clean tabletop arrangement contains exactly twelve blue square tiles and exactly six yellow square tiles in aligned groups, visually demonstrating a two-to-one ratio without numerals, labels, or text.",
+      "altText": "Twelve blue tiles and six yellow tiles showing a two-to-one ratio.",
+      "riskTags": [
+        "exact_quantity",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "f9751673-0a34-45d0-b6ad-25882c9a524f",
+      "word": "menu",
+      "meaningZh": "菜单",
+      "exampleId": "f9751673-0a34-45d0-b6ad-25882c9a524f-visual-ex",
+      "styleFamily": "elegant Chinese paper-cut collage",
+      "sentenceEn": "The menu shows pictures of each dish available at the restaurant.",
+      "sentenceZh": "菜单展示了餐厅供应的每一道菜的图片。",
+      "scene": "In a Chinese restaurant, an open menu with only clear food illustrations and no readable writing lies beside matching dishes such as dumplings, noodles, greens, and soup as an adult diner chooses.",
+      "altText": "An illustrated menu beside matching Chinese dishes.",
+      "riskTags": [
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "de05bb7a-a2f7-4783-b727-f803808e3158",
+      "word": "controversial",
+      "meaningZh": "有争议的",
+      "exampleId": "de05bb7a-a2f7-4783-b727-f803808e3158-visual-ex",
+      "styleFamily": "split-composition editorial linocut",
+      "sentenceEn": "The controversial statue divides the town into opposing groups.",
+      "sentenceZh": "这座有争议的雕像使镇民分成了对立的两派。",
+      "scene": "A stylized town square centers on an abstract statue while two equally visible groups of adults stand on opposite sides, one supportive and one critical, expressing disagreement without signs or written slogans.",
+      "altText": "Opposing groups debating a controversial statue.",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "4eb367c0-eaea-415f-b5f4-9c43ac900957",
+      "word": "desperate",
+      "meaningZh": "不顾一切的；绝望的；极渴望的",
+      "exampleId": "4eb367c0-eaea-415f-b5f4-9c43ac900957-visual-ex",
+      "styleFamily": "dramatic charcoal-and-gouache illustration",
+      "sentenceEn": "The desperate sailor reaches toward the rescue rope in the storm.",
+      "sentenceZh": "绝望的水手在暴风雨中伸手抓向救援绳。",
+      "scene": "In a stylized storm at sea, an exhausted adult sailor in a life jacket clings to a small damaged boat and reaches urgently toward a rescue rope thrown from a nearby vessel, with no injury or graphic danger.",
+      "altText": "A desperate sailor reaching for a rescue rope in a storm.",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "body_posture",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c9746dd1-7a6d-4925-a6cb-aedea053a2df",
+      "word": "lifestyle",
+      "meaningZh": "生活方式",
+      "exampleId": "c9746dd1-7a6d-4925-a6cb-aedea053a2df-visual-ex",
+      "styleFamily": "sunlit Chinese urban watercolor",
+      "sentenceEn": "Her active lifestyle includes cycling, cooking fresh food, and morning tai chi.",
+      "sentenceZh": "她积极的生活方式包括骑行、烹饪新鲜食物和晨练太极。",
+      "scene": "A harmonious triptych follows the same Chinese adult woman cycling through a neighborhood, preparing fresh vegetables at home, and practicing morning tai chi in a park, showing a consistent active lifestyle.",
+      "altText": "Cycling, healthy cooking, and tai chi forming an active lifestyle.",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face",
+        "hands",
+        "body_posture"
+      ]
+    },
+    {
+      "vocabularyId": "b3d99249-a9fa-4446-9f0c-8f9a11e2639c",
+      "word": "humor",
+      "meaningZh": "幽默",
+      "exampleId": "b3d99249-a9fa-4446-9f0c-8f9a11e2639c-visual-ex",
+      "styleFamily": "expressive ink-and-wash cartoon",
+      "sentenceEn": "His gentle humor makes the tense meeting burst into laughter.",
+      "sentenceZh": "他温和的幽默让紧张的会议顿时充满笑声。",
+      "scene": "At a previously tense meeting table, one adult makes a playful harmless visual joke with a comically tangled pointer, causing the diverse group around him to laugh warmly, with no speech bubbles or text.",
+      "altText": "Gentle humor making a tense meeting group laugh.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f12bcae9-db77-440c-a50a-c002ffeaa89d",
+      "word": "loud",
+      "meaningZh": "大声的；不断的；喧吵的",
+      "exampleId": "f12bcae9-db77-440c-a50a-c002ffeaa89d-visual-ex",
+      "styleFamily": "bold expressionist poster illustration",
+      "sentenceEn": "The loud drum makes nearby birds fly from the tree.",
+      "sentenceZh": "响亮的鼓声惊得附近的鸟飞离树木。",
+      "scene": "An adult strikes a large festival drum once as strong concentric sound waves spread outward and nearby birds suddenly lift from a tree, clearly conveying loud volume without text or symbols.",
+      "altText": "A loud drum sending birds flying from a nearby tree.",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands",
+        "animal_anatomy"
+      ]
+    },
+    {
+      "vocabularyId": "e2c0350d-7182-4e5a-b57d-3f682b5f7e36",
+      "word": "glove",
+      "meaningZh": "手套；给...戴手套",
+      "exampleId": "e2c0350d-7182-4e5a-b57d-3f682b5f7e36-visual-ex",
+      "styleFamily": "crisp colored-pencil illustration",
+      "sentenceEn": "She pulls on a thick glove before handling the cold metal.",
+      "sentenceZh": "她在接触冰冷金属前戴上一只厚手套。",
+      "scene": "A close but anatomically clear view shows an adult pulling a thick insulated glove over one hand before grasping a frost-covered metal handle, while the bare hand remains away from the cold surface.",
+      "altText": "A person putting on a thick glove before touching cold metal.",
+      "riskTags": [
+        "hands",
+        "sequence",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "9f294ca5-86d0-49b0-94eb-56a4e2da74a3",
+      "word": "sufficient",
+      "meaningZh": "充分的；足够的",
+      "exampleId": "9f294ca5-86d0-49b0-94eb-56a4e2da74a3-visual-ex",
+      "styleFamily": "warm tabletop gouache illustration",
+      "sentenceEn": "Eight bowls are sufficient for the eight dinner guests.",
+      "sentenceZh": "八只碗足够八位晚餐客人使用。",
+      "scene": "A round Chinese family dinner table is set with exactly eight bowls for exactly eight adult guests, one bowl at every place and none missing or extra, clearly showing a sufficient amount without numerals or text.",
+      "altText": "Exactly eight bowls providing a sufficient amount for eight guests.",
+      "riskTags": [
+        "exact_quantity",
+        "reference",
+        "people_face"
+      ]
+    }
+  ]
+}

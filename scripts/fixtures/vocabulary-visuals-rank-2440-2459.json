@@ -1,0 +1,344 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-2440-2459",
+  "batchId": "auto-rank-2440-2459-20260828",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "telescope",
+      "reflection",
+      "interpret",
+      "fiction",
+      "salad",
+      "boundary"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "2341a34d-461f-4f71-809f-aaa9772bb255",
+      "word": "scenario",
+      "meaningZh": "剧本提纲；情节；剧本；方案；事态",
+      "exampleId": "2341a34d-461f-4f71-809f-aaa9772bb255-visual-ex",
+      "styleFamily": "planning-room editorial illustration",
+      "sentenceEn": "The team practiced a storm-evacuation scenario.",
+      "sentenceZh": "团队演练了暴风雨疏散方案。",
+      "scene": "A community team rehearses a safe storm-evacuation scenario using a miniature neighborhood model and colored figures, with no maps, arrows, or text.",
+      "altText": "团队用模型演练风暴疏散方案",
+      "riskTags": [
+        "disaster_preparedness",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "5ba9ad70-6783-4d21-b509-2a98697e036a",
+      "word": "telescope",
+      "meaningZh": "望远镜",
+      "exampleId": "5ba9ad70-6783-4d21-b509-2a98697e036a-visual-ex",
+      "styleFamily": "ancient Chinese observatory watercolor illustration",
+      "sentenceEn": "The astronomer aimed the telescope at the bright planet.",
+      "sentenceZh": "天文学家把望远镜对准明亮的行星。",
+      "scene": "At an ancient Chinese-inspired observatory, a modern astronomer looks through a brass telescope toward a bright planet above tiled roofs, with no star labels.",
+      "altText": "天文学家在中式观星台使用望远镜",
+      "riskTags": [
+        "science_accuracy",
+        "cultural_setting",
+        "night"
+      ]
+    },
+    {
+      "vocabularyId": "20c40a80-c883-4c54-95c8-91cd2155f999",
+      "word": "reflection",
+      "meaningZh": "反思；反映",
+      "exampleId": "20c40a80-c883-4c54-95c8-91cd2155f999-visual-ex",
+      "styleFamily": "Chinese garden ink-wash illustration",
+      "sentenceEn": "The moon's reflection shimmered in the garden pond.",
+      "sentenceZh": "月亮的倒影在园林池塘里闪烁。",
+      "scene": "A full moon and curved pavilion appear clearly reflected in a still pond within a classical Chinese garden, with subtle ripples breaking the reflection.",
+      "altText": "月亮与亭子的倒影映在园林池塘",
+      "riskTags": [
+        "cultural_landscape",
+        "reflection_accuracy",
+        "night"
+      ]
+    },
+    {
+      "vocabularyId": "b5e4e977-4cec-4b18-b551-e6c1674fc1c2",
+      "word": "revolution",
+      "meaningZh": "革命；旋转；变革",
+      "exampleId": "b5e4e977-4cec-4b18-b551-e6c1674fc1c2-visual-ex",
+      "styleFamily": "industrial-history editorial illustration",
+      "sentenceEn": "The printing press caused a revolution in the spread of ideas.",
+      "sentenceZh": "印刷机引发了思想传播方式的巨大变革。",
+      "scene": "A historic printing workshop transforms from a few hand-copied pages into stacks of widely shared books, showing a peaceful technological revolution without readable text.",
+      "altText": "印刷机带来知识传播的巨大变革",
+      "riskTags": [
+        "historical",
+        "text_risk",
+        "many_objects"
+      ]
+    },
+    {
+      "vocabularyId": "45320bbc-5c18-41df-b9ed-d8b6beeb5d1e",
+      "word": "strip",
+      "meaningZh": "条；带；剥去；脱衣",
+      "exampleId": "45320bbc-5c18-41df-b9ed-d8b6beeb5d1e-visual-ex",
+      "styleFamily": "seaside watercolor illustration",
+      "sentenceEn": "A narrow strip of sand separated the lake from the sea.",
+      "sentenceZh": "一条狭窄的沙带把湖泊与大海分隔开。",
+      "scene": "Aerial view of a long narrow strip of golden sand clearly separating a calm blue lagoon from the deeper open sea.",
+      "altText": "狭长沙带分隔湖泊与海洋",
+      "riskTags": [
+        "landscape",
+        "aerial_view",
+        "spatial_relationship"
+      ]
+    },
+    {
+      "vocabularyId": "65bbbc2d-ec5c-4ce3-b1f0-e2037bb11806",
+      "word": "interpret",
+      "meaningZh": "解释；口译",
+      "exampleId": "65bbbc2d-ec5c-4ce3-b1f0-e2037bb11806-visual-ex",
+      "styleFamily": "Chinese archaeology-museum illustration",
+      "sentenceEn": "The curator helped visitors interpret the ancient pottery.",
+      "sentenceZh": "策展人帮助游客理解古代陶器。",
+      "scene": "In a Chinese archaeology museum, a curator gestures between an ancient painted pot and a reconstructed household scene so visitors can interpret its use, with no labels.",
+      "altText": "策展人帮助游客理解中国古陶器用途",
+      "riskTags": [
+        "cultural_artifact",
+        "people_face",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "1d97bd21-84ce-4ba6-aab9-849b3c60ab29",
+      "word": "friendly",
+      "meaningZh": "友好的",
+      "exampleId": "1d97bd21-84ce-4ba6-aab9-849b3c60ab29-visual-ex",
+      "styleFamily": "neighborhood editorial illustration",
+      "sentenceEn": "The new neighbor gave us a friendly wave.",
+      "sentenceZh": "新邻居友好地向我们挥手。",
+      "scene": "A new adult neighbor smiles and gives a friendly wave across a shared garden fence while another resident waves back.",
+      "altText": "新邻居隔着花园围栏友好挥手",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "social"
+      ]
+    },
+    {
+      "vocabularyId": "369aad9d-7378-43ce-9a1c-ca9f8bd350cd",
+      "word": "tournament",
+      "meaningZh": "锦标赛；比赛",
+      "exampleId": "369aad9d-7378-43ce-9a1c-ca9f8bd350cd-visual-ex",
+      "styleFamily": "sports-poster illustration",
+      "sentenceEn": "Eight players entered the weekend chess tournament.",
+      "sentenceZh": "八名棋手参加了周末国际象棋锦标赛。",
+      "scene": "Adult chess players compete at several tables in an orderly tournament hall while a small audience watches, with no scoreboards or writing.",
+      "altText": "棋手们参加周末国际象棋锦标赛",
+      "riskTags": [
+        "many_people",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "b786c5c2-6442-46c4-989c-bf315c63e85c",
+      "word": "fiction",
+      "meaningZh": "小说；虚构故事",
+      "exampleId": "b786c5c2-6442-46c4-989c-bf315c63e85c-visual-ex",
+      "styleFamily": "Chinese storytelling gouache illustration",
+      "sentenceEn": "Her fiction brought an imaginary martial-arts world to life.",
+      "sentenceZh": "她的小说让虚构的武侠世界栩栩如生。",
+      "scene": "A contemporary Chinese writer imagines a painterly wuxia scene of travelers crossing misty mountains above her blank manuscript, clearly signaling fiction without text.",
+      "altText": "中国作家想象虚构的武侠世界",
+      "riskTags": [
+        "cultural_genre",
+        "text_risk",
+        "fantasy"
+      ]
+    },
+    {
+      "vocabularyId": "f820426a-8ef1-4ea6-8a7f-585b6f352b9b",
+      "word": "detect",
+      "meaningZh": "发现；察觉；探测",
+      "exampleId": "f820426a-8ef1-4ea6-8a7f-585b6f352b9b-visual-ex",
+      "styleFamily": "search-and-rescue editorial illustration",
+      "sentenceEn": "The trained dog can detect a person beneath the snow.",
+      "sentenceZh": "受过训练的狗能发现雪下的人。",
+      "scene": "A rescue dog alerts its handler to a safe training dummy partly buried beneath snow during an organized avalanche exercise.",
+      "altText": "搜救犬在训练中探测雪下目标",
+      "riskTags": [
+        "animal",
+        "disaster_training",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "005050a4-faf9-4a6b-a7b1-dbb406946020",
+      "word": "tremendous",
+      "meaningZh": "巨大的；非常的；可怕的",
+      "exampleId": "005050a4-faf9-4a6b-a7b1-dbb406946020-visual-ex",
+      "styleFamily": "cinematic landscape illustration",
+      "sentenceEn": "A tremendous waterfall thundered into the canyon.",
+      "sentenceZh": "巨大的瀑布轰鸣着落入峡谷。",
+      "scene": "A tiny group of safely positioned visitors watches an immense waterfall plunge into a vast green canyon, emphasizing tremendous scale.",
+      "altText": "巨大瀑布奔腾落入峡谷",
+      "riskTags": [
+        "landscape",
+        "scale_contrast",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "bcfeb4ae-b6e4-4592-b69c-d00209dfba00",
+      "word": "lifetime",
+      "meaningZh": "一生",
+      "exampleId": "bcfeb4ae-b6e4-4592-b69c-d00209dfba00-visual-ex",
+      "styleFamily": "reflective family collage illustration",
+      "sentenceEn": "She collected recipes throughout her lifetime.",
+      "sentenceZh": "她一生都在收集食谱。",
+      "scene": "One woman appears across several life stages preparing meals, with a growing collection of blank recipe cards and family dishes connecting the years.",
+      "altText": "女子一生收集并传承食谱",
+      "riskTags": [
+        "age_progression",
+        "text_risk",
+        "many_people"
+      ]
+    },
+    {
+      "vocabularyId": "e0efc139-a80a-4bc1-a00d-5f4c9c3d8273",
+      "word": "recommendation",
+      "meaningZh": "推荐",
+      "exampleId": "e0efc139-a80a-4bc1-a00d-5f4c9c3d8273-visual-ex",
+      "styleFamily": "bookshop editorial illustration",
+      "sentenceEn": "The bookseller made a thoughtful recommendation.",
+      "sentenceZh": "书店店员给出了贴心的推荐。",
+      "scene": "A bookseller warmly selects one closed illustrated book from many and offers it to a customer after listening carefully, with no readable titles.",
+      "altText": "书店店员向顾客推荐一本书",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "22877a9f-165a-4463-ab0a-40bf494156f3",
+      "word": "senator",
+      "meaningZh": "参议员",
+      "exampleId": "22877a9f-165a-4463-ab0a-40bf494156f3-visual-ex",
+      "styleFamily": "civic editorial illustration",
+      "sentenceEn": "The senator listened to farmers during the public meeting.",
+      "sentenceZh": "参议员在公开会议上听取农民意见。",
+      "scene": "An elected senator sits at a community roundtable listening attentively to farmers and small-business owners, with no flags, campaign signs, or text.",
+      "altText": "参议员在社区会议听取民众意见",
+      "riskTags": [
+        "political_role",
+        "many_people",
+        "text_risk"
+      ]
+    },
+    {
+      "vocabularyId": "756a9cef-7ca5-4b33-a3a2-a153de410db1",
+      "word": "hunting",
+      "meaningZh": "打猎",
+      "exampleId": "756a9cef-7ca5-4b33-a3a2-a153de410db1-visual-ex",
+      "styleFamily": "wildlife-conservation illustration",
+      "sentenceEn": "The camera team spent the morning hunting for rare bird photographs.",
+      "sentenceZh": "摄影团队整个上午都在寻找稀有鸟类的照片。",
+      "scene": "Two wildlife photographers quietly search a wetland for a rare bird using cameras and binoculars, depicting nonviolent photographic hunting.",
+      "altText": "摄影师在湿地寻找稀有鸟类",
+      "riskTags": [
+        "weapon_term",
+        "animals",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "52bc923f-081e-454d-ae49-389ad13e235f",
+      "word": "salad",
+      "meaningZh": "色拉",
+      "exampleId": "52bc923f-081e-454d-ae49-389ad13e235f-visual-ex",
+      "styleFamily": "Chinese cold-dish gouache illustration",
+      "sentenceEn": "The chef made a fresh cucumber salad with sesame.",
+      "sentenceZh": "厨师用黄瓜和芝麻做了一道清爽凉拌菜。",
+      "scene": "In a Chinese home kitchen, a cook tosses sliced cucumber, sesame, and herbs into a fresh cold salad served on a blue-and-white plate.",
+      "altText": "厨师制作芝麻黄瓜凉拌菜",
+      "riskTags": [
+        "food",
+        "cultural_cuisine",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c955dc56-cd9e-4917-b560-683d249e3f4d",
+      "word": "guarantee",
+      "meaningZh": "担保；抵押品；保证书",
+      "exampleId": "c955dc56-cd9e-4917-b560-683d249e3f4d-visual-ex",
+      "styleFamily": "service editorial illustration",
+      "sentenceEn": "The repair shop gave a guarantee on the new part.",
+      "sentenceZh": "修理店为新零件提供了保修保证。",
+      "scene": "A mechanic confidently hands a customer a repaired appliance and a plain sealed warranty card, reinforcing a guarantee without readable text.",
+      "altText": "维修店为新零件提供保证",
+      "riskTags": [
+        "text_risk",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b135fb4d-2d6d-48ed-9866-79cc89af4677",
+      "word": "innocent",
+      "meaningZh": "无罪的；不懂事的；无知的",
+      "exampleId": "b135fb4d-2d6d-48ed-9866-79cc89af4677-visual-ex",
+      "styleFamily": "gentle courtroom editorial illustration",
+      "sentenceEn": "The evidence proved that the driver was innocent.",
+      "sentenceZh": "证据证明司机是无辜的。",
+      "scene": "In a restrained courtroom, a relieved adult stands beside a lawyer as a judge closes the case, with calm faces and no visible documents or text.",
+      "altText": "证据证明司机无罪后露出宽慰神情",
+      "riskTags": [
+        "legal",
+        "people_face",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "3d8d37f2-125c-4138-a8e1-df7cf8b475b3",
+      "word": "boundary",
+      "meaningZh": "边界；分界线",
+      "exampleId": "3d8d37f2-125c-4138-a8e1-df7cf8b475b3-visual-ex",
+      "styleFamily": "Great Wall landscape illustration",
+      "sentenceEn": "The old wall once marked a boundary between two regions.",
+      "sentenceZh": "这道古墙曾标志着两个地区的边界。",
+      "scene": "A long section of the Great Wall follows a mountain ridge between two contrasting valleys, visually emphasizing an old geographic boundary without flags.",
+      "altText": "长城沿山脊标示地区边界",
+      "riskTags": [
+        "cultural_landmark",
+        "landscape",
+        "political_sensitivity"
+      ]
+    },
+    {
+      "vocabularyId": "daa3f7cd-273c-44cc-ba42-c5b2a382ec8e",
+      "word": "pause",
+      "meaningZh": "暂停；中止；停顿；间歇；踌躇；休止",
+      "exampleId": "daa3f7cd-273c-44cc-ba42-c5b2a382ec8e-visual-ex",
+      "styleFamily": "music-studio editorial illustration",
+      "sentenceEn": "The pianist took a brief pause before the final passage.",
+      "sentenceZh": "钢琴家在最后一段前短暂停顿。",
+      "scene": "A pianist lifts both hands calmly above the keys during a brief pause, taking one quiet breath before continuing, with no sheet music text.",
+      "altText": "钢琴家在终段前短暂停顿",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "text_risk"
+      ]
+    }
+  ]
+}
