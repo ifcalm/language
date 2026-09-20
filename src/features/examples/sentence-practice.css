@@ -22,43 +22,32 @@
 .sentence-practice-jump {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .sentence-practice-jump label {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .sentence-practice-jump input {
-  width: 6.5ch;
-  padding: 5px 7px;
-  border: 1px solid var(--border-strong);
-  border-radius: 8px;
+  width: 5.2ch;
+  padding: 3px 5px;
+  border: 1px solid #d8d8d3;
+  border-radius: 6px;
   background: var(--surface);
   color: var(--text);
+  appearance: textfield;
   font: inherit;
   font-variant-numeric: tabular-nums;
   font-weight: 800;
   text-align: center;
 }
 
-.sentence-practice-jump button {
-  padding: 6px 11px;
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  background: var(--surface);
-  color: var(--text);
-  cursor: pointer;
-  font: inherit;
-  font-weight: 750;
-}
-
-.sentence-practice-jump button:hover,
-.sentence-practice-jump button:focus-visible {
-  background: var(--text);
-  color: var(--surface);
+.sentence-practice-jump input::-webkit-inner-spin-button,
+.sentence-practice-jump input::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
 }
 
 .sentence-practice-jump-message {

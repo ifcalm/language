@@ -661,7 +661,6 @@ function SentencePracticePage() {
             />
             / {displayedExerciseCount} 题
           </label>
-          <button type="submit">跳转</button>
         </form>
         {jumpMessage ? (
           <span className="sentence-practice-jump-message" role="status">
