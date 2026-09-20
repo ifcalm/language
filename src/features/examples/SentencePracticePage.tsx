@@ -7,8 +7,8 @@ import {
 import './sentence-practice.css'
 
 const PRACTICE_PAGE_SIZE = 500
-const RECENT_SECONDARY_WINDOW = 50
-const PREFERRED_SECONDARY_REPEAT_LIMIT = 3
+const RECENT_FILL_WORD_WINDOW = 100
+const PREFERRED_FILL_WORD_REPEAT_LIMIT = 3
 const PROGRESS_STORAGE_KEY = 'english-orbit:sentence-practice-progress-v2'
 const WORD_PATTERN = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g
 
@@ -38,26 +38,66 @@ async function requestPracticePage(
 
 const SECOND_TARGET_STOP_WORDS = new Set([
   'a',
+  'aboard',
   'about',
+  'above',
+  'across',
   'after',
   'again',
+  'against',
+  'all',
+  'along',
   'also',
   'am',
+  'amid',
+  'among',
   'an',
+  'and',
+  'another',
+  'any',
+  'anybody',
+  'anyone',
+  'anything',
   'are',
+  'around',
   'as',
   'be',
   'because',
   'been',
   'before',
+  'behind',
+  'below',
+  'beneath',
+  'beside',
+  'besides',
   'being',
   'between',
+  'beyond',
+  'both',
+  'but',
+  'by',
   'can',
+  'concerning',
+  'considering',
   'could',
+  'despite',
   'did',
   'do',
   'does',
+  'down',
+  'during',
+  'each',
+  'either',
+  'enough',
+  'everybody',
+  'everyone',
+  'everything',
   'every',
+  'except',
+  'excluding',
+  'few',
+  'fewer',
+  'following',
   'for',
   'from',
   'had',
@@ -66,15 +106,25 @@ const SECOND_TARGET_STOP_WORDS = new Set([
   'he',
   'her',
   'hers',
+  'herself',
   'him',
+  'himself',
   'his',
   'how',
+  'i',
+  'if',
+  'in',
+  'inside',
   'its',
   'into',
   'is',
   'it',
+  'itself',
   'just',
+  'lest',
   'like',
+  'little',
+  'many',
   'may',
   'me',
   'might',
@@ -82,18 +132,51 @@ const SECOND_TARGET_STOP_WORDS = new Set([
   'more',
   'must',
   'my',
+  'myself',
+  'near',
+  'neither',
+  'no',
+  'nobody',
+  'none',
+  'nor',
+  'nothing',
   'of',
+  'off',
+  'on',
+  'once',
+  'one',
+  'only',
+  'onto',
+  'opposite',
+  'or',
   'our',
   'ours',
+  'ourselves',
+  'out',
+  'outside',
   'other',
+  'others',
+  'over',
+  'past',
+  'provided',
+  'rather',
+  'regarding',
+  'round',
+  'several',
   'shall',
   'she',
   'should',
+  'since',
+  'so',
+  'somebody',
+  'someone',
+  'something',
   'some',
   'than',
   'that',
   'the',
   'them',
+  'themselves',
   'their',
   'theirs',
   'there',
@@ -101,28 +184,53 @@ const SECOND_TARGET_STOP_WORDS = new Set([
   'they',
   'this',
   'those',
+  'though',
+  'throughout',
+  'till',
   'to',
+  'toward',
+  'towards',
   'through',
   'under',
+  'underneath',
+  'unless',
+  'unlike',
+  'until',
+  'up',
+  'upon',
   'us',
   'very',
+  'versus',
+  'via',
   'was',
   'we',
   'were',
+  'whatever',
   'what',
   'when',
+  'whenever',
   'where',
+  'whereas',
+  'wherever',
+  'whether',
   'which',
+  'whichever',
   'who',
+  'whoever',
   'whom',
   'whose',
   'while',
   'will',
+  'within',
+  'without',
   'with',
   'would',
+  'yet',
   'you',
   'your',
   'yours',
+  'yourself',
+  'yourselves',
 ])
 
 interface SentenceWord {
@@ -148,8 +256,8 @@ interface ExerciseDraft {
   vocabularyWord: string
   sentenceEn: string
   sentenceZh: string
-  primary: SentenceWord
-  secondaryCandidates: SentenceWord[]
+  fixedTarget: SentenceWord | null
+  fillCandidates: SentenceWord[]
 }
 
 const IRREGULAR_FORMS: Record<string, string[]> = {
@@ -238,9 +346,39 @@ function getSentenceWords(sentence: string): SentenceWord[] {
   }))
 }
 
+function isLikelyProperNoun(
+  word: SentenceWord,
+  knownVocabularyWords: Set<string>,
+  acceptedInflections: Set<string> = new Set(),
+) {
+  const normalized = normalizeWord(word.text)
+  const isAllCapsAbbreviation = /^[A-Z]{2,}$/.test(word.text)
+  const isCapitalizedUnknownWord =
+    /^[A-Z][a-z]/.test(word.text) &&
+    !knownVocabularyWords.has(normalized) &&
+    !acceptedInflections.has(normalized)
+
+  return isAllCapsAbbreviation || isCapitalizedUnknownWord
+}
+
+function isEligibleFillWord(
+  word: SentenceWord,
+  knownVocabularyWords: Set<string>,
+  acceptedInflections: Set<string> = new Set(),
+) {
+  const normalized = normalizeWord(word.text)
+
+  return (
+    normalized.length > 0 &&
+    !SECOND_TARGET_STOP_WORDS.has(normalized) &&
+    !isLikelyProperNoun(word, knownVocabularyWords, acceptedInflections)
+  )
+}
+
 function buildExerciseDraft(
   item: CoreVocabularyEntry,
   example: VocabularyExample,
+  knownVocabularyWords: Set<string>,
 ): ExerciseDraft | null {
   const words = getSentenceWords(example.sentenceEn)
 
@@ -252,19 +390,23 @@ function buildExerciseDraft(
     return null
   }
 
-  const secondaryCandidates = words
+  const primary = words[primaryIndex]
+  const targetCanBeBlank = isEligibleFillWord(
+    primary,
+    knownVocabularyWords,
+    getTargetWordForms(item.word),
+  )
+  const fillCandidates = words
     .map((word, index) => ({ word, index }))
-    .filter(({ word, index }) => {
-      const normalized = normalizeWord(word.text)
-      return (
+    .filter(
+      ({ word, index }) =>
         index !== primaryIndex &&
-        normalized.length >= 3 &&
-        !SECOND_TARGET_STOP_WORDS.has(normalized)
-      )
-    })
+        isEligibleFillWord(word, knownVocabularyWords),
+    )
     .map(({ word }) => word)
 
-  if (secondaryCandidates.length === 0) {
+  const requiredCandidateCount = targetCanBeBlank ? 1 : 2
+  if (fillCandidates.length < requiredCandidateCount) {
     return null
   }
 
@@ -273,25 +415,28 @@ function buildExerciseDraft(
     vocabularyWord: item.word,
     sentenceEn: example.sentenceEn,
     sentenceZh: example.sentenceZh,
-    primary: words[primaryIndex],
-    secondaryCandidates,
+    fixedTarget: targetCanBeBlank ? primary : null,
+    fillCandidates,
   }
 }
 
 function buildExercises(items: CoreVocabularyEntry[]) {
+  const knownVocabularyWords = new Set(
+    items.map((item) => normalizeWord(item.word)),
+  )
   const frequencyByWord = new Map(
     items.map((item) => [normalizeWord(item.word), item.frequencyRank ?? 999_999]),
   )
   const practicedWords = new Set<string>()
-  const secondaryUseCounts = new Map<string, number>()
-  const recentSecondaryWords: string[] = []
+  const fillUseCounts = new Map<string, number>()
+  const recentFillWords: string[] = []
   const exercises: SentenceExercise[] = []
 
   for (const item of items) {
     let draft: ExerciseDraft | null = null
 
     for (const example of item.examples ?? []) {
-      draft = buildExerciseDraft(item, example)
+      draft = buildExerciseDraft(item, example, knownVocabularyWords)
 
       if (draft) {
         break
@@ -302,20 +447,20 @@ function buildExercises(items: CoreVocabularyEntry[]) {
       continue
     }
 
-    const recentWords = new Set(recentSecondaryWords)
-    const rankedCandidates = [...draft.secondaryCandidates].sort((left, right) => {
+    const recentWords = new Set(recentFillWords)
+    const rankedCandidates = [...draft.fillCandidates].sort((left, right) => {
       const leftWord = normalizeWord(left.text)
       const rightWord = normalizeWord(right.text)
       const leftRecent = recentWords.has(leftWord) ? 1 : 0
       const rightRecent = recentWords.has(rightWord) ? 1 : 0
       const leftPracticed = practicedWords.has(leftWord) ? 1 : 0
       const rightPracticed = practicedWords.has(rightWord) ? 1 : 0
-      const leftUseCount = secondaryUseCounts.get(leftWord) ?? 0
-      const rightUseCount = secondaryUseCounts.get(rightWord) ?? 0
+      const leftUseCount = fillUseCounts.get(leftWord) ?? 0
+      const rightUseCount = fillUseCounts.get(rightWord) ?? 0
       const leftAtRepeatLimit =
-        leftUseCount >= PREFERRED_SECONDARY_REPEAT_LIMIT ? 1 : 0
+        leftUseCount >= PREFERRED_FILL_WORD_REPEAT_LIMIT ? 1 : 0
       const rightAtRepeatLimit =
-        rightUseCount >= PREFERRED_SECONDARY_REPEAT_LIMIT ? 1 : 0
+        rightUseCount >= PREFERRED_FILL_WORD_REPEAT_LIMIT ? 1 : 0
 
       return (
         leftRecent - rightRecent ||
@@ -327,8 +472,18 @@ function buildExercises(items: CoreVocabularyEntry[]) {
         left.start - right.start
       )
     })
-    const secondary = rankedCandidates[0]
-    const targets = [draft.primary, secondary]
+    const firstCandidate = rankedCandidates[0]
+    const secondCandidate = draft.fixedTarget
+      ? firstCandidate
+      : rankedCandidates.find(
+          (candidate) =>
+            normalizeWord(candidate.text) !==
+            normalizeWord(firstCandidate.text),
+        ) ?? rankedCandidates[1]
+    const selectedFillWords = draft.fixedTarget
+      ? [draft.fixedTarget, secondCandidate]
+      : [firstCandidate, secondCandidate]
+    const targets = selectedFillWords
       .sort((left, right) => left.start - right.start)
       .map((word, index) => ({
         ...word,
@@ -343,16 +498,17 @@ function buildExercises(items: CoreVocabularyEntry[]) {
       targets,
     })
 
-    practicedWords.add(normalizeWord(draft.primary.text))
-    const normalizedSecondary = normalizeWord(secondary.text)
-    practicedWords.add(normalizedSecondary)
-    secondaryUseCounts.set(
-      normalizedSecondary,
-      (secondaryUseCounts.get(normalizedSecondary) ?? 0) + 1,
-    )
-    recentSecondaryWords.push(normalizedSecondary)
-    if (recentSecondaryWords.length > RECENT_SECONDARY_WINDOW) {
-      recentSecondaryWords.shift()
+    for (const selectedWord of selectedFillWords) {
+      const normalizedSelectedWord = normalizeWord(selectedWord.text)
+      practicedWords.add(normalizedSelectedWord)
+      fillUseCounts.set(
+        normalizedSelectedWord,
+        (fillUseCounts.get(normalizedSelectedWord) ?? 0) + 1,
+      )
+      recentFillWords.push(normalizedSelectedWord)
+    }
+    while (recentFillWords.length > RECENT_FILL_WORD_WINDOW) {
+      recentFillWords.shift()
     }
   }
 
