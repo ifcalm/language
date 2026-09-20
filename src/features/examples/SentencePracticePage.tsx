@@ -483,12 +483,13 @@ function SentencePracticePage() {
     }
   }, [exercise])
 
-  function showNextExercise() {
+  function showExerciseAtOffset(offset: number) {
     if (exercises.length === 0) {
       return
     }
 
-    const nextIndex = (exerciseIndex + 1) % exercises.length
+    const nextIndex =
+      (exerciseIndex + offset + exercises.length) % exercises.length
     setExerciseIndex(nextIndex)
     setAnswers(['', ''])
     try {
@@ -547,7 +548,7 @@ function SentencePracticePage() {
           onChange={(event) => updateAnswer(index, event.target.value)}
           onKeyDown={(event) => {
             if (event.key === 'Enter' && isComplete) {
-              showNextExercise()
+              showExerciseAtOffset(1)
             }
           }}
         />,
@@ -590,8 +591,15 @@ function SentencePracticePage() {
       </div>
 
       <footer className="sentence-practice-footer">
-        <button type="button" onClick={showNextExercise}>
-          换一句
+        <button
+          type="button"
+          className="is-previous"
+          onClick={() => showExerciseAtOffset(-1)}
+        >
+          上一句
+        </button>
+        <button type="button" onClick={() => showExerciseAtOffset(1)}>
+          下一句
         </button>
       </footer>
     </section>

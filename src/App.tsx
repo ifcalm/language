@@ -58,7 +58,6 @@ function App() {
       }
     >
   > = {
-    examples: { eyebrow: 'Sentence Examples', title: '例句' },
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
     admin: { eyebrow: 'Content Admin', title: '数据后台' },
   }
