@@ -8,6 +8,7 @@ import './sentence-practice.css'
 
 const PRACTICE_PAGE_SIZE = 500
 const RECENT_SECONDARY_WINDOW = 50
+const PREFERRED_SECONDARY_REPEAT_LIMIT = 3
 const PROGRESS_STORAGE_KEY = 'english-orbit:sentence-practice-progress-v2'
 const WORD_PATTERN = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g
 
@@ -36,43 +37,92 @@ async function requestPracticePage(
 }
 
 const SECOND_TARGET_STOP_WORDS = new Set([
+  'a',
   'about',
   'after',
   'again',
   'also',
+  'am',
+  'an',
+  'are',
+  'as',
+  'be',
   'because',
+  'been',
   'before',
   'being',
   'between',
+  'can',
   'could',
+  'did',
+  'do',
+  'does',
   'every',
+  'for',
   'from',
+  'had',
+  'has',
   'have',
+  'he',
+  'her',
+  'hers',
+  'him',
+  'his',
+  'how',
+  'its',
   'into',
+  'is',
+  'it',
   'just',
+  'like',
+  'may',
+  'me',
+  'might',
+  'mine',
   'more',
+  'must',
+  'my',
+  'of',
+  'our',
+  'ours',
   'other',
+  'shall',
+  'she',
   'should',
   'some',
   'than',
   'that',
+  'the',
+  'them',
   'their',
+  'theirs',
   'there',
   'these',
   'they',
   'this',
   'those',
+  'to',
   'through',
   'under',
+  'us',
   'very',
+  'was',
+  'we',
+  'were',
   'what',
   'when',
   'where',
   'which',
+  'who',
+  'whom',
+  'whose',
   'while',
+  'will',
   'with',
   'would',
+  'you',
   'your',
+  'yours',
 ])
 
 interface SentenceWord {
@@ -109,6 +159,9 @@ const IRREGULAR_FORMS: Record<string, string[]> = {
   bring: ['brought', 'brings', 'bringing'],
   come: ['came', 'comes', 'coming'],
   do: ['does', 'did', 'done', 'doing'],
+  dub: ['dubs', 'dubbed', 'dubbing'],
+  embed: ['embeds', 'embedded', 'embedding'],
+  equip: ['equips', 'equipped', 'equipping'],
   feel: ['felt', 'feels', 'feeling'],
   find: ['found', 'finds', 'finding'],
   get: ['got', 'gotten', 'gets', 'getting'],
@@ -128,6 +181,9 @@ const IRREGULAR_FORMS: Record<string, string[]> = {
   take: ['took', 'taken', 'takes', 'taking'],
   tell: ['told', 'tells', 'telling'],
   think: ['thought', 'thinks', 'thinking'],
+  kidnap: ['kidnaps', 'kidnapped', 'kidnapping'],
+  stun: ['stuns', 'stunned', 'stunning'],
+  trim: ['trims', 'trimmed', 'trimming'],
   write: ['wrote', 'written', 'writes', 'writing'],
 }
 
@@ -160,7 +216,10 @@ function getTargetWordForms(vocabularyWord: string) {
     forms.add(`${word.slice(0, -1)}ing`)
   }
 
-  for (const irregularForm of IRREGULAR_FORMS[word] ?? []) {
+  const irregularForms = Object.hasOwn(IRREGULAR_FORMS, word)
+    ? IRREGULAR_FORMS[word]
+    : []
+  for (const irregularForm of irregularForms) {
     forms.add(irregularForm)
   }
 
@@ -224,6 +283,7 @@ function buildExercises(items: CoreVocabularyEntry[]) {
     items.map((item) => [normalizeWord(item.word), item.frequencyRank ?? 999_999]),
   )
   const practicedWords = new Set<string>()
+  const secondaryUseCounts = new Map<string, number>()
   const recentSecondaryWords: string[] = []
   const exercises: SentenceExercise[] = []
 
@@ -250,10 +310,18 @@ function buildExercises(items: CoreVocabularyEntry[]) {
       const rightRecent = recentWords.has(rightWord) ? 1 : 0
       const leftPracticed = practicedWords.has(leftWord) ? 1 : 0
       const rightPracticed = practicedWords.has(rightWord) ? 1 : 0
+      const leftUseCount = secondaryUseCounts.get(leftWord) ?? 0
+      const rightUseCount = secondaryUseCounts.get(rightWord) ?? 0
+      const leftAtRepeatLimit =
+        leftUseCount >= PREFERRED_SECONDARY_REPEAT_LIMIT ? 1 : 0
+      const rightAtRepeatLimit =
+        rightUseCount >= PREFERRED_SECONDARY_REPEAT_LIMIT ? 1 : 0
 
       return (
         leftRecent - rightRecent ||
         leftPracticed - rightPracticed ||
+        leftAtRepeatLimit - rightAtRepeatLimit ||
+        leftUseCount - rightUseCount ||
         (frequencyByWord.get(leftWord) ?? 999_999) -
           (frequencyByWord.get(rightWord) ?? 999_999) ||
         left.start - right.start
@@ -276,8 +344,13 @@ function buildExercises(items: CoreVocabularyEntry[]) {
     })
 
     practicedWords.add(normalizeWord(draft.primary.text))
-    practicedWords.add(normalizeWord(secondary.text))
-    recentSecondaryWords.push(normalizeWord(secondary.text))
+    const normalizedSecondary = normalizeWord(secondary.text)
+    practicedWords.add(normalizedSecondary)
+    secondaryUseCounts.set(
+      normalizedSecondary,
+      (secondaryUseCounts.get(normalizedSecondary) ?? 0) + 1,
+    )
+    recentSecondaryWords.push(normalizedSecondary)
     if (recentSecondaryWords.length > RECENT_SECONDARY_WINDOW) {
       recentSecondaryWords.shift()
     }
@@ -505,19 +578,9 @@ function SentencePracticePage() {
 
   return (
     <section className="panel sentence-practice-card">
-      <div className="sentence-practice-intro">
-        <div className="sentence-practice-meta">
-          <span>Sentence Practice</span>
-          <strong>
-            第 {exerciseIndex + 1} / {displayedExerciseCount} 题
-          </strong>
-        </div>
-        <h2>补全句子中的两个单词</h2>
-        <p>
-          共 {displayedExerciseCount * 2} 个填空。优先练习新词，必要时复习高频核心词。
-        </p>
-        {loadError ? <p className="sentence-practice-load-warning">{loadError}</p> : null}
-      </div>
+      <header className="sentence-practice-progress">
+        第 {exerciseIndex + 1} / {displayedExerciseCount} 题
+      </header>
 
       <div className="sentence-practice-stage">
         <p className="sentence-practice-sentence">{renderSentence()}</p>
@@ -527,9 +590,6 @@ function SentencePracticePage() {
       </div>
 
       <footer className="sentence-practice-footer">
-        <span className={isComplete ? 'is-complete' : ''} role="status">
-          {isComplete ? '很好，两个单词都正确。' : '按句子顺序输入两个单词'}
-        </span>
         <button type="button" onClick={showNextExercise}>
           换一句
         </button>
