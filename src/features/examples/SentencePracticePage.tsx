@@ -382,7 +382,11 @@ function SentencePracticePage() {
   const [loadError, setLoadError] = useState('')
   const [loadedCount, setLoadedCount] = useState(0)
   const [availableCount, setAvailableCount] = useState(0)
+  const [jumpMessage, setJumpMessage] = useState('')
   const inputRefs = useRef<Array<HTMLInputElement | null>>([])
+  const questionNumberInputRef = useRef<HTMLInputElement | null>(null)
+  const pendingQuestionIndexRef = useRef<number | null>(null)
+  const savedProgressRestoredRef = useRef(false)
 
   const exercises = useMemo(() => buildExercises(vocabulary), [vocabulary])
   const exercise = exercises[exerciseIndex] ?? null
@@ -420,12 +424,31 @@ function SentencePracticePage() {
         function publishLoadedItems() {
           const mappedVocabulary = allItems.map(mapApiVocabularyItem)
           const preparedExercises = buildExercises(mappedVocabulary)
-          if (savedExerciseId) {
+          const pendingQuestionIndex = pendingQuestionIndexRef.current
+          if (
+            pendingQuestionIndex !== null &&
+            pendingQuestionIndex < preparedExercises.length
+          ) {
+            setExerciseIndex(pendingQuestionIndex)
+            setAnswers(['', ''])
+            pendingQuestionIndexRef.current = null
+            savedProgressRestoredRef.current = true
+            setJumpMessage('')
+            try {
+              window.localStorage.setItem(
+                PROGRESS_STORAGE_KEY,
+                preparedExercises[pendingQuestionIndex].id,
+              )
+            } catch {
+              // Progress remains usable for the current session.
+            }
+          } else if (savedExerciseId && !savedProgressRestoredRef.current) {
             const savedIndex = preparedExercises.findIndex(
               (candidate) => candidate.id === savedExerciseId,
             )
             if (savedIndex >= 0) {
               setExerciseIndex(savedIndex)
+              savedProgressRestoredRef.current = true
             }
           }
           setVocabulary(mappedVocabulary)
@@ -458,6 +481,9 @@ function SentencePracticePage() {
         }
       } catch (error) {
         if (!controller.signal.aborted) {
+          if (pendingQuestionIndexRef.current !== null) {
+            setJumpMessage('目标题目暂时未加载，请刷新后重试。')
+          }
           setLoadError(
             hasLoadedInitialPage
               ? '部分例句暂时无法读取，请刷新后继续加载。'
@@ -490,12 +516,52 @@ function SentencePracticePage() {
 
     const nextIndex =
       (exerciseIndex + offset + exercises.length) % exercises.length
+    pendingQuestionIndexRef.current = null
+    savedProgressRestoredRef.current = true
+    setJumpMessage('')
     setExerciseIndex(nextIndex)
     setAnswers(['', ''])
     try {
       window.localStorage.setItem(
         PROGRESS_STORAGE_KEY,
         exercises[nextIndex].id,
+      )
+    } catch {
+      // Progress remains usable for the current session without persistence.
+    }
+  }
+
+  function jumpToQuestion(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    const requestedQuestion = Number(questionNumberInputRef.current?.value)
+
+    if (
+      !Number.isInteger(requestedQuestion) ||
+      requestedQuestion < 1 ||
+      requestedQuestion > displayedExerciseCount
+    ) {
+      setJumpMessage(`请输入 1–${displayedExerciseCount} 之间的题号。`)
+      questionNumberInputRef.current?.focus()
+      return
+    }
+
+    const requestedIndex = requestedQuestion - 1
+    if (requestedIndex >= exercises.length) {
+      pendingQuestionIndexRef.current = requestedIndex
+      savedProgressRestoredRef.current = true
+      setJumpMessage(`正在加载第 ${requestedQuestion} 题…`)
+      return
+    }
+
+    pendingQuestionIndexRef.current = null
+    savedProgressRestoredRef.current = true
+    setJumpMessage('')
+    setExerciseIndex(requestedIndex)
+    setAnswers(['', ''])
+    try {
+      window.localStorage.setItem(
+        PROGRESS_STORAGE_KEY,
+        exercises[requestedIndex].id,
       )
     } catch {
       // Progress remains usable for the current session without persistence.
@@ -580,7 +646,28 @@ function SentencePracticePage() {
   return (
     <section className="panel sentence-practice-card">
       <header className="sentence-practice-progress">
-        第 {exerciseIndex + 1} / {displayedExerciseCount} 题
+        <form className="sentence-practice-jump" onSubmit={jumpToQuestion}>
+          <label>
+            第
+            <input
+              key={exerciseIndex}
+              ref={questionNumberInputRef}
+              type="number"
+              min="1"
+              max={displayedExerciseCount}
+              defaultValue={exerciseIndex + 1}
+              inputMode="numeric"
+              aria-label="跳转题号"
+            />
+            / {displayedExerciseCount} 题
+          </label>
+          <button type="submit">跳转</button>
+        </form>
+        {jumpMessage ? (
+          <span className="sentence-practice-jump-message" role="status">
+            {jumpMessage}
+          </span>
+        ) : null}
       </header>
 
       <div className="sentence-practice-stage">
