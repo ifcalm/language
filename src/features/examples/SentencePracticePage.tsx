@@ -597,27 +597,38 @@ function SentencePracticePage() {
     exercise.targets.forEach((target, index) => {
       parts.push(exercise.sentenceEn.slice(cursor, target.start))
       parts.push(
-        <input
+        <span
           key={target.id}
-          ref={(node) => {
-            inputRefs.current[index] = node
-          }}
-          className={`sentence-practice-input is-${answerStates[index]}`}
+          className="sentence-practice-blank"
           style={{ width: `${Math.max(target.text.length + 1, 5)}ch` }}
-          value={answers[index]}
-          placeholder={target.text}
-          aria-label={`第 ${index + 1} 个单词，${target.text.length} 个字母`}
-          autoCapitalize="none"
-          autoComplete="off"
-          autoCorrect="off"
-          spellCheck={false}
-          onChange={(event) => updateAnswer(index, event.target.value)}
-          onKeyDown={(event) => {
-            if (event.key === 'Enter' && isComplete) {
-              showExerciseAtOffset(1)
-            }
-          }}
-        />,
+        >
+          <span className="sentence-practice-hint" aria-hidden="true">
+            <span
+              className={`sentence-practice-entered is-${answerStates[index]}`}
+            >
+              {answers[index]}
+            </span>
+            {target.text.slice(answers[index].length)}
+          </span>
+          <input
+            ref={(node) => {
+              inputRefs.current[index] = node
+            }}
+            className={`sentence-practice-input is-${answerStates[index]}`}
+            value={answers[index]}
+            aria-label={`第 ${index + 1} 个单词，${target.text.length} 个字母`}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onChange={(event) => updateAnswer(index, event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' && isComplete) {
+                showExerciseAtOffset(1)
+              }
+            }}
+          />
+        </span>,
       )
       cursor = target.end
     })
