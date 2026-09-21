@@ -551,6 +551,8 @@ function SentencePracticePage() {
         getAnswerState(answers[index], target.text),
       )
     : []
+  const exerciseId = exercise?.id
+  const firstAnswerState = answerStates[0]
   const isComplete = answerStates.every((state) => state === 'complete')
   const displayedExerciseCount = availableCount || exercises.length
 
@@ -660,10 +662,24 @@ function SentencePracticePage() {
   }, [])
 
   useEffect(() => {
-    if (exercise) {
+    if (exerciseId) {
       inputRefs.current[0]?.focus()
     }
-  }, [exercise])
+  }, [exerciseId])
+
+  useEffect(() => {
+    if (firstAnswerState !== 'complete') {
+      return
+    }
+
+    const nextInput = inputRefs.current[1]
+    if (!nextInput) {
+      return
+    }
+
+    nextInput.focus({ preventScroll: true })
+    nextInput.setSelectionRange(nextInput.value.length, nextInput.value.length)
+  }, [exerciseId, firstAnswerState])
 
   function showExerciseAtOffset(offset: number) {
     if (exercises.length === 0) {
@@ -729,17 +745,12 @@ function SentencePracticePage() {
       return
     }
 
-    const nextAnswers = [...answers]
-    nextAnswers[index] = value.replace(/[^A-Za-z'’-]/g, '')
-    setAnswers(nextAnswers)
-
-    if (
-      getAnswerState(nextAnswers[index], exercise.targets[index].text) ===
-        'complete' &&
-      index < exercise.targets.length - 1
-    ) {
-      inputRefs.current[index + 1]?.focus()
-    }
+    const sanitizedValue = value.replace(/[^A-Za-z'’-]/g, '')
+    setAnswers((currentAnswers) => {
+      const nextAnswers = [...currentAnswers]
+      nextAnswers[index] = sanitizedValue
+      return nextAnswers
+    })
   }
 
   function renderSentence() {
