@@ -8,7 +8,7 @@ const primaryNavigationItems: Array<{
 }> = [
   { id: 'strategy', label: '学习策略' },
   { id: 'verbs', label: '动词' },
-  { id: 'examples', label: '例句' },
+  { id: 'examples', label: '填词' },
   { id: 'vocabulary', label: '词汇' },
 ]
 
