@@ -1,5 +1,3 @@
-import { handleAuthRequest } from './auth'
-import { handleSentenceAnalyze } from './analysis/routes'
 import { makeJsonResponse } from './shared/http'
 import {
   handleAdminVocabularyDetail,
@@ -24,11 +22,15 @@ export default {
     }
 
     if (url.pathname.startsWith('/api/auth/')) {
-      return handleAuthRequest(request, env)
-    }
-
-    if (url.pathname === '/api/analyze' && request.method === 'POST') {
-      return handleSentenceAnalyze(request, env)
+      return makeJsonResponse(
+        { error: 'Account registration and login are no longer available.' },
+        {
+          status: 410,
+          headers: {
+            'Set-Cookie': 'eo_session=; Max-Age=0; Path=/; HttpOnly; SameSite=Lax',
+          },
+        },
+      )
     }
 
     if (url.pathname === '/api/verbs' && request.method === 'GET') {
@@ -72,6 +74,20 @@ export default {
       return makeJsonResponse({ error: 'Not Found' }, { status: 404 })
     }
 
-    return env.ASSETS.fetch(request)
+    const assetResponse = await env.ASSETS.fetch(request)
+    if (!/(?:^|;\s*)eo_session=/.test(request.headers.get('Cookie') ?? '')) {
+      return assetResponse
+    }
+
+    const headers = new Headers(assetResponse.headers)
+    headers.append(
+      'Set-Cookie',
+      'eo_session=; Max-Age=0; Path=/; HttpOnly; SameSite=Lax',
+    )
+    return new Response(assetResponse.body, {
+      status: assetResponse.status,
+      statusText: assetResponse.statusText,
+      headers,
+    })
   },
 } satisfies ExportedHandler<Env>

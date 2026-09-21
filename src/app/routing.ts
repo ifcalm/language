@@ -5,8 +5,6 @@ export type ViewId =
   | 'examples'
   | 'vocabulary'
   | 'library'
-  | 'login'
-  | 'register'
   | 'admin'
 
 export type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
@@ -32,14 +30,6 @@ export function getVocabularyLookupFromPath(pathname: string) {
 export function getViewFromPath(pathname: string): ViewId {
   if (pathname.startsWith('/admin')) {
     return 'admin'
-  }
-
-  if (pathname.startsWith('/login')) {
-    return 'login'
-  }
-
-  if (pathname.startsWith('/register') || pathname.startsWith('/signup')) {
-    return 'register'
   }
 
   if (pathname.startsWith('/strategy')) {
@@ -73,13 +63,7 @@ export function getPathFromView(view: ViewId): string {
     examples: '/examples',
     vocabulary: '/vocabulary',
     library: '/library',
-    login: '/login',
-    register: '/register',
   }
 
   return pathByView[view] ?? '/'
-}
-
-export function isAuthView(view: ViewId): view is 'login' | 'register' {
-  return view === 'login' || view === 'register'
 }

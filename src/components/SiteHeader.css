@@ -11,7 +11,7 @@
   width: min(1160px, calc(100% - 56px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 20px;
   align-items: center;
 }
@@ -51,182 +51,6 @@
   background: transparent;
 }
 
-.site-auth-actions {
-  justify-self: end;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.site-auth-actions button {
-  border: 0;
-  border-radius: 0;
-  background: var(--surface);
-  color: var(--text);
-  padding: 8px 0;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 650;
-  text-decoration: none;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px;
-}
-
-.site-auth-actions button:hover,
-.site-auth-actions button:focus-visible {
-  text-decoration-line: underline;
-}
-
-.site-auth-actions button.active {
-  font-weight: 800;
-  text-decoration-line: underline;
-}
-
-.site-auth-actions span {
-  color: var(--text-muted);
-}
-
-.site-auth-placeholder {
-  min-width: 56px;
-  height: 44px;
-}
-
-.site-account {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.site-auth-actions .site-account-trigger {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  border: 0;
-  background: transparent;
-  padding: 0;
-}
-
-.site-auth-actions .site-account-trigger:hover,
-.site-auth-actions .site-account-trigger:focus-visible {
-  text-decoration-line: none;
-}
-
-.site-account-avatar {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #d9d9d9;
-  border-radius: 50%;
-  background: var(--surface);
-  transition: border-color 0.18s ease;
-}
-
-.site-account-trigger:hover .site-account-avatar,
-.site-account-trigger:focus-visible .site-account-avatar,
-.site-account-trigger[aria-expanded='true'] .site-account-avatar {
-  border-color: var(--text);
-}
-
-.site-account-avatar img {
-  display: block;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.site-account-caret {
-  width: 8px;
-  height: 8px;
-  border-right: 1.6px solid var(--text);
-  border-bottom: 1.6px solid var(--text);
-  transform: translateY(-2px) rotate(45deg);
-}
-
-.site-account-menu {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  width: min(230px, calc(100vw - 40px));
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: var(--surface);
-  box-shadow: 0 14px 30px rgb(0 0 0 / 0.08);
-}
-
-.site-account-summary {
-  display: grid;
-  gap: 5px;
-  padding: 16px 20px 14px;
-}
-
-.site-account-summary strong {
-  overflow: hidden;
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: 760;
-  letter-spacing: -0.03em;
-  line-height: 1.25;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.site-account-summary span {
-  overflow: hidden;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.35;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.site-account-menu-items {
-  display: grid;
-  padding: 8px 0 10px;
-  border-top: 1px solid var(--border);
-}
-
-.site-auth-actions .site-account-menu-items button {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-  font: inherit;
-  font-size: 1rem;
-  font-weight: 650;
-  line-height: 1.35;
-  padding: 8px 20px;
-  text-align: left;
-  text-decoration: none;
-}
-
-.site-auth-actions .site-account-menu-items button:hover,
-.site-auth-actions .site-account-menu-items button:focus-visible {
-  background: #f7f7f7;
-  text-decoration-line: none;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-}
-
-.sidebar {
-  padding: 30px 22px;
-  border-right: 1px solid var(--border);
-  background: rgb(255 255 255 / 0.92);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 .site-nav button {
   border: 0;
   background: transparent;
@@ -255,7 +79,6 @@
   font-weight: 800;
 }
 
-
 @media (max-width: 980px) {
   .site-header {
     padding: 10px 0;
@@ -263,26 +86,11 @@
 
   .site-header-inner {
     width: calc(100% - 32px);
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      'brand auth'
-      'nav nav';
-    gap: 2px 12px;
-    justify-content: space-between;
-  }
-
-  .site-brand {
-    grid-area: brand;
-    justify-self: start;
-  }
-
-  .site-auth-actions {
-    grid-area: auth;
-    justify-self: end;
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 
   .site-nav {
-    grid-area: nav;
     justify-self: stretch;
     gap: 22px;
     overflow-x: auto;
