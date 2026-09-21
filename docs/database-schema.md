@@ -28,6 +28,11 @@
 - `profiles`
 - `daily_logs`
 - `vocabulary_items`
+- `users`
+- `auth_identities`
+- `auth_sessions`
+- `auth_oauth_states`
+- `email_login_codes`
 
 ## 关系图
 

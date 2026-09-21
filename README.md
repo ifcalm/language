@@ -10,10 +10,9 @@ English Orbit 是一个面向中文开发者的技术英语学习应用。它不
 - 词汇库：D1 驱动的全量词汇列表，支持分页、搜索、详情页、读音播放和上一词/下一词导航。
 - 动词学习：围绕开发者常见动词和动词短语展示句子生长动画，从主干句逐步扩展到完整句。
 - 句子结构：用树状结构讲解主干、修饰、动作关系等语法概念。
-- AI 句子分析：通过 `/api/analyze` 返回句子主干、结构说明、用法说明和关键词解释。
 - 资源库：保留经过整理的听说读写、语法和词汇参考资源入口。
 - 词汇后台：维护词汇核心释义、音标、读音 URL、例句和编辑日志。
-- 认证：支持邮箱验证码登录，以及 GitHub / Google OAuth。
+- 无需注册或登录即可使用；填词进度只保存在当前浏览器，不上传到账号。
 
 ## 技术栈
 
@@ -32,7 +31,7 @@ src/
   components/             # 共享 UI 组件
   data/                   # 前端静态类型与资源定义
   features/
-    auth/                 # 登录 / 注册页面
+    examples/             # 双空填词练习
     home/                 # 首页查词
     library/              # 资源库
     strategy/             # 学习策略与句子结构展示
@@ -41,8 +40,6 @@ src/
 
 worker/
   index.ts                # Worker 入口和 API 路由分发
-  auth.ts                 # 认证相关 API
-  analysis/               # AI 句子分析 API
   shared/                 # Worker 共享响应与参数工具
   verbs/                  # 动词 API
   vocabulary/             # 词汇公开 API、后台 API、D1 repository
@@ -97,21 +94,12 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 
 - `main`: `./worker/index.ts`
 - `assets.directory`: `./dist`
-- `assets.run_worker_first`: `/api/*`
+- `assets.run_worker_first`: `/api/*` 和页面入口（用于清除旧登录 Cookie）
 - D1 binding: `DB`
 - Assets binding: `ASSETS`
-- Email Sending binding: `EMAIL`
 - compatibility flag: `nodejs_compat`
 
-部署前需要保证 D1 数据库和必要 secrets 已配置。认证和 AI 分析会读取以下运行时环境变量或 secrets：
-
-- `AUTH_SECRET`
-- `AUTH_EMAIL_FROM`
-- `GITHUB_CLIENT_ID`
-- `GITHUB_CLIENT_SECRET`
-- `GOOGLE_CLIENT_ID`
-- `GOOGLE_CLIENT_SECRET`
-- `DEEPSEEK_API_KEY`
+填词进度仅保存在浏览器本地；清除浏览器数据或换设备后不会自动恢复。网站不提供实时 AI 句子分析，也不向外部 AI 服务发送学习者输入。
 
 ## 数据模型
 
@@ -127,7 +115,7 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `verbs`：动词与动词短语主表。
 - `verb_paths`：动词句子生长路径，包含主干句、完整句、场景和 `growth_json`。
 - `content_edit_logs`：后台编辑日志。
-- `auth_*`：认证会话、身份、邮箱验证码和 OAuth state。
+历史账号表由迁移 `0239_remove_account_tables.sql` 删除；公共学习数据表不受影响。
 
 词汇列表接口现在只保留分页和搜索；旧的 Top 100 / 500 / 1000 / 3000 band 参数已经移除。`frequency_rank` 仍用于默认排序和数据覆盖率检查。
 
@@ -149,7 +137,6 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `GET /api/vocabulary/pronunciations`
 - `GET /api/verbs`
 - `GET /api/verbs/:lookup`
-- `POST /api/analyze`
 
 后台接口：
 
@@ -157,16 +144,7 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `GET /api/admin/vocabulary/:id`
 - `PUT /api/admin/vocabulary/:id`
 
-认证接口：
-
-- `GET /api/auth/me`
-- `POST /api/auth/logout`
-- `POST /api/auth/email/start`
-- `POST /api/auth/email/verify`
-- `GET /api/auth/github/start`
-- `GET /api/auth/github/callback`
-- `GET /api/auth/google/start`
-- `GET /api/auth/google/callback`
+旧 `/api/auth/*` 接口返回 `410 Gone`，不再创建或读取账号；站点入口会清除旧的登录 Cookie。Worker 可观测日志已关闭，但托管服务仍可能保留基础网络访问记录。
 
 ## 数据脚本
 
@@ -199,7 +177,6 @@ npm run pronunciations:check:top100
 ## 当前维护重点
 
 - 继续拆分大型前端组件，尤其是 `SentenceGrowthPlayer`。
-- 继续拆分 `worker/auth.ts`。
 - 为后台编辑接口补上更明确的权限保护。
-- 把 `examples` 路由从占位页推进到正式例句页。
+- 继续优化填词题目的覆盖率和交互体验。
 - 继续完善动词句子生长数据和词汇例句质量。

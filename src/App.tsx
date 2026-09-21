@@ -4,12 +4,10 @@ import {
   getPathFromView,
   getVerbLookupFromPath,
   getViewFromPath,
-  isAuthView,
   type ViewId,
 } from './app/routing'
 import VocabularyAdmin from './admin/VocabularyAdmin'
-import SiteHeader, { type SiteHeaderUser } from './components/SiteHeader'
-import AuthPage from './features/auth/AuthPage'
+import SiteHeader from './components/SiteHeader'
 import SentencePracticePage from './features/examples/SentencePracticePage'
 import HomePage from './features/home/HomePage'
 import LibraryPage from './features/library/LibraryPage'
@@ -33,20 +31,9 @@ function getInitialView(): ViewId {
   return getViewFromPath(window.location.pathname)
 }
 
-interface AuthUser extends SiteHeaderUser {
-  id: string
-  role: string
-}
-
-interface AuthMeResponse {
-  user: AuthUser | null
-}
-
 function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
   const [selectedVerbLookup, setSelectedVerbLookup] = useState(getInitialVerbLookup)
-  const [authUser, setAuthUser] = useState<AuthUser | null>(null)
-  const [isAuthLoading, setIsAuthLoading] = useState(true)
   const [vocabularyPageKey, setVocabularyPageKey] = useState(0)
 
   const pageHeadings: Partial<
@@ -74,7 +61,6 @@ function App() {
   > = {
   }
   const placeholderPage = placeholderPages[view]
-  const isAuthPage = isAuthView(view)
 
   function resetVocabularyPage() {
     setVocabularyPageKey((key) => key + 1)
@@ -128,52 +114,11 @@ function App() {
     }
   }
 
-  async function logout() {
-    try {
-      await fetch('/api/auth/logout', { method: 'POST' })
-    } finally {
-      setAuthUser(null)
-      changeView('roadmap')
-    }
-  }
-
   useEffect(() => {
-    let isActive = true
-
-    async function fetchSession() {
-      setIsAuthLoading(true)
-
-      try {
-        const response = await fetch('/api/auth/me')
-
-        if (!response.ok) {
-          throw new Error('Session unavailable')
-        }
-
-        const payload = (await response.json()) as AuthMeResponse
-
-        if (isActive) {
-          setAuthUser(payload.user)
-        }
-      } catch {
-        if (isActive) {
-          setAuthUser(null)
-        }
-      } finally {
-        if (isActive) {
-          setIsAuthLoading(false)
-        }
-      }
+    if (/^\/(?:login|register|signup)\/?$/.test(window.location.pathname)) {
+      window.history.replaceState(null, '', '/')
     }
 
-    fetchSession()
-
-    return () => {
-      isActive = false
-    }
-  }, [])
-
-  useEffect(() => {
     function handlePopState() {
       const nextView = getViewFromPath(window.location.pathname)
       setView(nextView)
@@ -186,24 +131,17 @@ function App() {
 
   return (
     <div className="app-shell">
-      {!isAuthPage && (
-        <SiteHeader
-          view={view}
-          user={authUser}
-          isAuthLoading={isAuthLoading}
-          onChangeView={changeView}
-          onOpenVocabulary={resetVocabularyPage}
-          onLogout={logout}
-        />
-      )}
+      <SiteHeader
+        view={view}
+        onChangeView={changeView}
+        onOpenVocabulary={resetVocabularyPage}
+      />
 
       <main
         className={`content ${view === 'roadmap' ? 'landing-content' : ''} ${
           view === 'verbs' ? 'verb-content' : ''
         } ${
           view === 'vocabulary' ? 'vocab-content' : ''
-        } ${
-          isAuthPage ? 'auth-content' : ''
         }`}
       >
         {view !== 'roadmap' && pageHeading && (
@@ -216,8 +154,6 @@ function App() {
         )}
 
         {view === 'roadmap' && <HomePage onOpenVocabulary={openVocabularyFromHome} />}
-
-        {isAuthPage && <AuthPage mode={view} onChangeView={changeView} />}
 
         {view === 'strategy' && <StrategyPage onChangeView={changeView} />}
 

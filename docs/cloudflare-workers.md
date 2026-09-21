@@ -6,7 +6,8 @@ English Orbit is configured for **Cloudflare Workers + Static Assets**.
 
 - The app is still a React + Vite SPA today.
 - Static assets are served from `dist/`.
-- `/api/*` requests are routed through the Worker first.
+- `/api/*` and page-entry requests are routed through the Worker first; page
+  entries also clear retired account session cookies.
 - D1 stores the shared public vocabulary foundation.
 
 ## Cloudflare dashboard setup
@@ -26,11 +27,11 @@ The Worker configuration lives in [`wrangler.jsonc`](../wrangler.jsonc).
 ## Current persistence strategy
 
 For the current release, English Orbit keeps learning content in shared D1
-tables and uses auth only where account/session features are needed:
+tables and stores fill-in practice progress in the user's browser:
 
 - the learning site remains publicly accessible
-- D1 stores public vocabulary, verb paths, examples, pronunciations, auth data,
-  and edit logs
+- D1 stores public vocabulary, verb paths, examples, pronunciations, and edit logs
+- legacy account tables are removed by migration `0239_remove_account_tables.sql`
 - vocabulary and verb pages read from public API endpoints
 - the admin console writes directly to D1 through Worker routes
 
@@ -95,16 +96,10 @@ npm run pronunciations:coverage:top100
 - `GET /api/vocabulary/pronunciations` — pronunciation lookup by `word` or `vocabularyId`
 - `GET /api/verbs` — D1-backed verb list endpoint
 - `GET /api/verbs/:lookup` — verb detail and sentence-growth paths
-- `POST /api/analyze` — sentence analysis through the configured AI provider
 - `GET /api/admin/vocabulary` — admin vocabulary list
 - `GET /api/admin/vocabulary/:id` — admin vocabulary detail
 - `PUT /api/admin/vocabulary/:id` — admin vocabulary update
-- `GET /api/auth/me` — current session
-- `POST /api/auth/logout` — clear current session
-- `POST /api/auth/email/start` — request email login code
-- `POST /api/auth/email/verify` — verify email login code
-- `GET /api/auth/github/start` / `GET /api/auth/github/callback`
-- `GET /api/auth/google/start` / `GET /api/auth/google/callback`
+All retired `/api/auth/*` endpoints return `410 Gone`.
 
 `/api/vocabulary` supports:
 

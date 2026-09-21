@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import { requestVerbDetail, requestVerbList } from './api'
-import SentenceAnalysis from '../analysis/SentenceAnalysis'
 import PathStudyTabs from './practice/PathStudyTabs'
 import type { VerbDetail, VerbListItem } from './types'
 import './verbs.css'
@@ -32,7 +31,6 @@ function getSceneLabel(scene: string) {
 }
 
 const VERB_PAGE_SIZE = 120
-const SHOW_VERB_LIST_AI_ANALYSIS = false
 
 function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [query, setQuery] = useState('')
@@ -199,13 +197,6 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
                 )}
               </button>
               {item.isPhrase && <span className="verb-row-tag">短语</span>}
-              {SHOW_VERB_LIST_AI_ANALYSIS && item.coreSentenceEn && (
-                <SentenceAnalysis
-                  sentence={item.coreSentenceEn}
-                  word={item.verb}
-                  translation={item.coreSentenceZh}
-                />
-              )}
             </div>
           ))}
         </section>
