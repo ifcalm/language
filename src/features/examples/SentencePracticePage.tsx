@@ -662,10 +662,10 @@ function SentencePracticePage() {
   }, [])
 
   useEffect(() => {
-    if (exerciseId) {
-      inputRefs.current[0]?.focus()
+    if (!isLoading && exerciseId) {
+      inputRefs.current[0]?.focus({ preventScroll: true })
     }
-  }, [exerciseId])
+  }, [exerciseId, isLoading])
 
   useEffect(() => {
     if (firstAnswerState !== 'complete') {
@@ -680,6 +680,49 @@ function SentencePracticePage() {
     nextInput.focus({ preventScroll: true })
     nextInput.setSelectionRange(nextInput.value.length, nextInput.value.length)
   }, [exerciseId, firstAnswerState])
+
+  useEffect(() => {
+    if (isLoading || !exerciseId || isComplete) {
+      return
+    }
+
+    function handleTypingStart(event: KeyboardEvent) {
+      if (
+        event.defaultPrevented ||
+        event.isComposing ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        !/^[A-Za-z'’-]$/.test(event.key)
+      ) {
+        return
+      }
+
+      if (
+        event.target instanceof HTMLElement &&
+        event.target.closest('input, textarea, select, [contenteditable]')
+      ) {
+        return
+      }
+
+      const inputIndex = firstAnswerState === 'complete' ? 1 : 0
+      const input = inputRefs.current[inputIndex]
+      if (!input) {
+        return
+      }
+
+      event.preventDefault()
+      input.focus({ preventScroll: true })
+      setAnswers((currentAnswers) => {
+        const nextAnswers = [...currentAnswers]
+        nextAnswers[inputIndex] += event.key
+        return nextAnswers
+      })
+    }
+
+    document.addEventListener('keydown', handleTypingStart)
+    return () => document.removeEventListener('keydown', handleTypingStart)
+  }, [exerciseId, firstAnswerState, isComplete, isLoading])
 
   function showExerciseAtOffset(offset: number) {
     if (exercises.length === 0) {
