@@ -157,6 +157,65 @@
   font-size: 0.9rem;
 }
 
+.sentence-practice-help-wrap {
+  position: relative;
+  margin-right: auto;
+}
+
+.sentence-practice-footer .sentence-practice-help-trigger {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #d8d8d3;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-soft);
+}
+
+.sentence-practice-footer .sentence-practice-help-trigger:hover,
+.sentence-practice-footer .sentence-practice-help-trigger:focus-visible,
+.sentence-practice-footer .sentence-practice-help-trigger[aria-expanded='true'] {
+  border-color: var(--text);
+  color: var(--text);
+  opacity: 1;
+}
+
+.sentence-practice-help {
+  padding: 15px 40px;
+  border-top: 1px solid var(--border);
+  background: #fafaf9;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.sentence-practice-help strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.96rem;
+  font-weight: 750;
+}
+
+.sentence-practice-help ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  gap: 4px 26px;
+  margin: 0;
+  padding-left: 1.3em;
+}
+
+.sentence-practice-card.is-help-open .sentence-practice-stage {
+  min-height: 290px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .sentence-practice-footer button.is-previous {
   background: var(--surface);
   color: var(--text);
@@ -187,6 +246,7 @@
 @media (max-width: 640px) {
   .sentence-practice-progress,
   .sentence-practice-stage,
+  .sentence-practice-help,
   .sentence-practice-footer {
     padding-right: 22px;
     padding-left: 22px;
@@ -194,6 +254,17 @@
 
   .sentence-practice-stage {
     min-height: 290px;
+  }
+
+  .sentence-practice-help ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    gap: 6px;
+  }
+
+  .sentence-practice-card.is-help-open .sentence-practice-stage {
+    min-height: 240px;
   }
 
   .sentence-practice-footer {

@@ -539,8 +539,12 @@ function SentencePracticePage() {
   const [loadedCount, setLoadedCount] = useState(0)
   const [availableCount, setAvailableCount] = useState(0)
   const [jumpMessage, setJumpMessage] = useState('')
+  const [isHelpOpen, setIsHelpOpen] = useState(false)
   const inputRefs = useRef<Array<HTMLInputElement | null>>([])
   const questionNumberInputRef = useRef<HTMLInputElement | null>(null)
+  const helpRef = useRef<HTMLDivElement | null>(null)
+  const helpPanelRef = useRef<HTMLDivElement | null>(null)
+  const helpTriggerRef = useRef<HTMLButtonElement | null>(null)
   const pendingQuestionIndexRef = useRef<number | null>(null)
   const savedProgressRestoredRef = useRef(false)
 
@@ -682,7 +686,7 @@ function SentencePracticePage() {
   }, [exerciseId, firstAnswerState])
 
   useEffect(() => {
-    if (isLoading || !exerciseId || isComplete) {
+    if (isLoading || !exerciseId || isComplete || isHelpOpen) {
       return
     }
 
@@ -722,7 +726,37 @@ function SentencePracticePage() {
 
     document.addEventListener('keydown', handleTypingStart)
     return () => document.removeEventListener('keydown', handleTypingStart)
-  }, [exerciseId, firstAnswerState, isComplete, isLoading])
+  }, [exerciseId, firstAnswerState, isComplete, isHelpOpen, isLoading])
+
+  useEffect(() => {
+    if (!isHelpOpen) {
+      return
+    }
+
+    function closeHelpOnOutsideClick(event: MouseEvent) {
+      const target = event.target as Node
+      if (
+        !helpRef.current?.contains(target) &&
+        !helpPanelRef.current?.contains(target)
+      ) {
+        setIsHelpOpen(false)
+      }
+    }
+
+    function closeHelpOnEscape(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setIsHelpOpen(false)
+        helpTriggerRef.current?.focus()
+      }
+    }
+
+    document.addEventListener('click', closeHelpOnOutsideClick)
+    document.addEventListener('keydown', closeHelpOnEscape)
+    return () => {
+      document.removeEventListener('click', closeHelpOnOutsideClick)
+      document.removeEventListener('keydown', closeHelpOnEscape)
+    }
+  }, [isHelpOpen])
 
   function showExerciseAtOffset(offset: number) {
     if (exercises.length === 0) {
@@ -734,6 +768,7 @@ function SentencePracticePage() {
     pendingQuestionIndexRef.current = null
     savedProgressRestoredRef.current = true
     setJumpMessage('')
+    setIsHelpOpen(false)
     setExerciseIndex(nextIndex)
     setAnswers(['', ''])
     try {
@@ -771,6 +806,7 @@ function SentencePracticePage() {
     pendingQuestionIndexRef.current = null
     savedProgressRestoredRef.current = true
     setJumpMessage('')
+    setIsHelpOpen(false)
     setExerciseIndex(requestedIndex)
     setAnswers(['', ''])
     try {
@@ -865,7 +901,7 @@ function SentencePracticePage() {
   }
 
   return (
-    <section className="panel sentence-practice-card">
+    <section className={`panel sentence-practice-card${isHelpOpen ? ' is-help-open' : ''}`}>
       <header className="sentence-practice-progress">
         <form className="sentence-practice-jump" onSubmit={jumpToQuestion}>
           <label>
@@ -897,7 +933,53 @@ function SentencePracticePage() {
         ) : null}
       </div>
 
+      {isHelpOpen && (
+        <div
+          ref={helpPanelRef}
+          id="sentence-practice-help"
+          className="sentence-practice-help"
+          role="region"
+          aria-label="填词使用说明"
+        >
+          <strong>怎么使用</strong>
+          <ul>
+            <li>直接输入即可开始；字母匹配显示绿色，不匹配显示红色。</li>
+            <li>第一空填对后，自动移到第二空。</li>
+            <li>两空都填对后，按回车键（Return / Enter）进入下一题；也可点“上一句”“下一句”。</li>
+            <li>右上角输入题号并回车可跳题；进度只保存在当前浏览器。</li>
+          </ul>
+        </div>
+      )}
+
       <footer className="sentence-practice-footer">
+        <div className="sentence-practice-help-wrap" ref={helpRef}>
+          <button
+            ref={helpTriggerRef}
+            type="button"
+            className="sentence-practice-help-trigger"
+            aria-label="填词使用说明"
+            aria-expanded={isHelpOpen}
+            aria-controls="sentence-practice-help"
+            title="填词使用说明"
+            onClick={() => setIsHelpOpen((isOpen) => !isOpen)}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9.3 9a2.7 2.7 0 1 1 4.4 2.1c-1.1.8-1.7 1.4-1.7 2.5" />
+              <circle cx="12" cy="17.3" r="0.8" fill="currentColor" stroke="none" />
+            </svg>
+          </button>
+        </div>
         <button
           type="button"
           className="is-previous"
