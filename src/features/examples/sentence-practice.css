@@ -6,6 +6,10 @@
   border-radius: 20px;
 }
 
+.sentence-practice-card.is-help-open {
+  overflow: visible;
+}
+
 .sentence-practice-progress {
   display: grid;
   justify-items: end;
@@ -168,29 +172,54 @@
   height: 38px;
   place-items: center;
   padding: 0;
-  border: 1px solid #d8d8d3;
-  border-radius: 50%;
-  background: var(--surface);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--text-soft);
+  font-size: 1.55rem;
+  font-weight: 750;
+  line-height: 1;
 }
 
 .sentence-practice-footer .sentence-practice-help-trigger:hover,
 .sentence-practice-footer .sentence-practice-help-trigger:focus-visible,
 .sentence-practice-footer .sentence-practice-help-trigger[aria-expanded='true'] {
-  border-color: var(--text);
   color: var(--text);
   opacity: 1;
 }
 
 .sentence-practice-help {
-  padding: 15px 40px;
-  border-top: 1px solid var(--border);
-  background: #fafaf9;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: calc(100% + 12px);
+  width: min(560px, calc(100vw - 180px));
+  max-height: min(60vh, 320px);
+  overflow-y: auto;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 14px 38px rgb(0 0 0 / 12%);
   color: var(--text);
   font-size: 0.88rem;
   font-weight: 400;
   line-height: 1.65;
   text-align: left;
+  translate: 0 -50%;
+  animation: sentence-practice-help-enter 160ms ease-out;
+}
+
+@keyframes sentence-practice-help-enter {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .sentence-practice-help strong {
@@ -208,12 +237,6 @@
   gap: 4px 26px;
   margin: 0;
   padding-left: 1.3em;
-}
-
-.sentence-practice-card.is-help-open .sentence-practice-stage {
-  min-height: 290px;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .sentence-practice-footer button.is-previous {
@@ -246,7 +269,6 @@
 @media (max-width: 640px) {
   .sentence-practice-progress,
   .sentence-practice-stage,
-  .sentence-practice-help,
   .sentence-practice-footer {
     padding-right: 22px;
     padding-left: 22px;
@@ -263,8 +285,11 @@
     gap: 6px;
   }
 
-  .sentence-practice-card.is-help-open .sentence-practice-stage {
-    min-height: 240px;
+  .sentence-practice-help {
+    top: calc(100% + 8px);
+    width: min(360px, calc(100vw - 115px));
+    padding: 16px;
+    translate: none;
   }
 
   .sentence-practice-footer {
