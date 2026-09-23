@@ -188,6 +188,17 @@
   opacity: 1;
 }
 
+.sentence-practice-help-trigger span {
+  display: grid;
+  width: 15px;
+  height: 15px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.62rem;
+  line-height: 1;
+}
+
 .sentence-practice-help {
   position: absolute;
   z-index: 2;
