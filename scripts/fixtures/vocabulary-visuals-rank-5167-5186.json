@@ -1,0 +1,323 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5167-5186",
+  "batchId": "auto-rank-5167-5186-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "prepared",
+      "preservation",
+      "preside",
+      "prince",
+      "printing",
+      "proceeds"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "0adc8848-aeab-4262-8a0e-07e6cd37e53a",
+      "word": "prepared",
+      "meaningZh": "准备好的",
+      "exampleId": "0adc8848-aeab-4262-8a0e-07e6cd37e53a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The prepared hikers checked their equipment.",
+      "sentenceZh": "准备充分的徒步者检查装备。",
+      "scene": "Chinese mountain hikers inspect backpacks water sturdy boots rain jackets first-aid pouch before setting out, full attentive faces, no written labels.",
+      "altText": "徒步者出发前检查背包、水和雨具。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9536e0e8-8165-4c4a-bb2b-a18530ecc2dc",
+      "word": "prescribe",
+      "meaningZh": "开药方；规定",
+      "exampleId": "9536e0e8-8165-4c4a-bb2b-a18530ecc2dc-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "The doctor decided to prescribe medicine for the patient.",
+      "sentenceZh": "医生决定为患者开药。",
+      "scene": "Adult doctor writes on blank abstract-stroke prescription sheet while consulting adult patient, full faces, no drug names dosage medical instructions or readable text.",
+      "altText": "医生与患者交流后，在处方纸上书写。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2283b42a-dd7c-4758-b20e-84d012a21caf",
+      "word": "presently",
+      "meaningZh": "目前；不久",
+      "exampleId": "2283b42a-dd7c-4758-b20e-84d012a21caf-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The machine is presently working well.",
+      "sentenceZh": "机器目前运行良好。",
+      "scene": "Operational apple press smoothly sends juice through transparent tube to collecting vessel, coherent machinery no people text interface; present time supplied by sentence.",
+      "altText": "机器正在平稳运转，果汁流入容器。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "025d1b94-ec04-40f1-a509-06d70bbf4397",
+      "word": "preservation",
+      "meaningZh": "保存；保护",
+      "exampleId": "025d1b94-ec04-40f1-a509-06d70bbf4397-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Careful preservation protected the old scroll.",
+      "sentenceZh": "细心保存保护了古老卷轴。",
+      "scene": "Chinese conservator gently places old painted landscape scroll in archival box using gloves, full focused face, scroll has landscape only no calligraphy writing labels.",
+      "altText": "保护人员戴手套把山水卷轴放入保存盒。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "7b0a7461-cf48-45f3-9f07-84014044dc85",
+      "word": "preside",
+      "meaningZh": "主持；负责",
+      "exampleId": "7b0a7461-cf48-45f3-9f07-84014044dc85-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She was chosen to preside over the meeting.",
+      "sentenceZh": "她被选为会议主持人。",
+      "scene": "Adult woman chairs Chinese community roundtable, gestures to next speaker while everyone listens, full attentive faces, blank paper no signs writing.",
+      "altText": "女子主持社区会议，示意下一位成员发言。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a0f3b92f-c40d-48ca-b6b4-bc5e35d50fd0",
+      "word": "prestigious",
+      "meaningZh": "有声望的",
+      "exampleId": "a0f3b92f-c40d-48ca-b6b4-bc5e35d50fd0-visual-ex",
+      "styleFamily": "watercolor architecture",
+      "sentenceEn": "The prestigious academy welcomed the new students.",
+      "sentenceZh": "这所著名学院欢迎新生。",
+      "scene": "Distinguished old academy building with elegant stone facade large library windows welcoming adult students, full readable foreground faces, no identifiable institution name writing insignia; reputation supplied by sentence.",
+      "altText": "新生走向典雅学院建筑，窗内可见书架。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "34c74815-b002-4adc-9ce1-ba13a49fbdc5",
+      "word": "presume",
+      "meaningZh": "假定；推测",
+      "exampleId": "34c74815-b002-4adc-9ce1-ba13a49fbdc5-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "She could only presume that the muddy boots belonged to him.",
+      "sentenceZh": "她只能推测那双泥靴属于他。",
+      "scene": "Adult woman thoughtful at doorway sees muddy boots beside man's coat, man not present, full reflective face, no speech thought words or labels.",
+      "altText": "女子看着门边泥靴和外套，若有所思。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "48366173-4393-4e90-8dad-69dfac292f91",
+      "word": "prevalence",
+      "meaningZh": "流行；普遍",
+      "exampleId": "48366173-4393-4e90-8dad-69dfac292f91-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The prevalence of bicycles was clear in the town.",
+      "sentenceZh": "城镇里自行车的普遍使用显而易见。",
+      "scene": "Town street filled with numerous bicycles at racks and adult cyclists, very few cars, all readable faces complete, no logos signs counts text.",
+      "altText": "街道和停车架上到处可见自行车。",
+      "riskTags": [
+        "comparison",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a25fdb08-dc12-47dd-97d9-95f94c19ffd3",
+      "word": "prey",
+      "meaningZh": "猎物；捕食",
+      "exampleId": "a25fdb08-dc12-47dd-97d9-95f94c19ffd3-visual-ex",
+      "styleFamily": "linocut nature",
+      "sentenceEn": "The owl watched its prey in the grass.",
+      "sentenceZh": "猫头鹰注视草丛中的猎物。",
+      "scene": "Owl on branch looks down toward small mouse in grass, coherent line of sight both animals visible, no attack injury blood text.",
+      "altText": "枝头猫头鹰注视草丛中的小鼠。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "2358f330-2739-484a-9129-a126e9d3ea64",
+      "word": "prince",
+      "meaningZh": "王子；亲王",
+      "exampleId": "2358f330-2739-484a-9129-a126e9d3ea64-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The prince learned to tend the palace garden.",
+      "sentenceZh": "王子学习照料宫廷花园。",
+      "scene": "Fictional adult Chinese prince in simplified court robe learns gardening from older palace gardener, full engaged faces natural hands, no actual dynasty claim imperial writing crown labels.",
+      "altText": "王子在宫苑里向园丁学习照料花木。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e764c192-249d-422f-9148-378f77fb709c",
+      "word": "princess",
+      "meaningZh": "公主；王妃",
+      "exampleId": "e764c192-249d-422f-9148-378f77fb709c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The princess visited the village school.",
+      "sentenceZh": "公主参观了村里的学校。",
+      "scene": "Fictional adult princess in modest storybook royal cloak visits children and teacher at village classroom, full warm faces, no actual royal identity readable books boards or text.",
+      "altText": "公主与乡村学校的老师和孩子们交流。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5c307e84-c1e7-4d83-a675-27f37daee613",
+      "word": "printer",
+      "meaningZh": "打印机",
+      "exampleId": "5c307e84-c1e7-4d83-a675-27f37daee613-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The printer produced a fresh page.",
+      "sentenceZh": "打印机打印出一张新纸。",
+      "scene": "Simple home printer ejects one page bearing only abstract landscape illustration, clear paper feed, no brand logos letters or numbers.",
+      "altText": "打印机送出一张印有图画的纸。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "dc8fe95d-a121-4ae3-9e67-7c05285d414c",
+      "word": "printing",
+      "meaningZh": "打印；印刷",
+      "exampleId": "dc8fe95d-a121-4ae3-9e67-7c05285d414c-visual-ex",
+      "styleFamily": "woodcut craft",
+      "sentenceEn": "The workshop continued printing the illustrations.",
+      "sentenceZh": "工坊继续印刷插图。",
+      "scene": "Chinese traditional printmaker presses paper onto carved wooden landscape block with hand tool, full focused face, block and print pictorial only no calligraphy or text.",
+      "altText": "工坊里，匠人用木版拓印山水插图。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a1fa11e3-26eb-4c40-ac7e-5d621caa7b7f",
+      "word": "privatization",
+      "meaningZh": "私有化",
+      "exampleId": "a1fa11e3-26eb-4c40-ac7e-5d621caa7b7f-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "Privatization transferred the workshop to private owners.",
+      "sentenceZh": "私有化把工坊转交给私人业主。",
+      "scene": "Fictional municipal administrator hands workshop keys to small group of adult private owners beside industrial workshop entrance, full faces, blank transfer folder, no flags logos readable contracts; ownership change supplied by sentence.",
+      "altText": "工作人员把工坊钥匙交给私人业主。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "06a5be28-015e-4e7b-a1df-e9162cabad47",
+      "word": "probability",
+      "meaningZh": "概率；可能性",
+      "exampleId": "06a5be28-015e-4e7b-a1df-e9162cabad47-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "The dark clouds increased the probability of rain.",
+      "sentenceZh": "乌云增大了下雨的可能性。",
+      "scene": "Heavy dark clouds gather over valley as sunlit patch disappears, no actual rain yet, no probability percentages chart icons text.",
+      "altText": "乌云笼罩山谷，阳光逐渐消失。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f2e4fdd5-5eb7-4871-ad07-a3a9dcd994d1",
+      "word": "probable",
+      "meaningZh": "可能的；大概的",
+      "exampleId": "f2e4fdd5-5eb7-4871-ad07-a3a9dcd994d1-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "With those clouds, rain seemed probable.",
+      "sentenceZh": "看到那些云，似乎很可能下雨。",
+      "scene": "Adult walker looks at dark cloud bank while preparing umbrella before any rain falls, complete thoughtful face, no droplets labels predictions text.",
+      "altText": "行人看着乌云，提前准备好雨伞。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5137af00-488f-42e0-b23b-a9bdbf43606b",
+      "word": "probe",
+      "meaningZh": "探测；调查；探针",
+      "exampleId": "5137af00-488f-42e0-b23b-a9bdbf43606b-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The spacecraft sent a probe toward the moon.",
+      "sentenceZh": "航天器向月球发出探测器。",
+      "scene": "Uncrewed lunar probe separates clearly from spacecraft with Moon ahead, scientifically plausible illustrated spacecraft shapes, no writing flags logos or orbital diagrams.",
+      "altText": "月球前方，探测器从航天器分离。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "3734d21e-23c0-4aa5-a9a6-df63c8cbf035",
+      "word": "problematic",
+      "meaningZh": "有问题的；疑难的",
+      "exampleId": "3734d21e-23c0-4aa5-a9a6-df63c8cbf035-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The broken wheel made the cart problematic to use.",
+      "sentenceZh": "破损车轮让推车使用起来很困难。",
+      "scene": "Adult gardener struggles to move cart with visibly cracked tilted wheel while healthy wheels stable, full frustrated face no injury text.",
+      "altText": "园丁推着车轮损坏的推车，显得吃力。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "1e1bf8ae-ba42-4573-9a33-ba12b0045d8a",
+      "word": "proceeding",
+      "meaningZh": "程序",
+      "exampleId": "1e1bf8ae-ba42-4573-9a33-ba12b0045d8a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The court proceeding began in the morning.",
+      "sentenceZh": "法庭程序在上午开始。",
+      "scene": "Fictional civil courtroom judge begins formal session with adult lawyers and parties seated ready, full faces, no readable documents real insignia or text.",
+      "altText": "法官开始庭审，律师与当事人认真就坐。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ace0c310-b50b-4969-9811-bd716d6394ce",
+      "word": "proceeds",
+      "meaningZh": "收益",
+      "exampleId": "ace0c310-b50b-4969-9811-bd716d6394ce-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The proceeds from the sale helped repair the bridge.",
+      "sentenceZh": "销售所得帮助修好了桥。",
+      "scene": "Chinese village two panels: adults sell handmade baskets for plain coins at market, then use those earnings to buy timber and repair footbridge; full faces no currency lettering pricing captions.",
+      "altText": "村民卖竹篮获得收入，再用所得购木料修桥。",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "cause_effect",
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

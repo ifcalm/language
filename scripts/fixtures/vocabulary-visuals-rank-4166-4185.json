@@ -1,0 +1,329 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4166-4185",
+  "batchId": "auto-rank-4166-4185-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "planner",
+      "applaud",
+      "april",
+      "architectural",
+      "archive",
+      "artwork"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "3e38ecd8-9725-4981-97e5-c4aca283f405",
+      "word": "planner",
+      "meaningZh": "规划者",
+      "exampleId": "3e38ecd8-9725-4981-97e5-c4aca283f405-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The planner designed a safer neighborhood.",
+      "sentenceZh": "规划者设计了一个更安全的社区。",
+      "scene": "Contemporary Chinese community planning studio: professional woman planner compares a physical neighborhood model with a text-free drawing showing separated footpaths, accessible crossings and a park. Planning role clear, no letters or digits.",
+      "altText": "社区规划者查看模型与图画，安排步道、过街点和公园。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2b9c31a5-7440-4ae8-9463-486efec48851",
+      "word": "applaud",
+      "meaningZh": "鼓掌；称赞",
+      "exampleId": "2b9c31a5-7440-4ae8-9463-486efec48851-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The audience began to applaud the musicians.",
+      "sentenceZh": "观众开始为音乐家鼓掌。",
+      "scene": "Adult audience in a small Chinese community concert warmly claps both hands as musicians finish performing and bow. Clear palms coming together, complete expressive faces, no banners or writing.",
+      "altText": "社区音乐会结束，观众双手鼓掌，音乐家鞠躬致谢。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2406ef03-cbef-4df4-9a8a-cd87deb887eb",
+      "word": "depressed",
+      "meaningZh": "沮丧的；抑郁的",
+      "exampleId": "2406ef03-cbef-4df4-9a8a-cd87deb887eb-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "He felt depressed after the disappointing news.",
+      "sentenceZh": "听到令人失望的消息后，他感到沮丧。",
+      "scene": "Adult man sits with slumped shoulders and a downcast complete face beside an unopened project folder; a friend sits nearby offering quiet companionship. Depict temporary low spirits without clinical diagnosis, no injury or text.",
+      "altText": "男子神情低落、肩膀下垂，朋友安静地陪伴。",
+      "riskTags": [
+        "people_face",
+        "emotion"
+      ]
+    },
+    {
+      "vocabularyId": "628c80e9-4465-447c-b15d-69b90c97317e",
+      "word": "applicable",
+      "meaningZh": "适用的；合适的",
+      "exampleId": "628c80e9-4465-447c-b15d-69b90c97317e-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "This repair method is applicable to wooden chairs.",
+      "sentenceZh": "这种修理方法适用于木椅。",
+      "scene": "Text-free two-panel craft demonstration: a damaged wooden chair joint is repaired using wood glue and clamp; matching wooden chair joint shown stable afterwards. Same chair, method visibly suited to wood, no numbers or words.",
+      "altText": "木椅接头用木胶与夹具修复，展示适用的修理方法。",
+      "riskTags": [
+        "before_after",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b67d39f9-7a41-410c-a9c1-4477ac164491",
+      "word": "chunk",
+      "meaningZh": "大块；数据块（编程）",
+      "exampleId": "b67d39f9-7a41-410c-a9c1-4477ac164491-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "A chunk of bread sat beside the soup.",
+      "sentenceZh": "一大块面包放在汤旁边。",
+      "scene": "Hand-painted still life with one substantial torn chunk of crusty bread showing soft irregular interior, beside a bowl of vegetable soup; remaining loaf farther back. Focus on large piece, broad brush strokes, no photo or words.",
+      "altText": "一大块撕下的面包放在蔬菜汤旁，断面清晰。",
+      "riskTags": [
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "6b53903a-6282-480c-80d5-1884bc9ebf5d",
+      "word": "appropriately",
+      "meaningZh": "适当地；恰当地",
+      "exampleId": "6b53903a-6282-480c-80d5-1884bc9ebf5d-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She dressed appropriately for the cold weather.",
+      "sentenceZh": "她穿着适合寒冷天气的衣服。",
+      "scene": "Adult outdoors in snowy weather wears warm winter coat, scarf, gloves and insulated boots, comfortable posture with face visible. Clothing visibly suits cold conditions, no logos or labels.",
+      "altText": "雪天里，女子穿着冬衣、围巾、手套与保暖靴。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "dbb532cb-4dc1-4200-99aa-6e9f5d6dad43",
+      "word": "closest",
+      "meaningZh": "最近的",
+      "exampleId": "dbb532cb-4dc1-4200-99aa-6e9f5d6dad43-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The closest bench was under the tree.",
+      "sentenceZh": "最近的长椅在树下。",
+      "scene": "Clear elevated park view with one walker at foreground start, exactly three benches at clearly different distances; the nearest bench stands directly beneath a tree and walker heads toward it. No perspective ambiguity or text.",
+      "altText": "步行者附近有三张长椅，树下那张距离最近。",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8b92df30-bb7a-44e8-beed-562577d4bf54",
+      "word": "april",
+      "meaningZh": "四月",
+      "exampleId": "8b92df30-bb7a-44e8-beed-562577d4bf54-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The peach trees bloom in April.",
+      "sentenceZh": "桃树在四月开花。",
+      "scene": "Early spring Chinese orchard with lush pink peach blossoms on recognizable peach branches and fresh green leaves, mild spring atmosphere; no calendar, text or digits. Image supports seasonal context while sentence supplies month.",
+      "altText": "春日中国桃园里，桃花盛开，嫩叶初生。",
+      "riskTags": [
+        "seasonal_context"
+      ]
+    },
+    {
+      "vocabularyId": "c7452487-6e0b-4d95-98ae-7f5788797a03",
+      "word": "discount",
+      "meaningZh": "折扣；贴现率；打折扣",
+      "exampleId": "c7452487-6e0b-4d95-98ae-7f5788797a03-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The discount made the coat cheaper.",
+      "sentenceZh": "折扣让这件外套更便宜了。",
+      "scene": "Clear paired purchasing illustration of the SAME blue coat in a shop: earlier larger stack of plain coins required, later visibly smaller stack after discount; customer pleased. No price labels, currency symbols, digits or words.",
+      "altText": "同一件蓝色外套打折后，购买所需的硬币减少。",
+      "riskTags": [
+        "comparison",
+        "reference",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "16ec98ee-3cc7-4aa5-ba5a-15bc3e3fa0ed",
+      "word": "arbitrary",
+      "meaningZh": "任意的；武断的",
+      "exampleId": "16ec98ee-3cc7-4aa5-ba5a-15bc3e3fa0ed-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The arbitrary choice ignored the evidence.",
+      "sentenceZh": "这个武断的选择忽视了证据。",
+      "scene": "Decision-maker ignores two clear pictorial test samples, one sound wooden joint and one visibly broken joint; casually picks the broken design while closing eyes, assistant points to evidence with concerned face. Fictional workshop, no labels, no text or caricature.",
+      "altText": "决策者不看测试证据就选了破损设计，助手指出问题。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "364d2f59-ccf4-4a1f-a9c5-16da7b8bd0e5",
+      "word": "architectural",
+      "meaningZh": "建筑的；建筑学的",
+      "exampleId": "364d2f59-ccf4-4a1f-a9c5-16da7b8bd0e5-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The building has unusual architectural details.",
+      "sentenceZh": "这座建筑有独特的建筑细节。",
+      "scene": "Chinese courtyard building viewed obliquely, emphasize designed roof brackets, patterned lattice windows and carefully joined structural beams, visitor small for scale. Deliberate architectural illustration, no plaque writing or logos.",
+      "altText": "院落建筑的斗拱、窗棂与梁柱细节清楚可见。",
+      "riskTags": [
+        "architecture"
+      ]
+    },
+    {
+      "vocabularyId": "21f24708-445c-4b99-bc9e-ac0bbe5e007b",
+      "word": "ladder",
+      "meaningZh": "梯；梯状物；发迹的途径",
+      "exampleId": "21f24708-445c-4b99-bc9e-ac0bbe5e007b-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The ladder leaned against the shed.",
+      "sentenceZh": "梯子靠在小棚屋旁。",
+      "scene": "Clearly designed nonphotographic illustration of a sturdy straight ladder with regularly spaced rungs leaning securely against an outdoor shed on level ground. No person climbing, no ladder-like stairs, text or labels.",
+      "altText": "带有横档的直梯稳稳斜靠在棚屋旁。",
+      "riskTags": [
+        "object_focus",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "1e13b1f0-f8c6-4255-86f0-2cc35669075f",
+      "word": "archive",
+      "meaningZh": "档案；存档",
+      "exampleId": "1e13b1f0-f8c6-4255-86f0-2cc35669075f-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The archive preserved old photographs.",
+      "sentenceZh": "档案馆保存了老照片。",
+      "scene": "Chinese local-history archive: archivist with cotton gloves places old black-and-white illustrated family and street photographs in protective sleeves beside neatly shelved blank archival boxes. No readable labels or documents.",
+      "altText": "档案工作人员把老照片放入保护套，旁边整齐排列档案盒。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "f1b9fe06-f409-4309-b89b-db960f723900",
+      "word": "jungle",
+      "meaningZh": "丛林；杂乱的一堆；弱肉强食的地方",
+      "exampleId": "f1b9fe06-f409-4309-b89b-db960f723900-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "A river wound through the jungle.",
+      "sentenceZh": "一条河蜿蜒穿过丛林。",
+      "scene": "Dense tropical jungle panorama, layered tall broadleaf trees, vines and thick understory surrounding a winding river, bird perched in foreground. Lush ecosystem focal, no people or text.",
+      "altText": "热带丛林枝叶茂密，藤蔓交错，河流蜿蜒穿行。",
+      "riskTags": [
+        "environment"
+      ]
+    },
+    {
+      "vocabularyId": "a2ae7e76-9444-46e3-85d7-06419928f847",
+      "word": "arms",
+      "meaningZh": "武器；手臂；军备",
+      "exampleId": "a2ae7e76-9444-46e3-85d7-06419928f847-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She stretched her arms before swimming.",
+      "sentenceZh": "游泳前，她伸展双臂。",
+      "scene": "Adult woman on a swimming-pool deck makes a gentle warm-up arm stretch, both arms clearly visible and anatomically coherent, modest athletic swimsuit, no weapons or writing.",
+      "altText": "女子在泳池边做热身伸展，双臂清晰可见。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sense_disambiguation"
+      ]
+    },
+    {
+      "vocabularyId": "a29d1eb3-f402-4b80-807c-a6f65f2ac0b4",
+      "word": "migration",
+      "meaningZh": "迁移",
+      "exampleId": "a29d1eb3-f402-4b80-807c-a6f65f2ac0b4-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The birds began their autumn migration.",
+      "sentenceZh": "鸟群开始了秋季迁徙。",
+      "scene": "Text-free panoramic seasonal journey: same flock of geese flies from amber autumn wetland through a continuous sky toward a warmer green wetland; broad directional curve indicates long-distance seasonal movement. No country outlines or words.",
+      "altText": "雁群从秋日湿地飞往较温暖的绿色湿地。",
+      "riskTags": [
+        "sequence",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "ce18f3ad-fc6f-48cc-8eda-b19ad29438eb",
+      "word": "artwork",
+      "meaningZh": "艺术品；插图",
+      "exampleId": "ce18f3ad-fc6f-48cc-8eda-b19ad29438eb-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Visitors admired the artwork in the gallery.",
+      "sentenceZh": "参观者欣赏画廊里的艺术品。",
+      "scene": "Contemporary Chinese gallery, visitors quietly inspect a large original abstract textile artwork with stitched geometric forms, framed and hung as central piece. Complete faces, no artist captions, brand or famous artwork imitation.",
+      "altText": "画廊参观者欣赏一幅由缝线与几何织物构成的艺术品。",
+      "riskTags": [
+        "people_face",
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "a0231821-ec8e-4758-8de0-ae775cdbe32e",
+      "word": "breathing",
+      "meaningZh": "呼吸",
+      "exampleId": "a0231821-ec8e-4758-8de0-ae775cdbe32e-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Her breathing became calm after the walk.",
+      "sentenceZh": "散步后，她的呼吸平稳下来。",
+      "scene": "Adult woman seated comfortably in a quiet park after walking, hand resting lightly on upper abdomen, shoulders relaxed and natural calm expression. Subtle paired inhalation/exhalation airflow curves near nose, no words or medical devices.",
+      "altText": "散步后，女子坐在公园里，肩膀放松，平稳呼吸。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "91619350-377b-4e3a-b08d-5d0eb075bebd",
+      "word": "ashamed",
+      "meaningZh": "羞愧的；惭愧的",
+      "exampleId": "91619350-377b-4e3a-b08d-5d0eb075bebd-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He felt ashamed after breaking his promise.",
+      "sentenceZh": "违背承诺后，他感到羞愧。",
+      "scene": "Two-panel micro-story: man arrives late after leaving a friend waiting at a café table with two cups; he lowers eyes with regret and offers a sincere apology through open hands, friend listens. No humiliation, accusatory crowd, text or clocks with digits.",
+      "altText": "男子让朋友久等，低头惭愧，诚恳地表达歉意。",
+      "riskTags": [
+        "people_face",
+        "sequence",
+        "emotion"
+      ]
+    },
+    {
+      "vocabularyId": "5767bfce-0102-4cb4-be6f-343a602aad22",
+      "word": "invade",
+      "meaningZh": "侵入；拥入；侵略；侵袭",
+      "exampleId": "5767bfce-0102-4cb4-be6f-343a602aad22-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Weeds can invade an untended garden.",
+      "sentenceZh": "杂草会侵入无人照料的花园。",
+      "scene": "Two-stage view of same garden plot with clear stone border: initially cultivated flowers and weeds outside; later vigorous weeds spread over the boundary among flowers. Botanical competition, no military imagery or text.",
+      "altText": "杂草越过石头边界，蔓延进原本种植花卉的园地。",
+      "riskTags": [
+        "before_after",
+        "spatial_boundary",
+        "reference"
+      ]
+    }
+  ]
+}

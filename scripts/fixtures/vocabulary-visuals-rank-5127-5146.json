@@ -1,0 +1,319 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5127-5146",
+  "batchId": "auto-rank-5127-5146-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "pants",
+      "paragraph",
+      "passive",
+      "pathway",
+      "percent",
+      "persistent"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b516d434-110f-46fa-8bde-f2288d09ce81",
+      "word": "outrage",
+      "meaningZh": "愤怒；暴行",
+      "exampleId": "b516d434-110f-46fa-8bde-f2288d09ce81-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The damaged garden caused outrage among the neighbors.",
+      "sentenceZh": "被毁坏的花园激起邻居们的愤怒。",
+      "scene": "Adults express upset anger beside vandalized flower beds then gather tools to repair, full concerned faces, no culprit violence hateful slogans writing.",
+      "altText": "邻居们看到损坏花坛后气愤地聚集起来准备修复。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "084232d2-5778-4308-8075-45065d187b36",
+      "word": "overly",
+      "meaningZh": "过度地；太",
+      "exampleId": "084232d2-5778-4308-8075-45065d187b36-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "The pot was overly full of soil.",
+      "sentenceZh": "花盆里的土装得太满了。",
+      "scene": "Flower pot filled with soil heaped far above rim spilling onto tabletop, obvious excessive fill, no humans labels text.",
+      "altText": "花盆里的土高高堆起，溢落到桌面。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c91b6958-2403-4eba-b3c3-58b68242ec76",
+      "word": "overseas",
+      "meaningZh": "海外；国外",
+      "exampleId": "c91b6958-2403-4eba-b3c3-58b68242ec76-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The cargo ship carried the goods overseas.",
+      "sentenceZh": "货船把货物运往海外。",
+      "scene": "Cargo ship crosses wide open ocean between distant coastlines, unmarked containers, no people text borders map arrows.",
+      "altText": "货船载着集装箱驶过广阔海面。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "62733d0c-6f2b-4831-aff0-9125ebb5c4a2",
+      "word": "overturn",
+      "meaningZh": "推翻；颠覆",
+      "exampleId": "62733d0c-6f2b-4831-aff0-9125ebb5c4a2-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "A strong gust could overturn the empty cart.",
+      "sentenceZh": "一阵强风可能掀翻空推车。",
+      "scene": "Empty garden cart tipping sideways in strong gust, leaves blow same direction, wheels lifting clearly, no people injury arrows text.",
+      "altText": "强风吹动落叶，空推车向侧面倾翻。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "727f5836-46dc-460b-ba0c-6808bf35f080",
+      "word": "packet",
+      "meaningZh": "小包；数据包",
+      "exampleId": "727f5836-46dc-460b-ba0c-6808bf35f080-visual-ex",
+      "styleFamily": "felt still life",
+      "sentenceEn": "She opened a packet of seeds.",
+      "sentenceZh": "她打开了一小包种子。",
+      "scene": "Adult stylized hands opening small plain paper packet above garden tray, seeds spilling from packet, no printed words branding face.",
+      "altText": "双手打开纸质小包，倒出种子。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "62771e30-82ee-4dbd-9993-e4ad85114f6e",
+      "word": "pants",
+      "meaningZh": "裤子",
+      "exampleId": "62771e30-82ee-4dbd-9993-e4ad85114f6e-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "He folded his pants after washing them.",
+      "sentenceZh": "他把洗好的裤子叠起来。",
+      "scene": "Adult man folds clearly recognizable trousers on table in Chinese courtyard laundry area, full calm face, pants two legs visible no logos.",
+      "altText": "男子在院落里叠洗好的裤子。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "165afae2-29db-4d19-9358-ff52969099f5",
+      "word": "paragraph",
+      "meaningZh": "段落",
+      "exampleId": "165afae2-29db-4d19-9358-ff52969099f5-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "She revised the final paragraph of the essay.",
+      "sentenceZh": "她修改了文章最后一段。",
+      "scene": "Chinese study desk adult writer holds sheet with three separated blocks of abstract nonlinguistic strokes, pencil revising last block, full face, no readable letters characters or numerals.",
+      "altText": "作者修改纸上三个文字块中最后一段的笔画。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "87c889de-6a97-4160-a10e-b525d9772048",
+      "word": "parallel",
+      "meaningZh": "平行的",
+      "exampleId": "87c889de-6a97-4160-a10e-b525d9772048-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The two paths ran parallel through the field.",
+      "sentenceZh": "两条小路平行穿过田野。",
+      "scene": "Two straight paths same width run side by side at fixed distance across flat field, strict oblique perspective no intersection people labels arrows.",
+      "altText": "两条小路保持间距，并行穿过田野。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "26815207-4b4b-4134-8ec4-957cb58a6664",
+      "word": "parliament",
+      "meaningZh": "议会；国会",
+      "exampleId": "26815207-4b4b-4134-8ec4-957cb58a6664-visual-ex",
+      "styleFamily": "graphic illustration",
+      "sentenceEn": "The parliament gathered to debate the proposal.",
+      "sentenceZh": "议会聚集起来讨论提案。",
+      "scene": "Fictional semicircular parliamentary chamber with adult delegates seated facing central speaking delegate, all readable faces complete, no flags party emblems writing or real politicians.",
+      "altText": "代表们在半圆形议事厅里听取并讨论提案。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5b03e6f5-911b-490b-96d9-b6376cf3e91a",
+      "word": "part-time",
+      "meaningZh": "兼职的；非全日制的",
+      "exampleId": "5b03e6f5-911b-490b-96d9-b6376cf3e91a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She took a part-time job at the cafe.",
+      "sentenceZh": "她在咖啡馆做兼职。",
+      "scene": "Adult student with backpack beside coat rack works cafe shift pouring coffee, full focused face, no schedules pay figures signs or text; part-time supplied by sentence.",
+      "altText": "女子在咖啡馆工作，书包放在衣架旁。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c8810748-6bd2-4a9e-b548-bbdacd68afe8",
+      "word": "passionate",
+      "meaningZh": "热情的；热爱的",
+      "exampleId": "c8810748-6bd2-4a9e-b548-bbdacd68afe8-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The passionate gardener cared for every seedling.",
+      "sentenceZh": "热爱园艺的园丁细心照料每株幼苗。",
+      "scene": "Adult gardener happily tends greenhouse seedlings one by one, full engaged expressive face, natural hands, no slogans writing.",
+      "altText": "园丁满怀热情地照顾温室幼苗。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5f08ec2f-a215-4486-8d9f-b72c14f28494",
+      "word": "passive",
+      "meaningZh": "被动的；消极的",
+      "exampleId": "5f08ec2f-a215-4486-8d9f-b72c14f28494-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "He remained passive while the others repaired the bench.",
+      "sentenceZh": "别人修长椅时，他一直袖手旁观。",
+      "scene": "Chinese courtyard adults repair wooden bench while one adult sits nearby doing nothing with arms folded, full faces active vs passive contrast clear, no moral captions.",
+      "altText": "别人忙着修长椅，一人却坐在旁边不参与。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "f573a5eb-6a81-4faa-a203-152cbceb99bf",
+      "word": "passport",
+      "meaningZh": "护照",
+      "exampleId": "f573a5eb-6a81-4faa-a203-152cbceb99bf-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "She placed her passport beside the suitcase.",
+      "sentenceZh": "她把护照放在行李箱旁。",
+      "scene": "Plain fictional travel passport booklet open on table beside suitcase and boarding envelope, portrait panel rendered as tiny complete illustrated face with blank data fields, no national insignia actual personal data readable letters or numbers.",
+      "altText": "打开的护照册放在行李箱旁，资料栏空白。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "27fa0cc8-e1cc-4f77-be0e-b0f7792d7641",
+      "word": "password",
+      "meaningZh": "密码；口令",
+      "exampleId": "27fa0cc8-e1cc-4f77-be0e-b0f7792d7641-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "A password protected the files on her laptop.",
+      "sentenceZh": "密码保护着她笔记本电脑上的文件。",
+      "scene": "Adult woman at laptop screen shows simple lock icon and six solid blank circular password dots with folder pictograms behind, complete face, no actual characters interface text or credentials.",
+      "altText": "电脑屏幕的文件图示前显示锁与圆点密码栏。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0ebe2954-eacb-412c-96f2-a40a28848f8e",
+      "word": "pathway",
+      "meaningZh": "途径",
+      "exampleId": "0ebe2954-eacb-412c-96f2-a40a28848f8e-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The pathway led through the bamboo grove.",
+      "sentenceZh": "小路穿过竹林。",
+      "scene": "Winding stone pathway through lush Chinese bamboo grove, clear entrance leading into depth, no people signs writing.",
+      "altText": "石板小路蜿蜒穿过竹林。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "6d893533-367a-4193-b5fc-1bd25850974a",
+      "word": "peculiar",
+      "meaningZh": "奇怪的；特有的；独特的",
+      "exampleId": "6d893533-367a-4193-b5fc-1bd25850974a-visual-ex",
+      "styleFamily": "textile botanical",
+      "sentenceEn": "The tree had a peculiar spiral trunk.",
+      "sentenceZh": "这棵树有一根奇特的螺旋树干。",
+      "scene": "Single unusual living tree with clearly twisting spiral trunk in meadow, coherent roots and branches, no faces text or fantasy additions.",
+      "altText": "树干扭成明显的螺旋形，枝叶依然茂盛。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "c59fd84d-aa93-4331-b4a5-62673c42acab",
+      "word": "penny",
+      "meaningZh": "便士（英国货币）",
+      "exampleId": "c59fd84d-aa93-4331-b4a5-62673c42acab-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "He found a penny beneath the chair.",
+      "sentenceZh": "他在椅子下面发现一枚便士。",
+      "scene": "Single small copper-colored plain coin on floor beneath chair, adult hand reaches toward it, no coin writing numerals actual currency marks or text; penny denomination supplied by sentence.",
+      "altText": "椅子下面有一枚小铜色硬币，一只手正伸向它。",
+      "riskTags": [
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "36c5f50c-83aa-4c11-909f-c2e87e823af6",
+      "word": "percent",
+      "meaningZh": "百分比；百分之...",
+      "exampleId": "36c5f50c-83aa-4c11-909f-c2e87e823af6-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "Ten percent of the lanterns were red.",
+      "sentenceZh": "灯笼中百分之十是红色的。",
+      "scene": "Exactly ten separate lanterns hanging in single straight row in Chinese courtyard: exactly one red lantern at left and nine cream lanterns, no additional lanterns mirrors humans numbers text.",
+      "altText": "一排十盏灯笼中一盏红色、九盏米白色。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "102df290-119d-41d9-874c-b4e1d70a8efe",
+      "word": "permanently",
+      "meaningZh": "永久地",
+      "exampleId": "102df290-119d-41d9-874c-b4e1d70a8efe-visual-ex",
+      "styleFamily": "linocut architecture",
+      "sentenceEn": "The doorway was permanently sealed with bricks.",
+      "sentenceZh": "这道门被砖块永久封住。",
+      "scene": "Old doorway completely filled with mortared brick wall flush with surrounding masonry, door frame remains clear, no temporary barrier people writing.",
+      "altText": "旧门洞被砌满砖块，形成牢固墙面。",
+      "riskTags": [
+        "spatial_boundary",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "34f7c46a-2a55-42a6-a773-7c9c6efec63c",
+      "word": "persistent",
+      "meaningZh": "坚持不懈的",
+      "exampleId": "34f7c46a-2a55-42a6-a773-7c9c6efec63c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The persistent artisan kept polishing the rough stone.",
+      "sentenceZh": "坚持不懈的工匠继续打磨粗糙石头。",
+      "scene": "Chinese stone artisan steadily polishes rough stone in workshop with accumulated stone dust and progressively smoother surface, full patient face, no text.",
+      "altText": "工匠耐心打磨石头，桌上积着石粉。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

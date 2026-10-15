@@ -1,0 +1,309 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5027-5046",
+  "batchId": "auto-rank-5027-5046-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "litter",
+      "located",
+      "long-standing",
+      "loom",
+      "loudly",
+      "magical"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "35180ee5-5892-4afd-8057-81f7472c2e15",
+      "word": "litter",
+      "meaningZh": "垃圾",
+      "exampleId": "35180ee5-5892-4afd-8057-81f7472c2e15-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The volunteers picked up litter beside the river.",
+      "sentenceZh": "志愿者捡起河边的垃圾。",
+      "scene": "Adults collecting discarded bottles and wrappers with litter grabbers on Chinese riverside walkway, full faces, waste unbranded.",
+      "altText": "志愿者清理河边步道上的废瓶与包装。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ce8b0da6-3b13-4e0d-9bb8-4873c715d425",
+      "word": "lively",
+      "meaningZh": "活泼的",
+      "exampleId": "ce8b0da6-3b13-4e0d-9bb8-4873c715d425-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The lively puppy chased a ball across the garden.",
+      "sentenceZh": "活泼的小狗在花园里追球。",
+      "scene": "Energetic puppy bounds after ball in garden, expressive face, dynamic legs and ears, anatomically coherent.",
+      "altText": "小狗欢快地跃起，追逐花园里的球。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "a3ad1d97-8bda-438e-b407-f5ca33946a97",
+      "word": "located",
+      "meaningZh": "位于...的；坐落于",
+      "exampleId": "a3ad1d97-8bda-438e-b407-f5ca33946a97-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The pavilion was located beside the pond.",
+      "sentenceZh": "亭子坐落在池塘旁。",
+      "scene": "Chinese garden pavilion clearly positioned beside pond on its bank, path connecting them, no people labels or text.",
+      "altText": "园林亭子位于池塘岸边。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7ef25f26-6815-4fa0-8740-86a595ff23b6",
+      "word": "logo",
+      "meaningZh": "标志；商标",
+      "exampleId": "7ef25f26-6815-4fa0-8740-86a595ff23b6-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The cafe's logo was a simple blue leaf.",
+      "sentenceZh": "这家咖啡馆的标志是一片简单的蓝叶。",
+      "scene": "Fictional cafe exterior with single simple blue leaf pictorial emblem on plain sign, no letters words real brand logo or other emblems, illustrated building.",
+      "altText": "咖啡馆招牌上有一片蓝色叶子图案。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "3f81f8ff-5611-4942-afa4-2eb42d3a55dd",
+      "word": "long-standing",
+      "meaningZh": "长期存在的；由来已久的",
+      "exampleId": "3f81f8ff-5611-4942-afa4-2eb42d3a55dd-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "Their long-standing friendship lasted through many seasons.",
+      "sentenceZh": "他们多年的友谊历经许多季节。",
+      "scene": "Two adult friends share same Chinese courtyard bench in spring blossoms and winter snow panels, recognizable distinct hairstyles age slightly, full faces, no captions.",
+      "altText": "两位老朋友在春日与冬日都相伴坐在院落长椅上。",
+      "riskTags": [
+        "Chinese_culture",
+        "reference",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e9ec1eae-9110-4526-a672-3012bffbd335",
+      "word": "loom",
+      "meaningZh": "织布机；隐约出现",
+      "exampleId": "e9ec1eae-9110-4526-a672-3012bffbd335-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She worked at a wooden loom.",
+      "sentenceZh": "她在木制织布机上工作。",
+      "scene": "Adult Chinese textile artisan uses clearly recognizable traditional wooden loom, warp threads taut and woven cloth advancing, natural hands full focused face.",
+      "altText": "织工在木制织布机前织布，经线和布面清晰。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "043dbd25-0025-4eea-bf0a-14a7f294d119",
+      "word": "lord",
+      "meaningZh": "主；上帝；勋爵",
+      "exampleId": "043dbd25-0025-4eea-bf0a-14a7f294d119-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The lord welcomed guests into the castle.",
+      "sentenceZh": "领主欢迎客人进入城堡。",
+      "scene": "Fictional medieval lord in refined cloak welcomes adult guests at stone castle doorway, full courteous faces, no identifiable real person heraldic text or writing.",
+      "altText": "披着斗篷的领主在城堡门口迎接客人。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f3757dd5-87da-43a2-9c81-d3a2b4335d31",
+      "word": "lottery",
+      "meaningZh": "彩票",
+      "exampleId": "f3757dd5-87da-43a2-9c81-d3a2b4335d31-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The lottery used numbered balls to select the winner.",
+      "sentenceZh": "彩票通过编号球抽选中奖者。",
+      "scene": "An illustrated transparent lottery drawing drum filled with small plain colored balls and one ball resting in its output tray. Clean neutral tabletop. No humans, money, gambling advice, advertising, numerals, logos or writing. The sentence supplies numbered balls context.",
+      "altText": "透明抽签球笼里装着彩色小球，一颗球落在出球托盘上。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "22788666-a13b-4152-9abf-4c2976ef4299",
+      "word": "loudly",
+      "meaningZh": "大声地",
+      "exampleId": "22788666-a13b-4152-9abf-4c2976ef4299-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The rooster crowed loudly at sunrise.",
+      "sentenceZh": "公鸡在日出时大声啼叫。",
+      "scene": "Rooster on Chinese rural courtyard wall crowing with open beak and proud extended neck at sunrise, no sound words or text.",
+      "altText": "日出时，公鸡站在乡村院墙上张嘴啼叫。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "1a103d83-7c0f-4ac5-bbb5-3d7a740ef091",
+      "word": "luxury",
+      "meaningZh": "奢侈；奢侈品",
+      "exampleId": "1a103d83-7c0f-4ac5-bbb5-3d7a740ef091-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The hotel offered the luxury of a private pool.",
+      "sentenceZh": "酒店提供私人泳池这一奢华享受。",
+      "scene": "Elegant hotel suite terrace with private swimming pool, refined materials and spacious peaceful setting, no people logos or writing.",
+      "altText": "酒店套房露台设有宽敞的私人泳池。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "e6d29e25-020a-45ce-a231-d5f819ea6394",
+      "word": "lyric",
+      "meaningZh": "歌词；抒情的",
+      "exampleId": "e6d29e25-020a-45ce-a231-d5f819ea6394-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "The singer changed one lyric before the rehearsal.",
+      "sentenceZh": "歌手在排练前改了一句歌词。",
+      "scene": "Adult singer with full thoughtful face edits notebook beside microphone in rehearsal room, paper contains abstract nonlinguistic strokes only, no music-note lettering or readable words; lyric supplied by sentence.",
+      "altText": "歌手在话筒旁修改笔记本里的歌词草稿。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ac71b345-5a89-4742-8db1-5bbf5c9081fb",
+      "word": "machinery",
+      "meaningZh": "机械",
+      "exampleId": "ac71b345-5a89-4742-8db1-5bbf5c9081fb-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The machinery sorted the harvested apples.",
+      "sentenceZh": "机械分拣着收获的苹果。",
+      "scene": "Industrial apple sorting conveyor with rollers and branching belts separating apples into bins, no workers text branding or duplicated mechanisms.",
+      "altText": "分拣机器把传送带上的苹果送入不同箱子。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "734ff40d-7bc9-4f87-852f-e762e36f25d0",
+      "word": "magical",
+      "meaningZh": "神奇的；魔术般的",
+      "exampleId": "734ff40d-7bc9-4f87-852f-e762e36f25d0-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The lanterns gave the garden a magical glow.",
+      "sentenceZh": "灯笼让花园泛起神奇的光辉。",
+      "scene": "Chinese garden at dusk with warm lanterns reflected in pond, softly luminous fireflies, enchanting illustrated atmosphere, no text humans or real magical claims.",
+      "altText": "暮色园林里，灯笼与萤火虫映亮池水。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "31bc94a4-68a5-4938-9d8c-b72de224bbf1",
+      "word": "magnificent",
+      "meaningZh": "壮丽的；宏伟的",
+      "exampleId": "31bc94a4-68a5-4938-9d8c-b72de224bbf1-visual-ex",
+      "styleFamily": "gouache landscape",
+      "sentenceEn": "The magnificent waterfall filled the valley with mist.",
+      "sentenceZh": "壮丽瀑布让山谷充满水雾。",
+      "scene": "Grand wide waterfall drops between steep cliffs into mist-filled valley, scale clear with tall trees, no people text.",
+      "altText": "雄伟瀑布从峭壁落下，水雾弥漫山谷。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "eaa42114-e84a-403f-8245-5ad6ada634a7",
+      "word": "mainland",
+      "meaningZh": "大陆；本土",
+      "exampleId": "eaa42114-e84a-403f-8245-5ad6ada634a7-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The ferry carried passengers from the island to the mainland.",
+      "sentenceZh": "渡轮把乘客从岛上送往大陆。",
+      "scene": "Oblique aerial small island separated by water from broad continuous mainland coast extending beyond frame, ferry midway heading toward larger land, no arrows maps borders labels people faces.",
+      "altText": "渡轮从小岛驶向广阔大陆海岸。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "6651f581-1d8c-468c-8f0a-64c6c51e14bf",
+      "word": "making",
+      "meaningZh": "制作；制造；形成",
+      "exampleId": "6651f581-1d8c-468c-8f0a-64c6c51e14bf-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The making of the basket required patience.",
+      "sentenceZh": "制作这只篮子需要耐心。",
+      "scene": "Adult craftsperson weaving unfinished wicker basket, clear interlaced strips and full focused face in modest workshop, no text.",
+      "altText": "工匠耐心交织藤条，制作篮子。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "94e08028-9ca2-4c99-a773-5ec404b461f4",
+      "word": "mandatory",
+      "meaningZh": "强制性的；必须的",
+      "exampleId": "94e08028-9ca2-4c99-a773-5ec404b461f4-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Wearing a helmet was mandatory at the building site.",
+      "sentenceZh": "建筑工地必须佩戴安全帽。",
+      "scene": "Construction worker at entrance gently hands helmet to arriving adult visitor before allowing entry, full faces, other workers wear helmets, no posted words symbols or writing.",
+      "altText": "工地入口处，工人请访客戴上安全帽后再进入。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a4dc8b50-8b8d-43c5-96f6-56967439d504",
+      "word": "manifest",
+      "meaningZh": "表明",
+      "exampleId": "a4dc8b50-8b8d-43c5-96f6-56967439d504-visual-ex",
+      "styleFamily": "watercolor botanical",
+      "sentenceEn": "The dry leaves manifest the plant's need for water.",
+      "sentenceZh": "干枯的叶子表明植物需要水。",
+      "scene": "Wilted dry potted plant with curled leaves on cracked dry soil, watering jug nearby, no humans writing or medical implication.",
+      "altText": "盆土干裂，叶片枯卷，水壶放在旁边。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "abbcb404-fc88-4d4e-a138-18768498fc00",
+      "word": "manipulation",
+      "meaningZh": "操纵",
+      "exampleId": "abbcb404-fc88-4d4e-a138-18768498fc00-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The robotic arm allowed precise manipulation of small parts.",
+      "sentenceZh": "机械臂可以精确操作小零件。",
+      "scene": "A clean illustrated workshop tabletop with a small robotic gripper carefully rotating a wooden geometric block above its matching slot. Close-up simple mechanical arm and clearly visible block, no humans, puppet, strings, text, labels or branding.",
+      "altText": "机械夹爪转动木制零件，使其对准对应凹槽。",
+      "riskTags": [
+        "spatial_boundary",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "aaf76beb-9a17-4c62-bdaf-f1cf9c5de306",
+      "word": "manufacture",
+      "meaningZh": "制造；生产",
+      "exampleId": "aaf76beb-9a17-4c62-bdaf-f1cf9c5de306-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The factory used recycled plastic to manufacture chairs.",
+      "sentenceZh": "工厂用回收塑料制造椅子。",
+      "scene": "Clean production line shows recycled plastic pellets feed into molding machine and finished simple chairs emerge on conveyor, no logos labels people or technical instructions.",
+      "altText": "塑料颗粒进入成型机器，成品椅子沿传送带送出。",
+      "riskTags": [
+        "sequence",
+        "cause_effect"
+      ]
+    }
+  ]
+}

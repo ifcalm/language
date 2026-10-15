@@ -1,0 +1,310 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4326-4345",
+  "batchId": "auto-rank-4326-4345-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "classification",
+      "hunger",
+      "closure",
+      "spare",
+      "colored",
+      "commence"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "1bdac666-4430-442c-94ac-e9c6ca01ac8f",
+      "word": "mineral",
+      "meaningZh": "矿物；无机物；苏打水",
+      "exampleId": "1bdac666-4430-442c-94ac-e9c6ca01ac8f-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Quartz is a common mineral.",
+      "sentenceZh": "石英是一种常见矿物。",
+      "scene": "Natural cluster of clear hexagonal quartz crystals growing from rock matrix on plain museum display surface, mineral structure focal, no labels.",
+      "altText": "岩石基底上生长着透明六棱石英晶体。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "ddcea23c-03df-434e-adb4-8d3a41ec7933",
+      "word": "classification",
+      "meaningZh": "分类；分级；类别",
+      "exampleId": "ddcea23c-03df-434e-adb4-8d3a41ec7933-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The classification grouped the leaves by shape.",
+      "sentenceZh": "这种分类按形状将树叶分组。",
+      "scene": "Overhead Chinese botany classroom table leaves sorted into three visually distinct groups round leaves, needle leaves, lobed leaves, adult hands sorting, no text.",
+      "altText": "桌上的树叶按圆形、针形和裂叶形分组。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "dcc105ca-e43f-4ea3-a57c-4b0fab4aed2f",
+      "word": "hunger",
+      "meaningZh": "饥饿；渴望；饥荒；使挨饿",
+      "exampleId": "dcc105ca-e43f-4ea3-a57c-4b0fab4aed2f-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Hunger made him look forward to lunch.",
+      "sentenceZh": "饥饿让他盼着吃午饭。",
+      "scene": "Adult worker at Chinese lunch table looks eagerly toward steaming meal, one hand rests lightly on stomach, ordinary premeal hunger without deprivation or exaggerated distress, no text.",
+      "altText": "午饭前，劳动者轻按肚子，期待桌上的热饭。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "7cec3b37-1e7f-4883-a4a2-2de01e56e052",
+      "word": "clever",
+      "meaningZh": "聪明的；机智的",
+      "exampleId": "7cec3b37-1e7f-4883-a4a2-2de01e56e052-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The clever child used a stool to reach the shelf.",
+      "sentenceZh": "聪明的孩子用凳子够到了架子。",
+      "scene": "Child supervised by attentive adult uses stable low step stool on level floor to reach book on modest shelf, clever simple solution, complete faces no text on book.",
+      "altText": "孩子在成人照看下用稳固矮凳够取书架上的书。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "772a9d98-dc1e-45a0-9e6f-90372f41a661",
+      "word": "dying",
+      "meaningZh": "垂死的",
+      "exampleId": "772a9d98-dc1e-45a0-9e6f-90372f41a661-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The dying plant had only a few green leaves.",
+      "sentenceZh": "这株濒死植物只剩几片绿叶。",
+      "scene": "Single severely wilting potted plant mostly brown drooping leaves with only a few remaining green leaves, dry soil, plant decline clear, no person or text.",
+      "altText": "盆栽大部分叶片枯黄下垂，只剩少数绿叶。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "1cf0b5bf-4571-4a5c-9b5a-2f1f62341758",
+      "word": "closure",
+      "meaningZh": "关闭；结束",
+      "exampleId": "1cf0b5bf-4571-4a5c-9b5a-2f1f62341758-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The closure of the bridge changed their route.",
+      "sentenceZh": "桥梁关闭改变了他们的路线。",
+      "scene": "Chinese stone footbridge access blocked by sturdy barrier, pedestrians calmly take alternate riverside path toward another bridge visible distance, no signs or text.",
+      "altText": "桥头被护栏封闭，行人改走通往另一座桥的小路。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "9da26bc6-ccb3-4a47-b016-8d9cf61400c3",
+      "word": "developmental",
+      "meaningZh": "发展的",
+      "exampleId": "9da26bc6-ccb3-4a47-b016-8d9cf61400c3-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The blocks supported the child’s developmental progress.",
+      "sentenceZh": "积木有助于孩子的发展进步。",
+      "scene": "Three panel same young child progresses from grasping single block to stacking two then building stable small tower, attentive caregiver and complete faces, no age labels or text.",
+      "altText": "同一孩子从抓积木逐步学会堆叠和搭小塔。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a6424fe8-c28a-45bd-9766-02a3d6e97aef",
+      "word": "cocktail",
+      "meaningZh": "鸡尾酒",
+      "exampleId": "a6424fe8-c28a-45bd-9766-02a3d6e97aef-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The bartender served a fruit cocktail.",
+      "sentenceZh": "调酒师端上一杯水果鸡尾酒。",
+      "scene": "Adult bartender serves one elegant cocktail glass with colorful liquid ice citrus garnish at quiet bar, adult customer, no alcohol brand recipe writing or party excess.",
+      "altText": "调酒师递上一杯配有柑橘的彩色鸡尾酒。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "4aa440a1-be10-4a0a-8f32-a5f90dbd2664",
+      "word": "faster",
+      "meaningZh": "更快的",
+      "exampleId": "4aa440a1-be10-4a0a-8f32-a5f90dbd2664-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The cyclist moved faster than the runner.",
+      "sentenceZh": "骑车者比跑步者移动得更快。",
+      "scene": "Side view two panel comparison same adult cyclist and runner start aligned on parallel safe paths, next panel cyclist clearly further ahead over same elapsed interval, no stopwatch digits text or speed signs.",
+      "altText": "两人同时起步后，骑车者比跑步者前进得更远。",
+      "riskTags": [
+        "semantic_accuracy",
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "a3938421-59fa-4b34-9667-82387b177971",
+      "word": "coincide",
+      "meaningZh": "同时发生；巧合；一致",
+      "exampleId": "a3938421-59fa-4b34-9667-82387b177971-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The train’s arrival will coincide with sunset.",
+      "sentenceZh": "火车到站将恰逢日落。",
+      "scene": "Train arriving at platform precisely as sun touches horizon, single coherent scene makes simultaneous arrival and sunset clear, passengers wait safely, no text.",
+      "altText": "列车驶入站台时，太阳正落到地平线。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "5a4c219a-278b-417a-8119-d14a436dc164",
+      "word": "spare",
+      "meaningZh": "备用的；空闲的；抽出（时间）；幸免",
+      "exampleId": "5a4c219a-278b-417a-8119-d14a436dc164-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She kept a spare umbrella by the door.",
+      "sentenceZh": "她在门边放了一把备用伞。",
+      "scene": "Chinese home doorway adult holds wet open used umbrella outside while second folded dry umbrella rests ready in indoor stand, clear extra reserve object, no text.",
+      "altText": "一把正在使用的湿伞之外，门内还放着折叠备用伞。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "e7b2d03d-db92-408a-9f85-c293e3ebda9a",
+      "word": "coincidence",
+      "meaningZh": "巧合；偶然",
+      "exampleId": "e7b2d03d-db92-408a-9f85-c293e3ebda9a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "By coincidence, they wore the same jacket.",
+      "sentenceZh": "巧合的是，他们穿了同样的夹克。",
+      "scene": "Two adult friends meet unexpectedly in park wearing identical mustard jackets, amused surprised complete faces, other clothing different, no text or speech bubbles.",
+      "altText": "两位朋友偶遇，惊喜地发现穿着同款黄色夹克。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "edd8f48f-6c62-4027-b6e6-ca1faa8b4e2e",
+      "word": "halfway",
+      "meaningZh": "中途",
+      "exampleId": "edd8f48f-6c62-4027-b6e6-ca1faa8b4e2e-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "She stopped halfway across the bridge.",
+      "sentenceZh": "她走到桥的中途停了下来。",
+      "scene": "Top oblique view straight pedestrian bridge both equal-length halves fully visible, one adult stands exactly at geometric midpoint, symmetric endpoints and river banks, no digits text or markers.",
+      "altText": "行人停在两端等距的步行桥正中央。",
+      "riskTags": [
+        "semantic_accuracy",
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ac24f90e-4ce3-428c-a63d-5475361172be",
+      "word": "collision",
+      "meaningZh": "碰撞；冲突",
+      "exampleId": "ac24f90e-4ce3-428c-a63d-5475361172be-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The collision damaged both toy cars.",
+      "sentenceZh": "碰撞损坏了两辆玩具车。",
+      "scene": "Close tabletop two small toy cars touching nose to nose after collision, visibly bent plastic front bumpers and loose toy wheel, no real accident people injury logos or text.",
+      "altText": "两辆玩具车车头相撞，前端受损并掉下一只玩具轮。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "60ba8424-c35c-423e-9e94-fc05b4a00934",
+      "word": "colored",
+      "meaningZh": "有色的；带颜色的",
+      "exampleId": "60ba8424-c35c-423e-9e94-fc05b4a00934-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She arranged the colored threads in a basket.",
+      "sentenceZh": "她把彩色线整理到篮子里。",
+      "scene": "Chinese embroidery workshop overhead basket of rich red blue green yellow thread spools adult hands neatly arranging, plain unlabelled spools no text.",
+      "altText": "刺绣工作桌上，红蓝绿黄的线轴整齐放入篮子。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "221f00b4-456c-4bd5-95e1-d82405a65a45",
+      "word": "equality",
+      "meaningZh": "平等",
+      "exampleId": "221f00b4-456c-4bd5-95e1-d82405a65a45-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The group worked for equality in the workplace.",
+      "sentenceZh": "这个团体致力于职场平等。",
+      "scene": "Diverse adult coworkers of different genders ages and abilities at accessible round planning table with equal chairs materials and chance to speak, respectful balanced composition, no hierarchy slogans or text.",
+      "altText": "不同背景的同事在无障碍圆桌旁平等参与讨论。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "51fa8b0c-8b23-4695-a468-0ca3ed9f0b68",
+      "word": "cemetery",
+      "meaningZh": "墓地；公墓",
+      "exampleId": "51fa8b0c-8b23-4695-a468-0ca3ed9f0b68-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The cemetery was quiet in the morning.",
+      "sentenceZh": "墓地在早晨很安静。",
+      "scene": "Peaceful cemetery dawn stone grave markers with entirely plain surfaces, tended flowers grass and pathway, no funeral body or text.",
+      "altText": "晨光下，墓地的石碑、鲜花与小径安静整洁。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "6278ed29-6c45-4490-92ce-ab34efa95bd1",
+      "word": "comic",
+      "meaningZh": "漫画；喜剧的",
+      "exampleId": "6278ed29-6c45-4490-92ce-ab34efa95bd1-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "He enjoyed reading a comic.",
+      "sentenceZh": "他喜欢读漫画。",
+      "scene": "Adult reads open comic book with three clearly separated image panels of original humorous animal adventure, empty speech bubbles or none, visible faces and illustrated book content, no letters.",
+      "altText": "读者翻看绘有动物冒险分格画面的漫画书。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "c4ff44ab-495f-4297-9191-d216128579dc",
+      "word": "commence",
+      "meaningZh": "开始；着手",
+      "exampleId": "c4ff44ab-495f-4297-9191-d216128579dc-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The musicians will commence the performance together.",
+      "sentenceZh": "音乐家们将一同开始演出。",
+      "scene": "Chinese community ensemble poised at first beat, conductor gives starting cue and musicians begin playing erhu flute and percussion together, complete faces natural hands no notation or text.",
+      "altText": "社区乐团在指挥起拍示意下一同开始演奏。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "163f2cff-7c1c-46b5-8ea9-92962951ac26",
+      "word": "harassment",
+      "meaningZh": "骚扰",
+      "exampleId": "163f2cff-7c1c-46b5-8ea9-92962951ac26-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She reported the harassment to her manager.",
+      "sentenceZh": "她向经理报告了骚扰行为。",
+      "scene": "Respectful office adult employee calmly reports repeated unwanted intrusion to supportive manager, small separate contextual panel coworker repeatedly blocks personal space while she raises stop palm, no touching threats sexual detail or text, no victim blame.",
+      "altText": "员工向支持她的经理反映反复被侵扰个人空间的情况。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    }
+  ]
+}

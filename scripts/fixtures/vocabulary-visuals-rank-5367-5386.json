@@ -1,0 +1,326 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5367-5386",
+  "batchId": "auto-rank-5367-5386-20261006",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 8,
+    "words": [
+      "theatrical",
+      "thirteen",
+      "thought-provoking",
+      "thursday",
+      "ton",
+      "trademark",
+      "transparent",
+      "tribute"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "739d8fc6-f46d-4ebb-bf40-460f588d60cc",
+      "word": "thankfully",
+      "meaningZh": "谢天谢地",
+      "exampleId": "739d8fc6-f46d-4ebb-bf40-460f588d60cc-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Thankfully, the lost dog found its way home.",
+      "sentenceZh": "谢天谢地，走失的狗找到了回家的路。",
+      "scene": "Relieved adult welcomes returning dog at garden gate, clear full expressive face and warm reunion. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "走失的狗回到家，主人松一口气迎接它。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "e44d2ee6-18dd-45ff-9500-637f80cafb11",
+      "word": "theatrical",
+      "meaningZh": "戏剧的；夸张的",
+      "exampleId": "e44d2ee6-18dd-45ff-9500-637f80cafb11-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The theatrical costumes were ready for the performance.",
+      "sentenceZh": "戏剧服装已为演出准备好。",
+      "scene": "Chinese opera backstage original embroidered stage robes neatly hung beside costume table, elaborate theatrical sleeves and headdresses, no actors or writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "后台整齐摆着戏曲长袖戏服和头饰。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "8072548d-7ecf-4081-9135-75cca3854039",
+      "word": "thereafter",
+      "meaningZh": "此后；之后",
+      "exampleId": "8072548d-7ecf-4081-9135-75cca3854039-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "She planted the tree and watered it regularly thereafter.",
+      "sentenceZh": "她种下树，此后定期给它浇水。",
+      "scene": "Three panels same adult and same young tree: planting, later watering, watering again when tree taller; clear faces no arrows text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "她先种树，此后持续给同一棵树浇水。",
+      "riskTags": [
+        "people_face",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "aa547c4d-9d45-4915-a793-1e381b79c6d6",
+      "word": "thesis",
+      "meaningZh": "论文",
+      "exampleId": "aa547c4d-9d45-4915-a793-1e381b79c6d6-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "She presented her thesis on urban gardens.",
+      "sentenceZh": "她介绍了关于城市花园的论文。",
+      "scene": "Adult researcher presents bound blank thesis beside detailed urban garden model to academic listeners, full faces no writing graphs labels. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "研究者用装订论文和模型介绍城市花园研究。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "cf00b314-fa3c-4159-b198-67b60d508f20",
+      "word": "thief",
+      "meaningZh": "小偷",
+      "exampleId": "cf00b314-fa3c-4159-b198-67b60d508f20-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The thief returned the stolen wallet.",
+      "sentenceZh": "小偷归还了偷来的钱包。",
+      "scene": "Adult with regretful full expression returns distinctive red wallet to relieved owner in public park; no weapons police violence speech text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "偷钱包的人带着悔意把红色钱包归还失主。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f43beec9-06e4-48e1-9192-a6d4de031c9e",
+      "word": "thirsty",
+      "meaningZh": "口渴的",
+      "exampleId": "f43beec9-06e4-48e1-9192-a6d4de031c9e-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The thirsty hiker reached for her water bottle.",
+      "sentenceZh": "口渴的徒步者伸手拿水瓶。",
+      "scene": "Adult hiker pauses on warm trail, visibly dry lips and tired expression while reaching for plain water bottle, complete face and hands. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "徒步者口干疲惫，停下取出水瓶。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ef2ee6c8-3a6e-425c-b0f6-f74e807a12ec",
+      "word": "thirteen",
+      "meaningZh": "十三",
+      "exampleId": "ef2ee6c8-3a6e-425c-b0f6-f74e807a12ec-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The tray held thirteen tea cups.",
+      "sentenceZh": "托盘里有十三只茶杯。",
+      "scene": "Strict overhead Chinese tea tray exactly TEN cups in top row and THREE cups in bottom row; thirteen total, all distinct countable, no other cups or vessels. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "托盘上排十只、下排三只，共十三只茶杯。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "52ac0a2b-3308-4a6c-954f-8042a639dc57",
+      "word": "thorough",
+      "meaningZh": "彻底的",
+      "exampleId": "52ac0a2b-3308-4a6c-954f-8042a639dc57-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The mechanic made a thorough inspection of the bicycle.",
+      "sentenceZh": "维修者对自行车作了彻底检查。",
+      "scene": "Adult mechanic methodically checks bicycle chain brakes wheel bearings with neatly arranged tools and clear full focused face, no checklist writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "维修者细致检查自行车的链条、刹车和轮轴。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "771682e4-7c4c-4f5e-a256-c6ad164e4b57",
+      "word": "thought-provoking",
+      "meaningZh": "发人深省的",
+      "exampleId": "771682e4-7c4c-4f5e-a256-c6ad164e4b57-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The exhibition was thought-provoking.",
+      "sentenceZh": "这个展览发人深省。",
+      "scene": "Adult visitor thoughtfully observes environmental artwork contrasting thriving Chinese river landscape and littered version, full reflective face no exhibition text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "观众凝视河流洁净与污染的对比作品，陷入思考。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2fadae99-2419-4830-a2b3-2e523fbfc865",
+      "word": "thoughtful",
+      "meaningZh": "体贴的",
+      "exampleId": "2fadae99-2419-4830-a2b3-2e523fbfc865-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her thoughtful gesture made the visitor comfortable.",
+      "sentenceZh": "她体贴的举动让访客感到舒适。",
+      "scene": "Adult host quietly places soft cushion behind older guest and offers warm cup, natural full faces kind practical care no icons. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "主人给年长访客添靠垫并送上热饮。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "253b6546-eb87-4f15-a8d6-163430abf5ce",
+      "word": "thrilled",
+      "meaningZh": "非常兴奋的",
+      "exampleId": "253b6546-eb87-4f15-a8d6-163430abf5ce-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The children were thrilled to see the new playground.",
+      "sentenceZh": "孩子们看到新游乐场兴奋极了。",
+      "scene": "Children express excited full faces seeing newly opened accessible playground while adults supervise, no exaggerated victory poses text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "孩子们兴奋地看着新建的游乐场。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "98d97787-88e3-4a65-a065-5ac0e4f813b6",
+      "word": "thursday",
+      "meaningZh": "星期四",
+      "exampleId": "98d97787-88e3-4a65-a065-5ac0e4f813b6-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "On Thursday, she attended the pottery class.",
+      "sentenceZh": "星期四，她参加了陶艺课。",
+      "scene": "Adult learner shapes clay bowl in Chinese ceramics class beside friendly teacher, full faces natural hands; weekday supplied by sentence, no calendars writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "学员在老师指导下参加陶艺课，制作陶碗。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ae4fc3c1-573a-49cb-9e0e-982f36c33062",
+      "word": "timely",
+      "meaningZh": "及时的；适时的",
+      "exampleId": "ae4fc3c1-573a-49cb-9e0e-982f36c33062-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The timely repair kept the roof dry before the rain.",
+      "sentenceZh": "及时维修在下雨前让屋顶保持不漏水。",
+      "scene": "Adult worker safely completes low shed roof repair from guarded scaffold as first rain starts, sheltered supplies below remain dry, full face. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "工人在雨来临前修好屋顶，下面物品保持干燥。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "7f5ac0b9-7845-40cc-8d47-92120d8db4bf",
+      "word": "ton",
+      "meaningZh": "吨",
+      "exampleId": "7f5ac0b9-7845-40cc-8d47-92120d8db4bf-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The pallet of rice weighed one ton.",
+      "sentenceZh": "这托盘大米重一吨。",
+      "scene": "Chinese warehouse large pallet of blank sealed rice sacks on industrial platform scale, no digits display labels, visually heavy load; exact weight supplied by sentence. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "大型平台秤上堆着一整托盘袋装大米。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c0651c19-c4e7-4592-bf6b-30f7eb0d30ee",
+      "word": "torture",
+      "meaningZh": "折磨",
+      "exampleId": "c0651c19-c4e7-4592-bf6b-30f7eb0d30ee-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Waiting for news of the lost dog was torture.",
+      "sentenceZh": "等待走失狗的消息令人备受折磨。",
+      "scene": "Worried adult waits beside empty dog bed holding plain phone, full anxious face, no injury violence clocks text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "主人守着空狗窝和手机，焦急等待消息。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a0ca1676-7081-4d79-b745-b1dbaabcfe9c",
+      "word": "trademark",
+      "meaningZh": "商标",
+      "exampleId": "a0ca1676-7081-4d79-b745-b1dbaabcfe9c-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The shop used a leaf-shaped trademark on its bags.",
+      "sentenceZh": "商店在袋子上使用叶形商标。",
+      "scene": "Original simple fictional three-lobed leaf emblem repeated consistently on plain reusable bags in Chinese tea shop; no real brand or letters. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "茶店纸袋上印着同一种原创叶形商标。",
+      "riskTags": [
+        "Chinese_culture",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "afca0bcc-f05e-4451-8ca3-692cc7aea2d4",
+      "word": "transcript",
+      "meaningZh": "成绩单；抄本",
+      "exampleId": "afca0bcc-f05e-4451-8ca3-692cc7aea2d4-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The student collected her transcript from the office.",
+      "sentenceZh": "学生从办公室领取成绩单。",
+      "scene": "Adult university student receives official-looking sheet with entirely abstract blank tabular cells from clerk, full faces no legible text numbers seals. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "学生从办公室接过带空白表格的成绩单。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "7ed77f27-cc8b-47ce-a37c-78864bc5202b",
+      "word": "transparency",
+      "meaningZh": "透明度；透明",
+      "exampleId": "7ed77f27-cc8b-47ce-a37c-78864bc5202b-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The transparency of the glass revealed the roots.",
+      "sentenceZh": "玻璃的透明度使根系清晰可见。",
+      "scene": "Transparent glass vessel with plant roots completely visible through clear water, opaque ceramic planter beside for comparison, no humans labels. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "透明玻璃杯清楚显露根系，旁边陶盆遮住根系。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "ad3e9c13-966c-4ec1-9590-1a3e55363b04",
+      "word": "transparent",
+      "meaningZh": "透明的",
+      "exampleId": "ad3e9c13-966c-4ec1-9590-1a3e55363b04-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The transparent jar let us see the tea leaves.",
+      "sentenceZh": "透明罐让我们看见茶叶。",
+      "scene": "One clear glass Chinese tea storage jar containing dry tea leaves, leaf details visible through glass, plain wooden lid no label. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "透明玻璃罐里的干茶叶清晰可见。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "62dc2fe9-907e-4dea-aa01-7d2fcc698989",
+      "word": "tribute",
+      "meaningZh": "贡品；致敬",
+      "exampleId": "62dc2fe9-907e-4dea-aa01-7d2fcc698989-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The concert was a tribute to the village musicians.",
+      "sentenceZh": "音乐会向村里的音乐家致敬。",
+      "scene": "Chinese community concert younger musicians play for seated older local musicians who smile appreciatively, full faces, no portraits banners lyrics awards. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "年轻乐手为老一辈乡村音乐家演奏致敬。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

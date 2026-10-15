@@ -1,0 +1,312 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4466-4485",
+  "batchId": "auto-rank-4466-4485-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "cutting",
+      "lid",
+      "sprinkle",
+      "philosophical",
+      "decoration",
+      "dedicated"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "02a3516d-652d-47d7-bc42-def3f288c90c",
+      "word": "cutting",
+      "meaningZh": "切割；剪辑；锋利的",
+      "exampleId": "02a3516d-652d-47d7-bc42-def3f288c90c-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Cutting paper requires a steady hand.",
+      "sentenceZh": "剪纸需要手稳。",
+      "scene": "Chinese paper-cut craft table, adult carefully cuts plain red paper with scissors, intricate floral cut pattern with no characters. Scissor blades visibly meet paper safely.",
+      "altText": "手艺人用剪刀稳稳剪出红纸花纹。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "479a264b-d809-48b1-b953-c55a1699613a",
+      "word": "similarity",
+      "meaningZh": "相似性",
+      "exampleId": "479a264b-d809-48b1-b953-c55a1699613a-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "There is a striking similarity between the two leaves.",
+      "sentenceZh": "这两片叶子十分相似。",
+      "scene": "Two separate maple leaves side by side with same lobed outline and vein pattern but slightly different warm colors. Botanist examines them; clear visual resemblance without identical duplication.",
+      "altText": "两片颜色略异的枫叶具有相似轮廓和叶脉。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "0f3c501c-4901-4d57-bc81-ff3851d06a7b",
+      "word": "butt",
+      "meaningZh": "粗大的一头；烟头；靶；笑柄",
+      "exampleId": "0f3c501c-4901-4d57-bc81-ff3851d06a7b-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "She picked up the cigarette butt with tongs.",
+      "sentenceZh": "她用夹子捡起烟头。",
+      "scene": "Beach litter cleanup adult gloved hand uses litter tongs to collect one clearly spent cigarette butt with short tan filter and ash-black extinguished tip. Other hand holds rubbish bag. No smoker flames or smoke.",
+      "altText": "志愿者用夹子捡起沙滩上熄灭的烟头。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4357416d-a18e-4240-b4e5-dd76fba0053e",
+      "word": "cynical",
+      "meaningZh": "愤世嫉俗的；怀疑的",
+      "exampleId": "4357416d-a18e-4240-b4e5-dd76fba0053e-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He was cynical about the donor’s motives.",
+      "sentenceZh": "他怀疑捐赠者的动机。",
+      "scene": "Fictional scene at food donation: donor ostentatiously turns toward photographer while handing food parcel, another adult on sidelines folded arms and skeptical raised eyebrow. Donation itself real; observer doubts motives, no villain caricature. No speech bubbles.",
+      "altText": "旁观者看到捐赠者面对镜头摆姿势，露出怀疑神情。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3330b311-40ab-449a-84ae-324a3d0f6dcf",
+      "word": "dairy",
+      "meaningZh": "乳制品；乳品店",
+      "exampleId": "3330b311-40ab-449a-84ae-324a3d0f6dcf-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Milk and cheese are dairy products.",
+      "sentenceZh": "牛奶和奶酪都是乳制品。",
+      "scene": "Illustrated still life glass jug of white milk, cheese wedge with holes and plain ceramic yogurt bowl on rustic kitchen table, no packages labels humans.",
+      "altText": "桌上摆着牛奶、奶酪和酸奶。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "2106ea7e-5f1f-4288-a8de-c70e29164b9f",
+      "word": "lid",
+      "meaningZh": "盖子；限制；眼睑；给...盖盖子",
+      "exampleId": "2106ea7e-5f1f-4288-a8de-c70e29164b9f-visual-ex",
+      "styleFamily": "stop-motion-inspired handcrafted illustration",
+      "sentenceEn": "She lifted the lid of the teapot.",
+      "sentenceZh": "她掀开了茶壶盖。",
+      "scene": "Chinese tea table handmade illustrated ceramic teapot with adult hand lifting perfectly matching round lid directly above open top, small hint of steam, teacups. Clear lid and opening relation.",
+      "altText": "手将茶壶盖提起，露出壶口。",
+      "riskTags": [
+        "spatial_boundary",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "aed12200-fe3b-4751-86ab-8f5313f7447a",
+      "word": "damaging",
+      "meaningZh": "有损害的；破坏性的",
+      "exampleId": "aed12200-fe3b-4751-86ab-8f5313f7447a-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The damaging storm snapped several branches.",
+      "sentenceZh": "破坏性的暴风雨折断了几根树枝。",
+      "scene": "Orchard storm strong slanted rain and bent tree canopy; clearly broken branch lies on ground under visibly snapped matching tree limb. No injured people animals.",
+      "altText": "暴雨中的果树有断枝，地面散落折断的树枝。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "0f873d53-7d4a-4f44-895f-7c8f7237ce3a",
+      "word": "dumb",
+      "meaningZh": "哑的；不说话的；无声音的",
+      "exampleId": "0f873d53-7d4a-4f44-895f-7c8f7237ce3a-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The breathtaking view struck her dumb.",
+      "sentenceZh": "壮丽景色让她一时说不出话来。",
+      "scene": "Adult hiker reaches panoramic waterfall overlook and stands awestruck, wide eyes slightly parted silent mouth hands resting on railing, grand waterfall landscape dominates. No disability cues insults or text.",
+      "altText": "远足者面对壮观瀑布，惊叹得一时无言。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "38551afd-4651-4f5f-af75-1d22c882cb25",
+      "word": "bulk",
+      "meaningZh": "大小；体积；大块；大多数",
+      "exampleId": "38551afd-4651-4f5f-af75-1d22c882cb25-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The bulk of the supplies arrived by truck.",
+      "sentenceZh": "大部分物资由卡车运来。",
+      "scene": "Community delivery depot truck unloaded with very large cluster of matching plain cartons beside truck and only a small remainder of matching cartons beside a bicycle. Clear majority truck and minority bicycle, no exact counts or labels.",
+      "altText": "卡车旁堆着大部分物资，自行车旁只有少量箱子。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "8032fe93-98a5-4369-9780-1e967d0a59d4",
+      "word": "december",
+      "meaningZh": "十二月",
+      "exampleId": "8032fe93-98a5-4369-9780-1e967d0a59d4-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "We walked through the snowy park in December.",
+      "sentenceZh": "十二月，我们走过白雪覆盖的公园。",
+      "scene": "Illustrated northern hemisphere snowy park in early winter, adults bundled in scarves walk safe path, leafless trees, subtle evergreen festive lights without symbols or calendar. No letters digits. Seasonal contextual scene does not invent date symbols.",
+      "altText": "冬日公园里，人们裹着围巾沿雪中小路行走。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "f78668c3-d3b5-46a0-82cf-af84bb599562",
+      "word": "decision-making",
+      "meaningZh": "决策；决策过程",
+      "exampleId": "f78668c3-d3b5-46a0-82cf-af84bb599562-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Good decision-making involves listening to others.",
+      "sentenceZh": "良好的决策需要倾听他人。",
+      "scene": "Accessible community planning table adult group considers two clearly different playground scale models, facilitator listens attentively to wheelchair user pointing at broad ramp on one model, everyone respectful. No voting icons or documents text.",
+      "altText": "社区成员倾听使用轮椅者的意见，讨论带坡道的场地模型。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "67982e84-7c9a-4f0d-95ed-36eb3d62a15c",
+      "word": "sprinkle",
+      "meaningZh": "洒；散置；撒；点缀",
+      "exampleId": "67982e84-7c9a-4f0d-95ed-36eb3d62a15c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Sprinkle sesame seeds over the noodles.",
+      "sentenceZh": "在面条上撒些芝麻。",
+      "scene": "Chinese kitchen close mature adult cooking hand gently sprinkles small white sesame seeds from pinched fingers over bowl noodles, individual seeds visibly fall, some settle on noodles, warm food illustration no writing.",
+      "altText": "指间的芝麻粒轻轻落在面条上。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c1a4ee9b-6750-4f90-9e3e-ac6e72f8f45f",
+      "word": "decisive",
+      "meaningZh": "决定性的；果断的",
+      "exampleId": "c1a4ee9b-6750-4f90-9e3e-ac6e72f8f45f-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She took decisive action to stop the leak.",
+      "sentenceZh": "她果断采取行动止住漏水。",
+      "scene": "Adult building caretaker immediately turns water shutoff valve on exposed pipe beside spraying joint over bucket, resolute focused expression. Safe ground no electricity or labels. Clear action directed at leak.",
+      "altText": "管理员果断转动水管阀门，处理漏水。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "04e400bb-fa80-46c8-8e70-5a7656cbae83",
+      "word": "mortality",
+      "meaningZh": "死亡率",
+      "exampleId": "04e400bb-fa80-46c8-8e70-5a7656cbae83-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The drought increased mortality among the seedlings.",
+      "sentenceZh": "干旱使幼苗的死亡率上升。",
+      "scene": "Two-panel same nursery seedling tray in same position: first before drought has healthy green seedlings in moist soil; second after severe drought cracked dry soil many clearly dead brown collapsed seedlings and fewer surviving green seedlings. No icons numbers labels, no revived plants or medical charts.",
+      "altText": "同一育苗盘由健康幼苗变为干旱后大量枯死、少数存活的状态。",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "e2c35b2d-963d-4ff6-83a3-dabef36bfd18",
+      "word": "declaration",
+      "meaningZh": "声明；宣言；申报",
+      "exampleId": "e2c35b2d-963d-4ff6-83a3-dabef36bfd18-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The mayor made a declaration at the public meeting.",
+      "sentenceZh": "市长在公开会议上发表声明。",
+      "scene": "Fictional civic public meeting mayor standing at simple lectern addressing attentive adult citizens, formal clear announcement posture open hand, plain rolled blank paper no text seals emblems microphones logos.",
+      "altText": "市长在讲台上正式向市民发表声明。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0fb6db92-72ee-4225-9e18-419bbcaa43ad",
+      "word": "philosophical",
+      "meaningZh": "哲学的",
+      "exampleId": "0fb6db92-72ee-4225-9e18-419bbcaa43ad-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "They had a philosophical discussion about a good life.",
+      "sentenceZh": "他们就美好生活进行了哲学讨论。",
+      "scene": "Chinese garden pavilion mature adults in thoughtful dialogue, one open hand making thoughtful point other listens pensively, nearby unlettered closed books and teacups, water and pine garden. Calm intellectual exchange not religious ritual, no text thought bubbles.",
+      "altText": "园亭里，两人围绕人生认真思考和讨论。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "123b91ae-5b6e-47eb-8ce9-2ce41bb5b9e0",
+      "word": "conversion",
+      "meaningZh": "转换；转变；皈依",
+      "exampleId": "123b91ae-5b6e-47eb-8ce9-2ce41bb5b9e0-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The conversion turned the garage into a studio.",
+      "sentenceZh": "改造把车库变成了工作室。",
+      "scene": "Two-panel same garage architectural shell identical window door roof: first garage with car and plain tools; second car removed, same space transformed into artist studio with easel, blank canvas worktable shelves. Clearly same building before and after. No text.",
+      "altText": "同一车库在改造前停放汽车，改造后成为绘画工作室。",
+      "riskTags": [
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "c11dbb4c-d314-4cde-9698-bf57b50f9402",
+      "word": "decoration",
+      "meaningZh": "装饰；装饰品；勋章",
+      "exampleId": "c11dbb4c-d314-4cde-9698-bf57b50f9402-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The lantern was a decoration for the courtyard.",
+      "sentenceZh": "这盏灯笼是庭院的装饰。",
+      "scene": "Chinese courtyard one adult hangs plain red decorative lantern with gold floral pattern under eaves, lantern has no character text symbols; bamboo ceramic pots nearby, soft evening ambience fully designed face.",
+      "altText": "庭院檐下挂起没有文字的红色花纹灯笼。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6613bc6d-c0d6-44c3-82ec-70667d2e6aa8",
+      "word": "dedicated",
+      "meaningZh": "专注的；献身的；专用的",
+      "exampleId": "6613bc6d-c0d6-44c3-82ec-70667d2e6aa8-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The dedicated craftswoman carefully restored the chair.",
+      "sentenceZh": "这位敬业的女手艺人细心修复椅子。",
+      "scene": "Chinese furniture restoration workshop mature female craftsperson patiently repairs mortise and tenon joint in worn wooden chair with small tools, concentration clear, clamps and matching wood repair, no lettering.",
+      "altText": "女手艺人专注地修复旧木椅的榫卯接头。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1ec5ae53-25ee-4c3d-a5e5-f74af9e48de9",
+      "word": "patron",
+      "meaningZh": "赞助人；顾客；保护人",
+      "exampleId": "1ec5ae53-25ee-4c3d-a5e5-f74af9e48de9-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "A regular patron returned to the café.",
+      "sentenceZh": "一位常客又来到了这家咖啡馆。",
+      "scene": "Warm illustrated neighborhood cafe elderly regular customer greeted with recognition by barista who offers familiar plain cup, friendly fully drawn faces, counter pastries, no menu signage logos or writing.",
+      "altText": "咖啡师微笑着迎接熟悉的常客，并递上咖啡。",
+      "riskTags": [
+        "people_face"
+      ]
+    }
+  ]
+}

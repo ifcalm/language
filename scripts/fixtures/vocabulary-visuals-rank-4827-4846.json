@@ -1,0 +1,318 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4827-4846",
+  "batchId": "auto-rank-4827-4846-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "handy",
+      "harbor",
+      "lighting",
+      "specify",
+      "contributor",
+      "healthcare"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5f126819-d830-49e1-9528-c9ee902d3327",
+      "word": "sovereignty",
+      "meaningZh": "主权",
+      "exampleId": "5f126819-d830-49e1-9528-c9ee902d3327-visual-ex",
+      "styleFamily": "paper-cut conceptual",
+      "sentenceEn": "The island nation defended its sovereignty.",
+      "sentenceZh": "这个岛国捍卫自己的主权。",
+      "scene": "A small island nation surrounded by sea, own modest civic assembly hall and locally crewed patrol boat in its waters, no fighting flags maps text or emblems, autonomy conceptualized through local self-government.",
+      "altText": "海中的岛国有自己的议事厅和海上巡逻船。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9dc2d2e1-b950-45b1-8e42-af9befe0360b",
+      "word": "handy",
+      "meaningZh": "方便的；手边的",
+      "exampleId": "9dc2d2e1-b950-45b1-8e42-af9befe0360b-visual-ex",
+      "styleFamily": "felt",
+      "sentenceEn": "The small toolkit was handy for repairing the chair.",
+      "sentenceZh": "这个小工具箱修椅子时很方便。",
+      "scene": "An adult carpenter repairs a loose chair joint with a compact open toolkit conveniently beside hand in a Chinese woodwork room, complete focused face, no tool labels.",
+      "altText": "木作间里，修椅子的人手边放着方便取用的小工具箱。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3619cb7d-6a57-4001-a945-be4d080a1353",
+      "word": "ridge",
+      "meaningZh": "山脊；脊；隆起",
+      "exampleId": "3619cb7d-6a57-4001-a945-be4d080a1353-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "They walked along the narrow mountain ridge.",
+      "sentenceZh": "他们沿着狭窄的山脊行走。",
+      "scene": "Two adult hikers traverse a narrow mountain ridge with steep slopes visibly dropping on both sides, tiny but complete readable faces, wide landscape, clear path and safe spacing, no text.",
+      "altText": "两名徒步者沿两侧陡峭的狭窄山脊前行。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "af5cafd6-ac33-4a87-b8d5-d73754405a86",
+      "word": "brave",
+      "meaningZh": "勇敢的；美好的；华丽的；勇敢者",
+      "exampleId": "af5cafd6-ac33-4a87-b8d5-d73754405a86-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The brave child spoke in front of the class.",
+      "sentenceZh": "勇敢的孩子在全班面前发言。",
+      "scene": "A school-age child confidently speaks at front of classroom despite slightly nervous full face, classmates listen supportively, clear facial features for readable pupils, blank board no writing.",
+      "altText": "孩子克服紧张，在认真倾听的同学面前发言。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0e0a585a-08c2-450f-af73-d6cf8af73e33",
+      "word": "harbor",
+      "meaningZh": "港口；心怀；庇护",
+      "exampleId": "0e0a585a-08c2-450f-af73-d6cf8af73e33-visual-ex",
+      "styleFamily": "gouache landscape",
+      "sentenceEn": "The fishing boats returned to the harbor at sunset.",
+      "sentenceZh": "渔船在日落时回到港口。",
+      "scene": "Traditional Chinese coastal harbor with fishing boats entering calm sheltered water between stone breakwaters at sunset, tiled waterfront roofs and nets, no people needed or boat lettering.",
+      "altText": "夕阳下，渔船驶入有石堤庇护的中式海港。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "5039a31c-d810-4517-871d-097b11802145",
+      "word": "harmful",
+      "meaningZh": "有害的",
+      "exampleId": "5039a31c-d810-4517-871d-097b11802145-visual-ex",
+      "styleFamily": "Risograph environmental",
+      "sentenceEn": "The harmful smoke drifted toward the trees.",
+      "sentenceZh": "有害烟雾飘向树木。",
+      "scene": "Dark industrial smoke drifting toward a grove of trees whose nearest leaves are visibly dull and withered, no people, words, molecule diagrams or exaggerated poison symbols.",
+      "altText": "工业烟雾飘向树林，近处树叶枯萎失色。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "7196b339-9ed4-42aa-b0c8-f7e354edcac3",
+      "word": "lighting",
+      "meaningZh": "照明",
+      "exampleId": "7196b339-9ed4-42aa-b0c8-f7e354edcac3-visual-ex",
+      "styleFamily": "textile interior",
+      "sentenceEn": "Soft lighting made the room feel warm.",
+      "sentenceZh": "柔和的照明让房间显得温暖。",
+      "scene": "Cozy traditional Chinese sitting room softly lit by warm paper lantern and shaded lamp, bamboo furniture, blue porcelain and gentle pools of light, no people, writing or daylight confusing focus.",
+      "altText": "纸灯笼和台灯以柔和光线照亮中式客厅。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "e277c085-9dd7-42de-a6f8-64dd537c7efd",
+      "word": "hatred",
+      "meaningZh": "仇恨；憎恨",
+      "exampleId": "e277c085-9dd7-42de-a6f8-64dd537c7efd-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Hatred kept the two neighbors from speaking.",
+      "sentenceZh": "仇恨让两位邻居不再交谈。",
+      "scene": "Two adult neighbors stand on opposite sides of a low garden fence turning backs toward each other, full hostile faces still visible in profile, tense folded arms, no violence insults or writing.",
+      "altText": "两位邻居隔着篱笆背向彼此，神情敌视。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "013ea548-35ca-483c-84ba-967eb3d979b0",
+      "word": "specify",
+      "meaningZh": "详列；指定；说明",
+      "exampleId": "013ea548-35ca-483c-84ba-967eb3d979b0-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She used a sample to specify the exact fabric she wanted.",
+      "sentenceZh": "她用样品明确指定想要的布料。",
+      "scene": "An adult woman clearly selects one blue floral fabric swatch from several distinct samples while tailor listens in a Chinese fabric shop, full faces and pointing hand, no price tags or lettering.",
+      "altText": "女子在中式布店指着蓝色花纹样品，向裁缝说明所需布料。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "82733497-2624-437e-99b3-df62b451deb3",
+      "word": "contributor",
+      "meaningZh": "贡献者",
+      "exampleId": "82733497-2624-437e-99b3-df62b451deb3-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "Each contributor added a plant to the community garden.",
+      "sentenceZh": "每位贡献者都为社区花园添了一株植物。",
+      "scene": "Several diverse adult volunteers each bring a potted plant toward a shared community garden bed in a traditional Chinese courtyard, full warm faces, one plants while others wait, no donation signs or labels.",
+      "altText": "居民各带一盆植物，为中式社区庭院的花园添绿。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2a90f74b-ed77-4f52-8d4d-4daaf8f6a3fc",
+      "word": "haunt",
+      "meaningZh": "萦绕",
+      "exampleId": "2a90f74b-ed77-4f52-8d4d-4daaf8f6a3fc-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "Memories of the fire continued to haunt him.",
+      "sentenceZh": "火灾的记忆仍然萦绕着他。",
+      "scene": "An adult sits awake in a quiet restored room with troubled full face; faint translucent illustrated memory vignette of a smoky burning house occupies upper corner, no ghosts, supernatural monster or graphic harm.",
+      "altText": "男子忧虑地坐在屋内，画面角落浮现过去火灾的记忆。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9a665c03-4269-41ef-8a45-08b789129241",
+      "word": "frustrate",
+      "meaningZh": "挫败；击败；破坏",
+      "exampleId": "9a665c03-4269-41ef-8a45-08b789129241-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The tangled fishing line began to frustrate him.",
+      "sentenceZh": "缠成一团的钓鱼线开始让他感到挫败。",
+      "scene": "An adult angler beside quiet lake struggles to untangle a clearly knotted fishing line, exasperated full face and natural hands, no hooks embedded in skin or writing.",
+      "altText": "钓鱼者皱眉处理缠成团的鱼线。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b1a23c58-153b-4dfa-93ce-b569099b5fce",
+      "word": "healthcare",
+      "meaningZh": "医疗保健",
+      "exampleId": "b1a23c58-153b-4dfa-93ce-b569099b5fce-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The mobile clinic brought healthcare to the village.",
+      "sentenceZh": "流动诊所把医疗保健服务带到村里。",
+      "scene": "A mobile clinic parked in a Chinese village courtyard, adult nurse checks an older resident blood pressure with cuff, complete caring faces, villagers waiting, no lettering medical crosses or treatment instructions.",
+      "altText": "乡村院内的流动诊所旁，护士为老人测量血压。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8192fb44-ed86-4a01-aeee-60e52c3aa7b9",
+      "word": "heating",
+      "meaningZh": "加热；供暖",
+      "exampleId": "8192fb44-ed86-4a01-aeee-60e52c3aa7b9-visual-ex",
+      "styleFamily": "paper-cut cutaway",
+      "sentenceEn": "The heating kept the house warm during the snowstorm.",
+      "sentenceZh": "供暖让房子在暴风雪期间保持温暖。",
+      "scene": "House interior cutaway with warm radiator beside cozy armchair, snowstorm visible beyond closed window, clear contrast between warm sheltered interior and icy exterior, no people text or heat arrows.",
+      "altText": "窗外风雪交加，屋内暖气片让室内保持温暖。",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "addbd50f-a97a-4e2a-a61a-bfa4dab6882c",
+      "word": "articulate",
+      "meaningZh": "发音清晰的；口才好的",
+      "exampleId": "addbd50f-a97a-4e2a-a61a-bfa4dab6882c-visual-ex",
+      "styleFamily": "watercolor editorial",
+      "sentenceEn": "The articulate speaker explained the model clearly.",
+      "sentenceZh": "这位口齿清楚的演讲者把模型解释得很明白。",
+      "scene": "Adult woman speaker explains a physical bridge model to attentive adults, full confident speaking face and natural hand gestures, listeners engaged, no diagrams containing words or speech bubbles.",
+      "altText": "演讲者用桥梁模型向听众清楚讲解。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3b41af6c-0608-4926-865e-22284cd913eb",
+      "word": "heighten",
+      "meaningZh": "提高；增强",
+      "exampleId": "3b41af6c-0608-4926-865e-22284cd913eb-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The dark clouds began to heighten their concern.",
+      "sentenceZh": "乌云开始加深他们的担忧。",
+      "scene": "Two adult hikers glance upward at increasingly dark looming storm clouds while approaching shelter, full increasingly worried faces, no disaster injuries or text.",
+      "altText": "徒步者看着渐沉的乌云，担忧地加快走向避雨处。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "07a69854-1e89-41d4-a971-7bfebb6c3ae5",
+      "word": "hierarchy",
+      "meaningZh": "等级制度；层级",
+      "exampleId": "07a69854-1e89-41d4-a971-7bfebb6c3ae5-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The boxes were arranged in a simple hierarchy.",
+      "sentenceZh": "盒子按简单的层级摆放。",
+      "scene": "Clean conceptual arrangement of plain wooden boxes on stepped shelves: one large box at top, several medium boxes below, smaller boxes at bottom, clear nested levels without numerals arrows or writing.",
+      "altText": "不同大小的木盒在阶梯架上分层排列。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e165ecc3-cd7a-47f8-8feb-288f538a0686",
+      "word": "importantly",
+      "meaningZh": "重要地",
+      "exampleId": "e165ecc3-cd7a-47f8-8feb-288f538a0686-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Most importantly, the workers checked the ropes before climbing.",
+      "sentenceZh": "最重要的是，工人在攀爬前检查了绳索。",
+      "scene": "Adult workers at base of scaffold carefully inspect climbing ropes and harness before anyone climbs, full focused faces, priority of safety visible through shared attention, no labels or instructional close-ups.",
+      "altText": "工人在脚手架下先认真检查绳索和安全带。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7a1653e9-1141-4581-a412-173946419230",
+      "word": "high-profile",
+      "meaningZh": "高调的；引人注目的",
+      "exampleId": "7a1653e9-1141-4581-a412-173946419230-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The high-profile actor arrived at the film premiere.",
+      "sentenceZh": "备受关注的演员来到电影首映礼。",
+      "scene": "An adult actor arrives on a premiere carpet with several photographers aiming cameras and bright flashes, complete foreground faces, modest composed greeting, no logos writing or paparazzi harassment.",
+      "altText": "演员在首映礼现场受到多位摄影师关注。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "cb6e9bf1-19e6-4518-b96f-370ae2957dc3",
+      "word": "transit",
+      "meaningZh": "经过；通行；运输；运输线；转变",
+      "exampleId": "cb6e9bf1-19e6-4518-b96f-370ae2957dc3-visual-ex",
+      "styleFamily": "screen-print cityscape",
+      "sentenceEn": "The city improved public transit with new trams.",
+      "sentenceZh": "城市用新电车改善了公共交通。",
+      "scene": "Modern public tram passing a clean urban stop with commuters and accessible platform, no route numbers logos signage or unfinished readable faces, broad city transport context.",
+      "altText": "新电车驶过有无障碍站台的城市公共交通站点。",
+      "riskTags": [
+        "people_face"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5007-5026",
+  "batchId": "auto-rank-5007-5026-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "laptop",
+      "layout",
+      "legendary",
+      "lifelong",
+      "linger",
+      "literacy"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "d380fca5-3be5-49a9-b790-809925c9c819",
+      "word": "laptop",
+      "meaningZh": "笔记本电脑",
+      "exampleId": "d380fca5-3be5-49a9-b790-809925c9c819-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She used her laptop in the quiet study.",
+      "sentenceZh": "她在安静的书房里使用笔记本电脑。",
+      "scene": "Adult woman works at open laptop in Chinese study with lattice window and porcelain cup, complete focused face, screen abstract color shapes no readable interface or writing.",
+      "altText": "女子在中式书房里使用笔记本电脑。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "06a0e502-0ca8-4f8d-8a3f-781426160cb0",
+      "word": "large-scale",
+      "meaningZh": "大规模的",
+      "exampleId": "06a0e502-0ca8-4f8d-8a3f-781426160cb0-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The large-scale farm used several irrigation systems.",
+      "sentenceZh": "这座大规模农场使用了多套灌溉系统。",
+      "scene": "Expansive aerial farmland with multiple circular irrigation systems across many fields, geometric large scale clear, no text people numbers.",
+      "altText": "广阔农场的多个田块布置着灌溉系统。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "acdd644f-ff20-4d84-83aa-340a6fec19c8",
+      "word": "latest",
+      "meaningZh": "最新的；最近的",
+      "exampleId": "acdd644f-ff20-4d84-83aa-340a6fec19c8-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The latest bicycle stood beside the older model.",
+      "sentenceZh": "最新款自行车摆在旧款旁边。",
+      "scene": "Two bicycles side by side one clean modern design with disc brakes and other older weathered upright design, no logos labels dates or text; recency supplied by sentence.",
+      "altText": "新款自行车与旧款并排展示。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "47282f28-37c6-48aa-9d58-5ac02cfc83ea",
+      "word": "layout",
+      "meaningZh": "布局；设计",
+      "exampleId": "47282f28-37c6-48aa-9d58-5ac02cfc83ea-visual-ex",
+      "styleFamily": "paper-cut",
+      "sentenceEn": "They planned the layout of the courtyard garden.",
+      "sentenceZh": "他们规划了庭院花园的布局。",
+      "scene": "Oblique top view of Chinese courtyard garden model with pond, curved paths, beds and pavilion laid out distinctly, only model no text or people.",
+      "altText": "庭院模型里，池塘、小路、花坛和亭子位置清楚。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "414a6f66-98eb-4dd4-b7b6-42fd3442ea25",
+      "word": "lazy",
+      "meaningZh": "懒惰的",
+      "exampleId": "414a6f66-98eb-4dd4-b7b6-42fd3442ea25-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The lazy cat slept while the other cats played.",
+      "sentenceZh": "那只懒猫睡着了，其他猫却在玩耍。",
+      "scene": "One cat dozing stretched out on cushion while two others play with yarn nearby, clear animal expressions and anatomy.",
+      "altText": "一只猫躺着睡觉，另外两只追逐毛线球。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "393f76ec-fa88-492d-8df3-6f251225abe0",
+      "word": "leak",
+      "meaningZh": "泄漏；泄露",
+      "exampleId": "393f76ec-fa88-492d-8df3-6f251225abe0-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "A leak in the pipe soaked the floor.",
+      "sentenceZh": "管道漏水浸湿了地面。",
+      "scene": "Visible droplets escape cracked indoor water pipe falling into puddle on tiled floor, clear source and effect, no people technical text.",
+      "altText": "水管裂缝滴水，地面形成一摊积水。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "a3834d5a-9edc-4f82-99e5-28bac05be50e",
+      "word": "legendary",
+      "meaningZh": "传奇的；传说中的",
+      "exampleId": "a3834d5a-9edc-4f82-99e5-28bac05be50e-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The legendary dragon appeared in the storyteller's tale.",
+      "sentenceZh": "说书人的故事里出现了传说中的龙。",
+      "scene": "Chinese storyteller with complete expressive face holding fan in tea house, overhead cloudlike imagined elegant Chinese dragon, no speech bubbles writing real creatures or text.",
+      "altText": "说书人讲故事，想象中的中国龙盘旋在上方。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6840df61-27a7-41f6-b878-712bdecf690a",
+      "word": "leisure",
+      "meaningZh": "休闲",
+      "exampleId": "6840df61-27a7-41f6-b878-712bdecf690a-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "They enjoyed a morning of leisure by the lake.",
+      "sentenceZh": "他们在湖边享受悠闲的上午。",
+      "scene": "Older adult couple relaxed in lakeside deck chairs under willow, full content faces, unhurried quiet scene.",
+      "altText": "夫妇在湖边躺椅上悠闲休息。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0c6694a6-a9a8-4368-ac77-5fe8d1b60159",
+      "word": "lengthy",
+      "meaningZh": "冗长的",
+      "exampleId": "0c6694a6-a9a8-4368-ac77-5fe8d1b60159-visual-ex",
+      "styleFamily": "graphic illustration",
+      "sentenceEn": "The lengthy queue stretched around the building.",
+      "sentenceZh": "长长的队伍绕过了建筑。",
+      "scene": "Long orderly line of adults bends around large plain building, foreground and midground readable faces complete, distant tiny figures, no signs labels text.",
+      "altText": "长队从门口延伸并绕到建筑侧面。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "886b720d-4504-4e2a-a651-897d350302d8",
+      "word": "lesbian",
+      "meaningZh": "女同性恋者",
+      "exampleId": "886b720d-4504-4e2a-a651-897d350302d8-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The lesbian couple celebrated their anniversary together.",
+      "sentenceZh": "这对女同性恋伴侣一起庆祝周年纪念日。",
+      "scene": "Two adult women in their thirties warmly hold hands across candlelit dinner table celebrating relationship anniversary, full affectionate faces, flowers, no rainbow labels slogans text or stereotypes.",
+      "altText": "两位女性伴侣在晚餐桌旁牵手庆祝周年纪念日。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6649d3ef-a8bc-4f7a-8af9-9cdd5ccabb8e",
+      "word": "lesser",
+      "meaningZh": "较小的；次要的",
+      "exampleId": "6649d3ef-a8bc-4f7a-8af9-9cdd5ccabb8e-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "They chose the lesser of the two hills to climb.",
+      "sentenceZh": "他们选了两座山中较小的一座攀登。",
+      "scene": "Two adjacent hills one distinctly smaller than other, winding path leads up smaller hill, tiny hikers seen from behind, no arrows numbers or text.",
+      "altText": "两座高低不同的山丘，小路通向较小的一座。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "ae8711e0-4a24-4a0c-95a9-c630cffbc1d7",
+      "word": "lethal",
+      "meaningZh": "致命的",
+      "exampleId": "ae8711e0-4a24-4a0c-95a9-c630cffbc1d7-visual-ex",
+      "styleFamily": "watercolor still life",
+      "sentenceEn": "The lethal mushroom was kept away from the food.",
+      "sentenceZh": "有致命毒性的蘑菇被放在远离食物的地方。",
+      "scene": "Unidentified wild mushroom isolated under closed transparent protective dome far from edible vegetables on separate table, no human ingestion text identification guide or species-specific claim; lethal quality supplied by sentence.",
+      "altText": "野生蘑菇被单独罩起来，与食用蔬菜分开。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "6da72fa1-8533-4fd9-8fe2-e9311b14068e",
+      "word": "liberation",
+      "meaningZh": "解放",
+      "exampleId": "6da72fa1-8533-4fd9-8fe2-e9311b14068e-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The open gate marked the prisoners' liberation.",
+      "sentenceZh": "敞开的门标志着囚犯获得自由。",
+      "scene": "Adults in plain clothing peacefully walk from open prison gate into bright landscape, full relieved faces, no violence real prison insignia or text.",
+      "altText": "人们走出敞开的牢门，迎向明亮道路。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ecd14392-9d20-4996-9a97-41238961a453",
+      "word": "lifelong",
+      "meaningZh": "终身的；毕生的",
+      "exampleId": "ecd14392-9d20-4996-9a97-41238961a453-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "Their lifelong friendship began in childhood.",
+      "sentenceZh": "他们一生的友谊始于童年。",
+      "scene": "Three panels same pair of friends recognized by one curly-haired and one straight-haired person, childhood playing, adulthood sharing tea, old age walking in Chinese courtyard, every visible face complete, no captions.",
+      "altText": "两位朋友从童年相伴到成年与老年。",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "32bdc310-2dd8-46f7-a84f-47674ac09a21",
+      "word": "linear",
+      "meaningZh": "线性的；直线的",
+      "exampleId": "32bdc310-2dd8-46f7-a84f-47674ac09a21-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The stones formed a linear pattern across the sand.",
+      "sentenceZh": "石头在沙地上排成直线图案。",
+      "scene": "Smooth stones arranged in a single perfectly straight row across sand, overhead view, no humans text arrows or grids.",
+      "altText": "沙地上的石头整齐排成一条直线。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "5f8009a5-74e4-4be2-854a-4f00961128cf",
+      "word": "lineup",
+      "meaningZh": "阵容",
+      "exampleId": "5f8009a5-74e4-4be2-854a-4f00961128cf-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The band's lineup included a drummer and a violinist.",
+      "sentenceZh": "乐队阵容包括一名鼓手和一名小提琴手。",
+      "scene": "Diverse adult band with drummer violinist bassist and singer on small stage ready to play, full expressive faces, no text signs notation or logos.",
+      "altText": "乐队成员带着鼓、小提琴等乐器站在舞台上。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "fc7ab410-8338-4ee4-8a23-0755b55378bb",
+      "word": "linger",
+      "meaningZh": "逗留；徘徊",
+      "exampleId": "fc7ab410-8338-4ee4-8a23-0755b55378bb-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "She stayed to linger beside the blooming plum tree.",
+      "sentenceZh": "她留下来，在盛开的梅树旁流连。",
+      "scene": "Adult woman pauses peacefully beside blossoming plum tree in Chinese garden while distant companions continue down path, full reflective face.",
+      "altText": "同伴走远了，女子仍驻足欣赏梅花。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c6a63bb6-5c78-41da-ae8e-d3ec06a7f3a8",
+      "word": "listing",
+      "meaningZh": "列表；清单",
+      "exampleId": "c6a63bb6-5c78-41da-ae8e-d3ec06a7f3a8-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The listing showed all the tools in the workshop.",
+      "sentenceZh": "清单列出了工坊里的所有工具。",
+      "scene": "Open notebook showing orderly single column of six tool pictograms next to corresponding real tools on bench, no letters numerals handwriting or text; listing conveyed by arranged pictograms.",
+      "altText": "笔记本里按列排列工具图示，桌上摆着对应工具。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "30b01c26-c249-4c5c-a012-9848349caf78",
+      "word": "liter",
+      "meaningZh": "升（容积单位）",
+      "exampleId": "30b01c26-c249-4c5c-a012-9848349caf78-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The jug held one liter of water.",
+      "sentenceZh": "水壶里装着一升水。",
+      "scene": "Transparent simple measuring jug containing water on clean counter, no graduations units numbers or text, unobscured volume; exact liter supplied by sentence.",
+      "altText": "透明水壶里盛着清水。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "baedeba2-1fb1-4270-a47a-176da4bda023",
+      "word": "literacy",
+      "meaningZh": "读写能力",
+      "exampleId": "baedeba2-1fb1-4270-a47a-176da4bda023-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The class helped adults develop literacy.",
+      "sentenceZh": "这门课帮助成年人提高读写能力。",
+      "scene": "Adult learners practice handwriting and read books with supportive teacher in Chinese community classroom, full attentive faces, pages abstract faint nonlinguistic strokes no readable words or characters.",
+      "altText": "社区课堂里的成年人认真练习阅读与书写。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

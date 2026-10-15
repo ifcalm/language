@@ -1,0 +1,323 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4546-4565",
+  "batchId": "auto-rank-4546-4565-20261004",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "disagreement",
+      "poke",
+      "opt",
+      "voluntary",
+      "discard",
+      "forum"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "4ea66f49-3110-43e8-8a3d-d6206f26519e",
+      "word": "dime",
+      "meaningZh": "十分硬币；一角钱",
+      "exampleId": "4ea66f49-3110-43e8-8a3d-d6206f26519e-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She found a dime under the chair.",
+      "sentenceZh": "她在椅子下面发现了一枚十分硬币。",
+      "scene": "Adult woman crouches beside chair picking up one small silver US dime, thin ridged edge and generic profile relief, no readable coin lettering or numbers, coin small relative to fingers. Warm home illustrated full face.",
+      "altText": "她弯腰拾起椅子下的一枚小银色硬币。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3cd499b1-fc82-4b87-b6c3-f060811a6f09",
+      "word": "disadvantage",
+      "meaningZh": "不利；劣势；缺点",
+      "exampleId": "3cd499b1-fc82-4b87-b6c3-f060811a6f09-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The broken wheel put the cart at a disadvantage.",
+      "sentenceZh": "坏掉的轮子让这辆推车处于劣势。",
+      "scene": "Two garden carts same size side by side on same flat path: intact cart easily rolls with light load; second cart same load tilted on visibly broken wheel adult struggles to push. Clear disadvantage mechanical not personal, full faces no labels.",
+      "altText": "同样载荷的两辆车中，坏轮推车难以前进。",
+      "riskTags": [
+        "comparison",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c895f8ea-2f04-425d-9876-b1ac259dbb40",
+      "word": "predator",
+      "meaningZh": "捕食者",
+      "exampleId": "c895f8ea-2f04-425d-9876-b1ac259dbb40-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The owl is a silent predator at night.",
+      "sentenceZh": "猫头鹰是夜间无声的捕食者。",
+      "scene": "Barn owl glides low toward mouse running through meadow at moonlight, owl hunting talons poised mouse still alive no contact gore, coherent owl anatomy wings and facial disk.",
+      "altText": "月夜里，猫头鹰悄然飞向草地上的老鼠。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "85936fb1-669e-4e34-9332-ff16f03223a7",
+      "word": "disagreement",
+      "meaningZh": "分歧；争论；不一致",
+      "exampleId": "85936fb1-669e-4e34-9332-ff16f03223a7-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "They resolved their disagreement about the garden layout.",
+      "sentenceZh": "他们解决了关于花园布局的分歧。",
+      "scene": "Chinese community garden adults compare two unlettered physical garden models different path arrangements; thoughtful discussion one proposes joint arrangement moving small bed piece, calm disagreement moving toward consensus, no writing.",
+      "altText": "两人比较不同菜园模型，协商调整布局。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9d66f5d9-0859-4e75-a525-5f26c4c6a947",
+      "word": "poke",
+      "meaningZh": "刺；戳；袋子",
+      "exampleId": "9d66f5d9-0859-4e75-a525-5f26c4c6a947-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She used a stick to poke the soft soil.",
+      "sentenceZh": "她用木棍戳了戳松软的土壤。",
+      "scene": "Chinese gardener uses one thin wooden stick to poke soft soil in ceramic plant pot, tip touches and makes single shallow indentation, coherent hands, full face curious no letters.",
+      "altText": "她用细木棍在花盆的软土上戳出小凹痕。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "42f8c388-dae6-4961-9c2c-b6f6640c47bc",
+      "word": "disappoint",
+      "meaningZh": "使失望；辜负",
+      "exampleId": "42f8c388-dae6-4961-9c2c-b6f6640c47bc-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The empty bird feeder might disappoint the birds.",
+      "sentenceZh": "空空的喂鸟器可能会让鸟儿失望。",
+      "scene": "Two small garden songbirds arrive at clearly empty open seed tray, look down into empty tray expectantly, person in background brings bowl of seeds to refill, clear empty focal tray, no text.",
+      "altText": "小鸟望着空喂食盘，远处的人正拿来鸟食。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "03306a0e-e63b-4abf-ac9c-c1d5ee13f9f1",
+      "word": "opt",
+      "meaningZh": "选择",
+      "exampleId": "03306a0e-e63b-4abf-ac9c-c1d5ee13f9f1-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "She decided to opt for the bicycle.",
+      "sentenceZh": "她决定选择自行车。",
+      "scene": "Chinese neighborhood commuter choosing bicycle beside parked plain car, takes bicycle handlebar with helmet in other hand and gaze directed bike, no logos plates words. Full adult face.",
+      "altText": "她走向自行车，手里拿着头盔。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "815c4d5e-7f58-46c9-bebc-cc5ca4c601da",
+      "word": "disappointing",
+      "meaningZh": "令人失望的",
+      "exampleId": "815c4d5e-7f58-46c9-bebc-cc5ca4c601da-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The harvest was disappointing this year.",
+      "sentenceZh": "今年的收成令人失望。",
+      "scene": "Farmer in field thoughtfully disappointed looking at nearly empty harvest basket with only few undersized tomatoes, wilted tomato plants behind. Dignified complete sad face, no cropdeath people harm text.",
+      "altText": "农人看着篮中稀少的小番茄，神情失落。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a5b067d6-45b8-4530-8392-efcbebea203d",
+      "word": "voluntary",
+      "meaningZh": "自愿的",
+      "exampleId": "a5b067d6-45b8-4530-8392-efcbebea203d-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Her help at the community kitchen was voluntary.",
+      "sentenceZh": "她在社区厨房的帮忙是自愿的。",
+      "scene": "Chinese community kitchen adult woman willingly steps forward with rolled sleeves to help neighbors serve soup, warm welcoming faces, no payment or coercion, unlettered apron dishes no labels.",
+      "altText": "她主动加入社区厨房，帮邻居盛汤。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2418d562-1f58-4059-8f30-1e42f6e5da1f",
+      "word": "disastrous",
+      "meaningZh": "灾难性的；极坏的",
+      "exampleId": "2418d562-1f58-4059-8f30-1e42f6e5da1f-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The storm had a disastrous effect on the greenhouse.",
+      "sentenceZh": "暴风雨对温室造成了灾难性的影响。",
+      "scene": "After severe storm shattered greenhouse structural frame bent damaged glass safely shown large shards on ground, overturned seedling trays muddy plants, human-free clear extensive destructive aftermath no writing.",
+      "altText": "暴风雨后温室框架弯折，育苗盘翻倒。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "62d2d245-ef24-4af0-92e2-c6ee7964a673",
+      "word": "discard",
+      "meaningZh": "丢弃；抛弃",
+      "exampleId": "62d2d245-ef24-4af0-92e2-c6ee7964a673-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "He decided to discard the broken clay pot.",
+      "sentenceZh": "他决定丢弃破碎的陶盆。",
+      "scene": "Chinese gardener safely puts irreparably broken claypot pieces into plain waste bin while intact pots remain on bench, gloved hands release large shard above bin opening, no labels signs letters.",
+      "altText": "园丁戴着手套把破陶盆碎片放进废物桶。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "550da2fa-8815-4992-9298-3f09ffac3c30",
+      "word": "valid",
+      "meaningZh": "有效的",
+      "exampleId": "550da2fa-8815-4992-9298-3f09ffac3c30-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Her ticket was still valid for the journey.",
+      "sentenceZh": "她的车票仍然对这次旅程有效。",
+      "scene": "Adult traveler presents plain unlettered ticket to railway attendant who verifies with handheld scanner glowing small green status light and opens gate toward train. Valid accepted ticket relation clear, no readable text QR codes badges or digits.",
+      "altText": "工作人员核验车票后，为旅客打开通道。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "7d4a32e0-ad41-454c-b090-1988e66ae7a3",
+      "word": "discharge",
+      "meaningZh": "排出；释放；解雇",
+      "exampleId": "7d4a32e0-ad41-454c-b090-1988e66ae7a3-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The pipe will discharge clean water into the pond.",
+      "sentenceZh": "这根管道会把清水排入池塘。",
+      "scene": "Human-free garden pond curved outlet pipe at bank visibly discharges clear stream into pond with ripples, coherent stream from open pipe mouth gravity downward, reeds wildlife calm, no labels diagrams words.",
+      "altText": "清水从管口流出，在池塘水面泛起涟漪。",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "99419d04-cd0c-4c2b-a6ed-242d24cca715",
+      "word": "forum",
+      "meaningZh": "论坛；讨论会",
+      "exampleId": "99419d04-cd0c-4c2b-a6ed-242d24cca715-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The forum gave neighbors a chance to share ideas.",
+      "sentenceZh": "讨论会让邻居们有机会交流想法。",
+      "scene": "Chinese neighborhood courtyard public discussion forum diverse adults semicircle chairs one speaks open hands others attentive one moderates, physical community gathering no posters text microphones brands. Every readable face complete.",
+      "altText": "居民围坐在院子里，轮流发言交流意见。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3fd317b7-8fad-4924-beb1-ba5d4c5d40d5",
+      "word": "dancing",
+      "meaningZh": "跳舞",
+      "exampleId": "3fd317b7-8fad-4924-beb1-ba5d4c5d40d5-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "They were dancing together in the park.",
+      "sentenceZh": "他们正在公园里一起跳舞。",
+      "scene": "Two mature adult dancers in open park dancing partnered coordinated steps joyful full faces hands naturally joined feet grounded, plain clothing no logos no crowd repeated faces text.",
+      "altText": "两人在公园空地上随节奏一起跳舞。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "5c1cc8a2-523f-47e2-b0fc-9e79d69cfdd2",
+      "word": "disclosure",
+      "meaningZh": "披露；公开；揭露",
+      "exampleId": "5c1cc8a2-523f-47e2-b0fc-9e79d69cfdd2-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The disclosure of the crack helped the buyer decide.",
+      "sentenceZh": "披露裂缝帮助买家作出了决定。",
+      "scene": "Potter transparently rotates ceramic bowl to reveal clear hairline crack to adult buyer, points to crack both inspect attentively, no concealing hands no broken injury, no documents letters.",
+      "altText": "陶匠把碗上的裂缝转向买家并主动指出。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d74e2112-0909-4d1c-9140-28e5b5f88037",
+      "word": "discretion",
+      "meaningZh": "谨慎；自由裁量权",
+      "exampleId": "d74e2112-0909-4d1c-9140-28e5b5f88037-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "She handled the private photographs with discretion.",
+      "sentenceZh": "她谨慎地处理了这些私人照片。",
+      "scene": "Adult archivist carefully slips personal family portraits into closed opaque envelope when others enter room, respectful private handling, photographs generic adult faces no writing, main face complete dignified.",
+      "altText": "她把私人家庭照片小心收进不透明信封。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "bf2e2d7a-6a0d-4037-ba2c-97ea26143dd3",
+      "word": "happily",
+      "meaningZh": "快乐地",
+      "exampleId": "bf2e2d7a-6a0d-4037-ba2c-97ea26143dd3-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The dog ran happily across the meadow.",
+      "sentenceZh": "小狗快乐地跑过草地。",
+      "scene": "Living adult dog bounding playfully across flower meadow relaxed openmouth ears backward bright eyes waggingtail coherentfourlegs no clothes collars letters. Human-free joyous motion.",
+      "altText": "小狗张着嘴、摇着尾巴，欢快地跑过花草地。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "edfe6829-8a39-4921-afca-943ba28f8e1f",
+      "word": "dishonest",
+      "meaningZh": "不诚实的；欺骗的",
+      "exampleId": "edfe6829-8a39-4921-afca-943ba28f8e1f-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The dishonest seller hid the crack in the vase.",
+      "sentenceZh": "不诚实的卖家隐瞒了花瓶上的裂缝。",
+      "scene": "Exactly two adults and one cream vase on bare counter, buyer at left facing right sees intact left side; seller at right furtively covers crack on right side with cloth, some crack visible only to viewer and seller. Exactly two arms per adult, no other pottery. Graphic novel mature illustrated complete faces, no writing.",
+      "altText": "卖家用布遮住花瓶靠自己一侧的裂缝，买家只看见完好的正面。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4037df47-9049-49a9-9a5d-5450871534fb",
+      "word": "soar",
+      "meaningZh": "飙升；翱翔；高耸",
+      "exampleId": "4037df47-9049-49a9-9a5d-5450871534fb-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The eagle began to soar above the valley.",
+      "sentenceZh": "鹰开始在山谷上空翱翔。",
+      "scene": "Human-free eagle high above broad mountain valley wings fully spread gliding in thermal clear vast elevation ridge river far below, natural birdanatomy two wings no arrows symbols words.",
+      "altText": "鹰舒展双翼，在辽阔山谷上空滑翔。",
+      "riskTags": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {loadVocabularyVisualQueue} from '../../scripts/lib/vocabulary-visual-queue.mjs';
+import {queryRemoteD1} from '../../scripts/lib/d1-query.mjs';
+const {queue}=loadVocabularyVisualQueue();
+const ledger=new Map();const duplicate=[];
+for(const name of fs.readdirSync('scripts/fixtures').filter(n=>/^vocabulary-visuals-.*\.json$/.test(n))){
+ const m=JSON.parse(fs.readFileSync('scripts/fixtures/'+name));
+ for(const x of m.items??[]){if(ledger.has(x.vocabularyId))duplicate.push(x.vocabularyId);ledger.set(x.vocabularyId,x);}
+}
+let rows;for(let i=0;i<4;i++){try{rows=queryRemoteD1('SELECT v.vocabulary_id,v.word,v.image_url,v.example_id,v.alt_text,e.sentence_en,e.sentence_zh FROM vocab_visuals v LEFT JOIN vocab_examples e ON e.id=v.example_id');break;}catch(e){if(i===3)throw e;}}
+process.env.NODE_USE_ENV_PROXY='1';
+const remote=new Map(rows.map(x=>[x.vocabulary_id,x]));const issues=[];
+for(const q of queue.items){const l=ledger.get(q.vocabularyId),r=remote.get(q.vocabularyId);if(!l)issues.push({word:q.word,issue:'missing ledger'});if(!r){issues.push({word:q.word,issue:'missing remote'});continue;}if(r.word!==q.word||!r.image_url||!r.example_id||!r.sentence_en||!r.sentence_zh||!r.alt_text)issues.push({word:q.word,issue:'incomplete remote fields'});if(l&&['imageUrl','exampleId','sentenceEn','sentenceZh','altText'].some((k,i)=>l[k]!==undefined&&l[k]!==r[['image_url','example_id','sentence_en','sentence_zh','alt_text'][i]]))issues.push({word:q.word,issue:'ledger remote mismatch'});}
+console.log(JSON.stringify({queue:queue.total,ledgerCovered:queue.items.filter(x=>ledger.has(x.vocabularyId)).length,remoteCovered:queue.items.filter(x=>remote.has(x.vocabularyId)).length,issues:issues.length,duplicateLedgerIds:new Set(duplicate).size}));
+const urls=[...new Set(queue.items.map(x=>remote.get(x.vocabularyId)?.image_url).filter(Boolean))];let cursor=0,done=0;const failures=[];
+await Promise.all(Array.from({length:16},async()=>{while(cursor<urls.length){const url=urls[cursor++];let err;for(let attempt=0;attempt<3;attempt++){try{const r=await fetch(url,{method:'HEAD',signal:AbortSignal.timeout(20000)});if(!r.ok||!r.headers.get('content-type')?.startsWith('image/'))throw Error('HTTP '+r.status+' '+r.headers.get('content-type'));err=null;break;}catch(e){err=String(e);}}if(err)failures.push({url,error:err});done++;if(done%500===0)console.log('Image URLs checked: '+done+'/'+urls.length);}}));
+const result={checkedAt:new Date().toISOString(),queueTotal:queue.total,ledgerCovered:queue.items.filter(x=>ledger.has(x.vocabularyId)).length,remoteCovered:queue.items.filter(x=>remote.has(x.vocabularyId)).length,uniqueImageUrls:urls.length,issues,failedImageUrls:failures,duplicateLedgerIds:[...new Set(duplicate)]};
+fs.writeFileSync('tmp/vocabulary-visuals/completion-audit.json',JSON.stringify(result,null,2));console.log('FINAL '+JSON.stringify(result));

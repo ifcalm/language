@@ -1,0 +1,316 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4626-4645",
+  "batchId": "auto-rank-4626-4645-20261004",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "embark",
+      "embarrassing",
+      "rental",
+      "embed",
+      "empower",
+      "undergraduate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "62ce2844-c0e9-4cd4-9f0e-d8bdb600740a",
+      "word": "embark",
+      "meaningZh": "着手；开始；登船",
+      "exampleId": "62ce2844-c0e9-4cd4-9f0e-d8bdb600740a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The travelers embark on the ferry.",
+      "sentenceZh": "旅客登上渡船。",
+      "scene": "Chinese riverside wooden ferry dock, two adult travelers step safely along broad fixed gangway onto ferry, complete faces luggage no signs.",
+      "altText": "旅客沿跳板登上河边渡船。",
+      "riskTags": [
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1bbcae29-541f-4762-a0ff-fd9f0b9b7f5c",
+      "word": "overnight",
+      "meaningZh": "前一天晚上；一夜的逗留",
+      "exampleId": "1bbcae29-541f-4762-a0ff-fd9f0b9b7f5c-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The campers stayed overnight by the lake.",
+      "sentenceZh": "露营者在湖边过夜。",
+      "scene": "Human-free lakeside campsite at night lit closed tent moon starry sky sleeping gear visible through small entrance no text.",
+      "altText": "湖边帐篷在星光下亮着灯。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "b1191c74-505b-4bd8-9ac8-8bd61ba219f8",
+      "word": "denial",
+      "meaningZh": "否认",
+      "exampleId": "b1191c74-505b-4bd8-9ac8-8bd61ba219f8-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "His denial surprised the witness.",
+      "sentenceZh": "他的否认让目击者吃惊。",
+      "scene": "Two adult pottery workshop colleagues, man open empty palms denies breaking bowl, woman points to clearly broken bowl near his elbow with surprised full face, no speech bubbles no accusing menace.",
+      "altText": "他摊手否认，目击者惊讶地指向破碗。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "035d2922-172b-48d8-8d5c-354fd86b8d86",
+      "word": "embarrassing",
+      "meaningZh": "令人尴尬的；难堪的",
+      "exampleId": "035d2922-172b-48d8-8d5c-354fd86b8d86-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "Spilling the tea was embarrassing.",
+      "sentenceZh": "洒了茶令人尴尬。",
+      "scene": "Chinese teahouse adult accidentally spills one small cup tea onto tabletop, embarrassed blush full face, companion calmly offers cloth, no hot liquid skin no text.",
+      "altText": "茶洒在桌上，她尴尬地接过同伴递来的布。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e08314a7-69e1-42ed-a9eb-c39d3631a406",
+      "word": "embarrassment",
+      "meaningZh": "尴尬；难堪",
+      "exampleId": "e08314a7-69e1-42ed-a9eb-c39d3631a406-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "He smiled through his embarrassment.",
+      "sentenceZh": "他尽管尴尬，还是笑了。",
+      "scene": "Adult public speaker drops unlettered loose papers beside lectern, blush sheepish smile as friendly adult audience waits patiently complete faces no text.",
+      "altText": "讲者掉落纸张，脸红地微笑着拾起。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a94f0865-293c-4453-8221-45b212855b8f",
+      "word": "rental",
+      "meaningZh": "租赁",
+      "exampleId": "a94f0865-293c-4453-8221-45b212855b8f-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "They collected the rental bicycles.",
+      "sentenceZh": "他们领取了租来的自行车。",
+      "scene": "Chinese lakeside bicycle hire adult attendant hands plain bike to adult visitor, neat row bikes rack helmets full faces no money numbers labels logos.",
+      "altText": "游客从租车点工作人员手中接过自行车。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "efcaee09-276f-4798-bba4-d26588905c25",
+      "word": "embassy",
+      "meaningZh": "大使馆",
+      "exampleId": "efcaee09-276f-4798-bba4-d26588905c25-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The traveler visited the embassy for help.",
+      "sentenceZh": "旅客去大使馆寻求帮助。",
+      "scene": "Adult traveler holding plain closed passport meets consular official across desk inside dignified embassy reception, outside diplomatic building glimpse, no flags insignia lettering documents blank.",
+      "altText": "旅客带着护照向使馆工作人员求助。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ed922409-73fc-485d-b549-8925ecc009ac",
+      "word": "fantastic",
+      "meaningZh": "奇妙的；稀奇的；空想的",
+      "exampleId": "ed922409-73fc-485d-b549-8925ecc009ac-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The cave had fantastic crystal formations.",
+      "sentenceZh": "洞穴里有奇妙的晶体构造。",
+      "scene": "Human-free fantastic cave intricate giant translucent mineral crystals violet turquoise cutpaper planes shimmering illustrated surfaces no fantasy monsters no labels.",
+      "altText": "洞穴内耸立着形态奇妙的彩色晶体。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "94129d04-1e13-427d-93be-fa6efd6141e0",
+      "word": "embed",
+      "meaningZh": "嵌入；植入",
+      "exampleId": "94129d04-1e13-427d-93be-fa6efd6141e0-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The artisan will embed the stone in clay.",
+      "sentenceZh": "工匠将把石头嵌入黏土。",
+      "scene": "Chinese artisan hand presses one smooth stone halfway into soft clay tile surface with visible clay surrounding its edges, adult fullface focused coherent hands no text.",
+      "altText": "工匠把圆润石头压入柔软黏土。",
+      "riskTags": [
+        "spatial_boundary",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f3bbcbfa-c8ca-4cb0-a3a2-4bf3312803e4",
+      "word": "fragment",
+      "meaningZh": "碎片；破片；片段",
+      "exampleId": "f3bbcbfa-c8ca-4cb0-a3a2-4bf3312803e4-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "A fragment of the vase lay on the floor.",
+      "sentenceZh": "地板上躺着一块花瓶碎片。",
+      "scene": "Human-free still life one curved blue pottery fragment foreground floor beside broken vase missing matching rim piece, safe no blood no lettering.",
+      "altText": "花瓶旁的地板上放着一块蓝色陶瓷碎片。",
+      "riskTags": [
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "39a93116-081f-4cbe-b3ae-fb0bcad893f7",
+      "word": "embody",
+      "meaningZh": "体现；包含；具体表现",
+      "exampleId": "39a93116-081f-4cbe-b3ae-fb0bcad893f7-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "Her actions embody kindness.",
+      "sentenceZh": "她的行动体现了善良。",
+      "scene": "Adult Chinese community volunteer gently gives water bowl to thirsty stray cat under eaves warm caring posture complete face no hearticons slogans medals.",
+      "altText": "她在屋檐下给口渴的猫放了一碗水。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9a55f539-69fc-402e-ae83-3d0d846efb55",
+      "word": "emergence",
+      "meaningZh": "出现；浮现；兴起",
+      "exampleId": "9a55f539-69fc-402e-ae83-3d0d846efb55-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "We watched the emergence of a butterfly.",
+      "sentenceZh": "我们观看了蝴蝶的羽化。",
+      "scene": "Human-free macro one butterfly emerging from split chrysalis attached to twig, abdomen partly inside shell wings folded downward, exactly one insect no sequence duplicates text.",
+      "altText": "蝴蝶正从枝条上的蛹壳中钻出。",
+      "riskTags": [
+        "before_after",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "1f38415f-7fad-4aef-a91d-34e160ec2521",
+      "word": "screw",
+      "meaningZh": "螺丝；拧；搞砸",
+      "exampleId": "1f38415f-7fad-4aef-a91d-34e160ec2521-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "He tightened the screw in the chair.",
+      "sentenceZh": "他拧紧了椅子上的螺丝。",
+      "scene": "Adult repairs wooden chair screwdriver tip aligned to single visible screw head in bracket, coherent grip fully illustrated face no logos text.",
+      "altText": "他用螺丝刀拧紧椅子支架上的螺丝。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5175e5a9-6cce-4b88-b55b-f2090fca83df",
+      "word": "empirical",
+      "meaningZh": "经验的；实证的",
+      "exampleId": "5175e5a9-6cce-4b88-b55b-f2090fca83df-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The gardener gathered empirical evidence.",
+      "sentenceZh": "园丁收集了实证证据。",
+      "scene": "Adult compares two beanplants same pot size one sunlit one shaded measures stem heights with unmarked wooden measuringstick observes actualplants, notebook abstract lines only full face no writing numbers.",
+      "altText": "园丁测量不同光照下豆苗的实际生长情况。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "1c5a58a6-6535-49fd-93b6-960974ef37a9",
+      "word": "warmth",
+      "meaningZh": "温暖",
+      "exampleId": "1c5a58a6-6535-49fd-93b6-960974ef37a9-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The stove filled the room with warmth.",
+      "sentenceZh": "炉子让房间充满温暖。",
+      "scene": "Human-free cozy cabin stove sealed firewindow safely intact flue, orange light wool blanket and sleeping cat on rug no smoke text.",
+      "altText": "炉火照亮毛毯和熟睡的猫，房间温暖安适。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "e3cef637-18f4-4565-8763-36701af6804b",
+      "word": "empower",
+      "meaningZh": "授权；赋予权力",
+      "exampleId": "e3cef637-18f4-4565-8763-36701af6804b-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The mentor helped empower the apprentice.",
+      "sentenceZh": "导师帮助学徒获得自主能力。",
+      "scene": "Chinese bamboo workshop mentor hands tool to adult apprentice who independently begins weaving basket, mentor steps back supportive smile fullfaces no badges arrows text.",
+      "altText": "师傅把工具交给学徒，让她独立编织竹篮。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "689969a0-1987-4349-899a-cd8a7a9174f9",
+      "word": "undergraduate",
+      "meaningZh": "本科生",
+      "exampleId": "689969a0-1987-4349-899a-cd8a7a9174f9-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The undergraduate studied in the library.",
+      "sentenceZh": "这名本科生在图书馆学习。",
+      "scene": "Chinese university library adult undergraduate student at desk reference books architectural model campus visible window, fullface no readable text letters logos.",
+      "altText": "本科生在大学图书馆查阅书籍并研究模型。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a90bd2e4-82a8-4747-8bc3-94a7b11e5d3f",
+      "word": "encompass",
+      "meaningZh": "包含；包括；围绕",
+      "exampleId": "a90bd2e4-82a8-4747-8bc3-94a7b11e5d3f-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The garden paths encompass the pond.",
+      "sentenceZh": "花园小径环绕池塘。",
+      "scene": "Human-free overhead landscaped Chinese garden paths form continuous closed loop fully surrounding central koi pond, pond entirely within loop trees outside, no maplabels signs writing.",
+      "altText": "花园小径形成闭环，环绕中央池塘。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "762924e8-1c43-4453-a53b-3f24c42e941f",
+      "word": "encouragement",
+      "meaningZh": "鼓励；激励",
+      "exampleId": "762924e8-1c43-4453-a53b-3f24c42e941f-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "Her encouragement helped him try again.",
+      "sentenceZh": "她的鼓励帮助他再试一次。",
+      "scene": "Adult pottery beginner reshapes collapsed clay pot at wheel, supportive friend gentle reassuring openhand fullfaces smiles no slogans icons.",
+      "altText": "同伴温和鼓励他，陶艺初学者重新塑形。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b252cd26-5214-4d20-9533-7e387ff948db",
+      "word": "headache",
+      "meaningZh": "头痛；令人头痛之事",
+      "exampleId": "b252cd26-5214-4d20-9533-7e387ff948db-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "He rested because of a headache.",
+      "sentenceZh": "他因头痛而休息。",
+      "scene": "Adult seated quiet room onehand gently at temple tired complete facial features eyes closed brow tense glasswater nearby softlight no pills medicalgraphics readabletext.",
+      "altText": "他轻按太阳穴，在安静的房间休息。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5267-5286",
+  "batchId": "auto-rank-5267-5286-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "selective",
+      "september",
+      "seventeen",
+      "shaped",
+      "shipping",
+      "singing"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "2d71fa64-e1d9-4bde-a3d9-91c6da070f07",
+      "word": "seeker",
+      "meaningZh": "寻求者",
+      "exampleId": "2d71fa64-e1d9-4bde-a3d9-91c6da070f07-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The seeker explored the trail in search of rare flowers.",
+      "sentenceZh": "寻找者沿小径探索，寻找罕见花朵。",
+      "scene": "Adult botanical seeker attentively scans mountain trail flowers with small blank pictorial fieldbook, full curious face, no collecting endangered plants text.",
+      "altText": "寻找者沿山间小径仔细观察花朵。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "266deb94-2a7b-4e2e-8b13-e84c7d700d85",
+      "word": "selective",
+      "meaningZh": "选择性的",
+      "exampleId": "266deb94-2a7b-4e2e-8b13-e84c7d700d85-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The gardener was selective about which seeds to keep.",
+      "sentenceZh": "园丁仔细挑选要保留的种子。",
+      "scene": "Chinese gardener's hands choose plump intact seeds into tray while leaving shriveled damaged ones apart, clear selection distinction no exact quantity writing.",
+      "altText": "园丁保留饱满种子，剔除干瘪损坏的种子。",
+      "riskTags": [
+        "Chinese_culture",
+        "comparison",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "8227dd2f-281a-41f2-84ad-a1084a05a0b5",
+      "word": "sensible",
+      "meaningZh": "明智的",
+      "exampleId": "8227dd2f-281a-41f2-84ad-a1084a05a0b5-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Taking the sheltered path was a sensible choice.",
+      "sentenceZh": "走避风的小径是明智的选择。",
+      "scene": "Adult hikers choose sheltered forest path rather than exposed ridge in windy cloudy weather, full thoughtful faces no map arrows text.",
+      "altText": "徒步者选择林间避风路，避开暴露的山脊。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b1e38af0-782e-4f2a-aefb-38f4f22bdabc",
+      "word": "september",
+      "meaningZh": "九月",
+      "exampleId": "b1e38af0-782e-4f2a-aefb-38f4f22bdabc-visual-ex",
+      "styleFamily": "textile landscape",
+      "sentenceEn": "In September, the rice fields turned golden.",
+      "sentenceZh": "九月里，稻田变成金黄色。",
+      "scene": "Golden mature rice fields in Chinese rural valley terraced gently toward village, no people calendars text; month supplied by sentence.",
+      "altText": "乡村稻田成熟，呈现一片金黄。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ec037e64-b18d-4a78-8345-e1de557dbe42",
+      "word": "serial",
+      "meaningZh": "连续的；连载的；序列的",
+      "exampleId": "ec037e64-b18d-4a78-8345-e1de557dbe42-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The serial story appeared in several installments.",
+      "sentenceZh": "这个连载故事分几期刊登。",
+      "scene": "Three successive blank magazine-like booklets show pictorial story continuation same red bicycle rider travels from village to forest to coast, no readable text issue numbers letters.",
+      "altText": "几期刊物的插图连续讲述同一旅程。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "166fbe7a-1a42-4d99-a722-7e73555bb428",
+      "word": "settler",
+      "meaningZh": "定居者",
+      "exampleId": "166fbe7a-1a42-4d99-a722-7e73555bb428-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The settler built a home beside the valley stream.",
+      "sentenceZh": "定居者在山谷溪流旁建起家园。",
+      "scene": "Fictional adult settler constructs modest new wooden home in unoccupied valley clearing near stream, full determined face, no flags conquest displacement writing.",
+      "altText": "定居者在溪边搭建木屋作为家园。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "41439537-074a-469c-a459-3cab87f57626",
+      "word": "setup",
+      "meaningZh": "设置",
+      "exampleId": "41439537-074a-469c-a459-3cab87f57626-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The simple setup made the workshop easy to use.",
+      "sentenceZh": "简单布置让工坊使用起来很方便。",
+      "scene": "Craft workshop orderly workbench lamp tools within reach and clear walkway, no people signs labels text.",
+      "altText": "工坊工作台、照明和工具安排得井井有条。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "866714b0-e95d-436d-a42b-969e24ea3474",
+      "word": "seventeen",
+      "meaningZh": "十七",
+      "exampleId": "866714b0-e95d-436d-a42b-969e24ea3474-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The tray held seventeen tea cups.",
+      "sentenceZh": "托盘里放着十七只茶杯。",
+      "scene": "Chinese tea cups strictly overhead on one rectangular tray: top row exactly ten separate cups, bottom row exactly seven separate cups centered below. All17 clearly countable, no other cups teapots mirrors people writing.",
+      "altText": "托盘内上排十只、下排七只，共十七只茶杯。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "14a2660c-7add-4ac7-8297-efa35b3fb8ea",
+      "word": "seventy",
+      "meaningZh": "七十",
+      "exampleId": "14a2660c-7add-4ac7-8297-efa35b3fb8ea-visual-ex",
+      "styleFamily": "graphic illustration",
+      "sentenceEn": "The nursery tray held seventy seedlings.",
+      "sentenceZh": "育苗盘里有七十株幼苗。",
+      "scene": "Strict overhead tray exactly seven horizontal rows and ten columns,70 total shallow rectangular cells each single tiny two-leaf seedling. Seven rows fit full landscape1536x1024; no extra plants outside tray. Countable flat illustration no numbers text.",
+      "altText": "育苗盘七行十列，每格一株，共七十株。",
+      "riskTags": [
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "cde10af5-b7f5-463f-b8e6-eb6603f3955a",
+      "word": "shaped",
+      "meaningZh": "成形的",
+      "exampleId": "cde10af5-b7f5-463f-b8e6-eb6603f3955a-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The clay was shaped into a small bowl.",
+      "sentenceZh": "黏土被塑成一只小碗。",
+      "scene": "Chinese potter's natural hands shape clay into clear shallow bowl on workbench, rough clay lump at side, no human faces needed no writing.",
+      "altText": "双手把黏土塑成小碗。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a62ac777-7d43-4fb8-9a46-d93f045f6b1c",
+      "word": "shatter",
+      "meaningZh": "打碎；粉碎",
+      "exampleId": "a62ac777-7d43-4fb8-9a46-d93f045f6b1c-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The vase began to shatter when it hit the floor.",
+      "sentenceZh": "花瓶撞到地面时开始碎裂。",
+      "scene": "Ceramic vase breaking into several shards at moment of impact on empty tiled floor, no people injury blood text; falling body and fragments coherent.",
+      "altText": "花瓶碰到地面，裂成碎片。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "8fedca87-27fe-463c-bebd-b07b7d1bb540",
+      "word": "shiny",
+      "meaningZh": "闪亮的",
+      "exampleId": "8fedca87-27fe-463c-bebd-b07b7d1bb540-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The shiny spoon reflected the window light.",
+      "sentenceZh": "闪亮勺子反射窗边光线。",
+      "scene": "Single polished silver spoon on linen beside window, illustrated clear highlights and reflected window geometry, no brand people text.",
+      "altText": "光洁勺子映出窗边亮光。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "b4d3db40-c857-4f04-aeaa-fba5c40014b1",
+      "word": "shipping",
+      "meaningZh": "运输",
+      "exampleId": "b4d3db40-c857-4f04-aeaa-fba5c40014b1-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The company handled shipping for the village crafts.",
+      "sentenceZh": "公司负责村里工艺品的运输。",
+      "scene": "Chinese village crafts pottery packed safely into blank cartons being loaded into plain delivery van, full worker faces no shipping labels logos writing.",
+      "altText": "工艺品装入纸箱，由运输车辆运走。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "a753c608-88b0-47c4-a385-43f24803d8b6",
+      "word": "shocked",
+      "meaningZh": "震惊的",
+      "exampleId": "a753c608-88b0-47c4-a385-43f24803d8b6-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He was shocked to find the greenhouse damaged.",
+      "sentenceZh": "发现温室损坏，他十分震惊。",
+      "scene": "Adult gardener with full shocked open-eyed expression sees damaged greenhouse after storm from safe distance, no injury shattered glass near person writing.",
+      "altText": "园丁看到风暴损坏温室，露出震惊神情。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c2d457db-f353-4387-bd31-52b3bd46fac6",
+      "word": "shocking",
+      "meaningZh": "令人震惊的",
+      "exampleId": "c2d457db-f353-4387-bd31-52b3bd46fac6-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The shocking storm damage surprised the whole team.",
+      "sentenceZh": "令人震惊的风暴损毁让全队惊讶。",
+      "scene": "Group of adult restoration workers looks at unexpectedly severe storm damage to orchard, uprooted trees and overturned empty shed, full astonished faces no injuries text.",
+      "altText": "工作人员惊讶地望着风暴重创的果园。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "d8ef1eaf-c12a-49fd-9469-9a18a9bc8eaa",
+      "word": "simulate",
+      "meaningZh": "模拟；模仿",
+      "exampleId": "d8ef1eaf-c12a-49fd-9469-9a18a9bc8eaa-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The trainees simulate a rescue in the practice pool.",
+      "sentenceZh": "学员在练习池模拟救援。",
+      "scene": "Adult trainees practice water rescue using clearly artificial full-featured training dummy at shallow controlled practice pool under instructor supervision, all people full faces, no real drowning danger text.",
+      "altText": "学员在受控练习池用训练假人模拟救援。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "1919ea30-f198-45c8-bdd7-e7b22c624a8b",
+      "word": "simulation",
+      "meaningZh": "模拟",
+      "exampleId": "1919ea30-f198-45c8-bdd7-e7b22c624a8b-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The simulation showed how floodwater could spread.",
+      "sentenceZh": "模拟展示了洪水可能如何蔓延。",
+      "scene": "Scale tabletop valley model tiny houses and blue water poured through miniature river channel spreading onto floodplain, adult hands operate model no people faces labels charts writing.",
+      "altText": "沙盘模型用蓝色水流展示洪水扩散。",
+      "riskTags": [
+        "spatial_boundary",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "197a79a7-0b92-48e9-ba2b-8f406690bc98",
+      "word": "sincere",
+      "meaningZh": "真诚的",
+      "exampleId": "197a79a7-0b92-48e9-ba2b-8f406690bc98-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her sincere thanks made the volunteers smile.",
+      "sentenceZh": "她真诚的感谢让志愿者微笑。",
+      "scene": "Adult woman warmly thanks community volunteers who repaired garden with heartfelt full expression and gentle hand on chest, varied adult full faces no written thank-you card.",
+      "altText": "女子真诚向修复花园的志愿者道谢。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "434780be-b6ea-4654-a0bd-7541c394ae09",
+      "word": "singing",
+      "meaningZh": "唱歌",
+      "exampleId": "434780be-b6ea-4654-a0bd-7541c394ae09-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "Their singing filled the courtyard.",
+      "sentenceZh": "他们的歌声充满院落。",
+      "scene": "Adults sing together in Chinese neighborhood courtyard, mouths shaped naturally full joyful expressive faces, no microphones lyrics banners or sound lettering.",
+      "altText": "院落里，人们一起放声歌唱。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6d6385ea-4a60-4ca8-87f6-f36e40f7e581",
+      "word": "situated",
+      "meaningZh": "位于...的；处于...的",
+      "exampleId": "6d6385ea-4a60-4ca8-87f6-f36e40f7e581-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The lighthouse was situated on the rocky headland.",
+      "sentenceZh": "灯塔位于岩石岬角上。",
+      "scene": "Lighthouse firmly positioned atop rocky headland projecting into sea, coast shape unmistakable no people place names writing.",
+      "altText": "灯塔坐落在伸入海中的岩石岬角上。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

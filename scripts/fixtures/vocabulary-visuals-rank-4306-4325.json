@@ -1,0 +1,306 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4306-4325",
+  "batchId": "auto-rank-4306-4325-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "rod",
+      "charming",
+      "chat",
+      "socially",
+      "clarify",
+      "commodity"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "44f580aa-2e41-4698-bac2-1bb7327c119b",
+      "word": "certainty",
+      "meaningZh": "确定性；必然",
+      "exampleId": "44f580aa-2e41-4698-bac2-1bb7327c119b-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The clear footprints gave her certainty about the route.",
+      "sentenceZh": "清晰的脚印让她确信这条路线。",
+      "scene": "Hiker at trail fork confidently follows fresh continuous footprints leading toward visible camp, evidence and confident expression clear, no symbols or text.",
+      "altText": "徒步者根据通往营地的连续脚印确信路线。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "759fa546-2704-4d60-844c-722b225bea93",
+      "word": "rod",
+      "meaningZh": "杆；棒；竿",
+      "exampleId": "759fa546-2704-4d60-844c-722b225bea93-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The curtain hung from a metal rod.",
+      "sentenceZh": "窗帘挂在一根金属杆上。",
+      "scene": "Chinese home window curtains hang by visible rings on straight metal curtain rod fixed securely above window, rod clear focal object, no text.",
+      "altText": "窗帘通过圆环挂在窗户上方的金属杆上。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "9dce9d32-1ae3-4dd2-8502-dbce1d684e0b",
+      "word": "challenging",
+      "meaningZh": "有挑战性的；困难的",
+      "exampleId": "9dce9d32-1ae3-4dd2-8502-dbce1d684e0b-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The steep trail was challenging for the hikers.",
+      "sentenceZh": "陡峭的小路对徒步者很有挑战性。",
+      "scene": "Adult hikers exert effort ascending steep marked natural trail on solid ground using walking poles, attentive faces, no cliff exposure, signs or text.",
+      "altText": "徒步者用登山杖费力走上陡峭小路。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "8f44bb97-33d4-4a46-8fc0-1deda3367085",
+      "word": "logical",
+      "meaningZh": "逻辑的",
+      "exampleId": "8f44bb97-33d4-4a46-8fc0-1deda3367085-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Putting the largest box at the bottom was logical.",
+      "sentenceZh": "把最大的箱子放在底部是合乎逻辑的。",
+      "scene": "Adult carefully stacks three boxes from largest sturdy base to medium then smallest top, stable arrangement illustrates sensible reasoning, no letters or numbers.",
+      "altText": "三个箱子按大、中、小顺序稳定叠放。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a04aceba-b0bf-4827-bea4-8c970f76a0a8",
+      "word": "charming",
+      "meaningZh": "迷人的；有魅力的",
+      "exampleId": "a04aceba-b0bf-4827-bea4-8c970f76a0a8-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The village had a charming little bridge.",
+      "sentenceZh": "村里有一座迷人的小桥。",
+      "scene": "Chinese village small graceful stone arch footbridge beside flowers willow and traditional homes, inviting human scale beautiful scene, no signage.",
+      "altText": "柳树、花丛与村屋旁有一座秀美小石桥。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "1b66b3dd-5c2b-4f49-8c9e-1a107453aa36",
+      "word": "ash",
+      "meaningZh": "灰；灰烬；灰分",
+      "exampleId": "1b66b3dd-5c2b-4f49-8c9e-1a107453aa36-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Only cold ash remained in the fireplace.",
+      "sentenceZh": "壁炉里只剩冷却的灰烬。",
+      "scene": "Close still life of cold fireplace gray fine ash and small burnt wood fragments, no flame glowing ember smoke or person, ash dominant not intact logs, no text.",
+      "altText": "熄灭的壁炉里留下灰色灰烬与少量烧焦木片。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "0ebf312a-f537-462e-a38e-634c3fb0ace0",
+      "word": "chat",
+      "meaningZh": "聊天；交谈",
+      "exampleId": "0ebf312a-f537-462e-a38e-634c3fb0ace0-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The neighbors stopped to chat in the courtyard.",
+      "sentenceZh": "邻居们停下来在院子里聊天。",
+      "scene": "Chinese courtyard two adult neighbors relaxed face to face conversation on bench, tea cups and potted flowers, full expressive faces, no text.",
+      "altText": "两位邻居在庭院长椅旁轻松交谈。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "40ed7225-2f77-4f7e-8144-eafc1c344f72",
+      "word": "cheerful",
+      "meaningZh": "高兴的；快乐的",
+      "exampleId": "40ed7225-2f77-4f7e-8144-eafc1c344f72-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She gave everyone a cheerful smile.",
+      "sentenceZh": "她给大家一个快乐的微笑。",
+      "scene": "Adult gardener smiles brightly greeting friends at community garden, cheerful open expression natural friendly body language, no exaggerated chibi proportions or text.",
+      "altText": "园艺爱好者在社区花园微笑迎接朋友。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "609986ac-6f97-4b40-82ab-472e09405b50",
+      "word": "socially",
+      "meaningZh": "社会上",
+      "exampleId": "609986ac-6f97-4b40-82ab-472e09405b50-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "They met socially after work.",
+      "sentenceZh": "他们下班后进行社交聚会。",
+      "scene": "Chinese neighborhood outdoor tea table adults off duty engage in casual group conversation with relaxed faces, leisure interaction clearly central, no writing.",
+      "altText": "下班后的朋友们围坐茶桌轻松交流。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "3bd19fa4-aa16-43d3-841e-6d6dc7992a12",
+      "word": "choir",
+      "meaningZh": "合唱团；唱诗班",
+      "exampleId": "3bd19fa4-aa16-43d3-841e-6d6dc7992a12-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The choir sang together on the stage.",
+      "sentenceZh": "合唱团在舞台上一起歌唱。",
+      "scene": "Diverse adult choir on small stage in rows, all visible mouths naturally open singing and conductor facing group hands raised, blank music folders no notation or text.",
+      "altText": "合唱团成排站在舞台上，在指挥带领下一同歌唱。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "df3b2034-4dc4-45ca-b32e-0ff4f35009f0",
+      "word": "parish",
+      "meaningZh": "教区；堂区；救贫区",
+      "exampleId": "df3b2034-4dc4-45ca-b32e-0ff4f35009f0-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The parish gathered at the local church.",
+      "sentenceZh": "堂区居民聚集在当地教堂。",
+      "scene": "Local church community families greeting one another outside modest original fictional church with simple cross and parish hall, respectful complete faces, no words.",
+      "altText": "社区家庭在当地教堂与堂区活动室外聚集。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "785a6f08-6706-4472-8816-06a800d06553",
+      "word": "circulate",
+      "meaningZh": "循环；流通；传播",
+      "exampleId": "785a6f08-6706-4472-8816-06a800d06553-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Fans helped the air circulate through the room.",
+      "sentenceZh": "风扇帮助空气在房间内循环。",
+      "scene": "Cutaway room with two open windows and one small fan, soft curved blue airflow arrows form continuous loop through room, no text or numbered labels, no people needed.",
+      "altText": "风扇与敞开的窗户让空气流经房间并循环。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "6f374c3e-1d5f-4349-b96d-699a90790aca",
+      "word": "slavery",
+      "meaningZh": "奴隶制度",
+      "exampleId": "6f374c3e-1d5f-4349-b96d-699a90790aca-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The museum exhibit explained the history of slavery.",
+      "sentenceZh": "博物馆展览讲述了奴隶制度的历史。",
+      "scene": "Respectful museum learning scene adult visitors examine enclosed historical iron restraints beside pictorial panels of emancipation and people gaining freedom, focus on historical reflection no graphic violence, racial caricature, readable text or chained living people.",
+      "altText": "参观者在博物馆观看历史镣铐及解放主题图像。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "81c1dbf1-5c27-4f53-a95d-e741f146c15d",
+      "word": "blank",
+      "meaningZh": "空格；空白",
+      "exampleId": "81c1dbf1-5c27-4f53-a95d-e741f146c15d-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "She left a blank on the form.",
+      "sentenceZh": "她在表格上留了一个空格。",
+      "scene": "Close view form containing four simple outlined rectangular fields, three have plain small geometric marks and one conspicuously empty, hand with pen pauses near empty field, absolutely no letters digits or text.",
+      "altText": "表格中一个框保持空白，笔停在空框旁。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "e0d72d2b-b10f-4fba-a37a-9813e8f61d61",
+      "word": "circulation",
+      "meaningZh": "循环；流通；发行量",
+      "exampleId": "e0d72d2b-b10f-4fba-a37a-9813e8f61d61-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The pump kept the water in circulation.",
+      "sentenceZh": "水泵使水保持循环。",
+      "scene": "Matte hand-painted closed loop water system on plain warm paper: water exits left reservoir along bottom pipe to right pump, flows UP right side, LEFT across top, DOWN return into reservoir. Four consistent arrows trace this complete cycle. No extra pipes, text or photorealistic background.",
+      "altText": "水箱、水泵与闭合管道使水不断返回并循环。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "b7072c08-00d5-4355-97ea-ffb0342838d7",
+      "word": "clarify",
+      "meaningZh": "澄清；阐明",
+      "exampleId": "b7072c08-00d5-4355-97ea-ffb0342838d7-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The teacher used a model to clarify the idea.",
+      "sentenceZh": "老师用模型来阐明这个概念。",
+      "scene": "Chinese adult craft class teacher clarifies assembly of wooden joint using enlarged separated physical model, students shift from puzzled toward understanding, natural hands and fully drawn faces, no text.",
+      "altText": "老师用拆开的木榫模型讲解，学生逐渐理解。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f7e05293-ec8a-4030-8e66-f5a7c6b14807",
+      "word": "commodity",
+      "meaningZh": "农产品；商品；有用的物品",
+      "exampleId": "f7e05293-ec8a-4030-8e66-f5a7c6b14807-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Rice is an important commodity in this market.",
+      "sentenceZh": "大米是这个市场的重要商品。",
+      "scene": "Chinese grain market orderly sacks of rice and vendor measuring grains into plain bowl for buyer, rice visible and commercial exchange clear, no prices logos or signs.",
+      "altText": "粮食市场中，商贩从米袋里量取大米给顾客。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "602c7939-b344-4904-8002-15d8b78f5af9",
+      "word": "clarity",
+      "meaningZh": "清晰；明确",
+      "exampleId": "602c7939-b344-4904-8002-15d8b78f5af9-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The clarity of the water revealed the stones below.",
+      "sentenceZh": "水的清澈让水下的石头清晰可见。",
+      "scene": "Crystal clear shallow stream overhead oblique view smooth submerged stones sharply visible through transparent water with delicate ripples and refracted sunlight, no people or text.",
+      "altText": "清澈浅溪中，水下圆石与细小波纹清晰可见。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "16c50952-7051-41eb-97cc-863bc7b6551a",
+      "word": "cure",
+      "meaningZh": "治疗；治愈；治疗法",
+      "exampleId": "16c50952-7051-41eb-97cc-863bc7b6551a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The patient hoped for a cure.",
+      "sentenceZh": "患者希望能够治愈。",
+      "scene": "Fictional calm clinic conversation adult patient with hopeful face and qualified doctor listening beside neutral treatment room, no specific medicine remedy guarantee or labels, no before after miracle scene or text.",
+      "altText": "患者怀着希望与医生讨论治疗。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "cf05c835-41c5-4f54-83fd-d94dd07bf426",
+      "word": "clash",
+      "meaningZh": "冲突；碰撞；不协调",
+      "exampleId": "cf05c835-41c5-4f54-83fd-d94dd07bf426-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The orange curtains clash with the purple sofa.",
+      "sentenceZh": "橙色窗帘与紫色沙发不协调。",
+      "scene": "Mature interior design still life strongly saturated orange curtains beside purple sofa and mismatched striped rug, deliberate visibly discordant color pairing, no humans symbols or text.",
+      "altText": "橙色窗帘、紫色沙发与条纹地毯形成不协调配色。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    }
+  ]
+}

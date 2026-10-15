@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-07T04:57:42.555Z",
+  "queueTotal": 5536,
+  "ledgerCovered": 5536,
+  "remoteCovered": 5536,
+  "uniqueImageUrls": 5536,
+  "issues": [],
+  "failedImageUrls": [],
+  "duplicateLedgerIds": [
+    "ea19c60c-0b8e-46bc-afac-4dca1cdc4906",
+    "bfa6924c-f382-4267-95ec-f133cd97e47a",
+    "0638dcd4-4395-4547-bfbb-21d438bc3c8e",
+    "30e13d8c-6bc5-421c-9b3d-bf6215686ea5"
+  ]
+}

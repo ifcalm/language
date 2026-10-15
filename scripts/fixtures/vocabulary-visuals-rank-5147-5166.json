@@ -1,0 +1,326 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5147-5166",
+  "batchId": "auto-rank-5147-5166-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "petition",
+      "philosopher",
+      "polite",
+      "postwar",
+      "precision",
+      "predecessor"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "f8ababa6-f591-4c99-962d-a26dbaafbc03",
+      "word": "petition",
+      "meaningZh": "请愿书；请愿",
+      "exampleId": "f8ababa6-f591-4c99-962d-a26dbaafbc03-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The neighbors presented a petition for a safer crossing.",
+      "sentenceZh": "邻居们递交请愿书，要求更安全的过街设施。",
+      "scene": "Chinese community adults hand thick plain petition folder to municipal staff beside dangerous busy road crossing, full earnest faces, papers only abstract strokes no readable names writing.",
+      "altText": "社区居民在路口向工作人员递交请愿材料。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "601eece4-c8ff-41d3-8fbc-70be651b09d3",
+      "word": "pharmacy",
+      "meaningZh": "药房",
+      "exampleId": "601eece4-c8ff-41d3-8fbc-70be651b09d3-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The pharmacy prepared the customer's medicine.",
+      "sentenceZh": "药房为顾客准备药品。",
+      "scene": "Adult pharmacist behind counter places plain sealed medicine packages into paper bag for adult customer, complete faces, shelves unlabeled containers no dosage text labels symbols advice.",
+      "altText": "药剂师在柜台后把药品装入纸袋。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "88110edb-3bae-4804-8d5a-faf740152d11",
+      "word": "philosopher",
+      "meaningZh": "哲学家",
+      "exampleId": "88110edb-3bae-4804-8d5a-faf740152d11-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The philosopher reflected quietly beneath the tree.",
+      "sentenceZh": "哲学家在树下静静思考。",
+      "scene": "Fictional older Chinese philosopher in simple scholarly clothing sits thoughtfully under ginkgo beside closed books, full reflective face, no real historical likeness readable writing.",
+      "altText": "学者在银杏树下沉思，书册放在身旁。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2b70d1e3-4343-4406-b4c5-4f252c62be34",
+      "word": "pirate",
+      "meaningZh": "海盗；盗版",
+      "exampleId": "2b70d1e3-4343-4406-b4c5-4f252c62be34-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The pirate sailed toward the rocky island.",
+      "sentenceZh": "海盗驶向岩石小岛。",
+      "scene": "Fictional adult pirate captain in weathered coat steers sailing ship toward rocky island, full alert face, no weapons skull insignia violence real names text.",
+      "altText": "海盗船长驾驶帆船驶向岩石岛。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6823435a-f4ab-4f8d-95e4-3c077929fc14",
+      "word": "pity",
+      "meaningZh": "同情",
+      "exampleId": "6823435a-f4ab-4f8d-95e4-3c077929fc14-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She felt pity for the shivering kitten.",
+      "sentenceZh": "她同情那只瑟瑟发抖的小猫。",
+      "scene": "Adult woman compassionately wraps shivering kitten in dry towel under porch, full tender face and kitten expressive features, no injury text.",
+      "altText": "女子心疼地用毛巾包住发抖的小猫。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a17e2948-55b8-4685-828b-c5ba4da2d0dd",
+      "word": "pledge",
+      "meaningZh": "誓言；保证；抵押",
+      "exampleId": "a17e2948-55b8-4685-828b-c5ba4da2d0dd-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "They made a pledge to care for the garden.",
+      "sentenceZh": "他们保证照料这座花园。",
+      "scene": "Adult neighbors clasp hands in shared commitment beside garden tools and new community beds, full sincere faces, no document vows writing slogans.",
+      "altText": "邻居们在花坛旁握手，承诺共同照料花园。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "1cd2fde5-6c47-4daf-bc66-0bd6db013757",
+      "word": "plug",
+      "meaningZh": "插头；堵塞；推广",
+      "exampleId": "1cd2fde5-6c47-4daf-bc66-0bd6db013757-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "He pulled the plug from the wall socket.",
+      "sentenceZh": "他把插头从墙上插座拔下。",
+      "scene": "Close-up illustrated adult hand safely holding insulated plug body as unplugged from wall socket, dry intact setting cord clear, no exposed wire text face.",
+      "altText": "手握绝缘插头外壳，将它从插座拔出。",
+      "riskTags": [
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "bcc17172-4925-46d0-b0d1-ed018491e2f4",
+      "word": "pointed",
+      "meaningZh": "尖的；指向的",
+      "exampleId": "bcc17172-4925-46d0-b0d1-ed018491e2f4-visual-ex",
+      "styleFamily": "paper-cut nature",
+      "sentenceEn": "The bird had a long, pointed beak.",
+      "sentenceZh": "这只鸟有一根细长尖嘴。",
+      "scene": "Kingfisher-like bird perched on branch, long sharply pointed beak prominent, coherent feathers anatomy, no people text.",
+      "altText": "枝头小鸟的细长尖嘴十分醒目。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "23c029cb-ca7a-4b72-8419-687c5bc146df",
+      "word": "poison",
+      "meaningZh": "毒药",
+      "exampleId": "23c029cb-ca7a-4b72-8419-687c5bc146df-visual-ex",
+      "styleFamily": "graphic still life",
+      "sentenceEn": "The poison was locked away from the animals.",
+      "sentenceZh": "毒物被锁起来，远离动物。",
+      "scene": "Unlabeled sealed chemical bottle behind locked cabinet door in utility room, healthy pet seen safely distant outside room, no poison recipe substance identity text danger labels.",
+      "altText": "密封瓶被锁在柜内，小动物远离柜子。",
+      "riskTags": [
+        "spatial_boundary",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e0b5a2ee-f8e2-4609-b58d-87f7afd6e17b",
+      "word": "poisonous",
+      "meaningZh": "有毒的",
+      "exampleId": "e0b5a2ee-f8e2-4609-b58d-87f7afd6e17b-visual-ex",
+      "styleFamily": "watercolor botanical",
+      "sentenceEn": "The poisonous berries were left untouched.",
+      "sentenceZh": "有毒浆果没有被碰触。",
+      "scene": "Fictional wild berry branch beside woodland trail, adults observe from safe distance without picking, full cautionary faces, no species identification guide specific toxicity claim labels text.",
+      "altText": "路边浆果留在枝头，人们保持距离没有采摘。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f67f8132-fa2c-4a12-ba17-7f437b2e7df2",
+      "word": "polite",
+      "meaningZh": "有礼貌的",
+      "exampleId": "f67f8132-fa2c-4a12-ba17-7f437b2e7df2-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The polite guest waited for the host to sit.",
+      "sentenceZh": "有礼貌的客人等主人坐下。",
+      "scene": "Chinese tea room older host settles into chair as younger adult guest politely waits standing with gentle respectful smile, full faces, no words slogans.",
+      "altText": "茶室里，客人礼貌等待主人先落座。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "972bcf6f-f2b5-42c4-8f6b-ea68b6a83573",
+      "word": "postwar",
+      "meaningZh": "战后的",
+      "exampleId": "972bcf6f-f2b5-42c4-8f6b-ea68b6a83573-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The postwar village rebuilt its damaged homes.",
+      "sentenceZh": "战后村庄重建受损房屋。",
+      "scene": "Fictional Chinese village reconstruction with adult workers repairing walls and roofs after past war, full determined faces, no current combat weapons flags gore readable signs or named event.",
+      "altText": "村民在损坏房屋间修墙补瓦，重建家园。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9315fad1-d21f-48b3-86b3-1683fb15246f",
+      "word": "precede",
+      "meaningZh": "在...之前；先于",
+      "exampleId": "9315fad1-d21f-48b3-86b3-1683fb15246f-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "Dark clouds often precede heavy rain.",
+      "sentenceZh": "乌云常常出现在大雨之前。",
+      "scene": "Two panels same mountain valley first dark clouds gather with dry ground, second heavy rain falls with wet ground, no people arrows letters text.",
+      "altText": "同一山谷先乌云聚集，随后大雨落下。",
+      "riskTags": [
+        "sequence",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "c2c5d7f8-9bca-4a9e-b537-f8176b392458",
+      "word": "precedent",
+      "meaningZh": "先例；前例",
+      "exampleId": "c2c5d7f8-9bca-4a9e-b537-f8176b392458-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The first rescue set a precedent for future volunteers.",
+      "sentenceZh": "第一次救援为后来的志愿者提供了先例。",
+      "scene": "Two panels: first adults use handcart to carry supplies to flood shelter, second later different volunteers use same successful handcart approach; complete faces, no injuries dates labels text.",
+      "altText": "先前志愿者用推车运物资，后来的团队沿用这一做法。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b5941a14-573b-47d5-8b13-2c31a312a3fe",
+      "word": "precision",
+      "meaningZh": "精确",
+      "exampleId": "b5941a14-573b-47d5-8b13-2c31a312a3fe-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The artisan cut the wood with great precision.",
+      "sentenceZh": "工匠极其精确地切割木材。",
+      "scene": "Chinese woodwork artisan carefully fits precisely cut wooden tenon into matching joint, natural hands full focused face, close view aligned edges no numerals ruler text.",
+      "altText": "木匠将精细切出的榫头与卯口对齐。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c950b10e-cae2-4be8-901d-3b1f1903c53a",
+      "word": "predecessor",
+      "meaningZh": "前任",
+      "exampleId": "c950b10e-cae2-4be8-901d-3b1f1903c53a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She thanked her predecessor for the careful handover.",
+      "sentenceZh": "她感谢前任认真完成交接。",
+      "scene": "Chinese community center new adult coordinator receives key ring and blank folder from older predecessor, full warm faces, office background no titles text.",
+      "altText": "新任负责人从前任手中接过钥匙和资料。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "339dfdba-c49d-40b8-acf5-8a0fbfbe64e0",
+      "word": "predictable",
+      "meaningZh": "可预测的",
+      "exampleId": "339dfdba-c49d-40b8-acf5-8a0fbfbe64e0-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The pendulum's motion was predictable.",
+      "sentenceZh": "钟摆的运动是可预测的。",
+      "scene": "Three evenly spaced ghost positions of same pendulum swinging left center right below simple wall clock with blank dial no numbers, visual regularity clear no words arrows.",
+      "altText": "钟摆的几个位置显示出规律摆动。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6051a805-bb24-49bb-8ecd-42d6525bca3c",
+      "word": "predominantly",
+      "meaningZh": "主要地；占主导地位地",
+      "exampleId": "6051a805-bb24-49bb-8ecd-42d6525bca3c-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The hillside was predominantly covered with pine trees.",
+      "sentenceZh": "山坡主要被松树覆盖。",
+      "scene": "Hillside densely covered with many unmistakable evergreen pines and only two scattered broadleaf trees, broad coverage difference clear no people labels text.",
+      "altText": "山坡上绝大多数是松树，少量阔叶树夹在其中。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "099a180c-4ca3-49f5-bf38-0755f1ae01c2",
+      "word": "prejudice",
+      "meaningZh": "偏见；歧视",
+      "exampleId": "099a180c-4ca3-49f5-bf38-0755f1ae01c2-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She challenged the prejudice against the new worker.",
+      "sentenceZh": "她反对针对新员工的偏见。",
+      "scene": "Workplace adult supervisor welcomes new adult worker with different skin tone while colleague looks initially skeptical; supervisor offers equal workstation and handshake, complete faces, no racial caricature slurs hostile symbols writing.",
+      "altText": "主管欢迎新员工、提供同等工作位置，纠正同事的排斥态度。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "57bddb04-ba90-4860-940c-cfce9a763dc2",
+      "word": "premier",
+      "meaningZh": "总理；首要的",
+      "exampleId": "57bddb04-ba90-4860-940c-cfce9a763dc2-visual-ex",
+      "styleFamily": "graphic illustration",
+      "sentenceEn": "The premier addressed the assembly.",
+      "sentenceZh": "总理向大会发表讲话。",
+      "scene": "Fictional adult premier at plain podium addressing assembly, full composed face delegates visible fully formed if readable, no real politician resemblance national flags party logos text.",
+      "altText": "一位虚构总理在讲台前向与会者发言。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

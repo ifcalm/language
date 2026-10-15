@@ -1,0 +1,306 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4346-4365",
+  "batchId": "auto-rank-4346-4365-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "deliberately",
+      "regret",
+      "comparative",
+      "likelihood",
+      "carrot",
+      "competence"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "588e64b1-cfb4-4746-b525-1493da497e58",
+      "word": "commentary",
+      "meaningZh": "评论；解说；评注",
+      "exampleId": "588e64b1-cfb4-4746-b525-1493da497e58-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The commentary explained the action on the field.",
+      "sentenceZh": "解说解释了场上的活动。",
+      "scene": "Sports booth adult commentator speaks into microphone while gestures toward clearly visible football game below, explanatory broadcast focus, no words screens labels logos.",
+      "altText": "解说员通过麦克风讲解下方球场上的比赛。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "ef9a0629-802e-499d-b3f6-ebef9ebe545c",
+      "word": "deliberately",
+      "meaningZh": "故意地",
+      "exampleId": "ef9a0629-802e-499d-b3f6-ebef9ebe545c-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She deliberately placed the cup away from the edge.",
+      "sentenceZh": "她特意把杯子放到远离边缘的位置。",
+      "scene": "Chinese home adult thoughtfully moves cup from table edge to safe center, small two-panel sequence same cup and table, deliberate careful expression no text.",
+      "altText": "她有意识地把桌边杯子移到桌子中央。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "6665d289-8471-4965-83cd-ea824c067039",
+      "word": "commentator",
+      "meaningZh": "评论员；解说员",
+      "exampleId": "6665d289-8471-4965-83cd-ea824c067039-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The commentator watched the race closely.",
+      "sentenceZh": "解说员密切观看比赛。",
+      "scene": "Adult race commentator wearing headset in booth watches runners on track with attentive expression and microphone, blank notes no writing.",
+      "altText": "戴耳麦的解说员在看台播音室里专注观察赛跑。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "5d25572a-a9ec-44e8-b631-859de222d88b",
+      "word": "fame",
+      "meaningZh": "名望；名声；传说",
+      "exampleId": "5d25572a-a9ec-44e8-b631-859de222d88b-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "Her music brought her fame.",
+      "sentenceZh": "她的音乐让她获得名声。",
+      "scene": "Fictional musician acknowledged by large appreciative audience after concert, fans greet her at stage exit with plain unlettered portraits, recognition from public central, no real celebrity or text.",
+      "altText": "音乐家演出后受到许多听众热情认可。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "380ae5a9-d49f-4c3c-b98f-f6d86b7e77e1",
+      "word": "communist",
+      "meaningZh": "共产主义者；共产党员",
+      "exampleId": "380ae5a9-d49f-4c3c-b98f-f6d86b7e77e1-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The communist spoke at the meeting.",
+      "sentenceZh": "这位共产主义者在会议上发言。",
+      "scene": "Neutral historical educational illustration fictional adult communist speaking at modest meeting lectern with plain red banner and small hammer and sickle emblem, respectful listening adults, no slogans readable words propaganda hero staging or real political figure.",
+      "altText": "会议中，一位共产主义者在朴素讲台前发言。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "29de9cf1-dfeb-48fd-b16f-2ae1765a3417",
+      "word": "regret",
+      "meaningZh": "遗憾；后悔；悔恨；抱歉；歉意",
+      "exampleId": "29de9cf1-dfeb-48fd-b16f-2ae1765a3417-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "He felt regret after breaking the vase.",
+      "sentenceZh": "打碎花瓶后，他感到后悔。",
+      "scene": "Adult remorseful face looks at accidentally broken Chinese ceramic vase on floor, hands kept away from sharp shards broom nearby, no injury or text.",
+      "altText": "一人看着摔碎的陶瓷花瓶，露出后悔神情。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "9106bd6a-7917-4c29-88d9-20d1f0a9ddf9",
+      "word": "comparative",
+      "meaningZh": "比较的；相对的",
+      "exampleId": "9106bd6a-7917-4c29-88d9-20d1f0a9ddf9-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The comparative study examined two leaf shapes.",
+      "sentenceZh": "这项比较研究考察了两种叶形。",
+      "scene": "Chinese botany worktable two clearly distinct round and lobed leaf specimens side by side, adult researcher compares outlines using unlettered simple diagrams, no text.",
+      "altText": "研究者并排比较圆叶与裂叶的形状。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "55678270-8471-4536-bb69-44f06df892dc",
+      "word": "striking",
+      "meaningZh": "显著的；惊人的",
+      "exampleId": "55678270-8471-4536-bb69-44f06df892dc-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The red flower made a striking contrast with the snow.",
+      "sentenceZh": "红花与白雪形成了显著对比。",
+      "scene": "One vivid crimson flower against wide white snow background, strong clear color contrast and focal impact, stylized original botanical scene no text.",
+      "altText": "鲜红花朵在洁白积雪背景中格外醒目。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "eb40115f-dec5-4987-a3bf-c0553c5a76d8",
+      "word": "compassion",
+      "meaningZh": "同情；怜悯",
+      "exampleId": "eb40115f-dec5-4987-a3bf-c0553c5a76d8-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She showed compassion to the injured bird.",
+      "sentenceZh": "她对受伤的小鸟表现出同情。",
+      "scene": "Adult gently protects small bird in ventilated plain rescue box and calls wildlife carer, calm compassionate complete face, no blood handling wounds feeding or text.",
+      "altText": "她温柔地照看救助盒中的小鸟，并联系救护人员。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "f8de6ae3-46ba-4f14-8c21-d81b46533dd8",
+      "word": "likelihood",
+      "meaningZh": "可能性",
+      "exampleId": "f8de6ae3-46ba-4f14-8c21-d81b46533dd8-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Dark clouds increased the likelihood of rain.",
+      "sentenceZh": "乌云增加了下雨的可能性。",
+      "scene": "Adult Chinese neighborhood walker looks at dense dark approaching clouds and thoughtfully carries folded umbrella, rain not yet falling, weather uncertainty not guarantee, no symbols or text.",
+      "altText": "行人看着逼近的乌云，准备好雨伞。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a208cc25-f1fb-4f5c-8d2e-f8fae5ebb3ae",
+      "word": "carrot",
+      "meaningZh": "胡萝卜",
+      "exampleId": "a208cc25-f1fb-4f5c-8d2e-f8fae5ebb3ae-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She pulled a carrot from the garden.",
+      "sentenceZh": "她从菜园里拔出一根胡萝卜。",
+      "scene": "Chinese home vegetable garden adult gloved hand pulls single bright orange tapered carrot with green tops from soil, root fully recognizable, complete face no labels.",
+      "altText": "菜园里，一人从土中拔出橙色胡萝卜。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "5f451a3d-d0f1-47f1-875b-c6b115772dde",
+      "word": "compensate",
+      "meaningZh": "补偿；赔偿",
+      "exampleId": "5f451a3d-d0f1-47f1-875b-c6b115772dde-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The shop offered to compensate him for the damaged bag.",
+      "sentenceZh": "商店提出赔偿他损坏的包。",
+      "scene": "Two panel customer shows damaged plain travel bag to shop clerk then receives intact replacement same design, fair compensation focus respectful faces, no receipts readable text currency or logos.",
+      "altText": "顾客展示破损包，店员提供同款完好替换品作赔偿。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "13303314-ad64-4953-8931-8f58fa403c36",
+      "word": "atop",
+      "meaningZh": "在...顶上",
+      "exampleId": "13303314-ad64-4953-8931-8f58fa403c36-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The cat sat atop the cupboard.",
+      "sentenceZh": "猫坐在橱柜顶上。",
+      "scene": "One anatomically coherent cat sits fully supported on flat top surface of tall cupboard, whole cabinet visible and top relation unambiguous, no text.",
+      "altText": "猫稳稳坐在高橱柜的顶面上。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "3c13fca1-bfc5-41d2-9d04-8b0aca8e8dae",
+      "word": "competence",
+      "meaningZh": "能力；胜任；权限",
+      "exampleId": "3c13fca1-bfc5-41d2-9d04-8b0aca8e8dae-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The mechanic demonstrated her competence.",
+      "sentenceZh": "这位机械师展示了她的能力。",
+      "scene": "Adult woman mechanic in Chinese bicycle workshop skillfully aligns wheel using proper stand and tools, attentive readable face coherent hands and bicycle, no text.",
+      "altText": "机械师在自行车维修台上熟练校正车轮。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f82ca6c5-b11e-4ec2-a425-d648f713d77c",
+      "word": "competent",
+      "meaningZh": "有能力的；胜任的",
+      "exampleId": "f82ca6c5-b11e-4ec2-a425-d648f713d77c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The competent carpenter repaired the chair.",
+      "sentenceZh": "有能力的木匠修好了椅子。",
+      "scene": "Adult carpenter carefully repairs chair joint with suitable hand tool at safe workshop bench, repaired chair stable craft competence clear, no text.",
+      "altText": "木匠在工作台上熟练修复椅子接头。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "d6f0282e-49a7-4d60-9adb-5865a19856d7",
+      "word": "toll",
+      "meaningZh": "通行费；代价；钟声",
+      "exampleId": "d6f0282e-49a7-4d60-9adb-5865a19856d7-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The driver paid the toll at the booth.",
+      "sentenceZh": "司机在收费亭支付通行费。",
+      "scene": "Adult driver stopped car at toll booth handing plain unlettered payment token to attendant, barrier across lane then passage beyond, no prices words logos plates or speeding.",
+      "altText": "司机停车，在收费亭向工作人员支付通行费。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "2974ce6b-d5ec-4881-a6b6-bda6deffb185",
+      "word": "complement",
+      "meaningZh": "补充；补足；补语",
+      "exampleId": "2974ce6b-d5ec-4881-a6b6-bda6deffb185-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The fresh salad was a good complement to the warm soup.",
+      "sentenceZh": "新鲜沙拉是热汤的良好搭配。",
+      "scene": "Balanced meal still life bowl steaming soup beside fresh salad, distinct dishes harmonize warm and fresh components, no humans utensils confusing additions or text.",
+      "altText": "一碗热汤旁搭配一盘新鲜沙拉。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "071bba6b-8969-44df-a999-b2f7d67fa232",
+      "word": "rim",
+      "meaningZh": "边缘；轮辋",
+      "exampleId": "071bba6b-8969-44df-a999-b2f7d67fa232-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The cup had a blue rim.",
+      "sentenceZh": "这只杯子有蓝色杯沿。",
+      "scene": "Large close view white ceramic cup tilted slightly toward viewer with thin continuous vivid blue border exactly around upper opening rim, rest white, no logos or text.",
+      "altText": "白色陶瓷杯的上口边沿有一圈蓝色。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "c9b8a5ac-9786-47f6-b35d-94368d7a5ffc",
+      "word": "completion",
+      "meaningZh": "完成；结束；实现",
+      "exampleId": "c9b8a5ac-9786-47f6-b35d-94368d7a5ffc-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The last piece marked the completion of the puzzle.",
+      "sentenceZh": "最后一块标志着拼图完成。",
+      "scene": "Adult fits final piece into only remaining gap of landscape jigsaw on table, completed picture coherent and hand action focus, no second missing gap text or numbers.",
+      "altText": "一人将最后一块放入风景拼图唯一的空缺。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "d8135300-b87d-4f39-a8ef-04fff1a4e703",
+      "word": "embarrassed",
+      "meaningZh": "尴尬的",
+      "exampleId": "d8135300-b87d-4f39-a8ef-04fff1a4e703-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She felt embarrassed after spilling her tea.",
+      "sentenceZh": "洒了茶后，她感到尴尬。",
+      "scene": "Adult flushed embarrassed face at friendly table after spilling tea, apologetic small gesture friends respond kindly and offer cloth, no humiliation text or physical injury.",
+      "altText": "她洒了茶后脸红尴尬，朋友温和递来擦布。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    }
+  ]
+}

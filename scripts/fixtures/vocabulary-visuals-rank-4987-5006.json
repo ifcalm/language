@@ -1,0 +1,317 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4987-5006",
+  "batchId": "auto-rank-4987-5006-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "laundry",
+      "january",
+      "july",
+      "june",
+      "keen",
+      "landlord"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "a376bd44-55d8-4d31-b701-c70952fb2497",
+      "word": "irrelevant",
+      "meaningZh": "无关的；不相关的",
+      "exampleId": "a376bd44-55d8-4d31-b701-c70952fb2497-visual-ex",
+      "styleFamily": "paper-cut",
+      "sentenceEn": "The seashell was irrelevant to repairing the bicycle.",
+      "sentenceZh": "这枚贝壳与修理自行车无关。",
+      "scene": "A bicycle repair bench with wrench, pump and spare tire; one seashell lies separately as visibly unrelated object, no people.",
+      "altText": "自行车维修台上有工具，旁边单独放着一枚无关的贝壳。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "acb92504-a57a-43b8-9748-8376b59caa80",
+      "word": "laundry",
+      "meaningZh": "洗衣；洗衣店；要洗的衣物",
+      "exampleId": "acb92504-a57a-43b8-9748-8376b59caa80-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She hung the laundry in the courtyard.",
+      "sentenceZh": "她把洗好的衣物晾在院子里。",
+      "scene": "An older woman hangs freshly washed shirts in a Chinese courtyard, wicker laundry basket, full warm face and natural hands.",
+      "altText": "女子在中式院落里把洗好的衬衫挂上晾衣绳。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6e5eaf6d-c37b-47b4-aa58-8f8ef0f754e3",
+      "word": "jam",
+      "meaningZh": "果酱；堵塞；拥挤",
+      "exampleId": "6e5eaf6d-c37b-47b4-aa58-8f8ef0f754e3-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "He spread strawberry jam on the toast.",
+      "sentenceZh": "他把草莓果酱涂在吐司上。",
+      "scene": "Close-up illustrated hand spreading thick red strawberry jam on toast beside plain jam jar and strawberries, clear fruit texture.",
+      "altText": "手把红色草莓果酱涂在吐司上，旁边有草莓和果酱罐。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "5a0a27f2-086d-4fea-9abb-28b0cbcaa092",
+      "word": "manual",
+      "meaningZh": "手册；指南",
+      "exampleId": "5a0a27f2-086d-4fea-9abb-28b0cbcaa092-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "The manual showed her how to assemble the shelf.",
+      "sentenceZh": "手册告诉她如何组装架子。",
+      "scene": "Adult woman assembling shelf beside open instruction manual containing only simple pictorial assembly diagrams, full focused face, unmarked pages with no letters numbers or text.",
+      "altText": "女子参照只有图示的手册组装架子。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "45f821c5-ab47-43f1-91b6-1649552f32b5",
+      "word": "january",
+      "meaningZh": "一月",
+      "exampleId": "45f821c5-ab47-43f1-91b6-1649552f32b5-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "In January, snow covered the courtyard.",
+      "sentenceZh": "一月里，白雪覆盖了院子。",
+      "scene": "Snow blankets a northern Chinese courtyard and bare plum tree, pale winter light, no calendars or text; January context supplied by sentence.",
+      "altText": "白雪覆盖北方院落，梅树枝条伸向寒冷天空。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "016f0f26-88b2-441b-a1ef-30c2b730507c",
+      "word": "pistol",
+      "meaningZh": "手枪",
+      "exampleId": "016f0f26-88b2-441b-a1ef-30c2b730507c-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The officer placed the pistol in a locked cabinet.",
+      "sentenceZh": "警员把手枪放进上锁的柜子。",
+      "scene": "A uniformed adult police officer carefully stores an inert pistol in secure cabinet, muzzle directed down away from everyone, full calm face, no firing ammunition handling instructions insignia or readable text.",
+      "altText": "警员把手枪收进安全柜，枪口朝下。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "0c0aac0b-108b-4ed6-80cc-a29aaf65a236",
+      "word": "july",
+      "meaningZh": "七月",
+      "exampleId": "0c0aac0b-108b-4ed6-80cc-a29aaf65a236-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "In July, the lotus flowers filled the pond.",
+      "sentenceZh": "七月里，荷花开满池塘。",
+      "scene": "Lush Chinese garden lotus pond in peak summer bloom, pavilion distant, embroidered petals and large green leaves, no people calendars or text.",
+      "altText": "盛夏中式园林的荷塘里，荷花盛开。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "271fd2d4-7666-49bb-9b2a-4b52b1a2528b",
+      "word": "naval",
+      "meaningZh": "海军的",
+      "exampleId": "271fd2d4-7666-49bb-9b2a-4b52b1a2528b-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "A naval ship entered the harbor.",
+      "sentenceZh": "一艘海军舰船驶入港口。",
+      "scene": "Gray naval ship with radar mast entering calm harbor, clear vessel silhouette without weapons firing, flags numbers markings or readable text.",
+      "altText": "灰色海军舰船驶入平静港口。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "2a60d4ba-8032-4583-920c-e447377e32c4",
+      "word": "june",
+      "meaningZh": "六月",
+      "exampleId": "2a60d4ba-8032-4583-920c-e447377e32c4-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "In June, the wheat was ready for harvest.",
+      "sentenceZh": "六月里，小麦已经可以收割了。",
+      "scene": "Golden wheat fields beneath early summer sky in rural northern China, traditional farmhouse distant, mature grain heads central, no text calendars or faces.",
+      "altText": "初夏乡村的金黄麦田等待收割。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "7ddcbf98-48ea-4803-ba1e-14877639740b",
+      "word": "plaintiff",
+      "meaningZh": "原告",
+      "exampleId": "7ddcbf98-48ea-4803-ba1e-14877639740b-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The plaintiff explained her claim to the judge.",
+      "sentenceZh": "原告向法官说明她的诉求。",
+      "scene": "Adult woman plaintiff stands next to her lawyer addressing a judge in neutral civil courtroom, full serious faces, blank document folder, no readable text or real insignia.",
+      "altText": "原告与律师一起在法庭向法官说明诉求。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "98044741-7881-4d18-9951-6b1fdc4070aa",
+      "word": "justification",
+      "meaningZh": "理由",
+      "exampleId": "98044741-7881-4d18-9951-6b1fdc4070aa-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "The cracked beam gave clear justification for closing the bridge.",
+      "sentenceZh": "开裂的横梁为关闭桥梁提供了明确理由。",
+      "scene": "Small footbridge visibly cracked support beam, barrier across approach prevents entry, no humans signs letters; cause and protective response visible.",
+      "altText": "桥梁支撑处开裂，入口被护栏封住。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ec8e72ab-927f-41da-82bd-355f3ed5e3f5",
+      "word": "keen",
+      "meaningZh": "热衷的；敏锐的；强烈的",
+      "exampleId": "ec8e72ab-927f-41da-82bd-355f3ed5e3f5-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She was keen to learn the bamboo flute.",
+      "sentenceZh": "她很热衷于学习竹笛。",
+      "scene": "Young adult enthusiastically practices bamboo flute in Chinese music studio, teacher listens, both complete expressive faces, plain music stand without sheet text.",
+      "altText": "学生兴致勃勃地练竹笛，老师认真倾听。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ef39560b-3c64-4e80-b643-275b4df62a43",
+      "word": "middle-class",
+      "meaningZh": "中产阶级的",
+      "exampleId": "ef39560b-3c64-4e80-b643-275b4df62a43-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The middle-class family saved for their first home.",
+      "sentenceZh": "这个中产家庭为第一套住房存钱。",
+      "scene": "Ordinary adult couple in modest apartment placing coins in plain savings jar beside simple small house model, full hopeful faces, no luxury poverty stereotypes or text; economic class supplied by sentence.",
+      "altText": "夫妇在公寓里往储蓄罐放硬币，旁边是一座房屋模型。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "d1f1d0dd-98a1-407d-b219-76e61a9b9615",
+      "word": "apology",
+      "meaningZh": "道歉；辩护；谢罪；辩解者",
+      "exampleId": "d1f1d0dd-98a1-407d-b219-76e61a9b9615-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "He offered an apology for breaking the vase.",
+      "sentenceZh": "他为打碎花瓶道歉。",
+      "scene": "Adult man sincerely apologizes to friend beside broken plain ceramic vase, lowered shoulders open hand, friend's accepting expression, full faces, no speech bubbles.",
+      "altText": "男子在破碎花瓶旁向朋友真诚道歉。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f49396df-535a-4baf-9c19-bf1375d1b8e7",
+      "word": "keyboard",
+      "meaningZh": "键盘",
+      "exampleId": "f49396df-535a-4baf-9c19-bf1375d1b8e7-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "She cleaned the computer keyboard with a soft brush.",
+      "sentenceZh": "她用软刷清理电脑键盘。",
+      "scene": "Close view of unmarked computer keyboard with recognizable rows of keys, soft brush sweeping gaps, stylized adult hand, blank keys no letters or text.",
+      "altText": "软刷清扫电脑键盘的按键缝隙。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "426f088d-569b-4f5c-bdbe-36134d4538f6",
+      "word": "kidnap",
+      "meaningZh": "绑架",
+      "exampleId": "426f088d-569b-4f5c-bdbe-36134d4538f6-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The police stopped an attempt to kidnap a traveler.",
+      "sentenceZh": "警方制止了一次绑架旅客的企图。",
+      "scene": "Adult traveler beside van is being pulled by coat sleeve by another adult; police officer intervenes with open stop hand while traveler steps toward safety, all full readable faces, no weapons injury restraints child victims or graphic violence.",
+      "altText": "警员及时介入，让被拉向车门的旅客脱离危险。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3f761794-b67a-48b9-a9ff-7f3bdb1755a1",
+      "word": "kidney",
+      "meaningZh": "肾脏",
+      "exampleId": "3f761794-b67a-48b9-a9ff-7f3bdb1755a1-visual-ex",
+      "styleFamily": "editorial 3D educational",
+      "sentenceEn": "The model showed a kidney beside the spine.",
+      "sentenceZh": "模型展示了脊柱旁的一颗肾脏。",
+      "scene": "Clean simplified anatomical teaching model: pair of bean-shaped human kidneys either side of spine with ureters descending, no gore realistic cut flesh labels letters or text, kidney central.",
+      "altText": "简化人体模型中，豆形肾脏位于脊柱两侧。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2712c571-12a8-4a08-9cb0-9dc730ddd2f7",
+      "word": "kilometer",
+      "meaningZh": "公里；千米",
+      "exampleId": "2712c571-12a8-4a08-9cb0-9dc730ddd2f7-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The trail stretched for one kilometer along the river.",
+      "sentenceZh": "小路沿河延伸一公里。",
+      "scene": "Long riverside footpath between two simple unmarked wooden trail posts, coherent distance perspective, no maps scale numbers or text; precise kilometer supplied by sentence.",
+      "altText": "沿河小路连接远近两根路桩，伸向远方。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ba1ccef5-ee42-452b-b624-764fdd7dcb1f",
+      "word": "kindergarten",
+      "meaningZh": "幼儿园",
+      "exampleId": "ba1ccef5-ee42-452b-b624-764fdd7dcb1f-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The children planted seeds at kindergarten.",
+      "sentenceZh": "孩子们在幼儿园种下种子。",
+      "scene": "Small diverse group of kindergarten children with adult teacher planting seeds in raised garden bed, complete gentle faces, tactile felt illustration, no school writing signs or text.",
+      "altText": "幼儿园老师带孩子们在花坛播种。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "fda0d74c-829b-42f3-8e7d-100485f5ab60",
+      "word": "landlord",
+      "meaningZh": "房东；地主",
+      "exampleId": "fda0d74c-829b-42f3-8e7d-100485f5ab60-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The landlord repaired the tenant's window.",
+      "sentenceZh": "房东修好了租客的窗户。",
+      "scene": "Adult landlord repairs window latch while tenant watches gratefully in traditional Chinese lane rental home, full faces, clear respectful relationship, no lease text.",
+      "altText": "房东在胡同出租屋里维修窗户，租客在旁感谢。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

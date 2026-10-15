@@ -1,0 +1,315 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4506-4525",
+  "batchId": "auto-rank-4506-4525-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "delighted",
+      "palace",
+      "peasant",
+      "neat",
+      "grandparent",
+      "designate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "5dae5c86-570e-4b14-a221-1e3d42b9e4e3",
+      "word": "delighted",
+      "meaningZh": "高兴的；欣喜的",
+      "exampleId": "5dae5c86-570e-4b14-a221-1e3d42b9e4e3-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She was delighted to see the first blossom.",
+      "sentenceZh": "看到第一朵花开放，她十分欣喜。",
+      "scene": "Chinese courtyard adult gardener sees first blossom on otherwise budded small plum branch, genuine delighted smile clear natural face, one flower focal no exaggerated victory.",
+      "altText": "园丁看到枝头初开的花朵，露出欣喜笑容。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "fb1f0ada-4403-48f1-aa41-8a0d8f429d1b",
+      "word": "palace",
+      "meaningZh": "宫；宫殿；华丽大厦",
+      "exampleId": "fb1f0ada-4403-48f1-aa41-8a0d8f429d1b-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The palace stood beyond the wide courtyard.",
+      "sentenceZh": "宫殿矗立在宽阔庭院的另一端。",
+      "scene": "Original fictional Chinese palace complex grand symmetrical timber hall golden roof red columns broad stone courtyard and terrace, architectural layered paper craft, no placards names text flags logos tourists.",
+      "altText": "宽阔石庭后，层叠金顶和红柱构成宏伟宫殿。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "93f944ea-569b-4f62-8c34-ff8ee80e4630",
+      "word": "demon",
+      "meaningZh": "恶魔；魔鬼",
+      "exampleId": "93f944ea-569b-4f62-8c34-ff8ee80e4630-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The story described a demon guarding the cave.",
+      "sentenceZh": "故事描述了一个守着洞穴的恶魔。",
+      "scene": "Clearly fictional illustrated fantasy demon guarding cave entrance with angular horns clawed hands scaled reddish body long tail stern expression complete face, no religion symbols text violence gore weapons or frightened children. Mature fantasy painting, non-graphic.",
+      "altText": "虚构的有角恶魔站在洞穴入口守卫。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "ad0f200b-e141-4278-8a09-3b41ac53194d",
+      "word": "formerly",
+      "meaningZh": "以前",
+      "exampleId": "ad0f200b-e141-4278-8a09-3b41ac53194d-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The library was formerly a railway station.",
+      "sentenceZh": "这座图书馆以前是一座火车站。",
+      "scene": "Two equal panels same distinctive brick building arch windows clock-free roof: past railway station platform with plain train parked outside and waiting benches; present building as public library with bookshelves visible same windows readers inside, rails replaced by accessible walkway. Identical architecture no clocks signs text logos.",
+      "altText": "相同砖楼先是站台旁的车站，后来改成有书架的图书馆。",
+      "riskTags": [
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "6e56ae79-9cfd-4367-a663-a69d52939219",
+      "word": "denounce",
+      "meaningZh": "谴责；指责；告发",
+      "exampleId": "6e56ae79-9cfd-4367-a663-a69d52939219-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The residents gathered to denounce the dumping of waste.",
+      "sentenceZh": "居民们聚集起来谴责倾倒废物的行为。",
+      "scene": "Fictional public environmental meeting beside river illegal dumped plain rubbish bags, adult resident firmly addresses assembled neighbors with disapproving expression and points at waste, audience listens serious, no mob violence placards speech bubbles emblems or letters. Criticism clear not merely cleanup.",
+      "altText": "居民在河边集会，发言者严肃指出倾倒的垃圾。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "bdfc85a5-b2c7-4a64-83e2-607f9dbc8ea6",
+      "word": "peasant",
+      "meaningZh": "农民",
+      "exampleId": "bdfc85a5-b2c7-4a64-83e2-607f9dbc8ea6-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The peasant harvested grain from a small field.",
+      "sentenceZh": "农民在一小块田地里收割谷物。",
+      "scene": "Historical fictional Chinese rural peasant dignified adult in plain practical traditional clothing harvesting ripe grain on small family field, hands safely gather stalks, coherent sickle natural face, no poverty caricature copied historic event text.",
+      "altText": "身着朴素衣服的农民在小块田地里收割成熟谷物。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b6c028e3-efa5-435d-b909-573d80b61f35",
+      "word": "dentist",
+      "meaningZh": "牙医",
+      "exampleId": "b6c028e3-efa5-435d-b909-573d80b61f35-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The dentist showed the patient a model of a tooth.",
+      "sentenceZh": "牙医向患者展示了一颗牙齿的模型。",
+      "scene": "Friendly adult dentist fully visible unmasked complete face demonstrates large single tooth teaching model to adult patient before examination in clean dental clinic, gloves, recognizable dental chair lamp and tools stored, no procedure blood claims writing brands.",
+      "altText": "牙医在诊疗椅旁向患者展示牙齿模型。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2cd70b42-8b50-49f3-9ece-00d80c9909d4",
+      "word": "neat",
+      "meaningZh": "整洁的；巧妙的；匀称的；简洁的",
+      "exampleId": "2cd70b42-8b50-49f3-9ece-00d80c9909d4-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The tools were kept in a neat row.",
+      "sentenceZh": "工具整齐地排成一行。",
+      "scene": "Chinese woodworking workshop hand tools carefully aligned on clean tabletop, chisels handled planes and small mallet each separate and orderly, scraps swept aside, no person writing logos.",
+      "altText": "木工工具在干净工作台上整齐排列。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "7c96c937-0740-4ca4-b80e-53583e53b9a9",
+      "word": "dependence",
+      "meaningZh": "依赖；依靠；依存",
+      "exampleId": "7c96c937-0740-4ca4-b80e-53583e53b9a9-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The seedlings’ dependence on water was clear.",
+      "sentenceZh": "幼苗对水的依赖显而易见。",
+      "scene": "Two-panel same seedling bed: first no water visibly dry soil seedlings wilting, second watering hand gently waters exact same rooted seedlings soil darkens leaves recover. Clear life dependence on water through causal sequence no icons arrows writing miraculous instant huge growth.",
+      "altText": "同一苗床缺水时幼苗萎蔫，浇水后叶片恢复挺立。",
+      "riskTags": [
+        "cause_effect",
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "981eefeb-26a1-457d-8ad1-b2519bfa4858",
+      "word": "grandparent",
+      "meaningZh": "祖父母",
+      "exampleId": "981eefeb-26a1-457d-8ad1-b2519bfa4858-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Her grandparent taught her to fold a paper crane.",
+      "sentenceZh": "她的祖父教她折纸鹤。",
+      "scene": "Chinese home elderly grandfather gently teaches school-age granddaughter paper crane folding at table, one finished origami crane beside half folded paper, clear ages full faces hands no writing.",
+      "altText": "祖父和孙女坐在桌边，一起学习折纸鹤。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "93d68413-1894-4a8e-8593-faa4ece25a32",
+      "word": "depressing",
+      "meaningZh": "令人沮丧的；压抑的",
+      "exampleId": "93d68413-1894-4a8e-8593-faa4ece25a32-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The neglected park was a depressing sight.",
+      "sentenceZh": "荒废的公园景象令人沮丧。",
+      "scene": "Neglected park with broken bench litter and weeds under gray sky, adult visitor looks saddened and begins placing rubbish into bag, atmosphere subdued but constructive response, no trauma hazard self harm text.",
+      "altText": "灰暗公园里有杂草和破损长椅，访客神情低落地拾起垃圾。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f6386648-b87a-4728-abe1-23ccf1bd0caa",
+      "word": "lawmaker",
+      "meaningZh": "立法者",
+      "exampleId": "f6386648-b87a-4728-abe1-23ccf1bd0caa-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The lawmaker listened to residents before drafting the proposal.",
+      "sentenceZh": "立法者在起草提案前听取了居民意见。",
+      "scene": "Fictional legislative committee room adult lawmaker at desk attentively hears residents describing wheelchair access problem using simple scale building with steps and alternative ramp, background curved chamber seating suggests legislature, blank papers no seals flags badges text names or political party symbols.",
+      "altText": "立法者在议事室倾听居民对建筑无障碍设施的意见。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "92b92067-c5c3-4a3a-9ded-58acf08fe66e",
+      "word": "deprive",
+      "meaningZh": "剥夺；使丧失",
+      "exampleId": "92b92067-c5c3-4a3a-9ded-58acf08fe66e-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The new wall deprived the seedlings of sunlight.",
+      "sentenceZh": "新墙使幼苗失去了阳光。",
+      "scene": "Two-panel same garden seedling row sun from left: first seedlings lit warm sunlight; second newly erected opaque wall between sun and seedlings casts deep coherent shadow across entire seedlings, daylight still bright beyond wall. No labels faces or text.",
+      "altText": "苗床原本照到阳光，新墙建起后遮住阳光并投下阴影。",
+      "riskTags": [
+        "cause_effect",
+        "before_after",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "2fdaa678-06ad-4a13-9b74-61806bea3293",
+      "word": "supermarket",
+      "meaningZh": "超级市场；自助售货商店",
+      "exampleId": "2fdaa678-06ad-4a13-9b74-61806bea3293-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "They bought vegetables at the supermarket.",
+      "sentenceZh": "他们在超市买了蔬菜。",
+      "scene": "Modern self-service supermarket spacious aisles unmarked packaged goods in background fresh produce bins foreground, two adults choose vegetables into wheeled shopping cart, no readable shelf tags menus prices brands lettering.",
+      "altText": "顾客在超市蔬菜区挑选食材，旁边停着购物车。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "1f042f13-04af-47ae-9e85-6613e11ef245",
+      "word": "cruise",
+      "meaningZh": "巡航；巡弋；漫游",
+      "exampleId": "1f042f13-04af-47ae-9e85-6613e11ef245-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "We took a cruise along the coast.",
+      "sentenceZh": "我们沿海岸乘船游览。",
+      "scene": "Illustrated small leisure cruise vessel glides calmly parallel scenic coastline, visitors on open observation deck relaxed looking at cliffs, unmistakable leisure passenger boat no ship names logos flags lettering, no catastrophe.",
+      "altText": "观光船沿平静海岸航行，乘客在甲板欣赏风景。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "cfc94301-12f8-4323-be60-66dd79a5f931",
+      "word": "descent",
+      "meaningZh": "下降；血统；出身",
+      "exampleId": "cfc94301-12f8-4323-be60-66dd79a5f931-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The hikers began their descent into the valley.",
+      "sentenceZh": "远足者开始向山谷下行。",
+      "scene": "Three adult hikers on clearly descending safe switchback trail, foreground trail starts high left drops to lower right into visible valley, lead hiker visibly stepping down facing downslope with trekking pole, natural coherent feet faces, no dangerous cliff edge signs text.",
+      "altText": "远足者沿逐级降低的山路走向山谷。",
+      "riskTags": [
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "90480c46-74cb-4318-83ef-cd8fb7502d67",
+      "word": "designate",
+      "meaningZh": "指定；指派；命名",
+      "exampleId": "90480c46-74cb-4318-83ef-cd8fb7502d67-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "They decided to designate a corner for recycling.",
+      "sentenceZh": "他们决定划出一个角落用于回收。",
+      "scene": "Chinese community courtyard meeting organizer points to empty corner while teammate places plain separate recycling bins there, pictorial bottles paper visible in bins no symbols signs colors-coded instructions writing. Intentional selection of specific place clear.",
+      "altText": "负责人指向庭院角落，队友把回收容器安放在那里。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "98bdf0e2-62cd-4594-b00a-b8daee49e7f0",
+      "word": "mobile",
+      "meaningZh": "移动的；易变的；机动的；活动物体",
+      "exampleId": "98bdf0e2-62cd-4594-b00a-b8daee49e7f0-visual-ex",
+      "styleFamily": "stop-motion-inspired handcrafted illustration",
+      "sentenceEn": "The mobile library visited the village.",
+      "sentenceZh": "流动图书馆来到村庄。",
+      "scene": "Handcrafted illustrated mobile library van parked in village with fold-open side revealing filled bookshelves and lending desk, adult librarian hands closed blank spine book to adult visitor, visible wheels and village houses no words logos emblems.",
+      "altText": "装有书架的流动图书馆车停在村庄，管理员递出图书。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2c2c5804-5710-442d-aafa-cc717f7e74a5",
+      "word": "desirable",
+      "meaningZh": "可取的；理想的；有吸引力的",
+      "exampleId": "2c2c5804-5710-442d-aafa-cc717f7e74a5-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "A sunny room was desirable for growing seedlings.",
+      "sentenceZh": "种植幼苗时，有阳光的房间是理想选择。",
+      "scene": "Adult plant grower evaluates two adjacent room spaces, sunny windowed space with healthy green seedlings and dark windowless alcove with drooping seedlings, points purposefully to sunny room expression thoughtful, natural faces no thumbs-up symbols text.",
+      "altText": "种植者比较明暗空间，选择窗边阳光充足的育苗房间。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3c0f99d4-b336-41bd-8857-6aab69e9efea",
+      "word": "desktop",
+      "meaningZh": "桌面；台式电脑",
+      "exampleId": "3c0f99d4-b336-41bd-8857-6aab69e9efea-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "She placed the monitor on the desktop.",
+      "sentenceZh": "她把显示器放在桌面上。",
+      "scene": "Illustrated adult gently places plain monitor onto clear wooden desktop, desk surface prominent perspective with keyboard nearby screen dark no interface letters keys symbols brand logos. Coherent hands monitor stand touching desktop.",
+      "altText": "她把没有文字的显示器放到木桌桌面上。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

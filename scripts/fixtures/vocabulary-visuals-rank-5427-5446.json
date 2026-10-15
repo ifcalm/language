@@ -1,0 +1,323 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5427-5446",
+  "batchId": "auto-rank-5427-5446-20261006",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 7,
+    "words": [
+      "viewpoint",
+      "vow",
+      "waiter",
+      "warming",
+      "washing",
+      "whereby",
+      "wildlife"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "3a48199e-f4f3-474c-9c26-2d6e0869648c",
+      "word": "viewpoint",
+      "meaningZh": "观点",
+      "exampleId": "3a48199e-f4f3-474c-9c26-2d6e0869648c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She listened carefully to his viewpoint.",
+      "sentenceZh": "她认真听取他的观点。",
+      "scene": "Two adults discuss a garden design in a Chinese courtyard, one explains with open hands while other listens attentively, blank plan. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "两人在院落讨论设计，一人表达想法，另一人倾听。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "8d8fc159-8949-41cc-a9b9-76f3b35483a4",
+      "word": "visa",
+      "meaningZh": "签证",
+      "exampleId": "8d8fc159-8949-41cc-a9b9-76f3b35483a4-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "Her visa allowed her to enter the country.",
+      "sentenceZh": "签证允许她进入这个国家。",
+      "scene": "Adult traveler presents open passport with plain abstract visa panel to border officer, both clear faces, no readable documents flags or badges. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "旅客向入境工作人员出示护照中的签证。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9b98f738-ce24-4e09-af8e-85d36dd2ec9b",
+      "word": "vow",
+      "meaningZh": "誓言",
+      "exampleId": "9b98f738-ce24-4e09-af8e-85d36dd2ec9b-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "He kept his vow to care for the tree.",
+      "sentenceZh": "他履行了照料这棵树的誓言。",
+      "scene": "Two panels same Chinese gardener and same young tree: earnest promise with hand on chest, then regular watering of thriving tree. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "园丁郑重许诺，随后坚持为同一棵树浇水。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "reference",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "b18b8eca-ccab-4d83-8110-995b3d337b56",
+      "word": "vulnerability",
+      "meaningZh": "脆弱性",
+      "exampleId": "b18b8eca-ccab-4d83-8110-995b3d337b56-visual-ex",
+      "styleFamily": "watercolor nature",
+      "sentenceEn": "The nest’s vulnerability increased during the storm.",
+      "sentenceZh": "鸟巢在暴风雨中更加脆弱。",
+      "scene": "Small bird nest with eggs exposed on thin branch bending in strong wind and rain, emphasize fragility without destruction. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "细枝上的鸟巢暴露在风雨中，显得脆弱。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "daf449d6-6f36-4b47-8db2-6d8e28d1d4c3",
+      "word": "waiter",
+      "meaningZh": "服务员",
+      "exampleId": "daf449d6-6f36-4b47-8db2-6d8e28d1d4c3-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The waiter brought a bowl of soup.",
+      "sentenceZh": "服务员端来一碗汤。",
+      "scene": "Adult waiter carefully serves hot soup to diner in Chinese restaurant, natural hands complete expressive faces plain tableware. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "餐馆服务员小心把汤端给顾客。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "17cc8989-fff0-4e27-8df9-4f2185c06424",
+      "word": "ward",
+      "meaningZh": "病房；行政区；监护",
+      "exampleId": "17cc8989-fff0-4e27-8df9-4f2185c06424-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The nurse opened the window in the ward.",
+      "sentenceZh": "护士打开病房的窗户。",
+      "scene": "Calm shared hospital ward with beds and resting clothed adults, nurse opens window, complete readable faces, no text medical instructions. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "护士打开病房窗户，病人安静休息。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d9421055-cd00-40ff-a8b3-888976a23f69",
+      "word": "warfare",
+      "meaningZh": "战争",
+      "exampleId": "d9421055-cd00-40ff-a8b3-888976a23f69-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Warfare forced the villagers to leave their homes.",
+      "sentenceZh": "战争迫使村民离开家园。",
+      "scene": "Fictional distant conflict landscape, distant smoke and damaged empty houses, civilian adults walk toward safety carrying bags, clear faces no weapons gore flags. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "战争中的村民带着行李离开冒烟的村庄。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "84cb9a05-f36c-479b-9367-2458494a6788",
+      "word": "warming",
+      "meaningZh": "变暖",
+      "exampleId": "84cb9a05-f36c-479b-9367-2458494a6788-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "Spring warming melted the ice on the pond.",
+      "sentenceZh": "春季变暖融化了池塘冰面。",
+      "scene": "Two panels same Chinese garden pond winter ice then spring thaw with melting ice edges and budding willow, no people. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "同一池塘从冬日结冰变成春日冰面消融。",
+      "riskTags": [
+        "Chinese_culture",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "83847df7-c666-4760-8eab-3f2ef680f659",
+      "word": "washing",
+      "meaningZh": "洗涤",
+      "exampleId": "83847df7-c666-4760-8eab-3f2ef680f659-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Washing the bowls kept the kitchen clean.",
+      "sentenceZh": "洗碗让厨房保持干净。",
+      "scene": "Adult at sink washes ceramic bowls with soap water, tactile domestic Chinese kitchen, full face natural hands. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "厨房里的人用水和泡沫清洗陶碗。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "04a2a416-b31e-41f5-8b14-63af606bbc5a",
+      "word": "website",
+      "meaningZh": "网站",
+      "exampleId": "04a2a416-b31e-41f5-8b14-63af606bbc5a-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The website displayed photos of the garden.",
+      "sentenceZh": "网站展示了花园照片。",
+      "scene": "Laptop clearly showing a coherent website layout of garden photo thumbnails and blank navigation shapes, no letters numbers or logos, human-free desk. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "笔记本电脑的网站页面展示多张花园照片。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3cc55ec3-e63b-4f62-88a1-92e62d6ec0cc",
+      "word": "wednesday",
+      "meaningZh": "星期三",
+      "exampleId": "3cc55ec3-e63b-4f62-88a1-92e62d6ec0cc-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "On Wednesday, she visited the library.",
+      "sentenceZh": "星期三，她去了图书馆。",
+      "scene": "Adult browsing quiet library shelves, full thoughtful face, all book spines and calendar-free scene blank, weekday supplied by sentence. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "女子在安静的图书馆挑选书籍。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "aa6f8a01-4835-4228-8850-4c65e806e44a",
+      "word": "whatsoever",
+      "meaningZh": "任何",
+      "exampleId": "aa6f8a01-4835-4228-8850-4c65e806e44a-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The empty jar contained no water whatsoever.",
+      "sentenceZh": "空罐子里没有任何水。",
+      "scene": "Close view of transparent empty glass jar, visibly dry bottom and interior, no droplets liquid people text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "透明空罐的内部与底部完全干燥。",
+      "riskTags": [
+        "exact_quantity",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c9bb8953-ff5a-43de-a3fe-cd79b9938d2e",
+      "word": "whereby",
+      "meaningZh": "凭此；由此；借以",
+      "exampleId": "c9bb8953-ff5a-43de-a3fe-cd79b9938d2e-visual-ex",
+      "styleFamily": "paper-cut cutaway",
+      "sentenceEn": "They built a channel whereby rainwater reached the garden.",
+      "sentenceZh": "他们修建水渠，借此把雨水引到花园。",
+      "scene": "Coherent Chinese courtyard rooftop gutter feeds downhill channel carrying rainwater directly to planted garden beds, visible continuous water path no arrows. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "屋檐雨水沿连续水渠流入花园。",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "3cd4d5a6-c1d8-407e-baa9-df5c87e080f8",
+      "word": "wholly",
+      "meaningZh": "完全地",
+      "exampleId": "3cd4d5a6-c1d8-407e-baa9-df5c87e080f8-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The kitten was wholly inside the basket.",
+      "sentenceZh": "小猫完全在篮子里。",
+      "scene": "Entire curled kitten contained inside roomy open basket, every paw tail ear below and within rim, side angle clear spatial boundary. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "蜷着的小猫全身都在篮子边界之内。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "07c82aba-7283-4f9d-8545-dfa45b6ae85e",
+      "word": "widen",
+      "meaningZh": "加宽",
+      "exampleId": "07c82aba-7283-4f9d-8545-dfa45b6ae85e-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "They widened the narrow footpath.",
+      "sentenceZh": "他们加宽了狭窄小路。",
+      "scene": "Two panels same garden footpath with fixed trees landmarks: narrow path first then distinctly broader path after careful work, human-free no arrows. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "同一花园小路由窄变宽，周围树木位置不变。",
+      "riskTags": [
+        "before_after",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "310d70e6-4da8-4c24-b603-60fd6acb241b",
+      "word": "width",
+      "meaningZh": "宽度",
+      "exampleId": "310d70e6-4da8-4c24-b603-60fd6acb241b-visual-ex",
+      "styleFamily": "paper-cut illustration",
+      "sentenceEn": "She measured the width of the table.",
+      "sentenceZh": "她测量桌子的宽度。",
+      "scene": "Overhead oblique view of a long narrow rectangular table. A carpenter stretches a completely blank unmarked ribbon left to right across its short transverse dimension. Entire table visible, width clearly distinguished from length. Full expressive eyes nose mouth. No readable text letters numbers tick marks logos or watermarks.",
+      "altText": "木匠沿长方桌短边方向测量宽度。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "daac6f09-ab3e-4f73-b218-f945c411e4d3",
+      "word": "wildlife",
+      "meaningZh": "野生动植物",
+      "exampleId": "daac6f09-ab3e-4f73-b218-f945c411e4d3-visual-ex",
+      "styleFamily": "watercolor nature",
+      "sentenceEn": "The wetland provided a home for wildlife.",
+      "sentenceZh": "湿地为野生动植物提供栖息地。",
+      "scene": "Natural Chinese wetland reeds waterbirds fish frogs and wild plants in coherent ecosystem, no humans feeding captive animals. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "湿地中水鸟、鱼、青蛙和野生植物共存。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "7aea4fbc-d8b1-411c-906e-77ba23e8e429",
+      "word": "wit",
+      "meaningZh": "机智；风趣；智慧",
+      "exampleId": "7aea4fbc-d8b1-411c-906e-77ba23e8e429-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Her wit made everyone laugh.",
+      "sentenceZh": "她的风趣逗得大家笑起来。",
+      "scene": "Adult tells witty story at small dinner gathering, expressive lively speaker and natural laughing listeners, no speech bubbles or symbols. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "女子风趣地讲故事，身边听者笑起来。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6ab354a3-ee28-4289-9d05-822f575f6e89",
+      "word": "wool",
+      "meaningZh": "羊毛",
+      "exampleId": "6ab354a3-ee28-4289-9d05-822f575f6e89-visual-ex",
+      "styleFamily": "textile still life",
+      "sentenceEn": "The scarf was made of soft wool.",
+      "sentenceZh": "这条围巾用柔软羊毛制成。",
+      "scene": "Rich tactile still life soft wool scarf beside wool yarn skeins and clean loose fleece, visibly fibrous texture, no people labels. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "柔软羊毛围巾旁放着毛线团和羊毛纤维。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "ad1f3e6d-527a-4110-989e-49557e85f0d4",
+      "word": "workforce",
+      "meaningZh": "劳动力",
+      "exampleId": "ad1f3e6d-527a-4110-989e-49557e85f0d4-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The skilled workforce repaired the bridge.",
+      "sentenceZh": "熟练工人们修复了桥梁。",
+      "scene": "Diverse adult workers cooperate on safe bridge repair, sensible safety equipment full faces, construction workforce collective focus no signs. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "工人们分工合作修复桥梁。",
+      "riskTags": [
+        "people_face"
+      ]
+    }
+  ]
+}

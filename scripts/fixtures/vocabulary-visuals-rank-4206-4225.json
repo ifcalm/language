@@ -1,0 +1,328 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4206-4225",
+  "batchId": "auto-rank-4206-4225-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "august",
+      "authentic",
+      "journalism",
+      "backdrop",
+      "dip",
+      "backing"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "f9be6fb1-1e08-40f7-b53b-5758f3889d3b",
+      "word": "aggression",
+      "meaningZh": "侵犯；侵略；攻击",
+      "exampleId": "f9be6fb1-1e08-40f7-b53b-5758f3889d3b-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The guard stopped the aggression at the gate.",
+      "sentenceZh": "守卫制止了门口的攻击行为。",
+      "scene": "Fictional community gate, angry adult forcefully shoves against the gate toward a startled visitor; calm guard steps between and uses open hand to stop confrontation. Aggressive action visible, constructive de-escalation central, no weapon, injury, real uniforms or words.",
+      "altText": "门口一名成人用力推挤，守卫介入制止冲突。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "7e50b767-494e-4880-b158-856e7c471330",
+      "word": "august",
+      "meaningZh": "八月；威严的",
+      "exampleId": "7e50b767-494e-4880-b158-856e7c471330-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The lotus pond was beautiful in August.",
+      "sentenceZh": "八月的荷塘很美。",
+      "scene": "Chinese summer lotus pond, large round leaves and fully blooming pink lotus in warm late-summer sunshine, dragonflies above water, no calendar or written month. Sentence supplies August specificity.",
+      "altText": "盛夏中国荷塘里，粉色荷花开放，蜻蜓飞舞。",
+      "riskTags": [
+        "seasonal_context"
+      ]
+    },
+    {
+      "vocabularyId": "405fdda5-28ab-41bb-ac38-599528e85e74",
+      "word": "authentic",
+      "meaningZh": "真实的；可靠的；正宗的",
+      "exampleId": "405fdda5-28ab-41bb-ac38-599528e85e74-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The museum displayed an authentic handmade teapot.",
+      "sentenceZh": "博物馆展出了一把真正手工制作的茶壶。",
+      "scene": "Chinese ceramics museum, original handmade clay teapot displayed beside illustrated archival image of artisan shaping that same distinctive teapot. Matching thumb-made texture and shape, no authenticity certificate, readable labels or known artwork.",
+      "altText": "博物馆中的手工茶壶与制作过程图对应。",
+      "riskTags": [
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "28c8f1a4-7fea-4efa-8599-e816a87d149c",
+      "word": "stimulus",
+      "meaningZh": "刺激；刺激物",
+      "exampleId": "28c8f1a4-7fea-4efa-8599-e816a87d149c-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Light was the stimulus that made the seedling bend.",
+      "sentenceZh": "光是使幼苗弯向一侧的刺激。",
+      "scene": "Two-stage same potted seedling: initial upright stem, later gently bending toward a single side light source. Clear light rays and plant response, no added chemical or words.",
+      "altText": "幼苗由直立逐渐弯向侧边光源，显示对光的反应。",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "d466ae43-ea9f-4676-92a3-eef248e48dc7",
+      "word": "autumn",
+      "meaningZh": "秋天；秋季",
+      "exampleId": "d466ae43-ea9f-4676-92a3-eef248e48dc7-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The forest turned orange in autumn.",
+      "sentenceZh": "秋天，森林变成橙色。",
+      "scene": "Broad deciduous forest with orange, amber and red foliage, fallen leaves covering a quiet path, crisp autumn light, no people or written signs.",
+      "altText": "秋季森林呈橙红色，落叶铺满小径。",
+      "riskTags": [
+        "seasonal_context"
+      ]
+    },
+    {
+      "vocabularyId": "aa49c380-8e8c-4c94-a482-75f40b8358b7",
+      "word": "journalism",
+      "meaningZh": "新闻业；新闻学",
+      "exampleId": "aa49c380-8e8c-4c94-a482-75f40b8358b7-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Journalism requires careful checking of facts.",
+      "sentenceZh": "新闻工作需要仔细核实事实。",
+      "scene": "Chinese local newsroom, reporter compares a text-free interview recording waveform, photos of a neighborhood event and pictorial notes with a colleague before publishing. Listening headphones and evidence comparison central, no readable news text or logos.",
+      "altText": "记者与同事对照采访录音、照片与记录，核实事实。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5d210a4e-f25a-4248-8cc4-ad9e56a721bb",
+      "word": "awesome",
+      "meaningZh": "极好的；令人敬畏的",
+      "exampleId": "5d210a4e-f25a-4248-8cc4-ad9e56a721bb-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The mountain view was awesome.",
+      "sentenceZh": "山景令人惊叹。",
+      "scene": "Dramatic vast mountain vista with towering illuminated peaks and deep valleys, two small hikers safely at scenic overlook express quiet awe, no danger, text or exaggerated victory.",
+      "altText": "高耸山峰与深谷壮观开阔，游客静静赞叹。",
+      "riskTags": [
+        "people_face",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "bf3a2afa-4ca5-4159-8f4b-8e883e60189a",
+      "word": "robot",
+      "meaningZh": "机器人",
+      "exampleId": "bf3a2afa-4ca5-4159-8f4b-8e883e60189a-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The robot sorted the packages.",
+      "sentenceZh": "机器人分拣包裹。",
+      "scene": "Clearly illustrated industrial robotic arm with functional gripper sorting plain small packages from conveyor into separate bins by geometric color shapes. No humanoid face, labels, digits or brand, safe fenced work cell.",
+      "altText": "机械臂用夹爪把传送带上的包裹分入不同箱子。",
+      "riskTags": [
+        "technical_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "2422c97a-dc38-43c6-9ddb-6a1db33274ea",
+      "word": "awkward",
+      "meaningZh": "尴尬的；笨拙的",
+      "exampleId": "2422c97a-dc38-43c6-9ddb-6a1db33274ea-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The long silence felt awkward.",
+      "sentenceZh": "长时间的沉默令人尴尬。",
+      "scene": "Two adults sitting across a small cafe table look shyly aside with restrained awkward expressions, hands fidgeting near cups and uncomfortable pause visible. Complete natural faces, no speech bubbles or written text.",
+      "altText": "咖啡桌两侧的人避开目光，沉默中有些局促。",
+      "riskTags": [
+        "people_face",
+        "emotion"
+      ]
+    },
+    {
+      "vocabularyId": "23788732-5699-4e22-92a1-5a74c45dd8af",
+      "word": "backdrop",
+      "meaningZh": "背景；背景幕",
+      "exampleId": "23788732-5699-4e22-92a1-5a74c45dd8af-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The dancers performed against a painted backdrop.",
+      "sentenceZh": "舞者在绘画背景幕前表演。",
+      "scene": "Small Chinese community theater stage, two adult dancers perform in foreground, behind them a clearly FLAT painted landscape curtain hung from a visible stage rod, curtain edges and folds identify theatrical backdrop, no writing.",
+      "altText": "社区舞台上，舞者在悬挂的平面山水背景幕前表演。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "054d21ed-1b80-4810-a714-2841b7d3eb0b",
+      "word": "dip",
+      "meaningZh": "浸；降下；把(手、勺等)伸入；舀取",
+      "exampleId": "054d21ed-1b80-4810-a714-2841b7d3eb0b-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Dip the brush into the paint.",
+      "sentenceZh": "把画笔蘸进颜料里。",
+      "scene": "Chinese painting workshop close-up, adult hand lowers soft brush tip partly into a small shallow bowl of blue pigment, tip visibly below paint surface with upper brush dry; blank paper nearby. No calligraphy or writing.",
+      "altText": "手握画笔，将笔尖浸入蓝色颜料碗。",
+      "riskTags": [
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c3f0fa1d-1b28-4923-a173-eebd1337dafa",
+      "word": "backing",
+      "meaningZh": "支持；后盾；伴奏",
+      "exampleId": "c3f0fa1d-1b28-4923-a173-eebd1337dafa-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The project succeeded with the community’s backing.",
+      "sentenceZh": "项目在社区支持下取得了成功。",
+      "scene": "Chinese neighborhood garden project, community members provide tools, seedlings and practical help to the organizer as garden beds become complete. Visible collective backing through resources, no applause-only scene, signs or text.",
+      "altText": "社区成员提供工具、幼苗与劳力，支持花园项目完成。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c027b39c-3002-4e45-b591-3ba4e629bc10",
+      "word": "likewise",
+      "meaningZh": "同样地；也",
+      "exampleId": "c027b39c-3002-4e45-b591-3ba4e629bc10-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She planted a tree, and her neighbor did likewise.",
+      "sentenceZh": "她种了一棵树，邻居也这样做了。",
+      "scene": "Two-panel parallel action: woman plants sapling in her yard; neighbor in adjacent yard performs the same planting action with own sapling. Similar action and distinct people, simple shared fence for reference, no writing or symbols.",
+      "altText": "女子种下树苗，邻院的人也用相同方式种树。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "57b1efea-f8ce-4cd8-8992-434813304dbe",
+      "word": "backward",
+      "meaningZh": "向后的；落后的",
+      "exampleId": "57b1efea-f8ce-4cd8-8992-434813304dbe-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "He took a step backward to make room.",
+      "sentenceZh": "他向后退了一步，腾出空间。",
+      "scene": "Two-panel same adult at a doorway facing forward; a visitor approaches from front, man steps directly backward away from threshold without turning around to give room. Fixed door and foot positions make backwards motion clear, no text.",
+      "altText": "男子保持面向来客，向后退一步让开门口。",
+      "riskTags": [
+        "people_face",
+        "sequence",
+        "reference",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "b33e7baf-a137-4df2-8114-9682f9375540",
+      "word": "informal",
+      "meaningZh": "非正式的；不拘礼的；通俗的",
+      "exampleId": "b33e7baf-a137-4df2-8114-9682f9375540-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "They had an informal meeting in the park.",
+      "sentenceZh": "他们在公园里开了一次非正式会议。",
+      "scene": "Small group of adult coworkers in casual varied clothes sit around a park picnic table discussing a simple sketch, relaxed posture and natural interaction, no formal podium, suits, readable notes or logos.",
+      "altText": "穿休闲服的同事围坐公园桌边，轻松讨论。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "da67c8b1-8b0a-4413-a9a0-b14a7908925e",
+      "word": "Persian",
+      "meaningZh": "波斯的；波斯语",
+      "exampleId": "da67c8b1-8b0a-4413-a9a0-b14a7908925e-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The Persian carpet had a detailed floral pattern.",
+      "sentenceZh": "波斯地毯上有精细的花卉纹样。",
+      "scene": "Richly illustrated traditional Persian carpet displayed flat with intricate symmetrical floral motifs, central medallion and woven border, tactile wool threads. Respectful craft depiction without stereotyped people, no lettering or famous copyrighted pattern.",
+      "altText": "波斯地毯具有对称花卉纹样、中央图案与精细边框。",
+      "riskTags": [
+        "object_focus",
+        "cultural_context"
+      ]
+    },
+    {
+      "vocabularyId": "4ce41a75-2b34-45d5-9185-779814a2896b",
+      "word": "badge",
+      "meaningZh": "徽章；标志；证章",
+      "exampleId": "4ce41a75-2b34-45d5-9185-779814a2896b-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The volunteer wore a badge on her jacket.",
+      "sentenceZh": "志愿者在外套上佩戴徽章。",
+      "scene": "Close medium view of adult volunteer in Chinese community center, a clearly attached small round badge with simple leaf pictogram pinned to jacket lapel, no words, official emblem or numbers. Badge central, complete natural face.",
+      "altText": "社区志愿者外套翻领上别着带叶片图案的圆形徽章。",
+      "riskTags": [
+        "people_face",
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "d4231018-1891-4a3a-a2d9-c64bda0993f2",
+      "word": "ballet",
+      "meaningZh": "芭蕾舞",
+      "exampleId": "d4231018-1891-4a3a-a2d9-c64bda0993f2-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The dancers practiced ballet at the barre.",
+      "sentenceZh": "舞者在扶杆旁练习芭蕾舞。",
+      "scene": "Adult ballet students in a studio practice safe basic tendu beside a fixed barre, one leg extends with pointed foot on floor, supporting posture and complete faces; no impossible anatomy, extreme pointe pose or writing.",
+      "altText": "成人芭蕾舞学习者在扶杆旁伸腿绷脚练习。",
+      "riskTags": [
+        "people_face",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "64f56f3b-0a69-4773-b33d-57f062af6717",
+      "word": "feather",
+      "meaningZh": "羽毛；长羽毛",
+      "exampleId": "64f56f3b-0a69-4773-b33d-57f062af6717-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "A feather floated down from the bird.",
+      "sentenceZh": "一根羽毛从鸟身上飘落。",
+      "scene": "A single clearly structured soft feather with central shaft and delicate barbs floats in foreground while a healthy bird flies above in background. No plucking, injury, extra feathers or text.",
+      "altText": "一根带羽轴与羽枝的羽毛轻轻飘落，鸟在上方飞行。",
+      "riskTags": [
+        "exact_quantity",
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "941f8ee7-2ba3-4969-ae2c-a69642412726",
+      "word": "banner",
+      "meaningZh": "横幅；旗帜",
+      "exampleId": "941f8ee7-2ba3-4969-ae2c-a69642412726-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "They hung a colorful banner above the entrance.",
+      "sentenceZh": "他们在入口上方挂起彩色横幅。",
+      "scene": "Community festival entrance, two adults stand safely on level ground using poles to hang a long horizontal fabric banner between fixed hooks above the doorway. Banner has decorative geometric colors only, no words, flags or logos.",
+      "altText": "两人用杆把带几何色块的长条布横幅挂在入口上方。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}
