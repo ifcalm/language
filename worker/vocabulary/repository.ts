@@ -11,79 +11,7 @@ import type {
   VocabVisualRow,
 } from './types'
 
-const lookupBatchSize = 90
-
-export async function getPronunciationsByVocabularyIds(
-  env: Env,
-  vocabularyIds: string[],
-) {
-  if (vocabularyIds.length === 0) {
-    return new Map<string, ReturnType<typeof mapPronunciationRow>[]>()
-  }
-
-  const pronunciationsById = new Map<
-    string,
-    ReturnType<typeof mapPronunciationRow>[]
-  >()
-
-  for (let index = 0; index < vocabularyIds.length; index += lookupBatchSize) {
-    const batchIds = vocabularyIds.slice(index, index + lookupBatchSize)
-    const placeholders = batchIds.map(() => '?').join(', ')
-    const { results } = await env.DB.prepare(
-      `SELECT id, vocabulary_id, word, phonetic, audio_url, created_at, updated_at
-      FROM vocab_pronunciations
-      WHERE vocabulary_id IN (${placeholders})
-      ORDER BY vocabulary_id ASC, id ASC`,
-    )
-      .bind(...batchIds)
-      .all<VocabPronunciationRow>()
-
-    for (const row of results) {
-      const current = pronunciationsById.get(row.vocabulary_id) ?? []
-      current.push(mapPronunciationRow(row))
-      pronunciationsById.set(row.vocabulary_id, current)
-    }
-  }
-
-  return pronunciationsById
-}
-
-export async function getExamplesByVocabularyIds(
-  env: Env,
-  vocabularyIds: string[],
-) {
-  if (vocabularyIds.length === 0) {
-    return new Map<string, ReturnType<typeof mapExampleRow>[]>()
-  }
-
-  const examplesById = new Map<string, ReturnType<typeof mapExampleRow>[]>()
-
-  for (let index = 0; index < vocabularyIds.length; index += lookupBatchSize) {
-    const batchIds = vocabularyIds.slice(index, index + lookupBatchSize)
-    const placeholders = batchIds.map(() => '?').join(', ')
-    const { results } = await env.DB.prepare(
-      `SELECT id, vocabulary_id, word, sentence_en, sentence_zh, created_at, updated_at
-      FROM vocab_examples
-      WHERE vocabulary_id IN (${placeholders})
-      ORDER BY vocabulary_id ASC, id ASC`,
-    )
-      .bind(...batchIds)
-      .all<VocabExampleRow>()
-
-    for (const row of results) {
-      const current = examplesById.get(row.vocabulary_id) ?? []
-      current.push(mapExampleRow(row))
-      examplesById.set(row.vocabulary_id, current)
-    }
-  }
-
-  return examplesById
-}
-
-export async function getVocab(env: Env, vocabularyId: string) {
-  return env.DB.prepare(
-    `SELECT
-      id,
+export const VOCAB_COLUMNS = `id,
       word,
       normalized_word,
       meaning_zh,
@@ -92,62 +20,23 @@ export async function getVocab(env: Env, vocabularyId: string) {
       phonetic_us,
       phonetic_uk,
       created_at,
-      updated_at
-    FROM vocab
-    WHERE id = ?`,
-  )
-    .bind(vocabularyId)
-    .first<VocabRow>()
-}
+      updated_at`
 
-export async function getVocabularyBundle(env: Env, vocabularyId: string) {
-  const core = await getVocab(env, vocabularyId)
+export const VOCAB_ORDER = `ORDER BY COALESCE(frequency_rank, 999999) ASC, word ASC`
 
-  if (!core) {
-    return null
+export function groupByVocabularyId<
+  Row extends { vocabulary_id: string },
+  Mapped,
+>(rows: Row[], map: (row: Row) => Mapped) {
+  const grouped = new Map<string, Mapped[]>()
+
+  for (const row of rows) {
+    const current = grouped.get(row.vocabulary_id) ?? []
+    current.push(map(row))
+    grouped.set(row.vocabulary_id, current)
   }
 
-  const [pronunciations, examples, visual] = await Promise.all([
-    env.DB.prepare(
-      `SELECT id, vocabulary_id, word, phonetic, audio_url, created_at, updated_at
-      FROM vocab_pronunciations
-      WHERE vocabulary_id = ?
-      ORDER BY id ASC`,
-    )
-      .bind(vocabularyId)
-      .all<VocabPronunciationRow>(),
-    env.DB.prepare(
-      `SELECT id, vocabulary_id, word, sentence_en, sentence_zh, created_at, updated_at
-      FROM vocab_examples
-      WHERE vocabulary_id = ?
-      ORDER BY id ASC`,
-    )
-      .bind(vocabularyId)
-      .all<VocabExampleRow>(),
-    env.DB.prepare(
-      `SELECT
-        id,
-        vocabulary_id,
-        word,
-        example_id,
-        image_url,
-        alt_text,
-        created_at,
-        updated_at
-      FROM vocab_visuals
-      WHERE vocabulary_id = ?
-      LIMIT 1`,
-    )
-      .bind(vocabularyId)
-      .first<VocabVisualRow>(),
-  ])
-
-  return {
-    core: mapVocabRow(core),
-    pronunciations: pronunciations.results.map(mapPronunciationRow),
-    examples: examples.results.map(mapExampleRow),
-    visual: visual ? mapVisualRow(visual) : null,
-  }
+  return grouped
 }
 
 export async function getVocabByLookup(env: Env, lookup: string) {
@@ -158,17 +47,7 @@ export async function getVocabByLookup(env: Env, lookup: string) {
   }
 
   return env.DB.prepare(
-    `SELECT
-      id,
-      word,
-      normalized_word,
-      meaning_zh,
-      definition_en,
-      frequency_rank,
-      phonetic_us,
-      phonetic_uk,
-      created_at,
-      updated_at
+    `SELECT ${VOCAB_COLUMNS}
     FROM vocab
     WHERE id = ? OR normalized_word = ? OR lower(word) = ?
     ORDER BY
@@ -188,4 +67,75 @@ export async function getVocabByLookup(env: Env, lookup: string) {
       normalizedLookup,
     )
     .first<VocabRow>()
+}
+
+// Everything the detail page needs in a single D1 round trip. The neighbour
+// query walks the same order the list uses, so prev/next on the detail page
+// steps through the corpus exactly like scrolling the list would.
+export async function getVocabularyDetail(env: Env, core: VocabRow) {
+  const [pronunciations, examples, visual, neighbour, total] =
+    await env.DB.batch([
+      env.DB.prepare(
+        `SELECT id, vocabulary_id, word, phonetic, audio_url, created_at, updated_at
+        FROM vocab_pronunciations
+        WHERE vocabulary_id = ?
+        ORDER BY id ASC`,
+      ).bind(core.id),
+      env.DB.prepare(
+        `SELECT id, vocabulary_id, word, sentence_en, sentence_zh, created_at, updated_at
+        FROM vocab_examples
+        WHERE vocabulary_id = ?
+        ORDER BY id ASC`,
+      ).bind(core.id),
+      env.DB.prepare(
+        `SELECT
+          id,
+          vocabulary_id,
+          word,
+          example_id,
+          image_url,
+          alt_text,
+          created_at,
+          updated_at
+        FROM vocab_visuals
+        WHERE vocabulary_id = ?
+        LIMIT 1`,
+      ).bind(core.id),
+      env.DB.prepare(
+        `WITH ordered AS (
+          SELECT
+            id,
+            ROW_NUMBER() OVER w AS rn,
+            LAG(id) OVER w AS prev_id,
+            LEAD(id) OVER w AS next_id
+          FROM vocab
+          WINDOW w AS (
+            ORDER BY COALESCE(frequency_rank, 999999) ASC, word ASC
+          )
+        )
+        SELECT prev_id, next_id, rn FROM ordered WHERE id = ?`,
+      ).bind(core.id),
+      env.DB.prepare(`SELECT COUNT(*) AS total FROM vocab`),
+    ])
+
+  const visualRow = (visual.results[0] ?? null) as VocabVisualRow | null
+  const neighbourRow = (neighbour.results[0] ?? null) as {
+    prev_id: string | null
+    next_id: string | null
+    rn: number
+  } | null
+  const totalRow = (total.results[0] ?? null) as { total: number } | null
+
+  return {
+    core: mapVocabRow(core),
+    pronunciations: (pronunciations.results as VocabPronunciationRow[]).map(
+      mapPronunciationRow,
+    ),
+    examples: (examples.results as VocabExampleRow[]).map(mapExampleRow),
+    visual: visualRow ? mapVisualRow(visualRow) : null,
+    prevId: neighbourRow?.prev_id ?? null,
+    nextId: neighbourRow?.next_id ?? null,
+    position: neighbourRow?.rn ?? null,
+    total: totalRow?.total ?? null,
+  }
 }

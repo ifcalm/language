@@ -24,7 +24,7 @@ export async function handleVerbList(request: Request, env: Env) {
 
   const whereSql = where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''
   const havingSql = hasPaths ? 'HAVING COUNT(vp.id) > 0' : ''
-  const totalRow = await env.DB.prepare(
+  const countStatement = env.DB.prepare(
     hasPaths
       ? `SELECT COUNT(*) AS total FROM (
           SELECT v.id
@@ -35,11 +35,9 @@ export async function handleVerbList(request: Request, env: Env) {
           HAVING COUNT(vp.id) > 0
         )`
       : `SELECT COUNT(*) AS total FROM verbs v ${whereSql}`,
-  )
-    .bind(...params)
-    .first<{ total: number }>()
+  ).bind(...params)
 
-  const { results } = await env.DB.prepare(
+  const pageStatement = env.DB.prepare(
     `SELECT
       v.id,
       v.verb,
@@ -78,10 +76,16 @@ export async function handleVerbList(request: Request, env: Env) {
     OFFSET ?`,
   )
     .bind(...params, limit, offset)
-    .all<VerbListRow>()
+
+  // Count and page share one D1 round trip.
+  const [totalResult, pageResult] = await env.DB.batch([
+    countStatement,
+    pageStatement,
+  ])
+  const totalRow = (totalResult.results[0] ?? null) as { total: number } | null
 
   return makeJsonResponse({
-    items: results.map(mapVerbListRow),
+    items: (pageResult.results as VerbListRow[]).map(mapVerbListRow),
     pagination: {
       total: totalRow?.total ?? 0,
       limit,
@@ -134,70 +138,72 @@ export async function handleVerbDetail(request: Request, env: Env) {
     return makeErrorResponse('Verb not found', 404)
   }
 
-  const { results } = await env.DB.prepare(
-    `SELECT
-      id,
-      verb_id,
-      verb,
-      title,
-      meaning_zh,
-      core_sentence_en,
-      core_sentence_zh,
-      full_sentence_en,
-      full_sentence_zh,
-      scene,
-      growth_json,
-      created_at,
-      updated_at
-    FROM verb_paths
-    WHERE verb_id = ?
-    ORDER BY created_at ASC, id ASC`,
-  )
-    .bind(verb.id)
-    .all<VerbPathRow>()
-
-  // Neighbours in the same order the list uses, so prev/next on the detail
-  // page walks the corpus exactly like scrolling the list would.
-  const neighbour = await env.DB.prepare(
-    `WITH counts AS (
-      SELECT
-        v.id,
-        v.is_phrase,
-        v.normalized_verb,
-        v.frequency_rank AS freq,
-        COUNT(vp.id) AS pc
-      FROM verbs v
-      LEFT JOIN verb_paths vp ON vp.verb_id = v.id
-      GROUP BY v.id
-    ),
-    ordered AS (
-      SELECT
+  // Paths, neighbours and the total share one D1 round trip. The neighbour
+  // query walks the same order the list uses, so prev/next on the detail page
+  // steps through the corpus exactly like scrolling the list would.
+  const [pathsResult, neighbourResult, totalResult] = await env.DB.batch([
+    env.DB.prepare(
+      `SELECT
         id,
-        ROW_NUMBER() OVER w AS rn,
-        LAG(id) OVER w AS prev_id,
-        LEAD(id) OVER w AS next_id
-      FROM counts
-      WINDOW w AS (
-        ORDER BY
-          CASE WHEN pc > 0 THEN 0 ELSE 1 END,
-          CASE WHEN freq IS NULL THEN 1 ELSE 0 END,
-          freq ASC,
-          is_phrase ASC,
-          normalized_verb ASC
+        verb_id,
+        verb,
+        title,
+        meaning_zh,
+        core_sentence_en,
+        core_sentence_zh,
+        full_sentence_en,
+        full_sentence_zh,
+        scene,
+        growth_json,
+        created_at,
+        updated_at
+      FROM verb_paths
+      WHERE verb_id = ?
+      ORDER BY created_at ASC, id ASC`,
+    ).bind(verb.id),
+    env.DB.prepare(
+      `WITH counts AS (
+        SELECT
+          v.id,
+          v.is_phrase,
+          v.normalized_verb,
+          v.frequency_rank AS freq,
+          COUNT(vp.id) AS pc
+        FROM verbs v
+        LEFT JOIN verb_paths vp ON vp.verb_id = v.id
+        GROUP BY v.id
+      ),
+      ordered AS (
+        SELECT
+          id,
+          ROW_NUMBER() OVER w AS rn,
+          LAG(id) OVER w AS prev_id,
+          LEAD(id) OVER w AS next_id
+        FROM counts
+        WINDOW w AS (
+          ORDER BY
+            CASE WHEN pc > 0 THEN 0 ELSE 1 END,
+            CASE WHEN freq IS NULL THEN 1 ELSE 0 END,
+            freq ASC,
+            is_phrase ASC,
+            normalized_verb ASC
+        )
       )
-    )
-    SELECT prev_id, next_id, rn FROM ordered WHERE id = ?`,
-  )
-    .bind(verb.id)
-    .first<{ prev_id: string | null; next_id: string | null; rn: number }>()
+      SELECT prev_id, next_id, rn FROM ordered WHERE id = ?`,
+    ).bind(verb.id),
+    env.DB.prepare(`SELECT COUNT(*) AS total FROM verbs`),
+  ])
 
-  const totalRow = await env.DB.prepare(
-    `SELECT COUNT(*) AS total FROM verbs`,
-  ).first<{ total: number }>()
+  const neighbour = (neighbourResult.results[0] ?? null) as {
+    prev_id: string | null
+    next_id: string | null
+    rn: number
+  } | null
+  const totalRow = (totalResult.results[0] ?? null) as { total: number } | null
 
   return makeJsonResponse({
     verb: mapVerbRow(verb),
-    paths: results.map(mapVerbPathRow),
+    paths: (pathsResult.results as VerbPathRow[]).map(mapVerbPathRow),
     prevId: neighbour?.prev_id ?? null,
     nextId: neighbour?.next_id ?? null,
     position: neighbour?.rn ?? null,

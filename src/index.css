@@ -1,11 +1,14 @@
 :root {
-  /* 英文正文 Inter，英文标题 Manrope；中文走 PingFang SC / MiSans 回退 */
+  /* 英文正文 Inter，英文标题 Manrope；中文使用系统字体（PingFang SC / MiSans / 微软雅黑），
+     不再打包 Noto Sans SC，避免 360KB 的阻塞式字体 CSS */
   --font-sans:
-    'Inter Variable', Inter, 'Noto Sans SC', 'PingFang SC', 'MiSans',
+    'Inter Variable', Inter, 'PingFang SC', 'MiSans', 'Microsoft YaHei',
+    'Noto Sans CJK SC',
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
   --font-display:
-    'Manrope Variable', Manrope, 'Noto Sans SC', 'PingFang SC', 'MiSans',
+    'Manrope Variable', Manrope, 'PingFang SC', 'MiSans', 'Microsoft YaHei',
+    'Noto Sans CJK SC',
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
 
