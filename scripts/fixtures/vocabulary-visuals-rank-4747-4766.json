@@ -1,0 +1,315 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4747-4766",
+  "batchId": "auto-rank-4747-4766-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "fond",
+      "forge",
+      "forthcoming",
+      "bucket",
+      "fourteen",
+      "marble"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b5ee1045-02fb-4823-a8dd-109da17a6fc9",
+      "word": "fond",
+      "meaningZh": "喜欢的；深情的",
+      "exampleId": "b5ee1045-02fb-4823-a8dd-109da17a6fc9-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She was fond of the old cat that slept beside her.",
+      "sentenceZh": "她很喜欢睡在身旁的那只老猫。",
+      "scene": "An elderly Chinese woman gently strokes an old cat sleeping beside her on a courtyard bench, complete affectionate face and natural hand, bamboo shadows, warm afternoon light.",
+      "altText": "老人坐在院子里，温柔地抚摸身旁熟睡的老猫。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "1525deef-2777-4f05-89c9-357e168ff6aa",
+      "word": "footage",
+      "meaningZh": "镜头；片段；英尺数",
+      "exampleId": "1525deef-2777-4f05-89c9-357e168ff6aa-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "They watched footage of the whales on a large screen.",
+      "sentenceZh": "他们在大屏幕上观看鲸鱼的影像片段。",
+      "scene": "Two adults sitting in a small film editing room watching moving-image footage of whales swimming underwater on a large screen; screen shows only illustrated whale scene without interface, timeline, text or numbers; complete viewer faces in profile.",
+      "altText": "两名观众在屏幕上观看鲸鱼游动的影像。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "afea5fb4-0c01-4120-b373-b620406d1f93",
+      "word": "forecast",
+      "meaningZh": "预测；预报",
+      "exampleId": "afea5fb4-0c01-4120-b373-b620406d1f93-visual-ex",
+      "styleFamily": "paper-cut editorial",
+      "sentenceEn": "The weather forecast showed rain approaching the coast.",
+      "sentenceZh": "天气预报显示降雨正在接近海岸。",
+      "scene": "A meteorologist with full face points at a simplified weather forecast display containing only a recognizable coastline and an offshore blue rain-cloud icon adjacent to the coast, no lettering, numbers, arrows or interface, professional studio.",
+      "altText": "气象员指着屏幕上海岸附近的降雨图形。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9c7d0542-91a0-40eb-b669-652b7540a9ad",
+      "word": "speculate",
+      "meaningZh": "深思；推测；投机",
+      "exampleId": "9c7d0542-91a0-40eb-b669-652b7540a9ad-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "They could only speculate about what was inside the sealed chest.",
+      "sentenceZh": "他们只能猜测封闭箱子里装着什么。",
+      "scene": "Two adult explorers kneel beside an unopened closed wooden chest, exchange curious uncertain looks and shrug, padlock intact, no transparent chest, contents, thought bubbles or text; mystery remains unresolved, faces complete.",
+      "altText": "两位探险者对着锁住的木箱好奇地猜测里面的东西。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8738e309-b233-4797-b08f-5589ab074e4b",
+      "word": "forge",
+      "meaningZh": "锻造；伪造；稳步前进",
+      "exampleId": "8738e309-b233-4797-b08f-5589ab074e4b-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The blacksmith used a hammer to forge the iron hook.",
+      "sentenceZh": "铁匠用锤子锻造铁钩。",
+      "scene": "An adult artisan in a Chinese traditional blacksmith workshop with apron gloves and safety glasses hammers a red-hot curved iron hook on an anvil; forge glow in background, full face, strong carved forms, no writing.",
+      "altText": "中式铁匠铺里，铁匠正在锻打一只铁钩。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "933c6e21-5992-4006-b12c-15f235157a9f",
+      "word": "marker",
+      "meaningZh": "标记；记号笔",
+      "exampleId": "933c6e21-5992-4006-b12c-15f235157a9f-visual-ex",
+      "styleFamily": "stop-motion handcrafted",
+      "sentenceEn": "She used a red marker to draw a flower.",
+      "sentenceZh": "她用红色记号笔画了一朵花。",
+      "scene": "Close view of adult hand holding a thick unbranded red felt-tip marker, tip touching blank white paper to draw a simple red flower with petals, cap beside paper, clear marker shape, no words letters or numbers.",
+      "altText": "手握红色记号笔，在白纸上画花朵。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3263f240-6b2f-4ca2-b67b-eb279990bc54",
+      "word": "formulate",
+      "meaningZh": "制定",
+      "exampleId": "3263f240-6b2f-4ca2-b67b-eb279990bc54-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The team met to formulate a plan for the community garden.",
+      "sentenceZh": "团队开会制定社区花园的计划。",
+      "scene": "Community team around table collaboratively arranging miniature planting beds, paths and water tank on a blank site model, clear intentional planning activity, complete faces, no writing, overhead-oblique composition and earthy greens.",
+      "altText": "团队围着桌子摆放花坛和路径模型，制定花园计划。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6540f6f0-ceff-4357-88ce-936de4570e71",
+      "word": "forthcoming",
+      "meaningZh": "即将到来的；即将出版的",
+      "exampleId": "6540f6f0-ceff-4357-88ce-936de4570e71-visual-ex",
+      "styleFamily": "gouache theater",
+      "sentenceEn": "The empty stage was ready for the forthcoming opera performance.",
+      "sentenceZh": "空舞台已为即将到来的戏曲演出准备就绪。",
+      "scene": "An empty traditional Chinese opera stage before a performance, partly closed red curtain, illuminated stage with two ornate costume robes on backstage racks and a neatly placed prop table, anticipation and preparation, no performers or writing.",
+      "altText": "戏曲舞台空着，红幕和后台戏服已为演出准备好。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e881cc73-b5e3-47df-a3e9-e8d7fe8a9692",
+      "word": "preach",
+      "meaningZh": "传道；讲道；说教；宣讲；鼓吹",
+      "exampleId": "e881cc73-b5e3-47df-a3e9-e8d7fe8a9692-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The minister stood at the pulpit to preach to the congregation.",
+      "sentenceZh": "牧师站在讲坛上向会众讲道。",
+      "scene": "A minister at a wooden pulpit inside a modest church addressing seated adult congregation with a calm open-hand gesture, complete face and visible listeners with features, unmarked book open, simple stained glass, no written sermon or slogans.",
+      "altText": "牧师站在木讲坛后，向安静坐着的会众讲道。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5c8947a3-0c63-4de1-b058-733473b11a56",
+      "word": "bucket",
+      "meaningZh": "桶；存储桶",
+      "exampleId": "5c8947a3-0c63-4de1-b058-733473b11a56-visual-ex",
+      "styleFamily": "textile",
+      "sentenceEn": "The gardener filled a bucket with water.",
+      "sentenceZh": "园丁把桶装满了水。",
+      "scene": "A metal bucket with arched carrying handle beneath a garden tap, a clear stream fills it with water, ripples visible, Chinese courtyard garden with potted plants and brick wall, no person or text.",
+      "altText": "中式院子里的金属桶在水龙头下接水。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "08e2d590-1a74-470c-9aa6-bfb1742c20ce",
+      "word": "fortunate",
+      "meaningZh": "幸运的；侥幸的",
+      "exampleId": "08e2d590-1a74-470c-9aa6-bfb1742c20ce-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She was fortunate to find shelter just before the downpour.",
+      "sentenceZh": "她很幸运，在倾盆大雨到来前找到了避雨处。",
+      "scene": "A relieved adult traveler safely beneath a stone pavilion roof at the edge of a heavy downpour, jacket dry and folded backpack nearby, rain pouring immediately beyond eaves, complete smiling face, no signs or text.",
+      "altText": "旅人刚好躲进亭子，屋檐外已下起大雨。",
+      "riskTags": [
+        "cause_effect",
+        "spatial_boundary",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "77a45344-a437-4fab-b94c-11a2ec75e4a3",
+      "word": "fossil",
+      "meaningZh": "化石；守旧的人",
+      "exampleId": "77a45344-a437-4fab-b94c-11a2ec75e4a3-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The fossil preserved the shape of an ancient fish.",
+      "sentenceZh": "这块化石保留了一条古代鱼的形状。",
+      "scene": "One ancient fish fossil embedded in a flat beige limestone slab, distinct backbone ribs tail and skull impression clearly visible, resting on a plain museum workbench with small soft brush nearby, no living fish or labels.",
+      "altText": "石板上清晰保留着古代鱼的骨骼轮廓。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "8cd60622-8256-4848-b87c-11ea2d114aa6",
+      "word": "blond",
+      "meaningZh": "金发的",
+      "exampleId": "8cd60622-8256-4848-b87c-11ea2d114aa6-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The blond boy helped repair the bicycle.",
+      "sentenceZh": "金发男孩帮忙修理自行车。",
+      "scene": "A teenage boy with clearly blond golden hair helps an adult adjust a bicycle wheel in a garden workshop, hair unhidden in soft light, full friendly face, modest clothes, natural hands, no brands.",
+      "altText": "金发男孩在花园工作间帮忙调整自行车轮。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6a310e9d-c5b0-4917-8d6f-f725b86f8413",
+      "word": "fourteen",
+      "meaningZh": "十四",
+      "exampleId": "6a310e9d-c5b0-4917-8d6f-f725b86f8413-visual-ex",
+      "styleFamily": "watercolor still life",
+      "sentenceEn": "Fourteen dumplings lay on the bamboo tray.",
+      "sentenceZh": "竹盘上摆着十四个饺子。",
+      "scene": "Top-down single rectangular bamboo tray containing exactly fourteen steamed crescent dumplings arranged in two straight rows of seven with clear gaps; no other dumplings, bowls, toppings hiding pieces, or text; restrained Chinese kitchen context.",
+      "altText": "竹盘上的十四个饺子分两排摆放，每排七个。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "921d2ade-4e6b-46b2-8018-b4361236ccc9",
+      "word": "confession",
+      "meaningZh": "坦白；忏悔",
+      "exampleId": "921d2ade-4e6b-46b2-8018-b4361236ccc9-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "His confession about the broken vase surprised his mother.",
+      "sentenceZh": "他坦白打碎花瓶的事，让母亲吃了一惊。",
+      "scene": "A teenage son openly shows his mother the broken pieces of a vase in a shallow tray, hand on chest and remorseful complete face; mother has surprised but attentive full face, vase pieces visible, no blame pointing toward others or text.",
+      "altText": "少年向母亲坦白打碎花瓶，手中的盘子装着碎片。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "fb2270da-4e2e-4b60-a0f0-21d177a4dcd0",
+      "word": "friday",
+      "meaningZh": "星期五",
+      "exampleId": "fb2270da-4e2e-4b60-a0f0-21d177a4dcd0-visual-ex",
+      "styleFamily": "felt domestic illustration",
+      "sentenceEn": "On Friday, they packed for a weekend camping trip.",
+      "sentenceZh": "星期五，他们为周末露营收拾行装。",
+      "scene": "Two adults pack a tent sleeping bags and backpacks in a cozy apartment before a weekend camping trip, complete faces, no calendar clocks lettering or invented weekday symbols; image contextualizes the accompanying Friday sentence without uniquely identifying a weekday.",
+      "altText": "两个人在家打包帐篷和背包，为周末露营做准备。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1fd4118c-69f7-40ed-8bc3-611ae0aa7718",
+      "word": "frighten",
+      "meaningZh": "恐吓；吓唬；使害怕",
+      "exampleId": "1fd4118c-69f7-40ed-8bc3-611ae0aa7718-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The loud thunder could frighten the little dog.",
+      "sentenceZh": "响亮的雷声可能会吓到小狗。",
+      "scene": "A small dog startled by a bright lightning flash through a window during thunderstorm, ears lowered and body recoiling beneath table, a calm owner offers reassurance from chair, fully drawn owner face, no sound effect words.",
+      "altText": "窗外闪电亮起，小狗害怕地缩到桌子下面。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "533dfcd6-5132-414d-b24b-6cf6300553dc",
+      "word": "provoke",
+      "meaningZh": "激怒；惹起；诱导",
+      "exampleId": "533dfcd6-5132-414d-b24b-6cf6300553dc-visual-ex",
+      "styleFamily": "gouache animal illustration",
+      "sentenceEn": "The puppy tried to provoke the sleepy cat by tugging its tail.",
+      "sentenceZh": "小狗拽着尾巴，试图惹恼困倦的猫。",
+      "scene": "A mischievous puppy lightly tugs the tip of a sleepy cat tail with a paw, cat turns with irritated expressive eyes and ears, no bites or injury; clear provocation and reaction, soft domestic floor, no text.",
+      "altText": "小狗用爪子扯猫的尾巴，猫转头露出恼怒表情。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "bc82a49d-2980-4330-91cf-5f444d67720c",
+      "word": "frightened",
+      "meaningZh": "害怕的；受惊的",
+      "exampleId": "bc82a49d-2980-4330-91cf-5f444d67720c-visual-ex",
+      "styleFamily": "woodcut nature",
+      "sentenceEn": "The frightened deer hid among the trees.",
+      "sentenceZh": "受惊的鹿躲在树林间。",
+      "scene": "A frightened deer with wide alert eyes and ears hides partly behind tall trees after noticing a distant falling branch, no predators or injuries; clear deer face and tense posture, muted woodland palette and carved texture.",
+      "altText": "受惊的鹿紧张地躲在树干后，竖起耳朵观察。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "895ed0f3-a853-42a7-8b3f-1963cd4726d1",
+      "word": "marble",
+      "meaningZh": "大理石；石弹；雕刻品",
+      "exampleId": "895ed0f3-a853-42a7-8b3f-1963cd4726d1-visual-ex",
+      "styleFamily": "paper-cut architectural",
+      "sentenceEn": "The marble steps stayed cool in the summer heat.",
+      "sentenceZh": "大理石台阶在炎热夏日仍然清凉。",
+      "scene": "Close view of pale polished marble steps with natural gray veining in a traditional Chinese garden pavilion, summer lotus pond beyond, a barefoot adult foot resting on cool stone in the shade, no carved characters or signs.",
+      "altText": "夏日园亭的大理石台阶带着天然纹理，脚踩在阴凉处。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    }
+  ]
+}

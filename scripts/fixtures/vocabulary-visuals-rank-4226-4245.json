@@ -1,0 +1,336 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4226-4245",
+  "batchId": "auto-rank-4226-4245-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "bargain",
+      "based",
+      "bass",
+      "beloved",
+      "publicity",
+      "beverage"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "746bd330-a525-45c0-993b-16de885e789e",
+      "word": "sphere",
+      "meaningZh": "球；球面；球体；天体；地球仪；范围",
+      "exampleId": "746bd330-a525-45c0-993b-16de885e789e-visual-ex",
+      "styleFamily": "gouache editorial illustration",
+      "sentenceEn": "The glass sphere reflected the light.",
+      "sentenceZh": "玻璃球反射着光。",
+      "scene": "Clearly stylized editorial illustration of one smooth transparent glass sphere resting on a matte table, curved highlight and gentle shadow make spherical volume unmistakable. Simple designed materials, no photograph, text or extra balls.",
+      "altText": "桌上一个光滑玻璃球映出弧形光泽。",
+      "riskTags": [
+        "exact_quantity",
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "927885ee-51c2-44bc-ac23-d365020bf9d1",
+      "word": "bargain",
+      "meaningZh": "讨价还价；便宜货；交易",
+      "exampleId": "927885ee-51c2-44bc-ac23-d365020bf9d1-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "They made a bargain for the old chair.",
+      "sentenceZh": "他们为那把旧椅子谈成了交易。",
+      "scene": "Chinese secondhand market, buyer and seller discuss a sound old wooden chair then agree with a friendly handshake; modest plain coins on table, chair central, no readable prices or text.",
+      "altText": "二手市场买卖双方为旧木椅谈好交易，友好握手。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "80f189be-ff1f-4108-a601-a0aa61d4805b",
+      "word": "tighten",
+      "meaningZh": "收紧",
+      "exampleId": "80f189be-ff1f-4108-a601-a0aa61d4805b-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Tighten the strap before carrying the bag.",
+      "sentenceZh": "背包前先收紧背带。",
+      "scene": "Close two-step adult hands pulling loose backpack adjustment strap through buckle so same strap changes from slack loop to snug fitting. Mechanical path clear, no tangled hands or labels.",
+      "altText": "双手拉动背包调节带，松弛带圈变得贴合。",
+      "riskTags": [
+        "hands",
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "f901dfb0-739b-4400-b748-5c9ca74ab091",
+      "word": "based",
+      "meaningZh": "基于；以...为基础",
+      "exampleId": "f901dfb0-739b-4400-b748-5c9ca74ab091-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The plan was based on the survey results.",
+      "sentenceZh": "这个方案以调查结果为基础。",
+      "scene": "Chinese community park designers compare survey pictograms favoring shade and accessible paths with a park model that implements those same features. Clear evidence-to-plan link, no words, digits or invented data claims.",
+      "altText": "设计者将调查中的遮荫与无障碍需求落实到公园模型中。",
+      "riskTags": [
+        "people_face",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c56f409e-7308-4852-9ae9-5ccc90d2075a",
+      "word": "boast",
+      "meaningZh": "吹牛；自夸",
+      "exampleId": "c56f409e-7308-4852-9ae9-5ccc90d2075a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He began to boast about his tiny catch.",
+      "sentenceZh": "他开始吹嘘自己钓到的小鱼。",
+      "scene": "Adult angler holds a genuinely tiny fish safely over water while making a dramatically wide gesture implying enormous catch; friend raises amused skeptical eyebrow. Fish unharmed, no ridicule or text, discrepancy between claim and reality central.",
+      "altText": "钓鱼人夸张比划大鱼，实际手中只有一条小鱼。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "ed0b590c-bc36-4a69-924d-daee1b97fda9",
+      "word": "bass",
+      "meaningZh": "低音；贝斯；男低音",
+      "exampleId": "ed0b590c-bc36-4a69-924d-daee1b97fda9-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The bass gave the band a deep rhythm.",
+      "sentenceZh": "贝斯为乐队提供了低沉的节奏。",
+      "scene": "Small Chinese community rehearsal room, adult musician plays a recognizable four-string electric bass with long neck beside drummer and guitarist; bass player and instrument focal, no notation, brand or lettering.",
+      "altText": "社区乐队中，演奏者用四弦电贝斯提供低音节奏。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "instrument_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f3b83250-b024-49f4-b83f-bcfd3cb335cb",
+      "word": "pat",
+      "meaningZh": "轻拍",
+      "exampleId": "f3b83250-b024-49f4-b83f-bcfd3cb335cb-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "She gave the dog a gentle pat.",
+      "sentenceZh": "她轻轻拍了拍狗。",
+      "scene": "Adult palm gently rests and lightly pats a calm dog on its shoulder, relaxed dog posture and trusting expression, clearly soft touch rather than hitting. Complete human face, no words or icons.",
+      "altText": "女子轻轻拍狗的肩背，狗神情放松。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "d21be32e-7691-48a2-8e71-b08897d76d3e",
+      "word": "battlefield",
+      "meaningZh": "战场",
+      "exampleId": "d21be32e-7691-48a2-8e71-b08897d76d3e-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "Wildflowers now grow on the old battlefield.",
+      "sentenceZh": "如今，野花生长在旧战场上。",
+      "scene": "Quiet fictional former battlefield reclaimed by meadow flowers, old shallow trenches and weathered defensive earthworks remain in terrain; distant simple memorial stones without lettering. No weapons, bodies, active fighting or real historical location.",
+      "altText": "旧战场的土壕与防御土垒间长满野花。",
+      "riskTags": [
+        "landscape",
+        "aftermath"
+      ]
+    },
+    {
+      "vocabularyId": "1389e486-93bc-4a65-9a49-84f86820193f",
+      "word": "perceived",
+      "meaningZh": "感知到的",
+      "exampleId": "1389e486-93bc-4a65-9a49-84f86820193f-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The perceived size changed with the distance.",
+      "sentenceZh": "感知到的大小随距离改变。",
+      "scene": "Two identical red cubes positioned near and far along a path, observer sees nearby cube appearing large and distant cube appearing small. A small inset side view confirms physical cubes same size, no words or digits.",
+      "altText": "同样大的红色方块，近处看起来大，远处看起来小。",
+      "riskTags": [
+        "comparison",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "78bf6e27-e60f-42fc-a380-bc2db8655e9e",
+      "word": "beloved",
+      "meaningZh": "心爱的；亲爱的",
+      "exampleId": "78bf6e27-e60f-42fc-a380-bc2db8655e9e-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She repaired her beloved old coat.",
+      "sentenceZh": "她修补了自己心爱的旧外套。",
+      "scene": "Chinese home, adult carefully stitches a worn but treasured indigo coat with distinctive patch, tender expression and thoughtful handling convey affection. No luxury branding, captions or readable text.",
+      "altText": "女子温柔细心地缝补带补丁的旧蓝色外套。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "361b3b03-752e-444c-bd2f-4a9793906a83",
+      "word": "sole",
+      "meaningZh": "唯一的；单独的；脚底",
+      "exampleId": "361b3b03-752e-444c-bd2f-4a9793906a83-visual-ex",
+      "styleFamily": "gouache editorial illustration",
+      "sentenceEn": "The sole of the boot had a deep tread.",
+      "sentenceZh": "靴底有很深的防滑纹。",
+      "scene": "Clearly illustrated close-up of a single hiking boot tilted to show its underside, patterned rubber sole fills foreground, deep tread grooves distinct. No foot person, other sole meanings, branding or lettering.",
+      "altText": "一只登山靴翻起，靴底防滑纹路清晰。",
+      "riskTags": [
+        "object_focus",
+        "sense_disambiguation"
+      ]
+    },
+    {
+      "vocabularyId": "48ed4c81-0ee3-4b1d-8093-a7554cf54ba6",
+      "word": "benchmark",
+      "meaningZh": "基准；标杆",
+      "exampleId": "48ed4c81-0ee3-4b1d-8093-a7554cf54ba6-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The sturdy joint became the benchmark for quality.",
+      "sentenceZh": "这个牢固的接头成为质量基准。",
+      "scene": "Workshop compares several wood joint samples to a central well-made reference joint clamped under a standard load. Reference joint intact; visibly weaker alternatives bend or loosen under same load. Unlabeled pictorial comparison, no trophy, words or digits.",
+      "altText": "工坊用牢固接头作为参照，对比其他接头的承重表现。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ccea43af-8ea1-4d2c-9080-ef7eefbcea2f",
+      "word": "publicity",
+      "meaningZh": "宣传；公众关注",
+      "exampleId": "ccea43af-8ea1-4d2c-9080-ef7eefbcea2f-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The festival gained publicity through local news.",
+      "sentenceZh": "节庆通过本地新闻获得公众关注。",
+      "scene": "Chinese community festival, reporter interviews organizer beside colorful lantern displays while several residents watch same festival scene on a text-free local news screen. Public attention through media focal, no readable banners, logos or text.",
+      "altText": "记者采访社区节庆，居民通过新闻画面了解活动。",
+      "riskTags": [
+        "people_face",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "93e7bb17-170d-465a-83fe-5dd54ae3b67e",
+      "word": "beneficial",
+      "meaningZh": "有益的；有利的",
+      "exampleId": "93e7bb17-170d-465a-83fe-5dd54ae3b67e-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The rain was beneficial to the dry garden.",
+      "sentenceZh": "这场雨对干燥的花园有益。",
+      "scene": "Same garden two-stage scene: wilted leaves and dry cracked soil before gentle rain, then moist soil and upright healthy foliage after rain. No flood, people or text.",
+      "altText": "干旱花园得到温和降雨后，土壤湿润、植物恢复生机。",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "4499c04b-136c-4669-b643-d410136e34ff",
+      "word": "beneficiary",
+      "meaningZh": "受益人；受惠者",
+      "exampleId": "4499c04b-136c-4669-b643-d410136e34ff-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The student was a beneficiary of the scholarship.",
+      "sentenceZh": "这名学生是奖学金的受益人。",
+      "scene": "Community scholarship support scene, adult student receives an unmarked scholarship envelope and study supplies from foundation representative, then studies in well-equipped accessible library. Recipient and benefit clear, no readable certificate or currency amounts.",
+      "altText": "学生领取奖学金支持与学习用品，得以在图书馆学习。",
+      "riskTags": [
+        "people_face",
+        "sequence",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2dd57a52-09d0-4109-941f-29f47d8acaa8",
+      "word": "unfold",
+      "meaningZh": "展开；发展",
+      "exampleId": "2dd57a52-09d0-4109-941f-29f47d8acaa8-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "Unfold the blanket on the grass.",
+      "sentenceZh": "在草地上展开毯子。",
+      "scene": "Three-step same green-and-cream picnic blanket changes from compact folded square to partly opened to fully flat large rectangle on grass, adult hands unfolding it, no words or extra blankets.",
+      "altText": "双手把同一条野餐毯从折叠方块逐步展开铺平。",
+      "riskTags": [
+        "hands",
+        "sequence",
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "a7ac7faf-f2eb-48ca-b28e-4464f2cb1a14",
+      "word": "bent",
+      "meaningZh": "弯曲的；倾向；决心",
+      "exampleId": "a7ac7faf-f2eb-48ca-b28e-4464f2cb1a14-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The bent branch reached over the stream.",
+      "sentenceZh": "弯曲的树枝伸向溪流上方。",
+      "scene": "A clearly curved living tree branch arcs over a narrow stream, bark follows natural continuous bend, leaves healthy. Curve focal, no straight branch comparison required, people or text.",
+      "altText": "一根自然弯曲的树枝伸到溪流上方。",
+      "riskTags": [
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "c5dd54cd-ce57-48d7-a10d-e4a5264d962e",
+      "word": "betray",
+      "meaningZh": "背叛；出卖；泄露",
+      "exampleId": "c5dd54cd-ce57-48d7-a10d-e4a5264d962e-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He betrayed his friend’s trust by sharing the secret.",
+      "sentenceZh": "他泄露秘密，辜负了朋友的信任。",
+      "scene": "Fictional three-panel interpersonal story: friend privately shows him a distinctive original flower design drawing; he secretly passes the SAME drawing to a third person; friend discovers this and looks disappointed. No text, speech bubbles, criminal instruction or humiliation. Trust breach and same distinctive design clear.",
+      "altText": "朋友私下分享花朵设计，他却转交他人，朋友发现后失望。",
+      "riskTags": [
+        "people_face",
+        "sequence",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e4dc29e1-5e19-4bb1-b9f2-61511f7d36bd",
+      "word": "well-being",
+      "meaningZh": "幸福；健康",
+      "exampleId": "e4dc29e1-5e19-4bb1-b9f2-61511f7d36bd-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "Regular rest improved her well-being.",
+      "sentenceZh": "规律休息改善了她的身心状态。",
+      "scene": "Chinese apartment balcony, adult woman relaxes with tea and plants after a manageable workday, stretching gently and looking refreshed; closed laptop indoors, calm balanced daily life. No cure claim, charts, hearts or words.",
+      "altText": "女子放下工作，在种满植物的阳台休息，神情舒展。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "bb0a9d0b-052a-465c-a26d-47cb9ebb9816",
+      "word": "beverage",
+      "meaningZh": "饮料",
+      "exampleId": "bb0a9d0b-052a-465c-a26d-47cb9ebb9816-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "He chose a warm beverage after the walk.",
+      "sentenceZh": "散步后，他选了一杯热饮。",
+      "scene": "Chinese riverside tea stall, adult holds a warm ceramic cup of tea after walking; subtle steam, teapot and water nearby, drink central, no alcohol, labels or text.",
+      "altText": "散步者在河边茶摊端起一杯温热的茶。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "object_focus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4105-4124",
+  "batchId": "auto-rank-4105-4124-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "inherit",
+      "tray",
+      "organizational",
+      "advertise",
+      "affordable",
+      "aged"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b262e9b4-1b50-4de7-ae13-8c9e4ac34368",
+      "word": "inherit",
+      "meaningZh": "继承；遗传",
+      "exampleId": "b262e9b4-1b50-4de7-ae13-8c9e4ac34368-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She will inherit her grandmother’s house.",
+      "sentenceZh": "她将继承祖母的房子。",
+      "scene": "A contemporary Chinese courtyard home: an adult granddaughter holds the house key beside a framed illustrated portrait of her late grandmother; the distinctive courtyard matches the portrait background. Calm remembrance, no ghost, no writing.",
+      "altText": "孙女拿着祖母房子的钥匙，旁边摆着祖母的画像。",
+      "riskTags": [
+        "reference",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "83bdcdbc-cbfd-497a-b332-8f604a311999",
+      "word": "adequately",
+      "meaningZh": "充分地；适当地",
+      "exampleId": "83bdcdbc-cbfd-497a-b332-8f604a311999-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The seedlings were adequately watered.",
+      "sentenceZh": "幼苗得到了充足的浇灌。",
+      "scene": "Healthy seedlings in a raised garden bed, evenly moist soil; watering can finishes gentle watering, no flooding or dry patches. No people needed.",
+      "altText": "苗床土壤均匀湿润，幼苗得到了充足浇水。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "d26006b5-c46e-4b9f-a81e-76389a11b079",
+      "word": "tray",
+      "meaningZh": "托盘；公文盘；满盘；发射箱",
+      "exampleId": "d26006b5-c46e-4b9f-a81e-76389a11b079-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "She carried the tea cups on a tray.",
+      "sentenceZh": "她用托盘端着茶杯。",
+      "scene": "Contemporary Chinese tea room: adult server carries a clearly visible flat tray with ceramic tea cups, balanced in both hands. Tray prominent.",
+      "altText": "茶室里的服务员用托盘端着茶杯。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "515555de-46ee-47be-9102-d691c97283f0",
+      "word": "adhere",
+      "meaningZh": "遵守；黏附；坚持",
+      "exampleId": "515555de-46ee-47be-9102-d691c97283f0-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The wet leaves adhere to the window.",
+      "sentenceZh": "湿叶子黏附在窗户上。",
+      "scene": "Close view of rain-soaked autumn leaves stuck flat to a vertical glass window, water droplets holding them against glass. No flying leaves.",
+      "altText": "湿润的落叶贴在竖直窗玻璃上。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "e9384887-4e2e-4001-b236-dd9e28a348f7",
+      "word": "pioneer",
+      "meaningZh": "先锋；拓荒者；创始人",
+      "exampleId": "e9384887-4e2e-4001-b236-dd9e28a348f7-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "She was a pioneer of solar-powered farming.",
+      "sentenceZh": "她是太阳能农业的先驱。",
+      "scene": "Narrative two-panel scene: a woman introduces the first small solar irrigation installation to an otherwise traditional farm; later neighboring farms adopt similar solar pumps. Same woman and prototype recognizable.",
+      "altText": "一位女性率先使用太阳能灌溉，邻近农场随后效仿。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "af37db0d-29f0-4bd0-b9f3-062dfc586b38",
+      "word": "adjacent",
+      "meaningZh": "邻近的；毗邻的",
+      "exampleId": "af37db0d-29f0-4bd0-b9f3-062dfc586b38-visual-ex",
+      "styleFamily": "paper-cut",
+      "sentenceEn": "The bakery is adjacent to the flower shop.",
+      "sentenceZh": "面包店紧邻花店。",
+      "scene": "Two directly adjoining storefronts sharing a wall: bakery recognizable by bread display and flower shop by bouquets. No third building between them, no readable shop signs.",
+      "altText": "面包店与花店共用一面墙，彼此紧邻。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "9491dd65-4bac-4d13-ac13-4a66c3bb98e9",
+      "word": "organizational",
+      "meaningZh": "组织的",
+      "exampleId": "9491dd65-4bac-4d13-ac13-4a66c3bb98e9-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The team improved its organizational structure.",
+      "sentenceZh": "团队改进了组织结构。",
+      "scene": "Contemporary Chinese community volunteer center: overhead team arrangement in three coordinated small working groups, packing supplies, routing deliveries, checking inventory; central coordinator connects groups using an unlabeled pictorial workflow board.",
+      "altText": "社区志愿团队分组协作，协调员统筹物资与配送。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "506b95da-fa6e-400a-9d81-b94ce8401726",
+      "word": "adverse",
+      "meaningZh": "不利的；相反的；有害的",
+      "exampleId": "506b95da-fa6e-400a-9d81-b94ce8401726-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Adverse weather delayed the boat.",
+      "sentenceZh": "恶劣天气延误了船只。",
+      "scene": "Small ferry safely secured at dock while forceful wind, dark clouds and choppy water prevent departure. Waiting passengers under shelter, no disaster or injury.",
+      "altText": "风大浪急，渡船停靠码头等待天气改善。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8d850098-ebef-4db8-bf23-c69aee184db3",
+      "word": "textbook",
+      "meaningZh": "教科书",
+      "exampleId": "8d850098-ebef-4db8-bf23-c69aee184db3-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The textbook explains how plants grow.",
+      "sentenceZh": "这本教科书讲解植物如何生长。",
+      "scene": "Open thick school textbook on a study desk, pages show clear botanical educational diagrams of seed, roots and mature plant; no letters or numbers anywhere.",
+      "altText": "桌上的教科书展示种子、根系与植物生长示意图。",
+      "riskTags": [
+        "object_focus"
+      ]
+    },
+    {
+      "vocabularyId": "cde74cf9-dece-4d82-812e-dfc15d943c80",
+      "word": "advertise",
+      "meaningZh": "做广告；宣传",
+      "exampleId": "cde74cf9-dece-4d82-812e-dfc15d943c80-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "They advertise their dumplings at the market.",
+      "sentenceZh": "他们在集市上宣传自己的饺子。",
+      "scene": "Contemporary Chinese food market: vendor actively holds up a text-free pictorial poster of dumplings to attract passing customers toward the same dumplings displayed on the stall. Act of promotion central.",
+      "altText": "集市摊主举起饺子图画，向路过顾客宣传。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "616fb7e4-93dd-41d7-9772-bb87b5fbc713",
+      "word": "uh",
+      "meaningZh": "呃",
+      "exampleId": "616fb7e4-93dd-41d7-9772-bb87b5fbc713-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Uh, I need a moment to think.",
+      "sentenceZh": "呃，我需要一点时间想想。",
+      "scene": "Two-panel conversational pause: one adult asks a question through an open-handed gesture; the other hesitates with parted lips, raised finger and thoughtful face before answering. No speech bubble or writing.",
+      "altText": "交谈者微张嘴、抬起手指，停顿思考如何回答。",
+      "riskTags": [
+        "sequence",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f2873f48-2d73-44ce-929c-f770825ff8df",
+      "word": "advertisement",
+      "meaningZh": "广告；宣传",
+      "exampleId": "f2873f48-2d73-44ce-929c-f770825ff8df-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The advertisement showed a new bicycle.",
+      "sentenceZh": "这则广告展示了一辆新自行车。",
+      "scene": "A bus shelter advertising panel clearly presents a polished illustrated bicycle as a promotional product picture, beside an actual cyclist passing by. Advertisement panel is focal; no logos, slogans or text.",
+      "altText": "公交候车亭的广告画面展示一辆新自行车。",
+      "riskTags": [
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "857964be-f695-4067-9235-54d4472c3b2d",
+      "word": "nasty",
+      "meaningZh": "污秽的；下流的；险恶的",
+      "exampleId": "857964be-f695-4067-9235-54d4472c3b2d-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "A nasty smell came from the old bin.",
+      "sentenceZh": "旧垃圾桶散发出难闻的气味。",
+      "scene": "Adult approaching a neglected outdoor rubbish bin recoils and covers nose at its unpleasant odor, then prepares to clean it with gloves. Subtle illustrated odor wisps, non-graphic waste.",
+      "altText": "旧垃圾桶气味难闻，路人捂住鼻子并准备清理。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "0a7c0798-b0d7-4466-800f-2e3d1694c451",
+      "word": "affection",
+      "meaningZh": "喜爱；感情；钟爱",
+      "exampleId": "0a7c0798-b0d7-4466-800f-2e3d1694c451-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The cat showed affection by rubbing against her hand.",
+      "sentenceZh": "猫蹭着她的手表达亲昵。",
+      "scene": "An adult’s relaxed hand gently touched by a content cat rubbing its cheek against the fingers, affectionate cat posture, warm domestic setting. No hearts or symbols.",
+      "altText": "猫咪用脸颊轻蹭主人的手，表达亲昵。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "16fc0d95-d272-4d86-804f-b0f966fa47b2",
+      "word": "shrink",
+      "meaningZh": "缩小；收缩；退缩",
+      "exampleId": "16fc0d95-d272-4d86-804f-b0f966fa47b2-visual-ex",
+      "styleFamily": "paper-cut",
+      "sentenceEn": "The wool sweater may shrink in hot water.",
+      "sentenceZh": "羊毛衫在热水里可能缩水。",
+      "scene": "Clear two-panel before/after: identical red wool sweater with cream stripe, initially adult-sized beside a fixed hanger, then visibly smaller after hot wash with same hanger for scale. No text.",
+      "altText": "同一件羊毛衫热水洗后变小，衣架作为尺寸参照。",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "ce4f9b0e-d1c4-4b95-96fb-34fc13df4091",
+      "word": "affordable",
+      "meaningZh": "负担得起的；价格合理的",
+      "exampleId": "ce4f9b0e-d1c4-4b95-96fb-34fc13df4091-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The market sells affordable vegetables.",
+      "sentenceZh": "市场出售价格实惠的蔬菜。",
+      "scene": "Contemporary Chinese neighborhood produce market: shopper exchanges a few plain coins for a generous basket of fresh vegetables, with money still left in open purse. Focus on modest cost, no digits or currency text.",
+      "altText": "社区市场里，顾客花少量钱买到一篮新鲜蔬菜。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a000089a-6439-46a3-8a02-67e7cbd70c3e",
+      "word": "aftermath",
+      "meaningZh": "后果；余波",
+      "exampleId": "a000089a-6439-46a3-8a02-67e7cbd70c3e-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "Neighbors cleared fallen branches in the aftermath of the storm.",
+      "sentenceZh": "暴风雨过后，邻居们清理折落的树枝。",
+      "scene": "Morning after storm has completely passed: calm sky, puddles, scattered fallen branches; neighbors safely clear lightweight branches together with gloves. No ongoing wind or falling tree.",
+      "altText": "风暴已过，邻居们合力清理散落的树枝。",
+      "riskTags": [
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b1b19386-e295-41b2-909a-c5cb627b89f0",
+      "word": "emerging",
+      "meaningZh": "新兴的",
+      "exampleId": "b1b19386-e295-41b2-909a-c5cb627b89f0-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Robotics is an emerging industry.",
+      "sentenceZh": "机器人技术是一个新兴产业。",
+      "scene": "Illustrated young robotics workshop growing from one experimental robot bench into several active prototyping stations, small collaborative team developing useful robots, clear new expanding field, no text or branding.",
+      "altText": "机器人工作室从单个实验台扩展为多个研发工位。",
+      "riskTags": [
+        "abstract_meaning",
+        "sequence",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ece50839-53da-4957-b0f2-f11aa3b46432",
+      "word": "aged",
+      "meaningZh": "年老的；...岁的",
+      "exampleId": "ece50839-53da-4957-b0f2-f11aa3b46432-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The aged gardener still cared for the flowers.",
+      "sentenceZh": "年老的园丁仍然照料花朵。",
+      "scene": "Contemporary Chinese courtyard garden: elderly gardener with silver hair and lined but fully rendered expressive face gently tends peonies with a small watering can. Dignified capable adult, no frailty stereotype.",
+      "altText": "银发老园丁在院中细心照料牡丹。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "903c1bac-d3f0-4c24-948f-ba5dca61f5a7",
+      "word": "dot",
+      "meaningZh": "点；圆点；小数点；小东西；嫁妆",
+      "exampleId": "903c1bac-d3f0-4c24-948f-ba5dca61f5a7-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "A red dot marked the center of the disk.",
+      "sentenceZh": "一个红点标出了圆盘的中心。",
+      "scene": "Clean close-up of a pale unmarked circular disk lying flat on a blue table; exactly one small solid red circular dot at its geometric center. No other marks or objects.",
+      "altText": "浅色圆盘正中央有一个小红点。",
+      "riskTags": [
+        "exact_quantity",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

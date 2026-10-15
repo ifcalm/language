@@ -1,0 +1,327 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5207-5226",
+  "batchId": "auto-rank-5207-5226-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "realization",
+      "reassure",
+      "reckon",
+      "recruitment",
+      "refusal",
+      "relaxed"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "438efc08-b294-4c23-8ea9-86778f8f6dce",
+      "word": "ranking",
+      "meaningZh": "排名",
+      "exampleId": "438efc08-b294-4c23-8ea9-86778f8f6dce-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "The ranking placed her team at the top.",
+      "sentenceZh": "排名让她的团队位居榜首。",
+      "scene": "Adult climbing competition team atop highest plain podium among lower teams, all full faces no numerals names medals banners; relative ranking clear.",
+      "altText": "团队站在最高领奖台上，位列第一。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f3722df1-e69e-4c64-b656-da1ff76beeb9",
+      "word": "ray",
+      "meaningZh": "光线；射线",
+      "exampleId": "f3722df1-e69e-4c64-b656-da1ff76beeb9-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "A ray of sunlight reached the forest floor.",
+      "sentenceZh": "一束阳光照到森林地面。",
+      "scene": "Single distinct sunbeam passes through leafy canopy onto mossy forest floor, quiet atmosphere no people text.",
+      "altText": "阳光穿过树冠，形成落在苔藓上的光束。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "b2d4e6db-9920-48b0-b206-455a149dbece",
+      "word": "realization",
+      "meaningZh": "实现；认识；领悟",
+      "exampleId": "b2d4e6db-9920-48b0-b206-455a149dbece-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The broken handle led to her realization of the problem.",
+      "sentenceZh": "断裂把手让她认识到了问题。",
+      "scene": "Chinese ceramic potter examines cracked teapot handle with sudden understanding, full expressive face and natural hands, no lightbulb icons writing.",
+      "altText": "陶匠看到茶壶把手裂口，恍然明白问题所在。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "2dedd6a6-b541-421c-8b9d-5da5ed7e23bb",
+      "word": "reasonably",
+      "meaningZh": "合理地",
+      "exampleId": "2dedd6a6-b541-421c-8b9d-5da5ed7e23bb-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The new shelf was reasonably sturdy for its size.",
+      "sentenceZh": "新架子就其尺寸而言相当结实。",
+      "scene": "Compact shelf supports several books and small plant without sagging, balanced modest load no absurd extreme weights people text.",
+      "altText": "小架子稳稳承托书本和盆栽。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5d382f82-4dfc-4c7c-8361-718ef0bfddff",
+      "word": "reasoning",
+      "meaningZh": "推理；论证",
+      "exampleId": "5d382f82-4dfc-4c7c-8361-718ef0bfddff-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "Her reasoning helped them choose the safer path.",
+      "sentenceZh": "她的推理帮助大家选择较安全的路。",
+      "scene": "Adult hiking leader compares unstable flooded rocky route with stable wooden footpath and explains with gestures to companions, full thoughtful faces, no diagrams writing arrows.",
+      "altText": "领队比较两条路的状况，带伙伴选择安全路线。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "8364b909-a8d3-44fd-856d-d17a4471670d",
+      "word": "reassure",
+      "meaningZh": "使放心",
+      "exampleId": "8364b909-a8d3-44fd-856d-d17a4471670d-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The nurse tried to reassure the worried patient.",
+      "sentenceZh": "护士努力让忧虑的病人放心。",
+      "scene": "Chinese clinic nurse sits beside worried older patient listening with calm kind expression, both complete faces, no invasive procedure medical advice text.",
+      "altText": "护士温和倾听，安抚担忧的病人。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "07fef5e2-5333-4c22-ad0c-4674404df942",
+      "word": "rebellion",
+      "meaningZh": "叛乱；反抗",
+      "exampleId": "07fef5e2-5333-4c22-ad0c-4674404df942-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Their rebellion challenged the unfair workshop rules.",
+      "sentenceZh": "他们的反抗挑战了不公平的工坊规则。",
+      "scene": "Fictional adult workers peacefully stand together refusing an overbearing foreman's unreasonable gesture, resolve rather than violence, full faces no flags slogans writing.",
+      "altText": "工人们团结站在一起，反对工坊的不公平安排。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f130de21-8042-4570-ab42-c2c345557fb4",
+      "word": "reckon",
+      "meaningZh": "认为；估算；认定",
+      "exampleId": "f130de21-8042-4570-ab42-c2c345557fb4-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "I reckon the cart can carry the harvest.",
+      "sentenceZh": "我估计这辆车能装下收成。",
+      "scene": "Chinese farmer thoughtfully compares vegetable baskets with available empty cart bed, full assessing face, no math numbers labels text.",
+      "altText": "农人看着收成和车斗，估量能否装下。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c9ef4dae-b22d-4b73-b542-264aa4f5ff42",
+      "word": "reconstruction",
+      "meaningZh": "重建；改造",
+      "exampleId": "c9ef4dae-b22d-4b73-b542-264aa4f5ff42-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "Reconstruction restored the bridge after the flood.",
+      "sentenceZh": "洪水过后，重建使桥恢复了。",
+      "scene": "Same rural bridge three panels broken after flood, workers replace missing deck beams, complete sturdy bridge with matching stone supports; full faces no injury writing.",
+      "altText": "洪水毁坏的桥经重建恢复完整。",
+      "riskTags": [
+        "sequence",
+        "before_after",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "67ed1c87-3401-4392-ae51-315faed0e996",
+      "word": "recount",
+      "meaningZh": "重新计数；叙述",
+      "exampleId": "67ed1c87-3401-4392-ae51-315faed0e996-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "She began to recount the coins to check the total.",
+      "sentenceZh": "她开始重新数硬币，以核对总数。",
+      "scene": "Adult hand moves plain coins from loose heap into orderly small separated groups for a second count, no explicit count demanded numerals marks text.",
+      "altText": "手把散乱硬币重新分组计数。",
+      "riskTags": [
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "01d51d76-a0cc-4dac-acc8-efbb75592123",
+      "word": "recruitment",
+      "meaningZh": "招聘",
+      "exampleId": "01d51d76-a0cc-4dac-acc8-efbb75592123-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Recruitment brought new gardeners to the park.",
+      "sentenceZh": "招聘为公园带来了新园丁。",
+      "scene": "Chinese park supervisor meets adult applicants beside gardening tools before planting beds, full engaged faces, blank clipboard no notices writing.",
+      "altText": "公园负责人接待申请园丁岗位的人。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "efc6fce1-0480-4709-ba55-d497bde53bca",
+      "word": "recycle",
+      "meaningZh": "回收",
+      "exampleId": "efc6fce1-0480-4709-ba55-d497bde53bca-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "They recycle used glass bottles.",
+      "sentenceZh": "他们回收旧玻璃瓶。",
+      "scene": "Used clear glass bottles collected into recycling bin beside newly formed glass jar silhouette, simple material cycle pictorial only no labels arrows writing humans.",
+      "altText": "旧玻璃瓶被集中收集，准备回收再利用。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "4a5c8135-e109-483a-bb4f-341b9b381540",
+      "word": "referee",
+      "meaningZh": "裁判",
+      "exampleId": "4a5c8135-e109-483a-bb4f-341b9b381540-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The referee stopped the match after the foul.",
+      "sentenceZh": "犯规后，裁判停止比赛。",
+      "scene": "Adult referee blows whistle and raises stop hand between football players halting play, full clear faces, no jersey numerals logos text.",
+      "altText": "裁判吹哨示意，球员们停下比赛。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "9b278720-416b-480c-a88c-7508c1090004",
+      "word": "referendum",
+      "meaningZh": "公投",
+      "exampleId": "9b278720-416b-480c-a88c-7508c1090004-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "The town held a referendum on the new park.",
+      "sentenceZh": "小镇就新公园举行公投。",
+      "scene": "Fictional adult townspeople place blank folded ballots in transparent ballot box, proposed park shown through pictorial model nearby, full faces no political party names marks text.",
+      "altText": "居民投票决定新公园提案。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5d0518cf-a586-45e5-bbcf-e0636ba9f13b",
+      "word": "refusal",
+      "meaningZh": "拒绝",
+      "exampleId": "5d0518cf-a586-45e5-bbcf-e0636ba9f13b-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "His refusal to sell the old tree protected it.",
+      "sentenceZh": "他拒绝卖掉老树，使它得到保护。",
+      "scene": "Chinese courtyard elderly caretaker holds open stop palm toward buyer offering coins beside living old tree, full firm faces no logging violence writing.",
+      "altText": "院落主人拒绝收钱卖掉老树。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "4cf58538-bb31-4af9-ba39-e30e3d80d604",
+      "word": "registration",
+      "meaningZh": "注册",
+      "exampleId": "4cf58538-bb31-4af9-ba39-e30e3d80d604-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "Registration took place at the entrance.",
+      "sentenceZh": "登记在入口处进行。",
+      "scene": "Adult community event arrivals check in at entry desk with clerk holding blank form and simple badge, full faces no readable records labels writing.",
+      "altText": "参加者在入口桌前办理登记。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ab6439db-06d6-480d-ad92-ccfcfd7b0962",
+      "word": "reign",
+      "meaningZh": "统治；在位；盛行",
+      "exampleId": "ab6439db-06d6-480d-ad92-ccfcfd7b0962-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The queen's reign brought peace to the kingdom.",
+      "sentenceZh": "女王在位期间为王国带来和平。",
+      "scene": "Fictional storybook adult queen observes thriving peaceful town from modest palace balcony, full serene face no real monarch emblems flags writing.",
+      "altText": "虚构女王从宫廷阳台眺望安宁城镇。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6fdeee60-6e0d-420d-91b0-28cd8dfa71ed",
+      "word": "rejection",
+      "meaningZh": "拒绝；排斥",
+      "exampleId": "6fdeee60-6e0d-420d-91b0-28cd8dfa71ed-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The damaged plank faced rejection during inspection.",
+      "sentenceZh": "受损木板在检查时被淘汰。",
+      "scene": "Carpenter separates visibly cracked plank from accepted stack of sound boards on workbench, full inspecting face, no stamps words text.",
+      "altText": "木匠把有裂缝的木板从合格木料中剔除。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "1a4eb64c-efa6-4b70-bc17-6835cd31c38b",
+      "word": "relaxed",
+      "meaningZh": "放松的",
+      "exampleId": "1a4eb64c-efa6-4b70-bc17-6835cd31c38b-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "She felt relaxed beside the quiet pond.",
+      "sentenceZh": "她在宁静池塘旁感到放松。",
+      "scene": "Chinese courtyard adult woman sits comfortably beside koi pond shoulders loose full peaceful face, no meditation labels writing.",
+      "altText": "女子在院落池塘旁舒展地坐着。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "473f39b5-8320-4119-a527-0c339f711382",
+      "word": "relaxing",
+      "meaningZh": "令人放松的",
+      "exampleId": "473f39b5-8320-4119-a527-0c339f711382-visual-ex",
+      "styleFamily": "felt landscape",
+      "sentenceEn": "The gentle stream made a relaxing sound.",
+      "sentenceZh": "轻缓溪流发出令人放松的声音。",
+      "scene": "Gentle shallow stream flows over smooth stones amid soft foliage, quiet inviting setting no people text sound words.",
+      "altText": "缓缓溪水绕过圆润石块。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

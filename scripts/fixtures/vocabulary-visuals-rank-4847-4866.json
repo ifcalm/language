@@ -1,0 +1,314 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4847-4866",
+  "batchId": "auto-rank-4847-4866-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "dense",
+      "hobby",
+      "honesty",
+      "hopeful",
+      "humble",
+      "humorous"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "bca82af1-7164-4624-99ac-17cc412c5846",
+      "word": "dense",
+      "meaningZh": "密集的；浓厚的",
+      "exampleId": "bca82af1-7164-4624-99ac-17cc412c5846-visual-ex",
+      "styleFamily": "ink and watercolor",
+      "sentenceEn": "The dense bamboo grove blocked the sunlight.",
+      "sentenceZh": "浓密的竹林挡住了阳光。",
+      "scene": "A dense Chinese bamboo grove with tightly spaced stems and overlapping leaves obscuring most sunlight, thin shafts penetrating, no people or text, botanical depth.",
+      "altText": "浓密竹林层层遮挡阳光，只透下少量光束。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "c0be0a77-9cc6-45ac-ad24-4bec1b8c44e8",
+      "word": "hilarious",
+      "meaningZh": "滑稽的",
+      "exampleId": "c0be0a77-9cc6-45ac-ad24-4bec1b8c44e8-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The puppy looked hilarious with a slipper on its head.",
+      "sentenceZh": "小狗头顶拖鞋的模样滑稽极了。",
+      "scene": "A playful puppy accidentally balances a soft slipper on its head with comically puzzled expressive face; adult owner laughs nearby with complete face, gentle comedy no distress.",
+      "altText": "小狗头顶一只拖鞋，主人忍不住笑起来。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f5b5f331-2a5d-4b38-a607-35bd100a1df5",
+      "word": "hobby",
+      "meaningZh": "爱好",
+      "exampleId": "f5b5f331-2a5d-4b38-a607-35bd100a1df5-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Painting porcelain was her favorite hobby.",
+      "sentenceZh": "画瓷器是她最喜欢的爱好。",
+      "scene": "An adult woman enjoys painting a floral pattern on a porcelain bowl in a Chinese home studio, full relaxed face and natural hands, paints and unfinished pieces, no characters on pottery.",
+      "altText": "女子在家中悠闲地给瓷碗画花纹。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "52d9d654-f459-4029-abd3-817fe736c6d9",
+      "word": "seminar",
+      "meaningZh": "研究班；专题讨论会",
+      "exampleId": "52d9d654-f459-4029-abd3-817fe736c6d9-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The seminar gave students a chance to discuss the experiment.",
+      "sentenceZh": "专题讨论会让学生有机会讨论实验。",
+      "scene": "A small seminar of adult students around a round table discussing a physical simple plant growth experiment, facilitator listens, full curious faces and blank papers, no written boards.",
+      "altText": "学生围坐桌边，讨论桌上的植物实验。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ece34990-a37f-492e-93e6-005135c02607",
+      "word": "electronics",
+      "meaningZh": "电子产品",
+      "exampleId": "ece34990-a37f-492e-93e6-005135c02607-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "He repaired old electronics instead of throwing them away.",
+      "sentenceZh": "他修理旧电子产品，而不是把它们扔掉。",
+      "scene": "An adult technician repairs an old radio beside an open desktop speaker and circuit board on organized bench, full focused face, natural hands, no readable circuits screens or brand labels.",
+      "altText": "技术员在工作台上检修旧收音机和其他电子设备。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3d3b2992-6ee2-434a-ae9c-9a8a7631a8de",
+      "word": "hollow",
+      "meaningZh": "空心的；空洞的",
+      "exampleId": "3d3b2992-6ee2-434a-ae9c-9a8a7631a8de-visual-ex",
+      "styleFamily": "felt woodland",
+      "sentenceEn": "The hollow log became a shelter for the rabbit.",
+      "sentenceZh": "空心树干成了兔子的庇护所。",
+      "scene": "A rabbit rests safely inside a naturally hollow fallen log, round open end clearly shows dark tunnel and inner wood wall, forest ferns, no people or text.",
+      "altText": "兔子藏在倒下的空心树干里。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "09d3c249-fe45-485b-b8ad-1b1dd3363cbc",
+      "word": "honesty",
+      "meaningZh": "诚实；正直",
+      "exampleId": "09d3c249-fe45-485b-b8ad-1b1dd3363cbc-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her honesty made her return the wallet she found.",
+      "sentenceZh": "诚实让她归还了捡到的钱包。",
+      "scene": "An adult woman hands a found wallet directly back to grateful owner in a Chinese market lane, full sincere faces, unmarked wallet, no currency text or banners.",
+      "altText": "女子在中式集市把捡到的钱包交还失主。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "13cf3558-0ff0-49a8-a4d8-7f41a4714784",
+      "word": "sunny",
+      "meaningZh": "晴朗的",
+      "exampleId": "13cf3558-0ff0-49a8-a4d8-7f41a4714784-visual-ex",
+      "styleFamily": "watercolor nature",
+      "sentenceEn": "The sunny morning warmed the garden.",
+      "sentenceZh": "晴朗的早晨让花园暖和起来。",
+      "scene": "A bright sunny garden with clear blue sky and strong warm morning sunlight casting crisp gentle shadows over flowers and grass, no clouds crowding sky, people or text.",
+      "altText": "晴朗蓝天下，晨光温暖花园，花草投下清楚影子。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "9698817a-fd25-4011-8bf2-24536df0d649",
+      "word": "hopeful",
+      "meaningZh": "有希望的；充满希望的",
+      "exampleId": "9698817a-fd25-4011-8bf2-24536df0d649-visual-ex",
+      "styleFamily": "textile",
+      "sentenceEn": "She felt hopeful when the first seedling appeared.",
+      "sentenceZh": "第一株幼苗出现时，她满怀希望。",
+      "scene": "An adult gardener looks hopefully at a newly sprouted seedling in a clay pot beside a Chinese courtyard window, complete gentle optimistic face and natural hand, no written labels.",
+      "altText": "女子看着院窗旁陶盆中刚冒出的幼苗，露出期待神情。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "3a5158b2-ffdc-4078-9747-bae41bad917d",
+      "word": "shorts",
+      "meaningZh": "短裤；(美)男人的短衬裤",
+      "exampleId": "3a5158b2-ffdc-4078-9747-bae41bad917d-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "He wore shorts while walking along the beach.",
+      "sentenceZh": "他穿短裤沿海滩散步。",
+      "scene": "An adult beach walker wearing clearly knee-above casual shorts, full body including bare lower legs, complete relaxed face, sand and surf, no logos or writing.",
+      "altText": "男子穿着露出小腿的短裤在海滩散步。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "45239c04-b9b1-4763-95dd-2a1c19793ce5",
+      "word": "hostility",
+      "meaningZh": "敌意；敌对",
+      "exampleId": "45239c04-b9b1-4763-95dd-2a1c19793ce5-visual-ex",
+      "styleFamily": "gouache animals",
+      "sentenceEn": "The cat showed hostility toward the unfamiliar dog.",
+      "sentenceZh": "猫对陌生的狗表现出敌意。",
+      "scene": "An irritated cat arches back with ears flattened and wide eyes facing an unfamiliar dog at a safe distance, no bites injuries or exaggerated monster teeth, clear hostile animal posture.",
+      "altText": "猫弓背压低耳朵，敌视地面对保持距离的陌生狗。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "ae4fc127-fcab-428a-8fb7-3b3ec1bdeafa",
+      "word": "swell",
+      "meaningZh": "肿胀；膨胀；增大",
+      "exampleId": "ae4fc127-fcab-428a-8fb7-3b3ec1bdeafa-visual-ex",
+      "styleFamily": "paper-cut comparison",
+      "sentenceEn": "The dry beans began to swell in the water.",
+      "sentenceZh": "干豆子开始在水中膨胀。",
+      "scene": "Two identical transparent bowls in paired view, left contains small dry beans, right contains clearly enlarged plump beans soaking in water, same number visually approximate, no labels arrows text or human faces.",
+      "altText": "对比图展示小干豆与泡水后明显膨大的豆子。",
+      "riskTags": [
+        "comparison",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "a5a01af4-f223-4d17-b3c2-f8dbca5f2312",
+      "word": "accusation",
+      "meaningZh": "指控",
+      "exampleId": "a5a01af4-f223-4d17-b3c2-f8dbca5f2312-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He denied the accusation that he had broken the vase.",
+      "sentenceZh": "他否认了自己打碎花瓶的指控。",
+      "scene": "Two adult roommates beside a broken vase in a living room, one points toward damage while the accused raises open palms and looks surprised, a cat near overturned shelf suggests uncertainty, complete faces, no labels or speech bubbles.",
+      "altText": "室友指向破碎花瓶，另一人惊讶地摊手否认，猫在附近。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2f6baf0c-b316-4521-a2af-d474f549da3f",
+      "word": "humanitarian",
+      "meaningZh": "人道主义的",
+      "exampleId": "2f6baf0c-b316-4521-a2af-d474f549da3f-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The humanitarian team delivered blankets after the flood.",
+      "sentenceZh": "洪水后，人道主义援助团队送来了毯子。",
+      "scene": "A humanitarian aid team hands clean folded blankets to displaced families on safe dry ground after a flood, all readable faces complete and dignified, no organization logos signs graphic suffering or flags.",
+      "altText": "救援人员在干燥安全处把毯子交给受洪灾影响的居民。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b700a80a-2418-477f-afee-baf15e145a83",
+      "word": "humble",
+      "meaningZh": "谦逊的",
+      "exampleId": "b700a80a-2418-477f-afee-baf15e145a83-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The humble master listened carefully to the young apprentice.",
+      "sentenceZh": "谦逊的大师认真听年轻学徒说话。",
+      "scene": "An older Chinese woodworking master attentively listens to a young adult apprentice explaining a small joint model, master seated at same level with modest warm complete face, no medals text or grand pose.",
+      "altText": "木作大师与学徒平视，谦逊地听取对方讲解。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ca044f13-7308-4fd8-8c08-749771d99981",
+      "word": "soften",
+      "meaningZh": "软化",
+      "exampleId": "ca044f13-7308-4fd8-8c08-749771d99981-visual-ex",
+      "styleFamily": "editorial 3D still life",
+      "sentenceEn": "The butter began to soften beside the warm stove.",
+      "sentenceZh": "黄油在温暖炉边开始变软。",
+      "scene": "A butter block on plain plate near warm stove, corners visibly rounded and a small soft droop at bottom, butter still mostly solid rather than fully melted, no labels or text.",
+      "altText": "炉边盘子里的黄油边角变圆，底部轻微下垂。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "1e8b00ae-8e89-47d0-8861-d3bc5e9224bd",
+      "word": "humorous",
+      "meaningZh": "幽默的",
+      "exampleId": "1e8b00ae-8e89-47d0-8861-d3bc5e9224bd-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "His humorous story made everyone smile.",
+      "sentenceZh": "他的幽默故事让大家都笑了。",
+      "scene": "A lively adult storyteller with expressive full face gently gestures while friends smile around tea in a Chinese courtyard, no speech bubbles writing or exaggerated comedy props.",
+      "altText": "庭院茶桌旁的人绘声绘色地讲故事，朋友们微笑倾听。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "4860f86e-bdd6-40ed-a654-3af754868970",
+      "word": "hydrogen",
+      "meaningZh": "氢",
+      "exampleId": "4860f86e-bdd6-40ed-a654-3af754868970-visual-ex",
+      "styleFamily": "screen-print science",
+      "sentenceEn": "Hydrogen filled the sealed laboratory cylinder.",
+      "sentenceZh": "氢气装在密封的实验室气瓶里。",
+      "scene": "A sealed tall laboratory gas cylinder with valve and cap beside clean lab equipment, neutral unmarked exterior, concept of contained hydrogen contextualized by sentence rather than visible gas color, no flames text letters or molecular symbols.",
+      "altText": "实验室里放着密封的气瓶，阀门和保护帽清楚可见。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "935070e1-6b14-4c56-bf73-9c54378a1eb2",
+      "word": "straighten",
+      "meaningZh": "弄直；整理",
+      "exampleId": "935070e1-6b14-4c56-bf73-9c54378a1eb2-visual-ex",
+      "styleFamily": "paper-cut sequence",
+      "sentenceEn": "She paused to straighten the crooked picture.",
+      "sentenceZh": "她停下来扶正歪斜的画。",
+      "scene": "Exactly two panels same room and adult woman: left framed picture clearly crooked, right woman adjusts it perfectly level, complete faces and natural hands, no arrows words or frame inscriptions.",
+      "altText": "同一幅画从明显倾斜变成被女子扶正的水平状态。",
+      "riskTags": [
+        "before_after",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c7a1efa1-a73b-40a3-8df6-75392e8df9bb",
+      "word": "id",
+      "meaningZh": "身份；标识；ID",
+      "exampleId": "c7a1efa1-a73b-40a3-8df6-75392e8df9bb-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The guard checked her ID at the entrance.",
+      "sentenceZh": "门卫在入口检查她的身份证件。",
+      "scene": "Adult visitor hands a small photo ID card to a guard at entrance, card contains only miniature portrait and blank non-text area, complete full faces, no numbers QR code symbols or readable writing.",
+      "altText": "访客在入口把带头像的证件交给门卫检查。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

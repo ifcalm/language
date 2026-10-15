@@ -1,0 +1,324 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5327-5346",
+  "batchId": "auto-rank-5327-5346-20261006",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 7,
+    "words": [
+      "strand",
+      "strive",
+      "stunning",
+      "substitute",
+      "successive",
+      "summarize",
+      "supervise"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b04f7955-6eea-4793-b166-edd7ef0ec296",
+      "word": "strand",
+      "meaningZh": "股；缕；搁浅",
+      "exampleId": "b04f7955-6eea-4793-b166-edd7ef0ec296-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "A strand of silk lay across the loom.",
+      "sentenceZh": "一缕丝线横在织机上。",
+      "scene": "Chinese silk weaving loom detail, single vivid red silk strand pulled gently across muted warp threads, natural hands no face. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "织机上，一缕红色丝线横过经线。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b9c0fe17-8a1a-4059-a8ba-03d75464dbd2",
+      "word": "strive",
+      "meaningZh": "奋斗；努力",
+      "exampleId": "b9c0fe17-8a1a-4059-a8ba-03d75464dbd2-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The rowers strive to move together.",
+      "sentenceZh": "桨手努力保持动作一致。",
+      "scene": "Chinese dragon boat crew train coordinated strong paddle strokes, full determined faces, no race text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "龙舟桨手奋力划桨，努力保持动作同步。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "86e082c5-fb12-4c8e-818e-8bdfde80fde8",
+      "word": "stun",
+      "meaningZh": "使震惊；使昏迷",
+      "exampleId": "86e082c5-fb12-4c8e-818e-8bdfde80fde8-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The unexpected rainbow seemed to stun the hikers.",
+      "sentenceZh": "意外彩虹让徒步者惊呆了。",
+      "scene": "Adult hikers pause with astonished full expressions at vivid double rainbow over valley, no danger injury. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "徒步者看到山谷上空的双彩虹，惊讶停步。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "f20ae097-7f5e-45bb-a39e-6434b1c9761b",
+      "word": "stunning",
+      "meaningZh": "惊艳的",
+      "exampleId": "f20ae097-7f5e-45bb-a39e-6434b1c9761b-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "The stunning mountain view stopped them in their tracks.",
+      "sentenceZh": "惊艳山景让他们停下脚步。",
+      "scene": "Grand Chinese mountain sea-of-clouds panorama, two tiny adult hikers on protected viewpoint face scenery, painterly no signs. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "山峦与云海壮丽展开，游客驻足观赏。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "5537998e-76e7-4c28-a0d6-14828aa22cad",
+      "word": "submission",
+      "meaningZh": "提交；屈服；意见书",
+      "exampleId": "5537998e-76e7-4c28-a0d6-14828aa22cad-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Her submission included a model of the new garden.",
+      "sentenceZh": "她提交的方案包含新花园模型。",
+      "scene": "Adult designer hands scale garden model and blank folder across desk to committee, full faces, submission action focal. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "设计师把花园模型和方案文件交给评审。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "fceae114-2cc8-4974-a2c4-84feb1dcc2f4",
+      "word": "subscriber",
+      "meaningZh": "订阅者",
+      "exampleId": "fceae114-2cc8-4974-a2c4-84feb1dcc2f4-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The subscriber received a magazine every month.",
+      "sentenceZh": "订阅者每月收到一本杂志。",
+      "scene": "Adult receives plain pictorial gardening magazine from mail carrier at home, prior matching issues neatly stacked inside, complete faces no text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "订阅者收到新的园艺杂志，家中叠着往期刊物。",
+      "riskTags": [
+        "people_face",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "53d1a9cd-c365-4ad8-905e-f30a433c89bb",
+      "word": "subscription",
+      "meaningZh": "订阅；订购",
+      "exampleId": "53d1a9cd-c365-4ad8-905e-f30a433c89bb-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The subscription brought a new issue to her door each month.",
+      "sentenceZh": "订阅让每月的新刊送到她门口。",
+      "scene": "Three equal sequential panels same doorstep and recurring magazine delivery across changing seasonal plants, pictorial covers no dates text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "随着季节变化，新一期杂志持续送到同一门口。",
+      "riskTags": [
+        "sequence",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "627376a1-65b5-4605-ac63-1701ef0a5252",
+      "word": "subsequently",
+      "meaningZh": "后来",
+      "exampleId": "627376a1-65b5-4605-ac63-1701ef0a5252-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The seeds sprouted and subsequently grew into strong plants.",
+      "sentenceZh": "种子发芽，随后长成健壮植株。",
+      "scene": "Three successive panels same distinctive blue pot: seed in soil, tiny sprout, robust leafy plant, no arrows numbers words. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "同一蓝色花盆里，种子先发芽，随后长成植株。",
+      "riskTags": [
+        "sequence",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "bf64f20f-5485-4416-9126-e67f2139fe27",
+      "word": "substitute",
+      "meaningZh": "替代品；替代",
+      "exampleId": "bf64f20f-5485-4416-9126-e67f2139fe27-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The cook used tofu as a substitute for meat.",
+      "sentenceZh": "厨师用豆腐替代肉。",
+      "scene": "Chinese home kitchen tofu cubes added to vegetable stir-fry, unused small meat plate set aside clearly, natural hands no faces. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "厨师把豆腐加入菜中，旁边的肉留着未用。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "3df8b975-4668-483a-826a-ce095bde1d09",
+      "word": "substitution",
+      "meaningZh": "替换",
+      "exampleId": "3df8b975-4668-483a-826a-ce095bde1d09-visual-ex",
+      "styleFamily": "paper-cut illustration",
+      "sentenceEn": "The substitution replaced the damaged wheel with a new one.",
+      "sentenceZh": "这次替换把坏轮子换成了新轮子。",
+      "scene": "Bicycle repair close view mechanic installs intact replacement wheel while old bent wheel leans separately nearby, natural hands. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "维修者装上新轮子，拆下的弯曲旧轮放在一旁。",
+      "riskTags": [
+        "hands",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "54d1745a-0fa7-4075-a814-c1a6b25a64c0",
+      "word": "subway",
+      "meaningZh": "地铁",
+      "exampleId": "54d1745a-0fa7-4075-a814-c1a6b25a64c0-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The subway arrived at the platform.",
+      "sentenceZh": "地铁驶入站台。",
+      "scene": "Unbranded underground subway train arriving at clean platform with safe waiting adults behind tactile edge, complete faces no signage readable interfaces. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "地下站台上，乘客在安全线后等候地铁到站。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "50a2965e-ccf0-4eab-bea4-245d2c5f0712",
+      "word": "succession",
+      "meaningZh": "连续；继承",
+      "exampleId": "50a2965e-ccf0-4eab-bea4-245d2c5f0712-visual-ex",
+      "styleFamily": "textile landscape",
+      "sentenceEn": "A succession of waves reached the shore.",
+      "sentenceZh": "一连串海浪涌到岸边。",
+      "scene": "Several distinct successive parallel ocean wave crests approach sandy shore, layered textile art, no people. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "一层接一层的海浪连续涌向沙滩。",
+      "riskTags": [
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "c1ce87b4-a85e-438c-bb9c-1e711ca2f7c9",
+      "word": "successive",
+      "meaningZh": "连续的",
+      "exampleId": "c1ce87b4-a85e-438c-bb9c-1e711ca2f7c9-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The plant flowered on three successive mornings.",
+      "sentenceZh": "这株植物连续三个早晨开花。",
+      "scene": "Three equal panels same Chinese courtyard lotus plant at morning light opening bloom each day, recognizable vessel consistent, no dates text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "三幅连续画面中，同一株荷花都在晨光里开放。",
+      "riskTags": [
+        "Chinese_culture",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "b8448afc-5a0e-4703-a424-49fa0abdcec8",
+      "word": "successor",
+      "meaningZh": "继任者",
+      "exampleId": "b8448afc-5a0e-4703-a424-49fa0abdcec8-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The retiring manager welcomed her successor.",
+      "sentenceZh": "即将退休的经理欢迎继任者。",
+      "scene": "Older adult manager hands workshop key to younger adult replacement while team welcomes them, clear full faces respectful action no certificates text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "即将退休的主管把工坊钥匙交给继任者。",
+      "riskTags": [
+        "people_face",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "4b0b18c6-8589-442e-9d2c-96fb56bdc151",
+      "word": "sufficiently",
+      "meaningZh": "足够地",
+      "exampleId": "4b0b18c6-8589-442e-9d2c-96fb56bdc151-visual-ex",
+      "styleFamily": "paper-cut illustration",
+      "sentenceEn": "The bridge was sufficiently wide for two bicycles.",
+      "sentenceZh": "桥足够宽，可容两辆自行车通过。",
+      "scene": "Two adult cyclists safely ride side by side across bridge with visible ample clearance and railings, full faces, no measurements. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "两名骑车者并排过桥，桥面宽度足够。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "6e6221a5-5f99-4d16-8abc-9ca207cc00c2",
+      "word": "summarize",
+      "meaningZh": "总结",
+      "exampleId": "6e6221a5-5f99-4d16-8abc-9ca207cc00c2-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "She used a small model to summarize the restoration plan.",
+      "sentenceZh": "她用小模型概述修复计划。",
+      "scene": "Chinese courtyard renovation planner groups many detailed pictorial sketches behind one concise scale courtyard model presenting central essentials, full face no writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "规划者用简洁院落模型概述多张图纸中的修复方案。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3ed0c9b1-ea09-4cf5-954e-3d7013e4d0da",
+      "word": "sunday",
+      "meaningZh": "星期日",
+      "exampleId": "3ed0c9b1-ea09-4cf5-954e-3d7013e4d0da-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "On Sunday, the family walked through the park.",
+      "sentenceZh": "星期日，一家人在公园散步。",
+      "scene": "Family casually strolls leafy public park on peaceful rest day, varied full faces, no calendars text; Sunday identified by sentence. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "休息日里，一家人悠闲走过绿树成荫的公园。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0f923bf2-ff05-4868-bf36-beacb21053b9",
+      "word": "superb",
+      "meaningZh": "极好的；卓越的",
+      "exampleId": "0f923bf2-ff05-4868-bf36-beacb21053b9-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The carpenter produced a superb wooden chair.",
+      "sentenceZh": "木匠制作出一把卓越的木椅。",
+      "scene": "Finished finely crafted wooden chair with precise joinery smooth finish in workshop, adult craftsperson admires it full face, no awards text. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "木匠欣赏精细榫接、表面光洁的成品木椅。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "84c19996-6ba4-4dde-9b31-9fcfa069edc2",
+      "word": "superintendent",
+      "meaningZh": "主管；警长",
+      "exampleId": "84c19996-6ba4-4dde-9b31-9fcfa069edc2-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The superintendent inspected the building repairs.",
+      "sentenceZh": "主管检查建筑维修情况。",
+      "scene": "Adult building superintendent examines repaired stair handrail with maintenance worker, practical plain clothes complete faces no badges paperwork writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "建筑主管和维修工一起检查修好的楼梯扶手。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9d18e667-a268-4b9a-b6a2-8a30e0a9fb6f",
+      "word": "supervise",
+      "meaningZh": "监督；管理",
+      "exampleId": "9d18e667-a268-4b9a-b6a2-8a30e0a9fb6f-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The instructor will supervise the pottery class.",
+      "sentenceZh": "老师将监督陶艺课。",
+      "scene": "Chinese ceramics instructor carefully observes adult learners shaping bowls and gently guides hands, full patient faces safe workshop no writing. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "陶艺老师巡视学员制作陶碗，并指导手部动作。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

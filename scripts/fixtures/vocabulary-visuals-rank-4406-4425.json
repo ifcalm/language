@@ -1,0 +1,312 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4406-4425",
+  "batchId": "auto-rank-4406-4425-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "continually",
+      "intact",
+      "vendor",
+      "thrive",
+      "elaborate",
+      "conception"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "9bfe3120-91fc-4720-8628-8db44396c483",
+      "word": "continually",
+      "meaningZh": "不断地；频繁地",
+      "exampleId": "9bfe3120-91fc-4720-8628-8db44396c483-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The gardener continually checked the young plants.",
+      "sentenceZh": "园丁不断查看幼苗。",
+      "scene": "Three panels same Chinese garden adult checks same seedling beds repeatedly morning midday evening with changing sun position, complete faces no clocks labels text.",
+      "altText": "园丁在早晨、中午和傍晚反复查看同一片幼苗。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "47593c58-7bdf-4785-b6fd-11657b1d7d1f",
+      "word": "contradiction",
+      "meaningZh": "矛盾；对立；反驳",
+      "exampleId": "47593c58-7bdf-4785-b6fd-11657b1d7d1f-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The two pictures showed a contradiction.",
+      "sentenceZh": "两张图片呈现了矛盾。",
+      "scene": "Adult compares two incompatible pictures of SAME sealed transparent box at same moment: one shows empty interior other shows red ball inside, visual contradictory claims no text symbols digits.",
+      "altText": "同一个透明盒子的两张图分别显示空盒与盒内红球。",
+      "riskTags": [
+        "semantic_accuracy",
+        "abstract_meaning",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "ee2d59ab-f619-452f-b25a-445e64a48fbd",
+      "word": "outlet",
+      "meaningZh": "出口；发泄方法；市场",
+      "exampleId": "ee2d59ab-f619-452f-b25a-445e64a48fbd-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Water flowed through the outlet into the stream.",
+      "sentenceZh": "水通过出口流入小溪。",
+      "scene": "Clear drainage outlet pipe emerges from retaining wall and releases clean water into shallow stream, exit flow central illustrated water no pollution text.",
+      "altText": "清水从挡墙上的管道出口流入浅溪。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "28ff3171-36b9-40d0-88fe-e6e434b0b33b",
+      "word": "contrary",
+      "meaningZh": "相反的；对立的",
+      "exampleId": "28ff3171-36b9-40d0-88fe-e6e434b0b33b-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The boats moved in contrary directions.",
+      "sentenceZh": "两艘船向相反方向移动。",
+      "scene": "Two small boats on parallel separated tracks of calm water one moves LEFT other RIGHT, coherent wakes behind each boat show opposite motion, no arrows words digits.",
+      "altText": "两艘小船的船尾水迹显示它们向相反方向行驶。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "bda0ef52-dc4d-4456-83f3-c51a4f88c986",
+      "word": "intact",
+      "meaningZh": "完好无损的；完整的",
+      "exampleId": "bda0ef52-dc4d-4456-83f3-c51a4f88c986-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The vase arrived intact in its padded box.",
+      "sentenceZh": "花瓶完好无损地装在衬垫盒中送到。",
+      "scene": "Chinese home adult opens padded shipping box revealing one wholly intact ceramic vase no chips cracks missing parts, full face natural hands no shipping labels.",
+      "altText": "打开衬垫包装盒后，陶瓷花瓶完好无损。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "7679bc51-2174-4f27-bc8d-55bb95357c23",
+      "word": "convenient",
+      "meaningZh": "方便的；便利的",
+      "exampleId": "7679bc51-2174-4f27-bc8d-55bb95357c23-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The nearby bus stop was convenient for her commute.",
+      "sentenceZh": "附近的公交站方便她通勤。",
+      "scene": "Adult exits home with bus stop immediately along short unobstructed path and bus arriving safely, proximity and easy access obvious, no signage readable interface text.",
+      "altText": "住家旁短路尽头就是公交站，车辆正在到站。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f74028b3-aed8-46bb-8a11-c554384d305f",
+      "word": "vendor",
+      "meaningZh": "供应商；小贩",
+      "exampleId": "f74028b3-aed8-46bb-8a11-c554384d305f-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The vendor sold fresh fruit at the market.",
+      "sentenceZh": "小贩在市场出售新鲜水果。",
+      "scene": "Chinese street fruit vendor hands fresh fruit to customer across tidy stall piled with produce, respectful complete faces no prices words logos.",
+      "altText": "市场水果摊上，小贩向顾客递交新鲜水果。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "e05c3954-44bf-43e3-a72b-2eaa77484984",
+      "word": "convincing",
+      "meaningZh": "有说服力的；令人信服的",
+      "exampleId": "e05c3954-44bf-43e3-a72b-2eaa77484984-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The demonstration provided convincing evidence.",
+      "sentenceZh": "演示提供了令人信服的证据。",
+      "scene": "Adult demonstrator shows sturdy repaired chair supporting weight of seated adult while observers nod persuaded, evidence-based physical demonstration no unsafe overload text or symbols.",
+      "altText": "修好的椅子稳稳承重，观察者点头认可演示。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "c4f71b89-e8a0-4204-a908-5b48d84a4a9f",
+      "word": "thrive",
+      "meaningZh": "繁荣；兴旺",
+      "exampleId": "c4f71b89-e8a0-4204-a908-5b48d84a4a9f-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The plants thrive in the sunny garden.",
+      "sentenceZh": "植物在阳光充足的花园里茁壮生长。",
+      "scene": "Chinese courtyard abundant healthy thriving vegetables flowers and vigorous green foliage in well tended sunny beds, balanced water no supernatural growth text.",
+      "altText": "阳光下，庭院里的蔬菜花卉枝叶茂盛。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "4c7d9fee-4762-4f97-ab82-707bfefa8777",
+      "word": "coordination",
+      "meaningZh": "协调；配合",
+      "exampleId": "4c7d9fee-4762-4f97-ab82-707bfefa8777-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Good coordination helped them carry the long table.",
+      "sentenceZh": "良好的配合帮助他们搬运长桌。",
+      "scene": "Two adults carry opposite ends of one long table together on level clear path, matching pace eye contact and secure grip, no text.",
+      "altText": "两人步调一致，各抬长桌一端协同搬运。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "50201521-759f-4f7a-9f08-2ce38b57a93a",
+      "word": "peanut",
+      "meaningZh": "花生",
+      "exampleId": "50201521-759f-4f7a-9f08-2ce38b57a93a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She opened the shell to reveal a peanut.",
+      "sentenceZh": "她打开外壳，露出一颗花生。",
+      "scene": "Close still life split textured tan peanut pod showing two reddish skin kernels, one kernel prominent, Chinese harvest basket background and natural hand no labels.",
+      "altText": "打开的粗糙花生壳中露出红皮花生仁。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "ed28f3f3-b882-4cd3-8ebb-25e100a2483b",
+      "word": "chew",
+      "meaningZh": "咀嚼；嚼碎；细想",
+      "exampleId": "ed28f3f3-b882-4cd3-8ebb-25e100a2483b-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "He took time to chew his food.",
+      "sentenceZh": "他慢慢咀嚼食物。",
+      "scene": "Adult seated dining chews small bite with closed lips relaxed jaw and food plate, natural mature face no exaggerated mouth interior choking or text.",
+      "altText": "用餐者闭着嘴缓慢咀嚼一小口食物。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "7ac04610-a3e4-4317-9c4f-0fa1106da998",
+      "word": "copper",
+      "meaningZh": "铜；铜币",
+      "exampleId": "7ac04610-a3e4-4317-9c4f-0fa1106da998-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The wire was made of copper.",
+      "sentenceZh": "这根电线由铜制成。",
+      "scene": "Close one coil reddish metallic copper wire and short insulated cable cutaway revealing same copper core, matte illustrated materials no electricity hazard text labels.",
+      "altText": "红铜线圈与露出铜芯的一小段绝缘电线。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "060ea677-5f43-4b83-9a4e-8e32bce50714",
+      "word": "correction",
+      "meaningZh": "纠正；改正；修正",
+      "exampleId": "060ea677-5f43-4b83-9a4e-8e32bce50714-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The correction put the blocks in the right order.",
+      "sentenceZh": "修正让积木按正确顺序排列。",
+      "scene": "Two panels geometric block arrangement: first ascending-size row contains misplaced largest block between smaller ones, second adult rearranges to clearly monotonic small medium large order, no checkmarks letters digits.",
+      "altText": "两格画面显示错放的积木被调整成从小到大的顺序。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "10022965-787a-4b91-91d9-3f3be2ae17d0",
+      "word": "elaborate",
+      "meaningZh": "精细的；详尽的；精心计划(或制作)的",
+      "exampleId": "10022965-787a-4b91-91d9-3f3be2ae17d0-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The artisan made an elaborate paper lantern.",
+      "sentenceZh": "工匠制作了一盏精细的纸灯笼。",
+      "scene": "Chinese lantern artisan makes original elaborate lantern intricate cut paper floral lattice many carefully crafted details safe unlit lantern, complete face no calligraphy text.",
+      "altText": "工匠制作带精细花卉镂空结构的纸灯笼。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "89260bc0-474b-4e9f-8c60-567c2c928537",
+      "word": "correlate",
+      "meaningZh": "关联；相关",
+      "exampleId": "89260bc0-474b-4e9f-8c60-567c2c928537-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The study asked whether rainfall and plant growth correlate.",
+      "sentenceZh": "研究探讨降雨与植物生长是否相关。",
+      "scene": "Researcher compares several paired pictorial observations rainfall droplet density beside plant height, more rain often accompanies taller plants but one exception, association not guaranteed causal claim, no graphs numbers text.",
+      "altText": "研究者比较雨滴多少与植物高度的多组观察记录。",
+      "riskTags": [
+        "semantic_accuracy",
+        "abstract_meaning",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "6273ba56-5105-4323-a27f-414cb2e9ade9",
+      "word": "conception",
+      "meaningZh": "概念；构想",
+      "exampleId": "6273ba56-5105-4323-a27f-414cb2e9ade9-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The sketch showed her conception of the new garden.",
+      "sentenceZh": "草图呈现了她对新花园的构想。",
+      "scene": "Chinese garden designer considers original hand-drawn garden plan with proposed pond pathways flowerbeds while vacant site visible beyond window, idea before building no words labels.",
+      "altText": "设计者通过池塘、步道与花坛草图构想尚未建成的花园。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "9eeb122b-8f69-4e91-863b-e5cf10a0caee",
+      "word": "correspond",
+      "meaningZh": "对应；符合；通信",
+      "exampleId": "9eeb122b-8f69-4e91-863b-e5cf10a0caee-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The keys correspond to the matching locks.",
+      "sentenceZh": "钥匙与相匹配的锁对应。",
+      "scene": "Three stylized puzzle keys with circular star and triangular TIPS beside matching same-size lockholes, handles identical rings, clearly compatible one-to-one pairing on plain paper. No text or photorealistic background.",
+      "altText": "三把不同形状钥匙各自配着对应锁孔的锁。",
+      "riskTags": [
+        "semantic_accuracy",
+        "abstract_meaning",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "2fb6cbf4-4f4c-4a72-bbfc-3c01c9c2a586",
+      "word": "auction",
+      "meaningZh": "拍卖",
+      "exampleId": "2fb6cbf4-4f4c-4a72-bbfc-3c01c9c2a586-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The painting was sold at an auction.",
+      "sentenceZh": "这幅画在拍卖会上售出。",
+      "scene": "Adult auctioneer with gavel beside original landscape painting and bidders raising plain unnumbered paddles, clear auction process complete faces no prices signs text.",
+      "altText": "拍卖师在风景画旁主持竞价，买家举起无字竞价牌。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a6420407-a2cd-4b5c-829c-0cb12c79952e",
+      "word": "correspondence",
+      "meaningZh": "通信；信件；对应关系",
+      "exampleId": "a6420407-a2cd-4b5c-829c-0cb12c79952e-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "Their correspondence continued through handwritten letters.",
+      "sentenceZh": "他们通过手写信件持续通信。",
+      "scene": "Two separated panels adult friends in different homes write and receive letters, envelopes and stacked correspondence main focus blank visible paper surfaces no handwriting shown words or digits.",
+      "altText": "不同住处的朋友写信、收信，用信件保持联系。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5047-5066",
+  "batchId": "auto-rank-5047-5066-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "manuscript",
+      "martial",
+      "massacre",
+      "means",
+      "meditation",
+      "merger"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "83482194-e068-4176-8422-189116f467e6",
+      "word": "manuscript",
+      "meaningZh": "手稿；原稿",
+      "exampleId": "83482194-e068-4176-8422-189116f467e6-visual-ex",
+      "styleFamily": "textile still life",
+      "sentenceEn": "She placed the manuscript beside her writing brush.",
+      "sentenceZh": "她把手稿放在毛笔旁。",
+      "scene": "Chinese study desk with bound stack of manuscript paper and writing brush in inkstone, pages abstract nonlinguistic brush strokes no readable Chinese characters or text.",
+      "altText": "中式书桌上，手稿放在毛笔与砚台旁。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b5c0edc1-8dcc-46a0-9f07-55b08efed207",
+      "word": "marathon",
+      "meaningZh": "马拉松",
+      "exampleId": "b5c0edc1-8dcc-46a0-9f07-55b08efed207-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The runners completed the marathon together.",
+      "sentenceZh": "跑步者们一起完成了马拉松。",
+      "scene": "Diverse adult distance runners with sweaty but illustrated complete joyful faces cross plain finish ribbon together, water station distant, no race numbers banners lettering or text.",
+      "altText": "长跑者们携手跑过终点带。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6c30d86c-dfbc-4491-9fe3-9a6536954068",
+      "word": "marginal",
+      "meaningZh": "边缘的",
+      "exampleId": "6c30d86c-dfbc-4491-9fe3-9a6536954068-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "Grass grew on the marginal strip beside the field.",
+      "sentenceZh": "田地边缘的窄条地带长着草。",
+      "scene": "Wide cultivated field with narrow grassy strip exactly along outer edge beside stone boundary, overhead oblique composition, no people text.",
+      "altText": "耕地外缘的一条狭窄地带长着青草。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "f15198ae-59bb-4713-a1b4-a8e60977bdfa",
+      "word": "martial",
+      "meaningZh": "武术的；军事的",
+      "exampleId": "f15198ae-59bb-4713-a1b4-a8e60977bdfa-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "She practiced martial arts in the courtyard.",
+      "sentenceZh": "她在院子里练习武术。",
+      "scene": "Adult woman practices a controlled Chinese martial arts stance in courtyard, full focused face, stable feet natural arms, no combat weapons opponent labels or text.",
+      "altText": "女子在院落里沉稳地练武术姿势。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "791298d4-7570-4c39-8d8a-14aba9f87d09",
+      "word": "massacre",
+      "meaningZh": "大屠杀",
+      "exampleId": "791298d4-7570-4c39-8d8a-14aba9f87d09-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The memorial honored the victims of the massacre.",
+      "sentenceZh": "这座纪念碑纪念大屠杀遇难者。",
+      "scene": "Adults quietly place white flowers at solemn plain stone memorial in Chinese remembrance garden, complete grieving respectful faces, no readable inscriptions gore violence or identifiable real event.",
+      "altText": "人们在纪念园石碑前献上白花，悼念遇难者。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0f522cd2-e961-42d7-bc7d-ca8f798f3463",
+      "word": "matching",
+      "meaningZh": "匹配的；相配的",
+      "exampleId": "0f522cd2-e961-42d7-bc7d-ca8f798f3463-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "She wore matching gloves and a scarf.",
+      "sentenceZh": "她戴着相配的手套和围巾。",
+      "scene": "Adult woman wears scarf and pair of gloves with identical teal-and-cream diamond pattern, full pleasant face, winter backdrop, matching pattern obvious.",
+      "altText": "女子的围巾与手套采用相同的青白菱形图案。",
+      "riskTags": [
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d731210f-cc97-499e-984b-19e5b41d7837",
+      "word": "mathematical",
+      "meaningZh": "数学的",
+      "exampleId": "d731210f-cc97-499e-984b-19e5b41d7837-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The blocks formed a mathematical pattern.",
+      "sentenceZh": "积木形成了一个数学图案。",
+      "scene": "Three groups of cubes ascending visually: first one cube, second two-by-two square four cubes, third three-by-three square nine cubes, no numbers symbols text humans.",
+      "altText": "积木按一块、四块、九块的方阵依次排列。",
+      "riskTags": [
+        "exact_quantity",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "e3455d17-ac5d-46c9-99f5-1ddc8d9479a3",
+      "word": "mature",
+      "meaningZh": "成熟的；成年人的",
+      "exampleId": "e3455d17-ac5d-46c9-99f5-1ddc8d9479a3-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The mature oak shaded the entire bench.",
+      "sentenceZh": "成熟的橡树为整张长椅遮阴。",
+      "scene": "Large fully grown oak with thick trunk and broad leafy crown shades entire empty park bench, no humans text.",
+      "altText": "枝繁叶茂的成年橡树遮住整张长椅。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "62760a4d-1165-42b3-b9fa-093ca29f81aa",
+      "word": "maximize",
+      "meaningZh": "最大化",
+      "exampleId": "62760a4d-1165-42b3-b9fa-093ca29f81aa-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "They arranged the panels to maximize sunlight.",
+      "sentenceZh": "他们调整面板位置，以最大限度利用阳光。",
+      "scene": "Sunlit roof solar panels aligned toward visible sun, adjacent tree shadow falls away from panels, simple coherent arrangement, no diagrams arrows writing or people.",
+      "altText": "屋顶太阳能板朝向阳光，并避开树荫。",
+      "riskTags": [
+        "cause_effect",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "d3f5ac0b-f8cc-4597-8061-8e2c680039f7",
+      "word": "means",
+      "meaningZh": "手段；方式；方法",
+      "exampleId": "d3f5ac0b-f8cc-4597-8061-8e2c680039f7-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The boat was their means of crossing the river.",
+      "sentenceZh": "船是他们渡河的交通方式。",
+      "scene": "Two adults use a small ferry boat to cross river in Chinese water town, boatman rows, complete faces, river clearly separates banks.",
+      "altText": "江南水乡里，人们乘小船渡河。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c0c54ee6-42a8-4834-808c-2aeb4e6aa562",
+      "word": "medieval",
+      "meaningZh": "中世纪的",
+      "exampleId": "c0c54ee6-42a8-4834-808c-2aeb4e6aa562-visual-ex",
+      "styleFamily": "woodcut architecture",
+      "sentenceEn": "The medieval bridge crossed the narrow river.",
+      "sentenceZh": "这座中世纪桥梁横跨狭窄河流。",
+      "scene": "Fictional European medieval stone arch bridge beside old fortified town, cobbled road across narrow river, no historical labels people or text.",
+      "altText": "古老石拱桥连接河两岸的中世纪城镇。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "fcfaf89f-6174-4bf3-9a06-06d6b6c5ca02",
+      "word": "meditation",
+      "meaningZh": "冥想；沉思",
+      "exampleId": "fcfaf89f-6174-4bf3-9a06-06d6b6c5ca02-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "He began his morning with quiet meditation.",
+      "sentenceZh": "他以安静冥想开始早晨。",
+      "scene": "Adult man seated comfortably in quiet Chinese courtyard, relaxed hands full serene face with naturally closed eyes nose mouth clear, morning bamboo shadows, no mystical symbols text.",
+      "altText": "男子在竹影下闭目静坐，平静冥想。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a3080274-2888-4024-b615-b4e92c7cb61b",
+      "word": "melody",
+      "meaningZh": "旋律；曲调",
+      "exampleId": "a3080274-2888-4024-b615-b4e92c7cb61b-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She played a gentle melody on the violin.",
+      "sentenceZh": "她用小提琴演奏柔和旋律。",
+      "scene": "Adult violinist playing with natural bow contact and complete calm face, small room warm acoustical mood, no floating notes music text or labels.",
+      "altText": "小提琴演奏者专注拉奏柔和旋律。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ab7a03c0-0a3d-4f72-9159-e485b9aee071",
+      "word": "memoir",
+      "meaningZh": "回忆录",
+      "exampleId": "ab7a03c0-0a3d-4f72-9159-e485b9aee071-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "He wrote a memoir about his years at sea.",
+      "sentenceZh": "他写了一本讲述海上岁月的回忆录。",
+      "scene": "Older sailor writes at desk with old ship photographs and compass, imagined memory of younger self aboard ship above, all readable faces complete, notebook blank nonlinguistic strokes no text.",
+      "altText": "老水手写作，旧船照片唤起海上往事。",
+      "riskTags": [
+        "reference",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "77bbf23f-700d-4a92-8ddf-933425cb23e9",
+      "word": "memorable",
+      "meaningZh": "难忘的",
+      "exampleId": "77bbf23f-700d-4a92-8ddf-933425cb23e9-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The first snowfall made the trip memorable.",
+      "sentenceZh": "第一场雪让这次旅行令人难忘。",
+      "scene": "Adult friends amazed as first snow falls during mountain hiking trip, complete delighted faces, one captures moment with plain camera, no text.",
+      "altText": "山间旅行时初雪飘落，朋友们惊喜地看着雪花。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2e516994-3035-49c6-a6a0-ac077b2af31a",
+      "word": "memorial",
+      "meaningZh": "纪念碑；纪念馆",
+      "exampleId": "2e516994-3035-49c6-a6a0-ac077b2af31a-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "They laid flowers at the memorial.",
+      "sentenceZh": "他们在纪念碑前献花。",
+      "scene": "Small group of adults laying flowers at plain stone monument in peaceful park, full solemn faces, no inscriptions real event identification or readable text.",
+      "altText": "人们在公园石碑前安静地放下鲜花。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5e090c34-86cd-4b11-9770-3ed69c42a8e8",
+      "word": "mercy",
+      "meaningZh": "仁慈；怜悯",
+      "exampleId": "5e090c34-86cd-4b11-9770-3ed69c42a8e8-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The judge showed mercy to the young offender.",
+      "sentenceZh": "法官对年轻的违法者表现出宽容。",
+      "scene": "Adult judge with compassionate complete face talks kindly to young adult offender and lawyer in neutral courtroom, open forgiving hand, no shackles violence writing or actual legal document text.",
+      "altText": "法官以温和神情对年轻被告表达宽容。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0e7bb43d-c088-4b94-8733-094e4a093a9c",
+      "word": "merge",
+      "meaningZh": "合并；融合",
+      "exampleId": "0e7bb43d-c088-4b94-8733-094e4a093a9c-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The two streams merge below the hill.",
+      "sentenceZh": "两条溪流在山丘下汇合。",
+      "scene": "Two clearly distinct streams flow from left and right around small hill and join into one wider downstream channel, oblique overhead view no arrows labels people text.",
+      "altText": "两条溪流在山丘下汇成一条较宽的水道。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "5f770637-c06e-4a11-b245-6f2861a45f4d",
+      "word": "merger",
+      "meaningZh": "合并",
+      "exampleId": "5f770637-c06e-4a11-b245-6f2861a45f4d-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The merger brought the two workshops under one roof.",
+      "sentenceZh": "合并让两个工坊在同一屋檐下工作。",
+      "scene": "Two distinct craft teams one woodworking one pottery move their tools into shared Chinese courtyard workshop, complete adult faces, blank boxes no logos contracts text.",
+      "altText": "木工与陶艺团队把工具搬进同一个中式工坊。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "44b0b2b7-d617-4367-a6be-5da685aef47e",
+      "word": "methodology",
+      "meaningZh": "方法论；方法",
+      "exampleId": "44b0b2b7-d617-4367-a6be-5da685aef47e-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "Their methodology involved observing the plants each day.",
+      "sentenceZh": "他们的方法包括每天观察植物。",
+      "scene": "Three panels same researcher observes same potted seedling using magnifier, measures growth with unmarked ruler, records pictorial sketches, full face clear, no writing numerals or text.",
+      "altText": "研究者依次观察、测量并画图记录幼苗生长。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

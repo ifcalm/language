@@ -1,0 +1,316 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5107-5126",
+  "batchId": "auto-rank-5107-5126-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "nursing",
+      "nutrition",
+      "obey",
+      "october",
+      "organizer",
+      "outing"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "e92d56d7-d542-4397-8f76-65be4818f479",
+      "word": "nursing",
+      "meaningZh": "护理；看护",
+      "exampleId": "e92d56d7-d542-4397-8f76-65be4818f479-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The nursing team helped him recover.",
+      "sentenceZh": "护理团队帮助他康复。",
+      "scene": "Chinese rehabilitation ward adult nurse supports older adult sitting upright comfortably and adjusting blanket, full kind faces, no invasive procedures charts writing or medicine labels.",
+      "altText": "护理人员帮老人坐稳，并整理毯子。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "595230d9-18cc-47a7-bfdc-bf7f9b8985fc",
+      "word": "nutrition",
+      "meaningZh": "营养",
+      "exampleId": "595230d9-18cc-47a7-bfdc-bf7f9b8985fc-visual-ex",
+      "styleFamily": "paper-cut food",
+      "sentenceEn": "The varied meal provided good nutrition.",
+      "sentenceZh": "这顿丰富的饭菜提供了良好营养。",
+      "scene": "Chinese family meal with rice vegetables beans fish and fruit arranged as varied balanced food on table, no people portions advice text or nutrition numbers.",
+      "altText": "餐桌上有米饭、蔬菜、豆类、鱼与水果。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c6bb8966-792c-4ae9-bec9-9339f322b142",
+      "word": "obesity",
+      "meaningZh": "肥胖",
+      "exampleId": "c6bb8966-792c-4ae9-bec9-9339f322b142-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The clinic offered support for people living with obesity.",
+      "sentenceZh": "诊所为肥胖者提供支持。",
+      "scene": "Adult with larger body comfortably discusses goals with supportive clinician in welcoming clinic, full respectful faces, no scales measurements stigmatizing caricature before-after body comparisons or text.",
+      "altText": "体型较大的成年人在诊室与医生平等交流。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "98d505f3-6937-4a13-8708-dfcd26540353",
+      "word": "obey",
+      "meaningZh": "服从",
+      "exampleId": "98d505f3-6937-4a13-8708-dfcd26540353-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The hikers agreed to obey the guide's signal.",
+      "sentenceZh": "徒步者同意服从向导的示意。",
+      "scene": "Chinese mountain trail guide raises open stop hand before unstable stepping stones, adult hikers halt attentively behind, full readable faces, no text signs.",
+      "altText": "山路向导示意停下，徒步者们认真遵从。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c54e8f6e-8eeb-4939-b00f-f58cb26518bc",
+      "word": "obsess",
+      "meaningZh": "着迷",
+      "exampleId": "c54e8f6e-8eeb-4939-b00f-f58cb26518bc-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "He began to obsess over every tiny flaw in the model.",
+      "sentenceZh": "他开始对模型的每个小瑕疵过度在意。",
+      "scene": "Adult model maker scrutinizes tiny boat model with magnifier late at desk, full tense focused face, repeated discarded tiny parts nearby, no clocks words text.",
+      "altText": "模型制作者用放大镜反复检查细小瑕疵。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "c3b0effe-a52e-4fb5-a90c-49e83bdbd8c1",
+      "word": "obsession",
+      "meaningZh": "痴迷",
+      "exampleId": "c3b0effe-a52e-4fb5-a90c-49e83bdbd8c1-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "Her obsession with puzzles filled every shelf.",
+      "sentenceZh": "她对拼图的痴迷让每个架子都堆满了拼图。",
+      "scene": "Adult enthusiast at desk surrounded by shelves of completed framed geometric puzzles and unmarked puzzle boxes, full absorbed face, no brand writing.",
+      "altText": "拼图爱好者沉浸其中，四周架子满是拼图。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "86683c73-4cec-4009-9240-ab3a7f356602",
+      "word": "occurrence",
+      "meaningZh": "发生",
+      "exampleId": "86683c73-4cec-4009-9240-ab3a7f356602-visual-ex",
+      "styleFamily": "watercolor astronomy",
+      "sentenceEn": "The eclipse was a rare occurrence.",
+      "sentenceZh": "日食是一次罕见事件。",
+      "scene": "Sun almost covered by dark moon with luminous corona above quiet mountain landscape, stylized astronomy scene no people unsafe observation labels or text; rarity supplied by sentence.",
+      "altText": "山峦上方，月影遮住太阳，周围露出光环。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "51c75645-3b49-4d91-b439-e77f20ad7dd4",
+      "word": "october",
+      "meaningZh": "十月",
+      "exampleId": "51c75645-3b49-4d91-b439-e77f20ad7dd4-visual-ex",
+      "styleFamily": "textile botanical",
+      "sentenceEn": "In October, the persimmons ripened.",
+      "sentenceZh": "十月里，柿子成熟了。",
+      "scene": "Ripe orange persimmons on autumn tree beside Chinese village courtyard, embroidered foliage and rustic wall, no people calendars text.",
+      "altText": "乡村院落旁，柿树挂满成熟橙色果实。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5dc09def-088c-4dba-beee-e627c198c34e",
+      "word": "offend",
+      "meaningZh": "冒犯；得罪",
+      "exampleId": "5dc09def-088c-4dba-beee-e627c198c34e-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He did not mean to offend her by interrupting.",
+      "sentenceZh": "他打断她说话，并非有意冒犯。",
+      "scene": "Adult woman looks mildly hurt as adult man interrupts conversation with raised finger, then man shows apologetic open hand; full faces, single clear conversational moment no speech bubbles text.",
+      "altText": "女子被打断后显得不悦，男子露出歉意。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5672479b-a0f9-49af-a37b-4fbdddf1be84",
+      "word": "offspring",
+      "meaningZh": "后代；子孙",
+      "exampleId": "5672479b-a0f9-49af-a37b-4fbdddf1be84-visual-ex",
+      "styleFamily": "felt nature",
+      "sentenceEn": "The duck led her offspring toward the pond.",
+      "sentenceZh": "母鸭带着幼鸭走向池塘。",
+      "scene": "Mother duck leads small ducklings toward pond bank, accurate coherent bird anatomy, no people text.",
+      "altText": "母鸭领着幼鸭走向池塘。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "87e7fcc9-9d68-493a-9ad1-2c49fc834628",
+      "word": "operational",
+      "meaningZh": "操作的；运营的",
+      "exampleId": "87e7fcc9-9d68-493a-9ad1-2c49fc834628-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The repaired windmill was operational again.",
+      "sentenceZh": "修好的风车再次可以运行。",
+      "scene": "Restored small windmill turning with visible motion sweep and connected water pump pouring water into channel, no people labels technical text.",
+      "altText": "修复的风车转动，带动水泵送出水流。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "3ba651b2-4afb-48ed-8495-c2fd92275a34",
+      "word": "optical",
+      "meaningZh": "光学的；视觉的",
+      "exampleId": "3ba651b2-4afb-48ed-8495-c2fd92275a34-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The optical instrument magnified the tiny leaf.",
+      "sentenceZh": "光学仪器放大了小叶片。",
+      "scene": "Magnifying lens above tiny leaf with clear enlarged veins visible through lens, leaf outside lens smaller, clean illustrated tabletop no labels people text.",
+      "altText": "放大镜内可见叶片放大的叶脉。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "f87a80a4-db6b-4eda-acbb-9f032b13829a",
+      "word": "optimism",
+      "meaningZh": "乐观",
+      "exampleId": "f87a80a4-db6b-4eda-acbb-9f032b13829a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her optimism helped the team begin again.",
+      "sentenceZh": "她的乐观鼓励团队重新开始。",
+      "scene": "Adult woman encourages fellow gardeners beside damaged greenhouse, smiles calmly while handing fresh seedlings for rebuilding, all full faces, no slogan moral symbol or text.",
+      "altText": "园丁微笑递出幼苗，鼓励伙伴修复温室后再开始。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2d140a77-bc20-4664-a6e6-02cfdb9bc3c2",
+      "word": "orchestra",
+      "meaningZh": "管弦乐队",
+      "exampleId": "2d140a77-bc20-4664-a6e6-02cfdb9bc3c2-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The orchestra rehearsed in the hall.",
+      "sentenceZh": "管弦乐队在大厅排练。",
+      "scene": "Adult orchestra with strings woodwinds brass percussion and conductor in rehearsal hall, all readable foreground faces fully rendered, distant small players faces simplified complete, music stands show no writing.",
+      "altText": "指挥带领弦乐、管乐与打击乐演奏者在大厅排练。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "cf2ddb3d-1da9-4779-8011-81e2e2bea6a3",
+      "word": "organizer",
+      "meaningZh": "组织者",
+      "exampleId": "cf2ddb3d-1da9-4779-8011-81e2e2bea6a3-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The organizer arranged the chairs before the meeting.",
+      "sentenceZh": "组织者在会议前摆好椅子。",
+      "scene": "Chinese community meeting organizer places chairs in circle in courtyard room, complete purposeful face, plain folding chairs no signs text.",
+      "altText": "社区活动组织者把椅子摆成一圈。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9bfe351a-4d7f-4a7b-82d6-2ddd88d32ac0",
+      "word": "originate",
+      "meaningZh": "起源",
+      "exampleId": "9bfe351a-4d7f-4a7b-82d6-2ddd88d32ac0-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The stream seemed to originate beneath the rocks.",
+      "sentenceZh": "溪流似乎发源于岩石下面。",
+      "scene": "Fresh spring emerges clearly from gap under rocky outcrop and becomes narrow stream downhill, no other sources people arrows text.",
+      "altText": "清水从岩石缝隙涌出，汇成溪流。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "bb724793-46db-40bc-9b8a-6995673d76c9",
+      "word": "outbreak",
+      "meaningZh": "爆发；突然发生",
+      "exampleId": "bb724793-46db-40bc-9b8a-6995673d76c9-visual-ex",
+      "styleFamily": "watercolor still life",
+      "sentenceEn": "The outbreak of mold spoiled the stored bread.",
+      "sentenceZh": "霉菌爆发让储存的面包变坏了。",
+      "scene": "Bread slices in open storage container showing widespread fuzzy mold patches, no people eating text labels or medical instructions.",
+      "altText": "储存盒里的面包片大面积长出霉斑。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "b9c504c3-db4e-4e84-abc6-fc15a0d2f911",
+      "word": "outdoors",
+      "meaningZh": "户外",
+      "exampleId": "b9c504c3-db4e-4e84-abc6-fc15a0d2f911-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "They cooked outdoors beside the campsite.",
+      "sentenceZh": "他们在营地旁的户外做饭。",
+      "scene": "Adults cook simple meal at outdoor campsite with open sky trees and tent, full faces, stable camp stove clear no enclosed roof or text.",
+      "altText": "露营者在帐篷旁的露天炉具上做饭。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "14b895a4-7189-4a8b-b170-57c382be9d74",
+      "word": "outing",
+      "meaningZh": "外出；郊游",
+      "exampleId": "14b895a4-7189-4a8b-b170-57c382be9d74-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The school outing took them to the botanical garden.",
+      "sentenceZh": "学校郊游带他们去了植物园。",
+      "scene": "Chinese school group of older children with teacher exploring botanical garden pond and plants, full curious faces of foreground group, no uniforms writing signs labels.",
+      "altText": "老师带学生们在植物园观察花木。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "effd3a57-0810-4600-b0b1-ce46a93e90a4",
+      "word": "outlook",
+      "meaningZh": "前景；观点",
+      "exampleId": "effd3a57-0810-4600-b0b1-ce46a93e90a4-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The new seedlings gave the farm a hopeful outlook.",
+      "sentenceZh": "新幼苗让农场的前景充满希望。",
+      "scene": "Thriving newly planted seedlings extend across restored farm after barren patch behind, fresh light, no humans charts text; future outlook supplied by sentence.",
+      "altText": "修复后的农田长出整齐幼苗，呈现生机。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

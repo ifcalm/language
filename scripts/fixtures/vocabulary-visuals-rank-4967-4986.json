@@ -1,0 +1,323 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4967-4986",
+  "batchId": "auto-rank-4967-4986-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "kneel",
+      "intersection",
+      "selected",
+      "intriguing",
+      "stereotype",
+      "ironic"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "d0e9d525-9632-47d2-b11e-c22e632a88c5",
+      "word": "inherent",
+      "meaningZh": "固有的；与生俱来的",
+      "exampleId": "d0e9d525-9632-47d2-b11e-c22e632a88c5-visual-ex",
+      "styleFamily": "paper-cut sequence",
+      "sentenceEn": "The spring's inherent elasticity made it return to shape.",
+      "sentenceZh": "弹簧固有的弹性使它恢复原状。",
+      "scene": "Exactly two panels of one simple metal coil spring: left natural hand gently stretches it, right released spring back to compact original shape, no extra springs text arrows or faces.",
+      "altText": "同一弹簧先被拉长，松手后恢复紧凑形状。",
+      "riskTags": [
+        "abstract_meaning",
+        "before_after",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ed2fd30c-911c-427e-9925-52e044164c28",
+      "word": "intensify",
+      "meaningZh": "加强；加剧",
+      "exampleId": "ed2fd30c-911c-427e-9925-52e044164c28-visual-ex",
+      "styleFamily": "watercolor sequence",
+      "sentenceEn": "The rain began to intensify as the clouds thickened.",
+      "sentenceZh": "云层变厚时，雨开始加剧。",
+      "scene": "Paired view of exact same valley landscape: left light scattered rainfall and lighter clouds, right dense heavy rain and much darker clouds, no labels dates arrows or people.",
+      "altText": "同一山谷的雨由稀疏变密集，云层也更厚更暗。",
+      "riskTags": [
+        "comparison",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "97622ec3-60a3-45cb-9fad-f1a6e226e36b",
+      "word": "intensive",
+      "meaningZh": "密集的",
+      "exampleId": "97622ec3-60a3-45cb-9fad-f1a6e226e36b-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The dancers began an intensive week of practice.",
+      "sentenceZh": "舞者开始了一周密集训练。",
+      "scene": "A focused group of adult dancers rehearses in studio with repeated movement echoes subtly suggesting sustained intensive practice, complete determined faces, plain water bottles and towels, no calendar text or numbers.",
+      "altText": "舞者在练习室持续认真排练，旁边放着水瓶和毛巾。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e34c2dbe-9ff5-4414-b517-92c039a35a54",
+      "word": "interactive",
+      "meaningZh": "互动的；交互式的",
+      "exampleId": "e34c2dbe-9ff5-4414-b517-92c039a35a54-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The interactive exhibit responded when she touched it.",
+      "sentenceZh": "她触碰后，互动展品作出了响应。",
+      "scene": "An adult museum visitor touches a simple exhibit button and a cluster of colored illuminated spheres changes glow in response, complete delighted face, one clear cause and response, no screens words or arrows.",
+      "altText": "游客触碰按钮，展品上的彩色球体随之亮起。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "0749632f-3f53-40dd-bde9-af727a649924",
+      "word": "nationwide",
+      "meaningZh": "全国性地",
+      "exampleId": "0749632f-3f53-40dd-bde9-af727a649924-visual-ex",
+      "styleFamily": "paper-cut systems",
+      "sentenceEn": "The railway connected towns nationwide.",
+      "sentenceZh": "铁路把全国各地的城镇连接起来。",
+      "scene": "A fictional country-shaped land model with many small towns linked by railways spanning its whole area, coast and hills within boundary, no real national borders flags labels numbers or writing.",
+      "altText": "一个国家形状的地形模型上，铁路连接各地城镇。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "febcd13a-4e93-4502-8b45-b26dbedced41",
+      "word": "interference",
+      "meaningZh": "干扰；干涉",
+      "exampleId": "febcd13a-4e93-4502-8b45-b26dbedced41-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The interference made the radio signal unclear.",
+      "sentenceZh": "干扰让无线电信号变得不清晰。",
+      "scene": "A radio receiver on table with abstract broken jagged sound-wave bands between its antenna and distant transmitter, nearby electrical apparatus provides contextual interference, no lettering wave equations faces or text.",
+      "altText": "收音机与远处发射塔之间的波纹被打断成杂乱形状。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2a9c1b2e-aaa6-4bc8-ad1f-4ca1c52e6b53",
+      "word": "spit",
+      "meaningZh": "吐口水；吐出",
+      "exampleId": "2a9c1b2e-aaa6-4bc8-ad1f-4ca1c52e6b53-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "He stopped to spit a watermelon seed into the bowl.",
+      "sentenceZh": "他停下来把西瓜籽吐进碗里。",
+      "scene": "An adult eating watermelon gently spits one black seed from lips into a small bowl held just below mouth, full natural face, no spray saliva disgust shaming writing or extra impossible anatomy.",
+      "altText": "男子吃西瓜时，把一颗黑籽轻轻吐入嘴下的小碗。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5107922c-f71d-42d3-966d-b230fc6500a0",
+      "word": "interim",
+      "meaningZh": "临时的；过渡期的",
+      "exampleId": "5107922c-f71d-42d3-966d-b230fc6500a0-visual-ex",
+      "styleFamily": "woodcut landscape",
+      "sentenceEn": "An interim footbridge kept the village connected.",
+      "sentenceZh": "临时步行桥让村庄保持连通。",
+      "scene": "A clearly temporary simple wooden footbridge spans a stream beside a damaged older stone bridge, adult villagers cross carefully, full readable faces, no signs text or engineering instructions.",
+      "altText": "损坏的旧石桥旁，一座临时木桥让居民继续过河。",
+      "riskTags": [
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a792ab38-e230-4d3c-adf2-bea9642b0620",
+      "word": "intermediate",
+      "meaningZh": "中级的；中间的",
+      "exampleId": "a792ab38-e230-4d3c-adf2-bea9642b0620-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The intermediate trail lay between the easy and difficult routes.",
+      "sentenceZh": "中等难度的步道介于简单与困难路线之间。",
+      "scene": "Three parallel hiking routes shown across a single hillside: left gentle flat path, middle moderately sloped winding trail, right steep rocky ascent; emphasize middle level between extremes, no labels arrows people or numerals.",
+      "altText": "山坡上三条步道分别平缓、中等坡度和陡峭，展示中间难度。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "647dea3a-c630-4729-96fd-f4618339ec5c",
+      "word": "kneel",
+      "meaningZh": "跪下",
+      "exampleId": "647dea3a-c630-4729-96fd-f4618339ec5c-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "She chose to kneel beside the injured dog.",
+      "sentenceZh": "她跪在受伤的小狗旁。",
+      "scene": "An adult woman kneels with both knees on ground beside a resting dog with a small clean bandage on foreleg in a Chinese courtyard, complete compassionate face, no graphic wound or medical instruction.",
+      "altText": "女子双膝跪地，陪在前腿包着小绷带的狗旁。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "4a546e1e-fa61-4935-b032-d9ca82c3496f",
+      "word": "intersection",
+      "meaningZh": "交叉口",
+      "exampleId": "4a546e1e-fa61-4935-b032-d9ca82c3496f-visual-ex",
+      "styleFamily": "gouache architecture",
+      "sentenceEn": "They met at the intersection of two old streets.",
+      "sentenceZh": "他们在两条老街的交叉口碰面。",
+      "scene": "Two adult friends meet at a clear right-angle intersection of two traditional Chinese old streets, both street directions visibly extend, full faces, tiled houses and no shopsigns vehicles text or arrows.",
+      "altText": "两人在两条中式老街形成的十字交叉口相遇。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "138220b5-f666-4ae7-aad5-13dcd63b0f34",
+      "word": "vacuum",
+      "meaningZh": "真空",
+      "exampleId": "138220b5-f666-4ae7-aad5-13dcd63b0f34-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The vacuum cleaner removed dust from the carpet.",
+      "sentenceZh": "吸尘器清除了地毯上的灰尘。",
+      "scene": "Close low view of vacuum cleaner floor head passing across dusty rug leaving visibly clean strip behind, one natural hand holding wand partly visible, no labels logos symbols or text.",
+      "altText": "吸尘器吸头经过地毯，身后留下一条清洁区域。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "d21e6aac-1a12-40e4-b4ca-d0ae576e2a44",
+      "word": "intervene",
+      "meaningZh": "干预",
+      "exampleId": "d21e6aac-1a12-40e4-b4ca-d0ae576e2a44-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The teacher stepped in to intervene in the argument.",
+      "sentenceZh": "老师上前干预争吵。",
+      "scene": "An adult teacher calmly steps between two arguing older students with open palms and full composed face, students show frustrated complete faces, respectful de-escalation, no fighting speech text or punishment.",
+      "altText": "老师站到争执的学生之间，以平静手势劝解。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "43c3b5d5-f84d-4a43-bc10-8d7dcb581bab",
+      "word": "selected",
+      "meaningZh": "选定的",
+      "exampleId": "43c3b5d5-f84d-4a43-bc10-8d7dcb581bab-visual-ex",
+      "styleFamily": "gouache still life",
+      "sentenceEn": "She placed the selected teacup on the tray.",
+      "sentenceZh": "她把选中的茶杯放到托盘上。",
+      "scene": "Natural hands pick one blue floral porcelain teacup from several differently patterned cups on a Chinese tea table and place it on a plain tray, no faces words or numerals, chosen cup focal.",
+      "altText": "手从不同花纹的茶杯中选出青花杯，放上托盘。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c3ef6586-9d0b-41bc-8c0c-3f979826497b",
+      "word": "dictate",
+      "meaningZh": "听写；口述；口授",
+      "exampleId": "c3ef6586-9d0b-41bc-8c0c-3f979826497b-visual-ex",
+      "styleFamily": "watercolor editorial",
+      "sentenceEn": "He began to dictate the message to his assistant.",
+      "sentenceZh": "他开始向助手口述这条消息。",
+      "scene": "An adult manager dictates a message verbally while assistant listens and writes on paper rendered blank or with abstract non-letter lines, full speaking and attentive faces, no speech bubbles readable writing or text.",
+      "altText": "男子口述消息，助手认真倾听并记录。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e3417f59-f5d4-4fff-aa2c-decdc303e165",
+      "word": "intriguing",
+      "meaningZh": "有趣的；引人入胜的",
+      "exampleId": "e3417f59-f5d4-4fff-aa2c-decdc303e165-visual-ex",
+      "styleFamily": "textile",
+      "sentenceEn": "The intriguing box made the children curious.",
+      "sentenceZh": "这个有趣的盒子让孩子们好奇。",
+      "scene": "Two children examine an unusual closed carved wooden puzzle box in a Chinese craft room, full curious faces, gentle natural hands, visible geometric seams but no text symbols or invented operational diagrams.",
+      "altText": "孩子们在工艺房好奇地观察有几何接缝的木盒。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6de4cb88-9211-4db4-aa27-0585473f4f59",
+      "word": "invoke",
+      "meaningZh": "调用；援引；唤起",
+      "exampleId": "6de4cb88-9211-4db4-aa27-0585473f4f59-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "She chose to invoke the rule that everyone should take a turn.",
+      "sentenceZh": "她援引了每个人都应轮流参与的规则。",
+      "scene": "An adult community facilitator gestures toward an empty chair and invites a quieter participant to speak while others pause and listen, full respectful faces, fair turns communicated through behavior, no written rules speech bubbles or symbols.",
+      "altText": "主持人示意其他人稍等，邀请安静的参与者轮流发言。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "aea1b1f3-609a-46d4-9238-cbd4c8c0bb51",
+      "word": "stereotype",
+      "meaningZh": "铅版；陈规；老套",
+      "exampleId": "aea1b1f3-609a-46d4-9238-cbd4c8c0bb51-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Her skill as a mechanic challenged the stereotype.",
+      "sentenceZh": "她作为机械师的技能挑战了刻板印象。",
+      "scene": "A capable adult female mechanic confidently repairs a bicycle in a Chinese courtyard workshop while a male apprentice attentively learns, fully rendered faces, ordinary workwear, no slogans gender symbols or exaggerated admiration.",
+      "altText": "女机械师熟练修理自行车，男学徒在旁认真学习。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c7a00082-5d9a-4b5d-bbff-9f114a745c51",
+      "word": "ironic",
+      "meaningZh": "讽刺的",
+      "exampleId": "c7a00082-5d9a-4b5d-bbff-9f114a745c51-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "It was ironic that the locksmith had locked himself out.",
+      "sentenceZh": "讽刺的是，锁匠把自己锁在了门外。",
+      "scene": "An adult locksmith wearing tool apron stands outside his own closed Chinese wooden workshop door with embarrassed bemused complete face; keys visible through window resting on workbench inside, no lockpicking detail signs words or labels.",
+      "altText": "穿工具围裙的锁匠尴尬地站在紧闭工坊门外，钥匙留在屋内。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "5735ed6e-b81c-4a5d-a815-3ba0bd2bd207",
+      "word": "sensor",
+      "meaningZh": "传感器",
+      "exampleId": "5735ed6e-b81c-4a5d-a815-3ba0bd2bd207-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The sensor switched on the lamp when someone approached.",
+      "sentenceZh": "有人靠近时，传感器打开了灯。",
+      "scene": "An adult approaches a garden pathway lamp with a small visible motion sensor attached; lamp glows warmly as person arrives, full face, no beams wiring text labels or arrows.",
+      "altText": "人走近带小传感器的路灯时，灯亮了起来。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    }
+  ]
+}

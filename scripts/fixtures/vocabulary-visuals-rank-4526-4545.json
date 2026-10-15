@@ -1,0 +1,319 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4526-4545",
+  "batchId": "auto-rank-4526-4545-20261004",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "calendar",
+      "detection",
+      "beard",
+      "determined",
+      "diagram",
+      "screening"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "6cae149a-cdb1-4f8f-bcf0-d6cef8c244d7",
+      "word": "calendar",
+      "meaningZh": "日历；日程表；列入表中",
+      "exampleId": "6cae149a-cdb1-4f8f-bcf0-d6cef8c244d7-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "She marked the gardening day on her calendar.",
+      "sentenceZh": "她在日历上标出了园艺日。",
+      "scene": "Chinese home desk adult places a small leaf sticker on one cell of a wall calendar. Calendar a regular seven-column grid of blank cells, no letters digits or month names, hanging bound pages clearly calendar not spreadsheet.",
+      "altText": "她在空白方格日历的一格贴上叶片标记。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "49c102ca-1bec-4826-a3bd-3f3eda1be743",
+      "word": "destructive",
+      "meaningZh": "破坏性的；毁灭性的",
+      "exampleId": "49c102ca-1bec-4826-a3bd-3f3eda1be743-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The destructive wind tore branches from the tree.",
+      "sentenceZh": "破坏性的狂风从树上扯断了枝条。",
+      "scene": "Strong wind bends orchard tree, visibly snapped limb with torn wood and broken leafy branch on ground, coherent wind direction leaves blowing, no people injuries writing.",
+      "altText": "狂风吹弯树冠，折断的枝条落在地面。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "0eb7b352-53fe-4817-8f33-b69bcfb48f68",
+      "word": "detection",
+      "meaningZh": "检测；发现；侦查",
+      "exampleId": "0eb7b352-53fe-4817-8f33-b69bcfb48f68-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Early detection of the crack prevented a bigger problem.",
+      "sentenceZh": "及早发现裂缝避免了更大的问题。",
+      "scene": "Chinese ceramic workshop inspector uses magnifying glass to detect thin hairline crack on empty bowl over padded table before use, examining expression, crack clear lens no text marks.",
+      "altText": "质检员用放大镜检查陶碗上的细裂缝。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "656120d0-18a1-48c5-a009-25da1d7bf355",
+      "word": "widow",
+      "meaningZh": "寡妇",
+      "exampleId": "656120d0-18a1-48c5-a009-25da1d7bf355-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The widow kept a photograph of her late husband.",
+      "sentenceZh": "这位寡妇保存着已故丈夫的照片。",
+      "scene": "Respectful mature adult widow at quiet home holds framed illustrated portrait of late husband, thoughtful tender expression, simple flowers beside frame, adult daughter offers supportive companionship. No funeral gore death scene text stereotyped widow dress or symbols.",
+      "altText": "她珍惜地捧着丈夫肖像，女儿在旁陪伴。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "74ddb5fe-6822-49a1-b9f1-c8771b66a432",
+      "word": "deposit",
+      "meaningZh": "存款；押金；沉积",
+      "exampleId": "74ddb5fe-6822-49a1-b9f1-c8771b66a432-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The river left a deposit of sand along the bank.",
+      "sentenceZh": "河流在岸边留下一层沙子沉积。",
+      "scene": "Human-free riverbank after flood, distinct pale sandy sediment layer deposited on darker soil beside receding river, rippled sand and thin bands visible, no geological labels or arrows.",
+      "altText": "退去的河水在较深的岸土上留下浅色沙层。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "fbfa7704-614f-4373-9034-a91da85806ed",
+      "word": "deteriorate",
+      "meaningZh": "恶化；退化；变质",
+      "exampleId": "fbfa7704-614f-4373-9034-a91da85806ed-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The neglected bench began to deteriorate.",
+      "sentenceZh": "无人维护的长椅开始损坏。",
+      "scene": "Two panels exact same park bench and backdrop: earlier intact wooden slats and firm metal legs; later weathered wood splitting paint peeling one sagging slat, vines and rain. Clear gradual worsening not sudden explosion no people text.",
+      "altText": "同一长椅由完好变为木板开裂、油漆剥落。",
+      "riskTags": [
+        "before_after",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "8b833204-99a2-42ea-a154-b6fec5c6ae46",
+      "word": "beard",
+      "meaningZh": "胡须；抓住胡须；公开反对",
+      "exampleId": "8b833204-99a2-42ea-a154-b6fec5c6ae46-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "His beard was thick and gray.",
+      "sentenceZh": "他的胡须浓密而灰白。",
+      "scene": "Portrait of mature adult man with clearly thick gray beard covering chin jaw and moustache, dignified complete eyes nose mouth, Chinese tea workshop background plain kettle no text.",
+      "altText": "男子下巴与两颊长着浓密灰白胡须。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "592bb4b7-0712-4c51-9ed2-fca8d98d934c",
+      "word": "determined",
+      "meaningZh": "坚决的；坚定的；确定的",
+      "exampleId": "592bb4b7-0712-4c51-9ed2-fca8d98d934c-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She was determined to finish the basket.",
+      "sentenceZh": "她决心完成这个篮子。",
+      "scene": "Chinese bamboo weaving craftswoman persistently works on nearly finished basket, focused determined full face, several failed weave scraps neatly aside, coherent hands threading reed, no medals victory text.",
+      "altText": "手艺人专注地编织尚未完工的竹篮。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "3838a216-6fe9-4cca-b21f-913413276e10",
+      "word": "brake",
+      "meaningZh": "刹车；阻碍；丛林",
+      "exampleId": "3838a216-6fe9-4cca-b21f-913413276e10-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "He squeezed the brake to slow the bicycle.",
+      "sentenceZh": "他捏下刹车，使自行车减速。",
+      "scene": "Adult helmeted cyclist on safe flat path close view hand squeezes handlebar brake lever connected cable, wheel has coherent rim brake pads, slowing posture no crash, no signs logos letters.",
+      "altText": "骑车人戴着头盔，捏下车把上的刹车手柄。",
+      "riskTags": [
+        "hands",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "56df5a70-54ad-435d-8054-da6f1c14145b",
+      "word": "devastate",
+      "meaningZh": "摧毁；使震惊",
+      "exampleId": "56df5a70-54ad-435d-8054-da6f1c14145b-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The flood devastated the orchard.",
+      "sentenceZh": "洪水摧毁了果园。",
+      "scene": "Aftermath of severe flood in orchard uprooted fruit trees washed-out soil debris and receding muddy water, human-free severe environmental damage, no bodies injury sensationalism text.",
+      "altText": "洪水后的果园里，果树倒伏，土壤被冲毁。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "8d25666c-f6f9-4dfb-b1e4-1a9d11d77405",
+      "word": "devise",
+      "meaningZh": "设计；发明；想出",
+      "exampleId": "8d25666c-f6f9-4dfb-b1e4-1a9d11d77405-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "They devised a simple way to collect rainwater.",
+      "sentenceZh": "他们想出了一个简单的收集雨水办法。",
+      "scene": "Adult team inventive workshop builds practical rainwater collector from roof gutter downspout to open barrel, one points to physical model other connects pipe, rain visibly travels into barrel with gravity, no blueprints labels arrows words.",
+      "altText": "两人设计把屋檐雨水引入水桶的管道。",
+      "riskTags": [
+        "hands",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "4c3095fe-94c5-4fe7-a004-5076815501b8",
+      "word": "diagram",
+      "meaningZh": "图表；示意图",
+      "exampleId": "4c3095fe-94c5-4fe7-a004-5076815501b8-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The diagram showed how water reached the garden.",
+      "sentenceZh": "示意图展示了水如何到达花园。",
+      "scene": "Chinese gardener examines large unlettered diagram board with clear simplified pictorial water tank at higher level pipe leading downhill to garden beds, continuous blue water path and three plain directional arrows only no letters numbers. Diagram clearly picture schematic rather than realistic landscape.",
+      "altText": "图板用水箱、管线和菜畦图形展示供水路径。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "dc7d4192-5878-4b95-88a3-8143508cc811",
+      "word": "screening",
+      "meaningZh": "筛查；放映",
+      "exampleId": "dc7d4192-5878-4b95-88a3-8143508cc811-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The community held an outdoor screening of the film.",
+      "sentenceZh": "社区举办了露天电影放映。",
+      "scene": "Chinese community courtyard Outdoor community film screening at dusk projector aimed at large cloth screen showing original illustrated landscape movie frame, seated adult audience attentive, screen light beam physically coherent no subtitles titles logos writing.",
+      "altText": "社区观众在夜色中观看幕布上的电影画面。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "4e028676-65fd-4cf6-b696-756d783954fc",
+      "word": "dictator",
+      "meaningZh": "独裁者；专制者",
+      "exampleId": "4e028676-65fd-4cf6-b696-756d783954fc-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The dictator refused to listen to the council.",
+      "sentenceZh": "独裁者拒绝听取议会意见。",
+      "scene": "Fictional critical civic scene authoritarian ruler at head of council table dismissive raised palm refuses advisors, adult advisors offer blank documents and are concerned, no identifiable real leader uniforms flags symbols violence or text. Complete readable faces not caricatures.",
+      "altText": "统治者抬手拒绝顾问意见，顾问们显得忧虑。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8730476a-f171-4b89-a054-89f5243231ff",
+      "word": "impulse",
+      "meaningZh": "冲动；脉冲",
+      "exampleId": "8730476a-f171-4b89-a054-89f5243231ff-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She resisted the impulse to buy another vase.",
+      "sentenceZh": "她克制了再买一个花瓶的冲动。",
+      "scene": "Adult at craft market hand initially reaches toward attractive vase then pauses and pulls back with thoughtful self-control, other hand holds already bought similar vase, two sequential panels same person setting and vase. No prices logos icons text.",
+      "altText": "她先伸手想买花瓶，随后想起手中已有一个而收回手。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "abstract_meaning",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ef84a4b5-8b87-4002-ab73-0408898b4a8d",
+      "word": "dictionary",
+      "meaningZh": "字典；词典",
+      "exampleId": "ef84a4b5-8b87-4002-ab73-0408898b4a8d-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "He looked up the word in a dictionary.",
+      "sentenceZh": "他在词典中查找这个词。",
+      "scene": "Adult seated library desk consults thick open dictionary, thin paper many narrow columns represented only tiny abstract illegible marks not readable characters, finger tracks a column, no visible title letters logos. Clear reference book with thumb index tabs, full face.",
+      "altText": "他翻开带索引的厚词典，沿分栏查找。",
+      "riskTags": [
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "32901e41-870c-4235-a060-99d44a225b26",
+      "word": "forbid",
+      "meaningZh": "禁止；不准；妨碍",
+      "exampleId": "32901e41-870c-4235-a060-99d44a225b26-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The caretaker chose to forbid feeding the animals.",
+      "sentenceZh": "管理员决定禁止给动物投喂食物。",
+      "scene": "Park caretaker calm firm palm stop gesture prevents adult visitor offering bread to deer behind fence, visitor retracts food hand, animal safe, no pictogram signs letters weapons conflict.",
+      "altText": "管理员抬手制止游客向围栏内的鹿递食物。",
+      "riskTags": [
+        "abstract_meaning",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "2c8cadc9-a06a-412f-99d7-4f5814aa57a3",
+      "word": "differentiate",
+      "meaningZh": "区分；区别；使不同",
+      "exampleId": "2c8cadc9-a06a-412f-99d7-4f5814aa57a3-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "She learned to differentiate maple leaves from oak leaves.",
+      "sentenceZh": "她学会区分枫叶和橡树叶。",
+      "scene": "Botanist sorts leaves on two plain trays: maple leaves sharp pointed lobes on one, oak leaves elongated rounded lobes on other, hands sorting coherent distinction no names symbols letters.",
+      "altText": "两只托盘分别放着尖裂枫叶和圆裂橡树叶。",
+      "riskTags": [
+        "comparison",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a1da87ab-4f75-447a-8e40-9e284435d5a0",
+      "word": "fur",
+      "meaningZh": "毛皮",
+      "exampleId": "a1da87ab-4f75-447a-8e40-9e284435d5a0-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The fox’s fur looked soft and thick.",
+      "sentenceZh": "狐狸的毛看起来柔软而浓密。",
+      "scene": "Living red fox resting in meadow, clearly thick soft reddish fur with cream chest black paws and fluffy tail, natural anatomy humane living animal focus no clothing pelts text.",
+      "altText": "草地上的狐狸有浓密红毛、浅色胸毛和蓬松尾巴。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "8bc7e61b-78e4-40cc-b753-d41b24a6a51a",
+      "word": "brutal",
+      "meaningZh": "残酷的",
+      "exampleId": "8bc7e61b-78e4-40cc-b753-d41b24a6a51a-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The brutal winter damaged the young trees.",
+      "sentenceZh": "严酷的冬天损伤了幼树。",
+      "scene": "Severe winter young orchard trees burdened icy snow some thin branches snapped, harsh wind blizzard, adult gardener wraps protective fabric around surviving sapling, constructive care complete face safe clothing, no injury text.",
+      "altText": "严冬中幼树枝条受损，园丁为存活的幼树加上保护。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    }
+  ]
+}

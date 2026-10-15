@@ -1,0 +1,316 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4907-4926",
+  "batchId": "auto-rank-4907-4926-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "accurately",
+      "plea",
+      "indirect",
+      "indoors",
+      "bolt",
+      "spine"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "f3345782-8912-49a7-b60c-2825164972b8",
+      "word": "accurately",
+      "meaningZh": "准确地",
+      "exampleId": "f3345782-8912-49a7-b60c-2825164972b8-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The carpenter measured the plank accurately.",
+      "sentenceZh": "木匠准确地测量木板。",
+      "scene": "An adult carpenter carefully aligns an unmarked metal ruler flush along a wooden plank in a Chinese woodwork shop, full focused face and natural hands, no ruler numerals or labels.",
+      "altText": "木匠在工坊里把尺子贴齐木板，认真测量。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "37505cc3-a27c-42fd-a143-2c85cdc7ae04",
+      "word": "incur",
+      "meaningZh": "招致；引起",
+      "exampleId": "37505cc3-a27c-42fd-a143-2c85cdc7ae04-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The broken window caused the shop to incur repair costs.",
+      "sentenceZh": "破损的窗户让商店承担维修费用。",
+      "scene": "An adult shopkeeper pays a glazier beside a newly repaired pane with old broken frame debris set aside, full resigned and professional faces, plain coins no readable currency invoices or text.",
+      "altText": "店主在修好的窗边向维修工支付费用。",
+      "riskTags": [
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "4db07732-e5c0-4d3d-b6d6-5b44cda8c126",
+      "word": "indictment",
+      "meaningZh": "起诉书；控告",
+      "exampleId": "4db07732-e5c0-4d3d-b6d6-5b44cda8c126-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The indictment brought the suspect before the court.",
+      "sentenceZh": "起诉使嫌疑人来到法庭。",
+      "scene": "A prosecutor holds a plain legal document folder before a seated judge while adult suspect stands beside lawyer, complete serious faces, courtroom setting, no text seals or readable document.",
+      "altText": "检察官在法庭举起文件夹，嫌疑人与律师站在一旁。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "309be2eb-37df-42bd-921e-81d9313f1b8a",
+      "word": "plea",
+      "meaningZh": "恳求；辩解；抗辩；诉讼；请愿；托词",
+      "exampleId": "309be2eb-37df-42bd-921e-81d9313f1b8a-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her plea for help brought the neighbors running.",
+      "sentenceZh": "她恳求帮助，邻居们赶了过来。",
+      "scene": "An older adult at a Chinese courtyard doorway urgently appeals to neighbors to help lift a fallen heavy planter blocking entrance, full concerned faces, neighbors approach willingly, no graphic harm or text.",
+      "altText": "老人急切请求邻居帮忙移开堵门的重花盆。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "f13a3767-df8d-4ed7-8414-5a00b08579ae",
+      "word": "bulb",
+      "meaningZh": "球茎；电灯泡；球；鳞茎",
+      "exampleId": "f13a3767-df8d-4ed7-8414-5a00b08579ae-visual-ex",
+      "styleFamily": "felt interior",
+      "sentenceEn": "A single bulb lit the small shed.",
+      "sentenceZh": "一只灯泡照亮了小棚屋。",
+      "scene": "A single clearly recognizable electric light bulb glowing from simple ceiling socket in a small dark shed, wooden tool shelf below, bulb central, no other lamps people text or electrical diagrams.",
+      "altText": "小棚屋天花板上的一只灯泡发出暖光。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "d9155e9c-e135-416a-93cd-f180bd59a64b",
+      "word": "indirect",
+      "meaningZh": "间接的；迂回的",
+      "exampleId": "d9155e9c-e135-416a-93cd-f180bd59a64b-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "They took an indirect path around the pond.",
+      "sentenceZh": "他们绕着池塘走了一条迂回小路。",
+      "scene": "Overhead oblique view of a Chinese garden pond separating entrance and pavilion, winding walkway curves around pond instead of straight line across it, two adult walkers on route, full readable faces, no arrows labels.",
+      "altText": "园中的小路绕荷塘弯行，把入口连接到亭子。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ed037880-bbde-4312-9ddd-87164bec191e",
+      "word": "indoor",
+      "meaningZh": "室内的",
+      "exampleId": "ed037880-bbde-4312-9ddd-87164bec191e-visual-ex",
+      "styleFamily": "screen-print architecture",
+      "sentenceEn": "The indoor pool stayed open during the storm.",
+      "sentenceZh": "暴风雨期间，室内泳池仍然开放。",
+      "scene": "An enclosed indoor swimming pool beneath a high roof, storm visible through large windows, calm sheltered water inside, no swimmers signs or writing.",
+      "altText": "窗外暴风雨，屋顶下的室内泳池平静开放。",
+      "riskTags": [
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "3e7ac1b2-d051-4f88-ba8f-d721caee7445",
+      "word": "flying",
+      "meaningZh": "飞行",
+      "exampleId": "3e7ac1b2-d051-4f88-ba8f-d721caee7445-visual-ex",
+      "styleFamily": "watercolor nature",
+      "sentenceEn": "The flying geese crossed the lake at dawn.",
+      "sentenceZh": "飞翔的大雁在黎明时越过湖面。",
+      "scene": "A flock of geese clearly flying above a broad lake at dawn, wings extended and realistic bird anatomy, warm pink sky, no people text or duplicated malformed birds.",
+      "altText": "晨光中，一群大雁展翅飞过湖面。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "c8554825-3a8e-4220-b190-97a3fdb40ae7",
+      "word": "indoors",
+      "meaningZh": "在室内",
+      "exampleId": "c8554825-3a8e-4220-b190-97a3fdb40ae7-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "They stayed indoors while the hail fell.",
+      "sentenceZh": "冰雹落下时，他们留在室内。",
+      "scene": "Two adults sit safely inside a Chinese tea room watching distinct hail pellets beyond closed window, complete faces, roof and window frame emphasize indoors, plain porcelain cups no text.",
+      "altText": "两人在茶室里隔着关好的窗户看外面的冰雹。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "c2e37796-6f68-4655-b52c-e5d802a154c7",
+      "word": "induce",
+      "meaningZh": "导致；引诱；催生",
+      "exampleId": "c2e37796-6f68-4655-b52c-e5d802a154c7-visual-ex",
+      "styleFamily": "paper-cut botanical sequence",
+      "sentenceEn": "The warm sunlight helped induce the buds to open.",
+      "sentenceZh": "温暖阳光促使花苞开放。",
+      "scene": "Two panels same flowering branch: left tightly closed buds in dim cool light, right warm sun shines on several opening blossoms, botanical change clear without arrows text or human faces.",
+      "altText": "同一枝条上的花苞在暖阳下逐渐开放。",
+      "riskTags": [
+        "before_after",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "5d06c327-d1d0-4dfb-99cb-f63739311f44",
+      "word": "sustainable",
+      "meaningZh": "可持续的",
+      "exampleId": "5d06c327-d1d0-4dfb-99cb-f63739311f44-visual-ex",
+      "styleFamily": "Risograph landscape",
+      "sentenceEn": "The village built a sustainable energy system.",
+      "sentenceZh": "村庄建起了可持续的能源系统。",
+      "scene": "A village with rooftop solar panels and a modest wind turbine supplying community buildings, green fields and river, no smoke text labels logos or technical wiring.",
+      "altText": "村庄的屋顶太阳能板与风力机为社区提供能源。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "9b426bfc-6cab-4eec-a348-02764bf0be81",
+      "word": "devil",
+      "meaningZh": "魔鬼；折磨；戏弄",
+      "exampleId": "9b426bfc-6cab-4eec-a348-02764bf0be81-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The play featured a devil with bright red horns.",
+      "sentenceZh": "戏剧中出现了一个长着鲜红犄角的魔鬼。",
+      "scene": "An adult theatre performer plays a fictional devil wearing clearly theatrical red horn headpiece and cape on small stage, complete mischievous face, audience visible with completed faces, no graphic horror flames text or insignia.",
+      "altText": "舞台演员戴红色犄角头饰、披斗篷，扮演魔鬼。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1690c74d-f664-474d-bb9b-44345426021e",
+      "word": "indulge",
+      "meaningZh": "沉溺",
+      "exampleId": "1690c74d-f664-474d-bb9b-44345426021e-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She decided to indulge in a slice of cake.",
+      "sentenceZh": "她决定尽情享用一块蛋糕。",
+      "scene": "An adult woman relaxes at a small cafe table enjoying one generous slice of cake with delighted full face, natural hand holding fork, no guilt shame eating advice or text.",
+      "altText": "女子在咖啡馆愉快地享用一块蛋糕。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ce81099d-8629-472f-8f22-0eb79bad307b",
+      "word": "bolt",
+      "meaningZh": "门闩；螺钉；筛子；闪电；意外事件",
+      "exampleId": "ce81099d-8629-472f-8f22-0eb79bad307b-visual-ex",
+      "styleFamily": "woodcut close-up",
+      "sentenceEn": "He slid the bolt across the wooden door.",
+      "sentenceZh": "他把门闩横推到木门上。",
+      "scene": "Close-up of natural adult hand sliding a horizontal metal door bolt into its receiver on a traditional Chinese wooden gate, mechanism simple and contact clear, no text or face.",
+      "altText": "手把横向金属门闩推入中式木门上的扣槽。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "10331717-bf75-429c-b5b5-3fb247b5e8b7",
+      "word": "inequality",
+      "meaningZh": "不平等",
+      "exampleId": "10331717-bf75-429c-b5b5-3fb247b5e8b7-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The unequal portions showed the inequality of the meal.",
+      "sentenceZh": "份量不等显示了这顿饭分配不公平。",
+      "scene": "Two identical plates side by side: one heaped with ample food, other contains only a tiny portion of same food, two adults notice contrast with full concerned faces, no labels text or moral slogans.",
+      "altText": "同样的盘子里，一份饭很丰盛，另一份只有少量食物。",
+      "riskTags": [
+        "comparison",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9d9f0be3-1623-4438-8aa6-bf621a0485a1",
+      "word": "cargo",
+      "meaningZh": "货物；船货",
+      "exampleId": "9d9f0be3-1623-4438-8aa6-bf621a0485a1-visual-ex",
+      "styleFamily": "screen-print harbor",
+      "sentenceEn": "The crane lifted cargo from the ship.",
+      "sentenceZh": "起重机从船上吊起货物。",
+      "scene": "A port crane lifts one unmarked cargo container vertically from a cargo ship to quay, clear cable and load, no tiny foreground workers, ship logos numbers or writing.",
+      "altText": "港口起重机把集装箱从货船吊向岸边。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "72354a5d-293f-4db7-9f79-056df8a50cf7",
+      "word": "infamous",
+      "meaningZh": "臭名昭著的",
+      "exampleId": "72354a5d-293f-4db7-9f79-056df8a50cf7-visual-ex",
+      "styleFamily": "graphic novel landscape",
+      "sentenceEn": "The infamous prison stood on a rocky island.",
+      "sentenceZh": "那座臭名昭著的监狱矗立在岩石岛上。",
+      "scene": "A grim old prison with barred windows on an isolated rocky island under somber sky, no real institution identification, violence people signs or text; sentence supplies bad reputation.",
+      "altText": "阴沉天空下，一座旧监狱孤立在岩石岛上。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "4c45ea39-bb78-4e19-8f43-216facb03697",
+      "word": "infect",
+      "meaningZh": "感染；传染",
+      "exampleId": "4c45ea39-bb78-4e19-8f43-216facb03697-visual-ex",
+      "styleFamily": "watercolor still life",
+      "sentenceEn": "The mold began to infect the nearby strawberries.",
+      "sentenceZh": "霉菌开始感染旁边的草莓。",
+      "scene": "A small bowl of strawberries showing one heavily moldy berry touching two neighboring berries with early fuzzy mold spots, healthy berries farther away, no humans text or medical instructions.",
+      "altText": "碗里一颗发霉草莓接触的邻近草莓也出现霉斑。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "d6116d68-415f-4d15-938e-4892225363fe",
+      "word": "spine",
+      "meaningZh": "背骨；脊柱；尖刺",
+      "exampleId": "d6116d68-415f-4d15-938e-4892225363fe-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The book's spine had begun to split.",
+      "sentenceZh": "书脊开始裂开了。",
+      "scene": "Close view of an old clothbound book with visibly splitting spine seam exposing binding threads, closed covers partly separate, desk in Chinese study with brush pot, no book title or writing.",
+      "altText": "中式书房桌上的旧布面书，书脊接缝裂开露出装订线。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "755518e6-d930-4512-aa87-30e8eaa9d79b",
+      "word": "infer",
+      "meaningZh": "推断；推论",
+      "exampleId": "755518e6-d930-4512-aa87-30e8eaa9d79b-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "She could infer from the wet footprints that someone had entered.",
+      "sentenceZh": "她能从湿脚印推断有人进来过。",
+      "scene": "An adult notices a trail of wet shoeprints from open rainy doorway into a room, full thoughtful face and hand on chin, no person who made prints visible, no arrows writing or speech bubbles.",
+      "altText": "女子观察从雨中门口延伸进屋的湿脚印，若有所思。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    }
+  ]
+}

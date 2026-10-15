@@ -1,0 +1,171 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5527-5536",
+  "batchId": "auto-rank-5527-5536-20261007",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 3,
+    "words": [
+      "kindly",
+      "follow-up",
+      "snack"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005527",
+      "word": "kindly",
+      "meaningZh": "请（客气用语）；友好地",
+      "exampleId": "b2606100-0000-4000-8000-000000005527-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The volunteer kindly offered the traveler some water.",
+      "sentenceZh": "志愿者友好地给旅人递上一些水。",
+      "scene": "Chinese courtyard rest stop, adult volunteer warmly offers cup of water to tired adult traveler seated with backpack, natural hands full expressive faces. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "志愿者在中式庭院友好地给旅人递水。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005528",
+      "word": "tentative",
+      "meaningZh": "暂定的；试探性的",
+      "exampleId": "b2606100-0000-4000-8000-000000005528-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "She took a tentative step onto the narrow bridge.",
+      "sentenceZh": "她试探性地迈上狭窄的桥。",
+      "scene": "Adult woman cautiously testing first step onto narrow wooden footbridge over shallow stream, one foot on first plank other firmly on bank, holding rail with hesitant expression, complete face and coherent bridge. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "女子扶着栏杆，试探性地踏上窄桥。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005529",
+      "word": "inconvenience",
+      "meaningZh": "不便；麻烦",
+      "exampleId": "b2606100-0000-4000-8000-000000005529-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The broken elevator caused an inconvenience.",
+      "sentenceZh": "电梯故障造成了不便。",
+      "scene": "Apartment lobby adult traveler carrying suitcase toward staircase because elevator doors visibly stuck partly open behind continuous safety barrier, traveler mildly frustrated full face, no danger no signs or text. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "电梯被围栏封住，旅人只好提行李走楼梯。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005530",
+      "word": "follow-up",
+      "meaningZh": "跟进；后续行动",
+      "exampleId": "b2606100-0000-4000-8000-000000005530-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The gardener made a follow-up visit to check the tree.",
+      "sentenceZh": "园丁再次来访，检查树木。",
+      "scene": "Two equal panels showing same adult gardener and same tree in Chinese courtyard: left planting young tree with stake and host watching, right later return inspecting newly grown leaves while host welcomes, clearly same place characters with full faces no labels. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "园丁种树后再次来访，检查新长出的叶子。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "sequence",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005531",
+      "word": "luggage",
+      "meaningZh": "行李",
+      "exampleId": "b2606100-0000-4000-8000-000000005531-visual-ex",
+      "styleFamily": "editorial paper collage",
+      "sentenceEn": "Their luggage was ready for the journey.",
+      "sentenceZh": "他们的行李已为旅程准备好。",
+      "scene": "Two packed suitcases and travel duffel beside doorway, coherent handles wheels zippers, blank luggage tags, morning landscape beyond doorway, no people. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "门口放着整理好的旅行箱和旅行袋。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005532",
+      "word": "snack",
+      "meaningZh": "零食；小吃",
+      "exampleId": "b2606100-0000-4000-8000-000000005532-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "She enjoyed a small snack with her tea.",
+      "sentenceZh": "她喝茶时享用了一份小点心。",
+      "scene": "Adult woman at Chinese tea house enjoys small plate of sesame pastry with cup of tea, visibly modest snack portion not full meal, full face natural hand, lattice window and bamboo. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "女子在中式茶馆喝茶，吃一小份芝麻点心。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005533",
+      "word": "microwave",
+      "meaningZh": "微波炉；微波",
+      "exampleId": "b2606100-0000-4000-8000-000000005533-visual-ex",
+      "styleFamily": "editorial 3D illustration",
+      "sentenceEn": "The bowl of soup was inside the microwave.",
+      "sentenceZh": "那碗汤在微波炉里。",
+      "scene": "Clearly illustrated cutaway open microwave on kitchen counter, ceramic bowl of soup sits on glass turntable inside cavity, side control panel only blank round knobs no digits, recognizable rectangular appliance hinged door, no people no metal utensils. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "微波炉的门打开，一碗汤放在内部转盘上。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005534",
+      "word": "cashier",
+      "meaningZh": "收银员",
+      "exampleId": "b2606100-0000-4000-8000-000000005534-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The cashier scanned the groceries.",
+      "sentenceZh": "收银员扫描了这些食品。",
+      "scene": "Adult cashier at grocery checkout holding barcode-free cereal package over visible scanner, customer waits by shopping basket of vegetables, cash register blank screen, full natural faces clear cashier action no readable packaging. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "收银员在结账柜台扫描食品，顾客在旁等候。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005535",
+      "word": "haircut",
+      "meaningZh": "理发；发型",
+      "exampleId": "b2606100-0000-4000-8000-000000005535-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "He went to the barber for a haircut.",
+      "sentenceZh": "他去理发师那里理发。",
+      "scene": "Adult male client seated wearing barber cape while adult barber trims hair with scissors and comb, barber fingers correctly gripping scissors safely beside hair, both complete faces visible directly or mirror, small clipped hair on cape, mature diverse people no text. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "理发师用剪刀和梳子为坐着的男子修剪头发。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b2606100-0000-4000-8000-000000005536",
+      "word": "sleepy",
+      "meaningZh": "困倦的；想睡的",
+      "exampleId": "b2606100-0000-4000-8000-000000005536-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The sleepy student put the book down.",
+      "sentenceZh": "困倦的学生放下了书。",
+      "scene": "Adult student at desk late evening yawns with drooping but visible eyes, puts closed blank book down, warm desk lamp and moonlit window, complete nose mouth natural hand, clearly painted not photographic. Mature deliberately illustrated 1536x1024 landscape. No readable text, letters, numbers, labels, logos or watermarks.",
+      "altText": "学生深夜打着哈欠，困倦地放下书。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    }
+  ]
+}

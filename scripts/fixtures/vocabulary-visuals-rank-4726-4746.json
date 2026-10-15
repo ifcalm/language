@@ -1,0 +1,318 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4726-4746",
+  "batchId": "auto-rank-4726-4746-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "ha",
+      "youngster",
+      "premium",
+      "firework",
+      "flaw",
+      "contemplate"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "1f8e0f41-2818-4885-8d81-9d5423de77b7",
+      "word": "ha",
+      "meaningZh": "哈",
+      "exampleId": "1f8e0f41-2818-4885-8d81-9d5423de77b7-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Ha, that puppy stole my slipper!",
+      "sentenceZh": "哈，那只小狗偷走了我的拖鞋！",
+      "scene": "A laughing adult in a Chinese courtyard sees a playful puppy carrying one slipper in its mouth; complete amused face, small dog and slipper clearly visible, Chinese lattice door and potted bamboo.",
+      "altText": "院子里的人笑着看小狗叼走拖鞋。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "74b2694c-4368-451b-a5c4-b457d311bee4",
+      "word": "felony",
+      "meaningZh": "重罪",
+      "exampleId": "74b2694c-4368-451b-a5c4-b457d311bee4-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The suspect stood trial for a felony after the bank robbery.",
+      "sentenceZh": "银行抢劫案后，嫌疑人因重罪受审。",
+      "scene": "A serious courtroom hearing after a bank robbery: adult defendant stands beside lawyer facing a judge on raised bench, uniformed officer nearby; no weapons, no readable legal papers, full faces, solemn accountability rather than spectacle.",
+      "altText": "银行抢劫案的嫌疑人在法庭上接受审判。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "731df1b1-658c-4e80-85cd-14edaacc61f6",
+      "word": "youngster",
+      "meaningZh": "年轻人",
+      "exampleId": "731df1b1-658c-4e80-85cd-14edaacc61f6-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The youngster helped his grandfather carry the vegetables.",
+      "sentenceZh": "这个年轻人帮爷爷搬蔬菜。",
+      "scene": "An adolescent boy and his elderly grandfather carry a wicker basket of vegetables together on a Chinese village lane, clearly different ages, complete warm faces, hands holding opposite basket handles, stone houses.",
+      "altText": "年轻人和爷爷一起提着装满蔬菜的篮子。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "ee165901-896b-41f7-90dd-82b8d0eeab88",
+      "word": "filmmaker",
+      "meaningZh": "电影制作人；导演",
+      "exampleId": "ee165901-896b-41f7-90dd-82b8d0eeab88-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The filmmaker guided the actors through the scene.",
+      "sentenceZh": "导演指导演员完成这场戏。",
+      "scene": "An adult woman filmmaker at a movie set gestures instructions to two adult actors standing in a small staged kitchen, professional cinema camera on tripod and softbox visible, no text on gear or clapperboards, all readable faces complete.",
+      "altText": "导演在摄像机旁向厨房布景中的演员讲解动作。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6faeb841-69a1-429a-aa20-a44c23d246ed",
+      "word": "firearm",
+      "meaningZh": "枪支；火器",
+      "exampleId": "6faeb841-69a1-429a-aa20-a44c23d246ed-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The museum displayed an antique firearm behind glass.",
+      "sentenceZh": "博物馆在玻璃后展示了一件古董火器。",
+      "scene": "A single antique flintlock firearm resting horizontally on supports inside a closed museum glass display case, polished wood stock and aged metal barrel, distant museum walls, no ammunition, people, labels or text.",
+      "altText": "玻璃展柜里陈列着一件木柄古董火器。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "feb9c568-fb71-432e-bf07-256e9de26911",
+      "word": "premium",
+      "meaningZh": "保险费；溢价；优质的",
+      "exampleId": "feb9c568-fb71-432e-bf07-256e9de26911-visual-ex",
+      "styleFamily": "gouache still life",
+      "sentenceEn": "The shop sold premium tea in a carefully wrapped box.",
+      "sentenceZh": "店铺出售用盒子精心包装的优质茶叶。",
+      "scene": "Chinese tea shop still life: one elegant open unmarked gift box holding fine loose tea in a ceramic jar, carefully folded wrapping cloth and a small tasting cup, rich jade and gold palette, no writing, seals or brand marks.",
+      "altText": "精致盒子里放着优质茶叶和小茶杯。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "34335254-dd36-42cf-8353-ac0007b9b15c",
+      "word": "accountability",
+      "meaningZh": "问责制度",
+      "exampleId": "34335254-dd36-42cf-8353-ac0007b9b15c-visual-ex",
+      "styleFamily": "editorial paper collage",
+      "sentenceEn": "Accountability meant explaining the mistake to the whole team.",
+      "sentenceZh": "问责意味着向整个团队解释这个错误。",
+      "scene": "An adult project leader at a team meeting openly indicates a collapsed miniature wooden bridge on the table and faces attentive colleagues rather than hiding it; concerned responsible expression, complete faces, plain blank papers, no slogans or text.",
+      "altText": "负责人向团队说明桌上模型出现的问题。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6ebe4fc7-01a5-4606-bc8c-c9ececed4ec9",
+      "word": "firefighter",
+      "meaningZh": "消防员",
+      "exampleId": "6ebe4fc7-01a5-4606-bc8c-c9ececed4ec9-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The firefighter carried the cat out of the smoky house.",
+      "sentenceZh": "消防员把猫从烟雾弥漫的房子里抱了出来。",
+      "scene": "A firefighter in protective clothing emerges from a smoky doorway holding a rescued cat gently against the chest, clear complete human face visible under helmet, small cat safe, strong carved forms, no graphic injuries or badges with writing.",
+      "altText": "消防员从冒烟的门口抱出一只猫。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b44fa6af-dd4f-463e-9d11-e56e20b4a418",
+      "word": "firework",
+      "meaningZh": "烟花；焰火",
+      "exampleId": "b44fa6af-dd4f-463e-9d11-e56e20b4a418-visual-ex",
+      "styleFamily": "felt night landscape",
+      "sentenceEn": "A bright firework burst above the river.",
+      "sentenceZh": "一朵明亮的烟花在河面上空绽放。",
+      "scene": "One large brilliant firework blooming above a river during a Chinese festival, warm red lanterns along old waterside buildings and reflected light, broad midnight blue sky, no launch equipment, writing or nearby people.",
+      "altText": "中式河畔夜景上空绽开一朵烟花。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "00f5f8ef-1f81-41fb-917e-2d58c23bc843",
+      "word": "overwhelm",
+      "meaningZh": "淹没；受打击；制服；压倒；使不知所措",
+      "exampleId": "00f5f8ef-1f81-41fb-917e-2d58c23bc843-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Too many unfinished tasks can overwhelm a worker.",
+      "sentenceZh": "太多未完成的任务会让工作者不知所措。",
+      "scene": "An adult worker at a desk surrounded by towering stacks of unmarked folders and overflowing trays, palms raised in overwhelmed bewilderment, full readable face, one colleague offers a helping hand from side, no readable notes or screens.",
+      "altText": "工作者面对堆积的文件，露出不知所措的表情。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3b115835-25d1-4ad4-aaf8-53a485cb5981",
+      "word": "flaw",
+      "meaningZh": "缺陷；瑕疵",
+      "exampleId": "3b115835-25d1-4ad4-aaf8-53a485cb5981-visual-ex",
+      "styleFamily": "watercolor still life",
+      "sentenceEn": "A tiny crack was the only flaw in the porcelain bowl.",
+      "sentenceZh": "这只瓷碗唯一的瑕疵是一道细小裂纹。",
+      "scene": "Close-up of a Chinese blue-and-white porcelain bowl on a simple dark wood surface, a single fine but clear hairline crack runs from rim downward; otherwise intact beautiful bowl, restrained blue floral pattern without symbols or text, no broken fragments.",
+      "altText": "青花瓷碗的边沿有一道细小裂纹。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "f6ed8e44-6e80-450e-bb29-613642ad648f",
+      "word": "one-third",
+      "meaningZh": "三分之一",
+      "exampleId": "f6ed8e44-6e80-450e-bb29-613642ad648f-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "One-third of the cake was on her plate.",
+      "sentenceZh": "蛋糕的三分之一在她的盘子里。",
+      "scene": "Strict overhead view of exactly three identical rectangular cake bars of equal length, width and height: two bars side by side on a rectangular serving tray, and the third identical bar alone on a small plate to the right. Each bar is one third of the original rectangular cake. Exactly three cake pieces total, clear gaps between pieces, simple frosting, no fruit, people, extra cuts, text or numerals.",
+      "altText": "长方形蛋糕分成三个同样大小的条块，盘子上放着其中一块。",
+      "riskTags": [
+        "exact_quantity",
+        "comparison",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "d5b58ff7-05da-40e7-9843-1c8576b5d49c",
+      "word": "contemplate",
+      "meaningZh": "注视；沉思；盘算；冥思苦想",
+      "exampleId": "d5b58ff7-05da-40e7-9843-1c8576b5d49c-visual-ex",
+      "styleFamily": "ink and watercolor",
+      "sentenceEn": "He paused to contemplate the quiet mountain view.",
+      "sentenceZh": "他停下来，凝望宁静的山景。",
+      "scene": "An adult traveler sits peacefully beside a Chinese mountain pavilion, resting chin thoughtfully on one hand as he gazes into misty layered peaks; complete contemplative face in side profile, modest modern clothes, no writing or signage.",
+      "altText": "男子坐在山亭旁沉思，凝望远处云雾中的群山。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d3515711-1417-4497-98ef-9085da28930c",
+      "word": "flawed",
+      "meaningZh": "有缺陷的；有瑕疵的",
+      "exampleId": "d3515711-1417-4497-98ef-9085da28930c-visual-ex",
+      "styleFamily": "stop-motion handcrafted",
+      "sentenceEn": "The flawed chair wobbled because one leg was too short.",
+      "sentenceZh": "这把有缺陷的椅子因一条腿太短而摇晃。",
+      "scene": "A plainly flawed wooden chair on a flat workshop floor: three legs touch floor while the fourth is visibly shorter and leaves a clear gap, an adult carpenter crouches inspecting the gap, complete face, no complex perspective, no text.",
+      "altText": "木椅的一条腿明显短于其他腿，离地留着空隙。",
+      "riskTags": [
+        "comparison",
+        "cause_effect",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "5c22471b-04e2-4406-a3b2-227d51373c13",
+      "word": "flourish",
+      "meaningZh": "繁荣；兴旺",
+      "exampleId": "5c22471b-04e2-4406-a3b2-227d51373c13-visual-ex",
+      "styleFamily": "gouache nature",
+      "sentenceEn": "The flowers flourish in the sunny garden.",
+      "sentenceZh": "花儿在阳光充足的花园里茂盛生长。",
+      "scene": "A vibrant thriving garden of dense healthy flowering plants in warm sunlight, lush foliage, bees and butterflies, broad organic composition, mature botanical painting, no people or text, flourishing abundance central.",
+      "altText": "阳光下的花园花叶繁茂，蜜蜂在花间飞舞。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "99ba3073-87af-44a2-bc3a-f73b18f0b04e",
+      "word": "flu",
+      "meaningZh": "流感",
+      "exampleId": "99ba3073-87af-44a2-bc3a-f73b18f0b04e-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The flu left him resting in bed with a fever.",
+      "sentenceZh": "流感让他发烧，卧床休息。",
+      "scene": "An adult man with flushed cheeks resting in bed under a blanket with a cool cloth on forehead, a tissue box and water glass on bedside table, caring partner nearby, both fully drawn faces; no medicine brands, readable thermometer or treatment instructions.",
+      "altText": "发烧的男子躺在床上休息，额头放着凉毛巾。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "dd4f3d7f-c6da-4594-941b-67aafe63e5f5",
+      "word": "spark",
+      "meaningZh": "火花；引发；激发",
+      "exampleId": "dd4f3d7f-c6da-4594-941b-67aafe63e5f5-visual-ex",
+      "styleFamily": "woodcut",
+      "sentenceEn": "A spark flew from the hammer as it struck the hot metal.",
+      "sentenceZh": "锤子敲击炽热金属时，飞出了一点火花。",
+      "scene": "A blacksmith with safety goggles and gloves striking a glowing hot metal bar on an anvil, a small bright spark arc at impact point, face complete, forge workshop, dynamic carved orange against deep charcoal, no instructional detail or text.",
+      "altText": "铁匠敲打铁砧上的热金属，撞击处迸出火花。",
+      "riskTags": [
+        "cause_effect",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4b0cd2a4-75ae-438c-b14a-9b5a0f20a938",
+      "word": "folding",
+      "meaningZh": "折叠的；可折叠的",
+      "exampleId": "4b0cd2a4-75ae-438c-b14a-9b5a0f20a938-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The folding chair fit inside the small cupboard.",
+      "sentenceZh": "折叠椅能放进小柜子里。",
+      "scene": "A compact folding chair in its clearly folded flat configuration leaning upright inside an open small cupboard, hinge joint and collapsed seat visible, cozy simple apartment corner, no other chairs or readable packaging.",
+      "altText": "折叠成扁平状态的椅子放在打开的小柜子里。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ad311d47-92e7-4fd6-afa3-2697a9553486",
+      "word": "ironically",
+      "meaningZh": "讽刺地",
+      "exampleId": "ad311d47-92e7-4fd6-afa3-2697a9553486-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "Ironically, the umbrella seller got soaked in the rain.",
+      "sentenceZh": "讽刺的是，卖伞的人自己在雨中淋湿了。",
+      "scene": "A drenched adult umbrella seller in a sudden rain shower, wet hair and soaked clothes with bemused complete face, stall beside him full of closed dry umbrellas under an awning, he stands just outside shelter without using one; visual irony clear, no signs or captions.",
+      "altText": "卖伞的人站在雨里淋湿了，身旁摊位上摆满未打开的伞。",
+      "riskTags": [
+        "abstract_meaning",
+        "comparison",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "a4eff43b-92d3-43e5-84e3-d6dc7d0fb71f",
+      "word": "fatigue",
+      "meaningZh": "疲劳；疲乏",
+      "exampleId": "a4eff43b-92d3-43e5-84e3-d6dc7d0fb71f-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "After the long hike, fatigue made her sit down beside the trail.",
+      "sentenceZh": "长途徒步后，疲劳让她在步道旁坐下。",
+      "scene": "An adult hiker sitting heavily on a trailside rock after a long walk, backpack resting nearby, shoulders slumped, tired complete face, boots dusty and winding trail receding behind, warm wool textures.",
+      "altText": "疲惫的徒步者坐在路边石头上，背包放在身旁。",
+      "riskTags": [
+        "people_face"
+      ]
+    }
+  ]
+}

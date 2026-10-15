@@ -1,0 +1,309 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4366-4385",
+  "batchId": "auto-rank-4366-4385-20261003",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "cling",
+      "compulsory",
+      "conceal",
+      "wheelchair",
+      "confer",
+      "confine"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "74b7eff2-541d-4bbc-93b3-25d76e59008c",
+      "word": "complication",
+      "meaningZh": "并发症；复杂化；困难",
+      "exampleId": "74b7eff2-541d-4bbc-93b3-25d76e59008c-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The broken wheel added a complication to the journey.",
+      "sentenceZh": "坏掉的轮子让旅程更复杂了。",
+      "scene": "Adult travelers stop beside suitcase with detached wheel before train platform, unexpected practical obstacle focus, intact faces no danger logos or text.",
+      "altText": "旅行者的行李箱轮子脱落，行程遇到额外困难。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "51e66539-51e9-471a-9641-b31f5bed5c51",
+      "word": "fucking",
+      "meaningZh": "该死的（粗话）",
+      "exampleId": "51e66539-51e9-471a-9641-b31f5bed5c51-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "This fucking door is stuck!",
+      "sentenceZh": "这该死的门卡住了！",
+      "scene": "Fictional adult visibly frustrated trying a stuck interior door handle, clenched brow and exasperated face convey profane intensifier without aggression, no spoken or written words, no sexual imagery, no damaged hand.",
+      "altText": "门卡住了，成人握着门把手露出恼火神情。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "3777b24b-b69d-495a-85b6-cfe9d1abb80c",
+      "word": "cling",
+      "meaningZh": "粘紧；附着；紧贴；坚持",
+      "exampleId": "3777b24b-b69d-495a-85b6-cfe9d1abb80c-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The ivy will cling to the wall.",
+      "sentenceZh": "常春藤会紧贴墙面攀附。",
+      "scene": "Chinese courtyard close view ivy stem and small aerial roots firmly attached to brick wall, green leaves, attachment visible rather than free hanging vine, no text.",
+      "altText": "常春藤的茎与小根紧紧攀附在砖墙上。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f729464a-dcea-427b-aa30-b57cb43bada2",
+      "word": "composer",
+      "meaningZh": "作曲家",
+      "exampleId": "f729464a-dcea-427b-aa30-b57cb43bada2-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The composer created a new melody at the piano.",
+      "sentenceZh": "作曲家在钢琴旁创作新旋律。",
+      "scene": "Adult composer thoughtfully explores piano keys with blank paper and pencil nearby, composing rather than concert audience, expressive face coherent hands no notation letters or labels.",
+      "altText": "作曲家在钢琴上试奏，旁边放着纸笔。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "2bfa7ecb-9d69-4fb5-bda5-d848512fe125",
+      "word": "compulsory",
+      "meaningZh": "义务的；强制的；必修的",
+      "exampleId": "2bfa7ecb-9d69-4fb5-bda5-d848512fe125-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Wearing a helmet is compulsory at this worksite.",
+      "sentenceZh": "在这个工地必须戴头盔。",
+      "scene": "Chinese construction entrance supervisor gives safety helmet to arriving worker before barrier permits entry, all others wear helmets, simple helmet pictogram without words, no unsafe work.",
+      "altText": "工地入口，主管要求进入者先戴好安全帽。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "d9baac65-f120-4c84-a5b4-d0ddf380fb6f",
+      "word": "isolated",
+      "meaningZh": "孤立的",
+      "exampleId": "d9baac65-f120-4c84-a5b4-d0ddf380fb6f-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The isolated cabin stood far from the village.",
+      "sentenceZh": "孤立的小屋远离村庄。",
+      "scene": "One small cabin separated by wide empty forest valley from tiny village far distance, clear geographical isolation, no people or text.",
+      "altText": "独立小屋与远处村庄之间隔着辽阔山谷。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "aad21a2d-1acd-4172-83c9-a683302800ef",
+      "word": "blink",
+      "meaningZh": "眨眼；闪亮；使闪亮",
+      "exampleId": "aad21a2d-1acd-4172-83c9-a683302800ef-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "She began to blink in the bright sunlight.",
+      "sentenceZh": "她在强烈阳光下开始眨眼。",
+      "scene": "Three-panel same adult face neutral open eyes then gently closed eyelids then reopened, bright daylight context, deliberate brief blink not sleep, complete natural face no text.",
+      "altText": "同一张脸依次睁眼、短暂闭眼，再睁眼。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "16461b9c-5a83-44ea-8874-fb6e9a5fda14",
+      "word": "compute",
+      "meaningZh": "计算；推算",
+      "exampleId": "16461b9c-5a83-44ea-8874-fb6e9a5fda14-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The computer can compute the total.",
+      "sentenceZh": "电脑可以计算总数。",
+      "scene": "Adult office worker enters grouped plain tokens into simple unbranded computer, pictorial interface shows three small stacks combining into one larger stack, no numbers letters equations or readable interface.",
+      "altText": "电脑用图形显示多个小堆合并为总量。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "b470ef92-df95-4535-819e-ee0113a29fb0",
+      "word": "conceal",
+      "meaningZh": "隐藏；隐瞒；掩盖",
+      "exampleId": "b470ef92-df95-4535-819e-ee0113a29fb0-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She used a cloth to conceal the gift.",
+      "sentenceZh": "她用布把礼物藏起来。",
+      "scene": "Chinese home adult covers distinctive wrapped gift box completely under opaque cloth on table, small before after inset clear concealment, no text.",
+      "altText": "她用不透明布盖住桌上的礼物盒。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "cdecda29-c045-4522-8cb7-5edfa624809a",
+      "word": "suspicious",
+      "meaningZh": "可疑的；多疑的；怀疑的",
+      "exampleId": "cdecda29-c045-4522-8cb7-5edfa624809a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The guard noticed a suspicious package.",
+      "sentenceZh": "警卫注意到一个可疑包裹。",
+      "scene": "Station guard notices unattended plain closed bag under otherwise empty bench, thoughtful cautious face, stands at distance and calls colleague, no bomb weapons panic text or assumed guilt.",
+      "altText": "警卫发现长椅下无人照看的包，保持距离联系同事。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sensitive_context"
+      ]
+    },
+    {
+      "vocabularyId": "fe10c960-3e3b-4d68-8d84-27e42ad4afc8",
+      "word": "concession",
+      "meaningZh": "让步；妥协；特许权",
+      "exampleId": "fe10c960-3e3b-4d68-8d84-27e42ad4afc8-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "She made a concession and shared her table.",
+      "sentenceZh": "她作出让步，分享自己的桌子。",
+      "scene": "Two panels same table: first woman occupies entire table with flower crafts while neighbor stands unable to use it; second she moves all crafts to left half, invites neighbor to right half where he builds birdhouse. Clearly giving up exclusive use to share. Natural faces, no text.",
+      "altText": "两人调整各自材料，各用桌子一半共同工作。",
+      "riskTags": [
+        "semantic_accuracy",
+        "sequence"
+      ]
+    },
+    {
+      "vocabularyId": "474f5222-a922-4308-a161-d67e2e5d1e7e",
+      "word": "wheelchair",
+      "meaningZh": "轮椅",
+      "exampleId": "474f5222-a922-4308-a161-d67e2e5d1e7e-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She moved her wheelchair along the ramp.",
+      "sentenceZh": "她沿坡道推轮椅前进。",
+      "scene": "Chinese community center adult woman wheelchair user independently propels properly formed manual chair along gentle accessible ramp, natural active posture full face, no stairs obstruction or text.",
+      "altText": "轮椅使用者自主沿平缓无障碍坡道前进。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a61bf2b9-8c7e-4bfc-8aaf-226b4da67891",
+      "word": "confer",
+      "meaningZh": "授予；赋予；商议",
+      "exampleId": "a61bf2b9-8c7e-4bfc-8aaf-226b4da67891-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The engineers will confer before choosing the design.",
+      "sentenceZh": "工程师们将在选定设计前商议。",
+      "scene": "Chinese engineering workshop diverse adults confer face to face over original bridge model comparing alternatives with hand gestures, no labels writing or digits.",
+      "altText": "工程师围着桥梁模型交换意见。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "56a9f74b-5358-4061-8da1-cb6c03ae791f",
+      "word": "squad",
+      "meaningZh": "班；小队；小集团；编成班",
+      "exampleId": "56a9f74b-5358-4061-8da1-cb6c03ae791f-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The rescue squad searched the hillside together.",
+      "sentenceZh": "救援小队一同搜索山坡。",
+      "scene": "Small coordinated adult rescue team wearing plain matching jackets searches stable gentle hillside with maps blank and radio, no weapons visible injury text or logos.",
+      "altText": "穿着统一外套的救援小队协同搜索山坡。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "5ca53132-72af-4238-97ae-793a646cdb9b",
+      "word": "confine",
+      "meaningZh": "限制；局限；监禁",
+      "exampleId": "5ca53132-72af-4238-97ae-793a646cdb9b-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The fence will confine the chickens to the yard.",
+      "sentenceZh": "围栏会把鸡限制在院内。",
+      "scene": "Chinese farm yard healthy chickens inside clearly closed low fence with secure gate, adequate space shade water, no escape birds cruelty or text.",
+      "altText": "鸡在封闭围栏内宽敞的院子里活动。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "b11bdea7-bafb-40f8-bb73-6fc700c26b6d",
+      "word": "eligible",
+      "meaningZh": "有资格当选的；合格的",
+      "exampleId": "b11bdea7-bafb-40f8-bb73-6fc700c26b6d-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "Her ticket made her eligible to enter the exhibition.",
+      "sentenceZh": "她的票使她有资格进入展览。",
+      "scene": "Adult visitor presents plain valid matching pictorial ticket to attendant who opens exhibition entrance, eligibility based on ticket clear no personal traits text stamps numbers.",
+      "altText": "参观者出示图案匹配的门票，工作人员允许进入展厅。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "88c7d84d-3c34-4389-83a6-34b42de33006",
+      "word": "confirmation",
+      "meaningZh": "确认；证实；批准",
+      "exampleId": "88c7d84d-3c34-4389-83a6-34b42de33006-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The clerk gave confirmation of the booking.",
+      "sentenceZh": "职员确认了这次预订。",
+      "scene": "Adult hotel clerk verifies guest reservation with pictorial room calendar then hands room key to guest, calm affirmative nod, no readable dates words logos or digits.",
+      "altText": "酒店职员核对预订后点头并递交房间钥匙。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "9db74088-f367-498d-9c94-8d55adddf312",
+      "word": "processor",
+      "meaningZh": "处理器",
+      "exampleId": "9db74088-f367-498d-9c94-8d55adddf312-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The processor sits on the motherboard.",
+      "sentenceZh": "处理器安装在主板上。",
+      "scene": "Close mature painted illustration exposed square computer processor seated correctly in central motherboard socket, surrounding chips traces and heatsink removed beside board, no numbers printed labels or text.",
+      "altText": "方形处理器位于主板中央插槽，周围可见线路与芯片。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "f7c141a0-ac65-4f5e-8665-9a6e367361d6",
+      "word": "confused",
+      "meaningZh": "困惑的；混乱的",
+      "exampleId": "f7c141a0-ac65-4f5e-8665-9a6e367361d6-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The confused traveler looked at the map.",
+      "sentenceZh": "困惑的旅行者看着地图。",
+      "scene": "Adult traveler at unfamiliar trail fork looks puzzled at unlettered pictorial map and two directions, furrowed brow complete face, no question marks text or peril.",
+      "altText": "旅行者在岔路口看着地图，露出困惑神情。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "a50b9615-4bc1-47fe-be55-be48e74a5943",
+      "word": "plunge",
+      "meaningZh": "暴跌；跳入；陷入",
+      "exampleId": "a50b9615-4bc1-47fe-be55-be48e74a5943-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The duck will plunge into the pond.",
+      "sentenceZh": "鸭子将一头扎进池塘。",
+      "scene": "One anatomically correct duck diving headfirst from water surface into pond, head submerged tail above splash and underwater body clear, no humans danger text or multiple duplicate duck.",
+      "altText": "鸭子头朝下扎进池塘，尾部露在水面上。",
+      "riskTags": [
+        "semantic_accuracy"
+      ]
+    }
+  ]
+}

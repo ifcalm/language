@@ -1,0 +1,327 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5227-5246",
+  "batchId": "auto-rank-5227-5246-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "relevance",
+      "remedy",
+      "renowned",
+      "reproduction",
+      "restoration",
+      "revise"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "0439b28e-f43c-4df4-8211-4d029f75bfb9",
+      "word": "relevance",
+      "meaningZh": "相关性；关联",
+      "exampleId": "0439b28e-f43c-4df4-8211-4d029f75bfb9-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The gardener explained the relevance of the soil test.",
+      "sentenceZh": "园丁解释了土壤检测的相关性。",
+      "scene": "Chinese gardener compares poor potted plant soil sample and healthier bed to explain connection of test with planting choice, full face, pictorial sample tray no graphs writing.",
+      "altText": "园丁把土样与植物状况联系起来说明。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0fbf10ff-ba82-4064-8c3a-e0588654bfa1",
+      "word": "relieved",
+      "meaningZh": "放心的",
+      "exampleId": "0fbf10ff-ba82-4064-8c3a-e0588654bfa1-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She felt relieved when the lost puppy returned.",
+      "sentenceZh": "走失小狗回来了，她松了口气。",
+      "scene": "Adult woman warmly holds returned puppy near open garden gate, full face showing eased worry and soft smile, no text.",
+      "altText": "女子抱住回来的小狗，神情释然。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "e64ab804-d24c-4748-bc14-4ff74057e5b0",
+      "word": "remainder",
+      "meaningZh": "剩余部分；余数",
+      "exampleId": "e64ab804-d24c-4748-bc14-4ff74057e5b0-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "He packed the remainder of the bread for later.",
+      "sentenceZh": "他把剩下的面包装好留到以后。",
+      "scene": "Meal plate has crumbs and cut bread partly eaten, adult hands place remaining slices into reusable container, no exact counts text.",
+      "altText": "用餐后剩余面包被装入保鲜盒。",
+      "riskTags": [
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "4a730b96-ee7f-45b8-93da-3c1513dde153",
+      "word": "remains",
+      "meaningZh": "遗迹",
+      "exampleId": "4a730b96-ee7f-45b8-93da-3c1513dde153-visual-ex",
+      "styleFamily": "linocut landscape",
+      "sentenceEn": "The remains of the old tower stood on the hill.",
+      "sentenceZh": "旧塔遗迹立在山丘上。",
+      "scene": "Weathered ruined stone tower partial wall and broken arch remain on grassy hill, no intact new tower people labels text.",
+      "altText": "山丘上留着旧塔的残墙与拱门。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "d1fe6fb7-dce5-4047-a478-31d9a1f417b3",
+      "word": "remarkably",
+      "meaningZh": "显著地",
+      "exampleId": "d1fe6fb7-dce5-4047-a478-31d9a1f417b3-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The seedling grew remarkably fast.",
+      "sentenceZh": "这株幼苗生长得异常迅速。",
+      "scene": "Same distinctive red pot before tiny two-leaf seedling, later much taller leafy plant under same window, clear dramatic growth no other pots clock numbers text.",
+      "altText": "同一红盆里的幼苗从矮小变得高大茂盛。",
+      "riskTags": [
+        "before_after",
+        "comparison",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "d1b086aa-6b1e-4188-bdba-5569ca5da6a0",
+      "word": "remedy",
+      "meaningZh": "补救办法；治疗",
+      "exampleId": "d1b086aa-6b1e-4188-bdba-5569ca5da6a0-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "A simple brace was the remedy for the loose shelf.",
+      "sentenceZh": "简单的支撑件就是松动架子的补救办法。",
+      "scene": "Chinese carpenter installs diagonal wooden brace beneath visibly loose shelf, matching sturdy finished shelf in subtle second panel, full focused face no text.",
+      "altText": "木匠加装斜撑，修好松动架子。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "cause_effect",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "1497ae7e-abfe-4441-9105-8cfbb71c19ec",
+      "word": "renew",
+      "meaningZh": "更新",
+      "exampleId": "1497ae7e-abfe-4441-9105-8cfbb71c19ec-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "They renew the roof coating each spring.",
+      "sentenceZh": "他们每年春天更新屋顶涂层。",
+      "scene": "Adult roof worker applies fresh protective coat over weathered roof surface, clear contrast between old and freshly coated areas, stable safe platform full face no writing.",
+      "altText": "工人给旧屋顶重新涂上保护层。",
+      "riskTags": [
+        "people_face",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "f5229faf-289e-49d8-b384-06f7704d7758",
+      "word": "renowned",
+      "meaningZh": "著名的；有声望的",
+      "exampleId": "f5229faf-289e-49d8-b384-06f7704d7758-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The renowned potter welcomed young apprentices.",
+      "sentenceZh": "著名陶匠欢迎年轻学徒。",
+      "scene": "Chinese master potter's celebrated ceramics displayed around workshop as adult apprentices attentively gather, master full humble welcoming face no awards writing.",
+      "altText": "陶匠在作品环绕的工坊欢迎学徒。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "aab9ff31-9f8c-4add-a526-c8a56e0b70b3",
+      "word": "repeated",
+      "meaningZh": "重复的",
+      "exampleId": "aab9ff31-9f8c-4add-a526-c8a56e0b70b3-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The repeated knocks woke him up.",
+      "sentenceZh": "反复敲门把他吵醒了。",
+      "scene": "Same adult knocker hand at same wooden door shown in three successive moments, sleeper inside progressively stirs and wakes, full face no words numerals sound lettering.",
+      "altText": "门外连续敲门，屋内的人逐渐醒来。",
+      "riskTags": [
+        "sequence",
+        "reference",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ab8c680c-9a61-40ab-b42e-e4feb9b46f4c",
+      "word": "reproduce",
+      "meaningZh": "复制；繁殖",
+      "exampleId": "ab8c680c-9a61-40ab-b42e-e4feb9b46f4c-visual-ex",
+      "styleFamily": "felt nature",
+      "sentenceEn": "The rabbits reproduce during the warmer months.",
+      "sentenceZh": "兔子在较暖的月份繁殖。",
+      "scene": "Rabbit parents with small newborn young nestled safely in grassy burrow edge, clearly family relation, no explicit mating humans labels text.",
+      "altText": "成年兔与幼兔待在草地洞穴旁。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "e590cb00-1f24-46c5-92e4-d1ea4ec7659e",
+      "word": "reproduction",
+      "meaningZh": "复制",
+      "exampleId": "e590cb00-1f24-46c5-92e4-d1ea4ec7659e-visual-ex",
+      "styleFamily": "paper collage",
+      "sentenceEn": "The reproduction closely matched the original painting.",
+      "sentenceZh": "复制品与原画十分相似。",
+      "scene": "Chinese landscape painting and close pictorial reproduction displayed side by side, same mountain tree river details but one modern flat paper and one older scroll, no calligraphy labels.",
+      "altText": "山水原画与复制品并排展示，画面细节相似。",
+      "riskTags": [
+        "Chinese_culture",
+        "comparison",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "0c7894af-80b2-4a3e-9a50-3eb09856124d",
+      "word": "reside",
+      "meaningZh": "居住；存在于",
+      "exampleId": "0c7894af-80b2-4a3e-9a50-3eb09856124d-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "The family chose to reside near the river.",
+      "sentenceZh": "一家人选择住在河边。",
+      "scene": "Family comfortably tending home garden by riverside house with lived-in porch and washing line, readable full faces no luggage arriving scene text.",
+      "altText": "一家人在河边住宅的院子里生活。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "e1a183a5-0679-44e0-9496-08004b283e69",
+      "word": "residue",
+      "meaningZh": "残留物",
+      "exampleId": "e1a183a5-0679-44e0-9496-08004b283e69-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "A sticky residue remained inside the jar.",
+      "sentenceZh": "罐子内部留有黏性残留物。",
+      "scene": "Empty glass jam jar with small sticky translucent amber residue clinging inner walls and bottom, no full jar ingredient labels humans text.",
+      "altText": "空玻璃罐内壁还粘着少量果酱痕迹。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "711608bc-3f2b-45b7-8222-a03da910e7b4",
+      "word": "resignation",
+      "meaningZh": "辞职",
+      "exampleId": "711608bc-3f2b-45b7-8222-a03da910e7b4-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Her resignation marked the end of her work at the shop.",
+      "sentenceZh": "她的辞职意味着在店里的工作结束了。",
+      "scene": "Adult shop worker hands blank resignation envelope and shop keys to manager, her packed personal box nearby, full respectful faces no firing conflict writing.",
+      "altText": "员工交回店钥匙并递出辞职信，私人物品已装箱。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "7a1028df-7f9a-41b8-a4ba-4e9134029855",
+      "word": "respective",
+      "meaningZh": "各自的",
+      "exampleId": "7a1028df-7f9a-41b8-a4ba-4e9134029855-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "They returned the tools to their respective boxes.",
+      "sentenceZh": "他们把工具放回各自的盒子。",
+      "scene": "Two adult craftspeople return red-handled shears to matching red toolbox and blue-handled wrench to matching blue toolbox, each tool clearly belongs to corresponding box, no text.",
+      "altText": "红柄剪刀放回红盒，蓝柄扳手放回蓝盒。",
+      "riskTags": [
+        "reference",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "797cbae6-b413-4445-a166-4b557719e7c5",
+      "word": "restoration",
+      "meaningZh": "恢复；修复",
+      "exampleId": "797cbae6-b413-4445-a166-4b557719e7c5-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The restoration revealed the mural's bright colors.",
+      "sentenceZh": "修复让壁画鲜艳色彩重新显现。",
+      "scene": "Chinese conservation studio adult conservator gently restores floral mural with dull surface left and vivid restored portion right, full face no actual historical labels calligraphy.",
+      "altText": "修复师让花卉壁画的鲜亮色彩重新显露。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "before_after"
+      ]
+    },
+    {
+      "vocabularyId": "9a7a0d5c-a738-4c57-b103-e8ac2c2d5b9a",
+      "word": "restraint",
+      "meaningZh": "约束",
+      "exampleId": "9a7a0d5c-a738-4c57-b103-e8ac2c2d5b9a-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "He showed restraint by stepping away from the argument.",
+      "sentenceZh": "他退出争执，表现出克制。",
+      "scene": "Adult calmly lowers clenched hands and steps away from heated discussion at community table, full self-controlled expression others full faces no shouting words.",
+      "altText": "男子放松双手，平静离开争执现场。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "504b992e-c230-4e4f-bac7-a0d44dce5f0f",
+      "word": "retrieve",
+      "meaningZh": "取回；检索",
+      "exampleId": "504b992e-c230-4e4f-bac7-a0d44dce5f0f-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The dog helped retrieve the dropped glove.",
+      "sentenceZh": "狗帮忙取回掉落的手套。",
+      "scene": "Dog gently carries single dropped glove back toward waiting adult owner at park path, owner full grateful face no injury text.",
+      "altText": "狗叼着掉落手套回到主人身边。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "4c112eaf-c6c2-42ae-b02b-7c633e0eae43",
+      "word": "revenge",
+      "meaningZh": "报复；复仇",
+      "exampleId": "4c112eaf-c6c2-42ae-b02b-7c633e0eae43-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "He chose not to take revenge for the damaged garden.",
+      "sentenceZh": "花园被破坏后，他选择不报复。",
+      "scene": "Adult gardener repairs trampled plants and accepts apologetic neighbor's help instead of retaliating, full calm and regretful faces no weapons text; garden damage clear.",
+      "altText": "园丁没有报复，而是与道歉邻居一起修复花园。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "7af06df9-3694-4d53-8e70-f46c84d104e9",
+      "word": "revise",
+      "meaningZh": "修订；修改",
+      "exampleId": "7af06df9-3694-4d53-8e70-f46c84d104e9-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "She decided to revise the bridge design.",
+      "sentenceZh": "她决定修改桥梁设计。",
+      "scene": "Chinese bridge designer edits physical scale bridge model replacing awkward narrow deck with wider stable deck, full thoughtful face, blank sketch sheet no letters.",
+      "altText": "设计者调整桥模型，修改桥面结构。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "before_after"
+      ]
+    }
+  ]
+}

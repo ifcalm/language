@@ -1,0 +1,314 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-5287-5306",
+  "batchId": "auto-rank-5287-5306-20261006",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "sixteen",
+      "sketch",
+      "slash",
+      "solidarity",
+      "span",
+      "specialized"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "56bd88f9-f9f4-4b73-b972-4caef3df582d",
+      "word": "sixteen",
+      "meaningZh": "十六",
+      "exampleId": "56bd88f9-f9f4-4b73-b972-4caef3df582d-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "Sixteen tea cups stood on the tray.",
+      "sentenceZh": "托盘上摆着十六只茶杯。",
+      "scene": "Strict overhead Chinese ceramic tea cups on tray, exactly four rows of four cups, sixteen total, evenly spaced, no other vessels.",
+      "altText": "托盘上的茶杯四行四列，共十六只。",
+      "riskTags": [
+        "Chinese_culture",
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "49df1ba8-e4a3-4b4d-9526-7d57f3276149",
+      "word": "sixty",
+      "meaningZh": "六十",
+      "exampleId": "49df1ba8-e4a3-4b4d-9526-7d57f3276149-visual-ex",
+      "styleFamily": "graphic botanical illustration",
+      "sentenceEn": "The tray held sixty seedlings.",
+      "sentenceZh": "托盘里有六十株幼苗。",
+      "scene": "Strict overhead rectangular nursery tray exactly six rows of ten cells, one two-leaf seedling per cell, sixty seedlings total, no extra plants.",
+      "altText": "育苗盘六行十列，每格一株，共六十株幼苗。",
+      "riskTags": [
+        "exact_quantity"
+      ]
+    },
+    {
+      "vocabularyId": "a772d6c1-1dc4-4650-963f-36dd80e4305b",
+      "word": "skeptical",
+      "meaningZh": "怀疑的",
+      "exampleId": "a772d6c1-1dc4-4650-963f-36dd80e4305b-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The skeptical gardener checked the seedling before buying it.",
+      "sentenceZh": "心存怀疑的园丁在购买前检查幼苗。",
+      "scene": "Adult gardener raises one eyebrow skeptically while examining roots of a potted seedling offered by vendor; full expressive faces, no labels.",
+      "altText": "园丁带着怀疑的神情，仔细检查待售幼苗。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6ac37387-7342-4168-9c9e-790cdeb2ac50",
+      "word": "sketch",
+      "meaningZh": "素描；草图；速写",
+      "exampleId": "6ac37387-7342-4168-9c9e-790cdeb2ac50-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "She made a sketch of the old courtyard.",
+      "sentenceZh": "她画了一幅老院落的速写。",
+      "scene": "Adult artist draws recognizable loose pencil sketch of Chinese courtyard on otherwise blank paper, actual courtyard visible beyond, complete hands face, no handwriting.",
+      "altText": "画者对照眼前的院落，用铅笔画出速写。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "8f2a359d-8faf-4791-86ad-e71423fde8ac",
+      "word": "skiing",
+      "meaningZh": "滑雪",
+      "exampleId": "8f2a359d-8faf-4791-86ad-e71423fde8ac-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "They went skiing on the gentle slope.",
+      "sentenceZh": "他们在缓坡上滑雪。",
+      "scene": "Two adult skiers wearing helmets glide on gentle groomed snow slope, each with two skis and poles, clear faces, no signs or logos.",
+      "altText": "两名戴头盔的滑雪者沿平缓雪坡滑行。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c4b7db78-e5d3-479e-b9ec-cc7e0bcbd7d3",
+      "word": "slash",
+      "meaningZh": "削减；斜线",
+      "exampleId": "c4b7db78-e5d3-479e-b9ec-cc7e0bcbd7d3-visual-ex",
+      "styleFamily": "editorial collage",
+      "sentenceEn": "The team decided to slash packaging waste.",
+      "sentenceZh": "团队决定大幅减少包装浪费。",
+      "scene": "Two-panel comparison same pottery shipping workstation in Chinese ceramics workshop: first excessive discarded packing material, second compact reused protective packaging with dramatically smaller waste pile, no text.",
+      "altText": "陶瓷工坊改用简洁包装，包装废料大幅减少。",
+      "riskTags": [
+        "Chinese_culture",
+        "before_after",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "6d3c2080-6fe7-47e7-9c55-92690665106b",
+      "word": "slogan",
+      "meaningZh": "标语；口号",
+      "exampleId": "6d3c2080-6fe7-47e7-9c55-92690665106b-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The volunteers chanted a slogan as they cleaned the beach.",
+      "sentenceZh": "志愿者清理海滩时齐声喊口号。",
+      "scene": "Adult beach cleanup volunteers chant together while raising reusable collection bags, expressive open mouths, other volunteers pick litter; depict spoken chant through behavior, no speech bubbles letters banners.",
+      "altText": "清理海滩的志愿者齐声喊口号，举起垃圾收集袋。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "0568eb08-8f00-43f1-8be1-30fa9ea68d86",
+      "word": "smartphone",
+      "meaningZh": "智能手机",
+      "exampleId": "0568eb08-8f00-43f1-8be1-30fa9ea68d86-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The smartphone showed a picture of the garden.",
+      "sentenceZh": "智能手机显示着花园照片。",
+      "scene": "Close view one unbranded smartphone propped beside plant, screen entirely filled by pictorial garden photograph-like illustration, no UI elements text or icons.",
+      "altText": "一部智能手机的屏幕上显示着花园图片。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "52020bab-928e-4d95-9885-b2167ec8cd40",
+      "word": "smash",
+      "meaningZh": "打碎；粉碎；大获成功",
+      "exampleId": "52020bab-928e-4d95-9885-b2167ec8cd40-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "A fallen branch can smash a clay pot.",
+      "sentenceZh": "掉落的树枝可能砸碎陶盆。",
+      "scene": "Heavy fallen branch impacts empty clay pot on outdoor ground, large broken fragments and clear impact point, no people injury text.",
+      "altText": "沉重树枝砸中陶盆，陶盆碎裂。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "3e4c9b9b-7660-4d72-924c-849bf336b3ee",
+      "word": "smoking",
+      "meaningZh": "吸烟",
+      "exampleId": "3e4c9b9b-7660-4d72-924c-849bf336b3ee-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "He gave up smoking and threw away his cigarettes.",
+      "sentenceZh": "他戒了烟，扔掉了香烟。",
+      "scene": "Adult man drops several plain unlit cigarettes into outdoor trash bin, extinguished cigarette and thin fading smoke in ashtray nearby indicate smoking habit he stops; resolved full face, no packaging or text.",
+      "altText": "男子把未点燃的香烟扔进垃圾桶，决定戒烟。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "1aeeb69b-0537-4b47-90e4-367a6f2c51ee",
+      "word": "sneaker",
+      "meaningZh": "运动鞋",
+      "exampleId": "1aeeb69b-0537-4b47-90e4-367a6f2c51ee-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "She tied the laces of her sneaker.",
+      "sentenceZh": "她系好运动鞋的鞋带。",
+      "scene": "Close view hands tying laces on one unbranded fabric sneaker worn on foot, second shoe partly visible, anatomically complete fingers, no logos.",
+      "altText": "双手正在系紧一只运动鞋的鞋带。",
+      "riskTags": [
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "29a5e47f-8754-45fc-9e66-c04ad98e93f4",
+      "word": "socialist",
+      "meaningZh": "社会主义者",
+      "exampleId": "29a5e47f-8754-45fc-9e66-c04ad98e93f4-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The socialist argued for shared ownership of the workshop.",
+      "sentenceZh": "这位社会主义者主张工坊共有。",
+      "scene": "Fictional adult speaker discusses shared workshop ownership with workers gathered in circle around tools and jointly held plain key, full natural faces, neutral civic discussion no flags emblems signs text; ideology supplied by sentence.",
+      "altText": "发言者与工人围坐讨论工坊的共同所有权。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "440dbe07-1ff7-4387-9072-5e2fbc0e2d75",
+      "word": "solidarity",
+      "meaningZh": "团结；一致",
+      "exampleId": "440dbe07-1ff7-4387-9072-5e2fbc0e2d75-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The neighbors showed solidarity by repairing the roof together.",
+      "sentenceZh": "邻居们一起修屋顶，表现出团结。",
+      "scene": "Chinese neighborhood adults jointly pass roof tiles to worker on secure low scaffold beside courtyard house, cooperative connected action, safety rails full faces, no writing.",
+      "altText": "邻居互相传递瓦片，共同修缮院落屋顶。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c0642581-8bfe-43d8-b88c-946a9ff62807",
+      "word": "solo",
+      "meaningZh": "独奏；独唱；单独的",
+      "exampleId": "c0642581-8bfe-43d8-b88c-946a9ff62807-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The musician played a solo on the violin.",
+      "sentenceZh": "音乐家用小提琴演奏独奏。",
+      "scene": "One adult violinist alone on small chamber stage, bow correctly touches strings, complete expressive face and hands, no audience performers music notation.",
+      "altText": "一位小提琴演奏者独自在舞台上独奏。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "5e9c9f3e-19bd-415f-a6e0-b6764e088fd6",
+      "word": "sophomore",
+      "meaningZh": "大二学生",
+      "exampleId": "5e9c9f3e-19bd-415f-a6e0-b6764e088fd6-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The sophomore helped new students find the studio.",
+      "sentenceZh": "这名大二学生帮新生找到工作室。",
+      "scene": "Adult university student carrying worn art portfolio guides two new adult students into campus art studio, full friendly faces, no signs badges class-year numbers; year supplied by sentence.",
+      "altText": "熟悉校园的学生带两名新生来到美术工作室。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "638da789-c5eb-4516-a180-7716e1857134",
+      "word": "spam",
+      "meaningZh": "垃圾邮件",
+      "exampleId": "638da789-c5eb-4516-a180-7716e1857134-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "She deleted the spam from her inbox.",
+      "sentenceZh": "她从收件箱删除垃圾邮件。",
+      "scene": "Conceptual computer inbox as tray filled with repeated garish blank envelope cards; adult hand drags bulk unwanted envelopes into bin while one personal envelope remains, no readable UI icons letters.",
+      "altText": "大量重复的垃圾邮件被从收件箱移入垃圾桶。",
+      "riskTags": [
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "01354cfe-97a8-43c5-9987-bb02db3fec93",
+      "word": "span",
+      "meaningZh": "跨度",
+      "exampleId": "01354cfe-97a8-43c5-9987-bb02db3fec93-visual-ex",
+      "styleFamily": "paper-cut landscape",
+      "sentenceEn": "The bridge has a wide span over the river.",
+      "sentenceZh": "桥在河上的跨度很大。",
+      "scene": "Wide Chinese stone arch bridge crosses river in one sweeping arch, both banks and supports clearly visible, span emphasized by open water beneath, no people dimensions lettering.",
+      "altText": "一座石拱桥以宽阔拱跨连接河流两岸。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "ef200d92-2e3d-4226-bed1-0037cef99737",
+      "word": "specialized",
+      "meaningZh": "专业的",
+      "exampleId": "ef200d92-2e3d-4226-bed1-0037cef99737-visual-ex",
+      "styleFamily": "stop-motion craft",
+      "sentenceEn": "The artisan used specialized tools to repair the instrument.",
+      "sentenceZh": "工匠用专业工具修理乐器。",
+      "scene": "Chinese guqin restoration artisan uses small specialized clamps and precision wooden tools on long seven-string zither, natural hands full focused face, no text.",
+      "altText": "古琴修复工匠使用精细工具和夹具修理琴身。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "a28da697-9d7b-4a43-9d63-eff09e80ed73",
+      "word": "specimen",
+      "meaningZh": "标本",
+      "exampleId": "a28da697-9d7b-4a43-9d63-eff09e80ed73-visual-ex",
+      "styleFamily": "watercolor botanical illustration",
+      "sentenceEn": "The botanist examined a fern specimen.",
+      "sentenceZh": "植物学家检查一份蕨类标本。",
+      "scene": "Pressed fern specimen with roots stem and fronds attached to blank cream mount sheet using narrow plain strips, magnifying glass beside it, no labels writing.",
+      "altText": "空白底纸上固定着一份完整蕨类植物标本。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "ab7938f2-98ea-4171-b7c1-bbdbf9906c67",
+      "word": "spectacle",
+      "meaningZh": "景象",
+      "exampleId": "ab7938f2-98ea-4171-b7c1-bbdbf9906c67-visual-ex",
+      "styleFamily": "textile landscape",
+      "sentenceEn": "The waterfall created a magnificent spectacle.",
+      "sentenceZh": "瀑布构成壮丽的景象。",
+      "scene": "Grand waterfall cascades from layered cliffs into misty turquoise basin, rich embroidered landscape texture, spectacular scale and natural light, no people text.",
+      "altText": "壮观瀑布从层叠山崖倾泻入雾气弥漫的水潭。",
+      "riskTags": []
+    }
+  ]
+}

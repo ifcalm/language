@@ -1,0 +1,316 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4867-4886",
+  "batchId": "auto-rank-4867-4886-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "ignorance",
+      "bride",
+      "imagery",
+      "compelling",
+      "imminent",
+      "tile"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "28d2347f-c73b-4f17-a6cf-17a4bf59bcd2",
+      "word": "terribly",
+      "meaningZh": "非常地；糟糕地",
+      "exampleId": "28d2347f-c73b-4f17-a6cf-17a4bf59bcd2-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She was terribly tired after the long journey.",
+      "sentenceZh": "长途旅行后，她非常疲惫。",
+      "scene": "An adult traveler slumps exhausted on a station bench with heavy suitcase beside her, complete very tired face and closed natural eyes, drooping shoulders, no station signs or writing.",
+      "altText": "长途旅行后的女子倚在车站长椅上，疲惫得闭上眼睛。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "e887e19e-8cdc-4663-acaa-7fdfa1d6eed0",
+      "word": "cue",
+      "meaningZh": "提示；暗示；线索",
+      "exampleId": "e887e19e-8cdc-4663-acaa-7fdfa1d6eed0-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The conductor gave the musicians a cue to begin.",
+      "sentenceZh": "指挥给乐手发出开始演奏的提示。",
+      "scene": "An adult conductor makes a clear starting cue with raised baton while small string ensemble watches attentively, complete faces, no readable sheet music or text, moment before bow movement.",
+      "altText": "指挥抬起指挥棒示意开始，乐手专注等待。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3a139fe4-f76e-4f94-bfed-8282f397ca52",
+      "word": "idiot",
+      "meaningZh": "白痴；傻瓜",
+      "exampleId": "3a139fe4-f76e-4f94-bfed-8282f397ca52-visual-ex",
+      "styleFamily": "comic illustration",
+      "sentenceEn": "I felt like an idiot after locking my keys in the car.",
+      "sentenceZh": "把钥匙锁在车里后，我觉得自己像个傻瓜。",
+      "scene": "An adult outside a locked parked car sees keys on seat through window, embarrassed full face and hand on forehead, gentle self-directed humor, no mocked disability or insult text.",
+      "altText": "男子看着锁在车内座位上的钥匙，尴尬地扶额。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "8d8e846b-675a-4b67-8b63-3b77ec6c9827",
+      "word": "ignorance",
+      "meaningZh": "无知；愚昧",
+      "exampleId": "8d8e846b-675a-4b67-8b63-3b77ec6c9827-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "His ignorance of gardening made him ask for advice.",
+      "sentenceZh": "他不懂园艺，所以向别人请教。",
+      "scene": "A novice adult gardener with puzzled complete face asks an older gardener about a wilted potted plant in a Chinese courtyard, older person kindly explains soil with hands, no instructional words.",
+      "altText": "不懂园艺的年轻人拿着蔫了的盆栽，向院内老人请教。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "c165c365-ed2c-4d1c-b2ca-28a23aa25e39",
+      "word": "bride",
+      "meaningZh": "新娘",
+      "exampleId": "c165c365-ed2c-4d1c-b2ca-28a23aa25e39-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The bride walked through the courtyard with her family.",
+      "sentenceZh": "新娘和家人一起穿过庭院。",
+      "scene": "An adult Chinese bride in an elegant red wedding dress walks with supportive family through a traditional courtyard decorated with plain red lanterns, full happy faces, no written double-happiness signs or logos.",
+      "altText": "红色婚服的新娘与家人走过挂灯笼的中式庭院。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "147a3d36-99ef-4f3a-b4f8-a08b069b89aa",
+      "word": "illustration",
+      "meaningZh": "插图；说明；例证",
+      "exampleId": "147a3d36-99ef-4f3a-b4f8-a08b069b89aa-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The book included an illustration of a whale.",
+      "sentenceZh": "书中有一幅鲸鱼插图。",
+      "scene": "An open book on desk with one clearly printed illustrated whale and ocean scene occupying one page, other page blank, visible paper binding and no text letters or numerals.",
+      "altText": "打开的书页上有一幅鲸鱼与海洋的插图。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "9d865737-5bfc-47ab-89c1-3e764e654831",
+      "word": "biography",
+      "meaningZh": "传记",
+      "exampleId": "9d865737-5bfc-47ab-89c1-3e764e654831-visual-ex",
+      "styleFamily": "watercolor editorial",
+      "sentenceEn": "She read a biography of the famous explorer.",
+      "sentenceZh": "她读了一本著名探险家的传记。",
+      "scene": "An adult reader holds an open illustrated biography with portrait of a historical explorer on cover and small route scene image on visible page, no writing letters map labels or numbers, full thoughtful reader face.",
+      "altText": "女子阅读一本封面带探险家肖像的传记。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "7eb04700-18cd-4f97-9327-bb93e62b5908",
+      "word": "imagery",
+      "meaningZh": "意象",
+      "exampleId": "7eb04700-18cd-4f97-9327-bb93e62b5908-visual-ex",
+      "styleFamily": "ink and watercolor",
+      "sentenceEn": "The poem used imagery of misty mountains and flowing rivers.",
+      "sentenceZh": "这首诗用到了雾山和流水的意象。",
+      "scene": "An adult poet contemplatively holds a blank manuscript in a Chinese study, imagined misty mountains and flowing river blend softly around scene as visual poetic imagery, complete face, no written characters or speech bubbles.",
+      "altText": "诗人身旁浮现云雾群山与流动河水的诗意画面。",
+      "riskTags": [
+        "Chinese_culture",
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "cbe511b2-ba17-4504-af10-ae39ce92e944",
+      "word": "hazard",
+      "meaningZh": "冒险；危险；机会",
+      "exampleId": "cbe511b2-ba17-4504-af10-ae39ce92e944-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The loose cable was a hazard on the walkway.",
+      "sentenceZh": "步道上松散的电缆是个危险隐患。",
+      "scene": "A loose thick cable lies across a public walkway creating clear trip hazard; adult worker notices and begins moving it safely aside, full attentive face, no warning words symbols arrows or electrical instructions.",
+      "altText": "步道上的松散电缆横在脚前，工作人员正准备移开。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "0653b9fa-3400-430e-9eb4-48e03dade9a9",
+      "word": "imaginary",
+      "meaningZh": "想象的；虚构的；假想的",
+      "exampleId": "0653b9fa-3400-430e-9eb4-48e03dade9a9-visual-ex",
+      "styleFamily": "textile",
+      "sentenceEn": "The child drew an imaginary creature with wings.",
+      "sentenceZh": "孩子画了一只有翅膀的虚构生物。",
+      "scene": "A child draws a friendly clearly invented creature combining gentle turtle body and bird wings on plain paper, full imaginative face, creature appears only as drawing rather than real animal, no letters or words.",
+      "altText": "孩子在纸上画出长着鸟翼的虚构小龟。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "1fb1ec99-45b9-4001-b3c0-750568437bcd",
+      "word": "compelling",
+      "meaningZh": "引人注目的",
+      "exampleId": "1fb1ec99-45b9-4001-b3c0-750568437bcd-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The storyteller held the audience with a compelling tale.",
+      "sentenceZh": "讲故事的人用一个引人入胜的故事吸引住听众。",
+      "scene": "An adult storyteller in a Chinese tea house tells a gripping tale with expressive hands, listeners lean forward absorbed, all readable faces complete, no banners writing or speech bubbles.",
+      "altText": "茶馆里的讲述者手势生动，听众全神贯注地倾听。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "40f60a2c-00b2-46c3-8c2b-ca4079dff004",
+      "word": "immense",
+      "meaningZh": "巨大的",
+      "exampleId": "40f60a2c-00b2-46c3-8c2b-ca4079dff004-visual-ex",
+      "styleFamily": "woodcut nature",
+      "sentenceEn": "The immense tree towered above the hikers.",
+      "sentenceZh": "巨大的树高耸在徒步者上方。",
+      "scene": "An immense ancient tree with gigantic trunk dwarfs two adult hikers at base, canopy extends high beyond ordinary trees, full tiny readable faces if visible, no text, scale contrast central.",
+      "altText": "巨大的古树远高于旁边树木，树下徒步者显得很小。",
+      "riskTags": [
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "484e86bd-4176-4603-8b47-b4ddcf2042da",
+      "word": "imminent",
+      "meaningZh": "迫在眉睫的",
+      "exampleId": "484e86bd-4176-4603-8b47-b4ddcf2042da-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "The dark clouds warned of an imminent storm.",
+      "sentenceZh": "乌云预示暴风雨即将来临。",
+      "scene": "Low dark storm clouds approach a Chinese riverside village while residents gather laundry before rain, storm not yet over village, tense wind and clear incoming cloud edge, complete readable faces no signs.",
+      "altText": "乌云逼近中式河村，居民赶在风雨到来前收衣物。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "650460f4-0cde-4b5e-aa00-606afbc6d3ac",
+      "word": "seldom",
+      "meaningZh": "不常的；稀少的；很少；不常",
+      "exampleId": "650460f4-0cde-4b5e-aa00-606afbc6d3ac-visual-ex",
+      "styleFamily": "felt landscape",
+      "sentenceEn": "The seldom-used gate was covered with vines.",
+      "sentenceZh": "很少使用的门爬满了藤蔓。",
+      "scene": "An old garden gate almost covered by mature vines, rusty hinges and undisturbed grass across entrance clearly signal rare use, no person or text, gentle quiet atmosphere.",
+      "altText": "旧园门被藤蔓覆盖，入口草丛完整，显示很少有人使用。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5112c0b4-79b1-49fb-b0a7-44c896312ee7",
+      "word": "impatient",
+      "meaningZh": "不耐烦的；急躁的",
+      "exampleId": "5112c0b4-79b1-49fb-b0a7-44c896312ee7-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The impatient customer kept looking at the empty doorway.",
+      "sentenceZh": "不耐烦的顾客不停看向空着的门口。",
+      "scene": "An adult customer seated alone at cafe table looks impatiently toward empty service doorway, full frowning face, fingers tapping table, no clocks writing or waiter who would confuse absence.",
+      "altText": "独坐的顾客皱眉看向空门口，手指敲着桌面。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "6c2e859e-c5b5-4a15-8410-7b24eb9aba9c",
+      "word": "tile",
+      "meaningZh": "砖瓦；瓷砖；瓦片",
+      "exampleId": "6c2e859e-c5b5-4a15-8410-7b24eb9aba9c-visual-ex",
+      "styleFamily": "paper-cut architecture",
+      "sentenceEn": "A blue tile had fallen from the roof.",
+      "sentenceZh": "一片蓝色瓦片从屋顶落了下来。",
+      "scene": "One blue glazed roof tile lying on ground below a traditional Chinese tiled roof with one corresponding small missing tile gap, intact curved tile clear, no injury people or writing.",
+      "altText": "中式瓦顶下落着一片蓝色琉璃瓦，屋顶留有对应缺口。",
+      "riskTags": [
+        "Chinese_culture",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "d77880c6-7cbf-456a-b8c1-18b299f537ad",
+      "word": "economically",
+      "meaningZh": "经济上",
+      "exampleId": "d77880c6-7cbf-456a-b8c1-18b299f537ad-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The family lived economically to save for a new home.",
+      "sentenceZh": "这家人节俭生活，为新家攒钱。",
+      "scene": "A diverse adult family carefully cooks simple home meal and places spare coins in plain savings jar, reusable containers and repaired chair suggest economical living, complete faces, no budgets currency numbers or slogans.",
+      "altText": "家人准备朴素饭菜，把节省的零钱放进储蓄罐。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d1774c69-1d3e-431f-9777-4a9e2021c0c3",
+      "word": "impressed",
+      "meaningZh": "印象深刻的",
+      "exampleId": "d1774c69-1d3e-431f-9777-4a9e2021c0c3-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "The teacher was impressed by the student's model.",
+      "sentenceZh": "老师对学生制作的模型印象深刻。",
+      "scene": "An adult teacher admires a young adult student detailed handmade bridge model, full surprised pleased face and appreciative gesture, student modestly smiles, no medals words or labels.",
+      "altText": "老师欣赏学生的桥梁模型，露出惊喜赞赏的表情。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "d26700b4-fb3b-41f2-9dbd-5ae6d0480791",
+      "word": "honestly",
+      "meaningZh": "诚实地",
+      "exampleId": "d26700b4-fb3b-41f2-9dbd-5ae6d0480791-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She honestly admitted that she had broken the cup.",
+      "sentenceZh": "她诚实地承认自己打碎了杯子。",
+      "scene": "An adult woman openly admits a broken cup to roommate, hand on own chest and regretful complete face, damaged cup on table between them, roommate listens calmly, no speech bubbles or words.",
+      "altText": "女子手放胸前，向室友坦诚说明桌上的杯子是自己打碎的。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ec2d33f5-ab56-42b0-8d32-6586a8e0fb0d",
+      "word": "imprison",
+      "meaningZh": "监禁；关押",
+      "exampleId": "ec2d33f5-ab56-42b0-8d32-6586a8e0fb0d-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The court decided to imprison the convicted man.",
+      "sentenceZh": "法庭决定监禁被定罪的男子。",
+      "scene": "A convicted adult man enters a plain prison cell accompanied by an officer, open barred door and sparse bunk make imprisonment clear, complete solemn faces, no brutality weapons uniforms with writing or labels.",
+      "altText": "被定罪的男子在警员陪同下进入有铁栏门的监室。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4646-4665",
+  "batchId": "auto-rank-4646-4665-20261004",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "policeman",
+      "engaged",
+      "engaging",
+      "enjoyable",
+      "graduation",
+      "entertain"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "597988ea-0d00-48bd-99fb-b7a1607614c7",
+      "word": "endeavor",
+      "meaningZh": "努力；尽力；尝试",
+      "exampleId": "597988ea-0d00-48bd-99fb-b7a1607614c7-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The climbers endeavor to reach the summit.",
+      "sentenceZh": "登山者努力登上山顶。",
+      "scene": "Two adult climbers hike steep safe mountain trail steady determined step hiking poles complete faces no dangerous dangling no text.",
+      "altText": "登山者借助登山杖努力向山顶前进。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2c5ffd9f-76f8-4259-8b29-da7bc31e827b",
+      "word": "policeman",
+      "meaningZh": "警察",
+      "exampleId": "2c5ffd9f-76f8-4259-8b29-da7bc31e827b-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The policeman helped the child find her family.",
+      "sentenceZh": "警察帮助孩子找到家人。",
+      "scene": "Chinese park uniformed policeman crouches gently to reassure child while parent approaches openarms fullfaces plain uniform no badge lettering.",
+      "altText": "警察安慰走散的孩子，家长正向他们走来。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "e8fd2e62-352d-41b7-b524-05ad4514818d",
+      "word": "ending",
+      "meaningZh": "结局；结尾；终止",
+      "exampleId": "e8fd2e62-352d-41b7-b524-05ad4514818d-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The story had a happy ending.",
+      "sentenceZh": "故事有一个幸福的结局。",
+      "scene": "Final scene lost dog happily reunited with adult owner beside open garden gate, dog tailwag owner kneels fullface relief no storybook text.",
+      "altText": "小狗与主人在花园门前团聚。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4cd50c4e-418e-4ea1-98a2-21dee63b2c79",
+      "word": "endorsement",
+      "meaningZh": "支持",
+      "exampleId": "4cd50c4e-418e-4ea1-98a2-21dee63b2c79-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The proposal received her endorsement.",
+      "sentenceZh": "这项提议获得了她的支持。",
+      "scene": "Adult community meeting woman approving nod openhand indicates shared scale model new accessible ramp, listeners fullfaces no thumbsicons paperworktext.",
+      "altText": "她赞许地点头，支持模型中的无障碍坡道方案。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "029119a3-b6b4-4847-95cf-4e3b33cfbe0e",
+      "word": "projection",
+      "meaningZh": "预测；投影",
+      "exampleId": "029119a3-b6b4-4847-95cf-4e3b33cfbe0e-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The projection appeared on the wall.",
+      "sentenceZh": "投影出现在墙上。",
+      "scene": "Human-free dark room projector on table narrow lightbeam reaches wall displaying enlarged simple mountain landscape matching small transparency slide, no letters numbers brands.",
+      "altText": "投影仪把山景放大映在墙上。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "603c7663-ea3d-45da-bfb1-69a0e2148963",
+      "word": "engaged",
+      "meaningZh": "已订婚的；忙碌的；从事于",
+      "exampleId": "603c7663-ea3d-45da-bfb1-69a0e2148963-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The engaged couple planned their wedding.",
+      "sentenceZh": "订婚的情侣筹备婚礼。",
+      "scene": "Chinese engaged adult couple sit together selecting red flower arrangements and blank invitations subtle simple engagement ring on one hand no readabletext doublehappinesssymbols. Strict plain cream walls and blank invitations; no Chinese characters including 囍 or 喜, no calligraphy or letterlike symbols. Simple engagement ring and flowers only.",
+      "altText": "订婚情侣一起挑选婚礼花束与请柬。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "63a46a2c-9561-441d-b166-12ba3231a5c5",
+      "word": "engaging",
+      "meaningZh": "迷人的；吸引人的",
+      "exampleId": "63a46a2c-9561-441d-b166-12ba3231a5c5-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The guide told an engaging story.",
+      "sentenceZh": "向导讲了一个引人入胜的故事。",
+      "scene": "Chinese museum guide animated expressive storyteller describing ancient bronze model threeadultvisitors leaning in interested smiling fullfaces blank labels no text.",
+      "altText": "向导生动讲解青铜器，游客专注倾听。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "812c4a87-10f3-4b31-b888-c6fb56b76ae1",
+      "word": "suitable",
+      "meaningZh": "合适的",
+      "exampleId": "812c4a87-10f3-4b31-b888-c6fb56b76ae1-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "She chose suitable boots for the muddy trail.",
+      "sentenceZh": "她为泥泞的小径挑选合适的靴子。",
+      "scene": "Adult woman puts sturdy waterproof hikingboots on feet beside muddy outdoor path, delicate indoor slippers left safely on porch, fullface footwear clear no letters.",
+      "altText": "她穿上防水靴，准备走过泥泞的小径。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "6b4b92b4-31a7-4201-a747-165f9a4b910b",
+      "word": "enjoyable",
+      "meaningZh": "令人愉快的；有趣的",
+      "exampleId": "6b4b92b4-31a7-4201-a747-165f9a4b910b-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The picnic was enjoyable for everyone.",
+      "sentenceZh": "大家都觉得这次野餐很愉快。",
+      "scene": "Chinese lakeside park multigeneration family sharing picnic fruit under willow pleasant smiles fully visible faces no text logos.",
+      "altText": "一家人在柳树下分享水果，享受野餐。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "b8ff5498-4f29-450d-95e6-ebf48cf65175",
+      "word": "enrich",
+      "meaningZh": "丰富；充实；使富有",
+      "exampleId": "b8ff5498-4f29-450d-95e6-ebf48cf65175-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "Reading can enrich our understanding.",
+      "sentenceZh": "阅读能丰富我们的理解。",
+      "scene": "Adult reads unlettered illustrated book about bees beside real flourishing garden beehive observes same bee visiting flower, fullyillustrated face no words speechbubbles.",
+      "altText": "她从图画书了解蜜蜂，再观察花园里的授粉。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "2e19f927-def1-4659-b4b8-f08a76f0a115",
+      "word": "graduation",
+      "meaningZh": "毕业",
+      "exampleId": "2e19f927-def1-4659-b4b8-f08a76f0a115-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The family celebrated her graduation.",
+      "sentenceZh": "一家人庆祝她毕业。",
+      "scene": "Chinese university courtyard adult graduate academic cap gown holds plain rolled diploma family embrace proud fullfaces no logos readablecalligraphy badges.",
+      "altText": "毕业生抱着卷起的毕业证，与家人在校园庆祝。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3b9d9e19-e9f6-41e3-86a2-5297bef954d6",
+      "word": "drill",
+      "meaningZh": "钻孔机；钻子；播种机；粗斜纹布",
+      "exampleId": "3b9d9e19-e9f6-41e3-86a2-5297bef954d6-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "He used a drill to make a hole in the wood.",
+      "sentenceZh": "他用钻孔机在木头上打孔。",
+      "scene": "Adult craftsman safetyglasses uses handpowered brace drill vertical bit aligned wood clamped to bench clear mechanical connection coherenthands no brands no electrical hazards.",
+      "altText": "工匠用手摇钻给固定好的木板钻孔。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "d2267363-ab6c-49af-a5c7-ad49345709c5",
+      "word": "ensue",
+      "meaningZh": "接着发生；随之而来",
+      "exampleId": "d2267363-ab6c-49af-a5c7-ad49345709c5-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Laughter began to ensue after the playful dance.",
+      "sentenceZh": "滑稽的舞蹈之后响起了笑声。",
+      "scene": "Two-panel adult performs amusing harmless dance then same audience adults laughing warmly clear sequence recurring clothing fullfaces no letters arrows bubbles.",
+      "altText": "一个人跳起滑稽舞步，随后观众笑起来。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "46b9c2cd-3ded-4c70-b616-73ca7d270a35",
+      "word": "cruel",
+      "meaningZh": "残酷的；令人极痛苦的",
+      "exampleId": "46b9c2cd-3ded-4c70-b616-73ca7d270a35-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The cruel weather damaged the orchard.",
+      "sentenceZh": "恶劣的天气损坏了果园。",
+      "scene": "Human-free fruit orchard fierce sleet wind bent branches scattered apples torn leaves constructive glimpse sheltered young trees protected by fabric, no suffering people no text. Flat cut-paper illustration with angular trees, scattered red apples, white hail and diagonal wind streaks; strong matte paper shapes, no photographic texture or blur.",
+      "altText": "冰雹和强风打落果实，幼树在防护布下。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "4846d0c8-afff-4903-99e7-74e97d29a67d",
+      "word": "entertain",
+      "meaningZh": "娱乐；招待；使快乐",
+      "exampleId": "4846d0c8-afff-4903-99e7-74e97d29a67d-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The puppeteer will entertain the children.",
+      "sentenceZh": "木偶艺人将为孩子们表演。",
+      "scene": "Chinese shadowpuppet performer uses rods behind lit screen traditional animal silhouette children audience delighted completefaces no characters writing.",
+      "altText": "皮影艺人操纵动物影偶，孩子们看得开心。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "178badda-a909-4fb9-891a-bd20a2d42a81",
+      "word": "entertaining",
+      "meaningZh": "有趣的；娱乐的",
+      "exampleId": "178badda-a909-4fb9-891a-bd20a2d42a81-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The juggling show was entertaining.",
+      "sentenceZh": "杂耍表演很有趣。",
+      "scene": "Adult juggler exactlythree coloredballs visible in separate positions arcing hands twoadult spectators delighted fullfaces no clownmakeup no lettering.",
+      "altText": "杂耍演员抛接彩球，观众开心地观看。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4d79ee0d-0b9e-49a5-a152-378d529d5428",
+      "word": "mansion",
+      "meaningZh": "大厦；宅邸",
+      "exampleId": "4d79ee0d-0b9e-49a5-a152-378d529d5428-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The mansion stood behind tall trees.",
+      "sentenceZh": "宅邸坐落在高树后面。",
+      "scene": "Human-free grand historic mansion stonefacade broad steps many windows partially framed by tall mature trees no signs heraldry text.",
+      "altText": "高大的树木后是一座宽阔古老宅邸。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c6ab165d-7df6-49a3-aed8-43bb763a8819",
+      "word": "enthusiast",
+      "meaningZh": "爱好者；热心者",
+      "exampleId": "c6ab165d-7df6-49a3-aed8-43bb763a8819-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The bird enthusiast watched the cranes.",
+      "sentenceZh": "这位鸟类爱好者观察仙鹤。",
+      "scene": "Adult birdwatcher with binoculars from safe distant wetland path observing two cranes undisturbed completeface visible belowbinoculars naturalhands no text.",
+      "altText": "鸟类爱好者在远处用望远镜观察湿地里的鹤。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "7473ed80-304b-4f1c-b5e2-7844721dd6bd",
+      "word": "enthusiastic",
+      "meaningZh": "热情的；热心的",
+      "exampleId": "7473ed80-304b-4f1c-b5e2-7844721dd6bd-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The volunteers were enthusiastic about planting trees.",
+      "sentenceZh": "志愿者们对植树充满热情。",
+      "scene": "Three adult volunteers joyful energetic planting youngtree together oneholds stem oneadds soil onewaters fullfaces realistic toolgrips no slogans writing.",
+      "altText": "志愿者兴致勃勃地扶苗、填土和浇水。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "9ad893fc-2b13-45e4-a630-de0916666496",
+      "word": "grape",
+      "meaningZh": "葡萄；葡萄树",
+      "exampleId": "9ad893fc-2b13-45e4-a630-de0916666496-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "A ripe grape hung from the vine.",
+      "sentenceZh": "一颗成熟的葡萄挂在藤上。",
+      "scene": "Human-free closeup bunch ripe purplegrapes on woody vine attached stems broad grapeleaves distinct handcut paper shapes no faces text.",
+      "altText": "葡萄藤上挂着一串饱满紫葡萄。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4787-4806",
+  "batchId": "auto-rank-4787-4806-20261005",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "depart",
+      "genuinely",
+      "neighboring",
+      "soak",
+      "ribbon",
+      "glorious"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "e6015bfc-1a36-4d2a-b65c-5a4afe1db487",
+      "word": "gambling",
+      "meaningZh": "赌博",
+      "exampleId": "e6015bfc-1a36-4d2a-b65c-5a4afe1db487-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "Gambling cost him the money he had saved.",
+      "sentenceZh": "赌博让他失去了积攒的钱。",
+      "scene": "A disappointed adult sits at a casino table with a nearly empty coin purse, a few scattered chips and cards; clear regretful face, no readable card values, glamour or encouragement.",
+      "altText": "男子在赌场桌前看着几乎空了的钱袋，露出懊悔表情。",
+      "riskTags": [
+        "people_face",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "230ba941-0a85-493a-97f7-2468662886d6",
+      "word": "depart",
+      "meaningZh": "离开；出发；背离；违反；去世",
+      "exampleId": "230ba941-0a85-493a-97f7-2468662886d6-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The train was ready to depart from the station.",
+      "sentenceZh": "列车准备驶离车站。",
+      "scene": "A passenger train begins moving out of a traditional Chinese town station, conductor waves from platform, full face and motion clear; no station signs or vehicle lettering.",
+      "altText": "列车驶离中式小站，站台上的乘务员挥手送行。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "24aab122-ce4c-4e6e-bc7f-b411b3c8f3fa",
+      "word": "gaming",
+      "meaningZh": "游戏",
+      "exampleId": "24aab122-ce4c-4e6e-bc7f-b411b3c8f3fa-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "Gaming brought the friends together on a rainy evening.",
+      "sentenceZh": "下雨的晚上，玩游戏让朋友们聚在一起。",
+      "scene": "Three diverse adult friends play a cooperative console game on a rainy evening, controllers in natural hands, joyful fully designed faces, television only abstract colorful game shapes without text.",
+      "altText": "雨夜，三位朋友拿着手柄一起玩电视游戏。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "4281808b-4040-4d45-afdd-f52388c1b3bf",
+      "word": "arrow",
+      "meaningZh": "箭；箭状物；箭头记号",
+      "exampleId": "4281808b-4040-4d45-afdd-f52388c1b3bf-visual-ex",
+      "styleFamily": "woodcut",
+      "sentenceEn": "The arrow landed in the center of the target.",
+      "sentenceZh": "箭射中了靶心。",
+      "scene": "One wooden arrow embedded in the center of a simple concentric archery target in an empty outdoor practice range; bow resting on rack, no people, numerals or markings beyond plain colored circles.",
+      "altText": "一支木箭插在练习场圆形靶子的正中心。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "0065c59c-f3d2-41d7-abb4-7a4b3e84c185",
+      "word": "generic",
+      "meaningZh": "通用的；一般的；泛型的",
+      "exampleId": "0065c59c-f3d2-41d7-abb4-7a4b3e84c185-visual-ex",
+      "styleFamily": "paper-cut still life",
+      "sentenceEn": "The generic soap came in a plain wrapper.",
+      "sentenceZh": "通用肥皂用普通包装纸包着。",
+      "scene": "A single ordinary pale soap bar partly exposed from plain unbranded brown paper wrapper beside a sink, no embossed writing, brand symbols or comparison brands, emphasize basic everyday item.",
+      "altText": "洗手池旁放着一块用素纸包装的普通肥皂。",
+      "riskTags": []
+    },
+    {
+      "vocabularyId": "481c5382-4a82-4ecf-bac7-1747f2ffded7",
+      "word": "genocide",
+      "meaningZh": "种族灭绝；大屠杀",
+      "exampleId": "481c5382-4a82-4ecf-bac7-1747f2ffded7-visual-ex",
+      "styleFamily": "ink and watercolor",
+      "sentenceEn": "The memorial honored the victims of genocide.",
+      "sentenceZh": "纪念碑悼念种族灭绝的受害者。",
+      "scene": "A quiet memorial garden: adult visitors lay white flowers at a plain stone monument to victims of genocide, solemn complete faces, no readable inscriptions, flags, graphic suffering or perpetrators; respectful remembrance.",
+      "altText": "人们在安静的纪念园中向素面石碑献上白花。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "b836bb35-4016-497e-944c-ba9cf5c4fb61",
+      "word": "trauma",
+      "meaningZh": "外伤；损伤；创伤",
+      "exampleId": "b836bb35-4016-497e-944c-ba9cf5c4fb61-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The counselor helped her talk about the trauma.",
+      "sentenceZh": "咨询师帮助她谈论创伤。",
+      "scene": "An adult woman speaks with a compassionate counselor in a quiet room, anxious complete face and clasped hands, counselor listens attentively, soft window light, no injury or diagnostic diagrams.",
+      "altText": "女子在安静房间里向认真倾听的咨询师讲述创伤。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "9df962e6-4311-4e84-b96b-bd042eb09b82",
+      "word": "genuinely",
+      "meaningZh": "真正地；真诚地",
+      "exampleId": "9df962e6-4311-4e84-b96b-bd042eb09b82-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "He was genuinely happy to see his old friend.",
+      "sentenceZh": "见到老朋友，他真心感到高兴。",
+      "scene": "Two older adult friends warmly reunite outside a Chinese courtyard home, open smiles and natural welcoming arms, complete faces, a worn travel bag and bamboo lattice door suggest long awaited visit.",
+      "altText": "两个老朋友在中式院门口重逢，真诚地笑着迎接彼此。",
+      "riskTags": [
+        "Chinese_culture",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ec96d3e7-a415-4658-8c5b-c041e3408d1d",
+      "word": "neighboring",
+      "meaningZh": "邻近的",
+      "exampleId": "ec96d3e7-a415-4658-8c5b-c041e3408d1d-visual-ex",
+      "styleFamily": "paper-cut architecture",
+      "sentenceEn": "The neighboring houses shared a small garden.",
+      "sentenceZh": "相邻的房子共用一个小花园。",
+      "scene": "Two adjoining Chinese courtyard houses side by side, a shared small garden clearly connecting both front entrances with paths, no other houses crowding composition, no signs.",
+      "altText": "两座相邻的中式房屋通过小路共用中间的花园。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "7997e0f1-3326-4c85-9882-b81f1bd9ea04",
+      "word": "geography",
+      "meaningZh": "地理；地理学",
+      "exampleId": "7997e0f1-3326-4c85-9882-b81f1bd9ea04-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "She studied the geography of the coast using a relief model.",
+      "sentenceZh": "她用地形模型研究海岸地理。",
+      "scene": "An adult geography student examines a physical relief model showing mountains, winding river, coastal plain and sea, full curious face, no labels, written maps or symbols.",
+      "altText": "学生观察展示山地、河流和海岸的立体地形模型。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "22dc4e26-8d91-4815-97f1-894561011476",
+      "word": "soak",
+      "meaningZh": "浸泡；湿透；吸收",
+      "exampleId": "22dc4e26-8d91-4815-97f1-894561011476-visual-ex",
+      "styleFamily": "gouache still life",
+      "sentenceEn": "Let the dried mushrooms soak in warm water.",
+      "sentenceZh": "让干蘑菇在温水中浸泡。",
+      "scene": "A clear glass bowl of warm water with dried shiitake mushrooms soaking submerged, tiny ripples and light steam, Chinese home kitchen wood counter and blue porcelain bowl behind, no hands or labels.",
+      "altText": "中式厨房里，香菇浸泡在一碗温水中。",
+      "riskTags": [
+        "Chinese_culture",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "35b620b9-6edb-40df-9b3a-6dad197be97f",
+      "word": "gig",
+      "meaningZh": "演出；临时工作",
+      "exampleId": "35b620b9-6edb-40df-9b3a-6dad197be97f-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The band played a gig at a small cafe.",
+      "sentenceZh": "乐队在小咖啡馆演出。",
+      "scene": "An adult small jazz trio plays guitar, upright bass and percussion in an intimate cafe, attentive patrons, all readable faces complete, modest stage without signs, posters or sheet music text.",
+      "altText": "小乐队在咖啡馆里为听众演奏。",
+      "riskTags": [
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "ef67cf1b-cbc6-44b4-bae0-3901a3b63550",
+      "word": "ribbon",
+      "meaningZh": "缎带；色带；带状物",
+      "exampleId": "ef67cf1b-cbc6-44b4-bae0-3901a3b63550-visual-ex",
+      "styleFamily": "textile",
+      "sentenceEn": "She tied a red ribbon around the gift box.",
+      "sentenceZh": "她在礼盒上系了一条红丝带。",
+      "scene": "Close view of natural adult hands tying a broad red satin ribbon into a bow around a plain gift box, Chinese tea table setting with porcelain cup, material texture, no logos or text.",
+      "altText": "手把红色缎带系成蝴蝶结，绕在礼盒上。",
+      "riskTags": [
+        "Chinese_culture",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "c1a7435a-cbba-4a03-a2e5-923ffe6171df",
+      "word": "globalization",
+      "meaningZh": "全球化",
+      "exampleId": "c1a7435a-cbba-4a03-a2e5-923ffe6171df-visual-ex",
+      "styleFamily": "paper-cut systems",
+      "sentenceEn": "Globalization connected the local port to markets overseas.",
+      "sentenceZh": "全球化把本地港口与海外市场连接起来。",
+      "scene": "A conceptual globe with several small ports connected by curved shipping routes and cargo ships, varied continents, no labels, arrows, flags or brand logos; trade network spanning oceans.",
+      "altText": "立体地球上的多个港口由跨海货运路线连接。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2b848c61-83f8-41cf-8528-687794557a12",
+      "word": "meantime",
+      "meaningZh": "间隔时间；其时；其间",
+      "exampleId": "2b848c61-83f8-41cf-8528-687794557a12-visual-ex",
+      "styleFamily": "comic sequence",
+      "sentenceEn": "The bread was baking; in the meantime, she set the table.",
+      "sentenceZh": "面包正在烘烤；与此同时，她摆好了餐桌。",
+      "scene": "A single kitchen scene clearly showing bread baking inside closed lit oven at left while an adult woman sets plates at table at right, simultaneous tasks, complete face, no clock numbers or text.",
+      "altText": "面包在烤箱内烘烤，女子同时在旁边摆餐桌。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e50f9363-9c32-4c65-b92d-f36393398b7b",
+      "word": "glorious",
+      "meaningZh": "光荣的；辉煌的",
+      "exampleId": "e50f9363-9c32-4c65-b92d-f36393398b7b-visual-ex",
+      "styleFamily": "watercolor landscape",
+      "sentenceEn": "The glorious sunrise lit the mountain peaks.",
+      "sentenceZh": "壮丽的日出照亮了群山。",
+      "scene": "Magnificent golden sunrise over Chinese layered mountain peaks and mist, warm rays illuminating dramatic rocky summits, tiny traditional pavilion on ridge, no people or writing.",
+      "altText": "金色日出照亮云雾中的群山和山脊小亭。",
+      "riskTags": [
+        "Chinese_culture"
+      ]
+    },
+    {
+      "vocabularyId": "0e12aafd-0407-426b-8d59-8f3428115707",
+      "word": "transmit",
+      "meaningZh": "传输；传染；传达；遗传；发射；传播",
+      "exampleId": "0e12aafd-0407-426b-8d59-8f3428115707-visual-ex",
+      "styleFamily": "screen-print",
+      "sentenceEn": "The antenna helped transmit the signal across the valley.",
+      "sentenceZh": "天线帮助把信号传过山谷。",
+      "scene": "Two radio towers facing across a broad mountain valley, abstract subtle curved wave bands between antennas to represent transmission, no lettering, equipment instructions or realistic beam.",
+      "altText": "山谷两侧的天线之间用弧形波纹表现信号传输。",
+      "riskTags": [
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "f4752177-e4f6-4a5b-b61f-e8064511ee7e",
+      "word": "goodbye",
+      "meaningZh": "再见",
+      "exampleId": "f4752177-e4f6-4a5b-b61f-e8064511ee7e-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She waved goodbye as the boat left the dock.",
+      "sentenceZh": "小船离开码头时，她挥手告别。",
+      "scene": "An adult woman on dock waves warmly to a friend in a slowly departing boat, complete faces, growing water gap clear, calm lake without signs or text.",
+      "altText": "女子站在码头上，向离岸小船里的朋友挥手告别。",
+      "riskTags": [
+        "people_face",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "cbfdf03d-4605-4c68-9bca-29bd664510d3",
+      "word": "goodness",
+      "meaningZh": "善良",
+      "exampleId": "cbfdf03d-4605-4c68-9bca-29bd664510d3-visual-ex",
+      "styleFamily": "watercolor linework",
+      "sentenceEn": "His goodness showed when he helped the lost child.",
+      "sentenceZh": "他帮助迷路的孩子，表现出善良。",
+      "scene": "A kind adult park worker kneels to reassure a lost child while an approaching parent recognizes the child, full caring faces and clear safe public park, no badges or writing.",
+      "altText": "公园工作人员蹲下安慰迷路的孩子，家长正走来。",
+      "riskTags": [
+        "abstract_meaning",
+        "people_face"
+      ]
+    },
+    {
+      "vocabularyId": "963bf2ba-13d2-448e-8447-aac85fe30613",
+      "word": "harvest",
+      "meaningZh": "收获；收割；成果",
+      "exampleId": "963bf2ba-13d2-448e-8447-aac85fe30613-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "The farmers gathered the rice harvest before the rain.",
+      "sentenceZh": "农民赶在下雨前收获稻谷。",
+      "scene": "Farmers gathering golden rice bundles in a broad field under gathering clouds, full determined faces, sheaves central, mature carved forms and amber palette, no signs or text.",
+      "altText": "农民在乌云到来前收拢田里的金黄稻束。",
+      "riskTags": [
+        "people_face"
+      ]
+    }
+  ]
+}

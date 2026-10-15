@@ -1,0 +1,336 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4686-4705",
+  "batchId": "auto-rank-4686-4705-20261004",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "exceptional",
+      "fare",
+      "homework",
+      "exile",
+      "frown",
+      "regain"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "232501ec-028c-4a78-9452-729fd9bedbf4",
+      "word": "exceptional",
+      "meaningZh": "非凡的；例外的；杰出的",
+      "exampleId": "232501ec-028c-4a78-9452-729fd9bedbf4-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Her exceptional skill impressed the potters.",
+      "sentenceZh": "她非凡的技艺让陶艺师们赞叹。",
+      "scene": "Chinese adult ceramic artisan shapes intricate thinwalled fluted bowl while two adult potters watch admiringly completefaces naturalhands no awards text.",
+      "altText": "她塑出精巧的花瓣形瓷碗，同伴赞叹地观看。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "eb626f25-cff5-45ed-9de3-aaa3d7e9ab87",
+      "word": "excess",
+      "meaningZh": "过量；过度",
+      "exampleId": "eb626f25-cff5-45ed-9de3-aaa3d7e9ab87-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "Excess water flowed out of the pot.",
+      "sentenceZh": "多余的水从花盆流出。",
+      "scene": "Human-free cross-sectional illustrated plantpot with soilroots and bottom drainagehole excesswater clearly drips from hole into saucer, no arrows labels letters.",
+      "altText": "多余水分从花盆底部的排水孔滴入托盘。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "8d4b6d8f-8d88-406d-805c-d30150b910d4",
+      "word": "fare",
+      "meaningZh": "费用；旅客；食物",
+      "exampleId": "8d4b6d8f-8d88-406d-805c-d30150b910d4-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "She paid the fare before boarding the ferry.",
+      "sentenceZh": "她付了船费才登上渡船。",
+      "scene": "Chinese riverside ferry dock adult traveler hands plain coins to ticketattendant nextgangway ferry clearlyvisible no currencyletters digits receipts signs.",
+      "altText": "旅客在渡船跳板旁向售票员支付船费。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "d5f5b880-0016-47d3-b1d4-cb6dd32b1371",
+      "word": "exclusion",
+      "meaningZh": "排除；排斥；驱逐",
+      "exampleId": "d5f5b880-0016-47d3-b1d4-cb6dd32b1371-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The fence caused the exclusion of larger animals.",
+      "sentenceZh": "围栏阻止了较大动物进入。",
+      "scene": "Human-free orchard boundary wire fence small rabbit fits narrow groundlevel gap while large deer remains outside, clear inside plantedgarden outside meadow no text no trapped injuries.",
+      "altText": "小兔能穿过围栏缝隙，鹿被挡在果园外。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "6e3bb92e-3f31-444e-88a3-289e60305592",
+      "word": "homework",
+      "meaningZh": "家庭作业；家里做的工作",
+      "exampleId": "6e3bb92e-3f31-444e-88a3-289e60305592-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "She finished her homework before dinner.",
+      "sentenceZh": "她在晚饭前完成了家庭作业。",
+      "scene": "Chinese schoolgirl at homedesk finishes workbook abstract strokes only with parent setting dinner background warmfullfaces naturalhands no readablewriting numbers.",
+      "altText": "女孩在书桌前完成作业，家长在后方准备晚饭。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5eb7e16e-a3b9-4dbc-ac1d-507a6c1b7e48",
+      "word": "disc",
+      "meaningZh": "圆盘；唱片；灌唱片",
+      "exampleId": "5eb7e16e-a3b9-4dbc-ac1d-507a6c1b7e48-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The wooden disc rolled across the table.",
+      "sentenceZh": "木制圆盘滚过桌面。",
+      "scene": "Human-free round wooden disc upright on narrowedge on flat crafttable slight tilted rollingpose, clearly uniform thin round flat object no numerals labels.",
+      "altText": "一枚薄木圆盘沿着桌面滚动。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "c0a11572-ab64-4bae-a7ce-ed1c37a273aa",
+      "word": "exert",
+      "meaningZh": "施加；发挥；用力",
+      "exampleId": "c0a11572-ab64-4bae-a7ce-ed1c37a273aa-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "They exert pressure on the lever.",
+      "sentenceZh": "他们向杠杆施力。",
+      "scene": "Mature woodcut side view. Two adults bend down pressing the long LEFT end of a straight lever near floor level. The bar slopes upward to the RIGHT over a triangular fulcrum near its right end. The short RIGHT tip directly touches underneath the left bottom edge of a crate and lifts that edge slightly; the other crate edge stays on the floor. Natural full faces and hands; no floating objects or text.",
+      "altText": "两人压下杠杆一端，另一端撬起木箱。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "e3d84a2b-20b4-47b9-98a3-0a8791a40652",
+      "word": "exile",
+      "meaningZh": "流放；放逐",
+      "exampleId": "e3d84a2b-20b4-47b9-98a3-0a8791a40652-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The poet lived in exile far from home.",
+      "sentenceZh": "诗人在远离家乡的地方流亡。",
+      "scene": "Historical Chinese adult poet in modest remote mountaincottage with travelbundle gazes toward distant homeward mountains lonely thoughtful complete profileface plainclosedbook no calligraphy text.",
+      "altText": "诗人在偏远山间小屋凝望远方，身边放着行囊。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "79f2fd36-9653-47e2-b76b-62fc5293156c",
+      "word": "sofa",
+      "meaningZh": "沙发",
+      "exampleId": "79f2fd36-9653-47e2-b76b-62fc5293156c-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The cat slept on the sofa.",
+      "sentenceZh": "猫睡在沙发上。",
+      "scene": "Human-free cozy livingroom upholstered three-seat sofa clearback arms cushions cat curled asleep on one cushion sidewindow houseplant no lettering.",
+      "altText": "猫蜷在客厅沙发的软垫上睡觉。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "03d81b91-8c2b-4693-9320-eeb1d3fc2e86",
+      "word": "expire",
+      "meaningZh": "到期；失效；死亡",
+      "exampleId": "03d81b91-8c2b-4693-9320-eeb1d3fc2e86-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The parking permit will expire tonight.",
+      "sentenceZh": "停车许可今晚到期。",
+      "scene": "Two-panel same plain parkingpermit icon card green active light at sunset then gray card behind small closed barrier at moonlit night, simple visual timechange no actual numbers dates letters logos.",
+      "altText": "停车许可在日落时有效，夜间变为失效状态。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "bbd4e001-f3a6-4350-bcce-3ffb67e7fa15",
+      "word": "availability",
+      "meaningZh": "可用性",
+      "exampleId": "bbd4e001-f3a6-4350-bcce-3ffb67e7fa15-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The library checked the availability of the book.",
+      "sentenceZh": "图书馆确认这本书是否可借。",
+      "scene": "Adult librarian shows single bluebook retrieved from shelf matching sameblue cover thumbnail on simple blankcatalogscreen, fullface clear no text letters titles.",
+      "altText": "图书管理员取出蓝色书籍，确认它可以借阅。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "2d82841c-43b8-4df8-aa0e-b2f7cef349a0",
+      "word": "explicitly",
+      "meaningZh": "明确地；清楚地",
+      "exampleId": "2d82841c-43b8-4df8-aa0e-b2f7cef349a0-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "She explained the route explicitly.",
+      "sentenceZh": "她清楚地解释了路线。",
+      "scene": "Adult guide points precisely at simple unlettered map route singlebold path between hut and bridge, otheradult listens fullfaces no writing digits arrows confusingbranches.",
+      "altText": "向导指着地图上从小屋通向桥的清晰路线。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "ae698f8c-1a55-428e-b746-f0639bd31fed",
+      "word": "exploitation",
+      "meaningZh": "剥削；开发；利用",
+      "exampleId": "ae698f8c-1a55-428e-b746-f0639bd31fed-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "The workers protested against exploitation.",
+      "sentenceZh": "工人抗议受到剥削。",
+      "scene": "Adult garmentworkers exhausted beside pilecompletedshirts discuss unfairworkload with manager calmly organised openpalms oneworker points empty paymenttray managerlistens fullfaces no slogans textlabels.",
+      "altText": "工人指着大量成衣与空报酬托盘，向管理者表达不满。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b0df0a5e-e38a-4741-b10e-e6fe6fc27e5b",
+      "word": "radar",
+      "meaningZh": "雷达；无线电探测器；雷达图",
+      "exampleId": "b0df0a5e-e38a-4741-b10e-e6fe6fc27e5b-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "The radar detected the approaching ship.",
+      "sentenceZh": "雷达探测到驶近的船。",
+      "scene": "Human-free shipbridge instrument roundradarscreen simple circularrings one brightdot nearouteredge sweepwedge and distant ship throughwindow matchingdirection antenna visible no textdigits letters.",
+      "altText": "雷达屏上出现亮点，窗外远处有驶近的船。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "fa4fb099-82ae-4535-a9b1-c71330eccc75",
+      "word": "explosive",
+      "meaningZh": "爆炸物；爆炸性的",
+      "exampleId": "fa4fb099-82ae-4535-a9b1-c71330eccc75-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "The explosive material was kept in a secure bunker.",
+      "sentenceZh": "爆炸性材料存放在安全掩体内。",
+      "scene": "Human-free closed robust plain steel storagecrate inside concrete secured bunker thickdoor locked outerboundary, no instructions diagrams mechanisms fuses no readablewarnings text no flames.",
+      "altText": "密封钢箱存放在厚重混凝土掩体内。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "fce06c94-7e78-476f-b50c-b537be4d4704",
+      "word": "frown",
+      "meaningZh": "皱眉",
+      "exampleId": "fce06c94-7e78-476f-b50c-b537be4d4704-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "He began to frown at the tangled thread.",
+      "sentenceZh": "看到缠结的线，他皱起了眉头。",
+      "scene": "Chinese embroiderycraftsman adult looks tangledthread on worktable brow furrowed distinctfacialexpression fullface clear mouth eyes nose normalhands no letters.",
+      "altText": "工匠望着纠缠的丝线，皱起眉头。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "aca08f7a-1280-4535-87a2-8b18b5139a03",
+      "word": "extensively",
+      "meaningZh": "广泛地；大量地",
+      "exampleId": "aca08f7a-1280-4535-87a2-8b18b5139a03-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "The roots spread extensively beneath the tree.",
+      "sentenceZh": "树根在树下广泛延伸。",
+      "scene": "Human-free cutaway single mature tree aboveground broadbranchingroots fill wideunderground soil area far beyondtrunk, no labels writing arrows no extra trees.",
+      "altText": "剖面展示树根在土壤中大范围分枝延伸。",
+      "riskTags": [
+        "spatial_boundary",
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "b4551c76-6d47-4043-b82a-e9fccebb2c99",
+      "word": "regain",
+      "meaningZh": "取回；恢复；重回；复得；回潮",
+      "exampleId": "b4551c76-6d47-4043-b82a-e9fccebb2c99-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She helped the bird regain its strength.",
+      "sentenceZh": "她帮助小鸟恢复体力。",
+      "scene": "Chinese wildlifecarer adult gentle smallbird recovering perched upright on branch in openshelter foodwater nearby healedhealthy alert bird fullface caretaker no medicaltext bandages cages.",
+      "altText": "照护者给恢复中的小鸟提供食物和水，它重新站稳。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "69efe7e3-8700-4c0d-9d5f-09c59522d97a",
+      "word": "extract",
+      "meaningZh": "提取；摘录；取出",
+      "exampleId": "69efe7e3-8700-4c0d-9d5f-09c59522d97a-visual-ex",
+      "styleFamily": "watercolor with expressive linework",
+      "sentenceEn": "The beekeeper will extract honey from the comb.",
+      "sentenceZh": "养蜂人将从蜂巢中提取蜂蜜。",
+      "scene": "Adult beekeeper honeyworkshop removes honey from honeycomb using simple handoperated extractor barrel clear jar catches golden honey outlet, fullface naturalhands no labels brands.",
+      "altText": "养蜂人转动手摇分蜜桶，蜂蜜从出口流入罐中。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "14a00598-c327-4ecd-8a7c-e542f3d7894a",
+      "word": "extremist",
+      "meaningZh": "极端分子；极端主义者",
+      "exampleId": "14a00598-c327-4ecd-8a7c-e542f3d7894a-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The mediator challenged the extremist peacefully.",
+      "sentenceZh": "调解者以和平方式质疑极端分子。",
+      "scene": "Adult communitymeeting rigid angry speaker clenchedarms demands allothers comply, calm mediator openhand invites diverse adults to speak personlistens reluctantly completefaces no symbols flags weapons slogans writing.",
+      "altText": "调解者平静回应强硬发言者，邀请其他人表达意见。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "abstract_meaning"
+      ]
+    }
+  ]
+}

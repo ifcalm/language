@@ -1,0 +1,331 @@
+{
+  "generationMode": "agent-built-in-imagegen",
+  "batchKey": "rank-4125-4144",
+  "batchId": "auto-rank-4125-4144-20261002",
+  "bucket": "english-orbit",
+  "assetBaseUrl": "https://assets.english.ifcalm.org",
+  "objectPrefix": "vocabulary/visuals",
+  "culturalIntegration": {
+    "targetRatio": 0.3,
+    "culture": "Chinese",
+    "itemCount": 6,
+    "words": [
+      "wheat",
+      "align",
+      "envision",
+      "aisle",
+      "amateur",
+      "ambulance"
+    ]
+  },
+  "stylePrompt": "Use the declared styleFamily for each item and choose subjects from people, communities, animals, plants, landscapes, weather, tools, vehicles, buildings and everyday objects according to the scene. Keep one coherent style inside each image while varying styles across the batch. Shared constraints: mature learner-facing art direction, landscape 3:2 composition, a clear focal action or relationship, no in-image teaching text, and no live-action or realistic-human impression. When people appear, every readable foreground or midground face must have clearly rendered natural eyes, a nose, a mouth and a scene-appropriate expression. Never use blank oval faces, featureless masks, mannequin heads or shadows that erase the facial features. Vary age, skin tone, facial structure, body type, hairstyle, clothing, ability and occupation naturally. No realistic skin pores, photographic faces, stock-photo staging, logos, watermarks, readable interfaces, chibi proportions or glossy toy rendering.",
+  "items": [
+    {
+      "vocabularyId": "345f12ea-72be-40e0-9c1b-4660da067f23",
+      "word": "alcoholic",
+      "meaningZh": "酒精的；酗酒者",
+      "exampleId": "345f12ea-72be-40e0-9c1b-4660da067f23-visual-ex",
+      "styleFamily": "gouache editorial illustration",
+      "sentenceEn": "Wine is an alcoholic drink.",
+      "sentenceZh": "葡萄酒是一种含酒精的饮品。",
+      "scene": "A restrained still life of a small glass of red wine beside grapes and an unbranded wine bottle on a plain dining table. No drinking person, no celebration, no labels.",
+      "altText": "一小杯葡萄酒与葡萄、无标签酒瓶摆在桌上。",
+      "riskTags": [
+        "object_focus",
+        "sense_disambiguation"
+      ]
+    },
+    {
+      "vocabularyId": "f7e0790a-a1e7-406b-b5fe-9b925fd9530e",
+      "word": "wheat",
+      "meaningZh": "小麦",
+      "exampleId": "f7e0790a-a1e7-406b-b5fe-9b925fd9530e-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The wheat turned golden before harvest.",
+      "sentenceZh": "收割前，小麦变成了金黄色。",
+      "scene": "A Chinese countryside wheat field in early summer, close foreground wheat ears botanically recognizable with grains and awns, broad golden field beyond. No rice or corn, no person needed.",
+      "altText": "中国乡间金黄的麦田，前景麦穗与麦粒清晰可见。",
+      "riskTags": [
+        "plant_accuracy"
+      ]
+    },
+    {
+      "vocabularyId": "948c3346-60a0-447d-8943-6ed4c78b7fe4",
+      "word": "align",
+      "meaningZh": "对齐；使一致；结盟",
+      "exampleId": "948c3346-60a0-447d-8943-6ed4c78b7fe4-visual-ex",
+      "styleFamily": "paper-cut",
+      "sentenceEn": "Align the edges of the paper before folding it.",
+      "sentenceZh": "折纸前，先把纸张边缘对齐。",
+      "scene": "Close view of adult hands in a Chinese paper craft workshop sliding two sheets of red paper until their straight edges meet precisely. Subtle two-step sequence shows offset edges then aligned edges, no letters or numbers.",
+      "altText": "手工坊里，双手将红色纸张的边缘对齐。",
+      "riskTags": [
+        "hands",
+        "sequence",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "421dc544-037d-44de-82d5-fca88d1d3370",
+      "word": "fierce",
+      "meaningZh": "凶猛的；猛烈的；热烈的；暴躁的",
+      "exampleId": "421dc544-037d-44de-82d5-fca88d1d3370-visual-ex",
+      "styleFamily": "woodcut-inspired",
+      "sentenceEn": "A fierce wind bent the trees.",
+      "sentenceZh": "猛烈的风把树吹弯了。",
+      "scene": "Coastal landscape with powerful gusts bending resilient trees and driving grasses in the same direction, turbulent clouds and waves, no people or damage.",
+      "altText": "强风吹弯树木，草叶也顺着风势倾斜。",
+      "riskTags": [
+        "cause_effect"
+      ]
+    },
+    {
+      "vocabularyId": "b758b450-6c98-43e1-af69-8280a4bb578c",
+      "word": "alignment",
+      "meaningZh": "对齐；一致；结盟",
+      "exampleId": "b758b450-6c98-43e1-af69-8280a4bb578c-visual-ex",
+      "styleFamily": "editorial 3D",
+      "sentenceEn": "The wheels need proper alignment.",
+      "sentenceZh": "车轮需要正确对齐。",
+      "scene": "Technical yet text-free split illustration of the same small car viewed directly from above: left front wheels slightly misaligned, right wheels parallel after correction. Thin straight guide lines without words clarify proper alignment.",
+      "altText": "同一辆车的前轮校正后平行对齐。",
+      "riskTags": [
+        "comparison",
+        "before_after",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "378fb3ec-5a2e-43ec-9e0a-3194686f1f66",
+      "word": "envision",
+      "meaningZh": "设想；展望",
+      "exampleId": "378fb3ec-5a2e-43ec-9e0a-3194686f1f66-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "She could envision a garden in the empty yard.",
+      "sentenceZh": "她能设想空院子变成花园的样子。",
+      "scene": "Contemporary Chinese residential courtyard: a woman surveys an empty paved yard; a soft translucent thought vignette above her shows exactly the same yard transformed into a lush garden. The imagined garden clearly a mental vision rather than an existing real garden.",
+      "altText": "女子望着空院子，脑海中浮现同一处院子的花园景象。",
+      "riskTags": [
+        "people_face",
+        "reference",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "5d3ae888-95ae-4a8d-bbc5-1607aa16fed2",
+      "word": "allege",
+      "meaningZh": "宣称；指控",
+      "exampleId": "5d3ae888-95ae-4a8d-bbc5-1607aa16fed2-visual-ex",
+      "styleFamily": "graphic novel",
+      "sentenceEn": "The residents allege that the factory polluted the river.",
+      "sentenceZh": "居民指称工厂污染了河流。",
+      "scene": "Fictional community meeting: residents present a disputed concern about a factory near a river to a neutral investigator. A resident points to a simple drawing of factory and river, while investigator listens and leaves blank case folder open for verification. No visible discharge, proven culprit, guilty gestures, readable text, real brand or emblems.",
+      "altText": "居民向调查员提出工厂污染河流的指称，调查尚待核实。",
+      "riskTags": [
+        "people_face",
+        "abstract_meaning",
+        "unverified_claim"
+      ]
+    },
+    {
+      "vocabularyId": "b4e7691e-cd47-4e23-8b0d-90319c9afaf7",
+      "word": "rational",
+      "meaningZh": "理性的；合理的",
+      "exampleId": "b4e7691e-cd47-4e23-8b0d-90319c9afaf7-visual-ex",
+      "styleFamily": "Risograph",
+      "sentenceEn": "Choosing the shorter route was a rational decision.",
+      "sentenceZh": "选择较短的路线是一个合理的决定。",
+      "scene": "Hiker calmly compares two clear routes to the same cabin on a pictorial map, one long winding route and one short safe path. Points to short route and follows it; terrain and destination match map. No writing or numbers.",
+      "altText": "徒步者比较通往同一小屋的路线，理性选择较短且安全的路径。",
+      "riskTags": [
+        "people_face",
+        "comparison",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "d72768bb-410d-4f9b-8833-d20d4cc4eb04",
+      "word": "allocation",
+      "meaningZh": "分配；拨款",
+      "exampleId": "d72768bb-410d-4f9b-8833-d20d4cc4eb04-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "The allocation of supplies helped each village.",
+      "sentenceZh": "物资的分配帮助了每个村庄。",
+      "scene": "Overhead simplified community logistics scene: one central store of supply boxes is divided into three separate delivery groups headed toward three distinct small villages. Clear branching allocation, no digits, exact equality requirement or readable labels.",
+      "altText": "中央物资被分成几组，分别运往不同村庄。",
+      "riskTags": [
+        "abstract_meaning",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "a067841f-28ca-49cd-a67d-4ba85a21f44f",
+      "word": "kingdom",
+      "meaningZh": "王国",
+      "exampleId": "a067841f-28ca-49cd-a67d-4ba85a21f44f-visual-ex",
+      "styleFamily": "painterly storybook",
+      "sentenceEn": "The castle stood at the heart of the kingdom.",
+      "sentenceZh": "城堡位于王国的中心。",
+      "scene": "Wide illustrated aerial panorama of a fictional peaceful medieval kingdom, central royal castle, several towns, farmland and roads within one continuous landscape. Small dignified monarch at castle balcony, no real flags, names or geopolitical references.",
+      "altText": "虚构王国的城堡居中，周围分布城镇、农田与道路。",
+      "riskTags": [
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "cd8c4203-3b9b-4a41-9b47-35c2a5771b29",
+      "word": "aisle",
+      "meaningZh": "走廊；侧廊；过道；走道",
+      "exampleId": "cd8c4203-3b9b-4a41-9b47-35c2a5771b29-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "Keep the aisle clear for passengers.",
+      "sentenceZh": "请为乘客保持过道畅通。",
+      "scene": "Contemporary Chinese high-speed train interior, clear unobstructed central aisle running between seat rows. Passenger places bag on overhead rack so another passenger can walk through comfortably. No train logo, seat numbers or writing.",
+      "altText": "高铁乘客将行李放上架，保持座位间过道畅通。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "spatial_boundary"
+      ]
+    },
+    {
+      "vocabularyId": "3c076241-157a-459c-8f99-e95e8c1a605b",
+      "word": "allowance",
+      "meaningZh": "津贴；零用钱；限额",
+      "exampleId": "3c076241-157a-459c-8f99-e95e8c1a605b-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "She saved part of her weekly allowance.",
+      "sentenceZh": "她存下了每周零用钱的一部分。",
+      "scene": "Parent gives adolescent daughter a small regular pocket-money envelope; daughter puts some plain coins into a transparent savings jar and keeps some in purse. Calm domestic scene, no currency text or digits.",
+      "altText": "女孩收到零用钱后，将一部分硬币存入存钱罐。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "5ff666b6-6c3f-4284-af20-66bde50d3213",
+      "word": "amateur",
+      "meaningZh": "业余的；业余爱好者",
+      "exampleId": "5ff666b6-6c3f-4284-af20-66bde50d3213-visual-ex",
+      "styleFamily": "textile illustration",
+      "sentenceEn": "An amateur potter made the bowl for fun.",
+      "sentenceZh": "一位业余陶艺爱好者为了兴趣制作了这个碗。",
+      "scene": "Chinese neighborhood hobby ceramics studio: relaxed adult wearing everyday clothing and apron shapes a modest clay bowl at a weekend craft table. Personal creative enjoyment rather than industrial production, no sale signs or text.",
+      "altText": "社区陶艺爱好者在休闲时间开心地制作陶碗。",
+      "riskTags": [
+        "people_face",
+        "hands"
+      ]
+    },
+    {
+      "vocabularyId": "3b0e1a25-c5b2-42eb-b5bf-7c021b428141",
+      "word": "weaken",
+      "meaningZh": "削弱",
+      "exampleId": "3b0e1a25-c5b2-42eb-b5bf-7c021b428141-visual-ex",
+      "styleFamily": "linocut",
+      "sentenceEn": "Rust can weaken the metal fence.",
+      "sentenceZh": "锈蚀会削弱金属围栏。",
+      "scene": "Close two-stage comparison of the same fence bar: intact strong metal initially, then corroded thin pitted bar bending under the same gentle load. No injury or unsafe person nearby, emphasize loss of strength.",
+      "altText": "同一根围栏金属杆锈蚀变薄后更容易弯曲。",
+      "riskTags": [
+        "before_after",
+        "cause_effect",
+        "comparison"
+      ]
+    },
+    {
+      "vocabularyId": "a35f2cbd-8b7a-49e4-854d-33a711a21700",
+      "word": "amazed",
+      "meaningZh": "惊讶的；吃惊的",
+      "exampleId": "a35f2cbd-8b7a-49e4-854d-33a711a21700-visual-ex",
+      "styleFamily": "watercolor",
+      "sentenceEn": "The children were amazed by the butterflies.",
+      "sentenceZh": "孩子们看到蝴蝶时惊叹不已。",
+      "scene": "Two children in a butterfly conservatory gaze with wide eyes and softly open mouths at butterflies emerging and flying around flowering plants. Fully rendered joyful astonishment, no fear, no text.",
+      "altText": "孩子们睁大眼睛，惊叹温室里飞舞的蝴蝶。",
+      "riskTags": [
+        "people_face",
+        "expression"
+      ]
+    },
+    {
+      "vocabularyId": "967b62ce-0dc2-46ed-afeb-8807bf633bc4",
+      "word": "protocol",
+      "meaningZh": "协议；礼仪",
+      "exampleId": "967b62ce-0dc2-46ed-afeb-8807bf633bc4-visual-ex",
+      "styleFamily": "screen print",
+      "sentenceEn": "Both devices followed the same communication protocol.",
+      "sentenceZh": "两台设备遵循同一通信协议。",
+      "scene": "Clear stylized conceptual diagram of two unbranded computers exchanging matching colored geometric message packets through a shared channel; both endpoints use identical shapes and ordering for encoding and decoding. No human, readable screen, code, letters or numbers.",
+      "altText": "两台设备按相同规则编码、传输与接收几何图形消息。",
+      "riskTags": [
+        "abstract_meaning",
+        "sequence",
+        "reference"
+      ]
+    },
+    {
+      "vocabularyId": "b4bfe847-6693-43c4-b3b9-e789eea53742",
+      "word": "ambulance",
+      "meaningZh": "救护车",
+      "exampleId": "b4bfe847-6693-43c4-b3b9-e789eea53742-visual-ex",
+      "styleFamily": "hand-drawn animation",
+      "sentenceEn": "The ambulance arrived to help the injured cyclist.",
+      "sentenceZh": "救护车赶来帮助受伤的骑车人。",
+      "scene": "Chinese city street, recognizable white ambulance with simple colored stripe, rooftop emergency lights and rear medical compartment; two paramedics assist a conscious seated adult cyclist after minor fall. Helmet nearby, no blood, no writing, logos or red cross emblems.",
+      "altText": "城市街道上，救护车到达，急救人员照顾清醒的骑车人。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "medical_vehicle"
+      ]
+    },
+    {
+      "vocabularyId": "d1146aec-3090-4177-8ec2-9292237d3363",
+      "word": "exclusively",
+      "meaningZh": "专门地",
+      "exampleId": "d1146aec-3090-4177-8ec2-9292237d3363-visual-ex",
+      "styleFamily": "paper-cut collage",
+      "sentenceEn": "This greenhouse is used exclusively for orchids.",
+      "sentenceZh": "这座温室专门用来种植兰花。",
+      "scene": "View through a transparent greenhouse: every plant inside is recognizably an orchid, with varied orchid forms; other flowering plants grow only outside the greenhouse boundary. No vegetables inside, no text.",
+      "altText": "温室内只种兰花，其他花卉位于温室外。",
+      "riskTags": [
+        "spatial_boundary",
+        "abstract_meaning"
+      ]
+    },
+    {
+      "vocabularyId": "b71a044a-cb69-41df-a719-3ca89ad09b9e",
+      "word": "amusing",
+      "meaningZh": "有趣的；好笑的",
+      "exampleId": "b71a044a-cb69-41df-a719-3ca89ad09b9e-visual-ex",
+      "styleFamily": "felt illustration",
+      "sentenceEn": "The puppy’s clumsy leap was amusing.",
+      "sentenceZh": "小狗笨拙的一跃令人发笑。",
+      "scene": "Playful puppy makes a harmless awkward little leap at a floating soap bubble and lands on soft grass; two adults nearby smile and laugh warmly at the funny action. No ridicule or injury, no symbols or text.",
+      "altText": "小狗笨拙地扑向肥皂泡，逗得旁边的人轻松发笑。",
+      "riskTags": [
+        "people_face",
+        "motion"
+      ]
+    },
+    {
+      "vocabularyId": "ebe1a202-807a-4e65-8341-d25ceeee7e98",
+      "word": "vocal",
+      "meaningZh": "声音的；直言的；声乐的",
+      "exampleId": "ebe1a202-807a-4e65-8341-d25ceeee7e98-visual-ex",
+      "styleFamily": "gouache",
+      "sentenceEn": "The choir began its vocal practice.",
+      "sentenceZh": "合唱团开始了声乐练习。",
+      "scene": "Diverse adult choir standing in a semicircle, singing with naturally open mouths while conductor cues their voices, no instruments dominate scene. Expressive complete faces, no sheet music writing, logos or text.",
+      "altText": "合唱团成员在指挥带领下开口练习声乐。",
+      "riskTags": [
+        "people_face",
+        "hands",
+        "sense_disambiguation"
+      ]
+    }
+  ]
+}
