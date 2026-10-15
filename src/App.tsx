@@ -6,7 +6,6 @@ import {
   getViewFromPath,
   type ViewId,
 } from './app/routing'
-import VocabularyAdmin from './admin/VocabularyAdmin'
 import SiteHeader from './components/SiteHeader'
 import SentencePracticePage from './features/examples/SentencePracticePage'
 import HomePage from './features/home/HomePage'
@@ -46,7 +45,6 @@ function App() {
     >
   > = {
     library: { eyebrow: 'Reference Shelf', title: '资源库' },
-    admin: { eyebrow: 'Content Admin', title: '数据后台' },
   }
   const pageHeading = pageHeadings[view]
   const placeholderPages: Partial<
@@ -179,8 +177,6 @@ function App() {
         {view === 'vocabulary' && <VocabularyPage key={vocabularyPageKey} />}
 
         {view === 'library' && <LibraryPage />}
-
-        {view === 'admin' && <VocabularyAdmin />}
       </main>
     </div>
   )

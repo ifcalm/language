@@ -21,7 +21,6 @@ The core learning question is:
 - Sentence structure learning through tree-style grammar concepts.
 - Browser-only fill-in practice with no account or cloud progress sync.
 - Searchable reference/resource library.
-- Vocabulary admin console for maintaining D1-backed public content.
 
 ## Product Principles
 
@@ -50,4 +49,3 @@ The core learning question is:
 1. Split the large sentence-growth player into data modeling, animation, and
    control-panel pieces.
 2. Improve the existing fill-in practice with clearer progress and coverage.
-3. Add safer admin permissions around content-edit routes.

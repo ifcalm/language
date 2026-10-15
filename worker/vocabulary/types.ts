@@ -41,35 +41,3 @@ export interface VocabVisualRow {
   created_at: string
   updated_at: string
 }
-
-export interface AdminVocabularySavePayload {
-  editor?: string
-  core?: Partial<{
-    meaningZh: string
-    definitionEn: string
-    phoneticUs: string
-    phoneticUk: string
-  }>
-  pronunciations?: Array<
-    Partial<{
-      id: string
-      phonetic: string
-      audioUrl: string
-    }>
-  >
-  examples?: Array<
-    Partial<{
-      id: string
-      sentenceEn: string
-      sentenceZh: string
-    }>
-  >
-  visual?:
-    | Partial<{
-        id: string
-        exampleId: string
-        imageUrl: string
-        altText: string
-      }>
-    | null
-}

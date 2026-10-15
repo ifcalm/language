@@ -5,7 +5,6 @@ export type ViewId =
   | 'examples'
   | 'vocabulary'
   | 'library'
-  | 'admin'
 
 export type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
 
@@ -28,10 +27,6 @@ export function getVocabularyLookupFromPath(pathname: string) {
 }
 
 export function getViewFromPath(pathname: string): ViewId {
-  if (pathname.startsWith('/admin')) {
-    return 'admin'
-  }
-
   if (pathname.startsWith('/strategy')) {
     return 'strategy'
   }
@@ -57,7 +52,6 @@ export function getViewFromPath(pathname: string): ViewId {
 
 export function getPathFromView(view: ViewId): string {
   const pathByView: Partial<Record<ViewId, string>> = {
-    admin: '/admin',
     strategy: '/strategy',
     verbs: '/verbs',
     examples: '/examples',
