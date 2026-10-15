@@ -1,9 +1,5 @@
 import { makeJsonResponse } from './shared/http'
 import {
-  handleAdminVocabularyDetail,
-  handleAdminVocabularySave,
-} from './vocabulary/adminRoutes'
-import {
   handleVocabularyDetail,
   handleVocabularyList,
   handleVocabularyPronunciations,
@@ -54,20 +50,6 @@ export default {
 
     if (url.pathname.startsWith('/api/vocabulary/') && request.method === 'GET') {
       return handleVocabularyDetail(request, env)
-    }
-
-    if (url.pathname === '/api/admin/vocabulary' && request.method === 'GET') {
-      return handleVocabularyList(request, env)
-    }
-
-    if (url.pathname.startsWith('/api/admin/vocabulary/')) {
-      if (request.method === 'GET') {
-        return handleAdminVocabularyDetail(request, env)
-      }
-
-      if (request.method === 'PUT') {
-        return handleAdminVocabularySave(request, env)
-      }
     }
 
     if (url.pathname.startsWith('/api/')) {

@@ -11,7 +11,6 @@ English Orbit 是一个面向中文开发者的技术英语学习应用。它不
 - 动词学习：围绕开发者常见动词和动词短语展示句子生长动画，从主干句逐步扩展到完整句。
 - 句子结构：用树状结构讲解主干、修饰、动作关系等语法概念。
 - 资源库：保留经过整理的听说读写、语法和词汇参考资源入口。
-- 词汇后台：维护词汇核心释义、音标、读音 URL、例句和编辑日志。
 - 无需注册或登录即可使用；填词进度只保存在当前浏览器，不上传到账号。
 
 ## 技术栈
@@ -27,7 +26,6 @@ English Orbit 是一个面向中文开发者的技术英语学习应用。它不
 ```text
 src/
   app/                    # 前端路由工具
-  admin/                  # 词汇后台页面
   components/             # 共享 UI 组件
   data/                   # 前端静态类型与资源定义
   features/
@@ -114,7 +112,7 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `vocab_visuals`：每个词汇可选的一张场景记忆图及其绑定例句。
 - `verbs`：动词与动词短语主表。
 - `verb_paths`：动词句子生长路径，包含主干句、完整句、场景和 `growth_json`。
-- `content_edit_logs`：后台编辑日志。
+- `content_edit_logs`：历史编辑日志（在线后台已移除，不再写入）。
 历史账号表由迁移 `0239_remove_account_tables.sql` 删除；公共学习数据表不受影响。
 
 词汇列表接口现在只保留分页和搜索；旧的 Top 100 / 500 / 1000 / 3000 band 参数已经移除。`frequency_rank` 仍用于默认排序和数据覆盖率检查。
@@ -137,12 +135,6 @@ Worker 配置在 [wrangler.jsonc](wrangler.jsonc)：
 - `GET /api/vocabulary/pronunciations`
 - `GET /api/verbs`
 - `GET /api/verbs/:lookup`
-
-后台接口：
-
-- `GET /api/admin/vocabulary`
-- `GET /api/admin/vocabulary/:id`
-- `PUT /api/admin/vocabulary/:id`
 
 旧 `/api/auth/*` 接口返回 `410 Gone`，不再创建或读取账号；站点入口会清除旧的登录 Cookie。Worker 可观测日志已关闭，但托管服务仍可能保留基础网络访问记录。
 

@@ -33,7 +33,7 @@ tables and stores fill-in practice progress in the user's browser:
 - D1 stores public vocabulary, verb paths, examples, pronunciations, and edit logs
 - legacy account tables are removed by migration `0239_remove_account_tables.sql`
 - vocabulary and verb pages read from public API endpoints
-- the admin console writes directly to D1 through Worker routes
+- public content is maintained through the data scripts in `scripts/`; there is no online admin console
 
 The stable remote D1 database remains the baseline for the existing schema. New
 incremental schema changes from migration `0238` onward are kept in
@@ -96,9 +96,6 @@ npm run pronunciations:coverage:top100
 - `GET /api/vocabulary/pronunciations` — pronunciation lookup by `word` or `vocabularyId`
 - `GET /api/verbs` — D1-backed verb list endpoint
 - `GET /api/verbs/:lookup` — verb detail and sentence-growth paths
-- `GET /api/admin/vocabulary` — admin vocabulary list
-- `GET /api/admin/vocabulary/:id` — admin vocabulary detail
-- `PUT /api/admin/vocabulary/:id` — admin vocabulary update
 All retired `/api/auth/*` endpoints return `410 Gone`.
 
 `/api/vocabulary` supports:

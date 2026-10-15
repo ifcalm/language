@@ -17,16 +17,6 @@ export const clampNumber = (
   return Math.min(max, Math.max(min, Math.floor(parsed)))
 }
 
-export const nowIso = () => new Date().toISOString()
-
-export const normalizeText = (value: unknown, fallback = '') => {
-  if (typeof value !== 'string') {
-    return fallback
-  }
-
-  return value.trim()
-}
-
 export const makeJsonResponse = (payload: unknown, init?: ResponseInit) =>
   Response.json(payload, {
     ...init,
