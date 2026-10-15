@@ -1,4 +1,4 @@
-import type { CoreVocabularyEntry } from '../../data/vocabulary'
+import type { CoreVocabularyEntry, VocabularyExample } from '../../data/vocabulary'
 import type {
   VocabularyApiItem,
   VocabularyApiResponse,
@@ -98,4 +98,57 @@ export async function requestVocabularyDetail(
   }
 
   return mapVocabularyDetail((await response.json()) as VocabularyDetailResponse)
+}
+
+// The fill-in practice only needs the word, its rank and its sentences, so it
+// has its own compact endpoint instead of paging through the full list.
+export type PracticeVocabularyEntry = Pick<
+  CoreVocabularyEntry,
+  'id' | 'word' | 'frequencyRank' | 'examples'
+>
+
+type PracticeSentenceTuple = [
+  id: string,
+  word: string,
+  frequencyRank: number | null,
+  examples: Array<[id: string, sentenceEn: string, sentenceZh: string]>,
+]
+
+export async function requestPracticeSentences(
+  params: { offset: number; limit: number },
+  signal: AbortSignal,
+): Promise<{ total: number; items: PracticeVocabularyEntry[] }> {
+  const searchParams = new URLSearchParams({
+    limit: String(params.limit),
+    offset: String(params.offset),
+  })
+  const response = await fetch(`/api/practice/sentences?${searchParams}`, {
+    signal,
+  })
+
+  if (!response.ok) {
+    throw new Error(`Practice API responded with ${response.status}`)
+  }
+
+  const payload = (await response.json()) as {
+    total: number
+    items: PracticeSentenceTuple[]
+  }
+
+  return {
+    total: payload.total,
+    items: payload.items.map(([id, word, frequencyRank, examples]) => ({
+      id,
+      word,
+      frequencyRank: frequencyRank ?? undefined,
+      examples: examples.map(
+        ([exampleId, sentenceEn, sentenceZh]): VocabularyExample => ({
+          // The API sends "-ex1" for "<vocabularyId>-ex1" to keep the payload small.
+          id: exampleId.startsWith('-') ? `${id}${exampleId}` : exampleId,
+          sentenceEn,
+          sentenceZh,
+        }),
+      ),
+    })),
+  }
 }

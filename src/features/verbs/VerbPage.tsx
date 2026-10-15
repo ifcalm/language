@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useDebouncedValue } from '../../shared/useDebouncedValue'
 import { requestVerbDetail, requestVerbList } from './api'
 import PathStudyTabs from './practice/PathStudyTabs'
 import type { VerbDetail, VerbListItem } from './types'
@@ -34,6 +35,7 @@ const VERB_PAGE_SIZE = 120
 
 function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
   const [query, setQuery] = useState('')
+  const debouncedQuery = useDebouncedValue(query)
   const [offset, setOffset] = useState(0)
   const [items, setItems] = useState<VerbListItem[]>([])
   const [total, setTotal] = useState(0)
@@ -49,7 +51,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
 
       try {
         const payload = await requestVerbList(
-          { query, offset, limit: VERB_PAGE_SIZE },
+          { query: debouncedQuery, offset, limit: VERB_PAGE_SIZE },
           controller.signal,
         )
         setItems(payload.items)
@@ -72,7 +74,7 @@ function VerbList({ onOpenVerb }: Pick<VerbPageProps, 'onOpenVerb'>) {
     fetchVerbs()
 
     return () => controller.abort()
-  }, [query, offset])
+  }, [debouncedQuery, offset])
 
   const shownStart = items.length > 0 ? offset + 1 : 0
   const shownEnd = offset + items.length

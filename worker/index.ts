@@ -1,5 +1,7 @@
+import { withEdgeCache } from './shared/cache'
 import { makeJsonResponse } from './shared/http'
 import {
+  handlePracticeSentences,
   handleVocabularyDetail,
   handleVocabularyList,
   handleVocabularyPronunciations,
@@ -7,8 +9,9 @@ import {
 import { handleVerbDetail, handleVerbList } from './verbs/routes'
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url)
+    const isGet = request.method === 'GET'
 
     if (url.pathname === '/api/health') {
       return makeJsonResponse({
@@ -29,27 +32,30 @@ export default {
       )
     }
 
-    if (url.pathname === '/api/verbs' && request.method === 'GET') {
-      return handleVerbList(request, env)
+    if (url.pathname === '/api/verbs' && isGet) {
+      return withEdgeCache(request, ctx, () => handleVerbList(request, env))
     }
 
-    if (url.pathname.startsWith('/api/verbs/') && request.method === 'GET') {
-      return handleVerbDetail(request, env)
+    if (url.pathname.startsWith('/api/verbs/') && isGet) {
+      return withEdgeCache(request, ctx, () => handleVerbDetail(request, env))
     }
 
-    if (url.pathname === '/api/vocabulary' && request.method === 'GET') {
-      return handleVocabularyList(request, env)
+    if (url.pathname === '/api/practice/sentences' && isGet) {
+      return withEdgeCache(request, ctx, () => handlePracticeSentences(request, env))
     }
 
-    if (
-      url.pathname === '/api/vocabulary/pronunciations' &&
-      request.method === 'GET'
-    ) {
-      return handleVocabularyPronunciations(request, env)
+    if (url.pathname === '/api/vocabulary' && isGet) {
+      return withEdgeCache(request, ctx, () => handleVocabularyList(request, env))
     }
 
-    if (url.pathname.startsWith('/api/vocabulary/') && request.method === 'GET') {
-      return handleVocabularyDetail(request, env)
+    if (url.pathname === '/api/vocabulary/pronunciations' && isGet) {
+      return withEdgeCache(request, ctx, () =>
+        handleVocabularyPronunciations(request, env),
+      )
+    }
+
+    if (url.pathname.startsWith('/api/vocabulary/') && isGet) {
+      return withEdgeCache(request, ctx, () => handleVocabularyDetail(request, env))
     }
 
     if (url.pathname.startsWith('/api/')) {

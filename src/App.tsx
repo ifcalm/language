@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import './App.css'
 import {
   getPathFromView,
@@ -7,12 +7,18 @@ import {
   type ViewId,
 } from './app/routing'
 import SiteHeader from './components/SiteHeader'
-import SentencePracticePage from './features/examples/SentencePracticePage'
 import HomePage from './features/home/HomePage'
-import LibraryPage from './features/library/LibraryPage'
-import StrategyPage from './features/strategy/StrategyPage'
-import VerbPage from './features/verbs/VerbPage'
 import VocabularyPage from './features/vocabulary/VocabularyPage'
+
+// Pages other than the landing page and the word list load on demand, so the
+// first visit does not download the sentence-growth player, the drag-and-drop
+// library or the strategy trees.
+const SentencePracticePage = lazy(
+  () => import('./features/examples/SentencePracticePage'),
+)
+const LibraryPage = lazy(() => import('./features/library/LibraryPage'))
+const StrategyPage = lazy(() => import('./features/strategy/StrategyPage'))
+const VerbPage = lazy(() => import('./features/verbs/VerbPage'))
 
 function getInitialVerbLookup() {
   if (typeof window === 'undefined') {
@@ -153,6 +159,13 @@ function App() {
 
         {view === 'roadmap' && <HomePage onOpenVocabulary={openVocabularyFromHome} />}
 
+        <Suspense
+          fallback={
+            <section className="panel placeholder-panel" role="status">
+              正在加载…
+            </section>
+          }
+        >
         {view === 'strategy' && <StrategyPage onChangeView={changeView} />}
 
         {view === 'examples' && <SentencePracticePage />}
@@ -174,9 +187,10 @@ function App() {
           />
         )}
 
-        {view === 'vocabulary' && <VocabularyPage key={vocabularyPageKey} />}
-
         {view === 'library' && <LibraryPage />}
+        </Suspense>
+
+        {view === 'vocabulary' && <VocabularyPage key={vocabularyPageKey} />}
       </main>
     </div>
   )

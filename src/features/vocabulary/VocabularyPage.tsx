@@ -10,6 +10,7 @@ import {
   requestVocabularyDetail,
   requestVocabularyList,
 } from './api'
+import { useDebouncedValue } from '../../shared/useDebouncedValue'
 import type { VocabularyDetail } from './types'
 import { usePronunciationPlayback } from './usePronunciationPlayback'
 import {
@@ -227,6 +228,7 @@ function VocabularyVisualScene({
 
 function VocabularyPage() {
   const [vocabularyQuery, setVocabularyQuery] = useState('')
+  const debouncedVocabularyQuery = useDebouncedValue(vocabularyQuery)
   const [vocabularyOffset, setVocabularyOffset] = useState(
     getInitialVocabularyOffset,
   )
@@ -453,7 +455,7 @@ function VocabularyPage() {
       try {
         const payload = await requestVocabularyList(
           {
-            query: vocabularyQuery,
+            query: debouncedVocabularyQuery,
             offset: vocabularyOffset,
             limit: VOCABULARY_PAGE_SIZE,
           },
@@ -482,7 +484,7 @@ function VocabularyPage() {
     fetchVocabulary()
 
     return () => controller.abort()
-  }, [selectedVocabularyLookup, vocabularyOffset, vocabularyQuery])
+  }, [selectedVocabularyLookup, vocabularyOffset, debouncedVocabularyQuery])
 
   useEffect(() => {
     if (!selectedVocabularyLookup) {

@@ -1,12 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { CoreVocabularyEntry, VocabularyExample } from '../../data/vocabulary'
+import type { VocabularyExample } from '../../data/vocabulary'
 import {
-  mapApiVocabularyItem,
-  requestVocabularyList,
+  requestPracticeSentences,
+  type PracticeVocabularyEntry,
 } from '../vocabulary/api'
 import './sentence-practice.css'
 
-const PRACTICE_PAGE_SIZE = 500
+// The first batch is small so the first sentence shows up quickly; the rest
+// of the corpus follows in a single request.
+const PRACTICE_FIRST_BATCH_SIZE = 500
+const PRACTICE_MAX_BATCH_SIZE = 6000
 const RECENT_FILL_WORD_WINDOW = 100
 const PREFERRED_FILL_WORD_REPEAT_LIMIT = 3
 // Extra blanks shorter than this (at, go, Mr, Oh, or a stray "s" split off
@@ -17,16 +20,14 @@ const WORD_PATTERN = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g
 
 async function requestPracticePage(
   offset: number,
+  limit: number,
   signal: AbortSignal,
 ) {
   let lastError: unknown
 
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      return await requestVocabularyList(
-        { query: '', offset, limit: PRACTICE_PAGE_SIZE },
-        signal,
-      )
+      return await requestPracticeSentences({ offset, limit }, signal)
     } catch (error) {
       lastError = error
       if (signal.aborted) {
@@ -388,7 +389,7 @@ function isEligibleFillWord(
 }
 
 function buildExerciseDraft(
-  item: CoreVocabularyEntry,
+  item: PracticeVocabularyEntry,
   example: VocabularyExample,
   knownVocabularyWords: Set<string>,
 ): ExerciseDraft | null {
@@ -433,7 +434,7 @@ function buildExerciseDraft(
   }
 }
 
-function buildExercises(items: CoreVocabularyEntry[]) {
+function buildExercises(items: PracticeVocabularyEntry[]) {
   const knownVocabularyWords = new Set(
     items.map((item) => normalizeWord(item.word)),
   )
@@ -544,13 +545,14 @@ function getAnswerState(answer: string, expected: string) {
 }
 
 function SentencePracticePage() {
-  const [vocabulary, setVocabulary] = useState<CoreVocabularyEntry[]>([])
+  const [vocabulary, setVocabulary] = useState<PracticeVocabularyEntry[]>([])
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [answers, setAnswers] = useState(['', ''])
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState('')
   const [loadedCount, setLoadedCount] = useState(0)
   const [availableCount, setAvailableCount] = useState(0)
+  const [isFullyLoaded, setIsFullyLoaded] = useState(false)
   const [jumpMessage, setJumpMessage] = useState('')
   const [isHelpOpen, setIsHelpOpen] = useState(false)
   const inputRefs = useRef<Array<HTMLInputElement | null>>([])
@@ -570,7 +572,11 @@ function SentencePracticePage() {
   const exerciseId = exercise?.id
   const firstAnswerState = answerStates[0]
   const isComplete = answerStates.every((state) => state === 'complete')
-  const displayedExerciseCount = availableCount || exercises.length
+  // Until everything is loaded the vocabulary total is the best estimate; the
+  // real count is lower because some words have no usable sentence.
+  const displayedExerciseCount = isFullyLoaded
+    ? exercises.length
+    : availableCount || exercises.length
 
   useEffect(() => {
     const controller = new AbortController()
@@ -581,9 +587,13 @@ function SentencePracticePage() {
       let hasLoadedInitialPage = false
 
       try {
-        const firstPage = await requestPracticePage(0, controller.signal)
+        const firstPage = await requestPracticePage(
+          0,
+          PRACTICE_FIRST_BATCH_SIZE,
+          controller.signal,
+        )
         const allItems = [...firstPage.items]
-        setAvailableCount(firstPage.pagination.total)
+        setAvailableCount(firstPage.total)
         setLoadedCount(allItems.length)
         hasLoadedInitialPage = true
 
@@ -596,7 +606,7 @@ function SentencePracticePage() {
         })()
 
         function publishLoadedItems() {
-          const mappedVocabulary = allItems.map(mapApiVocabularyItem)
+          const mappedVocabulary = [...allItems]
           const preparedExercises = buildExercises(mappedVocabulary)
           const pendingQuestionIndex = pendingQuestionIndexRef.current
           if (
@@ -631,27 +641,26 @@ function SentencePracticePage() {
         publishLoadedItems()
         setIsLoading(false)
 
-        const remainingOffsets: number[] = []
-        for (
-          let offset = PRACTICE_PAGE_SIZE;
-          offset < firstPage.pagination.total;
-          offset += PRACTICE_PAGE_SIZE
-        ) {
-          remainingOffsets.push(offset)
-        }
-
-        for (let index = 0; index < remainingOffsets.length; index += 2) {
-          const offsetBatch = remainingOffsets.slice(index, index + 2)
-          const pageBatch = await Promise.all(
-            offsetBatch.map((offset) =>
-              requestPracticePage(offset, controller.signal),
-            ),
+        const remainingCount = Math.min(
+          firstPage.total - allItems.length,
+          PRACTICE_MAX_BATCH_SIZE,
+        )
+        if (remainingCount > 0) {
+          const restPage = await requestPracticePage(
+            allItems.length,
+            remainingCount,
+            controller.signal,
           )
-          for (const page of pageBatch) {
-            allItems.push(...page.items)
-          }
+          allItems.push(...restPage.items)
           setLoadedCount(allItems.length)
           publishLoadedItems()
+        }
+
+        setIsFullyLoaded(true)
+        if (pendingQuestionIndexRef.current !== null) {
+          // The requested number is past the last question that can be built.
+          pendingQuestionIndexRef.current = null
+          setJumpMessage('这个题号超出了可练习的题目范围。')
         }
       } catch (error) {
         if (!controller.signal.aborted) {
