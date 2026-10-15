@@ -9,6 +9,9 @@ import './sentence-practice.css'
 const PRACTICE_PAGE_SIZE = 500
 const RECENT_FILL_WORD_WINDOW = 100
 const PREFERRED_FILL_WORD_REPEAT_LIMIT = 3
+// Extra blanks shorter than this (at, go, Mr, Oh, or a stray "s" split off
+// "1990s") give almost no typing practice. The target word itself is exempt.
+const MIN_EXTRA_BLANK_LENGTH = 3
 const PROGRESS_STORAGE_KEY = 'english-orbit:sentence-practice-progress-v2'
 const WORD_PATTERN = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g
 
@@ -338,12 +341,21 @@ function isTargetWordForm(candidate: string, vocabularyWord: string) {
   return getTargetWordForms(vocabularyWord).has(normalizeWord(candidate))
 }
 
+// WORD_PATTERN only knows A-Z, so it would chop "1990s" into "s", "café" into
+// "caf" and "km/h" into "km" + "h". A match touching a digit, a non-ASCII
+// letter or a slash is a fragment of a larger token, not a typeable word.
+const TOKEN_FRAGMENT_NEIGHBOR = /[\d/\p{L}\p{M}]/u
+
 function getSentenceWords(sentence: string): SentenceWord[] {
   return Array.from(sentence.matchAll(WORD_PATTERN), (match) => ({
     text: match[0],
     start: match.index,
     end: match.index + match[0].length,
-  }))
+  })).filter(
+    (word) =>
+      !TOKEN_FRAGMENT_NEIGHBOR.test(sentence[word.start - 1] ?? '') &&
+      !TOKEN_FRAGMENT_NEIGHBOR.test(sentence[word.end] ?? ''),
+  )
 }
 
 function isLikelyProperNoun(
@@ -401,6 +413,7 @@ function buildExerciseDraft(
     .filter(
       ({ word, index }) =>
         index !== primaryIndex &&
+        word.text.length >= MIN_EXTRA_BLANK_LENGTH &&
         isEligibleFillWord(word, knownVocabularyWords),
     )
     .map(({ word }) => word)
