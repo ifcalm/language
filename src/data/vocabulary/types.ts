@@ -1,5 +1,3 @@
-import type { Skill } from '../resources'
-
 export interface VocabularyPronunciation {
   id: string
   phonetic: string
@@ -23,5 +21,4 @@ export interface CoreVocabularyEntry {
   example?: string
   examples?: VocabularyExample[]
   pronunciations?: VocabularyPronunciation[]
-  skills: Array<Extract<Skill, 'listening' | 'speaking' | 'reading' | 'writing'>>
 }

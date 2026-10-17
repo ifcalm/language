@@ -396,10 +396,7 @@
 }
 
 .overview-card,
-.checkpoint-card,
 .reference-card,
-.library-toolbar,
-.resource-card,
 .split-grid > .panel {
   padding: 24px;
 }
@@ -469,8 +466,7 @@
 
 .roadmap-actions button,
 .landing-command button,
-.landing-actions button,
-.checkpoint-card button {
+.landing-actions button {
   border: 1px solid var(--border-strong);
   border-radius: 999px;
   padding: 11px 15px;
@@ -508,56 +504,10 @@ button:disabled {
   font-size: 0.9rem;
 }
 
-.checkpoint-card {
-  display: grid;
-  gap: 16px;
-}
-
-.checkpoint-card label {
-  display: grid;
-  gap: 7px;
-  color: var(--text-soft);
-  font-size: 0.92rem;
-}
-
-.checkpoint-card input,
-.filters input,
-.filters select,
-.vocabulary-filters input {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  padding: 12px 14px;
-  color: var(--text);
-}
-
-.checkpoint-card p,
-.reference-card p,
-.resource-card p {
+.reference-card p {
   margin: 0;
   color: var(--text-soft);
   line-height: 1.7;
-}
-
-.checkpoint-meta {
-  padding: 16px;
-  border-radius: 22px;
-  background: var(--surface-subtle);
-  border: 1px solid var(--border);
-}
-
-.checkpoint-meta span {
-  display: block;
-  color: var(--text-muted);
-  font-size: 0.86rem;
-}
-
-.checkpoint-meta strong {
-  display: block;
-  font-size: 2.5rem;
-  line-height: 1;
-  letter-spacing: -0.09em;
 }
 
 .roadmap-section,
@@ -566,7 +516,6 @@ button:disabled {
 }
 
 .roadmap-grid,
-.resource-grid,
 .stats-grid {
   display: grid;
   gap: 18px;
@@ -603,8 +552,7 @@ button:disabled {
   text-transform: uppercase;
 }
 
-.roadmap-card h3,
-.resource-card h3 {
+.roadmap-card h3 {
   margin: 0;
 }
 
@@ -640,62 +588,10 @@ button:disabled {
   color: var(--text-muted);
 }
 
-.library-toolbar {
-  display: grid;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-
-.filters {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 180px 180px;
-  gap: 12px;
-}
-
-.resource-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.resource-card {
-  display: grid;
-  gap: 14px;
-}
-
-.resource-card p {
-  color: var(--text-soft);
-}
-
-.resource-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.resource-meta span {
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-subtle);
-  color: var(--text-soft);
-  font-size: 0.82rem;
-}
-
-.resource-card footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-}
-
-.resource-card a,
 .task-card a {
   color: var(--text);
   font-weight: 750;
   text-decoration: none;
-}
-
-.resource-card small {
-  color: var(--text-muted);
 }
 
 .vocabulary-toolbar {
@@ -1322,53 +1218,6 @@ button:disabled {
   line-height: 1.75;
 }
 
-.vocab-study-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 4px;
-}
-
-.vocab-study-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 9px 15px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 750;
-  cursor: pointer;
-  transition:
-    border-color 0.16s ease,
-    background-color 0.16s ease,
-    color 0.16s ease;
-}
-
-.vocab-study-btn svg {
-  width: 15px;
-  height: 15px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.vocab-study-btn:hover,
-.vocab-study-btn:focus-visible {
-  border-color: var(--border-strong);
-  background: var(--surface-subtle);
-}
-
-.vocab-study-btn.is-active {
-  border-color: var(--text);
-  background: var(--text);
-  color: var(--surface);
-}
-
 .vocabulary-detail-study {
   min-width: 0;
   padding-top: 2px;
@@ -1760,8 +1609,7 @@ button:disabled {
 }
 
 @media (max-width: 1180px) {
-  .roadmap-grid,
-  .resource-grid {
+  .roadmap-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1788,8 +1636,6 @@ button:disabled {
 
   .hero-grid,
   .split-grid,
-  .filters,
-  .vocabulary-filters,
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -1871,8 +1717,7 @@ button:disabled {
     padding: 18px;
   }
 
-  .roadmap-grid,
-  .resource-grid {
+  .roadmap-grid {
     grid-template-columns: 1fr;
   }
 }

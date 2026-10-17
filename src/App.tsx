@@ -16,7 +16,6 @@ import VocabularyPage from './features/vocabulary/VocabularyPage'
 const SentencePracticePage = lazy(
   () => import('./features/examples/SentencePracticePage'),
 )
-const LibraryPage = lazy(() => import('./features/library/LibraryPage'))
 const StrategyPage = lazy(() => import('./features/strategy/StrategyPage'))
 const VerbPage = lazy(() => import('./features/verbs/VerbPage'))
 
@@ -40,31 +39,6 @@ function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
   const [selectedVerbLookup, setSelectedVerbLookup] = useState(getInitialVerbLookup)
   const [vocabularyPageKey, setVocabularyPageKey] = useState(0)
-
-  const pageHeadings: Partial<
-    Record<
-      ViewId,
-      {
-        eyebrow: string
-        title: string
-      }
-    >
-  > = {
-    library: { eyebrow: 'Reference Shelf', title: '资源库' },
-  }
-  const pageHeading = pageHeadings[view]
-  const placeholderPages: Partial<
-    Record<
-      ViewId,
-      {
-        title: string
-        description: string
-        note: string
-      }
-    >
-  > = {
-  }
-  const placeholderPage = placeholderPages[view]
 
   function resetVocabularyPage() {
     setVocabularyPageKey((key) => key + 1)
@@ -148,15 +122,6 @@ function App() {
           view === 'vocabulary' ? 'vocab-content' : ''
         }`}
       >
-        {view !== 'roadmap' && pageHeading && (
-          <header className="page-header">
-            <div>
-              <p>{pageHeading.eyebrow}</p>
-              <h1>{pageHeading.title}</h1>
-            </div>
-          </header>
-        )}
-
         {view === 'roadmap' && <HomePage onOpenVocabulary={openVocabularyFromHome} />}
 
         <Suspense
@@ -170,15 +135,6 @@ function App() {
 
         {view === 'examples' && <SentencePracticePage />}
 
-        {placeholderPage && (
-          <section className="panel placeholder-panel">
-            <span>{pageHeading?.eyebrow}</span>
-            <h2>{placeholderPage.title}</h2>
-            <p>{placeholderPage.description}</p>
-            <small>{placeholderPage.note}</small>
-          </section>
-        )}
-
         {view === 'verbs' && (
           <VerbPage
             selectedVerbId={selectedVerbLookup}
@@ -187,7 +143,6 @@ function App() {
           />
         )}
 
-        {view === 'library' && <LibraryPage />}
         </Suspense>
 
         {view === 'vocabulary' && <VocabularyPage key={vocabularyPageKey} />}
