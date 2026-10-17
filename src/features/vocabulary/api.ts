@@ -18,7 +18,6 @@ export const mapApiVocabularyItem = (
   phoneticUk: item.phoneticUk,
   example: item.example,
   examples: item.examples ?? [],
-  skills: ['listening', 'speaking', 'reading', 'writing'],
   pronunciations: item.pronunciations ?? [],
 })
 
@@ -43,8 +42,7 @@ const mapVocabularyDetail = (
       example: examples[0]?.sentenceEn,
       examples,
       pronunciations,
-      skills: ['listening', 'speaking', 'reading', 'writing'],
-    },
+        },
     pronunciations,
     examples,
     visual: payload.visual ?? null,

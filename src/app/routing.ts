@@ -4,7 +4,6 @@ export type ViewId =
   | 'verbs'
   | 'examples'
   | 'vocabulary'
-  | 'library'
 
 export type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
 
@@ -43,10 +42,6 @@ export function getViewFromPath(pathname: string): ViewId {
     return 'vocabulary'
   }
 
-  if (pathname.startsWith('/library')) {
-    return 'library'
-  }
-
   return 'roadmap'
 }
 
@@ -56,7 +51,6 @@ export function getPathFromView(view: ViewId): string {
     verbs: '/verbs',
     examples: '/examples',
     vocabulary: '/vocabulary',
-    library: '/library',
   }
 
   return pathByView[view] ?? '/'

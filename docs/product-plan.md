@@ -20,7 +20,6 @@ The core learning question is:
   sentence-growth animations.
 - Sentence structure learning through tree-style grammar concepts.
 - Browser-only fill-in practice with no account or cloud progress sync.
-- Searchable reference/resource library.
 
 ## Product Principles
 

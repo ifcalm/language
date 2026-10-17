@@ -133,53 +133,6 @@ function PronunciationAccents({
   )
 }
 
-// 学习动作占位：当前仅做组件内交互反馈，不持久化。
-// TODO: 接入个人特性模块后改为持久化（认识状态 / 复习清单）。
-function VocabularyStudyActions() {
-  const [mastery, setMastery] = useState<'known' | 'unknown' | null>(null)
-  const [inReview, setInReview] = useState(false)
-
-  return (
-    <div className="vocab-study-actions">
-      <button
-        type="button"
-        className={`vocab-study-btn${mastery === 'known' ? ' is-active' : ''}`}
-        aria-pressed={mastery === 'known'}
-        onClick={() => setMastery((value) => (value === 'known' ? null : 'known'))}
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="m5 13 4 4 10-10" />
-        </svg>
-        认识
-      </button>
-      <button
-        type="button"
-        className={`vocab-study-btn${mastery === 'unknown' ? ' is-active' : ''}`}
-        aria-pressed={mastery === 'unknown'}
-        onClick={() =>
-          setMastery((value) => (value === 'unknown' ? null : 'unknown'))
-        }
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6 18 18M18 6 6 18" />
-        </svg>
-        不认识
-      </button>
-      <button
-        type="button"
-        className={`vocab-study-btn${inReview ? ' is-active' : ''}`}
-        aria-pressed={inReview}
-        onClick={() => setInReview((value) => !value)}
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 3h12v18l-6-4-6 4Z" />
-        </svg>
-        {inReview ? '已加入复习' : '加入复习'}
-      </button>
-    </div>
-  )
-}
-
 function VocabularyVisualScene({
   word,
   meaning,
@@ -661,7 +614,6 @@ function VocabularyPage() {
                     </p>
                   ) : null}
 
-                  <VocabularyStudyActions key={selectedVocabularyDetail.core.id} />
                 </div>
 
                 <aside
