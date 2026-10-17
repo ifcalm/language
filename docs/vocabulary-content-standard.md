@@ -206,6 +206,15 @@ The fixture is the completion ledger: the batch selector skips every vocabulary 
 that already appears in a checked-in manifest. The manifest is therefore recorded
 only after a successful publication, so a failed upload never marks words complete.
 
+Note: the visual set is complete, so the per-batch manifests of the finished
+batches were removed from the working tree (only `vocabulary-visuals-pilot-30.json`,
+the default manifest of `publish-vocabulary-visuals.mjs`, and the queue file
+`vocabulary-visual-queue.json` remain), together with the matching
+`vocabulary:visuals:rank*`, `top10` and `next10` npm scripts. They are still in
+git history. To resume the pipeline, restore the manifests first, for example
+`git checkout 2ff7f16^ -- scripts/fixtures`, or the batch selector will treat
+every word as unfinished.
+
 `CLOUDFLARE_API_TOKEN` is required for `--publish` and may live in `.env.local`.
 The pipeline never publishes implicitly; every other step is local and free.
 
