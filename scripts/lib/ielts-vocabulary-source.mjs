@@ -34,19 +34,23 @@ export const IELTS_MODULES = [
 ]
 
 const ENTRY_PATTERN = /^- \*\*(.+?)\*\* (.+)$/
-const POS_PATTERN = /(?:^|(?<=[\s;]))((?:n|v|adj|adv|prep|conj|phr)\.(?:\/(?:n|v|adj|adv)\.)?)\s*/g
+const POS_PATTERN = /(?:^|(?<=[\s;]))((?:n|v|adj|adv|prep|conj|pron|phr)\.(?:\/(?:n|v|adj|adv)\.)?)\s*/g
 
 export function normalizeWord(word) {
   return word.trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
+// Accented spellings get a suffix so they never collide with the plain word
+// (résumé -> resume-accented, resume -> resume).
 export function slugifyWord(word) {
-  return normalizeWord(word)
-    .normalize('NFKD')
+  const decomposed = normalizeWord(word).normalize('NFKD')
+  const slug = decomposed
     .replace(/[̀-ͯ]/g, '')
     .replace(/'/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
+
+  return /[̀-ͯ]/.test(decomposed) ? `${slug}-accented` : slug
 }
 
 // "n. 存款;定金 v. 存入" -> [{ pos: 'n.', meaning: '存款;定金' }, { pos: 'v.', meaning: '存入' }]
