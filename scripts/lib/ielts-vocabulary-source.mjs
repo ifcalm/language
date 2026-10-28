@@ -40,17 +40,27 @@ export function normalizeWord(word) {
   return word.trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
-// Accented spellings get a suffix so they never collide with the plain word
-// (résumé -> resume-accented, resume -> resume).
+// Entry ids: lowercase, accents and apostrophes removed, everything else
+// that is not a letter or digit becomes "-" (security deposit ->
+// security-deposit). Ids are assigned once and stored in D1; when two words
+// would get the same id, the later one is named by hand here.
+export const ID_OVERRIDES = {
+  'résumé': 'resume-cv',
+}
+
 export function slugifyWord(word) {
-  const decomposed = normalizeWord(word).normalize('NFKD')
-  const slug = decomposed
-    .replace(/[̀-ͯ]/g, '')
+  const normalized = normalizeWord(word)
+
+  if (ID_OVERRIDES[normalized]) {
+    return ID_OVERRIDES[normalized]
+  }
+
+  return normalized
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
     .replace(/'/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
-
-  return /[̀-ͯ]/.test(decomposed) ? `${slug}-accented` : slug
 }
 
 // "n. 存款;定金 v. 存入" -> [{ pos: 'n.', meaning: '存款;定金' }, { pos: 'v.', meaning: '存入' }]
@@ -59,6 +69,12 @@ export function parseSenses(text) {
 
   if (markers.length === 0 || markers[0].index !== 0) {
     throw new Error(`Entry meaning must start with a part of speech: "${text}"`)
+  }
+
+  const parts = markers.map((marker) => marker[1])
+
+  if (new Set(parts).size !== parts.length) {
+    throw new Error(`Repeated part of speech in "${text}"; merge its meanings into one segment`)
   }
 
   return markers.map((marker, index) => {

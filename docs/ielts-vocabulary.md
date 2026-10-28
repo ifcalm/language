@@ -182,7 +182,7 @@
 - **coach** n. 长途汽车;教练
 - **ferry** n. 渡轮
 - **cruise** n. 游轮旅行
-- **platform** n. 站台;n. 平台
+- **platform** n. 站台;平台
 - **timetable** n. 时刻表
 - **single ticket** phr. 单程票
 - **return ticket** phr. 往返票
@@ -393,7 +393,7 @@
 - **current account** phr. 活期账户
 - **savings account** phr. 储蓄账户
 - **joint account** phr. 联名账户
-- **deposit** n. 存款;定金 v. 存入;n. 沉积物;矿藏
+- **deposit** n. 存款;定金;沉积物,矿藏 v. 存入
 - **withdraw** v. 取款
 - **withdrawal** n. 取款
 - **balance** n. 余额
@@ -413,7 +413,7 @@
 - **signature** n. 签名
 - **PIN** n. 个人密码
 - **online banking** phr. 网上银行
-- **branch** n. 分行;分支;n. 树枝
+- **branch** n. 分行;分支;树枝
 - **cashpoint** n. 自动取款机(英)
 - **budget** n. 预算
 - **expenditure** n. 开支
@@ -694,7 +694,7 @@
 - **optional** adj. 选修的
 - **elective** n. 选修课
 - **prerequisite** n. 先修课程;前提
-- **credit** n. 学分;n. 信用
+- **credit** n. 学分;信用
 - **syllabus** n. 教学大纲
 - **curriculum** n. 全部课程
 - **lecture** n. 讲座
@@ -854,7 +854,7 @@
 - **field trip** phr. 实地考察
 - **experiment** n. 实验
 - **observation** n. 观察
-- **trial** n. 试验;n. 审判
+- **trial** n. 试验;审判
 - **outline** n. 大纲
 - **summary** n. 摘要
 - **abstract** n. 摘要 adj. 抽象的
@@ -3335,8 +3335,8 @@
 - **fluctuation** n. 波动
 - **stabilise** v. 趋于稳定
 - **level off** phr. 趋于平稳
-- **plateau** n. 平稳期 v. 进入平稳期;n. 高原
-- **peak** n. 顶峰 v. 达到顶峰;n. 山峰
+- **plateau** n. 平稳期;高原 v. 进入平稳期
+- **peak** n. 顶峰;山峰 v. 达到顶峰
 - **bottom out** phr. 触底
 - **remain stable** phr. 保持稳定
 - **steady** adj. 平稳的
