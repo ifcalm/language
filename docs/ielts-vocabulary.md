@@ -8,19 +8,19 @@
 
 **收词原则**
 
-1. 只收雅思备考真正需要专门记的词:小学/初中基础词(dog、book、happy 等)不收。
+1. 只收雅思备考真正需要专门记的词:纯基础词(dog、book、happy 等)不收;中考范围内但在雅思中有学术用法或听力拼写要求的词保留(如 research、passport)。
 2. 每个词只出现一次,放在最典型的话题下;一词多义时只写雅思语境下的常用义。
 3. 词组只收固定搭配或听力场景中整体出现的名词短语(如 *security deposit*);需要宾语的动词短语写出完整结构(如 *convert A into B*、*object to (doing) sth.*)。
 4. 本文件不写音标、发音、例句:与 COCA 词库重叠的词在生成前端数据时自动合并已有音标和音频,其余后续统一生成。
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
-**结构与统计**(按雅思考试四个模块组织,共 4558 条:单词 4059,词组 499)
+**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4059,词组 498)
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
 | 一、听力 | Section 1–4 生活与校园场景 | 6 | 815 |
-| 二、阅读 | 学术核心词(论证、逻辑、评价、动词、抽象名词、形容词副词)与学术阅读学科话题 | 9 | 2338 |
+| 二、阅读 | 学术核心词(论证、逻辑、评价、动词、抽象名词、形容词副词)与学术阅读学科话题 | 9 | 2337 |
 | 三、写作 | 小作文图表与流程图、固定搭配、大作文话题 | 9 | 990 |
 | 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
 
@@ -47,7 +47,7 @@
 - **unfurnished** adj. 不带家具的
 - **apartment** n. 公寓
 - **flat** n. 公寓(英);adj. 平的
-- **studio** n. 单间公寓
+- **studio** n. 单间公寓;工作室,演播室
 - **semi-detached** adj. 半独立式的(房屋)
 - **detached house** phr. 独栋房屋
 - **terraced house** phr. 联排房屋
@@ -58,7 +58,7 @@
 - **host family** phr. 寄宿家庭
 - **suburb** n. 郊区
 - **outskirts** n. 市郊
-- **neighbourhood** n. 街区,周边
+- **neighbourhood** n. 社区;周边地区
 - **amenity** n. 便利设施
 - **convenience** n. 便利
 - **commute** v. 通勤 n. 通勤路程
@@ -98,7 +98,7 @@
 - **cosy** adj. 舒适温馨的
 - **parking space** phr. 停车位
 - **postcode** n. 邮编
-- **reference** n. 推荐信;证明人
+- **reference** n. 推荐信;证明人;参考,引用
 - **bedsit** n. 单间出租房(英)
 - **flatmate** n. 合租室友
 - **suite** n. 套房
@@ -163,7 +163,7 @@
 - **vacancy** n. 空房;空缺
 - **check in** phr. 登记入住
 - **check out** phr. 退房
-- **reception** n. 前台
+- **reception** n. 前台;接待;招待会
 - **receptionist** n. 前台接待员
 - **luggage** n. 行李
 - **baggage allowance** phr. 行李限额
@@ -187,7 +187,7 @@
 - **single ticket** phr. 单程票
 - **return ticket** phr. 往返票
 - **fare** n. 车费,票价
-- **concession** n. 优惠票价
+- **concession** n. 优惠票价;让步
 - **season ticket** phr. 季票,月票
 - **underground** n. 地铁(英)
 - **subway** n. 地铁(美);地下通道
@@ -245,7 +245,7 @@
 - **cycle lane** phr. 自行车道
 - **ring road** phr. 环路
 - **dual carriageway** phr. 双向分隔车道公路(英)
-- **T-junction** phr. 丁字路口
+- **T-junction** n. 丁字路口
 - **place of interest** phr. 名胜
 - **overseas** adj. 海外的 adv. 在海外
 - **aisle** n. 过道
@@ -294,7 +294,7 @@
 - **gallery** n. 画廊,美术馆
 - **auditorium** n. 礼堂
 - **pavilion** n. 亭子;展馆
-- **block** n. 街区;大块
+- **block** n. 街区(四面临街的一片建筑);大块 v. 阻挡
 - **gutter** n. 排水沟
 - **moat** n. 护城河
 - **arrow** n. 箭头
@@ -514,7 +514,7 @@
 - **membership fee** phr. 会费
 - **registration fee** phr. 报名费
 - **venue** n. 场地
-- **event** n. 活动
+- **event** n. 活动;事件
 - **exhibition** n. 展览
 - **festival** n. 节日;艺术节
 - **carnival** n. 狂欢节
@@ -901,7 +901,7 @@
 - **evidence** n. 证据
 - **proof** n. 证明
 - **argument** n. 论点;争论
-- **claim** n./v. 声称
+- **claim** n./v. 声称;要求,索赔
 - **assert** v. 断言
 - **contend** v. 主张;竞争
 - **maintain** v. 坚持认为;维持
@@ -2361,7 +2361,7 @@
 - **brass** n. 黄铜
 - **bronze** n. 青铜
 - **gasoline** n. 汽油(美)
-- **centigrade** n. 摄氏度
+- **centigrade** adj. 摄氏的
 - **artificial** adj. 人造的
 - **brittle** adj. 易碎的
 - **elasticity** n. 弹性
@@ -2581,7 +2581,7 @@
 - **enzyme** n. 酶
 - **DNA** n. 脱氧核糖核酸
 - **chromosome** n. 染色体
-- **bacteria** n. 细菌(复数)
+- **bacteria** n. 细菌(复数,单数 bacterium)
 - **virus** n. 病毒;计算机病毒
 - **microbe** n. 微生物
 - **germ** n. 病菌
@@ -2672,7 +2672,6 @@
 - **splice** v. 拼接(基因)
 - **capillary** n. 毛细血管
 - **thumb** n. 拇指
-- **bacterium** n. 细菌(复数 bacteria)
 - **plague** n. 瘟疫 v. 困扰
 - **lethal** adj. 致命的
 - **gland** n. 腺
@@ -3360,7 +3359,7 @@
 - **percentage** n. 百分比
 - **ratio** n. 比率
 - **rate** n. 比率;速度
-- **fraction** n. 一小部分;分数
+- **fraction** n. 一小部分;分数(数学)
 - **majority** n. 大多数
 - **minority** n. 少数
 - **quarter** n. 四分之一;季度
