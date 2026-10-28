@@ -4,8 +4,14 @@ export type ViewId =
   | 'verbs'
   | 'examples'
   | 'vocabulary'
+  | 'ielts'
 
-export type NavigationViewId = 'strategy' | 'verbs' | 'examples' | 'vocabulary'
+export type NavigationViewId =
+  | 'strategy'
+  | 'verbs'
+  | 'examples'
+  | 'vocabulary'
+  | 'ielts'
 
 export function getVerbLookupFromPath(pathname: string) {
   if (!pathname.startsWith('/verbs/')) {
@@ -42,6 +48,10 @@ export function getViewFromPath(pathname: string): ViewId {
     return 'vocabulary'
   }
 
+  if (pathname === '/ielts' || pathname.startsWith('/ielts/')) {
+    return 'ielts'
+  }
+
   return 'roadmap'
 }
 
@@ -51,6 +61,7 @@ export function getPathFromView(view: ViewId): string {
     verbs: '/verbs',
     examples: '/examples',
     vocabulary: '/vocabulary',
+    ielts: '/ielts',
   }
 
   return pathByView[view] ?? '/'
