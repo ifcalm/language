@@ -336,6 +336,11 @@ function ModuleView({
               >
                 <span className="ielts-topic-index">{String(topic.order).padStart(2, '0')}</span>
                 <strong>{topic.title}</strong>
+                {topic.groups ? (
+                  <small className="ielts-topic-groups">
+                    {topic.groups.map((group) => group.title).join(' · ')}
+                  </small>
+                ) : null}
                 <ProgressBar done={progress.countMastered(topic.id)} total={topic.entryCount} />
               </button>
             </li>
@@ -368,6 +373,16 @@ function TopicView({
 
     return progress.isMastered(entry.id) === (filter === 'mastered')
   })
+  // Merged topics keep their original sub-groups as section headings.
+  const groupedEntries = topic.groups
+    ? topic.groups
+        .map((group, index) => ({
+          key: `group-${index}`,
+          title: group.title,
+          entries: visibleEntries.filter((entry) => entry.group === index),
+        }))
+        .filter((group) => group.entries.length > 0)
+    : [{ key: 'all', title: '', entries: visibleEntries }]
   const topicIndex = module.topics.findIndex((item) => item.id === topic.id)
   const previousTopic = module.topics[topicIndex - 1]
   const nextTopic = module.topics[topicIndex + 1]
@@ -405,26 +420,38 @@ function TopicView({
         ))}
       </div>
 
-      <section className="ielts-panel">
-        {visibleEntries.length === 0 ? (
+      {visibleEntries.length === 0 ? (
+        <section className="ielts-panel">
           <p className="ielts-status">
             {filter === 'learning' ? '这个话题的词都已掌握。' : '还没有标记已掌握的词。'}
           </p>
-        ) : (
-          <ul className="ielts-entry-list">
-            {visibleEntries.map((entry) => (
-              <EntryRow
-                key={entry.id}
-                entry={entry}
-                progress={progress}
-                onOpen={() =>
-                  onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: entry.id })
-                }
-              />
-            ))}
-          </ul>
-        )}
-      </section>
+        </section>
+      ) : (
+        groupedEntries.map((group) => (
+          <section key={group.key} className="ielts-group">
+            {group.title ? (
+              <h2 className="ielts-group-title">
+                {group.title}
+                <span>{group.entries.length}</span>
+              </h2>
+            ) : null}
+            <div className="ielts-panel">
+              <ul className="ielts-entry-list">
+                {group.entries.map((entry) => (
+                  <EntryRow
+                    key={entry.id}
+                    entry={entry}
+                    progress={progress}
+                    onOpen={() =>
+                      onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: entry.id })
+                    }
+                  />
+                ))}
+              </ul>
+            </div>
+          </section>
+        ))
+      )}
 
       <nav className="ielts-pager" aria-label="切换话题">
         {previousTopic ? (

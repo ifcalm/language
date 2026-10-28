@@ -4,7 +4,7 @@
 
 ## 说明
 
-**来源**:原创整理。学术核心词参考开放学术词表(AWL / NAWL)的收词思路,其余按雅思听说读写常考话题自编;不摘录任何商业出版物。
+**来源**:原创整理。收词参考开放词表做覆盖校验(ECDICT 雅思标签、NGSL / NAWL,见 `docs/ielts-xref/`),释义与话题归类均为自编;不摘录任何商业出版物。
 
 **收词原则**
 
@@ -13,24 +13,24 @@
 3. 词组只收固定搭配或听力场景中整体出现的名词短语(如 *security deposit*);需要宾语的动词短语写出完整结构(如 *convert A into B*、*object to (doing) sth.*)。
 4. 本文件不写音标、发音、例句:与 COCA 词库重叠的词在生成前端数据时自动合并已有音标和音频,其余后续统一生成。
 
-**格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,phr. 词组。
+**格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
-**结构与统计**(按雅思考试四个模块组织,共 3647 条:单词 3149,词组 498)
+**结构与统计**(按雅思考试四个模块组织,共 4558 条:单词 4059,词组 499)
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
-| 一、听力 | Section 1–4 生活与校园场景 | 11 | 693 |
-| 二、阅读 | 学术核心词与学术阅读学科话题 | 20 | 1718 |
-| 三、写作 | 小作文图表与流程图、固定搭配、大作文话题 | 13 | 886 |
-| 四、口语 | 人物、物品、地点、感受与兴趣 | 6 | 350 |
+| 一、听力 | Section 1–4 生活与校园场景 | 6 | 815 |
+| 二、阅读 | 学术核心词(论证、逻辑、评价、动词、抽象名词、形容词副词)与学术阅读学科话题 | 9 | 2338 |
+| 三、写作 | 小作文图表与流程图、固定搭配、大作文话题 | 9 | 990 |
+| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
 
-每个词只属于一个模块;阅读与写作共用的学术词按用途归入其一(论证、逻辑、评价、学术动词归阅读;图表、流程图、固定搭配归写作)。
+每个词只属于一个模块和一个话题;话题较大时用 `###` 小节细分,小节在页面上显示为分组标题。阅读与写作共用的学术词按用途归入其一(论证、逻辑、评价、学术动词归阅读;图表、流程图、固定搭配归写作)。
 
 ---
 
 # 一、听力
 
-## 1.1 租房与住宿
+## 1.1 住宿与租房
 
 - **accommodation** n. 住处,膳宿
 - **landlord** n. 房东
@@ -119,8 +119,23 @@
 - **real estate agency** phr. 房地产中介
 - **studio apartment** phr. 单间公寓
 - **tenancy agreement** phr. 租赁合同
+- **plug** n. 插头 v. 接通电源
+- **lawn** n. 草坪
+- **terrace** n. 露台;排屋
+- **porch** n. 门廊
+- **closet** n. 壁橱
+- **cellar** n. 地窖
+- **cushion** n. 坐垫,靠垫
+- **bungalow** n. 平房
+- **mansion** n. 豪宅
+- **roommate** n. 室友
+- **tile** n. 瓷砖
+- **bulb** n. 灯泡;球茎
+- **mould** n. 霉菌;模具
 
-## 1.2 旅游与交通
+## 1.2 旅游、交通与方位
+
+### 旅游与交通
 
 - **itinerary** n. 行程表
 - **destination** n. 目的地
@@ -232,8 +247,23 @@
 - **dual carriageway** phr. 双向分隔车道公路(英)
 - **T-junction** phr. 丁字路口
 - **place of interest** phr. 名胜
+- **overseas** adj. 海外的 adv. 在海外
+- **aisle** n. 过道
+- **tyre** n. 轮胎(英)
+- **baggage** n. 行李
+- **suitcase** n. 手提箱
+- **trolley** n. 手推车
+- **lobby** n. 大堂;游说团体 v. 游说
+- **booth** n. 售货亭;隔间
+- **transit** n. 中转;运输
+- **escort** v./n. 护送,陪同
+- **hike** n./v. 徒步;(价格)上涨
+- **fortnight** n. 两周(英)
+- **traveller** n. 旅行者
+- **guide** n. 导游;指南 v. 引导
+- **dock** n. 码头 v. 停靠
 
-## 1.3 地图与方位
+### 地图与方位
 
 - **layout** n. 布局
 - **entrance** n. 入口
@@ -267,8 +297,13 @@
 - **block** n. 街区;大块
 - **gutter** n. 排水沟
 - **moat** n. 护城河
+- **arrow** n. 箭头
+- **halfway** adv. 在中途 adj. 中途的
+- **underneath** prep. 在……下面 adv. 在下面
 
-## 1.4 餐饮与购物
+## 1.3 购物、餐饮与银行
+
+### 餐饮与购物
 
 - **cuisine** n. 菜系,烹饪
 - **starter** n. 开胃菜
@@ -338,8 +373,21 @@
 - **fitting room** phr. 试衣间
 - **shopping spree** phr. 疯狂购物
 - **staple food** phr. 主食
+- **mall** n. 购物中心
+- **outlet** n. 直销店;排放口;电源插座
+- **parcel** n. 包裹
+- **swap** v./n. 交换,调换
+- **dining** n. 用餐
+- **feast** n. 盛宴
+- **coupon** n. 优惠券
+- **fry** v. 油炸,煎
+- **roast** v. 烤 adj. 烤制的
+- **slice** n. 片 v. 切片
+- **loaf** n. 一条(面包)
+- **appetite** n. 食欲;欲望
+- **flavour** n. 味道,风味
 
-## 1.5 银行与支付
+### 银行与支付
 
 - **account** n. 账户
 - **current account** phr. 活期账户
@@ -390,8 +438,16 @@
 - **down payment** phr. 首付
 - **identity card** phr. 身份证
 - **pay slip** phr. 工资单
+- **payable** adj. 应付的
+- **sterling** n. 英镑
+- **invoice** n. 发票
+- **lender** n. 贷款方
+- **lottery** n. 彩票
+- **bid** n./v. 出价;投标
 
-## 1.6 健康与医疗
+## 1.4 健康、运动与休闲
+
+### 健康与医疗
 
 - **appointment** n. 预约
 - **clinic** n. 诊所
@@ -439,8 +495,127 @@
 - **feverish** adj. 发烧的
 - **relapse** n./v. 复发
 - **recuperate** v. 休养康复
+- **pulse** n. 脉搏;脉冲
+- **fatigue** n. 疲劳
+- **sneeze** v./n. 打喷嚏
+- **pregnant** adj. 怀孕的
+- **sickness** n. 疾病;恶心
+- **throat** n. 喉咙
+- **ankle** n. 脚踝
+- **sore** adj. 疼痛的
+- **tablet** n. 药片;平板电脑
+- **capsule** n. 胶囊
+- **nap** n./v. 小睡
 
-## 1.7 工作与求职
+### 活动、俱乐部与休闲
+
+- **club** n. 俱乐部
+- **membership** n. 会员资格
+- **membership fee** phr. 会费
+- **registration fee** phr. 报名费
+- **venue** n. 场地
+- **event** n. 活动
+- **exhibition** n. 展览
+- **festival** n. 节日;艺术节
+- **carnival** n. 狂欢节
+- **parade** n. 游行
+- **concert** n. 音乐会
+- **performance** n. 表演
+- **audience** n. 观众
+- **spectator** n. (比赛)观众
+- **admission** n. 入场(费);录取
+- **ticket office** phr. 售票处
+- **box office** phr. 票房
+- **programme** n. 节目单;计划
+- **schedule** n. 日程 v. 安排
+- **rehearsal** n. 排练
+- **organiser** n. 组织者
+- **sponsor** n. 赞助商 v. 赞助
+- **charity** n. 慈善机构
+- **fundraising** n. 筹款
+- **raffle** n. 抽奖
+- **competition** n. 比赛
+- **tournament** n. 锦标赛
+- **league** n. 联赛
+- **instructor** n. 教练,指导员
+- **beginner** n. 初学者
+- **intermediate** adj. 中级的
+- **advanced** adj. 高级的
+- **equipment** n. 装备
+- **kit** n. 成套装备
+- **locker** n. 储物柜
+- **changing room** phr. 更衣室
+- **swimming pool** phr. 游泳池
+- **sports centre** phr. 体育中心
+- **leisure centre** phr. 休闲中心
+- **hiking** n. 徒步
+- **cycling** n. 骑行
+- **canoeing** n. 划独木舟
+- **sailing** n. 帆船运动
+- **snorkelling** n. 浮潜
+- **yoga** n. 瑜伽
+- **pottery** n. 陶艺
+- **photography** n. 摄影
+- **gardening** n. 园艺
+- **crafts** n. 手工艺
+- **refreshments** n. 茶点
+- **raincoat** n. 雨衣
+- **waterproof** adj. 防水的
+- **stadium** n. 体育场
+- **champion** n. 冠军
+- **medal** n. 奖牌
+- **participant** n. 参与者
+- **host** v. 主办 n. 主人;主持人
+- **celebrate** v. 庆祝
+- **celebration** n. 庆典
+- **invitation** n. 邀请
+- **decoration** n. 装饰
+- **loudspeaker** n. 扬声器
+- **microphone** n. 麦克风
+- **costume** n. 戏服
+- **circus** n. 马戏团
+- **backstage** adv. 在后台
+- **rehearse** v. 排练
+- **perform** v. 表演;执行
+- **puppetry** n. 木偶戏
+- **juggle** v. 杂耍;兼顾
+- **mime** n. 哑剧
+- **gymnastics** n. 体操
+- **trekking** n. 长途徒步
+- **surfing** n. 冲浪
+- **skiing** n. 滑雪
+- **skating** n. 滑冰
+- **goalkeeper** n. 守门员
+- **racket** n. 球拍
+- **spa** n. 水疗中心
+- **fancy dress** phr. 化装服
+- **puppet show** phr. 木偶戏表演
+- **slot** n. 时段;狭槽
+- **novice** n. 新手,初学者
+- **entrant** n. 参赛者;新加入者
+- **punch** v. 用拳猛击;打孔 n. 一拳
+- **opponent** n. 对手
+- **rival** n. 竞争对手 adj. 竞争的
+- **contest** n. 比赛;竞争 v. 争夺;质疑
+- **arena** n. 竞技场;舞台
+- **solo** adj. 单独的 n. 独奏
+- **choir** n. 合唱团
+- **ensemble** n. 乐团;整体
+- **anniversary** n. 周年纪念
+- **wedding** n. 婚礼
+- **aquarium** n. 水族馆
+- **applaud** v. 鼓掌;称赞
+- **spotlight** n. 聚光灯;公众关注
+- **badge** n. 徽章
+- **token** n. 代币;象征
+- **ribbon** n. 缎带
+- **banner** n. 横幅
+- **cricket** n. 板球
+- **deck** n. 甲板
+- **raft** n. 木筏
+- **helmet** n. 头盔
+
+## 1.5 工作与求职
 
 - **position** n. 职位
 - **applicant** n. 申请人
@@ -495,8 +670,18 @@
 - **night shift** phr. 夜班
 - **unemployment benefit** phr. 失业救济金
 - **letter of recommendation** phr. 推荐信
+- **portfolio** n. 作品集;投资组合
+- **consultant** n. 顾问
+- **assistant** n. 助理
+- **technician** n. 技术员
+- **deputy** n. 副手,副职
+- **veteran** n. 老手;退伍军人
+- **amateur** adj. 业余的 n. 业余爱好者
+- **appraisal** n. (工作)评估,考核
 
-## 1.8 校园与课程
+## 1.6 校园学习与研究
+
+### 校园与课程
 
 - **enrol** v. 注册,入学
 - **enrolment** n. 注册
@@ -580,8 +765,16 @@
 - **word limit** phr. 字数限制
 - **take notes** phr. 记笔记
 - **dropout rate** phr. 辍学率
+- **correction** n. 改正,修改
+- **comprehension** n. 理解(力)
+- **quiz** n. 小测验 v. 测验
+- **institute** n. 学院;研究所 v. 设立
+- **dean** n. (大学)院长
+- **transcript** n. 成绩单;文字记录
+- **fellowship** n. 研究员职位;奖学金;团体
+- **warden** n. (宿舍)管理员;看守人
 
-## 1.9 图书馆与学习资源
+### 图书馆与学习资源
 
 - **library card** phr. 借书卡
 - **renew** v. 续借
@@ -630,8 +823,15 @@
 - **bookworm** n. 书虫
 - **non-fiction** n. 非虚构类作品
 - **back issue** phr. 过刊
+- **stack** n. 一堆;书库 v. 堆放
+- **footnote** n. 脚注
+- **booklet** n. 小册子
+- **handbook** n. 手册
+- **directory** n. 名录;目录
+- **bulletin** n. 公告;简报
+- **folder** n. 文件夹
 
-## 1.10 研究与小组作业
+### 研究与小组作业
 
 - **research** n./v. 研究
 - **project** n. 项目
@@ -671,96 +871,28 @@
 - **clarity** n. 清晰
 - **brief** adj. 简短的 n. 简报
 - **paraphrase** v./n. 改述,释义
-
-## 1.11 活动、俱乐部与休闲
-
-- **club** n. 俱乐部
-- **membership** n. 会员资格
-- **membership fee** phr. 会费
-- **registration fee** phr. 报名费
-- **venue** n. 场地
-- **event** n. 活动
-- **exhibition** n. 展览
-- **festival** n. 节日;艺术节
-- **carnival** n. 狂欢节
-- **parade** n. 游行
-- **concert** n. 音乐会
-- **performance** n. 表演
-- **audience** n. 观众
-- **spectator** n. (比赛)观众
-- **admission** n. 入场(费);录取
-- **ticket office** phr. 售票处
-- **box office** phr. 票房
-- **programme** n. 节目单;计划
-- **schedule** n. 日程 v. 安排
-- **rehearsal** n. 排练
-- **organiser** n. 组织者
-- **sponsor** n. 赞助商 v. 赞助
-- **charity** n. 慈善机构
-- **fundraising** n. 筹款
-- **raffle** n. 抽奖
-- **competition** n. 比赛
-- **tournament** n. 锦标赛
-- **league** n. 联赛
-- **instructor** n. 教练,指导员
-- **beginner** n. 初学者
-- **intermediate** adj. 中级的
-- **advanced** adj. 高级的
-- **equipment** n. 装备
-- **kit** n. 成套装备
-- **locker** n. 储物柜
-- **changing room** phr. 更衣室
-- **swimming pool** phr. 游泳池
-- **sports centre** phr. 体育中心
-- **leisure centre** phr. 休闲中心
-- **hiking** n. 徒步
-- **cycling** n. 骑行
-- **canoeing** n. 划独木舟
-- **sailing** n. 帆船运动
-- **snorkelling** n. 浮潜
-- **yoga** n. 瑜伽
-- **pottery** n. 陶艺
-- **photography** n. 摄影
-- **gardening** n. 园艺
-- **crafts** n. 手工艺
-- **refreshments** n. 茶点
-- **raincoat** n. 雨衣
-- **waterproof** adj. 防水的
-- **stadium** n. 体育场
-- **champion** n. 冠军
-- **medal** n. 奖牌
-- **participant** n. 参与者
-- **host** v. 主办 n. 主人;主持人
-- **celebrate** v. 庆祝
-- **celebration** n. 庆典
-- **invitation** n. 邀请
-- **decoration** n. 装饰
-- **loudspeaker** n. 扬声器
-- **microphone** n. 麦克风
-- **costume** n. 戏服
-- **circus** n. 马戏团
-- **backstage** adv. 在后台
-- **rehearse** v. 排练
-- **perform** v. 表演;执行
-- **puppetry** n. 木偶戏
-- **juggle** v. 杂耍;兼顾
-- **mime** n. 哑剧
-- **gymnastics** n. 体操
-- **trekking** n. 长途徒步
-- **surfing** n. 冲浪
-- **skiing** n. 滑雪
-- **skating** n. 滑冰
-- **goalkeeper** n. 守门员
-- **racket** n. 球拍
-- **spa** n. 水疗中心
-- **fancy dress** phr. 化装服
-- **puppet show** phr. 木偶戏表演
+- **interrupt** v. 打断,中断
+- **skip** v. 跳过,略过
+- **overview** n. 概述,概况
+- **rewrite** v. 改写,重写
+- **panel** n. 专家组;面板
+- **format** n. 格式;形式
+- **enquiry** n. 询问;调查(英)
+- **enquire** v. 询问(英)
+- **display** n./v. 展示,显示
+- **recommendation** n. 建议;推荐
+- **announcement** n. 公告,通知
+- **profile** n. 简介;轮廓
+- **batch** n. 一批
+- **postpone** v. 推迟
 
 ---
 
 # 二、阅读
 
-## 2.1 研究与论证
+## 2.1 学术论证与抽象概念
+
+### 研究与论证
 
 - **hypothesis** n. 假设
 - **theory** n. 理论
@@ -871,8 +1003,121 @@
 - **discrete** adj. 独立的,离散的
 - **variant** n. 变体
 - **existence** n. 存在
+- **logical** adj. 合乎逻辑的
+- **clue** n. 线索,提示
+- **stance** n. 立场,态度
+- **preliminary** adj. 初步的,预备的
+- **accuracy** n. 准确性
+- **reliability** n. 可靠性
+- **presume** v. 假定,推测
+- **critique** n. 评论文章 v. 评论
+- **analogy** n. 类比
+- **gauge** v. 估量,判断 n. 量规
+- **plausible** adj. 貌似合理的
+- **randomly** adv. 随机地
+- **randomise** v. 随机化
+- **qualitative** adj. 定性的
+- **variability** n. 可变性,差异
+- **confound** v. 使困惑;混淆(变量)
+- **null** adj. 无效的;零的
+- **logic** n. 逻辑
+- **certainty** n. 确定性
+- **precedent** n. 先例
 
-## 2.2 因果与逻辑关系
+### 抽象概念与学术名词
+
+- **scenario** n. 设想;情景
+- **lifetime** n. 一生,寿命
+- **closure** n. 关闭;结束
+- **domain** n. 领域;范围
+- **necessity** n. 必要性;必需品
+- **essence** n. 本质,精髓
+- **array** n. 一系列,大量
+- **hierarchy** n. 等级制度;层级
+- **flexibility** n. 灵活性
+- **duration** n. 持续时间
+- **availability** n. 可获得性
+- **realm** n. 领域;王国
+- **breakdown** n. 故障;崩溃;细目
+- **dilemma** n. 困境,两难
+- **rejection** n. 拒绝,排斥
+- **defect** n. 缺陷
+- **chunk** n. 大块;语块
+- **likelihood** n. 可能性
+- **continuity** n. 连续性
+- **fringe** n. 边缘 adj. 次要的
+- **threshold** n. 门槛;阈值
+- **span** n. 跨度,期间 v. 横跨
+- **manipulation** n. 操纵
+- **coordination** n. 协调
+- **pathway** n. 途径;小路
+- **progression** n. 进展,发展
+- **instability** n. 不稳定
+- **displacement** n. 流离失所;位移
+- **facet** n. 方面;(宝石的)刻面
+- **selection** n. 选择;选拔
+- **theme** n. 主题
+- **resolution** n. 决议;解决;分辨率
+- **boundary** n. 边界;界限
+- **assistance** n. 帮助
+- **agenda** n. 议程
+- **transition** n. 过渡,转变
+- **approval** n. 批准;认可
+- **reputation** n. 名声,声誉
+- **tendency** n. 倾向,趋势
+- **awareness** n. 意识
+- **possession** n. 拥有;财产
+- **expansion** n. 扩张
+- **pace** n. 速度;节奏
+- **guidance** n. 指导
+- **barrier** n. 障碍;屏障
+- **preference** n. 偏好
+- **ownership** n. 所有权
+- **enthusiasm** n. 热情
+- **satisfaction** n. 满意
+- **confusion** n. 混乱;困惑
+- **guideline** n. 准则,指导方针
+- **ease** n. 容易 v. 缓解
+- **declaration** n. 宣言;申报
+- **removal** n. 去除;搬迁
+- **succession** n. 连续;继承
+- **compromise** n./v. 妥协
+- **chaos** n. 混乱
+- **intent** n. 意图 adj. 专心的
+- **sacrifice** n./v. 牺牲
+- **revelation** n. 揭露;启示
+- **dignity** n. 尊严
+- **predecessor** n. 前任;前身
+- **frontier** n. 边境;前沿
+- **compliance** n. 遵守
+- **denial** n. 否认;拒绝
+- **contempt** n. 蔑视
+- **inability** n. 无能力
+- **disagreement** n. 分歧
+- **solidarity** n. 团结
+- **clearance** n. 清除;许可
+- **outset** n. 开端
+- **precaution** n. 预防措施
+- **disposition** n. 性情;倾向
+- **gratitude** n. 感激
+- **allegiance** n. 忠诚
+- **proximity** n. 接近,邻近
+- **inclination** n. 倾向;意愿
+- **plight** n. 困境
+- **setback** n. 挫折
+- **impetus** n. 推动力
+- **contingency** n. 意外情况
+- **myriad** n. 无数 adj. 无数的
+- **conjunction** n. 结合;连词
+- **vicinity** n. 附近
+- **peril** n. 危险
+- **ordeal** n. 磨难
+- **brink** n. 边缘
+- **purity** n. 纯净
+
+## 2.2 逻辑关系与评价
+
+### 因果与逻辑关系
 
 - **cause** n. 原因 v. 导致
 - **consequence** n. 后果
@@ -934,8 +1179,15 @@
 - **accordingly** adv. 相应地;因此
 - **inevitably** adv. 不可避免地
 - **arguably** adv. 可以说
+- **amongst** prep. 在……之中(英)
+- **precede** v. 先于,在……之前
+- **afterwards** adv. 后来,之后
+- **contrary** adj. 相反的 n. 相反
+- **sometime** adv. 在某个时候
+- **whoever** pron. 无论谁
+- **whichever** pron. 无论哪个
 
-## 2.3 评价与程度
+### 评价与程度
 
 - **crucial** adj. 关键的
 - **vital** adj. 至关重要的
@@ -1029,7 +1281,145 @@
 - **hazard** n. 危险
 - **jeopardy** n. 危险境地
 
-## 2.4 学术高频动词
+### 学术形容词与副词
+
+- **deliberately** adv. 故意地;慎重地
+- **readily** adv. 容易地;乐意地
+- **prominent** adj. 突出的;著名的
+- **purely** adv. 纯粹地,完全
+- **outer** adj. 外部的
+- **bound** adj. 必定的;受约束的
+- **naked** adj. 裸露的;赤裸裸的
+- **formally** adv. 正式地
+- **superior** adj. 更好的,优越的 n. 上级
+- **subtle** adj. 微妙的,细微的
+- **realistic** adj. 现实的,切合实际的
+- **correctly** adv. 正确地
+- **locally** adv. 在当地
+- **progressive** adj. 进步的;渐进的
+- **indirect** adj. 间接的
+- **vague** adj. 模糊的,含糊的
+- **incredibly** adv. 难以置信地;极其
+- **actively** adv. 积极地,主动地
+- **irrelevant** adj. 无关的
+- **supposedly** adv. 据说,按理
+- **terribly** adv. 非常;糟糕地
+- **selective** adj. 选择性的;挑剔的
+- **backward** adj. 落后的;向后的
+- **problematic** adj. 有问题的
+- **obscure** adj. 晦涩的;鲜为人知的 v. 遮掩
+- **nicely** adv. 很好地;恰当地
+- **spontaneous** adj. 自发的;自然的
+- **trivial** adj. 琐碎的,不重要的
+- **peripheral** adj. 外围的;次要的
+- **tricky** adj. 棘手的
+- **unstable** adj. 不稳定的
+- **lateral** adj. 侧面的;横向的
+- **coherent** adj. 连贯的,条理清楚的
+- **suitable** adj. 合适的
+- **supreme** adj. 最高的
+- **unlikely** adj. 不太可能的
+- **elsewhere** adv. 在别处
+- **somewhat** adv. 有点,稍微
+- **typical** adj. 典型的
+- **external** adj. 外部的
+- **contemporary** adj. 当代的 n. 同时代的人
+- **barely** adv. 几乎不;仅仅
+- **unusual** adj. 不寻常的
+- **voluntary** adj. 自愿的
+- **intense** adj. 强烈的
+- **visible** adj. 可见的
+- **radical** adj. 根本的;激进的
+- **pure** adj. 纯的;纯粹的
+- **literally** adv. 字面上;确实
+- **extreme** adj. 极端的
+- **presumably** adv. 大概
+- **genuine** adj. 真正的;真诚的
+- **distant** adj. 遥远的
+- **raw** adj. 原始的;生的
+- **ongoing** adj. 持续的
+- **undoubtedly** adv. 无疑地
+- **flexible** adj. 灵活的
+- **inadequate** adj. 不足的
+- **underlying** adj. 潜在的;根本的
+- **sheer** adj. 纯粹的;陡峭的
+- **harsh** adj. 严酷的
+- **reluctant** adj. 不情愿的
+- **seemingly** adv. 表面上
+- **random** adj. 随机的
+- **invisible** adj. 看不见的
+- **fierce** adj. 激烈的
+- **bold** adj. 大胆的
+- **stiff** adj. 僵硬的;激烈的
+- **awkward** adj. 尴尬的;笨拙的
+- **invariably** adv. 总是
+- **forthcoming** adj. 即将到来的
+- **hitherto** adv. 迄今
+- **intimate** adj. 亲密的
+- **secular** adj. 世俗的
+- **worthwhile** adj. 值得的
+- **sympathetic** adj. 同情的;赞同的
+- **anonymous** adj. 匿名的
+- **fatal** adj. 致命的
+- **peculiar** adj. 奇怪的;特有的
+- **immense** adj. 巨大的
+- **eligible** adj. 有资格的
+- **intact** adj. 完好无损的
+- **doubtful** adj. 怀疑的;不确定的
+- **brutal** adj. 残酷的
+- **deliberate** adj. 故意的;深思熟虑的 v. 仔细考虑
+- **utterly** adv. 完全地
+- **devastating** adj. 毁灭性的
+- **consecutive** adj. 连续的
+- **orthodox** adj. 正统的
+- **thorough** adj. 彻底的
+- **formidable** adj. 令人敬畏的;艰难的
+- **grim** adj. 严峻的
+- **vigorous** adj. 有力的
+- **eternal** adj. 永恒的
+- **absurd** adj. 荒谬的
+- **destructive** adj. 破坏性的
+- **supplementary** adj. 补充的
+- **credible** adj. 可信的
+- **wary** adj. 谨慎的
+- **notorious** adj. 臭名昭著的
+- **doubtless** adv. 无疑
+- **solitary** adj. 独自的
+- **outrageous** adj. 令人愤慨的
+- **provisional** adj. 临时的
+- **foremost** adj. 最重要的
+- **petty** adj. 琐碎的
+- **imminent** adj. 即将发生的
+- **robust** adj. 强健的;稳健的
+- **prestigious** adj. 有声望的
+- **superficial** adj. 表面的;肤浅的
+- **conspicuous** adj. 显眼的
+- **abnormal** adj. 异常的
+- **volatile** adj. 易变的;易挥发的
+- **dubious** adj. 可疑的
+- **drastic** adj. 剧烈的
+- **renowned** adj. 著名的
+- **uneven** adj. 不均匀的
+- **irregular** adj. 不规则的
+- **coarse** adj. 粗糙的
+- **relentless** adj. 持续的;无情的
+- **blunt** adj. 直率的;钝的
+- **tangible** adj. 有形的,切实的
+- **intricate** adj. 复杂的,精细的
+- **latent** adj. 潜在的
+- **tentative** adj. 初步的,暂定的
+- **pointless** adj. 无意义的
+- **savage** adj. 野蛮的
+- **gigantic** adj. 巨大的
+- **idle** adj. 闲置的;懒散的
+- **ruthless** adj. 无情的
+- **subordinate** adj. 次要的 n. 下属
+- **interim** adj. 临时的,过渡的
+- **neighbouring** adj. 邻近的
+- **mighty** adj. 强大的
+- **unfair** adj. 不公平的
+
+## 2.3 学术高频动词
 
 - **acquire** v. 获得
 - **obtain** v. 获得
@@ -1197,8 +1587,129 @@
 - **instil** v. 灌输
 - **enlighten** v. 启发
 - **transpire** v. 被得知;(植物)蒸腾
+- **reinforce** v. 加强,巩固
+- **confine** v. 限制;禁闭
+- **depict** v. 描绘,描述
+- **render** v. 使成为;提供
+- **undermine** v. 削弱,暗中破坏
+- **scatter** v. 分散,散布
+- **interfere** v. 干涉,妨碍
+- **grasp** v. 理解;抓住 n. 理解
+- **manipulate** v. 操纵;处理
+- **activate** v. 激活,启动
+- **elaborate** v. 详细阐述 adj. 精心制作的
+- **coordinate** v. 协调
+- **overlap** v./n. 重叠,交叠
+- **simplify** v. 简化
+- **standardise** v. 使标准化
+- **vary** v. 变化,不同
+- **declare** v. 宣布,声明
+- **capture** v. 捕获;捕捉 n. 捕获
+- **rely** v. 依赖,依靠
+- **derive** v. 获得;源于
+- **bind** v. 约束;捆绑
+- **permit** v. 允许 n. 许可证
+- **embrace** v. 欣然接受;拥抱
+- **overcome** v. 克服
+- **cease** v. 停止
+- **strengthen** v. 加强
+- **consult** v. 咨询;查阅
+- **devote** v. 致力于
+- **dedicate** v. 奉献;致力于
+- **provoke** v. 引起;激怒
+- **assemble** v. 组装;集合
+- **allege** v. (未经证实地)声称
+- **envisage** v. 设想,预见
+- **concede** v. 承认;让步
+- **endorse** v. 赞同;背书
+- **contemplate** v. 考虑;沉思
+- **diminish** v. 减少,减弱
+- **incur** v. 招致,引起(费用、损失)
+- **oversee** v. 监督,监管
+- **deem** v. 认为,视为
+- **compel** v. 强迫,迫使
+- **omit** v. 省略,遗漏
+- **halt** v./n. 停止
+- **proclaim** v. 宣告
+- **suppress** v. 压制;抑制
+- **summon** v. 召集;传唤
+- **revive** v. 复兴;使复活
+- **boast** v. 拥有(值得自豪的东西);自夸
+- **unfold** v. 展开;逐渐显露
+- **arouse** v. 引起,激起
+- **thrive** v. 繁荣,茁壮成长
+- **speculate** v. 推测;投机
+- **conform** v. 遵守;符合
+- **divert** v. 转移;使转向
+- **evoke** v. 唤起,引起
+- **penetrate** v. 穿透;渗入
+- **strive** v. 努力,奋斗
+- **embody** v. 体现
+- **disrupt** v. 扰乱,中断
+- **uphold** v. 维护,支持
+- **illuminate** v. 阐明;照亮
+- **discard** v. 丢弃
+- **reconcile** v. 调和;使和解
+- **defy** v. 违抗;无法(解释)
+- **notify** v. 通知
+- **offset** v. 抵消
+- **manifest** v. 表明,显示 adj. 明显的
+- **ascertain** v. 查明,确定
+- **expel** v. 驱逐;排出
+- **adhere** v. 坚持(to);粘附
+- **safeguard** v. 保护 n. 保障措施
+- **culminate** v. 达到顶点,以……告终
+- **intensify** v. 加强,加剧
+- **enrich** v. 使丰富;使富裕
+- **elicit** v. 引出,引起
+- **transcend** v. 超越
+- **withhold** v. 扣留;拒绝给予
+- **displace** v. 取代;迫使离开
+- **exacerbate** v. 加剧,使恶化
+- **necessitate** v. 使成为必要
+- **exemplify** v. 例证,作为……的典型
+- **impair** v. 损害,削弱
+- **reclaim** v. 收回;开垦
+- **disregard** v. 忽视 n. 漠视
+- **detach** v. 分离,拆开
+- **escalate** v. 升级,加剧
+- **avert** v. 避免,防止
+- **bypass** v. 绕过 n. 旁路
+- **discern** v. 辨别,察觉
+- **ascribe** v. 把……归因于
+- **heighten** v. 提高,加强
+- **commend** v. 称赞
+- **succumb** v. 屈服;死于
+- **intrigue** v. 激起兴趣 n. 阴谋
+- **tighten** v. 收紧;加强(管制)
+- **enclose** v. 附上;围住
+- **reassure** v. 使安心
+- **situate** v. 使位于
+- **steer** v. 引导;驾驶
+- **intimidate** v. 恐吓
+- **restrain** v. 克制;约束
+- **resume** v. 恢复,重新开始
+- **forge** v. 建立(关系);伪造;锻造
+- **inflict** v. 使遭受,施加
+- **betray** v. 背叛;泄露
+- **endeavour** n./v. 努力,尽力
+- **excel** v. 擅长,胜过
+- **dwell** v. 居住;老是想着(on)
+- **mobilise** v. 动员
+- **suspend** v. 暂停;悬挂
+- **reverse** v. 逆转 adj. 相反的
+- **vanish** v. 消失
+- **fade** v. 褪色;逐渐消失
+- **shrink** v. 缩小,减少
+- **split** v./n. 分裂;分摊
+- **pose** v. 构成(威胁);提出(问题)
+- **tap** v. 开发利用;轻拍
+- **leap** n. 飞跃 v. 跳跃
+- **rescue** v./n. 营救
 
-## 2.5 地理与地貌
+## 2.4 自然地理与气候
+
+### 地理与地貌
 
 - **continent** n. 大陆
 - **hemisphere** n. 半球
@@ -1315,8 +1826,20 @@
 - **northern hemisphere** phr. 北半球
 - **southern hemisphere** phr. 南半球
 - **Arctic Circle** phr. 北极圈
+- **gradient** n. 坡度;梯度
+- **watershed** n. 分水岭;转折点
+- **incline** n. 斜坡 v. 倾向于
+- **uplift** n. (地壳)抬升 v. 提升
+- **inland** adj. 内陆的 adv. 在内陆
+- **wilderness** n. 荒野
+- **quarry** n. 采石场
+- **gravel** n. 砾石
+- **dust** n. 灰尘,尘土
+- **descent** n. 下降;血统
+- **cape** n. 海角
+- **verge** n. 边缘;路边
 
-## 2.6 气候与天气
+### 气候与天气
 
 - **climate** n. 气候
 - **meteorology** n. 气象学
@@ -1371,8 +1894,58 @@
 - **windward** adj. 迎风的
 - **barometer** n. 气压计
 - **troposphere** n. 对流层
+- **turbulent** adj. 湍流的;动荡的
+- **inversion** n. 逆温;倒置
+- **aerosol** n. 气溶胶;喷雾剂
+- **chill** n. 寒冷 v. 使变冷
 
-## 2.7 动物与生态
+### 海洋
+
+- **marine** adj. 海洋的
+- **coral reef** phr. 珊瑚礁
+- **plankton** n. 浮游生物
+- **algae** n. 藻类
+- **seaweed** n. 海藻
+- **whale** n. 鲸
+- **dolphin** n. 海豚
+- **shark** n. 鲨鱼
+- **seal** n. 海豹
+- **jellyfish** n. 水母
+- **octopus** n. 章鱼
+- **squid** n. 鱿鱼
+- **oyster** n. 牡蛎
+- **crustacean** n. 甲壳动物
+- **shellfish** n. 贝类
+- **tide** n. 潮汐
+- **tidal** adj. 潮汐的
+- **tsunami** n. 海啸
+- **seabed** n. 海床
+- **trench** n. 海沟
+- **salinity** n. 盐度
+- **overfishing** n. 过度捕捞
+- **acidification** n. 酸化
+- **submarine** n. 潜艇
+- **sonar** n. 声呐
+- **starfish** n. 海星
+- **porpoise** n. 鼠海豚
+- **prawn** n. 对虾
+- **shrimp** n. 小虾
+- **lobster** n. 龙虾
+- **crab** n. 螃蟹
+- **clam** n. 蛤
+- **mussel** n. 贻贝
+- **sponge** n. 海绵
+- **coral** n. 珊瑚
+- **pearl** n. 珍珠
+- **ebb** n./v. 退潮;衰退
+- **nautical** adj. 航海的
+- **seaport** n. 海港
+- **drift** v./n. 漂流,漂移
+- **shallow** adj. 浅的;肤浅的
+
+## 2.5 生命科学
+
+### 动物与生态
 
 - **species** n. 物种
 - **organism** n. 生物体
@@ -1538,50 +2111,15 @@
 - **endangered species** phr. 濒危物种
 - **natural habitat** phr. 自然栖息地
 - **bird of prey** phr. 猛禽
+- **hawk** n. 鹰
+- **sniff** v. 嗅,闻
+- **eagle** n. 鹰,雕
+- **cage** n. 笼子
+- **chick** n. 小鸡,雏鸟
+- **bait** n. 诱饵
+- **crawl** v. 爬行
 
-## 2.8 海洋
-
-- **marine** adj. 海洋的
-- **coral reef** phr. 珊瑚礁
-- **plankton** n. 浮游生物
-- **algae** n. 藻类
-- **seaweed** n. 海藻
-- **whale** n. 鲸
-- **dolphin** n. 海豚
-- **shark** n. 鲨鱼
-- **seal** n. 海豹
-- **jellyfish** n. 水母
-- **octopus** n. 章鱼
-- **squid** n. 鱿鱼
-- **oyster** n. 牡蛎
-- **crustacean** n. 甲壳动物
-- **shellfish** n. 贝类
-- **tide** n. 潮汐
-- **tidal** adj. 潮汐的
-- **tsunami** n. 海啸
-- **seabed** n. 海床
-- **trench** n. 海沟
-- **salinity** n. 盐度
-- **overfishing** n. 过度捕捞
-- **acidification** n. 酸化
-- **submarine** n. 潜艇
-- **sonar** n. 声呐
-- **starfish** n. 海星
-- **porpoise** n. 鼠海豚
-- **prawn** n. 对虾
-- **shrimp** n. 小虾
-- **lobster** n. 龙虾
-- **crab** n. 螃蟹
-- **clam** n. 蛤
-- **mussel** n. 贻贝
-- **sponge** n. 海绵
-- **coral** n. 珊瑚
-- **pearl** n. 珍珠
-- **ebb** n./v. 退潮;衰退
-- **nautical** adj. 航海的
-- **seaport** n. 海港
-
-## 2.9 植物与农业
+### 植物与农业
 
 - **botany** n. 植物学
 - **vegetation** n. 植被
@@ -1684,65 +2222,23 @@
 - **granary** n. 粮仓
 - **sorghum** n. 高粱
 - **tractor** n. 拖拉机
+- **intensive** adj. 集约的;密集的
+- **hedge** n. 树篱 v. 对冲(风险)
+- **nutrient** n. 营养物
+- **phosphate** n. 磷酸盐
+- **yeast** n. 酵母
+- **pine** n. 松树
+- **mill** n. 磨坊;工厂
+- **palm** n. 棕榈;手掌
+- **forestry** n. 林业
+- **sow** v. 播种
+- **reap** v. 收割;获得
+- **shepherd** n. 牧羊人
+- **cart** n. 手推车;马车
 
-## 2.10 天文与航天
+## 2.6 物质科学与数学
 
-- **astronomy** n. 天文学
-- **astronomer** n. 天文学家
-- **universe** n. 宇宙
-- **cosmos** n. 宇宙
-- **galaxy** n. 星系
-- **the Milky Way** phr. 银河系
-- **solar system** phr. 太阳系
-- **planet** n. 行星
-- **satellite** n. 卫星
-- **orbit** n. 轨道 v. 绕轨道运行
-- **comet** n. 彗星
-- **asteroid** n. 小行星
-- **meteor** n. 流星
-- **meteorite** n. 陨石
-- **constellation** n. 星座
-- **nebula** n. 星云
-- **black hole** phr. 黑洞
-- **supernova** n. 超新星
-- **light year** phr. 光年
-- **gravity** n. 重力
-- **gravitational** adj. 引力的
-- **telescope** n. 望远镜
-- **observatory** n. 天文台
-- **spacecraft** n. 航天器
-- **probe** n. 探测器 v. 探查
-- **astronaut** n. 宇航员
-- **space station** phr. 空间站
-- **lunar** adj. 月球的
-- **solar** adj. 太阳的
-- **eclipse** n. 日食,月食
-- **Mars** n. 火星
-- **Jupiter** n. 木星
-- **Venus** n. 金星
-- **astronomical** adj. 天文的;天文数字般的
-- **celestial** adj. 天体的
-- **cosmic** adj. 宇宙的
-- **cosmology** n. 宇宙学
-- **astrophysics** n. 天体物理学
-- **astrology** n. 占星术
-- **pseudoscience** n. 伪科学
-- **quasar** n. 类星体
-- **dwarf** n. 矮星;矮子 adj. 矮小的
-- **corona** n. 日冕
-- **interstellar** adj. 星际的
-- **interplanetary** adj. 行星际的
-- **intergalactic** adj. 星系际的
-- **revolve** v. 公转;旋转
-- **spaceship** n. 宇宙飞船
-- **Mercury** n. 水星
-- **Saturn** n. 土星
-- **Uranus** n. 天王星
-- **Neptune** n. 海王星
-- **Pluto** n. 冥王星
-- **meteor shower** phr. 流星雨
-
-## 2.11 物理、化学与能源
+### 物理、化学与能源
 
 - **physics** n. 物理
 - **chemistry** n. 化学
@@ -1891,8 +2387,174 @@
 - **translucent** adj. 半透明的
 - **opaque** adj. 不透明的
 - **diffract** v. 衍射
+- **powder** n. 粉末
+- **intensity** n. 强度;强烈
+- **crystal** n. 晶体;水晶
+- **fluid** n. 流体,液体 adj. 流动的
+- **equilibrium** n. 平衡,均衡
+- **bubble** n. 气泡;泡沫
+- **crude** adj. 天然的,未加工的;粗略的
+- **dioxide** n. 二氧化物
+- **swell** v. 膨胀,肿胀
+- **static** adj. 静止的 n. 静电
+- **synthesis** n. 合成;综合
+- **residue** n. 残留物
+- **absorption** n. 吸收
+- **thickness** n. 厚度
+- **synthetic** adj. 合成的,人造的
+- **residual** adj. 残留的,剩余的
+- **flux** n. 通量;不断变化
+- **chloride** n. 氯化物
+- **potassium** n. 钾
+- **amplitude** n. 振幅
+- **diffusion** n. 扩散
+- **soluble** adj. 可溶的
+- **acidic** adj. 酸性的
+- **oscillation** n. 振荡,摆动
+- **deflection** n. 偏转,偏离
+- **oxidise** v. 氧化
+- **cyclic** adj. 循环的,周期的
+- **steam** n. 蒸汽
+- **flame** n. 火焰
+- **spark** n. 火花 v. 引发
+- **vessel** n. 容器;船;血管
+- **wax** n. 蜡
+- **cement** n. 水泥
+- **explode** v. 爆炸;激增
 
-## 2.12 医学与生理
+### 天文与航天
+
+- **astronomy** n. 天文学
+- **astronomer** n. 天文学家
+- **universe** n. 宇宙
+- **cosmos** n. 宇宙
+- **galaxy** n. 星系
+- **the Milky Way** phr. 银河系
+- **solar system** phr. 太阳系
+- **planet** n. 行星
+- **satellite** n. 卫星
+- **orbit** n. 轨道 v. 绕轨道运行
+- **comet** n. 彗星
+- **asteroid** n. 小行星
+- **meteor** n. 流星
+- **meteorite** n. 陨石
+- **constellation** n. 星座
+- **nebula** n. 星云
+- **black hole** phr. 黑洞
+- **supernova** n. 超新星
+- **light year** phr. 光年
+- **gravity** n. 重力
+- **gravitational** adj. 引力的
+- **telescope** n. 望远镜
+- **observatory** n. 天文台
+- **spacecraft** n. 航天器
+- **probe** n. 探测器 v. 探查
+- **astronaut** n. 宇航员
+- **space station** phr. 空间站
+- **lunar** adj. 月球的
+- **solar** adj. 太阳的
+- **eclipse** n. 日食,月食
+- **Mars** n. 火星
+- **Jupiter** n. 木星
+- **Venus** n. 金星
+- **astronomical** adj. 天文的;天文数字般的
+- **celestial** adj. 天体的
+- **cosmic** adj. 宇宙的
+- **cosmology** n. 宇宙学
+- **astrophysics** n. 天体物理学
+- **astrology** n. 占星术
+- **pseudoscience** n. 伪科学
+- **quasar** n. 类星体
+- **dwarf** n. 矮星;矮子 adj. 矮小的
+- **corona** n. 日冕
+- **interstellar** adj. 星际的
+- **interplanetary** adj. 行星际的
+- **intergalactic** adj. 星系际的
+- **revolve** v. 公转;旋转
+- **spaceship** n. 宇宙飞船
+- **Mercury** n. 水星
+- **Saturn** n. 土星
+- **Uranus** n. 天王星
+- **Neptune** n. 海王星
+- **Pluto** n. 冥王星
+- **meteor shower** phr. 流星雨
+- **alien** adj. 外来的;陌生的 n. 外星人;外侨
+- **bang** n. 巨响;(宇宙)大爆炸
+- **rotation** n. 自转;轮换
+- **rotate** v. 旋转;轮换
+- **trajectory** n. 轨迹,轨道
+
+### 数学与几何
+
+- **mathematics** n. 数学
+- **arithmetic** n. 算术
+- **geometry** n. 几何
+- **calculus** n. 微积分
+- **equation** n. 方程
+- **probability** n. 概率
+- **statistician** n. 统计学家
+- **calculate** v. 计算
+- **calculator** n. 计算器
+- **abacus** n. 算盘
+- **subtract** v. 减
+- **multiply** v. 乘;成倍增加
+- **divide** v. 除;分开
+- **decimal** n. 小数 adj. 十进制的
+- **digit** n. (个位)数字
+- **numeral** n. 数字
+- **even number** phr. 偶数
+- **odd number** phr. 奇数
+- **constant** n. 常数 adj. 持续的
+- **function** n. 函数;功能
+- **symmetry** n. 对称
+- **parallel** adj. 平行的 n. 相似之处
+- **intersect** v. 相交
+- **vertical** adj. 垂直的
+- **horizontal** adj. 水平的
+- **plane** n. 平面;飞机
+- **segment** n. 线段;部分
+- **angle** n. 角
+- **obtuse** adj. 钝角的;迟钝的
+- **diameter** n. 直径
+- **radius** n. 半径
+- **circumference** n. 周长
+- **rectangle** n. 长方形
+- **parallelogram** n. 平行四边形
+- **trapezoid** n. 梯形
+- **polygon** n. 多边形
+- **hexagonal** adj. 六边形的
+- **octagonal** adj. 八边形的
+- **semicircle** n. 半圆
+- **ellipse** n. 椭圆
+- **cube** n. 立方体
+- **sphere** n. 球体;领域
+- **cylinder** n. 圆柱体
+- **cone** n. 圆锥
+- **spiral** n. 螺旋 adj. 螺旋形的
+- **crescent** n. 新月形
+- **matrix** n. 矩阵;基质
+- **minus** prep. 减 adj. 负的
+- **linear** adj. 线性的
+- **spatial** adj. 空间的
+- **triangle** n. 三角形
+- **regression** n. 回归;倒退
+- **vector** n. 向量
+- **coefficient** n. 系数
+- **infinite** adj. 无限的
+- **notation** n. 符号,记号
+- **infinity** n. 无穷大
+- **subset** n. 子集
+- **computation** n. 计算
+- **algebra** n. 代数
+- **non-linear** adj. 非线性的
+- **congruent** adj. 全等的;一致的
+- **axiom** n. 公理
+- **factorial** n. 阶乘
+- **compute** v. 计算
+
+## 2.7 医学与心理
+
+### 医学与生理
 
 - **anatomy** n. 解剖学
 - **physiology** n. 生理学
@@ -1982,8 +2644,43 @@
 - **life span** phr. 寿命
 - **death rate** phr. 死亡率
 - **heart rate** phr. 心率
+- **flesh** n. 肉;肌肉
+- **lung** n. 肺
+- **limb** n. 四肢,肢体
+- **liver** n. 肝
+- **gut** n. 肠道
+- **lump** n. 肿块;块
+- **strand** n. (DNA 等的)链;股
+- **membrane** n. 膜
+- **complication** n. 并发症;复杂情况
+- **kidney** n. 肾
+- **incidence** n. 发病率,发生率
+- **onset** n. (疾病)发作;开始
+- **bodily** adj. 身体的
+- **urine** n. 尿
+- **susceptible** adj. 易受影响的;易感染的
+- **sperm** n. 精子
+- **hepatitis** n. 肝炎
+- **chemotherapy** n. 化疗
+- **amino acid** phr. 氨基酸
+- **abdominal** adj. 腹部的
+- **marrow** n. 骨髓
+- **foetal** adj. 胎儿的
+- **cortex** n. (大脑)皮层
+- **epidemiology** n. 流行病学
+- **helix** n. 螺旋(结构)
+- **splice** v. 拼接(基因)
+- **capillary** n. 毛细血管
+- **thumb** n. 拇指
+- **bacterium** n. 细菌(复数 bacteria)
+- **plague** n. 瘟疫 v. 困扰
+- **lethal** adj. 致命的
+- **gland** n. 腺
+- **bowel** n. 肠
+- **cavity** n. 腔;蛀洞
+- **swallow** v. 吞咽
 
-## 2.13 心理学与认知
+### 心理学与认知
 
 - **psychology** n. 心理学
 - **psychologist** n. 心理学家
@@ -2052,8 +2749,22 @@
 - **dissonance** n. 不和谐;(认知)失调
 - **body language** phr. 肢体语言
 - **social interaction** phr. 社会交往
+- **behavioural** adj. 行为的
+- **cue** n. 提示,信号
+- **psychiatric** adj. 精神病学的
+- **encode** v. 编码
+- **innate** adj. 天生的,固有的
+- **volition** n. 意志,自愿
+- **fantasy** n. 幻想
+- **nightmare** n. 噩梦
+- **panic** n./v. 恐慌
+- **obsession** n. 痴迷
+- **apprehension** n. 忧虑;理解
+- **mentality** n. 心态,思维方式
 
-## 2.14 语言与传播
+## 2.8 语言与历史
+
+### 语言与传播
 
 - **linguistics** n. 语言学
 - **linguist** n. 语言学家
@@ -2105,8 +2816,34 @@
 - **cogent** adj. 有说服力的
 - **persuasive** adj. 有说服力的
 - **orator** n. 演说家
+- **discourse** n. 话语;论述
+- **rhetoric** n. 修辞;花言巧语
+- **metaphor** n. 隐喻
+- **usage** n. 用法;使用量
+- **articulate** v. 清楚表达 adj. 善于表达的
+- **utterance** n. 话语,言论
+- **lexical** adj. 词汇的
+- **grammatical** adj. 语法的
+- **denote** v. 表示,意味着
+- **syllable** n. 音节
+- **syntactic** adj. 句法的
+- **transcription** n. 转写;抄本
+- **vowel** n. 元音
+- **corpus** n. 语料库
+- **derivative** n. 派生词;衍生物 adj. 派生的
+- **singular** adj. 单数的;非凡的
+- **transcribe** v. 转写;誊写
+- **connotation** n. 内涵,言外之意
+- **comma** n. 逗号
+- **consonant** n. 辅音
+- **plural** adj. 复数的 n. 复数
+- **unintelligible** adj. 无法理解的
+- **descriptor** n. 描述词
+- **narrative** n. 叙述;故事 adj. 叙事的
+- **narrator** n. 叙述者
+- **tone** n. 语气;色调
 
-## 2.15 历史与考古
+### 历史与考古
 
 - **archaeology** n. 考古学
 - **archaeologist** n. 考古学家
@@ -2209,8 +2946,40 @@
 - **destiny** n. 命运
 - **taboo** n. 禁忌
 - **rite** n. 仪式
+- **ghost** n. 鬼魂
+- **invasion** n. 入侵
+- **sword** n. 剑
+- **reconstruct** v. 重建;重构
+- **scroll** n. 卷轴 v. 滚动(屏幕)
+- **circa** prep. 大约(用于年代)
+- **crown** n. 王冠;王权
+- **imperial** adj. 帝国的;皇帝的
+- **chapel** n. 小教堂
+- **spiritual** adj. 精神的;宗教的
+- **miracle** n. 奇迹
+- **divine** adj. 神的,神圣的
+- **triumph** n. 胜利;成功
+- **combat** n. 战斗 v. 与……斗争
+- **defeat** v./n. 击败
+- **fleet** n. 舰队;车队
+- **artillery** n. 火炮
+- **ammunition** n. 弹药
+- **shield** n. 盾;保护物 v. 保护
+- **exile** n./v. 流放
+- **nobility** n. 贵族;高尚
+- **millennium** n. 千年
+- **revolt** n./v. 起义,反叛
+- **massacre** n. 大屠杀
+- **assassination** n. 暗杀
+- **curse** n. 诅咒
+- **cannon** n. 大炮
+- **burial** n. 埋葬
+- **cemetery** n. 墓地
+- **mosaic** n. 马赛克;镶嵌画
 
-## 2.16 建筑与城市
+## 2.9 城市、经济与科技
+
+### 建筑与城市
 
 - **architecture** n. 建筑学;建筑风格
 - **architect** n. 建筑师
@@ -2276,8 +3045,18 @@
 - **central business district** phr. 中央商务区
 - **real estate** phr. 房地产
 - **block of flats** phr. 公寓楼(英)
+- **planner** n. 规划者
+- **slab** n. 厚板,石板
+- **partition** n. 隔断;分割
+- **interior** n. 内部 adj. 内部的
+- **chamber** n. 室;议院
+- **erect** v. 建造 adj. 直立的
+- **enclosure** n. 围场;围栏
+- **shaft** n. 竖井;轴
+- **locality** n. 地区,所在地
+- **perimeter** n. 周边;周长
 
-## 2.17 交通与工程
+### 交通与工程
 
 - **vehicle** n. 交通工具
 - **automobile** n. 汽车
@@ -2331,8 +3110,20 @@
 - **guardrail** n. 护栏
 - **helicopter** n. 直升机
 - **cyclist** n. 骑自行车的人
+- **machinery** n. 机器;机制
+- **carrier** n. 运输公司;载体;携带者
+- **container** n. 容器;集装箱
+- **radar** n. 雷达
+- **valve** n. 阀门
+- **cable** n. 电缆;缆绳
+- **bolt** n. 螺栓
+- **anchor** n. 锚 v. 停泊;固定
+- **screw** n. 螺丝
+- **coil** n. 线圈 v. 卷绕
+- **crash** n./v. 碰撞;崩溃
+- **collide** v. 碰撞
 
-## 2.18 经济与商业
+### 经济与商业
 
 - **economy** n. 经济
 - **economic** adj. 经济的
@@ -2433,8 +3224,24 @@
 - **intellectual property** phr. 知识产权
 - **market research** phr. 市场调研
 - **advertising campaign** phr. 广告宣传活动
+- **monetary** adj. 货币的
+- **barrel** n. 桶;(石油)桶
+- **gross** adj. 总的;严重的
+- **auction** n./v. 拍卖
+- **surplus** n. 盈余,过剩
+- **overhead** n. 经常性开支 adj. 头顶上的
+- **nominal** adj. 名义上的
+- **venture** n. 风险投资;冒险
+- **equity** n. 股本;公平
+- **stake** n. 股份;利害关系
+- **tender** n. 投标 adj. 温柔的
+- **affiliate** n. 附属机构 v. 使隶属
+- **lucrative** adj. 赚钱的
+- **warehouse** n. 仓库
+- **textile** n. 纺织品
+- **embargo** n. 禁运
 
-## 2.19 科技与信息
+### 科技与信息
 
 - **technology** n. 技术
 - **technological** adj. 技术的
@@ -2488,61 +3295,28 @@
 - **virtual** adj. 虚拟的;实际上的
 - **automatic** adj. 自动的
 - **electronic** adj. 电子的
-
-## 2.20 数学与几何
-
-- **mathematics** n. 数学
-- **arithmetic** n. 算术
-- **geometry** n. 几何
-- **calculus** n. 微积分
-- **equation** n. 方程
-- **probability** n. 概率
-- **statistician** n. 统计学家
-- **calculate** v. 计算
-- **calculator** n. 计算器
-- **abacus** n. 算盘
-- **subtract** v. 减
-- **multiply** v. 乘;成倍增加
-- **divide** v. 除;分开
-- **decimal** n. 小数 adj. 十进制的
-- **digit** n. (个位)数字
-- **numeral** n. 数字
-- **even number** phr. 偶数
-- **odd number** phr. 奇数
-- **constant** n. 常数 adj. 持续的
-- **function** n. 函数;功能
-- **symmetry** n. 对称
-- **parallel** adj. 平行的 n. 相似之处
-- **intersect** v. 相交
-- **vertical** adj. 垂直的
-- **horizontal** adj. 水平的
-- **plane** n. 平面;飞机
-- **segment** n. 线段;部分
-- **angle** n. 角
-- **obtuse** adj. 钝角的;迟钝的
-- **diameter** n. 直径
-- **radius** n. 半径
-- **circumference** n. 周长
-- **rectangle** n. 长方形
-- **parallelogram** n. 平行四边形
-- **trapezoid** n. 梯形
-- **polygon** n. 多边形
-- **hexagonal** adj. 六边形的
-- **octagonal** adj. 八边形的
-- **semicircle** n. 半圆
-- **ellipse** n. 椭圆
-- **cube** n. 立方体
-- **sphere** n. 球体;领域
-- **cylinder** n. 圆柱体
-- **cone** n. 圆锥
-- **spiral** n. 螺旋 adj. 螺旋形的
-- **crescent** n. 新月形
+- **transmission** n. 传播;传输
+- **loop** n. 环;循环
+- **protocol** n. 协议;规程
+- **transmit** v. 传送;传播
+- **configuration** n. 配置;构造
+- **node** n. 节点
+- **binary** adj. 二进制的;二元的
+- **erase** v. 擦除,删除
+- **audio** adj. 音频的 n. 音频
+- **embed** v. 嵌入
+- **web** n. 网;互联网
+- **mobile** adj. 移动的 n. 手机(英)
+- **storage** n. 存储;储藏
+- **delete** v. 删除
 
 ---
 
 # 三、写作
 
-## 3.1 数量、变化与趋势(小作文图表)
+## 3.1 小作文:图表与流程
+
+### 数量、变化与趋势
 
 - **increase** n./v. 增加
 - **decrease** n./v. 减少
@@ -2638,8 +3412,22 @@
 - **abundance** n. 丰富
 - **bulk** n. 大部分;体积
 - **rank** v. 排名 n. 等级
+- **onwards** adv. 从……起;向前
+- **mid** adj. 中间的(如 mid-1990s)
+- **bracket** n. 括号;(年龄、收入)段
+- **axis** n. 坐标轴;轴
+- **slash** v. 大幅削减
+- **upward** adj. 向上的,上升的
+- **millimetre** n. 毫米
+- **width** n. 宽度
+- **depth** n. 深度
+- **curve** n. 曲线
+- **slide** n./v. 下滑
+- **weekly** adj. 每周的
+- **cumulative** adj. 累积的
+- **census** n. 人口普查
 
-## 3.2 流程图与地图变化(小作文)
+### 流程图与地图变化
 
 - **stage** n. 阶段
 - **phase** n. 阶段
@@ -2676,8 +3464,17 @@
 - **redevelop** v. 重新开发
 - **renovate** v. 翻新
 - **pedestrianise** v. 改为步行区
+- **insert** v. 插入
+- **flip** v. 翻转
+- **blend** v. 混合
+- **chop** v. 切碎
+- **trim** v. 修剪
+- **soak** v. 浸泡
+- **flush** v. 冲洗
+- **drill** v. 钻孔 n. 训练
+- **load** v. 装载 n. 负荷
 
-## 3.3 常用短语动词与固定搭配
+## 3.2 常用短语与固定搭配
 
 - **carry out** phr. 开展,执行
 - **set up** phr. 建立,设立
@@ -2750,7 +3547,7 @@
 - **in the case of** phr. 就……而言
 - **by means of** phr. 通过……方式
 
-## 3.4 教育
+## 3.3 教育
 
 - **education** n. 教育
 - **academic** adj. 学术的
@@ -2824,7 +3621,7 @@
 - **team spirit** phr. 团队精神
 - **extracurricular activities** phr. 课外活动
 
-## 3.5 科技与媒体
+## 3.4 科技与媒体
 
 - **mass media** phr. 大众媒体
 - **media** n. 媒体
@@ -2915,8 +3712,19 @@
 - **prime time** phr. 黄金时段
 - **best seller** phr. 畅销书
 - **time-consuming** adj. 耗时的
+- **forum** n. 论坛
+- **credibility** n. 可信度
+- **clip** n. (视频)片段;夹子
+- **commentary** n. 评论;解说
+- **messenger** n. 信使;通讯软件
+- **publicity** n. 宣传;公众关注
+- **publication** n. 出版物;发表
+- **fame** n. 名声
+- **pamphlet** n. 小册子
 
-## 3.6 政府与公共事务
+## 3.5 政府、法律与治理
+
+### 政府与公共事务
 
 - **government** n. 政府
 - **authority** n. 当局;权威
@@ -3005,81 +3813,32 @@
 - **encroach** v. 侵占
 - **confidential** adj. 机密的
 - **clandestine** adj. 秘密的
+- **assembly** n. 议会;集会;装配
+- **alliance** n. 联盟
+- **missile** n. 导弹
+- **consultation** n. 磋商;咨询
+- **directive** n. 指令,指示
+- **incumbent** n. 现任者 adj. 现任的
+- **coalition** n. 联合政府;联盟
+- **federation** n. 联邦;联合会
+- **chancellor** n. 财政大臣;(德国)总理;大学校长
+- **ambassador** n. 大使
+- **embassy** n. 大使馆
+- **protest** n./v. 抗议
+- **rally** n. 集会 v. 召集
+- **petition** n. 请愿书 v. 请愿
+- **unrest** n. 动荡
+- **turmoil** n. 混乱
+- **partisan** adj. 党派的
+- **ally** n. 盟友
+- **nominee** n. 被提名人
+- **nominate** v. 提名
+- **asylum** n. 庇护
+- **conspiracy** n. 阴谋
+- **militant** adj. 好战的
+- **bilateral** adj. 双边的
 
-## 3.7 环境保护
-
-- **environment** n. 环境
-- **environmental** adj. 环境的
-- **pollution** n. 污染
-- **pollutant** n. 污染物
-- **contaminate** v. 污染
-- **air pollution** phr. 空气污染
-- **water pollution** phr. 水污染
-- **noise pollution** phr. 噪音污染
-- **light pollution** phr. 光污染
-- **smog** n. 雾霾
-- **exhaust** n. 尾气;v. 耗尽
-- **fumes** n. 烟雾
-- **waste** n. 废物 v. 浪费
-- **landfill** n. 垃圾填埋场
-- **incineration** n. 焚化
-- **rubbish** n. 垃圾(英)
-- **litter** n. 垃圾 v. 乱扔垃圾
-- **disposable** adj. 一次性的
-- **plastic bag** phr. 塑料袋
-- **packaging** n. 包装
-- **biodegradable** adj. 可生物降解的
-- **recycling** n. 回收
-- **reuse** v. 再利用
-- **carbon footprint** phr. 碳足迹
-- **carbon neutral** phr. 碳中和的
-- **low-carbon** adj. 低碳的
-- **eco-friendly** adj. 环保的
-- **green** adj. 环保的
-- **clean energy** phr. 清洁能源
-- **alternative energy** phr. 替代能源
-- **energy-efficient** adj. 节能的
-- **resource** n. 资源
-- **natural resources** phr. 自然资源
-- **finite** adj. 有限的
-- **depletion** n. 枯竭
-- **deplete** v. 耗尽
-- **scarcity** n. 稀缺
-- **shortage** n. 短缺
-- **ecological balance** phr. 生态平衡
-- **degradation** n. 退化
-- **desertification** n. 荒漠化
-- **soil erosion** phr. 水土流失
-- **acid rain** phr. 酸雨
-- **climate change** phr. 气候变化
-- **natural disaster** phr. 自然灾害
-- **catastrophe** n. 灾难
-- **irreversible** adj. 不可逆的
-- **preservation** n. 保存,保护
-- **environmentalist** n. 环保主义者
-- **wildlife reserve** phr. 野生动物保护区
-- **national park** phr. 国家公园
-- **pollute** v. 污染
-- **polluted** adj. 被污染的
-- **contamination** n. 污染
-- **contaminated** adj. 受污染的
-- **poisonous** adj. 有毒的
-- **noxious** adj. 有害的
-- **discharge** v. 排放 n. 排放物
-- **sewerage** n. 排污系统
-- **decibel** n. 分贝
-- **deterioration** n. 恶化
-- **harm** n./v. 伤害
-- **vivisection** n. 活体解剖
-- **sustainable development** phr. 可持续发展
-- **carbon emissions** phr. 碳排放
-- **energy consumption** phr. 能源消耗
-- **waste disposal** phr. 废物处理
-- **waste water** phr. 废水
-- **water shortage** phr. 缺水
-- **wind energy** phr. 风能
-
-## 3.8 犯罪与法律
+### 犯罪与法律
 
 - **criminal** n. 罪犯 adj. 犯罪的
 - **offender** n. 罪犯
@@ -3199,8 +3958,107 @@
 - **tax evasion** phr. 逃税
 - **child abuse** phr. 虐待儿童
 - **death sentence** phr. 死刑判决
+- **consent** n./v. 同意,准许
+- **bullet** n. 子弹
+- **legitimate** adj. 合法的;正当的
+- **liable** adj. 负有法律责任的;易于……的
+- **thief** n. 小偷
+- **gang** n. 犯罪团伙
+- **killer** n. 杀手
+- **breach** n./v. 违反;破坏
+- **negligence** n. 疏忽
+- **magistrate** n. 地方法官
+- **hostage** n. 人质
+- **kidnap** v. 绑架
+- **harassment** n. 骚扰
+- **judicial** adj. 司法的
+- **cocaine** n. 可卡因
 
-## 3.9 全球化与文化
+## 3.6 环境保护
+
+- **environment** n. 环境
+- **environmental** adj. 环境的
+- **pollution** n. 污染
+- **pollutant** n. 污染物
+- **contaminate** v. 污染
+- **air pollution** phr. 空气污染
+- **water pollution** phr. 水污染
+- **noise pollution** phr. 噪音污染
+- **light pollution** phr. 光污染
+- **smog** n. 雾霾
+- **exhaust** n. 尾气;v. 耗尽
+- **fumes** n. 烟雾
+- **waste** n. 废物 v. 浪费
+- **landfill** n. 垃圾填埋场
+- **incineration** n. 焚化
+- **rubbish** n. 垃圾(英)
+- **litter** n. 垃圾 v. 乱扔垃圾
+- **disposable** adj. 一次性的
+- **plastic bag** phr. 塑料袋
+- **packaging** n. 包装
+- **biodegradable** adj. 可生物降解的
+- **recycling** n. 回收
+- **reuse** v. 再利用
+- **carbon footprint** phr. 碳足迹
+- **carbon neutral** phr. 碳中和的
+- **low-carbon** adj. 低碳的
+- **eco-friendly** adj. 环保的
+- **green** adj. 环保的
+- **clean energy** phr. 清洁能源
+- **alternative energy** phr. 替代能源
+- **energy-efficient** adj. 节能的
+- **resource** n. 资源
+- **natural resources** phr. 自然资源
+- **finite** adj. 有限的
+- **depletion** n. 枯竭
+- **deplete** v. 耗尽
+- **scarcity** n. 稀缺
+- **shortage** n. 短缺
+- **ecological balance** phr. 生态平衡
+- **degradation** n. 退化
+- **desertification** n. 荒漠化
+- **soil erosion** phr. 水土流失
+- **acid rain** phr. 酸雨
+- **climate change** phr. 气候变化
+- **natural disaster** phr. 自然灾害
+- **catastrophe** n. 灾难
+- **irreversible** adj. 不可逆的
+- **preservation** n. 保存,保护
+- **environmentalist** n. 环保主义者
+- **wildlife reserve** phr. 野生动物保护区
+- **national park** phr. 国家公园
+- **pollute** v. 污染
+- **polluted** adj. 被污染的
+- **contamination** n. 污染
+- **contaminated** adj. 受污染的
+- **poisonous** adj. 有毒的
+- **noxious** adj. 有害的
+- **discharge** v. 排放 n. 排放物
+- **sewerage** n. 排污系统
+- **decibel** n. 分贝
+- **deterioration** n. 恶化
+- **harm** n./v. 伤害
+- **vivisection** n. 活体解剖
+- **sustainable development** phr. 可持续发展
+- **carbon emissions** phr. 碳排放
+- **energy consumption** phr. 能源消耗
+- **waste disposal** phr. 废物处理
+- **waste water** phr. 废水
+- **water shortage** phr. 缺水
+- **wind energy** phr. 风能
+- **disaster** n. 灾难
+- **survival** n. 生存
+- **garbage** n. 垃圾(美)
+- **dump** v. 倾倒 n. 垃圾场
+- **spill** n./v. 溢出,泄漏
+- **evacuate** v. 疏散
+- **debris** n. 碎片,残骸
+- **devastate** v. 摧毁
+- **wreck** n. 残骸 v. 破坏
+
+## 3.7 全球化、文化与旅游
+
+### 全球化与文化
 
 - **globalisation** n. 全球化
 - **global village** phr. 地球村
@@ -3272,8 +4130,16 @@
 - **cello** n. 大提琴
 - **conservatory** n. 音乐学院;玻璃暖房
 - **cultural diversity** phr. 文化多样性
+- **unity** n. 团结;统一
+- **motif** n. 图案;主题
+- **weave** v. 编织
+- **realism** n. 现实主义
+- **artwork** n. 艺术品
+- **repertoire** n. 全部节目;全部本领
+- **commemorate** v. 纪念
+- **funeral** n. 葬礼
 
-## 3.10 旅游业
+### 旅游业
 
 - **tourism** n. 旅游业
 - **tourist attraction** phr. 旅游景点
@@ -3293,8 +4159,11 @@
 - **local residents** phr. 当地居民
 - **wear and tear** phr. 损耗
 - **carrying capacity** phr. 承载能力
+- **hospitality** n. 好客;招待
 
-## 3.11 家庭与社会
+## 3.8 家庭、社会与老龄化
+
+### 家庭与社会
 
 - **nuclear family** phr. 核心家庭
 - **extended family** phr. 大家庭
@@ -3364,8 +4233,20 @@
 - **social welfare** phr. 社会福利
 - **fast-paced** adj. 快节奏的
 - **stiff competition** phr. 激烈竞争
+- **disability** n. 残疾
+- **elite** n. 精英 adj. 精英的
+- **donor** n. 捐赠者
+- **socially** adv. 在社会上;在社交方面
+- **mobility** n. 流动性;行动能力
+- **sexuality** n. 性取向;性特征
+- **maternal** adj. 母亲的;母系的
+- **gender** n. 性别
+- **elderly** adj. 年长的
+- **youngster** n. 年轻人
+- **guardian** n. 监护人;守护者
+- **abortion** n. 堕胎
 
-## 3.12 老龄化与健康
+### 老龄化与健康
 
 - **ageing population** phr. 人口老龄化
 - **the elderly** phr. 老年人
@@ -3405,8 +4286,10 @@
 - **depressed** adj. 抑郁的;萧条的
 - **stressful** adj. 有压力的
 - **retirement home** phr. 养老院
+- **suicide** n. 自杀
+- **smoker** n. 吸烟者
 
-## 3.13 就业与工作
+## 3.9 就业与工作
 
 - **career** n. 职业生涯
 - **occupation** n. 职业
@@ -3466,12 +4349,15 @@
 - **geologist** n. 地质学家
 - **mathematician** n. 数学家
 - **biologist** n. 生物学家
+- **prestige** n. 声望
 
 ---
 
 # 四、口语
 
-## 4.1 性格与品质
+## 4.1 人物:性格与外貌
+
+### 性格与品质
 
 - **outgoing** adj. 外向的
 - **sociable** adj. 好交际的
@@ -3563,8 +4449,16 @@
 - **temperamental** adj. 喜怒无常的
 - **optimist** n. 乐观主义者
 - **pessimist** n. 悲观主义者
+- **loyal** adj. 忠诚的
+- **suspicious** adj. 多疑的;可疑的
+- **eccentric** adj. 古怪的
+- **genius** n. 天才
+- **brilliant** adj. 杰出的;聪明的
+- **cynical** adj. 愤世嫉俗的
+- **sceptical** adj. 怀疑的(英)
+- **companion** n. 同伴
 
-## 4.2 外貌与形象
+### 外貌与形象
 
 - **appearance** n. 外貌
 - **attractive** adj. 有吸引力的
@@ -3603,8 +4497,10 @@
 - **feminine** adj. 女性化的
 - **well-built** adj. 体格健壮的
 - **well-dressed** adj. 穿着讲究的
+- **masculine** adj. 有男子气概的
+- **gorgeous** adj. 极美的
 
-## 4.3 情感与态度
+## 4.2 情感与态度
 
 - **delighted** adj. 高兴的
 - **thrilled** adj. 激动的
@@ -3652,8 +4548,34 @@
 - **refreshing** adj. 令人耳目一新的
 - **depressing** adj. 令人沮丧的
 - **appealing** adj. 有吸引力的
+- **incredible** adj. 难以置信的;极好的
+- **ridiculous** adj. 荒谬的,可笑的
+- **nasty** adj. 令人讨厌的;严重的
+- **bizarre** adj. 怪异的
+- **ashamed** adj. 羞愧的
+- **furious** adj. 狂怒的
+- **awful** adj. 糟糕的
+- **horrible** adj. 可怕的
+- **miserable** adj. 痛苦的
+- **uncomfortable** adj. 不舒服的
+- **weird** adj. 奇怪的
+- **terrific** adj. 极好的
+- **fabulous** adj. 极好的
+- **marvellous** adj. 了不起的
+- **dreadful** adj. 糟糕的
+- **gloomy** adj. 忧郁的;阴暗的
+- **weary** adj. 疲倦的
+- **grief** n. 悲痛
+- **despair** n./v. 绝望
+- **misery** n. 痛苦
+- **dismay** n. 沮丧
+- **disgust** n. 厌恶
+- **pathetic** adj. 可悲的
+- **restless** adj. 焦躁不安的
 
-## 4.4 物品与外观
+## 4.3 物品与地点
+
+### 物品与外观
 
 - **rectangular** adj. 长方形的
 - **oval** adj. 椭圆的
@@ -3722,8 +4644,31 @@
 - **lilac** adj. 淡紫色的
 - **family name** phr. 姓氏
 - **given name** phr. 名字
+- **neat** adj. 整洁的
+- **cord** n. 绳;电线
+- **bucket** n. 桶
+- **bundle** n. 捆,包
+- **texture** n. 质地
+- **scent** n. 香味
+- **odour** n. 气味
+- **crisp** adj. 脆的
+- **cloth** n. 布料
+- **clothing** n. 服装
+- **belt** n. 腰带
+- **boot** n. 靴子
+- **mask** n. 面具;口罩
+- **perfume** n. 香水
+- **jewellery** n. 首饰
+- **velvet** n. 天鹅绒
+- **ornament** n. 装饰品
+- **rim** n. 边缘
+- **glue** n. 胶水
+- **patch** n. 补丁;小块
+- **knot** n. 结
+- **strap** n. 带子
+- **fancy** adj. 花哨的;高档的
 
-## 4.5 地点与城市描述
+### 地点与城市描述
 
 - **bustling** adj. 熙熙攘攘的
 - **vibrant** adj. 充满活力的
@@ -3765,8 +4710,11 @@
 - **villager** n. 村民
 - **noble** adj. 高贵的
 - **unsophisticated** adj. 淳朴的
+- **surroundings** n. 周围环境
+- **haven** n. 避风港
+- **splendid** adj. 壮丽的
 
-## 4.6 兴趣与生活方式
+## 4.4 兴趣与生活方式
 
 - **pastime** n. 消遣
 - **leisure** n. 闲暇
@@ -3838,3 +4786,8 @@
 - **album** n. 专辑;相册
 - **waltz** n. 华尔兹
 - **tango** n. 探戈
+- **jazz** n. 爵士乐
+- **puzzle** n. 谜题 v. 使困惑
+- **socialise** v. 社交,交往
+- **comic** adj. 喜剧的 n. 漫画
+- **trick** n. 戏法;诀窍

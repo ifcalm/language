@@ -34,19 +34,23 @@ export const IELTS_MODULES = [
 ]
 
 const ENTRY_PATTERN = /^- \*\*(.+?)\*\* (.+)$/
-const POS_PATTERN = /(?:^|(?<=[\s;]))((?:n|v|adj|adv|prep|conj|phr)\.(?:\/(?:n|v|adj|adv)\.)?)\s*/g
+const POS_PATTERN = /(?:^|(?<=[\s;]))((?:n|v|adj|adv|prep|conj|pron|phr)\.(?:\/(?:n|v|adj|adv)\.)?)\s*/g
 
 export function normalizeWord(word) {
   return word.trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
+// Accented spellings get a suffix so they never collide with the plain word
+// (résumé -> resume-accented, resume -> resume).
 export function slugifyWord(word) {
-  return normalizeWord(word)
-    .normalize('NFKD')
+  const decomposed = normalizeWord(word).normalize('NFKD')
+  const slug = decomposed
     .replace(/[̀-ͯ]/g, '')
     .replace(/'/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
+
+  return /[̀-ͯ]/.test(decomposed) ? `${slug}-accented` : slug
 }
 
 // "n. 存款;定金 v. 存入" -> [{ pos: 'n.', meaning: '存款;定金' }, { pos: 'v.', meaning: '存入' }]
@@ -91,9 +95,18 @@ export function readIeltsSource(path = IELTS_SOURCE_PATH) {
         id: `${module.id}-${String(order).padStart(2, '0')}`,
         order,
         title: topicMatch[3].trim(),
+        groups: [],
         entries: [],
       }
       module.topics.push(topic)
+      continue
+    }
+
+    // Optional "### 小节" headings split a merged topic into sub-groups.
+    const groupMatch = line.match(/^### (.+)$/)
+
+    if (groupMatch && topic) {
+      topic.groups.push({ title: groupMatch[1].trim(), entryCount: 0 })
       continue
     }
 
@@ -101,8 +114,15 @@ export function readIeltsSource(path = IELTS_SOURCE_PATH) {
 
     if (entryMatch && topic) {
       const word = entryMatch[1].trim()
+      const group = topic.groups.length > 0 ? topic.groups.length - 1 : undefined
+
+      if (group !== undefined) {
+        topic.groups[group].entryCount += 1
+      }
+
       topic.entries.push({
         word,
+        group,
         senses: parseSenses(entryMatch[2].trim()),
       })
     }

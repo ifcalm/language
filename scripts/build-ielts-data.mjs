@@ -22,6 +22,10 @@ function toEntry(entry, topicId) {
   const pronunciation = pronunciations[normalizeWord(entry.word)] ?? {}
   const result = { id: entry.id, word: entry.word, topicId, senses: entry.senses }
 
+  if (entry.group !== undefined) {
+    result.group = entry.group
+  }
+
   for (const key of ['phoneticUk', 'phoneticUs']) {
     if (pronunciation[key]) {
       result[key] = pronunciation[key]
@@ -69,6 +73,7 @@ for (const module of modules) {
       order: topic.order,
       title: topic.title,
       entryCount: topic.entries.length,
+      ...(topic.groups.length > 0 ? { groups: topic.groups } : {}),
     })),
   })
   files.set(`${module.id}.json`, { moduleId: module.id, entries })

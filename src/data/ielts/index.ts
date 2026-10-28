@@ -8,6 +8,7 @@ export type {
   IeltsModuleId,
   IeltsModuleSummary,
   IeltsSense,
+  IeltsTopicGroup,
   IeltsTopicSummary,
 } from './types'
 
