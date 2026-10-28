@@ -22,6 +22,7 @@
     "vocabulary:visuals:queue:batch": "node scripts/read-vocabulary-visual-batch.mjs",
     "ielts:build": "node scripts/build-ielts-data.mjs",
     "ielts:check": "node scripts/build-ielts-data.mjs --check",
+    "ielts:phonetics": "node scripts/build-ielts-phonetics.mjs",
     "ielts:pronunciations:fetch": "node scripts/fetch-ielts-pronunciations.mjs",
     "verbs:generate": "node scripts/generate-verb-paths.mjs",
     "verbs:refresh:v2": "node scripts/generate-verb-paths.mjs --refresh-v2",

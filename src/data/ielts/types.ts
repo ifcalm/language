@@ -14,7 +14,15 @@ export interface IeltsEntry {
   senses: IeltsSense[]
   phoneticUk?: string
   phoneticUs?: string
+  /** Present when stress or vowels change with part of speech (increase n./v.). */
+  posPhonetics?: IeltsPosPhonetic[]
   audioKey?: string
+}
+
+export interface IeltsPosPhonetic {
+  pos: string
+  uk: string
+  us: string
 }
 
 export interface IeltsTopicGroup {

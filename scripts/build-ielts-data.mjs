@@ -1,6 +1,7 @@
 // Generates the static IELTS vocabulary data under src/data/ielts/ from
-// docs/ielts-vocabulary.md (the single source of truth) plus the pronunciation
-// fixture produced by scripts/fetch-ielts-pronunciations.mjs.
+// docs/ielts-vocabulary.md (the single source of truth), the IPA fixture from
+// scripts/build-ielts-phonetics.mjs plus its hand-written overrides, and the
+// audio fixture from scripts/fetch-ielts-pronunciations.mjs.
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import {
   IELTS_SOURCE_PATH,
@@ -9,14 +10,45 @@ import {
 } from './lib/ielts-vocabulary-source.mjs'
 
 const PRONUNCIATIONS_PATH = 'scripts/fixtures/ielts-pronunciations.json'
+const PHONETICS_PATH = 'scripts/fixtures/ielts-phonetics.json'
+const PHONETIC_OVERRIDES_PATH = 'scripts/fixtures/ielts-phonetics-overrides.json'
 const OUTPUT_DIR = 'src/data/ielts/generated'
 const CHECK_ONLY = process.argv.includes('--check')
 // Keep in sync with IELTS_AUDIO_BASE_URL in src/data/ielts/index.ts.
 const AUDIO_BASE_URL = 'https://assets.english.ifcalm.org/pronunciations'
 
-const pronunciations = existsSync(PRONUNCIATIONS_PATH)
-  ? JSON.parse(readFileSync(PRONUNCIATIONS_PATH, 'utf8'))
-  : {}
+function readJson(path) {
+  return existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : {}
+}
+
+const pronunciations = readJson(PRONUNCIATIONS_PATH)
+const phonetics = readJson(PHONETICS_PATH)
+const phoneticOverrides = readJson(PHONETIC_OVERRIDES_PATH)
+
+// Entry-level IPA plus, for words whose stress changes with part of speech,
+// one { pos, uk, us } row per part of speech the entry actually uses.
+function resolvePhonetics(entry) {
+  const key = normalizeWord(entry.word)
+  const override = phoneticOverrides[key] ?? {}
+
+  if (override.byPos) {
+    const usedPos = entry.senses.flatMap((sense) => sense.pos.split(/(?<=\.)\//))
+    const rows = [...new Set(usedPos)]
+      .filter((pos) => override.byPos[pos])
+      .map((pos) => ({ pos, uk: override.byPos[pos].uk, us: override.byPos[pos].us }))
+
+    if (rows.length === 0) {
+      throw new Error(`byPos override for "${entry.word}" matches none of its parts of speech`)
+    }
+
+    return { uk: rows[0].uk, us: rows[0].us, posPhonetics: rows.length > 1 ? rows : undefined }
+  }
+
+  return {
+    uk: override.uk ?? phonetics[key]?.uk ?? null,
+    us: override.us ?? phonetics[key]?.us ?? null,
+  }
+}
 
 function toEntry(entry, topicId) {
   const pronunciation = pronunciations[normalizeWord(entry.word)] ?? {}
@@ -26,10 +58,18 @@ function toEntry(entry, topicId) {
     result.group = entry.group
   }
 
-  for (const key of ['phoneticUk', 'phoneticUs']) {
-    if (pronunciation[key]) {
-      result[key] = pronunciation[key]
-    }
+  const resolved = resolvePhonetics(entry)
+
+  if (resolved.uk) {
+    result.phoneticUk = resolved.uk
+  }
+
+  if (resolved.us) {
+    result.phoneticUs = resolved.us
+  }
+
+  if (resolved.posPhonetics) {
+    result.posPhonetics = resolved.posPhonetics
   }
 
   // Audio follows {base}/{uk|us}/{key}.m4a; store only the key to keep chunks small.
