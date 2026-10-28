@@ -18,6 +18,7 @@ const SentencePracticePage = lazy(
 )
 const StrategyPage = lazy(() => import('./features/strategy/StrategyPage'))
 const VerbPage = lazy(() => import('./features/verbs/VerbPage'))
+const IeltsPage = lazy(() => import('./features/ielts/IeltsPage'))
 
 function getInitialVerbLookup() {
   if (typeof window === 'undefined') {
@@ -39,6 +40,7 @@ function App() {
   const [view, setView] = useState<ViewId>(getInitialView)
   const [selectedVerbLookup, setSelectedVerbLookup] = useState(getInitialVerbLookup)
   const [vocabularyPageKey, setVocabularyPageKey] = useState(0)
+  const [ieltsPageKey, setIeltsPageKey] = useState(0)
 
   function resetVocabularyPage() {
     setVocabularyPageKey((key) => key + 1)
@@ -50,6 +52,12 @@ function App() {
 
     if (nextView !== 'verbs') {
       setSelectedVerbLookup('')
+    }
+
+    // The IELTS page keeps its module/topic/word state from the URL; remount it
+    // so the header link always returns to the module overview.
+    if (nextView === 'ielts') {
+      setIeltsPageKey((key) => key + 1)
     }
 
     if (typeof window !== 'undefined') {
@@ -120,7 +128,7 @@ function App() {
           view === 'verbs' ? 'verb-content' : ''
         } ${
           view === 'vocabulary' ? 'vocab-content' : ''
-        }`}
+        } ${view === 'ielts' ? 'ielts-content' : ''}`}
       >
         {view === 'roadmap' && <HomePage onOpenVocabulary={openVocabularyFromHome} />}
 
@@ -134,6 +142,8 @@ function App() {
         {view === 'strategy' && <StrategyPage onChangeView={changeView} />}
 
         {view === 'examples' && <SentencePracticePage />}
+
+        {view === 'ielts' && <IeltsPage key={ieltsPageKey} />}
 
         {view === 'verbs' && (
           <VerbPage

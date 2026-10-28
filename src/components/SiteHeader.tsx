@@ -9,6 +9,7 @@ const primaryNavigationItems: Array<{
   { id: 'verbs', label: '动词' },
   { id: 'examples', label: '填词' },
   { id: 'vocabulary', label: '词汇' },
+  { id: 'ielts', label: '雅思' },
 ]
 
 interface SiteHeaderProps {

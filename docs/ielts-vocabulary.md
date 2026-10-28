@@ -1,33 +1,34 @@
 # 雅思核心词汇表(独立版)
 
-> 本词表独立于 COCA 5000(`vocab` 表),目前仅为文档,尚未建表入库。
+> 本词表独立于 COCA 5000(`vocab` 表)。前端数据由 `scripts/build-ielts-data.mjs` 从本文件生成到 `src/data/ielts/`,本文件是唯一数据源。
 
 ## 说明
 
-**来源**:原创整理。学术通用词参考开放学术词表(AWL / NAWL)的收词思路,其余按雅思听说读写常考话题自编;不摘录任何商业出版物。
+**来源**:原创整理。学术核心词参考开放学术词表(AWL / NAWL)的收词思路,其余按雅思听说读写常考话题自编;不摘录任何商业出版物。
 
 **收词原则**
 
 1. 只收雅思备考真正需要专门记的词:小学/初中基础词(dog、book、happy 等)不收。
 2. 每个词只出现一次,放在最典型的话题下;一词多义时只写雅思语境下的常用义。
 3. 词组只收固定搭配或听力场景中整体出现的名词短语(如 *security deposit*);需要宾语的动词短语写出完整结构(如 *convert A into B*、*object to (doing) sth.*)。
-4. 音标、发音、例句暂不收,后续入库时统一生成。
+4. 本文件不写音标、发音、例句:与 COCA 词库重叠的词在生成前端数据时自动合并已有音标和音频,其余后续统一生成。
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,phr. 词组。
 
-**结构与统计**(共 3647 条:单词 3149,词组 498)
+**结构与统计**(按雅思考试四个模块组织,共 3647 条:单词 3149,词组 498)
 
-| 部分 | 内容 | 条数 |
-|---|---|---|
-| 一、听力场景词汇 | Section 1/2 生活与校园场景 | 693 |
-| 二、学术通用词汇 | 阅读与写作通用的论证、逻辑、图表、评价词,常用短语动词与固定搭配 | 625 |
-| 三、阅读学科词汇 | 学术阅读常见学科话题(含数学与几何) | 1292 |
-| 四、写作话题词汇 | 大作文常考话题 | 687 |
-| 五、口语描述词汇 | 人物、物品、地点、感受与兴趣 | 350 |
+| 模块 | 内容 | 话题数 | 条数 |
+|---|---|---|---|
+| 一、听力 | Section 1–4 生活与校园场景 | 11 | 693 |
+| 二、阅读 | 学术核心词与学术阅读学科话题 | 20 | 1718 |
+| 三、写作 | 小作文图表与流程图、固定搭配、大作文话题 | 13 | 886 |
+| 四、口语 | 人物、物品、地点、感受与兴趣 | 6 | 350 |
+
+每个词只属于一个模块;阅读与写作共用的学术词按用途归入其一(论证、逻辑、评价、学术动词归阅读;图表、流程图、固定搭配归写作)。
 
 ---
 
-# 一、听力场景词汇
+# 一、听力
 
 ## 1.1 租房与住宿
 
@@ -757,7 +758,7 @@
 
 ---
 
-# 二、学术通用词汇
+# 二、阅读
 
 ## 2.1 研究与论证
 
@@ -934,142 +935,7 @@
 - **inevitably** adv. 不可避免地
 - **arguably** adv. 可以说
 
-## 2.3 数量、变化与趋势(图表作文)
-
-- **increase** n./v. 增加
-- **decrease** n./v. 减少
-- **rise** n./v. 上升
-- **fall** n./v. 下降
-- **decline** n./v. 下降;衰退
-- **drop** n./v. 下降
-- **climb** v. 攀升
-- **soar** v. 猛增
-- **surge** n./v. 激增
-- **rocket** v. 飞涨;n. 火箭
-- **plummet** v. 暴跌
-- **plunge** v. 骤降
-- **dip** n./v. 小幅下降
-- **slump** n./v. 暴跌;萧条
-- **fluctuate** v. 波动
-- **fluctuation** n. 波动
-- **stabilise** v. 趋于稳定
-- **level off** phr. 趋于平稳
-- **plateau** n. 平稳期 v. 进入平稳期;n. 高原
-- **peak** n. 顶峰 v. 达到顶峰;n. 山峰
-- **bottom out** phr. 触底
-- **remain stable** phr. 保持稳定
-- **steady** adj. 平稳的
-- **gradual** adj. 逐渐的
-- **moderate** adj. 适度的
-- **slight** adj. 轻微的
-- **marginal** adj. 微小的;边缘的
-- **considerable** adj. 相当大的
-- **substantial** adj. 大量的
-- **significant** adj. 显著的
-- **dramatic** adj. 剧烈的
-- **sharp** adj. 急剧的
-- **steep** adj. 陡峭的
-- **rapid** adj. 迅速的
-- **exponential** adj. 指数级的
-- **overall** adj. 总体的
-- **trend** n. 趋势
-- **pattern** n. 模式;图案
-- **proportion** n. 比例
-- **percentage** n. 百分比
-- **ratio** n. 比率
-- **rate** n. 比率;速度
-- **fraction** n. 一小部分;分数
-- **majority** n. 大多数
-- **minority** n. 少数
-- **quarter** n. 四分之一;季度
-- **double** v. 翻倍
-- **triple** v. 增至三倍
-- **halve** v. 减半
-- **average** n. 平均数 adj. 平均的
-- **mean** n. 平均值
-- **median** n. 中位数
-- **range** n. 范围 v. 在……范围内变动
-- **total** n. 总数 adj. 总的
-- **aggregate** n. 总计
-- **sum** n. 总和
-- **figure** n. 数字;人物
-- **amount** n. 数量(不可数)
-- **quantity** n. 数量
-- **capacity** n. 容量;能力
-- **margin** n. 差额;边缘
-- **gap** n. 差距
-- **discrepancy** n. 差异
-- **disparity** n. 悬殊
-- **equivalent** adj. 相等的 n. 等价物
-- **comparable** adj. 可比的
-- **respectively** adv. 分别地
-- **approximately** adv. 大约
-- **roughly** adv. 大致
-- **nearly** adv. 几乎
-- **exceed** v. 超过
-- **surpass** v. 超越
-- **overtake** v. 超过,赶超
-- **outnumber** v. 在数量上超过
-- **constitute** v. 构成
-- **comprise** v. 包含,由……组成
-- **consist of** phr. 由……组成
-- **represent** v. 代表;占
-- **occupy** v. 占据
-- **distribution** n. 分布;分配
-- **allocate** v. 分配
-- **projection** n. 预测;投影
-- **period** n. 时期
-- **decade** n. 十年
-- **century** n. 世纪
-- **interval** n. 间隔
-- **annual** adj. 每年的
-- **per capita** phr. 人均
-- **enormous** adj. 巨大的
-- **tremendous** adj. 巨大的
-- **abundant** adj. 丰富的
-- **abundance** n. 丰富
-- **bulk** n. 大部分;体积
-- **rank** v. 排名 n. 等级
-
-## 2.4 流程图与地图变化
-
-- **stage** n. 阶段
-- **phase** n. 阶段
-- **step** n. 步骤
-- **sequence** n. 顺序
-- **cycle** n. 循环
-- **input** n. 投入
-- **output** n. 产出
-- **raw material** phr. 原材料
-- **extract** v. 提取
-- **refine** v. 提炼
-- **filter** v. 过滤 n. 过滤器
-- **heat** v. 加热
-- **cool** v. 冷却
-- **dissolve** v. 溶解
-- **mix** v. 混合
-- **grind** v. 研磨
-- **crush** v. 压碎
-- **compress** v. 压缩
-- **pump** v. 抽送 n. 泵
-- **transport** v. 运输
-- **package** v. 包装
-- **dispatch** v. 发送
-- **convert** v. 转换
-- **transform** v. 改变,转化
-- **recycle** v. 回收利用
-- **construct** v. 建造
-- **demolish** v. 拆除
-- **replace** v. 取代
-- **relocate** v. 迁移
-- **expand** v. 扩张
-- **extend** v. 延伸
-- **convert A into B** phr. 把 A 改造成 B
-- **redevelop** v. 重新开发
-- **renovate** v. 翻新
-- **pedestrianise** v. 改为步行区
-
-## 2.5 评价与程度
+## 2.3 评价与程度
 
 - **crucial** adj. 关键的
 - **vital** adj. 至关重要的
@@ -1163,7 +1029,7 @@
 - **hazard** n. 危险
 - **jeopardy** n. 危险境地
 
-## 2.6 学术高频动词
+## 2.4 学术高频动词
 
 - **acquire** v. 获得
 - **obtain** v. 获得
@@ -1332,85 +1198,7 @@
 - **enlighten** v. 启发
 - **transpire** v. 被得知;(植物)蒸腾
 
-## 2.7 常用短语动词与固定搭配
-
-- **carry out** phr. 开展,执行
-- **set up** phr. 建立,设立
-- **bring about** phr. 带来,引起
-- **take into account** phr. 考虑到
-- **take into consideration** phr. 考虑
-- **take measures** phr. 采取措施
-- **take responsibility for** phr. 为……负责
-- **take advantage of** phr. 利用
-- **make use of** phr. 利用
-- **make up** phr. 构成;编造;弥补
-- **play a role in** phr. 在……中起作用
-- **have an impact on** phr. 对……有影响
-- **have access to** phr. 能够获得
-- **pay attention to** phr. 注意
-- **raise awareness of** phr. 提高对……的意识
-- **point out** phr. 指出
-- **figure out** phr. 弄清楚
-- **find out** phr. 查明
-- **look into** phr. 调查
-- **rule out** phr. 排除
-- **come up with** phr. 想出(办法)
-- **put forward** phr. 提出(建议)
-- **put off** phr. 推迟
-- **give up** phr. 放弃
-- **take up** phr. 开始从事;占据
-- **cut down on** phr. 削减
-- **phase out** phr. 逐步淘汰
-- **run out of** phr. 用完
-- **break down** phr. 出故障;分解;崩溃
-- **dispose of** phr. 处理掉
-- **keep up with** phr. 跟上
-- **catch up on** phr. 补做
-- **look forward to** phr. 期待
-- **be responsible for** phr. 对……负责
-- **be associated with** phr. 与……有关
-- **be related to** phr. 与……有关
-- **be subject to** phr. 受制于;易受……影响
-- **be exposed to** phr. 接触;暴露于
-- **be aware of** phr. 意识到
-- **be capable of** phr. 能够
-- **be likely to** phr. 可能
-- **be bound to** phr. 必然
-- **be inclined to** phr. 倾向于
-- **in favour of** phr. 支持,赞成
-- **at the expense of** phr. 以……为代价
-- **in the long run** phr. 从长远来看
-- **in the short term** phr. 短期内
-- **as a result** phr. 因此
-- **as a whole** phr. 总体上
-- **on the other hand** phr. 另一方面
-- **on the whole** phr. 总的来说
-- **by contrast** phr. 相比之下
-- **in conclusion** phr. 总之
-- **to some extent** phr. 在某种程度上
-- **to a large extent** phr. 在很大程度上
-- **in particular** phr. 尤其
-- **for instance** phr. 例如
-- **in other words** phr. 换句话说
-- **regardless of** phr. 不管
-- **in spite of** phr. 尽管
-- **instead of** phr. 而不是
-- **rather than** phr. 而不是
-- **as well as** phr. 以及
-- **apart from** phr. 除……之外
-- **along with** phr. 连同
-- **in accordance with** phr. 依照
-- **on behalf of** phr. 代表
-- **in response to** phr. 作为对……的回应
-- **in the case of** phr. 就……而言
-- **by means of** phr. 通过……方式
-
-
----
-
-# 三、阅读学科词汇
-
-## 3.1 地理与地貌
+## 2.5 地理与地貌
 
 - **continent** n. 大陆
 - **hemisphere** n. 半球
@@ -1528,7 +1316,7 @@
 - **southern hemisphere** phr. 南半球
 - **Arctic Circle** phr. 北极圈
 
-## 3.2 气候与天气
+## 2.6 气候与天气
 
 - **climate** n. 气候
 - **meteorology** n. 气象学
@@ -1584,7 +1372,7 @@
 - **barometer** n. 气压计
 - **troposphere** n. 对流层
 
-## 3.3 动物与生态
+## 2.7 动物与生态
 
 - **species** n. 物种
 - **organism** n. 生物体
@@ -1751,7 +1539,7 @@
 - **natural habitat** phr. 自然栖息地
 - **bird of prey** phr. 猛禽
 
-## 3.4 海洋
+## 2.8 海洋
 
 - **marine** adj. 海洋的
 - **coral reef** phr. 珊瑚礁
@@ -1793,7 +1581,7 @@
 - **nautical** adj. 航海的
 - **seaport** n. 海港
 
-## 3.5 植物与农业
+## 2.9 植物与农业
 
 - **botany** n. 植物学
 - **vegetation** n. 植被
@@ -1897,7 +1685,7 @@
 - **sorghum** n. 高粱
 - **tractor** n. 拖拉机
 
-## 3.6 天文与航天
+## 2.10 天文与航天
 
 - **astronomy** n. 天文学
 - **astronomer** n. 天文学家
@@ -1954,7 +1742,7 @@
 - **Pluto** n. 冥王星
 - **meteor shower** phr. 流星雨
 
-## 3.7 物理、化学与能源
+## 2.11 物理、化学与能源
 
 - **physics** n. 物理
 - **chemistry** n. 化学
@@ -2104,7 +1892,7 @@
 - **opaque** adj. 不透明的
 - **diffract** v. 衍射
 
-## 3.8 医学与生理
+## 2.12 医学与生理
 
 - **anatomy** n. 解剖学
 - **physiology** n. 生理学
@@ -2195,7 +1983,7 @@
 - **death rate** phr. 死亡率
 - **heart rate** phr. 心率
 
-## 3.9 心理学与认知
+## 2.13 心理学与认知
 
 - **psychology** n. 心理学
 - **psychologist** n. 心理学家
@@ -2265,7 +2053,7 @@
 - **body language** phr. 肢体语言
 - **social interaction** phr. 社会交往
 
-## 3.10 语言与传播
+## 2.14 语言与传播
 
 - **linguistics** n. 语言学
 - **linguist** n. 语言学家
@@ -2318,7 +2106,7 @@
 - **persuasive** adj. 有说服力的
 - **orator** n. 演说家
 
-## 3.11 历史与考古
+## 2.15 历史与考古
 
 - **archaeology** n. 考古学
 - **archaeologist** n. 考古学家
@@ -2422,7 +2210,7 @@
 - **taboo** n. 禁忌
 - **rite** n. 仪式
 
-## 3.12 建筑与城市
+## 2.16 建筑与城市
 
 - **architecture** n. 建筑学;建筑风格
 - **architect** n. 建筑师
@@ -2489,7 +2277,7 @@
 - **real estate** phr. 房地产
 - **block of flats** phr. 公寓楼(英)
 
-## 3.13 交通与工程
+## 2.17 交通与工程
 
 - **vehicle** n. 交通工具
 - **automobile** n. 汽车
@@ -2544,7 +2332,7 @@
 - **helicopter** n. 直升机
 - **cyclist** n. 骑自行车的人
 
-## 3.14 经济与商业
+## 2.18 经济与商业
 
 - **economy** n. 经济
 - **economic** adj. 经济的
@@ -2646,7 +2434,7 @@
 - **market research** phr. 市场调研
 - **advertising campaign** phr. 广告宣传活动
 
-## 3.15 科技与信息
+## 2.19 科技与信息
 
 - **technology** n. 技术
 - **technological** adj. 技术的
@@ -2701,7 +2489,7 @@
 - **automatic** adj. 自动的
 - **electronic** adj. 电子的
 
-## 3.16 数学与几何
+## 2.20 数学与几何
 
 - **mathematics** n. 数学
 - **arithmetic** n. 算术
@@ -2750,12 +2538,219 @@
 - **spiral** n. 螺旋 adj. 螺旋形的
 - **crescent** n. 新月形
 
-
 ---
 
-# 四、写作话题词汇
+# 三、写作
 
-## 4.1 教育
+## 3.1 数量、变化与趋势(小作文图表)
+
+- **increase** n./v. 增加
+- **decrease** n./v. 减少
+- **rise** n./v. 上升
+- **fall** n./v. 下降
+- **decline** n./v. 下降;衰退
+- **drop** n./v. 下降
+- **climb** v. 攀升
+- **soar** v. 猛增
+- **surge** n./v. 激增
+- **rocket** v. 飞涨;n. 火箭
+- **plummet** v. 暴跌
+- **plunge** v. 骤降
+- **dip** n./v. 小幅下降
+- **slump** n./v. 暴跌;萧条
+- **fluctuate** v. 波动
+- **fluctuation** n. 波动
+- **stabilise** v. 趋于稳定
+- **level off** phr. 趋于平稳
+- **plateau** n. 平稳期 v. 进入平稳期;n. 高原
+- **peak** n. 顶峰 v. 达到顶峰;n. 山峰
+- **bottom out** phr. 触底
+- **remain stable** phr. 保持稳定
+- **steady** adj. 平稳的
+- **gradual** adj. 逐渐的
+- **moderate** adj. 适度的
+- **slight** adj. 轻微的
+- **marginal** adj. 微小的;边缘的
+- **considerable** adj. 相当大的
+- **substantial** adj. 大量的
+- **significant** adj. 显著的
+- **dramatic** adj. 剧烈的
+- **sharp** adj. 急剧的
+- **steep** adj. 陡峭的
+- **rapid** adj. 迅速的
+- **exponential** adj. 指数级的
+- **overall** adj. 总体的
+- **trend** n. 趋势
+- **pattern** n. 模式;图案
+- **proportion** n. 比例
+- **percentage** n. 百分比
+- **ratio** n. 比率
+- **rate** n. 比率;速度
+- **fraction** n. 一小部分;分数
+- **majority** n. 大多数
+- **minority** n. 少数
+- **quarter** n. 四分之一;季度
+- **double** v. 翻倍
+- **triple** v. 增至三倍
+- **halve** v. 减半
+- **average** n. 平均数 adj. 平均的
+- **mean** n. 平均值
+- **median** n. 中位数
+- **range** n. 范围 v. 在……范围内变动
+- **total** n. 总数 adj. 总的
+- **aggregate** n. 总计
+- **sum** n. 总和
+- **figure** n. 数字;人物
+- **amount** n. 数量(不可数)
+- **quantity** n. 数量
+- **capacity** n. 容量;能力
+- **margin** n. 差额;边缘
+- **gap** n. 差距
+- **discrepancy** n. 差异
+- **disparity** n. 悬殊
+- **equivalent** adj. 相等的 n. 等价物
+- **comparable** adj. 可比的
+- **respectively** adv. 分别地
+- **approximately** adv. 大约
+- **roughly** adv. 大致
+- **nearly** adv. 几乎
+- **exceed** v. 超过
+- **surpass** v. 超越
+- **overtake** v. 超过,赶超
+- **outnumber** v. 在数量上超过
+- **constitute** v. 构成
+- **comprise** v. 包含,由……组成
+- **consist of** phr. 由……组成
+- **represent** v. 代表;占
+- **occupy** v. 占据
+- **distribution** n. 分布;分配
+- **allocate** v. 分配
+- **projection** n. 预测;投影
+- **period** n. 时期
+- **decade** n. 十年
+- **century** n. 世纪
+- **interval** n. 间隔
+- **annual** adj. 每年的
+- **per capita** phr. 人均
+- **enormous** adj. 巨大的
+- **tremendous** adj. 巨大的
+- **abundant** adj. 丰富的
+- **abundance** n. 丰富
+- **bulk** n. 大部分;体积
+- **rank** v. 排名 n. 等级
+
+## 3.2 流程图与地图变化(小作文)
+
+- **stage** n. 阶段
+- **phase** n. 阶段
+- **step** n. 步骤
+- **sequence** n. 顺序
+- **cycle** n. 循环
+- **input** n. 投入
+- **output** n. 产出
+- **raw material** phr. 原材料
+- **extract** v. 提取
+- **refine** v. 提炼
+- **filter** v. 过滤 n. 过滤器
+- **heat** v. 加热
+- **cool** v. 冷却
+- **dissolve** v. 溶解
+- **mix** v. 混合
+- **grind** v. 研磨
+- **crush** v. 压碎
+- **compress** v. 压缩
+- **pump** v. 抽送 n. 泵
+- **transport** v. 运输
+- **package** v. 包装
+- **dispatch** v. 发送
+- **convert** v. 转换
+- **transform** v. 改变,转化
+- **recycle** v. 回收利用
+- **construct** v. 建造
+- **demolish** v. 拆除
+- **replace** v. 取代
+- **relocate** v. 迁移
+- **expand** v. 扩张
+- **extend** v. 延伸
+- **convert A into B** phr. 把 A 改造成 B
+- **redevelop** v. 重新开发
+- **renovate** v. 翻新
+- **pedestrianise** v. 改为步行区
+
+## 3.3 常用短语动词与固定搭配
+
+- **carry out** phr. 开展,执行
+- **set up** phr. 建立,设立
+- **bring about** phr. 带来,引起
+- **take into account** phr. 考虑到
+- **take into consideration** phr. 考虑
+- **take measures** phr. 采取措施
+- **take responsibility for** phr. 为……负责
+- **take advantage of** phr. 利用
+- **make use of** phr. 利用
+- **make up** phr. 构成;编造;弥补
+- **play a role in** phr. 在……中起作用
+- **have an impact on** phr. 对……有影响
+- **have access to** phr. 能够获得
+- **pay attention to** phr. 注意
+- **raise awareness of** phr. 提高对……的意识
+- **point out** phr. 指出
+- **figure out** phr. 弄清楚
+- **find out** phr. 查明
+- **look into** phr. 调查
+- **rule out** phr. 排除
+- **come up with** phr. 想出(办法)
+- **put forward** phr. 提出(建议)
+- **put off** phr. 推迟
+- **give up** phr. 放弃
+- **take up** phr. 开始从事;占据
+- **cut down on** phr. 削减
+- **phase out** phr. 逐步淘汰
+- **run out of** phr. 用完
+- **break down** phr. 出故障;分解;崩溃
+- **dispose of** phr. 处理掉
+- **keep up with** phr. 跟上
+- **catch up on** phr. 补做
+- **look forward to** phr. 期待
+- **be responsible for** phr. 对……负责
+- **be associated with** phr. 与……有关
+- **be related to** phr. 与……有关
+- **be subject to** phr. 受制于;易受……影响
+- **be exposed to** phr. 接触;暴露于
+- **be aware of** phr. 意识到
+- **be capable of** phr. 能够
+- **be likely to** phr. 可能
+- **be bound to** phr. 必然
+- **be inclined to** phr. 倾向于
+- **in favour of** phr. 支持,赞成
+- **at the expense of** phr. 以……为代价
+- **in the long run** phr. 从长远来看
+- **in the short term** phr. 短期内
+- **as a result** phr. 因此
+- **as a whole** phr. 总体上
+- **on the other hand** phr. 另一方面
+- **on the whole** phr. 总的来说
+- **by contrast** phr. 相比之下
+- **in conclusion** phr. 总之
+- **to some extent** phr. 在某种程度上
+- **to a large extent** phr. 在很大程度上
+- **in particular** phr. 尤其
+- **for instance** phr. 例如
+- **in other words** phr. 换句话说
+- **regardless of** phr. 不管
+- **in spite of** phr. 尽管
+- **instead of** phr. 而不是
+- **rather than** phr. 而不是
+- **as well as** phr. 以及
+- **apart from** phr. 除……之外
+- **along with** phr. 连同
+- **in accordance with** phr. 依照
+- **on behalf of** phr. 代表
+- **in response to** phr. 作为对……的回应
+- **in the case of** phr. 就……而言
+- **by means of** phr. 通过……方式
+
+## 3.4 教育
 
 - **education** n. 教育
 - **academic** adj. 学术的
@@ -2829,7 +2824,7 @@
 - **team spirit** phr. 团队精神
 - **extracurricular activities** phr. 课外活动
 
-## 4.2 科技与媒体
+## 3.5 科技与媒体
 
 - **mass media** phr. 大众媒体
 - **media** n. 媒体
@@ -2921,7 +2916,7 @@
 - **best seller** phr. 畅销书
 - **time-consuming** adj. 耗时的
 
-## 4.3 政府与公共事务
+## 3.6 政府与公共事务
 
 - **government** n. 政府
 - **authority** n. 当局;权威
@@ -3011,7 +3006,7 @@
 - **confidential** adj. 机密的
 - **clandestine** adj. 秘密的
 
-## 4.4 环境保护
+## 3.7 环境保护
 
 - **environment** n. 环境
 - **environmental** adj. 环境的
@@ -3084,7 +3079,7 @@
 - **water shortage** phr. 缺水
 - **wind energy** phr. 风能
 
-## 4.5 犯罪与法律
+## 3.8 犯罪与法律
 
 - **criminal** n. 罪犯 adj. 犯罪的
 - **offender** n. 罪犯
@@ -3205,7 +3200,7 @@
 - **child abuse** phr. 虐待儿童
 - **death sentence** phr. 死刑判决
 
-## 4.6 全球化与文化
+## 3.9 全球化与文化
 
 - **globalisation** n. 全球化
 - **global village** phr. 地球村
@@ -3278,7 +3273,7 @@
 - **conservatory** n. 音乐学院;玻璃暖房
 - **cultural diversity** phr. 文化多样性
 
-## 4.7 旅游业
+## 3.10 旅游业
 
 - **tourism** n. 旅游业
 - **tourist attraction** phr. 旅游景点
@@ -3299,7 +3294,7 @@
 - **wear and tear** phr. 损耗
 - **carrying capacity** phr. 承载能力
 
-## 4.8 家庭与社会
+## 3.11 家庭与社会
 
 - **nuclear family** phr. 核心家庭
 - **extended family** phr. 大家庭
@@ -3370,7 +3365,7 @@
 - **fast-paced** adj. 快节奏的
 - **stiff competition** phr. 激烈竞争
 
-## 4.9 老龄化与健康
+## 3.12 老龄化与健康
 
 - **ageing population** phr. 人口老龄化
 - **the elderly** phr. 老年人
@@ -3411,7 +3406,7 @@
 - **stressful** adj. 有压力的
 - **retirement home** phr. 养老院
 
-## 4.10 就业与工作
+## 3.13 就业与工作
 
 - **career** n. 职业生涯
 - **occupation** n. 职业
@@ -3474,9 +3469,9 @@
 
 ---
 
-# 五、口语描述词汇
+# 四、口语
 
-## 5.1 性格与品质
+## 4.1 性格与品质
 
 - **outgoing** adj. 外向的
 - **sociable** adj. 好交际的
@@ -3569,7 +3564,7 @@
 - **optimist** n. 乐观主义者
 - **pessimist** n. 悲观主义者
 
-## 5.2 外貌与形象
+## 4.2 外貌与形象
 
 - **appearance** n. 外貌
 - **attractive** adj. 有吸引力的
@@ -3609,7 +3604,7 @@
 - **well-built** adj. 体格健壮的
 - **well-dressed** adj. 穿着讲究的
 
-## 5.3 情感与态度
+## 4.3 情感与态度
 
 - **delighted** adj. 高兴的
 - **thrilled** adj. 激动的
@@ -3658,7 +3653,7 @@
 - **depressing** adj. 令人沮丧的
 - **appealing** adj. 有吸引力的
 
-## 5.4 物品与外观
+## 4.4 物品与外观
 
 - **rectangular** adj. 长方形的
 - **oval** adj. 椭圆的
@@ -3728,7 +3723,7 @@
 - **family name** phr. 姓氏
 - **given name** phr. 名字
 
-## 5.5 地点与城市描述
+## 4.5 地点与城市描述
 
 - **bustling** adj. 熙熙攘攘的
 - **vibrant** adj. 充满活力的
@@ -3771,7 +3766,7 @@
 - **noble** adj. 高贵的
 - **unsophisticated** adj. 淳朴的
 
-## 5.6 兴趣与生活方式
+## 4.6 兴趣与生活方式
 
 - **pastime** n. 消遣
 - **leisure** n. 闲暇
