@@ -7,6 +7,7 @@ export type {
   IeltsModuleData,
   IeltsModuleId,
   IeltsModuleSummary,
+  IeltsPosPhonetic,
   IeltsSense,
   IeltsTopicGroup,
   IeltsTopicSummary,

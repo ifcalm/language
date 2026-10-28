@@ -1,0 +1,1096 @@
+{
+  "_comment": "Hand-checked IPA that wins over scripts/fixtures/ielts-phonetics.json. Use {uk, us} for a whole-entry correction, or byPos for words whose stress or vowels change with part of speech. UK follows Oxford Learner's style, US follows Cambridge US style.",
+  "abuse": {
+    "byPos": {
+      "n.": {
+        "uk": "/əˈbjuːs/",
+        "us": "/əˈbjuːs/"
+      },
+      "v.": {
+        "uk": "/əˈbjuːz/",
+        "us": "/əˈbjuːz/"
+      }
+    }
+  },
+  "address": {
+    "uk": "/əˈdres/",
+    "us": "/əˈdres/"
+  },
+  "advocate": {
+    "byPos": {
+      "v.": {
+        "uk": "/ˈædvəkeɪt/",
+        "us": "/ˈædvəkeɪt/"
+      },
+      "n.": {
+        "uk": "/ˈædvəkət/",
+        "us": "/ˈædvəkət/"
+      }
+    }
+  },
+  "affiliate": {
+    "byPos": {
+      "n.": {
+        "uk": "/əˈfɪliət/",
+        "us": "/əˈfɪliət/"
+      },
+      "v.": {
+        "uk": "/əˈfɪlieɪt/",
+        "us": "/əˈfɪlieɪt/"
+      }
+    }
+  },
+  "aggregate": {
+    "uk": "/ˈæɡrɪɡət/",
+    "us": "/ˈæɡrɪɡət/"
+  },
+  "appropriate": {
+    "uk": "/əˈprəʊpriət/",
+    "us": "/əˈproʊpriət/"
+  },
+  "approximate": {
+    "uk": "/əˈprɒksɪmət/",
+    "us": "/əˈprɑːksəmət/"
+  },
+  "articulate": {
+    "byPos": {
+      "v.": {
+        "uk": "/ɑːˈtɪkjuleɪt/",
+        "us": "/ɑːrˈtɪkjəleɪt/"
+      },
+      "adj.": {
+        "uk": "/ɑːˈtɪkjələt/",
+        "us": "/ɑːrˈtɪkjələt/"
+      }
+    }
+  },
+  "attribute": {
+    "byPos": {
+      "v.": {
+        "uk": "/əˈtrɪbjuːt/",
+        "us": "/əˈtrɪbjuːt/"
+      },
+      "n.": {
+        "uk": "/ˈætrɪbjuːt/",
+        "us": "/ˈætrəbjuːt/"
+      }
+    }
+  },
+  "combine": {
+    "uk": "/kəmˈbaɪn/",
+    "us": "/kəmˈbaɪn/"
+  },
+  "compact": {
+    "uk": "/kəmˈpækt/",
+    "us": "/kəmˈpækt/"
+  },
+  "compress": {
+    "uk": "/kəmˈpres/",
+    "us": "/kəmˈpres/"
+  },
+  "conduct": {
+    "uk": "/kənˈdʌkt/",
+    "us": "/kənˈdʌkt/"
+  },
+  "construct": {
+    "uk": "/kənˈstrʌkt/",
+    "us": "/kənˈstrʌkt/"
+  },
+  "content": {
+    "uk": "/kənˈtent/",
+    "us": "/kənˈtent/"
+  },
+  "contest": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈkɒntest/",
+        "us": "/ˈkɑːntest/"
+      },
+      "v.": {
+        "uk": "/kənˈtest/",
+        "us": "/kənˈtest/"
+      }
+    }
+  },
+  "contrast": {
+    "byPos": {
+      "v.": {
+        "uk": "/kənˈtrɑːst/",
+        "us": "/kənˈtræst/"
+      },
+      "n.": {
+        "uk": "/ˈkɒntrɑːst/",
+        "us": "/ˈkɑːntræst/"
+      }
+    }
+  },
+  "convert": {
+    "uk": "/kənˈvɜːt/",
+    "us": "/kənˈvɝːt/"
+  },
+  "convict": {
+    "uk": "/kənˈvɪkt/",
+    "us": "/kənˈvɪkt/"
+  },
+  "decrease": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈdiːkriːs/",
+        "us": "/ˈdiːkriːs/"
+      },
+      "v.": {
+        "uk": "/dɪˈkriːs/",
+        "us": "/dɪˈkriːs/"
+      }
+    }
+  },
+  "delegate": {
+    "byPos": {
+      "v.": {
+        "uk": "/ˈdelɪɡeɪt/",
+        "us": "/ˈdeləɡeɪt/"
+      },
+      "n.": {
+        "uk": "/ˈdelɪɡət/",
+        "us": "/ˈdeləɡət/"
+      }
+    }
+  },
+  "deliberate": {
+    "byPos": {
+      "adj.": {
+        "uk": "/dɪˈlɪbərət/",
+        "us": "/dɪˈlɪbərət/"
+      },
+      "v.": {
+        "uk": "/dɪˈlɪbəreɪt/",
+        "us": "/dɪˈlɪbəreɪt/"
+      }
+    }
+  },
+  "discharge": {
+    "byPos": {
+      "v.": {
+        "uk": "/dɪsˈtʃɑːdʒ/",
+        "us": "/dɪsˈtʃɑːrdʒ/"
+      },
+      "n.": {
+        "uk": "/ˈdɪstʃɑːdʒ/",
+        "us": "/ˈdɪstʃɑːrdʒ/"
+      }
+    }
+  },
+  "elaborate": {
+    "byPos": {
+      "v.": {
+        "uk": "/ɪˈlæbəreɪt/",
+        "us": "/ɪˈlæbəreɪt/"
+      },
+      "adj.": {
+        "uk": "/ɪˈlæbərət/",
+        "us": "/ɪˈlæbərət/"
+      }
+    }
+  },
+  "escort": {
+    "byPos": {
+      "v.": {
+        "uk": "/ɪˈskɔːt/",
+        "us": "/ɪˈskɔːrt/"
+      },
+      "n.": {
+        "uk": "/ˈeskɔːt/",
+        "us": "/ˈeskɔːrt/"
+      }
+    }
+  },
+  "estimate": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈestɪmət/",
+        "us": "/ˈestəmət/"
+      },
+      "v.": {
+        "uk": "/ˈestɪmeɪt/",
+        "us": "/ˈestəmeɪt/"
+      }
+    }
+  },
+  "exploit": {
+    "uk": "/ɪkˈsplɔɪt/",
+    "us": "/ɪkˈsplɔɪt/"
+  },
+  "export": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈekspɔːt/",
+        "us": "/ˈekspɔːrt/"
+      },
+      "v.": {
+        "uk": "/ɪkˈspɔːt/",
+        "us": "/ɪkˈspɔːrt/"
+      }
+    }
+  },
+  "extract": {
+    "uk": "/ɪkˈstrækt/",
+    "us": "/ɪkˈstrækt/"
+  },
+  "graduate": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈɡrædʒuət/",
+        "us": "/ˈɡrædʒuət/"
+      },
+      "v.": {
+        "uk": "/ˈɡrædʒueɪt/",
+        "us": "/ˈɡrædʒueɪt/"
+      }
+    }
+  },
+  "impact": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈɪmpækt/",
+        "us": "/ˈɪmpækt/"
+      },
+      "v.": {
+        "uk": "/ɪmˈpækt/",
+        "us": "/ɪmˈpækt/"
+      }
+    }
+  },
+  "implement": {
+    "uk": "/ˈɪmplɪment/",
+    "us": "/ˈɪmpləment/"
+  },
+  "import": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈɪmpɔːt/",
+        "us": "/ˈɪmpɔːrt/"
+      },
+      "v.": {
+        "uk": "/ɪmˈpɔːt/",
+        "us": "/ɪmˈpɔːrt/"
+      }
+    }
+  },
+  "incline": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈɪnklaɪn/",
+        "us": "/ˈɪnklaɪn/"
+      },
+      "v.": {
+        "uk": "/ɪnˈklaɪn/",
+        "us": "/ɪnˈklaɪn/"
+      }
+    }
+  },
+  "increase": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈɪnkriːs/",
+        "us": "/ˈɪnkriːs/"
+      },
+      "v.": {
+        "uk": "/ɪnˈkriːs/",
+        "us": "/ɪnˈkriːs/"
+      }
+    }
+  },
+  "insert": {
+    "uk": "/ɪnˈsɜːt/",
+    "us": "/ɪnˈsɝːt/"
+  },
+  "intimate": {
+    "uk": "/ˈɪntɪmət/",
+    "us": "/ˈɪntəmət/"
+  },
+  "intrigue": {
+    "byPos": {
+      "v.": {
+        "uk": "/ɪnˈtriːɡ/",
+        "us": "/ɪnˈtriːɡ/"
+      },
+      "n.": {
+        "uk": "/ˈɪntriːɡ/",
+        "us": "/ˈɪntriːɡ/"
+      }
+    }
+  },
+  "legitimate": {
+    "uk": "/lɪˈdʒɪtɪmət/",
+    "us": "/ləˈdʒɪtəmət/"
+  },
+  "moderate": {
+    "uk": "/ˈmɒdərət/",
+    "us": "/ˈmɑːdərət/"
+  },
+  "overhead": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈəʊvəhed/",
+        "us": "/ˈoʊvɚhed/"
+      },
+      "adj.": {
+        "uk": "/ˌəʊvəˈhed/",
+        "us": "/ˌoʊvɚˈhed/"
+      }
+    }
+  },
+  "overlap": {
+    "byPos": {
+      "v.": {
+        "uk": "/ˌəʊvəˈlæp/",
+        "us": "/ˌoʊvɚˈlæp/"
+      },
+      "n.": {
+        "uk": "/ˈəʊvəlæp/",
+        "us": "/ˈoʊvɚlæp/"
+      }
+    }
+  },
+  "overlook": {
+    "uk": "/ˌəʊvəˈlʊk/",
+    "us": "/ˌoʊvɚˈlʊk/"
+  },
+  "permit": {
+    "byPos": {
+      "v.": {
+        "uk": "/pəˈmɪt/",
+        "us": "/pɚˈmɪt/"
+      },
+      "n.": {
+        "uk": "/ˈpɜːmɪt/",
+        "us": "/ˈpɝːmɪt/"
+      }
+    }
+  },
+  "protest": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈprəʊtest/",
+        "us": "/ˈproʊtest/"
+      },
+      "v.": {
+        "uk": "/prəˈtest/",
+        "us": "/prəˈtest/"
+      }
+    }
+  },
+  "recall": {
+    "uk": "/rɪˈkɔːl/",
+    "us": "/rɪˈkɔːl/"
+  },
+  "refund": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈriːfʌnd/",
+        "us": "/ˈriːfʌnd/"
+      },
+      "v.": {
+        "uk": "/rɪˈfʌnd/",
+        "us": "/rɪˈfʌnd/"
+      }
+    }
+  },
+  "relapse": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈriːlæps/",
+        "us": "/ˈriːlæps/"
+      },
+      "v.": {
+        "uk": "/rɪˈlæps/",
+        "us": "/rɪˈlæps/"
+      }
+    }
+  },
+  "research": {
+    "byPos": {
+      "n.": {
+        "uk": "/rɪˈsɜːtʃ/",
+        "us": "/ˈriːsɝːtʃ/"
+      },
+      "v.": {
+        "uk": "/rɪˈsɜːtʃ/",
+        "us": "/rɪˈsɝːtʃ/"
+      }
+    }
+  },
+  "rewrite": {
+    "uk": "/ˌriːˈraɪt/",
+    "us": "/ˌriːˈraɪt/"
+  },
+  "subordinate": {
+    "uk": "/səˈbɔːdɪnət/",
+    "us": "/səˈbɔːrdənət/"
+  },
+  "supply": {
+    "uk": "/səˈplaɪ/",
+    "us": "/səˈplaɪ/"
+  },
+  "survey": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈsɜːveɪ/",
+        "us": "/ˈsɝːveɪ/"
+      },
+      "v.": {
+        "uk": "/səˈveɪ/",
+        "us": "/sɚˈveɪ/"
+      }
+    }
+  },
+  "suspect": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈsʌspekt/",
+        "us": "/ˈsʌspekt/"
+      },
+      "v.": {
+        "uk": "/səˈspekt/",
+        "us": "/səˈspekt/"
+      }
+    }
+  },
+  "transfer": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈtrænsfɜː/",
+        "us": "/ˈtrænsfɝː/"
+      },
+      "v.": {
+        "uk": "/trænsˈfɜː/",
+        "us": "/trænsˈfɝː/"
+      }
+    }
+  },
+  "transform": {
+    "uk": "/trænsˈfɔːm/",
+    "us": "/trænsˈfɔːrm/"
+  },
+  "transplant": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈtrænsplɑːnt/",
+        "us": "/ˈtrænsplænt/"
+      },
+      "v.": {
+        "uk": "/trænsˈplɑːnt/",
+        "us": "/trænsˈplænt/"
+      }
+    }
+  },
+  "transport": {
+    "uk": "/trænˈspɔːt/",
+    "us": "/trænˈspɔːrt/"
+  },
+  "update": {
+    "uk": "/ˌʌpˈdeɪt/",
+    "us": "/ˌʌpˈdeɪt/"
+  },
+  "upgrade": {
+    "byPos": {
+      "v.": {
+        "uk": "/ˌʌpˈɡreɪd/",
+        "us": "/ˌʌpˈɡreɪd/"
+      },
+      "n.": {
+        "uk": "/ˈʌpɡreɪd/",
+        "us": "/ˈʌpɡreɪd/"
+      }
+    }
+  },
+  "uplift": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈʌplɪft/",
+        "us": "/ˈʌplɪft/"
+      },
+      "v.": {
+        "uk": "/ʌpˈlɪft/",
+        "us": "/ʌpˈlɪft/"
+      }
+    }
+  },
+  "abstract": {
+    "uk": "/ˈæbstrækt/",
+    "us": "/ˈæbstrækt/"
+  },
+  "underestimate": {
+    "uk": "/ˌʌndərˈestɪmeɪt/",
+    "us": "/ˌʌndɚˈestəmeɪt/"
+  },
+  "gp": {
+    "uk": "/ˌdʒiː ˈpiː/",
+    "us": "/ˌdʒiː ˈpiː/"
+  },
+  "cv": {
+    "uk": "/ˌsiː ˈviː/",
+    "us": "/ˌsiː ˈviː/"
+  },
+  "phd": {
+    "uk": "/ˌpiː eɪtʃ ˈdiː/",
+    "us": "/ˌpiː eɪtʃ ˈdiː/"
+  },
+  "dna": {
+    "uk": "/ˌdiː en ˈeɪ/",
+    "us": "/ˌdiː en ˈeɪ/"
+  },
+  "iq": {
+    "uk": "/ˌaɪ ˈkjuː/",
+    "us": "/ˌaɪ ˈkjuː/"
+  },
+  "gdp": {
+    "uk": "/ˌdʒiː diː ˈpiː/",
+    "us": "/ˌdʒiː diː ˈpiː/"
+  },
+  "3d printing": {
+    "uk": "/ˌθriː ˈdiː ˈprɪntɪŋ/",
+    "us": "/ˌθriː ˈdiː ˈprɪntɪŋ/"
+  },
+  "el niño": {
+    "uk": "/el ˈniːnjəʊ/",
+    "us": "/el ˈniːnjoʊ/"
+  },
+  "résumé": {
+    "uk": "/ˈrezjuːmeɪ/",
+    "us": "/ˈrezəmeɪ/"
+  },
+  "lithosphere": {
+    "uk": "/ˈlɪθəsfɪə/",
+    "us": "/ˈlɪθəsfɪr/"
+  },
+  "troposphere": {
+    "uk": "/ˈtrɒpəsfɪə/",
+    "us": "/ˈtroʊpəsfɪr/"
+  },
+  "pictograph": {
+    "uk": "/ˈpɪktəɡrɑːf/",
+    "us": "/ˈpɪktəɡræf/"
+  },
+  "influencer": {
+    "uk": "/ˈɪnfluənsə/",
+    "us": "/ˈɪnfluənsɚ/"
+  },
+  "unfurnished": {
+    "uk": "/ʌnˈfɜːnɪʃt/",
+    "us": "/ʌnˈfɝːnɪʃt/"
+  },
+  "duvet": {
+    "uk": "/ˈduːveɪ/",
+    "us": "/duːˈveɪ/"
+  },
+  "enrol": {
+    "uk": "/ɪnˈrəʊl/",
+    "us": "/ɪnˈroʊl/"
+  },
+  "mollusc": {
+    "uk": "/ˈmɒləsk/",
+    "us": "/ˈmɑːləsk/"
+  },
+  "afforestation": {
+    "uk": "/əˌfɒrɪˈsteɪʃən/",
+    "us": "/əˌfɔːrəˈsteɪʃən/"
+  },
+  "hydroponics": {
+    "uk": "/ˌhaɪdrəˈpɒnɪks/",
+    "us": "/ˌhaɪdrəˈpɑːnɪks/"
+  },
+  "refract": {
+    "uk": "/rɪˈfrækt/",
+    "us": "/rɪˈfrækt/"
+  },
+  "catalysis": {
+    "uk": "/kəˈtæləsɪs/",
+    "us": "/kəˈtæləsɪs/"
+  },
+  "parallelogram": {
+    "uk": "/ˌpærəˈleləɡræm/",
+    "us": "/ˌperəˈleləɡræm/"
+  },
+  "trapezoid": {
+    "uk": "/ˈtræpɪzɔɪd/",
+    "us": "/ˈtræpəzɔɪd/"
+  },
+  "behavioural": {
+    "uk": "/bɪˈheɪvjərəl/",
+    "us": "/bɪˈheɪvjərəl/"
+  },
+  "artefact": {
+    "uk": "/ˈɑːtɪfækt/",
+    "us": "/ˈɑːrtəfækt/"
+  },
+  "numeracy": {
+    "uk": "/ˈnjuːmərəsi/",
+    "us": "/ˈnuːmərəsi/"
+  },
+  "wilful": {
+    "uk": "/ˈwɪlfəl/",
+    "us": "/ˈwɪlfəl/"
+  },
+  "desertification": {
+    "uk": "/dɪˌzɜːtɪfɪˈkeɪʃən/",
+    "us": "/dɪˌzɝːtəfɪˈkeɪʃən/"
+  },
+  "vivisection": {
+    "uk": "/ˌvɪvɪˈsekʃən/",
+    "us": "/ˌvɪvəˈsekʃən/"
+  },
+  "unselfish": {
+    "uk": "/ʌnˈselfɪʃ/",
+    "us": "/ʌnˈselfɪʃ/"
+  },
+  "sceptical": {
+    "uk": "/ˈskeptɪkəl/",
+    "us": "/ˈskeptɪkəl/"
+  },
+  "biofuel": {
+    "uk": "/ˈbaɪəʊfjuːəl/",
+    "us": "/ˈbaɪoʊfjuːəl/"
+  },
+  "neptune": {
+    "uk": "/ˈneptjuːn/",
+    "us": "/ˈneptuːn/"
+  },
+  "uranus": {
+    "uk": "/ˈjʊərənəs/",
+    "us": "/ˈjʊrənəs/"
+  },
+  "arithmetic": {
+    "uk": "/əˈrɪθmətɪk/",
+    "us": "/əˈrɪθmətɪk/"
+  },
+  "paleolithic": {
+    "uk": "/ˌpæliəˈlɪθɪk/",
+    "us": "/ˌpeɪlioʊˈlɪθɪk/"
+  },
+  "buddhism": {
+    "uk": "/ˈbʊdɪzəm/",
+    "us": "/ˈbuːdɪzəm/"
+  },
+  "cheongsam": {
+    "uk": "/ˌtʃɒŋˈsæm/",
+    "us": "/ˌtʃɑːŋˈsɑːm/"
+  },
+  "buffet": {
+    "uk": "/ˈbʊfeɪ/",
+    "us": "/bəˈfeɪ/"
+  },
+  "mobile": {
+    "uk": "/ˈməʊbaɪl/",
+    "us": "/ˈmoʊbəl/"
+  },
+  "routine": {
+    "uk": "/ruːˈtiːn/",
+    "us": "/ruːˈtiːn/"
+  },
+  "reoffend": {
+    "uk": "/ˌriːəˈfend/",
+    "us": "/ˌriːəˈfend/"
+  },
+  "hard-working": {
+    "uk": "/ˌhɑːdˈwɜːkɪŋ/",
+    "us": "/ˌhɑːrdˈwɝːkɪŋ/"
+  },
+  "brand-new": {
+    "uk": "/ˌbrænd ˈnjuː/",
+    "us": "/ˌbrænd ˈnuː/"
+  },
+  "e-commerce": {
+    "uk": "/ˌiː ˈkɒmɜːs/",
+    "us": "/ˌiː ˈkɑːmɝːs/"
+  },
+  "face-to-face": {
+    "uk": "/ˌfeɪs tə ˈfeɪs/",
+    "us": "/ˌfeɪs tə ˈfeɪs/"
+  },
+  "long-term": {
+    "uk": "/ˌlɒŋ ˈtɜːm/",
+    "us": "/ˌlɔːŋ ˈtɝːm/"
+  },
+  "short-term": {
+    "uk": "/ˌʃɔːt ˈtɜːm/",
+    "us": "/ˌʃɔːrt ˈtɝːm/"
+  },
+  "part-time": {
+    "uk": "/ˌpɑːt ˈtaɪm/",
+    "us": "/ˌpɑːrt ˈtaɪm/"
+  },
+  "full-time": {
+    "uk": "/ˌfʊl ˈtaɪm/",
+    "us": "/ˌfʊl ˈtaɪm/"
+  },
+  "run-down": {
+    "uk": "/ˌrʌn ˈdaʊn/",
+    "us": "/ˌrʌn ˈdaʊn/"
+  },
+  "well-being": {
+    "uk": "/ˌwel ˈbiːɪŋ/",
+    "us": "/ˌwel ˈbiːɪŋ/"
+  },
+  "fast-paced": {
+    "uk": "/ˌfɑːst ˈpeɪst/",
+    "us": "/ˌfæst ˈpeɪst/"
+  },
+  "state-of-the-art": {
+    "uk": "/ˌsteɪt əv ði ˈɑːt/",
+    "us": "/ˌsteɪt əv ði ˈɑːrt/"
+  },
+  "north-east": {
+    "uk": "/ˌnɔːθ ˈiːst/",
+    "us": "/ˌnɔːrθ ˈiːst/"
+  },
+  "cutting-edge": {
+    "uk": "/ˌkʌtɪŋ ˈedʒ/",
+    "us": "/ˌkʌtɪŋ ˈedʒ/"
+  },
+  "good-looking": {
+    "uk": "/ˌɡʊd ˈlʊkɪŋ/",
+    "us": "/ˌɡʊd ˈlʊkɪŋ/"
+  },
+  "check-up": {
+    "uk": "/ˈtʃek ʌp/",
+    "us": "/ˈtʃek ʌp/"
+  },
+  "start-up": {
+    "uk": "/ˈstɑːt ʌp/",
+    "us": "/ˈstɑːrt ʌp/"
+  },
+  "non-fiction": {
+    "uk": "/ˌnɒn ˈfɪkʃən/",
+    "us": "/ˌnɑːn ˈfɪkʃən/"
+  },
+  "non-linear": {
+    "uk": "/ˌnɒn ˈlɪniə/",
+    "us": "/ˌnɑːn ˈlɪniɚ/"
+  },
+  "non-verbal": {
+    "uk": "/ˌnɒn ˈvɜːbəl/",
+    "us": "/ˌnɑːn ˈvɝːbəl/"
+  },
+  "wind turbine": {
+    "uk": "/ˈwɪnd tɜːbaɪn/",
+    "us": "/ˈwɪnd tɝːbaɪn/"
+  },
+  "wind energy": {
+    "uk": "/wɪnd ˈenədʒi/",
+    "us": "/wɪnd ˈenɚdʒi/"
+  },
+  "lead to": {
+    "uk": "/ˈliːd tə/",
+    "us": "/ˈliːd tə/"
+  },
+  "wear and tear": {
+    "uk": "/ˌweər ən ˈteə/",
+    "us": "/ˌwer ən ˈter/"
+  },
+  "make use of": {
+    "uk": "/meɪk ˈjuːs əv/",
+    "us": "/meɪk ˈjuːs əv/"
+  },
+  "be subject to": {
+    "uk": "/bi ˈsʌbdʒekt tə/",
+    "us": "/bi ˈsʌbdʒekt tə/"
+  },
+  "medical record": {
+    "uk": "/ˌmedɪkəl ˈrekɔːd/",
+    "us": "/ˌmedɪkəl ˈrekɚd/"
+  },
+  "repair": {
+    "uk": "/rɪˈpeə/",
+    "us": "/rɪˈper/"
+  },
+  "sightseeing": {
+    "uk": "/ˈsaɪtsiːɪŋ/",
+    "us": "/ˈsaɪtsiːɪŋ/"
+  },
+  "overseas": {
+    "uk": "/ˌəʊvəˈsiːz/",
+    "us": "/ˌoʊvɚˈsiːz/"
+  },
+  "anticlockwise": {
+    "us": "/ˌæntiˈklɑːkwaɪz/"
+  },
+  "halfway": {
+    "uk": "/ˌhɑːfˈweɪ/",
+    "us": "/ˌhæfˈweɪ/"
+  },
+  "fundraising": {
+    "uk": "/ˈfʌndreɪzɪŋ/",
+    "us": "/ˈfʌndreɪzɪŋ/"
+  },
+  "backstage": {
+    "uk": "/ˌbækˈsteɪdʒ/",
+    "us": "/ˌbækˈsteɪdʒ/"
+  },
+  "internship": {
+    "uk": "/ˈɪntɜːnʃɪp/",
+    "us": "/ˈɪntɝːnʃɪp/"
+  },
+  "trainee": {
+    "uk": "/ˌtreɪˈniː/",
+    "us": "/ˌtreɪˈniː/"
+  },
+  "headquarters": {
+    "uk": "/ˌhedˈkwɔːtəz/",
+    "us": "/ˈhedkwɔːrtɚz/"
+  },
+  "orientation": {
+    "uk": "/ˌɔːriənˈteɪʃən/",
+    "us": "/ˌɔːriənˈteɪʃən/"
+  },
+  "interviewee": {
+    "uk": "/ˌɪntəvjuˈiː/",
+    "us": "/ˌɪntɚvjuˈiː/"
+  },
+  "interrupt": {
+    "uk": "/ˌɪntəˈrʌpt/",
+    "us": "/ˌɪntəˈrʌpt/"
+  },
+  "theoretical": {
+    "uk": "/ˌθɪəˈretɪkəl/",
+    "us": "/ˌθiːəˈretɪkəl/"
+  },
+  "homogeneous": {
+    "uk": "/ˌhɒməˈdʒiːniəs/",
+    "us": "/ˌhoʊməˈdʒiːniəs/"
+  },
+  "variability": {
+    "uk": "/ˌveəriəˈbɪləti/",
+    "us": "/ˌveriəˈbɪləti/"
+  },
+  "whereas": {
+    "uk": "/weərˈæz/",
+    "us": "/werˈæz/"
+  },
+  "furthermore": {
+    "uk": "/ˌfɜːðəˈmɔː/",
+    "us": "/ˌfɝːðɚˈmɔːr/"
+  },
+  "conversely": {
+    "us": "/kənˈvɝːsli/"
+  },
+  "whereby": {
+    "uk": "/weəˈbaɪ/",
+    "us": "/werˈbaɪ/"
+  },
+  "widespread": {
+    "uk": "/ˌwaɪdˈspred/",
+    "us": "/ˌwaɪdˈspred/"
+  },
+  "realistic": {
+    "uk": "/ˌrɪəˈlɪstɪk/",
+    "us": "/ˌriːəˈlɪstɪk/"
+  },
+  "somewhat": {
+    "uk": "/ˈsʌmwɒt/",
+    "us": "/ˈsʌmwʌt/"
+  },
+  "forthcoming": {
+    "uk": "/ˌfɔːθˈkʌmɪŋ/",
+    "us": "/ˌfɔːrθˈkʌmɪŋ/"
+  },
+  "hitherto": {
+    "uk": "/ˌhɪðəˈtuː/",
+    "us": "/ˌhɪðɚˈtuː/"
+  },
+  "worthwhile": {
+    "uk": "/ˌwɜːθˈwaɪl/",
+    "us": "/ˌwɝːθˈwaɪl/"
+  },
+  "undertake": {
+    "us": "/ˌʌndɚˈteɪk/"
+  },
+  "conserve": {
+    "uk": "/kənˈsɜːv/"
+  },
+  "distribute": {
+    "uk": "/dɪˈstrɪbjuːt/",
+    "us": "/dɪˈstrɪbjuːt/"
+  },
+  "contribute": {
+    "uk": "/kənˈtrɪbjuːt/",
+    "us": "/kənˈtrɪbjuːt/"
+  },
+  "instil": {
+    "us": "/ɪnˈstɪl/"
+  },
+  "undermine": {
+    "us": "/ˌʌndɚˈmaɪn/"
+  },
+  "overcome": {
+    "us": "/ˌoʊvɚˈkʌm/"
+  },
+  "oversee": {
+    "us": "/ˌoʊvɚˈsiː/"
+  },
+  "discard": {
+    "uk": "/dɪˈskɑːd/"
+  },
+  "offshore": {
+    "uk": "/ˌɒfˈʃɔː/",
+    "us": "/ˌɔːfˈʃɔːr/"
+  },
+  "cyclone": {
+    "us": "/ˈsaɪkloʊn/"
+  },
+  "overfishing": {
+    "us": "/ˌoʊvɚˈfɪʃɪŋ/"
+  },
+  "chimpanzee": {
+    "us": "/ˌtʃɪmpænˈziː/"
+  },
+  "hippopotamus": {
+    "uk": "/ˌhɪpəˈpɒtəməs/"
+  },
+  "kangaroo": {
+    "uk": "/ˌkæŋɡəˈruː/"
+  },
+  "chlorophyll": {
+    "uk": "/ˈklɒrəfɪl/"
+  },
+  "conifer": {
+    "uk": "/ˈkɒnɪfə/"
+  },
+  "sequoia": {
+    "uk": "/sɪˈkwɔɪə/"
+  },
+  "aluminium": {
+    "us": "/əˈluːmɪnəm/"
+  },
+  "dehydrate": {
+    "us": "/diːˈhaɪdreɪt/"
+  },
+  "hydrocarbon": {
+    "uk": "/ˌhaɪdrəˈkɑːbən/"
+  },
+  "pseudoscience": {
+    "uk": "/ˌsjuːdəʊˈsaɪəns/"
+  },
+  "intergalactic": {
+    "us": "/ˌɪntɚɡəˈlæktɪk/"
+  },
+  "factorial": {
+    "us": "/fækˈtɔːriəl/"
+  },
+  "circulation": {
+    "us": "/ˌsɝːkjəˈleɪʃən/"
+  },
+  "hypertension": {
+    "uk": "/ˌhaɪpəˈtenʃən/"
+  },
+  "dissect": {
+    "uk": "/daɪˈsekt/"
+  },
+  "hieroglyph": {
+    "us": "/ˈhaɪrəɡlɪf/"
+  },
+  "medieval": {
+    "uk": "/ˌmediˈiːvəl/",
+    "us": "/ˌmediˈiːvəl/"
+  },
+  "neolithic": {
+    "us": "/ˌniːəˈlɪθɪk/"
+  },
+  "patriarchal": {
+    "uk": "/ˌpeɪtriˈɑːkəl/"
+  },
+  "infrastructure": {
+    "us": "/ˈɪnfrəstrʌktʃɚ/"
+  },
+  "outdated": {
+    "uk": "/ˌaʊtˈdeɪtɪd/",
+    "us": "/ˌaʊtˈdeɪtɪd/"
+  },
+  "overtake": {
+    "us": "/ˌoʊvɚˈteɪk/"
+  },
+  "relocate": {
+    "uk": "/ˌriːləʊˈkeɪt/",
+    "us": "/ˌriːˈloʊkeɪt/"
+  },
+  "accountability": {
+    "us": "/əˌkaʊntəˈbɪləti/"
+  },
+  "nominee": {
+    "uk": "/ˌnɒmɪˈniː/"
+  },
+  "incineration": {
+    "us": "/ɪnˌsɪnəˈreɪʃən/"
+  },
+  "deterioration": {
+    "us": "/dɪˌtɪriəˈreɪʃən/"
+  },
+  "homogenisation": {
+    "uk": "/həˌmɒdʒənaɪˈzeɪʃən/",
+    "us": "/həˌmɑːdʒənəˈzeɪʃən/"
+  },
+  "overcrowding": {
+    "us": "/ˌoʊvɚˈkraʊdɪŋ/"
+  },
+  "upbringing": {
+    "uk": "/ˈʌpbrɪŋɪŋ/"
+  },
+  "individualism": {
+    "us": "/ˌɪndɪˈvɪdʒuəlɪzəm/"
+  },
+  "overweight": {
+    "uk": "/ˌəʊvəˈweɪt/"
+  },
+  "outgoing": {
+    "us": "/ˌaʊtˈɡoʊɪŋ/"
+  },
+  "exquisite": {
+    "uk": "/ɪkˈskwɪzɪt/",
+    "us": "/ɪkˈskwɪzɪt/"
+  },
+  "picturesque": {
+    "us": "/ˌpɪktʃəˈresk/"
+  },
+  "lightweight": {
+    "uk": "/ˈlaɪtweɪt/",
+    "us": "/ˈlaɪtweɪt/"
+  },
+  "handmade": {
+    "uk": "/ˌhændˈmeɪd/",
+    "us": "/ˌhændˈmeɪd/"
+  },
+  "downtown": {
+    "uk": "/ˌdaʊnˈtaʊn/",
+    "us": "/ˌdaʊnˈtaʊn/"
+  },
+  "mountaineering": {
+    "us": "/ˌmaʊntəˈnɪrɪŋ/"
+  },
+  "assure": {
+    "uk": "/əˈʃɔː/",
+    "us": "/əˈʃʊr/"
+  },
+  "magazine": {
+    "us": "/ˈmæɡəziːn/"
+  },
+  "fluid": {
+    "uk": "/ˈfluːɪd/",
+    "us": "/ˈfluːɪd/"
+  },
+  "excerpt": {
+    "uk": "/ˈeksɜːpt/",
+    "us": "/ˈeksɝːpt/"
+  },
+  "en-suite": {
+    "uk": "/ˌɒn ˈswiːt/",
+    "us": "/ˌɑːn ˈswiːt/"
+  },
+  "exhibition": {
+    "uk": "/ˌeksɪˈbɪʃən/",
+    "us": "/ˌeksəˈbɪʃən/"
+  },
+  "dual-income": {
+    "uk": "/ˌdjuːəl ˈɪnkʌm/",
+    "us": "/ˌduːəl ˈɪnkʌm/"
+  }
+}

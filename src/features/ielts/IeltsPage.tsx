@@ -530,7 +530,15 @@ function EntryView({
               return (
                 <div className="vocab-accent" key={accent.id}>
                   <span className="vocab-accent-tag">{accent.label}</span>
-                  <span className="vocab-accent-ipa">{accent.phonetic}</span>
+                  <span className="vocab-accent-ipa">
+                    {entry.posPhonetics
+                      ? entry.posPhonetics.map((row) => (
+                          <span key={row.pos} className="ielts-pos-ipa">
+                            <em>{row.pos}</em> {row[accent.id]}
+                          </span>
+                        ))
+                      : accent.phonetic}
+                  </span>
                   {url ? (
                     <button
                       type="button"

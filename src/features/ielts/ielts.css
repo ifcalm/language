@@ -429,7 +429,19 @@
 }
 
 .ielts-accents {
-  max-width: 420px;
+  max-width: 460px;
+}
+
+/* Words whose stress changes with part of speech: n. /ˈɪnkriːs/  v. /ɪnˈkriːs/ */
+.ielts-pos-ipa {
+  margin-right: 14px;
+  white-space: nowrap;
+}
+
+.ielts-pos-ipa em {
+  color: var(--text-muted);
+  font-style: normal;
+  font-weight: 650;
 }
 
 .ielts-entry-detail .ielts-status {
