@@ -9,10 +9,17 @@ export interface IeltsEntry {
   id: string
   word: string
   topicId: string
+  /** Index into IeltsTopicSummary.groups when the topic has sub-groups. */
+  group?: number
   senses: IeltsSense[]
   phoneticUk?: string
   phoneticUs?: string
   audioKey?: string
+}
+
+export interface IeltsTopicGroup {
+  title: string
+  entryCount: number
 }
 
 export interface IeltsTopicSummary {
@@ -20,6 +27,7 @@ export interface IeltsTopicSummary {
   order: number
   title: string
   entryCount: number
+  groups?: IeltsTopicGroup[]
 }
 
 export interface IeltsModuleSummary {

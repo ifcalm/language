@@ -186,7 +186,8 @@
 }
 
 .ielts-topic-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
   height: 100%;
@@ -214,6 +215,39 @@
 .ielts-topic-card strong {
   font-size: 1.02rem;
   line-height: 1.4;
+}
+
+.ielts-topic-groups {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.ielts-topic-card .ielts-progress {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Sub-groups inside a merged topic */
+.ielts-group {
+  display: grid;
+  gap: 10px;
+}
+
+.ielts-group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 6px 0 0;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.ielts-group-title span {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Filter */
