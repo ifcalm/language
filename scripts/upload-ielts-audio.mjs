@@ -1,95 +1,35 @@
 // Uploads generated IELTS audio from .runtime/ielts-audio/v1 to the R2 bucket
-// under ielts/pronunciations/v1/{uk|us}/{key}.m4a via the Cloudflare API, then
-// writes scripts/fixtures/ielts-audio.json (the committed list of keys that
-// exist on R2, read by build-ielts-data).
+// under ielts/pronunciations/v1/{uk|us}/{key}.m4a through R2's S3-compatible
+// API (not rate limited like the Cloudflare REST API), with a long-lived
+// Cache-Control header. The path is versioned (v1), so files never change in
+// place. Then writes scripts/fixtures/ielts-audio.json, the committed list of
+// keys confirmed on R2, read by build-ielts-data.
 //
 // Objects already on R2 are skipped unless --force. --dry-run only reports.
 // Behind a local proxy run with NODE_USE_ENV_PROXY=1.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { createR2Client } from './lib/r2-s3.mjs'
 
-const ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID ?? '2497517a9aa6fae07a043ac4a24bfdd2'
 const BUCKET = 'english-orbit'
 const PREFIX = 'ielts/pronunciations/v1'
 const LOCAL_DIR = '.runtime/ielts-audio/v1'
 const MANIFEST_PATH = `${LOCAL_DIR}/manifest.json`
 const FIXTURE_PATH = 'scripts/fixtures/ielts-audio.json'
-const API = `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/r2/buckets/${BUCKET}/objects`
+const CACHE_CONTROL = 'public, max-age=31536000, immutable'
 const DRY_RUN = process.argv.includes('--dry-run')
 const FORCE = process.argv.includes('--force')
-const CONCURRENCY = 8
-
-function readToken() {
-  if (process.env.CLOUDFLARE_API_TOKEN) {
-    return process.env.CLOUDFLARE_API_TOKEN
-  }
-
-  const match = readFileSync('.env.local', 'utf8').match(/^CLOUDFLARE_API_TOKEN=(.+)$/m)
-
-  if (!match) {
-    throw new Error('CLOUDFLARE_API_TOKEN is missing (env or .env.local).')
-  }
-
-  return match[1].trim().replace(/^["']|["']$/g, '')
-}
-
-const token = readToken()
-const headers = { Authorization: `Bearer ${token}` }
-
-async function listRemoteKeys() {
-  const keys = new Set()
-  let cursor = ''
-
-  do {
-    const url = `${API}?prefix=${encodeURIComponent(`${PREFIX}/`)}&per_page=1000${cursor ? `&cursor=${cursor}` : ''}`
-    const response = await fetch(url, { headers, signal: AbortSignal.timeout(60_000) })
-    const body = await response.json()
-
-    if (!body.success) {
-      throw new Error(`R2 list failed: ${JSON.stringify(body.errors)}`)
-    }
-
-    for (const object of body.result) {
-      keys.add(object.key)
-    }
-
-    cursor = body.result_info?.is_truncated ? body.result_info.cursor : ''
-  } while (cursor)
-
-  return keys
-}
-
-async function upload(localPath, key) {
-  for (let attempt = 1; attempt <= 4; attempt += 1) {
-    const response = await fetch(`${API}/${key}`, {
-      method: 'PUT',
-      headers: { ...headers, 'Content-Type': 'audio/mp4' },
-      body: readFileSync(localPath),
-      signal: AbortSignal.timeout(60_000),
-    })
-
-    if (response.ok) {
-      return
-    }
-
-    if (response.status !== 429 && response.status < 500) {
-      throw new Error(`R2 PUT ${response.status} ${key}: ${await response.text()}`)
-    }
-
-    await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt))
-  }
-
-  throw new Error(`R2 PUT kept failing for ${key}`)
-}
+const CONCURRENCY = Number(process.env.IELTS_UPLOAD_CONCURRENCY ?? 24)
 
 if (!existsSync(MANIFEST_PATH)) {
   throw new Error(`Missing ${MANIFEST_PATH}; run generate-ielts-audio first.`)
 }
 
+const r2 = createR2Client(BUCKET)
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'))
 const local = Object.keys(manifest)
   .filter((manifestKey) => existsSync(`${LOCAL_DIR}/${manifestKey}.m4a`))
   .map((manifestKey) => ({ manifestKey, key: `${PREFIX}/${manifestKey}.m4a` }))
-const remote = await listRemoteKeys()
+const remote = await r2.listKeys(`${PREFIX}/`)
 const pending = local.filter((item) => FORCE || !remote.has(item.key))
 
 console.log(`Local ${local.length}, already on R2 ${remote.size}, to upload ${pending.length}.`)
@@ -104,16 +44,26 @@ if (!DRY_RUN) {
       while (queue.length > 0) {
         const item = queue.shift()
 
-        try {
-          await upload(`${LOCAL_DIR}/${item.manifestKey}.m4a`, item.key)
-          remote.add(item.key)
-          uploaded += 1
-
-          if (uploaded % 500 === 0) {
-            console.log(`uploaded ${uploaded}/${pending.length}`)
+        for (let attempt = 1; attempt <= 4; attempt += 1) {
+          try {
+            await r2.putObject(item.key, readFileSync(`${LOCAL_DIR}/${item.manifestKey}.m4a`), {
+              'Content-Type': 'audio/mp4',
+              'Cache-Control': CACHE_CONTROL,
+            })
+            remote.add(item.key)
+            uploaded += 1
+            break
+          } catch (error) {
+            if (attempt === 4) {
+              failures.push(error.message)
+            } else {
+              await new Promise((resolve) => setTimeout(resolve, 1000 * attempt))
+            }
           }
-        } catch (error) {
-          failures.push(error.message)
+        }
+
+        if (uploaded > 0 && uploaded % 1000 === 0) {
+          console.log(`uploaded ${uploaded}/${pending.length}`)
         }
       }
     }),
@@ -126,8 +76,9 @@ if (!DRY_RUN) {
   }
 
   // Record only keys confirmed on R2 so the site never links missing audio.
+  const confirmed = await r2.listKeys(`${PREFIX}/`)
   const onRemote = Object.keys(manifest)
-    .filter((manifestKey) => remote.has(`${PREFIX}/${manifestKey}.m4a`))
+    .filter((manifestKey) => confirmed.has(`${PREFIX}/${manifestKey}.m4a`))
     .sort()
   writeFileSync(FIXTURE_PATH, `${JSON.stringify({ prefix: PREFIX, keys: onRemote }, null, 2)}\n`)
   console.log(`Wrote ${onRemote.length} keys -> ${FIXTURE_PATH}`)
