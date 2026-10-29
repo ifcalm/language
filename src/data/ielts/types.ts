@@ -16,6 +16,9 @@ export interface IeltsEntry {
   phoneticUs?: string
   /** Present when stress or vowels change with part of speech (increase n./v.). */
   posPhonetics?: IeltsPosPhonetic[]
+  /** IELTS audio exists at ielts/pronunciations/v1/{uk|us}/{id}.m4a. */
+  audio?: boolean
+  /** Legacy: reused COCA audio key, only until IELTS audio is uploaded. */
   audioKey?: string
 }
 
@@ -23,6 +26,8 @@ export interface IeltsPosPhonetic {
   pos: string
   uk: string
   us: string
+  /** Audio exists at ielts/pronunciations/v1/{uk|us}/{id}-{pos}.m4a. */
+  audio?: boolean
 }
 
 export interface IeltsTopicGroup {
