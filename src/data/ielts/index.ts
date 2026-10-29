@@ -15,6 +15,8 @@ export type {
 
 // Keep in sync with AUDIO_BASE_URL in scripts/build-ielts-data.mjs.
 export const IELTS_AUDIO_BASE_URL = 'https://assets.english.ifcalm.org/pronunciations'
+// Keep in sync with PREFIX in scripts/upload-ielts-audio.mjs.
+const IELTS_OWN_AUDIO_BASE_URL = 'https://assets.english.ifcalm.org/ielts/pronunciations/v1'
 
 // The catalog is a few KB and ships with the page; module entries are split into
 // separate hashed chunks and only downloaded when a module is opened.
@@ -41,6 +43,21 @@ export function loadIeltsModule(moduleId: IeltsModuleId): Promise<IeltsModuleDat
   return pending
 }
 
-export function getIeltsAudioUrl(entry: IeltsEntry, accent: 'uk' | 'us'): string | null {
+export function getIeltsAudioUrl(
+  entry: IeltsEntry,
+  accent: 'uk' | 'us',
+  pos?: string,
+): string | null {
+  if (pos) {
+    const row = entry.posPhonetics?.find((item) => item.pos === pos)
+    return row?.audio
+      ? `${IELTS_OWN_AUDIO_BASE_URL}/${accent}/${entry.id}-${pos.replace(/\./g, '')}.m4a`
+      : null
+  }
+
+  if (entry.audio) {
+    return `${IELTS_OWN_AUDIO_BASE_URL}/${accent}/${entry.id}.m4a`
+  }
+
   return entry.audioKey ? `${IELTS_AUDIO_BASE_URL}/${accent}/${entry.audioKey}.m4a` : null
 }

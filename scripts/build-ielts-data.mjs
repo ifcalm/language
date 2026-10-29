@@ -12,6 +12,8 @@ import {
 const PRONUNCIATIONS_PATH = 'scripts/fixtures/ielts-pronunciations.json'
 const PHONETICS_PATH = 'scripts/fixtures/ielts-phonetics.json'
 const PHONETIC_OVERRIDES_PATH = 'scripts/fixtures/ielts-phonetics-overrides.json'
+// Keys of IELTS audio confirmed on R2 (written by scripts/upload-ielts-audio.mjs).
+const AUDIO_FIXTURE_PATH = 'scripts/fixtures/ielts-audio.json'
 const OUTPUT_DIR = 'src/data/ielts/generated'
 const CHECK_ONLY = process.argv.includes('--check')
 // Keep in sync with IELTS_AUDIO_BASE_URL in src/data/ielts/index.ts.
@@ -24,6 +26,18 @@ function readJson(path) {
 const pronunciations = readJson(PRONUNCIATIONS_PATH)
 const phonetics = readJson(PHONETICS_PATH)
 const phoneticOverrides = readJson(PHONETIC_OVERRIDES_PATH)
+const ieltsAudioKeys = existsSync(AUDIO_FIXTURE_PATH)
+  ? new Set(readJson(AUDIO_FIXTURE_PATH).keys)
+  : null
+
+// Mirrors the file naming in scripts/generate-ielts-audio.mjs: increase-n, increase-v.
+function posAudioKey(id, pos) {
+  return `${id}-${pos.replace(/\./g, '')}`
+}
+
+function hasIeltsAudio(key) {
+  return ieltsAudioKeys.has(`uk/${key}`) && ieltsAudioKeys.has(`us/${key}`)
+}
 
 // Entry-level IPA plus, for words whose stress changes with part of speech,
 // one { pos, uk, us } row per part of speech the entry actually uses.
@@ -70,6 +84,20 @@ function toEntry(entry, topicId) {
 
   if (resolved.posPhonetics) {
     result.posPhonetics = resolved.posPhonetics
+  }
+
+  // IELTS audio (own R2 folder, named by entry id) replaces the reused COCA
+  // audio once uploaded.
+  if (ieltsAudioKeys) {
+    if (result.posPhonetics) {
+      result.posPhonetics = result.posPhonetics.map((row) =>
+        hasIeltsAudio(posAudioKey(entry.id, row.pos)) ? { ...row, audio: true } : row,
+      )
+    } else if (hasIeltsAudio(entry.id)) {
+      result.audio = true
+    }
+
+    return result
   }
 
   // Audio follows {base}/{uk|us}/{key}.m4a; store only the key to keep chunks small.
@@ -126,7 +154,9 @@ let missingAudio = 0
 
 for (const { entries } of [...files.values()].filter((file) => file.entries)) {
   missingPhonetic += entries.filter((entry) => !entry.phoneticUk && !entry.phoneticUs).length
-  missingAudio += entries.filter((entry) => !entry.audioKey).length
+  missingAudio += entries.filter(
+    (entry) => !entry.audioKey && !entry.audio && !entry.posPhonetics?.some((row) => row.audio),
+  ).length
 }
 
 if (CHECK_ONLY) {

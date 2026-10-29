@@ -503,7 +503,7 @@ function EntryView({
   const accents = [
     { id: 'uk' as const, label: 'UK', phonetic: entry.phoneticUk },
     { id: 'us' as const, label: 'US', phonetic: entry.phoneticUs },
-  ].filter((accent) => accent.phonetic || entry.audioKey)
+  ].filter((accent) => accent.phonetic || entry.audioKey || entry.audio)
 
   function openEntry(target: IeltsEntry) {
     onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: target.id })
@@ -532,11 +532,28 @@ function EntryView({
                   <span className="vocab-accent-tag">{accent.label}</span>
                   <span className="vocab-accent-ipa">
                     {entry.posPhonetics
-                      ? entry.posPhonetics.map((row) => (
-                          <span key={row.pos} className="ielts-pos-ipa">
-                            <em>{row.pos}</em> {row[accent.id]}
-                          </span>
-                        ))
+                      ? entry.posPhonetics.map((row) => {
+                          const posUrl = getIeltsAudioUrl(entry, accent.id, row.pos)
+                          const posKey = `${entry.id}-${accent.id}-${row.pos}`
+
+                          return (
+                            <span key={row.pos} className="ielts-pos-ipa">
+                              <em>{row.pos}</em> {row[accent.id]}
+                              {posUrl ? (
+                                <button
+                                  type="button"
+                                  className={`vocab-accent-play ielts-pos-play${activeKey === posKey ? ' playing' : ''}`}
+                                  aria-label={`播放 ${entry.word} ${row.pos} ${accent.label} 读音`}
+                                  onClick={() =>
+                                    play(posKey, posUrl, `${entry.word} ${row.pos} 的 ${accent.label} 读音`)
+                                  }
+                                >
+                                  <SpeakerIcon />
+                                </button>
+                              ) : null}
+                            </span>
+                          )
+                        })
                       : accent.phonetic}
                   </span>
                   {url ? (
