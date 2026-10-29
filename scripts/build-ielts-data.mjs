@@ -1,17 +1,23 @@
-// Generates the static IELTS vocabulary data under src/data/ielts/generated/.
+// Generates the static IELTS vocabulary data under src/data/ielts/generated/
+// and the readable docs/ielts-vocabulary.md.
 //
 // - Words, meanings, US spellings, IPA and audio come from the D1 snapshot
 //   scripts/fixtures/ielts-d1.json (refresh with `npm run ielts:export`).
-// - Modules, topics, sub-groups and word order still come from
-//   docs/ielts-vocabulary.md until the topic tables move to D1; only the
-//   entry ids are read from it, so its meanings no longer matter.
+// - Modules, topics, sub-groups and word order come from the arrangement
+//   file src/data/ielts/topics.json, which holds word ids only.
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
-import { IELTS_SOURCE_PATH, parseSenses, readIeltsSource } from './lib/ielts-vocabulary-source.mjs'
+import { parseSenses } from './lib/ielts-vocabulary-source.mjs'
+import {
+  IELTS_MARKDOWN_PATH,
+  IELTS_TOPICS_PATH,
+  readIeltsTopics,
+  renderIeltsMarkdown,
+} from './lib/ielts-topics.mjs'
 
 const SNAPSHOT_PATH = 'scripts/fixtures/ielts-d1.json'
 const OUTPUT_DIR = 'src/data/ielts/generated'
 const CHECK_ONLY = process.argv.includes('--check')
-// Keep in sync with IELTS_OWN_AUDIO_BASE_URL in src/data/ielts/index.ts.
+// Keep in sync with IELTS_AUDIO_BASE_URL in src/data/ielts/index.ts.
 const AUDIO_BASE_URL = 'https://assets.english.ifcalm.org/ielts/pronunciations/v1'
 
 if (!existsSync(SNAPSHOT_PATH)) {
@@ -41,7 +47,7 @@ function toEntry(sourceEntry, topicId) {
   const word = wordsById.get(sourceEntry.id)
 
   if (!word) {
-    throw new Error(`"${sourceEntry.word}" (${sourceEntry.id}) is in ${IELTS_SOURCE_PATH} but not in D1`)
+    throw new Error(`"${sourceEntry.id}" is in ${IELTS_TOPICS_PATH} but not in D1`)
   }
 
   const senses = parseSenses(word.meaningZh)
@@ -90,10 +96,10 @@ function toEntry(sourceEntry, topicId) {
   return result
 }
 
-const modules = readIeltsSource()
+const modules = readIeltsTopics()
 const files = new Map()
 const catalog = {
-  source: IELTS_SOURCE_PATH,
+  source: IELTS_TOPICS_PATH,
   entryCount: 0,
   modules: [],
 }
@@ -129,11 +135,13 @@ const unplaced = snapshot.words.filter((word) => !placed.has(word.id))
 
 if (unplaced.length > 0) {
   throw new Error(
-    `D1 words without a topic in ${IELTS_SOURCE_PATH}: ${unplaced.map((word) => word.id).join(', ')}`,
+    `D1 words without a topic in ${IELTS_TOPICS_PATH}: ${unplaced.map((word) => word.id).join(', ')}`,
   )
 }
 
 files.set('catalog.json', catalog)
+
+const markdown = renderIeltsMarkdown(modules, wordsById)
 
 let missingPhonetic = 0
 let missingAudio = 0
@@ -149,10 +157,14 @@ if (CHECK_ONLY) {
   const stale = [...files].filter(([name, data]) => {
     const path = `${OUTPUT_DIR}/${name}`
     return !existsSync(path) || readFileSync(path, 'utf8') !== `${JSON.stringify(data)}\n`
-  })
+  }).map(([name]) => name)
+
+  if (!existsSync(IELTS_MARKDOWN_PATH) || readFileSync(IELTS_MARKDOWN_PATH, 'utf8') !== markdown) {
+    stale.push(IELTS_MARKDOWN_PATH)
+  }
 
   if (stale.length > 0) {
-    console.error(`Stale IELTS data: ${stale.map(([name]) => name).join(', ')}. Run npm run ielts:build.`)
+    console.error(`Stale IELTS data: ${stale.join(', ')}. Run npm run ielts:build.`)
     process.exit(1)
   }
 
@@ -164,6 +176,8 @@ if (CHECK_ONLY) {
   for (const [name, data] of files) {
     writeFileSync(`${OUTPUT_DIR}/${name}`, `${JSON.stringify(data)}\n`)
   }
+
+  writeFileSync(IELTS_MARKDOWN_PATH, markdown)
 
   for (const module of catalog.modules) {
     console.log(`${module.name}: ${module.topics.length} topics, ${module.entryCount} entries`)

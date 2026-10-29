@@ -504,7 +504,7 @@ function EntryView({
   const accents = [
     { id: 'uk' as const, label: 'UK', phonetic: entry.phoneticUk },
     { id: 'us' as const, label: 'US', phonetic: entry.phoneticUs },
-  ].filter((accent) => accent.phonetic || entry.audioKey || entry.audio)
+  ].filter((accent) => accent.phonetic || entry.audio)
 
   function openEntry(target: IeltsEntry) {
     onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: target.id })

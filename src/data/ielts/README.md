@@ -13,19 +13,23 @@ D1(唯一数据源)
         │  npm run ielts:export(只读查询 D1)
         ▼
 scripts/fixtures/ielts-d1.json   D1 快照,提交到 git(一行一条记录,diff 可读)
-docs/ielts-vocabulary.md         暂时只提供模块 / 话题 / 小节结构与词序(话题表入库后改为导出产物)
+src/data/ielts/topics.json       编排文件:模块 / 话题 / 小节与词序,只含词条 id
         │  npm run ielts:build
         ▼
 src/data/ielts/generated/
   catalog.json                                 模块与话题目录,随页面加载
   listening|reading|writing|speaking.json      各模块词条,按需动态加载
+docs/ielts-vocabulary.md                       供人阅读的完整词表(自动生成)
 ```
 
+话题是**展示用的编排**,不是词条数据,所以不入库:改分组就是改 `topics.json`,不用写迁移。
+
 - **修改词条、释义、音标**:改 D1(写迁移或直连 API)→ `npm run ielts:export` → `npm run ielts:build` → 提交快照与 `generated/`。
-- **调整话题归属或词序**:目前改 `docs/ielts-vocabulary.md` 中词条所在位置 → `npm run ielts:build`。md 里的释义已不参与构建,以 D1 为准。
-- 构建会校验:md 中的每个词都在 D1,D1 的每个词都有话题;音频地址必须符合约定格式。
-- `npm run ielts:check` 离线校验 `generated/` 与快照、md 是否一致。
-- `generated/` 与 `ielts-d1.json` 由脚本生成,不要手改。
+- **调整话题、小节或词序**:改 `topics.json`(话题写 `words`,或写 `groups` 分小节)→ `npm run ielts:build`。
+- **新增词条**:先写入 D1 并导出,再把词条 id 加到 `topics.json` 的某个话题里。
+- 构建会校验:`topics.json` 中的每个 id 都在 D1、且只出现一次,D1 的每个词都有话题;音频地址必须符合约定格式。
+- `npm run ielts:check` 离线校验 `generated/` 与 md 是否与快照、编排文件一致。
+- `generated/`、`ielts-d1.json`、`docs/ielts-vocabulary.md` 由脚本生成,不要手改。
 
 ## 音标与音频的生成工具
 

@@ -20,8 +20,6 @@ export interface IeltsEntry {
   posPhonetics?: IeltsPosPhonetic[]
   /** IELTS audio exists at ielts/pronunciations/v1/{uk|us}/{id}.m4a. */
   audio?: boolean
-  /** Legacy: reused COCA audio key, only until IELTS audio is uploaded. */
-  audioKey?: string
 }
 
 export interface IeltsPosPhonetic {
