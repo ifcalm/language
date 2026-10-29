@@ -8,6 +8,8 @@ export interface IeltsSense {
 export interface IeltsEntry {
   id: string
   word: string
+  /** American spelling when it differs (analyse -> analyze), used by search. */
+  spellingUs?: string
   topicId: string
   /** Index into IeltsTopicSummary.groups when the topic has sub-groups. */
   group?: number
@@ -18,8 +20,6 @@ export interface IeltsEntry {
   posPhonetics?: IeltsPosPhonetic[]
   /** IELTS audio exists at ielts/pronunciations/v1/{uk|us}/{id}.m4a. */
   audio?: boolean
-  /** Legacy: reused COCA audio key, only until IELTS audio is uploaded. */
-  audioKey?: string
 }
 
 export interface IeltsPosPhonetic {

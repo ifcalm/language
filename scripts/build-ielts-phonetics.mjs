@@ -10,7 +10,10 @@ import {
   primaryStressSyllable,
   usToUkIpa,
 } from './lib/ipa-normalize.mjs'
-import { normalizeWord, readIeltsSource } from './lib/ielts-vocabulary-source.mjs'
+import { normalizeWord } from './lib/ielts-vocabulary-source.mjs'
+
+// Word list from the D1 snapshot (npm run ielts:export).
+const SNAPSHOT_PATH = 'scripts/fixtures/ielts-d1.json'
 
 const CACHE_DIR = '.runtime/ipa-dict'
 const SOURCE_URL = 'https://raw.githubusercontent.com/open-dict-data/ipa-dict/master/data'
@@ -182,7 +185,7 @@ const overrides = existsSync(OVERRIDES_PATH)
 const phonetics = {}
 const missing = { uk: [], us: [] }
 
-for (const entry of readIeltsSource().flatMap((module) => module.topics).flatMap((topic) => topic.entries)) {
+for (const entry of JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8')).words) {
   const key = normalizeWord(entry.word)
 
   if (PLACEHOLDER.test(entry.word)) {

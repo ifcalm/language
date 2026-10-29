@@ -1,6 +1,6 @@
 # 雅思核心词汇表(独立版)
 
-> 本词表独立于 COCA 5000(`vocab` 表)。前端数据由 `scripts/build-ielts-data.mjs` 从本文件生成到 `src/data/ielts/`,本文件是唯一数据源。
+> **本文件由 `npm run ielts:build` 自动生成,请勿手改。** 词条、释义、音标、音频以 D1(`ielts_words`、`ielts_pronunciations`)为准;话题与词序在 `src/data/ielts/topics.json`。详见 `src/data/ielts/README.md`。
 
 ## 说明
 
@@ -9,9 +9,8 @@
 **收词原则**
 
 1. 只收雅思备考真正需要专门记的词:纯基础词(dog、book、happy 等)不收;中考范围内但在雅思中有学术用法或听力拼写要求的词保留(如 research、passport)。
-2. 每个词只出现一次,放在最典型的话题下;一词多义时只写雅思语境下的常用义。
+2. 一词多义时只写雅思语境下的常用义;话题是展示用的分组,一个词放在最典型的话题下。
 3. 词组只收固定搭配或听力场景中整体出现的名词短语(如 *security deposit*);需要宾语的动词短语写出完整结构(如 *convert A into B*、*object to (doing) sth.*)。
-4. 本文件不写音标、发音、例句:与 COCA 词库重叠的词在生成前端数据时自动合并已有音标和音频,其余后续统一生成。
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
@@ -19,12 +18,10 @@
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
-| 一、听力 | Section 1–4 生活与校园场景 | 6 | 815 |
-| 二、阅读 | 学术核心词(论证、逻辑、评价、动词、抽象名词、形容词副词)与学术阅读学科话题 | 9 | 2337 |
-| 三、写作 | 小作文图表与流程图、固定搭配、大作文话题 | 9 | 990 |
+| 一、听力 | 租房、旅游、选课等生活与校园场景 | 6 | 815 |
+| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2337 |
+| 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 990 |
 | 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
-
-每个词只属于一个模块和一个话题;话题较大时用 `###` 小节细分,小节在页面上显示为分组标题。阅读与写作共用的学术词按用途归入其一(论证、逻辑、评价、学术动词归阅读;图表、流程图、固定搭配归写作)。
 
 ---
 
@@ -46,7 +43,7 @@
 - **furnished** adj. 带家具的
 - **unfurnished** adj. 不带家具的
 - **apartment** n. 公寓
-- **flat** n. 公寓(英);adj. 平的
+- **flat** n. 公寓(英) adj. 平的
 - **studio** n. 单间公寓;工作室,演播室
 - **semi-detached** adj. 半独立式的(房屋)
 - **detached house** phr. 独栋房屋
@@ -781,7 +778,7 @@
 - **overdue** adj. 过期的
 - **fine** n. 罚款 v. 罚款
 - **loan period** phr. 借期
-- **reserve** v. 预约,预留;n. 保护区
+- **reserve** v. 预约,预留 n. 保护区
 - **catalogue** n. 目录
 - **reference book** phr. 参考书
 - **periodical** n. 期刊
@@ -1473,7 +1470,7 @@
 - **establish** v. 建立
 - **found** v. 创立
 - **initiate** v. 发起
-- **launch** v. 发起,推出;n. 发射
+- **launch** v. 发起,推出 n. 发射
 - **emerge** v. 出现
 - **arise** v. 出现,产生
 - **occur** v. 发生
@@ -1721,7 +1718,7 @@
 - **terrain** n. 地形
 - **landscape** n. 风景,地貌
 - **topography** n. 地形学;地形
-- **plain** n. 平原;adj. 素色的;朴素的
+- **plain** n. 平原 adj. 素色的;朴素的
 - **valley** n. 山谷
 - **canyon** n. 峡谷
 - **gorge** n. 峡谷
@@ -3011,7 +3008,7 @@
 - **slum** n. 贫民窟
 - **housing** n. 住房
 - **residential** adj. 住宅的
-- **commercial** adj. 商业的;n. 商业广告
+- **commercial** adj. 商业的 n. 商业广告
 - **industrial** adj. 工业的
 - **zone** n. 区域
 - **district** n. 区
@@ -3326,7 +3323,7 @@
 - **climb** v. 攀升
 - **soar** v. 猛增
 - **surge** n./v. 激增
-- **rocket** v. 飞涨;n. 火箭
+- **rocket** v. 飞涨 n. 火箭
 - **plummet** v. 暴跌
 - **plunge** v. 骤降
 - **dip** n./v. 小幅下降
@@ -3985,7 +3982,7 @@
 - **noise pollution** phr. 噪音污染
 - **light pollution** phr. 光污染
 - **smog** n. 雾霾
-- **exhaust** n. 尾气;v. 耗尽
+- **exhaust** n. 尾气 v. 耗尽
 - **fumes** n. 烟雾
 - **waste** n. 废物 v. 浪费
 - **landfill** n. 垃圾填埋场
