@@ -1,6 +1,6 @@
 # 雅思核心词汇表(独立版)
 
-> 本词表独立于 COCA 5000(`vocab` 表)。前端数据由 `scripts/build-ielts-data.mjs` 从本文件生成到 `src/data/ielts/`,本文件是唯一数据源。
+> 本词表独立于 COCA 5000(`vocab` 表)。**词条、释义、音标、音频以 D1(`ielts_words`、`ielts_pronunciations`)为准**;本文件目前只提供模块 / 话题 / 小节结构与词序,这里的释义不参与构建。详见 `src/data/ielts/README.md`。
 
 ## 说明
 

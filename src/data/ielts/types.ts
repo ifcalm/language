@@ -8,6 +8,8 @@ export interface IeltsSense {
 export interface IeltsEntry {
   id: string
   word: string
+  /** American spelling when it differs (analyse -> analyze), used by search. */
+  spellingUs?: string
   topicId: string
   /** Index into IeltsTopicSummary.groups when the topic has sub-groups. */
   group?: number

@@ -270,6 +270,7 @@ function ModuleView({
     return data.entries.filter(
       (entry) =>
         entry.word.toLowerCase().includes(normalizedQuery) ||
+        entry.spellingUs?.includes(normalizedQuery) ||
         entry.senses.some((sense) => sense.meaning.includes(normalizedQuery)),
     )
   }, [data, normalizedQuery])
