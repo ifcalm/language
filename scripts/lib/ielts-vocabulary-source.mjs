@@ -86,6 +86,12 @@ export function parseSenses(text) {
       throw new Error(`Empty meaning after "${marker[1]}" in "${text}"`)
     }
 
+    const pieces = meaning.split(/[;,]/).map((piece) => piece.trim())
+
+    if (new Set(pieces).size !== pieces.length) {
+      throw new Error(`Repeated meaning in "${text}"`)
+    }
+
     return { pos: marker[1], meaning }
   })
 }

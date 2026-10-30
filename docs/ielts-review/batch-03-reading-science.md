@@ -1,0 +1,24 @@
+| 词条 | 修改前 | 修改后 | 原因 |
+|---|---|---|---|
+| plain | n. 平原 adj. 素色的;朴素的 | n. 平原 adj. 清楚的;朴素的,素色的 | 补充雅思常用义“清楚的”(plain English) |
+| canyon | n. 峡谷 | n. 大峡谷 | 与 gorge 区分(canyon 多指大型峡谷) |
+| gorge | n. 峡谷 | n. 峡谷,山峡 | 与 canyon 区分 |
+| marsh | n. 沼泽 | n. 沼泽(多草的湿地) | 与 swamp 区分 |
+| swamp | n. 沼泽 | n. 沼泽(多树木的湿地) | 与 marsh 区分 |
+| gulf | n. 海湾 | n. (大的)海湾;鸿沟,分歧 | 与 bay 区分,补“鸿沟” |
+| spring | n. 泉 | n. 泉;弹簧 | 补充阅读常见义“弹簧” |
+| atmosphere | n. 大气;氛围;氛围 | n. 大气;氛围 | 合并重复的“氛围” |
+| humid | adj. 潮湿的 | adj. (空气)潮湿闷热的 | 与 damp 区分 |
+| damp | adj. 潮湿的 | adj. 潮湿的,微湿的 | 与 humid 区分 |
+| seal | n. 海豹 | n. 海豹;印章 v. 密封 | 补充常用动词义“密封” |
+| territory | n. 领地 | n. 领地;领土 | 补充“领土” |
+| offspring | n. 后代 | n. (直接的)后代,幼崽 | 与 descendant 区分 |
+| descendant | n. 后代 | n. 后裔,子孙 | 与 offspring 区分 |
+| eagle | n. 鹰,雕 | n. 雕,鹰(大型猛禽) | 与 hawk 区分 |
+| hawk | n. 鹰 | n. 鹰(中小型猛禽) | 与 eagle 区分 |
+| crop | n. 庄稼 | n. 农作物;收成 | 原“庄稼”不完整,补“收成” |
+| pesticide | n. 杀虫剂 | n. 农药,杀虫剂 | 与 insecticide(专指杀昆虫)区分 |
+| matter | n. 物质 | n. 物质;事情 v. 要紧 | 补充最常用义“事情”和动词义 |
+| catalyst | n. 催化剂 | n. 催化剂;促进因素 | 补充比喻义(a catalyst for change) |
+| force | n. 力 | n. 力;武力 v. 强迫 | 补充“武力”和动词义 |
+| mass | n. 质量 | n. 质量;大量 adj. 大规模的 | 补充 mass production 等常用义 |
