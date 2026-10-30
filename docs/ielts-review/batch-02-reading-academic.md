@@ -1,0 +1,30 @@
+| 词条 | 修改前 | 修改后 | 原因 |
+|---|---|---|---|
+| illustrate | v. 举例说明 | v. 举例说明;图解 | 补充“图解”(the chart illustrates) |
+| highlight | v. 强调 | v. 突出,强调 n. 最精彩的部分 | 与 emphasise 区分,并补名词义 |
+| underline | v. 强调 | v. 强调;在……下画线 | 与 emphasise 区分,补本义 |
+| quote | v. 引用 | v. 引用(原话);报价 n. 引语 | 与 cite(引证)区分,补“报价” |
+| correlate | v. 相关 | v. (使)相互关联 | 原释义“相关”不像动词 |
+| reliable | adj. 可靠的;靠得住的 | adj. 可靠的,可信赖的 | 原“可靠的;靠得住的”是同义重复 |
+| implication | n. 含义;影响 | n. (可能的)影响,后果;含意 | 雅思写作中“影响”义最常用,应排在前面 |
+| insight | n. 洞见 | n. 洞察(力);深刻见解 | 原“洞见”过于书面 |
+| yield | v. 产出 n. 产量 | v. 产出;屈服 n. 产量 | 补充 yield to 的“屈服”义 |
+| whereas | conj. 然而,鉴于 | conj. 然而,而 | “鉴于”是法律文本用法,雅思中极少见 |
+| eventually | adv. 终于 | adv. 最终 | “终于”带有如释重负的语气,不准确 |
+| ultimately | adv. 最终 | adv. 最终;根本上 | 补充“根本上” |
+| paramount | adj. 至高无上的 | adj. 首要的,最重要的 | 原“至高无上的”偏离雅思常见用法 |
+| viable | adj. 可行的 | adj. 可行的;能独立生存的 | 与 feasible 区分,补生物学义 |
+| profound | adj. 深远的 | adj. 深远的;深刻的 | 补充“深刻的”(profound insight) |
+| minimal | adj. 最小的 | adj. 极少的,最低限度的 | 原“最小的”易与 minimum 混淆 |
+| rigid | adj. 僵化的 | adj. 严格的;僵化的,死板的 | 补充中性义“严格的” |
+| acquire | v. 获得 | v. 获得;习得(知识、技能) | 与 obtain 区分(language acquisition) |
+| boost | v. 促进 | v. 推动,提升 n. 推动 | 原“促进”与 promote 等相同,补名词义 |
+| hamper | v. 阻碍 | v. 牵制,妨碍(行动或进展) | 与 hinder、impede 区分 |
+| prevent | v. 预防 | v. 防止,阻止;预防 | 原只有“预防” |
+| tackle | v. 处理 | v. 着手处理,解决(难题) | 与 deal with 区分 |
+| execute | v. 执行 | v. 执行;处决 | 补充“处决”(犯罪话题) |
+| pursue | v. 追求 | v. 追求;从事;追赶 | 补充 pursue a career 的“从事” |
+| acknowledge | v. 承认 | v. 承认;致谢 | 补充“致谢” |
+| regard | v. 看待 | v. 把……看作 n. 关注;问候 | 原“看待”不完整,补名词义 |
+| resemble | v. 类似 | v. 像,与……相似 | 原“类似”不像动词 |
+| convince | v. 说服 | v. 使相信,使确信 | 与 persuade(劝说某人做某事)区分 |

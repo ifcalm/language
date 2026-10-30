@@ -953,18 +953,18 @@
 - **categorise** v. 归类
 - **define** v. 定义
 - **interpret** v. 解释,诠释
-- **illustrate** v. 举例说明
+- **illustrate** v. 举例说明;图解
 - **demonstrate** v. 证明;演示
 - **indicate** v. 表明
 - **reveal** v. 揭示
-- **highlight** v. 强调
+- **highlight** v. 突出,强调 n. 最精彩的部分
 - **emphasise** v. 强调
-- **underline** v. 强调
+- **underline** v. 强调;在……下画线
 - **cite** v. 引用
-- **quote** v. 引用
+- **quote** v. 引用(原话);报价 n. 引语
 - **refer to** phr. 提及;参考;指的是
 - **attribute** v. 归因于 n. 属性
-- **correlate** v. 相关
+- **correlate** v. (使)相互关联
 - **correlation** n. 相关性
 - **replicate** v. 重复(实验)
 - **simulate** v. 模拟
@@ -974,7 +974,7 @@
 - **approximate** adj. 近似的
 - **precise** adj. 精确的
 - **accurate** adj. 准确的
-- **reliable** adj. 可靠的;靠得住的
+- **reliable** adj. 可靠的,可信赖的
 - **valid** adj. 有效的;有根据的
 - **empirical** adj. 实证的,经验的
 - **theoretical** adj. 理论的
@@ -988,10 +988,10 @@
 - **flaw** n. 缺陷
 - **drawback** n. 缺点
 - **merit** n. 优点
-- **implication** n. 含义;影响
+- **implication** n. (可能的)影响,后果;含意
 - **significance** n. 重要性;意义
 - **relevance** n. 相关性
-- **insight** n. 洞见
+- **insight** n. 洞察(力);深刻见解
 - **scrutiny** n. 仔细审查
 - **inference** n. 推断
 - **induction** n. 归纳;入职培训
@@ -1133,7 +1133,7 @@
 - **trigger** v. 引发 n. 诱因
 - **induce** v. 诱发
 - **generate** v. 产生
-- **yield** v. 产出 n. 产量
+- **yield** v. 产出;屈服 n. 产量
 - **account for** phr. 解释;占(比例)
 - **due to** phr. 由于
 - **owing to** phr. 由于
@@ -1142,7 +1142,7 @@
 - **hence** adv. 因此
 - **consequently** adv. 因此
 - **therefore** adv. 所以
-- **whereas** conj. 然而,鉴于
+- **whereas** conj. 然而,而
 - **while** conj. 虽然;然而
 - **although** conj. 尽管
 - **despite** prep. 尽管
@@ -1168,9 +1168,9 @@
 - **subsequently** adv. 随后
 - **previously** adv. 先前
 - **simultaneously** adv. 同时地
-- **ultimately** adv. 最终
+- **ultimately** adv. 最终;根本上
 - **initially** adv. 最初
-- **eventually** adv. 终于
+- **eventually** adv. 最终
 - **prior to** phr. 在……之前
 - **correspondingly** adv. 相应地
 - **accordingly** adv. 相应地;因此
@@ -1191,7 +1191,7 @@
 - **essential** adj. 必要的
 - **fundamental** adj. 根本的
 - **indispensable** adj. 不可或缺的
-- **paramount** adj. 至高无上的
+- **paramount** adj. 首要的,最重要的
 - **predominant** adj. 主要的,占优势的
 - **prevalent** adj. 普遍的
 - **widespread** adj. 广泛的
@@ -1204,7 +1204,7 @@
 - **intrinsic** adj. 内在的
 - **potential** adj. 潜在的 n. 潜力
 - **feasible** adj. 可行的
-- **viable** adj. 可行的
+- **viable** adj. 可行的;能独立生存的
 - **practical** adj. 实际的
 - **pragmatic** adj. 务实的
 - **efficient** adj. 高效的
@@ -1215,7 +1215,7 @@
 - **adverse** adj. 不利的
 - **negative** adj. 负面的
 - **positive** adj. 正面的
-- **profound** adj. 深远的
+- **profound** adj. 深远的;深刻的
 - **far-reaching** adj. 影响深远的
 - **long-term** adj. 长期的
 - **short-term** adj. 短期的
@@ -1227,7 +1227,7 @@
 - **sufficient** adj. 充足的
 - **insufficient** adj. 不足的
 - **excessive** adj. 过度的
-- **minimal** adj. 最小的
+- **minimal** adj. 极少的,最低限度的
 - **maximum** n./adj. 最大(的)
 - **optimal** adj. 最优的
 - **ideal** adj. 理想的
@@ -1269,7 +1269,7 @@
 - **exclusive** adj. 独有的;排外的
 - **dominant** adj. 占主导地位的
 - **severe** adj. 严重的;严厉的
-- **rigid** adj. 僵化的
+- **rigid** adj. 严格的;僵化的,死板的
 - **stringent** adj. 严格的
 - **impartial** adj. 公正的
 - **misleading** adj. 误导性的
@@ -1418,7 +1418,7 @@
 
 ## 2.3 学术高频动词
 
-- **acquire** v. 获得
+- **acquire** v. 获得;习得(知识、技能)
 - **obtain** v. 获得
 - **achieve** v. 实现
 - **attain** v. 达到
@@ -1429,7 +1429,7 @@
 - **alter** v. 改变
 - **enhance** v. 提高
 - **improve** v. 改进
-- **boost** v. 促进
+- **boost** v. 推动,提升 n. 推动
 - **promote** v. 促进;提拔
 - **facilitate** v. 促进,使便利
 - **foster** v. 培养,促进
@@ -1441,13 +1441,13 @@
 - **inhibit** v. 抑制
 - **hinder** v. 阻碍
 - **impede** v. 妨碍
-- **hamper** v. 阻碍
+- **hamper** v. 牵制,妨碍(行动或进展)
 - **restrict** v. 限制
 - **constrain** v. 约束
 - **limit** v. 限制 n. 限度
 - **prohibit** v. 禁止
 - **ban** v./n. 禁止
-- **prevent** v. 预防
+- **prevent** v. 防止,阻止;预防
 - **avoid** v. 避免
 - **eliminate** v. 消除
 - **eradicate** v. 根除
@@ -1457,16 +1457,16 @@
 - **mitigate** v. 减轻
 - **alleviate** v. 缓解
 - **relieve** v. 缓解
-- **tackle** v. 处理
+- **tackle** v. 着手处理,解决(难题)
 - **address** v. 处理,应对
 - **cope with** phr. 应对
 - **deal with** phr. 处理
 - **resolve** v. 解决
 - **implement** v. 实施
-- **execute** v. 执行
+- **execute** v. 执行;处决
 - **conduct** v. 进行
 - **undertake** v. 承担,从事
-- **pursue** v. 追求
+- **pursue** v. 追求;从事;追赶
 - **establish** v. 建立
 - **found** v. 创立
 - **initiate** v. 发起
@@ -1484,10 +1484,10 @@
 - **protect** v. 保护
 - **ensure** v. 确保
 - **secure** v. 获得;确保 adj. 安全的
-- **acknowledge** v. 承认
+- **acknowledge** v. 承认;致谢
 - **recognise** v. 认可;认出
 - **perceive** v. 察觉,认为
-- **regard** v. 看待
+- **regard** v. 把……看作 n. 关注;问候
 - **consider** v. 考虑;认为
 - **specify** v. 具体说明
 - **clarify** v. 澄清
@@ -1502,7 +1502,7 @@
 - **differentiate** v. 区分
 - **compare** v. 比较
 - **contrast** v. 对比 n. 对比
-- **resemble** v. 类似
+- **resemble** v. 像,与……相似
 - **coincide** v. 同时发生;一致
 - **correspond** v. 相符;通信
 - **depend on** phr. 取决于
@@ -1559,7 +1559,7 @@
 - **object to (doing) sth.** phr. 反对(做)某事
 - **favour** v. 支持,偏爱
 - **justify** v. 证明……合理
-- **convince** v. 说服
+- **convince** v. 使相信,使确信
 - **persuade** v. 劝说
 - **elevate** v. 提升
 - **exert** v. 施加(影响、压力)
