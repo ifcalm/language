@@ -3342,11 +3342,11 @@
 - **slight** adj. 轻微的
 - **marginal** adj. 微小的;边缘的
 - **considerable** adj. 相当大的
-- **substantial** adj. 大量的
-- **significant** adj. 显著的
+- **substantial** adj. 大量的,可观的;实质性的
+- **significant** adj. 显著的;重要的
 - **dramatic** adj. 剧烈的
 - **sharp** adj. 急剧的
-- **steep** adj. 陡峭的
+- **steep** adj. 陡峭的;(升降)急剧的
 - **rapid** adj. 迅速的
 - **exponential** adj. 指数级的
 - **overall** adj. 总体的
@@ -3403,7 +3403,7 @@
 - **annual** adj. 每年的
 - **per capita** phr. 人均
 - **enormous** adj. 巨大的
-- **tremendous** adj. 巨大的
+- **tremendous** adj. 巨大的;极好的
 - **abundant** adj. 丰富的
 - **abundance** n. 丰富
 - **bulk** n. 大部分;体积
@@ -3555,7 +3555,7 @@
 - **vocational training** phr. 职业培训
 - **kindergarten** n. 幼儿园
 - **preschool** adj. 学龄前的
-- **pupil** n. 小学生
+- **pupil** n. (中小学)学生
 - **graduate** n. 毕业生 v. 毕业
 - **dropout** n. 辍学者
 - **compulsory education** phr. 义务教育
@@ -3621,13 +3621,13 @@
 
 - **mass media** phr. 大众媒体
 - **media** n. 媒体
-- **press** n. 新闻界
+- **press** n. 新闻界;出版社 v. 按,压
 - **journalism** n. 新闻业
 - **journalist** n. 记者
 - **reporter** n. 记者
 - **editor** n. 编辑
 - **headline** n. 标题
-- **coverage** n. 报道
+- **coverage** n. 报道;覆盖范围
 - **broadcast** v./n. 广播
 - **channel** n. 频道
 - **documentary** n. 纪录片
@@ -3654,7 +3654,7 @@
 - **connectivity** n. 连接性
 - **instant** adj. 即时的
 - **convenient** adj. 方便的
-- **accessible** adj. 可获取的
+- **accessible** adj. 可获取的;易于使用的
 - **access** n./v. 访问,获取
 - **dependence** n. 依赖
 - **isolation** n. 孤立
@@ -3729,7 +3729,7 @@
 - **policymaker** n. 决策者
 - **legislation** n. 立法
 - **legislate** v. 立法
-- **regulation** n. 规定
+- **regulation** n. 规定,法规;管理
 - **parliament** n. 议会
 - **democracy** n. 民主
 - **democratic** adj. 民主的
@@ -3763,8 +3763,8 @@
 - **transparency** n. 透明度
 - **accountability** n. 问责
 - **reform** n./v. 改革
-- **initiative** n. 倡议
-- **campaign** n. 运动
+- **initiative** n. 倡议,新举措;主动性
+- **campaign** n. (社会或政治)运动;宣传活动
 - **public awareness** phr. 公众意识
 - **diplomacy** n. 外交
 - **sovereignty** n. 主权
@@ -3858,8 +3858,8 @@
 - **judge** n. 法官
 - **jury** n. 陪审团
 - **court** n. 法院
-- **sue** v. 起诉
-- **prosecute** v. 起诉
+- **sue** v. (民事)起诉,控告
+- **prosecute** v. (刑事)起诉,检控
 - **defendant** n. 被告
 - **plaintiff** n. 原告
 - **witness** n. 证人
@@ -3867,7 +3867,7 @@
 - **guilty** adj. 有罪的
 - **innocent** adj. 无辜的
 - **convict** v. 定罪
-- **sentence** n. 判决 v. 判刑
+- **sentence** n. 判决;句子 v. 判刑
 - **penalty** n. 惩罚
 - **death penalty** phr. 死刑
 - **capital punishment** phr. 死刑
@@ -4067,7 +4067,7 @@
 - **traditional** adj. 传统的
 - **custom** n. 习俗
 - **convention** n. 惯例;大会
-- **value** n. 价值观
+- **value** n. 价值;价值观 v. 重视
 - **norm** n. 规范
 - **etiquette** n. 礼仪
 - **assimilation** n. 同化
@@ -4166,13 +4166,13 @@
 - **single-parent family** phr. 单亲家庭
 - **sibling** n. 兄弟姐妹
 - **spouse** n. 配偶
-- **relative** n. 亲戚
+- **relative** n. 亲戚 adj. 相对的
 - **generation** n. 一代人
 - **generation gap** phr. 代沟
 - **upbringing** n. 教养
 - **parenting** n. 育儿
-- **raise** v. 抚养
-- **spoil** v. 溺爱
+- **raise** v. 抚养;提高;筹集;提出
+- **spoil** v. 宠坏,溺爱;破坏
 - **pamper** v. 娇惯
 - **bond** n. 纽带
 - **intimacy** n. 亲密
