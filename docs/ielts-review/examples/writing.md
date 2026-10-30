@@ -74,7 +74,7 @@
 | amount | n. 数量(不可数) | The **amount** of waste produced by each household fell over the period. | 在此期间,每户家庭产生的垃圾量有所减少。 |
 | quantity | n. 数量 | The **quantity** of goods moved by rail remained the same. | 铁路运输的货物数量保持不变。 |
 | capacity | n. 容量;能力 | The new power station has twice the **capacity** of the old one. | 新发电站的容量是旧发电站的两倍。 |
-| margin | n. 差额;边缘 | The Green Party won by a narrow **margin** in the 2015 election. | 绿党在 2015 年选举中以微弱差额获胜。 |
+| margin | n. 差额;边缘 | The opposition party won by a narrow **margin** in the 2015 election. | 反对党在 2015 年选举中以微弱差额获胜。 |
 | gap | n. 差距 | The **gap** between the rich and the poor widened during the decade. | 这十年间,贫富差距扩大了。 |
 | discrepancy | n. 差异 | There is a large **discrepancy** between the figures for the two regions. | 这两个地区的数字之间存在很大差异。 |
 | disparity | n. 悬殊 | The table reveals a great **disparity** in income between men and women. | 表格显示男女收入存在巨大悬殊。 |
@@ -208,7 +208,7 @@
 | be exposed to | phr. 接触;暴露于 | Children **are exposed to** too much advertising on the internet. | 孩子们在互联网上接触到太多广告。 |
 | be aware of | phr. 意识到 | People should **be aware of** the dangers of sharing personal information online. | 人们应该意识到在网上分享个人信息的危险。 |
 | be capable of | phr. 能够 | Young children **are capable of** learning several languages at the same time. | 幼儿能够同时学习几种语言。 |
-| be likely to | phr. 可能 | Children from poor families **are less likely to** attend university. | 贫困家庭的孩子上大学的可能性较小。 |
+| be likely to | phr. 可能 | Children who read at home **are likely to** do well at school. | 在家读书的孩子很可能在学校表现好。 |
 | be bound to | phr. 必然 | Rising prices **are bound to** affect people on low incomes most. | 物价上涨必然对低收入人群影响最大。 |
 | be inclined to | phr. 倾向于 | Many people **are inclined to** believe everything that they read online. | 许多人倾向于相信网上读到的一切。 |
 | in favour of | phr. 支持,赞成 | Many people are **in favour of** banning cars from city centres. | 许多人支持禁止汽车进入市中心。 |
@@ -336,7 +336,7 @@
 | objective reporting | phr. 客观报道 | **Objective reporting** is difficult when journalists have strong political views. | 当记者有强烈的政治观点时,很难做到客观报道。 |
 | social media | phr. 社交媒体 | **Social media** makes it easy to stay in touch with friends abroad. | 社交媒体让人们很容易与国外的朋友保持联系。 |
 | influencer | n. 网红 | Many teenagers buy products simply because an **influencer** recommends them. | 许多青少年买东西只是因为网红推荐。 |
-| celebrity | n. 名人 | Young people are often too interested in the lives of each **celebrity**. | 年轻人常常对每位名人的生活过于感兴趣。 |
+| celebrity | n. 名人 | Young people are often too interested in the lives of **celebrities**. | 年轻人常常对名人的生活过于感兴趣。 |
 | paparazzi | n. 狗仔队 | The **paparazzi** follow famous people everywhere in search of photographs. | 狗仔队到处跟踪名人,想要拍照。 |
 | intrusion | n. 侵扰 | Publishing private photographs is a serious **intrusion** into a person's life. | 发布私人照片是对个人生活的严重侵扰。 |
 | addiction | n. 上瘾 | Internet **addiction** can seriously affect the health of young people. | 网瘾可能严重影响年轻人的健康。 |
@@ -728,7 +728,7 @@
 | sewerage | n. 排污系统 | Many poor neighbourhoods still have no proper **sewerage** system. | 许多贫困社区仍然没有完善的排污系统。 |
 | decibel | n. 分贝 | Noise above eighty-five **decibels** can damage people's hearing over time. | 超过八十五分贝的噪音长期下来会损害听力。 |
 | deterioration | n. 恶化 | The **deterioration** of air quality is a serious concern in many large cities. | 空气质量恶化是许多大城市严重关切的问题。 |
-| harm | n./v. 伤害 | Most pesticides do more **harm** than good in the long term. | 从长远来看,大多数农药弊大于利。 |
+| harm | n./v. 伤害 | Some pesticides do more **harm** than good in the long term. | 从长远来看,有些农药弊大于利。 |
 | harm | n./v. 伤害 | Light from buildings can **harm** birds that migrate at night. | 建筑物的灯光可能伤害夜间迁徙的鸟类。 |
 | vivisection | n. 活体解剖 | Some people believe **vivisection** is cruel and should be banned. | 有些人认为活体解剖很残忍,应该被禁止。 |
 | sustainable development | phr. 可持续发展 | **Sustainable development** meets present needs without harming future generations. | 可持续发展既满足当前需要,又不损害子孙后代。 |

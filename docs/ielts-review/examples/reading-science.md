@@ -173,7 +173,7 @@
 | methane | n. 甲烷 | Cattle release large quantities of **methane** into the atmosphere each year. | 牛每年向大气释放大量甲烷。 |
 | emission | n. 排放 | The agreement commits countries to cutting their carbon **emissions** by half. | 这项协议要求各国把碳排放量削减一半。 |
 | ice age | phr. 冰河时代 | Sea levels were much lower during the last **ice age**. | 上一个冰河时代的海平面要低得多。 |
-| sea level | phr. 海平面 | Much of the Netherlands lies below **sea level** and is protected by walls. | 荷兰大部分地区低于海平面,靠堤坝保护。 |
+| sea level | phr. 海平面 | Large parts of the Netherlands lie below **sea level** and are protected by walls. | 荷兰大片地区低于海平面,靠堤坝保护。 |
 | climatic | adj. 气候的 | **Climatic** changes may have forced early people to leave the region. | 气候变化可能迫使早期的人们离开这一地区。 |
 | drizzle | n./v. 毛毛雨 | Light **drizzle** falls on most days during the winter months. | 冬季大部分日子都会下毛毛雨。 |
 | shower | n. 阵雨 | Spring **showers** help the young crops to grow strongly. | 春季阵雨有助于幼苗茁壮成长。 |
@@ -310,7 +310,7 @@
 | inherit | v. 遗传;继承 | Children **inherit** half of their genes from each parent. | 孩子从父母双方各继承一半的基因。 |
 | trait | n. 特征 | Long necks are a useful **trait** for animals feeding on tall trees. | 对于以高大树木为食的动物来说,长脖子是一种有用的特征。 |
 | ancestor | n. 祖先 | Modern horses evolved from a much smaller **ancestor** that lived in forests. | 现代马是从一种生活在森林中、体型小得多的祖先进化而来的。 |
-| descendant | n. 后裔,子孙 | Today's dogs are all **descendants** of the grey wolf. | 如今的狗都是灰狼的后裔。 |
+| descendant | n. 后裔,子孙 | Today's dogs are all **descendants** of ancient wolves. | 如今的狗都是古代狼的后裔。 |
 | extinct | adj. 灭绝的 | The dodo became **extinct** within a century of the arrival of humans. | 人类到来后不到一个世纪,渡渡鸟就灭绝了。 |
 | extinction | n. 灭绝 | Hundreds of plants are now in danger of **extinction** due to habitat loss. | 由于栖息地丧失,现在有数百种植物面临灭绝的危险。 |
 | endangered | adj. 濒危的 | The law protects **endangered** animals and the places where they live. | 法律保护濒危动物及其栖息之地。 |
@@ -333,7 +333,7 @@
 | tusk | n. 长牙 | Elephants use their **tusks** to dig for water and to strip bark from trees. | 大象用长牙挖水和剥树皮。 |
 | horn | n. 角 | Both male and female animals of this species have long curved **horns**. | 这个物种的雄性和雌性都长有弯曲的长角。 |
 | fur | n. 毛皮 | The animal's thick **fur** protects it from temperatures far below zero. | 这种动物厚厚的皮毛使它能抵御远低于零度的低温。 |
-| antenna | n. 触角;天线 | Insects use each **antenna** to touch and smell things around them. | 昆虫用每根触角触碰和嗅闻周围的东西。 |
+| antenna | n. 触角;天线 | Insects use their **antennae** to touch and smell things around them. | 昆虫用触角触碰和嗅闻周围的东西。 |
 | venom | n. 毒液 | Snake **venom** is now used in the development of some medicines. | 蛇毒现在被用于开发一些药物。 |
 | venomous | adj. 有毒的 | Only a small number of the country's snakes are **venomous**. | 该国只有少数蛇是有毒的。 |
 | dinosaur | n. 恐龙 | The **dinosaur** fossils were found in rocks about seventy million years old. | 这些恐龙化石是在约七千万年前的岩石中发现的。 |
@@ -355,13 +355,13 @@
 | chameleon | n. 变色龙 | A **chameleon** can move each of its eyes in a different direction. | 变色龙的两只眼睛能分别朝不同方向转动。 |
 | toad | n. 蟾蜍 | Unlike frogs, a **toad** usually has dry skin covered in small lumps. | 与青蛙不同,蟾蜍的皮肤通常干燥,布满小疙瘩。 |
 | ostrich | n. 鸵鸟 | The **ostrich** cannot fly, but it can run at very high speed. | 鸵鸟不会飞,但能高速奔跑。 |
-| penguin | n. 企鹅 | Male **penguins** keep the eggs warm during the long Antarctic winter. | 在漫长的南极冬季,雄企鹅负责为蛋保暖。 |
+| penguin | n. 企鹅 | Male emperor **penguins** keep the eggs warm during the long Antarctic winter. | 在漫长的南极冬季,雄帝企鹅负责为蛋保暖。 |
 | pelican | n. 鹈鹕 | The **pelican** catches fish in the large pouch under its beak. | 鹈鹕用喙下的大囊袋捕鱼。 |
 | owl | n. 猫头鹰 | Soft feathers allow the **owl** to fly almost silently at night. | 柔软的羽毛让猫头鹰夜间飞行时几乎悄无声息。 |
 | woodpecker | n. 啄木鸟 | A **woodpecker** uses its strong beak to search for insects under tree bark. | 啄木鸟用强壮的喙在树皮下寻找昆虫。 |
 | crane | n. 鹤;起重机 | The **crane** performs an elaborate dance during the breeding season. | 鹤在繁殖季节会跳一种精心编排的舞蹈。 |
 | crane | n. 鹤;起重机 | A large **crane** lifted the sections of the bridge into position. | 一台大型起重机把桥的各部分吊到了位。 |
-| finch | n. 雀 | Darwin noticed that the beak of each **finch** suited its particular diet. | 达尔文注意到,每只雀的喙都适合它特定的食物。 |
+| finch | n. 雀 | Scientists noticed that the beak of each **finch** suited its particular diet. | 科学家注意到,每只雀的喙都适合它特定的食物。 |
 | crow | n. 乌鸦 | **Crows** have been seen using tools to reach food in narrow spaces. | 有人观察到乌鸦使用工具获取狭窄空间里的食物。 |
 | sparrow | n. 麻雀 | The number of house **sparrows** has fallen sharply in many European cities. | 在许多欧洲城市,家麻雀的数量急剧下降。 |
 | pigeon | n. 鸽子 | **Pigeons** were once used to carry messages over long distances during wars. | 鸽子曾在战争中被用来远距离传递消息。 |
@@ -502,7 +502,7 @@
 | peel | n. 果皮 v. 剥皮 | The **peel** of the fruit contains oils that keep insects away. | 这种水果的果皮含有能驱赶昆虫的油脂。 |
 | peel | n. 果皮 v. 剥皮 | Workers **peel** the bark from the trees by hand. | 工人们用手剥下树皮。 |
 | log | n. 原木 | The heavy **logs** were floated down the river to the sawmill. | 沉重的原木顺河漂到锯木厂。 |
-| spore | n. 孢子 | The wind can carry each **spore** a long way from the parent plant. | 风能把每个孢子带到离母株很远的地方。 |
+| spore | n. 孢子 | The wind can carry **spores** a long way from the parent plant. | 风能把孢子带到离母株很远的地方。 |
 | herb | n. 草本植物;香草 | Many traditional medicines are made from wild **herbs**. | 许多传统药物由野生草本植物制成。 |
 | reed | n. 芦苇 | Ancient Egyptians made a type of paper from a tall water **reed**. | 古埃及人用一种高大的水生芦苇造纸。 |
 | orchid | n. 兰花 | Each type of **orchid** depends on a particular insect for pollination. | 每一种兰花都依赖特定的昆虫授粉。 |
@@ -555,7 +555,7 @@
 | nucleus | n. 原子核;细胞核 | The **nucleus** contains most of the mass of an atom. | 原子核包含了原子的大部分质量。 |
 | compound | n. 化合物 | Salt is a **compound** made from sodium and chlorine. | 盐是由钠和氯构成的化合物。 |
 | mixture | n. 混合物 | Air is a **mixture** of nitrogen, oxygen and several other gases. | 空气是氮气、氧气和其他几种气体的混合物。 |
-| oxygen | n. 氧 | All animals need **oxygen** in order to produce energy. | 所有动物都需要氧气来产生能量。 |
+| oxygen | n. 氧 | Almost all animals need **oxygen** in order to produce energy. | 几乎所有动物都需要氧气来产生能量。 |
 | hydrogen | n. 氢 | **Hydrogen** could become an important clean fuel for trucks and ships. | 氢可能成为卡车和船舶的重要清洁燃料。 |
 | nitrogen | n. 氮 | Certain plants add **nitrogen** to the soil and so improve its quality. | 某些植物能给土壤增加氮,从而改善土质。 |
 | carbon | n. 碳 | Trees store **carbon** in their wood as they grow. | 树木在生长过程中把碳储存在木材里。 |
@@ -614,7 +614,7 @@
 | ultraviolet | adj. 紫外线的 | **Ultraviolet** light from the sun can cause skin cancer. | 来自太阳的紫外线可能导致皮肤癌。 |
 | laser | n. 激光 | Surgeons now use a **laser** to correct many common eye problems. | 外科医生现在用激光矫正许多常见的眼部问题。 |
 | optical | adj. 光学的 | **Optical** fibres carry information around the world at very high speed. | 光纤以极高的速度在全球传输信息。 |
-| lens | n. 透镜 | A **lens** at the front of the eye focuses light onto the retina. | 眼睛前部的晶状体把光聚焦到视网膜上。 |
+| lens | n. 透镜 | A **lens** bends light so that a telescope can show distant stars clearly. | 透镜使光线弯曲,让望远镜能清晰地显示遥远的恒星。 |
 | reflect | v. 反射;反映 | Snow and ice **reflect** most of the sunlight back into space. | 冰雪把大部分阳光反射回太空。 |
 | reflect | v. 反射;反映 | The results **reflect** a general decline in the level of reading. | 这些结果反映出阅读水平的普遍下降。 |
 | refract | v. 折射 | Water droplets **refract** sunlight, and that is how a rainbow forms. | 水滴折射阳光,彩虹就是这样形成的。 |
@@ -722,7 +722,7 @@
 | amplitude | n. 振幅 | The **amplitude** of a sound wave determines how loud the sound is. | 声波的振幅决定声音的大小。 |
 | diffusion | n. 扩散 | Gases spread through a room by the process of **diffusion**. | 气体通过扩散过程充满房间。 |
 | soluble | adj. 可溶的 | Sugar is **soluble** in water, but sand is not. | 糖可溶于水,但沙子不能。 |
-| acidic | adj. 酸性的 | Water in the lake became more **acidic** after years of pollution. | 多年污染后,湖水变得更加酸性。 |
+| acidic | adj. 酸性的 | Water in the lake became more **acidic** after years of pollution. | 多年污染后,湖水的酸性变强了。 |
 | oscillation | n. 振荡,摆动 | The regular **oscillation** of a pendulum was once used to keep time. | 钟摆有规律的摆动曾被用来计时。 |
 | deflection | n. 偏转,偏离 | The **deflection** of light by gravity was first measured in 1919. | 引力使光线偏转的现象于 1919 年首次被测量到。 |
 | oxidise | v. 氧化 | Iron will **oxidise** quickly if it is left in wet conditions. | 铁放在潮湿环境中会很快氧化。 |

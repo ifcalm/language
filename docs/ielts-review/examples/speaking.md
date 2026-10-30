@@ -111,7 +111,7 @@
 | slender | adj. 纤细的 | My friend has long, **slender** fingers, which are perfect for playing the piano. | 我朋友的手指又长又纤细,非常适合弹钢琴。 |
 | plump | adj. 丰满的 | My grandmother was a **plump**, smiling woman who loved to cook for us. | 我奶奶是个丰满爱笑的人,很喜欢给我们做饭。 |
 | stocky | adj. 矮壮的 | My uncle is short and **stocky**, but he's really strong. | 我叔叔个子矮、身材壮实,但力气很大。 |
-| muscular | adj. 肌肉发达的 | My brother-in-law goes to the gym every day and is very **muscular**. | 我的姐夫每天去健身房,肌肉很发达。 |
+| muscular | adj. 肌肉发达的 | My neighbour goes to the gym every day and is very **muscular**. | 我的邻居每天去健身房,肌肉很发达。 |
 | athletic | adj. 健壮的;运动的 | She's very **athletic** and plays almost every sport you can think of. | 她很健壮,几乎你能想到的运动她都玩。 |
 | medium height | phr. 中等身高 | He's of **medium height**, with short black hair and glasses. | 他中等身高,留着黑色短发,戴着眼镜。 |
 | complexion | n. 肤色 | She has a lovely clear **complexion**, even though she never wears make-up. | 她肤色清透好看,虽然从不化妆。 |
@@ -371,7 +371,7 @@
 | episode | n. 一集 | I watch one **episode** of my favourite show every night before bed. | 我每晚睡前看一集最喜欢的节目。 |
 | sitcom | n. 情景喜剧 | I love watching an old American **sitcom** when I need a laugh. | 想笑的时候,我喜欢看一部老的美国情景喜剧。 |
 | soap opera | phr. 肥皂剧 | My mum watches the same **soap opera** every evening after dinner. | 我妈妈每天晚饭后都看同一部肥皂剧。 |
-| reality show | phr. 真人秀 | I think that every **reality show** on television is a bit silly. | 我觉得电视上的每个真人秀都有点傻。 |
+| reality show | phr. 真人秀 | I think that most **reality shows** on television are a bit silly. | 我觉得电视上的大多数真人秀都有点傻。 |
 | thriller | n. 惊悚片 | I love a good **thriller**, especially one with a surprise ending. | 我喜欢好看的惊悚片,特别是结局出人意料的那种。 |
 | comedy | n. 喜剧 | I prefer **comedy** to serious films, because I like to relax after work. | 比起严肃的电影,我更喜欢喜剧,因为下班后想放松。 |
 | animation | n. 动画 | Japanese **animation** is really popular among young people in my country. | 日本动画在我国的年轻人中很受欢迎。 |

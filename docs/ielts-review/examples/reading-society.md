@@ -12,7 +12,7 @@
 | spinal cord | phr. 脊髓 | The **spinal cord** carries messages between the brain and the rest of the body. | 脊髓在大脑和身体其他部位之间传递信息。 |
 | artery | n. 动脉 | A blocked **artery** can reduce the flow of blood to the heart. | 动脉堵塞可能减少流向心脏的血液。 |
 | vein | n. 静脉 | Blood returns to the heart through a **vein** after delivering oxygen. | 血液输送氧气后通过静脉回到心脏。 |
-| blood vessel | phr. 血管 | Smoking damages the walls of each **blood vessel** and raises the risk of illness. | 吸烟会损害血管壁,增加患病风险。 |
+| blood vessel | phr. 血管 | Smoking damages the walls of the **blood vessels** and raises the risk of illness. | 吸烟会损害血管壁,增加患病风险。 |
 | circulation | n. (血液)循环;发行量 | Regular walking can improve blood **circulation** in older people. | 经常散步可以改善老年人的血液循环。 |
 | circulation | n. (血液)循环;发行量 | The newspaper had a daily **circulation** of more than a million copies. | 这份报纸的日发行量超过一百万份。 |
 | digestion | n. 消化 | Fibre in the diet plays an important part in healthy **digestion**. | 饮食中的纤维对健康的消化起着重要作用。 |
@@ -106,7 +106,7 @@
 | kidney | n. 肾 | The **kidneys** remove waste from the blood and control the body's water. | 肾脏清除血液中的废物,并调节体内水分。 |
 | incidence | n. 发病率,发生率 | The **incidence** of skin cancer is higher in sunny countries. | 阳光充足的国家皮肤癌的发病率更高。 |
 | onset | n. (疾病)发作;开始 | Exercise may delay the **onset** of memory problems in later life. | 运动可能推迟晚年记忆问题的发生。 |
-| bodily | adj. 身体的 | Sweat helps to keep **bodily** temperature at a safe level. | 汗水有助于把体温保持在安全水平。 |
+| bodily | adj. 身体的 | Sleep affects many **bodily** functions, including digestion and breathing. | 睡眠影响许多身体机能,包括消化和呼吸。 |
 | urine | n. 尿 | Doctors can test a patient's **urine** to check for signs of diabetes. | 医生可以检测患者的尿液,查找糖尿病的迹象。 |
 | susceptible | adj. 易受影响的;易感染的 | Elderly people are more **susceptible** to infection during the winter months. | 老年人在冬季更容易受到感染。 |
 | sperm | n. 精子 | A number of chemicals in the environment may reduce **sperm** counts in men. | 环境中的一些化学物质可能降低男性的精子数量。 |
@@ -120,7 +120,7 @@
 | epidemiology | n. 流行病学 | **Epidemiology** is the study of how diseases spread through populations. | 流行病学研究疾病如何在人群中传播。 |
 | helix | n. 螺旋(结构) | Watson and Crick showed that DNA has the structure of a double **helix**. | 沃森和克里克证明了 DNA 具有双螺旋结构。 |
 | splice | v. 拼接(基因) | Scientists can now **splice** genes from one organism into another. | 科学家现在可以把一种生物的基因拼接到另一种生物中。 |
-| capillary | n. 毛细血管 | Oxygen passes from the blood into the tissues through each tiny **capillary**. | 氧气通过每条微小的毛细血管从血液进入组织。 |
+| capillary | n. 毛细血管 | Oxygen passes from the blood into the tissues through tiny **capillaries**. | 氧气通过微小的毛细血管从血液进入组织。 |
 | thumb | n. 拇指 | The human **thumb** allows us to hold and use tools with great skill. | 人的拇指使我们能灵巧地握持和使用工具。 |
 | plague | n. 瘟疫 v. 困扰 | The **plague** killed about a third of the population of Europe in the 1300s. | 14 世纪的瘟疫造成欧洲约三分之一人口死亡。 |
 | plague | n. 瘟疫 v. 困扰 | Rising costs continue to **plague** the national health service. | 不断上升的成本继续困扰着国家医疗服务体系。 |
