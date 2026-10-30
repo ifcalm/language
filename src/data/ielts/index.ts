@@ -1,14 +1,22 @@
 import catalogData from './generated/catalog.json'
-import type { IeltsCatalog, IeltsEntry, IeltsModuleData, IeltsModuleId } from './types'
+import type {
+  IeltsCatalog,
+  IeltsEntry,
+  IeltsModuleData,
+  IeltsModuleId,
+  IeltsTopicExamples,
+} from './types'
 
 export type {
   IeltsCatalog,
   IeltsEntry,
+  IeltsExample,
   IeltsModuleData,
   IeltsModuleId,
   IeltsModuleSummary,
   IeltsPosPhonetic,
   IeltsSense,
+  IeltsTopicExamples,
   IeltsTopicGroup,
   IeltsTopicSummary,
 } from './types'
@@ -36,6 +44,24 @@ export function loadIeltsModule(moduleId: IeltsModuleId): Promise<IeltsModuleDat
     pending = moduleLoaders[moduleId]().then((module) => module.default as IeltsModuleData)
     pending.catch(() => moduleCache.delete(moduleId))
     moduleCache.set(moduleId, pending)
+  }
+
+  return pending
+}
+
+const exampleLoaders = import.meta.glob<{ default: IeltsTopicExamples }>('./generated/examples/*.json')
+const exampleCache = new Map<string, Promise<IeltsTopicExamples>>()
+
+export function loadIeltsExamples(topicId: string): Promise<IeltsTopicExamples> {
+  let pending = exampleCache.get(topicId)
+
+  if (!pending) {
+    const loader = exampleLoaders[`./generated/examples/${topicId}.json`]
+    pending = loader
+      ? loader().then((module) => module.default)
+      : Promise.reject(new Error(`Unknown IELTS topic "${topicId}"`))
+    pending.catch(() => exampleCache.delete(topicId))
+    exampleCache.set(topicId, pending)
   }
 
   return pending

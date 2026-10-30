@@ -1,7 +1,7 @@
 // Generates the static IELTS vocabulary data under src/data/ielts/generated/
 // and the readable docs/ielts-vocabulary.md.
 //
-// - Words, meanings, US spellings, IPA and audio come from the D1 snapshot
+// - Words, meanings, US spellings, IPA, audio and examples come from the D1 snapshot
 //   scripts/fixtures/ielts-d1.json (refresh with `npm run ielts:export`).
 // - Modules, topics, sub-groups and word order come from the arrangement
 //   file src/data/ielts/topics.json, which holds word ids only.
@@ -41,6 +41,30 @@ for (const row of snapshot.pronunciations) {
   }
 
   pronunciationsByWord.get(row.wordId).push(row)
+}
+
+const examplesByWord = new Map()
+
+for (const row of snapshot.examples) {
+  // The target must be locatable: the page highlights it and fill-in blanks it.
+  const pattern = new RegExp(`(?<![\\w-])${row.target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\w-])`, 'g')
+  const matches = [...row.en.matchAll(pattern)]
+
+  if (matches.length !== 1) {
+    throw new Error(`Example ${row.id}: target "${row.target}" found ${matches.length} times`)
+  }
+
+  if (!wordsById.has(row.wordId)) {
+    throw new Error(`Example ${row.id}: unknown word "${row.wordId}"`)
+  }
+
+  if (!examplesByWord.has(row.wordId)) {
+    examplesByWord.set(row.wordId, [])
+  }
+
+  examplesByWord
+    .get(row.wordId)
+    .push({ en: row.en, zh: row.zh, start: matches[0].index, length: row.target.length })
 }
 
 function toEntry(sourceEntry, topicId) {
@@ -129,6 +153,14 @@ for (const module of modules) {
     })),
   })
   files.set(`${module.id}.json`, { moduleId: module.id, entries })
+
+  // Example sentences are split by topic and only loaded on the entry page.
+  for (const topic of module.topics) {
+    files.set(
+      `examples/${topic.id}.json`,
+      Object.fromEntries(topic.entries.map((entry) => [entry.id, examplesByWord.get(entry.id) ?? []])),
+    )
+  }
 }
 
 const unplaced = snapshot.words.filter((word) => !placed.has(word.id))
@@ -171,7 +203,7 @@ if (CHECK_ONLY) {
   console.log('IELTS data is up to date.')
 } else {
   rmSync(OUTPUT_DIR, { recursive: true, force: true })
-  mkdirSync(OUTPUT_DIR, { recursive: true })
+  mkdirSync(`${OUTPUT_DIR}/examples`, { recursive: true })
 
   for (const [name, data] of files) {
     writeFileSync(`${OUTPUT_DIR}/${name}`, `${JSON.stringify(data)}\n`)
@@ -184,6 +216,6 @@ if (CHECK_ONLY) {
   }
 
   console.log(
-    `Total ${catalog.entryCount} entries; without phonetic ${missingPhonetic}, without audio ${missingAudio}.`,
+    `Total ${catalog.entryCount} entries, ${snapshot.examples.length} examples; without phonetic ${missingPhonetic}, without audio ${missingAudio}.`,
   )
 }

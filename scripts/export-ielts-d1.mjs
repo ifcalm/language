@@ -45,9 +45,10 @@ async function queryD1(sql) {
   return payload.result.map((statement) => statement.results)
 }
 
-const [words, pronunciations] = await queryD1(`
+const [words, pronunciations, examples] = await queryD1(`
   SELECT id, word, spelling_us, meaning_zh FROM ielts_words ORDER BY id;
   SELECT id, word_id, accent, pos, phonetic, audio_url FROM ielts_pronunciations ORDER BY id;
+  SELECT id, word_id, sentence_en, sentence_zh, target FROM ielts_examples ORDER BY id;
 `)
 
 const snapshot = {
@@ -65,14 +66,21 @@ const snapshot = {
     phonetic: row.phonetic,
     audioUrl: row.audio_url,
   })),
+  examples: examples.map((row) => ({
+    id: row.id,
+    wordId: row.word_id,
+    en: row.sentence_en,
+    zh: row.sentence_zh,
+    target: row.target,
+  })),
 }
 
 // One record per line keeps the file compact and its git diffs readable.
 const section = (name, rows) => `  "${name}": [\n${rows.map((row) => `    ${JSON.stringify(row)}`).join(',\n')}\n  ]`
 writeFileSync(
   OUTPUT_PATH,
-  `{\n${section('words', snapshot.words)},\n${section('pronunciations', snapshot.pronunciations)}\n}\n`,
+  `{\n${section('words', snapshot.words)},\n${section('pronunciations', snapshot.pronunciations)},\n${section('examples', snapshot.examples)}\n}\n`,
 )
 console.log(
-  `Exported ${snapshot.words.length} words, ${snapshot.pronunciations.length} pronunciations -> ${OUTPUT_PATH}`,
+  `Exported ${snapshot.words.length} words, ${snapshot.pronunciations.length} pronunciations, ${snapshot.examples.length} examples -> ${OUTPUT_PATH}`,
 )
