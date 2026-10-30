@@ -1,0 +1,20 @@
+| 词条 | 修改前 | 修改后 | 原因 |
+|---|---|---|---|
+| substantial | adj. 大量的 | adj. 大量的,可观的;实质性的 | 补充“实质性的”,与 considerable 区分 |
+| significant | adj. 显著的 | adj. 显著的;重要的 | 补充“重要的” |
+| steep | adj. 陡峭的 | adj. 陡峭的;(升降)急剧的 | 补充图表作文义(a steep rise) |
+| tremendous | adj. 巨大的 | adj. 巨大的;极好的 | 与 enormous 区分 |
+| pupil | n. 小学生 | n. (中小学)学生 | 原“小学生”范围过窄 |
+| press | n. 新闻界 | n. 新闻界;出版社 v. 按,压 | 补充“出版社”和动词义 |
+| coverage | n. 报道 | n. 报道;覆盖范围 | 补充“覆盖范围”(network coverage) |
+| accessible | adj. 可获取的 | adj. 可获取的;易于使用的 | 补充“易于使用的” |
+| regulation | n. 规定 | n. 规定,法规;管理 | 补充“管理”(regulation of the market) |
+| initiative | n. 倡议 | n. 倡议,新举措;主动性 | 补充“主动性”(take the initiative) |
+| campaign | n. 运动 | n. (社会或政治)运动;宣传活动 | 补充“宣传活动” |
+| sue | v. 起诉 | v. (民事)起诉,控告 | 与 prosecute 区分 |
+| prosecute | v. 起诉 | v. (刑事)起诉,检控 | 与 sue 区分 |
+| sentence | n. 判决 v. 判刑 | n. 判决;句子 v. 判刑 | 补充“句子” |
+| value | n. 价值观 | n. 价值;价值观 v. 重视 | 补充“价值”和动词义“重视” |
+| relative | n. 亲戚 | n. 亲戚 adj. 相对的 | 补充形容词义(relative poverty) |
+| raise | v. 抚养 | v. 抚养;提高;筹集;提出 | 补充 raise awareness/funds/a question 等高频用法 |
+| spoil | v. 溺爱 | v. 宠坏,溺爱;破坏 | 补充“破坏”(spoil the view) |

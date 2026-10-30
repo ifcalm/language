@@ -1,0 +1,25 @@
+| 词条 | 修改前 | 修改后 | 原因 |
+|---|---|---|---|
+| tissue | n. 组织 | n. (生物)组织;纸巾 | 补充日常义“纸巾” |
+| circulation | n. 循环 | n. (血液)循环;发行量 | 补充媒体话题常用义“发行量” |
+| acute | adj. 急性的 | adj. 急性的;严重的;敏锐的 | 补充 acute shortage、acute sense 等常用义 |
+| contagious | adj. 传染的 | adj. (接触)传染的 | 与 infectious 区分 |
+| infectious | adj. 传染的 | adj. 传染性的;有感染力的 | 与 contagious 区分,补比喻义 |
+| recover | v. 康复 | v. 康复;恢复,找回 | 补充“恢复,找回”(recover data) |
+| diet | n. 饮食 | n. 饮食;节食 | 补充“节食”(on a diet) |
+| perception | n. 感知 | n. 感知;看法,观念 | 补充写作常用义“看法”(public perception) |
+| incentive | n. 激励 | n. 激励,刺激(因素) | 原“激励”过于笼统 |
+| concentration | n. 专注 | n. 专注;浓度 | 补充理科义“浓度” |
+| confidence | n. 自信 | n. 自信;信任 | 补充“信任”(public confidence) |
+| intellect | n. 智力 | n. 才智,理智 | 与 intelligence(智力)区分 |
+| cogent | adj. 有说服力的 | adj. 令人信服的,论证有力的 | 与 persuasive 区分 |
+| settlement | n. 定居点 | n. 定居点;解决,和解 | 补充“解决,和解” |
+| heritage | n. 遗产 | n. (文化)遗产,传统 | 与 legacy 区分 |
+| legacy | n. 遗产,遗留 | n. 遗产;遗留(影响) | 与 heritage 区分 |
+| resident | n. 居民 | n. 居民,住户 adj. 居住的 | 与 inhabitant 区分 |
+| inhabitant | n. 居民 | n. (某地区的)居民;栖息动物 | 与 resident 区分 |
+| revenue | n. 收入 | n. (企业或政府的)收入,税收 | 与 income 区分 |
+| income | n. 收入 | n. (个人)收入 | 与 revenue 区分 |
+| firm | n. 公司 | n. 公司 adj. 坚定的;坚固的 | 补充常用形容词义 |
+| share | n. 股份 | n. 股份;份额 v. 分享 | 补充“份额”(market share)和动词义 |
+| obsolete | adj. 过时的 | adj. 已淘汰的,废弃的 | 与 outdated(老式的)区分 |

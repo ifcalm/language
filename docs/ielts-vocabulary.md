@@ -29,17 +29,17 @@
 
 ## 1.1 住宿与租房
 
-- **accommodation** n. 住处,膳宿
+- **accommodation** n. 住宿,住处
 - **landlord** n. 房东
 - **landlady** n. 女房东
 - **tenant** n. 房客,租户
 - **lease** n. 租约 v. 出租
 - **tenancy** n. 租期,租赁
-- **rent** n. 租金 v. 租用
+- **rent** n. 租金 v. 租用;出租
 - **security deposit** phr. 押金
 - **utilities** n. 水电煤等公用事业费
 - **bill** n. 账单
-- **inclusive** adj. 包含在内的
+- **inclusive** adj. 包含在内的;(费用)全包的
 - **furnished** adj. 带家具的
 - **unfurnished** adj. 不带家具的
 - **apartment** n. 公寓
@@ -51,7 +51,7 @@
 - **cottage** n. 村舍,小屋
 - **dormitory** n. 宿舍
 - **hall of residence** phr. 学生宿舍楼
-- **homestay** n. 寄宿家庭
+- **homestay** n. 家庭寄宿(住在当地家庭的住宿方式)
 - **host family** phr. 寄宿家庭
 - **suburb** n. 郊区
 - **outskirts** n. 市郊
@@ -76,13 +76,13 @@
 - **mattress** n. 床垫
 - **pillowcase** n. 枕套
 - **blanket** n. 毯子
-- **duvet** n. 羽绒被
+- **duvet** n. 被子,羽绒被
 - **curtain** n. 窗帘
 - **microwave** n. 微波炉
 - **refrigerator** n. 冰箱
 - **dishwasher** n. 洗碗机
 - **vacuum cleaner** phr. 吸尘器
-- **heater** n. 暖气,加热器
+- **heater** n. 取暖器,加热器
 - **central heating** phr. 集中供暖
 - **air conditioning** phr. 空调
 - **socket** n. 插座
@@ -149,7 +149,7 @@
 - **sightseeing** n. 观光
 - **guided tour** phr. 有导游的游览
 - **backpacker** n. 背包客
-- **hostel** n. 青年旅舍
+- **hostel** n. 廉价旅舍,青年旅舍
 - **bed and breakfast** phr. 民宿(含早餐)
 - **campsite** n. 营地
 - **caravan** n. 房车
@@ -158,7 +158,7 @@
 - **double room** phr. 双人间(一张大床)
 - **twin room** phr. 双人间(两张床)
 - **vacancy** n. 空房;空缺
-- **check in** phr. 登记入住
+- **check in** phr. 登记入住;办理登机手续
 - **check out** phr. 退房
 - **reception** n. 前台;接待;招待会
 - **receptionist** n. 前台接待员
@@ -201,7 +201,7 @@
 - **detour** n. 绕行
 - **toll** n. 通行费
 - **landmark** n. 地标
-- **monument** n. 纪念碑
+- **monument** n. 纪念碑;历史遗迹
 - **souvenir** n. 纪念品
 - **currency** n. 货币
 - **exchange rate** phr. 汇率
@@ -265,7 +265,7 @@
 - **layout** n. 布局
 - **entrance** n. 入口
 - **exit** n. 出口
-- **opposite** prep. 在……对面
+- **opposite** prep. 在……对面 adj. 对面的;相反的
 - **adjacent** adj. 相邻的
 - **diagonally** adv. 斜对着
 - **clockwise** adv. 顺时针地
@@ -318,10 +318,10 @@
 - **dairy** n. 乳制品
 - **gluten** n. 麸质
 - **seafood** n. 海鲜
-- **poultry** n. 家禽肉
+- **poultry** n. 家禽;禽肉
 - **ingredient** n. 原料,配料
 - **recipe** n. 食谱
-- **portion** n. 一份
+- **portion** n. (食物的)一份;部分
 - **nutrition** n. 营养
 - **protein** n. 蛋白质
 - **carbohydrate** n. 碳水化合物
@@ -329,7 +329,7 @@
 - **calorie** n. 卡路里
 - **fibre** n. 纤维
 - **organic** adj. 有机的
-- **tip** n. 小费
+- **tip** n. 小费;提示,建议 v. 给小费
 - **receipt** n. 收据
 - **discount** n. 折扣
 - **voucher** n. 代金券
@@ -393,22 +393,22 @@
 - **deposit** n. 存款;定金;沉积物,矿藏 v. 存入
 - **withdraw** v. 取款
 - **withdrawal** n. 取款
-- **balance** n. 余额
+- **balance** n. 余额;平衡 v. 使平衡
 - **statement** n. 银行对账单;声明
 - **interest rate** phr. 利率
 - **overdraft** n. 透支
 - **loan** n. 贷款
-- **mortgage** n. 按揭
+- **mortgage** n. 抵押贷款,按揭
 - **credit card** phr. 信用卡
 - **debit card** phr. 借记卡
 - **cheque** n. 支票
 - **instalment** n. 分期付款
 - **fee** n. 费用
-- **charge** n. 收费 v. 收费
+- **charge** n. 费用;指控 v. 收费;控告
 - **identification** n. 身份证明
 - **proof of address** phr. 地址证明
 - **signature** n. 签名
-- **PIN** n. 个人密码
+- **PIN** n. (银行卡)密码
 - **online banking** phr. 网上银行
 - **branch** n. 分行;分支;树枝
 - **cashpoint** n. 自动取款机(英)
@@ -460,7 +460,7 @@
 - **treatment** n. 治疗
 - **therapy** n. 疗法
 - **physiotherapy** n. 理疗
-- **injury** n. 受伤
+- **injury** n. 伤害,损伤
 - **sprain** n./v. 扭伤
 - **fracture** n. 骨折
 - **bruise** n. 淤青
@@ -614,7 +614,7 @@
 
 ## 1.5 工作与求职
 
-- **position** n. 职位
+- **position** n. 职位;位置;立场
 - **applicant** n. 申请人
 - **application form** phr. 申请表
 - **CV** n. 简历(英)
@@ -642,7 +642,7 @@
 - **annual leave** phr. 年假
 - **sick leave** phr. 病假
 - **maternity leave** phr. 产假
-- **probation** n. 试用期
+- **probation** n. 试用期;缓刑
 - **contract** n. 合同
 - **employer** n. 雇主
 - **employee** n. 雇员
@@ -693,7 +693,7 @@
 - **prerequisite** n. 先修课程;前提
 - **credit** n. 学分;信用
 - **syllabus** n. 教学大纲
-- **curriculum** n. 全部课程
+- **curriculum** n. 课程体系
 - **lecture** n. 讲座
 - **lecturer** n. 讲师
 - **tutorial** n. 辅导课
@@ -776,7 +776,7 @@
 - **library card** phr. 借书卡
 - **renew** v. 续借
 - **overdue** adj. 过期的
-- **fine** n. 罚款 v. 罚款
+- **fine** n./v. 罚款 adj. 好的;细的
 - **loan period** phr. 借期
 - **reserve** v. 预约,预留 n. 保护区
 - **catalogue** n. 目录
@@ -953,18 +953,18 @@
 - **categorise** v. 归类
 - **define** v. 定义
 - **interpret** v. 解释,诠释
-- **illustrate** v. 举例说明
+- **illustrate** v. 举例说明;图解
 - **demonstrate** v. 证明;演示
 - **indicate** v. 表明
 - **reveal** v. 揭示
-- **highlight** v. 强调
+- **highlight** v. 突出,强调 n. 最精彩的部分
 - **emphasise** v. 强调
-- **underline** v. 强调
+- **underline** v. 强调;在……下画线
 - **cite** v. 引用
-- **quote** v. 引用
+- **quote** v. 引用(原话);报价 n. 引语
 - **refer to** phr. 提及;参考;指的是
 - **attribute** v. 归因于 n. 属性
-- **correlate** v. 相关
+- **correlate** v. (使)相互关联
 - **correlation** n. 相关性
 - **replicate** v. 重复(实验)
 - **simulate** v. 模拟
@@ -974,7 +974,7 @@
 - **approximate** adj. 近似的
 - **precise** adj. 精确的
 - **accurate** adj. 准确的
-- **reliable** adj. 可靠的;靠得住的
+- **reliable** adj. 可靠的,可信赖的
 - **valid** adj. 有效的;有根据的
 - **empirical** adj. 实证的,经验的
 - **theoretical** adj. 理论的
@@ -988,10 +988,10 @@
 - **flaw** n. 缺陷
 - **drawback** n. 缺点
 - **merit** n. 优点
-- **implication** n. 含义;影响
+- **implication** n. (可能的)影响,后果;含意
 - **significance** n. 重要性;意义
 - **relevance** n. 相关性
-- **insight** n. 洞见
+- **insight** n. 洞察(力);深刻见解
 - **scrutiny** n. 仔细审查
 - **inference** n. 推断
 - **induction** n. 归纳;入职培训
@@ -1133,7 +1133,7 @@
 - **trigger** v. 引发 n. 诱因
 - **induce** v. 诱发
 - **generate** v. 产生
-- **yield** v. 产出 n. 产量
+- **yield** v. 产出;屈服 n. 产量
 - **account for** phr. 解释;占(比例)
 - **due to** phr. 由于
 - **owing to** phr. 由于
@@ -1142,7 +1142,7 @@
 - **hence** adv. 因此
 - **consequently** adv. 因此
 - **therefore** adv. 所以
-- **whereas** conj. 然而,鉴于
+- **whereas** conj. 然而,而
 - **while** conj. 虽然;然而
 - **although** conj. 尽管
 - **despite** prep. 尽管
@@ -1168,9 +1168,9 @@
 - **subsequently** adv. 随后
 - **previously** adv. 先前
 - **simultaneously** adv. 同时地
-- **ultimately** adv. 最终
+- **ultimately** adv. 最终;根本上
 - **initially** adv. 最初
-- **eventually** adv. 终于
+- **eventually** adv. 最终
 - **prior to** phr. 在……之前
 - **correspondingly** adv. 相应地
 - **accordingly** adv. 相应地;因此
@@ -1191,7 +1191,7 @@
 - **essential** adj. 必要的
 - **fundamental** adj. 根本的
 - **indispensable** adj. 不可或缺的
-- **paramount** adj. 至高无上的
+- **paramount** adj. 首要的,最重要的
 - **predominant** adj. 主要的,占优势的
 - **prevalent** adj. 普遍的
 - **widespread** adj. 广泛的
@@ -1204,7 +1204,7 @@
 - **intrinsic** adj. 内在的
 - **potential** adj. 潜在的 n. 潜力
 - **feasible** adj. 可行的
-- **viable** adj. 可行的
+- **viable** adj. 可行的;能独立生存的
 - **practical** adj. 实际的
 - **pragmatic** adj. 务实的
 - **efficient** adj. 高效的
@@ -1215,7 +1215,7 @@
 - **adverse** adj. 不利的
 - **negative** adj. 负面的
 - **positive** adj. 正面的
-- **profound** adj. 深远的
+- **profound** adj. 深远的;深刻的
 - **far-reaching** adj. 影响深远的
 - **long-term** adj. 长期的
 - **short-term** adj. 短期的
@@ -1227,7 +1227,7 @@
 - **sufficient** adj. 充足的
 - **insufficient** adj. 不足的
 - **excessive** adj. 过度的
-- **minimal** adj. 最小的
+- **minimal** adj. 极少的,最低限度的
 - **maximum** n./adj. 最大(的)
 - **optimal** adj. 最优的
 - **ideal** adj. 理想的
@@ -1269,7 +1269,7 @@
 - **exclusive** adj. 独有的;排外的
 - **dominant** adj. 占主导地位的
 - **severe** adj. 严重的;严厉的
-- **rigid** adj. 僵化的
+- **rigid** adj. 严格的;僵化的,死板的
 - **stringent** adj. 严格的
 - **impartial** adj. 公正的
 - **misleading** adj. 误导性的
@@ -1418,7 +1418,7 @@
 
 ## 2.3 学术高频动词
 
-- **acquire** v. 获得
+- **acquire** v. 获得;习得(知识、技能)
 - **obtain** v. 获得
 - **achieve** v. 实现
 - **attain** v. 达到
@@ -1429,7 +1429,7 @@
 - **alter** v. 改变
 - **enhance** v. 提高
 - **improve** v. 改进
-- **boost** v. 促进
+- **boost** v. 推动,提升 n. 推动
 - **promote** v. 促进;提拔
 - **facilitate** v. 促进,使便利
 - **foster** v. 培养,促进
@@ -1441,13 +1441,13 @@
 - **inhibit** v. 抑制
 - **hinder** v. 阻碍
 - **impede** v. 妨碍
-- **hamper** v. 阻碍
+- **hamper** v. 牵制,妨碍(行动或进展)
 - **restrict** v. 限制
 - **constrain** v. 约束
 - **limit** v. 限制 n. 限度
 - **prohibit** v. 禁止
 - **ban** v./n. 禁止
-- **prevent** v. 预防
+- **prevent** v. 防止,阻止;预防
 - **avoid** v. 避免
 - **eliminate** v. 消除
 - **eradicate** v. 根除
@@ -1457,16 +1457,16 @@
 - **mitigate** v. 减轻
 - **alleviate** v. 缓解
 - **relieve** v. 缓解
-- **tackle** v. 处理
+- **tackle** v. 着手处理,解决(难题)
 - **address** v. 处理,应对
 - **cope with** phr. 应对
 - **deal with** phr. 处理
 - **resolve** v. 解决
 - **implement** v. 实施
-- **execute** v. 执行
+- **execute** v. 执行;处决
 - **conduct** v. 进行
 - **undertake** v. 承担,从事
-- **pursue** v. 追求
+- **pursue** v. 追求;从事;追赶
 - **establish** v. 建立
 - **found** v. 创立
 - **initiate** v. 发起
@@ -1484,10 +1484,10 @@
 - **protect** v. 保护
 - **ensure** v. 确保
 - **secure** v. 获得;确保 adj. 安全的
-- **acknowledge** v. 承认
+- **acknowledge** v. 承认;致谢
 - **recognise** v. 认可;认出
 - **perceive** v. 察觉,认为
-- **regard** v. 看待
+- **regard** v. 把……看作 n. 关注;问候
 - **consider** v. 考虑;认为
 - **specify** v. 具体说明
 - **clarify** v. 澄清
@@ -1502,7 +1502,7 @@
 - **differentiate** v. 区分
 - **compare** v. 比较
 - **contrast** v. 对比 n. 对比
-- **resemble** v. 类似
+- **resemble** v. 像,与……相似
 - **coincide** v. 同时发生;一致
 - **correspond** v. 相符;通信
 - **depend on** phr. 取决于
@@ -1559,7 +1559,7 @@
 - **object to (doing) sth.** phr. 反对(做)某事
 - **favour** v. 支持,偏爱
 - **justify** v. 证明……合理
-- **convince** v. 说服
+- **convince** v. 使相信,使确信
 - **persuade** v. 劝说
 - **elevate** v. 提升
 - **exert** v. 施加(影响、压力)
@@ -1718,10 +1718,10 @@
 - **terrain** n. 地形
 - **landscape** n. 风景,地貌
 - **topography** n. 地形学;地形
-- **plain** n. 平原 adj. 素色的;朴素的
+- **plain** n. 平原 adj. 清楚的;朴素的,素色的
 - **valley** n. 山谷
-- **canyon** n. 峡谷
-- **gorge** n. 峡谷
+- **canyon** n. 大峡谷
+- **gorge** n. 峡谷,山峡
 - **cliff** n. 悬崖
 - **slope** n. 斜坡
 - **ridge** n. 山脊
@@ -1753,21 +1753,21 @@
 - **grassland** n. 草原
 - **rainforest** n. 雨林
 - **wetland** n. 湿地
-- **marsh** n. 沼泽
-- **swamp** n. 沼泽
+- **marsh** n. 沼泽(多草的湿地)
+- **swamp** n. 沼泽(多树木的湿地)
 - **delta** n. 三角洲
 - **estuary** n. 河口
 - **basin** n. 盆地;流域
 - **tributary** n. 支流
 - **reservoir** n. 水库
 - **waterfall** n. 瀑布
-- **spring** n. 泉
+- **spring** n. 泉;弹簧
 - **peninsula** n. 半岛
 - **archipelago** n. 群岛
 - **coastline** n. 海岸线
 - **shore** n. 岸
 - **bay** n. 海湾
-- **gulf** n. 海湾
+- **gulf** n. (大的)海湾;鸿沟,分歧
 - **strait** n. 海峡
 - **cave** n. 洞穴
 - **sediment** n. 沉积物
@@ -1840,10 +1840,10 @@
 
 - **climate** n. 气候
 - **meteorology** n. 气象学
-- **atmosphere** n. 大气;氛围;氛围
+- **atmosphere** n. 大气;氛围
 - **temperature** n. 温度
 - **humidity** n. 湿度
-- **humid** adj. 潮湿的
+- **humid** adj. (空气)潮湿闷热的
 - **arid** adj. 干旱的
 - **tropical** adj. 热带的
 - **temperate** adj. 温带的;温和的
@@ -1884,7 +1884,7 @@
 - **whirlwind** n. 旋风
 - **haze** n. 薄雾,霾
 - **dew** n. 露水
-- **damp** adj. 潮湿的
+- **damp** adj. 潮湿的,微湿的
 - **chilly** adj. 寒冷的
 - **balmy** adj. (天气)温和宜人的
 - **torrid** adj. 酷热的
@@ -1906,7 +1906,7 @@
 - **whale** n. 鲸
 - **dolphin** n. 海豚
 - **shark** n. 鲨鱼
-- **seal** n. 海豹
+- **seal** n. 海豹;印章 v. 密封
 - **jellyfish** n. 水母
 - **octopus** n. 章鱼
 - **squid** n. 鱿鱼
@@ -1990,7 +1990,7 @@
 - **mimicry** n. 拟态
 - **instinct** n. 本能
 - **behaviour** n. 行为
-- **territory** n. 领地
+- **territory** n. 领地;领土
 - **migrate** v. 迁徙
 - **migration** n. 迁徙
 - **hibernate** v. 冬眠
@@ -1999,7 +1999,7 @@
 - **reproduce** v. 繁殖
 - **reproduction** n. 繁殖
 - **mate** v. 交配 n. 配偶
-- **offspring** n. 后代
+- **offspring** n. (直接的)后代,幼崽
 - **larva** n. 幼虫
 - **hatch** v. 孵化
 - **embryo** n. 胚胎
@@ -2012,7 +2012,7 @@
 - **inherit** v. 遗传;继承
 - **trait** n. 特征
 - **ancestor** n. 祖先
-- **descendant** n. 后代
+- **descendant** n. 后裔,子孙
 - **extinct** adj. 灭绝的
 - **extinction** n. 灭绝
 - **endangered** adj. 濒危的
@@ -2108,9 +2108,9 @@
 - **endangered species** phr. 濒危物种
 - **natural habitat** phr. 自然栖息地
 - **bird of prey** phr. 猛禽
-- **hawk** n. 鹰
+- **hawk** n. 鹰(中小型猛禽)
 - **sniff** v. 嗅,闻
-- **eagle** n. 鹰,雕
+- **eagle** n. 雕,鹰(大型猛禽)
 - **cage** n. 笼子
 - **chick** n. 小鸡,雏鸟
 - **bait** n. 诱饵
@@ -2154,7 +2154,7 @@
 - **agriculture** n. 农业
 - **agricultural** adj. 农业的
 - **farming** n. 农业,耕作
-- **crop** n. 庄稼
+- **crop** n. 农作物;收成
 - **cereal** n. 谷物
 - **grain** n. 谷物;颗粒
 - **wheat** n. 小麦
@@ -2169,7 +2169,7 @@
 - **fertile** adj. 肥沃的
 - **barren** adj. 贫瘠的
 - **soil** n. 土壤
-- **pesticide** n. 杀虫剂
+- **pesticide** n. 农药,杀虫剂
 - **herbicide** n. 除草剂
 - **pest** n. 害虫
 - **weed** n. 杂草
@@ -2239,7 +2239,7 @@
 
 - **physics** n. 物理
 - **chemistry** n. 化学
-- **matter** n. 物质
+- **matter** n. 物质;事情 v. 要紧
 - **substance** n. 物质
 - **particle** n. 粒子
 - **atom** n. 原子
@@ -2271,7 +2271,7 @@
 - **melt** v. 融化
 - **boil** v. 沸腾
 - **reaction** n. 反应
-- **catalyst** n. 催化剂
+- **catalyst** n. 催化剂;促进因素
 - **oxidation** n. 氧化
 - **combustion** n. 燃烧
 - **toxic** adj. 有毒的
@@ -2279,13 +2279,13 @@
 - **radioactive** adj. 放射性的
 - **nuclear** adj. 核的
 - **energy** n. 能量
-- **force** n. 力
+- **force** n. 力;武力 v. 强迫
 - **friction** n. 摩擦
 - **pressure** n. 压力
 - **velocity** n. 速度
 - **acceleration** n. 加速度
 - **momentum** n. 动量;势头
-- **mass** n. 质量
+- **mass** n. 质量;大量 adj. 大规模的
 - **density** n. 密度
 - **magnetic** adj. 磁的
 - **magnet** n. 磁铁
@@ -2556,7 +2556,7 @@
 - **anatomy** n. 解剖学
 - **physiology** n. 生理学
 - **cell** n. 细胞
-- **tissue** n. 组织
+- **tissue** n. (生物)组织;纸巾
 - **organ** n. 器官
 - **skeleton** n. 骨骼
 - **muscle** n. 肌肉
@@ -2566,7 +2566,7 @@
 - **artery** n. 动脉
 - **vein** n. 静脉
 - **blood vessel** phr. 血管
-- **circulation** n. 循环
+- **circulation** n. (血液)循环;发行量
 - **digestion** n. 消化
 - **digestive** adj. 消化的
 - **metabolism** n. 新陈代谢
@@ -2585,11 +2585,11 @@
 - **pathogen** n. 病原体
 - **disorder** n. 失调,紊乱
 - **chronic** adj. 慢性的
-- **acute** adj. 急性的
+- **acute** adj. 急性的;严重的;敏锐的
 - **epidemic** n. 流行病
 - **pandemic** n. 大流行病
-- **contagious** adj. 传染的
-- **infectious** adj. 传染的
+- **contagious** adj. (接触)传染的
+- **infectious** adj. 传染性的;有感染力的
 - **outbreak** n. 爆发
 - **diabetes** n. 糖尿病
 - **obesity** n. 肥胖
@@ -2612,7 +2612,7 @@
 - **clinical trial** phr. 临床试验
 - **cure** n./v. 治愈
 - **heal** v. 愈合
-- **recover** v. 康复
+- **recover** v. 康复;恢复,找回
 - **recovery** n. 康复
 - **rehabilitation** n. 康复;改造
 - **transplant** n./v. 移植
@@ -2625,7 +2625,7 @@
 - **sanitation** n. 卫生设施
 - **malnutrition** n. 营养不良
 - **deficiency** n. 缺乏
-- **diet** n. 饮食
+- **diet** n. 饮食;节食
 - **sedentary** adj. 久坐的
 - **syndrome** n. 综合征
 - **hypertension** n. 高血压
@@ -2682,7 +2682,7 @@
 - **psychologist** n. 心理学家
 - **cognitive** adj. 认知的
 - **cognition** n. 认知
-- **perception** n. 感知
+- **perception** n. 感知;看法,观念
 - **sensory** adj. 感官的
 - **memory** n. 记忆
 - **recall** v. 回忆
@@ -2702,12 +2702,12 @@
 - **personality** n. 个性
 - **temperament** n. 性情
 - **motivation** n. 动机
-- **incentive** n. 激励
+- **incentive** n. 激励,刺激(因素)
 - **reward** n. 奖励
 - **punishment** n. 惩罚
 - **habit** n. 习惯
 - **attention** n. 注意力
-- **concentration** n. 专注
+- **concentration** n. 专注;浓度
 - **distraction** n. 分心
 - **multitasking** n. 多任务处理
 - **decision-making** n. 决策
@@ -2724,7 +2724,7 @@
 - **peer** n. 同龄人
 - **peer pressure** phr. 同伴压力
 - **self-esteem** n. 自尊
-- **confidence** n. 自信
+- **confidence** n. 自信;信任
 - **empathy** n. 同理心
 - **altruism** n. 利他主义
 - **introvert** n. 内向者
@@ -2734,7 +2734,7 @@
 - **nature versus nurture** phr. 先天与后天
 - **placebo effect** phr. 安慰剂效应
 - **well-being** n. 幸福,健康
-- **intellect** n. 智力
+- **intellect** n. 才智,理智
 - **rational** adj. 理性的
 - **impulsive** adj. 冲动的
 - **egocentric** adj. 自我中心的
@@ -2809,7 +2809,7 @@
 - **pictograph** n. 象形文字
 - **abstraction** n. 抽象
 - **coin** v. 创造(新词) n. 硬币
-- **cogent** adj. 有说服力的
+- **cogent** adj. 令人信服的,论证有力的
 - **persuasive** adj. 有说服力的
 - **orator** n. 演说家
 - **discourse** n. 话语;论述
@@ -2876,7 +2876,7 @@
 - **tribe** n. 部落
 - **indigenous** adj. 本土的,土著的
 - **aboriginal** adj. 土著的
-- **settlement** n. 定居点
+- **settlement** n. 定居点;解决,和解
 - **settler** n. 定居者
 - **colonise** v. 殖民
 - **conquest** n. 征服
@@ -2884,8 +2884,8 @@
 - **revolution** n. 革命
 - **Industrial Revolution** phr. 工业革命
 - **Renaissance** n. 文艺复兴
-- **heritage** n. 遗产
-- **legacy** n. 遗产,遗留
+- **heritage** n. (文化)遗产,传统
+- **legacy** n. 遗产;遗留(影响)
 - **chronicle** n. 编年史
 - **chronological** adj. 按时间顺序的
 - **era** n. 时代
@@ -3033,8 +3033,8 @@
 - **county** n. 郡,县
 - **provincial** adj. 省的;地方的
 - **rustic** adj. 乡村的,质朴的
-- **inhabitant** n. 居民
-- **resident** n. 居民
+- **inhabitant** n. (某地区的)居民;栖息动物
+- **resident** n. 居民,住户 adj. 居住的
 - **demography** n. 人口统计学
 - **bottleneck** n. 瓶颈
 - **residential area** phr. 住宅区
@@ -3132,8 +3132,8 @@
 - **investor** n. 投资者
 - **asset** n. 资产
 - **liability** n. 负债;责任
-- **revenue** n. 收入
-- **income** n. 收入
+- **revenue** n. (企业或政府的)收入,税收
+- **income** n. (个人)收入
 - **profit** n. 利润
 - **loss** n. 亏损
 - **turnover** n. 营业额;人员流动率
@@ -3174,12 +3174,12 @@
 - **enterprise** n. 企业
 - **corporation** n. 公司
 - **multinational** adj. 跨国的
-- **firm** n. 公司
+- **firm** n. 公司 adj. 坚定的;坚固的
 - **start-up** n. 初创公司
 - **entrepreneur** n. 企业家
 - **shareholder** n. 股东
 - **stock** n. 股票;库存
-- **share** n. 股份
+- **share** n. 股份;份额 v. 分享
 - **dividend** n. 股息
 - **bankrupt** adj. 破产的
 - **bankruptcy** n. 破产
@@ -3276,7 +3276,7 @@
 - **user-friendly** adj. 用户友好的
 - **compatible** adj. 兼容的
 - **upgrade** v./n. 升级
-- **obsolete** adj. 过时的
+- **obsolete** adj. 已淘汰的,废弃的
 - **outdated** adj. 过时的
 - **telecommunication** n. 电信
 - **broadband** n. 宽带
@@ -3342,11 +3342,11 @@
 - **slight** adj. 轻微的
 - **marginal** adj. 微小的;边缘的
 - **considerable** adj. 相当大的
-- **substantial** adj. 大量的
-- **significant** adj. 显著的
+- **substantial** adj. 大量的,可观的;实质性的
+- **significant** adj. 显著的;重要的
 - **dramatic** adj. 剧烈的
 - **sharp** adj. 急剧的
-- **steep** adj. 陡峭的
+- **steep** adj. 陡峭的;(升降)急剧的
 - **rapid** adj. 迅速的
 - **exponential** adj. 指数级的
 - **overall** adj. 总体的
@@ -3403,7 +3403,7 @@
 - **annual** adj. 每年的
 - **per capita** phr. 人均
 - **enormous** adj. 巨大的
-- **tremendous** adj. 巨大的
+- **tremendous** adj. 巨大的;极好的
 - **abundant** adj. 丰富的
 - **abundance** n. 丰富
 - **bulk** n. 大部分;体积
@@ -3555,7 +3555,7 @@
 - **vocational training** phr. 职业培训
 - **kindergarten** n. 幼儿园
 - **preschool** adj. 学龄前的
-- **pupil** n. 小学生
+- **pupil** n. (中小学)学生
 - **graduate** n. 毕业生 v. 毕业
 - **dropout** n. 辍学者
 - **compulsory education** phr. 义务教育
@@ -3621,13 +3621,13 @@
 
 - **mass media** phr. 大众媒体
 - **media** n. 媒体
-- **press** n. 新闻界
+- **press** n. 新闻界;出版社 v. 按,压
 - **journalism** n. 新闻业
 - **journalist** n. 记者
 - **reporter** n. 记者
 - **editor** n. 编辑
 - **headline** n. 标题
-- **coverage** n. 报道
+- **coverage** n. 报道;覆盖范围
 - **broadcast** v./n. 广播
 - **channel** n. 频道
 - **documentary** n. 纪录片
@@ -3654,7 +3654,7 @@
 - **connectivity** n. 连接性
 - **instant** adj. 即时的
 - **convenient** adj. 方便的
-- **accessible** adj. 可获取的
+- **accessible** adj. 可获取的;易于使用的
 - **access** n./v. 访问,获取
 - **dependence** n. 依赖
 - **isolation** n. 孤立
@@ -3729,7 +3729,7 @@
 - **policymaker** n. 决策者
 - **legislation** n. 立法
 - **legislate** v. 立法
-- **regulation** n. 规定
+- **regulation** n. 规定,法规;管理
 - **parliament** n. 议会
 - **democracy** n. 民主
 - **democratic** adj. 民主的
@@ -3763,8 +3763,8 @@
 - **transparency** n. 透明度
 - **accountability** n. 问责
 - **reform** n./v. 改革
-- **initiative** n. 倡议
-- **campaign** n. 运动
+- **initiative** n. 倡议,新举措;主动性
+- **campaign** n. (社会或政治)运动;宣传活动
 - **public awareness** phr. 公众意识
 - **diplomacy** n. 外交
 - **sovereignty** n. 主权
@@ -3858,8 +3858,8 @@
 - **judge** n. 法官
 - **jury** n. 陪审团
 - **court** n. 法院
-- **sue** v. 起诉
-- **prosecute** v. 起诉
+- **sue** v. (民事)起诉,控告
+- **prosecute** v. (刑事)起诉,检控
 - **defendant** n. 被告
 - **plaintiff** n. 原告
 - **witness** n. 证人
@@ -3867,7 +3867,7 @@
 - **guilty** adj. 有罪的
 - **innocent** adj. 无辜的
 - **convict** v. 定罪
-- **sentence** n. 判决 v. 判刑
+- **sentence** n. 判决;句子 v. 判刑
 - **penalty** n. 惩罚
 - **death penalty** phr. 死刑
 - **capital punishment** phr. 死刑
@@ -4067,7 +4067,7 @@
 - **traditional** adj. 传统的
 - **custom** n. 习俗
 - **convention** n. 惯例;大会
-- **value** n. 价值观
+- **value** n. 价值;价值观 v. 重视
 - **norm** n. 规范
 - **etiquette** n. 礼仪
 - **assimilation** n. 同化
@@ -4166,13 +4166,13 @@
 - **single-parent family** phr. 单亲家庭
 - **sibling** n. 兄弟姐妹
 - **spouse** n. 配偶
-- **relative** n. 亲戚
+- **relative** n. 亲戚 adj. 相对的
 - **generation** n. 一代人
 - **generation gap** phr. 代沟
 - **upbringing** n. 教养
 - **parenting** n. 育儿
-- **raise** v. 抚养
-- **spoil** v. 溺爱
+- **raise** v. 抚养;提高;筹集;提出
+- **spoil** v. 宠坏,溺爱;破坏
 - **pamper** v. 娇惯
 - **bond** n. 纽带
 - **intimacy** n. 亲密
@@ -4361,19 +4361,19 @@
 - **shy** adj. 害羞的
 - **easy-going** adj. 随和的
 - **laid-back** adj. 悠闲的,放松的
-- **considerate** adj. 体贴的
+- **considerate** adj. 体贴的,替他人着想的
 - **thoughtful** adj. 体贴的;深思的
 - **generous** adj. 慷慨的
 - **selfish** adj. 自私的
-- **modest** adj. 谦虚的
-- **humble** adj. 谦逊的
+- **modest** adj. 谦虚的;不太大的,适度的
+- **humble** adj. 谦逊的;卑微的,简朴的
 - **arrogant** adj. 傲慢的
 - **honest** adj. 诚实的
 - **sincere** adj. 真诚的
 - **trustworthy** adj. 值得信赖的
 - **responsible** adj. 负责任的
-- **diligent** adj. 勤奋的
-- **hard-working** adj. 努力的
+- **diligent** adj. 勤奋的,认真细致的
+- **hard-working** adj. 勤奋的,努力工作的
 - **industrious** adj. 勤劳的
 - **ambitious** adj. 有抱负的
 - **determined** adj. 坚定的
@@ -4406,7 +4406,7 @@
 - **influential** adj. 有影响力的
 - **inspiring** adj. 鼓舞人心的
 - **admirable** adj. 令人钦佩的
-- **supportive** adj. 支持的
+- **supportive** adj. 给予支持的,鼓励的
 - **approachable** adj. 平易近人的
 - **strict** adj. 严格的
 - **get along with** phr. 与……相处融洽
@@ -4418,11 +4418,11 @@
 - **discreet** adj. 谨慎的,低调的
 - **expressive** adj. 善于表达的
 - **imaginative** adj. 富有想象力的
-- **faithful** adj. 忠诚的
+- **faithful** adj. 忠实的;如实的
 - **tolerant** adj. 宽容的
 - **courageous** adj. 勇敢的
 - **thrifty** adj. 节俭的
-- **frugal** adj. 节俭的
+- **frugal** adj. 节俭的;简朴的
 - **unselfish** adj. 无私的
 - **frank** adj. 坦率的
 - **outspoken** adj. 直言不讳的
@@ -4433,7 +4433,7 @@
 - **chatty** adj. 健谈的
 - **precocious** adj. 早熟的
 - **respectable** adj. 体面的,值得尊敬的
-- **mild** adj. 温和的
+- **mild** adj. 温和的;(病情)轻微的;(味道)淡的
 - **passive** adj. 被动的
 - **conservative** adj. 保守的
 - **aggressive** adj. 有攻击性的;积极进取的
@@ -4467,7 +4467,7 @@
 - **plump** adj. 丰满的
 - **stocky** adj. 矮壮的
 - **muscular** adj. 肌肉发达的
-- **athletic** adj. 健壮的
+- **athletic** adj. 健壮的;运动的
 - **medium height** phr. 中等身高
 - **complexion** n. 肤色
 - **freckles** n. 雀斑
@@ -4476,10 +4476,10 @@
 - **curly** adj. 卷曲的
 - **straight hair** phr. 直发
 - **ponytail** n. 马尾辫
-- **casual** adj. 休闲的
+- **casual** adj. 休闲的;随意的;临时的
 - **formal** adj. 正式的
 - **fashionable** adj. 时髦的
-- **trendy** adj. 时髦的
+- **trendy** adj. 新潮的,赶时髦的
 - **stylish** adj. 有型的
 - **outfit** n. 全套服装
 - **accessory** n. 配饰
@@ -4516,7 +4516,7 @@
 - **annoyed** adj. 恼怒的
 - **embarrassed** adj. 尴尬的
 - **nervous** adj. 紧张的
-- **anxious** adj. 焦虑的
+- **anxious** adj. 焦虑的;渴望的
 - **stressed** adj. 有压力的
 - **exhausted** adj. 筋疲力尽的
 - **homesick** adj. 想家的
@@ -4530,7 +4530,7 @@
 - **be passionate about** phr. 对……充满热情
 - **can't stand (doing) sth.** phr. 无法忍受(做)某事
 - **unforgettable** adj. 难忘的
-- **memorable** adj. 难忘的
+- **memorable** adj. 值得纪念的,难忘的
 - **meaningful** adj. 有意义的
 - **rewarding** adj. 有回报的
 - **fulfilling** adj. 令人有成就感的
@@ -4587,7 +4587,7 @@
 - **durable** adj. 耐用的
 - **sturdy** adj. 结实的
 - **smooth** adj. 光滑的
-- **rough** adj. 粗糙的
+- **rough** adj. 粗糙的;大致的
 - **transparent** adj. 透明的
 - **shiny** adj. 闪亮的
 - **colourful** adj. 色彩丰富的
@@ -4671,8 +4671,8 @@
 - **lively** adj. 热闹的
 - **crowded** adj. 拥挤的
 - **peaceful** adj. 宁静的
-- **tranquil** adj. 安静的
-- **serene** adj. 宁静的
+- **tranquil** adj. 宁静的,平静的(多指环境)
+- **serene** adj. 安详的,宁静的(多指人或景色)
 - **picturesque** adj. 风景如画的
 - **scenic** adj. 风景优美的
 - **breathtaking** adj. 令人叹为观止的
@@ -4684,7 +4684,7 @@
 - **cosmopolitan** adj. 国际化的
 - **well-preserved** adj. 保存完好的
 - **run-down** adj. 破败的
-- **remote** adj. 偏远的
+- **remote** adj. 偏远的;远程的;遥控的
 - **isolated** adj. 与世隔绝的
 - **well-connected** adj. 交通便利的
 - **within walking distance** phr. 步行可达
@@ -4715,9 +4715,9 @@
 - **pastime** n. 消遣
 - **leisure** n. 闲暇
 - **spare time** phr. 空闲时间
-- **recreation** n. 娱乐
-- **entertainment** n. 娱乐
-- **amusement** n. 娱乐
+- **recreation** n. 休闲活动,消遣
+- **entertainment** n. 娱乐(活动),文娱节目
+- **amusement** n. 娱乐,乐趣
 - **amusement park** phr. 游乐园
 - **theme park** phr. 主题公园
 - **outdoor activities** phr. 户外活动
@@ -4731,7 +4731,7 @@
 - **biography** n. 传记
 - **autobiography** n. 自传
 - **genre** n. 体裁,类型
-- **plot** n. 情节
+- **plot** n. 情节;小块土地;阴谋
 - **character** n. 角色;性格
 - **protagonist** n. 主人公
 - **series** n. 系列;连续剧
