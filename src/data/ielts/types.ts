@@ -62,3 +62,15 @@ export interface IeltsModuleData {
   moduleId: IeltsModuleId
   entries: IeltsEntry[]
 }
+
+export interface IeltsExample {
+  en: string
+  zh: string
+  /** Position of the target word form within `en`. */
+  start: number
+  length: number
+}
+
+/** Example sentences of one topic, keyed by entry id. */
+export type IeltsTopicExamples = Record<string, IeltsExample[]>
+

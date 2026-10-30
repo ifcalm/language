@@ -4,6 +4,7 @@
 
 .ielts-page {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
 
@@ -474,6 +475,49 @@
 .ielts-sense-list em {
   flex: 0 0 auto;
   min-width: 48px;
+}
+
+/* Example sentences */
+.ielts-examples {
+  display: grid;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.ielts-examples h2 {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.ielts-examples ul {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ielts-examples p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.ielts-examples mark {
+  background: none;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.ielts-example-zh {
+  margin-top: 2px;
+  color: var(--text-soft);
+  font-size: 0.94rem;
 }
 
 .ielts-entry-detail .ielts-master {

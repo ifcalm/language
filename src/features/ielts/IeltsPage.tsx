@@ -2,11 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   getIeltsAudioUrl,
   ieltsCatalog,
+  loadIeltsExamples,
   loadIeltsModule,
   type IeltsEntry,
   type IeltsModuleData,
   type IeltsModuleId,
   type IeltsModuleSummary,
+  type IeltsTopicExamples,
   type IeltsTopicSummary,
 } from '../../data/ielts'
 import { useIeltsAudio } from './useIeltsAudio'
@@ -76,6 +78,62 @@ function useIeltsModule(moduleId: IeltsModuleId | null) {
   }, [moduleId])
 
   return state.moduleId === moduleId ? state : { moduleId, data: null, error: '' }
+}
+
+function useIeltsExamples(topicId: string) {
+  const [state, setState] = useState<{
+    topicId: string | null
+    data: IeltsTopicExamples | null
+    error: string
+  }>({ topicId: null, data: null, error: '' })
+
+  useEffect(() => {
+    let cancelled = false
+
+    loadIeltsExamples(topicId).then(
+      (data) => !cancelled && setState({ topicId, data, error: '' }),
+      () =>
+        !cancelled &&
+        setState({ topicId, data: null, error: '例句加载失败，请检查网络后刷新重试。' }),
+    )
+
+    return () => {
+      cancelled = true
+    }
+  }, [topicId])
+
+  return state.topicId === topicId ? state : { topicId, data: null, error: '' }
+}
+
+function ExampleList({ entry }: { entry: IeltsEntry }) {
+  const { data, error } = useIeltsExamples(entry.topicId)
+  const examples = data?.[entry.id] ?? []
+
+  if (error || !data) {
+    return <p className="ielts-status ielts-examples-status" role="status">{error || '正在加载例句…'}</p>
+  }
+
+  if (examples.length === 0) {
+    return null
+  }
+
+  return (
+    <section className="ielts-examples" aria-label={`${entry.word} 的例句`}>
+      <h2>例句</h2>
+      <ul>
+        {examples.map((example) => (
+          <li key={example.en}>
+            <p lang="en">
+              {example.en.slice(0, example.start)}
+              <mark>{example.en.slice(example.start, example.start + example.length)}</mark>
+              {example.en.slice(example.start + example.length)}
+            </p>
+            <p className="ielts-example-zh">{example.zh}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
 }
 
 function ProgressBar({ done, total }: { done: number; total: number }) {
@@ -584,6 +642,8 @@ function EntryView({
             </li>
           ))}
         </ul>
+
+        <ExampleList entry={entry} />
 
         <MasterButton entry={entry} progress={progress} />
       </article>
