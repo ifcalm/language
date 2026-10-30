@@ -29,17 +29,17 @@
 
 ## 1.1 住宿与租房
 
-- **accommodation** n. 住处,膳宿
+- **accommodation** n. 住宿,住处
 - **landlord** n. 房东
 - **landlady** n. 女房东
 - **tenant** n. 房客,租户
 - **lease** n. 租约 v. 出租
 - **tenancy** n. 租期,租赁
-- **rent** n. 租金 v. 租用
+- **rent** n. 租金 v. 租用;出租
 - **security deposit** phr. 押金
 - **utilities** n. 水电煤等公用事业费
 - **bill** n. 账单
-- **inclusive** adj. 包含在内的
+- **inclusive** adj. 包含在内的;(费用)全包的
 - **furnished** adj. 带家具的
 - **unfurnished** adj. 不带家具的
 - **apartment** n. 公寓
@@ -51,7 +51,7 @@
 - **cottage** n. 村舍,小屋
 - **dormitory** n. 宿舍
 - **hall of residence** phr. 学生宿舍楼
-- **homestay** n. 寄宿家庭
+- **homestay** n. 家庭寄宿(住在当地家庭的住宿方式)
 - **host family** phr. 寄宿家庭
 - **suburb** n. 郊区
 - **outskirts** n. 市郊
@@ -76,13 +76,13 @@
 - **mattress** n. 床垫
 - **pillowcase** n. 枕套
 - **blanket** n. 毯子
-- **duvet** n. 羽绒被
+- **duvet** n. 被子,羽绒被
 - **curtain** n. 窗帘
 - **microwave** n. 微波炉
 - **refrigerator** n. 冰箱
 - **dishwasher** n. 洗碗机
 - **vacuum cleaner** phr. 吸尘器
-- **heater** n. 暖气,加热器
+- **heater** n. 取暖器,加热器
 - **central heating** phr. 集中供暖
 - **air conditioning** phr. 空调
 - **socket** n. 插座
@@ -149,7 +149,7 @@
 - **sightseeing** n. 观光
 - **guided tour** phr. 有导游的游览
 - **backpacker** n. 背包客
-- **hostel** n. 青年旅舍
+- **hostel** n. 廉价旅舍,青年旅舍
 - **bed and breakfast** phr. 民宿(含早餐)
 - **campsite** n. 营地
 - **caravan** n. 房车
@@ -158,7 +158,7 @@
 - **double room** phr. 双人间(一张大床)
 - **twin room** phr. 双人间(两张床)
 - **vacancy** n. 空房;空缺
-- **check in** phr. 登记入住
+- **check in** phr. 登记入住;办理登机手续
 - **check out** phr. 退房
 - **reception** n. 前台;接待;招待会
 - **receptionist** n. 前台接待员
@@ -201,7 +201,7 @@
 - **detour** n. 绕行
 - **toll** n. 通行费
 - **landmark** n. 地标
-- **monument** n. 纪念碑
+- **monument** n. 纪念碑;历史遗迹
 - **souvenir** n. 纪念品
 - **currency** n. 货币
 - **exchange rate** phr. 汇率
@@ -265,7 +265,7 @@
 - **layout** n. 布局
 - **entrance** n. 入口
 - **exit** n. 出口
-- **opposite** prep. 在……对面
+- **opposite** prep. 在……对面 adj. 对面的;相反的
 - **adjacent** adj. 相邻的
 - **diagonally** adv. 斜对着
 - **clockwise** adv. 顺时针地
@@ -318,10 +318,10 @@
 - **dairy** n. 乳制品
 - **gluten** n. 麸质
 - **seafood** n. 海鲜
-- **poultry** n. 家禽肉
+- **poultry** n. 家禽;禽肉
 - **ingredient** n. 原料,配料
 - **recipe** n. 食谱
-- **portion** n. 一份
+- **portion** n. (食物的)一份;部分
 - **nutrition** n. 营养
 - **protein** n. 蛋白质
 - **carbohydrate** n. 碳水化合物
@@ -329,7 +329,7 @@
 - **calorie** n. 卡路里
 - **fibre** n. 纤维
 - **organic** adj. 有机的
-- **tip** n. 小费
+- **tip** n. 小费;提示,建议 v. 给小费
 - **receipt** n. 收据
 - **discount** n. 折扣
 - **voucher** n. 代金券
@@ -393,22 +393,22 @@
 - **deposit** n. 存款;定金;沉积物,矿藏 v. 存入
 - **withdraw** v. 取款
 - **withdrawal** n. 取款
-- **balance** n. 余额
+- **balance** n. 余额;平衡 v. 使平衡
 - **statement** n. 银行对账单;声明
 - **interest rate** phr. 利率
 - **overdraft** n. 透支
 - **loan** n. 贷款
-- **mortgage** n. 按揭
+- **mortgage** n. 抵押贷款,按揭
 - **credit card** phr. 信用卡
 - **debit card** phr. 借记卡
 - **cheque** n. 支票
 - **instalment** n. 分期付款
 - **fee** n. 费用
-- **charge** n. 收费 v. 收费
+- **charge** n. 费用;指控 v. 收费;控告
 - **identification** n. 身份证明
 - **proof of address** phr. 地址证明
 - **signature** n. 签名
-- **PIN** n. 个人密码
+- **PIN** n. (银行卡)密码
 - **online banking** phr. 网上银行
 - **branch** n. 分行;分支;树枝
 - **cashpoint** n. 自动取款机(英)
@@ -460,7 +460,7 @@
 - **treatment** n. 治疗
 - **therapy** n. 疗法
 - **physiotherapy** n. 理疗
-- **injury** n. 受伤
+- **injury** n. 伤害,损伤
 - **sprain** n./v. 扭伤
 - **fracture** n. 骨折
 - **bruise** n. 淤青
@@ -614,7 +614,7 @@
 
 ## 1.5 工作与求职
 
-- **position** n. 职位
+- **position** n. 职位;位置;立场
 - **applicant** n. 申请人
 - **application form** phr. 申请表
 - **CV** n. 简历(英)
@@ -642,7 +642,7 @@
 - **annual leave** phr. 年假
 - **sick leave** phr. 病假
 - **maternity leave** phr. 产假
-- **probation** n. 试用期
+- **probation** n. 试用期;缓刑
 - **contract** n. 合同
 - **employer** n. 雇主
 - **employee** n. 雇员
@@ -693,7 +693,7 @@
 - **prerequisite** n. 先修课程;前提
 - **credit** n. 学分;信用
 - **syllabus** n. 教学大纲
-- **curriculum** n. 全部课程
+- **curriculum** n. 课程体系
 - **lecture** n. 讲座
 - **lecturer** n. 讲师
 - **tutorial** n. 辅导课
@@ -776,7 +776,7 @@
 - **library card** phr. 借书卡
 - **renew** v. 续借
 - **overdue** adj. 过期的
-- **fine** n. 罚款 v. 罚款
+- **fine** n./v. 罚款 adj. 好的;细的
 - **loan period** phr. 借期
 - **reserve** v. 预约,预留 n. 保护区
 - **catalogue** n. 目录
