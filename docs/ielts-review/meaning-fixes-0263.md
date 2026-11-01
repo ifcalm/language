@@ -1,0 +1,169 @@
+| 词条 | 修改前 | 修改后 | 原因 |
+|---|---|---|---|
+| amount | n. 数量(不可数) | n. 数量;金额 | amount 本身可数,large amounts of 常见,只是后接不可数名词,现在标不可数有误导;牛津英汉有金额义 |
+| household | n. 家庭;家务 | n. 家庭,一家人 adj. 家庭的 | 牛津英汉和譯典通都没有家务这个名词义,household 指一家人或家庭 |
+| hall of residence | phr. 学生宿舍楼 | phr. 学生宿舍楼(英) | 牛津英汉和 ODE 都标注英式,美式说 dormitory |
+| return ticket | phr. 往返票 | phr. 往返票(英) | 牛津英汉和譯典通都标注英式,美式说 round-trip ticket |
+| single ticket | phr. 单程票 | phr. 单程票(英) | 牛津英汉标注英式,美式说 one-way ticket |
+| physician | n. 内科医生 | n. 医生,内科医生 | 牛津英汉首义是医生,美式英语 physician 泛指医生,不限内科 |
+| contrast | v. 对比 n. 对比 | n./v. 对比 | 现在写成 v. 对比 n. 对比,同义不同词性应合并 |
+| cure | n./v. 治愈 | v. 治愈 n. 疗法 | 牛津英汉名词义是疗法,a cure for 常用,现在把名词也写成治愈 |
+| defeat | n./v. 击败 | v. 击败 n. 失败 | 牛津英汉和譯典通的名词义首先是失败,suffer a defeat 常用,现在把名词也写成击败 |
+| fundamental | adj. 根本的 | adj. 基本的,根本的 | 牛津英汉首义是基本的 |
+| raw | adj. 原始的;生的 | adj. 未加工的,原始的;生的 | 牛津英汉和譯典通都有未加工义,raw materials 是原料,只说原始的不准 |
+| sanitation | n. 卫生设施 | n. 公共卫生,卫生设施 | 牛津英汉是公共卫生,譯典通也有卫生设备,现在只写设施偏窄 |
+| convert A into B | phr. 把 A 改造成 B | phr. 把 A 转换成 B | 牛津英汉和譯典通都是转变、转换,改造只是其中一种情况 |
+| gang | n. 犯罪团伙 | n. 犯罪团伙;一伙人 | 牛津英汉和譯典通都是一帮、一伙人,gang 不限于犯罪,a gang of workers 也常用 |
+| disciplined | adj. 自律的 | adj. 自律的,纪律严明的 | 牛津英汉是纪律严明的、训练有素的,只写自律偏窄 |
+| regret | n./v. 后悔 | n./v. 后悔,遗憾 | 牛津英汉和譯典通都有遗憾义,regret to inform 是书信常用说法 |
+| admire | v. 钦佩 | v. 钦佩;欣赏 | 牛津英汉有赞赏、欣赏义,譯典通首义是钦佩、欣赏 |
+| valuable | adj. 贵重的 | adj. 贵重的,有价值的 | 牛津英汉和譯典通都有宝贵、有价值义,valuable experience 常用 |
+| stretch | v. 伸展 | v. 伸展,延伸 n. 一段 | 牛津英汉和譯典通都有延伸和名词义,a stretch of road 是地图和阅读常见用法 |
+| charity | n. 慈善机构 | n. 慈善机构;慈善 | 牛津英汉和譯典通都有慈善义,for charity 是常用说法 |
+| advanced | adj. 高级的 | adj. 高级的;先进的 | 牛津英汉和譯典通都有先进义,advanced technology 是写作高频搭配 |
+| champion | n. 冠军 | n. 冠军;捍卫者 v. 支持 | 牛津英汉和譯典通都有捍卫者和动词义,阅读 champion a cause 常见 |
+| experience | n. 经验 | n. 经验;经历 v. 经历,体验 | 牛津英汉和譯典通都有经历和动词义,现在只有经验 |
+| recruit | v. 招聘 | v. 招聘,招募 n. 新成员 | 牛津英汉首义是征募、招收,也有名词义,现在只有招聘 |
+| term | n. 学期;术语 | n. 学期;术语;期限,任期 | 牛津英汉首义是任期、期限,term of office、long term 都常见 |
+| credit | n. 学分;信用 | n. 学分;信用;赞扬 | 牛津英汉和譯典通都有赞扬义,take credit for 是常用说法 |
+| mark | n. 分数 v. 打分 | n. 分数;标记 v. 打分;标志 | 牛津英汉和譯典通都有标记和标志义,mark the beginning of 是阅读高频用法 |
+| experiment | n. 实验 | n./v. 实验 | 牛津英汉和譯典通都有动词义,experiment with 是常用说法 |
+| demonstrate | v. 证明;演示 | v. 证明;演示;游行示威 | 牛津英汉和譯典通都有游行示威义,demonstrate against 是社会话题常见用法 |
+| propose | v. 提出 | v. 提出;打算;求婚 | 牛津英汉和譯典通都有打算和求婚义,现在只有提出 |
+| compromise | n./v. 妥协 | n./v. 妥协 v. 损害,危及 | 牛津英汉和譯典通都有危及义,compromise safety 是阅读常见用法 |
+| cause | n. 原因 v. 导致 | n. 原因;事业 v. 导致 | 牛津英汉和譯典通都有事业义,a good cause 是常用说法 |
+| induce | v. 诱发 | v. 引起,诱发;劝说 | 牛津英汉首义是劝说,induce sb to do 常见,现在只有诱发 |
+| while | conj. 虽然;然而 | conj. 当……时;虽然;然而 n. 一段时间 | 牛津英汉和譯典通都有当……时和名词义,现在缺最基础的时间义 |
+| essential | adj. 必要的 | adj. 必要的;基本的 n. 必需品 | 牛津英汉和譯典通都有基本和必需品义 |
+| negative | adj. 负面的,消极的 | adj. 负面的,消极的;否定的 | 牛津英汉和譯典通首义都是否定的,negative answer 常见 |
+| positive | adj. 正面的,积极的 | adj. 正面的,积极的;确信的 | 牛津英汉和譯典通都有确定、确信义,I'm positive 是口语常用说法 |
+| ideal | adj. 理想的 | adj. 理想的 n. 理想 | 牛津英汉和譯典通都有名词义,ideals 在社会话题常见 |
+| complex | adj. 复杂的 | adj. 复杂的 n. 建筑群,综合体 | 牛津英汉和譯典通都有名词义,sports complex 是听力阅读常见说法 |
+| fierce | adj. 激烈的 | adj. 激烈的;凶猛的 | 牛津英汉和譯典通首义都是凶猛的 |
+| promote | v. 促进;提拔 | v. 促进;提拔;推销 | 牛津英汉和譯典通都有推销义,promote a product 是商业话题常用说法 |
+| eliminate | v. 消除 | v. 消除;淘汰 | 牛津英汉和譯典通都有淘汰义,be eliminated from 常见 |
+| resolve | v. 解决 | v. 解决;决心 n. 决心 | 牛津英汉和譯典通都有决心义和名词义 |
+| establish | v. 建立 | v. 建立;确立,证实 | 牛津英汉和譯典通都有证实义,establish that 是学术阅读常见用法 |
+| occur | v. 发生 | v. 发生,出现;被想到 | 牛津英汉和譯典通都有被想到义,it occurs to sb 常用 |
+| develop | v. 发展 | v. 发展;开发,研制 | 牛津英汉和譯典通都有开发义,develop a product 是高频用法 |
+| sustain | v. 维持 | v. 维持;遭受 | 牛津英汉和譯典通都有遭受义,sustain damage 是阅读常见用法 |
+| separate | v. 分离 | v. 分离 adj. 分开的,单独的 | 牛津英汉和譯典通都有形容词义,现在缺常用词性 |
+| apply | v. 应用;申请 | v. 应用;申请;适用 | 牛津英汉和譯典通都有适用义,apply to sb 是常用说法 |
+| revise | v. 修订 | v. 修订;复习(英) | 牛津英汉和譯典通都标注英式复习义,revise for an exam 是教育话题常用说法 |
+| encounter | v. 遭遇 | v. 遭遇;偶然遇到 | 牛津英汉和譯典通都有偶遇义,现在只有遭遇 |
+| consume | v. 消耗;消费 | v. 消耗;消费;吃,喝 | 牛津英汉首义是吃、喝,consume food 是饮食话题常用说法 |
+| declare | v. 宣布,声明 | v. 宣布,声明;申报 | 牛津英汉和譯典通都有申报义,海关场景常用 |
+| spring | n. 泉;弹簧 | n. 春天;泉;弹簧 | 牛津英汉和譯典通首义都是春天,现在缺最基础的义项 |
+| shower | n. 阵雨 | n. 阵雨;淋浴 | 牛津英汉和譯典通都有淋浴义,take a shower 是听力和住宿话题常用说法 |
+| hail | n. 冰雹 | n. 冰雹 v. 称颂;招呼 | 牛津英汉和譯典通都有称颂和招呼义,be hailed as 是阅读常见用法 |
+| spectacle | n. 壮观景象 | n. 壮观景象;眼镜(复数) | 牛津英汉标注 spectacles 复数义是眼镜 |
+| erode | v. 侵蚀 | v. 侵蚀;削弱 | 牛津英汉有削弱义,erode confidence 是常见比喻用法 |
+| Mediterranean | adj. 地中海的 | n. 地中海 adj. 地中海的 | 牛津英汉和譯典通都有名词义,the Mediterranean 常单独使用 |
+| flood | n. 洪水 | n. 洪水 v. 淹没;涌入 | 牛津英汉和譯典通都有动词义,be flooded with 常见 |
+| flock | n. 鸟群,羊群 | n. 鸟群,羊群 v. 聚集 | 牛津英汉和譯典通都有动词义,flock to 是阅读常见用法 |
+| migrate | v. 迁徙 | v. 迁徙;移居 | 牛津英汉首义是移居,人口迁移是常见话题 |
+| migration | n. 迁徙 | n. 迁徙;移居 | 牛津英汉首义是移居,人口迁移是常见话题 |
+| reproduction | n. 繁殖 | n. 繁殖;复制品 | 牛津英汉和譯典通都有复制品义,艺术话题常见 |
+| mate | v. 交配 n. 配偶 | v. 交配 n. 配偶;伙伴(英) | 牛津英汉和譯典通都有伙伴义,英式口语常用 |
+| evolution | n. 进化 | n. 进化;演变 | 牛津英汉有演变义,evolution of language 常见 |
+| horn | n. 角 | n. 角;喇叭 | 牛津英汉和譯典通都有喇叭义,交通场景常用 |
+| hide | n. 兽皮 | n. 兽皮 v. 隐藏,躲藏 | 牛津英汉和譯典通都有动词义,现在缺最常用的隐藏义 |
+| stem | n. 茎 | n. 茎 v. 阻止 | 牛津英汉和譯典通都有阻止义,stem the flow 是阅读常见用法 |
+| trunk | n. 树干 | n. 树干;象鼻;行李箱(美) | 牛津英汉和譯典通都有这些义项,象鼻和行李箱都常见 |
+| bark | n. 树皮 | n. 树皮 v. 吠叫 | 牛津英汉和譯典通都有吠叫义,现在缺常用动词义 |
+| cereal | n. 谷物 | n. 谷物;麦片 | 譯典通有麦片义,牛津英汉有谷类食物义,breakfast cereal 是饮食话题常用说法 |
+| fertile | adj. 肥沃的 | adj. 肥沃的;能生育的 | 牛津英汉和譯典通都有能生育义,健康话题常见 |
+| shoot | n. 嫩枝 | n. 嫩枝 v. 射击;拍摄 | 牛津英汉和譯典通都有射击和拍摄义,现在缺最常用的动词义 |
+| log | n. 原木 | n. 原木;日志 v. 记录 | 牛津英汉和譯典通都有日志和记录义 |
+| rubber | n. 橡胶 | n. 橡胶;橡皮擦(英) | 牛津英汉标注英式橡皮擦义,校园听力场景常见 |
+| substance | n. 物质 | n. 物质;实质 | 牛津英汉和譯典通都有实质义 |
+| iron | n. 铁 | n. 铁;熨斗 v. 熨烫 | 牛津英汉和譯典通都有熨斗和动词义,日常听力常见 |
+| condense | v. 冷凝 | v. 冷凝;浓缩,压缩 | 牛津英汉和譯典通都有浓缩和压缩义 |
+| boil | v. 沸腾 | v. 沸腾;煮 | 牛津英汉和譯典通都有煮义,饮食话题常用 |
+| conductor | n. 导体;指挥 | n. 导体;指挥;售票员 | 牛津英汉和譯典通都有售票员义,交通话题常见 |
+| lens | n. 透镜 | n. 透镜;镜头 | 牛津英汉和譯典通都有镜头义 |
+| reflect | v. 反射;反映 | v. 反射;反映;深思 | 牛津英汉和譯典通都有深思义,reflect on 是常用说法 |
+| echo | n. 回声 | n. 回声 v. 回响;附和 | 牛津英汉和譯典通都有动词义,阅读中常见附和的比喻用法 |
+| gravity | n. 重力 | n. 重力;严重性 | 牛津英汉和譯典通都有严重性义,the gravity of the situation 常见 |
+| dwarf | n. 矮星;矮子 adj. 矮小的 | n. 矮星;矮子 adj. 矮小的 v. 使显得矮小 | 牛津英汉和譯典通都有动词义,阅读常见 |
+| eclipse | n. 日食,月食 | n. 日食,月食 v. 使黯然失色 | 牛津英汉和譯典通都有动词义,be eclipsed by 是阅读常见用法 |
+| constant | n. 常数 adj. 持续的 | n. 常数 adj. 持续的;恒定的 | 牛津英汉和譯典通都有不变、恒定义,constant temperature 常见 |
+| function | n. 函数;功能 | n. 函数;功能 v. 运转,起作用 | 牛津英汉和譯典通都有动词义,现在缺常用词性 |
+| probability | n. 概率 | n. 概率;可能性 | 牛津英汉和譯典通首义都是可能性 |
+| nerve | n. 神经 | n. 神经;勇气 | 牛津英汉和譯典通都有勇气义 |
+| stroke | n. 中风 | n. 中风;一击,一笔 v. 抚摸 | 牛津英汉首义是一击,也有抚摸义,现在只有中风 |
+| swallow | v. 吞咽 | v. 吞咽 n. 燕子 | 牛津英汉和譯典通都有燕子义,生物话题常见 |
+| recall | v. 回忆 | v. 回忆;召回 | 牛津英汉和譯典通都有召回义,产品召回是商业话题常见说法 |
+| memory | n. 记忆 | n. 记忆,回忆;内存 | 牛津英汉和譯典通都有回忆和内存义,childhood memories 常用 |
+| intelligence | n. 智力 | n. 智力,智能;情报 | 牛津英汉和譯典通都有情报义,artificial intelligence 译为人工智能 |
+| personality | n. 个性 | n. 个性;名人 | 牛津英汉和譯典通都有名人义,TV personality 常见 |
+| gesture | n. 手势 | n. 手势;姿态,表示 | 牛津英汉和譯典通都有表示义,a gesture of goodwill 常见 |
+| myth | n. 神话 | n. 神话;错误观念 | 牛津英汉有错误观念义,the myth that 是阅读常见用法 |
+| legend | n. 传说 | n. 传说;传奇人物;图例 | 牛津英汉和譯典通都有传奇人物和图例义,图表题常见 legend |
+| material | n. 材料 | n. 材料 adj. 物质的 | 牛津英汉和譯典通都有形容词义,material wealth 是社会话题常用说法 |
+| fuel | n. 燃料 | n. 燃料 v. 加剧,刺激 | 牛津英汉和譯典通都有动词义,fuel the debate 是阅读常见用法 |
+| capital | n. 资本;首都 | n. 资本;首都;大写字母 adj. 可处死刑的 | 牛津英汉和譯典通都有大写字母和可处死刑义,capital punishment 是社会话题常见说法 |
+| boom | n. 繁荣,暴涨 | n./v. 繁荣,暴涨 | 牛津英汉和譯典通都有动词义,图表和经济话题常用 |
+| trade | n. 贸易 | n. 贸易;行业 v. 交易 | 牛津英汉和譯典通都有行业和动词义 |
+| service | n. 服务 | n. 服务 v. 检修,保养 | 牛津英汉和譯典通都有动词义,汽车服务听力常见 |
+| market | n. 市场 | n. 市场 v. 销售,推销 | 牛津英汉和譯典通都有动词义,商业话题常用 |
+| producer | n. 生产者 | n. 生产者;制片人 | 牛津英汉和譯典通都有制片人义 |
+| enterprise | n. 企业 | n. 企业;创业精神 | 牛津英汉有创业精神义,譯典通有进取心义 |
+| signal | n. 信号 | n. 信号 v. 示意,标志 | 牛津英汉有示意和标志义,阅读常见 signal a change |
+| fall | n./v. 下降 | n./v. 下降,落下 n. 秋天(美) | 牛津英汉和譯典通都有落下和美式秋天义,现在只有下降 |
+| decline | n./v. 下降;衰退 | n./v. 下降;衰退 v. 婉拒,谢绝 | 牛津英汉和譯典通都有婉拒义,邮件和口语场景常用 |
+| drop | n./v. 下降 | n./v. 下降 n. 滴 v. 掉下;放弃 | 牛津英汉和譯典通都有这些义项,现在只有下降 |
+| climb | v. 攀升 | v. 攀升;攀登 | 牛津英汉和譯典通首义都是攀登 |
+| soar | v. 猛增 | v. 猛增;高飞 | 牛津英汉首义是高飞,现在只有猛增 |
+| plunge | v. 骤降 | v. 骤降;跳入,投入 | 牛津英汉和譯典通都有跳入和投入义 |
+| sharp | adj. 急剧的 | adj. 急剧的;锋利的;敏锐的 | 牛津英汉和譯典通都有锋利和敏锐义,现在缺最基础的义项 |
+| rate | n. 比率;速度 | n. 比率;速度;价格 v. 评价 | 牛津英汉和譯典通都有价格和动词义 |
+| minority | n. 少数 | n. 少数;少数民族 | 牛津英汉和譯典通都有少数民族义,社会话题常见 |
+| average | n. 平均数 adj. 平均的 | n. 平均数 adj. 平均的;普通的 | 牛津英汉和譯典通都有普通义,the average person 常用 |
+| mean | n. 平均值 | n. 平均值 v. 意味着 adj. 吝啬的 | 牛津英汉和譯典通都有这些义项,现在缺最常用的动词义 |
+| sum | n. 总和 | n. 总和;金额 | 牛津英汉首义是款项,譯典通也有金额义,a large sum of money 常用 |
+| figure | n. 数字;人物 | n. 数字;人物;身材;图表 | 牛津英汉和譯典通都有身材和图表义,图表题常见 Figure 1 |
+| period | n. 时期 | n. 时期;课时;句号(美) | 牛津英汉和譯典通都有课时和美式句号义,校园听力常见 |
+| interval | n. 间隔 | n. 间隔;幕间休息(英) | 牛津英汉和譯典通都标注英式幕间休息义,文娱场景常见 |
+| slide | n./v. 下滑 | n./v. 下滑,滑动 n. 幻灯片 | 牛津英汉和譯典通都有滑动和幻灯片义,讲座听力常见 |
+| step | n. 步骤 | n. 步骤;脚步;台阶 v. 迈步 | 牛津英汉和譯典通首义都是脚步,现在只有步骤 |
+| cycle | n. 循环 | n. 循环 v. 骑自行车 | 牛津英汉和譯典通都有骑自行车义,交通话题常用 |
+| heat | v. 加热 | n. 热,高温 v. 加热 | 牛津英汉和譯典通都有名词义,现在只有动词义 |
+| cool | v. 冷却 | v. 冷却 adj. 凉爽的;冷静的 | 牛津英汉和譯典通都有形容词义,现在只有动词义 |
+| mix | v. 混合 | v. 混合 n. 混合物 | 牛津英汉和譯典通都有名词义,a mix of 常用 |
+| transport | v. 运输 | n./v. 运输 n. 交通工具(英) | 牛津英汉和譯典通都有名词义,public transport 是高频搭配 |
+| blend | v. 混合 | v. 混合 n. 混合物 | 牛津英汉和譯典通都有名词义,a blend of 常用 |
+| flush | v. 冲洗 | v. 冲洗;脸红 | 牛津英汉和譯典通都有脸红义 |
+| academic | adj. 学术的 | adj. 学术的 n. 学者,高校教师 | 牛津英汉有高校教师和学者义,譯典通也有名词义,阅读常见 |
+| instruction | n. 教学;指示 | n. 教学;指示;使用说明(复数) | 牛津英汉和譯典通都有使用说明义,instructions 听力和说明书场景常用 |
+| talent | n. 天赋 | n. 天赋;人才 | 牛津英汉有天才义,譯典通有有才能的人们义,attract talent 是写作常用说法 |
+| instant | adj. 即时的;速溶的 | adj. 即时的;速溶的 n. 片刻 | 牛津英汉和譯典通都有名词义,in an instant 常用 |
+| gossip | n. 八卦 | n. 八卦,流言蜚语 v. 闲聊 | 牛津英汉和譯典通都有流言蜚语和动词义,现在只有八卦 |
+| policy | n. 政策 | n. 政策;保险单 | 牛津英汉和譯典通都有保险单义,insurance policy 听力常见 |
+| conflict | n. 冲突 | n./v. 冲突 | 牛津英汉和譯典通都有动词义,conflict with 常用 |
+| court | n. 法院 | n. 法院;球场 | 牛津英汉和譯典通都有球场义,tennis court 听力常见 |
+| judge | n. 法官 | n. 法官 v. 判断,评判 | 牛津英汉和譯典通都有动词义,现在缺常用词性 |
+| witness | n. 证人 | n. 证人 v. 目睹,见证 | 牛津英汉和譯典通都有动词义,阅读常见 witness a change |
+| clause | n. 条款 | n. 条款;分句 | 牛津英汉首义是分句,语法学习常见 |
+| wilful | adj. 故意的 | adj. 故意的;任性的 | 牛津英汉首义是任性的,譯典通也列任性 |
+| exhaust | n. 尾气 v. 耗尽 | n. 尾气 v. 耗尽;使精疲力竭 | 牛津英汉和譯典通都有使精疲力竭义,exhausted 常用 |
+| green | adj. 环保的 | adj. 绿色的;环保的 | 牛津英汉和譯典通首义都是绿色的,现在缺最基础的义项 |
+| custom | n. 习俗 | n. 习俗;海关(复数) | 牛津英汉和譯典通都有相关义项,customs 是海关,旅行听力常见 |
+| exhibit | n. 展品 v. 展览 | n. 展品 v. 展览;表现出 | 牛津英汉和譯典通都有表现出义,exhibit behaviour 是阅读常见用法 |
+| literature | n. 文学 | n. 文学;文献 | 牛津英汉和譯典通都有文献义,literature review 是学术常见说法 |
+| patient | adj. 有耐心的 | adj. 有耐心的 n. 病人 | 牛津英汉和譯典通都有病人义,现在缺最常用的名词义 |
+| calm | adj. 冷静的 | adj. 冷静的;平静的 v. 使平静 | 牛津英汉和譯典通都有平静义和动词义 |
+| curious | adj. 好奇的 | adj. 好奇的;奇怪的 | 牛津英汉和譯典通都有奇怪义,a curious fact 常见 |
+| alert | adj. 警觉的 | adj. 警觉的 n. 警报 v. 提醒 | 牛津英汉和譯典通都有名词和动词义,新闻和安全话题常见 |
+| smooth | adj. 光滑的 | adj. 光滑的;平稳的,顺利的 | 牛津英汉和譯典通都有平稳和顺利义,a smooth transition 常见 |
+| appreciate | v. 欣赏;感激 | v. 欣赏;感激;升值 | 牛津英汉和譯典通都有升值义,经济话题常见 |
+| crisp | adj. 脆的 | adj. 脆的 n. 炸薯片(英) | 牛津英汉和譯典通都标注英式炸薯片义,饮食听力常见 |
+| circular | adj. 圆形的 | adj. 圆形的;循环的 | 牛津英汉和譯典通都有循环义,circular economy 是环境话题常见说法 |
+| lively | adj. 热闹的 | adj. 热闹的;活泼的 | 牛津英汉和譯典通都有充满活力、活泼义 |
+| peaceful | adj. 宁静的 | adj. 宁静的;和平的 | 牛津英汉和譯典通都有和平义,peaceful protest 常见 |
+| character | n. 角色;性格 | n. 角色;性格;字,符号 | 牛津英汉和譯典通都有字、符号义,Chinese characters 常用 |
+| book | v. 预订 | n. 书 v. 预订 | 牛津英汉和譯典通首义都是书,现在只有动词义 |
+| track | n. 小道;跑道 | n. 小道;跑道 v. 跟踪 | 牛津英汉有跟踪义,track progress 是常用说法 |
+| budget | n. 预算 | n. 预算 adj. 便宜的,低廉的 | 牛津英汉有形容词义,budget airline 是旅行话题常见说法 |
+| table | n. 表格 | n. 桌子;表格 | 牛津英汉首义是桌子,现在只有表格 |
+| sample | n. 样本 | n. 样本 v. 品尝,抽样 | 牛津英汉有动词义,sample local food 常见 |
