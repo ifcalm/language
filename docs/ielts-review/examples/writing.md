@@ -39,7 +39,7 @@
 | considerable | adj. 相当大的 | A **considerable** number of graduates went on to work overseas. | 相当多的毕业生后来去了海外工作。 |
 | substantial | adj. 大量的,可观的;实质性的 | The chart shows a **substantial** increase in spending on online advertising. | 图表显示,网络广告支出大幅增长。 |
 | significant | adj. 显著的;重要的 | There was a **significant** difference between the salaries of men and women. | 男女工资之间存在显著差异。 |
-| dramatic | adj. 剧烈的 | The use of mobile phones saw a **dramatic** rise during the 1990s. | 20 世纪 90 年代,手机使用量剧烈上升。 |
+| dramatic | adj. 剧烈的 | The use of mobile phones saw a **dramatic** rise during the 1990s. | 20 世纪 90 年代,手机使用量急剧上升。 |
 | sharp | adj. 急剧的 | The table shows a **sharp** fall in the birth rate after 1960. | 表格显示,1960 年后出生率急剧下降。 |
 | steep | adj. 陡峭的;(升降)急剧的 | There was a **steep** rise in the number of cars during the 1980s. | 20 世纪 80 年代,汽车数量急剧上升。 |
 | rapid | adj. 迅速的 | The **rapid** growth of cities has led to a shortage of housing. | 城市的迅速发展导致了住房短缺。 |
@@ -559,7 +559,7 @@
 | convict | v. 定罪 | The court needs clear evidence to **convict** someone of a serious crime. | 法院需要明确的证据才能判定某人犯有重罪。 |
 | sentence | n. 判决;句子 v. 判刑 | The judge gave the man a **sentence** of three years in prison. | 法官判处该男子三年监禁。 |
 | sentence | n. 判决;句子 v. 判刑 | Young offenders should not be **sentenced** to long periods in adult prisons. | 青少年罪犯不应被判处在成人监狱长期服刑。 |
-| penalty | n. 惩罚 | There should be a heavier **penalty** for driving after drinking alcohol. | 酒后驾车应受到更重的惩罚。 |
+| penalty | n. 惩罚 | There should be a heavier **penalty** for driving after drinking alcohol. | 酒后驾车应受到更重的处罚。 |
 | death penalty | phr. 死刑 | Many countries have abolished the **death penalty** in recent decades. | 近几十年来,许多国家废除了死刑。 |
 | capital punishment | phr. 死刑 | Supporters of **capital punishment** argue that it prevents serious crime. | 死刑的支持者认为它能防止严重犯罪。 |
 | imprisonment | n. 监禁 | Long periods of **imprisonment** do not always reduce the rate of crime. | 长期监禁并不总能降低犯罪率。 |
@@ -590,7 +590,7 @@
 | abolish | v. 废除 | Some people believe that governments should **abolish** all school fees. | 有些人认为政府应该废除所有学费。 |
 | invalidate | v. 使无效 | Any change to the document may **invalidate** the entire agreement. | 对文件的任何改动都可能使整个协议无效。 |
 | mandatory | adj. 强制的 | Wearing a seat belt is **mandatory** for all passengers in the car. | 车内所有乘客都必须系安全带。 |
-| obligatory | adj. 义务的 | Military service is no longer **obligatory** in many European countries. | 在许多欧洲国家,服兵役已不再是义务。 |
+| obligatory | adj. 义务的 | Military service is no longer **obligatory** in many European countries. | 在许多欧洲国家,服兵役已不再是强制性的。 |
 | licensed | adj. 获许可的 | Only **licensed** doctors should be allowed to prescribe these drugs. | 只有获得许可的医生才能开这些药。 |
 | forbid | v. 禁止 | Some countries **forbid** the use of mobile phones in schools. | 一些国家禁止在学校使用手机。 |
 | obey | v. 服从 | Children who learn to **obey** rules at home tend to behave better at school. | 在家学会遵守规矩的孩子在学校往往表现更好。 |
@@ -800,7 +800,7 @@
 | cultural heritage | phr. 文化遗产 | Governments should spend money on protecting the nation's **cultural heritage**. | 政府应该投入资金保护国家的文化遗产。 |
 | intangible | adj. 无形的 | **Intangible** benefits of the arts are often difficult to measure in money. | 艺术无形的益处往往很难用金钱衡量。 |
 | emigrant | n. 移民(出境者) | An **emigrant** may find it hard to leave family and friends behind. | 移民可能很难离开家人和朋友。 |
-| immigrate | v. 移入 | Thousands of young professionals **immigrate** to the country each year. | 每年有数千名年轻专业人士移入这个国家。 |
+| immigrate | v. 移入 | Thousands of young professionals **immigrate** to the country each year. | 每年有数千名年轻专业人士移民到这个国家。 |
 | aesthetic | adj. 审美的 | New buildings should be judged on **aesthetic** grounds as well as on cost. | 评价新建筑既要看成本,也要看审美。 |
 | artistic | adj. 艺术的 | Schools should encourage **artistic** ability as much as academic success. | 学校应该像鼓励学业成功一样鼓励艺术才能。 |
 | inspiration | n. 灵感 | Nature has long been a source of **inspiration** for artists and writers. | 大自然一直是艺术家和作家的灵感来源。 |
@@ -970,7 +970,7 @@
 | excluded | adj. 被排斥的 | Older people may feel **excluded** from a society that relies on the internet. | 在依赖互联网的社会中,老年人可能感到被排斥。 |
 | outmoded | adj. 过时的 | Some people believe that the idea of arranged marriage is **outmoded**. | 有些人认为包办婚姻的观念已经过时了。 |
 | depressed | adj. 抑郁的;萧条的 | People who feel lonely are more likely to become **depressed**. | 感到孤独的人更容易变得抑郁。 |
-| stressful | adj. 有压力的 | Living in a large city can be noisy and **stressful**. | 住在大城市可能既吵闹又有压力。 |
+| stressful | adj. 有压力的 | Living in a large city can be noisy and **stressful**. | 住在大城市可能既吵闹又令人压力大。 |
 | retirement home | phr. 养老院 | Moving to a **retirement home** can be a difficult decision for older people. | 搬进养老院对老年人来说可能是个艰难的决定。 |
 | suicide | n. 自杀 | Mental health services can help to reduce the risk of **suicide** among teenagers. | 心理健康服务有助于降低青少年的自杀风险。 |
 | smoker | n. 吸烟者 | A **smoker** is far more likely to develop lung cancer than other people. | 吸烟者患肺癌的可能性远高于其他人。 |

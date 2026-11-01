@@ -470,7 +470,7 @@
 | municipal | adj. 市政的 | **Municipal** authorities are responsible for collecting rubbish and repairing local roads. | 市政当局负责收集垃圾和维修当地道路。 |
 | council | n. 委员会;市政会 | The city **council** voted to create more bicycle lanes in the centre. | 市议会投票决定在市中心增设更多自行车道。 |
 | planning permission | phr. 规划许可 | The company needs **planning permission** before it can build on the land. | 公司要在这块土地上建房,必须先获得规划许可。 |
-| green belt | phr. 绿化带 | Building is strictly limited on the **green belt** around the city. | 城市周围的绿化带严格限制建房。 |
+| green belt | phr. 绿化带 | Building is strictly limited on the **green belt** around the city. | 城市周围的绿带严格限制建房。 |
 | public space | phr. 公共空间 | Good **public space** encourages people to spend more time outdoors. | 良好的公共空间鼓励人们更多地待在户外。 |
 | heritage building | phr. 历史建筑 | Developers are not allowed to change the outside of a **heritage building**. | 开发商不得改变历史建筑的外观。 |
 | restoration | n. 修复 | The **restoration** of the old theatre cost more than ten million pounds. | 这座老剧院的修复花费超过一千万英镑。 |
