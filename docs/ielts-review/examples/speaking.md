@@ -174,7 +174,7 @@
 | unforgettable | adj. 难忘的 | Our trip to the mountains last year was an **unforgettable** experience. | 去年的山区之旅是一次难忘的经历。 |
 | memorable | adj. 值得纪念的,难忘的 | The most **memorable** meal I've ever had was at a tiny place in Italy. | 我吃过最难忘的一餐是在意大利的一家小店。 |
 | meaningful | adj. 有意义的 | I think it's more **meaningful** to give a handmade present than an expensive one. | 我觉得送手工礼物比送昂贵的礼物更有意义。 |
-| rewarding | adj. 有回报的 | Teaching young children can be tiring, but it's a really **rewarding** job. | 教幼儿可能很累,但这是一份很有回报的工作。 |
+| rewarding | adj. 有回报的 | Teaching young children can be tiring, but it's a really **rewarding** job. | 教幼儿可能很累,但这是一份很值得做的工作。 |
 | fulfilling | adj. 令人有成就感的 | I'd like a **fulfilling** job, even if the pay isn't very high. | 我想要一份有成就感的工作,即使薪水不是很高。 |
 | challenging | adj. 有挑战性的 | Learning to drive was **challenging** at first, but I soon got used to it. | 学开车一开始很有挑战性,但我很快就适应了。 |
 | tedious | adj. 乏味的 | I find filling in forms really **tedious**, so I always leave it until last. | 我觉得填表特别乏味,所以总是留到最后。 |
@@ -341,7 +341,7 @@
 | teahouse | n. 茶馆 | My grandfather likes to meet his old friends at the local **teahouse**. | 我爷爷喜欢在当地的茶馆和老朋友见面。 |
 | villager | n. 村民 | Every **villager** came out to welcome us when we arrived. | 我们到达时,每个村民都出来欢迎我们。 |
 | noble | adj. 高贵的 | Our local museum has a huge painting of a **noble** family from the past. | 我们当地的博物馆有一幅巨大的画,画的是过去的一个高贵家族。 |
-| unsophisticated | adj. 淳朴的 | The food there is simple and **unsophisticated**, but it tastes really good. | 那里的食物简单淳朴,但味道很好。 |
+| unsophisticated | adj. 淳朴的 | The food there is simple and **unsophisticated**, but it tastes really good. | 那里的食物简单质朴,但味道很好。 |
 | surroundings | n. 周围环境 | I work better in quiet **surroundings**, so I often go to the library. | 我在安静的环境中工作效率更高,所以常去图书馆。 |
 | haven | n. 避风港 | For me, the local park is a **haven** of peace in a noisy city. | 对我来说,当地的公园是喧闹城市中一处宁静的避风港。 |
 | splendid | adj. 壮丽的 | We had a **splendid** view of the mountains from our hotel window. | 从酒店窗户望出去,群山的景色壮丽极了。 |

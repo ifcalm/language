@@ -184,7 +184,7 @@
 | haze | n. 薄雾,霾 | A thick **haze** from forest fires covered the city for weeks. | 森林大火产生的浓霾笼罩了这座城市数周。 |
 | dew | n. 露水 | Some desert insects collect **dew** from their bodies to drink. | 一些沙漠昆虫收集身上的露水来饮用。 |
 | damp | adj. 潮湿的,微湿的 | **Damp** conditions in the cave caused the old paintings to fade. | 洞穴里的潮湿环境使古老的壁画褪色了。 |
-| chilly | adj. 寒冷的 | The mountain air becomes **chilly** as soon as the sun goes down. | 太阳一落山,山里的空气就变得寒冷。 |
+| chilly | adj. 寒冷的 | The mountain air becomes **chilly** as soon as the sun goes down. | 太阳一落山,山里的空气就变得冷飕飕的。 |
 | balmy | adj. (天气)温和宜人的 | The island's **balmy** weather makes it a popular destination in winter. | 这座岛气候温和宜人,是冬季热门的旅游目的地。 |
 | torrid | adj. 酷热的 | Few people could work outside in the **torrid** heat of the summer. | 在夏季的酷热中,很少有人能在户外工作。 |
 | windward | adj. 迎风的 | Most of the rain falls on the **windward** side of the mountains. | 大部分雨水落在山脉的迎风面。 |

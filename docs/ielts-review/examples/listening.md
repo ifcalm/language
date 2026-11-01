@@ -137,7 +137,7 @@
 | cabin | n. 小屋;船舱;机舱 | We stayed in a wooden **cabin** beside the lake for the weekend. | 周末我们住在湖边的一间木屋里。 |
 | single room | phr. 单人间 | A **single room** costs £60 a night, including breakfast. | 单人间每晚 60 英镑,含早餐。 |
 | double room | phr. 双人间(一张大床) | We'd like a **double room** with a view of the garden, please. | 我们想要一间能看到花园的大床双人间。 |
-| twin room | phr. 双人间(两张床) | My friend and I asked for a **twin room** with separate beds. | 我和朋友要了一间有两张床的双人间。 |
+| twin room | phr. 双人间(两张床) | My friend and I asked for a **twin room** with separate beds. | 我和朋友要了一间两张床分开的双床房。 |
 | vacancy | n. 空房;空缺 | Sorry, the hotel has no **vacancies** during the festival next week. | 抱歉,下周节日期间酒店没有空房。 |
 | check in | phr. 登记入住;办理登机手续 | **Check-in** opens two hours before the flight and closes forty minutes before it. | 值机在航班起飞前两小时开放,起飞前四十分钟关闭。 |
 | check out | phr. 退房 | **Check-out** is at eleven, but you can leave your bags at the desk. | 退房时间是十一点,但你可以把包寄存在前台。 |
@@ -799,7 +799,7 @@
 | warden | n. (宿舍)管理员;看守人 | Speak to the **warden** if you lose the key to your room. | 如果丢了房间钥匙,请联系宿舍管理员。 |
 | library card | phr. 借书卡 | You'll need your **library card** to borrow books or use the computers. | 借书或使用电脑都需要借书卡。 |
 | renew | v. 续借 | You can **renew** your books online if nobody else has asked for them. | 如果没有其他人预约,你可以在线续借图书。 |
-| overdue | adj. 过期的 | You'll have to pay a small charge for any **overdue** books. | 过期未还的书要交一小笔费用。 |
+| overdue | adj. 过期的 | You'll have to pay a small charge for any **overdue** books. | 逾期未还的书要交一小笔费用。 |
 | fine | n./v. 罚款 adj. 好的;细的 | There's a **fine** of ten pence a day for books you return late. | 逾期还书每天罚款十便士。 |
 | fine | n./v. 罚款 adj. 好的;细的 | The council will **fine** anyone who leaves rubbish in the street. | 市议会将对在街上乱扔垃圾的人处以罚款。 |
 | loan period | phr. 借期 | The **loan period** for this book is two weeks, or one if it's in demand. | 这本书的借期是两周,如果需求量大则是一周。 |
