@@ -14,7 +14,7 @@
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
-**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4059,词组 498)
+**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4062,词组 495)
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
@@ -207,7 +207,7 @@
 - **exchange rate** phr. 汇率
 - **insurance** n. 保险
 - **sunscreen** n. 防晒霜
-- **first-aid kit** phr. 急救包
+- **first aid kit** phr. 急救包
 - **binoculars** n. 双筒望远镜
 - **motel** n. 汽车旅馆
 - **inn** n. 小旅馆
@@ -233,7 +233,7 @@
 - **intersection** n. 十字路口;交点
 - **crosswalk** n. 人行横道(美)
 - **scuba diving** phr. 水肺潜水
-- **hang gliding** phr. 悬挂滑翔
+- **hang-gliding** n. 悬挂滑翔
 - **youth hostel** phr. 青年旅舍
 - **charter flight** phr. 包机
 - **economy class** phr. 经济舱
@@ -434,7 +434,7 @@
 - **handling fee** phr. 手续费
 - **down payment** phr. 首付
 - **identity card** phr. 身份证
-- **pay slip** phr. 工资单
+- **payslip** n. 工资单
 - **payable** adj. 应付的
 - **sterling** n. 英镑
 - **invoice** n. 发票
@@ -758,7 +758,7 @@
 - **score** n. 分数 v. 得分
 - **refresher course** phr. 进修课程
 - **intensive course** phr. 强化课程
-- **notice board** phr. 布告栏
+- **noticeboard** n. 布告栏
 - **word limit** phr. 字数限制
 - **take notes** phr. 记笔记
 - **dropout rate** phr. 辍学率
@@ -2909,8 +2909,8 @@
 - **archaic** adj. 古老的;过时的
 - **remnant** n. 残余
 - **antiquity** n. 古代;古物
-- **neolithic** adj. 新石器时代的
-- **paleolithic** adj. 旧石器时代的
+- **Neolithic** adj. 新石器时代的
+- **Palaeolithic** adj. 旧石器时代的
 - **anthropologist** n. 人类学家
 - **posterity** n. 后代
 - **forefather** n. 祖先
@@ -3706,7 +3706,7 @@
 - **applause** n. 掌声
 - **press conference** phr. 新闻发布会
 - **prime time** phr. 黄金时段
-- **best seller** phr. 畅销书
+- **bestseller** n. 畅销书
 - **time-consuming** adj. 耗时的
 - **forum** n. 论坛
 - **credibility** n. 可信度
@@ -4253,7 +4253,7 @@
 - **nursing home** phr. 养老院
 - **care home** phr. 护理院
 - **caregiver** n. 照料者
-- **empty-nester** n. 空巢老人
+- **empty nester** phr. 空巢者
 - **lonely** adj. 孤独的
 - **vulnerable** adj. 脆弱的,易受伤害的
 - **frail** adj. 虚弱的

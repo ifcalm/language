@@ -194,7 +194,7 @@
 | exchange rate | phr. 汇率 | The **exchange rate** is usually better at a bank than at a hotel. | 银行的汇率通常比酒店的更划算。 |
 | insurance | n. 保险 | Don't forget to buy travel **insurance** before you go skiing. | 去滑雪之前别忘了买旅行保险。 |
 | sunscreen | n. 防晒霜 | Bring a hat and some **sunscreen**, as there's little shade on the island. | 带上帽子和防晒霜,因为岛上没什么阴凉的地方。 |
-| first-aid kit | phr. 急救包 | Each group leader carries a **first aid kit** in case of accidents. | 每位领队都带着急救包,以防发生意外。 |
+| first aid kit | phr. 急救包 | Each group leader carries a **first aid kit** in case of accidents. | 每位领队都带着急救包,以防发生意外。 |
 | binoculars | n. 双筒望远镜 | Remember to bring **binoculars** if you want to watch the birds. | 如果想观鸟,记得带双筒望远镜。 |
 | motel | n. 汽车旅馆 | We stopped at a roadside **motel** because we were too tired to drive. | 我们太累开不动了,就在路边的汽车旅馆停了下来。 |
 | inn | n. 小旅馆 | We had lunch at an old **inn** in the middle of the village. | 我们在村子中央的一家老旅馆吃了午饭。 |
@@ -223,7 +223,7 @@
 | intersection | n. 十字路口 | Turn left at the next **intersection** and look for a blue building. | 在下一个十字路口左转,找一栋蓝色的建筑。 |
 | crosswalk | n. 人行横道(美) | Always use the **crosswalk** when you get across this busy street. | 过这条繁忙的街道时,一定要走人行横道。 |
 | scuba diving | phr. 水肺潜水 | You'll need a short training course before you can go **scuba diving**. | 去水肺潜水之前,你需要上一个短期培训班。 |
-| hang gliding | phr. 悬挂滑翔 | **Hang-gliding** is a popular activity on the hills above the town. | 悬挂滑翔是小镇上方山丘上一项很受欢迎的活动。 |
+| hang-gliding | n. 悬挂滑翔 | **Hang-gliding** is a popular activity on the hills above the town. | 悬挂滑翔是小镇上方山丘上一项很受欢迎的活动。 |
 | youth hostel | phr. 青年旅舍 | The **youth hostel** offers cheap beds and a shared kitchen for guests. | 这家青年旅舍为客人提供便宜的床位和公用厨房。 |
 | charter flight | phr. 包机 | The tour company has arranged a **charter flight** directly to the island. | 旅行社安排了一架直飞该岛的包机。 |
 | economy class | phr. 经济舱 | Seats in **economy class** are narrow, but the tickets are much cheaper. | 经济舱座位很窄,但机票便宜得多。 |
@@ -437,7 +437,7 @@
 | handling fee | phr. 手续费 | A small **handling fee** is added when you buy tickets over the phone. | 电话购票要加收一小笔手续费。 |
 | down payment | phr. 首付 | We saved for five years to make a **down payment** on the house. | 我们攒了五年钱,才付得起这套房子的首付。 |
 | identity card | phr. 身份证 | Please show your **identity card** at the door when you arrive. | 到达时请在门口出示你的身份证。 |
-| pay slip | phr. 工资单 | Your **pay slip** shows how much tax you've paid this month. | 你的工资单显示了你这个月缴了多少税。 |
+| payslip | n. 工资单 | Your **payslip** shows how much tax you've paid this month. | 你的工资单显示了你这个月缴了多少税。 |
 | payable | adj. 应付的 | The full amount is **payable** when you collect the car. | 全部款项在提车时支付。 |
 | sterling | n. 英镑 | The hotel only accepts payment in **sterling**, not in euros. | 这家酒店只接受英镑付款,不收欧元。 |
 | invoice | n. 发票 | We'll send you an **invoice** when the work has been finished. | 工作完成后,我们会把发票寄给你。 |
@@ -782,7 +782,7 @@
 | score | n. 分数 v. 得分 | Students who **score** above ninety in the test don't need extra classes. | 测试得分在九十以上的学生不需要额外上课。 |
 | refresher course | phr. 进修课程 | I'm taking a **refresher course** because I haven't used French for years. | 我已经多年没用法语了,所以在上进修课程。 |
 | intensive course | phr. 强化课程 | This **intensive course** covers a full year of Spanish in just eight weeks. | 这门强化课程只用八周就学完一整年的西班牙语内容。 |
-| notice board | phr. 布告栏 | The exam timetable will be put on the **notice board** outside the office. | 考试时间表会贴在办公室外的布告栏上。 |
+| noticeboard | n. 布告栏 | The exam timetable will be put on the **noticeboard** outside the office. | 考试时间表会贴在办公室外的布告栏上。 |
 | word limit | phr. 字数限制 | Your essay will lose marks if it goes over the **word limit**. | 论文超出字数限制会被扣分。 |
 | take notes | phr. 记笔记 | It's a good idea to **take notes** during the lecture and read them later. | 听讲座时记笔记,之后再看一遍,是个好办法。 |
 | dropout rate | phr. 辍学率 | The **dropout rate** is much higher among students who work full-time. | 全职工作的学生辍学率要高得多。 |

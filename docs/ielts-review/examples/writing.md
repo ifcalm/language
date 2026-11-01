@@ -400,7 +400,7 @@
 | applause | n. 掌声 | The audience gave the young actors a long round of **applause**. | 观众为年轻演员们报以长时间的掌声。 |
 | press conference | phr. 新闻发布会 | The minister announced the new policy at a **press conference** this morning. | 部长今天上午在新闻发布会上宣布了新政策。 |
 | prime time | phr. 黄金时段 | Advertisements during **prime time** reach the largest number of viewers. | 黄金时段的广告能触达最多的观众。 |
-| best seller | phr. 畅销书 | Her first novel became a **best-seller** in more than twenty countries. | 她的第一部小说在二十多个国家成为畅销书。 |
+| bestseller | n. 畅销书 | Her first novel became a **bestseller** in more than twenty countries. | 她的第一部小说在二十多个国家成为畅销书。 |
 | time-consuming | adj. 耗时的 | Filling in these official forms is a slow and **time-consuming** process. | 填写这些官方表格是一个缓慢而耗时的过程。 |
 | forum | n. 论坛 | Online **forums** allow people with similar problems to share their experiences. | 网络论坛让有相似问题的人能够分享经验。 |
 | credibility | n. 可信度 | The newspaper lost its **credibility** after publishing several false stories. | 这家报纸刊登了几篇虚假报道后失去了可信度。 |
@@ -943,7 +943,7 @@
 | nursing home | phr. 养老院 | Some older people feel lonely after moving into a **nursing home**. | 一些老人搬进养老院后感到孤独。 |
 | care home | phr. 护理院 | Staff in a **care home** should receive proper training and fair pay. | 护理院的员工应该接受适当的培训并获得公平的薪水。 |
 | caregiver | n. 照料者 | A family **caregiver** often needs support as well as the person being looked after. | 家庭照料者往往和被照顾者一样需要支持。 |
-| empty-nester | n. 空巢老人 | An **empty-nester** may have more time to travel and take up new hobbies. | 空巢老人可能有更多时间旅行和培养新爱好。 |
+| empty nester | phr. 空巢者 | An **empty nester** may have more time to travel and take up new hobbies. | 空巢者可能有更多时间旅行和培养新爱好。 |
 | lonely | adj. 孤独的 | Many elderly people feel **lonely** because their children live far away. | 许多老人感到孤独,因为他们的孩子住得很远。 |
 | vulnerable | adj. 脆弱的 | Governments have a special duty to protect the most **vulnerable** people in society. | 政府有特别的责任保护社会中最脆弱的人。 |
 | frail | adj. 虚弱的 | **Frail** older people may need help with simple daily tasks. | 虚弱的老人可能需要帮忙完成简单的日常事务。 |
