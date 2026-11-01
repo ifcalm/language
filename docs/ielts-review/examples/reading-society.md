@@ -363,8 +363,8 @@
 | archaic | adj. 古老的 | The legal document was written in an **archaic** form of the language. | 这份法律文件是用这种语言的古老形式写成的。 |
 | remnant | n. 残余 | The small forest is a **remnant** of the woodland that once covered the country. | 这片小森林是曾经覆盖全国的林地的残余。 |
 | antiquity | n. 古代;古物 | The city has been an important centre of trade since **antiquity**. | 这座城市自古代起就是重要的贸易中心。 |
-| neolithic | adj. 新石器时代的 | **Neolithic** farmers cleared the forests and began to grow crops here. | 新石器时代的农民在这里清除森林,开始种植庄稼。 |
-| paleolithic | adj. 旧石器时代的 | **Paleolithic** people lived in small groups and made tools from stone. | 旧石器时代的人小群体生活,用石头制作工具。 |
+| Neolithic | adj. 新石器时代的 | **Neolithic** farmers cleared the forests and began to grow crops here. | 新石器时代的农民在这里清除森林,开始种植庄稼。 |
+| Palaeolithic | adj. 旧石器时代的 | **Palaeolithic** people lived in small groups and made tools from stone. | 旧石器时代的人小群体生活,用石头制作工具。 |
 | anthropologist | n. 人类学家 | The **anthropologist** lived with the tribe for two years to study their customs. | 这位人类学家与部落一起生活了两年,研究他们的习俗。 |
 | posterity | n. 后代 | These recordings were made to preserve the language for **posterity**. | 这些录音是为了给后代保存这种语言。 |
 | forefather | n. 祖先 | Local people still use the farming methods of their **forefathers**. | 当地人仍在使用祖先的耕作方法。 |
