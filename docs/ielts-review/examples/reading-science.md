@@ -654,7 +654,7 @@
 | ignite | v. 点燃 | Dry leaves can easily **ignite** during the hot summer months. | 在炎热的夏季,干枯的树叶很容易点燃。 |
 | explosive | n. 炸药 adj. 爆炸性的 | The workers used **explosives** to cut the tunnel through the mountain. | 工人们用炸药在山中开凿隧道。 |
 | explosive | n. 炸药 adj. 爆炸性的 | Coal dust in the air can be highly **explosive** in a mine. | 矿井中空气里的煤尘可能具有很强的爆炸性。 |
-| adhesive | n. 粘合剂 | The insect produces a natural **adhesive** that holds its eggs to leaves. | 这种昆虫分泌一种天然粘合剂,把卵粘在叶子上。 |
+| adhesive | n. 粘合剂 | The insect produces a natural **adhesive** that holds its eggs to leaves. | 这种昆虫分泌一种天然黏合剂,把卵粘在叶子上。 |
 | bleach | n. 漂白剂 | **Bleach** is sometimes used to remove the natural colour from paper. | 漂白剂有时被用来去除纸张的天然颜色。 |
 | dye | n. 染料 v. 染色 | The ancient **dye** was made from a type of small sea snail. | 这种古老的染料是由一种小海螺制成的。 |
 | dye | n. 染料 v. 染色 | Local women **dye** the wool using plants collected from the hills. | 当地妇女用从山上采来的植物给羊毛染色。 |

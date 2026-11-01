@@ -295,7 +295,7 @@
 | jewellery | n. 首饰 | I don't wear much **jewellery**, just a watch and a simple ring. | 我不戴什么首饰,只有一块手表和一枚简单的戒指。 |
 | velvet | n. 天鹅绒 | My grandmother's old sofa was covered in dark green **velvet**. | 我奶奶的旧沙发上覆盖着深绿色的天鹅绒。 |
 | ornament | n. 装饰品 | I keep a little glass **ornament** from Venice on my bedroom shelf. | 我卧室架子上放着一件来自威尼斯的小玻璃装饰品。 |
-| rim | n. 边缘 | There's a small crack in the **rim** of my favourite coffee cup. | 我最喜欢的咖啡杯边缘有一道小裂纹。 |
+| rim | n. 边缘 | There's a small crack in the **rim** of my favourite coffee cup. | 我最喜欢的咖啡杯边沿有一道小裂纹。 |
 | glue | n. 胶水 | I broke the handle of my favourite mug, so I fixed it with **glue**. | 我把最喜欢的杯子把手弄断了,就用胶水粘好了。 |
 | patch | n. 补丁;小块 | My jeans have a big **patch** on one knee, but I still love them. | 我的牛仔裤一条膝盖上有个大补丁,但我还是很喜欢它们。 |
 | knot | n. 结 | I'm hopeless at tying a tie, and the **knot** always looks terrible. | 我特别不会打领带,结总是打得很难看。 |
