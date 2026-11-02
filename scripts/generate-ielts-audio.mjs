@@ -5,7 +5,7 @@
 //   our IPA everywhere, and plain text keeps the billed characters low. Only
 //   words whose reading depends on part of speech (increase n./v.) are spoken
 //   from our IPA via SSML <phoneme>, one file per part of speech:
-//   {id}-n.m4a, {id}-v.m4a.
+//   {id}-n.m4a, {id}-v.m4a. So are the readings in IPA_READINGS.
 // - Re-running skips files whose request is unchanged, so it can resume.
 //
 // Env (.env.local): GOOGLE_TTS_API_KEY (an API key restricted to the
@@ -27,6 +27,13 @@ const VOICES = {
 const LOCALES = { uk: 'en-GB', us: 'en-US' }
 // Slightly slower than conversational speed, as in learner dictionaries.
 const SPEAKING_RATE = Number(process.env.IELTS_SPEAKING_RATE ?? 0.92)
+// Pronunciation ids whose plain-text audio sounded furthest from the corrected
+// IPA in the 2026-11-02 audit (docs/ielts-review/phonetics-audit-2026-11-02.md).
+const IPA_READINGS = new Set([
+  'adequate-us', 'admission-us', 'adverse-uk', 'ammonia-uk', 'authentic-us', 'best-seller-us',
+  'congruent-us', 'disobedient-uk', 'ecotourism-us', 'exponential-us', 'glacier-uk', 'moth-uk',
+  'petrol-us', 'prestigious-us', 'syrup-us', 'temperamental-us', 'torrential-us',
+])
 const SAMPLE_IDS = [
   'increase', 'research', 'abuse', 'accommodation', 'hierarchy', 'security-deposit',
   'dna', 'gdp', 'el-nino', 'resume-cv', 'convert-a-into-b', 'object-to-doing-sth',
@@ -98,7 +105,8 @@ function buildJobs() {
           jobs.push({ key: `${entry.id}-${pos}`, id: entry.id, accent, pos: row.pos, text, request: buildRequest(accent, text, row[accent]) })
         }
       } else {
-        jobs.push({ key: entry.id, id: entry.id, accent, pos: null, text, request: buildRequest(accent, text, null) })
+        const ipa = IPA_READINGS.has(`${entry.id}-${accent}`) ? entry[accent === 'uk' ? 'phoneticUk' : 'phoneticUs'] : null
+        jobs.push({ key: entry.id, id: entry.id, accent, pos: null, text, request: buildRequest(accent, text, ipa) })
       }
     }
   }

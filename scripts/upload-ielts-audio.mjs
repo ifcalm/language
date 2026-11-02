@@ -5,7 +5,9 @@
 // place. Then writes scripts/fixtures/ielts-audio.json, the committed list of
 // keys confirmed on R2, read by build-ielts-data.
 //
-// Objects already on R2 are skipped unless --force. --dry-run only reports.
+// Objects already on R2 are skipped unless --force. --ids a,b overwrites only
+// those entries (browsers that cached the old file keep it until max-age, so
+// use it only when the old audio is still acceptable). --dry-run only reports.
 // Behind a local proxy run with NODE_USE_ENV_PROXY=1.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { createR2Client } from './lib/r2-s3.mjs'
@@ -18,6 +20,8 @@ const FIXTURE_PATH = 'scripts/fixtures/ielts-audio.json'
 const CACHE_CONTROL = 'public, max-age=31536000, immutable'
 const DRY_RUN = process.argv.includes('--dry-run')
 const FORCE = process.argv.includes('--force')
+const idsIndex = process.argv.indexOf('--ids')
+const ONLY_IDS = idsIndex === -1 ? null : new Set(process.argv[idsIndex + 1].split(','))
 const CONCURRENCY = Number(process.env.IELTS_UPLOAD_CONCURRENCY ?? 24)
 
 if (!existsSync(MANIFEST_PATH)) {
@@ -30,7 +34,9 @@ const local = Object.keys(manifest)
   .filter((manifestKey) => existsSync(`${LOCAL_DIR}/${manifestKey}.m4a`))
   .map((manifestKey) => ({ manifestKey, key: `${PREFIX}/${manifestKey}.m4a` }))
 const remote = await r2.listKeys(`${PREFIX}/`)
-const pending = local.filter((item) => FORCE || !remote.has(item.key))
+const pending = local.filter((item) =>
+  ONLY_IDS ? ONLY_IDS.has(manifest[item.manifestKey].id) : FORCE || !remote.has(item.key),
+)
 
 console.log(`Local ${local.length}, already on R2 ${remote.size}, to upload ${pending.length}.`)
 
