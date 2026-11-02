@@ -1,6 +1,6 @@
 # 雅思词库拼写与音标交叉复查(2026-11-02)
 
-拼写全量复查一遍,音标全量复查一遍,都用多个来源交叉比对。修改写入迁移 `0267_fix_ielts_spelling_and_phonetics_crosscheck`(已应用到线上 D1 并记账):2 条写法、2 句例句、254 处读音。音频不在本次范围内。
+拼写全量复查一遍,音标全量复查一遍,都用多个来源交叉比对。修改写入迁移 `0267_fix_ielts_spelling_and_phonetics_crosscheck` 和 `0268_unify_ielts_phonetics_first_choice`(统一首选的 73 处),都已应用到线上 D1 并记账:2 条写法、2 句例句、323 处读音。音频不在本次范围内。
 
 ## 来源
 
@@ -30,36 +30,49 @@
 
 1. **四来源投票:** 全部 9214 条读音与上表四组本地来源比对。比对前把各家写法转换成项目风格,比如 KK 的 `e` 转成 `eɪ`、DJ 的 `ɔ` 转成 `ɒ`;WISDOM 的英音片段先拼回完整读音再比。
 2. **人工审阅分歧:** 牛津系与至少一个独立来源都不同意的,以及至少两个独立来源不同意的,逐条人工审阅。
-3. **线上仲裁:** 拟修改的读音、所有保留的分歧读音,以及前两轮的全部修改,都用 Oxford Learner's 和 Cambridge 线上版核对。按项目约定,英音以 Oxford Learner's 为准,美音以 Cambridge 为准;如果参考词典也收了原读音,原读音就保留。比对是严格比对,长短音、`ɒ`/`ɑː`、`d`/`t` 都算不同。
+3. **线上仲裁:** 拟修改的读音、所有保留的分歧读音,以及前两轮的全部修改,都用 Oxford Learner's 和 Cambridge 线上版核对。按项目约定,英音以 Oxford Learner's 为准,美音以 Cambridge 为准,统一用参考词典的首选读音;只是参考词典列出的其他读法,也改为首选。比对是严格比对,长短音、`ɒ`/`ɑː`、`d`/`t` 都算不同。
 4. **回归检查:** 改完后重跑四来源投票,确认分歧确实减少。
 
 ### 结果
 
-- **与四来源的一致率(改前 → 改后):** 牛津系 97.8% → 98.6%;譯典通 90.7% → 91.9%;WISDOM 91.2% → 92.2%;Van Dale 94.5% → 96.6%。剩下的差异主要是记法和公认变体。
-- **线上仲裁:** 229 条拟修改中,212 条与参考词典首选一致后采用,3 条按首选写法调整后采用;14 条参考词典首选原读音,改回保留,如 `intrinsic-uk`、`widespread-us`、`taoism`。保留的 250 条分歧读音中,164 条是参考词典首选,55 条是参考词典列出的变体,31 条两者都不符,已经改正。
-- **前两轮修改复核:** 0265、0266 的约 330 处修改全部用线上词典复核:274 处是参考词典首选,47 处是列出的变体;2 处有误,已在本次改正(`altruism-uk`、`luxurious-us`);另有 7 处原值在本次系统性修正中更新(如 `insulation-uk`、`refugee-uk`)。其余 5 处对不上的,3 处是抓错了页面,2 处是美音 cot-caught 写法差异。
-- **回归:** 改动的读音中,与本地来源的分歧减少 153 条、持平 94 条、增加 5 条。增加的 5 条都以参考词典为准,比如 `elsewhere-uk` 按 Oxford Learner's 定为 `/ˌelsˈweə/`。
+- **与四来源的一致率(改前 → 改后):** 牛津系 97.8% → 98.5%;譯典通 90.7% → 92.2%;WISDOM 91.2% → 92.4%;Van Dale 94.5% → 96.7%。剩下的差异主要是记法差异和各家首选不同。
+- **线上仲裁:** 229 条拟修改中,212 条与参考词典首选一致后采用,3 条按首选写法调整后采用;14 条参考词典首选原读音,改回保留,如 `intrinsic-uk`、`widespread-us`、`taoism`。保留的 250 条分歧读音中,164 条是参考词典首选,31 条两者都不符,已经改正;其余是参考词典列出的非首选读法,已统一为首选(见下)。
+- **前两轮修改复核:** 0265、0266 的约 330 处修改全部用线上词典复核:274 处是参考词典首选;47 处是列出的非首选读法,其中 19 处已统一为首选,包括我第一轮凭记忆改的 `torrential-us`、`gourmet-us`、`granary-us`、`saturn-uk`、`partisan-uk`;2 处有误,已在本次改正(`altruism-uk`、`luxurious-us`);另有 7 处原值在本次系统性修正中更新(如 `insulation-uk`、`refugee-uk`)。其余 5 处对不上的,3 处是抓错了页面,2 处是美音 cot-caught 写法差异。
+- **回归(统一首选之前):** 改动的读音中,与本地来源的分歧减少 153 条、持平 94 条、增加 5 条。增加的 5 条都以参考词典为准,比如 `elsewhere-uk` 按 Oxford Learner's 定为 `/ˌelsˈweə/`。
 
 ### 系统性问题
 
 - **非重读 `uː`(70 处):** 原数据在非重读音节写长音,比如 `/ˌedʒuːˈkeɪʃən/`、`/ˈkæʒuːəl/`;Oxford Learner's 和四组来源都写短音 `u` 或 `ə`。`attribute`、`molecule`、`tuition` 这类参考词典本来就写长音的没有改。
-- **CURE 元音(38 处):** `pure`、`tourism`、`security`、`mature` 等写成了 `ɔː`;Oxford Learner's 首选 `ʊə`。`assure`、`ensure` 参考词典首选 `ɔː`,保留不改。
+- **CURE 元音(38 处,统一时又改了 `assure`、`ensure`、`tour`):** `pure`、`tourism`、`security`、`mature` 等写成了 `ɔː`;Oxford Learner's 首选 `ʊə`,`ɔː` 列为第二读法。Cambridge 英音反过来首选 `ɔː`,按约定以 Oxford Learner's 为准。
 - **`al`/`au` 读 `ɒl`(7 处):** `alter`、`fault`、`halt`、`waltz` 等;Oxford Learner's 是 `ɔːl`,Cambridge 英音偏 `ɒl`,按约定以 Oxford Learner's 为准。
+
+### 统一为首选读音
+
+查过线上词典的读音,只要不是参考词典的首选,一律改为首选,共 73 处(迁移 0268)。这样同类词写法一致,比如 `tour` 与 `tourism` 都写 `ʊə`。另有约 30 条没改,原因是:
+
+- **多词性词:** 页面排在第一的是另一个词性的读音,如 `content`、`project`、`increase`,分词性读音本来就对。
+- **抓错页面:** `savanna`、`masters-degree`。
+- **Mary/marry 写法:** 如 `carry-on-us`,见下。
 
 ### 没有改的
 
-- **公认变体:** 保留的 55 条读音是参考词典列出的读法之一,不是首选,按尽量少改的原则保留。
 - **美音 Mary/marry/merry:** 有的写 `ær`,有的写 `er`(如 `arrogant /ˈerəɡənt/`、`arrow /ˈæroʊ/`),写法不统一,但两种都是正确读音,没有统一。
 - **词组内部重音:** 只改了 Oxford Learner's 或 Cambridge 有独立词条、并且标了复合词重音的(如 `law-abiding`、`e-commerce`、`hang-gliding`);其余词组仍按逐词转写。
 - **没有覆盖的部分:** 92 条读音在所有来源里都查不到(大多是复数、动名词或新词),只做了人工通读。本地来源全部同意的读音没有再拿线上词典核对。
 
 ## 音频
 
-本次没有处理音频。修改的读音都不在按音标朗读的名单里,也不是分词性词条,所以对应音频仍是纯文本朗读,不受音标修改影响。`lifespan`、`en suite` 两条的朗读文本变了,音频还是旧文本生成的,下次跑生成脚本会重新生成。
+本次没有处理音频:
+
+- **纯文本朗读的读音:** 音频不受音标修改影响。
+- **按音标朗读的 5 条美音:** `authentic-us`、`congruent-us`、`exponential-us`、`temperamental-us`、`torrential-us` 的音标在统一时改了,音频仍按旧音标朗读,显示和朗读暂时不一致(两种都是参考词典认可的读音)。重新生成这 5 个文件要覆盖 R2 上的音频,需另行确认。
+- **文本变了的 2 条:** `lifespan`、`en suite` 的朗读文本变了,音频还是旧文本生成的。
+
+下次跑生成脚本时,以上 7 条都会重新生成。
 
 ## 修改清单
 
-共 254 处读音,另有 2 条写法、2 句例句。第一列是读音 id,后缀 `-uk`、`-us` 表示口音。
+共 323 处读音,另有 2 条写法、2 句例句。第一列是读音 id,后缀 `-uk`、`-us` 表示口音。同一读音在两组都出现时,以后面一组的新音标为准。
 
 ### 非重读 u 的长短(英音)(70 处)
 
@@ -357,6 +370,84 @@
 |---|---|---|
 | `altruism-uk` | /ˈæltruːɪzəm/ | /ˈæltruɪzəm/ |
 | `luxurious-us` | /ləɡˈʒʊriəs/ | /lʌɡˈʒʊriəs/ |
+
+### 统一为参考词典首选读音(73 处)
+
+| 读音 | 原音标 | 新音标 |
+|---|---|---|
+| `accelerate-us` | /əkˈseləreɪt/ | /ekˈseləreɪt/ |
+| `algae-uk` | /ˈælɡiː/ | /ˈældʒiː/ |
+| `altitude-us` | /ˈæltətud/ | /ˈæltətuːd/ |
+| `amplitude-us` | /ˈæmplətud/ | /ˈæmplətuːd/ |
+| `aptitude-us` | /ˈæptətud/ | /ˈæptətuːd/ |
+| `assure-uk` | /əˈʃɔː/ | /əˈʃʊə/ |
+| `authentic-us` | /ɔːˈθentɪk/ | /ɑːˈθentɪk/ |
+| `authenticity-us` | /ˌɔːθenˈtɪsɪti/ | /ˌɑːθenˈtɪsəti/ |
+| `automobile-us` | /ˈɔːtəmoʊbiːl/ | /ˈɑːtəmoʊbiːl/ |
+| `autonomy-us` | /ɔːˈtɑːnəmi/ | /ɑːˈtɑːnəmi/ |
+| `be-subject-to-uk` | /bi ˈsʌbdʒekt tə/ | /bi ˈsʌbdʒɪkt tə/ |
+| `buddhism-us` | /ˈbuːdɪzəm/ | /ˈbʊdɪzəm/ |
+| `cholesterol-us` | /kəˈlestərɔːl/ | /kəˈlestərɑːl/ |
+| `congruent-us` | /ˈkɑːŋɡruənt/ | /kəŋˈɡruənt/ |
+| `connectivity-uk` | /ˌkɒnekˈtɪvɪti/ | /kəˌnekˈtɪvɪti/ |
+| `contribute-to-uk` | /ˈkɒntrɪbjuːt tə/ | /kənˈtrɪbjuːt tə/ |
+| `contribute-to-us` | /kənˈtrɪbjut tə/ | /kənˈtrɪbjuːt tə/ |
+| `directory-us` | /daɪˈrektəri/ | /dɪˈrektəri/ |
+| `dissect-uk` | /daɪˈsekt/ | /dɪˈsekt/ |
+| `duration-us` | /dʊˈreɪʃən/ | /duːˈreɪʃən/ |
+| `eco-friendly-us` | /ˌiːkoʊ ˈfrendli/ | /ˈiːkoʊ ˌfrendli/ |
+| `economic-us` | /ˌekəˈnɑːmɪk/ | /ˌiːkəˈnɑːmɪk/ |
+| `economical-us` | /ˌekəˈnɑːmɪkəl/ | /ˌiːkəˈnɑːmɪkəl/ |
+| `elite-us` | /eɪˈliːt/ | /iˈliːt/ |
+| `elsewhere-us` | /ˌelsˈwer/ | /ˈelswer/ |
+| `ensure-uk` | /ɪnˈʃɔː/ | /ɪnˈʃʊə/ |
+| `exit-uk` | /ˈeɡzɪt/ | /ˈeksɪt/ |
+| `exponential-us` | /ˌekspəˈnenʃəl/ | /ˌekspoʊˈnenʃəl/ |
+| `garage-uk` | /ˈɡærɪdʒ/ | /ˈɡærɑːʒ/ |
+| `gourmet-us` | /ɡʊrˈmeɪ/ | /ˈɡʊrmeɪ/ |
+| `granary-us` | /ˈɡreɪnəri/ | /ˈɡrænəri/ |
+| `gratitude-us` | /ˈɡrætətud/ | /ˈɡrætətuːd/ |
+| `greasy-uk` | /ˈɡriːzi/ | /ˈɡriːsi/ |
+| `guided-tour-uk` | /ˈɡaɪdɪd tɔː/ | /ˈɡaɪdɪd tʊə/ |
+| `indirect-uk` | /ˌɪndaɪˈrekt/ | /ˌɪndəˈrekt/ |
+| `inherent-us` | /ɪnˈherənt/ | /ɪnˈhɪrənt/ |
+| `institute-us` | /ˈɪnstətut/ | /ˈɪnstətuːt/ |
+| `intuition-us` | /ˌɪntuˈɪʃən/ | /ˌɪntuːˈɪʃən/ |
+| `latitude-us` | /ˈlætətud/ | /ˈlætətuːd/ |
+| `letter-of-recommendation-us` | /ˈletɚ əv ˌrekəmənˈdeɪʃən/ | /ˈletɚ əv ˌrekəmenˈdeɪʃən/ |
+| `lifelong-learning-us` | /ˈlaɪflɔːŋ ˈlɝːnɪŋ/ | /ˈlaɪflɑːŋ ˈlɝːnɪŋ/ |
+| `magnitude-us` | /ˈmæɡnətud/ | /ˈmæɡnətuːd/ |
+| `metaphor-uk` | /ˈmetəfɔː/ | /ˈmetəfə/ |
+| `monarch-us` | /ˈmɑːnɑːrk/ | /ˈmɑːnɚk/ |
+| `monarchy-us` | /ˈmɑːnɑːrki/ | /ˈmɑːnɚki/ |
+| `nutrition-us` | /nuˈtrɪʃən/ | /nuːˈtrɪʃən/ |
+| `outgoing-us` | /ˌaʊtˈɡoʊɪŋ/ | /ˈaʊtɡoʊɪŋ/ |
+| `package-tour-uk` | /ˈpækɪdʒ tɔː/ | /ˈpækɪdʒ tʊə/ |
+| `paparazzi-us` | /ˌpɑːpəˈrɑːtsi/ | /ˌpɑːpɑːˈrɑːtsi/ |
+| `partisan-uk` | /ˌpɑːtɪˈzæn/ | /ˈpɑːtɪzæn/ |
+| `pseudoscience-uk` | /ˈsjuːdəʊsaɪəns/ | /ˈsuːdəʊsaɪəns/ |
+| `realism-us` | /ˈriəlɪzəm/ | /ˈriːəlɪzəm/ |
+| `rebellious-uk` | /rɪˈbeliəs/ | /rɪˈbeljəs/ |
+| `recommendation-us` | /ˌrekəmənˈdeɪʃən/ | /ˌrekəmenˈdeɪʃən/ |
+| `refugee-us` | /ˌrefjuˈdʒiː/ | /ˌrefjʊˈdʒiː/ |
+| `residue-us` | /ˈrezədu/ | /ˈrezəduː/ |
+| `revenue-us` | /ˈrevənu/ | /ˈrevənuː/ |
+| `saturn-uk` | /ˈsætən/ | /ˈsætɜːn/ |
+| `schedule-us` | /ˈskedʒul/ | /ˈskedʒuːl/ |
+| `semiconductor-us` | /ˈsemikəndʌktɚ/ | /ˌsemikənˈdʌktɚ/ |
+| `stance-uk` | /stɑːns/ | /stæns/ |
+| `stratum-us` | /ˈstrætəm/ | /ˈstreɪtəm/ |
+| `supreme-uk` | /suːˈpriːm/ | /suˈpriːm/ |
+| `temperamental-us` | /ˌtemprəˈmentəl/ | /ˌtempɚəˈmentəl/ |
+| `torrential-us` | /təˈrenʃəl/ | /tɔːˈrenʃəl/ |
+| `transit-uk` | /ˈtrænsɪt/ | /ˈtrænzɪt/ |
+| `transmit-us` | /trænzˈmɪt/ | /trænsˈmɪt/ |
+| `unique-uk` | /juːˈniːk/ | /juˈniːk/ |
+| `vacuum-cleaner-us` | /ˈvækjum ˈkliːnɚ/ | /ˈvækjuːm ˈkliːnɚ/ |
+| `wind-turbine-us` | /ˈwɪnd tɝːbaɪn/ | /ˈwɪnd tɝːbɪn/ |
+| `withhold-us` | /wɪθˈhoʊld/ | /wɪðˈhoʊld/ |
+| `withstand-us` | /wɪθˈstænd/ | /wɪðˈstænd/ |
+| `zoology-uk` | /zuːˈɒlədʒi/ | /zuˈɒlədʒi/ |
 
 ### 随拼写修改(2 处)
 
