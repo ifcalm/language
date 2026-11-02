@@ -46,7 +46,7 @@
 | 未改动的对照读音 | 3.13 | 4.69 | 3.54 | 5.33 |
 | 修正过的读音 | 2.22 | 10.88 | 3.06 | 7.56 |
 
-同形异义词还合成了另一种读音,看现有音频更接近哪一种。66 条里 6 条明显读成了另一种:`compact-uk`、`compact-us`、`patent-uk`、`underline-uk`、`underline-us`、`rewrite-uk`。`sow`、`discount`、`insert-uk`、`convert` 等其余词条读音正确,或者无法区分。
+同形异义词还合成了另一种读音,看现有音频更接近哪一种。67 条里 6 条明显读成了另一种:`compact-uk`、`compact-us`、`patent-uk`、`underline-uk`、`underline-us`、`rewrite-uk`。`sow`、`discount`、`insert-uk`、`convert` 等其余词条读音正确,或者无法区分。
 
 ### 处理结果
 
