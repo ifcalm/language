@@ -14,7 +14,7 @@
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
-**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4062,词组 495)
+**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4063,词组 494)
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
@@ -68,7 +68,7 @@
 - **garage** n. 车库
 - **fence** n. 篱笆,围栏
 - **lounge** n. 休息室,起居室
-- **en-suite** adj. 带独立卫浴的
+- **en suite** adj. 带独立卫浴的
 - **shared bathroom** phr. 公用卫生间
 - **communal** adj. 公用的
 - **laundry** n. 洗衣房;待洗衣物
@@ -2638,7 +2638,7 @@
 - **malnourished** adj. 营养不良的
 - **handicap** n. 残疾;障碍
 - **spleen** n. 脾
-- **life span** phr. 寿命
+- **lifespan** n. 寿命
 - **death rate** phr. 死亡率
 - **heart rate** phr. 心率
 - **flesh** n. 肉;肌肉

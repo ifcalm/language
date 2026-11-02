@@ -91,7 +91,7 @@
 | malnourished | adj. 营养不良的 | Many of the children in the camp were seriously **malnourished**. | 营地里的许多孩子严重营养不良。 |
 | handicap | n. 残疾;障碍 | Poor eyesight was once a serious **handicap** for people in many jobs. | 视力差曾是许多工作中的严重障碍。 |
 | spleen | n. 脾 | The **spleen** helps to filter the blood and fight infection. | 脾有助于过滤血液和抵抗感染。 |
-| life span | phr. 寿命 | The average **life-span** of a wild fox is only about three years. | 野生狐狸的平均寿命只有大约三年。 |
+| lifespan | n. 寿命 | The average **lifespan** of a wild fox is only about three years. | 野生狐狸的平均寿命只有大约三年。 |
 | death rate | phr. 死亡率 | The **death rate** from the disease fell after the vaccine was introduced. | 疫苗推出后,这种疾病的死亡率下降了。 |
 | heart rate | phr. 心率 | Your **heart rate** increases naturally when you take exercise. | 运动时心率会自然升高。 |
 | flesh | n. 肉;肌肉 | The bacteria spread quickly through the **flesh** of the infected animal. | 细菌在受感染动物的肌肉中迅速扩散。 |
