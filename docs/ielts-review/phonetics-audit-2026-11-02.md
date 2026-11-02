@@ -1,34 +1,64 @@
 # 雅思词库音标核查(2026-11-02)
 
-把 D1 `ielts_pronunciations` 全部 9182 条读音与 ODE(英式)、NOAD(美式)程序比对,差异大的逐条人工裁决。修改 253 处读音,涉及 234 个词条,迁移 `0265_fix_ielts_phonetics_audit`,已应用到线上 D1 并记账。音标原本由 ipa-dict 加人工校正生成,这是第一次全量核对词典。
+把 D1 `ielts_pronunciations` 全部读音与 ODE(英式)、NOAD(美式)程序比对,差异大的逐条人工裁决。共修正 267 处读音,另把 15 个词拆成分词性读音,合计涉及 259 个词条。迁移 `0265_fix_ielts_phonetics_audit`、`0266_fix_ielts_phonetics_by_pos` 已应用到线上 D1 并记账。读音行数从 9182 变为 9214。音标原本由 ipa-dict 加人工校正生成,这是第一次全量核对词典。
 
 ## 方法
 
-- 从本机 ODE、NOAD 读取音标,按词头和词性建索引,统一两种音标体系后计算差异,并单独比较主重音和重读元音。
-- 词组和变形词在词典里查不到整词时,按单词比对,复数、-ing、-ed 用词根加词尾。
-- 人工通读了差异分数不低于 0.6 的约 400 条,判断是错误还是词典认可的变体。分数低于 0.6 的只查了主重音和重读元音,没有逐条读。
-- 裁决风格沿用项目约定:英音参照 Oxford,美音参照 Cambridge。
+- **底本:** 本机 ODE 和 NOAD 的 IPA。
+- **取值:** 写法转成项目风格(英音参照 Oxford,美音参照 Cambridge)。差异是错误还是变体由人工判断,其中部分判断依据对 Oxford Learner's 和 Cambridge 读音的记忆,**这两部词典没有实际查阅**。所以少数新音标不是 ODE、NOAD 的首选读音,比如 `sanctuary-uk`、`artisan-uk`。
+- **第一轮:** 词头相同就比对全部读音,命中任一即通过。人工通读了差异分数不低于 0.6 的约 400 条。
+- **第二轮:** 第一轮的索引混入了其他词性的读音和变形词,读音对应错词性时查不出来,比如 `sow` 标成了“母猪”的读音。第二轮重建索引,只保留词头读音,并按释义的词性匹配,又通读了分数不低于 0.35 的新增条目和所有同形异义词。
+- **词组和变形词:** 词典查不到整词时按单词比对,复数、-ing、-ed 用词根加词尾。
 
 ## 音频
 
-**`scripts/generate-ielts-audio.mjs` 并不是按音标生成全部音频。** 只有名动异读的 34 个词条用 SSML 读音标,其余词条按纯文本朗读,发音来自 Google 词库。所以这次的音标错误大多只影响显示,没有进入音频。本次修改不涉及名动异读词条,这些词条的请求没有变化,`--ids` 会直接跳过。
+### 生成方式
 
-为了核对音标和音频是否一致,用修正后的音标合成了对照音频,与现有音频做声学距离(DTW)比较,并用 40 条未改动的词条校准:
+`scripts/generate-ielts-audio.mjs` 只对分词性词条和 `IPA_READINGS` 名单用 SSML 读音标,其余词条按纯文本朗读,发音来自 Google 词库。所以大多数音标错误只影响显示,没有进入音频。
 
-| 组别 | 中位距离 | 最大距离 |
+### 发现的问题:音色不报错地忽略音标
+
+音色遇到不支持的符号时不报错,基本按文本朗读。此前项目的音标直接传给音色,所以**英音的分词性音频长期没有真正区分读音**,比如 `increase` 的名词和动词时长相同。
+
+| 音色 | 不接受的符号 | 现在的写法 |
 |---|---|---|
-| 未改动的对照词条(40 条) | 2.21 | 5.39 |
-| 本次修改及重新生成的读音(259 条) | 1.40 | 7.88 |
+| en-GB-Studio-C | `r`、`e`、`i`、`u` | `ɹ`、`ɛ`(`eɪ`、`eə` 不变)、`iː`、`uː` |
+| en-US-Studio-O | `ɝː`、重读的 `iə` | `ɝ`、`iːə`(`uə` 也写成 `uːə`) |
 
-处理结果:
+映射写在生成脚本的 `voiceIpa`,只影响发给音色的请求,不影响页面显示的音标。用 `iː`、`uː` 还能避免 `iə` 被压成一个音节:写成 `iːə` 后,`malaria`、`meridian`、`obedient` 的时长与纯文本音频完全一致。
 
-- 超过对照组最大值的 17 条改为按音标用 SSML 生成,名单写入生成脚本的 `IPA_READINGS`:`adequate-us`、`admission-us`、`adverse-uk`、`ammonia-uk`、`authentic-us`、`best-seller-us`、`congruent-us`、`disobedient-uk`、`ecotourism-us`、`exponential-us`、`glacier-uk`、`moth-uk`、`petrol-us`、`prestigious-us`、`syrup-us`、`temperamental-us`、`torrential-us`。
-- `best-seller`、`pay-slip`、`notice-board` 的朗读文本在 0264 改过,已重新生成。其中 `best-seller-us` 同时在上面的名单里。
-- 实际替换 22 个音频文件,上线内容与本地逐字节一致。其余读音保留原音频。
+修复后验证:
 
-**局限:** 声学距离只能发现明显偏差,不等于人耳确认。没有人工试听。短词(如 `moth`)的距离噪声较大,未改动的词条里也有接近 5.4 的,所以这个阈值只是粗筛。
+- 所有走 SSML 的 362 种写法都被音色接受。
+- 英音两种词性之间的声学距离(下表为 25 个词的抽样)明显拉开:
 
-**缓存:** R2 文件带 `immutable, max-age=1 年`,这次在原路径覆盖。边缘节点没有缓存(`cf-cache-status: DYNAMIC`),但已经播放过这些词的浏览器可能继续使用旧文件,最长一年。
+| 组别 | 修复前中位数 | 修复后中位数 | 修复后最小值 |
+|---|---|---|---|
+| 原有分词性词条(10 个) | 1.64 | 5.77 | 3.38 |
+| 新增分词性词条(15 个) | 3.00 | 6.30 | 3.61 |
+
+### 现有音频是否和音标一致
+
+用修正后的音标合成对照音频,与现有音频比较声学距离,并用 40 条未改动的读音校准。**同一天早些时候的比对结果作废**,因为当时还没有符号映射,含这些符号的词距离偏低。下面是修复后的结果:
+
+| 组别 | 英音中位数 | 英音最大值 | 美音中位数 | 美音最大值 |
+|---|---|---|---|---|
+| 未改动的对照读音 | 3.13 | 4.69 | 3.54 | 5.33 |
+| 修正过的读音 | 2.22 | 10.88 | 3.06 | 7.56 |
+
+同形异义词还合成了另一种读音,看现有音频更接近哪一种。67 条里 6 条明显读成了另一种:`compact-uk`、`compact-us`、`patent-uk`、`underline-uk`、`underline-us`、`rewrite-uk`。`sow`、`discount`、`insert-uk`、`convert` 等其余词条读音正确,或者无法区分。
+
+### 处理结果
+
+- **改按音标生成:** 共 38 条,写入 `IPA_READINGS`。包括上面 6 条读错的、15 条距离超过对照组最大值的单词,以及第一轮选入的 17 条。第一轮的 17 条是按作废的比对选的,没有逐条复核,由于走 SSML,音频按音标朗读,所以保留。
+- **重新生成:** 分词性词条全部按新映射重新生成;`best-seller`、`pay-slip`、`notice-board` 按 0264 改过的文本重新生成。
+- **文件数:** 覆盖 96 个音频文件,新增 62 个。上线内容与本地逐字节一致。再跑生成脚本没有待处理项。
+
+### 局限
+
+- **没有人工试听。** 声学距离只能发现明显偏差,对照组的阈值也只是粗筛,短词噪声较大。
+- **没有全量比对音频。** 只比对了修正过的读音、同形异义词和对照组,其余约 8900 条纯文本音频没有检查。
+- **缓存:** R2 文件带 `immutable, max-age=1 年`,覆盖的 96 个文件在原路径。边缘节点没有缓存,但已经播放过这些词的浏览器最长一年内可能继续用旧文件。新增的分词性音频路径是新的,不受影响。
 
 ## 没有改的
 
@@ -39,15 +69,19 @@
 | 美音 `ær` 与 `er`(arrow、carrier) | 12 条 | NOAD 按合并后的读音标,Cambridge 区分,与项目约定一致 |
 | 词组内部重音(blood pressure、rush hour) | 59 条 | 词组是逐词转写的,不是词典的复合词重音。要改得单独定规则 |
 | 词典认可的变体(halt、transit、intrinsic、innovative、recuperate、terrain、ion、pedagogy) | 约 30 条 | 项目读法也是常见读法 |
+| 只差重音移动的跨词性词(`inland`、`overall`、`overseas`、`contrary`) | 4 个词 | 重音随语境移动,或另一读法是少见义项,不拆分词性 |
 
 其他未处理项:
 
-- 4 个词条(8 条读音)没有音标:`broaden one's horizons`、`can't stand doing sth.`、`convert A into B`、`object to (doing) sth.`,因为含占位词。
-- `first-aid-kit`、`hang-gliding`、`neolithic`、`paleolithic`、`empty-nester` 的朗读文本在 0264 也改过,读音不受影响,没有重新生成。这 5 个 id 下次跑 `--ids` 时会重新生成。
-- `jewellery` 没有填美式拼写 `jewelry`,这是拼写问题,不属于本次范围。
-- `scripts/fixtures/ielts-phonetics.json` 仍是 0264 之前的生成结果,构建不读它。重新运行 `npm run ielts:phonetics` 会更新 16 行,已验证不报错。
+- **判断不了的同形异义词音频:** `accent-uk`、`discard-us`、`insert-us`、`recharge-uk`、`recharge-us`、`transform-uk`、`transform-us` 与两种读音的距离接近,保留原音频。
+- **距离高的词组音频:** `on-the-contrary-uk`、`plastic-bag-uk` 超过对照组最大值,但词组没有走过 SSML,保留纯文本。
+- **没有音标的 4 个词条(8 条读音):** `broaden one's horizons`、`can't stand doing sth.`、`convert A into B`、`object to (doing) sth.`,因为含占位词。
+- **0264 的另外 5 个词条:** `first-aid-kit`、`hang-gliding`、`neolithic`、`paleolithic`、`empty-nester` 的朗读文本改过,读音不受影响,没有重新生成。
+- **R2 上的旧音频:** 15 个拆分词性的词,原来的 30 个音频文件还留在 R2。要等新数据部署后才不再被引用,所以这次没有删。
+- **`jewellery`:** 没有填美式拼写 `jewelry`,这是拼写问题,不属于本次范围。
+- **`scripts/fixtures/ielts-phonetics.json`:** 仍是 0264 之前的生成结果,构建不读它。`npm run ielts:phonetics` 已验证不报错。
 
-## 修改清单
+## 第一轮修改清单(迁移 0265)
 
 共 253 处。第一列是读音 id,后缀 `-uk`、`-us` 表示口音。
 
@@ -333,3 +367,60 @@
 | `take-advantage-of-us` | /teɪk ædˈvæntɪdʒ əv/ | /teɪk ədˈvæntɪdʒ əv/ |
 | `thermometer-uk` | /θɜːˈmɒmɪtə/ | /θəˈmɒmɪtə/ |
 | `torrential-us` | /tɔːˈrenʃəl/ | /təˈrenʃəl/ |
+
+## 第二轮修改清单(迁移 0266)
+
+### 读音修正(14 处)
+
+| 读音 | 原音标 | 新音标 |
+|---|---|---|
+| `sow-uk` | /saʊ/ | /səʊ/ |
+| `sow-us` | /saʊ/ | /soʊ/ |
+| `underline-uk` | /ˈʌndəlaɪn/ | /ˌʌndəˈlaɪn/ |
+| `underline-us` | /ˈʌndɚlaɪn/ | /ˌʌndɚˈlaɪn/ |
+| `overestimate-uk` | /ˌəʊvəˈrestɪmət/ | /ˌəʊvərˈestɪmeɪt/ |
+| `reuse-us` | /rɪˈjuːs/ | /ˌriːˈjuːz/ |
+| `hydroelectric-uk` | /ˌhaɪdrəʊˈlektrɪk/ | /ˌhaɪdrəʊɪˈlektrɪk/ |
+| `automobile-uk` | /ˈɔːtəməbɪəl/ | /ˈɔːtəməbiːl/ |
+| `automobile-us` | /ˈɔːtəmoʊbɪl/ | /ˈɔːtəmoʊbiːl/ |
+| `aisle-uk` | /aɪəl/ | /aɪl/ |
+| `aisle-us` | /aɪəl/ | /aɪl/ |
+| `solely-us` | /ˈsoʊəli/ | /ˈsoʊlli/ |
+| `temperament-us` | /ˈtempɚmənt/ | /ˈtemprəmənt/ |
+| `realism-us` | /ˈriəlɪzm/ | /ˈriəlɪzəm/ |
+
+### 拆分词性(15 个词)
+
+| 词 | 词性 | 英音 | 美音 |
+|---|---|---|---|
+| `compound` | n. | /ˈkɒmpaʊnd/ | /ˈkɑːmpaʊnd/ |
+| `compound` | adj. | /ˈkɒmpaʊnd/ | /ˈkɑːmpaʊnd/ |
+| `compound` | v. | /kəmˈpaʊnd/ | /kəmˈpaʊnd/ |
+| `conduct` | v. | /kənˈdʌkt/ | /kənˈdʌkt/ |
+| `conduct` | n. | /ˈkɒndʌkt/ | /ˈkɑːndʌkt/ |
+| `conflict` | n. | /ˈkɒnflɪkt/ | /ˈkɑːnflɪkt/ |
+| `conflict` | v. | /kənˈflɪkt/ | /kənˈflɪkt/ |
+| `content` | adj. | /kənˈtent/ | /kənˈtent/ |
+| `content` | n. | /ˈkɒntent/ | /ˈkɑːntent/ |
+| `contract` | n. | /ˈkɒntrækt/ | /ˈkɑːntrækt/ |
+| `contract` | v. | /kənˈtrækt/ | /kənˈtrækt/ |
+| `convict` | v. | /kənˈvɪkt/ | /kənˈvɪkt/ |
+| `convict` | n. | /ˈkɒnvɪkt/ | /ˈkɑːnvɪkt/ |
+| `desert` | n. | /ˈdezət/ | /ˈdezɚt/ |
+| `desert` | v. | /dɪˈzɜːt/ | /dɪˈzɝːt/ |
+| `experiment` | n. | /ɪkˈsperɪmənt/ | /ɪkˈsperəmənt/ |
+| `experiment` | v. | /ɪkˈsperɪment/ | /ɪkˈsperəment/ |
+| `exploit` | v. | /ɪkˈsplɔɪt/ | /ɪkˈsplɔɪt/ |
+| `exploit` | n. | /ˈeksplɔɪt/ | /ˈeksplɔɪt/ |
+| `extract` | v. | /ɪkˈstrækt/ | /ɪkˈstrækt/ |
+| `extract` | n. | /ˈekstrækt/ | /ˈekstrækt/ |
+| `implement` | v. | /ˈɪmplɪment/ | /ˈɪmpləment/ |
+| `implement` | n. | /ˈɪmplɪmənt/ | /ˈɪmpləmənt/ |
+| `project` | n. | /ˈprɒdʒekt/ | /ˈprɑːdʒekt/ |
+| `project` | v. | /prəˈdʒekt/ | /prəˈdʒekt/ |
+| `separate` | v. | /ˈsepəreɪt/ | /ˈsepəreɪt/ |
+| `separate` | adj. | /ˈseprət/ | /ˈseprət/ |
+| `transport` | n. | /ˈtrænspɔːt/ | /ˈtrænspɔːrt/ |
+| `transport` | v. | /trænˈspɔːt/ | /trænˈspɔːrt/ |
+| `update` | v. | /ˌʌpˈdeɪt/ | /ˌʌpˈdeɪt/ |
+| `update` | n. | /ˈʌpdeɪt/ | /ˈʌpdeɪt/ |

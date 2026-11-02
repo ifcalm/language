@@ -89,16 +89,32 @@
     "us": "/kəmˈpres/"
   },
   "conduct": {
-    "uk": "/kənˈdʌkt/",
-    "us": "/kənˈdʌkt/"
+    "byPos": {
+      "v.": {
+        "uk": "/kənˈdʌkt/",
+        "us": "/kənˈdʌkt/"
+      },
+      "n.": {
+        "uk": "/ˈkɒndʌkt/",
+        "us": "/ˈkɑːndʌkt/"
+      }
+    }
   },
   "construct": {
     "uk": "/kənˈstrʌkt/",
     "us": "/kənˈstrʌkt/"
   },
   "content": {
-    "uk": "/kənˈtent/",
-    "us": "/kənˈtent/"
+    "byPos": {
+      "adj.": {
+        "uk": "/kənˈtent/",
+        "us": "/kənˈtent/"
+      },
+      "n.": {
+        "uk": "/ˈkɒntent/",
+        "us": "/ˈkɑːntent/"
+      }
+    }
   },
   "contest": {
     "byPos": {
@@ -129,8 +145,16 @@
     "us": "/kənˈvɝːt/"
   },
   "convict": {
-    "uk": "/kənˈvɪkt/",
-    "us": "/kənˈvɪkt/"
+    "byPos": {
+      "v.": {
+        "uk": "/kənˈvɪkt/",
+        "us": "/kənˈvɪkt/"
+      },
+      "n.": {
+        "uk": "/ˈkɒnvɪkt/",
+        "us": "/ˈkɑːnvɪkt/"
+      }
+    }
   },
   "decrease": {
     "byPos": {
@@ -217,8 +241,16 @@
     }
   },
   "exploit": {
-    "uk": "/ɪkˈsplɔɪt/",
-    "us": "/ɪkˈsplɔɪt/"
+    "byPos": {
+      "v.": {
+        "uk": "/ɪkˈsplɔɪt/",
+        "us": "/ɪkˈsplɔɪt/"
+      },
+      "n.": {
+        "uk": "/ˈeksplɔɪt/",
+        "us": "/ˈeksplɔɪt/"
+      }
+    }
   },
   "export": {
     "byPos": {
@@ -233,8 +265,16 @@
     }
   },
   "extract": {
-    "uk": "/ɪkˈstrækt/",
-    "us": "/ɪkˈstrækt/"
+    "byPos": {
+      "v.": {
+        "uk": "/ɪkˈstrækt/",
+        "us": "/ɪkˈstrækt/"
+      },
+      "n.": {
+        "uk": "/ˈekstrækt/",
+        "us": "/ˈekstrækt/"
+      }
+    }
   },
   "graduate": {
     "byPos": {
@@ -261,8 +301,16 @@
     }
   },
   "implement": {
-    "uk": "/ˈɪmplɪment/",
-    "us": "/ˈɪmpləment/"
+    "byPos": {
+      "v.": {
+        "uk": "/ˈɪmplɪment/",
+        "us": "/ˈɪmpləment/"
+      },
+      "n.": {
+        "uk": "/ˈɪmplɪmənt/",
+        "us": "/ˈɪmpləmənt/"
+      }
+    }
   },
   "import": {
     "byPos": {
@@ -485,12 +533,28 @@
     }
   },
   "transport": {
-    "uk": "/trænˈspɔːt/",
-    "us": "/trænˈspɔːrt/"
+    "byPos": {
+      "n.": {
+        "uk": "/ˈtrænspɔːt/",
+        "us": "/ˈtrænspɔːrt/"
+      },
+      "v.": {
+        "uk": "/trænˈspɔːt/",
+        "us": "/trænˈspɔːrt/"
+      }
+    }
   },
   "update": {
-    "uk": "/ˌʌpˈdeɪt/",
-    "us": "/ˌʌpˈdeɪt/"
+    "byPos": {
+      "v.": {
+        "uk": "/ˌʌpˈdeɪt/",
+        "us": "/ˌʌpˈdeɪt/"
+      },
+      "n.": {
+        "uk": "/ˈʌpdeɪt/",
+        "us": "/ˈʌpdeɪt/"
+      }
+    }
   },
   "upgrade": {
     "byPos": {
@@ -2033,5 +2097,133 @@
   "wisdom": {
     "uk": "/ˈwɪzdəm/",
     "us": "/ˈwɪzdəm/"
+  },
+  "sow": {
+    "uk": "/səʊ/",
+    "us": "/soʊ/"
+  },
+  "underline": {
+    "uk": "/ˌʌndəˈlaɪn/",
+    "us": "/ˌʌndɚˈlaɪn/"
+  },
+  "overestimate": {
+    "uk": "/ˌəʊvərˈestɪmeɪt/",
+    "us": "/ˌoʊvəˈrestəmeɪt/"
+  },
+  "reuse": {
+    "uk": "/riːˈjuːz/",
+    "us": "/ˌriːˈjuːz/"
+  },
+  "hydroelectric": {
+    "uk": "/ˌhaɪdrəʊɪˈlektrɪk/",
+    "us": "/ˌhaɪdroʊɪˈlektrɪk/"
+  },
+  "automobile": {
+    "uk": "/ˈɔːtəməbiːl/",
+    "us": "/ˈɔːtəmoʊbiːl/"
+  },
+  "aisle": {
+    "uk": "/aɪl/",
+    "us": "/aɪl/"
+  },
+  "solely": {
+    "uk": "/ˈsəʊlli/",
+    "us": "/ˈsoʊlli/"
+  },
+  "temperament": {
+    "uk": "/ˈtemprəmənt/",
+    "us": "/ˈtemprəmənt/"
+  },
+  "realism": {
+    "uk": "/ˈrɪəlɪzəm/",
+    "us": "/ˈriəlɪzəm/"
+  },
+  "compound": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈkɒmpaʊnd/",
+        "us": "/ˈkɑːmpaʊnd/"
+      },
+      "adj.": {
+        "uk": "/ˈkɒmpaʊnd/",
+        "us": "/ˈkɑːmpaʊnd/"
+      },
+      "v.": {
+        "uk": "/kəmˈpaʊnd/",
+        "us": "/kəmˈpaʊnd/"
+      }
+    }
+  },
+  "conflict": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈkɒnflɪkt/",
+        "us": "/ˈkɑːnflɪkt/"
+      },
+      "v.": {
+        "uk": "/kənˈflɪkt/",
+        "us": "/kənˈflɪkt/"
+      }
+    }
+  },
+  "contract": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈkɒntrækt/",
+        "us": "/ˈkɑːntrækt/"
+      },
+      "v.": {
+        "uk": "/kənˈtrækt/",
+        "us": "/kənˈtrækt/"
+      }
+    }
+  },
+  "desert": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈdezət/",
+        "us": "/ˈdezɚt/"
+      },
+      "v.": {
+        "uk": "/dɪˈzɜːt/",
+        "us": "/dɪˈzɝːt/"
+      }
+    }
+  },
+  "experiment": {
+    "byPos": {
+      "n.": {
+        "uk": "/ɪkˈsperɪmənt/",
+        "us": "/ɪkˈsperəmənt/"
+      },
+      "v.": {
+        "uk": "/ɪkˈsperɪment/",
+        "us": "/ɪkˈsperəment/"
+      }
+    }
+  },
+  "project": {
+    "byPos": {
+      "n.": {
+        "uk": "/ˈprɒdʒekt/",
+        "us": "/ˈprɑːdʒekt/"
+      },
+      "v.": {
+        "uk": "/prəˈdʒekt/",
+        "us": "/prəˈdʒekt/"
+      }
+    }
+  },
+  "separate": {
+    "byPos": {
+      "v.": {
+        "uk": "/ˈsepəreɪt/",
+        "us": "/ˈsepəreɪt/"
+      },
+      "adj.": {
+        "uk": "/ˈseprət/",
+        "us": "/ˈseprət/"
+      }
+    }
   }
 }
