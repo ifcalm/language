@@ -630,7 +630,7 @@
   },
   "troposphere": {
     "uk": "/ˈtrɒpəsfɪə/",
-    "us": "/ˈtroʊpəsfɪr/"
+    "us": "/ˈtrɑːpəsfɪr/"
   },
   "pictograph": {
     "uk": "/ˈpɪktəɡrɑːf/",
@@ -730,7 +730,7 @@
   },
   "palaeolithic": {
     "uk": "/ˌpæliəˈlɪθɪk/",
-    "us": "/ˌpeɪlioʊˈlɪθɪk/"
+    "us": "/ˌpeɪliəˈlɪθɪk/"
   },
   "buddhism": {
     "uk": "/ˈbʊdɪzəm/",
@@ -765,8 +765,8 @@
     "us": "/ˌbrænd ˈnuː/"
   },
   "e-commerce": {
-    "uk": "/ˌiː ˈkɒmɜːs/",
-    "us": "/ˌiː ˈkɑːmɝːs/"
+    "uk": "/ˈiː kɒmɜːs/",
+    "us": "/ˈiː kɑːmɝːs/"
   },
   "face-to-face": {
     "uk": "/ˌfeɪs tə ˈfeɪs/",
@@ -933,7 +933,7 @@
   },
   "furthermore": {
     "uk": "/ˌfɜːðəˈmɔː/",
-    "us": "/ˌfɝːðɚˈmɔːr/"
+    "us": "/ˈfɝːðɚmɔːr/"
   },
   "conversely": {
     "us": "/kənˈvɝːsli/"
@@ -943,7 +943,7 @@
     "us": "/werˈbaɪ/"
   },
   "widespread": {
-    "uk": "/ˌwaɪdˈspred/",
+    "uk": "/ˈwaɪdspred/",
     "us": "/ˌwaɪdˈspred/"
   },
   "realistic": {
@@ -1006,6 +1006,7 @@
     "us": "/ˌoʊvɚˈfɪʃɪŋ/"
   },
   "chimpanzee": {
+    "uk": "/ˌtʃɪmpænˈziː/",
     "us": "/ˌtʃɪmpænˈziː/"
   },
   "hippopotamus": {
@@ -1059,6 +1060,7 @@
     "us": "/ˌmediˈiːvəl/"
   },
   "neolithic": {
+    "uk": "/ˌniːəˈlɪθɪk/",
     "us": "/ˌniːəˈlɪθɪk/"
   },
   "patriarchal": {
@@ -1101,6 +1103,7 @@
     "uk": "/ˈʌpbrɪŋɪŋ/"
   },
   "individualism": {
+    "uk": "/ˌɪndɪˈvɪdʒuəlɪzəm/",
     "us": "/ˌɪndɪˈvɪdʒuəlɪzəm/"
   },
   "overweight": {
@@ -1146,7 +1149,7 @@
     "uk": "/ˈeksɜːpt/",
     "us": "/ˈeksɝːpt/"
   },
-  "en-suite": {
+  "en suite": {
     "uk": "/ˌɒn ˈswiːt/",
     "us": "/ˌɑːn ˈswiːt/"
   },
@@ -1223,7 +1226,7 @@
     "us": "/ˈælɡərɪðəm/"
   },
   "altruism": {
-    "uk": "/ˈæltruːɪzəm/",
+    "uk": "/ˈæltruɪzəm/",
     "us": "/ˈæltruɪzəm/"
   },
   "alzheimer's disease": {
@@ -1280,7 +1283,7 @@
   },
   "authenticity": {
     "uk": "/ˌɔːθenˈtɪsɪti/",
-    "us": "/ˌɔːθənˈtɪsɪti/"
+    "us": "/ˌɔːθenˈtɪsɪti/"
   },
   "authority": {
     "uk": "/ɔːˈθɒrɪti/",
@@ -1463,12 +1466,12 @@
     "us": "/ˌiːlæsˈtɪsəti/"
   },
   "elsewhere": {
-    "uk": "/ˈelsweə/",
+    "uk": "/ˌelsˈweə/",
     "us": "/ˌelsˈwer/"
   },
   "endemic": {
     "uk": "/enˈdemɪk/",
-    "us": "/ɪnˈdemɪk/"
+    "us": "/enˈdemɪk/"
   },
   "envisage": {
     "uk": "/ɪnˈvɪzɪdʒ/",
@@ -1492,7 +1495,7 @@
   },
   "fermentation": {
     "uk": "/ˌfɜːmenˈteɪʃən/",
-    "us": "/ˌfɝːmənˈteɪʃən/"
+    "us": "/ˌfɝːmenˈteɪʃən/"
   },
   "genetic": {
     "uk": "/dʒəˈnetɪk/",
@@ -1511,7 +1514,7 @@
     "us": "/ˈɡleɪʃɚ/"
   },
   "gourmet": {
-    "uk": "/ˈɡɔːmeɪ/",
+    "uk": "/ˈɡʊəmeɪ/",
     "us": "/ɡʊrˈmeɪ/"
   },
   "granary": {
@@ -1555,7 +1558,7 @@
     "us": "/ˌhjuːˌmænəˈteriən/"
   },
   "hurricane": {
-    "uk": "/ˈhʌrɪkeɪn/",
+    "uk": "/ˈhʌrɪkən/",
     "us": "/ˈhɝːəkeɪn/"
   },
   "husbandry": {
@@ -1591,16 +1594,16 @@
     "us": "/ɪˈneɪt/"
   },
   "insulation": {
-    "uk": "/ˌɪnsjuːˈleɪʃən/",
+    "uk": "/ˌɪnsjuˈleɪʃən/",
     "us": "/ˌɪnsəˈleɪʃən/"
   },
   "insulator": {
-    "uk": "/ˈɪnsjuːleɪtə/",
+    "uk": "/ˈɪnsjuleɪtə/",
     "us": "/ˈɪnsəleɪtɚ/"
   },
   "invertebrate": {
     "uk": "/ɪnˈvɜːtɪbrət/",
-    "us": "/ɪnˈvɝːtəbreɪt/"
+    "us": "/ɪnˈvɝːtəbrət/"
   },
   "irresistible": {
     "uk": "/ˌɪrɪˈzɪstəbəl/",
@@ -1640,7 +1643,7 @@
   },
   "luxurious": {
     "uk": "/lʌɡˈʒʊəriəs/",
-    "us": "/ləɡˈʒʊriəs/"
+    "us": "/lʌɡˈʒʊriəs/"
   },
   "malaria": {
     "uk": "/məˈleəriə/",
@@ -1707,7 +1710,7 @@
     "us": "/ˌmʌltiˈtæskɪŋ/"
   },
   "mutualism": {
-    "uk": "/ˈmjuːtʃuːəlɪzəm/",
+    "uk": "/ˈmjuːtʃuəlɪzəm/",
     "us": "/ˈmjuːtʃuəlɪzəm/"
   },
   "natural disaster": {
@@ -1923,7 +1926,7 @@
     "us": "/rekˈtæŋɡjəlɚ/"
   },
   "refugee": {
-    "uk": "/ˌrefjuːˈdʒiː/",
+    "uk": "/ˌrefjuˈdʒiː/",
     "us": "/ˌrefjuˈdʒiː/"
   },
   "rehabilitation": {
@@ -1943,7 +1946,7 @@
     "us": "/rɪˈzembəl/"
   },
   "residual": {
-    "uk": "/rɪˈzɪdjuːəl/",
+    "uk": "/rɪˈzɪdjuəl/",
     "us": "/rɪˈzɪdʒuəl/"
   },
   "residue": {
@@ -1987,7 +1990,7 @@
     "us": "/ˈseɪvəri/"
   },
   "security deposit": {
-    "uk": "/sɪˈkjɔːrɪti dɪˈpɒzɪt/",
+    "uk": "/sɪˈkjʊərɪti dɪˈpɒzɪt/",
     "us": "/sɪˈkjʊrəti dəˈpɑːzɪt/"
   },
   "semiconductor": {
@@ -2020,7 +2023,7 @@
   },
   "taboo": {
     "uk": "/təˈbuː/",
-    "us": "/tæˈbuː/"
+    "us": "/təˈbuː/"
   },
   "take advantage of": {
     "uk": "/teɪk ədˈvɑːntɪdʒ əv/",
@@ -2031,16 +2034,16 @@
     "us": "/ˌtemprəˈmentəl/"
   },
   "tertiary education": {
-    "uk": "/ˈtɜːʃəri ˌedʒuːˈkeɪʃən/",
-    "us": "/ˈtɝːʃəri ˌedʒəˈkeɪʃən/"
+    "uk": "/ˈtɜːʃəri ˌedʒuˈkeɪʃən/",
+    "us": "/ˈtɝːʃieri ˌedʒəˈkeɪʃən/"
   },
   "thermometer": {
     "uk": "/θəˈmɒmɪtə/",
     "us": "/θɚˈmɑːmətɚ/"
   },
   "time-consuming": {
-    "uk": "/taɪm kənˈsjuːmɪŋ/",
-    "us": "/taɪm kənˈsuːmɪŋ/"
+    "uk": "/ˈtaɪm kənsjuːmɪŋ/",
+    "us": "/ˈtaɪm kənsuːmɪŋ/"
   },
   "tissue": {
     "uk": "/ˈtɪʃuː/",
@@ -2071,7 +2074,7 @@
     "us": "/ˌʌltrəˈvaɪəlɪt/"
   },
   "urine": {
-    "uk": "/ˈjɔːrɪn/",
+    "uk": "/ˈjʊərɪn/",
     "us": "/ˈjʊrən/"
   },
   "vaccine": {
@@ -2225,5 +2228,833 @@
         "us": "/ˈseprət/"
       }
     }
+  },
+  "affluent": {
+    "uk": "/ˈæfluənt/",
+    "us": "/ˈæfluənt/"
+  },
+  "ambiguous": {
+    "uk": "/æmˈbɪɡjuəs/",
+    "us": "/æmˈbɪɡjuəs/"
+  },
+  "annual": {
+    "uk": "/ˈænjuəl/",
+    "us": "/ˈænjuəl/"
+  },
+  "annual leave": {
+    "uk": "/ˈænjuəl liːv/",
+    "us": "/ˈænjuəl liːv/"
+  },
+  "arduous": {
+    "uk": "/ˈɑːdjuəs/",
+    "us": "/ˈɑːrdʒuəs/"
+  },
+  "arguably": {
+    "uk": "/ˈɑːɡjuəbli/",
+    "us": "/ˈɑːrɡjuəbli/"
+  },
+  "casual": {
+    "uk": "/ˈkæʒuəl/",
+    "us": "/ˈkæʒəwəl/"
+  },
+  "casualty": {
+    "uk": "/ˈkæʒuəlti/",
+    "us": "/ˈkæʒəlti/"
+  },
+  "conspicuous": {
+    "uk": "/kənˈspɪkjuəs/",
+    "us": "/kənˈspɪkjuəs/"
+  },
+  "deciduous": {
+    "uk": "/dɪˈsɪdjuəs/",
+    "us": "/dɪˈsɪdʒuəs/"
+  },
+  "estuary": {
+    "uk": "/ˈestjuəri/",
+    "us": "/ˈestʃueri/"
+  },
+  "evacuate": {
+    "uk": "/ɪˈvækjueɪt/",
+    "us": "/ɪˈvækjəeɪt/"
+  },
+  "evaluate": {
+    "uk": "/ɪˈvæljueɪt/",
+    "us": "/ɪˈvæljueɪt/"
+  },
+  "eventually": {
+    "uk": "/ɪˈventʃuəli/",
+    "us": "/ɪˈventʃəwəli/"
+  },
+  "fluctuate": {
+    "uk": "/ˈflʌktʃueɪt/",
+    "us": "/ˈflʌktʃəweɪt/"
+  },
+  "fluctuation": {
+    "uk": "/ˌflʌktʃuˈeɪʃən/",
+    "us": "/ˌflʌktʃuˈeɪʃən/"
+  },
+  "genuine": {
+    "uk": "/ˈdʒenjuɪn/",
+    "us": "/ˈdʒenjəwən/"
+  },
+  "gradual": {
+    "uk": "/ˈɡrædʒuəl/",
+    "us": "/ˈɡrædʒuəl/"
+  },
+  "influence": {
+    "uk": "/ˈɪnfluəns/",
+    "us": "/ˈɪnfluəns/"
+  },
+  "influential": {
+    "uk": "/ˌɪnfluˈenʃəl/",
+    "us": "/ˌɪnfluˈenʃəl/"
+  },
+  "intellectual": {
+    "uk": "/ˌɪntəˈlektʃuəl/",
+    "us": "/ˌɪntəˈlektʃuəl/"
+  },
+  "intellectual property": {
+    "uk": "/ˌɪntəˈlektʃuəl ˈprɒpəti/",
+    "us": "/ˌɪntəˈlektʃuəl ˈprɑːpɚti/"
+  },
+  "invaluable": {
+    "uk": "/ɪnˈvæljuəbəl/",
+    "us": "/ɪnˈvæljəbəl/"
+  },
+  "manual labour": {
+    "uk": "/ˈmænjuəl ˈleɪbə/",
+    "us": "/ˈmænjuəl ˈleɪbɚ/"
+  },
+  "mutual understanding": {
+    "uk": "/ˈmjuːtʃuəl ˌʌndəˈstændɪŋ/",
+    "us": "/ˈmjuːtʃuəl ˌʌndɚˈstændɪŋ/"
+  },
+  "punctual": {
+    "uk": "/ˈpʌŋktʃuəl/",
+    "us": "/ˈpʌŋktʃuəl/"
+  },
+  "ritual": {
+    "uk": "/ˈrɪtʃuəl/",
+    "us": "/ˈrɪtʃuəl/"
+  },
+  "sexuality": {
+    "uk": "/ˌsekʃuˈælɪti/",
+    "us": "/ˌsekʃuˈæləti/"
+  },
+  "situate": {
+    "uk": "/ˈsɪtʃueɪt/",
+    "us": "/ˈsɪtʃueɪt/"
+  },
+  "spiritual": {
+    "uk": "/ˈspɪrɪtʃuəl/",
+    "us": "/ˈspɪrɪtʃuəl/"
+  },
+  "undergraduate": {
+    "uk": "/ˌʌndəˈɡrædjuət/",
+    "us": "/ˌʌndɚˈɡrædʒəwət/"
+  },
+  "unusual": {
+    "uk": "/ʌnˈjuːʒuəl/",
+    "us": "/əˈnjuːʒuəl/"
+  },
+  "valuable": {
+    "uk": "/ˈvæljuəbəl/",
+    "us": "/ˈvæljəbəl/"
+  },
+  "virtual": {
+    "uk": "/ˈvɜːtʃuəl/",
+    "us": "/ˈvɝːtʃuəl/"
+  },
+  "virtual reality": {
+    "uk": "/ˈvɜːtʃuəl rɪˈælɪti/",
+    "us": "/ˈvɝːtʃuəl riːˈæləti/"
+  },
+  "virtually": {
+    "uk": "/ˈvɜːtʃuəli/",
+    "us": "/ˈvɝːtʃuəli/"
+  },
+  "visual aid": {
+    "uk": "/ˈvɪʒuəl eɪd/",
+    "us": "/ˈvɪʒəwəl eɪd/"
+  },
+  "accusation": {
+    "uk": "/ˌækjuˈzeɪʃən/",
+    "us": "/ˌækjəˈzeɪʃən/"
+  },
+  "ammunition": {
+    "uk": "/ˌæmjəˈnɪʃən/",
+    "us": "/ˌæmjəˈnɪʃən/"
+  },
+  "argument": {
+    "uk": "/ˈɑːɡjumənt/",
+    "us": "/ˈɑːrɡjəmənt/"
+  },
+  "computation": {
+    "uk": "/ˌkɒmpjuˈteɪʃən/",
+    "us": "/ˌkɑːmpjəˈteɪʃən/"
+  },
+  "consecutive": {
+    "uk": "/kənˈsekjətɪv/",
+    "us": "/kənˈsekjətɪv/"
+  },
+  "deputy": {
+    "uk": "/ˈdepjuti/",
+    "us": "/ˈdepjəti/"
+  },
+  "documentary": {
+    "uk": "/ˌdɒkjuˈmentri/",
+    "us": "/ˌdɑːkjəˈmentəri/"
+  },
+  "documentation": {
+    "uk": "/ˌdɒkjumenˈteɪʃən/",
+    "us": "/ˌdɑːkjəmenˈteɪʃən/"
+  },
+  "education": {
+    "uk": "/ˌedʒuˈkeɪʃən/",
+    "us": "/ˌedʒəˈkeɪʃən/"
+  },
+  "educational": {
+    "uk": "/ˌedʒuˈkeɪʃənəl/",
+    "us": "/ˌedʒəˈkeɪʃənəl/"
+  },
+  "educator": {
+    "uk": "/ˈedʒukeɪtə/",
+    "us": "/ˈedʒəkeɪtɚ/"
+  },
+  "compulsory education": {
+    "uk": "/kəmˈpʌlsəri ˌedʒuˈkeɪʃən/",
+    "us": "/kəmˈpʌlsəri ˌedʒəˈkeɪʃən/"
+  },
+  "higher education": {
+    "uk": "/ˈhaɪə ˌedʒuˈkeɪʃən/",
+    "us": "/ˈhaɪɚ ˌedʒəˈkeɪʃən/"
+  },
+  "co-educational": {
+    "uk": "/ˌkəʊ ˌedʒuˈkeɪʃənəl/",
+    "us": "/koʊ ˌedʒəˈkeɪʃənəl/"
+  },
+  "irregular": {
+    "uk": "/ɪˈreɡjələ/",
+    "us": "/ɪˈreɡjəlɚ/"
+  },
+  "manufacture": {
+    "uk": "/ˌmænjuˈfæktʃə/",
+    "us": "/ˌmænjəˈfæktʃɚ/"
+  },
+  "manufacturer": {
+    "uk": "/ˌmænjuˈfæktʃərə/",
+    "us": "/ˌmænjəˈfæktʃərɚ/"
+  },
+  "manuscript": {
+    "uk": "/ˈmænjuskrɪpt/",
+    "us": "/ˈmænjəskrɪpt/"
+  },
+  "monument": {
+    "uk": "/ˈmɒnjumənt/",
+    "us": "/ˈmɑːnjəmənt/"
+  },
+  "prejudice": {
+    "uk": "/ˈpredʒədɪs/",
+    "us": "/ˈpredʒədɪs/"
+  },
+  "regulate": {
+    "uk": "/ˈreɡjuleɪt/",
+    "us": "/ˈreɡjəleɪt/"
+  },
+  "regulation": {
+    "uk": "/ˌreɡjuˈleɪʃən/",
+    "us": "/ˌreɡjəˈleɪʃən/"
+  },
+  "reputation": {
+    "uk": "/ˌrepjuˈteɪʃən/",
+    "us": "/ˌrepjəˈteɪʃən/"
+  },
+  "solubility": {
+    "uk": "/ˌsɒljuˈbɪlɪti/",
+    "us": "/ˌsɑːljəˈbɪləti/"
+  },
+  "soluble": {
+    "uk": "/ˈsɒljəbəl/",
+    "us": "/ˈsɑːljəbəl/"
+  },
+  "tributary": {
+    "uk": "/ˈtrɪbjətri/",
+    "us": "/ˈtrɪbjəteri/"
+  },
+  "mushroom": {
+    "uk": "/ˈmʌʃrʊm/",
+    "us": "/ˈmʌʃrum/"
+  },
+  "bureaucracy": {
+    "uk": "/bjʊəˈrɒkrəsi/",
+    "us": "/bjʊˈrɑːkrəsi/"
+  },
+  "caricature": {
+    "uk": "/ˈkærɪkətʃʊə/",
+    "us": "/ˈkerəkətʃɚ/"
+  },
+  "contour": {
+    "uk": "/ˈkɒntʊə/",
+    "us": "/ˈkɑːntʊr/"
+  },
+  "cure": {
+    "uk": "/kjʊə/",
+    "us": "/kjʊr/"
+  },
+  "curious": {
+    "uk": "/ˈkjʊəriəs/",
+    "us": "/ˈkjʊriəs/"
+  },
+  "detour": {
+    "uk": "/ˈdiːtʊə/",
+    "us": "/ˈdiːtʊr/"
+  },
+  "durable": {
+    "uk": "/ˈdjʊərəbəl/",
+    "us": "/ˈdʊrəbəl/"
+  },
+  "duration": {
+    "uk": "/djuˈreɪʃən/",
+    "us": "/dʊˈreɪʃən/"
+  },
+  "endure": {
+    "uk": "/ɪnˈdjʊə/",
+    "us": "/ɪnˈdjʊr/"
+  },
+  "furious": {
+    "uk": "/ˈfjʊəriəs/",
+    "us": "/ˈfjʊriəs/"
+  },
+  "health insurance": {
+    "uk": "/helθ ɪnˈʃʊərəns/",
+    "us": "/helθ ɪnˈʃʊrəns/"
+  },
+  "immature": {
+    "uk": "/ˌɪməˈtʃʊə/",
+    "us": "/ˌɪməˈtjʊr/"
+  },
+  "impurity": {
+    "uk": "/ɪmˈpjʊərɪti/",
+    "us": "/ɪmˈpjʊrəti/"
+  },
+  "insurance": {
+    "uk": "/ɪnˈʃʊərəns/",
+    "us": "/ɪnˈʃʊrəns/"
+  },
+  "jury": {
+    "uk": "/ˈdʒʊəri/",
+    "us": "/ˈdʒʊri/"
+  },
+  "lure": {
+    "uk": "/lʊə/",
+    "us": "/lʊr/"
+  },
+  "manure": {
+    "uk": "/məˈnjʊə/",
+    "us": "/məˈnʊr/"
+  },
+  "mass tourism": {
+    "uk": "/mæs ˈtʊərɪzəm/",
+    "us": "/mæs ˈtʊrɪzəm/"
+  },
+  "mature": {
+    "uk": "/məˈtʃʊə/",
+    "us": "/məˈtʃʊr/"
+  },
+  "mature student": {
+    "uk": "/məˈtʃʊə ˈstjuːdənt/",
+    "us": "/məˈtʃʊr ˈstuːdənt/"
+  },
+  "neuron": {
+    "uk": "/ˈnjʊərɒn/",
+    "us": "/ˈnʊrɑːn/"
+  },
+  "plural": {
+    "uk": "/ˈplʊərəl/",
+    "us": "/ˈplʊrəl/"
+  },
+  "pure": {
+    "uk": "/pjʊə/",
+    "us": "/pjʊr/"
+  },
+  "purely": {
+    "uk": "/ˈpjʊəli/",
+    "us": "/ˈpjʊrli/"
+  },
+  "purity": {
+    "uk": "/ˈpjʊərɪti/",
+    "us": "/ˈpjʊrəti/"
+  },
+  "rural": {
+    "uk": "/ˈrʊərəl/",
+    "us": "/ˈrʊrəl/"
+  },
+  "secure": {
+    "uk": "/sɪˈkjʊə/",
+    "us": "/sɪˈkjʊr/"
+  },
+  "security": {
+    "uk": "/sɪˈkjʊərɪti/",
+    "us": "/sɪˈkjʊrəti/"
+  },
+  "food security": {
+    "uk": "/fuːd sɪˈkjʊərɪti/",
+    "us": "/fuːd sɪˈkjʊrəti/"
+  },
+  "job security": {
+    "uk": "/dʒɒb sɪˈkjʊərɪti/",
+    "us": "/dʒɑːb sɪˈkjʊrəti/"
+  },
+  "national security": {
+    "uk": "/ˈnæʃənəl sɪˈkjʊərɪti/",
+    "us": "/ˈnæʃənəl sɪˈkjʊrəti/"
+  },
+  "social security": {
+    "uk": "/ˈsəʊʃəl sɪˈkjʊərɪti/",
+    "us": "/ˈsoʊʃəl sɪˈkjʊrəti/"
+  },
+  "tourism": {
+    "uk": "/ˈtʊərɪzəm/",
+    "us": "/ˈtʊrɪzəm/"
+  },
+  "tourist attraction": {
+    "uk": "/ˈtʊərɪst əˈtrækʃən/",
+    "us": "/ˈtʊrəst əˈtrækʃən/"
+  },
+  "tournament": {
+    "uk": "/ˈtʊənəmənt/",
+    "us": "/ˈtʊrnəmənt/"
+  },
+  "almanac": {
+    "uk": "/ˈɔːlmənæk/",
+    "us": "/ˈɑːlmənæk/"
+  },
+  "alter": {
+    "uk": "/ˈɔːltə/",
+    "us": "/ˈɔːltɚ/"
+  },
+  "although": {
+    "uk": "/ɔːlˈðəʊ/",
+    "us": "/ɔːlˈðoʊ/"
+  },
+  "assault": {
+    "uk": "/əˈsɔːlt/",
+    "us": "/əˈsɔːlt/"
+  },
+  "fault": {
+    "uk": "/fɔːlt/",
+    "us": "/fɔːlt/"
+  },
+  "halt": {
+    "uk": "/hɔːlt/",
+    "us": "/hɔːlt/"
+  },
+  "waltz": {
+    "uk": "/wɔːls/",
+    "us": "/wɔːlts/"
+  },
+  "christianity": {
+    "uk": "/ˌkrɪstiˈænɪti/",
+    "us": "/ˌkrɪstʃiˈænɪti/"
+  },
+  "connotation": {
+    "uk": "/ˌkɒnəˈteɪʃən/",
+    "us": "/ˌkɑːnəˈteɪʃən/"
+  },
+  "electronic": {
+    "uk": "/ɪˌlekˈtrɒnɪk/",
+    "us": "/ˌɪlekˈtrɑːnɪk/"
+  },
+  "electronics": {
+    "uk": "/ɪˌlekˈtrɒnɪks/",
+    "us": "/ˌɪlekˈtrɑːnɪks/"
+  },
+  "expertise": {
+    "uk": "/ˌekspɜːˈtiːz/",
+    "us": "/ˌekspɚˈtiːz/"
+  },
+  "productivity": {
+    "uk": "/ˌprɒdʌkˈtɪvɪti/",
+    "us": "/ˌproʊdəkˈtɪvəti/"
+  },
+  "prototype": {
+    "uk": "/ˈprəʊtətaɪp/",
+    "us": "/ˈproʊtətaɪp/"
+  },
+  "junior": {
+    "uk": "/ˈdʒuːniə/",
+    "us": "/ˈdʒuːnjɚ/"
+  },
+  "decomposition": {
+    "uk": "/ˌdiːkɒmpəˈzɪʃən/",
+    "us": "/ˌdiːkɑːmpəˈzɪʃən/"
+  },
+  "diploma": {
+    "uk": "/dɪˈpləʊmə/",
+    "us": "/dɪˈploʊmə/"
+  },
+  "directive": {
+    "uk": "/dəˈrektɪv/",
+    "us": "/dəˈrektɪv/"
+  },
+  "drastic": {
+    "uk": "/ˈdræstɪk/",
+    "us": "/ˈdræstɪk/"
+  },
+  "introvert": {
+    "uk": "/ˈɪntrəvɜːt/",
+    "us": "/ˈɪntrəvɝːt/"
+  },
+  "ion": {
+    "uk": "/ˈaɪən/",
+    "us": "/ˈaɪɑːn/"
+  },
+  "law-abiding": {
+    "uk": "/ˈlɔː əbaɪdɪŋ/",
+    "us": "/ˈlɑː əbaɪdɪŋ/"
+  },
+  "lifelong learning": {
+    "uk": "/ˈlaɪflɒŋ ˈlɜːnɪŋ/",
+    "us": "/ˈlaɪflɔːŋ ˈlɝːnɪŋ/"
+  },
+  "local speciality": {
+    "uk": "/ˈləʊkəl ˌspeʃɪˈælɪti/",
+    "us": "/ˈloʊkəl ˈspeʃəlti/"
+  },
+  "outdoor activities": {
+    "uk": "/ˈaʊtdɔː ækˈtɪvɪtiz/",
+    "us": "/ˈaʊtdɔːr ækˈtɪvətɪz/"
+  },
+  "unprecedented": {
+    "uk": "/ʌnˈpresɪdentɪd/",
+    "us": "/ənˈpresɪdentɪd/"
+  },
+  "autobiography": {
+    "uk": "/ˌɔːtəbaɪˈɒɡrəfi/",
+    "us": "/ˌɔːtəbaɪˈɑːɡrəfi/"
+  },
+  "lilac": {
+    "uk": "/ˈlaɪlək/",
+    "us": "/ˈlaɪlək/"
+  },
+  "photocopy": {
+    "uk": "/ˈfəʊtəʊkɒpi/",
+    "us": "/ˈfoʊtoʊkɑːpi/"
+  },
+  "photocopier": {
+    "uk": "/ˈfəʊtəʊkɒpiə/",
+    "us": "/ˈfoʊtoʊkɑːpiɚ/"
+  },
+  "recuperate": {
+    "uk": "/rɪˈkuːpəreɪt/",
+    "us": "/rɪˈkuːpəreɪt/"
+  },
+  "roommate": {
+    "uk": "/ˈruːmmeɪt/",
+    "us": "/ˈruːmmeɪt/"
+  },
+  "superior": {
+    "uk": "/suːˈpɪərɪə/",
+    "us": "/səˈpɪriɚ/"
+  },
+  "e-learning": {
+    "uk": "/ˈiː lɜːnɪŋ/",
+    "us": "/ˈiː lɝːnɪŋ/"
+  },
+  "hang-gliding": {
+    "uk": "/ˈhæŋ ɡlaɪdɪŋ/",
+    "us": "/ˈhæŋ ɡlaɪdɪŋ/"
+  },
+  "carry-on": {
+    "uk": "/ˈkæri ɒn/",
+    "us": "/ˈkæri ɑːn/"
+  },
+  "second-hand": {
+    "uk": "/ˈsekənd hænd/",
+    "us": "/ˈsekənd hænd/"
+  },
+  "south-west": {
+    "uk": "/ˌsaʊθ ˈwest/",
+    "us": "/ˌsaʊθ ˈwest/"
+  },
+  "t-junction": {
+    "uk": "/ˈtiː dʒʌŋkʃən/",
+    "us": "/ˈtiː dʒʌŋkʃən/"
+  },
+  "ruins": {
+    "uk": "/ˈruːɪnz/",
+    "us": "/ˈruːɪnz/"
+  },
+  "westernisation": {
+    "uk": "/ˌwestənaɪˈzeɪʃən/",
+    "us": "/ˌwestɚnɪˈzeɪʃən/"
+  },
+  "amenity": {
+    "uk": "/əˈmiːnɪti/",
+    "us": "/əˈmenəti/"
+  },
+  "anxious": {
+    "uk": "/ˈæŋkʃəs/",
+    "us": "/ˈæŋkʃəs/"
+  },
+  "astrophysics": {
+    "uk": "/ˌæstrəʊˈfɪzɪks/",
+    "us": "/ˌæstroʊˈfɪzɪks/"
+  },
+  "booth": {
+    "uk": "/buːð/",
+    "us": "/buːθ/"
+  },
+  "calm": {
+    "uk": "/kɑːm/",
+    "us": "/kɑːm/"
+  },
+  "coastline": {
+    "uk": "/ˈkəʊstlaɪn/",
+    "us": "/ˈkoʊstlaɪn/"
+  },
+  "compensate": {
+    "uk": "/ˈkɒmpenseɪt/",
+    "us": "/ˈkɑːmpənseɪt/"
+  },
+  "compensation": {
+    "uk": "/ˌkɒmpenˈseɪʃən/",
+    "us": "/ˌkɑːmpənˈseɪʃən/"
+  },
+  "coupon": {
+    "uk": "/ˈkuːpɒn/",
+    "us": "/ˈkuːpɑːn/"
+  },
+  "diagnose": {
+    "uk": "/ˈdaɪəɡnəʊz/",
+    "us": "/ˌdaɪəɡˈnoʊs/"
+  },
+  "ecology": {
+    "uk": "/iˈkɒlədʒi/",
+    "us": "/ɪˈkɑːlədʒi/"
+  },
+  "enact": {
+    "uk": "/ɪˈnækt/",
+    "us": "/ɪˈnækt/"
+  },
+  "environmental": {
+    "uk": "/ɪnˌvaɪrənˈmentəl/",
+    "us": "/ɪnˌvaɪrənˈmentəl/"
+  },
+  "environmentalist": {
+    "uk": "/ɪnˌvaɪrənˈmentəlɪst/",
+    "us": "/ɪnˌvaɪrənˈmentəlɪst/"
+  },
+  "epoch": {
+    "uk": "/ˈiːpɒk/",
+    "us": "/ˈepək/"
+  },
+  "examination": {
+    "uk": "/ɪɡˌzæmɪˈneɪʃən/",
+    "us": "/ɪɡˌzæməˈneɪʃən/"
+  },
+  "facet": {
+    "uk": "/ˈfæsɪt/",
+    "us": "/ˈfæsət/"
+  },
+  "genus": {
+    "uk": "/ˈdʒiːnəs/",
+    "us": "/ˈdʒiːnəs/"
+  },
+  "harassment": {
+    "uk": "/ˈhærəsmənt/",
+    "us": "/həˈræsmənt/"
+  },
+  "indirect": {
+    "uk": "/ˌɪndaɪˈrekt/",
+    "us": "/ˌɪndəˈrekt/"
+  },
+  "leisure": {
+    "uk": "/ˈleʒə/",
+    "us": "/ˈliːʒɚ/"
+  },
+  "leisure centre": {
+    "uk": "/ˈleʒə ˈsentə/",
+    "us": "/ˈliːʒɚ ˈsentɚ/"
+  },
+  "lowland": {
+    "uk": "/ˈləʊlənd/",
+    "us": "/ˈloʊlənd/"
+  },
+  "myriad": {
+    "uk": "/ˈmɪriəd/",
+    "us": "/ˈmɪriəd/"
+  },
+  "obey": {
+    "uk": "/əˈbeɪ/",
+    "us": "/oʊˈbeɪ/"
+  },
+  "objectivity": {
+    "uk": "/ˌɒbdʒekˈtɪvɪti/",
+    "us": "/ˌɑːbdʒekˈtɪvɪti/"
+  },
+  "opposite": {
+    "uk": "/ˈɒpəzɪt/",
+    "us": "/ˈɑːpəzət/"
+  },
+  "pedagogy": {
+    "uk": "/ˈpedəɡɒdʒi/",
+    "us": "/ˈpedəɡoʊdʒi/"
+  },
+  "self-esteem": {
+    "uk": "/ˌself ɪˈstiːm/",
+    "us": "/ˌself əˈstiːm/"
+  },
+  "sovereignty": {
+    "uk": "/ˈsɒvrənti/",
+    "us": "/ˈsɑːvrənti/"
+  },
+  "species": {
+    "uk": "/ˈspiːʃiːz/",
+    "us": "/ˈspiːʃɪz/"
+  },
+  "endangered species": {
+    "uk": "/ɪnˈdeɪndʒəd ˈspiːʃiːz/",
+    "us": "/ɪnˈdeɪndʒɚd ˈspiːʃɪz/"
+  },
+  "surveillance": {
+    "uk": "/sɜːˈveɪləns/",
+    "us": "/sɚˈveɪləns/"
+  },
+  "thermodynamics": {
+    "uk": "/ˌθɜːməʊdaɪˈnæmɪks/",
+    "us": "/ˌθɝːmoʊdaɪˈnæmɪks/"
+  },
+  "threshold": {
+    "uk": "/ˈθreʃhəʊld/",
+    "us": "/ˈθreʃhoʊld/"
+  },
+  "transition": {
+    "uk": "/trænˈzɪʃən/",
+    "us": "/trænˈzɪʃən/"
+  },
+  "unemployed": {
+    "uk": "/ˌʌnɪmˈplɔɪd/",
+    "us": "/ˌʌnɪmˈplɔɪd/"
+  },
+  "unemployment": {
+    "uk": "/ˌʌnɪmˈplɔɪmənt/",
+    "us": "/ˌʌnɪmˈplɔɪmənt/"
+  },
+  "unemployment benefit": {
+    "uk": "/ˌʌnɪmˈplɔɪmənt ˈbenɪfɪt/",
+    "us": "/ˌʌnɪmˈplɔɪmənt ˈbenəfɪt/"
+  },
+  "unless": {
+    "uk": "/ənˈles/",
+    "us": "/ənˈles/"
+  },
+  "vehicle": {
+    "uk": "/ˈviːəkəl/",
+    "us": "/ˈviːəkəl/"
+  },
+  "electric vehicle": {
+    "uk": "/ɪˈlektrɪk ˈviːəkəl/",
+    "us": "/ɪˈlektrɪk ˈviːəkəl/"
+  },
+  "vocabulary": {
+    "uk": "/vəˈkæbjələri/",
+    "us": "/voʊˈkæbjəleri/"
+  },
+  "accelerate": {
+    "uk": "/əkˈseləreɪt/",
+    "us": "/əkˈseləreɪt/"
+  },
+  "accessible": {
+    "uk": "/əkˈsesəbəl/",
+    "us": "/əkˈsesəbəl/"
+  },
+  "accessory": {
+    "uk": "/əkˈsesəri/",
+    "us": "/əkˈsesəri/"
+  },
+  "adhesive": {
+    "uk": "/ədˈhiːsɪv/",
+    "us": "/ədˈhiːsɪv/"
+  },
+  "adventurous": {
+    "uk": "/ədˈventʃərəs/",
+    "us": "/ədˈventʃərəs/"
+  },
+  "alumni": {
+    "uk": "/əˈlʌmnaɪ/",
+    "us": "/əˈlʌmnaɪ/"
+  },
+  "amateur": {
+    "uk": "/ˈæmətə/",
+    "us": "/ˈæmətʃɚ/"
+  },
+  "avenue": {
+    "uk": "/ˈævənjuː/",
+    "us": "/ˈævənuː/"
+  },
+  "celestial": {
+    "uk": "/səˈlestiəl/",
+    "us": "/səˈlestʃəl/"
+  },
+  "companion": {
+    "uk": "/kəmˈpænjən/",
+    "us": "/kəmˈpænjən/"
+  },
+  "constitute": {
+    "uk": "/ˈkɒnstɪtjuːt/",
+    "us": "/ˈkɑːnstətuːt/"
+  },
+  "continuity": {
+    "uk": "/kɒntɪˈnjuːɪti/",
+    "us": "/ˌkɑːntəˈnuːəti/"
+  },
+  "differentiate": {
+    "uk": "/ˌdɪfəˈrenʃɪeɪt/",
+    "us": "/ˌdɪfəˈrenʃieɪt/"
+  },
+  "employee": {
+    "uk": "/ɪmˈplɔɪiː/",
+    "us": "/ɪmˈplɔɪiː/"
+  },
+  "enthusiastic": {
+    "uk": "/ɪnˌθjuːziˈæstɪk/",
+    "us": "/ɪnˌθuːziˈæstɪk/"
+  },
+  "herbivore": {
+    "uk": "/ˈhɜːbɪvɔː/",
+    "us": "/ˈhɝːbəvɔːr/"
+  },
+  "herbivorous": {
+    "uk": "/hɜːˈbɪvərəs/",
+    "us": "/hɝːˈbɪvərəs/"
+  },
+  "longitude": {
+    "uk": "/ˈlɒndʒɪtjuːd/",
+    "us": "/ˈlɑːndʒətuːd/"
+  },
+  "senior": {
+    "uk": "/ˈsiːniə/",
+    "us": "/ˈsiːnjɚ/"
+  },
+  "senior citizen": {
+    "uk": "/ˈsiːniə ˈsɪtɪzən/",
+    "us": "/ˈsiːnjɚ ˈsɪtəzən/"
+  },
+  "substantiate": {
+    "uk": "/səbˈstænʃɪeɪt/",
+    "us": "/səbˈstænʃieɪt/"
+  },
+  "tutorial": {
+    "uk": "/tjuːˈtɔːriəl/",
+    "us": "/tuːˈtɔːriəl/"
+  },
+  "volume": {
+    "uk": "/ˈvɒljuːm/",
+    "us": "/ˈvɑːljuːm/"
+  },
+  "lifespan": {
+    "uk": "/ˈlaɪfspæn/",
+    "us": "/ˈlaɪfspæn/"
   }
 }
