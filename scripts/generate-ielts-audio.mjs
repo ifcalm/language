@@ -27,12 +27,17 @@ const VOICES = {
 const LOCALES = { uk: 'en-GB', us: 'en-US' }
 // Slightly slower than conversational speed, as in learner dictionaries.
 const SPEAKING_RATE = Number(process.env.IELTS_SPEAKING_RATE ?? 0.92)
-// Pronunciation ids whose plain-text audio sounded furthest from the corrected
-// IPA in the 2026-11-02 audit (docs/ielts-review/phonetics-audit-2026-11-02.md).
+// Pronunciation ids whose plain-text audio read another part of speech, or
+// sounded furthest from the IPA, in the 2026-11-02 audit
+// (docs/ielts-review/phonetics-audit-2026-11-02.md).
 const IPA_READINGS = new Set([
-  'adequate-us', 'admission-us', 'adverse-uk', 'ammonia-uk', 'authentic-us', 'best-seller-us',
-  'congruent-us', 'disobedient-uk', 'ecotourism-us', 'exponential-us', 'glacier-uk', 'moth-uk',
-  'petrol-us', 'prestigious-us', 'syrup-us', 'temperamental-us', 'torrential-us',
+  'adaptation-uk', 'adequate-us', 'admission-us', 'adverse-uk', 'ammonia-uk', 'authentic-us',
+  'best-seller-us', 'compact-uk', 'compact-us', 'compress-us', 'concert-uk', 'condensation-uk',
+  'congruent-us', 'contrary-uk', 'defect-us', 'disobedient-uk', 'ecotourism-us', 'elasticity-uk',
+  'entrance-us', 'envisage-uk', 'essay-us', 'essential-us', 'excerpt-us', 'exponential-us',
+  'glacier-uk', 'luxurious-uk', 'moth-uk', 'patent-uk', 'petrol-us', 'prestigious-us', 'resist-uk',
+  'rewrite-uk', 'syrup-us', 'temperament-us', 'temperamental-us', 'torrential-us', 'underline-uk',
+  'underline-us',
 ])
 const SAMPLE_IDS = [
   'increase', 'research', 'abuse', 'accommodation', 'hierarchy', 'security-deposit',
@@ -76,10 +81,22 @@ function speakableText(word) {
     .trim()
 }
 
+// Our IPA in the symbols each voice accepts. A voice given a symbol outside its
+// phone set raises no error and just reads the text, so every reading sounds
+// the same: en-GB lacks r, e, i and u; en-US lacks ɝː and stressed iə. Long iː
+// and uː also keep iə and uə as two syllables instead of a short glide.
+function voiceIpa(accent, ipa) {
+  const bare = ipa.replace(/^\/|\/$/g, '')
+
+  return accent === 'uk'
+    ? bare.replace(/r/g, 'ɹ').replace(/e(?![ɪə])/g, 'ɛ').replace(/([iu])(?!ː)/g, '$1ː')
+    : bare.replace(/ɝː/g, 'ɝ').replace(/([iu])ə/g, '$1ːə')
+}
+
 // Request body for text:synthesize; SSML only when an IPA reading is forced.
 function buildRequest(accent, text, ipa) {
   const input = ipa
-    ? { ssml: `<speak><phoneme alphabet="ipa" ph="${escapeXml(ipa.replace(/^\/|\/$/g, ''))}">${escapeXml(text)}</phoneme></speak>` }
+    ? { ssml: `<speak><phoneme alphabet="ipa" ph="${escapeXml(voiceIpa(accent, ipa))}">${escapeXml(text)}</phoneme></speak>` }
     : { text }
 
   return {
