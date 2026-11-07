@@ -85,7 +85,7 @@
 | roughly | adv. 大致 | **Roughly** a third of the students came from other countries. | 大致三分之一的学生来自其他国家。 |
 | nearly | adv. 几乎 | **Nearly** seventy per cent of households owned a car in 2010. | 2010 年,近百分之七十的家庭拥有汽车。 |
 | exceed | v. 超过 | The number of electric cars is expected to **exceed** that of diesel cars. | 预计电动汽车的数量将超过柴油车。 |
-| surpass | v. 超越 | Sales of e-books may **surpass** those of printed books by 2030. | 到 2030 年,电子书销量可能超越纸质书。 |
+| surpass | v. 超越 | Sales of e-books may **surpass** those of printed books by 2030. | 到 2030 年,电子书销量可能超过纸质书。 |
 | overtake | v. 超过,赶超 | Spain **overtook** Italy as the most popular destination in 2012. | 2012 年,西班牙超过意大利,成为最受欢迎的目的地。 |
 | outnumber | v. 在数量上超过 | Women **outnumber** men in most university courses in this country. | 在这个国家的大多数大学课程中,女性人数超过男性。 |
 | constitute | v. 构成 | Older people **constitute** about a quarter of the total population. | 老年人约占总人口的四分之一。 |
@@ -712,7 +712,7 @@
 | acid rain | phr. 酸雨 | **Acid rain** has damaged forests and lakes across northern Europe. | 酸雨破坏了北欧各地的森林和湖泊。 |
 | climate change | phr. 气候变化 | **Climate change** is the most serious environmental problem facing the world. | 气候变化是世界面临的最严重的环境问题。 |
 | natural disaster | phr. 自然灾害 | Poor countries are often the worst affected by **natural disasters**. | 贫穷国家往往受自然灾害的影响最严重。 |
-| catastrophe | n. 灾难 | Scientists warn of a **catastrophe** if the ice sheets continue to melt. | 科学家警告,如果冰盖继续融化,将发生灾难。 |
+| catastrophe | n. 灾难 | Scientists warn of a **catastrophe** if the ice sheets continue to melt. | 科学家警告,如果冰盖继续融化,将发生大灾难。 |
 | irreversible | adj. 不可逆的 | The damage to the world's coral reefs may already be **irreversible**. | 世界珊瑚礁所受的损害可能已经不可逆转。 |
 | preservation | n. 保存,保护 | The **preservation** of old forests should be a priority for every government. | 保护古老森林应该是每个政府的优先事项。 |
 | environmentalist | n. 环保主义者 | An **environmentalist** would argue that economic growth is not always a good thing. | 环保主义者会认为经济增长并不总是好事。 |

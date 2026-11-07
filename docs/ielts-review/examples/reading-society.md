@@ -367,7 +367,7 @@
 | Palaeolithic | adj. 旧石器时代的 | **Palaeolithic** people lived in small groups and made tools from stone. | 旧石器时代的人小群体生活,用石头制作工具。 |
 | anthropologist | n. 人类学家 | The **anthropologist** lived with the tribe for two years to study their customs. | 这位人类学家与部落一起生活了两年,研究他们的习俗。 |
 | posterity | n. 后代 | These recordings were made to preserve the language for **posterity**. | 这些录音是为了给后代保存这种语言。 |
-| forefather | n. 祖先 | Local people still use the farming methods of their **forefathers**. | 当地人仍在使用祖先的耕作方法。 |
+| forefather | n. 祖先 | Local people still use the farming methods of their **forefathers**. | 当地人仍在使用祖辈传下来的耕作方法。 |
 | clan | n. 宗族 | Each **clan** in the Scottish Highlands had its own leader and land. | 苏格兰高地的每个宗族都有自己的首领和土地。 |
 | patriarchal | adj. 父权制的 | In **patriarchal** societies, property usually passes from father to son. | 在父权制社会中,财产通常由父亲传给儿子。 |
 | enslave | v. 奴役 | Invaders would often **enslave** the people of the towns they captured. | 入侵者常常奴役被他们占领的城镇的居民。 |

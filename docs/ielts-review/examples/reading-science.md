@@ -517,7 +517,7 @@
 | infertile | adj. 不育的;贫瘠的 | Much of the land is **infertile** and can support only a few sheep. | 大部分土地贫瘠,只能养少量的羊。 |
 | arable | adj. 可耕种的 | Only a small part of the country's land is **arable**. | 该国只有一小部分土地可以耕种。 |
 | husbandry | n. 畜牧;耕作 | Good animal **husbandry** helps to keep farm animals healthy. | 良好的畜牧管理有助于保持家畜健康。 |
-| horticulture | n. 园艺 | Students of **horticulture** learn how to grow fruit, vegetables and flowers. | 学习园艺的学生学习如何种植水果、蔬菜和花卉。 |
+| horticulture | n. 园艺 | Students of **horticulture** learn how to grow fruit, vegetables and flowers. | 学习园艺学的学生学习如何种植水果、蔬菜和花卉。 |
 | hydroponics | n. 水培法 | **Hydroponics** allows vegetables to be grown in water without any soil. | 水培法使蔬菜可以在水中生长,完全不需要土壤。 |
 | manure | n. 粪肥 | Farmers spread animal **manure** on the fields to improve the soil. | 农民把动物粪肥撒在田里来改良土壤。 |
 | insecticide | n. 杀虫剂 | Spraying **insecticide** can also harm birds that feed on the insects. | 喷洒杀虫剂也会伤害以这些昆虫为食的鸟类。 |

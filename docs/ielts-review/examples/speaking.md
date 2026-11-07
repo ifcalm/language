@@ -102,7 +102,7 @@
 | sceptical | adj. 怀疑的(英) | I'm **sceptical** about diets that promise quick results. | 我对那些承诺见效快的减肥法持怀疑态度。 |
 | companion | n. 同伴 | My dog has been my faithful **companion** on long walks for years. | 多年来,我的狗一直是我长途散步的忠实同伴。 |
 | appearance | n. 外貌 | I don't think you should judge people by their **appearance**. | 我认为不应该以貌取人。 |
-| attractive | adj. 有吸引力的 | I find people with a good sense of humour really **attractive**. | 我觉得有幽默感的人特别有吸引力。 |
+| attractive | adj. 有吸引力的 | I find people with a good sense of humour really **attractive**. | 我觉得有幽默感的人特别有魅力。 |
 | good-looking | adj. 好看的 | My cousin is very **good-looking** and could easily be a model. | 我表弟长得很好看,完全可以当模特。 |
 | handsome | adj. 英俊的 | My dad was very **handsome** when he was young, judging by the photos. | 从照片看,我爸爸年轻时很英俊。 |
 | elegant | adj. 优雅的 | My mum always looks **elegant**, even when she's just going to the shops. | 我妈妈总是很优雅,即使只是去商店也一样。 |
