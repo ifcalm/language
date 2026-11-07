@@ -97,7 +97,7 @@
 | studio apartment | phr. 单间公寓 | A **studio apartment** has just one main room for sleeping, cooking and relaxing. | 单间公寓只有一个主要房间,睡觉、做饭和休息都在里面。 |
 | tenancy agreement | phr. 租赁合同 | Read the **tenancy agreement** carefully before you sign it and pay the deposit. | 签字和付押金之前,请仔细阅读租赁合同。 |
 | plug | n. 插头 v. 接通电源 | My laptop charger has a different **plug**, so I need an adapter. | 我的笔记本充电器插头不一样,所以需要一个转换器。 |
-| plug | n. 插头 v. 接通电源 | Just **plug** the fridge in and wait an hour before using it. | 给冰箱接通电源后,等一小时再用。 |
+| plug | n. 插头 v. 接通电源 | Just **plug** the fridge in and wait an hour before using it. | 给冰箱插上电源后,等一小时再用。 |
 | lawn | n. 草坪 | Tenants are responsible for cutting the **lawn** during the summer months. | 夏季由租户负责修剪草坪。 |
 | terrace | n. 露台;排屋 | We often eat outside on the **terrace** when the weather is warm. | 天气暖和时,我们常在露台上吃饭。 |
 | terrace | n. 露台;排屋 | Our house is in the middle of a long **terrace** of brick homes. | 我们家位于一长排砖砌排屋的中间。 |
@@ -130,7 +130,7 @@
 | guided tour | phr. 有导游的游览 | The **guided tour** of the castle starts at eleven and lasts an hour. | 城堡的导览游十一点开始,持续一小时。 |
 | backpacker | n. 背包客 | The town is popular with young **backpackers** because food and rooms are cheap. | 这个小镇很受年轻背包客欢迎,因为吃住都便宜。 |
 | hostel | n. 廉价旅舍,青年旅舍 | We stayed in a cheap **hostel** with shared rooms near the bus station. | 我们住在汽车站附近一家便宜的旅舍,房间是合住的。 |
-| bed and breakfast | phr. 民宿(含早餐) | We stayed at a small **bed and breakfast** run by a local couple. | 我们住在一家由当地夫妇经营的小民宿。 |
+| bed and breakfast | phr. 民宿(含早餐) | We stayed at a small **bed and breakfast** run by a local couple. | 我们住在一家由当地夫妇经营、提供早餐的小旅馆。 |
 | campsite | n. 营地 | The **campsite** has hot showers and a small shop near the entrance. | 营地有热水淋浴,入口附近还有一家小商店。 |
 | caravan | n. 房车 | We hired a **caravan** and drove along the coast for two weeks. | 我们租了一辆房车,沿着海岸开了两周。 |
 | cabin | n. 小屋;船舱;机舱 | Each **cabin** on the ship has two beds and a small window. | 船上每间船舱都有两张床和一扇小窗。 |
@@ -217,11 +217,11 @@
 | attendant | n. 服务员,乘务员 | Ask the flight **attendant** if you need another blanket or a drink. | 如果还需要毯子或饮料,可以问空乘人员。 |
 | inspector | n. 检查员,查票员 | The ticket **inspector** fined me because I had forgotten my student card. | 查票员罚了我的款,因为我忘了带学生证。 |
 | stopover | n. 中途停留 | There's a three-hour **stopover** in Dubai on the way to Australia. | 去澳大利亚途中要在迪拜停留三小时。 |
-| avenue | n. 大街 | The theatre is on Park **Avenue**, opposite the main post office. | 剧院在公园大街,就在邮政总局对面。 |
+| avenue | n. 大街 | Walk along the **avenue** until you reach the museum on your right. | 沿着这条大街一直走,博物馆就在你右边。 |
 | boulevard | n. 林荫大道 | We walked along a wide **boulevard** lined with cafés and old trees. | 我们沿着一条宽阔的林荫大道走,路边都是咖啡馆和老树。 |
 | alley | n. 小巷 | The little café is hidden in an **alley** behind the market. | 这家小咖啡馆藏在市场后面的小巷里。 |
 | intersection | n. 十字路口 | Turn left at the next **intersection** and look for a blue building. | 在下一个十字路口左转,找一栋蓝色的建筑。 |
-| crosswalk | n. 人行横道(美) | Always use the **crosswalk** when you get across this busy street. | 过这条繁忙的街道时,一定要走人行横道。 |
+| crosswalk | n. 人行横道(美) | Always use the **crosswalk** when you cross this busy street. | 过这条繁忙的街道时,一定要走人行横道。 |
 | scuba diving | phr. 水肺潜水 | You'll need a short training course before you can go **scuba diving**. | 去水肺潜水之前,你需要上一个短期培训班。 |
 | hang-gliding | n. 悬挂滑翔 | **Hang-gliding** is a popular activity on the hills above the town. | 悬挂滑翔是小镇上方山丘上一项很受欢迎的活动。 |
 | youth hostel | phr. 青年旅舍 | The **youth hostel** offers cheap beds and a shared kitchen for guests. | 这家青年旅舍为客人提供便宜的床位和公用厨房。 |
@@ -260,7 +260,7 @@
 | opposite | prep. 在……对面 adj. 对面的;相反的 | Cross the road and wait for the bus on the **opposite** side. | 过马路,在对面等公交车。 |
 | adjacent | adj. 相邻的 | The car park is **adjacent** to the museum, so you won't have far to walk. | 停车场紧邻博物馆,所以不用走很远。 |
 | diagonally | adv. 斜对着 | The café is **diagonally** across from the library, on the corner of the square. | 咖啡馆在图书馆的斜对面,位于广场的一角。 |
-| clockwise | adv. 顺时针地 | Walk **clockwise** around the lake and you'll reach the boat house first. | 沿顺时针方向绕湖走,你会先到船屋。 |
+| clockwise | adv. 顺时针地 | Walk **clockwise** around the lake and you'll reach the boathouse first. | 沿顺时针方向绕湖走,你会先到船屋。 |
 | anticlockwise | adv. 逆时针地 | The route goes **anticlockwise** round the park, starting from the south gate. | 路线从南门出发,逆时针绕公园一圈。 |
 | north-east | n. 东北 | The new sports hall is in the **north-east** of the campus. | 新体育馆在校园的东北部。 |
 | south-west | n. 西南 | The lake is in the **south-west** of the park, near the café. | 湖在公园的西南部,靠近咖啡馆。 |
@@ -279,7 +279,7 @@
 | orchard | n. 果园 | Visitors can pick their own apples in the **orchard** during September. | 九月游客可以在果园里自己摘苹果。 |
 | pond | n. 池塘 | There are ducks on the **pond** in front of the old farmhouse. | 老农舍前的池塘里有鸭子。 |
 | fountain | n. 喷泉 | Let's meet by the **fountain** in the middle of the square. | 我们在广场中央的喷泉旁见面吧。 |
-| statue | n. 雕像 | The **statue** at the entrance shows the man who started the school. | 入口处的雕像塑的是这所学校的创办人。 |
+| statue | n. 雕像 | The **statue** at the entrance shows the man who started the school. | 入口处的雕像塑造的是这所学校的创办人。 |
 | gallery | n. 画廊,美术馆 | The art **gallery** is free, but there's a charge for special exhibitions. | 美术馆免费参观,但特别展览要收费。 |
 | auditorium | n. 礼堂 | The talk has moved to the main **auditorium** because so many people signed up. | 报名的人太多,讲座改到了主礼堂。 |
 | pavilion | n. 亭子;展馆 | There's a small **pavilion** by the lake where you can sit in the shade. | 湖边有一座小亭子,你可以坐在里面乘凉。 |
@@ -318,10 +318,10 @@
 | calorie | n. 卡路里 | This salad has fewer **calories** than most of the other lunches on the menu. | 这份沙拉的卡路里比菜单上大多数午餐都低。 |
 | fibre | n. 纤维 | Brown bread contains more **fibre** than white bread and keeps you full longer. | 全麦面包比白面包含有更多纤维,更耐饿。 |
 | organic | adj. 有机的 | The shop sells **organic** vegetables grown without any chemicals. | 这家店出售不使用任何化学品种植的有机蔬菜。 |
-| tip | n. 小费;提示,建议 v. 给小费 | Service isn't included, so people usually leave a **tip** of ten percent. | 服务费不含在内,所以人们通常留百分之十的小费。 |
+| tip | n. 小费;提示,建议 v. 给小费 | Service isn't included, so people usually leave a **tip** of ten per cent. | 服务费不含在内,所以人们通常留百分之十的小费。 |
 | tip | n. 小费;提示,建议 v. 给小费 | The guide gave us some useful **tips** on where to eat cheaply. | 导游告诉了我们一些去哪儿吃得便宜的实用建议。 |
 | receipt | n. 收据 | Keep your **receipt** in case you need to return the shoes. | 保留好收据,以防你需要退鞋。 |
-| discount | n. 折扣 | Students can get a ten percent **discount** if they show their cards. | 学生出示证件可以享受九折优惠。 |
+| discount | n. 折扣 | Students can get a ten per cent **discount** if they show their cards. | 学生出示证件可以享受九折优惠。 |
 | voucher | n. 代金券 | This **voucher** gives you £5 off your next meal at the restaurant. | 这张代金券可以让你下次在这家餐厅用餐时减 5 英镑。 |
 | bargain | n. 便宜货 v. 讨价还价 | This coat was a real **bargain** at half the original price. | 这件大衣打对折,真是捡了个便宜。 |
 | bargain | n. 便宜货 v. 讨价还价 | Tourists in the market often **bargain** with the sellers over prices. | 市场里的游客经常和小贩讨价还价。 |
@@ -336,10 +336,10 @@
 | guarantee | n./v. 保证;保修 | We **guarantee** delivery within three days or we'll give your money back. | 我们保证三天内送达,否则退款。 |
 | delivery | n. 送货 | **Delivery** is free on all orders over fifty pounds. | 订单满五十英镑一律免运费。 |
 | retailer | n. 零售商 | Most large **retailers** now allow customers to order online and collect in store. | 现在大多数大型零售商都允许顾客网上下单、到店取货。 |
-| wholesale | n. 批发 | The shop buys its goods at **wholesale** and sells them at a higher price. | 这家店以批发价进货,然后以更高的价格出售。 |
+| wholesale | n. 批发 | The company works in **wholesale**, selling fruit to shops and restaurants. | 这家公司做批发生意,把水果卖给商店和餐馆。 |
 | merchandise | n. 商品 | The band sells T-shirts and other **merchandise** at the back of the hall. | 乐队在大厅后面出售 T 恤和其他商品。 |
 | second-hand | adj. 二手的 | I bought a **second-hand** bike from a student who was leaving. | 我从一个要离校的学生那里买了一辆二手自行车。 |
-| department store | phr. 百货商店 | The **department store** has clothes on the first floor and furniture on the top. | 百货商店二楼卖衣服,顶楼卖家具。 |
+| department store | phr. 百货商店 | The **department store** has clothes on the first floor and furniture on the top floor. | 百货商店二楼卖衣服,顶楼卖家具。 |
 | shopping mall | phr. 购物中心 | The new **shopping mall** has over a hundred shops and a cinema. | 新购物中心有一百多家商店和一家电影院。 |
 | stall | n. 货摊 | We bought some fresh cheese from a **stall** at the Saturday market. | 我们在周六集市的一个货摊上买了些新鲜奶酪。 |
 | cutlery | n. 刀叉餐具 | The **cutlery** and plates are on the table by the door. | 刀叉和盘子在门边的桌子上。 |
@@ -370,7 +370,7 @@
 | parcel | n. 包裹 | A **parcel** came for you this morning, so I left it in your room. | 今天早上有你的包裹,我放在你房间了。 |
 | swap | v./n. 交换,调换 | Could I **swap** this shirt for a smaller one, please? | 我可以把这件衬衫换成小一号的吗? |
 | dining | n. 用餐 | The hotel's **dining** room is open from seven until ten every evening. | 酒店餐厅每晚七点到十点营业。 |
-| feast | n. 盛宴 | The village holds a great **feast** with music at the end of harvest. | 收获季结束时,村里会举办盛宴,还有音乐表演。 |
+| feast | n. 盛宴 | The village holds a great **feast** with music at the end of the harvest. | 收获季结束时,村里会举办盛宴,还有音乐表演。 |
 | coupon | n. 优惠券 | Use this **coupon** to get free coffee with any sandwich. | 用这张优惠券,买任意三明治都送一杯免费咖啡。 |
 | fry | v. 油炸,煎 | **Fry** the onions gently in butter until they turn soft and golden. | 用黄油小火煎洋葱,直到变软变金黄。 |
 | roast | v. 烤 adj. 烤制的 | **Roast** the chicken for about an hour until the skin is crisp. | 把鸡烤一小时左右,直到外皮酥脆。 |
@@ -421,7 +421,7 @@
 | grant | n. 补助金 v. 授予 | The college may **grant** you extra time if you are ill. | 如果你生病了,学院可能会给你额外的时间。 |
 | allowance | n. 津贴,零用钱 | My parents give me a small monthly **allowance** while I'm at university. | 我上大学期间,父母每月给我一小笔零用钱。 |
 | teller | n. 银行出纳员 | The **teller** asked to see my passport before giving me the money. | 银行出纳员要求先看我的护照才把钱给我。 |
-| denomination | n. (货币)面额;教派 | The machine only gives out notes in a **denomination** of twenty pounds. | 这台机器只吐面额二十英镑的钞票。 |
+| denomination | n. (货币)面额;教派 | This cash machine only gives out notes in **denominations** of twenty pounds. | 这台取款机只吐面额二十英镑的钞票。 |
 | documentation | n. 证明文件 | You must bring the correct **documentation** when you apply for a bank account. | 申请银行账户时必须带齐相关证明文件。 |
 | transaction | n. 交易 | Every **transaction** you make will appear on your monthly statement. | 你的每笔交易都会显示在月度对账单上。 |
 | savings | n. 储蓄 | I used all my **savings** to pay for the trip to Canada. | 我把所有积蓄都用来支付去加拿大的旅行了。 |
@@ -429,7 +429,7 @@
 | premium | n. 保险费;溢价 adj. 优质的 | **Premium** seats cost more, but they have a much better view of the stage. | 优质座位更贵,但看舞台的视野好得多。 |
 | remuneration | n. 报酬 | **Remuneration** for the job includes a basic salary plus a company car. | 这份工作的报酬包括基本工资和一辆公司配车。 |
 | reimburse | v. 报销,偿还 | The company will **reimburse** your travel costs if you keep the tickets. | 只要保留车票,公司就会报销你的差旅费。 |
-| rebate | n. 部分退款 | You may be able to claim a tax **rebate** if you've paid too much. | 如果多缴了税,你也许可以申请部分退款。 |
+| rebate | n. 部分退款 | You may be able to claim a tax **rebate** if you've paid too much. | 如果多缴了税,你也许可以申请退还部分税款。 |
 | collateral | n. 抵押品 | The bank asked him to use his house as **collateral** for the loan. | 银行要求他用房子作为这笔贷款的抵押品。 |
 | audit | n./v. 审计 | An outside company carries out an **audit** of the club's accounts every year. | 每年都由外部公司对俱乐部的账目进行审计。 |
 | bank statement | phr. 银行对账单 | You'll need to show a recent **bank statement** to rent the flat. | 租这套公寓需要出示最近的银行对账单。 |
@@ -490,7 +490,7 @@
 | ointment | n. 药膏 | Put this **ointment** on the burn twice a day until it heals. | 每天在烧伤处涂两次这种药膏,直到痊愈。 |
 | syrup | n. 糖浆 | Children under six should take the cough **syrup** instead of tablets. | 六岁以下的儿童应该服用止咳糖浆,而不是药片。 |
 | bleed | v. 流血 | Press firmly on the cut if it starts to **bleed** again. | 如果伤口再次流血,就用力按住。 |
-| numb | adj. 麻木的 | My fingers went **numb** after an hour in the freezing water. | 在冰水里泡了一小时后,我的手指都麻木了。 |
+| numb | adj. 麻木的 | My fingers went **numb** after a few minutes in the freezing water. | 在冰水里泡了几分钟,我的手指就麻木了。 |
 | feverish | adj. 发烧的 | I felt **feverish** all night, so I called in sick this morning. | 我整晚都觉得发烧,所以今早打电话请了病假。 |
 | relapse | n./v. 复发 | Rest for another week, or you might have a **relapse**. | 再休息一周,否则你可能会复发。 |
 | recuperate | v. 休养康复 | He went to stay with his parents to **recuperate** after the operation. | 手术后他去父母家住了一段时间休养。 |
@@ -580,7 +580,7 @@
 | perform | v. 表演;执行 | Nurses **perform** many important tasks that doctors don't have time for. | 护士执行许多医生无暇顾及的重要任务。 |
 | puppetry | n. 木偶戏 | Children can learn the art of **puppetry** at the Saturday workshop. | 孩子们可以在周六的工作坊学习木偶戏艺术。 |
 | juggle | v. 杂耍;兼顾 | The street performer can **juggle** five balls while riding a bicycle. | 这位街头艺人能一边骑自行车一边抛接五个球。 |
-| juggle | v. 杂耍;兼顾 | I have to **juggle** my part-time job and my course work every week. | 我每周都要兼顾兼职和课程作业。 |
+| juggle | v. 杂耍;兼顾 | I have to **juggle** my part-time job and my coursework every week. | 我每周都要兼顾兼职和课程作业。 |
 | mime | n. 哑剧 | The actors told the whole story through **mime**, without saying a word. | 演员们用哑剧讲述了整个故事,一句话也没说。 |
 | gymnastics | n. 体操 | She has been doing **gymnastics** since she was five years old. | 她从五岁起就开始练体操。 |
 | trekking | n. 长途徒步 | We went **trekking** in Nepal for two weeks with a small group. | 我们和一个小团队在尼泊尔长途徒步了两周。 |
@@ -590,13 +590,13 @@
 | goalkeeper | n. 守门员 | Our **goalkeeper** stopped the ball at the last minute and saved the game. | 我们的守门员在最后一分钟扑出了球,挽救了比赛。 |
 | racket | n. 球拍 | You can hire a tennis **racket** from the desk for two pounds. | 你可以花两英镑在服务台租一只网球拍。 |
 | spa | n. 水疗中心 | The hotel has a **spa** with a sauna and a small indoor pool. | 酒店有一个水疗中心,设有桑拿房和小型室内泳池。 |
-| fancy dress | phr. 化装服 | Everyone came in **fancy dress** for the party at the end of term. | 大家都穿着化装服来参加期末派对。 |
+| fancy dress | phr. 化装服 | Everyone came in **fancy dress** for the party at the end of term. | 大家都穿着化装舞会服来参加期末派对。 |
 | puppet show | phr. 木偶戏表演 | The children loved the **puppet show** at the library on Saturday. | 孩子们很喜欢周六在图书馆看的木偶戏表演。 |
 | slot | n. 时段;狭槽 | We've got a free **slot** for a lesson at three on Wednesday. | 我们周三三点有一个空的上课时段。 |
 | slot | n. 时段;狭槽 | Put a coin in the **slot** and the machine will give you a ticket. | 往投币口放一枚硬币,机器就会出票。 |
 | novice | n. 新手,初学者 | Even a complete **novice** can learn to ride a horse in a few lessons. | 即使是完全的新手,上几节课也能学会骑马。 |
 | entrant | n. 参赛者;新加入者 | Each **entrant** in the race will get a number to wear on their shirt. | 每位参赛者都会拿到一个号码,贴在衣服上。 |
-| punch | v. 用拳猛击;打孔 n. 一拳 | He was sent off for trying to **punch** another player during the game. | 他在比赛中试图拳击另一名球员,被罚下场。 |
+| punch | v. 用拳猛击;打孔 n. 一拳 | He was sent off for trying to **punch** another player during the game. | 他在比赛中想挥拳打另一名球员,被罚下场。 |
 | punch | v. 用拳猛击;打孔 n. 一拳 | The driver will **punch** your ticket when you get on the bus. | 上车时司机会给你的车票打孔。 |
 | opponent | n. 对手 | My **opponent** in the final was much taller and had a stronger serve. | 我决赛的对手比我高得多,发球也更有力。 |
 | rival | n. 竞争对手 adj. 竞争的 | Our team plays its biggest **rival** from the next town on Saturday. | 周六,我们队将迎战邻镇最大的竞争对手。 |
@@ -609,7 +609,7 @@
 | ensemble | n. 乐团;整体 | A small jazz **ensemble** will play during dinner on the last night. | 最后一晚晚餐时,一支小型爵士乐团会演奏。 |
 | anniversary | n. 周年纪念 | My parents are going to Paris for their wedding **anniversary** next month. | 我父母下个月要去巴黎过结婚纪念日。 |
 | wedding | n. 婚礼 | We've been invited to a **wedding** in Scotland at the end of June. | 我们受邀参加六月底在苏格兰举行的一场婚礼。 |
-| aquarium | n. 水族馆 | The **aquarium** has a large tank where you can watch sharks being fed. | 水族馆有一个大水箱,可以看到鲨鱼喂食。 |
+| aquarium | n. 水族馆 | The **aquarium** has a large tank where you can watch sharks being fed. | 水族馆有一个大水箱,可以看工作人员给鲨鱼喂食。 |
 | applaud | v. 鼓掌;称赞 | The crowd began to **applaud** as soon as the runner came into view. | 跑者一出现,人群就开始鼓掌。 |
 | spotlight | n. 聚光灯;公众关注 | The **spotlight** followed the dancer as she moved across the stage. | 聚光灯跟着舞者在舞台上移动。 |
 | badge | n. 徽章 | All visitors must wear a **badge** while they are in the building. | 所有访客在楼内必须佩戴徽章。 |
@@ -618,7 +618,7 @@
 | banner | n. 横幅 | Fans held up a huge **banner** with the team's name on it. | 球迷举起一条印有球队名字的巨大横幅。 |
 | cricket | n. 板球 | We watched a game of **cricket** on the village green on Sunday. | 周日我们在村里的草地上看了一场板球赛。 |
 | deck | n. 甲板 | We sat on the top **deck** and watched the sun go down. | 我们坐在顶层甲板上看日落。 |
-| raft | n. 木筏 | The children built a small **raft** and floated it across the pond. | 孩子们造了一只小木筏,划过了池塘。 |
+| raft | n. 木筏 | The children built a small **raft** and floated it across the pond. | 孩子们造了一只小木筏,让它漂过池塘。 |
 | helmet | n. 头盔 | You must wear a **helmet** when you ride a bike on this trail. | 在这条小路上骑车必须戴头盔。 |
 | position | n. 职位;位置;立场 | We're looking to fill the **position** of sales assistant by next month. | 我们希望在下个月前招到销售助理这个职位的人选。 |
 | position | n. 职位;位置;立场 | From this **position** on the hill, you can see the whole town. | 从山上这个位置,你能看到整个小镇。 |
@@ -730,7 +730,7 @@
 | discipline | n. 学科;纪律 | Psychology is a **discipline** that draws on both science and social studies. | 心理学是一门兼具科学和社会研究的学科。 |
 | discipline | n. 学科;纪律 | Good teachers can maintain **discipline** in class without raising their voices. | 好老师不用提高嗓门就能维持课堂纪律。 |
 | assignment | n. 作业 | The history **assignment** has to be at least two thousand words long. | 这份历史作业至少要写两千词。 |
-| coursework | n. 课程作业 | **Coursework** counts for forty percent of your final mark. | 课程作业占你最终成绩的百分之四十。 |
+| coursework | n. 课程作业 | **Coursework** counts for forty per cent of your final mark. | 课程作业占你最终成绩的百分之四十。 |
 | essay | n. 论文,短文 | I have to write an **essay** on population growth by next Tuesday. | 我必须在下周二前写一篇关于人口增长的论文。 |
 | dissertation | n. 学位论文 | I'm writing my **dissertation** on how tourism affects small islands. | 我正在写学位论文,研究旅游业如何影响小岛。 |
 | thesis | n. 论文;论点 | He finished his **thesis** on Roman trade and handed it in last week. | 他写完了关于罗马贸易的论文,上周交了上去。 |
@@ -745,7 +745,7 @@
 | feedback | n. 反馈 | Your tutor will give you **feedback** on your essay within two weeks. | 导师会在两周内就你的论文给出反馈。 |
 | grade | n. 成绩 v. 评分 | I got a good **grade** in maths but failed my science test. | 我数学成绩不错,但科学考试没及格。 |
 | grade | n. 成绩 v. 评分 | The teachers will **grade** all the papers by the end of next week. | 老师们将在下周末前批改完所有试卷。 |
-| mark | n. 分数 v. 打分 | You need a **mark** of at least sixty percent to pass the module. | 这门课程模块至少要得百分之六十的分数才算通过。 |
+| mark | n. 分数 v. 打分 | You need a **mark** of at least sixty per cent to pass the module. | 这门课程模块至少要得百分之六十的分数才算通过。 |
 | mark | n. 分数 v. 打分 | It takes the lecturers about two weeks to **mark** all the exam papers. | 讲师们大约需要两周才能批改完所有试卷。 |
 | assessment | n. 评估 | The **assessment** for this course includes a test and a group project. | 这门课的评估包括一次测验和一个小组项目。 |
 | examination | n. 考试 | The final **examination** will take place in the sports hall in June. | 期末考试将于六月在体育馆举行。 |
@@ -789,7 +789,7 @@
 | correction | n. 改正,修改 | The teacher made several **corrections** to my essay in red ink. | 老师用红笔在我的论文上做了几处修改。 |
 | comprehension | n. 理解(力) | The reading **comprehension** test takes about one hour to finish. | 阅读理解测试大约需要一小时完成。 |
 | quiz | n. 小测验 v. 测验 | We have a short **quiz** at the start of every Monday class. | 每周一上课开始时我们都有一个小测验。 |
-| quiz | n. 小测验 v. 测验 | The tutor will **quiz** you on the first three chapters tomorrow. | 导师明天会就前三章对你们进行测验。 |
+| quiz | n. 小测验 v. 测验 | The tutor will **quiz** you on the first three chapters tomorrow. | 导师明天会考你们前三章的内容。 |
 | institute | n. 学院;研究所 v. 设立 | She's now working at a research **institute** in the north of the city. | 她现在在城北的一家研究所工作。 |
 | institute | n. 学院;研究所 v. 设立 | The college has **instituted** a new system for handing in coursework. | 学院设立了一套新的提交作业制度。 |
 | dean | n. (大学)院长 | You'll need a letter from the **dean** to change your course. | 更换课程需要院长的一封信。 |
@@ -870,7 +870,7 @@
 | survey | n./v. 调查 | We plan to **survey** local shoppers about their use of plastic bags. | 我们计划调查当地购物者使用塑料袋的情况。 |
 | interviewee | n. 受访者 | Each **interviewee** was asked the same ten questions about their diet. | 每位受访者都被问了同样十个关于饮食的问题。 |
 | respondent | n. 调查对象 | More than half the **respondents** said they used public transport every day. | 超过一半的调查对象表示他们每天乘坐公共交通。 |
-| sample | n. 样本 | We used a **sample** of one hundred people from different age groups. | 我们使用了一个来自不同年龄段的一百人样本。 |
+| sample | n. 样本 | We used a **sample** of one hundred people from different age groups. | 我们的样本是来自不同年龄段的一百个人。 |
 | data | n. 数据 | We'll collect the **data** first and then look for any patterns. | 我们先收集数据,再寻找其中的规律。 |
 | statistics | n. 统计数据;统计学 | Official **statistics** show that fewer people are buying newspapers. | 官方统计数据显示,买报纸的人越来越少。 |
 | statistics | n. 统计数据;统计学 | **Statistics** is the hardest part of my psychology course this year. | 统计学是我今年心理学课程中最难的部分。 |
@@ -886,7 +886,7 @@
 | trial | n. 试验;审判 | The **trial** of the new teaching method will run for six months. | 新教学方法的试验将持续六个月。 |
 | trial | n. 试验;审判 | The **trial** lasted two weeks, and the man was found not guilty. | 审判持续了两周,该男子被判无罪。 |
 | outline | n. 大纲 | Please show me an **outline** of your essay before you start writing. | 开始写之前,请给我看一下你的论文大纲。 |
-| summary | n. 摘要 | Write a brief **summary** of the article in your own words. | 用你自己的话写一篇这篇文章的简短摘要。 |
+| summary | n. 摘要 | Write a brief **summary** of the article in your own words. | 用自己的话给这篇文章写一份简短摘要。 |
 | abstract | n. 摘要 adj. 抽象的 | Read the **abstract** first to see if the article is useful to you. | 先读摘要,看看这篇文章对你是否有用。 |
 | abstract | n. 摘要 adj. 抽象的 | Young children often find it hard to understand **abstract** ideas like time. | 幼儿往往很难理解时间这样的抽象概念。 |
 | chart | n. 图表 | The **chart** on page ten shows how spending has changed since 2000. | 第十页的图表显示了 2000 年以来支出的变化。 |
@@ -902,15 +902,15 @@
 | redundant | adj. 多余的;被裁员的 | Forty workers were made **redundant** when the factory closed last year. | 去年工厂关闭时,四十名工人被裁员。 |
 | clarity | n. 清晰 | Your tutor will give you marks for **clarity** as well as for your ideas. | 导师既看你的观点,也会就表达是否清晰给分。 |
 | brief | adj. 简短的 n. 简报 | I'd like to make a few **brief** comments before we start the discussion. | 开始讨论之前,我想简短说几句。 |
-| brief | adj. 简短的 n. 简报 | Our manager gave us a **brief** on the new project this morning. | 今天上午经理就新项目给我们做了简报。 |
+| brief | adj. 简短的 n. 简报 | Our manager gave us a **brief** on the new project this morning. | 今天上午经理向我们说明了新项目的任务。 |
 | paraphrase | v./n. 改述,释义 | Try to **paraphrase** the author's ideas instead of copying the exact words. | 尽量改述作者的观点,不要照抄原文。 |
 | interrupt | v. 打断,中断 | Sorry to **interrupt**, but could you repeat the last point, please? | 抱歉打断一下,您能再说一遍最后一点吗? |
 | skip | v. 跳过,略过 | You can **skip** the second chapter, as it won't be in the exam. | 第二章你可以跳过,因为考试不考。 |
 | overview | n. 概述,概况 | The first lecture will give you an **overview** of the whole course. | 第一次讲座将为你概述整门课程。 |
 | rewrite | v. 改写,重写 | I had to **rewrite** the introduction because my tutor found it unclear. | 导师觉得引言不清楚,所以我只好重写。 |
-| panel | n. 专家组;面板 | A **panel** of three experts will judge the students' projects. | 由三位专家组成的专家组将评审学生的项目。 |
+| panel | n. 专家组;面板 | A **panel** of three experts will judge the students' projects. | 一个由三位专家组成的小组将评审学生的项目。 |
 | format | n. 格式;形式 | Your report must follow the **format** given in the course handbook. | 你的报告必须遵循课程手册中规定的格式。 |
-| enquiry | n. 询问;调查(英) | Please direct any **enquiry** about fees to the main office. | 有关费用的任何询问,请直接联系总办公室。 |
+| enquiry | n. 询问;调查(英) | Please direct any **enquiries** about fees to the main office. | 有关费用的任何询问,请直接联系总办公室。 |
 | enquire | v. 询问(英) | I'm calling to **enquire** about the French classes you offer. | 我打电话是想询问你们开设的法语课。 |
 | display | n./v. 展示,显示 | Students' paintings are on **display** in the hall this week. | 本周学生们的画作在大厅展出。 |
 | display | n./v. 展示,显示 | The screen will **display** your exam results when you enter your number. | 输入学号后,屏幕会显示你的考试成绩。 |

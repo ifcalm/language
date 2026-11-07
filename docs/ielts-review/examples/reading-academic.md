@@ -5,7 +5,7 @@
 | assumption | n. 假定 | The model rests on the **assumption** that prices will remain stable. | 这个模型基于一个假定:价格将保持稳定。 |
 | premise | n. 前提 | The theory rests on the **premise** that all languages share a basic structure. | 这一理论有一个前提:所有语言都有相同的基本结构。 |
 | evidence | n. 证据 | There is little **evidence** that the new teaching method improves exam results. | 几乎没有证据表明新教学方法能提高考试成绩。 |
-| proof | n. 证明 | So far, scientists have found no **proof** of life on other planets. | 到目前为止,科学家还没有找到其他星球存在生命的证明。 |
+| proof | n. 证明 | So far, scientists have found no **proof** of life on other planets. | 到目前为止,科学家还没有找到其他星球存在生命的证据。 |
 | argument | n. 论点;争论 | The main **argument** of the article is that cities need more green space. | 这篇文章的主要论点是城市需要更多绿地。 |
 | argument | n. 论点;争论 | The plan led to a long **argument** among members of the committee. | 这项计划在委员会成员中引发了长时间的争论。 |
 | claim | n./v. 声称;要求,索赔 | The company's **claim** that its product saves energy has been questioned. | 该公司声称产品节能,这一说法受到了质疑。 |
@@ -16,7 +16,7 @@
 | maintain | v. 坚持认为;维持 | Critics **maintain** that the study was too small to be reliable. | 批评者坚持认为,这项研究规模太小,不可靠。 |
 | maintain | v. 坚持认为;维持 | Sleep helps the brain to **maintain** its ability to store new information. | 睡眠有助于大脑维持储存新信息的能力。 |
 | propose | v. 提出 | The author **proposes** a new way of measuring happiness across different countries. | 作者提出了一种衡量不同国家幸福感的新方法。 |
-| suggest | v. 表明;建议 | Recent findings **suggest** that bees can recognise individual human faces. | 最新发现表明,蜜蜂能够识别人类的面孔。 |
+| suggest | v. 表明;建议 | Recent findings **suggest** that bees can recognise individual human faces. | 最新发现表明,蜜蜂能够辨认不同的人脸。 |
 | suggest | v. 表明;建议 | The report **suggests** building more cycle paths to reduce traffic in the city. | 报告建议修建更多自行车道,以减少城市交通流量。 |
 | imply | v. 暗示 | The results **imply** that diet may play a larger role than exercise. | 结果暗示,饮食的作用可能比运动更大。 |
 | infer | v. 推断 | From the tools they left behind, we can **infer** how these people lived. | 从他们留下的工具中,我们可以推断出这些人的生活方式。 |
@@ -113,7 +113,7 @@
 | limitation | n. 局限 | One **limitation** of the study is that all the participants were university students. | 这项研究的一个局限是所有参与者都是大学生。 |
 | flaw | n. 缺陷 | A serious **flaw** in the design caused the bridge to shake in strong winds. | 设计上的严重缺陷导致这座桥在强风中摇晃。 |
 | drawback | n. 缺点 | The main **drawback** of solar power is that it depends on the weather. | 太阳能的主要缺点是依赖天气。 |
-| merit | n. 优点 | Each of these approaches has its own **merit**, depending on the situation. | 根据情况不同,这些方法各有优点。 |
+| merit | n. 优点 | Each of these approaches has its own **merits**, depending on the situation. | 根据情况不同,这些方法各有优点。 |
 | implication | n. (可能的)影响,后果;含意 | The findings have important **implications** for how we treat young patients. | 这些发现对我们如何治疗年轻患者有重要影响。 |
 | significance | n. 重要性;意义 | Few people understood the **significance** of the discovery at the time. | 当时很少有人理解这一发现的重要性。 |
 | relevance | n. 相关性 | Critics have questioned the **relevance** of these old laws to modern life. | 批评者质疑这些旧法律与现代生活的关联性。 |
@@ -151,7 +151,7 @@
 | lifetime | n. 一生,寿命 | An average person will spend about a third of their **lifetime** asleep. | 普通人一生中大约有三分之一的时间在睡觉。 |
 | closure | n. 关闭;结束 | The **closure** of the mine left hundreds of local people without work. | 矿山关闭导致数百名当地人失业。 |
 | domain | n. 领域;范围 | Until recently, this area of research was the **domain** of a few specialists. | 直到最近,这一研究领域还只属于少数专家。 |
-| necessity | n. 必要性;必需品 | The drought made careful use of water an absolute **necessity** for farmers. | 干旱使节约用水成为农民的绝对必要之事。 |
+| necessity | n. 必要性;必需品 | The drought made careful use of water an absolute **necessity** for farmers. | 干旱让节约用水成了农民非做不可的事。 |
 | essence | n. 本质,精髓 | The **essence** of the theory can be explained in just a few words. | 这个理论的精髓用几句话就能解释清楚。 |
 | array | n. 一系列,大量 | The rainforest contains a remarkable **array** of plants and animals. | 雨林中有种类惊人的动植物。 |
 | hierarchy | n. 等级制度;层级 | Wolves live in groups with a strict social **hierarchy**. | 狼生活在群体中,有严格的社会等级制度。 |
@@ -171,13 +171,13 @@
 | threshold | n. 门槛;阈值 | Sounds above a certain **threshold** can cause permanent damage to hearing. | 超过一定阈值的声音会对听力造成永久损伤。 |
 | span | n. 跨度,期间 v. 横跨 | The study covers a **span** of more than fifty years. | 这项研究的时间跨度超过五十年。 |
 | span | n. 跨度,期间 v. 横跨 | The bird's migration routes **span** several continents and thousands of kilometres. | 这种鸟的迁徙路线横跨几个大洲,长达数千公里。 |
-| manipulation | n. 操纵 | The photographs showed clear signs of **manipulation** by computer. | 这些照片有明显的计算机操纵痕迹。 |
+| manipulation | n. 操纵 | The photographs showed clear signs of **manipulation** by computer. | 这些照片有明显经过电脑处理的痕迹。 |
 | coordination | n. 协调 | Playing a musical instrument requires good **coordination** between the hands and eyes. | 演奏乐器需要手眼之间良好的协调。 |
 | pathway | n. 途径;小路 | Scientists have identified the **pathway** by which the virus enters the cell. | 科学家已经确定了病毒进入细胞的途径。 |
 | progression | n. 进展,发展 | Regular exercise may slow the **progression** of the disease in older patients. | 经常锻炼可能减缓老年患者的病情发展。 |
 | instability | n. 不稳定 | Political **instability** in the region has discouraged foreign investment. | 该地区的政治不稳定阻碍了外国投资。 |
 | displacement | n. 流离失所;位移 | The building of the dam led to the **displacement** of thousands of villagers. | 大坝的修建导致数千名村民流离失所。 |
-| facet | n. 方面;(宝石的)刻面 | Language is only one **facet** of a people's cultural identity. | 语言只是一个民族文化身份的一个方面。 |
+| facet | n. 方面;(宝石的)刻面 | Language is only one **facet** of a people's cultural identity. | 语言只是民族文化身份的一个方面。 |
 | selection | n. 选择;选拔 | The **selection** of participants was based on age and level of education. | 参与者的选拔依据的是年龄和受教育程度。 |
 | theme | n. 主题 | Loss and memory are the central **themes** of the novel. | 失去和记忆是这部小说的中心主题。 |
 | resolution | n. 决议;解决;分辨率 | The two countries are still seeking a peaceful **resolution** to the conflict. | 两国仍在寻求和平解决这场冲突。 |
@@ -188,7 +188,7 @@
 | transition | n. 过渡,转变 | The country is going through a slow **transition** from coal to renewable energy. | 这个国家正在经历从煤炭到可再生能源的缓慢转变。 |
 | approval | n. 批准;认可 | The new drug has not yet received **approval** from the health authorities. | 这种新药尚未获得卫生部门的批准。 |
 | reputation | n. 名声,声誉 | The university has an excellent **reputation** for research in engineering. | 这所大学在工程研究方面享有极高的声誉。 |
-| tendency | n. 倾向,趋势 | People have a natural **tendency** to remember bad news better than good news. | 人们天生倾向于比好消息更容易记住坏消息。 |
+| tendency | n. 倾向,趋势 | People have a natural **tendency** to remember bad news better than good news. | 人们天生有一种倾向:坏消息比好消息记得更牢。 |
 | awareness | n. 意识 | **Awareness** of the dangers of too much sugar has grown in recent years. | 近年来,人们对过量摄入糖分危害的意识有所增强。 |
 | possession | n. 拥有;财产 | **Possession** of land was the main source of power in medieval society. | 在中世纪社会,拥有土地是权力的主要来源。 |
 | expansion | n. 扩张 | The rapid **expansion** of cities has put pressure on water supplies. | 城市的快速扩张给供水带来了压力。 |
@@ -353,7 +353,7 @@
 | short-term | adj. 短期的 | The drug provides **short-term** relief but does not cure the illness. | 这种药能短期缓解症状,但无法治愈疾病。 |
 | temporary | adj. 暂时的 | Workers lived in **temporary** housing while the new town was being built. | 新城建设期间,工人们住在临时住房里。 |
 | permanent | adj. 永久的 | Exposure to very loud noise can cause **permanent** damage to hearing. | 暴露在极大的噪音中可能造成永久性听力损伤。 |
-| sustainable | adj. 可持续的 | Farmers are being encouraged to adopt more **sustainable** methods of fishing. | 人们鼓励渔民采用更可持续的捕鱼方法。 |
+| sustainable | adj. 可持续的 | Fishermen are being encouraged to adopt more **sustainable** fishing methods. | 人们正鼓励渔民采用更可持续的捕鱼方法。 |
 | appropriate | adj. 恰当的 | Teachers must choose materials that are **appropriate** for the age of the children. | 教师必须选择适合孩子年龄的教材。 |
 | adequate | adj. 足够的 | Many people in the region still do not have **adequate** access to clean water. | 该地区的许多人仍然无法获得足够的清洁水。 |
 | sufficient | adj. 充足的 | There is not yet **sufficient** evidence to support this explanation. | 目前还没有充足的证据支持这一解释。 |
@@ -512,7 +512,7 @@
 | eternal | adj. 永恒的 | Many ancient cultures believed in the **eternal** life of the soul. | 许多古代文化相信灵魂永恒不灭。 |
 | absurd | adj. 荒谬的 | The idea of flying machines once seemed **absurd** to most people. | 飞行器的想法曾让大多数人觉得荒谬。 |
 | destructive | adj. 破坏性的 | Floods can be highly **destructive** in areas where trees have been removed. | 在树木被砍伐的地区,洪水的破坏性可能很大。 |
-| supplementary | adj. 补充的 | **Supplementary** classes were offered to children who had fallen behind. | 学校为落后的孩子提供了补充课程。 |
+| supplementary | adj. 补充的 | **Supplementary** classes were offered to children who had fallen behind. | 学校为学习跟不上的孩子开设了补充课程。 |
 | credible | adj. 可信的 | There is no **credible** evidence that the ancient city ever existed. | 没有可信的证据表明这座古城曾经存在。 |
 | wary | adj. 谨慎的 | Wild animals are usually **wary** of humans and keep their distance. | 野生动物通常对人类很警惕,并保持距离。 |
 | notorious | adj. 臭名昭著的 | This stretch of coast is **notorious** for its dangerous rocks and strong currents. | 这段海岸因危险的礁石和湍急的水流而臭名昭著。 |
@@ -599,7 +599,7 @@
 | alleviate | v. 缓解 | The new medicine can **alleviate** pain without causing drowsiness. | 这种新药可以缓解疼痛,而且不会让人犯困。 |
 | relieve | v. 缓解 | Additional bus services were introduced to **relieve** pressure on the railway. | 增设公交线路是为了缓解铁路的压力。 |
 | tackle | v. 着手处理,解决(难题) | Governments must work together to **tackle** the problem of plastic waste. | 各国政府必须共同努力,解决塑料垃圾问题。 |
-| address | v. 处理,应对 | The report fails to **address** the causes of poverty in rural areas. | 这份报告未能处理农村贫困的根源。 |
+| address | v. 处理,应对 | The report fails to **address** the causes of poverty in rural areas. | 这份报告没有探讨农村贫困的根源。 |
 | cope with | phr. 应对 | Older cities were not designed to **cope with** so many cars. | 老城市在设计时并没有考虑如何应对这么多汽车。 |
 | deal with | phr. 处理 | Some schools have trained staff to **deal with** students' mental health problems. | 一些学校培训了教职工来处理学生的心理健康问题。 |
 | resolve | v. 解决 | Scientists hope the new data will **resolve** the long debate about the fossils. | 科学家希望新数据能解决关于这些化石的长期争论。 |
@@ -627,14 +627,14 @@
 | protect | v. 保护 | Thick fur **protects** the animal from the extreme cold of the Arctic. | 厚厚的皮毛保护这种动物免受北极的严寒。 |
 | ensure | v. 确保 | Regular inspections **ensure** that the water remains safe to drink. | 定期检查确保水质仍可安全饮用。 |
 | secure | v. 获得;确保 adj. 安全的 | The company **secured** funding to develop its new battery technology. | 该公司获得了资金,用于开发新电池技术。 |
-| secure | v. 获得;确保 adj. 安全的 | Most people want a **secure** job that offers a regular income. | 大多数人都想要一份收入稳定的安稳工作。 |
+| secure | v. 获得;确保 adj. 安全的 | Most people want a **secure** job that offers a regular income. | 大多数人都想要一份有固定收入的稳定工作。 |
 | acknowledge | v. 承认;致谢 | The author **acknowledges** that the sample used in the study was small. | 作者承认这项研究使用的样本量很小。 |
 | recognise | v. 认可;认出 | Her work was not **recognised** until many years after her death. | 她的成果直到她去世多年后才得到认可。 |
 | perceive | v. 察觉,认为 | Humans **perceive** colour through special cells at the back of the eye. | 人类通过眼睛后部的特殊细胞感知颜色。 |
 | regard | v. 把……看作 n. 关注;问候 | Many historians **regard** this as the most important battle of the war. | 许多历史学家把这场战役看作这场战争中最重要的一场。 |
 | consider | v. 考虑;认为 | Planners must **consider** the needs of older residents when designing new towns. | 规划者在设计新城镇时必须考虑老年居民的需求。 |
 | specify | v. 具体说明 | The rules **specify** how much waste each factory may release. | 规定具体说明了每家工厂可以排放多少废物。 |
-| clarify | v. 澄清 | Further tests are needed to **clarify** the cause of the illness. | 需要进一步检查来澄清病因。 |
+| clarify | v. 澄清 | Further tests are needed to **clarify** the cause of the illness. | 需要进一步检查才能查明病因。 |
 | summarise | v. 总结 | The final chapter **summarises** the main findings of the research. | 最后一章总结了这项研究的主要发现。 |
 | compile | v. 汇编 | Scholars spent decades **compiling** the first complete dictionary of the language. | 学者们花了几十年编纂这种语言的第一部完整词典。 |
 | integrate | v. 整合 | The new system **integrates** information from several different sources. | 新系统整合了来自多个不同来源的信息。 |
@@ -718,7 +718,7 @@
 | expedite | v. 加快 | New software has helped to **expedite** the process of checking medical records. | 新软件加快了核对病历的流程。 |
 | originate | v. 起源 | The custom is thought to **originate** from an ancient harvest festival. | 这一习俗被认为起源于一个古老的丰收节。 |
 | disclose | v. 披露 | Companies are now required to **disclose** how much carbon they produce. | 现在公司被要求披露自己的碳排放量。 |
-| distort | v. 歪曲 | The curved surface of the Earth tends to **distort** flat maps. | 地球的曲面往往会使平面地图变形。 |
+| distort | v. 歪曲 | Flat maps inevitably **distort** the curved surface of the Earth. | 平面地图难免会使地球的曲面变形。 |
 | imitate | v. 模仿 | Young birds learn to sing by **imitating** the songs of adult males. | 幼鸟通过模仿成年雄鸟的歌声来学习鸣叫。 |
 | dominate | v. 主导 | A few large companies now **dominate** the global market for seeds. | 现在少数几家大公司主导着全球种子市场。 |
 | popularise | v. 普及 | Television programmes helped to **popularise** science among ordinary people. | 电视节目帮助在普通人中普及科学。 |
@@ -740,7 +740,7 @@
 | transpire | v. 被得知;(植物)蒸腾 | It later **transpired** that the data had been recorded incorrectly. | 后来得知,这些数据记录有误。 |
 | transpire | v. 被得知;(植物)蒸腾 | Plants **transpire** more water on hot and windy days. | 植物在炎热多风的日子里蒸腾的水分更多。 |
 | reinforce | v. 加强,巩固 | Repeating information at intervals helps to **reinforce** it in the memory. | 间隔重复信息有助于加深记忆。 |
-| confine | v. 限制;禁闭 | The disease was **confined** to a small area in the south of the country. | 这种疾病被限制在该国南部的一小片地区。 |
+| confine | v. 限制;禁闭 | The disease was **confined** to a small area in the south of the country. | 这种疾病仅局限在该国南部的一小片地区。 |
 | depict | v. 描绘,描述 | The paintings **depict** scenes from everyday life in ancient Rome. | 这些画描绘了古罗马日常生活的场景。 |
 | render | v. 使成为;提供 | Heavy flooding **rendered** the main road impossible to use. | 严重的洪水使主干道无法通行。 |
 | undermine | v. 削弱,暗中破坏 | Rising costs could **undermine** the success of the entire programme. | 不断上升的成本可能削弱整个项目的成效。 |
@@ -760,7 +760,7 @@
 | capture | v. 捕获;捕捉 n. 捕获 | Cameras in the forest **captured** images of the rare animal at night. | 森林里的相机在夜间捕捉到了这种珍稀动物的影像。 |
 | rely | v. 依赖,依靠 | Many of these communities **rely** heavily on fishing for their food. | 这些社区中有许多在食物上严重依赖捕鱼。 |
 | derive | v. 获得;源于 | Plants **derive** most of their energy from sunlight. | 植物的大部分能量来自阳光。 |
-| bind | v. 约束;捆绑 | The treaty will **bind** all member countries to reducing their carbon emissions. | 这项条约将约束所有成员国减少碳排放。 |
+| bind | v. 约束;捆绑 | The treaty will **bind** all member countries to reduce their carbon emissions. | 这项条约将约束所有成员国减少碳排放。 |
 | permit | v. 允许 n. 许可证 | Local laws do not **permit** building within a hundred metres of the shore. | 当地法律不允许在距海岸一百米以内建房。 |
 | permit | v. 允许 n. 许可证 | Visitors must obtain a **permit** before they enter the protected area. | 游客进入保护区前必须获得许可证。 |
 | embrace | v. 欣然接受;拥抱 | Many older workers have been quick to **embrace** new technology. | 许多年纪较大的员工很快就接受了新技术。 |
@@ -793,7 +793,7 @@
 | arouse | v. 引起,激起 | The strange discovery **aroused** great interest among scientists around the world. | 这一奇特的发现引起了世界各地科学家的极大兴趣。 |
 | thrive | v. 繁荣,茁壮成长 | These plants **thrive** in warm conditions with plenty of water. | 这些植物在温暖、水分充足的环境中茁壮成长。 |
 | speculate | v. 推测;投机 | Researchers can only **speculate** about why the city was abandoned. | 研究者只能推测这座城市被遗弃的原因。 |
-| conform | v. 遵守;符合 | Children often feel pressure to **conform** to the behaviour of their friends. | 孩子们常常感到要与朋友的行为保持一致的压力。 |
+| conform | v. 遵守;符合 | Children often feel pressure to **conform** to the behaviour of their friends. | 孩子们常常感到压力,觉得自己的行为必须和朋友一样。 |
 | divert | v. 转移;使转向 | Engineers built a channel to **divert** water away from the town. | 工程师修建了一条水渠,把水从镇上引开。 |
 | evoke | v. 唤起,引起 | Certain smells can **evoke** strong memories of childhood. | 某些气味能唤起强烈的童年记忆。 |
 | penetrate | v. 穿透;渗入 | Very little sunlight can **penetrate** to the bottom of the deep ocean. | 很少有阳光能穿透到深海底部。 |
@@ -802,7 +802,7 @@
 | disrupt | v. 扰乱,中断 | Even small changes in temperature can **disrupt** the life cycle of insects. | 即使温度的微小变化,也可能扰乱昆虫的生命周期。 |
 | uphold | v. 维护,支持 | Courts are expected to **uphold** the law regardless of public opinion. | 无论舆论如何,法院都应维护法律。 |
 | illuminate | v. 阐明;照亮 | The study helps to **illuminate** how memories are stored in the brain. | 这项研究有助于阐明记忆是如何储存在大脑中的。 |
-| discard | v. 丢弃 | Most of the fish caught by the boats are **discarded** as unwanted. | 船只捕捞的大部分鱼都被当作不需要的东西丢弃了。 |
+| discard | v. 丢弃 | Many of the fish caught by the boats are **discarded** because nobody wants them. | 船只捕到的鱼有很多因为没人要而被丢弃。 |
 | reconcile | v. 调和;使和解 | It is difficult to **reconcile** economic growth with protecting the environment. | 很难调和经济增长与环境保护之间的矛盾。 |
 | defy | v. 违抗;无法(解释) | The behaviour of these tiny particles seems to **defy** explanation. | 这些微小粒子的行为似乎无法解释。 |
 | notify | v. 通知 | Hospitals must **notify** the authorities of any new cases of the disease. | 医院必须把任何新病例通知有关部门。 |
@@ -820,7 +820,7 @@
 | withhold | v. 扣留;拒绝给予 | The government threatened to **withhold** funding from schools that broke the rules. | 政府威胁要扣留违规学校的经费。 |
 | displace | v. 取代;迫使离开 | The new dam will **displace** thousands of people living along the river. | 新大坝将迫使沿河的数千人离开家园。 |
 | exacerbate | v. 加剧,使恶化 | Cutting down forests can **exacerbate** the effects of heavy rain. | 砍伐森林会加剧暴雨的影响。 |
-| necessitate | v. 使成为必要 | The growth of the city will **necessitate** a new water supply. | 城市的发展使得新的供水系统成为必要。 |
+| necessitate | v. 使成为必要 | The growth of the city will **necessitate** a new water supply. | 城市不断发展,必须建设新的供水系统。 |
 | exemplify | v. 例证,作为……的典型 | These gardens **exemplify** the Japanese love of simplicity and balance. | 这些花园是日本人崇尚简约与平衡的典型例子。 |
 | impair | v. 损害,削弱 | Too little sleep can **impair** judgement as much as alcohol. | 睡眠过少对判断力的损害与酒精一样大。 |
 | reclaim | v. 收回;开垦 | The Dutch have **reclaimed** large areas of land from the sea. | 荷兰人从海中开垦了大片土地。 |
@@ -835,7 +835,7 @@
 | commend | v. 称赞 | The report **commends** the school for its work with disabled children. | 报告称赞这所学校在帮助残障儿童方面所做的工作。 |
 | succumb | v. 屈服;死于 | Many of the settlers **succumbed** to disease during their first winter. | 许多定居者在第一个冬天死于疾病。 |
 | intrigue | v. 激起兴趣 n. 阴谋 | The unusual shape of the bones continues to **intrigue** scientists. | 这些骨头不同寻常的形状一直引起科学家的兴趣。 |
-| tighten | v. 收紧;加强(管制) | The government plans to **tighten** controls on the use of plastic bags. | 政府计划加强对塑料袋使用的管制。 |
+| tighten | v. 收紧;加强(管制) | The government plans to **tighten** controls on the use of plastic bags. | 政府计划收紧对塑料袋使用的管制。 |
 | enclose | v. 附上;围住 | Farmers began to **enclose** their fields with stone walls in the 1700s. | 18 世纪,农民开始用石墙把田地围起来。 |
 | reassure | v. 使安心 | The government tried to **reassure** the public that the food was safe. | 政府试图让公众放心,告诉他们这些食品是安全的。 |
 | situate | v. 使位于 | Planners decided to **situate** the new factory far from the river. | 规划者决定把新工厂建在远离河流的地方。 |
@@ -853,7 +853,7 @@
 | mobilise | v. 动员 | The government **mobilised** thousands of volunteers to help after the flood. | 洪水过后,政府动员了数千名志愿者提供帮助。 |
 | suspend | v. 暂停;悬挂 | The trial of the drug was **suspended** after several patients became ill. | 几名患者生病后,这种药物的试验被暂停。 |
 | reverse | v. 逆转 adj. 相反的 | Scientists doubt whether the damage to the reef can be **reversed**. | 科学家怀疑珊瑚礁受到的损害能否逆转。 |
-| reverse | v. 逆转 adj. 相反的 | The second study produced exactly the **reverse** result. | 第二项研究得出了完全相反的结果。 |
+| reverse | v. 逆转 adj. 相反的 | The events are described in **reverse** order, beginning with the most recent. | 这些事件按相反的顺序叙述,从最近发生的讲起。 |
 | vanish | v. 消失 | Many species of frog could **vanish** completely within the next few decades. | 许多种类的青蛙可能在未来几十年内完全消失。 |
 | fade | v. 褪色;逐渐消失 | Colours in old paintings gradually **fade** when they are exposed to light. | 古画的颜色在光照下会逐渐褪去。 |
 | shrink | v. 缩小,减少 | The size of the glacier has continued to **shrink** in recent decades. | 近几十年来,这条冰川的面积持续缩小。 |

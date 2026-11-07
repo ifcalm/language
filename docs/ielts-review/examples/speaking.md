@@ -41,7 +41,7 @@
 | energetic | adj. 精力充沛的 | My little nephew is so **energetic** that he never seems to get tired. | 我的小侄子精力特别充沛,好像从来不会累。 |
 | enthusiastic | adj. 热情的 | Our new coach is really **enthusiastic**, which makes training a lot more fun. | 我们的新教练特别热情,这让训练有趣多了。 |
 | passionate | adj. 充满激情的 | She's **passionate** about teaching and spends her weekends preparing lessons. | 她对教学充满激情,周末都在备课。 |
-| adventurous | adj. 爱冒险的 | I'm not very **adventurous**, so I usually order the same food every time. | 我不太爱冒险,所以每次都点同样的食物。 |
+| adventurous | adj. 爱冒险的 | I'm not very **adventurous**, so I usually order the same dish when I eat out. | 我不太爱冒险,所以在外面吃饭通常都点同一道菜。 |
 | cautious | adj. 谨慎的 | I'm a **cautious** driver, especially when the roads are wet. | 我开车很谨慎,尤其是路面湿滑的时候。 |
 | decisive | adj. 果断的 | A good leader needs to be **decisive** when things go wrong. | 出问题时,好的领导者需要果断。 |
 | stubborn | adj. 固执的 | My grandfather is so **stubborn** that he refuses to use a mobile phone. | 我爷爷特别固执,就是不肯用手机。 |
@@ -143,13 +143,13 @@
 | delighted | adj. 高兴的 | I was **delighted** when I found out I had got the job. | 得知自己得到这份工作时,我非常高兴。 |
 | thrilled | adj. 激动的 | My parents were **thrilled** when I told them I was getting married. | 我告诉父母我要结婚时,他们非常激动。 |
 | satisfied | adj. 满意的 | I'm pretty **satisfied** with my life in the city at the moment. | 我目前对城市生活挺满意的。 |
-| content | adj. 满足的 | I'm pretty **content** with my life at the moment, to be honest. | 说实话,我对现在的生活挺满足的。 |
+| content | adj. 满足的 | I'm **content** with a simple life and don't need expensive things. | 我满足于简单的生活,不需要昂贵的东西。 |
 | grateful | adj. 感激的 | I'm really **grateful** to my teacher for helping me through that difficult year. | 我非常感激老师帮我度过了那艰难的一年。 |
 | proud | adj. 自豪的 | I felt so **proud** when my son won a prize at school. | 我儿子在学校获奖时,我感到非常自豪。 |
 | relieved | adj. 宽慰的 | I was so **relieved** when I finally found my lost passport. | 我终于找到丢失的护照时,真是松了一口气。 |
 | relaxed | adj. 放松的 | I always feel **relaxed** after a long walk in the countryside. | 在乡间走了很久之后,我总是感到很放松。 |
 | amazed | adj. 惊讶的 | I was **amazed** by how friendly people were when I visited Japan. | 我去日本时,对人们的友好感到惊讶。 |
-| astonished | adj. 震惊的 | I was **astonished** to see how much the town had changed. | 看到小镇变化这么大,我很震惊。 |
+| astonished | adj. 震惊的 | I was **astonished** to see how much the town had changed. | 看到小镇变化这么大,我大为惊讶。 |
 | impressed | adj. 印象深刻的 | I was really **impressed** by the service at that little restaurant. | 那家小餐馆的服务给我留下了深刻印象。 |
 | fascinated | adj. 着迷的 | I've been **fascinated** by space ever since I was a little kid. | 我从小就对太空着迷。 |
 | nostalgic | adj. 怀旧的 | Old songs from my school days always make me feel **nostalgic**. | 上学时的老歌总让我感到怀旧。 |
@@ -260,7 +260,7 @@
 | value for money | phr. 物有所值 | The set lunch at that restaurant is really good **value for money**. | 那家餐馆的午市套餐真是物有所值。 |
 | luxurious | adj. 奢华的 | The hotel was far more **luxurious** than anything I had stayed in before. | 那家酒店比我以前住过的任何地方都奢华得多。 |
 | carved | adj. 雕刻的 | My parents have a beautifully **carved** wooden chest in their living room. | 我父母的客厅里有一个雕刻精美的木箱。 |
-| garment | n. 服装 | That jacket is my favourite **garment**, and I've had it since I was eighteen. | 那件夹克是我最喜欢的衣服,我十八岁起就有了。 |
+| garment | n. 服装 | Delicate **garments** like this silk shirt should always be washed by hand. | 像这件真丝衬衫这样娇贵的衣服一定要手洗。 |
 | gown | n. 长礼服 | My friend wore a long white **gown** at her graduation ball. | 我朋友在毕业舞会上穿了一件白色长礼服。 |
 | uniform | n. 制服 adj. 一致的 | I had to wear a dark blue **uniform** when I was at school. | 我上学时必须穿深蓝色的制服。 |
 | apron | n. 围裙 | My dad puts on a funny **apron** whenever he cooks for the family. | 我爸爸给家人做饭时总穿着一条搞笑的围裙。 |
@@ -331,7 +331,7 @@
 | seaside | n. 海边 | We used to go to the **seaside** every summer when I was young. | 我小时候每年夏天都去海边。 |
 | resort | n. 度假胜地 | We spent a week at a ski **resort** in the mountains last winter. | 去年冬天,我们在山里的滑雪胜地待了一周。 |
 | street food | phr. 街头小吃 | The best thing about visiting Bangkok was definitely the **street food**. | 去曼谷最棒的事情无疑是街头小吃。 |
-| delicacy | n. 美味佳肴 | This spicy fish soup is a local **delicacy** in my part of the country. | 这种辣鱼汤是我们这个地区的当地美味佳肴。 |
+| delicacy | n. 美味佳肴 | This spicy fish soup is a local **delicacy** in my part of the country. | 这种辣鱼汤是我们这一带的美味佳肴。 |
 | local speciality | phr. 地方特产 | You really should try the **local speciality** when you visit my hometown. | 来我家乡时,你真应该尝尝当地特产。 |
 | nightlife | n. 夜生活 | The **nightlife** in my city is great, with lots of bars and live music. | 我们城市的夜生活很棒,有很多酒吧和现场音乐。 |
 | flourishing | adj. 繁荣的 | There's a **flourishing** music scene in the city where I live now. | 我现在住的城市音乐氛围非常活跃。 |
@@ -340,7 +340,7 @@
 | border | n. 边境 | My hometown is right on the **border**, so many people there speak two languages. | 我的家乡就在边境上,所以那里很多人会说两种语言。 |
 | teahouse | n. 茶馆 | My grandfather likes to meet his old friends at the local **teahouse**. | 我爷爷喜欢在当地的茶馆和老朋友见面。 |
 | villager | n. 村民 | Every **villager** came out to welcome us when we arrived. | 我们到达时,每个村民都出来欢迎我们。 |
-| noble | adj. 高贵的 | Our local museum has a huge painting of a **noble** family from the past. | 我们当地的博物馆有一幅巨大的画,画的是过去的一个高贵家族。 |
+| noble | adj. 高贵的 | Our local museum has a huge painting of a **noble** family from the past. | 我们当地的博物馆有一幅巨大的画,画的是从前的一个贵族家庭。 |
 | unsophisticated | adj. 淳朴的 | The food there is simple and **unsophisticated**, but it tastes really good. | 那里的食物简单质朴,但味道很好。 |
 | surroundings | n. 周围环境 | I work better in quiet **surroundings**, so I often go to the library. | 我在安静的环境中工作效率更高,所以常去图书馆。 |
 | haven | n. 避风港 | For me, the local park is a **haven** of peace in a noisy city. | 对我来说,当地的公园是喧闹城市中一处宁静的避风港。 |
@@ -411,13 +411,13 @@
 | window shopping | phr. 逛街看橱窗 | On rainy days, my friends and I often go **window-shopping** at the mall. | 下雨天,我和朋友经常去商场逛街看橱窗。 |
 | snapshot | n. 快照 | I keep an old **snapshot** of my family on the wall above my desk. | 我书桌上方的墙上挂着一张家人的旧快照。 |
 | tripod | n. 三脚架 | I carry a small **tripod** when I take photos of the night sky. | 拍夜空时,我会带一个小三脚架。 |
-| foreground | n. 前景 | I like photos with something interesting in the **foreground**, such as flowers. | 我喜欢前景有趣的照片,比如前景是花朵。 |
+| foreground | n. 前景 | I like photos with something interesting in the **foreground**, such as flowers. | 我喜欢前景里有些有趣东西的照片,比如花。 |
 | album | n. 专辑;相册 | My parents still keep an old photo **album** from their wedding. | 我父母还保留着一本他们婚礼的旧相册。 |
-| waltz | n. 华尔兹 | My parents learned to **waltz** before their wedding, and they still dance sometimes. | 我父母婚前学了华尔兹,现在有时还会跳。 |
+| waltz | n. 华尔兹 | My parents learned the **waltz** before their wedding, and they still dance it sometimes. | 我父母婚前学了华尔兹,现在有时还会跳。 |
 | tango | n. 探戈 | My friend and I took a **tango** class, but we were both terrible. | 我和朋友上过一节探戈课,但我们俩都跳得很差。 |
 | jazz | n. 爵士乐 | I started listening to **jazz** when I went to a small club in New York. | 我去纽约一家小俱乐部后开始听爵士乐。 |
 | puzzle | n. 谜题 v. 使困惑 | I do a crossword **puzzle** in the newspaper every morning on the train. | 我每天早上在火车上做报纸上的填字谜题。 |
 | puzzle | n. 谜题 v. 使困惑 | It **puzzles** me why people spend so much money on designer clothes. | 我不明白人们为什么花这么多钱买名牌衣服。 |
-| socialise | v. 社交,交往 | I like to **socialise** with my colleagues after work on Fridays. | 我喜欢周五下班后和同事们交往聚会。 |
+| socialise | v. 社交,交往 | I like to **socialise** with my colleagues after work on Fridays. | 周五下班后,我喜欢和同事们聚一聚。 |
 | comic | adj. 喜剧的 n. 漫画 | I used to read **comic** books under the blanket when I was a kid. | 我小时候常躲在被子里看漫画书。 |
 | trick | n. 戏法;诀窍 | My uncle taught me a card **trick** that I still use at parties. | 我叔叔教了我一个纸牌戏法,我现在还在派对上用。 |

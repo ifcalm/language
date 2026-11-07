@@ -1,7 +1,7 @@
 | 词条 | 释义 | 例句 | 翻译 |
 |---|---|---|---|
 | increase | n./v. 增加 | There was a steady **increase** in the number of tourists after 2010. | 2010 年后,游客数量稳步增加。 |
-| increase | n./v. 增加 | Spending on healthcare **increased** by ten percent between 2000 and 2010. | 2000 年至 2010 年间,医疗支出增加了百分之十。 |
+| increase | n./v. 增加 | Spending on healthcare **increased** by ten per cent between 2000 and 2010. | 2000 年至 2010 年间,医疗支出增加了百分之十。 |
 | decrease | n./v. 减少 | The chart shows a **decrease** in the use of coal over the period. | 图表显示,在此期间煤炭使用量有所减少。 |
 | decrease | n./v. 减少 | The number of cinema visits **decreased** slightly during the following decade. | 在随后的十年里,观影人次略有减少。 |
 | rise | n./v. 上升 | There was a sharp **rise** in house prices between 2005 and 2007. | 2005 年至 2007 年间,房价急剧上升。 |
@@ -12,7 +12,7 @@
 | decline | n./v. 下降;衰退 | The number of farmers **declined** rapidly throughout the second half of the century. | 在二十世纪下半叶,农民数量迅速下降。 |
 | drop | n./v. 下降 | There was a significant **drop** in the number of students in 2012. | 2012 年学生人数大幅下降。 |
 | drop | n./v. 下降 | Oil consumption **dropped** to its lowest level at the end of the period. | 在这一时期末,石油消费量下降到最低水平。 |
-| climb | v. 攀升 | The figure continued to **climb**, reaching a peak of eighty percent in 2015. | 这一数字持续攀升,在 2015 年达到百分之八十的峰值。 |
+| climb | v. 攀升 | The figure continued to **climb**, reaching a peak of eighty per cent in 2015. | 这一数字持续攀升,在 2015 年达到百分之八十的峰值。 |
 | soar | v. 猛增 | The number of internet users **soared** from one million to ten million. | 互联网用户数量从一百万猛增到一千万。 |
 | surge | n./v. 激增 | There was a **surge** in demand for electric cars after 2020. | 2020 年后,电动汽车的需求激增。 |
 | rocket | v. 飞涨 n. 火箭 | The price of petrol **rocketed** in the first half of the year. | 汽油价格在上半年飞涨。 |
@@ -47,10 +47,10 @@
 | overall | adj. 总体的 | **Overall**, the proportion of people living in cities increased over the period. | 总体而言,在此期间城市人口比例有所上升。 |
 | trend | n. 趋势 | The overall **trend** shows that fewer people are buying printed books. | 总体趋势显示,购买纸质书的人越来越少。 |
 | pattern | n. 模式;图案 | A similar **pattern** can be seen in the figures for the other two countries. | 另外两个国家的数字也呈现类似的模式。 |
-| proportion | n. 比例 | The **proportion** of women in the workforce rose from 30 to 45 percent. | 劳动力中女性的比例从百分之三十上升到百分之四十五。 |
+| proportion | n. 比例 | The **proportion** of women in the workforce rose from 30 to 45 per cent. | 劳动力中女性的比例从百分之三十上升到百分之四十五。 |
 | percentage | n. 百分比 | The **percentage** of households with a computer doubled in only five years. | 拥有电脑的家庭百分比在短短五年内翻了一番。 |
 | ratio | n. 比率 | The **ratio** of teachers to students was highest in the smaller schools. | 较小学校的师生比最高。 |
-| rate | n. 比率;速度 | The unemployment **rate** remained below five percent for most of the decade. | 这十年的大部分时间里,失业率保持在百分之五以下。 |
+| rate | n. 比率;速度 | The unemployment **rate** remained below five per cent for most of the decade. | 这十年的大部分时间里,失业率保持在百分之五以下。 |
 | fraction | n. 一小部分;分数(数学) | Only a small **fraction** of the waste was recycled in the first year. | 第一年只有一小部分废物被回收。 |
 | majority | n. 大多数 | The **majority** of students preferred to live in shared flats. | 大多数学生更愿意住在合租公寓里。 |
 | minority | n. 少数 | Only a small **minority** of people cycled to work in 2010. | 2010 年,只有少数人骑车上班。 |
@@ -59,7 +59,7 @@
 | double | v. 翻倍 | The number of overseas students **doubled** between 2000 and 2010. | 2000 年至 2010 年间,海外学生人数翻了一番。 |
 | triple | v. 增至三倍 | The population of the city **tripled** in less than thirty years. | 这座城市的人口在不到三十年内增至三倍。 |
 | halve | v. 减半 | The number of smokers **halved** during the period shown on the graph. | 在图表所示时期内,吸烟人数减少了一半。 |
-| average | n. 平均数 adj. 平均的 | The **average** for the whole country was about twelve percent. | 全国的平均数约为百分之十二。 |
+| average | n. 平均数 adj. 平均的 | The **average** for the whole country was about twelve per cent. | 全国的平均数约为百分之十二。 |
 | average | n. 平均数 adj. 平均的 | The **average** price of a house rose by a third in ten years. | 十年间,平均房价上涨了三分之一。 |
 | mean | n. 平均值 | The **mean** of the five results was thirty-two points. | 这五个结果的平均值是三十二分。 |
 | median | n. 中位数 | The **median** age of the population was thirty-five in 2010. | 2010 年,人口年龄的中位数是三十五岁。 |
@@ -79,17 +79,17 @@
 | discrepancy | n. 差异 | There is a large **discrepancy** between the figures for the two regions. | 这两个地区的数字之间存在很大差异。 |
 | disparity | n. 悬殊 | The table reveals a great **disparity** in income between men and women. | 表格显示男女收入存在巨大悬殊。 |
 | equivalent | adj. 相等的 n. 等价物 | Spending on food was **equivalent** to a third of average income. | 食品支出相当于平均收入的三分之一。 |
-| comparable | adj. 可比的 | The figures for the two countries were **comparable** throughout the period. | 这两个国家的数字在整个时期都是可比的。 |
-| respectively | adv. 分别地 | Sales in Japan and Korea rose by ten and fifteen percent **respectively**. | 日本和韩国的销售额分别增长了百分之十和百分之十五。 |
+| comparable | adj. 可比的 | The figures for the two countries were **comparable** throughout the period. | 这两个国家的数字在整个时期都不相上下。 |
+| respectively | adv. 分别地 | Sales in Japan and Korea rose by ten and fifteen per cent **respectively**. | 日本和韩国的销售额分别增长了百分之十和百分之十五。 |
 | approximately | adv. 大约 | **Approximately** half of the people surveyed said they exercised regularly. | 大约一半的受访者表示他们经常锻炼。 |
 | roughly | adv. 大致 | **Roughly** a third of the students came from other countries. | 大致三分之一的学生来自其他国家。 |
-| nearly | adv. 几乎 | **Nearly** seventy percent of households owned a car in 2010. | 2010 年,近百分之七十的家庭拥有汽车。 |
+| nearly | adv. 几乎 | **Nearly** seventy per cent of households owned a car in 2010. | 2010 年,近百分之七十的家庭拥有汽车。 |
 | exceed | v. 超过 | The number of electric cars is expected to **exceed** that of diesel cars. | 预计电动汽车的数量将超过柴油车。 |
-| surpass | v. 超越 | Sales of online books may **surpass** those of printed ones by 2030. | 到 2030 年,电子书销量可能超越纸质书。 |
+| surpass | v. 超越 | Sales of e-books may **surpass** those of printed books by 2030. | 到 2030 年,电子书销量可能超越纸质书。 |
 | overtake | v. 超过,赶超 | Spain **overtook** Italy as the most popular destination in 2012. | 2012 年,西班牙超过意大利,成为最受欢迎的目的地。 |
 | outnumber | v. 在数量上超过 | Women **outnumber** men in most university courses in this country. | 在这个国家的大多数大学课程中,女性人数超过男性。 |
 | constitute | v. 构成 | Older people **constitute** about a quarter of the total population. | 老年人约占总人口的四分之一。 |
-| comprise | v. 包含,由……组成 | The group **comprises** twenty teachers from six different schools. | 这个小组包含来自六所不同学校的二十名教师。 |
+| comprise | v. 包含,由……组成 | The group **comprises** twenty teachers from six different schools. | 这个小组由来自六所不同学校的二十名教师组成。 |
 | consist of | phr. 由……组成 | The process **consists of** five main stages, beginning with the collection of materials. | 这个过程由五个主要阶段组成,首先是收集材料。 |
 | represent | v. 代表;占 | Students **represent** the largest group of people using the library. | 学生占图书馆使用者的最大比例。 |
 | occupy | v. 占据 | Farmland **occupies** the largest area of the town on both maps. | 在两张地图上,农田都占据了该镇最大的面积。 |
@@ -149,7 +149,7 @@
 | convert | v. 转换 | The solar panels **convert** sunlight into electricity for the building. | 太阳能电池板把阳光转换成电力,供建筑使用。 |
 | transform | v. 改变,转化 | Heat from the sun **transforms** the water into vapour, which rises into the air. | 太阳的热量把水转化为水蒸气,升入空气中。 |
 | recycle | v. 回收利用 | Glass bottles can be **recycled** again and again without any loss of quality. | 玻璃瓶可以反复回收利用,质量不会受损。 |
-| construct | v. 建造 | A new bridge was **constructed** across the river between the two maps. | 在两张地图所示时间之间,河上建造了一座新桥。 |
+| construct | v. 建造 | A new bridge was **constructed** across the river during this period. | 在此期间,河上建起了一座新桥。 |
 | demolish | v. 拆除 | The old houses were **demolished** to make way for a shopping centre. | 老房子被拆除,为购物中心腾出地方。 |
 | replace | v. 取代 | The car park was **replaced** by a small garden and a playground. | 停车场被一个小花园和一个游乐场取代。 |
 | relocate | v. 迁移 | The school was **relocated** to the north of the town in 2005. | 这所学校于 2005 年迁到了镇子北部。 |
@@ -174,7 +174,7 @@
 | take into account | phr. 考虑到 | Governments should **take into account** the needs of older people when planning transport. | 政府在规划交通时应考虑老年人的需求。 |
 | take into consideration | phr. 考虑 | Employers should **take into consideration** the experience of each candidate. | 雇主应考虑每位候选人的经验。 |
 | take measures | phr. 采取措施 | Governments must **take measures** to reduce the level of air pollution. | 政府必须采取措施降低空气污染水平。 |
-| take responsibility for | phr. 为……负责 | Parents should **take responsibility for** teaching their children good manners. | 父母应该负责教孩子良好的礼貌。 |
+| take responsibility for | phr. 为……负责 | Parents should **take responsibility for** teaching their children good manners. | 父母应该负起责任,教孩子懂礼貌。 |
 | take advantage of | phr. 利用 | Students should **take advantage of** the opportunities offered by the internet. | 学生应该利用互联网提供的机会。 |
 | make use of | phr. 利用 | Cities should **make use of** empty buildings instead of building on farmland. | 城市应该利用空置的建筑,而不是在农田上建房。 |
 | make up | phr. 构成;编造;弥补 | Women **make up** nearly half of the workforce in many developed countries. | 在许多发达国家,女性占劳动力的近一半。 |
@@ -192,7 +192,7 @@
 | put forward | phr. 提出(建议) | Several solutions have been **put forward** to deal with the housing shortage. | 针对住房短缺,人们提出了几种解决办法。 |
 | put off | phr. 推迟 | Many young couples **put off** having children for financial reasons. | 许多年轻夫妇因经济原因推迟生育。 |
 | give up | phr. 放弃 | Some students **give up** their studies because they cannot afford the fees. | 有些学生因为付不起学费而放弃学业。 |
-| take up | phr. 开始从事;占据 | Doctors advise older people to **take up** gentle forms of exercise. | 医生建议老年人开始进行温和的运动。 |
+| take up | phr. 开始从事;占据 | Doctors advise older people to **take up** gentle forms of exercise. | 医生建议老年人开始做一些温和的运动。 |
 | cut down on | phr. 削减 | Individuals can **cut down on** waste by avoiding single-use plastic products. | 个人可以通过不使用一次性塑料制品来减少浪费。 |
 | phase out | phr. 逐步淘汰 | Many governments plan to **phase out** petrol cars within twenty years. | 许多国家的政府计划在二十年内逐步淘汰汽油车。 |
 | run out of | phr. 用完 | The world may eventually **run out of** oil and natural gas. | 世界最终可能用完石油和天然气。 |
@@ -204,7 +204,7 @@
 | be responsible for | phr. 对……负责 | Parents **are responsible for** the behaviour of their young children. | 父母要对年幼孩子的行为负责。 |
 | be associated with | phr. 与……有关 | Long working hours **are associated with** poor physical and mental health. | 长时间工作与身心健康不佳有关。 |
 | be related to | phr. 与……有关 | Many health problems **are related to** a lack of regular exercise. | 许多健康问题与缺乏规律运动有关。 |
-| be subject to | phr. 受制于;易受……影响 | Imported goods **are subject to** a tax of ten percent. | 进口商品须缴纳百分之十的税。 |
+| be subject to | phr. 受制于;易受……影响 | Imported goods **are subject to** a tax of ten per cent. | 进口商品须缴纳百分之十的税。 |
 | be exposed to | phr. 接触;暴露于 | Children **are exposed to** too much advertising on the internet. | 孩子们在互联网上接触到太多广告。 |
 | be aware of | phr. 意识到 | People should **be aware of** the dangers of sharing personal information online. | 人们应该意识到在网上分享个人信息的危险。 |
 | be capable of | phr. 能够 | Young children **are capable of** learning several languages at the same time. | 幼儿能够同时学习几种语言。 |
@@ -270,18 +270,18 @@
 | spoon-feeding | n. 填鸭式教学 | **Spoon-feeding** students leaves them unable to solve problems by themselves. | 填鸭式教学使学生无法独立解决问题。 |
 | critical thinking | phr. 批判性思维 | Schools should place more emphasis on developing **critical thinking**. | 学校应该更加重视培养批判性思维。 |
 | problem-solving | n. 解决问题 | Group projects are an excellent way of teaching **problem-solving** skills. | 小组项目是培养解决问题能力的极好方法。 |
-| analytical | adj. 分析的 | Studying mathematics helps children to develop strong **analytical** skills. | 学习数学有助于孩子培养强大的分析能力。 |
+| analytical | adj. 分析的 | Studying mathematics helps children to develop strong **analytical** skills. | 学习数学有助于孩子培养很强的分析能力。 |
 | creative | adj. 有创造力的 | Art and music lessons encourage children to be more **creative**. | 美术和音乐课鼓励孩子更有创造力。 |
 | all-round | adj. 全面的 | Schools should aim to provide an **all-round** education for every child. | 学校应该致力于为每个孩子提供全面的教育。 |
 | well-rounded | adj. 全面发展的 | Sports and the arts help students to become **well-rounded** adults. | 体育和艺术帮助学生成长为全面发展的成年人。 |
 | extracurricular | adj. 课外的 | **Extracurricular** clubs give students a chance to develop new interests. | 课外社团让学生有机会培养新的兴趣。 |
 | academic performance | phr. 学业表现 | Some studies suggest that regular exercise can improve **academic performance**. | 一些研究表明,经常锻炼可以提高学业表现。 |
-| achievement | n. 成就 | Family income has a strong influence on a child's **achievement** at school. | 家庭收入对孩子在学校的成就有很大影响。 |
+| achievement | n. 成就 | Family income has a strong influence on a child's **achievement** at school. | 家庭收入对孩子的学业成就有很大影响。 |
 | intellectual | adj. 智力的 n. 知识分子 | Puzzles and games can support the **intellectual** development of young children. | 拼图和游戏可以促进幼儿的智力发展。 |
 | intellectual | adj. 智力的 n. 知识分子 | **Intellectuals** have often played an important part in political change. | 知识分子常常在政治变革中发挥重要作用。 |
 | knowledge | n. 知识 | Practical skills are often as valuable as **knowledge** gained from books. | 实践技能往往和书本知识一样宝贵。 |
 | competence | n. 能力 | Students should reach a basic level of **competence** in computer skills. | 学生的计算机能力应该达到基本水平。 |
-| proficiency | n. 熟练 | A high level of **proficiency** in English can open many doors. | 高水平的英语熟练度能打开许多大门。 |
+| proficiency | n. 熟练 | A high level of **proficiency** in English can open many doors. | 熟练掌握英语能为你带来许多机会。 |
 | aptitude | n. 天资 | Children with an **aptitude** for music should be given extra support. | 有音乐天资的孩子应该得到额外支持。 |
 | talent | n. 天赋 | Schools should help every child to discover their natural **talent**. | 学校应该帮助每个孩子发现自己的天赋。 |
 | gifted | adj. 有天赋的 | **Gifted** children can become bored if lessons are too easy for them. | 如果课程太简单,有天赋的孩子可能会感到无聊。 |
@@ -294,7 +294,7 @@
 | educator | n. 教育工作者 | Every **educator** knows that children learn in different ways. | 每位教育工作者都知道孩子们的学习方式各不相同。 |
 | mentor | n. 导师 | An experienced **mentor** can help young workers to develop their careers. | 经验丰富的导师能帮助年轻员工发展事业。 |
 | role model | phr. 榜样 | Teachers can be an important **role model** for young people. | 老师可以成为年轻人重要的榜样。 |
-| qualified | adj. 合格的 | Every school needs enough **qualified** teachers in science and mathematics. | 每所学校都需要足够的合格的科学和数学教师。 |
+| qualified | adj. 合格的 | Every school needs enough **qualified** teachers in science and mathematics. | 每所学校都需要足够多合格的科学和数学教师。 |
 | standardised test | phr. 标准化考试 | A **standardised test** cannot measure every skill that students need. | 标准化考试无法衡量学生需要的每一项技能。 |
 | exam-oriented | adj. 应试的 | An **exam-oriented** system leaves little time for art, music and sports. | 应试制度几乎不给美术、音乐和体育留时间。 |
 | tuition | n. 学费;教学 | The cost of university **tuition** has risen sharply in many countries. | 在许多国家,大学学费急剧上涨。 |
@@ -350,12 +350,12 @@
 | accessible | adj. 可获取的;易于使用的 | The internet has made higher education **accessible** to people in remote areas. | 互联网让偏远地区的人们也能接受高等教育。 |
 | access | n./v. 访问,获取 | Everyone should have **access** to clean water and basic health care. | 每个人都应该能获得清洁的水和基本医疗。 |
 | access | n./v. 访问,获取 | Students can **access** the library's books from any computer on the campus. | 学生可以从校园里的任何电脑访问图书馆的书籍。 |
-| dependence | n. 依赖 | Our growing **dependence** on technology may reduce our basic skills. | 我们对技术日益增长的依赖可能削弱基本技能。 |
+| dependence | n. 依赖 | Our growing **dependence** on technology may reduce our basic skills. | 我们越来越依赖技术,这可能削弱我们的基本技能。 |
 | isolation | n. 孤立 | Spending too much time online can lead to social **isolation**. | 上网时间过长可能导致社交孤立。 |
 | face-to-face | adj. 面对面的 | Nothing can fully replace **face-to-face** communication between teachers and students. | 没有什么能完全取代师生之间面对面的交流。 |
 | interpersonal | adj. 人际的 | Too much time on phones may weaken children's **interpersonal** skills. | 花太多时间在手机上可能削弱孩子的人际交往能力。 |
 | revolutionise | v. 彻底改变 | Mobile phones have **revolutionised** the way people communicate with each other. | 手机彻底改变了人们相互交流的方式。 |
-| job displacement | phr. 工作岗位被替代 | **Job displacement** caused by automation is a serious concern for many workers. | 自动化造成的工作岗位被替代是许多工人严重担忧的问题。 |
+| job displacement | phr. 工作岗位被替代 | **Job displacement** caused by automation is a serious concern for many workers. | 许多工人非常担心自动化会让自己的工作岗位被替代。 |
 | surveillance | n. 监控 | Increased **surveillance** may reduce crime, but it also threatens personal privacy. | 加强监控也许能减少犯罪,但也威胁个人隐私。 |
 | ethical | adj. 道德的 | There are serious **ethical** questions about the use of genetic information. | 基因信息的使用存在严重的道德问题。 |
 | ethics | n. 伦理 | Journalists have a code of **ethics** that they are expected to follow. | 记者有一套应当遵守的伦理准则。 |
@@ -389,8 +389,8 @@
 | naive | adj. 天真的 | It is **naive** to believe everything that appears on the internet. | 相信网上的一切是很天真的。 |
 | questionable | adj. 可疑的 | The company's claims about its environmental record are highly **questionable**. | 该公司关于其环保记录的说法非常可疑。 |
 | alarming | adj. 令人担忧的 | The number of young people with mental health problems has reached **alarming** levels. | 有心理健康问题的年轻人数量已达到令人担忧的水平。 |
-| disturbing | adj. 令人不安的 | There is a **disturbing** rise in the amount of violence on television. | 电视上的暴力内容令人不安地增多了。 |
-| prevalence | n. 流行,盛行 | The **prevalence** of mobile phones has changed how young people spend their time. | 手机的盛行改变了年轻人度过时间的方式。 |
+| disturbing | adj. 令人不安的 | There is a **disturbing** rise in the amount of violence on television. | 电视上的暴力内容越来越多,令人不安。 |
+| prevalence | n. 流行,盛行 | The **prevalence** of mobile phones has changed how young people spend their time. | 手机的盛行改变了年轻人打发时间的方式。 |
 | blockbuster | n. 大片;畅销书 | A Hollywood **blockbuster** can earn more than the budget of a small country. | 一部好莱坞大片的收入可能超过一个小国的预算。 |
 | premiere | n. 首映 | The film's **premiere** attracted a large crowd of fans to the city. | 这部电影的首映吸引了大批影迷来到这座城市。 |
 | trailer | n. 预告片;拖车 | A good **trailer** can persuade millions of people to see a film. | 一部好的预告片能说服数百万人去看电影。 |
@@ -425,7 +425,7 @@
 | election | n. 选举 | Young people are less likely to vote in a national **election**. | 年轻人在全国选举中投票的可能性较小。 |
 | vote | v./n. 投票 | Some people believe that the age to **vote** should be lowered to sixteen. | 有些人认为投票年龄应该降低到十六岁。 |
 | political | adj. 政治的 | Young people should take more interest in **political** issues. | 年轻人应该更关注政治问题。 |
-| politician | n. 政治家 | A **politician** should be judged on actions rather than promises. | 评价政治家应该看行动,而不是承诺。 |
+| politician | n. 政治家 | A **politician** should be judged on actions rather than promises. | 评价政客应该看行动,而不是承诺。 |
 | citizen | n. 公民 | Every **citizen** has a duty to obey the law and pay tax. | 每个公民都有义务遵守法律和纳税。 |
 | citizenship | n. 公民身份 | Lessons in **citizenship** teach young people about their rights and duties. | 公民课教导年轻人了解自己的权利和义务。 |
 | civic | adj. 公民的 | Voting is one of the most important **civic** duties in a democracy. | 投票是民主国家最重要的公民义务之一。 |
@@ -463,7 +463,7 @@
 | military | adj. 军事的 n. 军队 | Some countries require young people to complete a period of **military** service. | 有些国家要求年轻人服一段时间的兵役。 |
 | defence | n. 国防 | Spending on **defence** takes money away from education and health. | 国防开支占用了教育和医疗的资金。 |
 | conflict | n. 冲突 | **Conflict** in the region has forced many families to leave their homes. | 该地区的冲突迫使许多家庭离开家园。 |
-| refugee | n. 难民 | Wealthy nations should do more to help each **refugee** build a new life. | 富裕国家应该做更多的事,帮助每位难民开始新生活。 |
+| refugee | n. 难民 | Wealthy nations should do more to help **refugees** build a new life. | 富裕国家应该做更多的事,帮助难民开始新生活。 |
 | humanitarian | adj. 人道主义的 | **Humanitarian** organisations provide food and medicine in areas affected by war. | 人道主义组织在受战争影响的地区提供食物和药品。 |
 | aid | n. 援助 | Foreign **aid** should be spent on projects that help people become independent. | 外国援助应该用于帮助人们实现自立的项目。 |
 | non-governmental organisation | phr. 非政府组织 | A **non-governmental organisation** can often respond quickly in an emergency. | 非政府组织在紧急情况下往往能迅速作出反应。 |
@@ -491,7 +491,7 @@
 | entitle | v. 使有权 | A valid student card will **entitle** you to reduced prices on transport. | 有效的学生证使你有权享受交通优惠。 |
 | empower | v. 授权;使能够 | Education can **empower** women to make their own decisions. | 教育能使女性有能力自己作决定。 |
 | deport | v. 驱逐出境 | The government has the power to **deport** foreign criminals after they serve their sentences. | 政府有权在外国罪犯服刑后将其驱逐出境。 |
-| armament | n. 军备 | Too much public money is spent on **armament** rather than on schools. | 太多公共资金花在军备上,而不是学校上。 |
+| armament | n. 军备 | Too much public money is spent on **armaments** rather than on schools. | 太多公共资金花在军备上,而不是学校上。 |
 | disarm | v. 裁军;解除武装 | Many countries have agreed to **disarm** in order to reduce the risk of war. | 许多国家同意裁军,以减少战争风险。 |
 | naval | adj. 海军的 | The country's **naval** forces protect ships from attack in international waters. | 该国海军力量保护船只在国际水域免受袭击。 |
 | tactics | n. 战术 | The police changed their **tactics** after criticism of the way they treated protesters. | 警方因对待抗议者的方式受到批评,改变了策略。 |
@@ -523,7 +523,7 @@
 | nominate | v. 提名 | Each party will **nominate** one candidate to stand for election. | 每个政党将提名一名候选人参加竞选。 |
 | asylum | n. 庇护 | Many people seek **asylum** in order to escape war in their own countries. | 许多人寻求庇护,以逃离本国的战争。 |
 | conspiracy | n. 阴谋 | Many people still believe the **conspiracy** theories that spread on social media. | 许多人仍然相信社交媒体上流传的阴谋论。 |
-| militant | adj. 好战的 | **Militant** groups have attacked government buildings in the north of the country. | 好战团体袭击了该国北部的政府建筑。 |
+| militant | adj. 好战的 | **Militant** groups have attacked government buildings in the north of the country. | 激进武装组织袭击了该国北部的政府建筑。 |
 | bilateral | adj. 双边的 | The two countries signed a **bilateral** agreement on trade and education. | 两国签署了一项关于贸易和教育的双边协议。 |
 | criminal | n. 罪犯 adj. 犯罪的 | A convicted **criminal** may find it very difficult to get a job. | 被定罪的罪犯可能很难找到工作。 |
 | criminal | n. 罪犯 adj. 犯罪的 | **Criminal** behaviour among young people is often linked to poverty. | 年轻人的犯罪行为常常与贫困有关。 |
@@ -553,7 +553,7 @@
 | defendant | n. 被告 | The **defendant** said that he had been at home when the crime took place. | 被告称案发时他在家。 |
 | plaintiff | n. 原告 | The **plaintiff** claimed that the company had failed to protect its workers. | 原告称公司未能保护其员工。 |
 | witness | n. 证人 | A **witness** told the court that she had seen the man leave the shop. | 一名证人告诉法庭,她看到该男子离开了商店。 |
-| verdict | n. 判决 | The **verdict** surprised many people who had followed the case closely. | 这项判决令许多密切关注此案的人感到意外。 |
+| verdict | n. 判决 | The **verdict** surprised many people who had followed the case closely. | 这项裁决令许多密切关注此案的人感到意外。 |
 | guilty | adj. 有罪的 | A person is considered innocent until proven **guilty** in a court of law. | 一个人在法庭证明有罪之前都被视为无罪。 |
 | innocent | adj. 无辜的 | Some **innocent** people have spent years in prison for crimes they did not commit. | 一些无辜的人因未曾犯下的罪行在狱中度过多年。 |
 | convict | v. 定罪 | The court needs clear evidence to **convict** someone of a serious crime. | 法院需要明确的证据才能判定某人犯有重罪。 |
@@ -594,7 +594,7 @@
 | licensed | adj. 获许可的 | Only **licensed** doctors should be allowed to prescribe these drugs. | 只有获得许可的医生才能开这些药。 |
 | forbid | v. 禁止 | Some countries **forbid** the use of mobile phones in schools. | 一些国家禁止在学校使用手机。 |
 | obey | v. 服从 | Children who learn to **obey** rules at home tend to behave better at school. | 在家学会遵守规矩的孩子在学校往往表现更好。 |
-| accuse | v. 指控 | Critics **accuse** the government of ignoring the needs of rural communities. | 批评者指控政府忽视农村社区的需求。 |
+| accuse | v. 指控 | Critics **accuse** the government of ignoring the needs of rural communities. | 批评者指责政府忽视农村社区的需求。 |
 | accusation | n. 指控 | The minister has denied the **accusation** that he misused public money. | 这位部长否认了他滥用公共资金的指控。 |
 | lawsuit | n. 诉讼 | Several families filed a **lawsuit** against the company over the polluted water. | 几个家庭就水污染问题对该公司提起诉讼。 |
 | indictment | n. 起诉书 | The high rate of youth unemployment is an **indictment** of government policy. | 青年失业率高是对政府政策的控诉。 |
@@ -614,7 +614,7 @@
 | indemnity | n. 赔偿 | The company paid an **indemnity** to the workers who were injured. | 公司向受伤工人支付了赔偿。 |
 | impunity | n. 不受惩罚 | Large companies should not be able to pollute rivers with **impunity**. | 大公司不应污染河流而不受惩罚。 |
 | exempt | adj. 被免除的 v. 免除 | Small businesses are **exempt** from the new tax on waste. | 小企业免缴新的垃圾税。 |
-| condone | v. 纵容 | Society should never **condone** violence against children in any form. | 社会绝不应纵容任何形式的针对儿童的暴力。 |
+| condone | v. 纵容 | Society should never **condone** violence against children in any form. | 对儿童的任何暴力行为,社会都绝不应纵容。 |
 | condemn | v. 谴责 | World leaders were quick to **condemn** the attack on the hospital. | 世界各国领导人迅速谴责了对医院的袭击。 |
 | denounce | v. 公开谴责 | Human rights groups **denounced** the arrest of the journalists. | 人权组织公开谴责了逮捕记者的行为。 |
 | complaint | n. 投诉 | The company received thousands of **complaints** about its poor service. | 这家公司收到了数千份关于服务差的投诉。 |
@@ -625,7 +625,7 @@
 | flee | v. 逃跑 | Millions of people have been forced to **flee** their homes because of war. | 数百万人因战争被迫逃离家园。 |
 | penal | adj. 刑罚的 | The country's **penal** system should focus more on education and training. | 该国的刑罚制度应该更加注重教育和培训。 |
 | illicit | adj. 非法的 | The **illicit** trade in wild animals threatens many rare species. | 非法的野生动物贸易威胁着许多珍稀物种。 |
-| illegitimate | adj. 非法的;私生的 | Protesters claimed that the new government was **illegitimate** after a false election. | 抗议者称,虚假选举后产生的新政府是非法的。 |
+| illegitimate | adj. 非法的;私生的 | Protesters claimed that the new government was **illegitimate** because the election had been rigged. | 抗议者称,由于选举被操纵,新政府是非法的。 |
 | wilful | adj. 故意的 | The company was fined for the **wilful** destruction of the forest. | 这家公司因故意破坏森林被罚款。 |
 | heinous | adj. 极其恶劣的 | Those who commit **heinous** crimes should face the strictest punishment. | 犯下极其恶劣罪行的人应受到最严厉的惩罚。 |
 | counterfeit | adj. 伪造的 n. 赝品 | **Counterfeit** medicines are a serious danger to people in many poor countries. | 伪造药品对许多贫穷国家的人构成严重危险。 |
@@ -645,7 +645,7 @@
 | break the law | phr. 违法 | Companies that **break the law** should pay heavy fines. | 违法的公司应该支付高额罚款。 |
 | law enforcement | phr. 执法 | **Law enforcement** agencies are working together to stop online crime. | 执法机构正在合作打击网络犯罪。 |
 | organised crime | phr. 有组织犯罪 | **Organised crime** often grows in places where the government is weak. | 有组织犯罪往往在政府薄弱的地方滋生。 |
-| tax evasion | phr. 逃税 | **Tax evasion** costs governments billions of pounds in lost money every year. | 逃税每年使各国政府损失数十亿英镑。 |
+| tax evasion | phr. 逃税 | **Tax evasion** costs governments billions of pounds in lost revenue every year. | 逃税每年使各国政府损失数十亿英镑的税收。 |
 | child abuse | phr. 虐待儿童 | Teachers are trained to recognise the signs of **child abuse**. | 教师接受培训,学习识别虐待儿童的迹象。 |
 | death sentence | phr. 死刑判决 | The court's **death sentence** caused anger among human rights groups. | 法院的死刑判决引起了人权组织的愤怒。 |
 | consent | n./v. 同意,准许 | Doctors must obtain a patient's **consent** before any operation. | 医生必须在任何手术前征得患者的同意。 |
@@ -659,7 +659,7 @@
 | breach | n./v. 违反;破坏 | The company's use of personal data was a clear **breach** of the law. | 该公司使用个人数据的做法明显违反了法律。 |
 | negligence | n. 疏忽 | The hospital was found guilty of **negligence** after the patient's death. | 患者死亡后,医院被判定有疏忽之责。 |
 | magistrate | n. 地方法官 | The **magistrate** ordered the young man to pay a small fine. | 地方法官判令这名年轻人支付一小笔罚款。 |
-| hostage | n. 人质 | The police managed to free the **hostage** after several hours of discussions. | 经过几小时的谈判,警方成功解救了人质。 |
+| hostage | n. 人质 | The police managed to free the **hostage** after several hours of negotiations. | 经过几小时的谈判,警方成功解救了人质。 |
 | kidnap | v. 绑架 | The gang tried to **kidnap** the businessman for a large sum of money. | 这个团伙试图绑架这名商人,以索取巨款。 |
 | harassment | n. 骚扰 | Companies should have clear rules to deal with **harassment** at work. | 公司应该有明确的规定来处理工作中的骚扰。 |
 | judicial | adj. 司法的 | An independent **judicial** system is essential for a fair society. | 独立的司法体系对公平的社会至关重要。 |
@@ -669,7 +669,7 @@
 | pollution | n. 污染 | **Pollution** from factories is damaging rivers and lakes across the region. | 工厂造成的污染正在破坏该地区的河流和湖泊。 |
 | pollutant | n. 污染物 | Factories should be required to reduce the **pollutants** they release into rivers. | 应要求工厂减少排入河流的污染物。 |
 | contaminate | v. 污染 | Chemicals used on farms can **contaminate** drinking water supplies. | 农场使用的化学品可能污染饮用水源。 |
-| air pollution | phr. 空气污染 | **Air pollution** is a major cause of breathing problems in large cities. | 空气污染是大城市呼吸问题的主要原因。 |
+| air pollution | phr. 空气污染 | **Air pollution** is a major cause of breathing problems in large cities. | 空气污染是大城市居民患呼吸系统疾病的主要原因。 |
 | water pollution | phr. 水污染 | **Water pollution** from mines has killed most of the fish in the river. | 矿山造成的水污染杀死了河里的大部分鱼。 |
 | noise pollution | phr. 噪音污染 | **Noise pollution** from aircraft can damage the health of nearby residents. | 飞机造成的噪音污染可能损害附近居民的健康。 |
 | light pollution | phr. 光污染 | **Light pollution** in cities makes it difficult to see the stars at night. | 城市的光污染使人们夜间很难看到星星。 |
@@ -711,7 +711,7 @@
 | soil erosion | phr. 水土流失 | Cutting down trees on hillsides can lead to serious **soil erosion**. | 砍伐山坡上的树木可能导致严重的水土流失。 |
 | acid rain | phr. 酸雨 | **Acid rain** has damaged forests and lakes across northern Europe. | 酸雨破坏了北欧各地的森林和湖泊。 |
 | climate change | phr. 气候变化 | **Climate change** is the most serious environmental problem facing the world. | 气候变化是世界面临的最严重的环境问题。 |
-| natural disaster | phr. 自然灾害 | Poor countries are often the worst affected by a **natural disaster**. | 贫穷国家往往受自然灾害的影响最严重。 |
+| natural disaster | phr. 自然灾害 | Poor countries are often the worst affected by **natural disasters**. | 贫穷国家往往受自然灾害的影响最严重。 |
 | catastrophe | n. 灾难 | Scientists warn of a **catastrophe** if the ice sheets continue to melt. | 科学家警告,如果冰盖继续融化,将发生灾难。 |
 | irreversible | adj. 不可逆的 | The damage to the world's coral reefs may already be **irreversible**. | 世界珊瑚礁所受的损害可能已经不可逆转。 |
 | preservation | n. 保存,保护 | The **preservation** of old forests should be a priority for every government. | 保护古老森林应该是每个政府的优先事项。 |
@@ -748,7 +748,7 @@
 | evacuate | v. 疏散 | Thousands of people had to **evacuate** their homes because of the flood. | 洪水迫使数千人疏散离家。 |
 | debris | n. 碎片,残骸 | Plastic **debris** in the ocean kills large numbers of sea animals. | 海洋中的塑料碎片杀死了大量海洋动物。 |
 | devastate | v. 摧毁 | Rising sea levels could **devastate** low-lying countries such as Bangladesh. | 海平面上升可能摧毁孟加拉国等低洼国家。 |
-| wreck | n. 残骸 v. 破坏 | Oil from the **wreck** spread along the coast for many miles. | 残骸漏出的石油沿海岸扩散了许多英里。 |
+| wreck | n. 残骸 v. 破坏 | Oil from the **wreck** spread along the coast for many miles. | 沉船残骸漏出的石油沿海岸扩散了许多英里。 |
 | globalisation | n. 全球化 | **Globalisation** has brought cheaper goods but has also destroyed some local jobs. | 全球化带来了更便宜的商品,但也使一些本地工作消失。 |
 | global village | phr. 地球村 | The internet has turned the world into a **global village**. | 互联网把世界变成了一个地球村。 |
 | international | adj. 国际的 | **International** cooperation is essential to solve the problem of climate change. | 要解决气候变化问题,国际合作至关重要。 |
@@ -763,7 +763,7 @@
 | convention | n. 惯例;大会 | Teachers from around the world will attend the annual **convention** in Paris. | 来自世界各地的教师将参加在巴黎举行的年度大会。 |
 | value | n. 价值;价值观 v. 重视 | Parents should teach their children the **value** of hard work. | 父母应该教导孩子勤奋的价值。 |
 | value | n. 价值;价值观 v. 重视 | Modern societies tend to **value** wealth more than wisdom. | 现代社会往往重视财富胜过智慧。 |
-| norm | n. 规范 | Living alone has become the **norm** for older people in many countries. | 在许多国家,老年人独居已成为一种规范。 |
+| norm | n. 规范 | Living alone has become the **norm** for older people in many countries. | 在许多国家,老年人独居已成为常态。 |
 | etiquette | n. 礼仪 | Business people should learn the **etiquette** of the country they are visiting. | 商务人士应该学习所访问国家的礼仪。 |
 | assimilation | n. 同化 | The **assimilation** of immigrants into a new society can take several generations. | 移民融入新社会可能需要几代人的时间。 |
 | integration | n. 融合 | Language classes can help with the **integration** of new immigrants. | 语言课程有助于新移民融入社会。 |
@@ -798,8 +798,8 @@
 | poetry | n. 诗歌 | Children today read far less **poetry** than previous generations did. | 如今的孩子读的诗歌比前几代人少得多。 |
 | drama | n. 戏剧 | **Drama** classes can give shy children greater confidence in speaking. | 戏剧课能让害羞的孩子说话更有自信。 |
 | cultural heritage | phr. 文化遗产 | Governments should spend money on protecting the nation's **cultural heritage**. | 政府应该投入资金保护国家的文化遗产。 |
-| intangible | adj. 无形的 | **Intangible** benefits of the arts are often difficult to measure in money. | 艺术无形的益处往往很难用金钱衡量。 |
-| emigrant | n. 移民(出境者) | An **emigrant** may find it hard to leave family and friends behind. | 移民可能很难离开家人和朋友。 |
+| intangible | adj. 无形的 | The **intangible** benefits of the arts are often difficult to measure in money. | 艺术无形的益处往往很难用金钱衡量。 |
+| emigrant | n. 移民(出境者) | An **emigrant** may find it hard to leave family and friends behind. | 移居外国的人可能很难离开家人和朋友。 |
 | immigrate | v. 移入 | Thousands of young professionals **immigrate** to the country each year. | 每年有数千名年轻专业人士移民到这个国家。 |
 | aesthetic | adj. 审美的 | New buildings should be judged on **aesthetic** grounds as well as on cost. | 评价新建筑既要看成本,也要看审美。 |
 | artistic | adj. 艺术的 | Schools should encourage **artistic** ability as much as academic success. | 学校应该像鼓励学业成功一样鼓励艺术才能。 |
@@ -808,8 +808,8 @@
 | portray | v. 描绘 | Television programmes often **portray** older people in a negative way. | 电视节目常常以负面的方式描绘老年人。 |
 | impressionism | n. 印象派 | **Impressionism** changed the way that painters thought about light and colour. | 印象派改变了画家对光和色彩的看法。 |
 | watercolour | n. 水彩画 | Each **watercolour** in the exhibition shows a different view of the river. | 展览中的每幅水彩画都展现了河流的不同景色。 |
-| canvas | n. 画布 | The artist painted the huge **canvas** for a public building in the capital. | 这位艺术家为首都的一座公共建筑绘制了这幅巨大的画布作品。 |
-| palette | n. 调色板 | The painter used a limited **palette** of blues and greys. | 这位画家使用了以蓝色和灰色为主的有限调色板。 |
+| canvas | n. 画布 | The artist painted the huge **canvas** for a public building in the capital. | 这位艺术家为首都的一座公共建筑画了这幅巨幅画作。 |
+| palette | n. 调色板 | The painter used a limited **palette** of blues and greys. | 这位画家只用了蓝色和灰色等少数几种颜色。 |
 | pigment | n. 颜料 | Early painters made **pigment** from coloured rocks and plants. | 早期的画家用彩色岩石和植物制作颜料。 |
 | embroidery | n. 刺绣 | Traditional **embroidery** from the region is now sold around the world. | 该地区的传统刺绣现在销往世界各地。 |
 | tragedy | n. 悲剧 | Shakespeare's greatest **tragedy** is still performed in many languages. | 莎士比亚最伟大的悲剧至今仍以多种语言上演。 |
@@ -834,10 +834,10 @@
 | tourist attraction | phr. 旅游景点 | The old castle has become the region's most popular **tourist attraction**. | 这座古堡已成为该地区最受欢迎的旅游景点。 |
 | mass tourism | phr. 大众旅游 | **Mass tourism** can destroy the natural beauty that attracts visitors in the first place. | 大众旅游可能破坏最初吸引游客的自然美景。 |
 | ecotourism | n. 生态旅游 | **Ecotourism** can provide income for local people while protecting wildlife. | 生态旅游能为当地人提供收入,同时保护野生动物。 |
-| hospitality industry | phr. 酒店业 | The **hospitality industry** provides millions of jobs for young people. | 酒店业为年轻人提供了数百万个就业机会。 |
+| hospitality industry | phr. 酒店业 | The **hospitality industry** provides millions of jobs for young people. | 酒店及餐饮业为年轻人提供了数百万个就业机会。 |
 | foreign exchange | phr. 外汇 | Tourism is a major source of **foreign exchange** for many developing countries. | 旅游业是许多发展中国家外汇的主要来源。 |
 | local economy | phr. 当地经济 | Spending by visitors can give a valuable boost to the **local economy**. | 游客的消费能大大推动当地经济。 |
-| job opportunity | phr. 就业机会 | Each new hotel creates a **job opportunity** for people living nearby. | 每家新酒店都为附近居民创造就业机会。 |
+| job opportunity | phr. 就业机会 | Each new hotel creates **job opportunities** for people living nearby. | 每家新酒店都为附近居民创造就业机会。 |
 | overcrowding | n. 过度拥挤 | **Overcrowding** at historic sites spoils the experience for many visitors. | 历史遗迹的过度拥挤破坏了许多游客的体验。 |
 | commercialisation | n. 商业化 | The **commercialisation** of traditional festivals has reduced their cultural meaning. | 传统节日的商业化削弱了它们的文化意义。 |
 | authentic | adj. 地道的,真正的 | Tourists often want an **authentic** experience of local life. | 游客往往希望真正体验当地生活。 |
@@ -867,7 +867,7 @@
 | spoil | v. 宠坏,溺爱;破坏 | Large numbers of tourists can **spoil** the natural beauty of an area. | 大量游客可能破坏一个地区的自然美景。 |
 | pamper | v. 娇惯 | Parents who **pamper** their children may make them less independent. | 娇惯孩子的父母可能让孩子变得不那么独立。 |
 | bond | n. 纽带 | Eating together strengthens the **bond** between parents and children. | 一起吃饭能加强父母和孩子之间的纽带。 |
-| intimacy | n. 亲密 | Technology may reduce the **intimacy** of family relationships. | 技术可能减少家庭关系的亲密。 |
+| intimacy | n. 亲密 | Technology may reduce the **intimacy** of family relationships. | 技术可能让家庭关系变得不那么亲密。 |
 | harmony | n. 和谐 | Respect for elders helps to maintain **harmony** within the family. | 尊敬长辈有助于维持家庭和谐。 |
 | sense of belonging | phr. 归属感 | Team sports give young people a strong **sense of belonging**. | 团队运动给年轻人带来强烈的归属感。 |
 | domestic | adj. 家庭的;国内的 | **Domestic** tasks should be shared equally between men and women. | 家务应该由男女平等分担。 |
@@ -891,7 +891,7 @@
 | inequality | n. 不平等 | **Inequality** between rich and poor has grown in many developed countries. | 在许多发达国家,贫富之间的不平等加剧了。 |
 | wealth gap | phr. 贫富差距 | Higher taxes on the rich could help to reduce the **wealth gap**. | 提高对富人的税收有助于缩小贫富差距。 |
 | underprivileged | adj. 弱势的 | Scholarships give **underprivileged** children the chance to attend good universities. | 奖学金让弱势儿童有机会上好大学。 |
-| disadvantaged | adj. 处于劣势的 | **Disadvantaged** students often need extra help from teachers. | 处于劣势的学生往往需要老师的额外帮助。 |
+| disadvantaged | adj. 处于劣势的 | **Disadvantaged** students often need extra help from teachers. | 弱势学生往往需要老师的额外帮助。 |
 | homeless | adj. 无家可归的 | The government should do more to help **homeless** people find housing. | 政府应该做更多的事,帮助无家可归的人找到住房。 |
 | donate | v. 捐赠 | Wealthy people should **donate** more of their money to charity. | 富人应该把更多的钱捐给慈善机构。 |
 | donation | n. 捐款 | A large **donation** from a local business paid for the new library. | 当地一家企业的巨额捐款支付了新图书馆的费用。 |
@@ -905,7 +905,7 @@
 | nickname | n. 绰号 | Children may feel hurt if they are given an unkind **nickname** at school. | 如果在学校被起了难听的绰号,孩子可能会感到受伤。 |
 | engaged | adj. 订婚的;忙碌的 | Couples often stay **engaged** for several years to save money for a home. | 情侣常常订婚几年,为买房攒钱。 |
 | widow | n. 寡妇 | An elderly **widow** may feel very lonely after the death of her husband. | 年迈的寡妇在丈夫去世后可能感到非常孤独。 |
-| marital | adj. 婚姻的 | Financial problems are a common cause of **marital** difficulties. | 财务问题是婚姻困难的常见原因。 |
+| marital | adj. 婚姻的 | Financial problems are a common cause of **marital** difficulties. | 财务问题是引发婚姻矛盾的常见原因。 |
 | attachment | n. 依恋 | Young children form a strong **attachment** to the people who care for them. | 幼儿对照顾他们的人产生强烈的依恋。 |
 | affinity | n. 亲近感 | Young people often feel a natural **affinity** with new technology. | 年轻人往往对新技术有一种天然的亲近感。 |
 | mistreat | v. 虐待 | Care homes that **mistreat** older people should be closed down immediately. | 虐待老人的护理院应该立即关闭。 |
@@ -928,7 +928,7 @@
 | socially | adv. 在社会上;在社交方面 | Children who spend too much time online may become **socially** isolated. | 上网时间过长的孩子可能在社交上变得孤立。 |
 | mobility | n. 流动性;行动能力 | Regular exercise helps older people to maintain their **mobility**. | 经常锻炼有助于老年人保持行动能力。 |
 | sexuality | n. 性取向;性特征 | Attitudes towards **sexuality** have changed considerably over the last fifty years. | 过去五十年,人们对性取向的态度发生了很大变化。 |
-| maternal | adj. 母亲的;母系的 | **Maternal** health has improved greatly in many developing countries. | 在许多发展中国家,母亲的健康状况大大改善。 |
+| maternal | adj. 母亲的;母系的 | **Maternal** health has improved greatly in many developing countries. | 在许多发展中国家,孕产妇的健康状况大大改善。 |
 | gender | n. 性别 | Jobs should be given according to ability, regardless of **gender**. | 工作应该根据能力分配,不分性别。 |
 | elderly | adj. 年长的 | **Elderly** people have a great deal of knowledge to pass on to the young. | 年长的人有大量知识可以传给年轻人。 |
 | youngster | n. 年轻人 | A **youngster** with a good role model is less likely to get into trouble. | 有好榜样的年轻人不太可能惹上麻烦。 |
@@ -959,7 +959,7 @@
 | fast food | phr. 快餐 | The growth of **fast food** has contributed to rising levels of obesity. | 快餐的发展导致肥胖率上升。 |
 | processed food | phr. 加工食品 | A diet high in **processed food** can lead to serious health problems. | 大量食用加工食品可能导致严重的健康问题。 |
 | additive | n. 添加剂 | Food labels should list every **additive** used in the product. | 食品标签应该列出产品中使用的每种添加剂。 |
-| preservative | n. 防腐剂 | Some people avoid any food containing a chemical **preservative**. | 有些人避免吃含有化学防腐剂的任何食品。 |
+| preservative | n. 防腐剂 | Some people avoid any food containing a chemical **preservative**. | 有些人不吃任何含化学防腐剂的食品。 |
 | food safety | phr. 食品安全 | Stricter laws are needed to improve **food safety** in restaurants. | 需要更严格的法律来改善餐馆的食品安全。 |
 | overweight | adj. 超重的 | **Overweight** children are more likely to have health problems as adults. | 超重儿童成年后更容易出现健康问题。 |
 | mental health | phr. 心理健康 | Too much time on social media may damage the **mental health** of teenagers. | 花太多时间在社交媒体上可能损害青少年的心理健康。 |
@@ -1022,7 +1022,7 @@
 | translator | n. 译者 | Software may eventually replace the work of a human **translator**. | 软件最终可能取代人工译者的工作。 |
 | detective | n. 侦探 | The **detective** spent months collecting evidence against the company. | 这名侦探花了几个月时间收集对这家公司不利的证据。 |
 | chef | n. 厨师 | A **chef** often has to work long hours in hot and crowded conditions. | 厨师常常要在炎热拥挤的环境中长时间工作。 |
-| tailor | n. 裁缝 | The number of people who train as a **tailor** has fallen sharply. | 接受裁缝培训的人数急剧下降。 |
+| tailor | n. 裁缝 | The number of people who train as **tailors** has fallen sharply. | 接受裁缝培训的人数急剧下降。 |
 | florist | n. 花商 | A local **florist** may struggle to compete with cheap supermarket flowers. | 当地的花商可能很难与超市的廉价鲜花竞争。 |
 | butcher | n. 屠夫 | The local **butcher** closed when a large supermarket opened nearby. | 附近开了一家大超市后,当地的肉贩关了店。 |
 | greengrocer | n. 蔬果商(英) | Fewer people buy their vegetables from a **greengrocer** these days. | 如今从蔬果商那里买菜的人越来越少了。 |

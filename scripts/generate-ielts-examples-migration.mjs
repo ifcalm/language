@@ -5,6 +5,7 @@
 // Usage: node scripts/generate-ielts-examples-migration.mjs <migration name> <review md path> <batch.json>...
 // Add --check as the first argument to validate and report coverage only.
 import { readFileSync, writeFileSync } from 'node:fs'
+import { MAX_PER_ENTRY, exampleProblems } from './lib/ielts-examples.mjs'
 
 const args = process.argv.slice(2)
 const checkOnly = args[0] === '--check'
@@ -15,13 +16,8 @@ if (batchPaths.length === 0) {
   throw new Error('Usage: generate-ielts-examples-migration.mjs [--check] <migration name> <review md path> <batch.json>...')
 }
 
-const MIN_WORDS = 8
-const MAX_WORDS = 20
-const MAX_PER_ENTRY = 3
-
 const snapshot = JSON.parse(readFileSync('scripts/fixtures/ielts-d1.json', 'utf8'))
 const wordsById = new Map(snapshot.words.map((word) => [word.id, word]))
-const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const sql = (value) => `'${value.replaceAll("'", "''")}'`
 
 const problems = []
@@ -38,14 +34,9 @@ for (const path of batchPaths) {
       continue
     }
 
-    const length = en.trim().split(/\s+/).length
-    if (length < MIN_WORDS || length > MAX_WORDS) problems.push(`${length} words: ${en}`)
+    problems.push(...exampleProblems(en, zh, target))
     if (seenSentences.has(en)) problems.push(`duplicate: ${en}`)
     seenSentences.add(en)
-    if (!zh?.trim()) problems.push(`no translation: ${en}`)
-
-    const hits = en.match(new RegExp(`(?<![\\w-])${escapeRegExp(target)}(?![\\w-])`, 'g')) ?? []
-    if (hits.length !== 1) problems.push(`target "${target}" found ${hits.length} times: ${en}`)
 
     const n = (countByWord.get(wordId) ?? 0) + 1
     countByWord.set(wordId, n)
