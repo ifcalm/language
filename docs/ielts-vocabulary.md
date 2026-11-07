@@ -1138,7 +1138,7 @@
 - **due to** phr. 由于
 - **owing to** phr. 由于
 - **thereby** adv. 因此,从而
-- **thus** adv. 因此
+- **thus** adv. 因此;这样
 - **hence** adv. 因此
 - **consequently** adv. 因此
 - **therefore** adv. 所以
@@ -1159,7 +1159,7 @@
 - **on the contrary** phr. 恰恰相反
 - **alternatively** adv. 或者
 - **namely** adv. 即
-- **in terms of** phr. 就……而言
+- **in terms of** phr. 在……方面,就……而言
 - **with regard to** phr. 关于
 - **in respect of** phr. 关于
 - **provided that** phr. 只要
@@ -1251,7 +1251,7 @@
 - **predominantly** adv. 主要地
 - **partially** adv. 部分地
 - **entirely** adv. 完全地
-- **virtually** adv. 几乎
+- **virtually** adv. 几乎;实际上
 - **merely** adv. 仅仅
 - **solely** adv. 仅仅,完全
 - **specifically** adv. 具体地;专门地
@@ -1284,7 +1284,7 @@
 - **readily** adv. 容易地;乐意地
 - **prominent** adj. 突出的;著名的
 - **purely** adv. 纯粹地,完全
-- **outer** adj. 外部的
+- **outer** adj. 外层的,外围的
 - **bound** adj. 必定的;受约束的
 - **naked** adj. 裸露的;赤裸裸的
 - **formally** adv. 正式地
@@ -1337,7 +1337,7 @@
 - **ongoing** adj. 持续的
 - **undoubtedly** adv. 无疑地
 - **flexible** adj. 灵活的
-- **inadequate** adj. 不足的
+- **inadequate** adj. 不足的;不胜任的
 - **underlying** adj. 潜在的;根本的
 - **sheer** adj. 纯粹的;陡峭的
 - **harsh** adj. 严酷的
@@ -1357,7 +1357,7 @@
 - **worthwhile** adj. 值得的
 - **sympathetic** adj. 同情的;赞同的
 - **anonymous** adj. 匿名的
-- **fatal** adj. 致命的
+- **fatal** adj. 致命的;灾难性的
 - **peculiar** adj. 奇怪的;特有的
 - **immense** adj. 巨大的
 - **eligible** adj. 有资格的
@@ -1365,7 +1365,7 @@
 - **doubtful** adj. 怀疑的;不确定的
 - **brutal** adj. 残酷的
 - **deliberate** adj. 故意的;深思熟虑的 v. 仔细考虑
-- **utterly** adv. 完全地
+- **utterly** adv. 完全地,极度地
 - **devastating** adj. 毁灭性的
 - **consecutive** adj. 连续的
 - **orthodox** adj. 正统的
@@ -1393,7 +1393,7 @@
 - **conspicuous** adj. 显眼的
 - **abnormal** adj. 异常的
 - **volatile** adj. 易变的;易挥发的
-- **dubious** adj. 可疑的
+- **dubious** adj. 可疑的;半信半疑的
 - **drastic** adj. 极端的,剧烈的
 - **renowned** adj. 著名的
 - **uneven** adj. 不均匀的
@@ -2205,12 +2205,12 @@
 - **starch** n. 淀粉
 - **glucose** n. 葡萄糖
 - **fermentation** n. 发酵
-- **ripe** adj. 成熟的
+- **ripe** adj. 熟的,成熟的
 - **prolific** adj. 多产的
 - **infertile** adj. 贫瘠的;不育的
 - **arable** adj. 可耕种的
 - **husbandry** n. 畜牧;耕作
-- **horticulture** n. 园艺
+- **horticulture** n. 园艺学
 - **hydroponics** n. 水培法
 - **manure** n. 粪肥
 - **insecticide** n. 杀虫剂
@@ -2339,7 +2339,7 @@
 - **neutralise** v. 中和
 - **corrode** v. 腐蚀
 - **rot** v. 腐烂
-- **ignite** v. 点燃
+- **ignite** v. 点燃;激起
 - **explosive** n. 炸药 adj. 爆炸性的
 - **adhesive** n. 黏合剂 adj. 黏合的
 - **bleach** n. 漂白剂 v. 漂白
@@ -2440,7 +2440,7 @@
 - **black hole** phr. 黑洞
 - **supernova** n. 超新星
 - **light year** phr. 光年
-- **gravity** n. 重力;严重性
+- **gravity** n. 重力,引力;严重性
 - **gravitational** adj. 引力的
 - **telescope** n. 望远镜
 - **observatory** n. 天文台
@@ -2894,14 +2894,14 @@
 - **origin** n. 起源
 - **myth** n. 神话;错误观念
 - **legend** n. 传说;传奇人物;图例
-- **ritual** n. 仪式
+- **ritual** n. 仪式;例行公事
 - **ceremony** n. 典礼
 - **worship** n./v. 崇拜
 - **sacred** adj. 神圣的
 - **nomad** n. 游牧民
 - **nomadic** adj. 游牧的
 - **hunter-gatherer** n. 狩猎采集者
-- **unearth** v. 发掘
+- **unearth** v. 发掘;发现
 - **petrify** v. 石化;使吓呆
 - **skull** n. 头骨
 - **hominid** n. 原始人类
@@ -2913,7 +2913,7 @@
 - **Palaeolithic** adj. 旧石器时代的
 - **anthropologist** n. 人类学家
 - **posterity** n. 后代
-- **forefather** n. 祖先
+- **forefather** n. 祖辈
 - **clan** n. 宗族
 - **patriarchal** adj. 父权制的
 - **enslave** v. 奴役
@@ -3211,7 +3211,7 @@
 - **depreciate** v. 贬值
 - **patronage** n. 赞助;光顾
 - **endowment** n. 捐赠基金;天赋
-- **prosperous** adj. 繁荣的
+- **prosperous** adj. 繁荣的,富裕的
 - **profitable** adj. 有利可图的
 - **sweatshop** n. 血汗工厂
 - **merchant** n. 商人
@@ -3379,13 +3379,13 @@
 - **discrepancy** n. 差异
 - **disparity** n. 悬殊
 - **equivalent** adj. 相等的 n. 等价物
-- **comparable** adj. 可比的
+- **comparable** adj. 相当的;可比的
 - **respectively** adv. 分别地
 - **approximately** adv. 大约
 - **roughly** adv. 大致
 - **nearly** adv. 几乎
 - **exceed** v. 超过
-- **surpass** v. 超越
+- **surpass** v. 超过,胜过
 - **overtake** v. 超过,赶超
 - **outnumber** v. 在数量上超过
 - **constitute** v. 构成
@@ -3479,7 +3479,7 @@
 - **take into consideration** phr. 考虑
 - **take measures** phr. 采取措施
 - **take responsibility for** phr. 为……负责
-- **take advantage of** phr. 利用
+- **take advantage of** phr. 利用;占便宜
 - **make use of** phr. 利用
 - **make up** phr. 构成;编造;弥补
 - **play a role in** phr. 在……中起作用
@@ -3623,7 +3623,7 @@
 - **media** n. 媒体
 - **press** n. 新闻界;出版社 v. 按,压
 - **journalism** n. 新闻业
-- **journalist** n. 记者
+- **journalist** n. 新闻记者,新闻工作者
 - **reporter** n. 记者
 - **editor** n. 编辑
 - **headline** n. 新闻标题
@@ -3831,7 +3831,7 @@
 - **nominate** v. 提名
 - **asylum** n. 庇护
 - **conspiracy** n. 阴谋
-- **militant** adj. 好战的
+- **militant** adj. 激进的;好战的 n. 激进分子
 - **bilateral** adj. 双边的
 
 ### 犯罪与法律
@@ -3888,7 +3888,7 @@
 - **suspect** n. 嫌疑人 v. 怀疑
 - **victim** n. 受害者
 - **justice** n. 正义;司法
-- **comply with** phr. 遵守
+- **comply with** phr. 遵守;符合
 - **violate** v. 违反
 - **law-abiding** adj. 守法的
 - **constitution** n. 宪法;体质
@@ -4017,7 +4017,7 @@
 - **acid rain** phr. 酸雨
 - **climate change** phr. 气候变化
 - **natural disaster** phr. 自然灾害
-- **catastrophe** n. 灾难
+- **catastrophe** n. 大灾难
 - **irreversible** adj. 不可逆的
 - **preservation** n. 保存,保护
 - **environmentalist** n. 环保主义者
@@ -4068,7 +4068,7 @@
 - **custom** n. 习俗;海关(复数)
 - **convention** n. 惯例;大会;公约
 - **value** n. 价值;价值观 v. 重视
-- **norm** n. 规范
+- **norm** n. 规范;常态
 - **etiquette** n. 礼仪
 - **assimilation** n. 同化
 - **integration** n. 融合;整合
@@ -4113,7 +4113,7 @@
 - **impressionism** n. 印象派
 - **watercolour** n. 水彩画
 - **canvas** n. 画布;帆布
-- **palette** n. 调色板
+- **palette** n. 调色板;用色
 - **pigment** n. 颜料;色素
 - **embroidery** n. 刺绣
 - **tragedy** n. 悲剧
@@ -4250,7 +4250,7 @@
 - **pensioner** n. 领养老金者
 - **retirement** n. 退休
 - **retirement age** phr. 退休年龄
-- **nursing home** phr. 养老院
+- **nursing home** phr. 养老院,疗养院
 - **care home** phr. 护理院
 - **caregiver** n. 照料者
 - **empty nester** phr. 空巢者
@@ -4311,7 +4311,7 @@
 - **self-employed** adj. 自雇的,个体经营的
 - **gig economy** phr. 零工经济
 - **minimum wage** phr. 最低工资
-- **earnings** n. 收入
+- **earnings** n. 收入,工资
 - **fringe benefits** phr. 附加福利
 - **gender gap** phr. 性别差距
 - **gender equality** phr. 性别平等
@@ -4457,7 +4457,7 @@
 ### 外貌与形象
 
 - **appearance** n. 外貌;出现
-- **attractive** adj. 有吸引力的
+- **attractive** adj. 有魅力的;有吸引力的
 - **good-looking** adj. 好看的
 - **handsome** adj. 英俊的
 - **elegant** adj. 优雅的
@@ -4588,7 +4588,7 @@
 - **sturdy** adj. 结实的
 - **smooth** adj. 光滑的;平稳的,顺利的
 - **rough** adj. 粗糙的;大致的;粗暴的
-- **transparent** adj. 透明的
+- **transparent** adj. 透明的;公开的
 - **shiny** adj. 闪亮的
 - **colourful** adj. 色彩丰富的
 - **vivid** adj. 鲜艳的;生动的
@@ -4622,7 +4622,7 @@
 - **value for money** phr. 物有所值
 - **luxurious** adj. 奢华的
 - **carved** adj. 雕刻的
-- **garment** n. 服装
+- **garment** n. 衣服
 - **gown** n. 长礼服
 - **uniform** n. 制服 adj. 一致的
 - **apron** n. 围裙
@@ -4704,7 +4704,7 @@
 - **border** n. 边境
 - **teahouse** n. 茶馆
 - **villager** n. 村民
-- **noble** adj. 高贵的;高尚的
+- **noble** adj. 高贵的;高尚的;贵族的
 - **unsophisticated** adj. 质朴的,单纯的;简单的
 - **surroundings** n. 周围环境
 - **haven** n. 避风港
