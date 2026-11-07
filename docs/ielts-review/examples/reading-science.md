@@ -36,7 +36,7 @@
 | glacier | n. 冰川 | The **glacier** has moved back by more than a kilometre since 1950. | 自 1950 年以来,这条冰川已经后退了一公里多。 |
 | iceberg | n. 冰山 | Most of an **iceberg**'s mass lies hidden beneath the surface of the water. | 冰山的大部分质量隐藏在水面以下。 |
 | ice sheet | phr. 冰盖 | If the **ice sheet** melted completely, sea levels would rise dramatically. | 如果冰盖完全融化,海平面将急剧上升。 |
-| polar | adj. 极地的 | **Polar** bears depend on sea ice for hunting seals. | 北极熊依靠海冰来捕猎海豹。 |
+| polar | adj. 极地的 | **Polar** regions receive very little sunlight during the winter months. | 极地地区在冬季几个月里日照极少。 |
 | Arctic | n./adj. 北极(的) | The **Arctic** is warming faster than almost any other part of the world. | 北极变暖的速度几乎比世界其他任何地方都快。 |
 | Antarctic | n./adj. 南极(的) | Few plants can survive in the freezing **Antarctic** climate. | 很少有植物能在严寒的南极气候中存活。 |
 | tundra | n. 苔原 | Only small plants and mosses can grow on the frozen **tundra**. | 冰冻的苔原上只能生长矮小的植物和苔藓。 |
@@ -79,7 +79,7 @@
 | fossil | n. 化石 | The **fossil** of a large sea animal was found high in the mountains. | 在高山上发现了一种大型海洋动物的化石。 |
 | geology | n. 地质学 | Students of **geology** spend a lot of time looking closely at rocks. | 学习地质学的学生要花很多时间仔细观察岩石。 |
 | geography | n. 地理 | The **geography** of the island has shaped its culture and its economy. | 这座岛的地理环境塑造了它的文化和经济。 |
-| region | n. 地区 | This **region** of the country produces most of its wine. | 该国这一地区出产该国大部分葡萄酒。 |
+| region | n. 地区 | This **region** of the country produces most of its wine. | 该国大部分葡萄酒都产自这一地区。 |
 | horizon | n. 地平线;视野 | Sailors watched the land slowly disappear below the **horizon**. | 水手们看着陆地慢慢消失在地平线下。 |
 | contour | n. 轮廓;等高线 | The **contour** lines on the map show how steeply the land rises. | 从地图上的等高线可以看出地势升得有多陡。 |
 | highland | n. 高地 | Sheep farming has long been the main activity in the **highland** areas. | 长期以来,养羊一直是高地地区的主要活动。 |
@@ -178,14 +178,14 @@
 | drizzle | n./v. 毛毛雨 | Light **drizzle** falls on most days during the winter months. | 冬季大部分日子都会下毛毛雨。 |
 | shower | n. 阵雨 | Spring **showers** help the young crops to grow strongly. | 春季阵雨有助于幼苗茁壮成长。 |
 | downpour | n. 倾盆大雨 | A sudden **downpour** turned the dry riverbed into a fast-moving stream. | 一场突如其来的倾盆大雨把干涸的河床变成了湍急的溪流。 |
-| torrential | adj. (雨)倾泻的 | **Torrential** rain caused landslides that blocked the main road. | 暴雨引发滑坡,堵塞了主干道。 |
+| torrential | adj. (雨)倾泻的 | **Torrential** rain caused landslides that blocked the main road. | 倾盆大雨引发滑坡,堵塞了主干道。 |
 | gale | n. 大风 | Fishing boats stayed in port because of a severe **gale** at sea. | 海上刮起强烈的大风,渔船都留在了港口。 |
 | whirlwind | n. 旋风 | A **whirlwind** lifted sand high into the air above the desert. | 一股旋风把沙子卷到沙漠上空。 |
 | haze | n. 薄雾,霾 | A thick **haze** from forest fires covered the city for weeks. | 森林大火产生的浓霾笼罩了这座城市数周。 |
-| dew | n. 露水 | Some desert insects collect **dew** from their bodies to drink. | 一些沙漠昆虫收集身上的露水来饮用。 |
+| dew | n. 露水 | Some desert insects collect **dew** on their backs and then drink it. | 一些沙漠昆虫用背部收集露水,然后喝掉。 |
 | damp | adj. 潮湿的,微湿的 | **Damp** conditions in the cave caused the old paintings to fade. | 洞穴里的潮湿环境使古老的壁画褪色了。 |
 | chilly | adj. 寒冷的 | The mountain air becomes **chilly** as soon as the sun goes down. | 太阳一落山,山里的空气就变得冷飕飕的。 |
-| balmy | adj. (天气)温和宜人的 | The island's **balmy** weather makes it a popular destination in winter. | 这座岛气候温和宜人,是冬季热门的旅游目的地。 |
+| balmy | adj. (天气)温和宜人的 | The island's **balmy** weather makes it a popular destination in winter. | 这座岛气候温暖宜人,是冬季热门的旅游目的地。 |
 | torrid | adj. 酷热的 | Few people could work outside in the **torrid** heat of the summer. | 在夏季的酷热中,很少有人能在户外工作。 |
 | windward | adj. 迎风的 | Most of the rain falls on the **windward** side of the mountains. | 大部分雨水落在山脉的迎风面。 |
 | barometer | n. 气压计 | A falling **barometer** is often a sign that a storm is coming. | 气压计读数下降往往是风暴来临的征兆。 |
@@ -209,7 +209,7 @@
 | octopus | n. 章鱼 | An **octopus** can change its colour to hide from its enemies. | 章鱼能改变体色来躲避天敌。 |
 | squid | n. 鱿鱼 | Giant **squid** live so deep that they are rarely seen by humans. | 巨型鱿鱼生活在极深的海域,人类很少见到。 |
 | oyster | n. 牡蛎 | **Oysters** help to keep the water clean by filtering out small particles. | 牡蛎通过滤除微小颗粒来帮助保持水质清洁。 |
-| crustacean | n. 甲壳动物 | Crabs and lobsters belong to a group of animals called **crustaceans**. | 螃蟹和龙虾属于一类被称为甲壳动物的动物。 |
+| crustacean | n. 甲壳动物 | Crabs and lobsters belong to a group of animals called **crustaceans**. | 螃蟹和龙虾都属于甲壳动物。 |
 | shellfish | n. 贝类 | Fishing for **shellfish** has been banned because of pollution in the bay. | 由于海湾受到污染,捕捞贝类已被禁止。 |
 | tide | n. 潮汐 | Twice a day, the rising **tide** covers the sand and the rocks. | 每天两次,上涨的潮水淹没沙滩和岩石。 |
 | tidal | adj. 潮汐的 | **Tidal** power could provide a reliable source of clean electricity. | 潮汐能可以提供可靠的清洁电力来源。 |
@@ -230,7 +230,7 @@
 | clam | n. 蛤 | A giant **clam** can live for more than a hundred years. | 巨蛤可以活一百多年。 |
 | mussel | n. 贻贝 | **Mussels** attach themselves firmly to rocks to avoid being washed away. | 贻贝牢牢附着在岩石上,以免被冲走。 |
 | sponge | n. 海绵 | A **sponge** feeds by drawing water through small holes in its body. | 海绵通过身上的小孔吸水来获取食物。 |
-| coral | n. 珊瑚 | Rising temperatures have caused large areas of **coral** to turn white and die. | 气温上升导致大片珊瑚变白死亡。 |
+| coral | n. 珊瑚 | Rising sea temperatures have caused large areas of **coral** to turn white and die. | 海水温度上升导致大片珊瑚变白死亡。 |
 | pearl | n. 珍珠 | A **pearl** forms when an oyster covers a small object with layers of shell. | 牡蛎用一层层贝壳物质包裹小物体时,就形成了珍珠。 |
 | ebb | n./v. 退潮;衰退 | Boats can leave the harbour only when the tide begins to **ebb**. | 只有潮水开始退去时,船只才能离开港口。 |
 | nautical | adj. 航海的 | Portuguese sailors produced some of the most accurate **nautical** charts of the time. | 葡萄牙水手绘制了当时最精确的一些航海图。 |
@@ -267,7 +267,7 @@
 | flock | n. 鸟群,羊群 | A large **flock** of geese flies over the valley every autumn. | 每年秋天都有一大群大雁飞越这个山谷。 |
 | swarm | n. 虫群 | A **swarm** of locusts can destroy a whole field of crops in hours. | 一群蝗虫能在几小时内毁掉整片庄稼。 |
 | colony | n. 群体;殖民地 | Ants live in a large **colony** with a single queen. | 蚂蚁生活在只有一只蚁后的大群体中。 |
-| colony | n. 群体;殖民地 | The British established their first **colony** in North America in the 1600s. | 英国人在 17 世纪在北美建立了第一个殖民地。 |
+| colony | n. 群体;殖民地 | The British established their first permanent **colony** in North America in 1607. | 1607 年,英国人在北美建立了第一个永久殖民地。 |
 | nest | n. 巢 | Both parents help to build the **nest** and feed the young birds. | 父母双方都帮忙筑巢和喂养幼鸟。 |
 | burrow | n. 洞穴 v. 挖洞 | Rabbits live in an underground **burrow** that protects them from predators. | 兔子住在地下洞穴里,可以躲避捕食者。 |
 | burrow | n. 洞穴 v. 挖洞 | Some animals **burrow** deep into the sand to escape the desert heat. | 有些动物深挖沙洞来躲避沙漠的炎热。 |
@@ -376,7 +376,7 @@
 | mollusc | n. 软体动物 | Snails and octopuses both belong to the group known as **molluscs**. | 蜗牛和章鱼都属于软体动物这一类群。 |
 | cub | n. 幼兽 | A lion **cub** stays with its mother for about two years. | 狮子幼崽和母亲一起生活大约两年。 |
 | pupa | n. 蛹 | The insect stays inside the **pupa** for about two weeks before it appears. | 这种昆虫在蛹内待大约两周才出来。 |
-| carrion | n. 腐肉 | Vultures have a strong sense of smell that helps them to find **carrion**. | 秃鹫嗅觉灵敏,这有助于它们找到腐肉。 |
+| carrion | n. 腐肉 | Some vultures have a strong sense of smell that helps them to find **carrion**. | 有些秃鹫嗅觉灵敏,能借此找到腐肉。 |
 | tentacle | n. 触手 | The jellyfish catches small fish with its long **tentacles**. | 水母用长长的触手捕捉小鱼。 |
 | spine | n. 脊柱;刺 | The human **spine** supports the head and protects important nerves. | 人的脊柱支撑头部,并保护重要的神经。 |
 | spine | n. 脊柱;刺 | Hard **spines** on the plant prevent animals from eating its leaves. | 这种植物上坚硬的刺防止动物吃它的叶子。 |
@@ -388,19 +388,19 @@
 | herbivorous | adj. 食草的 | **Herbivorous** dinosaurs needed huge amounts of plants to stay alive. | 食草恐龙需要大量植物才能存活。 |
 | omnivorous | adj. 杂食的 | Pigs are **omnivorous** and will eat almost anything they can find. | 猪是杂食的,几乎什么都吃。 |
 | predatory | adj. 捕食性的 | Some **predatory** fish hunt in groups to catch larger animals. | 一些捕食性鱼类成群捕猎,以捕捉较大的动物。 |
-| nocturnal | adj. 夜行性的 | Most bats are **nocturnal** and sleep in caves during the day. | 大多数蝙蝠是夜行性的,白天在洞穴里睡觉。 |
+| nocturnal | adj. 夜行性的 | Most bats are **nocturnal** and sleep in caves during the day. | 大多数蝙蝠在夜间活动,白天在洞穴里睡觉。 |
 | aquatic | adj. 水生的 | Many **aquatic** plants absorb nutrients directly from the surrounding water. | 许多水生植物直接从周围的水中吸收养分。 |
 | gregarious | adj. 群居的 | These **gregarious** birds nest close together in very large groups. | 这些群居的鸟聚集成很大的群体,紧挨着筑巢。 |
 | monogamous | adj. 一夫一妻的 | Only a small number of mammals are thought to be **monogamous**. | 人们认为只有少数哺乳动物是一夫一妻的。 |
 | endemic | adj. 地方特有的;地方性的 | Many of the plants on the islands are **endemic** and grow nowhere else. | 岛上的许多植物是当地特有的,在其他地方都不生长。 |
 | endemic | adj. 地方特有的;地方性的 | Malaria is **endemic** in many tropical parts of the world. | 疟疾在世界许多热带地区是地方性疾病。 |
 | hereditary | adj. 遗传的 | Some forms of the disease are **hereditary** and pass from parent to child. | 这种疾病的某些类型是遗传的,由父母传给孩子。 |
-| spawn | v. 产卵 n. 卵 | Salmon swim back up the same river to **spawn** each year. | 鲑鱼每年逆流游回同一条河产卵。 |
+| spawn | v. 产卵 n. 卵 | Salmon swim back up the river where they were born in order to **spawn**. | 鲑鱼会逆流游回出生的河流产卵。 |
 | peck | v. 啄 | The young chicks **peck** at the shell until it breaks open. | 小鸡不停地啄蛋壳,直到把它啄破。 |
 | proliferate | v. 激增;繁殖 | Bacteria can **proliferate** quickly in warm and wet conditions. | 细菌在温暖潮湿的环境中能迅速繁殖。 |
 | propagate | v. 繁殖;传播 | Gardeners often **propagate** this plant by cutting and replanting its stems. | 园丁常通过扦插茎来繁殖这种植物。 |
 | subsist | v. 维持生存 | In winter, the deer **subsist** on bark and small branches. | 冬天,鹿靠树皮和小树枝维持生存。 |
-| strain | n. 品种;压力 v. 拉伤 | A new **strain** of the virus has spread rapidly through the region. | 这种病毒的一个新品种已在该地区迅速传播。 |
+| strain | n. 品种;压力 v. 拉伤 | A new **strain** of the virus has spread rapidly through the region. | 这种病毒的一种新毒株已在该地区迅速传播。 |
 | strain | n. 品种;压力 v. 拉伤 | Rapid population growth has put a great **strain** on the water supply. | 人口快速增长给供水带来了巨大压力。 |
 | secrete | v. 分泌 | Glands in the skin **secrete** a substance that protects against infection. | 皮肤中的腺体分泌一种防止感染的物质。 |
 | secretion | n. 分泌物 | The plant's sticky **secretion** traps insects that land on its leaves. | 这种植物的黏性分泌物能粘住落在叶子上的昆虫。 |
@@ -505,7 +505,7 @@
 | spore | n. 孢子 | The wind can carry **spores** a long way from the parent plant. | 风能把孢子带到离母株很远的地方。 |
 | herb | n. 草本植物;香草 | Many traditional medicines are made from wild **herbs**. | 许多传统药物由野生草本植物制成。 |
 | reed | n. 芦苇 | Ancient Egyptians made a type of paper from a tall water **reed**. | 古埃及人用一种高大的水生芦苇造纸。 |
-| orchid | n. 兰花 | Each type of **orchid** depends on a particular insect for pollination. | 每一种兰花都依赖特定的昆虫授粉。 |
+| orchid | n. 兰花 | Many types of **orchid** depend on a particular insect for pollination. | 许多兰花都依赖某种特定的昆虫授粉。 |
 | cactus | n. 仙人掌 | A **cactus** stores water in its thick stem during long dry periods. | 仙人掌在漫长的干旱期把水分储存在粗壮的茎中。 |
 | sequoia | n. 红杉 | The giant **sequoia** can grow to more than eighty metres in height. | 巨型红杉可以长到八十多米高。 |
 | rubber | n. 橡胶 | Natural **rubber** comes from a liquid produced by certain tropical trees. | 天然橡胶来自某些热带树木产生的液体。 |
@@ -634,7 +634,7 @@
 | generator | n. 发电机 | A small **generator** provides power for the village when the main supply fails. | 主电源中断时,一台小型发电机为村庄供电。 |
 | power station | phr. 发电站 | The old **power station** burned coal brought in by train. | 这座旧发电站燃烧由火车运来的煤。 |
 | grid | n. 电网;网格 | Electricity from the wind farm is fed into the national **grid**. | 风电场发出的电被输入国家电网。 |
-| ion | n. 离子 | An **ion** is an atom that has gained or lost an electron. | 离子是得到或失去电子的原子。 |
+| ion | n. 离子 | An **ion** is an atom that has gained or lost one or more electrons. | 离子是得到或失去一个或多个电子的原子。 |
 | atomic | adj. 原子的 | **Atomic** clocks can measure time with extraordinary accuracy. | 原子钟能以极高的精度测量时间。 |
 | solubility | n. 溶解度 | The **solubility** of salt increases as the water becomes warmer. | 盐的溶解度随水温升高而增加。 |
 | dilute | v. 稀释 | Chemical waste is sometimes **diluted** with water before it is released. | 化学废物有时在排放前用水稀释。 |
@@ -663,7 +663,7 @@
 | zinc | n. 锌 | Steel is often covered with a thin layer of **zinc** to prevent rust. | 钢常覆盖一层薄薄的锌来防锈。 |
 | tin | n. 锡;罐头 | **Tin** was traded across the ancient world because it was needed for bronze. | 锡在古代世界各地都有贸易,因为制造青铜需要它。 |
 | nickel | n. 镍 | **Nickel** is added to steel to make it stronger and harder. | 钢中加入镍可以使它更坚固、更硬。 |
-| platinum | n. 铂 | **Platinum** is a rare metal used in car engines and jewellery. | 铂是一种稀有金属,用于汽车发动机和珠宝。 |
+| platinum | n. 铂 | **Platinum** is a rare metal used in jewellery and in car exhaust systems. | 铂是一种稀有金属,用于珠宝和汽车排气系统。 |
 | helium | n. 氦 | **Helium** is lighter than air and is often used in weather balloons. | 氦比空气轻,常用于气象气球。 |
 | ammonia | n. 氨 | **Ammonia** is widely used in the production of farm fertilisers. | 氨被广泛用于生产农业化肥。 |
 | iodine | n. 碘 | A lack of **iodine** in the diet can cause serious health problems. | 饮食中缺碘可能引起严重的健康问题。 |
@@ -680,7 +680,7 @@
 | vibration | n. 振动 | Sensors can detect the slightest **vibration** in the walls of the bridge. | 传感器能检测到桥壁最轻微的振动。 |
 | echo | n. 回声 | Bats find their food by listening to the **echo** of their own calls. | 蝙蝠通过倾听自己叫声的回声来寻找食物。 |
 | acoustic | adj. 声学的 | The **acoustic** qualities of the hall make it ideal for concerts. | 这个大厅的声学效果使它非常适合举办音乐会。 |
-| ultrasonic | adj. 超声波的 | Dolphins communicate using **ultrasonic** sounds that humans cannot hear. | 海豚用人类听不到的超声波交流。 |
+| ultrasonic | adj. 超声波的 | Dolphins find their prey using **ultrasonic** clicks that humans cannot hear. | 海豚用人类听不到的超声波咔嗒声寻找猎物。 |
 | mechanics | n. 力学 | The laws of **mechanics** explain how forces affect moving objects. | 力学定律解释了力如何影响运动的物体。 |
 | dynamics | n. 动力学;动态 | Researchers study the **dynamics** of the group to see how leaders emerge. | 研究者研究群体的动态,观察领导者是如何产生的。 |
 | thermodynamics | n. 热力学 | The laws of **thermodynamics** describe how heat moves between objects. | 热力学定律描述了热量如何在物体之间传递。 |
@@ -757,7 +757,7 @@
 | black hole | phr. 黑洞 | Nothing can escape from a **black hole**, not even light. | 任何东西都无法逃脱黑洞,甚至光也不行。 |
 | supernova | n. 超新星 | A **supernova** occurs when a very large star explodes at the end of its life. | 当一颗非常大的恒星在生命末期爆炸时,就形成了超新星。 |
 | light year | phr. 光年 | The nearest star to the Sun is just over four **light-years** away. | 距太阳最近的恒星只有四光年多。 |
-| gravity | n. 重力 | **Gravity** keeps the planets moving in their paths around the Sun. | 重力使行星沿轨道绕太阳运行。 |
+| gravity | n. 重力 | **Gravity** keeps the planets moving in their paths around the Sun. | 引力使行星沿轨道绕太阳运行。 |
 | gravitational | adj. 引力的 | The Moon's **gravitational** pull is the main cause of the tides. | 月球的引力是潮汐的主要成因。 |
 | telescope | n. 望远镜 | With his **telescope**, Galileo discovered four moons around Jupiter. | 伽利略用望远镜发现了木星的四颗卫星。 |
 | observatory | n. 天文台 | The new **observatory** was built on a high mountain with clear skies. | 新天文台建在一座晴空万里的高山上。 |
@@ -766,7 +766,7 @@
 | probe | n. 探测器 v. 探查 | Researchers used sound waves to **probe** the structure of the ocean floor. | 研究者用声波探查海底的结构。 |
 | astronaut | n. 宇航员 | Living in space causes an **astronaut**'s bones and muscles to weaken. | 在太空生活使宇航员的骨骼和肌肉变弱。 |
 | space station | phr. 空间站 | Scientists on the **space station** carry out experiments in very low gravity. | 空间站上的科学家在极低重力下进行实验。 |
-| lunar | adj. 月球的 | **Lunar** rocks brought back to Earth have helped scientists understand its history. | 带回地球的月球岩石帮助科学家了解它的历史。 |
+| lunar | adj. 月球的 | **Lunar** rocks brought back to Earth have helped scientists understand the Moon's history. | 带回地球的月球岩石帮助科学家了解月球的历史。 |
 | solar | adj. 太阳的 | **Solar** energy now provides power to many remote villages. | 太阳能现在为许多偏远村庄提供电力。 |
 | eclipse | n. 日食,月食 | Early people were often frightened by a sudden **eclipse** of the Sun. | 早期的人们常常被突如其来的日食吓坏。 |
 | Mars | n. 火星 | Water once flowed across the surface of **Mars**, according to recent studies. | 最近的研究表明,火星表面曾有水流动。 |
@@ -863,7 +863,7 @@
 | triangle | n. 三角形 | Early builders knew that the **triangle** is a very strong shape. | 早期的建造者知道三角形是非常坚固的形状。 |
 | regression | n. 回归;倒退 | Researchers used **regression** to study the link between income and health. | 研究者使用回归方法研究收入与健康之间的关系。 |
 | vector | n. 向量 | A **vector** shows both the size and the direction of a force. | 向量同时表示力的大小和方向。 |
-| coefficient | n. 系数 | A high **coefficient** shows that the two variables are closely related. | 系数高表明这两个变量密切相关。 |
+| coefficient | n. 系数 | A high correlation **coefficient** shows that the two variables are closely related. | 相关系数高表明这两个变量密切相关。 |
 | infinite | adj. 无限的 | Some philosophers believed that the universe was **infinite** in size. | 一些哲学家认为宇宙的大小是无限的。 |
 | notation | n. 符号,记号 | Modern mathematical **notation** makes calculations far easier than the older systems. | 现代数学符号让计算比旧系统简单得多。 |
 | infinity | n. 无穷大 | Ancient mathematicians struggled with the idea of **infinity**. | 古代数学家曾苦苦思索无穷大的概念。 |
@@ -873,5 +873,5 @@
 | non-linear | adj. 非线性的 | Population growth often follows a **non-linear** pattern over long periods. | 长期来看,人口增长往往呈非线性模式。 |
 | congruent | adj. 全等的;一致的 | Two triangles are **congruent** if they have exactly the same shape and size. | 两个三角形如果形状和大小完全相同,就是全等的。 |
 | axiom | n. 公理 | Euclid began his work on geometry with a small number of **axioms**. | 欧几里得的几何学著作从少数几条公理开始。 |
-| factorial | n. 阶乘 | The **factorial** of five is the product of all whole numbers up to five. | 五的阶乘是从一到五所有整数的乘积。 |
+| factorial | n. 阶乘 | The **factorial** of five is the product of all whole numbers from one to five. | 五的阶乘是从一到五所有整数的乘积。 |
 | compute | v. 计算 | The machine could **compute** the positions of the planets accurately. | 这台机器能准确计算行星的位置。 |

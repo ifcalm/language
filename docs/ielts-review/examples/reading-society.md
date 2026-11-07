@@ -2,7 +2,7 @@
 |---|---|---|---|
 | anatomy | n. 解剖学 | Early doctors learned about human **anatomy** by studying the bodies of animals. | 早期的医生通过研究动物的身体来了解人体解剖学。 |
 | physiology | n. 生理学 | The study of **physiology** explains how different parts of the body work. | 生理学研究解释了身体各部分如何运作。 |
-| cell | n. 细胞 | Every **cell** in the body contains a complete set of genes. | 体内每个细胞都含有一整套基因。 |
+| cell | n. 细胞 | Almost every **cell** in the body contains a complete set of genes. | 体内几乎每个细胞都含有一整套基因。 |
 | tissue | n. (生物)组织;纸巾 | The drug is designed to repair damaged **tissue** in the muscles of the heart. | 这种药物旨在修复心肌中受损的组织。 |
 | organ | n. 器官 | The liver is one of the largest **organs** in the human body. | 肝脏是人体最大的器官之一。 |
 | skeleton | n. 骨骼 | The complete **skeleton** of a young woman was found near the old wall. | 在古墙附近发现了一具完整的年轻女性骨骼。 |
@@ -40,7 +40,7 @@
 | pandemic | n. 大流行病 | A **pandemic** affects people across many countries at the same time. | 大流行病会同时影响许多国家的人。 |
 | contagious | adj. (接触)传染的 | The illness is highly **contagious** and spreads easily through physical contact. | 这种疾病传染性极强,很容易通过身体接触传播。 |
 | infectious | adj. 传染性的;有感染力的 | Vaccines have greatly reduced deaths from **infectious** diseases. | 疫苗大大减少了传染病造成的死亡。 |
-| outbreak | n. 爆发 | An **outbreak** of food poisoning closed several restaurants in the town. | 一场食物中毒事件的爆发导致镇上几家餐厅关闭。 |
+| outbreak | n. 爆发 | An **outbreak** of food poisoning closed several restaurants in the town. | 镇上暴发了食物中毒,几家餐厅因此关门。 |
 | diabetes | n. 糖尿病 | Being overweight greatly increases the risk of developing **diabetes**. | 超重会大大增加患糖尿病的风险。 |
 | obesity | n. 肥胖 | Rates of **obesity** among children have risen sharply in many countries. | 在许多国家,儿童肥胖率急剧上升。 |
 | tumour | n. 肿瘤 | Surgeons removed the **tumour**, and the patient made a full recovery. | 外科医生切除了肿瘤,患者完全康复了。 |
@@ -96,7 +96,7 @@
 | heart rate | phr. 心率 | Your **heart rate** increases naturally when you take exercise. | 运动时心率会自然升高。 |
 | flesh | n. 肉;肌肉 | The bacteria spread quickly through the **flesh** of the infected animal. | 细菌在受感染动物的肌肉中迅速扩散。 |
 | lung | n. 肺 | Smoking is the main cause of **lung** cancer in most countries. | 在大多数国家,吸烟是肺癌的主要成因。 |
-| limb | n. 四肢,肢体 | Some lizards can grow a new **limb** if one is lost. | 有些蜥蜴失去肢体后能再长出新的。 |
+| limb | n. 四肢,肢体 | Some salamanders can grow a new **limb** if one is lost. | 有些蝾螈失去肢体后能再长出新的。 |
 | liver | n. 肝 | The **liver** removes harmful substances from the blood. | 肝脏清除血液中的有害物质。 |
 | gut | n. 肠道 | The bacteria in the **gut** may affect both mood and weight. | 肠道中的细菌可能同时影响情绪和体重。 |
 | lump | n. 肿块;块 | Doctors check any new **lump** carefully to see if it is dangerous. | 医生会仔细检查任何新出现的肿块,看看是否危险。 |
@@ -172,7 +172,7 @@
 | conditioning | n. 条件反射作用 | Pavlov's work on **conditioning** showed that dogs could learn to expect food. | 巴甫洛夫关于条件反射的研究表明,狗能学会期待食物。 |
 | infant | n. 婴儿 | An **infant** can recognise its mother's voice within days of birth. | 婴儿出生几天内就能辨认出母亲的声音。 |
 | toddler | n. 学步儿童 | A **toddler** may learn several new words every single day. | 学步儿童每天可能学会几个新词。 |
-| adolescent | n. 青少年 | Most **adolescents** need more sleep than either children or adults. | 大多数青少年比儿童和成年人都需要更多睡眠。 |
+| adolescent | n. 青少年 | Most **adolescents** need more sleep than adults, but many get far less. | 大多数青少年需要的睡眠比成年人多,但很多人睡得远远不够。 |
 | adolescence | n. 青春期 | The brain continues to change in important ways during **adolescence**. | 在青春期,大脑继续发生重要变化。 |
 | peer | n. 同龄人 | Young children often learn new skills by watching their **peers**. | 幼儿常常通过观察同龄人学习新技能。 |
 | peer pressure | phr. 同伴压力 | **Peer pressure** is one of the main reasons why teenagers start smoking. | 同伴压力是青少年开始吸烟的主要原因之一。 |
@@ -460,7 +460,7 @@
 | urban sprawl | phr. 城市扩张 | **Urban sprawl** has replaced large areas of farmland with low-density housing. | 城市扩张使大片农田变成了低密度住宅区。 |
 | population density | phr. 人口密度 | Tokyo has a very high **population density** compared with most other cities. | 与大多数其他城市相比,东京的人口密度非常高。 |
 | congestion | n. 拥堵 | A charge for driving in the city centre has reduced traffic **congestion**. | 市中心行车收费减少了交通拥堵。 |
-| slum | n. 贫民窟 | Millions of people in the region live in a **slum** without clean water. | 该地区有数百万人住在没有清洁用水的贫民窟。 |
+| slum | n. 贫民窟 | Millions of people in the region live in **slums** without clean water. | 该地区有数百万人住在没有清洁用水的贫民窟。 |
 | housing | n. 住房 | The shortage of cheap **housing** is a serious problem for young workers. | 廉价住房短缺对年轻工人来说是个严重问题。 |
 | residential | adj. 住宅的 | The new road will run through a quiet **residential** part of the city. | 新路将穿过城市一处安静的住宅区。 |
 | commercial | adj. 商业的 n. 商业广告 | The old warehouses have been turned into **commercial** and office space. | 这些旧仓库被改造成了商业和办公空间。 |
@@ -532,7 +532,7 @@
 | logistics | n. 物流 | Online shopping has created new challenges for **logistics** companies. | 网购给物流公司带来了新的挑战。 |
 | public transport | phr. 公共交通 | Cheap **public transport** can reduce the number of cars on the road. | 便宜的公共交通可以减少路上的汽车数量。 |
 | commuter | n. 通勤者 | The average **commuter** spends more than an hour a day travelling to work. | 普通通勤者每天上班路上要花一个多小时。 |
-| traffic jam | phr. 交通堵塞 | Each **traffic jam** costs the economy a great deal in lost working time. | 每次交通堵塞都因工作时间损失给经济带来巨大代价。 |
+| traffic jam | phr. 交通堵塞 | **Traffic jams** cost the economy a great deal in lost working time. | 交通堵塞造成工作时间损失,给经济带来巨大代价。 |
 | rush hour | phr. 高峰期 | Buses are often overcrowded during the morning **rush hour**. | 早高峰期间,公交车经常超载。 |
 | collision | n. 碰撞 | A **collision** between two ships closed the port for several days. | 两艘船相撞导致港口关闭数日。 |
 | speed limit | phr. 限速 | Lowering the **speed limit** has reduced serious accidents near schools. | 降低限速减少了学校附近的严重事故。 |
@@ -567,7 +567,7 @@
 | radar | n. 雷达 | **Radar** was developed to detect enemy aircraft during the war. | 雷达是在战争期间为探测敌机而研制的。 |
 | valve | n. 阀门 | The **valve** controls how much steam enters the engine. | 阀门控制进入发动机的蒸汽量。 |
 | cable | n. 电缆;缆绳 | A **cable** under the Atlantic first linked Europe and America by telegraph. | 大西洋海底的电缆首次用电报连接了欧洲和美洲。 |
-| bolt | n. 螺栓 | Each steel **bolt** in the bridge is checked regularly for signs of weakness. | 桥上的每个钢螺栓都定期检查是否有松动迹象。 |
+| bolt | n. 螺栓 | Each steel **bolt** in the bridge is checked regularly for signs of weakness. | 桥上的每个钢螺栓都要定期检查,看是否有损坏的迹象。 |
 | anchor | n. 锚 v. 停泊;固定 | The ship dropped its **anchor** in the shelter of the bay. | 船在海湾的避风处抛了锚。 |
 | screw | n. 螺丝 | A tiny loose **screw** caused the entire machine to stop working. | 一颗松动的小螺丝导致整台机器停止工作。 |
 | coil | n. 线圈 v. 卷绕 | An electric current passing through a **coil** of wire creates a magnetic field. | 电流通过线圈时产生磁场。 |
@@ -599,7 +599,7 @@
 | recession | n. 经济衰退 | Thousands of companies closed during the **recession** of the early 1990s. | 20 世纪 90 年代初的经济衰退期间,数千家公司倒闭。 |
 | boom | n. 繁荣 | The oil **boom** brought great wealth to the region in the 1970s. | 20 世纪 70 年代的石油繁荣给该地区带来了巨大财富。 |
 | growth | n. 增长 | Economic **growth** in the region has slowed over the past two years. | 过去两年,该地区的经济增长放缓了。 |
-| GDP | n. 国内生产总值 | Tourism accounts for about ten percent of the country's **GDP**. | 旅游业约占该国国内生产总值的百分之十。 |
+| GDP | n. 国内生产总值 | Tourism accounts for about ten per cent of the country's **GDP**. | 旅游业约占该国国内生产总值的百分之十。 |
 | prosperity | n. 繁荣 | The new railway brought **prosperity** to towns along the coast. | 新铁路给沿海城镇带来了繁荣。 |
 | poverty | n. 贫穷 | Education is one of the most effective ways of reducing **poverty**. | 教育是减少贫穷最有效的方法之一。 |
 | wealth | n. 财富 | The town's **wealth** came mainly from trade in wool and cloth. | 这个城镇的财富主要来自羊毛和布匹贸易。 |
@@ -673,7 +673,7 @@
 | disburse | v. 支付 | The fund will **disburse** money to farmers affected by the floods. | 这个基金将向受洪灾影响的农民拨款。 |
 | fortune | n. 财富;运气 | He made a **fortune** from the sale of cotton in the 1850s. | 他在 19 世纪 50 年代靠卖棉花发了财。 |
 | compensation | n. 补偿 | Families whose homes were destroyed received **compensation** from the government. | 房屋被毁的家庭获得了政府的补偿。 |
-| depreciate | v. 贬值 | New cars begin to **depreciate** as soon as they leave the factory. | 新车一出厂就开始贬值。 |
+| depreciate | v. 贬值 | New cars begin to **depreciate** as soon as they are driven out of the showroom. | 新车一开出展厅就开始贬值。 |
 | patronage | n. 赞助;光顾 | Wealthy families provided **patronage** for artists during the Renaissance. | 文艺复兴时期,富裕家族赞助了艺术家。 |
 | endowment | n. 捐赠基金;天赋 | The university's large **endowment** pays for scholarships and new research. | 这所大学的巨额捐赠基金用于支付奖学金和新研究。 |
 | prosperous | adj. 繁荣的 | The town became **prosperous** through its trade in wool. | 这座城镇通过羊毛贸易变得繁荣起来。 |
@@ -684,7 +684,7 @@
 | joint venture | phr. 合资企业 | The two companies formed a **joint venture** to build the new power station. | 这两家公司成立了一家合资企业来建造新发电站。 |
 | intellectual property | phr. 知识产权 | Stronger laws are needed to protect **intellectual property** on the internet. | 需要更严格的法律来保护互联网上的知识产权。 |
 | market research | phr. 市场调研 | **Market research** showed that young people preferred the cheaper model. | 市场调研显示年轻人更喜欢较便宜的型号。 |
-| advertising campaign | phr. 广告宣传活动 | The **advertising campaign** increased sales by more than twenty percent. | 这次广告宣传活动使销售额增长了百分之二十多。 |
+| advertising campaign | phr. 广告宣传活动 | The **advertising campaign** increased sales by more than twenty per cent. | 这次广告宣传活动使销售额增长了百分之二十多。 |
 | monetary | adj. 货币的 | The central bank controls the country's **monetary** policy. | 中央银行控制着国家的货币政策。 |
 | barrel | n. 桶;(石油)桶 | The price of oil rose above one hundred dollars a **barrel**. | 石油价格涨到了每桶一百多美元。 |
 | gross | adj. 总的;严重的 | The **gross** income of the company reached ten million dollars last year. | 这家公司去年的总收入达到一千万美元。 |
@@ -726,10 +726,10 @@
 | browser | n. 浏览器 | Each **browser** stores information about the websites that users visit. | 每个浏览器都会存储用户访问网站的信息。 |
 | server | n. 服务器 | Information is stored on a **server** that may be far from the user. | 信息存储在可能离用户很远的服务器上。 |
 | cyberspace | n. 网络空间 | Governments find it hard to enforce their laws in **cyberspace**. | 政府发现很难在网络空间执法。 |
-| cybercrime | n. 网络犯罪 | **Cybercrime** costs businesses billions of pounds in lost money each year. | 网络犯罪每年使企业损失数十亿英镑。 |
+| cybercrime | n. 网络犯罪 | **Cybercrime** costs businesses billions of pounds every year. | 网络犯罪每年使企业损失数十亿英镑。 |
 | hacker | n. 黑客 | A **hacker** stole the personal details of thousands of customers. | 一名黑客窃取了数千名客户的个人信息。 |
 | privacy | n. 隐私 | Many people worry about their **privacy** when they use social media. | 许多人使用社交媒体时担心隐私问题。 |
-| security | n. 安全 | Banks have spent large sums on improving the **security** of online payments. | 银行投入大量资金提高在线支付的安全。 |
+| security | n. 安全 | Banks have spent large sums on improving the **security** of online payments. | 银行投入大量资金提高在线支付的安全性。 |
 | encryption | n. 加密 | **Encryption** protects messages from being read by anyone except the receiver. | 加密保护信息不被接收者以外的任何人读取。 |
 | big data | phr. 大数据 | Companies use **big data** to predict what their customers will buy next. | 公司利用大数据预测顾客接下来会买什么。 |
 | cloud computing | phr. 云计算 | **Cloud computing** allows small firms to store data at a low cost. | 云计算让小公司能以低成本存储数据。 |
