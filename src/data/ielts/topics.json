@@ -1131,7 +1131,8 @@
                 "peril",
                 "ordeal",
                 "brink",
-                "purity"
+                "purity",
+                "abstraction"
               ]
             }
           ]
@@ -1853,7 +1854,6 @@
                 "seismology",
                 "volcanic",
                 "erupt",
-                "thermal",
                 "quartz",
                 "marble",
                 "gem",
@@ -2160,7 +2160,8 @@
                 "cage",
                 "chick",
                 "bait",
-                "crawl"
+                "crawl",
+                "alien"
               ]
             },
             {
@@ -2470,7 +2471,8 @@
                 "vessel",
                 "wax",
                 "cement",
-                "explode"
+                "explode",
+                "thermal"
               ]
             },
             {
@@ -2530,7 +2532,6 @@
                 "neptune",
                 "pluto",
                 "meteor-shower",
-                "alien",
                 "bang",
                 "rotation",
                 "rotate",
@@ -2876,7 +2877,6 @@
                 "satire",
                 "farce",
                 "pictograph",
-                "abstraction",
                 "coin",
                 "cogent",
                 "persuasive",
@@ -3042,7 +3042,8 @@
                 "cannon",
                 "burial",
                 "cemetery",
-                "mosaic"
+                "mosaic",
+                "noble"
               ]
             }
           ]
@@ -4360,7 +4361,8 @@
                 "elderly",
                 "youngster",
                 "guardian",
-                "abortion"
+                "abortion",
+                "outmoded"
               ]
             },
             {
@@ -4400,7 +4402,6 @@
                 "preventive",
                 "public-health",
                 "excluded",
-                "outmoded",
                 "depressed",
                 "stressful",
                 "retirement-home",
@@ -4585,7 +4586,9 @@
                 "brilliant",
                 "cynical",
                 "sceptical",
-                "companion"
+                "companion",
+                "family-name",
+                "given-name"
               ]
             },
             {
@@ -4780,8 +4783,6 @@
                 "amber",
                 "khaki",
                 "lilac",
-                "family-name",
-                "given-name",
                 "neat",
                 "cord",
                 "bucket",
@@ -4848,7 +4849,6 @@
                 "border",
                 "teahouse",
                 "villager",
-                "noble",
                 "unsophisticated",
                 "surroundings",
                 "haven",
