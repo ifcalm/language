@@ -19,9 +19,9 @@
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
 | 一、听力 | 租房、旅游、选课等生活与校园场景 | 6 | 815 |
-| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2337 |
+| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2338 |
 | 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 990 |
-| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
+| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 414 |
 
 ---
 
@@ -1111,6 +1111,7 @@
 - **ordeal** n. 磨难
 - **brink** n. 边缘
 - **purity** n. 纯净
+- **abstraction** n. 抽象
 
 ## 2.2 逻辑关系与评价
 
@@ -1816,7 +1817,6 @@
 - **seismology** n. 地震学
 - **volcanic** adj. 火山的
 - **erupt** v. 喷发
-- **thermal** adj. 热的
 - **quartz** n. 石英
 - **marble** n. 大理石
 - **gem** n. 宝石
@@ -2115,6 +2115,7 @@
 - **chick** n. 小鸡,雏鸟
 - **bait** n. 诱饵
 - **crawl** v. 爬行
+- **alien** adj. 外来的;陌生的 n. 外星人;外侨
 
 ### 植物与农业
 
@@ -2418,6 +2419,7 @@
 - **wax** n. 蜡
 - **cement** n. 水泥
 - **explode** v. 爆炸;激增
+- **thermal** adj. 热的
 
 ### 天文与航天
 
@@ -2475,7 +2477,6 @@
 - **Neptune** n. 海王星
 - **Pluto** n. 冥王星
 - **meteor shower** phr. 流星雨
-- **alien** adj. 外来的;陌生的 n. 外星人;外侨
 - **bang** n. 大爆炸;巨响
 - **rotation** n. 自转;轮换
 - **rotate** v. 旋转;轮换
@@ -2807,7 +2808,6 @@
 - **satire** n. 讽刺
 - **farce** n. 闹剧
 - **pictograph** n. 象形文字
-- **abstraction** n. 抽象
 - **coin** v. 创造 n. 硬币
 - **cogent** adj. 令人信服的,论证有力的
 - **persuasive** adj. 有说服力的
@@ -2972,6 +2972,7 @@
 - **burial** n. 埋葬
 - **cemetery** n. 墓地
 - **mosaic** n. 马赛克;镶嵌画
+- **noble** adj. 贵族的;高贵的;高尚的
 
 ## 2.9 城市、经济与科技
 
@@ -4241,6 +4242,7 @@
 - **youngster** n. 年轻人
 - **guardian** n. 监护人;守护者
 - **abortion** n. 堕胎
+- **outmoded** adj. 过时的
 
 ### 老龄化与健康
 
@@ -4278,7 +4280,6 @@
 - **preventive** adj. 预防性的
 - **public health** phr. 公共卫生
 - **excluded** adj. 被排斥的
-- **outmoded** adj. 过时的
 - **depressed** adj. 抑郁的;萧条的
 - **stressful** adj. 令人压力大的
 - **retirement home** phr. 养老院
@@ -4453,6 +4454,8 @@
 - **cynical** adj. 愤世嫉俗的
 - **sceptical** adj. 怀疑的(英)
 - **companion** n. 同伴
+- **family name** phr. 姓氏
+- **given name** phr. 名字
 
 ### 外貌与形象
 
@@ -4638,8 +4641,6 @@
 - **amber** n. 琥珀 adj. 琥珀色的
 - **khaki** n. 卡其布 adj. 卡其色的
 - **lilac** adj. 淡紫色的
-- **family name** phr. 姓氏
-- **given name** phr. 名字
 - **neat** adj. 整洁的
 - **cord** n. 绳;电线
 - **bucket** n. 桶
@@ -4704,7 +4705,6 @@
 - **border** n. 边境
 - **teahouse** n. 茶馆
 - **villager** n. 村民
-- **noble** adj. 高贵的;高尚的;贵族的
 - **unsophisticated** adj. 质朴的,单纯的;简单的
 - **surroundings** n. 周围环境
 - **haven** n. 避风港
