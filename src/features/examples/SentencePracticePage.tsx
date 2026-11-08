@@ -1,5 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { VocabularyExample } from '../../data/vocabulary'
+import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
+import {
+  getClozeAnswerState,
+  normalizeClozeWord as normalizeWord,
+} from '../../shared/cloze/clozeAnswer'
 import {
   requestPracticeSentences,
   type PracticeVocabularyEntry,
@@ -299,10 +304,6 @@ const IRREGULAR_FORMS: Record<string, string[]> = {
   write: ['wrote', 'written', 'writes', 'writing'],
 }
 
-function normalizeWord(value: string) {
-  return value.trim().toLowerCase().replace('’', "'")
-}
-
 function getTargetWordForms(vocabularyWord: string) {
   const word = normalizeWord(vocabularyWord)
 
@@ -529,21 +530,6 @@ function buildExercises(items: PracticeVocabularyEntry[]) {
   return exercises
 }
 
-function getAnswerState(answer: string, expected: string) {
-  if (!answer) {
-    return 'empty'
-  }
-
-  const normalizedAnswer = normalizeWord(answer)
-  const normalizedExpected = normalizeWord(expected)
-
-  if (normalizedAnswer === normalizedExpected) {
-    return 'complete'
-  }
-
-  return normalizedExpected.startsWith(normalizedAnswer) ? 'correct' : 'error'
-}
-
 function SentencePracticePage() {
   const [vocabulary, setVocabulary] = useState<PracticeVocabularyEntry[]>([])
   const [exerciseIndex, setExerciseIndex] = useState(0)
@@ -566,7 +552,7 @@ function SentencePracticePage() {
   const exercise = exercises[exerciseIndex] ?? null
   const answerStates = exercise
     ? exercise.targets.map((target, index) =>
-        getAnswerState(answers[index], target.text),
+        getClozeAnswerState(answers[index], target.text),
       )
     : []
   const exerciseId = exercise?.id
@@ -861,38 +847,22 @@ function SentencePracticePage() {
     exercise.targets.forEach((target, index) => {
       parts.push(exercise.sentenceEn.slice(cursor, target.start))
       parts.push(
-        <span
+        <ClozeBlank
           key={target.id}
-          className="sentence-practice-blank"
-          style={{ width: `${Math.max(target.text.length + 1, 5)}ch` }}
-        >
-          <span className="sentence-practice-hint" aria-hidden="true">
-            <span
-              className={`sentence-practice-entered is-${answerStates[index]}`}
-            >
-              {answers[index]}
-            </span>
-            {target.text.slice(answers[index].length)}
-          </span>
-          <input
-            ref={(node) => {
-              inputRefs.current[index] = node
-            }}
-            className={`sentence-practice-input is-${answerStates[index]}`}
-            value={answers[index]}
-            aria-label={`第 ${index + 1} 个单词，${target.text.length} 个字母`}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onChange={(event) => updateAnswer(index, event.target.value)}
-            onKeyDown={(event) => {
-              if (event.key === 'Enter' && isComplete) {
-                showExerciseAtOffset(1)
-              }
-            }}
-          />
-        </span>,
+          answer={target.text}
+          value={answers[index]}
+          state={answerStates[index]}
+          ariaLabel={`第 ${index + 1} 个单词，${target.text.length} 个字母`}
+          inputRef={(node) => {
+            inputRefs.current[index] = node
+          }}
+          onChange={(value) => updateAnswer(index, value)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' && isComplete) {
+              showExerciseAtOffset(1)
+            }
+          }}
+        />,
       )
       cursor = target.end
     })

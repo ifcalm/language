@@ -1,0 +1,68 @@
+.cloze-blank {
+  display: inline-grid;
+  min-width: 5ch;
+  margin: 0 0.08em;
+  vertical-align: baseline;
+}
+
+.cloze-hint,
+.cloze-input {
+  grid-area: 1 / 1;
+  width: 100%;
+  padding: 0 0.1em 0.04em;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.cloze-hint {
+  color: #cfcfca;
+  pointer-events: none;
+}
+
+.cloze-hint .is-hidden {
+  visibility: hidden;
+}
+
+.cloze-entered.is-correct,
+.cloze-entered.is-complete {
+  color: #16844e;
+}
+
+.cloze-entered.is-error {
+  color: #cf3030;
+}
+
+.cloze-input {
+  min-width: 5ch;
+  border: 0;
+  border-bottom: 2px solid #c8c8c2;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  caret-color: var(--text);
+  color: transparent;
+  position: relative;
+  z-index: 1;
+  transition:
+    color 0.14s ease,
+    border-color 0.14s ease,
+    background-color 0.14s ease;
+}
+
+.cloze-input:focus {
+  border-color: var(--text);
+  background: transparent;
+}
+
+.cloze-input.is-correct,
+.cloze-input.is-complete {
+  border-color: #1f9d60;
+}
+
+.cloze-input.is-error {
+  border-color: #e04b4b;
+  background: transparent;
+}

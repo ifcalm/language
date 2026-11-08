@@ -67,11 +67,19 @@ for (const row of snapshot.examples) {
     .push({ en: row.en, zh: row.zh, start: matches[0].index, length: row.target.length })
 }
 
+// /ielts/:module/:topic/practice is the practice page (IeltsPage.tsx), so no
+// entry may use that id; name the word "practice" e.g. practice-n in ID_OVERRIDES.
+const RESERVED_ENTRY_IDS = new Set(['practice'])
+
 function toEntry(sourceEntry, topicId) {
   const word = wordsById.get(sourceEntry.id)
 
   if (!word) {
     throw new Error(`"${sourceEntry.id}" is in ${IELTS_TOPICS_PATH} but not in D1`)
+  }
+
+  if (RESERVED_ENTRY_IDS.has(word.id)) {
+    throw new Error(`Entry id "${word.id}" is reserved for a page route`)
   }
 
   const senses = parseSenses(word.meaningZh)

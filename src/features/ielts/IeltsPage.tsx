@@ -2,30 +2,37 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   getIeltsAudioUrl,
   ieltsCatalog,
-  loadIeltsExamples,
   loadIeltsModule,
   type IeltsEntry,
   type IeltsModuleData,
   type IeltsModuleId,
   type IeltsModuleSummary,
-  type IeltsTopicExamples,
   type IeltsTopicSummary,
 } from '../../data/ielts'
+import { IeltsPractice } from './IeltsPractice'
+import { IeltsSenses } from './IeltsSenses'
 import { useIeltsAudio } from './useIeltsAudio'
+import { useIeltsExamples } from './useIeltsExamples'
 import { useIeltsProgress, type IeltsProgress } from './useIeltsProgress'
 import './ielts.css'
 
-// URL layout: /ielts, /ielts/:module, /ielts/:module/:topicOrder, /ielts/:module/:topicOrder/:entryId
+// URL layout: /ielts, /ielts/:module, /ielts/:module/:topicOrder,
+// /ielts/:module/:topicOrder/:entryId and /ielts/:module/:topicOrder/practice[/:section].
+// "practice" is reserved: build-ielts-data.mjs rejects an entry with that id.
+const PRACTICE_SEGMENT = 'practice'
+
 interface IeltsRoute {
   moduleId: IeltsModuleId | null
   topicOrder: number | null
   entryId: string | null
+  /** Sentence practice; section is an index into topic.groups, null for the whole topic. */
+  practice?: { section: number | null } | null
 }
 
 type TopicFilter = 'all' | 'learning' | 'mastered'
 
 function parseIeltsRoute(pathname: string): IeltsRoute {
-  const [, , moduleSegment, topicSegment, entrySegment] = pathname.split('/')
+  const [, , moduleSegment, topicSegment, entrySegment, sectionSegment] = pathname.split('/')
   const module = ieltsCatalog.modules.find((item) => item.id === moduleSegment)
 
   if (!module) {
@@ -34,6 +41,18 @@ function parseIeltsRoute(pathname: string): IeltsRoute {
 
   const topic = module.topics.find((item) => String(item.order) === topicSegment)
 
+  if (topic && entrySegment === PRACTICE_SEGMENT) {
+    const section = Number(sectionSegment) - 1
+    return {
+      moduleId: module.id,
+      topicOrder: topic.order,
+      entryId: null,
+      practice: {
+        section: Number.isInteger(section) && topic.groups?.[section] ? section : null,
+      },
+    }
+  }
+
   return {
     moduleId: module.id,
     topicOrder: topic?.order ?? null,
@@ -41,8 +60,12 @@ function parseIeltsRoute(pathname: string): IeltsRoute {
   }
 }
 
-function buildIeltsPath({ moduleId, topicOrder, entryId }: IeltsRoute) {
-  return ['/ielts', moduleId, topicOrder, entryId && encodeURIComponent(entryId)]
+function buildIeltsPath({ moduleId, topicOrder, entryId, practice }: IeltsRoute) {
+  const tail = practice
+    ? [PRACTICE_SEGMENT, practice.section === null ? null : practice.section + 1]
+    : [entryId && encodeURIComponent(entryId)]
+
+  return ['/ielts', moduleId, topicOrder, ...tail]
     .filter((segment) => segment !== null && segment !== undefined && segment !== '')
     .join('/')
 }
@@ -86,31 +109,6 @@ function useIeltsModule(
   }, [moduleId, syncTopics])
 
   return state.moduleId === moduleId ? state : { moduleId, data: null, error: '' }
-}
-
-function useIeltsExamples(topicId: string) {
-  const [state, setState] = useState<{
-    topicId: string | null
-    data: IeltsTopicExamples | null
-    error: string
-  }>({ topicId: null, data: null, error: '' })
-
-  useEffect(() => {
-    let cancelled = false
-
-    loadIeltsExamples(topicId).then(
-      (data) => !cancelled && setState({ topicId, data, error: '' }),
-      () =>
-        !cancelled &&
-        setState({ topicId, data: null, error: '例句加载失败，请检查网络后刷新重试。' }),
-    )
-
-    return () => {
-      cancelled = true
-    }
-  }, [topicId])
-
-  return state.topicId === topicId ? state : { topicId, data: null, error: '' }
 }
 
 function ExampleList({ entry }: { entry: IeltsEntry }) {
@@ -178,25 +176,16 @@ function CheckIcon() {
   )
 }
 
-function Senses({ entry }: { entry: IeltsEntry }) {
-  return (
-    <span className="ielts-senses">
-      {entry.senses.map((sense, index) => (
-        <span key={index}>
-          <em>{sense.pos}</em> {sense.meaning}
-        </span>
-      ))}
-    </span>
-  )
-}
-
 function Breadcrumb({
   module,
   topic,
+  current,
   onNavigate,
 }: {
   module: IeltsModuleSummary
   topic?: IeltsTopicSummary
+  /** A page below the topic, such as practice; the topic then links back. */
+  current?: string
   onNavigate: (route: IeltsRoute) => void
 }) {
   return (
@@ -214,7 +203,22 @@ function Breadcrumb({
             {module.name}
           </button>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">{topic.title}</span>
+          {current ? (
+            <>
+              <button
+                type="button"
+                onClick={() =>
+                  onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: null })
+                }
+              >
+                {topic.title}
+              </button>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">{current}</span>
+            </>
+          ) : (
+            <span aria-current="page">{topic.title}</span>
+          )}
         </>
       ) : (
         <span aria-current="page">{module.name}</span>
@@ -266,7 +270,7 @@ function EntryRow({
     <li className={`ielts-entry-row${progress.isMastered(entry.id) ? ' is-mastered' : ''}`}>
       <button type="button" className="ielts-entry-main" onClick={onOpen}>
         <strong>{entry.word}</strong>
-        <Senses entry={entry} />
+        <IeltsSenses entry={entry} />
         {showTopic ? <small>{showTopic}</small> : null}
       </button>
       <MasterButton entry={entry} progress={progress} compact />
@@ -448,11 +452,12 @@ function TopicView({
     ? topic.groups
         .map((group, index) => ({
           key: `group-${index}`,
+          index,
           title: group.title,
           entries: visibleEntries.filter((entry) => entry.group === index),
         }))
         .filter((group) => group.entries.length > 0)
-    : [{ key: 'all', title: '', entries: visibleEntries }]
+    : [{ key: 'all', index: null, title: '', entries: visibleEntries }]
   const topicIndex = module.topics.findIndex((item) => item.id === topic.id)
   const previousTopic = module.topics[topicIndex - 1]
   const nextTopic = module.topics[topicIndex + 1]
@@ -472,7 +477,23 @@ function TopicView({
           </span>
           <h1>{topic.title}</h1>
         </div>
-        <ProgressBar done={masteredCount} total={entries.length} />
+        <div className="ielts-topic-actions">
+          <ProgressBar done={masteredCount} total={entries.length} />
+          <button
+            type="button"
+            className="ielts-practice-start"
+            onClick={() =>
+              onNavigate({
+                moduleId: module.id,
+                topicOrder: topic.order,
+                entryId: null,
+                practice: { section: null },
+              })
+            }
+          >
+            练习本话题
+          </button>
+        </div>
       </header>
 
       <div className="ielts-filter" role="group" aria-label="筛选词条">
@@ -500,10 +521,26 @@ function TopicView({
         groupedEntries.map((group) => (
           <section key={group.key} className="ielts-group">
             {group.title ? (
-              <h2 className="ielts-group-title">
-                {group.title}
-                <span>{group.entries.length}</span>
-              </h2>
+              <div className="ielts-group-head">
+                <h2 className="ielts-group-title">
+                  {group.title}
+                  <span>{group.entries.length}</span>
+                </h2>
+                <button
+                  type="button"
+                  className="ielts-practice-start is-quiet"
+                  onClick={() =>
+                    onNavigate({
+                      moduleId: module.id,
+                      topicOrder: topic.order,
+                      entryId: null,
+                      practice: { section: group.index },
+                    })
+                  }
+                >
+                  练习本节
+                </button>
+              </div>
             ) : null}
             <div className="ielts-panel">
               <ul className="ielts-entry-list">
@@ -688,12 +725,14 @@ function TopicLoader({
   module,
   topic,
   entryId,
+  practice,
   progress,
   onNavigate,
 }: {
   module: IeltsModuleSummary
   topic: IeltsTopicSummary
   entryId: string | null
+  practice: IeltsRoute['practice']
   progress: IeltsProgress
   onNavigate: (route: IeltsRoute) => void
 }) {
@@ -724,6 +763,51 @@ function TopicLoader({
             {error || '正在加载词表…'}
           </p>
         </section>
+      </>
+    )
+  }
+
+  if (practice) {
+    const { section } = practice
+    const groups = topic.groups
+    const nextTopic = module.topics[module.topics.findIndex((item) => item.id === topic.id) + 1]
+    const next =
+      section !== null && groups && section + 1 < groups.length
+        ? {
+            label: `下一节：${groups[section + 1].title}`,
+            onGo: () =>
+              onNavigate({
+                moduleId: module.id,
+                topicOrder: topic.order,
+                entryId: null,
+                practice: { section: section + 1 },
+              }),
+          }
+        : nextTopic
+          ? {
+              label: `下一个话题：${nextTopic.title}`,
+              onGo: () =>
+                onNavigate({
+                  moduleId: module.id,
+                  topicOrder: nextTopic.order,
+                  entryId: null,
+                  practice: { section: null },
+                }),
+            }
+          : null
+
+    return (
+      <>
+        <Breadcrumb module={module} topic={topic} current="例句填空" onNavigate={onNavigate} />
+        <IeltsPractice
+          key={`${topic.id}/${section}`}
+          topic={topic}
+          section={section}
+          entries={entries}
+          progress={progress}
+          next={next}
+          onBack={() => onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: null })}
+        />
       </>
     )
   }
@@ -796,6 +880,7 @@ function IeltsPage() {
           module={module}
           topic={topic}
           entryId={route.entryId}
+          practice={route.practice ?? null}
           progress={progress}
           onNavigate={navigate}
         />
