@@ -1564,7 +1564,7 @@
 - **establish** v. 建立;确立,证实
 - **found** v. 创立
 - **initiate** v. 发起
-- **launch** v. 发起,推出 n. 发射
+- **launch** v. 发起,推出;发射 n. 发射;发起,推出
 - **forge** v. 建立;伪造;锻造
 - **invent** v. 发明
 - **devise** v. 设计,想出
