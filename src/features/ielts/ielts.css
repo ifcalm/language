@@ -550,6 +550,185 @@
   color: var(--text);
 }
 
+/* Sentence practice */
+.ielts-topic-actions {
+  display: flex;
+  flex: 0 1 380px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px 16px;
+}
+
+.ielts-topic-actions .ielts-progress {
+  flex: 1 1 200px;
+}
+
+.ielts-group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+}
+
+.ielts-practice-start,
+.ielts-practice-footer button,
+.ielts-practice-done button {
+  padding: 9px 18px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--surface);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ielts-practice-start.is-quiet,
+.ielts-practice-footer button.is-quiet,
+.ielts-practice-done button.is-quiet {
+  border-color: var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.ielts-group-head .ielts-practice-start {
+  padding: 6px 14px;
+  font-size: 0.86rem;
+}
+
+.ielts-practice-start:hover,
+.ielts-practice-start:focus-visible,
+.ielts-practice-footer button:hover,
+.ielts-practice-footer button:focus-visible,
+.ielts-practice-done button:hover,
+.ielts-practice-done button:focus-visible {
+  opacity: 0.82;
+}
+
+.ielts-practice-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.ielts-practice-chip {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  font-weight: 650;
+}
+
+.ielts-practice-chip.active {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.ielts-practice-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.ielts-practice-count {
+  margin-left: auto;
+  color: var(--text);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.ielts-practice-stage {
+  display: grid;
+  place-content: center;
+  min-height: 300px;
+  padding: 48px 40px 36px;
+  text-align: center;
+}
+
+.ielts-practice-sentence {
+  max-width: 860px;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.3rem, 2.8vw, 1.95rem);
+  font-weight: 570;
+  line-height: 1.8;
+  letter-spacing: -0.02em;
+}
+
+.ielts-practice-translation {
+  margin: 18px 0 0;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.ielts-practice-answer {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  justify-self: center;
+  max-width: 520px;
+  margin-top: 22px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--surface-subtle);
+  text-align: left;
+}
+
+.ielts-practice-answer strong {
+  font-size: 1.05rem;
+}
+
+.ielts-practice-answer small {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.ielts-practice-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.ielts-practice-footer-gap {
+  flex: 1;
+}
+
+.ielts-practice-done {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 48px 28px;
+  text-align: center;
+}
+
+.ielts-practice-done strong {
+  font-size: 1.15rem;
+}
+
+.ielts-practice-done p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.ielts-practice-done div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
 @media (max-width: 640px) {
   .ielts-content {
     width: calc(100% - 32px);
@@ -569,5 +748,16 @@
 
   .ielts-entry-detail {
     padding: 20px;
+  }
+
+  .ielts-practice-bar,
+  .ielts-practice-footer {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .ielts-practice-stage {
+    min-height: 260px;
+    padding: 36px 18px 28px;
   }
 }
