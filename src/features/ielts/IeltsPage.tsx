@@ -51,7 +51,10 @@ function getTopicOrder(topicId: string) {
   return Number(topicId.split('-').pop())
 }
 
-function useIeltsModule(moduleId: IeltsModuleId | null) {
+function useIeltsModule(
+  moduleId: IeltsModuleId | null,
+  syncTopics: IeltsProgress['syncTopics'],
+) {
   const [state, setState] = useState<{
     moduleId: IeltsModuleId | null
     data: IeltsModuleData | null
@@ -66,7 +69,12 @@ function useIeltsModule(moduleId: IeltsModuleId | null) {
     let cancelled = false
 
     loadIeltsModule(moduleId).then(
-      (data) => !cancelled && setState({ moduleId, data, error: '' }),
+      (data) => {
+        if (!cancelled) {
+          setState({ moduleId, data, error: '' })
+          syncTopics(data.entries)
+        }
+      },
       () =>
         !cancelled &&
         setState({ moduleId, data: null, error: '词表加载失败，请检查网络后刷新重试。' }),
@@ -75,7 +83,7 @@ function useIeltsModule(moduleId: IeltsModuleId | null) {
     return () => {
       cancelled = true
     }
-  }, [moduleId])
+  }, [moduleId, syncTopics])
 
   return state.moduleId === moduleId ? state : { moduleId, data: null, error: '' }
 }
@@ -315,7 +323,10 @@ function ModuleView({
 }) {
   const [query, setQuery] = useState('')
   const normalizedQuery = query.trim().toLowerCase()
-  const { data, error } = useIeltsModule(normalizedQuery ? module.id : null)
+  const { data, error } = useIeltsModule(
+    normalizedQuery ? module.id : null,
+    progress.syncTopics,
+  )
   const topicTitles = useMemo(
     () => new Map(module.topics.map((topic) => [topic.id, topic.title])),
     [module],
@@ -686,7 +697,7 @@ function TopicLoader({
   progress: IeltsProgress
   onNavigate: (route: IeltsRoute) => void
 }) {
-  const { data, error } = useIeltsModule(module.id)
+  const { data, error } = useIeltsModule(module.id, progress.syncTopics)
   const entries = useMemo(
     () => data?.entries.filter((entry) => entry.topicId === topic.id) ?? [],
     [data, topic.id],

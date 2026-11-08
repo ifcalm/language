@@ -43,6 +43,36 @@ export function useIeltsProgress() {
     })
   }, [])
 
+  // topics.json can move an entry to another topic (or renumber topics) after it
+  // was mastered. Once a module's entries are loaded, point the mastered ones at
+  // their current topic so the overview counts them in the right place.
+  const syncTopics = useCallback(
+    (entries: ReadonlyArray<{ id: string; topicId: string }>) => {
+      setMastered((current) => {
+        let next: MasteredMap | null = null
+
+        for (const entry of entries) {
+          const stored = current[entry.id]
+
+          if (stored && stored !== entry.topicId) {
+            if (!next) {
+              next = { ...current }
+            }
+            next[entry.id] = entry.topicId
+          }
+        }
+
+        if (!next) {
+          return current
+        }
+
+        writeMastered(next)
+        return next
+      })
+    },
+    [],
+  )
+
   const countMastered = useCallback(
     (prefix: string) =>
       Object.values(mastered).filter(
@@ -54,6 +84,7 @@ export function useIeltsProgress() {
   return {
     isMastered: (entryId: string) => Boolean(mastered[entryId]),
     toggleMastered,
+    syncTopics,
     countMastered,
   }
 }
