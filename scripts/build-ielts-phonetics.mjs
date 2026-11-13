@@ -188,14 +188,15 @@ const missing = { uk: [], us: [] }
 for (const entry of JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8')).words) {
   const key = normalizeWord(entry.word)
 
-  if (PLACEHOLDER.test(entry.word)) {
-    continue
-  }
-
-  const result = {
-    uk: transcribe(entry.word, lookupUk, 'uk'),
-    us: transcribe(entry.word, lookupUs, 'us'),
-  }
+  // Pattern phrases are transcribed by hand in the overrides, as their audio
+  // speaks them (sth. = something). Word by word, "A" would get the article's
+  // weak form and "object" or "convert" their noun stress.
+  const result = PLACEHOLDER.test(entry.word)
+    ? { uk: null, us: null }
+    : {
+        uk: transcribe(entry.word, lookupUk, 'uk'),
+        us: transcribe(entry.word, lookupUs, 'us'),
+      }
 
   for (const accent of ['uk', 'us']) {
     if (!result[accent] && !overrides[key]?.[accent] && !overrides[key]?.byPos) {
