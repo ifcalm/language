@@ -45,7 +45,7 @@ docs/ielts-vocabulary.md                       供人阅读的完整词表(自�
 
 - 重音符号放在音节开头;单音节词不标重音;主重音之后不标次重音;用 `ɡ` 不用 `g`;不使用 `ɐ ɹ ɫ` 等宽式符号。
 - 词组中的虚词用弱读(`/meɪk ˈjuːs əv/`);连字符复合词主重音在最后一部分(`/ˌsemi dɪˈtætʃt/`)。
-- 带占位符的句型(如 *convert A into B*)不标音标,但有音频。
+- 带占位符的句型(如 *convert A into B*、*object to (doing) sth.*)不自动转写,在人工校正表里按音频朗读的文本标音(sth. 读作 something,字母 A 读 `/eɪ/`,`object`、`convert` 取动词重音)。
 
 ## 词条字段
 

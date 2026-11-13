@@ -1635,9 +1635,9 @@
     "uk": "/bɜːθ/",
     "us": "/bɝːθ/"
   },
-  "best seller": {
-    "uk": "/best ˈselə/",
-    "us": "/best ˈselɚ/"
+  "bestseller": {
+    "uk": "/bestˈselə/",
+    "us": "/bestˈselɚ/"
   },
   "betray": {
     "uk": "/bɪˈtreɪ/",
@@ -2035,6 +2035,10 @@
     "uk": "/ˈbrɔːdkɑːst/",
     "us": "/ˈbrɔːdkæst/"
   },
+  "broaden one's horizons": {
+    "uk": null,
+    "us": null
+  },
   "broadsheet": {
     "uk": "/ˈbrɔːdʃiːt/",
     "us": "/ˈbrɔːdʃiːt/"
@@ -2270,6 +2274,10 @@
   "canoeing": {
     "uk": "/kəˈnuːɪŋ/",
     "us": "/kəˈnuːɪŋ/"
+  },
+  "can't stand (doing) sth.": {
+    "uk": null,
+    "us": null
   },
   "canteen": {
     "uk": "/kɑːnˈtiːn/",
@@ -3754,6 +3762,10 @@
   "convert": {
     "uk": "/ˈkɒnvət/",
     "us": "/ˈkɑːnvɚt/"
+  },
+  "convert a into b": {
+    "uk": null,
+    "us": null
   },
   "convey": {
     "uk": "/kənˈveɪ/",
@@ -5791,11 +5803,11 @@
     "uk": "/ɪmˈpaʊə/",
     "us": "/ɪmˈpaʊɚ/"
   },
-  "empty-nester": {
-    "uk": "/ˌempti ˈnestə/",
-    "us": "/ˌempti ˈnestɚ/"
+  "empty nester": {
+    "uk": "/ˈempti ˈnestə/",
+    "us": "/ˈempti ˈnestɚ/"
   },
-  "en-suite": {
+  "en suite": {
     "uk": "/en swiːt/",
     "us": "/en swiːt/"
   },
@@ -6739,7 +6751,7 @@
     "uk": "/fɜːm/",
     "us": "/fɝːm/"
   },
-  "first-aid kit": {
+  "first aid kit": {
     "uk": "/fɜːst eɪd kɪt/",
     "us": "/fɝːst eɪd kɪt/"
   },
@@ -7783,7 +7795,7 @@
     "uk": "/ˈhændsʌm/",
     "us": "/ˈhænsəm/"
   },
-  "hang gliding": {
+  "hang-gliding": {
     "uk": "/hæŋ ˈɡlaɪdɪŋ/",
     "us": "/hæŋ ˈɡlaɪdɪŋ/"
   },
@@ -9731,9 +9743,9 @@
     "uk": "/laɪf ɪkˈspektənsi/",
     "us": "/laɪf ɪkˈspektənsi/"
   },
-  "life span": {
-    "uk": "/laɪf spæn/",
-    "us": "/laɪf spæn/"
+  "lifespan": {
+    "uk": "/ˈlaɪfspæn/",
+    "us": "/ˈlaɪfspæn/"
   },
   "lifelong learning": {
     "uk": "/ˈlaɪflɒŋ ˈlɜːnɪŋ/",
@@ -11215,9 +11227,9 @@
     "uk": "/nəʊˈteɪʃən/",
     "us": "/noʊˈteɪʃən/"
   },
-  "notice board": {
-    "uk": "/ˈnəʊtɪs bɔːd/",
-    "us": "/ˈnoʊtəs bɔːrd/"
+  "noticeboard": {
+    "uk": "/ˈnəʊtɪsbɔːd/",
+    "us": "/ˈnoʊtəsbɔːrd/"
   },
   "notify": {
     "uk": "/ˈnəʊtɪfaɪ/",
@@ -11330,6 +11342,10 @@
   "obey": {
     "uk": "/əʊˈbeɪ/",
     "us": "/oʊˈbeɪ/"
+  },
+  "object to (doing) sth.": {
+    "uk": null,
+    "us": null
   },
   "objective": {
     "uk": "/ɒbˈdʒektɪv/",
@@ -11831,8 +11847,8 @@
     "uk": "/peɪl/",
     "us": "/peɪl/"
   },
-  "paleolithic": {
-    "uk": "/ˈpeɪliəʊlɪθɪk/",
+  "palaeolithic": {
+    "uk": "/ˌpæliːəˈlɪθɪk/",
     "us": "/ˈpeɪlioʊlɪθɪk/"
   },
   "palette": {
@@ -12035,9 +12051,9 @@
     "uk": "/peɪ əˈtenʃən tə/",
     "us": "/peɪ əˈtenʃən tə/"
   },
-  "pay slip": {
-    "uk": "/peɪ slɪp/",
-    "us": "/peɪ slɪp/"
+  "payslip": {
+    "uk": "/ˈpeɪslɪp/",
+    "us": "/ˈpeɪslɪp/"
   },
   "payable": {
     "uk": "/ˈpeɪəbəl/",
