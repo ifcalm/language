@@ -1,3 +1,4 @@
+import { getBaseFormCandidates } from './inflection'
 import {
   mapExampleRow,
   mapPronunciationRow,
@@ -67,6 +68,35 @@ export async function getVocabByLookup(env: Env, lookup: string) {
       normalizedLookup,
     )
     .first<VocabRow>()
+}
+
+// Fallback for a lookup that matched nothing: "improves" finds "improve".
+export async function getVocabByInflectedForm(env: Env, lookup: string) {
+  const candidates = getBaseFormCandidates(lookup)
+
+  if (candidates.length === 0) {
+    return null
+  }
+
+  const { results } = await env.DB.prepare(
+    `SELECT ${VOCAB_COLUMNS}
+    FROM vocab
+    WHERE normalized_word IN (${candidates.map(() => '?').join(', ')})
+    ${VOCAB_ORDER}`,
+  )
+    .bind(...candidates)
+    .all<VocabRow>()
+
+  // Candidates are listed most likely first, so that order decides.
+  for (const candidate of candidates) {
+    const match = results.find((row) => row.normalized_word === candidate)
+
+    if (match) {
+      return match
+    }
+  }
+
+  return null
 }
 
 // Everything the detail page needs in a single D1 round trip. The neighbour

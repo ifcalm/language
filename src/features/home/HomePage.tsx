@@ -4,7 +4,10 @@ import {
   useEffect,
   useState,
 } from 'react'
-import { requestVocabularyDetail } from '../vocabulary/api'
+import {
+  requestVocabularyDetail,
+  VocabularyNotFoundError,
+} from '../vocabulary/api'
 import type { VocabularyDetail } from '../vocabulary/types'
 import { usePronunciationPlayback } from '../vocabulary/usePronunciationPlayback'
 import {
@@ -21,7 +24,7 @@ function HomePage({ onOpenVocabulary }: HomePageProps) {
   const [lookupQuery, setLookupQuery] = useState('')
   const [lookupDetail, setLookupDetail] = useState<VocabularyDetail | null>(null)
   const [isLookupLoading, setIsLookupLoading] = useState(false)
-  const [lookupError, setLookupError] = useState('')
+  const [lookupError, setLookupError] = useState<'' | 'not-found' | 'failed'>('')
   const {
     activePronunciationKey,
     pronunciationPlaybackError,
@@ -52,7 +55,7 @@ function HomePage({ onOpenVocabulary }: HomePageProps) {
         }
 
         setLookupError(
-          error instanceof Error ? error.message : 'Vocabulary lookup unavailable',
+          error instanceof VocabularyNotFoundError ? 'not-found' : 'failed',
         )
       } finally {
         if (!controller.signal.aborted) {
@@ -188,7 +191,7 @@ function HomePage({ onOpenVocabulary }: HomePageProps) {
                 </p>
               )}
 
-              {!isLookupLoading && lookupError && (
+              {!isLookupLoading && lookupError === 'not-found' && (
                 <div className="lookup-result-empty">
                   <span>暂未收录</span>
                   <strong>{lookupQuery}</strong>
@@ -198,10 +201,23 @@ function HomePage({ onOpenVocabulary }: HomePageProps) {
                 </div>
               )}
 
+              {!isLookupLoading && lookupError === 'failed' && (
+                <div className="lookup-result-empty" role="alert">
+                  <span>查询失败</span>
+                  <strong>{lookupQuery}</strong>
+                  <p>网络或服务暂时不可用，请稍后再搜索一次。</p>
+                </div>
+              )}
+
               {!isLookupLoading && lookupDetail && (
                 <>
                   <header className="lookup-result-header">
-                    <span>Lookup</span>
+                    <span>
+                      {lookupDetail.core.word.toLowerCase() ===
+                      lookupQuery.toLowerCase()
+                        ? 'Lookup'
+                        : `${lookupQuery} → ${lookupDetail.core.word}`}
+                    </span>
                     <div>
                       <h2>{lookupDetail.core.word}</h2>
                       <p>

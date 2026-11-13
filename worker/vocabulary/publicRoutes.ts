@@ -2,9 +2,11 @@ import {
   clampNumber,
   makeErrorResponse,
   makeJsonResponse,
+  readPathLookup,
 } from '../shared/http'
 import { mapExampleRow, mapPronunciationRow, mapVocabRow } from './mappers'
 import {
+  getVocabByInflectedForm,
   getVocabByLookup,
   getVocabularyDetail,
   groupByVocabularyId,
@@ -194,10 +196,15 @@ export async function handleVocabularyPronunciations(
 }
 
 export async function handleVocabularyDetail(request: Request, env: Env) {
-  const lookup = decodeURIComponent(
-    new URL(request.url).pathname.replace('/api/vocabulary/', ''),
-  )
-  const core = await getVocabByLookup(env, lookup)
+  const lookup = readPathLookup(request, '/api/vocabulary/')
+
+  if (lookup === null) {
+    return makeErrorResponse('Malformed vocabulary lookup')
+  }
+
+  const core =
+    (await getVocabByLookup(env, lookup)) ??
+    (await getVocabByInflectedForm(env, lookup))
 
   if (!core) {
     return makeErrorResponse('Vocabulary item not found', 404)

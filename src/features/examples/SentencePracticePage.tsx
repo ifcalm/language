@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { VocabularyExample } from '../../data/vocabulary'
 import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
 import {
@@ -531,7 +531,7 @@ function buildExercises(items: PracticeVocabularyEntry[]) {
 }
 
 function SentencePracticePage() {
-  const [vocabulary, setVocabulary] = useState<PracticeVocabularyEntry[]>([])
+  const [exercises, setExercises] = useState<SentenceExercise[]>([])
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [answers, setAnswers] = useState(['', ''])
   const [isLoading, setIsLoading] = useState(true)
@@ -547,8 +547,8 @@ function SentencePracticePage() {
   const helpTriggerRef = useRef<HTMLButtonElement | null>(null)
   const pendingQuestionIndexRef = useRef<number | null>(null)
   const savedProgressRestoredRef = useRef(false)
+  const currentExerciseRef = useRef<SentenceExercise | null>(null)
 
-  const exercises = useMemo(() => buildExercises(vocabulary), [vocabulary])
   const exercise = exercises[exerciseIndex] ?? null
   const answerStates = exercise
     ? exercise.targets.map((target, index) =>
@@ -563,6 +563,10 @@ function SentencePracticePage() {
   const displayedExerciseCount = isFullyLoaded
     ? exercises.length
     : availableCount || exercises.length
+
+  useEffect(() => {
+    currentExerciseRef.current = exercise
+  }, [exercise])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -592,8 +596,19 @@ function SentencePracticePage() {
         })()
 
         function publishLoadedItems() {
-          const mappedVocabulary = [...allItems]
-          const preparedExercises = buildExercises(mappedVocabulary)
+          const preparedExercises = buildExercises(allItems)
+          // Which words get blanked depends on the whole word list, so the
+          // sentence on screen would otherwise change its blanks when the
+          // rest of the corpus arrives. Keep it exactly as the learner sees it.
+          const shownExercise = currentExerciseRef.current
+          const shownIndex = shownExercise
+            ? preparedExercises.findIndex(
+                (candidate) => candidate.id === shownExercise.id,
+              )
+            : -1
+          if (shownExercise && shownIndex >= 0) {
+            preparedExercises[shownIndex] = shownExercise
+          }
           const pendingQuestionIndex = pendingQuestionIndexRef.current
           if (
             pendingQuestionIndex !== null &&
@@ -619,9 +634,13 @@ function SentencePracticePage() {
             if (savedIndex >= 0) {
               setExerciseIndex(savedIndex)
               savedProgressRestoredRef.current = true
+            } else if (shownIndex >= 0) {
+              setExerciseIndex(shownIndex)
             }
+          } else if (shownIndex >= 0) {
+            setExerciseIndex(shownIndex)
           }
-          setVocabulary(mappedVocabulary)
+          setExercises(preparedExercises)
         }
 
         publishLoadedItems()
