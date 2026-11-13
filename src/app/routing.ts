@@ -13,12 +13,22 @@ export type NavigationViewId =
   | 'vocabulary'
   | 'ielts'
 
+// A hand-edited or truncated URL can carry a broken escape such as "%E0%A4%A";
+// decodeURIComponent throws on those, which would blank the whole page.
+export function safeDecodeURIComponent(value: string) {
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return value
+  }
+}
+
 export function getVerbLookupFromPath(pathname: string) {
   if (!pathname.startsWith('/verbs/')) {
     return ''
   }
 
-  return decodeURIComponent(pathname.replace('/verbs/', '').split('/')[0] ?? '')
+  return safeDecodeURIComponent(pathname.replace('/verbs/', '').split('/')[0] ?? '')
 }
 
 export function getVocabularyLookupFromPath(pathname: string) {
@@ -26,7 +36,7 @@ export function getVocabularyLookupFromPath(pathname: string) {
     return ''
   }
 
-  return decodeURIComponent(
+  return safeDecodeURIComponent(
     pathname.replace('/vocabulary/', '').split('/')[0] ?? '',
   )
 }

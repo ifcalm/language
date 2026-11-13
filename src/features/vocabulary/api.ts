@@ -83,6 +83,14 @@ export async function requestVocabularyList(
   return (await response.json()) as VocabularyApiResponse
 }
 
+// Lets callers tell "this word is not in the corpus" from a failed request.
+export class VocabularyNotFoundError extends Error {
+  constructor(lookup: string) {
+    super(`Vocabulary item not found: ${lookup}`)
+    this.name = 'VocabularyNotFoundError'
+  }
+}
+
 export async function requestVocabularyDetail(
   lookup: string,
   signal: AbortSignal,
@@ -90,6 +98,10 @@ export async function requestVocabularyDetail(
   const response = await fetch(`/api/vocabulary/${encodeURIComponent(lookup)}`, {
     signal,
   })
+
+  if (response.status === 404) {
+    throw new VocabularyNotFoundError(lookup)
+  }
 
   if (!response.ok) {
     throw new Error(`Vocabulary detail API responded with ${response.status}`)

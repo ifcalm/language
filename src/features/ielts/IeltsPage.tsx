@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { safeDecodeURIComponent } from '../../app/routing'
 import {
   getIeltsAudioUrl,
   ieltsCatalog,
@@ -56,7 +57,7 @@ function parseIeltsRoute(pathname: string): IeltsRoute {
   return {
     moduleId: module.id,
     topicOrder: topic?.order ?? null,
-    entryId: topic && entrySegment ? decodeURIComponent(entrySegment) : null,
+    entryId: topic && entrySegment ? safeDecodeURIComponent(entrySegment) : null,
   }
 }
 

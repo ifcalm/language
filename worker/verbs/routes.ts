@@ -2,6 +2,7 @@ import {
   clampNumber,
   makeErrorResponse,
   makeJsonResponse,
+  readPathLookup,
 } from '../shared/http'
 import { mapVerbListRow, mapVerbPathRow, mapVerbRow } from './mappers'
 import type { VerbListRow, VerbPathRow, VerbRow } from './types'
@@ -129,9 +130,12 @@ async function getVerbByLookup(env: Env, lookup: string) {
 }
 
 export async function handleVerbDetail(request: Request, env: Env) {
-  const lookup = decodeURIComponent(
-    new URL(request.url).pathname.replace('/api/verbs/', ''),
-  )
+  const lookup = readPathLookup(request, '/api/verbs/')
+
+  if (lookup === null) {
+    return makeErrorResponse('Malformed verb lookup')
+  }
+
   const verb = await getVerbByLookup(env, lookup)
 
   if (!verb) {
