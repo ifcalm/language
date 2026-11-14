@@ -1,0 +1,39 @@
+# 新增词条第 7 批:进阶名词(31 个,待确认)
+
+尚未写入 D1;音标和音频在释义、例句确认后再做。
+
+## 阅读 01 · 抽象概念与学术名词(31)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| nostalgia | n. 怀旧 | Old photographs often fill people with **nostalgia** for their childhood. | 老照片常常让人怀念童年。 |
+| anecdote | n. 轶事,趣闻 | The speaker began with an amusing **anecdote** about his first job. | 演讲者以一件关于他第一份工作的趣事开场。 |
+| nuance | n. 细微差别 | Translation software often misses the **nuances** of everyday speech. | 翻译软件常常漏掉日常话语中的细微差别。 |
+| resilience | n. 适应力,恢复力;弹性 | Children show remarkable **resilience** when faced with difficult changes. | 面对艰难的变化,孩子表现出惊人的适应力。 |
+| superstition | n. 迷信 | According to an old **superstition**, breaking a mirror brings bad luck. | 按照一种古老的迷信说法,打碎镜子会带来厄运。 |
+| fallacy | n. 谬论,谬误 | It is a **fallacy** that people use only ten per cent of their brains. | 人只使用大脑的百分之十,这是一种谬论。 |
+| abbreviation | n. 缩写 | **Abbreviations** are often used in text messages to save time and space. | 短信中常使用缩写以节省时间和篇幅。 |
+| mythology | n. 神话 | In Greek **mythology**, the sun was pulled across the sky by horses. | 在希腊神话中,太阳是由马拉着划过天空的。 |
+| credentials | n. 资历,资格证明 | Applicants must provide proof of their academic **credentials**. | 申请人必须提供学历资格证明。 |
+| propulsion | n. 推进,推进力 | Engineers are testing a new form of **propulsion** for spacecraft. | 工程师正在测试一种新的航天器推进方式。 |
+| inertia | n. 惰性;惯性 | Public **inertia** is one reason why recycling rates remain so low. | 公众的惰性是回收率一直很低的原因之一。 |
+| pendulum | n. 钟摆 | The clock is driven by a **pendulum** that swings once every second. | 这座钟由每秒摆动一次的钟摆驱动。 |
+| microcosm | n. 缩影,微观世界 | The village is a **microcosm** of the changes affecting the whole country. | 这个村庄是影响全国的种种变化的缩影。 |
+| regeneration | n. 复兴,改造;再生 | The **regeneration** of the old docks has created thousands of jobs. | 旧码头区的改造创造了数千个就业岗位。 |
+| patriotism | n. 爱国主义 | International sporting events often produce a strong sense of **patriotism**. | 国际体育赛事常常激发强烈的爱国情感。 |
+| multitude | n. 大量,许多 | The rainforest is home to a **multitude** of plant and insect species. | 雨林是大量植物和昆虫物种的家园。 |
+| misfortune | n. 不幸,厄运 | Many families had the **misfortune** to lose their homes in the flood. | 许多家庭不幸在洪水中失去了家园。 |
+| precedence | n. 优先,优先权 | Safety must take **precedence** over speed on any building site. | 在任何建筑工地,安全都必须优先于速度。 |
+| synonym | n. 同义词 | Using a **synonym** helps writers to avoid repeating the same word. | 使用同义词有助于写作者避免重复同一个词。 |
+| veterinarian | n. 兽医 | The **veterinarian** examined the injured horse and advised a week of rest. | 兽医检查了受伤的马,建议让它休息一周。 |
+| layman | n. 外行,门外汉 | The book explains modern physics in terms a **layman** can understand. | 这本书用外行也能理解的语言解释现代物理学。 |
+| deadlock | n. 僵局 | Talks between the two governments ended in **deadlock** last week. | 两国政府之间的会谈上周陷入僵局。 |
+| scapegoat | n. 替罪羊 | Immigrants are often made a **scapegoat** for wider economic problems. | 移民常常被当作更广泛的经济问题的替罪羊。 |
+| pretext | n. 借口 | The factory was closed on the **pretext** of safety concerns. | 工厂以安全问题为借口被关闭。 |
+| slang | n. 俚语 | Teenagers often use **slang** that their parents cannot understand. | 青少年常用父母听不懂的俚语。 |
+| eyesight | n. 视力 | Spending long hours in front of a screen may damage your **eyesight**. | 长时间盯着屏幕可能损害视力。 |
+| sustenance | n. 食物,营养;生计 | The river provides **sustenance** for millions of people along its banks. | 这条河养活了沿岸数百万人。 |
+| upkeep | n. 维护,保养 | The **upkeep** of historic buildings costs the city millions each year. | 历史建筑的维护每年花费这座城市数百万。 |
+| gist | n. 要点,主旨 | Read the passage quickly to get the **gist** before answering the questions. | 先快速阅读文章,了解大意,再回答问题。 |
+| retrospect | n. 回顾 | In **retrospect**, the decision to close the railway was a mistake. | 回想起来,关闭这条铁路的决定是个错误。 |
+| lag | n. 滞后,时间差 v. 落后 | There is often a **lag** between a discovery and its practical use. | 一项发现与其实际应用之间往往有一段时间差。 |

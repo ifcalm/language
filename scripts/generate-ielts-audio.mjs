@@ -38,6 +38,8 @@ const IPA_READINGS = new Set([
   'glacier-uk', 'luxurious-uk', 'moth-uk', 'patent-uk', 'petrol-us', 'prestigious-us', 'resist-uk',
   'rewrite-uk', 'syrup-us', 'temperament-us', 'temperamental-us', 'torrential-us', 'underline-uk',
   'underline-us',
+  // Plain text gave a 2.8 s file for this one word (1.0 s in the UK voice).
+  'corporate-us',
 ])
 const SAMPLE_IDS = [
   'increase', 'research', 'abuse', 'accommodation', 'hierarchy', 'security-deposit',

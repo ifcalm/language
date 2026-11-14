@@ -1,0 +1,102 @@
+# 新增词条第 3 批:抽象名词与话题词(49 个,待确认)
+
+尚未写入 D1;音标和音频在释义、例句确认后再做。
+
+## 阅读 01 · 抽象概念与学术名词(34)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| circumstance | n. 情况,环境 | Under normal **circumstances**, the journey takes about two hours. | 在正常情况下,这段路程大约需要两小时。 |
+| status | n. 地位;状况 | Teachers in some countries enjoy a much higher social **status** than in others. | 有些国家教师的社会地位比其他国家高得多。 |
+| scheme | n. 计划,方案 | The council has introduced a **scheme** to encourage people to recycle more. | 市政委员会推出了一项鼓励人们多回收的计划。 |
+| controversy | n. 争议 | The decision to close the hospital caused a great deal of **controversy**. | 关闭这家医院的决定引起了很大争议。 |
+| integrity | n. 正直,诚信;完整 | Voters expect their leaders to act with honesty and **integrity**. | 选民期望他们的领导人行事诚实正直。 |
+| entity | n. 实体 | The two colleges merged to form a single legal **entity** in 2005. | 这两所学院于 2005 年合并为一个单一的法律实体。 |
+| mode | n. 方式,模式 | The train is still the safest **mode** of transport in the country. | 火车仍是该国最安全的交通方式。 |
+| medium | n. 媒介,手段 adj. 中等的 | Television remains a powerful **medium** for reaching large audiences. | 电视仍然是影响大量观众的有力媒介。 |
+| motive | n. 动机 | Profit is not the only **motive** for starting a business. | 利润并不是创业的唯一动机。 |
+| prospect | n. 可能性;前景 | There is little **prospect** of the species returning to the area. | 该物种重返这一地区的可能性很小。 |
+| emphasis | n. 强调,重视 | The school places great **emphasis** on science and mathematics. | 这所学校非常重视科学和数学。 |
+| formula | n. 公式;配方;方案 | Students must learn the **formula** for the area of a circle. | 学生必须学会圆面积的计算公式。 |
+| philosophy | n. 哲学;理念 | She studied **philosophy** at university before training as a lawyer. | 她在接受律师培训之前在大学学的是哲学。 |
+| instance | n. 实例,例子 | The report describes several **instances** of pollution in local rivers. | 报告描述了当地河流受到污染的几个实例。 |
+| error | n. 错误,误差 | A small **error** in the calculation led to a very different result. | 计算中的一个小错误导致了截然不同的结果。 |
+| successor | n. 继任者;后继物 | The director will retire in June, and his **successor** has not been named. | 主任将于六月退休,他的继任者尚未公布。 |
+| practitioner | n. 从业者;执业医生 | Medical **practitioners** must update their training every few years. | 医疗从业者必须每隔几年更新一次培训。 |
+| distinction | n. 区别;优秀 | The law makes no **distinction** between adults and children in such cases. | 在这类案件中,法律不区分成人和儿童。 |
+| characteristic | n. 特征 adj. 特有的 | Long ears are a **characteristic** of animals living in hot deserts. | 长耳朵是生活在炎热沙漠中的动物的一个特征。 |
+| tension | n. 紧张局势;紧张;张力 | The new border controls increased **tension** between the two countries. | 新的边境管制加剧了两国之间的紧张局势。 |
+| obligation | n. 义务,责任 | Employers have a legal **obligation** to provide a safe place of work. | 雇主有提供安全工作场所的法律义务。 |
+| resistance | n. 反对,抵抗;抵抗力;电阻 | The plan met strong **resistance** from people living near the site. | 这项计划遭到了附近居民的强烈反对。 |
+| disadvantage | n. 缺点,不利条件 | The main **disadvantage** of solar power is that it depends on the weather. | 太阳能的主要缺点是它依赖天气。 |
+| paradox | n. 悖论,矛盾的情况 | It is a **paradox** that richer countries often report lower levels of happiness. | 较富裕的国家往往幸福感较低,这是一个悖论。 |
+| terminology | n. 术语 | The article avoids medical **terminology** so that anyone can understand it. | 这篇文章避免使用医学术语,以便任何人都能看懂。 |
+| illusion | n. 错觉;幻想 | Mirrors on the walls create the **illusion** of a much larger room. | 墙上的镜子造成了房间大得多的错觉。 |
+| coincidence | n. 巧合 | It was no **coincidence** that sales rose just after the advertising campaign. | 销量恰好在广告宣传之后上升,这并非巧合。 |
+| ambiguity | n. 歧义,模棱两可 | The **ambiguity** of the instructions led to several mistakes in the test. | 说明含糊不清,导致测试中出现了几处错误。 |
+| counterpart | n. 对应的人或物 | Urban children spend less time outdoors than their rural **counterparts**. | 城市儿童在户外的时间比农村儿童少。 |
+| recipient | n. 接受者,领受者 | **Recipients** of the award receive funding for three years of research. | 该奖项的获得者可得到三年的研究经费。 |
+| fragment | n. 碎片,片段 | Archaeologists found **fragments** of pottery buried beneath the floor. | 考古学家发现了埋在地板下的陶器碎片。 |
+| pursuit | n. 追求;消遣 | Many people move abroad in **pursuit** of a better standard of living. | 许多人为追求更高的生活水平而移居国外。 |
+| virtue | n. 美德;优点 | Patience is a **virtue** that is rarely rewarded in modern business. | 耐心这种美德在现代商业中很少得到回报。 |
+| advent | n. 出现,到来 | The **advent** of the railway transformed life in small country towns. | 铁路的出现改变了乡村小镇的生活。 |
+
+## 写作 01 · 小作文:数量、变化与趋势(1)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| per cent | phr. 百分之… | About sixty **per cent** of the population now lives in cities. | 现在约有百分之六十的人口居住在城市。 |
+
+## 听力 02 · 旅游与交通(1)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| route | n. 路线 | The number 12 bus follows the same **route** as the old tram. | 12 路公共汽车走的是旧有轨电车的路线。 |
+
+## 阅读 05 · 生命科学(2)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| biology | n. 生物学 | Advances in **biology** have changed the way doctors treat many diseases. | 生物学的进步改变了医生治疗许多疾病的方式。 |
+| specimen | n. 标本,样本 | The museum holds over a million **specimens** of insects from around the world. | 这家博物馆收藏了来自世界各地的一百多万件昆虫标本。 |
+
+## 阅读 06 · 物理、化学与能源(2)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| chemical | n. 化学品 adj. 化学的 | Farmers are using fewer **chemicals** on their crops than a decade ago. | 与十年前相比,农民在庄稼上使用的化学品减少了。 |
+| decay | n./v. 腐烂,蛀蚀;衰退 | Sugar in soft drinks is a major cause of tooth **decay** in children. | 软饮料中的糖是儿童蛀牙的主要原因。 |
+
+## 阅读 08 · 语言与历史(2)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| anthropology | n. 人类学 | **Anthropology** studies how human societies and cultures have developed over time. | 人类学研究人类社会和文化是如何随时间发展的。 |
+| paragraph | n. 段落 | The main idea is usually stated in the first **paragraph** of the passage. | 主旨通常在文章的第一段中说明。 |
+
+## 阅读 09 · 经济与商业(2)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| retail | n./v. 零售 | Online shopping has changed the **retail** industry more than any other development. | 网上购物对零售业的改变超过了其他任何发展。 |
+| capitalism | n. 资本主义 | Critics argue that **capitalism** increases the gap between rich and poor. | 批评者认为资本主义扩大了贫富差距。 |
+
+## 写作 05 · 政府与公共事务(3)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| treaty | n. 条约 | More than a hundred countries have signed the **treaty** on climate change. | 已有一百多个国家签署了这项气候变化条约。 |
+| ministry | n. 政府的部,部门 | The **Ministry** of Health has published new advice on diet and exercise. | 卫生部发布了有关饮食和锻炼的新建议。 |
+| sanction | n. 制裁;批准 v. 批准 | The United Nations imposed economic **sanctions** on the country in 2010. | 联合国于 2010 年对该国实施了经济制裁。 |
+
+## 写作 09 · 就业与工作(1)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| manual | adj. 体力的;手动的 n. 手册 | Machines have replaced many **manual** jobs in factories and on farms. | 机器已经取代了工厂和农场里的许多体力工作。 |
+
+## 口语 03 · 物品与外观(1)
+
+| 词 | 释义 | 例句 | 译文 |
+|---|---|---|---|
+| fabric | n. 织物,布料;结构 | The sofa is covered in a soft **fabric** that is easy to clean. | 沙发上包着一层容易清洗的柔软布料。 |

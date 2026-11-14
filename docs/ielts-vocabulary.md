@@ -14,14 +14,14 @@
 
 **格式**:`- **单词** 词性 中文释义`。词性缩写:n. 名词,v. 动词,adj. 形容词,adv. 副词,prep. 介词,conj. 连词,pron. 代词,phr. 词组。
 
-**结构与统计**(按雅思考试四个模块组织,共 4557 条:单词 4063,词组 494)
+**结构与统计**(按雅思考试四个模块组织,共 4857 条:单词 4357,词组 500)
 
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
-| 一、听力 | 租房、旅游、选课等生活与校园场景 | 6 | 815 |
-| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2338 |
-| 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 990 |
-| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 414 |
+| 一、听力 | 租房、旅游、选课等生活与校园场景 | 6 | 816 |
+| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2626 |
+| 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 1000 |
+| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
 
 ---
 
@@ -135,6 +135,7 @@
 ### 旅游与交通
 
 - **itinerary** n. 行程表
+- **route** n. 路线
 - **destination** n. 目的地
 - **overseas** adj. 海外的 adv. 在海外
 - **departure** n. 出发,离开
@@ -1025,16 +1026,36 @@
 
 - **essence** n. 本质,精髓
 - **abstraction** n. 抽象
+- **entity** n. 实体
+- **philosophy** n. 哲学;理念
 - **theme** n. 主题
+- **gist** n. 要点,主旨
 - **facet** n. 方面;刻面
+- **constituent** n. 成分;选民 adj. 组成的
+- **characteristic** n. 特征 adj. 特有的
+- **distinction** n. 区别;优秀
+- **nuance** n. 细微差别
 - **hierarchy** n. 等级制度;层级
+- **status** n. 地位;状况
+- **precedence** n. 优先,优先权
 - **array** n. 一系列,大量
+- **cluster** n. 群,簇 v. 聚集
 - **myriad** n. 无数 adj. 无数的
+- **multitude** n. 大量,许多
 - **chunk** n. 大块;语块
+- **fragment** n. 碎片,片段
 - **breakdown** n. 故障;崩溃;细目
 - **conjunction** n. 结合;连词
+- **terminology** n. 术语
+- **synonym** n. 同义词
+- **abbreviation** n. 缩写
+- **slang** n. 俚语
+- **anecdote** n. 轶事,趣闻
+- **mythology** n. 神话
+- **superstition** n. 迷信
 - **domain** n. 领域;范围
 - **realm** n. 领域;王国
+- **microcosm** n. 缩影,微观世界
 - **frontier** n. 边境;前沿
 - **boundary** n. 边界;界限
 - **threshold** n. 门槛;阈值
@@ -1046,42 +1067,76 @@
 - **span** n. 跨度,期间 v. 横跨
 - **duration** n. 持续时间
 - **outset** n. 开端
+- **advent** n. 出现,到来
+- **retrospect** n. 回顾
 - **pace** n. 速度;节奏
+- **motion** n. 运动;动议
+- **propulsion** n. 推进,推进力
+- **inertia** n. 惰性;惯性
+- **pendulum** n. 钟摆
+- **lag** n. 滞后,时间差 v. 落后
 - **progression** n. 进展,发展
 - **transition** n. 过渡,转变
 - **continuity** n. 连续性
 - **succession** n. 连续;继承
 - **expansion** n. 扩大,扩张
+- **regeneration** n. 复兴,改造;再生
 - **closure** n. 关闭;结束
 - **scenario** n. 设想;情景
+- **circumstance** n. 情况,环境
+- **instance** n. 实例,例子
 - **likelihood** n. 可能性
+- **prospect** n. 可能性;前景
 - **contingency** n. 意外情况
+- **coincidence** n. 巧合
 - **precaution** n. 预防措施
 - **necessity** n. 必要性;必需品
+- **obligation** n. 义务,责任
 - **availability** n. 可获得性
 - **flexibility** n. 灵活性
+- **resilience** n. 适应力,恢复力;弹性
 - **instability** n. 不稳定
 - **tendency** n. 倾向,趋势
 - **inclination** n. 倾向;意愿
 - **disposition** n. 性情;倾向
 - **preference** n. 偏好
 - **dilemma** n. 困境,两难
+- **paradox** n. 悖论,矛盾的情况
 - **plight** n. 困境
 - **setback** n. 挫折
+- **disadvantage** n. 缺点,不利条件
 - **barrier** n. 障碍;屏障
+- **obstacle** n. 障碍
+- **resistance** n. 反对,抵抗;抵抗力;电阻
 - **defect** n. 缺陷
+- **error** n. 错误,误差
+- **fallacy** n. 谬论,谬误
 - **inability** n. 无能力
 - **chaos** n. 混乱
 - **confusion** n. 混乱;困惑
+- **ambiguity** n. 歧义,模棱两可
+- **illusion** n. 错觉;幻想
 - **peril** n. 危险
 - **ordeal** n. 磨难
+- **distress** n. 痛苦;危难 v. 使痛苦
+- **misfortune** n. 不幸,厄运
+- **nuisance** n. 麻烦事,讨厌的人或事
 - **impetus** n. 推动力
+- **motive** n. 动机
+- **pretext** n. 借口
 - **pathway** n. 途径;小路
+- **mode** n. 方式,模式
+- **medium** n. 媒介,手段 adj. 中等的
 - **coordination** n. 协调
 - **assistance** n. 帮助
+- **sustenance** n. 食物,营养;生计
+- **upkeep** n. 维护,保养
 - **guidance** n. 指导
 - **guideline** n. 准则,指导方针
 - **agenda** n. 议程
+- **scheme** n. 计划,方案
+- **formula** n. 公式;配方;方案
+- **inquiry** n. 调查;询问
 - **resolution** n. 决心;决议;解决;分辨率
 - **compromise** n./v. 妥协 v. 损害,危及
 - **sacrifice** n./v. 牺牲
@@ -1090,28 +1145,51 @@
 - **selection** n. 选择;选拔
 - **approval** n. 批准;认可
 - **rejection** n. 拒绝,排斥
+- **refusal** n. 拒绝
 - **removal** n. 去除;搬迁
 - **clearance** n. 清除;许可
+- **void** n. 空白,空虚 adj. 无效的
 - **displacement** n. 流离失所;位移
 - **compliance** n. 遵守
+- **default** n. 默认;违约 v. 违约
 - **awareness** n. 意识
+- **emphasis** n. 强调,重视
 - **intent** n. 意图 adj. 专心的
+- **pursuit** n. 追求;消遣
 - **enthusiasm** n. 热情
 - **satisfaction** n. 满意
 - **gratitude** n. 感激
+- **nostalgia** n. 怀旧
 - **contempt** n. 蔑视
 - **dignity** n. 尊严
+- **integrity** n. 正直,诚信;完整
+- **virtue** n. 美德;优点
 - **reputation** n. 名声,声誉
+- **credentials** n. 资历,资格证明
 - **allegiance** n. 忠诚
+- **patriotism** n. 爱国主义
 - **solidarity** n. 团结
 - **disagreement** n. 分歧
+- **controversy** n. 争议
+- **tension** n. 紧张局势;紧张;张力
+- **deadlock** n. 僵局
 - **denial** n. 否认;拒绝
 - **declaration** n. 宣言;申报
 - **revelation** n. 揭露;启示
+- **glimpse** n. 一瞥 v. 瞥见
+- **eyesight** n. 视力
 - **possession** n. 拥有;财产
 - **ownership** n. 所有权
 - **predecessor** n. 前任;前身
+- **successor** n. 继任者;后继物
+- **counterpart** n. 对应的人或物
+- **recipient** n. 接受者,领受者
+- **practitioner** n. 从业者;执业医生
+- **veterinarian** n. 兽医
+- **layman** n. 外行,门外汉
+- **scapegoat** n. 替罪羊
 - **purity** n. 纯净
+- **stain** n. 污渍 v. 弄脏
 
 ## 2.2 逻辑关系与评价
 
@@ -1144,21 +1222,27 @@
 - **consequently** adv. 因此
 - **therefore** adv. 所以
 - **whereas** conj. 然而,而
+- **meanwhile** adv. 与此同时
 - **while** conj. 当……时;虽然;然而 n. 一段时间
+- **whilst** conj. 然而,而;当…的时候
 - **although** conj. 尽管
+- **albeit** conj. 尽管,虽然
 - **despite** prep. 尽管
 - **nevertheless** adv. 然而
+- **however** adv. 然而;无论如何
 - **nonetheless** adv. 尽管如此
 - **notwithstanding** prep. 尽管
 - **moreover** adv. 此外
 - **furthermore** adv. 此外
 - **in addition** phr. 此外
+- **alongside** prep. 与…一起;在…旁边
 - **likewise** adv. 同样地
 - **similarly** adv. 类似地
 - **conversely** adv. 相反地
 - **in contrast** phr. 相比之下
 - **on the contrary** phr. 恰恰相反
 - **contrary** adj. 相反的 n. 相反
+- **versus** prep. 与…相对;对阵
 - **alternatively** adv. 或者
 - **namely** adv. 即
 - **in terms of** phr. 在……方面,就……而言
@@ -1167,6 +1251,7 @@
 - **provided that** phr. 只要
 - **unless** conj. 除非
 - **whereby** adv. 借此
+- **via** prep. 经由;通过
 - **subsequently** adv. 随后
 - **previously** adv. 先前
 - **simultaneously** adv. 同时地
@@ -1175,6 +1260,7 @@
 - **eventually** adv. 最终
 - **prior to** phr. 在……之前
 - **precede** v. 先于,在……之前
+- **beforehand** adv. 事先,预先
 - **afterwards** adv. 后来,之后
 - **sometime** adv. 在某个时候
 - **correspondingly** adv. 相应地
@@ -1182,6 +1268,7 @@
 - **inevitably** adv. 不可避免地
 - **arguably** adv. 可以说
 - **amongst** prep. 在……之中(英)
+- **amid** prep. 在…之中
 - **whoever** pron. 无论谁
 - **whichever** pron. 无论哪个
 
@@ -1283,76 +1370,124 @@
 
 - **prominent** adj. 突出的;著名的
 - **foremost** adj. 最重要的
+- **integral** adj. 不可或缺的;完整的
+- **imperative** adj. 必要的,紧迫的 n. 必须做的事
 - **supreme** adj. 最高的
 - **superior** adj. 更好的,优越的 n. 上级
+- **inferior** adj. 较差的,次等的
 - **subordinate** adj. 次要的 n. 下属
+- **minor** adj. 较小的,次要的 n. 未成年人
 - **peripheral** adj. 外围的;次要的
 - **conspicuous** adj. 显眼的
 - **visible** adj. 可见的
 - **invisible** adj. 看不见的
+- **visual** adj. 视觉的
 - **renowned** adj. 著名的
+- **eminent** adj. 杰出的,著名的
 - **prestigious** adj. 有声望的
 - **notorious** adj. 臭名昭著的
 - **immense** adj. 巨大的
 - **gigantic** adj. 巨大的
+- **massive** adj. 巨大的,大规模的
 - **mighty** adj. 强大的
 - **intense** adj. 强烈的
 - **extreme** adj. 极端的
 - **drastic** adj. 极端的,剧烈的
+- **abrupt** adj. 突然的;唐突的
 - **radical** adj. 根本的;激进的
 - **vigorous** adj. 有力的,剧烈的
+- **dynamic** adj. 充满活力的;动态的
+- **strenuous** adj. 剧烈的,费力的
+- **hectic** adj. 繁忙的,忙乱的
 - **robust** adj. 强健的;稳健的
 - **fierce** adj. 激烈的;凶猛的
 - **relentless** adj. 持续的;无情的
+- **rampant** adj. 猖獗的,泛滥的
 - **harsh** adj. 严酷的
 - **grim** adj. 严峻的
+- **bleak** adj. 黯淡的;荒凉的
 - **brutal** adj. 残酷的
 - **savage** adj. 野蛮的
+- **vicious** adj. 恶性的;凶残的
 - **ruthless** adj. 无情的
 - **devastating** adj. 毁灭性的
 - **destructive** adj. 破坏性的
 - **fatal** adj. 致命的;灾难性的
+- **malignant** adj. 恶性的
 - **formidable** adj. 令人敬畏的;艰难的
 - **genuine** adj. 真正的;真诚的
 - **credible** adj. 可信的
 - **realistic** adj. 现实的,切合实际的;逼真的
 - **dubious** adj. 可疑的;半信半疑的
 - **doubtful** adj. 怀疑的;不确定的
+- **erroneous** adj. 错误的
 - **absurd** adj. 荒谬的
 - **outrageous** adj. 令人愤慨的
 - **unfair** adj. 不公平的
+- **equitable** adj. 公平合理的
+- **lenient** adj. 宽大的,从轻的
 - **worthwhile** adj. 值得的
 - **pointless** adj. 无意义的
 - **trivial** adj. 琐碎的,不重要的
 - **petty** adj. 琐碎的
+- **negligible** adj. 微不足道的
 - **irrelevant** adj. 无关的
+- **relevant** adj. 相关的;切题的
+- **pertinent** adj. 中肯的,有关的
 - **typical** adj. 典型的
+- **mundane** adj. 单调的,平凡的
 - **unusual** adj. 不寻常的
 - **abnormal** adj. 异常的
 - **peculiar** adj. 奇怪的;特有的
 - **orthodox** adj. 正统的
+- **informal** adj. 非正式的
 - **irregular** adj. 不规则的
+- **erratic** adj. 无规律的,不稳定的
+- **intermittent** adj. 间歇的,断断续续的
+- **sporadic** adj. 零星的,偶发的
 - **uneven** adj. 不均匀的
 - **random** adj. 随机的
+- **haphazard** adj. 杂乱无章的,随意的
+- **arbitrary** adj. 武断的,任意的
 - **consecutive** adj. 连续的
+- **frequent** adj. 频繁的
+- **simultaneous** adj. 同时的,同时发生的
+- **concurrent** adj. 并存的,同时进行的
 - **spontaneous** adj. 自发的;自然的
 - **voluntary** adj. 自愿的
 - **deliberate** adj. 故意的;深思熟虑的 v. 仔细考虑
+- **conscious** adj. 意识到的;有意识的
+- **unconscious** adj. 无意识的;昏迷的
 - **selective** adj. 选择性的;挑剔的
 - **reluctant** adj. 不情愿的
 - **wary** adj. 警惕的,小心提防的
+- **vigilant** adj. 警惕的
 - **contemporary** adj. 当代的 n. 同时代的人
 - **ongoing** adj. 持续的
 - **eternal** adj. 永恒的
+- **perpetual** adj. 持续不断的,永久的
+- **perennial** adj. 长期的;多年生的
+- **ephemeral** adj. 短暂的,转瞬即逝的
 - **forthcoming** adj. 即将到来的
 - **imminent** adj. 即将发生的
+- **prompt** adj. 及时的,迅速的 v. 促使
+- **swift** adj. 迅速的,敏捷的
+- **initial** adj. 最初的 n. 首字母
+- **subsequent** adj. 随后的
+- **ultimate** adj. 最终的;终极的
+- **prior** adj. 先前的;优先的
 - **provisional** adj. 临时的
 - **interim** adj. 临时的,过渡的
 - **tentative** adj. 初步的,暂定的
+- **definite** adj. 明确的,确定的
+- **indefinite** adj. 无限期的;不明确的
 - **progressive** adj. 进步的;渐进的
+- **liberal** adj. 开明的;自由主义的
 - **backward** adj. 落后的;向后的
 - **outer** adj. 外层的,外围的
 - **external** adj. 外部的
+- **exterior** n. 外部,外观 adj. 外面的
+- **internal** adj. 内部的
 - **lateral** adj. 侧面的;横向的
 - **distant** adj. 遥远的
 - **neighbouring** adj. 邻近的
@@ -1360,11 +1495,17 @@
 - **awkward** adj. 尴尬的;笨拙的;棘手的
 - **problematic** adj. 有问题的
 - **unstable** adj. 不稳定的
+- **precarious** adj. 不稳定的,危险的
+- **stable** adj. 稳定的
+- **stagnant** adj. 停滞的;不流动的
+- **stationary** adj. 静止的
+- **dormant** adj. 休眠的
 - **volatile** adj. 易变的;易挥发的
 - **flexible** adj. 灵活的
 - **stiff** adj. 僵硬的;激烈的
 - **intact** adj. 完好无损的
 - **idle** adj. 闲置的;懒散的
+- **sluggish** adj. 迟缓的,不景气的
 - **latent** adj. 潜在的
 - **underlying** adj. 潜在的;根本的
 - **indirect** adj. 间接的
@@ -1372,28 +1513,69 @@
 - **vague** adj. 模糊的,含糊的
 - **obscure** adj. 晦涩的;鲜为人知的 v. 遮掩
 - **coherent** adj. 连贯的,条理清楚的
+- **lucid** adj. 清晰的,易懂的
+- **succinct** adj. 简洁的,简明的
+- **eloquent** adj. 雄辩的,有说服力的
+- **ingenious** adj. 巧妙的,有独创性的
 - **intricate** adj. 复杂的,精细的
+- **complicated** adj. 复杂的
+- **cumbersome** adj. 繁琐的;笨重的
 - **superficial** adj. 表面的;肤浅的
+- **ignorant** adj. 不了解的;无知的
 - **tangible** adj. 有形的,切实的
+- **quantitative** adj. 定量的,数量的
+- **scientific** adj. 科学的
 - **pure** adj. 纯的;纯粹的
 - **raw** adj. 未加工的,原始的;生的
+- **edible** adj. 可食用的
+- **perishable** adj. 易腐烂的
 - **sheer** adj. 纯粹的;陡峭的
 - **naked** adj. 裸露的;赤裸裸的
 - **coarse** adj. 粗糙的
 - **blunt** adj. 直率的;钝的
 - **bold** adj. 大胆的;醒目的
+- **reckless** adj. 鲁莽的,不计后果的
 - **sympathetic** adj. 同情的;赞同的
+- **hostile** adj. 敌对的,怀有敌意的;恶劣的
+- **neutral** adj. 中立的;中性的
 - **intimate** adj. 亲密的;密切的
 - **anonymous** adj. 匿名的
+- **disabled** adj. 残疾的
 - **solitary** adj. 独自的
+- **sole** adj. 唯一的
+- **collective** adj. 集体的,共同的
+- **corporate** adj. 公司的,企业的
+- **mutual** adj. 相互的;共同的
+- **identical** adj. 完全相同的
+- **unanimous** adj. 一致同意的
+- **multilateral** adj. 多边的
+- **unilateral** adj. 单边的,单方面的
 - **secular** adj. 世俗的
 - **eligible** adj. 有资格的
+- **competent** adj. 能胜任的,称职的
+- **mediocre** adj. 平庸的,普通的
 - **suitable** adj. 合适的
 - **inadequate** adj. 不足的;不胜任的
+- **scarce** adj. 稀缺的
+- **sparse** adj. 稀疏的,稀少的
+- **dense** adj. 茂密的,稠密的;浓的
+- **ample** adj. 充裕的,绰绰有余的
+- **numerous** adj. 许多的
+- **innumerable** adj. 无数的
+- **minimum** adj. 最低的,最小的 n. 最低限度
+- **partial** adj. 部分的;偏袒的
+- **superfluous** adj. 多余的
 - **supplementary** adj. 补充的
+- **alternative** n. 替代方案 adj. 可替代的
 - **thorough** adj. 彻底的,仔细的
+- **comprehensive** adj. 全面的,综合的
+- **meticulous** adj. 一丝不苟的,细致的
+- **painstaking** adj. 艰苦细致的,煞费苦心的
+- **conscientious** adj. 认真负责的
 - **unlikely** adj. 不太可能的
+- **prone** adj. 易于…的;有…倾向的
 - **bound** adj. 必定的;受约束的
+- **inevitable** adj. 不可避免的
 - **incredibly** adv. 难以置信地;极其
 - **terribly** adv. 非常;糟糕地
 - **utterly** adv. 完全地,极度地
@@ -1408,6 +1590,7 @@
 - **correctly** adv. 正确地
 - **locally** adv. 在当地
 - **nicely** adv. 很好地;恰当地
+- **incidentally** adv. 偶然地;顺便提一下
 - **presumably** adv. 大概
 - **supposedly** adv. 据说,按理
 - **seemingly** adv. 表面上
@@ -1429,7 +1612,9 @@
 - **reclaim** v. 收回;开垦
 - **boast** v. 自豪地拥有;自夸
 - **exploit** v. 开发,利用;剥削 n. 功绩
+- **misuse** n./v. 滥用,误用
 - **utilise** v. 利用
+- **harness** v. 利用 n. 挽具
 - **employ** v. 雇用;使用
 - **apply** v. 应用;申请;适用
 - **tap** v. 开发利用;轻拍 n. 水龙头(英)
@@ -1437,6 +1622,7 @@
 - **achieve** v. 实现
 - **attain** v. 达到
 - **accomplish** v. 完成
+- **fulfil** v. 实现;履行
 - **excel** v. 擅长,胜过
 - **culminate** v. 达到顶点,以……告终
 - **transcend** v. 超越
@@ -1445,34 +1631,46 @@
 - **modify** v. 修改
 - **alter** v. 改变
 - **revise** v. 修订;复习(英)
+- **amend** v. 修订,修改
+- **rectify** v. 纠正,矫正
+- **overhaul** n./v. 全面改革;检修
 - **update** v. 更新 n. 最新消息
 - **simplify** v. 简化
 - **standardise** v. 使标准化
+- **synchronise** v. 使同步
+- **sterilise** v. 消毒,杀菌
 - **vary** v. 变化,不同
 - **evolve** v. 演变,进化
 - **develop** v. 发展;开发,研制;患上
 - **reverse** v. 逆转 adj. 相反的
 - **divert** v. 转移;使转向
+- **switch** v. 转换,切换 n. 开关
 - **displace** v. 取代;迫使离开
+- **substitute** v. 代替 n. 替代品
+- **supersede** v. 取代,接替
 - **render** v. 使成为;提供
+- **equip** v. 装备,配备
 - **leap** n. 飞跃 v. 跳跃
 
 ### 促进、引起与增强
 
 - **promote** v. 促进;提拔;推销
 - **facilitate** v. 促进,使便利
+- **enable** v. 使能够
 - **foster** v. 培养,促进
 - **cultivate** v. 培养;耕种
 - **nurture** v. 培育
 - **instil** v. 灌输
 - **enlighten** v. 启发
 - **stimulate** v. 刺激;促进
+- **spur** v. 刺激,促进 n. 激励
 - **motivate** v. 激励
 - **encourage** v. 鼓励;促进
 - **activate** v. 激活,启动
 - **contribute** v. 贡献;捐献;促成
 - **popularise** v. 普及
 - **provoke** v. 引起;激怒
+- **incite** v. 煽动,鼓动
 - **arouse** v. 引起,激起
 - **evoke** v. 唤起,引起
 - **elicit** v. 引出,引起
@@ -1484,6 +1682,8 @@
 - **enhance** v. 提高
 - **improve** v. 改进
 - **boost** v. 推动,提升 n. 推动
+- **augment** v. 增加,增强
+- **supplement** v. 补充,增补 n. 补充物,补品
 - **elevate** v. 提升
 - **ascend** v. 上升
 - **heighten** v. 提高,加强
@@ -1504,36 +1704,57 @@
 - **hinder** v. 阻碍
 - **impede** v. 妨碍
 - **hamper** v. 妨碍,阻碍
+- **obstruct** v. 阻塞,阻碍
 - **interfere** v. 干涉,妨碍
 - **disrupt** v. 扰乱,中断
+- **distract** v. 使分心
 - **undermine** v. 削弱,暗中破坏
+- **sabotage** n./v. 蓄意破坏
 - **impair** v. 损害,削弱
+- **aggravate** v. 使恶化,使加重
+- **deteriorate** v. 恶化
 - **restrict** v. 限制
+- **curtail** v. 削减,缩短
 - **constrain** v. 约束
 - **limit** v. 限制 n. 限度
 - **confine** v. 限制;禁闭
 - **tighten** v. 收紧;使更严格
 - **bind** v. 约束;捆绑
 - **restrain** v. 克制;约束
+- **curb** v. 抑制,控制 n. 限制
 - **suppress** v. 压制;抑制
+- **oppress** v. 压迫
+- **persecute** v. 迫害
 - **compel** v. 强迫,迫使
+- **coerce** v. 强迫,胁迫
 - **prohibit** v. 禁止
 - **ban** n./v. 禁止
+- **boycott** n./v. 抵制
 - **permit** v. 允许 n. 许可证
 - **prevent** v. 防止,阻止;预防
 - **avoid** v. 避免
+- **evade** v. 逃避,躲避
 - **avert** v. 避免,防止
 - **bypass** v. 绕过 n. 旁路
 - **reduce** v. 减少
 - **minimise** v. 最小化
 - **diminish** v. 减少,减弱
+- **dwindle** v. 逐渐减少
 - **shrink** v. 缩小,减少
 - **mitigate** v. 减轻
 - **alleviate** v. 缓解
 - **relieve** v. 缓解
 - **offset** v. 抵消
 - **eliminate** v. 消除;淘汰
+- **dispel** v. 消除,驱散
 - **eradicate** v. 根除
+- **extinguish** v. 扑灭,熄灭
+- **deprive** v. 剥夺,使丧失
+- **exclude** v. 排除,不包括
+- **isolate** v. 隔离;使孤立
+- **segregate** v. 分开,隔离
+- **alienate** v. 使疏远
+- **discriminate** v. 歧视;区别
 
 ### 应对、实施与管理
 
@@ -1551,6 +1772,7 @@
 - **tolerate** v. 容忍
 - **overcome** v. 克服
 - **succumb** v. 屈服;死于
+- **surrender** v. 投降;交出
 - **compensate** v. 补偿,弥补
 - **implement** v. 实施 n. 工具
 - **execute** v. 执行;处决
@@ -1559,11 +1781,14 @@
 - **pursue** v. 追求;从事;追赶
 - **strive** v. 努力,奋斗
 - **endeavour** n./v. 努力,尽力
+- **persevere** v. 坚持不懈
 - **devote** v. 致力于
 - **dedicate** v. 奉献;致力于
 - **establish** v. 建立;确立,证实
 - **found** v. 创立
 - **initiate** v. 发起
+- **commence** v. 开始,着手
+- **proceed** v. 继续进行;前进
 - **launch** v. 发起,推出;发射 n. 发射;发起,推出
 - **forge** v. 建立;伪造;锻造
 - **invent** v. 发明
@@ -1571,6 +1796,8 @@
 - **design** n./v. 设计
 - **formulate** v. 制定
 - **compile** v. 汇编
+- **register** v. 登记,注册 n. 登记册
+- **label** v. 标明,贴标签;把…称为 n. 标签
 - **assemble** v. 组装;集合
 - **distribute** v. 分配,分发
 - **assign** v. 分配,指派
@@ -1578,12 +1805,14 @@
 - **monitor** v. 监控,监测 n. 显示器,监测器
 - **regulate** v. 管理,调节
 - **stipulate** v. 规定
+- **prescribe** v. 开药;规定
 - **supervise** v. 监督
 - **inspect** v. 检查
 - **oversee** v. 监督,监管
 - **coordinate** v. 协调
 - **mobilise** v. 动员
 - **manipulate** v. 操纵;处理
+- **bribe** n./v. 贿赂
 - **steer** v. 引导;驾驶
 - **summon** v. 召集;传唤
 
@@ -1596,14 +1825,20 @@
 - **deem** v. 认为,视为
 - **contemplate** v. 考虑;沉思
 - **grasp** v. 理解;抓住 n. 理解
+- **decipher** v. 破译,辨认
+- **unravel** v. 揭开,阐明;解开
 - **discern** v. 辨别,察觉
 - **detect** v. 发现,察觉;检测
 - **discover** v. 发现
+- **trace** v. 追溯;追踪 n. 痕迹
 - **ascertain** v. 查明,确定
+- **pinpoint** v. 确定,精确指出
 - **consult** v. 咨询;查阅
 - **anticipate** v. 预期
 - **foresee** v. 预见
 - **envisage** v. 设想,预见
+- **conceive** v. 构想,设想;怀孕
+- **visualise** v. 想象,设想
 - **speculate** v. 推测;投机
 - **underestimate** v. 低估
 - **overestimate** v. 高估
@@ -1635,6 +1870,9 @@
 - **reassure** v. 使安心
 - **allege** v. 声称,指控
 - **disclose** v. 披露
+- **expose** v. 使暴露;揭露
+- **conceal** v. 隐瞒,隐藏
+- **disguise** v. 伪装,掩饰 n. 伪装
 - **notify** v. 通知
 - **acknowledge** v. 承认;致谢
 - **recognise** v. 认可;认出
@@ -1644,6 +1882,8 @@
 - **advocate** v. 提倡 n. 提倡者
 - **oppose** v. 反对
 - **object to (doing) sth.** phr. 反对(做)某事
+- **reject** v. 否决,拒绝
+- **resent** v. 对…不满,怨恨
 - **favour** v. 支持,偏爱 n. 赞同;恩惠
 - **endorse** v. 支持,认可;代言
 - **embrace** v. 欣然接受;拥抱
@@ -1655,6 +1895,7 @@
 - **intimidate** v. 恐吓
 - **betray** v. 背叛;泄露
 - **defy** v. 违抗;使不可能
+- **infringe** v. 侵犯,违反
 - **abide by** phr. 遵守
 - **conform** v. 遵守;符合
 - **adhere** v. 遵守,坚持(to);黏附
@@ -1665,37 +1906,56 @@
 - **entail** v. 必然涉及
 - **require** v. 需要
 - **demand** v. 要求 n. 需求
+- **request** n./v. 请求,要求
 - **necessitate** v. 使成为必要
 - **depend on** phr. 取决于;依靠
 - **rely on** phr. 依赖
 - **rely** v. 依赖,依靠
+- **hinge** v. 取决于 n. 铰链
 - **resemble** v. 像,与……相似
 - **coincide** v. 同时发生;一致
+- **accompany** v. 陪同;伴随
 - **correspond** v. 相符;通信
+- **complement** v. 补充,与…相配 n. 补充物
 - **overlap** n./v. 重叠,交叠
 - **compare** v. 比较
 - **contrast** n./v. 对比
+- **differ** v. 不同,有区别
+- **deviate** v. 偏离
 - **distinguish** v. 区分
 - **differentiate** v. 区分
+- **blur** v. 使模糊 n. 模糊的事物
 - **separate** v. 分离 adj. 分开的,单独的
+- **attach** v. 贴上,附上;重视
 - **detach** v. 分离,拆开
 - **split** n./v. 分裂;分摊
 - **scatter** v. 分散,散布
+- **disperse** v. 传播,散布;驱散
 - **integrate** v. 整合,融入
 - **incorporate** v. 包含,融入
+- **accommodate** v. 容纳;为…提供住宿;适应
 - **combine** v. 结合
 - **merge** v. 合并
+- **compose** v. 组成;创作
 - **penetrate** v. 穿透;渗入
+- **permeate** v. 渗透,弥漫
+- **saturate** v. 浸透;使饱和
+- **immerse** v. 使沉浸;浸没
 - **enclose** v. 附上;围住
 - **situate** v. 使位于
+- **locate** v. 找到…的位置;使坐落于
 - **imitate** v. 模仿
+- **duplicate** v. 重复;复制 n. 副本
 - **dominate** v. 主导
+- **override** v. 优先于;推翻
+- **outweigh** v. 超过,比…更重要
 - **participate** v. 参与
 - **cooperate** v. 合作
 - **collaborate** v. 协作
 - **interact** v. 互动
 - **communicate** v. 交流;传达
 - **negotiate** v. 谈判
+- **mediate** v. 调解
 - **reconcile** v. 调和;使和解
 
 ### 出现、存续与消失
@@ -1706,11 +1966,19 @@
 - **originate** v. 起源
 - **transpire** v. 被得知;蒸腾
 - **unfold** v. 展开;逐渐显露
+- **loom** v. 逼近;隐约出现
+- **hover** v. 徘徊;盘旋
 - **dwell** v. 居住;老是想着(on)
+- **inhabit** v. 栖息于,居住于
 - **thrive** v. 繁荣,茁壮成长
+- **flourish** v. 兴旺,繁荣;茁壮成长
+- **prevail** v. 盛行;占上风
 - **revive** v. 复兴;使复活
+- **restore** v. 修复;恢复
 - **resume** v. 恢复,重新开始
 - **sustain** v. 维持;遭受
+- **persist** v. 持续存在;坚持
+- **prolong** v. 延长
 - **retain** v. 保留
 - **preserve** v. 保存,保护
 - **conserve** v. 保护,节约
@@ -1720,13 +1988,26 @@
 - **rescue** n./v. 营救
 - **cease** v. 停止
 - **halt** n./v. 停止
+- **terminate** v. 终止
+- **expire** v. 到期,期满
 - **suspend** v. 暂停;悬挂
+- **defer** v. 推迟,延期
 - **abandon** v. 放弃
+- **relinquish** v. 交出,放弃
+- **retreat** n./v. 后退,撤退
 - **discard** v. 丢弃
+- **shed** v. 蜕,脱落;摆脱 n. 棚屋
 - **expel** v. 驱逐;排出
 - **withhold** v. 扣留;拒绝给予
+- **collapse** n./v. 倒塌;崩溃
+- **shatter** v. 粉碎;使破灭
+- **drown** v. 淹死;淹没
+- **submerge** v. 淹没,浸没
+- **inundate** v. 使应接不暇;淹没
 - **vanish** v. 消失
 - **fade** v. 褪色;逐渐消失
+- **dissipate** v. 消散;挥霍
+- **thaw** n./v. 解冻,融化
 
 ## 2.4 自然地理与气候
 
@@ -1967,6 +2248,7 @@
 
 ### 动物与生态
 
+- **biology** n. 生物学
 - **species** n. 物种
 - **genus** n. 属
 - **organism** n. 生物体
@@ -2102,6 +2384,7 @@
 - **trait** n. 特征
 - **morphology** n. 形态学
 - **microscope** n. 显微镜
+- **specimen** n. 标本,样本
 - **ancestor** n. 祖先
 - **descendant** n. 后裔,子孙
 - **dinosaur** n. 恐龙
@@ -2263,6 +2546,7 @@
 
 - **physics** n. 物理
 - **chemistry** n. 化学
+- **chemical** n. 化学品 adj. 化学的
 - **alchemy** n. 炼金术
 - **matter** n. 物质;事情 v. 要紧
 - **substance** n. 物质;实质
@@ -2341,6 +2625,7 @@
 - **oxidise** v. 氧化
 - **corrode** v. 腐蚀
 - **rot** v. 腐烂
+- **decay** n./v. 腐烂,蛀蚀;衰退
 - **decomposition** n. 分解
 - **combustion** n. 燃烧
 - **ignite** v. 点燃;激起
@@ -2801,6 +3086,7 @@
 - **singular** adj. 单数的;非凡的
 - **plural** adj. 复数的 n. 复数
 - **comma** n. 逗号
+- **paragraph** n. 段落
 - **semantic** adj. 语义的
 - **connotation** n. 内涵,言外之意
 - **denote** v. 表示,意味着
@@ -2867,6 +3153,7 @@
 - **archaeology** n. 考古学
 - **archaeologist** n. 考古学家
 - **anthropologist** n. 人类学家
+- **anthropology** n. 人类学
 - **excavate** v. 发掘
 - **excavation** n. 发掘
 - **unearth** v. 发掘;发现
@@ -3149,6 +3436,7 @@
 - **economic** adj. 经济的
 - **economical** adj. 节约的
 - **economist** n. 经济学家
+- **capitalism** n. 资本主义
 - **finance** n. 金融;财政 v. 为……提供资金
 - **financial** adj. 金融的,财务的
 - **monetary** adj. 货币的
@@ -3250,6 +3538,7 @@
 - **slogan** n. 口号
 - **intellectual property** phr. 知识产权
 - **sales** n. 销售额
+- **retail** n./v. 零售
 - **client** n. 客户
 - **merger** n. 合并
 - **outsource** v. 外包
@@ -3385,6 +3674,7 @@
 - **axis** n. 坐标轴;轴
 - **proportion** n. 比例
 - **percentage** n. 百分比
+- **per cent** phr. 百分之…
 - **ratio** n. 比率
 - **rate** n. 比率;速度;价格 v. 评价
 - **fraction** n. 一小部分;分数
@@ -3553,9 +3843,11 @@
 - **to a large extent** phr. 在很大程度上
 - **in particular** phr. 尤其
 - **for instance** phr. 例如
+- **for example** phr. 例如,比如
 - **in other words** phr. 换句话说
 - **regardless of** phr. 不管
 - **in spite of** phr. 尽管
+- **even though** phr. 尽管,即使
 - **instead of** phr. 而不是
 - **rather than** phr. 而不是
 - **as well as** phr. 以及
@@ -3566,6 +3858,9 @@
 - **in response to** phr. 作为对……的回应
 - **in the case of** phr. 就……而言
 - **by means of** phr. 通过……方式
+- **in order to** phr. 为了
+- **so that** phr. 以便,为了
+- **as long as** phr. 只要;长达
 
 ## 3.3 教育
 
@@ -3750,6 +4045,7 @@
 - **authority** n. 当局;权威
 - **authoritative** adj. 权威的
 - **administration** n. 管理;政府
+- **ministry** n. 政府的部,部门
 - **administer** v. 管理;施用
 - **govern** v. 治理
 - **policy** n. 政策;保险单
@@ -3835,7 +4131,9 @@
 - **bilateral** adj. 双边的
 - **alliance** n. 联盟
 - **ally** n. 盟友
+- **treaty** n. 条约
 - **ultimatum** n. 最后通牒
+- **sanction** n. 制裁;批准 v. 批准
 - **sovereignty** n. 主权
 - **autonomy** n. 自治;自主
 - **federation** n. 联邦;联合会
@@ -4325,6 +4623,7 @@
 - **white-collar** adj. 白领的
 - **blue-collar** adj. 蓝领的
 - **manual labour** phr. 体力劳动
+- **manual** adj. 体力的;手动的 n. 手册
 - **skilled** adj. 熟练的
 - **unskilled** adj. 非熟练的
 - **expertise** n. 专业知识
@@ -4635,6 +4934,7 @@
 - **odour** n. 气味,臭味
 - **perfume** n. 香水
 - **cloth** n. 布料
+- **fabric** n. 织物,布料;结构
 - **leather** n. 皮革
 - **cotton** n. 棉
 - **wool** n. 羊毛
