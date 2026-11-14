@@ -19,9 +19,9 @@
 | 模块 | 内容 | 话题数 | 条数 |
 |---|---|---|---|
 | 一、听力 | 租房、旅游、选课等生活与校园场景 | 6 | 816 |
-| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2626 |
-| 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 1000 |
-| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 415 |
+| 二、阅读 | 学术核心词与学术阅读学科话题 | 9 | 2621 |
+| 三、写作 | 小作文图表、固定搭配与大作文话题 | 9 | 1004 |
+| 四、口语 | 人物、物品、地点、感受与兴趣 | 4 | 416 |
 
 ---
 
@@ -958,6 +958,7 @@
 - **gauge** v. 估量,判断 n. 量规
 - **quantify** v. 量化
 - **qualitative** adj. 定性的
+- **quantitative** adj. 定量的,数量的
 - **identify** v. 识别,确定
 - **classify** v. 分类
 - **categorise** v. 归类
@@ -1046,13 +1047,6 @@
 - **fragment** n. 碎片,片段
 - **breakdown** n. 故障;崩溃;细目
 - **conjunction** n. 结合;连词
-- **terminology** n. 术语
-- **synonym** n. 同义词
-- **abbreviation** n. 缩写
-- **slang** n. 俚语
-- **anecdote** n. 轶事,趣闻
-- **mythology** n. 神话
-- **superstition** n. 迷信
 - **domain** n. 领域;范围
 - **realm** n. 领域;王国
 - **microcosm** n. 缩影,微观世界
@@ -1070,17 +1064,13 @@
 - **advent** n. 出现,到来
 - **retrospect** n. 回顾
 - **pace** n. 速度;节奏
-- **motion** n. 运动;动议
-- **propulsion** n. 推进,推进力
 - **inertia** n. 惰性;惯性
-- **pendulum** n. 钟摆
 - **lag** n. 滞后,时间差 v. 落后
 - **progression** n. 进展,发展
 - **transition** n. 过渡,转变
 - **continuity** n. 连续性
 - **succession** n. 连续;继承
 - **expansion** n. 扩大,扩张
-- **regeneration** n. 复兴,改造;再生
 - **closure** n. 关闭;结束
 - **scenario** n. 设想;情景
 - **circumstance** n. 情况,环境
@@ -1167,7 +1157,6 @@
 - **reputation** n. 名声,声誉
 - **credentials** n. 资历,资格证明
 - **allegiance** n. 忠诚
-- **patriotism** n. 爱国主义
 - **solidarity** n. 团结
 - **disagreement** n. 分歧
 - **controversy** n. 争议
@@ -1177,7 +1166,6 @@
 - **declaration** n. 宣言;申报
 - **revelation** n. 揭露;启示
 - **glimpse** n. 一瞥 v. 瞥见
-- **eyesight** n. 视力
 - **possession** n. 拥有;财产
 - **ownership** n. 所有权
 - **predecessor** n. 前任;前身
@@ -1185,11 +1173,9 @@
 - **counterpart** n. 对应的人或物
 - **recipient** n. 接受者,领受者
 - **practitioner** n. 从业者;执业医生
-- **veterinarian** n. 兽医
 - **layman** n. 外行,门外汉
 - **scapegoat** n. 替罪羊
 - **purity** n. 纯净
-- **stain** n. 污渍 v. 弄脏
 
 ## 2.2 逻辑关系与评价
 
@@ -1413,7 +1399,6 @@
 - **devastating** adj. 毁灭性的
 - **destructive** adj. 破坏性的
 - **fatal** adj. 致命的;灾难性的
-- **malignant** adj. 恶性的
 - **formidable** adj. 令人敬畏的;艰难的
 - **genuine** adj. 真正的;真诚的
 - **credible** adj. 可信的
@@ -1498,8 +1483,6 @@
 - **precarious** adj. 不稳定的,危险的
 - **stable** adj. 稳定的
 - **stagnant** adj. 停滞的;不流动的
-- **stationary** adj. 静止的
-- **dormant** adj. 休眠的
 - **volatile** adj. 易变的;易挥发的
 - **flexible** adj. 灵活的
 - **stiff** adj. 僵硬的;激烈的
@@ -1523,12 +1506,9 @@
 - **superficial** adj. 表面的;肤浅的
 - **ignorant** adj. 不了解的;无知的
 - **tangible** adj. 有形的,切实的
-- **quantitative** adj. 定量的,数量的
 - **scientific** adj. 科学的
 - **pure** adj. 纯的;纯粹的
 - **raw** adj. 未加工的,原始的;生的
-- **edible** adj. 可食用的
-- **perishable** adj. 易腐烂的
 - **sheer** adj. 纯粹的;陡峭的
 - **naked** adj. 裸露的;赤裸裸的
 - **coarse** adj. 粗糙的
@@ -1540,16 +1520,12 @@
 - **neutral** adj. 中立的;中性的
 - **intimate** adj. 亲密的;密切的
 - **anonymous** adj. 匿名的
-- **disabled** adj. 残疾的
 - **solitary** adj. 独自的
 - **sole** adj. 唯一的
 - **collective** adj. 集体的,共同的
-- **corporate** adj. 公司的,企业的
 - **mutual** adj. 相互的;共同的
 - **identical** adj. 完全相同的
 - **unanimous** adj. 一致同意的
-- **multilateral** adj. 多边的
-- **unilateral** adj. 单边的,单方面的
 - **secular** adj. 世俗的
 - **eligible** adj. 有资格的
 - **competent** adj. 能胜任的,称职的
@@ -1638,7 +1614,6 @@
 - **simplify** v. 简化
 - **standardise** v. 使标准化
 - **synchronise** v. 使同步
-- **sterilise** v. 消毒,杀菌
 - **vary** v. 变化,不同
 - **evolve** v. 演变,进化
 - **develop** v. 发展;开发,研制;患上
@@ -1805,14 +1780,12 @@
 - **monitor** v. 监控,监测 n. 显示器,监测器
 - **regulate** v. 管理,调节
 - **stipulate** v. 规定
-- **prescribe** v. 开药;规定
 - **supervise** v. 监督
 - **inspect** v. 检查
 - **oversee** v. 监督,监管
 - **coordinate** v. 协调
 - **mobilise** v. 动员
 - **manipulate** v. 操纵;处理
-- **bribe** n./v. 贿赂
 - **steer** v. 引导;驾驶
 - **summon** v. 召集;传唤
 
@@ -1969,7 +1942,6 @@
 - **loom** v. 逼近;隐约出现
 - **hover** v. 徘徊;盘旋
 - **dwell** v. 居住;老是想着(on)
-- **inhabit** v. 栖息于,居住于
 - **thrive** v. 繁荣,茁壮成长
 - **flourish** v. 兴旺,繁荣;茁壮成长
 - **prevail** v. 盛行;占上风
@@ -1996,7 +1968,6 @@
 - **relinquish** v. 交出,放弃
 - **retreat** n./v. 后退,撤退
 - **discard** v. 丢弃
-- **shed** v. 蜕,脱落;摆脱 n. 棚屋
 - **expel** v. 驱逐;排出
 - **withhold** v. 扣留;拒绝给予
 - **collapse** n./v. 倒塌;崩溃
@@ -2007,7 +1978,6 @@
 - **vanish** v. 消失
 - **fade** v. 褪色;逐渐消失
 - **dissipate** v. 消散;挥霍
-- **thaw** n./v. 解冻,融化
 
 ## 2.4 自然地理与气候
 
@@ -2053,6 +2023,7 @@
 - **avalanche** n. 雪崩
 - **volcano** n. 火山
 - **volcanic** adj. 火山的
+- **dormant** adj. 休眠的
 - **crater** n. 火山口;陨石坑
 - **lava** n. 熔岩
 - **magma** n. 岩浆
@@ -2178,6 +2149,7 @@
 - **lightning** n. 闪电
 - **hail** n. 冰雹 v. 称颂;招呼
 - **frost** n. 霜
+- **thaw** n./v. 解冻,融化
 - **chill** n. 寒冷 v. 使变冷
 - **chilly** adj. 冷飕飕的;冷淡的
 - **fog** n. 雾
@@ -2331,6 +2303,7 @@
 - **den** n. 兽穴
 - **habitat** n. 栖息地
 - **natural habitat** phr. 自然栖息地
+- **inhabit** v. 栖息于,居住于
 - **aquatic** adj. 水生的
 - **ecosystem** n. 生态系统
 - **ecology** n. 生态学
@@ -2399,6 +2372,7 @@
 - **captivity** n. 圈养;囚禁
 - **cage** n. 笼子
 - **domesticate** v. 驯化
+- **veterinarian** n. 兽医
 - **wildlife** n. 野生动物
 - **fauna** n. 动物群
 - **flora** n. 植物群
@@ -2414,6 +2388,7 @@
 - **horn** n. 角;喇叭
 - **fur** n. 毛皮
 - **hide** n. 兽皮 v. 隐藏,躲藏
+- **shed** v. 蜕,脱落;摆脱 n. 棚屋
 - **hump** n. 驼峰
 - **spine** n. 脊柱;刺
 - **antenna** n. 触角;天线
@@ -2442,6 +2417,7 @@
 - **fungus** n. 真菌(复数 fungi)
 - **spore** n. 孢子
 - **mushroom** n. 蘑菇
+- **edible** adj. 可食用的
 - **yeast** n. 酵母
 - **fermentation** n. 发酵
 - **seed** n. 种子
@@ -2643,6 +2619,7 @@
 - **thermodynamics** n. 热力学
 - **mechanics** n. 力学;运作方式
 - **dynamics** n. 动力学;动态
+- **motion** n. 运动;动议
 - **force** n. 力;武力;部队 v. 强迫
 - **friction** n. 摩擦
 - **attrition** n. 磨损;损耗
@@ -2650,8 +2627,10 @@
 - **velocity** n. 速度
 - **acceleration** n. 加速;加速度
 - **momentum** n. 动量;势头
+- **propulsion** n. 推进,推进力
 - **equilibrium** n. 平衡,均衡
 - **static** adj. 静止的,不变的 n. 静电
+- **stationary** adj. 静止的
 - **mass** n. 质量;大量 adj. 大规模的
 - **gravitation** n. 万有引力
 - **relativity** n. 相对论
@@ -2682,6 +2661,7 @@
 - **amplitude** n. 振幅
 - **intensity** n. 强度;强烈
 - **oscillation** n. 振荡,摆动
+- **pendulum** n. 钟摆
 - **vibration** n. 振动
 - **cyclic** adj. 循环的,周期的
 - **echo** n. 回声 v. 回响;附和
@@ -2886,6 +2866,7 @@
 - **thumb** n. 拇指
 - **muscle** n. 肌肉
 - **nerve** n. 神经;勇气
+- **eyesight** n. 视力
 - **neuron** n. 神经元
 - **cortex** n. 大脑皮层,皮层
 - **spinal cord** phr. 脊髓
@@ -2942,6 +2923,7 @@
 - **diabetes** n. 糖尿病
 - **obesity** n. 肥胖
 - **tumour** n. 肿瘤
+- **malignant** adj. 恶性的
 - **lump** n. 肿块;块
 - **stroke** n. 中风;一击,一笔 v. 抚摸
 - **heart attack** phr. 心脏病发作
@@ -2954,11 +2936,13 @@
 - **depression** n. 抑郁症;萧条
 - **paralysed** adj. 瘫痪的
 - **handicap** n. 残疾;障碍
+- **disabled** adj. 残疾的
 - **vaccine** n. 疫苗
 - **inject** v. 注射
 - **antibiotic** n. 抗生素
 - **drug** n. 药物;毒品
 - **medication** n. 药物
+- **prescribe** v. 开药;规定
 - **dose** n. 剂量
 - **side effect** phr. 副作用
 - **placebo** n. 安慰剂
@@ -2978,6 +2962,7 @@
 - **death rate** phr. 死亡率
 - **lethal** adj. 致命的
 - **hygiene** n. 卫生
+- **sterilise** v. 消毒,杀菌
 - **sanitation** n. 公共卫生,卫生设施
 - **malnutrition** n. 营养不良
 - **malnourished** adj. 营养不良的
@@ -3076,7 +3061,10 @@
 - **linguistic** adj. 语言的
 - **corpus** n. 语料库
 - **vocabulary** n. 词汇
+- **terminology** n. 术语
 - **lexical** adj. 词汇的
+- **synonym** n. 同义词
+- **abbreviation** n. 缩写
 - **derivative** n. 派生词;衍生物 adj. 派生的
 - **grammar** n. 语法
 - **grammatical** adj. 语法的
@@ -3101,6 +3089,7 @@
 - **accent** n. 口音;重音
 - **tone** n. 语气;色调
 - **dialect** n. 方言
+- **slang** n. 俚语
 - **mother tongue** phr. 母语
 - **native speaker** phr. 母语者
 - **bilingual** adj. 双语的
@@ -3137,6 +3126,7 @@
 - **narrative** n. 叙述;故事 adj. 叙事的
 - **narrator** n. 叙述者
 - **fable** n. 寓言
+- **anecdote** n. 轶事,趣闻
 - **maxim** n. 格言
 - **adage** n. 谚语
 - **satire** n. 讽刺
@@ -3253,9 +3243,11 @@
 - **descend** v. 传下;下降
 - **origin** n. 起源
 - **myth** n. 神话;错误观念
+- **mythology** n. 神话
 - **legend** n. 传说;传奇人物;图例
 - **ghost** n. 鬼魂
 - **curse** n. 诅咒
+- **superstition** n. 迷信
 - **ritual** n. 仪式;例行公事
 - **ceremony** n. 典礼
 - **worship** n./v. 崇拜
@@ -3359,6 +3351,7 @@
 - **public space** phr. 公共空间
 - **heritage building** phr. 历史建筑
 - **restoration** n. 修复
+- **regeneration** n. 复兴,改造;再生
 - **sewage** n. 污水
 - **drainage** n. 排水系统
 - **ventilation** n. 通风
@@ -3488,6 +3481,7 @@
 - **commodity** n. 商品,大宗商品
 - **barrel** n. 大桶;一桶
 - **goods** n. 商品,货物
+- **perishable** adj. 易腐烂的
 - **textile** n. 纺织品
 - **service** n. 服务 v. 检修,保养
 - **supply** n./v. 供应
@@ -3511,6 +3505,7 @@
 - **sector** n. 部门,领域
 - **enterprise** n. 企业;创业精神
 - **corporation** n. 公司
+- **corporate** adj. 公司的,企业的
 - **multinational** adj. 跨国的
 - **affiliate** n. 附属机构 v. 使隶属
 - **firm** n. 公司 adj. 坚定的;坚固的
@@ -4084,6 +4079,7 @@
 - **citizen** n. 公民
 - **citizenship** n. 公民身份
 - **nationality** n. 国籍
+- **patriotism** n. 爱国主义
 - **civic** adj. 公民的;市政的
 - **privilege** n. 特权
 - **entitle** v. 使有权
@@ -4129,6 +4125,8 @@
 - **ambassador** n. 大使
 - **embassy** n. 大使馆
 - **bilateral** adj. 双边的
+- **multilateral** adj. 多边的
+- **unilateral** adj. 单边的,单方面的
 - **alliance** n. 联盟
 - **ally** n. 盟友
 - **treaty** n. 条约
@@ -4178,6 +4176,7 @@
 - **counterfeit** adj. 伪造的 n. 赝品
 - **tax evasion** phr. 逃税
 - **blackmail** n./v. 敲诈
+- **bribe** n./v. 贿赂
 - **ransom** n. 赎金
 - **kidnap** v. 绑架
 - **hostage** n. 人质
@@ -4790,7 +4789,7 @@
 - **graceful** adj. 优美的
 - **slim** adj. 苗条的
 - **slender** adj. 纤细的
-- **skinny** adj. 骨瘦如柴的
+- **skinny** adj. 极瘦的,皮包骨的
 - **plump** adj. 丰满的
 - **stocky** adj. 矮壮的
 - **muscular** adj. 肌肉发达的
@@ -4959,6 +4958,7 @@
 - **brand-new** adj. 全新的
 - **worn-out** adj. 破旧的;疲惫不堪的
 - **patch** n. 补丁;小块
+- **stain** n. 污渍 v. 弄脏
 - **sentimental value** phr. 情感价值
 - **valuable** adj. 贵重的,有价值的
 - **priceless** adj. 无价的
