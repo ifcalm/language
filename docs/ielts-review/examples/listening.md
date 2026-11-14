@@ -19,7 +19,7 @@
 | flat | n. 公寓(英) adj. 平的 | My friend and I share a **flat** above a small bakery. | 我和朋友合住在一家小面包店楼上的公寓里。 |
 | flat | n. 公寓(英) adj. 平的 | The house has a **flat** roof, which often leaks in heavy rain. | 这栋房子是平屋顶,下大雨时经常漏水。 |
 | studio | n. 单间公寓;工作室,演播室 | I rented a **studio** near campus because it was cheaper than a shared house. | 我在学校附近租了一间单间公寓,因为比合租房子便宜。 |
-| studio | n. 单间公寓;工作室,演播室 | The radio **studio** is on the third floor, next to the lifts. | 广播演播室在三楼,就在电梯旁边。 |
+| studio | n. 单间公寓;工作室,演播室 | The radio **studio** is on the third floor, next to the lifts. | 广播演播室在四楼,就在电梯旁边。 |
 | semi-detached | adj. 半独立式的(房屋) | They live in a **semi-detached** house with a small garden at the back. | 他们住在一栋半独立式房屋里,屋后有个小花园。 |
 | detached house | phr. 独栋房屋 | A **detached house** costs a lot more than a flat in this area. | 在这一带,独栋房屋比公寓贵得多。 |
 | terraced house | phr. 联排房屋 | Our **terraced house** shares walls with the neighbours on both sides. | 我们的联排房屋与两边的邻居共用墙壁。 |

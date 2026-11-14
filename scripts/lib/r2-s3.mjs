@@ -98,6 +98,14 @@ export function createR2Client(bucket) {
       return response.ok ? Object.fromEntries(response.headers) : null
     },
 
+    async deleteObject(key) {
+      const response = await request('DELETE', key)
+
+      if (!response.ok) {
+        throw new Error(`R2 DELETE ${response.status} ${key}: ${await response.text()}`)
+      }
+    },
+
     async listKeys(prefix) {
       const keys = new Set()
       let token = ''
