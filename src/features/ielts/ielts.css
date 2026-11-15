@@ -236,8 +236,8 @@
 .ielts-entry-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding-right: 14px;
+  gap: 2px;
+  padding-left: 10px;
 }
 
 .ielts-entry-row + .ielts-entry-row {
@@ -246,12 +246,13 @@
 
 .ielts-entry-main {
   display: grid;
-  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  /* A fixed word column keeps the meaning close to the word on wide screens. */
+  grid-template-columns: minmax(180px, 300px) minmax(0, 1fr);
   align-items: baseline;
   gap: 4px 20px;
   flex: 1 1 auto;
   min-width: 0;
-  padding: 14px 18px;
+  padding: 14px 18px 14px 8px;
   border: 0;
   background: none;
   color: var(--text);
@@ -292,7 +293,9 @@
   font-size: 0.78rem;
 }
 
+/* Sits before the word, so it is next to what it reads out. */
 .ielts-row-play {
+  order: -1;
   flex: 0 0 auto;
   display: grid;
   place-items: center;
