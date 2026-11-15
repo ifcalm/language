@@ -55,7 +55,7 @@
 }
 
 .sentence-practice-jump-message {
-  color: #b66518;
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 650;
 }

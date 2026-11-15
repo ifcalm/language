@@ -77,6 +77,9 @@
   background: transparent;
   color: var(--text);
   font-weight: 800;
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
 }
 
 @media (max-width: 980px) {

@@ -8,6 +8,29 @@
   --border: #e8e8e8;
   --border-strong: #111111;
   --shadow: 0 24px 70px rgb(17 17 17 / 0.07);
+
+  /* The one accent: where you are, what you can press, the word in focus. */
+  --accent: #c2410c;
+  --accent-strong: #9a3412;
+  --accent-soft: #fff1e8;
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Part-of-speech tags: text colour and tint, fixed per part of speech. */
+  --pos-n: #5b4bc4;
+  --pos-n-bg: #efedfd;
+  --pos-v: #a8325a;
+  --pos-v-bg: #fbeaf0;
+  --pos-adj: #0f6e56;
+  --pos-adj-bg: #e1f5ee;
+  --pos-adv: #185fa5;
+  --pos-adv-bg: #e6f1fb;
+  --pos-other: #5f5e5a;
+  --pos-other-bg: #f1efe8;
+
+  /* Sentence parts in the verb pages: the core of a sentence is always blue. */
+  --part-core: #2563eb;
+  --part-core-bg: #eff6ff;
 }
 
 .app-shell {
@@ -140,7 +163,7 @@
   outline: 0;
   background: transparent;
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.95rem;
 }
 
@@ -205,7 +228,7 @@
   display: block;
   margin-top: 0;
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: clamp(1.42rem, 3vw, 2.25rem);
   letter-spacing: -0.055em;
   line-height: 1.2;
@@ -253,7 +276,7 @@
   border-radius: 12px;
   background: var(--surface-subtle);
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.9rem;
   line-height: 1.45;
 }
@@ -678,7 +701,7 @@ button:disabled {
 }
 
 .pagination-range {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text-muted);
   white-space: nowrap;
@@ -714,11 +737,15 @@ button:disabled {
   background: var(--surface-subtle);
 }
 
+.vocabulary-row.is-focused .row-word {
+  color: var(--accent);
+}
+
 .row-rank {
   flex-shrink: 0;
   width: 52px;
   color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
 }
 
@@ -726,8 +753,11 @@ button:disabled {
   flex-shrink: 0;
   width: 136px;
   overflow: hidden;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  transition: color 0.16s ease;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -737,7 +767,7 @@ button:disabled {
   width: 124px;
   overflow: hidden;
   color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -752,14 +782,20 @@ button:disabled {
   border: 1px solid var(--border);
   border-radius: 50%;
   background: var(--surface);
-  color: var(--text);
+  color: var(--text-soft);
   font-size: 0.6rem;
   cursor: pointer;
+  transition:
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease;
 }
 
 .row-play:hover:not(:disabled),
 .row-play:focus-visible {
-  border-color: var(--border-strong);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 
 .row-play:disabled {
@@ -768,8 +804,8 @@ button:disabled {
 }
 
 .row-play.playing {
-  border-color: #16a34a;
-  background: #16a34a;
+  border-color: var(--accent);
+  background: var(--accent);
   color: var(--surface);
 }
 
@@ -841,7 +877,7 @@ button:disabled {
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.74rem;
 }
 
@@ -1239,7 +1275,7 @@ button:disabled {
 
 .vocabulary-detail-main > span {
   color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 850;
   letter-spacing: 0.08em;
@@ -1278,7 +1314,7 @@ button:disabled {
 
 .vocabulary-detail-example p {
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   line-height: 1.7;
 }
 
@@ -1504,7 +1540,7 @@ button:disabled {
 .lookup-result-example p {
   margin: 0;
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   line-height: 1.7;
 }
 

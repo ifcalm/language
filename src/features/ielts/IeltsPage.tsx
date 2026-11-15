@@ -11,7 +11,7 @@ import {
   type IeltsTopicSummary,
 } from '../../data/ielts'
 import { IeltsPractice } from './IeltsPractice'
-import { IeltsSenses } from './IeltsSenses'
+import { IeltsPos, IeltsSenses } from './IeltsSenses'
 import { useIeltsAudio } from './useIeltsAudio'
 import { useIeltsExamples } from './useIeltsExamples'
 import './ielts.css'
@@ -197,22 +197,50 @@ function Breadcrumb({
   )
 }
 
+// A row plays the British reading; words whose reading depends on part of
+// speech have no entry-level audio, so the first part of speech stands in.
+function getRowAudio(entry: IeltsEntry) {
+  const posRow = entry.posPhonetics?.find((row) => row.audio)
+
+  return {
+    phonetic: entry.phoneticUk ?? entry.posPhonetics?.[0]?.uk,
+    url: getIeltsAudioUrl(entry, 'uk') ?? (posRow ? getIeltsAudioUrl(entry, 'uk', posRow.pos) : null),
+  }
+}
+
 function EntryRow({
   entry,
   showTopic,
+  audio,
   onOpen,
 }: {
   entry: IeltsEntry
   showTopic?: string
+  audio: Pick<ReturnType<typeof useIeltsAudio>, 'activeKey' | 'play'>
   onOpen: () => void
 }) {
+  const { phonetic, url } = getRowAudio(entry)
+
   return (
     <li className="ielts-entry-row">
       <button type="button" className="ielts-entry-main" onClick={onOpen}>
-        <strong>{entry.word}</strong>
+        <span className="ielts-entry-word">
+          <strong>{entry.word}</strong>
+          {phonetic ? <span className="ielts-entry-ipa">{phonetic}</span> : null}
+        </span>
         <IeltsSenses entry={entry} />
         {showTopic ? <small>{showTopic}</small> : null}
       </button>
+      {url ? (
+        <button
+          type="button"
+          className={`ielts-row-play${audio.activeKey === entry.id ? ' playing' : ''}`}
+          aria-label={`播放 ${entry.word} 的英式读音`}
+          onClick={() => audio.play(entry.id, url, `${entry.word} 的读音`)}
+        >
+          <SpeakerIcon />
+        </button>
+      ) : null}
     </li>
   )
 }
@@ -256,6 +284,7 @@ function ModuleView({
   onNavigate: (route: IeltsRoute) => void
 }) {
   const [query, setQuery] = useState('')
+  const audio = useIeltsAudio()
   const normalizedQuery = query.trim().toLowerCase()
   const { data, error } = useIeltsModule(normalizedQuery ? module.id : null)
   const topicTitles = useMemo(
@@ -309,6 +338,7 @@ function ModuleView({
                 <EntryRow
                   key={entry.id}
                   entry={entry}
+                  audio={audio}
                   showTopic={topicTitles.get(entry.topicId)}
                   onOpen={() =>
                     onNavigate({
@@ -360,6 +390,7 @@ function TopicView({
   entries: IeltsEntry[]
   onNavigate: (route: IeltsRoute) => void
 }) {
+  const audio = useIeltsAudio()
   // Merged topics keep their original sub-groups as section headings.
   const groupedEntries = topic.groups
     ? topic.groups
@@ -380,9 +411,14 @@ function TopicView({
       <Breadcrumb module={module} topic={topic} onNavigate={onNavigate} />
       <header className="ielts-section-head">
         <div>
-          <span className="ielts-module-en">
-            {module.name} · 话题 {String(topic.order).padStart(2, '0')}
-          </span>
+          <p className="ielts-topic-meta">
+            <span className="ielts-path">
+              {module.id}/{String(topic.order).padStart(2, '0')}
+            </span>
+            <span>
+              {module.name} · {entries.length} 词
+            </span>
+          </p>
           <h1>{topic.title}</h1>
         </div>
         <div className="ielts-topic-actions">
@@ -402,6 +438,12 @@ function TopicView({
           </button>
         </div>
       </header>
+
+      {audio.playbackError ? (
+        <p className="ielts-status" role="status">
+          {audio.playbackError}
+        </p>
+      ) : null}
 
       {groupedEntries.map((group) => (
         <section key={group.key} className="ielts-group">
@@ -433,6 +475,7 @@ function TopicView({
                 <EntryRow
                   key={entry.id}
                   entry={entry}
+                  audio={audio}
                   onOpen={() =>
                     onNavigate({ moduleId: module.id, topicOrder: topic.order, entryId: entry.id })
                   }
@@ -566,7 +609,7 @@ function EntryView({
         <ul className="ielts-sense-list">
           {entry.senses.map((sense, senseIndex) => (
             <li key={senseIndex}>
-              <em>{sense.pos}</em>
+              <IeltsPos pos={sense.pos} />
               <span>{sense.meaning}</span>
             </li>
           ))}

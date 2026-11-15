@@ -42,7 +42,7 @@
   border-radius: 0;
   outline: 0;
   background: transparent;
-  caret-color: var(--text);
+  caret-color: var(--accent);
   color: transparent;
   position: relative;
   z-index: 1;
@@ -53,7 +53,7 @@
 }
 
 .cloze-input:focus {
-  border-color: var(--text);
+  border-color: var(--accent);
   background: transparent;
 }
 
