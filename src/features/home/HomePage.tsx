@@ -106,6 +106,14 @@ function SpeakerIcon() {
   )
 }
 
+function ArrowIcon({ direction }: { direction: 'left' | 'right' }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d={direction === 'left' ? 'M15 6l-6 6 6 6' : 'M9 6l6 6-6 6'} />
+    </svg>
+  )
+}
+
 // "object to (doing) sth." -> blanks for object, to, doing, sth; the brackets
 // and the full stop stay as plain text between them.
 function splitWord(word: string) {
@@ -357,14 +365,14 @@ function HomePage() {
       </div>
 
       {entry ? (
-        <footer className="home-copy-keys" aria-label="键盘操作">
-          <span>
-            <kbd>←</kbd> 上一个
-          </span>
-          <span>
-            <kbd>→</kbd> <kbd>return</kbd> 下一个
-          </span>
-        </footer>
+        <nav className="home-copy-nav" aria-label="切换单词">
+          <button type="button" title="上一个（←）" aria-label="上一个" onClick={goPrevious}>
+            <ArrowIcon direction="left" />
+          </button>
+          <button type="button" title="下一个（→ 或 return）" aria-label="下一个" onClick={goNext}>
+            <ArrowIcon direction="right" />
+          </button>
+        </nav>
       ) : null}
     </section>
   )
