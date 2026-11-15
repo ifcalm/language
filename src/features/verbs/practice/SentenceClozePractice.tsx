@@ -78,7 +78,7 @@ function SentenceClozePractice({ path }: SentenceClozePracticeProps) {
               ref={(element) => {
                 inputRefs.current[blankIndex] = element
               }}
-              className={`cloze-input${locked ? ' is-locked' : ''}${
+              className={`verb-cloze-input${locked ? ' is-locked' : ''}${
                 wrong ? ' is-wrong' : ''
               }`}
               value={values[blankIndex] ?? ''}

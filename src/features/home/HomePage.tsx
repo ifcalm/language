@@ -16,33 +16,50 @@ import { CLOZE_CHARACTERS, useClozeBlanks } from '../../shared/cloze/useClozeBla
 import './home.css'
 
 // The home page is one thing: copy IELTS words. The word sits faded in place,
-// the learner types over it, and Enter moves to the next word of the topic.
+// the learner types over it, and Enter moves to the next word. The whole list
+// runs as one sequence, in word-list order; modules and topics only decide
+// which data file to load.
 
 // Where to resume: { topicId, entryId }.
 const POSITION_STORAGE_KEY = 'home-ielts-copy-v1'
 
 interface CopyPosition {
   topicId: string
+  /** null is the first word of the topic. */
   entryId: string | null
+  /** Arrived by stepping back from the next topic: stand on its last word. */
+  fromEnd?: boolean
 }
 
-const TOPICS = ieltsCatalog.modules.flatMap((module) =>
-  module.topics.map((topic) => ({ module, topic })),
-)
+// Every topic in word-list order, with the number of words before it.
+const TOPICS = ieltsCatalog.modules
+  .flatMap((module) => module.topics.map((topic) => ({ module, topic })))
+  .map((item, index, all) => ({
+    ...item,
+    offset: all.slice(0, index).reduce((sum, previous) => sum + previous.topic.entryCount, 0),
+  }))
 
 function readPosition(): CopyPosition {
   try {
     const parsed: unknown = JSON.parse(window.localStorage.getItem(POSITION_STORAGE_KEY) ?? 'null')
 
     if (parsed && typeof parsed === 'object' && 'topicId' in parsed) {
-      const { topicId, entryId } = parsed as { topicId: unknown; entryId?: unknown }
+      const { topicId, entryId, fromEnd } = parsed as {
+        topicId: unknown
+        entryId?: unknown
+        fromEnd?: unknown
+      }
 
       if (typeof topicId === 'string' && TOPICS.some((item) => item.topic.id === topicId)) {
-        return { topicId, entryId: typeof entryId === 'string' ? entryId : null }
+        return {
+          topicId,
+          entryId: typeof entryId === 'string' ? entryId : null,
+          fromEnd: fromEnd === true,
+        }
       }
     }
   } catch {
-    // Unreadable storage: start from the first topic.
+    // Unreadable storage: start from the first word.
   }
 
   return { topicId: TOPICS[0].topic.id, entryId: null }
@@ -201,7 +218,7 @@ function HomePage() {
     TOPICS.findIndex((item) => item.topic.id === position.topicId),
     0,
   )
-  const { module, topic } = TOPICS[topicIndex]
+  const { module, topic, offset } = TOPICS[topicIndex]
   const { data, error: moduleError } = useIeltsModuleEntries(module.id)
   const { data: examples } = useIeltsExamples(topic.id)
   const audio = useIeltsAudio()
@@ -209,10 +226,14 @@ function HomePage() {
     () => data?.entries.filter((entry) => entry.topicId === topic.id) ?? [],
     [data, topic.id],
   )
-  const index = Math.max(
-    entries.findIndex((entry) => entry.id === position.entryId),
-    0,
-  )
+  const index =
+    position.fromEnd && !position.entryId
+      ? Math.max(entries.length - 1, 0)
+      : Math.max(
+          entries.findIndex((entry) => entry.id === position.entryId),
+          0,
+        )
+  const isFirstWord = topicIndex === 0 && index === 0
   const entry = entries[index]
   const reading = entry ? getIeltsPrimaryReading(entry) : null
 
@@ -227,9 +248,17 @@ function HomePage() {
       return
     }
 
-    // End of the topic: carry on with the next one, and wrap after the last.
+    // End of the topic: carry on with the next one, and wrap after the last word.
     goTo({ topicId: TOPICS[(topicIndex + 1) % TOPICS.length].topic.id, entryId: null })
   }, [entries, goTo, index, topic.id, topicIndex])
+
+  function goPrevious() {
+    if (index > 0) {
+      goTo({ topicId: topic.id, entryId: entries[index - 1].id })
+    } else if (topicIndex > 0) {
+      goTo({ topicId: TOPICS[topicIndex - 1].topic.id, entryId: null, fromEnd: true })
+    }
+  }
 
   // Each word is read out as it appears. Browsers refuse sound before the
   // visitor has touched the page, so the first word waits for a key or a click.
@@ -267,46 +296,6 @@ function HomePage() {
 
   return (
     <section className="home-copy" aria-label="雅思单词抄写">
-      <header className="home-copy-bar">
-        <label>
-          <span className="visually-hidden">模块</span>
-          <select
-            value={module.id}
-            onChange={(event) => {
-              const target = ieltsCatalog.modules.find((item) => item.id === event.target.value)
-
-              if (target) {
-                goTo({ topicId: target.topics[0].id, entryId: null })
-              }
-            }}
-          >
-            {ieltsCatalog.modules.map((item) => (
-              <option key={item.id} value={item.id}>
-                {item.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span className="visually-hidden">话题</span>
-          <select
-            value={topic.id}
-            onChange={(event) => goTo({ topicId: event.target.value, entryId: null })}
-          >
-            {module.topics.map((item) => (
-              <option key={item.id} value={item.id}>
-                {String(item.order).padStart(2, '0')} {item.title}
-              </option>
-            ))}
-          </select>
-        </label>
-        {entry ? (
-          <span className="home-copy-count">
-            {index + 1} / {entries.length}
-          </span>
-        ) : null}
-      </header>
-
       <div className="home-copy-stage">
         {entry ? (
           <>
@@ -348,16 +337,14 @@ function HomePage() {
 
       {entry ? (
         <footer className="home-copy-footer">
-          <button
-            type="button"
-            className="is-quiet"
-            disabled={index === 0}
-            onClick={() => goTo({ topicId: topic.id, entryId: entries[index - 1].id })}
-          >
-            上一个
+          <button type="button" disabled={isFirstWord} onClick={goPrevious}>
+            ← 上一个
           </button>
+          <span className="home-copy-count">
+            {offset + index + 1} / {ieltsCatalog.entryCount}
+          </span>
           <button type="button" onClick={goNext}>
-            下一个
+            下一个 →
           </button>
         </footer>
       ) : null}
