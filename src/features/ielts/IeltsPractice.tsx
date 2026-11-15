@@ -4,7 +4,6 @@ import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
 import { getClozeAnswerState } from '../../shared/cloze/clozeAnswer'
 import { IeltsSenses } from './IeltsSenses'
 import { useIeltsExamples } from './useIeltsExamples'
-import type { IeltsProgress } from './useIeltsProgress'
 
 // Sentence fill-in for one topic or one section of it. Each entry is practised
 // with its first example sentence, which uses the sense the topic is about.
@@ -270,7 +269,6 @@ export function IeltsPractice({
   topic,
   section,
   entries,
-  progress,
   next,
   onBack,
 }: {
@@ -279,7 +277,6 @@ export function IeltsPractice({
   section: number | null
   /** All entries of the topic, in topic order. */
   entries: IeltsEntry[]
-  progress: IeltsProgress
   /** Where to go after finishing: the next section, or the next topic. */
   next: { label: string; onGo: () => void } | null
   onBack: () => void
@@ -291,13 +288,7 @@ export function IeltsPractice({
     () => (section === null ? entries : entries.filter((entry) => entry.group === section)),
     [entries, section],
   )
-  const [onlyLearning, setOnlyLearning] = useState(true)
   const [hideHint, setHideHint] = useState(() => readStorage(HIDE_HINT_STORAGE_KEY) === '1')
-  // Mastered entries are read once (and again when the filter changes), so
-  // the list does not shift while practising.
-  const [masteredIds, setMasteredIds] = useState(
-    () => new Set(scopeEntries.filter((entry) => progress.isMastered(entry.id)).map((entry) => entry.id)),
-  )
   const [position, setPosition] = useState<string | null>(
     () => readPositions()[scopeKey] ?? null,
   )
@@ -313,15 +304,15 @@ export function IeltsPractice({
     return scopeEntries.flatMap((entry): PracticeItem[] => {
       const example = examples[entry.id]?.[0]
 
-      if (!example || (onlyLearning && masteredIds.has(entry.id))) {
+      if (!example) {
         return []
       }
 
       return [{ entry, example, blanks: buildBlanks(example) }]
     })
-  }, [examples, scopeEntries, onlyLearning, masteredIds])
+  }, [examples, scopeEntries])
 
-  // Resume at the saved sentence; if it is filtered out now, at the next one.
+  // Resume at the saved sentence; if it is gone from this scope, at the next one.
   const currentIndex = useMemo(() => {
     if (!position) {
       return 0
@@ -365,13 +356,6 @@ export function IeltsPractice({
     setRound((value) => value + 1)
   }
 
-  function toggleOnlyLearning() {
-    setMasteredIds(
-      new Set(scopeEntries.filter((entry) => progress.isMastered(entry.id)).map((entry) => entry.id)),
-    )
-    setOnlyLearning((value) => !value)
-  }
-
   function toggleHideHint(value: boolean) {
     setHideHint(value)
     writeStorage(HIDE_HINT_STORAGE_KEY, value ? '1' : '0')
@@ -407,18 +391,7 @@ export function IeltsPractice({
   } else if (!item) {
     body = (
       <div className="ielts-practice-done" role="status">
-        {onlyLearning && scopeEntries.length > 0 ? (
-          <>
-            <strong>这部分的词都已掌握</strong>
-            <div>
-              <button type="button" onClick={toggleOnlyLearning}>
-                练习全部 {scopeEntries.length} 个词
-              </button>
-            </div>
-          </>
-        ) : (
-          <p>没有可练习的例句。</p>
-        )}
+        <p>没有可练习的例句。</p>
       </div>
     )
   } else {
@@ -445,14 +418,6 @@ export function IeltsPractice({
 
       <section className="ielts-panel ielts-practice">
         <div className="ielts-practice-bar">
-          <button
-            type="button"
-            className={`ielts-practice-chip${onlyLearning ? ' active' : ''}`}
-            aria-pressed={onlyLearning}
-            onClick={toggleOnlyLearning}
-          >
-            只练未掌握
-          </button>
           <label className="ielts-practice-toggle">
             <input
               type="checkbox"
