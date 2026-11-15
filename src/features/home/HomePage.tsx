@@ -4,24 +4,25 @@ import {
   ieltsCatalog,
   loadIeltsModule,
   type IeltsEntry,
-  type IeltsExample,
   type IeltsModuleData,
   type IeltsModuleId,
 } from '../../data/ielts'
 import { IeltsSenses } from '../ielts/IeltsSenses'
 import { useIeltsAudio } from '../ielts/useIeltsAudio'
-import { useIeltsExamples } from '../ielts/useIeltsExamples'
 import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
 import { CLOZE_CHARACTERS, useClozeBlanks } from '../../shared/cloze/useClozeBlanks'
 import './home.css'
 
 // The home page is one thing: copy IELTS words. The word sits faded in place,
-// the learner types over it, and Enter moves to the next word. The whole list
+// the learner types over it, and the next word follows by itself. The whole list
 // runs as one sequence, in word-list order; modules and topics only decide
 // which data file to load.
 
 // Where to resume: { topicId, entryId }.
 const POSITION_STORAGE_KEY = 'home-ielts-copy-v1'
+
+// How long a finished word stays on screen, in green, before the next one.
+const NEXT_WORD_DELAY_MS = 450
 
 interface CopyPosition {
   topicId: string
@@ -31,13 +32,10 @@ interface CopyPosition {
   fromEnd?: boolean
 }
 
-// Every topic in word-list order, with the number of words before it.
-const TOPICS = ieltsCatalog.modules
-  .flatMap((module) => module.topics.map((topic) => ({ module, topic })))
-  .map((item, index, all) => ({
-    ...item,
-    offset: all.slice(0, index).reduce((sum, previous) => sum + previous.topic.entryCount, 0),
-  }))
+// Every topic in word-list order.
+const TOPICS = ieltsCatalog.modules.flatMap((module) =>
+  module.topics.map((topic) => ({ module, topic })),
+)
 
 function readPosition(): CopyPosition {
   try {
@@ -134,12 +132,10 @@ function splitWord(word: string) {
 
 function CopyWord({
   entry,
-  example,
   reading,
   onNext,
 }: {
   entry: IeltsEntry
-  example: IeltsExample | undefined
   /** IPA and the play button, shown right under the word. */
   reading: React.ReactNode
   onNext: () => void
@@ -157,6 +153,17 @@ function CopyWord({
   useEffect(() => {
     focusCurrent()
   }, [focusCurrent])
+
+  // A finished word moves on by itself. Enter during the pause skips the wait;
+  // the pending timer goes away with this word, so it cannot skip the next one.
+  useEffect(() => {
+    if (!isComplete) {
+      return
+    }
+
+    const timer = window.setTimeout(onNext, NEXT_WORD_DELAY_MS)
+    return () => window.clearTimeout(timer)
+  }, [isComplete, onNext])
 
   return (
     <>
@@ -194,20 +201,6 @@ function CopyWord({
       <div className="home-copy-meaning">
         <IeltsSenses entry={entry} />
       </div>
-
-      <div className={`home-copy-example${isComplete ? ' is-shown' : ''}`} aria-live="polite">
-        {isComplete && example ? (
-          <>
-            <p lang="en">
-              {example.en.slice(0, example.start)}
-              <mark>{example.en.slice(example.start, example.start + example.length)}</mark>
-              {example.en.slice(example.start + example.length)}
-            </p>
-            <p>{example.zh}</p>
-          </>
-        ) : null}
-        {isComplete ? <small>按回车进入下一个</small> : null}
-      </div>
     </>
   )
 }
@@ -218,9 +211,8 @@ function HomePage() {
     TOPICS.findIndex((item) => item.topic.id === position.topicId),
     0,
   )
-  const { module, topic, offset } = TOPICS[topicIndex]
+  const { module, topic } = TOPICS[topicIndex]
   const { data, error: moduleError } = useIeltsModuleEntries(module.id)
-  const { data: examples } = useIeltsExamples(topic.id)
   const audio = useIeltsAudio()
   const entries = useMemo(
     () => data?.entries.filter((entry) => entry.topicId === topic.id) ?? [],
@@ -233,7 +225,6 @@ function HomePage() {
           entries.findIndex((entry) => entry.id === position.entryId),
           0,
         )
-  const isFirstWord = topicIndex === 0 && index === 0
   const entry = entries[index]
   const reading = entry ? getIeltsPrimaryReading(entry) : null
 
@@ -252,13 +243,44 @@ function HomePage() {
     goTo({ topicId: TOPICS[(topicIndex + 1) % TOPICS.length].topic.id, entryId: null })
   }, [entries, goTo, index, topic.id, topicIndex])
 
-  function goPrevious() {
+  const goPrevious = useCallback(() => {
     if (index > 0) {
       goTo({ topicId: topic.id, entryId: entries[index - 1].id })
     } else if (topicIndex > 0) {
       goTo({ topicId: TOPICS[topicIndex - 1].topic.id, entryId: null, fromEnd: true })
     }
-  }
+  }, [entries, goTo, index, topic.id, topicIndex])
+
+  // The keyboard is the only control: ← back, → or Enter on to the next word.
+  const hasEntry = entries.length > 0
+
+  useEffect(() => {
+    if (!hasEntry) {
+      return
+    }
+
+    function handleKey(event: KeyboardEvent) {
+      if (event.defaultPrevented || event.isComposing || event.altKey || event.ctrlKey || event.metaKey) {
+        return
+      }
+
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault()
+        goPrevious()
+      } else if (event.key === 'ArrowRight' || event.key === 'Enter') {
+        // Enter on the play button keeps its own meaning.
+        if (event.key === 'Enter' && event.target instanceof HTMLElement && event.target.closest('button, a')) {
+          return
+        }
+
+        event.preventDefault()
+        goNext()
+      }
+    }
+
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [goNext, goPrevious, hasEntry])
 
   // Each word is read out as it appears. Browsers refuse sound before the
   // visitor has touched the page, so the first word waits for a key or a click.
@@ -302,7 +324,6 @@ function HomePage() {
             <CopyWord
               key={entry.id}
               entry={entry}
-              example={examples?.[entry.id]?.[0]}
               onNext={goNext}
               reading={
                 <div className="home-copy-reading">
@@ -336,16 +357,13 @@ function HomePage() {
       </div>
 
       {entry ? (
-        <footer className="home-copy-footer">
-          <button type="button" disabled={isFirstWord} onClick={goPrevious}>
-            ← 上一个
-          </button>
-          <span className="home-copy-count">
-            {offset + index + 1} / {ieltsCatalog.entryCount}
+        <footer className="home-copy-keys" aria-label="键盘操作">
+          <span>
+            <kbd>←</kbd> 上一个
           </span>
-          <button type="button" onClick={goNext}>
-            下一个 →
-          </button>
+          <span>
+            <kbd>→</kbd> <kbd>return</kbd> 下一个
+          </span>
         </footer>
       ) : null}
     </section>

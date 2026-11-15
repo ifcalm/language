@@ -1,17 +1,21 @@
 /* Home: copy IELTS words. One card, one word at a time. */
+/* The word sits a little above the middle of the window, with the controls
+   close under it, whatever the window height. */
 .home-copy {
   display: grid;
+  align-content: center;
+  gap: 56px;
   max-width: 920px;
+  min-height: calc(100dvh - 190px);
   margin: 0 auto;
+  padding-bottom: 8vh;
 }
 
 .home-copy-stage {
   display: grid;
   justify-items: center;
-  align-content: center;
-  gap: 16px;
-  min-height: 400px;
-  padding: 56px 28px 40px;
+  gap: 18px;
+  padding: 0 28px;
   text-align: center;
 }
 
@@ -83,85 +87,33 @@
   font-size: 1.08rem;
 }
 
-/* Keeps its height while empty, so the word does not jump when it is done. */
-.home-copy-example {
-  display: grid;
-  align-content: start;
-  gap: 4px;
-  max-width: 640px;
-  min-height: 92px;
-  margin-top: 6px;
-  color: var(--text-soft);
-  line-height: 1.6;
-}
-
-.home-copy-example p {
-  margin: 0;
-}
-
-.home-copy-example p + p {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-}
-
-.home-copy-example mark {
-  background: none;
-  color: inherit;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-.home-copy-example small {
-  margin-top: 6px;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-}
-
 .home-copy-status {
   margin: 0;
   color: var(--text-muted);
 }
 
-.home-copy-footer {
+/* The only chrome: which keys move between words. */
+.home-copy-keys {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 28px;
-  padding: 8px 20px 0;
-}
-
-.home-copy-footer button {
-  padding: 8px 6px;
-  border: 0;
-  background: none;
-  color: var(--text-soft);
-  font: inherit;
-  font-size: 0.92rem;
-  font-weight: 650;
-  cursor: pointer;
-  transition: color 0.16s ease;
-}
-
-.home-copy-footer button:hover:not(:disabled),
-.home-copy-footer button:focus-visible {
-  color: var(--accent);
-}
-
-.home-copy-footer button:disabled {
-  color: var(--border);
-  cursor: default;
-}
-
-.home-copy-count {
-  min-width: 9ch;
+  gap: 8px 24px;
   color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.home-copy-keys kbd {
+  color: var(--text-soft);
   font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-variant-numeric: tabular-nums;
-  text-align: center;
+  font-size: 0.78rem;
+}
+
+/* Touch screens have no arrow keys to explain. */
+@media (hover: none) {
+  .home-copy-keys {
+    display: none;
+  }
 }
 
 /* No frames on the home page: the word itself is the only thing to look at. */
@@ -174,8 +126,11 @@
 }
 
 @media (max-width: 640px) {
+  .home-copy {
+    gap: 44px;
+  }
+
   .home-copy-stage {
-    min-height: 340px;
-    padding: 40px 8px 28px;
+    padding: 0 8px;
   }
 }
