@@ -3622,5 +3622,73 @@
   "processed food": {
     "uk": "/ˈprəʊsest fuːd/",
     "us": "/ˈprɑːsest fuːd/"
+  },
+  "bias": {
+    "uk": "/ˈbaɪəs/",
+    "us": "/ˈbaɪəs/"
+  },
+  "biased": {
+    "uk": "/ˈbaɪəst/",
+    "us": "/ˈbaɪəst/"
+  },
+  "bowel": {
+    "uk": "/ˈbaʊəl/",
+    "us": "/ˈbaʊəl/"
+  },
+  "choir": {
+    "uk": "/ˈkwaɪə/",
+    "us": "/ˈkwaɪɚ/"
+  },
+  "client": {
+    "uk": "/ˈklaɪənt/",
+    "us": "/ˈklaɪənt/"
+  },
+  "diet": {
+    "uk": "/ˈdaɪət/",
+    "us": "/ˈdaɪət/"
+  },
+  "fluent": {
+    "uk": "/ˈfluːənt/",
+    "us": "/ˈfluːənt/"
+  },
+  "fuel": {
+    "uk": "/ˈfjuːəl/",
+    "us": "/ˈfjuːəl/"
+  },
+  "iron": {
+    "uk": "/ˈaɪən/",
+    "us": "/ˈaɪɚn/"
+  },
+  "riot": {
+    "uk": "/ˈraɪət/",
+    "us": "/ˈraɪət/"
+  },
+  "sewage": {
+    "uk": "/ˈsuːɪdʒ/",
+    "us": "/ˈsuːɪdʒ/"
+  },
+  "spire": {
+    "uk": "/ˈspaɪə/",
+    "us": "/spaɪr/"
+  },
+  "trial": {
+    "uk": "/ˈtraɪəl/",
+    "us": "/ˈtraɪəl/"
+  },
+  "triumph": {
+    "uk": "/ˈtraɪʌmf/",
+    "us": "/ˈtraɪəmf/"
+  },
+  "truant": {
+    "uk": "/ˈtruːənt/",
+    "us": "/ˈtruːənt/"
+  },
+  "tyre": {
+    "uk": "/ˈtaɪə/",
+    "us": "/taɪr/"
+  },
+  "vowel": {
+    "uk": "/ˈvaʊəl/",
+    "us": "/ˈvaʊəl/"
   }
 }
