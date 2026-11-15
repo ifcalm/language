@@ -1,388 +1,367 @@
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  type FormEvent,
-  type KeyboardEvent as ReactKeyboardEvent,
-  useEffect,
-  useState,
-} from 'react'
-import {
-  requestVocabularyDetail,
-  VocabularyNotFoundError,
-} from '../vocabulary/api'
-import type { VocabularyDetail } from '../vocabulary/types'
-import { usePronunciationPlayback } from '../vocabulary/usePronunciationPlayback'
-import {
-  getPronunciationKey,
-  getPronunciationLabel,
-} from '../vocabulary/utils'
+  getIeltsPrimaryReading,
+  ieltsCatalog,
+  loadIeltsModule,
+  type IeltsEntry,
+  type IeltsExample,
+  type IeltsModuleData,
+  type IeltsModuleId,
+} from '../../data/ielts'
+import { IeltsSenses } from '../ielts/IeltsSenses'
+import { useIeltsAudio } from '../ielts/useIeltsAudio'
+import { useIeltsExamples } from '../ielts/useIeltsExamples'
+import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
+import { CLOZE_CHARACTERS, useClozeBlanks } from '../../shared/cloze/useClozeBlanks'
+import './home.css'
 
-interface HomePageProps {
-  onOpenVocabulary: () => void
+// The home page is one thing: copy IELTS words. The word sits faded in place,
+// the learner types over it, and Enter moves to the next word of the topic.
+
+// Where to resume: { topicId, entryId }.
+const POSITION_STORAGE_KEY = 'home-ielts-copy-v1'
+
+interface CopyPosition {
+  topicId: string
+  entryId: string | null
 }
 
-function HomePage({ onOpenVocabulary }: HomePageProps) {
-  const [vocabularyQuery, setVocabularyQuery] = useState('')
-  const [lookupQuery, setLookupQuery] = useState('')
-  const [lookupDetail, setLookupDetail] = useState<VocabularyDetail | null>(null)
-  const [isLookupLoading, setIsLookupLoading] = useState(false)
-  const [lookupError, setLookupError] = useState<'' | 'not-found' | 'failed'>('')
-  const {
-    activePronunciationKey,
-    pronunciationPlaybackError,
-    playPronunciation,
-    resetPronunciationPlayback,
-  } = usePronunciationPlayback()
-  const lookupPrimaryExample = lookupDetail?.examples[0]
+const TOPICS = ieltsCatalog.modules.flatMap((module) =>
+  module.topics.map((topic) => ({ module, topic })),
+)
 
-  useEffect(() => {
-    if (!lookupQuery) {
-      return
-    }
+function readPosition(): CopyPosition {
+  try {
+    const parsed: unknown = JSON.parse(window.localStorage.getItem(POSITION_STORAGE_KEY) ?? 'null')
 
-    const controller = new AbortController()
+    if (parsed && typeof parsed === 'object' && 'topicId' in parsed) {
+      const { topicId, entryId } = parsed as { topicId: unknown; entryId?: unknown }
 
-    async function fetchLookupDetail() {
-      setIsLookupLoading(true)
-      setLookupError('')
-      setLookupDetail(null)
-
-      try {
-        setLookupDetail(
-          await requestVocabularyDetail(lookupQuery, controller.signal),
-        )
-      } catch (error) {
-        if (controller.signal.aborted) {
-          return
-        }
-
-        setLookupError(
-          error instanceof VocabularyNotFoundError ? 'not-found' : 'failed',
-        )
-      } finally {
-        if (!controller.signal.aborted) {
-          setIsLookupLoading(false)
-        }
+      if (typeof topicId === 'string' && TOPICS.some((item) => item.topic.id === topicId)) {
+        return { topicId, entryId: typeof entryId === 'string' ? entryId : null }
       }
     }
+  } catch {
+    // Unreadable storage: start from the first topic.
+  }
 
-    fetchLookupDetail()
+  return { topicId: TOPICS[0].topic.id, entryId: null }
+}
 
-    return () => controller.abort()
-  }, [lookupQuery])
+function savePosition(position: CopyPosition) {
+  try {
+    window.localStorage.setItem(POSITION_STORAGE_KEY, JSON.stringify(position))
+  } catch {
+    // Private mode or blocked storage: copying still works for this visit.
+  }
+}
+
+function useIeltsModuleEntries(moduleId: IeltsModuleId) {
+  const [state, setState] = useState<{
+    moduleId: IeltsModuleId | null
+    data: IeltsModuleData | null
+    error: string
+  }>({ moduleId: null, data: null, error: '' })
 
   useEffect(() => {
-    if (!lookupQuery) {
-      return
+    let cancelled = false
+
+    loadIeltsModule(moduleId).then(
+      (data) => !cancelled && setState({ moduleId, data, error: '' }),
+      () =>
+        !cancelled &&
+        setState({ moduleId, data: null, error: '词表加载失败，请检查网络后刷新重试。' }),
+    )
+
+    return () => {
+      cancelled = true
     }
+  }, [moduleId])
 
-    function handleEscape(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        resetPronunciationPlayback()
-        setLookupQuery('')
-        setLookupDetail(null)
-        setIsLookupLoading(false)
-        setLookupError('')
-      }
+  return state.moduleId === moduleId ? state : { moduleId, data: null, error: '' }
+}
+
+function SpeakerIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 9.5v5h3.5L12 18V6L7.5 9.5H4Z" />
+      <path d="M15.5 9.6a3.6 3.6 0 0 1 0 4.8" />
+      <path d="M18 7.2a7.2 7.2 0 0 1 0 9.6" />
+    </svg>
+  )
+}
+
+// "object to (doing) sth." -> blanks for object, to, doing, sth; the brackets
+// and the full stop stay as plain text between them.
+function splitWord(word: string) {
+  // blank is the index among the blanks, or null for plain text.
+  const parts: Array<{ text: string; blank: number | null }> = []
+  let cursor = 0
+  let blanks = 0
+
+  for (const match of word.matchAll(CLOZE_CHARACTERS)) {
+    if (match.index > cursor) {
+      parts.push({ text: word.slice(cursor, match.index), blank: null })
     }
-
-    window.addEventListener('keydown', handleEscape)
-    return () => window.removeEventListener('keydown', handleEscape)
-  }, [lookupQuery, resetPronunciationPlayback])
-
-  function openLookupResult(lookup: string) {
-    const normalizedLookup = lookup.trim()
-
-    if (!normalizedLookup) {
-      return
-    }
-
-    resetPronunciationPlayback()
-    setLookupQuery(normalizedLookup)
-    setLookupDetail(null)
-    setIsLookupLoading(false)
-    setLookupError('')
+    parts.push({ text: match[0], blank: blanks })
+    blanks += 1
+    cursor = match.index + match[0].length
   }
 
-  function closeLookupResult() {
-    resetPronunciationPlayback()
-    setLookupQuery('')
-    setLookupDetail(null)
-    setIsLookupLoading(false)
-    setLookupError('')
+  if (cursor < word.length) {
+    parts.push({ text: word.slice(cursor), blank: null })
   }
 
-  function runVocabularySearch() {
-    const normalizedQuery = vocabularyQuery.trim()
+  return parts
+}
 
-    if (normalizedQuery) {
-      openLookupResult(normalizedQuery)
-      return
-    }
+function CopyWord({
+  entry,
+  example,
+  reading,
+  onNext,
+}: {
+  entry: IeltsEntry
+  example: IeltsExample | undefined
+  /** IPA and the play button, shown right under the word. */
+  reading: React.ReactNode
+  onNext: () => void
+}) {
+  const parts = useMemo(() => splitWord(entry.word), [entry.word])
+  const expected = useMemo(
+    () => parts.filter((part) => part.blank !== null).map((part) => part.text),
+    [parts],
+  )
+  const { answers, states, isComplete, focusCurrent, updateAnswer, setInputRef } = useClozeBlanks(
+    expected,
+    onNext,
+  )
 
-    onOpenVocabulary()
-  }
-
-  function submitVocabularySearch(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    runVocabularySearch()
-  }
-
-  function handleLandingSearchKeyDown(
-    event: ReactKeyboardEvent<HTMLInputElement>,
-  ) {
-    if (event.key !== 'Enter') {
-      return
-    }
-
-    event.preventDefault()
-    runVocabularySearch()
-  }
+  useEffect(() => {
+    focusCurrent()
+  }, [focusCurrent])
 
   return (
     <>
-      <section className="landing-hero" aria-label="English Orbit 首页搜索">
-        <img
-          className="beaver-mascot"
-          src="/mascot/beaver-mascot.svg"
-          alt="English Orbit Beaver mascot"
-          width="960"
-          height="720"
-          decoding="async"
-        />
-        <p className="landing-tagline">
-          让写代码的人，不再被英文挡在门外。
-        </p>
+      <p
+        className={`home-copy-word${entry.word.length > 22 ? ' is-longer' : entry.word.length > 13 ? ' is-long' : ''}`}
+        lang="en"
+      >
+        {parts.map((part, index) => {
+          const current = part.blank
 
-        <div className="landing-lookup">
-          <form className="landing-command" onSubmit={submitVocabularySearch}>
-            <span aria-hidden="true">$</span>
-            <input
-              placeholder="搜索核心词汇，例如 process / system / data"
-              value={vocabularyQuery}
-              onChange={(event) => {
-                setVocabularyQuery(event.target.value)
+          if (current === null) {
+            return <span key={index}>{part.text}</span>
+          }
 
-                if (!event.target.value.trim()) {
-                  closeLookupResult()
-                }
-              }}
-              onKeyDown={handleLandingSearchKeyDown}
+          return (
+            <ClozeBlank
+              key={index}
+              answer={part.text}
+              value={answers[current]}
+              state={states[current]}
+              ariaLabel={
+                expected.length > 1
+                  ? `第 ${current + 1} 个词，${part.text.length} 个字母`
+                  : `抄写单词，${part.text.length} 个字母`
+              }
+              inputRef={setInputRef(current)}
+              onChange={(value) => updateAnswer(current, value)}
             />
-            <button type="submit">搜索</button>
-          </form>
+          )
+        })}
+      </p>
 
-          {lookupQuery && (
-            <section
-              className="lookup-result"
-              aria-label="查词结果"
-              aria-live="polite"
-            >
-              <button
-                type="button"
-                className="lookup-result-close"
-                aria-label="关闭查词结果"
-                onClick={closeLookupResult}
-              >
-                ×
-              </button>
+      {reading}
 
-              {isLookupLoading && (
-                <p className="lookup-result-status">
-                  正在查询 {lookupQuery}…
-                </p>
-              )}
+      <div className="home-copy-meaning">
+        <IeltsSenses entry={entry} />
+      </div>
 
-              {!isLookupLoading && lookupError === 'not-found' && (
-                <div className="lookup-result-empty">
-                  <span>暂未收录</span>
-                  <strong>{lookupQuery}</strong>
-                  <p>
-                    可以换一个核心词试试，例如 process / system / data。
-                  </p>
-                </div>
-              )}
-
-              {!isLookupLoading && lookupError === 'failed' && (
-                <div className="lookup-result-empty" role="alert">
-                  <span>查询失败</span>
-                  <strong>{lookupQuery}</strong>
-                  <p>网络或服务暂时不可用，请稍后再搜索一次。</p>
-                </div>
-              )}
-
-              {!isLookupLoading && lookupDetail && (
-                <>
-                  <header className="lookup-result-header">
-                    <span>
-                      {lookupDetail.core.word.toLowerCase() ===
-                      lookupQuery.toLowerCase()
-                        ? 'Lookup'
-                        : `${lookupQuery} → ${lookupDetail.core.word}`}
-                    </span>
-                    <div>
-                      <h2>{lookupDetail.core.word}</h2>
-                      <p>
-                        {lookupDetail.core.meaningZh || lookupDetail.core.meaning}
-                      </p>
-                    </div>
-                  </header>
-
-                  {(lookupDetail.core.phoneticUs ||
-                    lookupDetail.core.phoneticUk) && (
-                    <p className="vocabulary-phonetics">
-                      {lookupDetail.core.phoneticUs && (
-                        <span>US {lookupDetail.core.phoneticUs}</span>
-                      )}
-                      {lookupDetail.core.phoneticUk && (
-                        <span>UK {lookupDetail.core.phoneticUk}</span>
-                      )}
-                    </p>
-                  )}
-
-                  {lookupDetail.pronunciations.length > 0 && (
-                    <div
-                      className="pronunciation-list"
-                      aria-label={`${lookupDetail.core.word} 读音`}
-                    >
-                      {lookupDetail.pronunciations.map((pronunciation, index) => {
-                        const label = getPronunciationLabel(pronunciation, index)
-
-                        return (
-                          <button
-                            key={`${lookupDetail.core.id}-${pronunciation.id}`}
-                            type="button"
-                            className={
-                              activePronunciationKey ===
-                              getPronunciationKey(lookupDetail.core, pronunciation)
-                                ? 'playing'
-                                : ''
-                            }
-                            aria-label={`播放 ${lookupDetail.core.word} ${label} 读音`}
-                            title={`${lookupDetail.core.word} ${label} 读音`}
-                            onClick={() =>
-                              playPronunciation(lookupDetail.core, pronunciation)
-                            }
-                          >
-                            {activePronunciationKey ===
-                            getPronunciationKey(lookupDetail.core, pronunciation)
-                              ? `${label} 播放中`
-                              : label}
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
-
-                  {pronunciationPlaybackError && (
-                    <p className="lookup-result-status" role="status">
-                      {pronunciationPlaybackError}
-                    </p>
-                  )}
-
-                  {lookupDetail.core.definitionEn && (
-                    <p className="lookup-result-definition">
-                      {lookupDetail.core.definitionEn}
-                    </p>
-                  )}
-
-                  {lookupPrimaryExample && (
-                    <div className="lookup-result-example">
-                      <span>Example</span>
-                      <p>{lookupPrimaryExample.sentenceEn}</p>
-                      {lookupPrimaryExample.sentenceZh && (
-                        <small>{lookupPrimaryExample.sentenceZh}</small>
-                      )}
-                    </div>
-                  )}
-                </>
-              )}
-            </section>
-          )}
-        </div>
-      </section>
-
-      <section className="landing-method" aria-label="学习路径">
-        <div className="method-example" aria-label="学习路径示例句">
-          <p className="method-poem">欲穷千里目 更上一层楼</p>
-          <strong>The cache improves response time.</strong>
-          <p>从一句开发者常见英文，拆成词、动词、例句和结构。</p>
-        </div>
-
-        <div className="landing-modules" aria-label="学习路径模块">
-          <article>
-            <span>01</span>
-            <h3>词汇</h3>
-            <code>cache / improves / response / time</code>
-            <p>认识句子里的稳定词块。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>动词</h3>
-            <code>improves = 提高、改善</code>
-            <p>把动词当作函数，理解它带来的动作。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>例句</h3>
-            <code>The cache improves response time.</code>
-            <p>在完整句子里反复遇见核心表达。</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>句子结构</h3>
-            <code>The cache / improves / response time</code>
-            <p>找到主干，再理解修饰和细节。</p>
-          </article>
-        </div>
-      </section>
-
-      <section className="landing-principles" aria-label="学习原则">
-        <div className="principles-list">
-          <article className="principle-item">
-            <span>01</span>
-            <div>
-              <h2>重复，不断重复</h2>
-              <p>语言不是一次记住的，而是在不同语境里反复遇见。</p>
-            </div>
-          </article>
-          <article className="principle-item">
-            <span>02</span>
-            <div>
-              <h2>阅读能力</h2>
-              <p>
-                解决开发者最常遇到的英文阅读场景：文档、文章、错误信息。
-              </p>
-            </div>
-          </article>
-          <article className="principle-item">
-            <span>03</span>
-            <div>
-              <h2>动词</h2>
-              <p>先找到动作，再看参数和修饰，句子的结构会变清楚。</p>
-            </div>
-          </article>
-          <article className="principle-item">
-            <span>04</span>
-            <div>
-              <h2>开发者视角</h2>
-              <p>
-                从开发者真实使用场景出发，围绕代码、文档和技术表达来设计学习内容。
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <figure className="principles-visual" aria-hidden="true">
-          <img
-            className="principles-diagram"
-            src="/mascot/beaver-teacher-board.webp"
-            alt=""
-            width="824"
-            height="782"
-            decoding="async"
-          />
-        </figure>
-      </section>
+      <div className={`home-copy-example${isComplete ? ' is-shown' : ''}`} aria-live="polite">
+        {isComplete && example ? (
+          <>
+            <p lang="en">
+              {example.en.slice(0, example.start)}
+              <mark>{example.en.slice(example.start, example.start + example.length)}</mark>
+              {example.en.slice(example.start + example.length)}
+            </p>
+            <p>{example.zh}</p>
+          </>
+        ) : null}
+        {isComplete ? <small>按回车进入下一个</small> : null}
+      </div>
     </>
+  )
+}
+
+function HomePage() {
+  const [position, setPosition] = useState<CopyPosition>(readPosition)
+  const topicIndex = Math.max(
+    TOPICS.findIndex((item) => item.topic.id === position.topicId),
+    0,
+  )
+  const { module, topic } = TOPICS[topicIndex]
+  const { data, error: moduleError } = useIeltsModuleEntries(module.id)
+  const { data: examples } = useIeltsExamples(topic.id)
+  const audio = useIeltsAudio()
+  const entries = useMemo(
+    () => data?.entries.filter((entry) => entry.topicId === topic.id) ?? [],
+    [data, topic.id],
+  )
+  const index = Math.max(
+    entries.findIndex((entry) => entry.id === position.entryId),
+    0,
+  )
+  const entry = entries[index]
+  const reading = entry ? getIeltsPrimaryReading(entry) : null
+
+  const goTo = useCallback((next: CopyPosition) => {
+    setPosition(next)
+    savePosition(next)
+  }, [])
+
+  const goNext = useCallback(() => {
+    if (index + 1 < entries.length) {
+      goTo({ topicId: topic.id, entryId: entries[index + 1].id })
+      return
+    }
+
+    // End of the topic: carry on with the next one, and wrap after the last.
+    goTo({ topicId: TOPICS[(topicIndex + 1) % TOPICS.length].topic.id, entryId: null })
+  }, [entries, goTo, index, topic.id, topicIndex])
+
+  // Each word is read out as it appears. Browsers refuse sound before the
+  // visitor has touched the page, so the first word waits for a key or a click.
+  const hasInteractedRef = useRef(false)
+  const { play } = audio
+  const entryId = entry?.id
+  const entryWord = entry?.word
+  const audioUrl = reading?.url
+
+  useEffect(() => {
+    if (!entryId || !entryWord || !audioUrl) {
+      return
+    }
+
+    const readOut = () => play(entryId, audioUrl, `${entryWord} 的读音`)
+
+    if (hasInteractedRef.current) {
+      readOut()
+      return
+    }
+
+    function handleFirstInteraction() {
+      hasInteractedRef.current = true
+      readOut()
+    }
+
+    window.addEventListener('keydown', handleFirstInteraction, { once: true })
+    window.addEventListener('pointerdown', handleFirstInteraction, { once: true })
+
+    return () => {
+      window.removeEventListener('keydown', handleFirstInteraction)
+      window.removeEventListener('pointerdown', handleFirstInteraction)
+    }
+  }, [audioUrl, entryId, entryWord, play])
+
+  return (
+    <section className="home-copy" aria-label="雅思单词抄写">
+      <header className="home-copy-bar">
+        <label>
+          <span className="visually-hidden">模块</span>
+          <select
+            value={module.id}
+            onChange={(event) => {
+              const target = ieltsCatalog.modules.find((item) => item.id === event.target.value)
+
+              if (target) {
+                goTo({ topicId: target.topics[0].id, entryId: null })
+              }
+            }}
+          >
+            {ieltsCatalog.modules.map((item) => (
+              <option key={item.id} value={item.id}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          <span className="visually-hidden">话题</span>
+          <select
+            value={topic.id}
+            onChange={(event) => goTo({ topicId: event.target.value, entryId: null })}
+          >
+            {module.topics.map((item) => (
+              <option key={item.id} value={item.id}>
+                {String(item.order).padStart(2, '0')} {item.title}
+              </option>
+            ))}
+          </select>
+        </label>
+        {entry ? (
+          <span className="home-copy-count">
+            {index + 1} / {entries.length}
+          </span>
+        ) : null}
+      </header>
+
+      <div className="home-copy-stage">
+        {entry ? (
+          <>
+            <CopyWord
+              key={entry.id}
+              entry={entry}
+              example={examples?.[entry.id]?.[0]}
+              onNext={goNext}
+              reading={
+                <div className="home-copy-reading">
+                  {reading?.phonetic ? <span>{reading.phonetic}</span> : null}
+                  {reading?.url ? (
+                    <button
+                      type="button"
+                      className={audio.activeKey === entry.id ? 'playing' : undefined}
+                      aria-label={`播放 ${entry.word} 的英式读音`}
+                      onClick={() =>
+                        audio.play(entry.id, reading.url as string, `${entry.word} 的读音`)
+                      }
+                    >
+                      <SpeakerIcon />
+                    </button>
+                  ) : null}
+                </div>
+              }
+            />
+            {audio.playbackError ? (
+              <p className="home-copy-status" role="status">
+                {audio.playbackError}
+              </p>
+            ) : null}
+          </>
+        ) : (
+          <p className="home-copy-status" role="status">
+            {moduleError || '正在加载单词…'}
+          </p>
+        )}
+      </div>
+
+      {entry ? (
+        <footer className="home-copy-footer">
+          <button
+            type="button"
+            className="is-quiet"
+            disabled={index === 0}
+            onClick={() => goTo({ topicId: topic.id, entryId: entries[index - 1].id })}
+          >
+            上一个
+          </button>
+          <button type="button" onClick={goNext}>
+            下一个
+          </button>
+        </footer>
+      ) : null}
+    </section>
   )
 }
 

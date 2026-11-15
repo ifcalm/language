@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { safeDecodeURIComponent } from '../../app/routing'
 import {
   getIeltsAudioUrl,
+  getIeltsPrimaryReading,
   ieltsCatalog,
   loadIeltsModule,
   type IeltsEntry,
@@ -197,17 +198,6 @@ function Breadcrumb({
   )
 }
 
-// A row plays the British reading; words whose reading depends on part of
-// speech have no entry-level audio, so the first part of speech stands in.
-function getRowAudio(entry: IeltsEntry) {
-  const posRow = entry.posPhonetics?.find((row) => row.audio)
-
-  return {
-    phonetic: entry.phoneticUk ?? entry.posPhonetics?.[0]?.uk,
-    url: getIeltsAudioUrl(entry, 'uk') ?? (posRow ? getIeltsAudioUrl(entry, 'uk', posRow.pos) : null),
-  }
-}
-
 function EntryRow({
   entry,
   showTopic,
@@ -219,7 +209,7 @@ function EntryRow({
   audio: Pick<ReturnType<typeof useIeltsAudio>, 'activeKey' | 'play'>
   onOpen: () => void
 }) {
-  const { phonetic, url } = getRowAudio(entry)
+  const { phonetic, url } = getIeltsPrimaryReading(entry)
 
   return (
     <li className="ielts-entry-row">

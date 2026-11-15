@@ -1,0 +1,44 @@
+/* Meanings with part-of-speech tags; shared by the IELTS pages and the home page. */
+.ielts-senses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+/* Part-of-speech tag */
+.ielts-pos {
+  display: inline-block;
+  margin-right: 2px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--pos-other-bg);
+  color: var(--pos-other);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ielts-pos.is-n {
+  background: var(--pos-n-bg);
+  color: var(--pos-n);
+}
+
+.ielts-pos.is-v {
+  background: var(--pos-v-bg);
+  color: var(--pos-v);
+}
+
+.ielts-pos.is-adj {
+  background: var(--pos-adj-bg);
+  color: var(--pos-adj);
+}
+
+.ielts-pos.is-adv {
+  background: var(--pos-adv-bg);
+  color: var(--pos-adv);
+}

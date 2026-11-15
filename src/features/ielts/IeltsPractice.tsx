@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { IeltsEntry, IeltsExample, IeltsTopicSummary } from '../../data/ielts'
 import { ClozeBlank } from '../../shared/cloze/ClozeBlank'
-import { getClozeAnswerState } from '../../shared/cloze/clozeAnswer'
+import { useClozeBlanks } from '../../shared/cloze/useClozeBlanks'
 import { IeltsSenses } from './IeltsSenses'
 import { useIeltsExamples } from './useIeltsExamples'
 
@@ -73,16 +73,6 @@ function buildBlanks(example: IeltsExample): PracticeBlank[] {
   }))
 }
 
-// Typing lands in the blank unless focus is already in a text field; the
-// hint checkbox and buttons don't count.
-const TEXT_ENTRY_SELECTOR =
-  'input:not([type]), input[type="text"], input[type="search"], input[type="number"], textarea, select, [contenteditable]'
-
-// Letters (accented ones too), digits for mid-1990s and 3D, apostrophes, hyphens.
-function sanitizeAnswer(value: string) {
-  return value.replace(/[^\p{L}\p{N}'’-]/gu, '')
-}
-
 function PracticeExercise({
   item,
   hideHint,
@@ -97,108 +87,17 @@ function PracticeExercise({
   onNext: () => void
 }) {
   const { entry, example, blanks } = item
-  const [answers, setAnswers] = useState<string[]>(() => blanks.map(() => ''))
   const [isPeeking, setIsPeeking] = useState(false)
-  const inputRefs = useRef<Array<HTMLInputElement | null>>([])
-  const states = blanks.map((blank, index) => getClozeAnswerState(answers[index], blank.text))
-  const isComplete = states.every((state) => state === 'complete')
-  const currentBlank = Math.max(
-    states.findIndex((state) => state !== 'complete'),
-    0,
+  const expected = useMemo(() => blanks.map((blank) => blank.text), [blanks])
+  const { answers, states, isComplete, focusCurrent, updateAnswer, setInputRef } = useClozeBlanks(
+    expected,
+    onNext,
   )
-
-  const currentBlankRef = useRef(currentBlank)
-  currentBlankRef.current = currentBlank
 
   // Focus the blank on arrival, and again after the hint toggle took focus.
   useEffect(() => {
-    inputRefs.current[currentBlankRef.current]?.focus({ preventScroll: true })
-  }, [hideHint])
-
-  // Typing anywhere on the page goes into the first unfinished blank.
-  useEffect(() => {
-    if (isComplete) {
-      return
-    }
-
-    function handleTypingStart(event: KeyboardEvent) {
-      if (
-        event.defaultPrevented ||
-        event.isComposing ||
-        event.altKey ||
-        event.ctrlKey ||
-        event.metaKey ||
-        !/^[\p{L}\p{N}'’-]$/u.test(event.key) ||
-        (event.target instanceof HTMLElement &&
-          event.target.closest(TEXT_ENTRY_SELECTOR))
-      ) {
-        return
-      }
-
-      event.preventDefault()
-      inputRefs.current[currentBlank]?.focus({ preventScroll: true })
-      setAnswers((current) =>
-        current.map((answer, index) => (index === currentBlank ? answer + event.key : answer)),
-      )
-    }
-
-    document.addEventListener('keydown', handleTypingStart)
-    return () => document.removeEventListener('keydown', handleTypingStart)
-  }, [currentBlank, isComplete])
-
-  // Enter moves on from anywhere on the page once the sentence is filled in,
-  // not only while focus is still in the blank. Buttons and the hint checkbox
-  // keep their own Enter.
-  useEffect(() => {
-    if (!isComplete) {
-      return
-    }
-
-    function handleEnter(event: KeyboardEvent) {
-      if (
-        event.key !== 'Enter' ||
-        event.defaultPrevented ||
-        event.isComposing ||
-        event.altKey ||
-        event.ctrlKey ||
-        event.metaKey ||
-        (event.target instanceof HTMLElement &&
-          event.target.closest('button, a, select, textarea, input[type="checkbox"]'))
-      ) {
-        return
-      }
-
-      event.preventDefault()
-      onNext()
-    }
-
-    document.addEventListener('keydown', handleEnter)
-    return () => document.removeEventListener('keydown', handleEnter)
-  }, [isComplete, onNext])
-
-  function updateAnswer(index: number, value: string) {
-    // A finished blank stays as it is: focus rests in it, and a stray key
-    // would otherwise turn the correct answer into an error.
-    if (states[index] === 'complete') {
-      return
-    }
-
-    const answer = sanitizeAnswer(value)
-    const nextAnswers = answers.map((current, answerIndex) =>
-      answerIndex === index ? answer : current,
-    )
-    setAnswers(nextAnswers)
-
-    if (getClozeAnswerState(answer, blanks[index].text) === 'complete') {
-      const nextBlank = blanks.findIndex(
-        (blank, blankIndex) =>
-          getClozeAnswerState(nextAnswers[blankIndex], blank.text) !== 'complete',
-      )
-      if (nextBlank >= 0) {
-        inputRefs.current[nextBlank]?.focus({ preventScroll: true })
-      }
-    }
-  }
+    focusCurrent()
+  }, [hideHint, focusCurrent])
 
   const sentence: React.ReactNode[] = []
   let cursor = 0
@@ -216,9 +115,7 @@ function PracticeExercise({
             ? `第 ${index + 1} 个空，${blank.text.length} 个字母`
             : `填空，${blank.text.length} 个字母`
         }
-        inputRef={(node) => {
-          inputRefs.current[index] = node
-        }}
+        inputRef={setInputRef(index)}
         onChange={(value) => updateAnswer(index, value)}
       />,
     )
@@ -246,7 +143,7 @@ function PracticeExercise({
         {hideHint && !isPeeking && !isComplete ? (
           <button type="button" className="is-quiet" onClick={() => {
             setIsPeeking(true)
-            inputRefs.current[currentBlank]?.focus({ preventScroll: true })
+            focusCurrent()
           }}>
             看提示
           </button>
