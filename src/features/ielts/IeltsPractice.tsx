@@ -147,7 +147,43 @@ function PracticeExercise({
     return () => document.removeEventListener('keydown', handleTypingStart)
   }, [currentBlank, isComplete])
 
+  // Enter moves on from anywhere on the page once the sentence is filled in,
+  // not only while focus is still in the blank. Buttons and the hint checkbox
+  // keep their own Enter.
+  useEffect(() => {
+    if (!isComplete) {
+      return
+    }
+
+    function handleEnter(event: KeyboardEvent) {
+      if (
+        event.key !== 'Enter' ||
+        event.defaultPrevented ||
+        event.isComposing ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        (event.target instanceof HTMLElement &&
+          event.target.closest('button, a, select, textarea, input[type="checkbox"]'))
+      ) {
+        return
+      }
+
+      event.preventDefault()
+      onNext()
+    }
+
+    document.addEventListener('keydown', handleEnter)
+    return () => document.removeEventListener('keydown', handleEnter)
+  }, [isComplete, onNext])
+
   function updateAnswer(index: number, value: string) {
+    // A finished blank stays as it is: focus rests in it, and a stray key
+    // would otherwise turn the correct answer into an error.
+    if (states[index] === 'complete') {
+      return
+    }
+
     const answer = sanitizeAnswer(value)
     const nextAnswers = answers.map((current, answerIndex) =>
       answerIndex === index ? answer : current,
@@ -185,12 +221,6 @@ function PracticeExercise({
           inputRefs.current[index] = node
         }}
         onChange={(value) => updateAnswer(index, value)}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter' && isComplete) {
-            event.preventDefault()
-            onNext()
-          }
-        }}
       />,
     )
     cursor = blank.end
