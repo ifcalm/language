@@ -19,15 +19,6 @@
   cursor: pointer;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 .ielts-hero p,
 .ielts-section-head p {
   margin: 8px 0 0;
@@ -325,50 +316,6 @@
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.ielts-senses {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 14px;
-  color: var(--text-soft);
-  font-size: 0.92rem;
-}
-
-/* Part-of-speech tag */
-.ielts-pos {
-  display: inline-block;
-  margin-right: 2px;
-  padding: 1px 6px;
-  border-radius: 6px;
-  background: var(--pos-other-bg);
-  color: var(--pos-other);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.ielts-pos.is-n {
-  background: var(--pos-n-bg);
-  color: var(--pos-n);
-}
-
-.ielts-pos.is-v {
-  background: var(--pos-v-bg);
-  color: var(--pos-v);
-}
-
-.ielts-pos.is-adj {
-  background: var(--pos-adj-bg);
-  color: var(--pos-adj);
-}
-
-.ielts-pos.is-adv {
-  background: var(--pos-adv-bg);
-  color: var(--pos-adv);
 }
 
 /* Topic path, written the way a file would be: speaking/02 */

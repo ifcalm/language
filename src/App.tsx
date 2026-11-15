@@ -66,11 +66,6 @@ function App() {
     }
   }
 
-  function openVocabularyFromHome() {
-    resetVocabularyPage()
-    changeView('vocabulary')
-  }
-
   function openVerbDetail(verbId: string) {
     const normalizedVerbId = verbId.trim()
 
@@ -124,13 +119,13 @@ function App() {
       />
 
       <main
-        className={`content ${view === 'roadmap' ? 'landing-content' : ''} ${
+        className={`content ${
           view === 'verbs' ? 'verb-content' : ''
         } ${
           view === 'vocabulary' ? 'vocab-content' : ''
         } ${view === 'ielts' ? 'ielts-content' : ''}`}
       >
-        {view === 'roadmap' && <HomePage onOpenVocabulary={openVocabularyFromHome} />}
+        {view === 'roadmap' && <HomePage />}
 
         <Suspense
           fallback={

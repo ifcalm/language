@@ -1,0 +1,219 @@
+/* Home: copy IELTS words. One card, one word at a time. */
+.home-copy {
+  display: grid;
+  max-width: 920px;
+  margin: 12px auto 0;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.home-copy-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-copy-bar select {
+  max-width: 100%;
+  padding: 7px 30px 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.home-copy-bar select:hover,
+.home-copy-bar select:focus-visible {
+  border-color: var(--accent);
+  outline: 0;
+}
+
+.home-copy-count {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.home-copy-stage {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 16px;
+  min-height: 400px;
+  padding: 56px 28px 40px;
+  text-align: center;
+}
+
+.home-copy-word {
+  max-width: 100%;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 7vw, 4.2rem);
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+/* Phrases step down in size so they stay on one or two lines. */
+.home-copy-word.is-long {
+  font-size: clamp(1.8rem, 4.6vw, 2.9rem);
+}
+
+.home-copy-word.is-longer {
+  font-size: clamp(1.4rem, 3.4vw, 2.1rem);
+}
+
+.home-copy-reading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.home-copy-reading button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.home-copy-reading button:hover,
+.home-copy-reading button:focus-visible,
+.home-copy-reading button.playing {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.home-copy-reading svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-copy-meaning .ielts-senses {
+  justify-content: center;
+  font-size: 1.08rem;
+}
+
+/* Keeps its height while empty, so the word does not jump when it is done. */
+.home-copy-example {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  max-width: 640px;
+  min-height: 92px;
+  margin-top: 6px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.home-copy-example p {
+  margin: 0;
+}
+
+.home-copy-example p + p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.home-copy-example mark {
+  background: none;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.home-copy-example small {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.home-copy-status {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.home-copy-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.home-copy-footer button {
+  padding: 9px 18px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--surface);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.home-copy-footer button.is-quiet {
+  border-color: var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.home-copy-footer button:hover:not(:disabled),
+.home-copy-footer button:focus-visible {
+  opacity: 0.82;
+}
+
+.home-copy-footer button:disabled {
+  border-color: var(--border);
+  color: var(--text-muted);
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  .home-copy {
+    border-radius: 18px;
+  }
+
+  .home-copy-bar,
+  .home-copy-footer {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .home-copy-stage {
+    min-height: 340px;
+    padding: 40px 16px 28px;
+  }
+}

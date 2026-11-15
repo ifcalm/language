@@ -81,3 +81,15 @@ export function getIeltsAudioUrl(
 
   return entry.audio ? `${IELTS_AUDIO_BASE_URL}/${accent}/${entry.id}.m4a` : null
 }
+
+// What a list row or a practice card shows and plays: the British reading.
+// Words whose reading depends on part of speech have no entry-level audio, so
+// the first part of speech stands in.
+export function getIeltsPrimaryReading(entry: IeltsEntry) {
+  const posRow = entry.posPhonetics?.find((row) => row.audio)
+
+  return {
+    phonetic: entry.phoneticUk ?? entry.posPhonetics?.[0]?.uk,
+    url: getIeltsAudioUrl(entry, 'uk') ?? (posRow ? getIeltsAudioUrl(entry, 'uk', posRow.pos) : null),
+  }
+}

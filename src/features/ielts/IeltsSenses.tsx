@@ -1,4 +1,5 @@
 import type { IeltsEntry } from '../../data/ielts'
+import './ielts-senses.css'
 
 // n. / v. / adj. / adv. each keep one colour across the site, so a list can be
 // scanned by part of speech; everything else (phr., prep., conj.) stays neutral.
