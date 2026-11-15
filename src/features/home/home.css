@@ -4,7 +4,6 @@
 .home-copy {
   display: grid;
   align-content: center;
-  gap: 56px;
   max-width: 920px;
   min-height: calc(100dvh - 190px);
   margin: 0 auto;
@@ -92,28 +91,62 @@
   color: var(--text-muted);
 }
 
-/* The only chrome: which keys move between words. */
-.home-copy-keys {
+/* Previous and next sit out of the way in the bottom-left corner; the
+   keyboard (← / → / return) does the same, so the buttons are mostly for
+   touch screens and for finding out the keys from their tooltips. */
+.home-copy-nav {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 5;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 8px 24px;
+  gap: 6px;
+}
+
+.home-copy-nav button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: none;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  cursor: pointer;
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease;
 }
 
-.home-copy-keys kbd {
-  color: var(--text-soft);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+.home-copy-nav button:hover,
+.home-copy-nav button:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent);
+  outline: 0;
 }
 
-/* Touch screens have no arrow keys to explain. */
-@media (hover: none) {
-  .home-copy-keys {
-    display: none;
-  }
+.home-copy-nav svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Each blank is as wide as its word, so a phrase keeps normal word spacing.
+   The shared blank is sized in ch, which runs wide at this display size. */
+.home-copy-word .cloze-blank {
+  position: relative;
+  width: auto !important;
+  min-width: 0;
+}
+
+.home-copy-word .cloze-input {
+  position: absolute;
+  inset: 0;
+  min-width: 0;
 }
 
 /* No frames on the home page: the word itself is the only thing to look at. */
@@ -126,11 +159,12 @@
 }
 
 @media (max-width: 640px) {
-  .home-copy {
-    gap: 44px;
-  }
-
   .home-copy-stage {
     padding: 0 8px;
+  }
+
+  .home-copy-nav {
+    bottom: 16px;
+    left: 12px;
   }
 }
