@@ -2561,7 +2561,7 @@
   color: var(--text);
 }
 
-.cloze-input {
+.verb-cloze-input {
   box-sizing: content-box;
   min-width: 0;
   margin: 4px 3px;
@@ -2586,23 +2586,23 @@
     background-color 0.16s ease;
 }
 
-.cloze-input::placeholder {
+.verb-cloze-input::placeholder {
   color: #c4c8d0;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
-.cloze-input:focus {
+.verb-cloze-input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgb(194 65 12 / 0.16);
 }
 
-.cloze-input.is-wrong {
+.verb-cloze-input.is-wrong {
   border-color: #ef4444;
   color: #dc2626;
 }
 
-.cloze-input.is-locked {
+.verb-cloze-input.is-locked {
   border-color: #16a34a;
   background: #f0fdf4;
   color: #15803d;
