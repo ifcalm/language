@@ -49,7 +49,7 @@ docs/ielts-vocabulary.md                       供人阅读的完整词表(自�
 
 ## 词条字段
 
-- `id`:稳定 slug,入库后永不修改(如 `security-deposit`;冲突时人工命名,如 résumé → `resume-cv`),用于路由、音频文件名与本地学习进度。
+- `id`:稳定 slug,入库后永不修改(如 `security-deposit`;冲突时人工命名,如 résumé → `resume-cv`),用于路由与音频文件名。
 - `spellingUs`:可选,美式拼写,用于搜索。
 - `group`:可选,所在话题内的小节序号,对应 `IeltsTopicSummary.groups`。
 - `senses`:`[{ pos, meaning }]`,由 D1 的 `meaning_zh` 解析。
