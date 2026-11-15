@@ -12,8 +12,7 @@
 .strategy-filename,
 .strategy-section-heading > span,
 .strategy-tree-example > header > span {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-mono);
 }
 
 .strategy-filename {
@@ -176,8 +175,7 @@
 
 .strategy-tree-example code {
   color: var(--text-soft);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-mono);
   font-size: 0.86rem;
   line-height: 1.65;
 }
@@ -222,8 +220,7 @@
 
 .strategy-diagram-node-copy {
   fill: #202124;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-mono);
   font-size: 16px;
   font-weight: 700;
   text-anchor: middle;
@@ -305,8 +302,7 @@
   gap: 12px;
   margin: 30px 0 0 56px;
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: var(--font-mono);
 }
 
 .strategy-loop span {
