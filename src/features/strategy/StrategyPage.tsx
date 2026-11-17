@@ -11,21 +11,12 @@ function StrategyPage({ onChangeView }: StrategyPageProps) {
     <article className="strategy-page">
       <div className="strategy-document-body">
         <section className="strategy-section strategy-examples-section">
-          <div className="strategy-section-heading">
-            <span>01</span>
-            <h2>用树看清关系</h2>
-          </div>
-          <p>
-            每张图只回答一件事：主干是什么，新增内容属于什么场景，
-            它挂在哪一层。曲线表示句子的生长关系，而不是语法术语。
-          </p>
-
           <StrategySentenceTrees />
         </section>
 
         <section className="strategy-section strategy-loop-section">
           <div className="strategy-section-heading">
-            <span>02</span>
+            <span>01</span>
             <h2>在真实语境中反复练习</h2>
           </div>
           <p>
