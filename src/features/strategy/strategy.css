@@ -138,6 +138,13 @@
   line-height: 1.65;
 }
 
+.strategy-tree-example header p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .strategy-tree-canvas {
   padding: 18px 24px 10px;
 }
@@ -333,4 +340,18 @@
   .strategy-tree-canvas svg {
     min-width: 760px;
   }
+}
+
+/* The tree section has no heading: legend and trees start at the left edge. */
+.strategy-examples-section {
+  padding-top: 24px;
+}
+
+.strategy-examples-section .strategy-tree-legend,
+.strategy-examples-section .strategy-tree-gallery {
+  margin-left: 0;
+}
+
+.strategy-examples-section .strategy-tree-legend {
+  margin-top: 0;
 }
