@@ -4,11 +4,6 @@
   color: var(--text);
 }
 
-.strategy-section-heading > span,
-.strategy-tree-example > header > span {
-  font-family: var(--font-mono);
-}
-
 .strategy-document-body {
   display: grid;
 }
@@ -27,6 +22,7 @@
 
 .strategy-section-heading > span {
   color: var(--text-muted);
+  font-family: var(--font-mono);
   font-size: 0.78rem;
 }
 
@@ -112,26 +108,13 @@
 }
 
 .strategy-tree-example > header {
-  display: grid;
-  grid-template-columns: 36px minmax(0, 1fr);
-  gap: 14px;
   padding: 20px 22px 18px;
   border-bottom: 1px solid #e7e9ec;
   background: #fcfcfc;
 }
 
-.strategy-tree-example > header > span {
-  padding-top: 4px;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-}
-
-.strategy-tree-example h3 {
-  margin: 0 0 8px;
-  font-size: 0.94rem;
-}
-
 .strategy-tree-example code {
+  display: block;
   color: var(--text-soft);
   font-family: var(--font-mono);
   font-size: 0.86rem;
