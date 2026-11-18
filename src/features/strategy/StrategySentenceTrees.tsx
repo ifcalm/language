@@ -24,8 +24,6 @@ interface HandArrowProps {
 }
 
 interface DiagramCardProps {
-  number: string
-  title: string
   sentence: string
   translation: string
   children: ReactNode
@@ -523,8 +521,6 @@ function LogsTree() {
 const examples = [
   {
     id: 'test-suite',
-    number: '01',
-    title: '测试流程',
     sentence:
       'Our team usually runs the full test suite on the release branch before each release.',
     translation: '每次发布前，我们团队一般都会在发布分支上把测试完整跑一遍。',
@@ -532,8 +528,6 @@ const examples = [
   },
   {
     id: 'report',
-    number: '02',
-    title: '任务传递',
     sentence:
       'The project manager asked me to send the report to the client before Friday’s meeting.',
     translation: '项目经理让我在周五开会前把报告发给客户。',
@@ -541,8 +535,6 @@ const examples = [
   },
   {
     id: 'logs',
-    number: '03',
-    title: '日志与状态变化',
     sentence:
       'The logs show that the server stopped working after we changed the configuration last night.',
     translation: '日志显示，昨晚我们改完配置后，服务器就停止运行了。',
@@ -550,22 +542,12 @@ const examples = [
   },
 ]
 
-function DiagramCard({
-  number,
-  title,
-  sentence,
-  translation,
-  children,
-}: DiagramCardProps) {
+function DiagramCard({ sentence, translation, children }: DiagramCardProps) {
   return (
     <article className="strategy-tree-example">
       <header>
-        <span>{number}</span>
-        <div>
-          <h3>{title}</h3>
-          <code lang="en">{sentence}</code>
-          <p>{translation}</p>
-        </div>
+        <code lang="en">{sentence}</code>
+        <p>{translation}</p>
       </header>
       <div className="strategy-tree-canvas">{children}</div>
     </article>
@@ -584,8 +566,6 @@ function StrategySentenceTrees() {
         {examples.map((example) => (
           <DiagramCard
             key={example.id}
-            number={example.number}
-            title={example.title}
             sentence={example.sentence}
             translation={example.translation}
           >
